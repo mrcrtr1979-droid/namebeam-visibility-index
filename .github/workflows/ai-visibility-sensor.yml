@@ -1,0 +1,37 @@
+name: ai-visibility-index-sensor
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Stamp a dated heartbeat marker
+        run: |
+          TODAY=$(date -u +%F)
+          mkdir -p data
+          echo "$TODAY weekly re-check due: run all five engines, append real rows, win or loss." >> data/heartbeat.log
+          git config user.name "namebeam-sensor"
+          git config user.email "sensor@namebeam.ai"
+          git add data/heartbeat.log
+          git commit -m "sensor: weekly heartbeat $TODAY" || echo "no change"
+          git push || echo "push skipped"
+      - name: Open a dated re-check reminder issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const today = new Date().toISOString().slice(0,10);
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: "AI Visibility re-check due " + today,
+              body: "Run the five-engine check on Namebeam, append each real result win or loss, commit. No fabricated rows. Doctrine: DATA_FRONTRUN."
+            });
