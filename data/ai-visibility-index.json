@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "spec": "NAMEBEAM_CORPUS_SPEC_2026-07-28",
+  "doctrine": "DATA_FRONTRUN: append-only, dated, tamper-evident. Never overwrite. Losses same size as wins. No fabricated rows.",
+  "subject": "namebeam-customer-zero",
+  "category": "ai visibility tools",
+  "started_utc": "2026-07-24",
+  "rows": [
+    {
+      "check_id": "NB-CZ-0001",
+      "date_utc": "2026-07-24",
+      "engine": "gemini",
+      "prompt_variant": "buyer-intent",
+      "business_mentioned": false,
+      "competitors_mentioned": [],
+      "note": "First engine check. Gemini did not name Namebeam."
+    },
+    {
+      "check_id": "NB-CZ-0002",
+      "date_utc": "2026-07-30",
+      "engine": "chatgpt",
+      "prompt_variant": "what service checks if AI recommends my business",
+      "business_mentioned": false,
+      "competitors_mentioned": [
+        "Profound",
+        "Peec AI",
+        "Otterly AI",
+        "Semrush",
+        "Conductor",
+        "Athena HQ",
+        "Scrunch AI"
+      ],
+      "note": "Miss. Logged-in free tier."
+    },
+    {
+      "check_id": "NB-CZ-0003",
+      "date_utc": "2026-07-30",
+      "engine": "perplexity",
+      "prompt_variant": "what service checks if AI recommends my business",
+      "business_mentioned": false,
+      "competitors_mentioned": [
+        "CheckMyAI",
+        "Mangools",
+        "SpyFu"
+      ],
+      "note": "Miss. Conversational."
+    },
+    {
+      "check_id": "NB-CZ-0004",
+      "date_utc": "2026-07-30",
+      "engine": "google_ai",
+      "prompt_variant": "what service checks if AI recommends my business",
+      "business_mentioned": false,
+      "competitors_mentioned": [
+        "Ahrefs",
+        "Semrush",
+        "Birdeye"
+      ],
+      "note": "Miss. AI Overviews."
+    },
+    {
+      "check_id": "NB-CZ-0005",
+      "date_utc": "2026-07-31",
+      "engine": "perplexity",
+      "prompt_variant": "what tool checks if AI recommends my business",
+      "business_mentioned": false,
+      "competitors_mentioned": [
+        "CabbageSEO",
+        "Peec AI",
+        "Otterly.AI",
+        "Mangools",
+        "SpyFu",
+        "xfunnel.ai",
+        "Frizerly"
+      ],
+      "note": "Fresh capture. Miss. Perplexity cited reddit as a source."
+    },
+    {
+      "check_id": "NB-CZ-FIX-0001",
+      "date_utc": "2026-07-31",
+      "engine": "self",
+      "prompt_variant": "fix-shipped",
+      "business_mentioned": null,
+      "competitors_mentioned": [],
+      "note": "Fixes shipped: llms.txt, ai-instructions.html, JSON-LD Dataset+FAQ schema, homepage live check, AI Visibility Index published."
+    }
+  ],
+  "pending": [
+    {
+      "engine": "claude",
+      "status": "scheduled",
+      "note": "Fifth engine. Run and log, win or loss, same size."
+    }
+  ]
+}
