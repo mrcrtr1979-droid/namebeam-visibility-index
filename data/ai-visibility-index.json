@@ -83,13 +83,29 @@
       "business_mentioned": null,
       "competitors_mentioned": [],
       "note": "Fixes shipped: llms.txt, ai-instructions.html, JSON-LD Dataset+FAQ schema, homepage live check, AI Visibility Index published."
+    },
+    {
+      "check_id": "NB-CZ-0006",
+      "date_utc": "2026-07-31",
+      "engine": "claude",
+      "prompt_variant": "what tool checks if AI recommends my business",
+      "business_mentioned": false,
+      "competitors_mentioned": [
+        "Semrush",
+        "Birdeye",
+        "SE Ranking",
+        "Finseo",
+        "PromptRush",
+        "search-visibility.ai"
+      ],
+      "note": "Fifth engine, run by the founder's own hands. Miss. Clean session: no memory retrieval, web search on. A first personalized attempt was refused for the corpus as non-comparable. Ledger complete: 5 of 5 engines run, 0 of 5 name Namebeam."
     }
   ],
   "pending": [
     {
       "engine": "claude",
-      "status": "scheduled",
-      "note": "Fifth engine. Run and log, win or loss, same size."
+      "status": "complete",
+      "note": "Completed 2026-07-31 as NB-CZ-0006. Miss, logged same size as a win."
     }
   ]
 }
