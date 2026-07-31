@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+"""
+Namebeam AI Visibility Index, append-only sensor writer.
+Doctrine: DATA_FRONTRUN. Append a dated row, never overwrite, never backdate.
+A failed or empty run is logged as-is. No fabricated rows.
+
+Usage (manual or from CI):
+  python3 append_row.py --engine chatgpt --date 2026-08-07 --mentioned false \
+      --competitors "Profound,Peec AI" --note "Weekly re-check, miss."
+The --date is passed in (CI provides today's UTC date) so runs are reproducible.
+"""
+import argparse, json, pathlib, sys
+
+DATA = pathlib.Path(__file__).resolve().parent.parent / "data" / "ai-visibility-index.json"
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--engine", required=True)
+    ap.add_argument("--date", required=True, help="UTC date YYYY-MM-DD, supplied by caller/CI")
+    ap.add_argument("--variant", default="buyer-intent")
+    ap.add_argument("--mentioned", choices=["true","false","null"], required=True)
+    ap.add_argument("--competitors", default="")
+    ap.add_argument("--note", default="")
+    a = ap.parse_args()
+
+    doc = json.loads(DATA.read_text())
+    n = sum(1 for r in doc["rows"] if r["check_id"].startswith("NB-CZ-") and not "FIX" in r["check_id"])
+    row = {
+        "check_id": f"NB-CZ-{n+1:04d}",
+        "date_utc": a.date,
+        "engine": a.engine,
+        "prompt_variant": a.variant,
+        "business_mentioned": {"true":True,"false":False,"null":None}[a.mentioned],
+        "competitors_mentioned": [c.strip() for c in a.competitors.split(",") if c.strip()],
+        "note": a.note,
+    }
+    doc["rows"].append(row)   # append only
+    DATA.write_text(json.dumps(doc, indent=2) + "\n")
+    print("appended", row["check_id"], a.engine, a.date, "mentioned=", row["business_mentioned"])
+
+if __name__ == "__main__":
+    sys.exit(main())
