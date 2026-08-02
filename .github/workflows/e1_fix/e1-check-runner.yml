@@ -1,0 +1,52 @@
+name: E1 Check Runner
+
+# Manual trigger only for this slice. No schedule yet - see design doc
+# section 7, build ladder step 6 for when a real schedule gets added.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  run-e1-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Guard - stop here if the API key secret is empty
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+        run: |
+          if [ -z "$PERPLEXITY_API_KEY" ]; then
+            echo "ERROR: PERPLEXITY_API_KEY secret is empty or missing."
+            echo "Add it in Settings > Secrets and variables > Actions before running this workflow."
+            exit 1
+          fi
+          echo "PERPLEXITY_API_KEY is present. Continuing."
+
+      - name: Run the E1 check runner
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+        run: python scripts/e1_runner.py
+
+      - name: Commit and push any new corpus rows
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add corpus/e1/
+          if git diff --staged --quiet; then
+            echo "No new corpus rows to commit."
+          else
+            git commit -m "e1 slice run $(date -u +%Y-%m-%d)"
+            git push
+          fi
