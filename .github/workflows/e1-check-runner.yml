@@ -4,6 +4,8 @@ name: E1 Check Runner
 # section 7, build ladder step 6 for when a real schedule gets added.
 on:
   workflow_dispatch: {}
+  schedule:
+  - cron: "10 12 * * *"
 
 permissions:
   contents: write
@@ -50,3 +52,4 @@ jobs:
             git commit -m "e1 slice run $(date -u +%Y-%m-%d)"
             git push
           fi
+          
