@@ -163,7 +163,9 @@ def call_gemini(prompt_text):
 # says so rather than guessing.
 # --------------------------------------------------------------------------
 BRIGHTDATA_URL = "https://api.brightdata.com/request"
-BRIGHTDATA_ZONE = os.environ.get("BRIGHTDATA_ZONE", "serp_api1")
+# CI can supply this as SET-BUT-EMPTY, which defeats a plain default
+# (that exact failure cost 13 SERP rows on 2026-08-05). Doctrine-120 form:
+BRIGHTDATA_ZONE = os.environ.get("BRIGHTDATA_ZONE", "").strip() or "serp_api1"
 
 
 def fetch_serp(query_text, top_n=10):
