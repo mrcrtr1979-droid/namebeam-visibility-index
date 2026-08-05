@@ -26,6 +26,11 @@ from datetime import datetime, timezone
 
 import requests
 
+from extract_named_entities import (
+    extract_named_entities,
+    extract_stated_criteria,
+)
+
 # ---------------------------------------------------------------------------
 # CONFIG
 # ---------------------------------------------------------------------------
@@ -158,7 +163,6 @@ def build_success_row(business_row, date_utc, check_id, answer_text, sources_cit
         answer_text,
     )
     session_note = (
-        "competitor extraction deferred to WORK layer in slice. "
         "run_channel caveat: API results can differ from logged-in "
         "consumer apps, no memory, no personalization."
     )
@@ -173,11 +177,17 @@ def build_success_row(business_row, date_utc, check_id, answer_text, sources_cit
         "prompt_text": business_row["prompt_1"],
         "engine": ENGINE_NAME,
         "business_mentioned": mentioned,
-        "competitors_mentioned": [],
+        "competitors_mentioned": extract_named_entities(
+            answer_text,
+            business_name,
+            business_row.get("variants_business_name_forms", []),
+        ),
+        "engine_stated_criteria": extract_stated_criteria(answer_text),
         "factor_scores": None,
         "sources_cited": sources_cited,
         "session_note": session_note,
         "run_channel": RUN_CHANNEL,
+        "schema_version": "v3",
         "answer_verbatim": answer_text,
     }
     return row
