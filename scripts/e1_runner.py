@@ -207,8 +207,13 @@ def main():
         return 0
 
     engines = dict(ENGINES)
-    available = [k for k in engines if os.environ.get(
-        {"perplexity": "PERPLEXITY_API_KEY", "gemini": "GEMINI_API_KEY"}[k], "").strip()]
+    # The env var for every engine follows one convention: <ENGINE>_API_KEY.
+    # v8 lesson: an inline dict here listed only two engines, so adding an
+    # adapter to ENGINES without touching this line crashed the whole run
+    # with a KeyError before a single call was made (run #9, 2026-08-05).
+    # Deriving the name means a new adapter can never be forgotten here.
+    available = [k for k in engines
+                 if os.environ.get("%s_API_KEY" % k.upper(), "").strip()]
     serp_on = bool(os.environ.get("BRIGHTDATA_API_KEY", "").strip())
 
     print("E1 v4 run %s | roster %d active | engines available: %s | serp: %s"
