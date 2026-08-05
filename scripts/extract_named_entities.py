@@ -168,3 +168,82 @@ def extract_stated_criteria(answer_text):
         if clause and span not in out:
             out.append(span)
     return out
+
+
+# ---------------------------------------------------------------------------
+# ENTITY RESOLUTION (added 2026-08-05)
+#
+# Why this exists: the first two-engine run reported a 2.5 percent overlap in
+# the brands Perplexity and Gemini named. That number was NOT publishable,
+# because the extractor keys on bolded spans and Gemini bolds two to three
+# times more entities than Perplexity, and because exact string matching
+# treats "Kennedy Painting" and "Kennedy Painting LLC" as different companies.
+# Normalizing alone moved the figure from 2.5 to 4.7 percent, which proved
+# the method was inside the result.
+#
+# canonical() strips what does not identify a company. same_entity() then
+# matches on containment, because engines routinely give one a legal suffix
+# and the other not. Both are mechanical and reproducible: no LLM, no
+# judgement call, so two runs over the same text always agree.
+# ---------------------------------------------------------------------------
+
+_LEGAL_SUFFIXES = (
+    "llc", "l.l.c", "inc", "incorporated", "corp", "corporation", "co",
+    "company", "ltd", "limited", "plc", "llp", "lp", "pllc", "pc", "gmbh",
+)
+_LEADING_NOISE = ("the", "a", "an")
+
+
+def canonical(name):
+    """Reduce a company name to what actually identifies it. Returns '' if
+    nothing identifying survives, and the caller must drop those."""
+    if not name:
+        return ""
+    s = name.lower()
+    s = re.sub(r"[\u2018\u2019\u201c\u201d']", "", s)
+    s = re.sub(r"[^a-z0-9]+", " ", s).strip()
+    words = [w for w in s.split() if w]
+    while words and words[0] in _LEADING_NOISE:
+        words.pop(0)
+    while words and words[-1] in _LEGAL_SUFFIXES:
+        words.pop()
+    return " ".join(words)
+
+
+def same_entity(a, b):
+    """True if two names plausibly denote the same company.
+
+    Containment, not equality, because one engine writes 'Kennedy Painting'
+    and the other 'Kennedy Painting LLC'. Guarded by a minimum length so
+    short generic tokens cannot swallow unrelated names: 'AI' must never
+    match 'AI Rank Checker'.
+    """
+    ca, cb = canonical(a), canonical(b)
+    if not ca or not cb:
+        return False
+    if ca == cb:
+        return True
+    shorter, longer = (ca, cb) if len(ca) <= len(cb) else (cb, ca)
+    if len(shorter) < 6:
+        return False
+    # Require a whole-word boundary so "paint" does not match "painting pros".
+    return re.search(r"\b" + re.escape(shorter) + r"\b", longer) is not None
+
+
+def resolve_overlap(list_a, list_b):
+    """Return (shared, only_a, only_b) using entity resolution rather than
+    exact strings. This is what any published brand-overlap figure must use."""
+    a = [x for x in (list_a or []) if canonical(x)]
+    b = [x for x in (list_b or []) if canonical(x)]
+    shared, used_b = [], set()
+    for x in a:
+        for i, y in enumerate(b):
+            if i in used_b:
+                continue
+            if same_entity(x, y):
+                shared.append(x)
+                used_b.add(i)
+                break
+    only_a = [x for x in a if x not in shared]
+    only_b = [y for i, y in enumerate(b) if i not in used_b]
+    return shared, only_a, only_b

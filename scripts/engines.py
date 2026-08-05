@@ -179,35 +179,117 @@ def fetch_serp(query_text, top_n=10):
 
 
 def extract_organic_urls(html, top_n=10):
-    """Pull result URLs out of a Google results page, in order, deduplicated.
+    """Pull outbound result URLs out of a Google results page, in order,
+    deduplicated by domain-and-path.
 
-    Mechanical and reproducible: it takes href targets that look like real
-    outbound results and drops Google's own properties. A missed result is a
-    false negative, which is the safe direction of error for a corpus whose
-    whole value is that it never overstates.
+    REWRITTEN 2026-08-05 after 6 of 13 live SERP rows returned ZERO results.
+    The old version had four defects, each verified against real markup:
+
+      1. It required href to start with http, so it MISSED the most common
+         Google form of all, the RELATIVE redirect href="/url?q=...".
+         This alone accounts for the zeros.
+      2. It only matched double-quoted hrefs, missing single-quoted ones.
+      3. It never unescaped HTML entities, so &amp; survived into URLs.
+      4. It ran url.split("&")[0], which truncated legitimate query strings.
+         A Yelp search URL lost everything after find_desc.
+
+    Still mechanical and reproducible. A missed result is a false negative,
+    which is the safe direction of error. What is NOT acceptable is a silent
+    zero, so this returns diagnostics alongside the URLs; see extract_serp().
     """
     import re
+    import html as _html
     import urllib.parse
     if not html:
         return []
-    skip = ("google.", "gstatic.", "googleusercontent.", "youtube.com/redirect",
-            "accounts.google", "policies.google", "support.google", "webcache.")
-    out = []
-    for m in re.finditer(r'href="(https?://[^"]+)"', html):
-        u = m.group(1)
-        if u.startswith("https://www.google.com/url?"):
-            q = urllib.parse.parse_qs(urllib.parse.urlparse(u).query).get("q")
-            if not q:
-                continue
-            u = q[0]
+    text = _html.unescape(html)
+
+    # Google's own properties and infrastructure are never results.
+    skip = ("google.", "gstatic.", "googleusercontent.", "googleadservices.",
+            "youtube.com/redirect", "accounts.google", "policies.google",
+            "support.google", "webcache.", "schema.org", "w3.org")
+    # Tracking parameters Google appends. Strip ONLY these, never the whole
+    # query string, or real search URLs get destroyed.
+    junk_params = {"sa", "ved", "usg", "source", "cd", "cad", "uact", "opi",
+                   "sca_esv", "gs_lcp", "ei", "oq", "sclient", "bih", "biw"}
+
+    def clean(u):
+        try:
+            parts = urllib.parse.urlsplit(u)
+            if parts.scheme not in ("http", "https") or not parts.netloc:
+                return None
+            q = [(k, v) for k, v in urllib.parse.parse_qsl(parts.query)
+                 if k not in junk_params]
+            return urllib.parse.urlunsplit(
+                (parts.scheme, parts.netloc, parts.path,
+                 urllib.parse.urlencode(q), ""))
+        except ValueError:
+            return None
+
+    out, seen = [], set()
+
+    def add(u):
+        u = clean(u)
+        if not u:
+            return
         if any(s in u for s in skip):
-            continue
-        u = u.split("&")[0]
-        if u not in out:
-            out.append(u)
+            return
+        parts = urllib.parse.urlsplit(u)
+        key = (parts.netloc.lower(), parts.path.rstrip("/"))
+        if key in seen:
+            return
+        seen.add(key)
+        out.append(u)
+
+    # Pattern 1: the redirect form, RELATIVE or ABSOLUTE. Most common.
+    for m in re.finditer(r'href=["\'](?:https?://[^"\'/]*google\.[^"\'/]*)?/url\?([^"\']+)', text):
+        qs = urllib.parse.parse_qs(m.group(1))
+        for key in ("q", "url"):
+            if key in qs and qs[key]:
+                add(qs[key][0])
+                break
         if len(out) >= top_n:
-            break
-    return out
+            return out[:top_n]
+
+    # Pattern 2: direct outbound href, either quote style.
+    for m in re.finditer(r'href=["\'](https?://[^"\']+)["\']', text):
+        add(m.group(1))
+        if len(out) >= top_n:
+            return out[:top_n]
+
+    # Pattern 3: last resort, bare URLs in data attributes some layouts use.
+    if not out:
+        for m in re.finditer(r'data-(?:href|url)=["\'](https?://[^"\']+)["\']', text):
+            add(m.group(1))
+            if len(out) >= top_n:
+                break
+
+    return out[:top_n]
+
+
+def serp_diagnostics(html, organic):
+    """Why did extraction return what it returned? Recorded on every SERP row
+    so a zero is SELF-EXPLAINING and never mistaken for a finding (doctrine 122).
+    """
+    import re
+    import html as _html
+    if html is None:
+        html = ""
+    text = _html.unescape(html)
+    low = text.lower()
+    return {
+        "html_bytes": len(html),
+        "href_total": len(re.findall(r'href=', text)),
+        "redirect_hrefs": len(re.findall(r'href=["\'][^"\']*?/url\?', text)),
+        "looks_like_consent_wall": ("before you continue" in low
+                                    or "consent.google" in low),
+        "looks_like_captcha": ("unusual traffic" in low
+                               or "recaptcha" in low),
+        "extraction_ok": bool(organic),
+        "zero_reason": (None if organic else
+                        ("empty response" if len(html) < 2000 else
+                         "no parsable result links found in a non-empty page")),
+    }
 
 
 def detect_ai_overview(html):

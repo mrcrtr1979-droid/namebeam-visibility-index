@@ -26,7 +26,9 @@ import re
 import sys
 from datetime import datetime, timezone
 
-from engines import ENGINES, fetch_serp, detect_ai_overview
+from engines import (ENGINES, fetch_serp, detect_ai_overview,
+                     serp_diagnostics)
+from agreement import build_agreement_row
 from extract_named_entities import (
     extract_named_entities,
     extract_stated_criteria,
@@ -50,6 +52,29 @@ def load_active_roster(path):
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
     return [r for r in data.get("roster", []) if r.get("active") is True]
+
+
+def next_run_index(date_utc, slug, engine):
+    """Same-day re-runs must ACCUMULATE, never overwrite.
+
+    Found the hard way on 2026-08-05: the identical roster was run twice in
+    one day and the second run silently overwrote the first. The only reason
+    the comparison survived was that a workflow had already committed the
+    earlier rows to git. That comparison produced the most valuable finding
+    the corpus has: across 22 rows ZERO answers were byte-identical between
+    runs, and 4.5 percent flipped the named verdict.
+
+    Destroying that data by default is the opposite of what this corpus is
+    for. Run 1 keeps the historical filename so nothing already committed
+    breaks; run 2 and beyond get a _rN suffix.
+    """
+    base = "NB-CZ-API_%s_%s_%s" % (date_utc, slug, engine)
+    if not os.path.exists(os.path.join(OUTPUT_DIR, base + ".json")):
+        return base, 1
+    n = 2
+    while os.path.exists(os.path.join(OUTPUT_DIR, "%s_r%d.json" % (base, n))):
+        n += 1
+    return "%s_r%d" % (base, n), n
 
 
 def write_row(row, check_id):
@@ -91,8 +116,9 @@ def is_mentioned(business_row, text):
 
 def run_engine(business_row, engine, fn, date_utc):
     slug = slugify(business_row["business"])
-    check_id = "NB-CZ-API_%s_%s_%s" % (date_utc, slug, engine)
+    check_id, run_index = next_run_index(date_utc, slug, engine)
     row = base_row(business_row, date_utc, check_id, engine)
+    row["run"] = run_index
     ok, text, sources, err = fn(business_row["prompt_1"])
     if not ok:
         row.update({
@@ -127,6 +153,10 @@ def run_serp(business_row, date_utc):
     Paired with the engine rows, this is the rank-to-citation delta."""
     slug = slugify(business_row["business"])
     check_id = "NB-CZ-SERP_%s_%s" % (date_utc, slug)
+    n = 2
+    while os.path.exists(os.path.join(OUTPUT_DIR, check_id + ".json")):
+        check_id = "NB-CZ-SERP_%s_%s_r%d" % (date_utc, slug, n)
+        n += 1
     row = base_row(business_row, date_utc, check_id, "google_serp")
     row["run_channel"] = "serp"
     ok, html, organic, err = fetch_serp(business_row["prompt_1"])
@@ -140,8 +170,13 @@ def run_serp(business_row, date_utc):
                             "error detail: %s" % err,
         })
         return write_row(row, check_id), False
+    diag = serp_diagnostics(html, organic)
     row.update({
-        "run_status": "OK",
+        # An extraction failure is NOT a finding. If organic is empty, this
+        # row is marked EXTRACTION_FAILED so it can be excluded from any
+        # published denominator (doctrine 122). It is never a silent zero.
+        "run_status": "OK" if organic else "EXTRACTION_FAILED",
+        "serp_diagnostics": diag,
         "business_mentioned": is_mentioned(business_row, html),
         "organic_top_results": organic,
         # None means "could not tell", and that is preserved on purpose.
@@ -178,8 +213,13 @@ def main():
 
     wrote = ok_n = fail_n = 0
     for br in roster:
+        engine_rows = []
         for name, fn in engines.items():
-            _, good = run_engine(br, name, fn, date_utc)
+            path, good = run_engine(br, name, fn, date_utc)
+            if good:
+                import json as _j
+                with open(path, "r", encoding="utf-8") as _f:
+                    engine_rows.append(_j.load(_f))
             wrote += 1
             ok_n += 1 if good else 0
             fail_n += 0 if good else 1
@@ -188,6 +228,21 @@ def main():
             wrote += 1
             ok_n += 1 if good else 0
             fail_n += 0 if good else 1
+
+        # DW-1 falls out of the run for free. Only written when at least two
+        # engines actually answered, so it never fabricates a comparison.
+        if len(engine_rows) >= 2:
+            ag = build_agreement_row(br, date_utc, engine_rows)
+            cid = "NB-CZ-AGREE_%s_%s" % (date_utc, slugify(br["business"]))
+            _n = 2
+            while os.path.exists(os.path.join(OUTPUT_DIR, cid + ".json")):
+                cid = "NB-CZ-AGREE_%s_%s_r%d" % (
+                    date_utc, slugify(br["business"]), _n)
+                _n += 1
+            ag["check_id"] = cid
+            write_row(ag, cid)
+            wrote += 1
+            ok_n += 1
 
     print("rows written: %d (ok %d, failed %d)" % (wrote, ok_n, fail_n))
     return 0
