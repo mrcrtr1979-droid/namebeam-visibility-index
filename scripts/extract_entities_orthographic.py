@@ -18,12 +18,18 @@ safe direction for a corpus whose value is that it never overstates.
 
 The hard part is sentence-initial capitalisation: "Several painting companies"
 starts a sentence and is not a company. Handled by requiring a candidate to
-clear at least one of three bars:
+clear at least one of four bars:
   1. it is multi-word Title Case and not sentence-initial, or
   2. it is sentence-initial BUT also appears elsewhere in the text
      non-initially, which is strong evidence it is a real name, or
   3. its canonical form matches a domain the engine actually cited, which is
-     the strongest evidence available and is engine-independent.
+     the strongest evidence available and is engine-independent, or
+  4. it is a single word, mid-sentence, that looks like a brand on its own
+     orthography: internal capitalisation (ZipTie), a dot or digit inside
+     (Otterly.AI), or repetition. Bar 4 exists because bars 1 to 3 admitted
+     single-word names ONLY via bar 3, which silently biased against any
+     engine that returns no citation list. That bias produced a measured
+     false zero on 2026-08-05 and is documented at the bar itself.
 """
 
 import re
@@ -41,6 +47,9 @@ _STOP_INITIAL = {
     "unfortunately", "fortunately", "ultimately", "however", "although",
     "determining", "choosing", "finding", "looking", "using", "here's",
     "what", "which", "who", "how", "why", "where", "yes", "no",
+    # Added 2026-08-05: "Do AI engines recommend my business" was being
+    # admitted as the entity "Do AI" on a real corpus row.
+    "do", "does", "did", "can", "should", "would", "will", "are", "is",
 }
 
 # Generic capitalised nouns that are categories, not companies.
@@ -101,6 +110,7 @@ def extract_entities_orthographic(text, subject=None, subject_variants=None,
     dom = _domain_tokens(sources_cited)
 
     seen_noninitial = set()
+    noninitial_counts = {}
     raw = []
     for m in _CAP_RUN.finditer(text):
         span = m.group(1).strip().strip(".,;:")
@@ -110,6 +120,7 @@ def extract_entities_orthographic(text, subject=None, subject_variants=None,
         initial = m.start() in starts
         if not initial:
             seen_noninitial.add(key)
+            noninitial_counts[key] = noninitial_counts.get(key, 0) + 1
         raw.append((span, key, initial))
 
     out = []
@@ -135,8 +146,31 @@ def extract_entities_orthographic(text, subject=None, subject_variants=None,
             ok = True
         elif domain_backed:
             ok = True
-        elif len(words) >= 2 and words[0].lower() not in _STOP_INITIAL and initial is False:
-            ok = True
+
+        # FOURTH BAR, added 2026-08-05 after a measured false zero.
+        #
+        # The three bars above admit a single-word name ONLY when a cited
+        # domain happens to back it. That is a silent bias against any engine
+        # that returns no citations. Gemini's plain generateContent returns
+        # none, so on the 2026-08-05 namebeam pair the extractor found 0
+        # shared entities between two answers that BOTH named ZipTie: one
+        # wrote "ZipTie", the other "ZipTie.dev", and neither survived. The
+        # run then published containment 0.0 percent, which is not a finding,
+        # it is a broken measurement (doctrine 122).
+        #
+        # A single word earns admission on its own orthography, which is
+        # engine-independent evidence and needs no citation list:
+        #   internal capitalisation  ZipTie, HubSpot, BrightLocal, SEMrush
+        #   a dot or digit inside    Otterly.AI, ZipTie.dev, Web2
+        #   repetition mid-sentence  a real name gets used more than once
+        if not ok and len(words) == 1 and not initial:
+            camel = re.match(r"^[A-Z][a-z0-9]*[A-Z]", span) is not None
+            dotted = re.search(r"[.\d]", span) is not None
+            repeated = noninitial_counts.get(key, 0) >= 2
+            # A bare short acronym is a category, not a company: SMB, ROI, CRM.
+            bare_acronym = span.isupper() and len(span) <= 4
+            if (camel or dotted or repeated) and not bare_acronym:
+                ok = True
 
         if not ok:
             continue

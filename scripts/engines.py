@@ -89,7 +89,9 @@ def call_perplexity(prompt_text):
     except requests.exceptions.RequestException as exc:
         return False, "", [], redact("perplexity request failed: %s" % exc)
     if r.status_code != 200:
-        return False, "", [], redact("perplexity HTTP %s: %s" % (r.status_code, r.text[:300]))
+        prefix = "QUOTA: " if r.status_code == 429 else ""
+        return False, "", [], redact(
+            "%sperplexity HTTP %s: %s" % (prefix, r.status_code, r.text[:300]))
     try:
         body = r.json()
         text = body["choices"][0]["message"]["content"]
@@ -127,7 +129,16 @@ def call_gemini(prompt_text):
         return False, "", [], redact("gemini request failed: %s" % exc)
     if r.status_code != 200:
         # Never echo the URL back, it carries the key in the query string.
-        return False, "", [], redact("gemini HTTP %s: %s" % (r.status_code, r.text[:300]))
+        #
+        # A QUOTA refusal is not an engine failure and must never be counted
+        # as one. On 2026-08-05 the free tier returned 429 on 12 of 13 calls
+        # and every one was logged FAILED, which would have read as "Gemini
+        # could not answer" when the truth is "we were not allowed to ask".
+        # The prefix lets the runner classify it separately (doctrine 122:
+        # a zero produced by a refusal is not a finding).
+        prefix = "QUOTA: " if r.status_code == 429 else ""
+        return False, "", [], redact(
+            "%sgemini HTTP %s: %s" % (prefix, r.status_code, r.text[:300]))
     try:
         body = r.json()
         text = body["candidates"][0]["content"]["parts"][0]["text"]
@@ -173,7 +184,9 @@ def fetch_serp(query_text, top_n=10):
     except requests.exceptions.RequestException as exc:
         return False, "", [], redact("brightdata request failed: %s" % exc)
     if r.status_code != 200:
-        return False, "", [], redact("brightdata HTTP %s: %s" % (r.status_code, r.text[:300]))
+        prefix = "QUOTA: " if r.status_code == 429 else ""
+        return False, "", [], redact(
+            "%sbrightdata HTTP %s: %s" % (prefix, r.status_code, r.text[:300]))
     html = r.text or ""
     return True, html, extract_organic_urls(html, top_n), ""
 

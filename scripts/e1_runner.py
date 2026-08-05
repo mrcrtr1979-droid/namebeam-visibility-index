@@ -121,16 +121,23 @@ def run_engine(business_row, engine, fn, date_utc):
     row["run"] = run_index
     ok, text, sources, err = fn(business_row["prompt_1"])
     if not ok:
+        # A refusal for QUOTA is not the engine failing to answer. It is us
+        # not being allowed to ask. Counting it as FAILED would publish a
+        # false statement about the engine, so it gets its own status and
+        # must be excluded from any failure rate or denominator.
+        quota = str(err or "").startswith("QUOTA: ")
         row.update({
-            "run_status": "FAILED",
+            "run_status": "QUOTA_BLOCKED" if quota else "FAILED",
             "business_mentioned": None,
             "competitors_mentioned": [],
             "engine_stated_criteria": [],
             "sources_cited": [],
             "factor_scores": None,
             "answer_verbatim": "",
-            "session_note": "FAILED RUN, logged per no-fabricated-rows law. "
-                            "error detail: %s. %s" % (err, RUN_CHANNEL_CAVEAT),
+            "session_note": (
+                "%s, logged per no-fabricated-rows law. error detail: %s. %s"
+                % ("QUOTA BLOCKED, not an engine failure" if quota
+                   else "FAILED RUN", err, RUN_CHANNEL_CAVEAT)),
         })
         return write_row(row, check_id), False
     row.update({
@@ -210,6 +217,17 @@ def main():
         print("ERROR: no engine keys set. Add repo secrets under "
               "Settings > Secrets and variables > Actions. Nothing written.")
         return 0
+
+    # ROSTER ROTATION. Free engine tiers run out of quota partway through a
+    # roster. On 2026-08-05 Gemini answered the FIRST business and returned
+    # 429 for the other twelve, which means roster order silently decided who
+    # got engine coverage and the same business would have won every day.
+    # Rotating the start position by date spreads coverage evenly over time
+    # without spending a cent. Deterministic, so a run is still reproducible.
+    if len(roster) > 1:
+        offset = sum(ord(c) for c in date_utc) % len(roster)
+        roster = roster[offset:] + roster[:offset]
+        print("roster rotated by %d for %s" % (offset, date_utc))
 
     wrote = ok_n = fail_n = 0
     for br in roster:

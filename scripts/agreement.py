@@ -56,7 +56,22 @@ def pair_agreement(row_a, row_b):
     else:
         terser, verbose, tn, vn = row_b, row_a, nb, na
     pct, hits, n = containment(tn, vn)
+    # A ZERO IS THE ONE NUMBER THAT MUST CARRY ITS EVIDENCE.
+    # On 2026-08-05 this function reported containment 0.0 percent on a pair
+    # where both engines named ZipTie. The cause was in the extractor, not
+    # here, and it took a hand check to find. Shipping the actual name lists
+    # in the row means the next such zero diagnoses itself: anyone reading
+    # the corpus can see WHAT was compared, not just the result.
+    suspect = hits == 0 and len(tn) > 0 and len(vn) > 0
     return {
+        "terser_names": tn,
+        "verbose_names": vn,
+        "extraction_suspect": suspect,
+        "suspect_note": (
+            "Zero shared entities while BOTH engines named several. That is "
+            "more often an extraction defect than real disagreement. Do not "
+            "publish this pair until the name lists above have been read."
+            if suspect else ""),
         "engine_a": row_a.get("engine"),
         "engine_b": row_b.get("engine"),
         "named_by_a": bool(row_a.get("business_mentioned")),
@@ -76,6 +91,9 @@ def pair_agreement(row_a, row_b):
 
 def build_agreement_row(business_row, date_utc, engine_rows):
     """engine_rows: list of OK rows for one business on one date."""
+    # Only OK rows. A QUOTA_BLOCKED or FAILED row has no answer and must
+    # never enter a comparison, or the corpus reports disagreement that is
+    # really just a billing limit.
     usable = [r for r in engine_rows
               if r.get("run_status") == "OK" and r.get("answer_verbatim")]
     pairs = []
