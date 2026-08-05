@@ -1,0 +1,72 @@
+{
+  "check_id": null,
+  "date_utc": "2026-08-05",
+  "business": "World Martial Arts Academy",
+  "row_type": "agreement",
+  "prompt_text": "What is a good martial arts school for kids in St. Peters MO?",
+  "engines_compared": [
+    "gemini",
+    "perplexity"
+  ],
+  "engines_usable": 2,
+  "pairs": [
+    {
+      "terser_names": [
+        "St. Peters",
+        "Gracie Barra St. Peters",
+        "St. Louis Mom",
+        "Jungermann Road",
+        "Cave Springs Blvd",
+        "Preschool Karate",
+        "Kids Karate",
+        "Youth Jiu Jitsu",
+        "ATA Martial Arts",
+        "Mexico Rd",
+        "Facebook",
+        "All Star Karate"
+      ],
+      "verbose_names": [
+        "St. Peters",
+        "MO. The",
+        "Taekwondo",
+        "Brazilian Jiu-Jitsu",
+        "Gracie Barra St. Peters",
+        "Location",
+        "Off Jungermann Rd",
+        "Jiu-Jitsu",
+        "GB Kids Program",
+        "Mexico Rd",
+        "Park\u2019s Champion Taekwondo",
+        "Mid Rivers Mall Dr",
+        "Grand Master Park",
+        "Korean Taekwondo. The",
+        "Midwest Karate Academy",
+        "Karate",
+        "Traditional Karate",
+        "Serves the St. Peters",
+        "St. Charles",
+        "St. Charles MMA",
+        "Take Advantage of Free Trial Classes",
+        "Observe the Class Atmosphere",
+        "Look",
+        "Check the Schedule and Location"
+      ],
+      "extraction_suspect": false,
+      "suspect_note": "",
+      "engine_a": "perplexity",
+      "engine_b": "gemini",
+      "named_by_a": true,
+      "named_by_b": true,
+      "naming_disagreement": false,
+      "terser_engine": "perplexity",
+      "terser_entity_count": 12,
+      "verbose_entity_count": 24,
+      "containment_pct": 58.3,
+      "shared_count": 7,
+      "answer_chars_a": 1334,
+      "answer_chars_b": 3810,
+      "zero_shared": false
+    }
+  ],
+  "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

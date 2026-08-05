@@ -1,0 +1,70 @@
+{
+  "check_id": null,
+  "date_utc": "2026-08-05",
+  "business": "Flatline Contracting",
+  "row_type": "agreement",
+  "prompt_text": "Who is a reliable contractor in Joplin MO for a home remodel or repair project?",
+  "engines_compared": [
+    "gemini",
+    "perplexity"
+  ],
+  "engines_usable": 2,
+  "pairs": [
+    {
+      "terser_names": [
+        "Joplin",
+        "American Construction",
+        "Inc",
+        "Shere\u2019s Handyman",
+        "Construction",
+        "Prater Construction",
+        "C Harris Construction",
+        "H&S Inspections",
+        "Toro Construction",
+        "Visions Construction"
+      ],
+      "verbose_names": [
+        "Joplin",
+        "Four States",
+        "Interior Remodeling",
+        "SoMo Remodeling",
+        "Southwest Missouri Remodeling",
+        "Specialties",
+        "Reputation",
+        "Simons Remodeling",
+        "Simons Custom Homes",
+        "Classic Home Improvements",
+        "Roofing",
+        "Structural Repairs",
+        "Cornerstone Apex",
+        "Guaranteed Roofing",
+        "General Handyman Work",
+        "Joplin MO Resale",
+        "Local Services",
+        "Tips for Vetting Your Contractor",
+        "Verify City Contractor Licensing",
+        "Check the BBB",
+        "Better Business Bureau of Southwest Missouri",
+        "Detailed Quotes",
+        "Ask About Subcontractors",
+        "Payment Terms"
+      ],
+      "extraction_suspect": false,
+      "suspect_note": "",
+      "engine_a": "perplexity",
+      "engine_b": "gemini",
+      "named_by_a": false,
+      "named_by_b": false,
+      "naming_disagreement": false,
+      "terser_engine": "perplexity",
+      "terser_entity_count": 10,
+      "verbose_entity_count": 24,
+      "containment_pct": 10.0,
+      "shared_count": 1,
+      "answer_chars_a": 1268,
+      "answer_chars_b": 3057,
+      "zero_shared": false
+    }
+  ],
+  "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
