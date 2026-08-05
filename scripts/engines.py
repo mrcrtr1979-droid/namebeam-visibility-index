@@ -109,7 +109,7 @@ def call_perplexity(prompt_text):
 # MODEL NAME IS PENDING VERIFICATION: model strings change and a wrong one
 # returns HTTP 404, which this adapter reports plainly rather than hiding.
 # --------------------------------------------------------------------------
-GEMINI_MODEL = "gemini-3.6-flash"  # PENDING VERIFICATION on first live run
+GEMINI_MODEL = "gemini-3.6-flash"  # CONFIRMED CORRECT on live runs 2026-08-05
 GEMINI_URL = ("https://generativelanguage.googleapis.com/v1beta/models/"
               "%s:generateContent")
 
@@ -322,7 +322,85 @@ def detect_ai_overview(html):
     return None
 
 
+# --------------------------------------------------------------------------
+# OPENAI (added v8, 2026-08-05). Same contract as every adapter:
+# (ok, answer_text, citations, error). Chat Completions returns no citation
+# list, so citations are always []. MODEL STRING IS PENDING VERIFICATION on
+# the first live run; a wrong string returns HTTP 404 which this adapter
+# reports plainly. Override without a commit via repo VARIABLE OPENAI_MODEL
+# (doctrine-120 form guards against set-but-empty).
+# --------------------------------------------------------------------------
+OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "").strip() or "gpt-5.2-mini"
+OPENAI_URL = "https://api.openai.com/v1/chat/completions"
+
+
+def call_openai(prompt_text):
+    key = os.environ.get("OPENAI_API_KEY", "").strip()
+    if not key:
+        return False, "", [], redact("OPENAI_API_KEY not set")
+    try:
+        r = requests.post(
+            OPENAI_URL,
+            headers={"Authorization": "Bearer " + key,
+                     "Content-Type": "application/json"},
+            json={"model": OPENAI_MODEL, "temperature": TEMPERATURE,
+                  "messages": [{"role": "user", "content": prompt_text}]},
+            timeout=TIMEOUT,
+        )
+    except requests.exceptions.RequestException as exc:
+        return False, "", [], redact("openai request failed: %s" % exc)
+    if r.status_code != 200:
+        prefix = "QUOTA: " if r.status_code == 429 else ""
+        return False, "", [], redact(
+            "%sopenai HTTP %s: %s" % (prefix, r.status_code, r.text[:300]))
+    try:
+        text = r.json()["choices"][0]["message"]["content"]
+    except (ValueError, KeyError, IndexError, TypeError):
+        return False, "", [], redact("openai response shape unexpected")
+    return True, text, [], ""
+
+
+# --------------------------------------------------------------------------
+# ANTHROPIC (added v8, 2026-08-05). Key travels in the x-api-key HEADER,
+# never a URL. MODEL STRING IS PENDING VERIFICATION on the first live run;
+# override without a commit via repo VARIABLE ANTHROPIC_MODEL.
+# --------------------------------------------------------------------------
+ANTHROPIC_MODEL = (os.environ.get("ANTHROPIC_MODEL", "").strip()
+                   or "claude-haiku-4-5")
+ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
+
+
+def call_anthropic(prompt_text):
+    key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    if not key:
+        return False, "", [], redact("ANTHROPIC_API_KEY not set")
+    try:
+        r = requests.post(
+            ANTHROPIC_URL,
+            headers={"x-api-key": key,
+                     "anthropic-version": "2023-06-01",
+                     "Content-Type": "application/json"},
+            json={"model": ANTHROPIC_MODEL, "max_tokens": 2048,
+                  "temperature": TEMPERATURE,
+                  "messages": [{"role": "user", "content": prompt_text}]},
+            timeout=TIMEOUT,
+        )
+    except requests.exceptions.RequestException as exc:
+        return False, "", [], redact("anthropic request failed: %s" % exc)
+    if r.status_code != 200:
+        prefix = "QUOTA: " if r.status_code == 429 else ""
+        return False, "", [], redact(
+            "%santhropic HTTP %s: %s" % (prefix, r.status_code, r.text[:300]))
+    try:
+        text = r.json()["content"][0]["text"]
+    except (ValueError, KeyError, IndexError, TypeError):
+        return False, "", [], redact("anthropic response shape unexpected")
+    return True, text, [], ""
+
+
 ENGINES = {
     "perplexity": call_perplexity,
     "gemini": call_gemini,
+    "openai": call_openai,
+    "anthropic": call_anthropic,
 }
