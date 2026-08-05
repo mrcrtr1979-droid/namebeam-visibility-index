@@ -1,7 +1,9 @@
 name: E1 Check Runner
 
-# Manual trigger only for this slice. No schedule yet - see design doc
-# section 7, build ladder step 6 for when a real schedule gets added.
+# v4, multi-engine. Every engine whose key is present gets asked the SAME
+# dated question, and each answer is written as its own corpus row. An engine
+# whose key is absent logs a FAILED row and the run continues; it never
+# blocks the engines that do work.
 on:
   workflow_dispatch: {}
   schedule:
@@ -25,20 +27,37 @@ jobs:
       - name: Install requests
         run: pip install requests
 
-      - name: Guard - stop here if the API key secret is empty
+      # Reports which engines are wired WITHOUT ever printing a value.
+      # Only ever echoes "present" or "MISSING", never the secret itself.
+      - name: Report which engine keys are present
         env:
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BRIGHTDATA_API_KEY: ${{ secrets.BRIGHTDATA_API_KEY }}
         run: |
-          if [ -z "$PERPLEXITY_API_KEY" ]; then
-            echo "ERROR: PERPLEXITY_API_KEY secret is empty or missing."
-            echo "Add it in Settings > Secrets and variables > Actions before running this workflow."
+          for k in PERPLEXITY_API_KEY GEMINI_API_KEY BRIGHTDATA_API_KEY; do
+            if [ -n "${!k}" ]; then echo "$k: present"; else echo "$k: MISSING"; fi
+          done
+          if [ -z "$PERPLEXITY_API_KEY" ] && [ -z "$GEMINI_API_KEY" ] && [ -z "$BRIGHTDATA_API_KEY" ]; then
+            echo "ERROR: no engine keys are set. Add them in Settings > Secrets and variables > Actions."
             exit 1
           fi
-          echo "PERPLEXITY_API_KEY is present. Continuing."
 
+      # THE FIX. GitHub secrets are NOT automatically visible to a workflow.
+      # Each one must be mapped into the step env explicitly. The previous
+      # version mapped only PERPLEXITY_API_KEY, which is why Gemini reported
+      # "key not set" on every row and no SERP rows were ever written, even
+      # though both secrets existed in the repo.
       - name: Run the E1 check runner
         env:
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BRIGHTDATA_API_KEY: ${{ secrets.BRIGHTDATA_API_KEY }}
+          # Bright Data zone names are chosen by the account holder. If a
+          # repo variable named BRIGHTDATA_ZONE exists it is used; otherwise
+          # engines.py falls back to its default and a wrong zone simply logs
+          # a clean HTTP failure on the SERP rows. Engine rows are unaffected.
+          BRIGHTDATA_ZONE: ${{ vars.BRIGHTDATA_ZONE }}
         run: python scripts/e1_runner.py
 
       - name: Commit and push any new corpus rows
@@ -52,4 +71,3 @@ jobs:
             git commit -m "e1 slice run $(date -u +%Y-%m-%d)"
             git push
           fi
-          
