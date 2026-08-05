@@ -1,0 +1,39 @@
+# LLM WORKER: dispatch a mechanical text job to Gemini on the repo's own key.
+# Runs OFF the Claude cap. Result is committed to jobs/<job_name>.md.
+name: LLM Worker
+on:
+  workflow_dispatch:
+    inputs:
+      prompt:
+        description: The full prompt for the job
+        required: true
+        type: string
+      job_name:
+        description: Output name (jobs/<job_name>.md)
+        required: true
+        type: string
+      model:
+        description: Gemini model (default gemini-3.6-flash)
+        required: false
+        type: string
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run the job
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LLM_WORKER_PROMPT: ${{ inputs.prompt }}
+          LLM_WORKER_JOB: ${{ inputs.job_name }}
+          LLM_WORKER_MODEL: ${{ inputs.model }}
+        run: python scripts/llm_worker.py
+      - name: Commit the result
+        run: |
+          git config user.name "llm-worker"
+          git config user.email "actions@users.noreply.github.com"
+          git add jobs/
+          git diff --cached --quiet || git commit -m "llm-worker: ${{ inputs.job_name }}"
+          git push
