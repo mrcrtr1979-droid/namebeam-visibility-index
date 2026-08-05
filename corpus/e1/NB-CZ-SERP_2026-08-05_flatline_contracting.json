@@ -11,9 +11,20 @@
  "engine": "google_serp",
  "run_channel": "serp",
  "schema_version": "v4",
- "run_status": "FAILED",
- "business_mentioned": null,
- "organic_top_results": [],
- "ai_overview_detected": null,
- "session_note": "FAILED RUN, logged per no-fabricated-rows law. error detail: brightdata HTTP 400: {\"error\":\"Request validation failed\",\"error_code\":\"validation\",\"details\":[{\"message\":\"\\\"zone\\\" is not allowed to be empty\",\"path\":[\"zone\"],\"type\":\"string.empty\",\"context\":{\"label\":\"zone\",\"value\":\"\",\"key\":\"zone\"}}]}"
+ "run_status": "OK",
+ "business_mentioned": false,
+ "organic_top_results": [
+  "http://kyleofalltrades.com/",
+  "https://www.solidrr.com/",
+  "https://facebook.com/shereshandymanandlawn",
+  "https://www.yelp.com/search?cflt=contractors",
+  "https://www.americanconstructionincorporated.com/",
+  "https://cca.joplincc.com/OnlineMemberListingByCategory.aspx?categoryid=5007586",
+  "https://www.facebook.com/groups/joplinmo/posts/4296810887266054/",
+  "https://www.facebook.com/groups/joplinmo/posts/4296810887266054/#:~:text=For%20all%20types%20of%20drywall,work%20at%20an%20affordable%20price.",
+  "https://www.homeadvisor.com/c.Joplin.MO.html",
+  "https://evergreenconstruction.co/"
+ ],
+ "ai_overview_detected": true,
+ "session_note": "Organic results extracted mechanically from the returned results page. Bright Data does not document an AI Overview field, so ai_overview_detected is BEST EFFORT and may be null. Do not publish it as a measurement."
 }

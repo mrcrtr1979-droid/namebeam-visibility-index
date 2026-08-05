@@ -11,9 +11,20 @@
  "engine": "google_serp",
  "run_channel": "serp",
  "schema_version": "v4",
- "run_status": "FAILED",
- "business_mentioned": null,
- "organic_top_results": [],
- "ai_overview_detected": null,
- "session_note": "FAILED RUN, logged per no-fabricated-rows law. error detail: brightdata HTTP 400: {\"error\":\"Request validation failed\",\"error_code\":\"validation\",\"details\":[{\"message\":\"\\\"zone\\\" is not allowed to be empty\",\"path\":[\"zone\"],\"type\":\"string.empty\",\"context\":{\"label\":\"zone\",\"value\":\"\",\"key\":\"zone\"}}]}"
+ "run_status": "OK",
+ "business_mentioned": false,
+ "organic_top_results": [
+  "https://www.facebook.com/groups/facebookexploreoutdoors/posts/2045814259687376/",
+  "https://www.facebook.com/groups/facebookexploreoutdoors/posts/2022557385346397/",
+  "https://www.facebook.com/groups/facebookexploreoutdoors/posts/2063982001203935/",
+  "https://www.facebook.com/groups/facebookexploreoutdoors/posts/2126411038294364/",
+  "https://www.reddit.com/r/missouri/comments/1mmsama/best_places_to_stay_in_branson/",
+  "https://www.tripadvisor.in/ShowTopic-g44160-i200-k3714666-In_what_area_to_stay-Branson_Missouri.html",
+  "https://www.tripadvisor.com/Hotels-g44160-Branson_Missouri-Hotels.html",
+  "https://www.tripadvisor.com/Hotels-g44160-Branson_Missouri-Hotels.html#:~:text=1.%20Lodge%20Of%20The%20Ozarks",
+  "https://www.explorebranson.com/places-to-stay/",
+  "https://www.explorebranson.com/places-to-stay/#:~:text=Branson's%20diverse%20lodging%20options%20include,rental%20cabins%2C%20condos%20and%20more."
+ ],
+ "ai_overview_detected": true,
+ "session_note": "Organic results extracted mechanically from the returned results page. Bright Data does not document an AI Overview field, so ai_overview_detected is BEST EFFORT and may be null. Do not publish it as a measurement."
 }

@@ -11,9 +11,20 @@
  "engine": "google_serp",
  "run_channel": "serp",
  "schema_version": "v4",
- "run_status": "FAILED",
- "business_mentioned": null,
- "organic_top_results": [],
- "ai_overview_detected": null,
- "session_note": "FAILED RUN, logged per no-fabricated-rows law. error detail: brightdata HTTP 400: {\"error\":\"Request validation failed\",\"error_code\":\"validation\",\"details\":[{\"message\":\"\\\"zone\\\" is not allowed to be empty\",\"path\":[\"zone\"],\"type\":\"string.empty\",\"context\":{\"label\":\"zone\",\"value\":\"\",\"key\":\"zone\"}}]}"
+ "run_status": "OK",
+ "business_mentioned": true,
+ "organic_top_results": [
+  "https://www.bbb.org/us/mo/liberty/category/backflow-testing",
+  "https://backflowbossllc.com/",
+  "https://veteran-fire.com/",
+  "https://abackflowtesting.com/",
+  "https://www.facebook.com/p/Backflow-Boss-61585223965298/",
+  "https://www.yelp.com/biz/backflow-boss-liberty",
+  "https://www.libertymissouri.gov/2010/Backflow-Prevention",
+  "https://cbtbackflowtesting.com/",
+  "https://cbtbackflowtesting.com/#:~:text=We%20Test%2C%20Install%2C%20Service%2C%20Repair,a%20high%20quality%20of%20service.",
+  "https://www.independencemo.gov/government/city-departments/municipal-services/water-division/engineering-details/backflow-prevention/certified-and-approved-backflow-testers"
+ ],
+ "ai_overview_detected": false,
+ "session_note": "Organic results extracted mechanically from the returned results page. Bright Data does not document an AI Overview field, so ai_overview_detected is BEST EFFORT and may be null. Do not publish it as a measurement."
 }

@@ -11,9 +11,20 @@
  "engine": "google_serp",
  "run_channel": "serp",
  "schema_version": "v4",
- "run_status": "FAILED",
- "business_mentioned": null,
- "organic_top_results": [],
- "ai_overview_detected": null,
- "session_note": "FAILED RUN, logged per no-fabricated-rows law. error detail: brightdata HTTP 400: {\"error\":\"Request validation failed\",\"error_code\":\"validation\",\"details\":[{\"message\":\"\\\"zone\\\" is not allowed to be empty\",\"path\":[\"zone\"],\"type\":\"string.empty\",\"context\":{\"label\":\"zone\",\"value\":\"\",\"key\":\"zone\"}}]}"
+ "run_status": "OK",
+ "business_mentioned": false,
+ "organic_top_results": [
+  "https://www.yelp.com/search?find_desc=Health+Insurance+Broker",
+  "https://www.facebook.com/groups/kansascitysecrets/posts/4223328961261200/",
+  "https://www.reddit.com/r/kansascity/comments/1kkstvi/what_healthcare_provider_do_you_recommend_in/",
+  "https://www.reddit.com/r/kansascity/comments/15h8i9y/health_insurance_recommendation/",
+  "https://www.facebook.com/groups/kansascitysecrets/posts/3723550234572411/",
+  "https://www.facebook.com/groups/kansascitysecrets/posts/3765225253738242/",
+  "https://mployeradvisor.com/insurance-broker/missouri/kansas-city/k:health+insurance+broker",
+  "https://aishealthadvisors.com/",
+  "https://www.anthem.com/individual-and-family/insurance-basics/health-insurance/health-insurance-for-self-employed",
+  "https://www.uhc.com/individuals-families/self-employed-plans"
+ ],
+ "ai_overview_detected": true,
+ "session_note": "Organic results extracted mechanically from the returned results page. Bright Data does not document an AI Overview field, so ai_overview_detected is BEST EFFORT and may be null. Do not publish it as a measurement."
 }
