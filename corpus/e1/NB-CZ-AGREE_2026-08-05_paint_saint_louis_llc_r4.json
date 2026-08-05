@@ -1,0 +1,127 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-05_paint_saint_louis_llc_r4",
+ "date_utc": "2026-08-05",
+ "business": "Paint Saint Louis LLC",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best interior painting company in St. Louis MO?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "St. Louis",
+    "Kennedy Painting",
+    "St. Louis MO",
+    "St. Louis Magazine A-List",
+    "SNL Painting",
+    "Malone Painting",
+    "ModPaint",
+    "Angi and Expertise"
+   ],
+   "verbose_names": [
+    "St. Louis",
+    "Top-Rated Interior Painting Companies",
+    "Kennedy Painting",
+    "Overview",
+    "Highlights",
+    "Spectrum Painting",
+    "Wall-2-Wall Decorating",
+    "Serving West County",
+    "Wall-2-Wall",
+    "Home Improvement",
+    "Sherwin-Williams Emerald",
+    "Ask About Preparation",
+    "Verify Employees",
+    "Confirm Insurance"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 8,
+   "verbose_entity_count": 14,
+   "containment_pct": 50.0,
+   "shared_count": 4,
+   "answer_chars_a": 1233,
+   "answer_chars_b": 3565,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "St. Louis",
+    "Benjamin Moore"
+   ],
+   "verbose_names": [
+    "St. Louis",
+    "Kennedy Painting",
+    "St. Louis MO",
+    "St. Louis Magazine A-List",
+    "SNL Painting",
+    "Malone Painting",
+    "ModPaint",
+    "Angi and Expertise"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 8,
+   "containment_pct": 50.0,
+   "shared_count": 1,
+   "answer_chars_a": 1233,
+   "answer_chars_b": 1067,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "St. Louis",
+    "Benjamin Moore"
+   ],
+   "verbose_names": [
+    "St. Louis",
+    "Top-Rated Interior Painting Companies",
+    "Kennedy Painting",
+    "Overview",
+    "Highlights",
+    "Spectrum Painting",
+    "Wall-2-Wall Decorating",
+    "Serving West County",
+    "Wall-2-Wall",
+    "Home Improvement",
+    "Sherwin-Williams Emerald",
+    "Ask About Preparation",
+    "Verify Employees",
+    "Confirm Insurance"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 14,
+   "containment_pct": 50.0,
+   "shared_count": 1,
+   "answer_chars_a": 3565,
+   "answer_chars_b": 1067,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
