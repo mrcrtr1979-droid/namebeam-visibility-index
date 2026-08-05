@@ -79,5 +79,13 @@ jobs:
             echo "No new corpus rows to commit."
           else
             git commit -m "e1 slice run $(date -u +%Y-%m-%d)"
-            git push
+            # Run #10 lost 78 files of four-engine data because another
+            # workflow pushed to main mid-run and the plain push was
+            # rejected. Rebase-and-retry so a race can never destroy a
+            # completed run's rows again.
+            for i in 1 2 3; do
+              git push && break
+              echo "push rejected, rebasing (attempt $i)"
+              git pull --rebase origin main
+            done
           fi
