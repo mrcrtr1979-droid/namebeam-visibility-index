@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-05_segment_short_term_rental_branson_r3",
+ "date_utc": "2026-08-05",
+ "business": "SEGMENT: short-term rental, Branson",
+ "row_type": "agreement",
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engines_compared": [
+  "anthropic",
+  "perplexity"
+ ],
+ "engines_usable": 2,
+ "pairs": [
+  {
+   "terser_names": [
+    "Airbnb",
+    "Shows",
+    "Airbnbs",
+    "Cabins of Grand Mountain",
+    "Branson Airbnb",
+    "Stonebridge Resort",
+    "Table Rock Lake",
+    "I’d",
+    "Near the Branson Strip",
+    "Pick"
+   ],
+   "verbose_names": [
+    "Branson Accommodation Guide",
+    "Choose Airbnb",
+    "Specific Recommendations",
+    "Branson Landing",
+    "Silver Dollar City",
+    "Airbnbs",
+    "Table Rock Lake",
+    "Downtown Branson",
+    "Key Considerations",
+    "Hotels"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 10,
+   "verbose_entity_count": 10,
+   "containment_pct": 30.0,
+   "shared_count": 3,
+   "answer_chars_a": 2330,
+   "answer_chars_b": 1150,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
