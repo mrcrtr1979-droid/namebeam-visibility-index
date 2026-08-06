@@ -40,6 +40,11 @@ jobs:
           for k in PERPLEXITY_API_KEY GEMINI_API_KEY BRIGHTDATA_API_KEY OPENAI_API_KEY ANTHROPIC_API_KEY; do
             if [ -n "${!k}" ]; then echo "$k: present"; else echo "$k: MISSING"; fi
           done
+          echo "NOTE: OPENAI is intentionally DEACTIVATED as of 2026-08-06. The secret"
+          echo "still exists and reports present here, but it is NOT mapped into the"
+          echo "runner step, so no openai rows are written. Reason: API account balance"
+          echo "is zero. This corpus is THREE engines (perplexity, gemini, anthropic)"
+          echo "plus Bright Data SERP until credits are added."
           if [ -z "$PERPLEXITY_API_KEY" ] && [ -z "$GEMINI_API_KEY" ] && [ -z "$BRIGHTDATA_API_KEY" ]; then
             echo "ERROR: no engine keys are set. Add them in Settings > Secrets and variables > Actions."
             exit 1
@@ -60,7 +65,19 @@ jobs:
           # engines.py falls back to its default and a wrong zone simply logs
           # a clean HTTP failure on the SERP rows. Engine rows are unaffected.
           BRIGHTDATA_ZONE: ${{ vars.BRIGHTDATA_ZONE }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          # OPENAI DEACTIVATED 2026-08-06 on Terry's decision (option D).
+          # The key is valid and correctly placed. The API ACCOUNT BALANCE IS ZERO:
+          # platform.openai.com reports Free trial, credit remaining $0.00, no payment
+          # method, and the key carter_enterprise_llc shows lifetime spend of $0.00.
+          # OpenAI's ChatGPT Business subscription does NOT fund the API; OpenAI state
+          # this themselves. Leaving the key mapped made the runner attempt openai and
+          # write 13 QUOTA_BLOCKED rows per day, which is a dead engine riding along in
+          # every denominator. The runner picks engines by which <ENGINE>_API_KEY is
+          # present in env, so UNMAPPING the key is the whole deactivation: no code
+          # change, no secret deleted, nothing destroyed.
+          # TO REACTIVATE: add credits at platform.openai.com, then uncomment the line
+          # below. openai validates on the next scheduled run with no other change.
+          # OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           # Model strings for the v8 engines are PENDING VERIFICATION on the
           # first live run. A wrong default logs a clean HTTP 404 row; fix it
