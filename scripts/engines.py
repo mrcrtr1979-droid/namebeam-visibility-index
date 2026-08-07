@@ -169,27 +169,46 @@ BRIGHTDATA_ZONE = os.environ.get("BRIGHTDATA_ZONE", "").strip() or "serp_api1"
 
 
 def fetch_serp(query_text, top_n=10):
-    """Return (ok, html, organic_urls, error). Never raises."""
+    """Return (ok, html, organic_urls, error). Never raises.
+
+    RETRY ADDED 2026-08-07 (doctrine-148-era audit): 30 of 97 SERP rows in
+    the corpus carried html_bytes=0 with HTTP 200, a transient Bright Data
+    empty-body response. A 200 with an empty or sub-2000-byte body now
+    retries up to 2 more times with a short backoff before the row is
+    surrendered to EXTRACTION_FAILED. A retry that recovers is a receipt
+    saved; a retry that fails changes nothing about honesty, the row still
+    prints failed with its diagnostics.
+    """
     key = os.environ.get("BRIGHTDATA_API_KEY", "").strip()
     if not key:
         return False, "", [], redact("BRIGHTDATA_API_KEY not set")
+    import time as _time
     import urllib.parse
     target = "https://www.google.com/search?q=" + urllib.parse.quote(query_text)
-    try:
-        r = requests.post(
-            BRIGHTDATA_URL,
-            headers={"Authorization": "Bearer " + key,
-                     "Content-Type": "application/json"},
-            json={"zone": BRIGHTDATA_ZONE, "url": target, "format": "raw"},
-            timeout=TIMEOUT,
-        )
-    except requests.exceptions.RequestException as exc:
-        return False, "", [], redact("brightdata request failed: %s" % exc)
-    if r.status_code != 200:
-        prefix = "QUOTA: " if r.status_code == 429 else ""
-        return False, "", [], redact(
-            "%sbrightdata HTTP %s: %s" % (prefix, r.status_code, r.text[:300]))
-    html = r.text or ""
+    html = ""
+    for attempt in range(3):
+        try:
+            r = requests.post(
+                BRIGHTDATA_URL,
+                headers={"Authorization": "Bearer " + key,
+                         "Content-Type": "application/json"},
+                json={"zone": BRIGHTDATA_ZONE, "url": target, "format": "raw"},
+                timeout=TIMEOUT,
+            )
+        except requests.exceptions.RequestException as exc:
+            if attempt < 2:
+                _time.sleep(3 * (attempt + 1))
+                continue
+            return False, "", [], redact("brightdata request failed: %s" % exc)
+        if r.status_code != 200:
+            prefix = "QUOTA: " if r.status_code == 429 else ""
+            return False, "", [], redact(
+                "%sbrightdata HTTP %s: %s" % (prefix, r.status_code, r.text[:300]))
+        html = r.text or ""
+        if len(html) >= 2000:
+            break
+        if attempt < 2:
+            _time.sleep(3 * (attempt + 1))
     return True, html, extract_organic_urls(html, top_n), ""
 
 
