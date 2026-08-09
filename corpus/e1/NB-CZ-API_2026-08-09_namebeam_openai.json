@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-09_namebeam_openai",
+ "date_utc": "2026-08-09",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t one single “official” service that tells you whether ChatGPT (or other LLMs) will recommend your business. The practical approach is to (A) make sure authoritative, consistent data about your business is published across the major directories/knowledge graphs, and (B) test the models directly. The two kinds of tools you’ll want are (1) local-listing / knowledge-graph management and (2) direct model testing / mention monitoring.\n\nRecommended services and steps\n\n1) Test the models directly (fast, free)\n- Ask the models. Query ChatGPT, GPT with browsing, and Bing Chat with prompts like:\n  - “Recommend the best [business type] near [city/ZIP].”\n  - “Top 5 [business type] in [neighborhood].”\n  - “Is [Your Business Name] a good [service] near [location]?”\n  Try multiple prompt phrasings and dates. If models have browsing enabled, they’re more likely to surface current listings.\n- Repeat periodically and log responses. That’s the most direct check of whether a given AI “recommends” you.\n\n2) Ensure authoritative listings / knowledge graph presence (these strongly influence AI answers)\n- Google Business Profile (must claim & optimize) — primary for Google-based answers.\n- Bing Places, Apple Maps / Apple Business Connect, Yelp, Foursquare, Facebook/Meta Business.\n- Data aggregators and knowledge networks: Yext, Data Axle (Infogroup), Neustar/Localeze, Foursquare — these feed many services and downstream systems.\n- Recommended services to manage/check this:\n  - Yext — strong for controlling and syndicating your official business facts across many networks (helps downstream systems and knowledge graphs).\n  - BrightLocal or Moz Local — good local-audit tools that show your presence, citation consistency, and rankings.\n  - Whitespark — local citation finding and link-building.\n  - Google’s Rich Results Test and Structured Data testing tools to verify schema.org/LocalBusiness markup on your site.\n\n3) Monitor mentions and reputation (AI will draw on reviews & high-quality mentions)\n- Mention/monitoring tools: Google Alerts (free), Brand24, Mention, Talkwalker, Ahrefs Alerts, or SEMrush Brand Monitoring.\n- Manage and encourage reviews on Google, Yelp, Facebook — many AIs use review data as signals.\n\n4) SEO and structured data (improves likelihood of being surfaced)\n- Add and validate LocalBusiness schema (name, address, phone, geo, hours, sameAs links).\n- Publish structured, local pages, services pages, and “about”/FAQ content.\n- Build backlinks and local citations from credible sites.\n\nWhich single service if you want one pick?\n- If you want one commercial service to start with: Yext for control/syndication, or BrightLocal for audits and monitoring.\n  - Yext gives you centralized control of your data and pushes to many networks (useful if you want to proactively influence knowledge graphs).\n  - BrightLocal gives clear audits of where you are found and how you rank locally.\n\nPractical checklist\n- Claim/verify Google Business Profile, Bing Places, Apple Business.\n- Ensure NAP (name, address, phone) consistency across listings.\n- Add LocalBusiness schema to your website and test it.\n- Collect recent reviews on Google/Yelp/Facebook.\n- Use Yext/BrightLocal/Whitespark to find missing citations and fix inconsistencies.\n- Periodically ask ChatGPT/Bing Chat the recommendation queries and monitor results.\n\nIf you want, tell me:\n- your business type and city and whether you’ve claimed Google Business Profile — I can suggest a short test prompt sequence and recommend which listing tools fit you best.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

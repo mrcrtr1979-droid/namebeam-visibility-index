@@ -1,0 +1,127 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-09_bbs_insurance",
+ "date_utc": "2026-08-09",
+ "business": "BBS Insurance",
+ "row_type": "agreement",
+ "prompt_text": "What is the best health insurance broker in Kansas City MO for someone who is self-employed?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Kansas City",
+    "HUB International",
+    "LewerBenefits",
+    "Medicare"
+   ],
+   "verbose_names": [
+    "COBRA",
+    "Missouri",
+    "Kansas City",
+    "Kansas",
+    "Medicare. Brokers",
+    "Missouri Department of Commerce",
+    "HSAs",
+    "QSEHRA",
+    "HealthSherpa",
+    "Brown"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": true,
+   "named_by_b": false,
+   "naming_disagreement": true,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 10,
+   "containment_pct": 50.0,
+   "shared_count": 2,
+   "answer_chars_a": 1681,
+   "answer_chars_b": 2661,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Kansas City",
+    "HUB International",
+    "LewerBenefits",
+    "Medicare"
+   ],
+   "verbose_names": [
+    "Health Insurance Broker",
+    "Kansas City\n\nFor",
+    "I'd",
+    "Find the Right Broker",
+    "HSA-compatible",
+    "Healthcare.gov",
+    "Missouri Department of Insurance",
+    "Local SBA",
+    "Key Questions",
+    "Ask Brokers"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": true,
+   "named_by_b": false,
+   "naming_disagreement": true,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 10,
+   "containment_pct": 25.0,
+   "shared_count": 1,
+   "answer_chars_a": 1681,
+   "answer_chars_b": 1389,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "COBRA",
+    "Missouri",
+    "Kansas City",
+    "Kansas",
+    "Medicare. Brokers",
+    "Missouri Department of Commerce",
+    "HSAs",
+    "QSEHRA",
+    "HealthSherpa",
+    "Brown"
+   ],
+   "verbose_names": [
+    "Health Insurance Broker",
+    "Kansas City\n\nFor",
+    "I'd",
+    "Find the Right Broker",
+    "HSA-compatible",
+    "Healthcare.gov",
+    "Missouri Department of Insurance",
+    "Local SBA",
+    "Key Questions",
+    "Ask Brokers"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 10,
+   "verbose_entity_count": 10,
+   "containment_pct": 30.0,
+   "shared_count": 3,
+   "answer_chars_a": 2661,
+   "answer_chars_b": 1389,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
