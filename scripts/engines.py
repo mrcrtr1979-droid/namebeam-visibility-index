@@ -362,7 +362,12 @@ def call_openai(prompt_text):
             OPENAI_URL,
             headers={"Authorization": "Bearer " + key,
                      "Content-Type": "application/json"},
-            json={"model": OPENAI_MODEL, "temperature": TEMPERATURE,
+            # 2026-08-09 fix: gpt-5-class mini models reject any non-default
+            # temperature (HTTP 400 on every call, 0-for-all since 08-08 runs).
+            # Param dropped for THIS engine only; openai rows therefore run at
+            # provider-default temperature while other engines stay at 0.2, a
+            # method delta to note per M3 if cross-engine variance is compared.
+            json={"model": OPENAI_MODEL,
                   "messages": [{"role": "user", "content": prompt_text}]},
             timeout=TIMEOUT,
         )
