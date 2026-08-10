@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-10_namebeam_openai",
+ "date_utc": "2026-08-10",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there’s no single “check if ChatGPT recommends you” service. The best practical approach is to (1) make sure your business appears in the major knowledge sources LLMs draw on (Google Business Profile, Wikipedia/Wikidata, Yelp, Bing Places, Apple Maps, etc.) and (2) use a listings/knowledge-management platform (Yext is the leading product here) plus active testing with LLMs (ChatGPT, Bing Chat, Google Bard).\n\nWhy: LLMs don’t have one universal directory — they synthesize web pages, directories, knowledge graphs, and licensed data. Making sure your information is authoritative and widely published is the most reliable way to get recommended.\n\nPractical checklist and recommended services\n\n1. Claim and optimize core profiles (highest impact)\n   - Google Business Profile (most important for local queries and Google’s Knowledge Graph)\n   - Bing Places for Business\n   - Apple Business Connect / Apple Maps\n   - Yelp, Facebook/Meta, TripAdvisor (if relevant)\n2. Publish structured data and authoritative pages\n   - Add LocalBusiness schema.org markup on your website (name, address, hours, phone, services)\n   - Maintain an up-to-date “About” and FAQ pages that answer common customer questions\n   - If notable, create/maintain Wikipedia and Wikidata entries (these feed many knowledge graphs)\n3. Use a listings / knowledge-management platform\n   - Yext (distributes and manages your business facts to many sources and offers AI integrations to improve how enterprises appear in AI-powered answers)\n   - BrightLocal, Moz Local, or Semrush Listing Management for local SEO and listing health\n4. Monitor and test with LLMs and monitoring tools\n   - Query ChatGPT, Bing Chat, and Google Bard directly (“Do you recommend [business name] in [city]?”) and ask for sources or citations\n   - Use Google Alerts, Mention, Brandwatch or Talkwalker to monitor brand mentions and reviews\n   - Check what sources the chatbots cite; if they cite directories or your website, you’re on the right track\n5. Enterprise/advanced options\n   - If you have dev resources, publish a ChatGPT plugin or make your business data available via an API that LLMs can reference\n   - OpenAI / other vendors offer ways for businesses to integrate verified data (enterprise knowledge bases / vector stores)\n6. Local SEO basics (boosts chance LLMs recommend you)\n   - Consistent NAP (name, address, phone) across listings\n   - Good review volume and responses\n   - Local backlinks and citations\n\nHow to check specifically for ChatGPT\n- Ask ChatGPT directly and request sources/citations. Use the browsing-enabled mode (or “Web Browsing” / Bing) so answers are grounded and citable.\n- Test phrasing of likely user queries (e.g., “best pizza near [neighborhood],” “reliable [service] in [city]”) and note whether it recommends your business and what it cites.\n- If you’re an enterprise, look into OpenAI integrations or publishing a ChatGPT plugin to guarantee your verified info is available to the model.\n\nBottom line recommendation\n- If you can only pick one service: claim and optimize your Google Business Profile, and make sure your site has good structured data. For distribution and a faster path to being surfaced by AI assistants, use Yext (or a similar listings management platform) plus active testing in ChatGPT/Bing/Google Bard.\n\nIf you want, tell me your business name and city and I can show you how to test ChatGPT/Bing/Google Bard for recommendations and what changes to prioritize.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-10_segment_str_host_tooling_openai",
+ "date_utc": "2026-08-10",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: use AirDNA MarketMinder to analyze a market before buying, and use PriceLabs (or Wheelhouse/Beyond Pricing) to set dynamic nightly pricing once you list. Together they cover purchase decision-making and day-to-day revenue optimization.\n\nWhy that combo\n- AirDNA MarketMinder: industry standard for pre‑purchase market research. It gives ADR, occupancy, seasonality, estimated revenue, comps by neighborhood, listing counts and supply trends, booking lead times, and demand forecasts — everything you need to estimate performance and ROI before buying.\n- PriceLabs: one of the most flexible, feature‑rich dynamic pricing tools for hosts. Highly customizable rule sets, seasonality adjustments, minimum-night strategies, and integrates with Airbnb/VRBO and most PMS/channel managers. Wheelhouse and Beyond Pricing are good alternatives (Wheelhouse = strong UI + analytics, Beyond = simple plug‑and‑play).\n\nQuick alternatives\n- Mashvisor: easier real‑estate ROI metrics (good for investors who want quick cash‑on‑cash and cap‑rate views).\n- Transparent (or AllTheRooms/Similar): deeper data for larger operators or multi‑market analysis.\n- InsideAirbnb: free scraping/data for counts and listing quality (not revenue estimates).\n\nWhat to look at when analyzing a market\n- ADR (average daily rate) and occupancy (monthly + annual)\n- Seasonality and peak months/events\n- Revenue per available rental (RevPAR) or estimated monthly revenue\n- Number of active short‑term listings and new listing growth (supply trend)\n- Typical minimum nights, cleaning fee ranges, and extra‑person fees\n- Booking lead times (how far in advance people book)\n- Comparable unit mix (studio vs 1BR vs 2BR) and their performance\n- Local rules, taxes, HOA restrictions, and neighborhood sentiment\n- Operating expenses (management, cleaning, utilities, property taxes)\n\nHow to use them together (recommended workflow)\n1. Use AirDNA (or Mashvisor/Transparent) to screen cities and neighborhoods and identify comps and expected revenue/occupancy.  \n2. Estimate operating costs and financing to produce cap rate, cash‑on‑cash return, and break‑even occupancy.  \n3. If numbers look good, purchase the property and set up your listing.  \n4. Connect your listing to PriceLabs (or Wheelhouse/Beyond) and configure rules: base price, minimum length of stay, weekend premiums, last‑minute discounts, etc.  \n5. Monitor performance, tweak rules, and re-run market checks periodically (supply/demand can change fast).\n\nPractical tips\n- Use a combination of tools rather than just one data point. AirDNA gives the market view; tools like PriceLabs translate market signals into optimized prices for your specific unit.  \n- Try free trials/demos — both AirDNA and pricing tools offer trials or demos.  \n- Double‑check local regulations and factor in management and maintenance costs when modeling returns.\n\nIf you tell me the city or neighborhood and the property type (studio/1BR/2BR), I can suggest specific metrics to check and walk through an example market analysis.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
