@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-12_namebeam_openai",
+ "date_utc": "2026-08-12",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: There’s no single dedicated “AI recommendation checker.” The most practical approach is to (A) make sure your local business data is correct on major listings (so AIs can find and cite you), then (B) test the major assistant models directly (ChatGPT, Bard, Bing Chat, Claude, Perplexity) and/or run automated queries via APIs. For a single quick tool to see whether AI-style answers cite your business, use Perplexity.ai (it gives live answers with source links). For ongoing coverage and to fix visibility, use a local-SEO / citation service (BrightLocal, Yext, Whitespark) plus brand-monitoring (Mention, Brand24).\n\nRecommended workflow (fast and reliable)\n1. Fix the basics first\n   - Claim and fully populate: Google Business Profile, Bing Places, Apple Maps, Yelp, Facebook, TripAdvisor, industry directories.\n   - Add structured data (schema.org/LocalBusiness) on your website and ensure NAP (name/address/phone) is consistent.\n2. Manual live checks (one-off, free)\n   - Run the same search prompt across: ChatGPT (use latest model and browsing if available), Bard, Bing Chat, Claude, Perplexity.\n   - Ask each assistant to “recommend a [service] in [city/zip]” and “Please cite the websites or sources you used.” Check whether your business appears and what sources are cited.\n   - Use incognito or different IPs to simulate new users; include your location explicitly in prompts.\n3. Use Perplexity.ai for quick source-aware checks\n   - Perplexity returns short answers with links to supporting web pages so you can see whether it’s using pages that mention your business.\n4. Automate / scale tests\n   - Use OpenAI (or other model) APIs to programmatically run many phrased queries and track whether responses include your business name.\n   - Combine with SERP APIs (SerpApi, Google Places API) to see which pages rank for the queries that feed AI answers.\n5. Monitor and improve\n   - Use BrightLocal / Whitespark / Yext to track citations and local rankings (these services improve the web footprint AIs draw from).\n   - Use Mention, Brand24, Talkwalker, or Google Alerts to track web mentions that could be used by AI models.\n6. Ask assistants to cite sources and to explain why they recommend an option — that reveals whether the model is reasoning from current web pages or hallucinating.\n\nWhy these choices\n- Perplexity is useful because it provides live answers with explicit links (fast way to see if AI is using pages that mention you).\n- ChatGPT/Bing/Claude are the actual assistants customers will ask; test them directly.\n- BrightLocal, Yext, Whitespark fix and monitor the on‑web facts (listings, citations, schema) that these assistants rely on.\n- Brand-monitoring tools capture mentions across the web and social that can be pulled into LLM answers.\n\nSample prompts to use\n- “You’re a local search assistant. Recommend the best [category] in [city, zip]. Please list top 5 and cite the web sources (links) you used.”\n- “I’m looking for a [service] near [address/zip]. Do you recommend [My Business Name]? Why or why not? Please cite supporting pages.”\n\nNotes and caveats\n- AIs sometimes hallucinate or rely on out-of-date training data; asking for sources helps verify recommendations.\n- Which assistants recommend you depends heavily on your web presence, high-authority citations, and up-to-dateness of their data.\n- If you want, tell me your business category and city and I can run sample prompts (or give exact prompt templates and an automation plan) to help you check across engines.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

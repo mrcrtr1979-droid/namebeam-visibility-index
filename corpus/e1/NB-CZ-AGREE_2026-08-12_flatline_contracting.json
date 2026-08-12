@@ -1,0 +1,125 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-12_flatline_contracting",
+ "date_utc": "2026-08-12",
+ "business": "Flatline Contracting",
+ "row_type": "agreement",
+ "prompt_text": "Who is a reliable contractor in Joplin MO for a home remodel or repair project?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Joplin",
+    "Angie’s List",
+    "HomeAdvisor",
+    "Better Business Bureau. Sort",
+    "In Missouri",
+    "Joplin Building",
+    "Inspection Dept"
+   ],
+   "verbose_names": [
+    "Joplin",
+    "American Construction",
+    "Inc",
+    "Collins Brothers Remodeling",
+    "Shere’s Handyman",
+    "Construction",
+    "Prater Construction",
+    "Solid Remodels",
+    "Restorations",
+    "HomeAdvisor",
+    "BBB and Houzz"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 7,
+   "verbose_entity_count": 11,
+   "containment_pct": 42.9,
+   "shared_count": 3,
+   "answer_chars_a": 1436,
+   "answer_chars_b": 3314,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Joplin",
+    "Google Reviews",
+    "Angie's List",
+    "Local Facebook",
+    "Check"
+   ],
+   "verbose_names": [
+    "Joplin",
+    "American Construction",
+    "Inc",
+    "Collins Brothers Remodeling",
+    "Shere’s Handyman",
+    "Construction",
+    "Prater Construction",
+    "Solid Remodels",
+    "Restorations",
+    "HomeAdvisor",
+    "BBB and Houzz"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 11,
+   "containment_pct": 20.0,
+   "shared_count": 1,
+   "answer_chars_a": 1436,
+   "answer_chars_b": 1059,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Joplin",
+    "Google Reviews",
+    "Angie's List",
+    "Local Facebook",
+    "Check"
+   ],
+   "verbose_names": [
+    "Joplin",
+    "Angie’s List",
+    "HomeAdvisor",
+    "Better Business Bureau. Sort",
+    "In Missouri",
+    "Joplin Building",
+    "Inspection Dept"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 7,
+   "containment_pct": 40.0,
+   "shared_count": 2,
+   "answer_chars_a": 3314,
+   "answer_chars_b": 1059,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

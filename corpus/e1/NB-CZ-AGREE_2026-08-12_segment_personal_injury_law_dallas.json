@@ -1,0 +1,109 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-12_segment_personal_injury_law_dallas",
+ "date_utc": "2026-08-12",
+ "business": "SEGMENT: personal injury law, Dallas",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best personal injury lawyer in Dallas for a truck accident case?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "FMCSA",
+    "Texas",
+    "Personal Injury Trial Law",
+    "Texas Board of Legal Specialization",
+    "Super Lawyers",
+    "Martindale",
+    "Hubbell AV"
+   ],
+   "verbose_names": [
+    "Frank Branson",
+    "Lyons",
+    "Simmons",
+    "Texas Legal Group",
+    "Zehl Law",
+    "Local Dallas",
+    "Justia",
+    "Super Lawyers",
+    "Lawyer.com-style"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 7,
+   "verbose_entity_count": 9,
+   "containment_pct": 14.3,
+   "shared_count": 1,
+   "answer_chars_a": 1653,
+   "answer_chars_b": 2769,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Frank Branson",
+    "Lyons",
+    "Simmons",
+    "Texas Legal Group",
+    "Zehl Law",
+    "Local Dallas",
+    "Justia",
+    "Super Lawyers",
+    "Lawyer.com-style"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 9,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 1653,
+   "answer_chars_b": 1095,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "FMCSA",
+    "Texas",
+    "Personal Injury Trial Law",
+    "Texas Board of Legal Specialization",
+    "Super Lawyers",
+    "Martindale",
+    "Hubbell AV"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 7,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 2769,
+   "answer_chars_b": 1095,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
