@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-13_namebeam_openai",
+ "date_utc": "2026-08-13",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there’s no single “AI recommendation checker.” The most effective approach is to (1) make sure your business appears in the authoritative knowledge sources LLMs use (Google Business Profile, Wikipedia/Wikidata, Apple Maps, major directories), and (2) directly test several LLMs. If you want a single commercial service to manage and monitor that presence, Yext (for knowledge-graph listings) plus a local-SEO monitor like BrightLocal or Moz Local is the closest thing to an all‑in‑one solution.\n\nWhy:\n- Many LLMs (and search/chat hybrids) rely heavily on structured business data from Google’s Knowledge Graph, Apple Maps, Yelp, Wikipedia/Wikidata and large directory networks. If your business isn’t in those sources, an AI is less likely to recommend it.\n- ChatGPT and other LLMs can still hallucinate; the safest way to know is to query the models directly and ask for sources.\n\nPractical checklist and steps\n1. Claim and optimize Google Business Profile (free)\n   - Add accurate name, address, phone, hours, photos, category and services. Google’s Knowledge Graph is a primary source for many AIs.\n2. Be listed in major directories\n   - Yelp, Facebook, Apple Maps, Bing Places, TripAdvisor (if relevant). Use Yext, Moz Local, or BrightLocal to push consistent data across directories.\n3. Create/claim Wikipedia and Wikidata entries (if notable)\n   - Many LLMs use Wikipedia/Wikidata for factual grounding.\n4. Monitor reviews and citations\n   - BrightLocal, Reputation.com, and similar services track reviews and citations that feed search/AI systems.\n5. Directly test LLMs\n   - Ask ChatGPT, Google Bard/Gemini, Bing Chat, Anthropic Claude, etc.: “Would you recommend [Business name] in [city] for [service]? Please cite sources.” Try multiple phrasings and include user-context prompts (price, quality, family-friendly).\n   - Use APIs or a small script to automate repeated queries across models if you want ongoing monitoring.\n6. Ask for evidence\n   - When an AI recommends (or doesn’t), request sources or URLs. If it can’t cite reputable sources, treat it as low-confidence.\n7. Improve discoverability\n   - Get mentions on local blogs, newspapers, and industry sites; add schema.org LocalBusiness markup to your website; encourage customer reviews.\n\nWhich single “service” to pick?\n- If you must pick one to start: Google Business Profile — it’s free and has the biggest impact on whether AI/search will surface and recommend you.\n- If you want a paid service to manage and propagate that data across the web: Yext (enterprise-grade) or BrightLocal/Moz Local for SMBs.\n\nIf you want, tell me your business name/city and I can (a) give a quick checklist of which authoritative listings you currently appear in and (b) show example prompts to use when testing ChatGPT and other LLMs.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

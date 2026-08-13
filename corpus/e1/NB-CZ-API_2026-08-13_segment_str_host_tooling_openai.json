@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-13_segment_str_host_tooling_openai",
+ "date_utc": "2026-08-13",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- For market research before buying: AirDNA MarketMinder (best single tool for short‑term rental comps, ADR, occupancy, seasonality and revenue projections).\n- For setting nightly pricing automatically: PriceLabs (most flexible) or Beyond Pricing (simpler); Wheelhouse is a good middle ground.\n\nWhy two tools\nYou really need two capabilities: (1) a market analytics tool to evaluate a neighborhood/property before purchase, and (2) a revenue/pricing engine that integrates with Airbnb once you’re hosting. No single tool does both best.\n\nRecommended stack and why\n1) AirDNA MarketMinder — market analysis before purchase\n- Strengths: neighborhood‑level ADR, occupancy, estimated revenue, seasonality charts, supply/trends, unit‑level comps and filters (property type, bedrooms), investment calculators. Widely used by investors.\n- Use it to screen cities, estimate realistic revenue, and compare prospective properties to local comps.\n\n2) PriceLabs — dynamic pricing after you buy\n- Strengths: highly customizable rule sets, demand-based daily price updates, occupancy-based strategies, minimum‑stay management, good integrations (Airbnb, VRBO, most PMS/channel managers). Excellent for hosts who want granular control.\n- Alternatives: Beyond Pricing (easier, more hands off), Wheelhouse (strong analytics + simulator). Try the free trials to see which fits your workflow.\n\nOther useful tools (situational)\n- Mashvisor — long‑term vs short‑term ROI calculators; good for real‑estate investors comparing buy/hold vs STR.\n- AllTheRooms / Transparent — broader platform coverage and deeper enterprise analytics (more expensive).\n- Inside Airbnb — free raw Airbnb listing data per city (good for regulatory research and competitor checks).\n- Zillow/Redfin/Realtor — comps, taxes, sale history for the property itself.\n- Airbnb Smart Pricing — built in, but less flexible and less accurate than dedicated tools.\n\nPractical workflow to follow\n1. Pick target neighborhoods and run AirDNA MarketMinder reports to get ADR, occupancy, seasonality, and revenue projections.\n2. Cross‑check with Inside Airbnb or AllTheRooms for listing counts and night patterns.\n3. Use Zillow/Redfin for purchase comps, taxes, and cap‑rate inputs.\n4. Build a P&L: projected revenue (from AirDNA), minus expenses (mortgage, utilities, cleaning, management fees, insurance, taxes), to estimate cashflow and cap rate.\n5. If you buy: connect listing to PriceLabs (or Beyond Pricing/Wheelhouse) and configure rules for minimum nights, weekend premiums, and events.\n6. Monitor and tweak pricing and listing details based on actual performance.\n\nA few cautions\n- AirDNA projections are estimates — validate with multiple sources and local knowledge.\n- Check local regulations and licensing before buying.\n- Account conservatively for vacancy, seasonality, and operating costs.\n\nIf you tell me the city/area you’re considering, I can suggest specific AirDNA metrics to look at and what a conservative revenue estimate would be.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
