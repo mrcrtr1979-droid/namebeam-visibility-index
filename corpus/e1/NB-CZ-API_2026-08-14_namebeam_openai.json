@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-14_namebeam_openai",
+ "date_utc": "2026-08-14",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t a single “AI recommendation checker.” The best practical approach is a combination: use a local-listing / knowledge-management service to make sure AI systems can find authoritative data about your business, use a local-SEO audit/rank-tracking tool to measure visibility, and directly test LLMs (ChatGPT, Gemini/Bard, Bing, Perplexity, Claude) to see if they recommend you.\n\nRecommended stack (quick picks):\n- Yext — best for controlling and syndicating your official business facts (name, address, hours, categories) to many platforms and knowledge graphs that feed AI.\n- BrightLocal (or Moz Local) — best for auditing local listings, citation consistency, and rank tracking for local queries.\n- Perplexity.ai and direct LLM queries (ChatGPT, Bing Chat, Google Gemini, Anthropic Claude) — best for testing whether AI actually recommends you and for getting cited sources.\n\nHow to check (step-by-step):\n1. Verify core listings\n   - Claim and fully fill your Google Business Profile, Bing Places, Apple Maps, Yelp, Facebook, TripAdvisor (if relevant).\n   - Use Yext or BrightLocal to scan for missing/incorrect listings across major directories and data aggregators (Data Axle/Infogroup, Neustar/Localeze, Foursquare).\n2. Fix structured data on your website\n   - Add/validate schema.org/LocalBusiness markup, consistent NAP (name, address, phone), correct business category, hours, and service areas.\n3. Run local SEO/visibility checks\n   - Use BrightLocal/Moz Local to check local ranking for target keywords, consistency of citations, and review volume. This shows whether search engines view you as a top local option.\n4. Test LLMs directly\n   - Query ChatGPT and other engines with neutral, realistic prompts and note whether your business appears, how it’s described, and whether sources are cited. Example prompts:\n     - “Recommend coffee shops near [neighborhood, city] that are good for remote work.”\n     - “What are top-rated HVAC companies in [city] for emergency service?”\n     - “Show me top Italian restaurants in [city] with outdoor seating and good vegetarian options.”\n   - Run each prompt multiple times and vary phrasing, location, and filters.\n   - Use Perplexity.ai and Bing/Google chat modes because they often provide citations you can follow to see which directories or pages the LLM used.\n5. Track and quantify\n   - Record how often your business appears, the rank/order, whether the model cites a source, and what those sources are. Do this periodically after you make improvements.\n6. Improve your odds of being recommended\n   - Keep listings consistent and up to date.\n   - Encourage reviews on Google/Yelp and reply to them.\n   - Publish high-quality local content and get local backlinks.\n   - Ensure structured data and an FAQ/“About” page with clear services, service areas, and contact info.\n   - Use Yext or similar to distribute a single authoritative knowledge graph.\n\nWhy this combination?\n- LLMs use many inputs: search results, knowledge panels, directory data, and sampled web text. Controlling your official facts (Yext), auditing visibility (BrightLocal), and directly testing LLM outputs (ChatGPT/Perplexity/etc.) gives you both control and measurement.\n\nIf you want, I can:\n- Run example prompts you can copy to test ChatGPT and other engines.\n- Recommend a specific plan (free vs paid tools) based on your budget, industry, and city. Which city/industry is your business in?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
