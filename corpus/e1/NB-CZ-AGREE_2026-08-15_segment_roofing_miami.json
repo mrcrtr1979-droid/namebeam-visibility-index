@@ -1,0 +1,117 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-15_segment_roofing_miami",
+ "date_utc": "2026-08-15",
+ "business": "SEGMENT: roofing, Miami",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Extreme Roofing Inc",
+    "Best Roofing",
+    "Ironwood Roofing Miami",
+    "Miami-Dade",
+    "Miami-Dade County Notice of Acceptance",
+    "GAF Master Elite",
+    "South Florida"
+   ],
+   "verbose_names": [
+    "Florida Building Code",
+    "Dade County",
+    "Notice of Acceptance",
+    "Owens Corning",
+    "CertainTeed",
+    "TAMKO",
+    "Miami.\n\nHow",
+    "Dade Product Control",
+    "Florida DBPR and BBB",
+    "NOAs"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 7,
+   "verbose_entity_count": 10,
+   "containment_pct": 14.3,
+   "shared_count": 1,
+   "answer_chars_a": 1515,
+   "answer_chars_b": 2600,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Miami-Dade County",
+    "Owens Corning"
+   ],
+   "verbose_names": [
+    "Extreme Roofing Inc",
+    "Best Roofing",
+    "Ironwood Roofing Miami",
+    "Miami-Dade",
+    "Miami-Dade County Notice of Acceptance",
+    "GAF Master Elite",
+    "South Florida"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 7,
+   "containment_pct": 50.0,
+   "shared_count": 1,
+   "answer_chars_a": 1515,
+   "answer_chars_b": 1164,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Miami-Dade County",
+    "Owens Corning"
+   ],
+   "verbose_names": [
+    "Florida Building Code",
+    "Dade County",
+    "Notice of Acceptance",
+    "Owens Corning",
+    "CertainTeed",
+    "TAMKO",
+    "Miami.\n\nHow",
+    "Dade Product Control",
+    "Florida DBPR and BBB",
+    "NOAs"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 10,
+   "containment_pct": 100.0,
+   "shared_count": 2,
+   "answer_chars_a": 2600,
+   "answer_chars_b": 1164,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

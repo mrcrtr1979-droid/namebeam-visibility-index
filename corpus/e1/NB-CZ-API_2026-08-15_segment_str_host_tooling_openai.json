@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-15_segment_str_host_tooling_openai",
+ "date_utc": "2026-08-15",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- For market research before buying: AirDNA (MarketMinder/Rentalizer) is the best single tool for most hosts.\n- For ongoing, automated nightly pricing: PriceLabs, Beyond Pricing, or Wheelhouse — PriceLabs is the most popular and flexible for hosts who want control; Beyond Pricing and Wheelhouse are simpler choices.\n\nRecommended combination\n1. Use AirDNA to analyze neighborhoods, seasonality, demand, ADR, occupancy, RevPAR, and realistic revenue estimates. That helps decide whether to buy.\n2. After you list the property, use PriceLabs (or Beyond Pricing/Wheelhouse) to automate nightly rates and implement granular rules.\n\nWhy this combo\n- AirDNA: best database for short‑term rental market research across thousands of cities, with neighborhood-level data, historical seasonality, comps, booking lead time, and a Rentalizer tool that estimates revenue for a specific address. Good for investment underwriting and choosing neighborhoods.\n- PriceLabs: excellent dynamic-pricing engine, lots of customization (min/max prices, custom seasonal rules, length-of-stay rules), integrates with Airbnb and popular PMS/channel managers. Improves revenue and saves time.\n- Beyond Pricing/Wheelhouse: similarly effective; easier for hands-off hosts (slightly less configurable than PriceLabs).\n\nOther options and when to pick them\n- Mashvisor: simpler U.S.-focused property-investor tool (cap rate, cash-on-cash return). Good if you want quick ROI metrics tied to listing data.\n- Transparent: enterprise-level analytics for professionals and larger portfolios (very detailed, pricier).\n- AllTheRooms Analytics: another alternative for demand/occupancy analysis.\n- Free/low-cost: Airbnb’s own market insights, local comps, and spreadsheets can work if you’re on a tight budget; they’re less comprehensive.\n\nWhat to look at when analyzing a market\n- ADR (average daily rate), occupancy, RevPAR\n- Seasonality and monthly demand curve\n- Booking lead times and length-of-stay distribution\n- Comparable listings (number, quality, amenities)\n- Regulations, taxes, HOA rules\n- Operating costs (cleaning, management, utilities, maintenance)\n- Financing: mortgage, insurance; calculate cap rate and cash-on-cash return\n- Sensitivity analysis for low, medium, and high occupancy scenarios\n\nIf you want, tell me the city or neighborhood you’re considering and your budget/target return and I can suggest the right tool tier or run a quick checklist of numbers you should pull from AirDNA or Mashvisor.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
