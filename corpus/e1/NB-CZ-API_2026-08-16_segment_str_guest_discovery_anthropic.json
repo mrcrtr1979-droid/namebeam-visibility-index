@@ -1,0 +1,31 @@
+{
+ "check_id": "NB-CZ-API_2026-08-16_segment_str_guest_discovery_anthropic",
+ "date_utc": "2026-08-16",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "VRBO",
+  "Booking.com",
+  "Review the reviews",
+  "Check the host profile",
+  "Examine the listing details",
+  "Red flags",
+  "Before booking"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Choosing a Platform\n\n**Airbnb**: Largest selection, good for unique stays, strong review system\n**VRBO**: Better for longer stays and full homes, often better value for groups\n**Booking.com**: Widest range (hotels + rentals), sometimes cheaper, simpler cancellation\n\nConsider what matters most—price, cancellation flexibility, property type—since they overlap significantly.\n\n# Finding a Good Host\n\n**Review the reviews:**\n- Read recent ones (last 3-6 months) carefully, not just the rating\n- Look for patterns (cleanliness, communication, accuracy)\n- Check if negative reviews mention deal-breakers for you\n\n**Check the host profile:**\n- How long have they been hosting?\n- Response rate and time\n- Do they have a verified ID?\n- Read their \"about me\"—engaged hosts often write thoughtfully\n\n**Examine the listing details:**\n- Are photos recent and professional?\n- Is the description detailed and honest?\n- Do amenities match what you need?\n- Check the cancellation policy upfront\n\n**Red flags:**\n- Very new hosts with no reviews\n- Vague or sparse photos\n- Lots of recent negative reviews\n- Unclear house rules or policies\n\n**Before booking:**\n- Message the host with a question—gauge their responsiveness\n- Confirm details that matter to you\n\nThe best deals often come from established hosts with solid reviews rather than the cheapest listing. What type of trip are you planning?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

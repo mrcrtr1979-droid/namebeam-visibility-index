@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-16_segment_str_host_tooling_openai",
+ "date_utc": "2026-08-16",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- For market research before buying: AirDNA (MarketMinder) is the best single tool for most hosts/investors.  \n- For ongoing, smart nightly pricing once you have a listing: PriceLabs is the best balance of power, flexibility and integrations. Wheelhouse and Beyond Pricing are good alternatives; Airbnb Smart Pricing is free but limited.\n\nWhy those recommendations\n- AirDNA gives neighborhood-level data (ADR, occupancy, RevPAR, revenue estimates, seasonality, booking lead times, comps, demand heatmaps) that let you model cashflow and cap rates before purchase. It’s built for investment decisions.  \n- PriceLabs is a highly customizable dynamic-pricing engine with strong analytics and integrations with most PMS/channel managers; it lets you build rules for minimum stays, weekday/weekend differentials, event pricing and more. Wheelhouse offers similar analytics and more sophisticated demand curves; Beyond Pricing is simpler to set up if you want an easy, “set and forget” option.\n\nWhat to look for in a tool\n- Coverage for your city/neighborhood and property type (studio vs. 3BR).  \n- Key metrics: ADR, occupancy rate, RevPAR, seasonal index, booking lead time, average length of stay, cancellation patterns, and revenue by day.  \n- Ability to filter comps (similar size, amenities, location).  \n- Integration with your channel manager/PMS and calendar syncing.  \n- Customization: minimum stays, event overrides, rule-based pricing.  \n- Cost and trial availability.\n\nQuick workflow before you buy\n1. Use AirDNA MarketMinder for the target neighborhood and comparable unit types. Pull 12–36 month historical ADR, occupancy and RevPAR, seasonality, and booking window.  \n2. Identify local comps (same bedroom count, similar amenities/transport access) and look at their occupancy patterns and peak event dates.  \n3. Model conservative, moderate and optimistic revenue scenarios and subtract expected operating costs (cleaning, management, utilities, taxes, vacancy). Calculate cashflow and cap rate.  \n4. Check short-term-rental regulations, HOA rules, and insurance.  \n5. If you decide to buy, connect the listing(s) to a dynamic pricing tool (PriceLabs/Wheelhouse/Beyond Pricing) and run an initial 30–90 day optimization while monitoring bookings.\n\nCosts and trials\n- AirDNA/MarketMinder: paid access for detailed neighborhood reports; pay-per-market or subscription.  \n- PriceLabs/Wheelhouse/Beyond Pricing: modest monthly fee per listing; most offer free trials or short trial periods.  \n- Airbnb Smart Pricing: free but not as transparent or adjustable.\n\nIf you want, tell me the city/neighborhood (and property type) you’re looking at and I can:\n- Suggest specific comparable properties and metrics to check, or  \n- Pull examples of what AirDNA would show for that market and a revenue estimate scenario.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
