@@ -1,0 +1,111 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-17_world_martial_arts_academy",
+ "date_utc": "2026-08-17",
+ "business": "World Martial Arts Academy",
+ "row_type": "agreement",
+ "prompt_text": "What is a good martial arts school for kids in St. Peters MO?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "St. Peters",
+    "Little Dragons",
+    "Yelp",
+    "Nextdoor",
+    "St. Peters MO"
+   ],
+   "verbose_names": [
+    "St. Peters",
+    "All Star Karate",
+    "Kids Martial Arts",
+    "Cave Springs Blvd",
+    "ATA Martial Arts St. Peters",
+    "Gracie Barra St. Peters",
+    "Lessons.com"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": true,
+   "named_by_b": false,
+   "naming_disagreement": true,
+   "terser_engine": "openai",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 7,
+   "containment_pct": 40.0,
+   "shared_count": 2,
+   "answer_chars_a": 1262,
+   "answer_chars_b": 2739,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Martial Arts Schools",
+    "St. Peters",
+    "MO\n\nI",
+    "St. Peters MO"
+   ],
+   "verbose_names": [
+    "St. Peters",
+    "All Star Karate",
+    "Kids Martial Arts",
+    "Cave Springs Blvd",
+    "ATA Martial Arts St. Peters",
+    "Gracie Barra St. Peters",
+    "Lessons.com"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": true,
+   "named_by_b": false,
+   "naming_disagreement": true,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 7,
+   "containment_pct": 50.0,
+   "shared_count": 2,
+   "answer_chars_a": 1262,
+   "answer_chars_b": 1022,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Martial Arts Schools",
+    "St. Peters",
+    "MO\n\nI",
+    "St. Peters MO"
+   ],
+   "verbose_names": [
+    "St. Peters",
+    "Little Dragons",
+    "Yelp",
+    "Nextdoor",
+    "St. Peters MO"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 5,
+   "containment_pct": 50.0,
+   "shared_count": 2,
+   "answer_chars_a": 2739,
+   "answer_chars_b": 1022,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

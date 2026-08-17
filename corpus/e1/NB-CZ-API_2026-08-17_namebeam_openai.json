@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-17_namebeam_openai",
+ "date_utc": "2026-08-17",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there’s no single “AI recommendation checker” that will tell you whether general LLMs (like ChatGPT) recommend your business. The practical best approach is to make sure the knowledge sources LLMs use are correct (start with Google Business Profile) and then monitor/distribute your listings with a local‑listing service (Yext, BrightLocal, Moz Local). Also test the LLMs directly.\n\nWhat to do, in order\n\n1. Claim and optimize Google Business Profile (GBP)\n- Most AI assistants and search results rely heavily on Google’s knowledge graph, so GBP is the highest‑impact, free place to start.\n- Complete hours, photos, services, categories, and accumulate Google reviews.\n\n2. Publish structured data on your site\n- Add schema.org/LocalBusiness markup (name, address, phone, opening hours, service area). This helps crawlers and knowledge graphs that feed LLMs.\n\n3. Distribute and monitor listings\n- Use a listings/citation service to ensure consistent information across directories:\n  - Yext — enterprise‑grade, pushes updates to many publishers and offers analytics (paid).\n  - BrightLocal or Moz Local — cheaper options for local citation monitoring and audits.\n  - Whitespark — citation building and tracking.\nThese services won’t tell ChatGPT “yes/no” but they help ensure the data sources LLMs learn from are correct.\n\n4. Get reviews on major platforms\n- Google, Yelp, Facebook, TripAdvisor (if relevant). Reviews heavily influence whether assistants recommend you.\n\n5. Test LLMs directly\n- Ask ChatGPT, Bing Chat, Google Bard, Perplexity.ai, and other public models whether they’d recommend a [service] in [location]. Try with and without browsing enabled.\n- Example prompts:\n  - “Recommend a coffee shop in downtown [city] for remote work. Include name, address, and why.”\n  - “What are the top [type of service] in [neighborhood], and why should I pick them?”\n- Repeat after you’ve updated listings to see if results change.\n\n6. Consider knowledge-management platforms or custom AI\n- If you want AI to reliably recommend your business to users of a specific chatbot, you can:\n  - Create a “custom GPT” or chatbot that includes your business data.\n  - Use Yext Answers or similar conversational knowledge platforms that integrate with search/chat experiences (paid).\n\nWhich single “service” is best?\n- If you must pick one: Google Business Profile is the single most important (free) service to claim and optimize. For automated distribution/monitoring across many publishers, Yext or BrightLocal are the best single paid tools.\n\nIf you want, tell me:\n- your business type and city and I’ll give the most useful prompts to test LLMs, or\n- whether you want free vs paid options and I’ll recommend a specific service plan.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
