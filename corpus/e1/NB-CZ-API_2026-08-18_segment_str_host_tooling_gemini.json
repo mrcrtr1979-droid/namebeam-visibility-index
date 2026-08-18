@@ -1,0 +1,40 @@
+{
+ "check_id": "NB-CZ-API_2026-08-18_segment_str_host_tooling_gemini",
+ "date_utc": "2026-08-18",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "AirDNA",
+  "For Pricing (Industry Leader)",
+  "For Market Research",
+  "Market Dashboards",
+  "Revenue Estimator",
+  "Pricing Structure",
+  "Key Feature – Rentalizer",
+  "Market Intelligence",
+  "Wheelhouse",
+  "Beyond (formerly Beyond Pricing)",
+  "Phase 1: Market Analysis (Before Buying)",
+  "AirDNA (Rentalizer)",
+  "PriceLabs Market Dashboards",
+  "Phase 2: Nightly Pricing (After Buying)"
+ ],
+ "engine_stated_criteria": [
+  "no single tool is perfect at both"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Because set-it-and-forget-it market research requires a different dataset than daily property management, **no single tool is perfect at both**. However, the industry consensus among successful Airbnb hosts and investors leans toward a specific strategy:\n\nThe **overall best single tool** for both tasks is **PriceLabs**, but the **ultimate \"Power Combo\"** used by top investors is **AirDNA** (for research) + **PriceLabs** (for pricing).\n\nHere is a breakdown of the best tools for each phase, along with recommendations based on your needs.\n\n---\n\n### 1. The Best All-in-One Tool: **PriceLabs**\nIf you want to use only **one software platform** for both pre-purchase analysis and post-purchase daily dynamic pricing, **PriceLabs** is the clear winner.\n\n*   **For Pricing (Industry Leader):** PriceLabs uses custom algorithms, hyper-local neighborhood data, and your specific booking lead times to adjust prices daily. You can set minimum stay rules, orphan-day discounts, and custom pricing thresholds.\n*   **For Market Research:** It offers **Market Dashboards** and a **Revenue Estimator**. You can draw a custom boundary around any neighborhood in the world to analyze historical occupancy, average daily rates (ADR), seasonality, and revenue of competing properties.\n*   **Pricing Structure:** Flat fee per listing (approx. $19.99/month for pricing), which is much cheaper than competitors that take a percentage of revenue. Market Dashboards cost around $9.99/month per market.\n\n---\n\n### 2. The Best Pure Market Analysis Tool (Pre-Purchase): **AirDNA**\nIf your primary focus right now is buying a property and you want the deepest data possible before risking capital, **AirDNA** is the gold standard.\n\n*   **Key Feature – Rentalizer:** You can plug in any address in the world, and it will generate a revenue projection based on nearby comparable listings (comps), taking into account bedrooms, bathrooms, and guest capacity.\n*   **Market Intelligence:** Shows historical trends, market supply growth, seasonality curves, occupancy rates, and peak revenue months. It also helps you understand whether long-term rentals or short-term rentals perform better in that zip code.\n*   **Best Used For:** Analyzing a target city, comparing multiple properties before placing an offer, and presenting data to lenders or investor partners.\n*   **Cons:** Expensive for full market access, and its dynamic pricing tool (Smart Rates) is vastly inferior to PriceLabs or Wheelhouse.\n\n---\n\n### 3. Alternative Dynamic Pricing Tools (Post-Purchase)\n\nIf you find PriceLabs' interface too complex, these are the best alternatives for managing your daily prices:\n\n*   **Wheelhouse:** Known for having the best user interface and highest level of customization. It allows you to select a \"pricing strategy\" (e.g., Aggressive, Balanced, Conservative) based on your personal risk tolerance. \n*   **Beyond (formerly Beyond Pricing):** Extremely simple to use with a \"Health Score\" for your listing. Unlike PriceLabs, Beyond charges a **1% fee on all bookings**, which can become expensive as your portfolio grows.\n\n---\n\n### ⚠️ A Warning About Airbnb's Native \"Smart Pricing\"\n**Do not rely on Airbnb’s built-in Smart Pricing tool.** \nAirbnb's primary incentive is to maximize *booking volume* (to keep guests on their platform), not to maximize *your revenue*. Airbnb Smart Pricing almost always prices properties drastically below market value, leaving thousands of dollars on the table for hosts.\n\n---\n\n### Summary Recommendation: The Playbook\n\n1. **Phase 1: Market Analysis (Before Buying)**\n   * Use **AirDNA (Rentalizer)** to run numbers on specific addresses you are making offers on.\n   * Cross-reference with **PriceLabs Market Dashboards** to verify occupancy rates and seasonal highs/lows in the specific sub-market/neighborhood.\n\n2. **Phase 2: Nightly Pricing (After Buying)**\n   * Connect **PriceLabs** directly to your Airbnb/VRBO account or Property Management System (PMS).\n   * Turn off Airbnb Smart Pricing and let PriceLabs automatically sync your prices daily.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

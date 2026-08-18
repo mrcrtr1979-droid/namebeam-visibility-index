@@ -1,0 +1,117 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-18_segment_health_insurance_kansas_city",
+ "date_utc": "2026-08-18",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "BBS Insurance",
+    "Benefit Services of Kansas City",
+    "Apollo Health Insurance",
+    "Medicare",
+    "People",
+    "Marketplace",
+    "HUB International"
+   ],
+   "verbose_names": [
+    "COBRA",
+    "Medicare",
+    "Medicare Advantage",
+    "Part D",
+    "National Association of Health Underwriters",
+    "Medicare.gov",
+    "Missouri",
+    "State Health Insurance Assistance Program",
+    "Kansas SHIP"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 7,
+   "verbose_entity_count": 9,
+   "containment_pct": 14.3,
+   "shared_count": 1,
+   "answer_chars_a": 2175,
+   "answer_chars_b": 2829,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Healthcare.gov",
+    "Kansas and Missouri",
+    "Check Google"
+   ],
+   "verbose_names": [
+    "BBS Insurance",
+    "Benefit Services of Kansas City",
+    "Apollo Health Insurance",
+    "Medicare",
+    "People",
+    "Marketplace",
+    "HUB International"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 7,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2175,
+   "answer_chars_b": 1147,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Healthcare.gov",
+    "Kansas and Missouri",
+    "Check Google"
+   ],
+   "verbose_names": [
+    "COBRA",
+    "Medicare",
+    "Medicare Advantage",
+    "Part D",
+    "National Association of Health Underwriters",
+    "Medicare.gov",
+    "Missouri",
+    "State Health Insurance Assistance Program",
+    "Kansas SHIP"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 9,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 2829,
+   "answer_chars_b": 1147,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
