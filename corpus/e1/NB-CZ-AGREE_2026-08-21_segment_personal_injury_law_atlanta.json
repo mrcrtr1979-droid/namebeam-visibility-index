@@ -1,0 +1,97 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-21_segment_personal_injury_law_atlanta",
+ "date_utc": "2026-08-21",
+ "business": "SEGMENT: personal injury law, Atlanta",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best personal injury lawyer in Atlanta for a car accident case?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Martindale-Hubbell",
+    "Super Lawyers",
+    "Atlanta PI",
+    "Georgia State Bar"
+   ],
+   "verbose_names": [
+    "Super Lawyers",
+    "Stewart Miller Simmons Trial Attorneys",
+    "David M. Van Sant",
+    "Justia",
+    "John Foy",
+    "Gary Martin Hays"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 6,
+   "containment_pct": 25.0,
+   "shared_count": 1,
+   "answer_chars_a": 1326,
+   "answer_chars_b": 2172,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Super Lawyers",
+    "Stewart Miller Simmons Trial Attorneys",
+    "David M. Van Sant",
+    "Justia",
+    "John Foy",
+    "Gary Martin Hays"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 6,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 1326,
+   "answer_chars_b": 983,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Martindale-Hubbell",
+    "Super Lawyers",
+    "Atlanta PI",
+    "Georgia State Bar"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 4,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 2172,
+   "answer_chars_b": 983,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

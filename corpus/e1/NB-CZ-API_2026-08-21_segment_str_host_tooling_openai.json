@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-21_segment_str_host_tooling_openai",
+ "date_utc": "2026-08-21",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: use AirDNA for market analysis before buying, and use PriceLabs (or Wheelhouse/Beyond Pricing) to set nightly pricing once you list. Together they give the best combination of investment-level market data and flexible, revenue-optimizing dynamic pricing.\n\nWhy that combo\n- AirDNA (MarketMinder) — best-in-class for pre-purchase research: neighborhood-level ADR, occupancy, seasonality, revenue projections, comparable listings, historical trends and supply growth so you can model returns before you buy.\n- PriceLabs — one of the most flexible, granular and widely used dynamic-pricing tools for active hosts. It integrates with the major channel managers and Airbnb, supports advanced rules, minimum-stay strategies, custom seasonality and automated adjustments.\n- Wheelhouse and Beyond Pricing are strong alternatives for pricing: Wheelhouse offers great forecasting and an easy UI; Beyond Pricing is simple and commonly bundled by Airbnb partners.\n\nWhen to choose alternatives\n- If you only need market-level research and want a cheaper/fast option: Mashvisor or AllTheRooms can help.\n- If you want more enterprise/competitive intelligence (lots of listings, complex markets): Transparent or Airbtics.\n- If you want a free check: use InsideAirbnb datasets for many cities and Airbnb’s Smart Pricing as a baseline (but Smart Pricing tends to be conservative).\n\nKey metrics to analyze before buying\n- Average Daily Rate (ADR) by month (seasonality)\n- Occupancy rate by month and overall\n- Revenue per available rental night (RevPAR) or monthly revenue estimates\n- Number of comparable listings and bedroom mix in your submarket\n- Percent of entire-home vs. private-room listings\n- Average minimum stay, length-of-stay distribution\n- Seasonality, event-driven spikes, and year-to-year trend\n- Supply growth (new listings coming online)\n- Regulatory constraints, licensing, short-term-rental enforcement\n- Operating costs (cleaning, management, utilities), mortgage and carrying costs\nRun conservative, moderate and optimistic revenue scenarios to estimate cashflow and ROI.\n\nHow to use them in practice\n1. Use AirDNA MarketMinder for the specific neighborhood(s): pull ADR, occupancy, revenue projections, comps and seasonality. Export data and build a 3-scenario financial model including all costs.\n2. If the numbers look good, plan your listing: set base rates using PriceLabs, import your calendar/cleaning fees, apply rules (minimum stays, weekend/holiday premiums, length-of-stay discounts).\n3. Monitor performance for 2–4 weeks and tweak PriceLabs’ minimum floors/ceilings and custom rules. Compare to AirDNA market metrics to see where you sit vs comps.\n4. Iterate pricing, add smart discounts for gaps, and consider channel distribution or a co-host/management if occupancy needs help.\n\nPractical notes\n- Both AirDNA and PriceLabs offer trials or demos — test before buying.\n- Make sure the pricing tool integrates with your channel manager/airbnb account.\n- Always set a realistic “floor” price to cover costs and avoid race-to-the-bottom pricing.\n\nIf you tell me the city/neighborhood and property type (entire home, 1BR, etc.), I can pull the most useful metrics you should check and suggest specific floor/ceiling price rules to try.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
