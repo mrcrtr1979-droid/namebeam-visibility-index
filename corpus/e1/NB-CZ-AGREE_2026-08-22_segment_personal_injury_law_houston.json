@@ -1,0 +1,111 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-22_segment_personal_injury_law_houston",
+ "date_utc": "2026-08-22",
+ "business": "SEGMENT: personal injury law, Houston",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best personal injury lawyer in Houston for a car wreck?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Houston and Texas",
+    "Texas Board of Legal Specialization",
+    "Hubbell AV",
+    "Super Lawyers",
+    "Texas Trial Lawyers Association",
+    "Million Dollar Advocates Forum"
+   ],
+   "verbose_names": [
+    "Sutliff",
+    "Stout",
+    "Smith",
+    "Hassler",
+    "Associates",
+    "Brian White",
+    "Johnson Garcia LLP"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 6,
+   "verbose_entity_count": 7,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1535,
+   "answer_chars_b": 2485,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "State Bar of Texas",
+    "Avvo.com",
+    "Houston Bar Association"
+   ],
+   "verbose_names": [
+    "Sutliff",
+    "Stout",
+    "Smith",
+    "Hassler",
+    "Associates",
+    "Brian White",
+    "Johnson Garcia LLP"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 7,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1535,
+   "answer_chars_b": 1065,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "State Bar of Texas",
+    "Avvo.com",
+    "Houston Bar Association"
+   ],
+   "verbose_names": [
+    "Houston and Texas",
+    "Texas Board of Legal Specialization",
+    "Hubbell AV",
+    "Super Lawyers",
+    "Texas Trial Lawyers Association",
+    "Million Dollar Advocates Forum"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 6,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2485,
+   "answer_chars_b": 1065,
+   "zero_shared": true
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
