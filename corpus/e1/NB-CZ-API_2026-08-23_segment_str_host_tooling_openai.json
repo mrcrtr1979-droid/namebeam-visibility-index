@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-23_segment_str_host_tooling_openai",
+ "date_utc": "2026-08-23",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- For market research before you buy: AirDNA (MarketMinder/Rentalizer) is the most widely used and easiest-to-read tool for short‑term rental market analysis.\n- For day‑to‑day/nightly dynamic pricing after you list: PriceLabs is the best balance of flexibility and integrations (Beyond Pricing and Wheelhouse are good alternatives).\n\nWhy those two\n- AirDNA gives historical ADR, occupancy, seasonality, revenue estimates, supply growth, comparable listings filters (bedrooms, entire home vs private room), and a “rentalizer” projection for a specific address — all things you need to evaluate whether a purchase can cash‑flow as an Airbnb. It’s built for investors doing pre‑purchase due diligence.\n- PriceLabs is a powerful, highly customizable dynamic‑pricing engine that integrates with Airbnb (direct or via channel managers), Vrbo, and most PMSs. It lets you set rules, minimums, custom seasonality, and automatically adjusts prices to market demand. Beyond Pricing is easier to use but less customizable; Wheelhouse is similarly powerful.\n\nOther options to consider\n- Mashvisor — easier, property‑level ROI estimates and comps (good for single‑family investment analysis).\n- Transparent — enterprise grade STR market intelligence (used by large managers).\n- Beyond Pricing — simpler dynamic pricing with direct Airbnb integration (good if you want a hands‑off solution).\n- Hostaway/Guesty — property managers/PMS that bundle pricing integrations and analytics if you’re scaling many units.\n\nRecommended workflow (practical)\n1. Run market-level research in AirDNA MarketMinder:\n   - Check ADR, occupancy, seasonality, monthly revenue trends, and supply growth for the exact neighborhood.\n   - Filter comps by property type/size and minimum stay to match your planned unit.\n2. Run a property-level projection (AirDNA Rentalizer or Mashvisor) for the specific address to get an estimated annual revenue and occupancy.\n3. Do manual checks: review 10–20 top competing listings by photos, amenities, minimum stays, and calendar visibility; look at reviews and recent bookings; check local STR rules, taxes, insurance, and utility/capital expense assumptions.\n4. Run a cash‑flow model (mortgage, taxes, insurance, utilities, cleaning/management fees, vacancy) using conservative occupancy and ADR from step 1.\n5. If you buy, deploy a dynamic‑pricing tool (PriceLabs or Beyond Pricing), set minimums and custom rules, and monitor the first 3 months to adjust.\n\nNotes and caveats\n- No tool is perfect; AirDNA and others estimate revenue from scraped listing data and may over/underestimate depending on your actual setup (quality, photos, amenities, distribution across channels).\n- Always validate automated estimates with manual market checks and conservative assumptions.\n- Check integrations with your planned property manager or channel manager (PriceLabs and Beyond Pricing integrate widely).\n\nIf you want, tell me the city/neighborhood and property type (1BR, 2BR, whole home vs private room) and I can:\n- Run a quick checklist of the most useful AirDNA metrics to check, and\n- Suggest an expected range of ADR/occupancy figures to plug into a cash‑flow model.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
