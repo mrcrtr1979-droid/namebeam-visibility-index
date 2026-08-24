@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-24_segment_str_host_tooling_openai",
+ "date_utc": "2026-08-24",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- For market research before you buy: AirDNA MarketMinder is the most widely used and practical tool.\n- For ongoing automated nightly pricing once you host: PriceLabs (or Wheelhouse / Beyond Pricing) is the best fit for most hosts.\n\nWhy that combo\n- AirDNA MarketMinder gives market-level metrics you need to decide whether to buy: historical ADR, occupancy, seasonality, revenue projections, competitor comps by room type, daily demand curves and event impact, and neighborhood-level supply growth.\n- PriceLabs (and similar revenue-management tools: Wheelhouse, Beyond Pricing) use those market signals plus your listing attributes to generate dynamic daily prices, let you set rules, and integrate with Airbnb/property managers so you can automate pricing and stay competitive.\n\nOther options to consider\n- Transparent: excellent for deeper analytics and large portfolios (enterprise).\n- Mashvisor and AllTheRooms: decent market snapshots and investment calculators if you want a cheaper/alternative perspective.\n- InsideAirbnb: free, useful for scraping occupancy/listing detail and regulatory insights in many cities.\n- Airbnb Smart Pricing: free and simple but less customizable and often less optimal than dedicated tools.\n\nPractical workflow\n1. Use AirDNA (or Mashvisor/AllTheRooms) to screen neighborhoods: nightly ADR, occupancy, revenue, seasonality, typical listing types, and growth of supply.\n2. Run a 5–10 year cashflow/ROI model including mortgage, management, cleaning, taxes, insurance and conservative occupancy.\n3. If market looks good, set up a dynamic-pricing tool (PriceLabs/Wheelhouse/Beyond Pricing) and integrate with your calendar/channel manager.\n4. Monitor and tweak weekly—pricing tools provide filters/rules (min price, weekend premiums, minimum stays) so you can protect profitability.\n\nIf you want, tell me the city/area and your budget/house type and I’ll run through which markets to check first and which tool tier would be best for you.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

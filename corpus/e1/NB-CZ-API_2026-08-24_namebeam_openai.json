@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-24_namebeam_openai",
+ "date_utc": "2026-08-24",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: There’s no single “AI recommendation checker.” The practical approach is to (1) ensure you appear on the authoritative local sources AI systems use (Google Business Profile, Yelp, Apple Maps, etc.), (2) use a local-listing/monitoring service to track visibility, and (3) test LLMs directly with targeted queries. For most small businesses the best combo is Google Business Profile (free, essential) + a local-SEO monitoring tool such as BrightLocal (budget-friendly) or Yext (more enterprise/features).  \n\nWhat to do and why\n- Claim and optimize Google Business Profile (GBP). Google is the primary source for local info used by Google search/Bard and many other AI stacks. Complete NAP (name/address/phone), categories, hours, photos, reviews, and add schema.org/LocalBusiness markup on your site.\n- Make sure you’re on other major directories: Bing Places, Apple Maps, Yelp, TripAdvisor (if relevant). Many chat services pull from these.\n- Use a local listing manager / monitoring service:\n  - BrightLocal or Whitespark — good for small businesses: citation cleanup, local-rank tracking, review monitoring.\n  - Yext — stronger for pushing consistent data to many platforms and enterprise features.\n  - Chatmeter, Moz Local — alternatives depending on budget and features.\n- Monitor reviews and web mentions: Google Alerts, Mention, or a review-monitoring product in the tools above.\n- Test AI engines directly: ask ChatGPT, Bing Chat, Google Bard, Siri/Alexa to “recommend a [your-business-type] near [your-city]” to see if you’re returned. Use several prompts (generic, with qualifiers like “best,” “highest-rated,” “open now”), and test both web-enabled versions (browsing/plugins) and the basic models.\n\nSample prompts to run\n- “Recommend 3 Italian restaurants in downtown Portland, OR that are open now and highly rated.”\n- “I’m in [ZIP]. Recommend a small [service] nearby with good reviews.”\n- “List top 5 [your service] providers in [city] and show sources.”\n\nLimitations to know\n- Generic ChatGPT (no browsing) may not know new businesses or recent reviews.\n- LLMs can hallucinate—always verify sources and links the model cites.\n- Getting “recommended” usually depends on presence in authoritative sources and good reviews, not direct control of the LLM.\n\nRecommendation summary\n- Mandatory: Claim/optimize Google Business Profile and get good reviews.\n- Best single monitoring tool for most small businesses: BrightLocal (tracks local rankings, citations, and reviews).\n- If you want more distribution/control across many platforms: Yext.\n- Regularly test ChatGPT/Bing/Bard with sample prompts to see how/if you appear.\n\nIf you want, tell me your business type and location and I’ll (a) tell you the highest-priority listings to claim and (b) give sample prompts you can use to test ChatGPT and other AI engines.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
