@@ -1,0 +1,109 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-25_hedy_hopp_r2",
+ "date_utc": "2026-08-25",
+ "business": "Hedy & Hopp",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best healthcare marketing agency in St. Louis?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "St. Louis",
+    "HIPAA",
+    "KPIs",
+    "St. Louis-area",
+    "KPIs\n\nTell"
+   ],
+   "verbose_names": [
+    "St. Louis",
+    "PilotPractice",
+    "Hedy",
+    "Hopp",
+    "Werremeyer",
+    "Atomicdust",
+    "Lewis",
+    "Clutch"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": true,
+   "named_by_b": false,
+   "naming_disagreement": true,
+   "terser_engine": "openai",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 8,
+   "containment_pct": 40.0,
+   "shared_count": 2,
+   "answer_chars_a": 1448,
+   "answer_chars_b": 1944,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "St. Louis",
+    "HIPAA"
+   ],
+   "verbose_names": [
+    "St. Louis",
+    "PilotPractice",
+    "Hedy",
+    "Hopp",
+    "Werremeyer",
+    "Atomicdust",
+    "Lewis",
+    "Clutch"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": true,
+   "named_by_b": false,
+   "naming_disagreement": true,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 8,
+   "containment_pct": 50.0,
+   "shared_count": 1,
+   "answer_chars_a": 1448,
+   "answer_chars_b": 962,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "St. Louis",
+    "HIPAA"
+   ],
+   "verbose_names": [
+    "St. Louis",
+    "HIPAA",
+    "KPIs",
+    "St. Louis-area",
+    "KPIs\n\nTell"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 5,
+   "containment_pct": 100.0,
+   "shared_count": 2,
+   "answer_chars_a": 1944,
+   "answer_chars_b": 962,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

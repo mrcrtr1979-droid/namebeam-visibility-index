@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-25_namebeam_openai_r2",
+ "date_utc": "2026-08-25",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 2,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t a single “check if ChatGPT recommends my business” service. The best practical approach is to (A) make sure your authoritative business data is widely available (so LLMs can find it) and (B) use local-listings and monitoring tools to distribute and track that data — and then proactively test AI assistants yourself (or automate tests).\n\nWhy: ChatGPT and other LLMs don’t consult one public directory; their outputs come from many web sources, knowledge graphs (Wikidata/Wikipedia), and search results. So visibility depends on your presence across those sources, not a single dashboard.\n\nConcrete, actionable plan\n\n1) Make sure your business is authoritative and consistent (highest ROI)\n- Claim and fully populate: Google Business Profile, Bing Places, Apple Maps, Yelp, Facebook, TripAdvisor (if relevant).\n- Add structured data (schema.org/LocalBusiness) to your website and keep NAP (name, address, phone) consistent.\n- Get a Wikidata/Wikipedia entry if eligible — many LLMs and knowledge panels pull from those.\n\n2) Use a listings/knowledge-management service to distribute and monitor\n- Yext (enterprise-focus): synchronizes knowledge to many partners and markets itself as controlling brand info across search assistants — good if budget permits.\n- Uberall (enterprise/mid-market): similar distribution and analytics.\n- BrightLocal or Whitespark (SMB-focused): citation management, rank tracking, review monitoring — more affordable and focused on local SEO.\n- Moz Local, SEMrush Listings Management, or Synup are other options for distribution and monitoring.\n\n3) Monitor local search / SEO signals (because LLM answers correlate with high-authority web content)\n- Google Search Console, Ahrefs, Semrush, Moz for organic visibility.\n- BrightLocal/Whitespark for local rank tracking and citation audits.\n\n4) Test AI assistants directly (manual or automated)\n- Manual: ask ChatGPT, Bing Chat, and Bard queries a typical customer would use. Example prompts:\n  - “I’m looking for a [type of business] in [neighborhood, city]. Recommend 3 options and explain why.”\n  - “Where can I get [service] near [address or zip code]?”\n- Automated: use the OpenAI API (or other model APIs where available) to run a battery of prompts every week and parse results for your business name. Note: Bing Chat and Bard don’t offer the same straightforward APIs for full chat automation, so you may need custom UI automation or rely on search API results (Bing Search API).\n\n5) Improve the signals that matter\n- Earn reviews on Google/Yelp/industry sites.\n- Create high-quality local content and landing pages optimized for service + location.\n- Acquire local backlinks and citations.\n\nWhich single service to pick?\n- If you want one vendor to start: BrightLocal is a great SMB-friendly option for monitoring local citations, rankings, and review sites at a reasonable price. It won’t “tell ChatGPT,” but it improves the sources LLMs use.\n- If you have budget and need enterprise-level control over knowledge across many partners (and want to claim to audiences including voice assistants/AI integrations), consider Yext or Uberall.\n\nCaveats\n- No tool can force an LLM to “recommend” you; you can only influence the data the model draws on.\n- Different AIs pull from different sources and behave differently, so test multiple assistants (ChatGPT, Google Bard, Bing Chat, Siri/Alexa via their search backends).\n\nIf you want, I can:\n- Suggest specific prompts to test ChatGPT/Bing/Bard for your business type and location.\n- Draft the schema.org markup for your website.\n- Recommend the single best vendor for your exact budget and number of locations.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
