@@ -1,0 +1,129 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-25_needle",
+ "date_utc": "2026-08-25",
+ "business": "Needle",
+ "row_type": "agreement",
+ "prompt_text": "What is the best AI marketing tool for DTC brands?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Klaviyo",
+    "Triple Whale",
+    "AdCreative.ai",
+    "Segwise",
+    "Lifemind",
+    "Madgicx",
+    "Meta-focused DTC"
+   ],
+   "verbose_names": [
+    "Shopify",
+    "Smartly.io",
+    "AdCreative.ai",
+    "Copy.ai",
+    "Lately.ai",
+    "Shopify Plus",
+    "Klaviyo"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 7,
+   "verbose_entity_count": 7,
+   "containment_pct": 28.6,
+   "shared_count": 2,
+   "answer_chars_a": 1644,
+   "answer_chars_b": 2179,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Klaviyo",
+    "Triple Whale",
+    "AdCreative.ai",
+    "Segwise",
+    "Lifemind",
+    "Madgicx",
+    "Meta-focused DTC"
+   ],
+   "verbose_names": [
+    "Customer Data",
+    "Klaviyo",
+    "DTC. AI-powered",
+    "Copy.ai",
+    "TikTok",
+    "Meta Advantage",
+    "Google Performance Max",
+    "AI-driven",
+    "HubSpot",
+    "ActiveCampaign",
+    "My Honest Take"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 7,
+   "verbose_entity_count": 11,
+   "containment_pct": 14.3,
+   "shared_count": 1,
+   "answer_chars_a": 1644,
+   "answer_chars_b": 1361,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Shopify",
+    "Smartly.io",
+    "AdCreative.ai",
+    "Copy.ai",
+    "Lately.ai",
+    "Shopify Plus",
+    "Klaviyo"
+   ],
+   "verbose_names": [
+    "Customer Data",
+    "Klaviyo",
+    "DTC. AI-powered",
+    "Copy.ai",
+    "TikTok",
+    "Meta Advantage",
+    "Google Performance Max",
+    "AI-driven",
+    "HubSpot",
+    "ActiveCampaign",
+    "My Honest Take"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 7,
+   "verbose_entity_count": 11,
+   "containment_pct": 28.6,
+   "shared_count": 2,
+   "answer_chars_a": 2179,
+   "answer_chars_b": 1361,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

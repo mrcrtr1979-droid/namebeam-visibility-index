@@ -1,0 +1,125 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-25_segment_roofing_miami",
+ "date_utc": "2026-08-25",
+ "business": "SEGMENT: roofing, Miami",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Miami.\n\nWhat",
+    "FL DBPR",
+    "GAF Master Elite",
+    "Owens Corning Platinum",
+    "CertainTeed Select",
+    "Dade County and Florida Building Code",
+    "I’ll"
+   ],
+   "verbose_names": [
+    "Extreme Roofing Inc",
+    "South Florida",
+    "GAF Master Elite",
+    "Atlantic Metal Roofing",
+    "Florida",
+    "FL Roofing",
+    "HVHZ-certified",
+    "Indigo Roofing Contractor",
+    "Florida Standard Roofing",
+    "Yahoo Local",
+    "Local"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 7,
+   "verbose_entity_count": 11,
+   "containment_pct": 28.6,
+   "shared_count": 2,
+   "answer_chars_a": 1636,
+   "answer_chars_b": 2957,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Miami-Dade County",
+    "Owens Corning",
+    "Reviews",
+    "Check Google",
+    "Angie's List"
+   ],
+   "verbose_names": [
+    "Extreme Roofing Inc",
+    "South Florida",
+    "GAF Master Elite",
+    "Atlantic Metal Roofing",
+    "Florida",
+    "FL Roofing",
+    "HVHZ-certified",
+    "Indigo Roofing Contractor",
+    "Florida Standard Roofing",
+    "Yahoo Local",
+    "Local"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 11,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1636,
+   "answer_chars_b": 1246,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Miami-Dade County",
+    "Owens Corning",
+    "Reviews",
+    "Check Google",
+    "Angie's List"
+   ],
+   "verbose_names": [
+    "Miami.\n\nWhat",
+    "FL DBPR",
+    "GAF Master Elite",
+    "Owens Corning Platinum",
+    "CertainTeed Select",
+    "Dade County and Florida Building Code",
+    "I’ll"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 7,
+   "containment_pct": 20.0,
+   "shared_count": 1,
+   "answer_chars_a": 2957,
+   "answer_chars_b": 1246,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
