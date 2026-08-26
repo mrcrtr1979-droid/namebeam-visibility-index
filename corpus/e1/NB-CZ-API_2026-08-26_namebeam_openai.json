@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-26_namebeam_openai",
+ "date_utc": "2026-08-26",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there’s no single “best” service that guarantees or directly reports whether ChatGPT (or other LLMs) will recommend your business. The practical approach is twofold: 1) make sure your business is present, accurate, and authoritative where LLMs and knowledge graphs pull data from (Google Business Profile, Apple Maps, Bing, major directories), and 2) actively test LLMs directly (manual or automated) to see whether they recommend you.\n\nRecommended single platforms to focus on\n- Google Business Profile (GBP): Most AI assistants and search-related models rely heavily on Google Maps/GBP data and the web. Claim and optimize your GBP first.\n- Yext (or Moz Local / BrightLocal): If you want one vendor to manage and push consistent listings/citations across many sources (which helps LLMs’ knowledge graphs), Yext is the most commonly recommended enterprise option; BrightLocal / Moz Local are good lower-cost options.\n\nHow to check whether ChatGPT / other LLMs recommend you\n1. Manual queries\n   - Ask multiple models directly: ChatGPT (web/browsing-enabled), Bing Chat, Google Bard, Apple Siri, and Alexa. Use location context and user intent.\n   - Sample prompts:\n     - “Recommend a [business type] near [your ZIP/city].”\n     - “What are the top [service] providers in [city]? Include addresses and phone numbers.”\n     - “Is [Your Business Name] a good [service/product] in [city]?”\n   - Try variations (explicitly ask for businesses that are open now, have good reviews, low price, etc.).\n\n2. Automated testing\n   - Use the APIs (OpenAI, Microsoft/Bing, Google) to issue a set of location-specific prompts on a schedule and log responses to see if/when your business appears.\n   - Track different prompt phrasings, user personas, and localities.\n\n3. Check data sources LLMs use\n   - Confirm your business appears in GBP, Apple Maps, Bing Places, Yelp, TripAdvisor (if applicable), and major directories.\n   - Use a listings management service (Yext/BrightLocal/Moz Local) to ensure NAP (name/address/phone) consistency and wide distribution.\n   - Add LocalBusiness schema (JSON-LD) on your website and test with Google’s Rich Results Test.\n\n4. Reputation & content signals\n   - Encourage reviews on Google/Yelp/etc. LLMs and search engines consider review text and ratings.\n   - Have up-to-date, crawlable website pages describing services, FAQs, opening hours, menu/prices, and local content.\n\n5. Monitoring & alerts\n   - Use local SEO tools (BrightLocal, Moz Local, Semrush, Whitespark) to monitor rankings, citations, and reviews.\n   - Use Yext or a reputation-management tool (BirdEye, Podium, ReviewTrackers) if review management and distribution are key.\n\nHow LLMs differ (and why this matters)\n- ChatGPT (non-browsing) mostly uses training data and might not reflect current local listings. Browsing-enabled ChatGPT, Bing Chat, and Bard will use live web sources and knowledge graphs and are more likely to recommend businesses that have current web presence and strong citations.\n- Some assistants rely on proprietary partners (Apple maps data, Amazon skills), so presence in those ecosystems matters too.\n\nConcrete next steps (minimal effort)\n1. Claim and optimize your Google Business Profile.\n2. Ensure accurate listings in Bing Places and Apple Maps.\n3. Add LocalBusiness schema to your site.\n4. Use a listing-sync service (Yext or BrightLocal) if you want to scale distribution.\n5. Run manual LLM queries using the sample prompts above; if you want, I can run a set of test prompts for multiple models and report back.\n\nIf you want, tell me your city and business type and I’ll give example prompts tailored to your situation or run a quick set of tests and suggest prioritized fixes.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
