@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-27_namebeam_openai",
+ "date_utc": "2026-08-27",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there’s no single “AI‑recommendation checker,” but the practical best option is a listings/knowledge‑graph service (Yext is the leader) combined with manual/automated checks against LLMs.\n\nWhy: modern LLMs (ChatGPT with browsing, Bing Chat, Bard, etc.) draw on knowledge graphs and major directories (Google Business Profile, Yelp, Apple Maps, Foursquare, data aggregators). A listings manager ensures your business info is correct where AIs get it; then you can test whether models recommend you.\n\nRecommended approach\n\n1) Fix your source data (highest leverage)\n- Claim and optimize Google Business Profile, Bing Places, Yelp, Apple Maps, Facebook, TripAdvisor, industry directories.\n- Publish schema.org LocalBusiness structured data on your website.\n- Make sure NAP (name, address, phone) and hours, categories, and photos are correct.\n\n2) Use a listings/knowledge service\n- Yext — best if you want a single control point and to be visible to many publishers and some AI integrations. Good for enterprises and proactive AI visibility.\n- BrightLocal, Moz Local, Whitespark, Synup — cheaper/smaller‑business focused alternatives that manage citations and local tracking.\n- Make sure your data also flows to major data aggregators (Foursquare, Data Axle/Infogroup, Neustar/Localeze) — they feed many services.\n\n3) Test whether LLMs recommend you\n- Manual: ask ChatGPT, Bing Chat, Bard, Siri and Alexa prompts like “Recommend coffee shops near [address] that are [feature].” Try a few prompt variations (explicitly ask for top n and reasoning).\n- Automated: use LLM APIs (OpenAI, Anthropic, Google PaLM) to run scripted queries for different user intents and locales; collect responses.\n- Tools: no turnkey public service widely used just for “does ChatGPT recommend my business,” so most people run a small API script or use BrightLocal’s local rank tracking plus manual LLM checks.\n\n4) Monitor reputation and mentions\n- Use Birdeye, Podium, ReviewTrackers or Google Alerts to track reviews/mentions that influence AI answers.\n\nWhich to pick?\n- If you want a single commercial solution to maximize the chance AIs will recommend you: start with Yext.\n- If you’re budget‑conscious: BrightLocal or Moz Local + manual LLM checks (or a one‑off API script).\n- If you just want to know now whether ChatGPT recommends you, tell me your business name + city and I can run some sample prompts (or give you exact prompts to run in ChatGPT/Bing).\n\nWould you like me to run a few test prompts (if you give the business name and location), or recommend a budget plan for listings management?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
