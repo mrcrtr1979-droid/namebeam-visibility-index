@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-28_namebeam_openai",
+ "date_utc": "2026-08-28",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t one single “official” tester for whether LLMs will recommend your business. But if you want one service to both maximize and monitor the chance AI assistants (ChatGPT, Bard, Bing Chat, etc.) will recommend you, Yext is the best single commercial choice. For auditing/listings and local SEO monitoring, BrightLocal (or Whitespark / Moz Local) is the most used.\n\nWhat Yext does (why I recommend it)\n- Centralizes and publishes your business data (name, address, hours, products, FAQs, images) to many directories and knowledge providers.\n- Keeps data consistent across Google, Bing, Apple, Yelp and some AI/assistant knowledge partners, which increases the chance LLMs and chat-based services will cite/recommend you.\n- Provides analytics and integrations that help you see where your knowledge is being consumed.\n\nWhen to use BrightLocal / Whitespark / Moz Local instead\n- You want deep local SEO audits, citation checks, local rank tracking and review monitoring at a lower price.\n- These tools show where your NAP (name/address/phone) is inconsistent, test local-pack rankings, and help prioritize fixes that influence search and assistant results.\n\nHow to directly test LLMs (practical steps)\n1. Claim and optimize profiles: Google Business Profile, Apple Business Register, Bing Places, Yelp.\n2. Add structured data (schema.org/LocalBusiness) to your site and a clear FAQs/knowledge page — this helps crawlers and knowledge graphs.\n3. Run tests yourself across models:\n   - ChatGPT (web): “Recommend a [service] in [city] for [use case].”\n   - Bing Chat / Google Bard / Claude: same queries.\n   - Use multiple prompt variants (nearby, best, top-rated, affordable).\n4. If you want automated testing, call models via APIs (OpenAI, Anthropic, Google) and run scripted prompts for different user intents and locations.\n5. Monitor mentions & citations with Brand24 / Mention / Semrush that can alert you when AI/knowledge sources reference you.\n\nPractical checklist to increase LLM recommendations\n- Claim/complete your Google Business Profile (most important).\n- Ensure consistent NAP across directories.\n- Add LocalBusiness schema and FAQ schema to your site.\n- Encourage and respond to reviews (ratings help assistant choices).\n- Publish clear service pages and FAQs targeting local intent.\n- Use a knowledge-sync service (Yext) if you want a single control plane.\n\nIf you want a specific recommendation based on budget:\n- Budget-conscious audit + testing: BrightLocal (or Whitespark) + manual LLM testing.\n- Hands-off enterprise approach: Yext to manage distribution + analytics.\n- Technical SEO + schema focus: Moz Local or SEMrush Local + developer implementation.\n\nIf you want, tell me: your city, business type and budget and I’ll recommend the exact tool(s) and give example prompts to test ChatGPT/Bard/Bing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

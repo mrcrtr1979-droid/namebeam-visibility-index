@@ -1,0 +1,97 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-28_segment_hvac_atlanta",
+ "date_utc": "2026-08-28",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "ZIP",
+    "Manual J",
+    "NATE-certified"
+   ],
+   "verbose_names": [
+    "Reliable Heating",
+    "Air",
+    "Coolray",
+    "Moncrief Heating",
+    "Air Conditioning",
+    "Cunningham Associates Heating",
+    "Atlanta HVAC"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 7,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1324,
+   "answer_chars_b": 2893,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Reliable Heating",
+    "Air",
+    "Coolray",
+    "Moncrief Heating",
+    "Air Conditioning",
+    "Cunningham Associates Heating",
+    "Atlanta HVAC"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 7,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 1324,
+   "answer_chars_b": 1013,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "ZIP",
+    "Manual J",
+    "NATE-certified"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 3,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 2893,
+   "answer_chars_b": 1013,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
