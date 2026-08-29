@@ -1,0 +1,133 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-29_quickads",
+ "date_utc": "2026-08-29",
+ "business": "Quickads",
+ "row_type": "agreement",
+ "prompt_text": "What is the best AI video ad maker?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "HeyGen",
+    "Creatify",
+    "UGC-style",
+    "Video Agent",
+    "Revid.ai",
+    "TikTok"
+   ],
+   "verbose_names": [
+    "HeyGen",
+    "Drawbacks",
+    "InVideo",
+    "Facebook",
+    "TikTok",
+    "Pictory",
+    "Opus Clip",
+    "Vidyo.ai",
+    "AI-scripting",
+    "SundaySky",
+    "YouTube"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 6,
+   "verbose_entity_count": 11,
+   "containment_pct": 33.3,
+   "shared_count": 2,
+   "answer_chars_a": 1371,
+   "answer_chars_b": 2986,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "HeyGen",
+    "Creatify",
+    "UGC-style",
+    "Video Agent",
+    "Revid.ai",
+    "TikTok"
+   ],
+   "verbose_names": [
+    "Descript",
+    "Pictory",
+    "Invideo AI",
+    "Synthesia",
+    "HeyGen",
+    "Runway",
+    "Opus Clip",
+    "Fliki",
+    "Key Factors",
+    "My Suggestion"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 6,
+   "verbose_entity_count": 10,
+   "containment_pct": 16.7,
+   "shared_count": 1,
+   "answer_chars_a": 1371,
+   "answer_chars_b": 1010,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Descript",
+    "Pictory",
+    "Invideo AI",
+    "Synthesia",
+    "HeyGen",
+    "Runway",
+    "Opus Clip",
+    "Fliki",
+    "Key Factors",
+    "My Suggestion"
+   ],
+   "verbose_names": [
+    "HeyGen",
+    "Drawbacks",
+    "InVideo",
+    "Facebook",
+    "TikTok",
+    "Pictory",
+    "Opus Clip",
+    "Vidyo.ai",
+    "AI-scripting",
+    "SundaySky",
+    "YouTube"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 10,
+   "verbose_entity_count": 11,
+   "containment_pct": 40.0,
+   "shared_count": 4,
+   "answer_chars_a": 2986,
+   "answer_chars_b": 1010,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
