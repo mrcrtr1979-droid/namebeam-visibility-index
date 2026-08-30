@@ -1,0 +1,113 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-08-30_flatline_contracting",
+ "date_utc": "2026-08-30",
+ "business": "Flatline Contracting",
+ "row_type": "agreement",
+ "prompt_text": "Who is a reliable contractor in Joplin MO for a home remodel or repair project?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Joplin",
+    "City of Joplin",
+    "HomeAdvisor",
+    "Jasper County",
+    "Angi"
+   ],
+   "verbose_names": [
+    "Joplin",
+    "American Construction",
+    "Inc",
+    "Shere’s Handyman",
+    "Construction",
+    "Collins Brothers Remodeling",
+    "Handyman Service LLC",
+    "GoodLife Home Renovations"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 8,
+   "containment_pct": 40.0,
+   "shared_count": 2,
+   "answer_chars_a": 1474,
+   "answer_chars_b": 3538,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Search Joplin",
+    "Google Reviews",
+    "Joplin Chamber of Commerce",
+    "Ask"
+   ],
+   "verbose_names": [
+    "Joplin",
+    "American Construction",
+    "Inc",
+    "Shere’s Handyman",
+    "Construction",
+    "Collins Brothers Remodeling",
+    "Handyman Service LLC",
+    "GoodLife Home Renovations"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 8,
+   "containment_pct": 50.0,
+   "shared_count": 2,
+   "answer_chars_a": 1474,
+   "answer_chars_b": 1070,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Search Joplin",
+    "Google Reviews",
+    "Joplin Chamber of Commerce",
+    "Ask"
+   ],
+   "verbose_names": [
+    "Joplin",
+    "City of Joplin",
+    "HomeAdvisor",
+    "Jasper County",
+    "Angi"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 5,
+   "containment_pct": 50.0,
+   "shared_count": 2,
+   "answer_chars_a": 3538,
+   "answer_chars_b": 1070,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

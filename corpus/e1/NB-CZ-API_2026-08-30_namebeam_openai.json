@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-30_namebeam_openai",
+ "date_utc": "2026-08-30",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\nThere’s no single “ChatGPT directory” service — the practical best approach is a combination: make sure your business is in the major knowledge graphs (Google Business Profile / Bing Places), use a local-listings manager (BrightLocal/Whitespark for affordable local SEO or Yext for broader distribution/AI integrations), and then directly test the major chat AIs (ChatGPT, Bing Chat, Bard, Claude) by asking them targeted prompts or automating API queries.\n\nWhy that combination\n- Chat AIs draw on knowledge graphs, public directories and review sites (Google, Bing, Yelp, TripAdvisor, etc.), plus their own training/data pipelines. If those sources don’t have your business, the AI is unlikely to recommend it.\n- Listing-management tools (BrightLocal, Whitespark, Moz Local, Yext) get your info into the places AI systems crawl and give you monitoring/consistency reporting.\n- Directly querying the AIs is the only way to verify they recommend you (and you’ll need to test multiple models because they differ).\n\nRecommended services and steps\n1. Claim and optimize your Google Business Profile and Bing Places (free, highest priority).\n2. Use a local-listings / citation tool:\n   - BrightLocal or Whitespark — affordable, focused on citation building and local-rank tracking.\n   - Moz Local — similar, easy to use.\n   - Yext — more expensive but designed to push a knowledge graph to many platforms and has specific integrations/claims about powering AI results.\n3. Add structured data (schema.org LocalBusiness markup) to your website so search engines and AI retrieval systems can find authoritative info.\n4. Monitor mentions and reviews with Brand24 / Mention / Talkwalker or Google Alerts.\n5. Test directly:\n   - Ask ChatGPT, Bard, Bing Chat and Claude targeted prompts (see example prompts below). Test with many phrasings and include location context.\n   - For repeatable checks, automate queries via the models’ APIs and parse results.\n\nExample test prompts to try\n- “Recommend a [type of business] near [neighborhood or landmark] in [city].”\n- “What are good [pizza restaurants / hair salons / accountants] within 2 miles of [address]?”\n- “Where should a tourist looking for [service] in [city] go?”\nRun each prompt for multiple models and record whether your business appears and how it’s described.\n\nLimitations to keep in mind\n- ChatGPT (standard) may use a static knowledge cut-off and not show live local info unless browsing/plugins are enabled; Bing Chat and Bard can use live web results.\n- Models can hallucinate or invent recommendations if there’s no clear data.\n- Appearing in an AI’s answer is not the same as ranking in search engines; ensure good reviews, citations, and accurate NAP (name/address/phone).\n\nShort recommended setup\n1. Claim Google Business Profile + Bing Places now.\n2. Add structured data to your site.\n3. Use BrightLocal or Whitespark to clean up citations and track local visibility (Yext if you want a single enterprise-grade push to many platforms).\n4. Manually test ChatGPT, Bing Chat and Bard; automate with APIs if you want regular monitoring.\n\nIf you tell me your city, business type and one or two competitors or keywords, I can give example test prompts and show how to run a quick check on ChatGPT and another model.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
