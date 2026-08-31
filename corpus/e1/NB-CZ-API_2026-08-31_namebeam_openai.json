@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-08-31_namebeam_openai",
+ "date_utc": "2026-08-31",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t a single “AI‑check” service — the best approach is to make sure your business appears on the authoritative sources LLMs draw on (Google Business Profile, Yelp, Apple Maps, major directories) and then test LLMs directly or use a local‑SEO tracking tool. For practical use, combine Google Business Profile + BrightLocal/Whitespark (for tracking) + directly querying LLMs (ChatGPT/Bing/Bard with browsing) or programmatic SERP checks (SerpApi).\n\nWhy and what to use (quick guide)\n- Priority listing: Google Business Profile (most important), Apple Business Connect, Bing Places, Yelp, Facebook. Claim and complete these profiles — LLMs and search engine knowledge graphs heavily rely on them.\n- Structured data on your site: Add schema.org/LocalBusiness markup and sameAs links so crawlers and knowledge graphs can verify you.\n- Reviews & citations: Encourage Google/Yelp reviews. LLMs often surface businesses with strong reviews and many citations.\n- Local SEO / citation management tools:\n  - BrightLocal or Whitespark — best for local rank tracking, citation auditing, and seeing where you show up in local searches.\n  - Yext or Moz Local — best for distributing/keeping listings consistent across platforms.\n- Programmatic checks / SERP scraping:\n  - SerpApi or Google Places API / Google Knowledge Graph Search API — for automated checks of local search and knowledge panels (what search engines return).\n- Reputation & listing monitoring: Use BrightLocal / Yext / Moz to monitor presence, review volume, and citations across directories.\n\nHow to check if ChatGPT (or other LLMs) will recommend you\n1. Direct manual queries\n   - Ask ChatGPT, Bing Chat, and Google Bard location‑specific prompts, for example:\n     “I’m in [city, ZIP]. Recommend 3 local [service] businesses and explain why. Include addresses and ratings if possible.”\n   - Use ChatGPT with browsing/web access (or the latest model with web access) — if the model has no browsing, it may not reflect current listings.\n2. Programmatic testing\n   - Use the OpenAI API to send simulated user prompts asking for local recommendations (supply context like ZIP) and check responses.\n   - Combine with a retrieval layer: use a SERP API or your own web crawl to gather up‑to‑date info, then feed that to the LLM (RAG) so it can “recommend” from verified data.\n3. Check citations and knowledge graph entries\n   - Use Google Places API / Knowledge Graph Search API to see if your business appears in the knowledge graph that many LLMs will rely on.\n\nLimitations to keep in mind\n- Many LLMs hallucinate or generate recommendations without citing sources. Presence on authoritative listings reduces that risk.\n- Some LLM instances have knowledge cutoffs or no web access; they won’t know new listings unless given context.\n- Even if an LLM “recommends” you in a chat, that doesn’t guarantee discoverability on other platforms; focus on underlying SEO/listings.\n\nRecommended simple workflow (doable in a day)\n1. Claim/complete Google Business Profile, Yelp, Apple, Bing.\n2. Add schema.org LocalBusiness on your website.\n3. Use BrightLocal (or Whitespark) to run a local citation audit and a rank check for key terms/ZIPs.\n4. Test LLMs: ask ChatGPT (with web access), Bing Chat, and Bard with a consistent prompt and see if your business appears.\n5. If you want automated checks, set up SerpApi + an OpenAI prompt pipeline to regularly query and record whether LLMs recommend you.\n\nIf you want, tell me your city and type of business and I’ll:\n- Suggest the exact prompt to use with ChatGPT/Bard/Bing,\n- Recommend the best tracking combo for your situation (budget, DIY vs managed).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
