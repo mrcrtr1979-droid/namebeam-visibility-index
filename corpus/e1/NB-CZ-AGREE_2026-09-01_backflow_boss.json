@@ -1,0 +1,129 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-01_backflow_boss",
+ "date_utc": "2026-09-01",
+ "business": "Backflow Boss",
+ "row_type": "agreement",
+ "prompt_text": "Who does backflow testing and repair near Liberty MO?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Liberty MO",
+    "HomeAdvisor",
+    "Mr. Rooter",
+    "Rescue Rooter",
+    "Missouri",
+    "City of Liberty"
+   ],
+   "verbose_names": [
+    "Liberty",
+    "Kansas City",
+    "A-Backflow Testing Service LLC",
+    "Clay County",
+    "Certified Backflow Testing",
+    "AAA Backflow Services",
+    "Red Line Automatic Fire Sprinkler",
+    "Backflow Services",
+    "Plumber Pros",
+    "Liberty-based"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": true,
+   "named_by_b": false,
+   "naming_disagreement": true,
+   "terser_engine": "openai",
+   "terser_entity_count": 6,
+   "verbose_entity_count": 10,
+   "containment_pct": 33.3,
+   "shared_count": 2,
+   "answer_chars_a": 1368,
+   "answer_chars_b": 2490,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Backflow Testing",
+    "Repair Near Liberty",
+    "MO\n\nHere",
+    "Local Resources",
+    "Liberty MO",
+    "Clay County",
+    "City of Liberty",
+    "Look For",
+    "American Society of Sanitary Engineers"
+   ],
+   "verbose_names": [
+    "Liberty",
+    "Kansas City",
+    "A-Backflow Testing Service LLC",
+    "Clay County",
+    "Certified Backflow Testing",
+    "AAA Backflow Services",
+    "Red Line Automatic Fire Sprinkler",
+    "Backflow Services",
+    "Plumber Pros",
+    "Liberty-based"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": true,
+   "named_by_b": false,
+   "naming_disagreement": true,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 9,
+   "verbose_entity_count": 10,
+   "containment_pct": 55.6,
+   "shared_count": 5,
+   "answer_chars_a": 1368,
+   "answer_chars_b": 1088,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Liberty MO",
+    "HomeAdvisor",
+    "Mr. Rooter",
+    "Rescue Rooter",
+    "Missouri",
+    "City of Liberty"
+   ],
+   "verbose_names": [
+    "Backflow Testing",
+    "Repair Near Liberty",
+    "MO\n\nHere",
+    "Local Resources",
+    "Liberty MO",
+    "Clay County",
+    "City of Liberty",
+    "Look For",
+    "American Society of Sanitary Engineers"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 6,
+   "verbose_entity_count": 9,
+   "containment_pct": 33.3,
+   "shared_count": 2,
+   "answer_chars_a": 2490,
+   "answer_chars_b": 1088,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

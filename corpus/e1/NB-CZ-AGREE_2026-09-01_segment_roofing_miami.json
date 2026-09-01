@@ -1,0 +1,127 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-01_segment_roofing_miami",
+ "date_utc": "2026-09-01",
+ "business": "SEGMENT: roofing, Miami",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Extreme Roofing Inc",
+    "GAF Master Elite",
+    "Atlantic Metal Roofing",
+    "FL Roofing",
+    "HVHZ-certified",
+    "Miami-Dade County",
+    "Salomon Roofing",
+    "Florida Standard Roofing",
+    "Yahoo Local"
+   ],
+   "verbose_names": [
+    "Florida DBPR",
+    "Florida",
+    "Dade County Notice of Acceptance",
+    "Florida Product Approval",
+    "GAF Master Elite",
+    "CertainTeed SELECT",
+    "Owens Corning Preferred",
+    "Miami-Dade NOA",
+    "Dade NOA",
+    "Miami ZIP"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 9,
+   "verbose_entity_count": 10,
+   "containment_pct": 22.2,
+   "shared_count": 2,
+   "answer_chars_a": 1531,
+   "answer_chars_b": 3337,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "DBPR.gov",
+    "Confirm",
+    "Ask",
+    "CertainTeed",
+    "Miami-Dade County"
+   ],
+   "verbose_names": [
+    "Extreme Roofing Inc",
+    "GAF Master Elite",
+    "Atlantic Metal Roofing",
+    "FL Roofing",
+    "HVHZ-certified",
+    "Miami-Dade County",
+    "Salomon Roofing",
+    "Florida Standard Roofing",
+    "Yahoo Local"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 9,
+   "containment_pct": 20.0,
+   "shared_count": 1,
+   "answer_chars_a": 1531,
+   "answer_chars_b": 958,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "DBPR.gov",
+    "Confirm",
+    "Ask",
+    "CertainTeed",
+    "Miami-Dade County"
+   ],
+   "verbose_names": [
+    "Florida DBPR",
+    "Florida",
+    "Dade County Notice of Acceptance",
+    "Florida Product Approval",
+    "GAF Master Elite",
+    "CertainTeed SELECT",
+    "Owens Corning Preferred",
+    "Miami-Dade NOA",
+    "Dade NOA",
+    "Miami ZIP"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 10,
+   "containment_pct": 20.0,
+   "shared_count": 1,
+   "answer_chars_a": 3337,
+   "answer_chars_b": 958,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
