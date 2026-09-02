@@ -1,0 +1,41 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-02_segment_pi_car_accident_intake_pleasanton_shotland_pilot",
+ "date_utc": "2026-09-02",
+ "business": "SEGMENT: PI car accident intake, Pleasanton (Shotland pilot)",
+ "row_type": "agreement",
+ "prompt_text": "I was in a car accident in Pleasanton CA. Which lawyer should I hire for my injury case?",
+ "engines_compared": [
+  "anthropic",
+  "openai"
+ ],
+ "engines_usable": 2,
+ "pairs": [
+  {
+   "terser_names": [
+    "East Bay"
+   ],
+   "verbose_names": [
+    "State Bar of California",
+    "Alameda County Bar Association",
+    "Local",
+    "Alameda County"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 4,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 3685,
+   "answer_chars_b": 1239,
+   "zero_shared": true
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

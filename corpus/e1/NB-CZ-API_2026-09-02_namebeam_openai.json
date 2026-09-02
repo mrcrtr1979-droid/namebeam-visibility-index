@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-09-02_namebeam_openai",
+ "date_utc": "2026-09-02",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: use a combination — Yext to control and push your business facts into the places and knowledge graphs that many generative AIs draw from, plus direct testing against the major models (ChatGPT, Bing Chat, Google Bard, Anthropic) and local-SEO tools (BrightLocal / Whitespark) to verify how you show up.\n\nWhy: generative AIs produce recommendations from a mix of internal training data and external knowledge graphs/citation sources. Yext’s Knowledge Graph and integrations are built specifically to feed correct, structured business facts to search engines, voice assistants and some AI platforms, so it’s the best single commercial service to both check and influence whether AI recommends you. BrightLocal/Whitespark/Moz Local help with local citations and ranking, and Google Business Profile / Bing Places / Apple Maps are essential source-of-truth listings.\n\nPractical plan\n\n1) Make sure your facts are authoritative\n- Claim and optimize: Google Business Profile, Bing Places, Apple Maps, Yelp, TripAdvisor (if relevant).\n- Add structured data (schema.org LocalBusiness) and an accurate contact page with NAP (name, address, phone).\n\n2) Use a knowledge-management service\n- Use Yext (Knowledge Graph + sync) to publish consistent, structured facts to many sinks/search partners so AI has reliable source data.\n- Alternatives/complements: Moz Local, BrightLocal, Whitespark for citation building and clean-up.\n\n3) Test directly with AIs\n- Query ChatGPT (use the browsing-enabled or latest model if possible), Bing Chat, Google Bard, and Anthropic Claude.\n- Sample prompts:\n  - “I’m in [city]. Recommend 3 top [service] providers near me. Include business name, address, phone, why you recommend them, and cite sources/URLs.”\n  - “Does [Your Business Name] in [city] appear among recommended [service] providers? Show sources.”\n- Ask each model to show sources/citations and verify those sources manually.\n\n4) Monitor and automate checks\n- Manual: run the above queries monthly and capture responses.\n- Automated: schedule API calls to ChatGPT/Bing (where available) with the test prompts and log results; use BrightLocal for automated local-rank/citation monitoring.\n- Look for consistent citations from authoritative sources (your website, Google, reputable directories).\n\n5) If AIs don’t recommend you\n- Improve listing completeness, add positive reviews, publish local content, ensure schema markup, and use Yext to propagate corrected info.\n- Create high-quality backlinks and directory mentions so authoritative sources pick up your business.\n\nCaveats\n- Models can hallucinate — always verify cited URLs.\n- Some AIs rely more on search engine data (Bing/Google) and knowledge graphs; others use static training data. Results vary by model and by whether the model has browsing or up-to-date web access.\n\nIf you want, I can:\n- Draft the exact test prompts to use for each AI.\n- Show how to automate weekly checks with the OpenAI API (or tools you already use).\n- Recommend specific Yext packages or a cheaper combo of BrightLocal + manual checks depending on budget. Which would you prefer?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

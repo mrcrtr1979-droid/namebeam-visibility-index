@@ -1,0 +1,54 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-02_trunkline",
+ "date_utc": "2026-09-02",
+ "business": "Trunkline",
+ "row_type": "agreement",
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engines_compared": [
+  "anthropic",
+  "openai"
+ ],
+ "engines_usable": 2,
+ "pairs": [
+  {
+   "terser_names": [
+    "Andreas M. Antonopoulos",
+    "Coin Bureau",
+    "YouTube"
+   ],
+   "verbose_names": [
+    "English",
+    "P&L. If",
+    "P&L.\n\nRecommendations",
+    "Bankless",
+    "Bankless Academy",
+    "DeFi",
+    "Gap",
+    "Coin Bureau",
+    "Finematics",
+    "DeFi Dad",
+    "YouTube",
+    "Zapper",
+    "P&L and Dune",
+    "Dune",
+    "NFTs"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 15,
+   "containment_pct": 66.7,
+   "shared_count": 2,
+   "answer_chars_a": 2722,
+   "answer_chars_b": 1343,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

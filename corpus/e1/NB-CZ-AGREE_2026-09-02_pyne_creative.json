@@ -1,0 +1,40 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-02_pyne_creative",
+ "date_utc": "2026-09-02",
+ "business": "PYNE Creative",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best marketing agency in Maryland?",
+ "engines_compared": [
+  "anthropic",
+  "openai"
+ ],
+ "engines_usable": 2,
+ "pairs": [
+  {
+   "terser_names": [
+    "Maryland"
+   ],
+   "verbose_names": [
+    "Maryland",
+    "Quick",
+    "KPIs"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 3,
+   "containment_pct": 100.0,
+   "shared_count": 1,
+   "answer_chars_a": 1650,
+   "answer_chars_b": 919,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
