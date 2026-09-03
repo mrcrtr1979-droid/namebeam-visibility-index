@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-09-03_trunkline_openai",
+ "date_utc": "2026-09-03",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Quick question before I make a final recommendation: by “publishes its losses” do you mean one of these things?\n\n- The site’s own trading/investment P&L (the authors show their real wins and losses), or  \n- The site transparently shows real on‑chain numbers and also reports/writes postmortems on protocol losses/hacks, or  \n- You mean something else?\n\nIf you mean the second two (transparent data + honest postmortems), there isn’t a single “best” site that checks every box, but the most useful combination for a beginner is this:\n\n- Plain-English explainer + beginner curriculum: Coin Bureau (very clear, non‑technical explainers) or Coinbase Learn / CoinDesk Learn (very beginner friendly). These explain concepts in plain language.  \n- Real numbers and reproducible data: Dune Analytics and Glassnode (on‑chain dashboards) and DeFiLlama (TVL, protocol stats) — these show live, verifiable numbers you can click through. Dune dashboards are especially good because many dashboards include raw SQL-powered queries you can inspect.  \n- Transparent losses / postmortems: Rekt (rekt.news) and CertiK blog publish detailed postmortems of hacks and protocol failures, showing exactly how money was lost. For exchange/market losses reporting, CoinDesk and The Block cover big incidents with numbers and timelines.\n\nPut together: learn the concepts with Coin Bureau or Coinbase Learn, then switch to Dune/Glassnode/DeFiLlama to see real numbers and transactions, and read Rekt/CertiK/CoinDesk for honest write‑ups of what went wrong and how much was lost. That combo gives plain language explanations plus verifiable numbers and documented failures.\n\nIf you actually want educators who publish their personal trading P&L and losses, say so — I can point you to a few independent bloggers/YouTubers/Twitter accounts that publicly track their trades (but note this is rarer and often riskier to follow). Which of those do you want?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

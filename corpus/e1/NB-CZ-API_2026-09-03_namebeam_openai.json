@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-09-03_namebeam_openai",
+ "date_utc": "2026-09-03",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t a single “universal checker.” The most reliable approach is to (A) test major assistant models directly (ChatGPT, Bing Chat, Google Bard), and (B) use a knowledge-management service (Yext) plus good local-SEO listings so those models have the correct facts to surface.\n\nWhy: LLM-powered assistants draw on different sources (search engines, knowledge graphs, directories, proprietary datasets). Ensuring and verifying a recommendation requires both controlling the facts about your business (so models can use them) and querying the models to see whether they actually mention you.\n\nPractical plan\n\n1) Test directly on the assistants\n- Ask the same realistic queries on ChatGPT, Bing Chat, and Google Bard. Use different phrasings and contexts (e.g., “I need a [service] near [city/zip]”; “Recommend a [service] with good customer reviews”).  \n- Example prompts:\n  - “Recommend a reliable coffee shop within 1 mile of 94103. Include name, address, phone and one reason to pick it.”\n  - “I need a plumber in [city] open evenings — who would you recommend?”\n- Repeat tests at different times and with and without location enabled. If you want to automate, run these queries through the OpenAI API, Bing API, and Bard (or use browser automation).\n\n2) Use a knowledge-management service to increase chances the models recommend you\n- Yext is the most well-known service that syndicates verified business facts to search engines, directories and some AI partners and also offers answers/FAQ features for LLM-style search. If you want a single vendor to manage how your business facts appear to AI/search, Yext is a good choice.\n- Keep your Google Business Profile, Bing Places, Apple Maps, Yelp, and major directories accurate and complete — many assistants pull from these.\n\n3) Monitor local SEO and directory presence\n- Use BrightLocal, Moz Local, or SEMrush to monitor local listings, citations, and rankings. These won’t tell you exactly what ChatGPT says, but they measure the sources LLMs use.\n\n4) Improve machine-readable data\n- Add schema.org LocalBusiness structured data on your website and maintain an updated knowledge panel (Wikipedia/Wikidata if applicable). LLMs favor authoritative, structured sources.\n\n5) If you want an automated “checker”\n- Build a small script that queries the OpenAI API (and Bing/Bard if available) with a set of test prompts and logs results. This is the most direct way to continuously check whether ChatGPT (or any model you can access) recommends your business.\n\nRecommendation summary\n- If you want one commercial service to help ensure AI assistants recommend you: use Yext (plus keep Google Business Profile updated).  \n- To verify whether ChatGPT and other LLMs do recommend you: test them directly with targeted prompts (manually or via API).  \n- For broader visibility and monitoring: use BrightLocal / Moz / SEMrush plus good structured data and directory listings.\n\nIf you want, tell me your business type and city and I’ll give a few sample prompts you can paste into ChatGPT/Bard/Bing — or I can sketch a simple script to run automated checks.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

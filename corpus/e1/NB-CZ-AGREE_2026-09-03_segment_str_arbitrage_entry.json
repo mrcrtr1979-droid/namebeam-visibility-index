@@ -1,0 +1,61 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-03_segment_str_arbitrage_entry",
+ "date_utc": "2026-09-03",
+ "business": "SEGMENT: STR arbitrage entry",
+ "row_type": "agreement",
+ "prompt_text": "How do I start an Airbnb rental arbitrage business and what tools and data should I use?",
+ "engines_compared": [
+  "anthropic",
+  "openai"
+ ],
+ "engines_usable": 2,
+ "pairs": [
+  {
+   "terser_names": [
+    "Starting Airbnb Rental Arbitrage",
+    "Core Business Model",
+    "Lease",
+    "Airbnb",
+    "Key Steps",
+    "Useful Tools",
+    "Market Analysis",
+    "Google Trends",
+    "Critical Warnings"
+   ],
+   "verbose_names": [
+    "Airbnb",
+    "Airbnb’s Host Protection",
+    "STRs",
+    "Use",
+    "Vrbo",
+    "Booking.com",
+    "SOPs",
+    "Monthly",
+    "Gross",
+    "ADR",
+    "Occupancy",
+    "RevPAR",
+    "Schlage Encode",
+    "RemoteLock",
+    "PayPal",
+    "RealCover"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 9,
+   "verbose_entity_count": 16,
+   "containment_pct": 22.2,
+   "shared_count": 2,
+   "answer_chars_a": 8663,
+   "answer_chars_b": 1605,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
