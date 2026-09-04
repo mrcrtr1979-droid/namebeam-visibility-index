@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-09-04_namebeam_openai",
+ "date_utc": "2026-09-04",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there’s no single “official” service that tells you whether ChatGPT or other LLMs recommend your business. The practical best approach is twofold: (A) use a local-listing/knowledge-distribution service (Yext is the most widely used for making sure AI/search engines see the correct facts about your business) and (B) periodically test LLMs and search engines yourself (ChatGPT, Bing Chat, Google Bard, Perplexity) and use brand-monitoring tools to track mentions.\n\nRecommended stack and steps\n\n1) Control your canonical data\n- Google Business Profile (free) — required for appearing in Google Maps/Local Pack and often drives many AI answers.\n- Yext (paid) — pushes consistent structured data to dozens of platforms and claims better visibility in search/AI systems. Good if you want a single place to control your info.\n- Foursquare, Apple Maps, Facebook, data aggregators (Infogroup/Localeze/Neustar) — help ensure consistency across the web.\n\n2) Monitor local SEO and listings\n- BrightLocal, Moz Local, Whitespark — track local rankings, citations, reviews, and whether your NAP is consistent.\n- Use these to find gaps that affect whether search engines (and downstream AI systems) will surface you.\n\n3) Track online mentions (which feed LLMs)\n- Google Alerts, Mention, Brand24, Talkwalker — get notified when your business is written about online. LLMs often rely on recent web content, so coverage matters.\n\n4) Test LLM and search-agent recommendations directly\n- Manually query the major models and search assistants from a local context (or specify location in the prompt):\n  - ChatGPT (plain and with browsing/plugin-enabled versions)\n  - Bing Chat (Edge)\n  - Google Bard\n  - Perplexity.ai and DuckDuckGo’s AI\n  - Example prompts: “I’m in [City, ZIP]. Recommend a reliable [service/category] near me and explain why.” or “Find top-rated [business type] near [address].”\n- Save responses, note whether your business is mentioned, what sources are cited, and adjust listings/content accordingly.\n\n5) Improve signals LLMs use\n- Get a Google Knowledge Panel / Wikipedia / local press mentions.\n- Use schema.org structured data on your site (LocalBusiness markup, reviews, opening hours).\n- Encourage Google Reviews and other platform reviews; LLMs cite reviews and ratings.\n\nWhich single service is best?\n- If you must pick one paid service to maximize the chance AI systems surface your correct business facts: Yext. It’s designed to syndicate and structure business knowledge to many platforms and is marketed specifically to improve visibility in modern search/AI ecosystems.\n- If you only want to check current behavior (who recommends you now): manual testing across ChatGPT/Bing/Bard + a mention-monitoring tool (Google Alerts/Brand24) is the best route.\n\nIf you want, I can:\n- run example prompts you can use to test ChatGPT/Bing/Bard,\n- recommend a specific provider (Yext vs BrightLocal) based on your budget and goals,\n- or help draft structured-data snippets and example prompts to improve the odds LLMs recommend your business. Which would you like?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

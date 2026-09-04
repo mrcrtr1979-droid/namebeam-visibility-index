@@ -1,0 +1,123 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-04_segment_oil_change_pleasanton",
+ "date_utc": "2026-09-04",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "row_type": "agreement",
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "openai"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "I’ll",
+    "Valvoline Instant",
+    "Jiffy Lube",
+    "Pleasanton CA"
+   ],
+   "verbose_names": [
+    "Independent Mechanics",
+    "Precision Auto Repair",
+    "Location",
+    "Massachusetts Blvd",
+    "Tri-Valley. Excellent",
+    "Pleasanton Auto Repair",
+    "Johnson Dr",
+    "Valvoline Instant Oil Change",
+    "Dublin Blvd",
+    "Pro Tip",
+    "Jiffy Lube",
+    "Santa Rita Rd",
+    "Sunol Blvd",
+    "Tire Services",
+    "Big O Tires",
+    "Big O",
+    "Summary Recommendation"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 17,
+   "containment_pct": 50.0,
+   "shared_count": 2,
+   "answer_chars_a": 2468,
+   "answer_chars_b": 1599,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Jiffy Lube"
+   ],
+   "verbose_names": [
+    "Independent Mechanics",
+    "Precision Auto Repair",
+    "Location",
+    "Massachusetts Blvd",
+    "Tri-Valley. Excellent",
+    "Pleasanton Auto Repair",
+    "Johnson Dr",
+    "Valvoline Instant Oil Change",
+    "Dublin Blvd",
+    "Pro Tip",
+    "Jiffy Lube",
+    "Santa Rita Rd",
+    "Sunol Blvd",
+    "Tire Services",
+    "Big O Tires",
+    "Big O",
+    "Summary Recommendation"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 17,
+   "containment_pct": 100.0,
+   "shared_count": 1,
+   "answer_chars_a": 2468,
+   "answer_chars_b": 908,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Jiffy Lube"
+   ],
+   "verbose_names": [
+    "I’ll",
+    "Valvoline Instant",
+    "Jiffy Lube",
+    "Pleasanton CA"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 4,
+   "containment_pct": 100.0,
+   "shared_count": 1,
+   "answer_chars_a": 1599,
+   "answer_chars_b": 908,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

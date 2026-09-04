@@ -1,0 +1,133 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-04_segment_roofing_dallas",
+ "date_utc": "2026-09-04",
+ "business": "SEGMENT: roofing, Dallas",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "openai"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "GAF Master Elite",
+    "CertainTeed SELECT",
+    "Owens Corning Preferred"
+   ],
+   "verbose_names": [
+    "Dallas-Fort Worth",
+    "Top-Rated Roofing Companies",
+    "Construction",
+    "DFW. They",
+    "GAF Master Elite",
+    "North Texas",
+    "BBB A",
+    "Kangaroo Contractors",
+    "Key Credentials",
+    "Check Before Hiring\n\nSince Texas",
+    "Factory Certifications",
+    "Owens Corning Platinum Preferred",
+    "Proof of Insurance",
+    "General Liability",
+    "Workers' Compensation",
+    "Local Physical Presence",
+    "Ensure",
+    "P.O. Box",
+    "Next Steps",
+    "Compare Scope",
+    "Not Just Price",
+    "Check the BBB and Google Reviews"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 22,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 3361,
+   "answer_chars_b": 2688,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Texas Department of Licensing and Regulation",
+    "HomeAdvisor"
+   ],
+   "verbose_names": [
+    "Dallas-Fort Worth",
+    "Top-Rated Roofing Companies",
+    "Construction",
+    "DFW. They",
+    "GAF Master Elite",
+    "North Texas",
+    "BBB A",
+    "Kangaroo Contractors",
+    "Key Credentials",
+    "Check Before Hiring\n\nSince Texas",
+    "Factory Certifications",
+    "Owens Corning Platinum Preferred",
+    "Proof of Insurance",
+    "General Liability",
+    "Workers' Compensation",
+    "Local Physical Presence",
+    "Ensure",
+    "P.O. Box",
+    "Next Steps",
+    "Compare Scope",
+    "Not Just Price",
+    "Check the BBB and Google Reviews"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 22,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 3361,
+   "answer_chars_b": 999,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Texas Department of Licensing and Regulation",
+    "HomeAdvisor"
+   ],
+   "verbose_names": [
+    "GAF Master Elite",
+    "CertainTeed SELECT",
+    "Owens Corning Preferred"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 3,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2688,
+   "answer_chars_b": 999,
+   "zero_shared": true
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-04_lambos_digital",
+ "date_utc": "2026-09-04",
+ "business": "Lambos Digital",
+ "row_type": "agreement",
+ "prompt_text": "What is the best connected TV advertising agency?",
+ "engines_compared": [
+  "anthropic",
+  "openai"
+ ],
+ "engines_usable": 2,
+ "pairs": [
+  {
+   "terser_names": [
+    "GroupM",
+    "Ask Potential Partners",
+    "CTV-specific"
+   ],
+   "verbose_names": [
+    "Omnicom Media Group",
+    "Publicis Media",
+    "DSPs",
+    "Tremor Video",
+    "Samsung Ads",
+    "Innovid",
+    "VidMob",
+    "TVSquared",
+    "DoubleVerify",
+    "Roku",
+    "MRC-compliant",
+    "ROAS-driven CTV",
+    "DoubleVerify.\n\nIf"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 13,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2731,
+   "answer_chars_b": 1152,
+   "zero_shared": true
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
