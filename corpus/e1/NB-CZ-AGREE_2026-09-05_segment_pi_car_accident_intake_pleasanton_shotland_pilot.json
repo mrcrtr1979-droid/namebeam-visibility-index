@@ -1,0 +1,99 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-05_segment_pi_car_accident_intake_pleasanton_shotland_pilot",
+ "date_utc": "2026-09-05",
+ "business": "SEGMENT: PI car accident intake, Pleasanton (Shotland pilot)",
+ "row_type": "agreement",
+ "prompt_text": "I was in a car accident in Pleasanton CA. Which lawyer should I hire for my injury case?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Tri",
+    "Valley",
+    "Contra Costa County"
+   ],
+   "verbose_names": [
+    "GJEL Accident Attorneys",
+    "Division St Suite",
+    "Duncan Law Firm",
+    "Harris Personal Injury Lawyers",
+    "Pleasanton and Alameda County",
+    "Stephen M. Fuerch"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 6,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1787,
+   "answer_chars_b": 3728,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "California.\n\nWould"
+   ],
+   "verbose_names": [
+    "GJEL Accident Attorneys",
+    "Division St Suite",
+    "Duncan Law Firm",
+    "Harris Personal Injury Lawyers",
+    "Pleasanton and Alameda County",
+    "Stephen M. Fuerch"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 6,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1787,
+   "answer_chars_b": 1111,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "California.\n\nWould"
+   ],
+   "verbose_names": [
+    "Tri",
+    "Valley",
+    "Contra Costa County"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 3,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 3728,
+   "answer_chars_b": 1111,
+   "zero_shared": true
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

@@ -1,0 +1,221 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-05_segment_tanning_salons_charlotte",
+ "date_utc": "2026-09-05",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "row_type": "agreement",
+ "prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 4,
+ "pairs": [
+  {
+   "terser_names": [
+    "Gorgeous Glo Beauty Bar",
+    "Botanical Tans",
+    "Palm Beach Tan",
+    "TrustAnalytica",
+    "Apple Maps",
+    "Palm Beach Tan\n\nIf",
+    "SouthPark"
+   ],
+   "verbose_names": [
+    "Organic Tan Charlotte",
+    "Myers Park",
+    "South End",
+    "Automated Spray Booths\nIf",
+    "VersaSpa",
+    "Mystic Tan",
+    "Palm Beach Tan",
+    "Multiple",
+    "Lake Norman",
+    "VersaSpa Pro",
+    "Ultra Tan",
+    "Greater Charlotte",
+    "Local Mobile Tanners",
+    "Summary Recommendation"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 7,
+   "verbose_entity_count": 14,
+   "containment_pct": 28.6,
+   "shared_count": 2,
+   "answer_chars_a": 1323,
+   "answer_chars_b": 2451,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Google and Yelp"
+   ],
+   "verbose_names": [
+    "Gorgeous Glo Beauty Bar",
+    "Botanical Tans",
+    "Palm Beach Tan",
+    "TrustAnalytica",
+    "Apple Maps",
+    "Palm Beach Tan\n\nIf",
+    "SouthPark"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 7,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1323,
+   "answer_chars_b": 1823,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Google Maps",
+    "Ask",
+    "Check Charlotte",
+    "Charlotte.\n\nWould"
+   ],
+   "verbose_names": [
+    "Gorgeous Glo Beauty Bar",
+    "Botanical Tans",
+    "Palm Beach Tan",
+    "TrustAnalytica",
+    "Apple Maps",
+    "Palm Beach Tan\n\nIf",
+    "SouthPark"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 7,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1323,
+   "answer_chars_b": 910,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Google and Yelp"
+   ],
+   "verbose_names": [
+    "Organic Tan Charlotte",
+    "Myers Park",
+    "South End",
+    "Automated Spray Booths\nIf",
+    "VersaSpa",
+    "Mystic Tan",
+    "Palm Beach Tan",
+    "Multiple",
+    "Lake Norman",
+    "VersaSpa Pro",
+    "Ultra Tan",
+    "Greater Charlotte",
+    "Local Mobile Tanners",
+    "Summary Recommendation"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "gemini",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 14,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2451,
+   "answer_chars_b": 1823,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Google Maps",
+    "Ask",
+    "Check Charlotte",
+    "Charlotte.\n\nWould"
+   ],
+   "verbose_names": [
+    "Organic Tan Charlotte",
+    "Myers Park",
+    "South End",
+    "Automated Spray Booths\nIf",
+    "VersaSpa",
+    "Mystic Tan",
+    "Palm Beach Tan",
+    "Multiple",
+    "Lake Norman",
+    "VersaSpa Pro",
+    "Ultra Tan",
+    "Greater Charlotte",
+    "Local Mobile Tanners",
+    "Summary Recommendation"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 14,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2451,
+   "answer_chars_b": 910,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Google and Yelp"
+   ],
+   "verbose_names": [
+    "Google Maps",
+    "Ask",
+    "Check Charlotte",
+    "Charlotte.\n\nWould"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 4,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1823,
+   "answer_chars_b": 910,
+   "zero_shared": true
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

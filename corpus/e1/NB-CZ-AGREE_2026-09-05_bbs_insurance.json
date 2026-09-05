@@ -1,0 +1,129 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-05_bbs_insurance",
+ "date_utc": "2026-09-05",
+ "business": "BBS Insurance",
+ "row_type": "agreement",
+ "prompt_text": "What is the best health insurance broker in Kansas City MO for someone who is self-employed?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Medicaid",
+    "Kansas City",
+    "Missouri",
+    "HealthSherpa",
+    "GoHealth and HealthMarkets",
+    "Healthcare.gov",
+    "Missouri Exchange"
+   ],
+   "verbose_names": [
+    "Kansas City",
+    "LewerBenefits",
+    "NuLight Consulting",
+    "Jeff David Insurance",
+    "ACA-style",
+    "FD Insurance Agency",
+    "AIS Health Advisors",
+    "Kansas City Medicare",
+    "ACA Marketplace",
+    "HSA-compatible"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 7,
+   "verbose_entity_count": 10,
+   "containment_pct": 14.3,
+   "shared_count": 1,
+   "answer_chars_a": 1180,
+   "answer_chars_b": 2868,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Health Insurance Broker",
+    "Kansas City\n\nI",
+    "Look For",
+    "Local",
+    "National Association of Health Underwriters",
+    "Kansas City",
+    "Healthcare.gov",
+    "Consider Direct Options Too"
+   ],
+   "verbose_names": [
+    "Kansas City",
+    "LewerBenefits",
+    "NuLight Consulting",
+    "Jeff David Insurance",
+    "ACA-style",
+    "FD Insurance Agency",
+    "AIS Health Advisors",
+    "Kansas City Medicare",
+    "ACA Marketplace",
+    "HSA-compatible"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 8,
+   "verbose_entity_count": 10,
+   "containment_pct": 25.0,
+   "shared_count": 2,
+   "answer_chars_a": 1180,
+   "answer_chars_b": 1429,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Medicaid",
+    "Kansas City",
+    "Missouri",
+    "HealthSherpa",
+    "GoHealth and HealthMarkets",
+    "Healthcare.gov",
+    "Missouri Exchange"
+   ],
+   "verbose_names": [
+    "Health Insurance Broker",
+    "Kansas City\n\nI",
+    "Look For",
+    "Local",
+    "National Association of Health Underwriters",
+    "Kansas City",
+    "Healthcare.gov",
+    "Consider Direct Options Too"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 7,
+   "verbose_entity_count": 8,
+   "containment_pct": 28.6,
+   "shared_count": 2,
+   "answer_chars_a": 2868,
+   "answer_chars_b": 1429,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

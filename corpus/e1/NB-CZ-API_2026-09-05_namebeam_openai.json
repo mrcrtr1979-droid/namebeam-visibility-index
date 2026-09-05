@@ -1,0 +1,22 @@
+{
+ "check_id": "NB-CZ-API_2026-09-05_namebeam_openai",
+ "date_utc": "2026-09-05",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: There’s no single “official” service that tells every LLM whether it will recommend your business. The practical best approach is to (A) make sure your business is in the major knowledge sources and has good structured data, and (B) use a combination of a listing/distribution service (Yext, BrightLocal, Moz Local, Whitespark) plus direct testing in LLMs (ChatGPT, Bing Chat, Bard). Yext is the one vendor that explicitly focuses on feeding and syncing your verified knowledge to search/knowledge-graph ecosystems and offers LLM integrations; BrightLocal/Moz/Whitespark are excellent for local citations and monitoring.\n\nRecommended checklist (quick, actionable)\n1. Claim the core listings:\n   - Google Business Profile (most important), Bing Places, Apple Business Connect, Yelp, TripAdvisor (if relevant).\n2. Publish structured data on your website:\n   - Add schema.org LocalBusiness markup (name, address, phone, hours, services, geo).\n   - Test with Google’s Rich Results/Schema validators.\n3. Use a listings/distribution and monitoring tool:\n   - Yext (strong for knowledge graph syncs and LLM integrations), OR\n   - BrightLocal / Moz Local / Whitespark (good for citations, rank tracking, review monitoring).\n4. Monitor visibility and mentions:\n   - Google Search Console, Bing Webmaster Tools.\n   - Brand monitoring: Google Alerts, Mention, Brand24.\n5. Test LLMs directly and regularly:\n   - Ask ChatGPT (with browsing on, if available), Bing Chat, Google Bard whether they recommend your business. Try name-based and category-based prompts and local context.\n\nPrompt templates to test ChatGPT / other LLMs\n- “I’m in [city]. Where should I go for [service]? Please list 3 good local options and why.”  \n- “Do you know of [Business Name] at [address/city]? Would you recommend them for [service]? Why or why not?”  \n- “If a customer asked for [specific need] in [neighborhood/city], which local businesses would you recommend? Include businesses with good reviews and explain why.”\n\nThings to watch for\n- Model differences and cutoffs: offline models without browsing may not know new businesses. Models can hallucinate — verify any claim they make.\n- Knowledge panels & structured data matter more than ads: LLMs use knowledge graphs and reputable directories as sources.\n- Reviews and citations: volume and consistency of listings across directories help LLMs surface your business.\n\nWhen to use paid help\n- Use Yext if you want an enterprise-grade knowledge graph and explicit LLM integrations (they market features that help push verified answers to search/AI channels).\n- Use BrightLocal / Moz Local / Whitespark for SMB-focused citation building, rank tracking, and review management.\n\nIf you want, I can:\n- Draft the exact prompts to probe ChatGPT/Bing/Bard for your business,\n- Review your website’s schema markup (paste a page URL),\n- Recommend which listing tool fits your budget and goals.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

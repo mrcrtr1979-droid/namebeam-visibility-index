@@ -1,0 +1,109 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-05_pyne_creative",
+ "date_utc": "2026-09-05",
+ "business": "PYNE Creative",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best marketing agency in Maryland?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Maryland",
+    "UpCity",
+    "Google Business",
+    "LinkedIn",
+    "Maryland Tech Council",
+    "KPIs"
+   ],
+   "verbose_names": [
+    "Maryland",
+    "Anderson Collaborative",
+    "National Marketing Awards",
+    "MGH Marketing",
+    "Advertising",
+    "Warschawski",
+    "Mission Agency",
+    "Dragonfly Digital Marketing",
+    "Level Agency",
+    "Hit Me SEO"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 6,
+   "verbose_entity_count": 10,
+   "containment_pct": 33.3,
+   "shared_count": 2,
+   "answer_chars_a": 1204,
+   "answer_chars_b": 1866,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Maryland",
+    "Anderson Collaborative",
+    "National Marketing Awards",
+    "MGH Marketing",
+    "Advertising",
+    "Warschawski",
+    "Mission Agency",
+    "Dragonfly Digital Marketing",
+    "Level Agency",
+    "Hit Me SEO"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 10,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 1204,
+   "answer_chars_b": 799,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Maryland",
+    "UpCity",
+    "Google Business",
+    "LinkedIn",
+    "Maryland Tech Council",
+    "KPIs"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 6,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 1866,
+   "answer_chars_b": 799,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
