@@ -33,6 +33,7 @@ from extract_named_entities import (
     extract_named_entities,
     extract_stated_criteria,
 )
+from extract_entities_orthographic import extract_entities_orthographic
 
 ROSTER_PATH = "roster/e1_roster.json"
 OUTPUT_DIR = "corpus/e1"
@@ -102,6 +103,34 @@ def base_row(business_row, date_utc, check_id, engine):
     }
 
 
+def extract_competitors(business_row, text, sources):
+    """WO-2026-09-06-C fix. The bold-based extractor (extract_named_entities)
+    finds nothing on any engine whose plain style never emits **bold** --
+    measured on the 2026-09-06 corpus: 1,149 OK openai rows, 0 contained a
+    single "**" anywhere, so the field was mechanically guaranteed to come
+    back empty on every one of them. It is not a call failure (the answer
+    text is right there in answer_verbatim) and it is not a discarded
+    result; the bold-keyed method simply has nothing to key on for an
+    engine that writes plain prose.
+
+    Fix, FORWARD ONLY (no historical row is touched): try the bold-based
+    extractor first, exactly as before, so every engine that already works
+    (anthropic, most of perplexity and gemini) gets byte-identical output to
+    before this patch. Only when that comes back empty do we fall back to
+    the orthographic extractor (capitalisation-keyed, engine-independent,
+    already proven in agreement.py and now carrying the WO-2026-09-06-A/-C
+    stoplist) so a plain-prose engine is no longer guaranteed a zero.
+    """
+    names = extract_named_entities(
+        text, business_row["business"],
+        business_row.get("variants_business_name_forms", []))
+    if names:
+        return names
+    return extract_entities_orthographic(
+        text, business_row["business"],
+        business_row.get("variants_business_name_forms", []), sources)
+
+
 def is_mentioned(business_row, text):
     if not text:
         return False
@@ -143,9 +172,8 @@ def run_engine(business_row, engine, fn, date_utc):
     row.update({
         "run_status": "OK",
         "business_mentioned": is_mentioned(business_row, text),
-        "competitors_mentioned": extract_named_entities(
-            text, business_row["business"],
-            business_row.get("variants_business_name_forms", [])),
+        "competitors_mentioned": extract_competitors(
+            business_row, text, sources),
         "engine_stated_criteria": extract_stated_criteria(text),
         "sources_cited": sources,
         "factor_scores": None,
@@ -157,7 +185,19 @@ def run_engine(business_row, engine, fn, date_utc):
 
 def run_serp(business_row, date_utc):
     """Writes a SERP row: who RANKS on Google for the same question.
-    Paired with the engine rows, this is the rank-to-citation delta."""
+    Paired with the engine rows, this is the rank-to-citation delta.
+
+    WO-2026-09-06-C: google_serp is NOT an answer engine and carries no
+    competitors_mentioned field at all (see base_row/write_row above -- this
+    function never calls extract_competitors). It fetches a Google RESULTS
+    PAGE, not a conversational answer, so there is no answer text to run a
+    named-entity extractor over; organic_top_results (search-result listings)
+    is the honest analogue, and it is a different measurement, ranking, not
+    naming. Any published "share of rows naming a competitor, by engine"
+    figure must exclude google_serp from its denominator entirely rather
+    than reporting it as a 0-of-N extraction failure. Measured 2026-09-06:
+    1,270 of 1,270 google_serp rows have no competitors_mentioned field,
+    by design, in every one of them."""
     slug = slugify(business_row["business"])
     check_id = "NB-CZ-SERP_%s_%s" % (date_utc, slug)
     n = 2
