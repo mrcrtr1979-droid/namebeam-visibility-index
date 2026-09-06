@@ -10,7 +10,7 @@ figure built on bolding is partly measuring typography.
 
 This module keys on ORTHOGRAPHY instead: runs of Capitalised words, which is
 a convention both engines follow because English requires it. It is therefore
-comparable ACROSS engines in a way bolding is not.
+comparable ACROSS engines in a way bolding is not, not by bolding.
 
 Still mechanical and reproducible. No LLM, no judgement call, so two runs over
 the same text always agree. Errors run toward FALSE NEGATIVES, which is the
@@ -63,9 +63,89 @@ _GENERIC = {
     "sunday", "bbb", "better business bureau",
 }
 
+
+# --------------------------------------------------------------------------
+# STOPLIST, added per WO-2026-09-06-A / WO-2026-09-06-C.
+#
+# Measured on the live corpus 2026-09-06: across 4,096 OK API answers this
+# extractor produced 10,611 distinct strings, and a real share were not
+# businesses at all -- rubric labels ("Summary Recommendation"), section
+# headers, regulatory/certification bodies ("State Bar of California",
+# "GAF Master Elite"), and bare category acronyms ("SaaS", "HIPAA", "RevPAR")
+# that pass the orthographic bars (internal capitalisation, digits, repeat
+# use) without being a company. WO-2026-09-06-A named five live examples by
+# hand: "Parking", "Hot Tub", "Pro Tip", "Highway 1 Traffic", "For Beach +
+# Nightlife/Dining". This set was built by frequency-sorting the actual
+# extractor output over the whole corpus and hand-classifying the top ~400
+# strings, not by guessing categories in the abstract.
+#
+# Exact match, case-insensitive, against the full candidate span -- never a
+# substring match -- so a real business that merely CONTAINS a stopword
+# ("Local Motion Painting LLC") is untouched. This is deliberately narrower
+# than it could be: known residual junk this list does NOT catch (measured,
+# not hidden) is one-off amenity/section headers unique to a single answer
+# (a name seen once cannot be told apart from a stoplist entry seen once
+# without eating real single-mention names), sentence-run-on artifacts where
+# the run-matcher glues a sentence-final capitalised word to the next
+# sentence's opener across a period, and bare geographic place names
+# ("St. Louis", "Kansas City"), which are real names but not competing
+# BUSINESSES -- left untouched here because that is a different, larger
+# policy question (should the corpus even try to classify entity TYPE) that
+# was not asked for in this work order and deserves its own decision, not a
+# silent stoplist entry.
+# --------------------------------------------------------------------------
+_STOPLIST = {
+    # --- WO-2026-09-06-A named examples, verbatim ---
+    "parking", "hot tub", "pro tip", "highway 1 traffic",
+    "for beach + nightlife/dining", "state bar of california",
+    "local bar associations", "questions to ask",
+    # --- generic single words / rubric labels (high-frequency, non-business) ---
+    "ask", "look", "check", "choose", "step", "part", "local", "downtown",
+    "overview", "specialty", "specialties", "reputation", "marketplace",
+    "location", "english", "focus", "read", "get", "search", "course",
+    "good", "known", "highlights", "free", "pricing", "marketing",
+    "construction", "heating", "plumbing", "hotel", "crypto", "transparent",
+    "pros", "cons", "platform", "wifi", "chateau", "south", "westside",
+    "broadway", "hospitable",
+    # --- multi-word rubric / section-header phrases ---
+    "summary recommendation", "key factors", "look for",
+    "recommended next steps", "core business model", "pick one",
+    "good host", "premier host", "trial experience", "occupancy rate",
+    "market analysis", "key questions", "operating expenses",
+    "specific recommendations", "essential steps", "monthly profit",
+    "monthly rent", "web design", "local seo", "popular platforms",
+    "average daily rate", "health insurance broker", "find local help",
+    "find the right broker", "red flags", "monitoring tools",
+    "market dashboards", "key tools", "key features", "board certified",
+    "board certification", "industry experience",
+    "revenue per available room", "my honest take", "local facebook",
+    "check google", "personal injury trial law",
+    # --- acronyms / category shorthand mistaken for brand names ---
+    "kpis", "saas", "hipaa", "hipaa-compliant", "smbs", "revpar", "adr",
+    "strs", "sops", "llms", "defi", "dsps", "b2b saas", "ctv-focused",
+    "ctv-specific", "ai-driven", "ai-powered", "ai-enabled", "ai-generated",
+    "ugc-style",
+    # --- regulatory / certification bodies (real orgs, not competitors) ---
+    "state bar of texas", "alameda county bar association",
+    "national association of health underwriters",
+    "arizona registrar of contractors",
+    "texas department of licensing and regulation",
+    "texas board of legal specialization", "missouri department of insurance",
+    "florida dbpr", "north american technician excellence",
+    "nate-certified", "gaf master elite", "certainteed select shinglemaster",
+    "owens corning platinum preferred", "owens corning preferred",
+    "manual j", "fmcsa",
+}
+
+# Pronoun-contraction artifact: the run-matcher admits "I" (capital) glued to
+# a trailing contraction ("I'll", "I'd", "I've", "I'm") because the regex
+# treats the apostrophe as a normal name character (needed for "O'Brien",
+# "Trader Joe's"). Caught by pattern, not by listing every contraction.
+_CONTRACTION_ARTIFACT = re.compile(r"^i[''](ll|d|m|ve|s)$", re.I)
+
 _CAP_RUN = re.compile(
-    r"\b([A-Z][A-Za-z0-9&'’.\-]*(?:\s+(?:of|the|and|for|de|la)\s+"
-    r"[A-Z][A-Za-z0-9&'’.\-]*|\s+[A-Z][A-Za-z0-9&'’.\-]*){0,5})"
+    r"\b([A-Z][A-Za-z0-9&''.-]*(?:\s+(?:of|the|and|for|de|la)\s+"
+    r"[A-Z][A-Za-z0-9&''.-]*|\s+[A-Z][A-Za-z0-9&''.-]*){0,5})"
 )
 
 
@@ -89,7 +169,7 @@ def _domain_tokens(sources):
         host = m.group(1).lower().replace("www.", "")
         core = host.rsplit(".", 1)[0]
         core = re.sub(r"\.(co|com|org|net|gov|edu|ac)$", "", core)
-        for piece in re.split(r"[.\-]", core):
+        for piece in re.split(r"[.-]", core):
             if len(piece) >= 4:
                 out.add(piece)
     return out
@@ -116,6 +196,20 @@ def extract_entities_orthographic(text, subject=None, subject_variants=None,
         span = m.group(1).strip().strip(".,;:")
         if not span:
             continue
+        # Sentence/paragraph run-on artifact: the \s+ connector between
+        # capitalised words matches ACROSS a literal newline, so a real name
+        # that ends a paragraph gets glued to the next paragraph's opening
+        # capitalised word ("VRBO\n\nWhen", "MO\n\nI"). TRUNCATE to the
+        # text before the first newline rather than discarding the whole
+        # span outright: measured on the 2026-09-06 corpus, outright
+        # rejection was silently dropping the ONLY mention of a real name in
+        # a row for VRBO, Northbeam, Pritchard, Amplitude and others because
+        # the glued run was their sole occurrence in that answer. Truncating
+        # keeps the real name and drops only the run-on garbage after it.
+        if "\n" in span:
+            span = span.split("\n", 1)[0].strip().strip(".,;:")
+            if not span:
+                continue
         key = span.lower()
         initial = m.start() in starts
         if not initial:
@@ -134,6 +228,14 @@ def extract_entities_orthographic(text, subject=None, subject_variants=None,
         if key in _GENERIC or words[0].lower() in _STOP_INITIAL and len(words) == 1:
             continue
         if len(span) < 3 or len(words) > 6:
+            continue
+        # STOPLIST (WO-2026-09-06-A/-C): rubric labels, regulatory bodies,
+        # and category acronyms mechanically pass the bars below without
+        # being a business. Exact match only, never substring.
+        if key in _STOPLIST:
+            continue
+        # Pronoun-contraction artifact ("I'll", "I'd", ...), see above.
+        if _CONTRACTION_ARTIFACT.match(span):
             continue
 
         domain_backed = any(t in flat for t in dom if len(t) >= 5)
