@@ -1,0 +1,115 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-06_segment_str_host_tooling",
+ "date_utc": "2026-09-06",
+ "business": "SEGMENT: STR host tooling",
+ "row_type": "agreement",
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "PriceLabs",
+    "Wheelhouse",
+    "Beyond Pricing",
+    "Airbnb Smart Pricing"
+   ],
+   "verbose_names": [
+    "MarketMinder",
+    "PriceLabs",
+    "Wheelhouse",
+    "Beyond Pricing",
+    "AirDNA"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 5,
+   "containment_pct": 75.0,
+   "shared_count": 3,
+   "answer_chars_a": 1155,
+   "answer_chars_b": 2223,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "PriceLabs",
+    "Wheelhouse",
+    "Beyond Pricing",
+    "Airbnb Smart Pricing"
+   ],
+   "verbose_names": [
+    "Smart Pricing",
+    "Wheelhouse",
+    "PriceLabs",
+    "Airbnb Price Optimizer",
+    "AirDNA",
+    "Airdna's Market Minder",
+    "Google Trends",
+    "My Recommendation",
+    "Airbnb's Smart Pricing"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 9,
+   "containment_pct": 75.0,
+   "shared_count": 3,
+   "answer_chars_a": 1155,
+   "answer_chars_b": 1148,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "MarketMinder",
+    "PriceLabs",
+    "Wheelhouse",
+    "Beyond Pricing",
+    "AirDNA"
+   ],
+   "verbose_names": [
+    "Smart Pricing",
+    "Wheelhouse",
+    "PriceLabs",
+    "Airbnb Price Optimizer",
+    "AirDNA",
+    "Airdna's Market Minder",
+    "Google Trends",
+    "My Recommendation",
+    "Airbnb's Smart Pricing"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 9,
+   "containment_pct": 60.0,
+   "shared_count": 3,
+   "answer_chars_a": 2223,
+   "answer_chars_b": 1148,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
