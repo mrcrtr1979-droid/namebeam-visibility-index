@@ -1,0 +1,29 @@
+{
+ "check_id": "NB-CZ-API_2026-09-07_segment_str_host_tooling_openai",
+ "date_utc": "2026-09-07",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "MarketMinder",
+  "PriceLabs",
+  "Wheelhouse",
+  "PMSs. It",
+  "Beyond Pricing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- For market research before buying: AirDNA (MarketMinder) is generally the best single tool.\n- For setting nightly pricing/day-to-day dynamic pricing: PriceLabs is the most flexible and widely recommended; Beyond Pricing and Wheelhouse are good alternatives.  \nBest practice: use AirDNA to analyze markets and simulate income, then use PriceLabs (or Wheelhouse/Beyond) to run automated daily pricing once you list.\n\nWhy I recommend those\n- AirDNA: designed for investors and hosts who are evaluating neighborhoods/portfolios. It provides ADR, occupancy, RevPAR, seasonality curves, booking lead times, revenue estimates for comps, historical trends, supply growth, and filters for property type/size. Good for “does this market make sense?” and “what can a 1‑bed/2‑bed in X neighborhood expect?”\n- PriceLabs: robust dynamic-pricing engine with granular rules, custom minimums, seasonal controls, length-of-stay and last-minute controls, and good integration with Airbnb/PMSs. It’s highly customizable so you can protect margins while capturing demand.\n- Wheelhouse & Beyond Pricing: similar to PriceLabs; Wheelhouse excels with pricing strategies and dashboards, Beyond Pricing is simpler and often run-as-a-service (less customization than PriceLabs, but easier to set up).\n- Airbnb Smart Pricing: free, but simplistic and can underprice or not capture local nuance.\n\nWhat to look at when analyzing a market before buying\n1. Comparable listings (same bedroom count, entire home vs. private room).  \n2. ADR (average daily rate) and occupancy by month—not just annual averages.  \n3. RevPAR (revenue per available room) or projected annual revenue for comparable units.  \n4. Seasonality and peak months — will you have long low-demand stretches?  \n5. Booking lead times and length-of-stay trends.  \n6. Supply growth (new listings) and listing turnover.  \n7. Review counts & guest demand indicators (how quickly comps book).  \n8. Local rules, taxes, HOA restrictions, and short‑term rental risk.  \n9. Operating costs (cleaning, management fees, utilities, furnishing, mortgage).  \n10. Sensitivity analysis: upside/downside scenarios for occupancy and ADR.\n\nPractical step-by-step workflow\n1. Run MarketMinder (AirDNA) for the city + specific neighborhood(s).  \n2. Filter to comps matching your planned unit type and amenities. Note ADR, occupancy, and monthly seasonality.  \n3. Model net income after expenses (use conservative occupancy and ADR).  \n4. If the numbers look promising, list the address on a pricing tool trial (PriceLabs, Wheelhouse) and simulate pricing for a year to see realistic revenue curves.  \n5. Check regulatory/tax risks and local management availability.  \n6. If you buy and list, connect PriceLabs (or your chosen tool) to automate pricing and monitor weekly.\n\nOther options to consider\n- Mashvisor: another investor-focused analytics platform (good for some markets).  \n- Transparent: more enterprise-level data for managers.  \n- Local market research: talk to local hosts, property managers, and realtors.\n\nIf you want, tell me the city/neighborhood and property type you’re considering and I’ll point to the specific AirDNA metrics to check and a quick revenue estimate baseline.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
