@@ -1,0 +1,31 @@
+{
+ "check_id": "NB-CZ-API_2026-09-08_segment_str_host_tooling_openai",
+ "date_utc": "2026-09-08",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "MarketMinder",
+  "PriceLabs",
+  "Wheelhouse",
+  "Beyond Pricing",
+  "AirDNA",
+  "AirDNA MarketMinder",
+  "Airbnb",
+  "PMSs"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- Use AirDNA (MarketMinder) to analyze a market before buying.\n- Use a dynamic-pricing tool like PriceLabs, Wheelhouse or Beyond Pricing to set nightly rates once you list.\nBest practice is to pair AirDNA for pre‑purchase research with PriceLabs or Wheelhouse for day‑to‑day pricing.\n\nWhy that combo\n- AirDNA MarketMinder: market‑level historical and forecast data (ADR, occupancy, RevPAR, seasonality, demand heat maps, comparable listings, booking lead times). Built for investors doing buy/no‑buy analysis and ROI estimates.\n- PriceLabs: highly customizable rules, seasonality and minimum‑stay management, robust integrations with Airbnb and most PMSs, great for revenue optimization across portfolios.\n- Wheelhouse: very user‑friendly, strong forecasting and scenario testing; good balance of automation and manual control.\n- Beyond Pricing: simpler set‑and‑forget approach, good integration and automated optimization for hosts who want minimal tweaking.\n\nQuick tool comparisons\n- AirDNA MarketMinder — best for market research before purchasing. Pros: deep market analytics, comps, seasonality, revenue estimates. Cons: paid, less granular for individual listing nuances.\n- PriceLabs — best overall dynamic pricing for active hosts. Pros: flexible rules, calendar management, strong integrations, good for multi‑listing portfolios. Cons: steeper learning curve.\n- Wheelhouse — best balance of automation + control. Pros: excellent UI, scenario planning, reliable revenue lift. Cons: slightly more expensive in some cases.\n- Beyond Pricing — best for hands‑off hosts. Pros: very simple to set up. Cons: less granular control than PriceLabs/Wheelhouse.\n- Airbnb Smart Pricing — free and built into Airbnb but often too blunt; use only if you need a no‑cost option.\n\nWhat to look at when analyzing a market (use AirDNA or similar)\n- ADR (average daily rate) and occupancy for the area and comparable listings\n- RevPAR and revenue seasonality (monthly/weekly patterns)\n- Minimum/average length of stay and booking lead times\n- Listing mix: percent entire-home vs private room, and average amenities\n- Supply trends: number of active listings, growth/shrinkage\n- Events, tourism drivers and off‑season risks\n- Local regulations, taxes and permit requirements\n- Comparable listing performance (cleaning fees, extra guest fees)\n- Typical operating costs (cleaning, utilities, management, furnishing)\n- Financing assumptions — calculate cash‑on‑cash return, cap rate, and break‑even occupancy\n\nSimple ROI workflow\n1. Use AirDNA to estimate expected annual gross revenue for comparable units.\n2. Subtract realistic operating expenses (cleaning, utilities, insurance, taxes, platform fees, management).\n3. Subtract mortgage debt service to estimate cash flow.\n4. Compute cap rate and cash‑on‑cash return to compare to other investments.\n\nIf you want a single recommendation\n- For researching a market before buying: start with AirDNA MarketMinder.\n- For setting nightly pricing after you list: PriceLabs (or Wheelhouse if you prefer an easier setup).\n\nIf you’d like, tell me the city/neighborhood you’re looking at and I can:\n- Suggest which comparable metrics to focus on,\n- Estimate high‑level revenue ranges and seasonality to expect, or\n- Recommend which pricing tool (PriceLabs/Wheelhouse/Beyond) best fits your comfort level and scale.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

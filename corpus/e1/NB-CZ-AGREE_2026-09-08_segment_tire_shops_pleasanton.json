@@ -1,0 +1,218 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-08_segment_tire_shops_pleasanton",
+ "date_utc": "2026-09-08",
+ "business": "SEGMENT: tire shops, Pleasanton",
+ "row_type": "agreement",
+ "prompt_text": "Where should I buy tires in Pleasanton CA and who does the best installation?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 4,
+ "pairs": [
+  {
+   "terser_names": [
+    "Amador Valley Blvd",
+    "Dublin",
+    "North Pleasanton",
+    "Road Force",
+    "N Dublin Ranch Rd",
+    "Road Hazard Warranty",
+    "Pimlico Dr",
+    "America's Tire",
+    "Santa Rita Rd"
+   ],
+   "verbose_names": [
+    "Seever",
+    "Son",
+    "Tire",
+    "Tire Choice Auto Service Center",
+    "Rosewood Rd",
+    "Big O Tires",
+    "Big Brand Tire",
+    "Old Santa Rita Rd",
+    "Washington St",
+    "Tire Choice"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "gemini",
+   "terser_entity_count": 9,
+   "verbose_entity_count": 10,
+   "containment_pct": 11.1,
+   "shared_count": 1,
+   "answer_chars_a": 1626,
+   "answer_chars_b": 2307,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "America's Tire",
+    "Pep Boys",
+    "Google and Yelp",
+    "ASE-certified"
+   ],
+   "verbose_names": [
+    "Seever",
+    "Son",
+    "Tire",
+    "Tire Choice Auto Service Center",
+    "Rosewood Rd",
+    "Big O Tires",
+    "Big Brand Tire",
+    "Old Santa Rita Rd",
+    "Washington St",
+    "Tire Choice"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 10,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1626,
+   "answer_chars_b": 2135,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "National Chains",
+    "Google Maps"
+   ],
+   "verbose_names": [
+    "Seever",
+    "Son",
+    "Tire",
+    "Tire Choice Auto Service Center",
+    "Rosewood Rd",
+    "Big O Tires",
+    "Big Brand Tire",
+    "Old Santa Rita Rd",
+    "Washington St",
+    "Tire Choice"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 10,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1626,
+   "answer_chars_b": 1064,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "America's Tire",
+    "Pep Boys",
+    "Google and Yelp",
+    "ASE-certified"
+   ],
+   "verbose_names": [
+    "Amador Valley Blvd",
+    "Dublin",
+    "North Pleasanton",
+    "Road Force",
+    "N Dublin Ranch Rd",
+    "Road Hazard Warranty",
+    "Pimlico Dr",
+    "America's Tire",
+    "Santa Rita Rd"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 9,
+   "containment_pct": 25.0,
+   "shared_count": 1,
+   "answer_chars_a": 2307,
+   "answer_chars_b": 2135,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "National Chains",
+    "Google Maps"
+   ],
+   "verbose_names": [
+    "Amador Valley Blvd",
+    "Dublin",
+    "North Pleasanton",
+    "Road Force",
+    "N Dublin Ranch Rd",
+    "Road Hazard Warranty",
+    "Pimlico Dr",
+    "America's Tire",
+    "Santa Rita Rd"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 9,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2307,
+   "answer_chars_b": 1064,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "National Chains",
+    "Google Maps"
+   ],
+   "verbose_names": [
+    "America's Tire",
+    "Pep Boys",
+    "Google and Yelp",
+    "ASE-certified"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 4,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2135,
+   "answer_chars_b": 1064,
+   "zero_shared": true
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

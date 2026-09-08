@@ -1,0 +1,109 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-08_quickads",
+ "date_utc": "2026-09-08",
+ "business": "Quickads",
+ "row_type": "agreement",
+ "prompt_text": "What is the best AI video ad maker?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Creatify",
+    "HeyGen",
+    "Revid.ai"
+   ],
+   "verbose_names": [
+    "HeyGen",
+    "Movio",
+    "FlexClip",
+    "Rephrase.ai",
+    "Lumen5",
+    "Instagram Reels",
+    "TikTok",
+    "YouTube"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 8,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 993,
+   "answer_chars_b": 2243,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Creatify",
+    "HeyGen",
+    "Revid.ai"
+   ],
+   "verbose_names": [
+    "HeyGen",
+    "Invideo AI",
+    "Opus Clip",
+    "My Suggestion"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 4,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 993,
+   "answer_chars_b": 1165,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "HeyGen",
+    "Invideo AI",
+    "Opus Clip",
+    "My Suggestion"
+   ],
+   "verbose_names": [
+    "HeyGen",
+    "Movio",
+    "FlexClip",
+    "Rephrase.ai",
+    "Lumen5",
+    "Instagram Reels",
+    "TikTok",
+    "YouTube"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 8,
+   "containment_pct": 25.0,
+   "shared_count": 1,
+   "answer_chars_a": 2243,
+   "answer_chars_b": 1165,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
