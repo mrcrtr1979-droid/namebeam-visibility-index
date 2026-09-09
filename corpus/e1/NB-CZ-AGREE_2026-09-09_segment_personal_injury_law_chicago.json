@@ -1,0 +1,107 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-09_segment_personal_injury_law_chicago",
+ "date_utc": "2026-09-09",
+ "business": "SEGMENT: personal injury law, Chicago",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best personal injury attorney in Chicago for a car accident claim?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Super Lawyers",
+    "Martindale-Hubbell AV",
+    "ZIP"
+   ],
+   "verbose_names": [
+    "Super Lawyers",
+    "Rosenfeld Injury Lawyers",
+    "Horwitz",
+    "Malman Law",
+    "Staver Accident Injury Lawyers",
+    "Briskman",
+    "TorHoerman Law",
+    "Local Chicago"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 8,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 1717,
+   "answer_chars_b": 2602,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Super Lawyers",
+    "Google Reviews",
+    "Illinois State Bar Association"
+   ],
+   "verbose_names": [
+    "Super Lawyers",
+    "Rosenfeld Injury Lawyers",
+    "Horwitz",
+    "Malman Law",
+    "Staver Accident Injury Lawyers",
+    "Briskman",
+    "TorHoerman Law",
+    "Local Chicago"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 8,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 1717,
+   "answer_chars_b": 1085,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Super Lawyers",
+    "Martindale-Hubbell AV",
+    "ZIP"
+   ],
+   "verbose_names": [
+    "Super Lawyers",
+    "Google Reviews",
+    "Illinois State Bar Association"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 3,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 2602,
+   "answer_chars_b": 1085,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

@@ -1,0 +1,105 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-09_segment_str_host_tooling",
+ "date_utc": "2026-09-09",
+ "business": "SEGMENT: STR host tooling",
+ "row_type": "agreement",
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Airbnb",
+    "PriceLabs",
+    "Wheelhouse",
+    "Beyond Pricing"
+   ],
+   "verbose_names": [
+    "MarketMinder",
+    "Beyond Pricing",
+    "AirDNA",
+    "Airbnb",
+    "Wheelhouse"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 5,
+   "containment_pct": 75.0,
+   "shared_count": 3,
+   "answer_chars_a": 1031,
+   "answer_chars_b": 3128,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Airbnb",
+    "PriceLabs",
+    "Wheelhouse",
+    "Beyond Pricing"
+   ],
+   "verbose_names": [
+    "Airbnb's",
+    "Before Buying Property",
+    "Direct Airbnb",
+    "Google Trends"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 4,
+   "containment_pct": 25.0,
+   "shared_count": 1,
+   "answer_chars_a": 1031,
+   "answer_chars_b": 1349,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Airbnb's",
+    "Before Buying Property",
+    "Direct Airbnb",
+    "Google Trends"
+   ],
+   "verbose_names": [
+    "MarketMinder",
+    "Beyond Pricing",
+    "AirDNA",
+    "Airbnb",
+    "Wheelhouse"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 5,
+   "containment_pct": 25.0,
+   "shared_count": 1,
+   "answer_chars_a": 3128,
+   "answer_chars_b": 1349,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
