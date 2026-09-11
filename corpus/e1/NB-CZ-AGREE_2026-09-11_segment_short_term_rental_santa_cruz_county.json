@@ -1,0 +1,129 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-11_segment_short_term_rental_santa_cruz_county",
+ "date_utc": "2026-09-11",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "row_type": "agreement",
+ "prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Santa Cruz Westside",
+    "Downtown Santa Cruz",
+    "Beach Boardwalk",
+    "Pleasure Point"
+   ],
+   "verbose_names": [
+    "Capitola",
+    "Aptos",
+    "Rio Del Mar",
+    "Davenport",
+    "Seacliff",
+    "Seascape",
+    "Santa Cruz Mountains",
+    "Boardwalk",
+    "West Cliff Drive",
+    "West Cliff",
+    "Typical",
+    "Santa Cruz and Half Moon Bay",
+    "Felton",
+    "Boulder Creek",
+    "Ben Lomond",
+    "Pajaro Valley",
+    "Monterey Bay"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 17,
+   "containment_pct": 25.0,
+   "shared_count": 1,
+   "answer_chars_a": 2344,
+   "answer_chars_b": 5467,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Santa Cruz Westside",
+    "Downtown Santa Cruz",
+    "Beach Boardwalk",
+    "Pleasure Point"
+   ],
+   "verbose_names": [
+    "Booking.com",
+    "Santa Cruz Beach Boardwalk",
+    "Seacliff State Beach",
+    "Scotts Valley"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 4,
+   "containment_pct": 25.0,
+   "shared_count": 1,
+   "answer_chars_a": 2344,
+   "answer_chars_b": 1252,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Booking.com",
+    "Santa Cruz Beach Boardwalk",
+    "Seacliff State Beach",
+    "Scotts Valley"
+   ],
+   "verbose_names": [
+    "Capitola",
+    "Aptos",
+    "Rio Del Mar",
+    "Davenport",
+    "Seacliff",
+    "Seascape",
+    "Santa Cruz Mountains",
+    "Boardwalk",
+    "West Cliff Drive",
+    "West Cliff",
+    "Typical",
+    "Santa Cruz and Half Moon Bay",
+    "Felton",
+    "Boulder Creek",
+    "Ben Lomond",
+    "Pajaro Valley",
+    "Monterey Bay"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 17,
+   "containment_pct": 50.0,
+   "shared_count": 2,
+   "answer_chars_a": 5467,
+   "answer_chars_b": 1252,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
