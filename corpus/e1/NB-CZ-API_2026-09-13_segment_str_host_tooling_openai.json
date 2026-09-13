@@ -1,0 +1,33 @@
+{
+ "check_id": "NB-CZ-API_2026-09-13_segment_str_host_tooling_openai",
+ "date_utc": "2026-09-13",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "MarketMinder",
+  "Rentalizer",
+  "PriceLabs",
+  "Beyond Pricing",
+  "Wheelhouse",
+  "Airbnb. That",
+  "ADR and RevPAR",
+  "AllTheRooms",
+  "Beyond Pricing and Wheelhouse"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- For market analysis before buying: AirDNA (MarketMinder/Rentalizer) is the best single tool.  \n- For automated nightly pricing once you list the property: PriceLabs is the best all‑round choice (highly customizable). If you prefer a simpler, set‑and‑forget option, Beyond Pricing or Wheelhouse are good alternatives.\n\nWhy those choices\n- AirDNA: industry standard for pre‑purchase research — neighborhood-level occupancy, ADR, RevPAR, seasonality, listing density, and revenue estimators (Rentalizer). It lets you quickly compare neighborhoods and run conservative revenue scenarios before buying.\n- PriceLabs: powerful, flexible rules engine (minimum/maximum, custom adjustments by date, length‑of‑stay, lead time, events), good market data, and wide integrations with channel managers and Airbnb. That flexibility usually produces higher revenue than simple “smart pricing.”\n- Beyond Pricing/Wheelhouse: easier to set up and more automated; good if you want fewer manual tweaks.\n\nWhat to look for in any tool\n- Integration with Airbnb and/or your PMS/channel manager\n- Granularity (neighborhood/zip code level, property type)\n- Seasonality & event detection\n- Min/max price and rule-based overrides\n- Occupancy, ADR and RevPAR historical charts\n- Ease of use and customer support\n- Cost model (monthly per listing vs percentage of bookings)\n\nPractical workflow (how to use them before buying)\n1. Use AirDNA MarketMinder for the target area: check occupancy, ADR, RevPAR, seasonality, length‑of‑stay, and listing growth over recent years. Use Rentalizer to estimate realistic revenue given your property type and comps.\n2. Map supply/demand: density of listings, nearby hotels, regulation hotspots, and event calendar.\n3. Do a conservative cash‑flow model: estimate operating costs, vacancy, cleaning, management fees, taxes and cap rate under different occupancy/ADR scenarios.\n4. If buying looks promising, sign up for a short trial of PriceLabs (or Beyond Pricing) and run its market settings against your comps to simulate expected nightly prices and monthly revenue.\n5. Confirm legal/regulatory compliance and local zoning/HOA rules.\n\nA few alternatives\n- Mashvisor: cheaper, less granular than AirDNA but OK for initial screening.  \n- Transparent / AllTheRooms: enterprise/agency level market intelligence.  \n- Airbnb Smart Pricing: free but less flexible and less revenue‑focused than the paid tools.\n\nCosts (brief)\n- AirDNA, PriceLabs, Beyond Pricing and Wheelhouse each use different pricing models (monthly subscriptions, per‑market fees, or % of revenue). Check current pricing on their sites; many offer trials or pay‑as‑you‑go market reports.\n\nRecommendation\n- If you can only pick one tool before buying: use AirDNA for market analysis.  \n- If you need to automate pricing after listing: use PriceLabs (or Beyond Pricing if you want simpler setup).  \nIf you want, tell me the city/neighborhood you’re considering and a short description of the property (type, size, target guest), and I’ll suggest specific AirDNA metrics to check and a pricing setup example.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
