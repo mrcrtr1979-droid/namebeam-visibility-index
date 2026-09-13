@@ -30,3 +30,9 @@ As of 2026-07-31: five engines run, zero of five named Namebeam. That number is 
 Namebeam scores AI visibility on five factors: Findable, Reachable, Quotable, Bookable, Trusted. Instead of an invented score, the deliverable is the actual dated transcript of what each engine said.
 
 Operated by Carter Enterprise LLC, Sheridan, Wyoming.
+
+## Dataset cards for Hugging Face and Kaggle
+
+Daily dated answers to "who does this type of business locally?" from multiple AI assistants (Claude, Gemini, Perplexity). Each row carries the date (2026-09-12 is the latest in this dataset), the business category requested, the engine tested, the response text, and whether it named a business at all. Row counts: daily dataset (4 dates as of 2026-09-13), coverage table, segment analyses.
+
+View all rows with live counts at https://namebeam.ai/ai-referral-index/. Single row details, citations, and error analysis available at https://namebeam.ai/row/NB-CZ-AGREE_2026-09-01_segment_dentists_pleasanton/ and the row-name pattern. A dated PDF analysis of any single row is available for $7 at https://terryjcarter7.gumroad.com/l/row-check.
