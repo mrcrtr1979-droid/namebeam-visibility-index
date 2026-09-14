@@ -184,7 +184,16 @@ def fetch_serp(query_text, top_n=10):
         return False, "", [], redact("BRIGHTDATA_API_KEY not set")
     import time as _time
     import urllib.parse
-    target = "https://www.google.com/search?q=" + urllib.parse.quote(query_text)
+    # 2026-09-14 [FABLE-COWORK-0914C] ROOT CAUSE of 36 of 47 SERP rows a day
+    # EXTRACTION_FAILED since 2026-08-27 (blank rate 5 pct before, 77 pct
+    # after; every failed row carries looks_like_consent_wall=True, 80 hrefs,
+    # 0 redirect hrefs): Bright Data started exiting from a geo where Google
+    # serves the "Before you continue" consent interstitial. Pin the request
+    # to a US exit and a US/English results page. A US page has no consent
+    # wall; the 11 rows a day that still extract are the ones that happened
+    # to exit from the US.
+    target = ("https://www.google.com/search?q=" + urllib.parse.quote(query_text)
+              + "&hl=en&gl=us&pws=0")
     html = ""
     for attempt in range(3):
         try:
@@ -192,7 +201,8 @@ def fetch_serp(query_text, top_n=10):
                 BRIGHTDATA_URL,
                 headers={"Authorization": "Bearer " + key,
                          "Content-Type": "application/json"},
-                json={"zone": BRIGHTDATA_ZONE, "url": target, "format": "raw"},
+                json={"zone": BRIGHTDATA_ZONE, "url": target, "format": "raw",
+                      "country": "us"},
                 timeout=TIMEOUT,
             )
         except requests.exceptions.RequestException as exc:
