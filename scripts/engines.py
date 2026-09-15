@@ -194,6 +194,22 @@ def fetch_serp(query_text, top_n=10):
     # to exit from the US.
     target = ("https://www.google.com/search?q=" + urllib.parse.quote(query_text)
               + "&hl=en&gl=us&pws=0")
+    # 2026-09-15 [SONNET-B2-0915]. UNVERIFIED, OFF BY DEFAULT, and it stays that way
+    # until someone runs it with a real key and reads the rows.
+    # Why it exists: PR #7's geo fix is already live and already ran (commit 18a4d064
+    # at 06:34Z; the 09-14 slice ran at 18:02Z on that exact head_sha) and the failure
+    # rate did not move: 38 of 47 rows still EXTRACTION_FAILED, on 574 KB pages
+    # carrying 94 hrefs and redirect_hrefs=0. Pages that big are not consent walls.
+    # The hypothesis this flag tests is that Bright Data "format: raw" returns the
+    # rendered shell while the organic results are injected client-side, so they are
+    # not anchors in the HTML at all. Bright Data's SERP zones expose a parsed-JSON
+    # output; if this zone supports it, the results arrive as data instead of markup.
+    # Set the repo variable BRIGHTDATA_PARSED=1 to try it. If the run comes back with
+    # organic results, this is the cure and the flag becomes the default. If it comes
+    # back HTTP 400, this zone does not support parsed output, the flag is deleted,
+    # and the next move is a different SERP provider. Either answer is worth one run.
+    if os.environ.get("BRIGHTDATA_PARSED", "").strip() == "1":
+        target += "&brd_json=1"
     html = ""
     for attempt in range(3):
         try:
@@ -220,6 +236,11 @@ def fetch_serp(query_text, top_n=10):
         if attempt < 2:
             _time.sleep(3 * (attempt + 1))
     return True, html, extract_organic_urls(html, top_n), ""
+
+
+GOOGLE_SKIP = ("google.", "gstatic.", "googleusercontent.", "googleadservices.",
+               "youtube.com/redirect", "accounts.google", "policies.google",
+               "support.google", "webcache.", "schema.org", "w3.org")
 
 
 def extract_organic_urls(html, top_n=10):
@@ -249,9 +270,10 @@ def extract_organic_urls(html, top_n=10):
     text = _html.unescape(html)
 
     # Google's own properties and infrastructure are never results.
-    skip = ("google.", "gstatic.", "googleusercontent.", "googleadservices.",
-            "youtube.com/redirect", "accounts.google", "policies.google",
-            "support.google", "webcache.", "schema.org", "w3.org")
+    # Hoisted to GOOGLE_SKIP (module level) 2026-09-15 so serp_diagnostics can count
+    # surviving hrefs with the SAME list the extractor uses. A diagnostic that measures
+    # something different from the code it explains is worse than no diagnostic.
+    skip = GOOGLE_SKIP
     # Tracking parameters Google appends. Strip ONLY these, never the whole
     # query string, or real search URLs get destroyed.
     junk_params = {"sa", "ved", "usg", "source", "cd", "cad", "uact", "opi",
@@ -325,14 +347,34 @@ def serp_diagnostics(html, organic):
         "html_bytes": len(html),
         "href_total": len(re.findall(r'href=', text)),
         "redirect_hrefs": len(re.findall(r'href=["\'][^"\']*?/url\?', text)),
-        "looks_like_consent_wall": ("before you continue" in low
-                                    or "consent.google" in low),
+        # ADDED 2026-09-15 [SONNET-B2-0915]. This is the number that decides the
+        # 38-of-47 failure, and nothing was measuring it. href_total counts every
+        # anchor including Google's own navigation; this counts only the ones that
+        # could ever BE a result. If this is ~0 on a 574 KB page, the organic results
+        # are not in the payload at all and no parser change can recover them.
+        "nongoogle_hrefs": len([
+            u for u in re.findall(r'href=["\'](https?://[^"\']+)["\']', text)
+            if not any(s in u for s in GOOGLE_SKIP)]),
+        # The consent phrase and a consent WALL are not the same thing. Measured on
+        # the 2026-09-14 slice: "before you continue" was present on 29 of 38 FAILED
+        # rows AND on OK rows that extracted fine, on pages of 574 to 592 KB. A real
+        # interstitial is a small page. Reporting the raw phrase as a wall sent the
+        # 09-14 seat after a geo fix (PR #7, US exit + gl/hl pins) that shipped at
+        # 06:34Z, ran in the 18:02Z slice on its own commit, and changed nothing.
+        "consent_phrase_present": ("before you continue" in low
+                                   or "consent.google" in low),
+        "looks_like_consent_wall": (("before you continue" in low
+                                     or "consent.google" in low)
+                                    and len(html) < 50000),
         "looks_like_captcha": ("unusual traffic" in low
                                or "recaptcha" in low),
         "extraction_ok": bool(organic),
         "zero_reason": (None if organic else
                         ("empty response" if len(html) < 2000 else
-                         "no parsable result links found in a non-empty page")),
+                         "non-empty page, no result links survived the Google-property "
+                         "filter: see nongoogle_hrefs. If that is ~0 the results were "
+                         "never in the HTML and the fix is at the request layer "
+                         "(parsed SERP output), not in this parser")),
     }
 
 
