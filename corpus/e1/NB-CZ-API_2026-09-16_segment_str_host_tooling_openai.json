@@ -1,0 +1,29 @@
+{
+ "check_id": "NB-CZ-API_2026-09-16_segment_str_host_tooling_openai",
+ "date_utc": "2026-09-16",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "PriceLabs",
+  "Wheelhouse",
+  "MarketMinder",
+  "Airbnb",
+  "Smart Pricing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- Use a two-tool approach: AirDNA (for market analysis before you buy) + a dynamic-pricing tool such as PriceLabs or Wheelhouse (to set nightly rates once you list). If you must pick one tool only, AirDNA for buying research and PriceLabs for day‑to‑day pricing are the most broadly recommended.\n\nWhy\n- AirDNA (MarketMinder / Rentalizer) gives the best, easiest-to-use market-level analytics: historical ADR, occupancy, seasonality, revenue estimates, comps, growth trends and map heat‑maps — all the things you need to evaluate a neighborhood before purchasing.\n- PriceLabs and Wheelhouse offer the best combination of automated dynamic pricing plus customizable rules and strong integrations with Airbnb and most PMS/channel managers. PriceLabs is especially flexible and widely used; Wheelhouse is similarly powerful and a little more prescriptive. Beyond Pricing is simpler and very hands‑off if you prefer minimal setup.\n- Airbnb’s built‑in Smart Pricing is free but limited in control and market visibility, so it’s good only as a last resort.\n\nWhat to compare when choosing\n- Market data quality and granularity (neighborhood vs city)\n- Revenue and occupancy estimates and seasonality charts\n- Investment metrics (cash flow, cap rate) for buying decisions\n- Integration with Airbnb and your PMS/channel manager\n- Pricing rules and level of automation/customizability\n- Cost (monthly or % of revenue) and free trials\n\nSuggested workflow\n1. Use AirDNA to screen markets: ADR, occupancy, seasonality, active listings, short‑term supply growth, comps, and event-driven demand. Run the Rentalizer for specific addresses.\n2. Do financial underwriting: estimate mortgage, operating costs, taxes, cleaning, management, and realistic occupancy; compute cash flow and ROI.\n3. If you decide to buy, connect listing(s) to PriceLabs or Wheelhouse and set initial rules (min stay, minimum price, weekend premiums, last‑minute discounts). Let the tool automate daily prices and review performance.\n4. Revisit and tweak rules monthly and cross‑check with market reports.\n\nIf you want, tell me the city/zipcode and whether you’re buying a single property or building a portfolio and I can recommend the most relevant AirDNA metrics and a short checklist to evaluate the market.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
