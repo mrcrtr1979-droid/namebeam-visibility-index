@@ -1,0 +1,31 @@
+{
+ "check_id": "NB-CZ-API_2026-09-17_segment_str_host_tooling_openai",
+ "date_utc": "2026-09-17",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Use",
+  "AirDNA",
+  "PriceLabs",
+  "Wheelhouse",
+  "Beyond Pricing",
+  "MarketMinder",
+  "AllTheRooms",
+  "ROI"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: Use two tools together — AirDNA for market research and comps before you buy, and PriceLabs (or Wheelhouse/Beyond Pricing) to set dynamic nightly prices once you’re managing listings.\n\nWhy that combo?\n- AirDNA (MarketMinder) is the industry standard for pre‑purchase analysis: neighborhood-level data, comparable listings, ADR, occupancy, seasonality, RevPAR, revenue projections and ROI modeling. It’s built for investors who want to estimate realistic short‑term rental income and run sensitivity scenarios.\n- PriceLabs is the most flexible, widely used dynamic‑pricing tool for hosts. It integrates with major PMS/channel managers and lets you create custom rules, minimum stays, and automated daily pricing that responds to supply/demand, events and seasonality. Wheelhouse and Beyond Pricing are great alternatives with slightly different interfaces and pricing models.\n\nQuick comparison\n- AirDNA (best for market research)\n  - Strengths: market maps, comps, historical ADR/occupancy, revenue projections, seasonality and investment metrics.\n  - Use for: “Should I buy this property?” and forecasting returns.\n- PriceLabs (best for granular host pricing)\n  - Strengths: powerful custom rules, minimum‑stay automation, calendar health insights, integrates widely.\n  - Use for: day‑to‑day pricing optimization and auto updates.\n- Wheelhouse\n  - Strengths: easy interface, scenario planning for revenue vs occupancy, good reporting.\n  - Use for: hosts who want an all‑in‑one pricing strategy and testing different approaches.\n- Beyond Pricing\n  - Strengths: simple setup, 1% of booking revenue fee model, good for hosts who prefer a set‑and‑forget solution.\n- Transparent / AllTheRooms / Mashvisor\n  - Strengths: deeper analytics for larger portfolios or bespoke research (Transparent is enterprise‑oriented).\n  - Use for: institutional investors or advanced market intelligence.\n\nWhat to check before buying (use AirDNA + manual checks)\n1. Comparable listings (same bedroom count, entire vs private, amenity mix).\n2. ADR, occupancy, RevPAR and seasonality for the micro‑market.\n3. Supply trends — new listings coming online.\n4. Event calendar and peak demand windows.\n5. Local regulations, licensing, and taxes that affect STR viability.\n6. Expense estimates (mortgage, insurance, utilities, cleaning, management, platform fees, vacancy allowance).\n7. ROI and breakeven calculations with conservative occupancy scenarios.\n8. Sensitivity analysis: how returns change with ±10–20% ADR/occupancy.\n\nPractical next steps\n- Run MarketMinder on AirDNA for the exact address or neighborhood.\n- Export comps and build a 12‑month revenue/expense model (include conservative and optimistic cases).\n- If you buy, connect that listing to PriceLabs (or Wheelhouse/Beyond Pricing) and set initial rules; monitor and tweak for a few months.\n- Validate tool outputs with manual searches of Airbnb listings and, if possible, talk to local hosts or managers.\n\nPricing note\n- Costs vary: AirDNA subscriptions and reports are subscription or per‑report priced; PriceLabs/Wheelhouse charge per listing or a small percent of revenue. Check current pricing on each site — many offer free trials or demos.\n\nIf you want, tell me the city/neighborhood and property type (bedrooms, whole home vs private room) and I can suggest the specific AirDNA report metrics to run and walk through an expected revenue/ROI estimate.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
