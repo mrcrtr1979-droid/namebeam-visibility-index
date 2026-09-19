@@ -22,6 +22,8 @@ from the environment at call time and never stored on an object.
 """
 
 import os
+import time
+import re
 import requests
 
 TIMEOUT = 60
@@ -114,39 +116,76 @@ GEMINI_URL = ("https://generativelanguage.googleapis.com/v1beta/models/"
               "%s:generateContent")
 
 
-def call_gemini(prompt_text):
+# RETRY ADDED 2026-09-19 [FABLE-COS-0919B] (R61): since 2026-09-01 the free tier
+# refused 423 of 846 Gemini calls (QUOTA_BLOCKED) and 139 more died on 503,
+# because all 47 calls fire in one burst with no pacing and no second try.
+# A 429 body carries RetryInfo.retryDelay; when it is short (per-minute
+# quota) we wait and ask again. A long or absent delay (per-day quota) is
+# NOT waited on: the row logs QUOTA exactly as before, now with the quotaId
+# so the next reader can tell per-minute from per-day without guessing.
+# The question, the model and the row schema are unchanged.
+GEMINI_MAX_TRIES = 4
+GEMINI_MAX_WAIT_S = 70
+GEMINI_SLEEP_BUDGET_S = 2400   # whole-run ceiling, so a bad day cannot hang the job
+_gemini_slept = [0.0]
+
+
+def _gemini_retry_delay(body_text):
+    m = re.search(r'"retryDelay"\s*:\s*"(\d+(?:\.\d+)?)s"', body_text or "")
+    return float(m.group(1)) if m else None
+
+
+def _gemini_quota_id(body_text):
+    m = re.search(r'"quotaId"\s*:\s*"([^"]+)"', body_text or "")
+    return m.group(1) if m else "quotaId-not-in-body"
+
+
+def call_gemini(prompt_text, _post=None, _sleep=None):
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not key:
         return False, "", [], redact("GEMINI_API_KEY not set")
-    try:
-        r = requests.post(
-            (GEMINI_URL % GEMINI_MODEL) + "?key=" + key,
-            headers={"Content-Type": "application/json"},
-            json={"contents": [{"parts": [{"text": prompt_text}]}]},
-            timeout=TIMEOUT,
-        )
-    except requests.exceptions.RequestException as exc:
-        return False, "", [], redact("gemini request failed: %s" % exc)
-    if r.status_code != 200:
+    post = _post or requests.post
+    sleep = _sleep or time.sleep
+    last = ""
+    for attempt in range(1, GEMINI_MAX_TRIES + 1):
+        try:
+            r = post(
+                (GEMINI_URL % GEMINI_MODEL) + "?key=" + key,
+                headers={"Content-Type": "application/json"},
+                json={"contents": [{"parts": [{"text": prompt_text}]}]},
+                timeout=TIMEOUT,
+            )
+        except requests.exceptions.RequestException as exc:
+            return False, "", [], redact("gemini request failed: %s" % exc)
+        if r.status_code == 200:
+            try:
+                body = r.json()
+                text = body["candidates"][0]["content"]["parts"][0]["text"]
+            except (ValueError, KeyError, IndexError, TypeError):
+                return False, "", [], redact("gemini response shape unexpected")
+            # Gemini's plain generateContent returns no citation list. We do NOT
+            # invent one. Sources stay empty and that is an honest empty, not a zero.
+            return True, text, [], ""
         # Never echo the URL back, it carries the key in the query string.
-        #
         # A QUOTA refusal is not an engine failure and must never be counted
-        # as one. On 2026-08-05 the free tier returned 429 on 12 of 13 calls
-        # and every one was logged FAILED, which would have read as "Gemini
-        # could not answer" when the truth is "we were not allowed to ask".
-        # The prefix lets the runner classify it separately (doctrine 122:
-        # a zero produced by a refusal is not a finding).
-        prefix = "QUOTA: " if r.status_code == 429 else ""
-        return False, "", [], redact(
-            "%sgemini HTTP %s: %s" % (prefix, r.status_code, r.text[:300]))
-    try:
-        body = r.json()
-        text = body["candidates"][0]["content"]["parts"][0]["text"]
-    except (ValueError, KeyError, IndexError, TypeError):
-        return False, "", [], redact("gemini response shape unexpected")
-    # Gemini's plain generateContent returns no citation list. We do NOT
-    # invent one. Sources stay empty and that is an honest empty, not a zero.
-    return True, text, [], ""
+        # as one (doctrine 122: a zero produced by a refusal is not a finding).
+        if r.status_code == 429:
+            delay = _gemini_retry_delay(r.text)
+            last = "QUOTA: gemini HTTP 429 [%s] tries=%d: %s" % (
+                _gemini_quota_id(r.text), attempt, r.text[:300])
+            wait = None if delay is None else delay + 2.0
+        elif r.status_code in (500, 502, 503, 504):
+            last = "gemini HTTP %s tries=%d: %s" % (r.status_code, attempt, r.text[:300])
+            wait = 8.0 * attempt
+        else:
+            return False, "", [], redact(
+                "gemini HTTP %s: %s" % (r.status_code, r.text[:300]))
+        if (attempt == GEMINI_MAX_TRIES or wait is None or wait > GEMINI_MAX_WAIT_S
+                or _gemini_slept[0] + wait > GEMINI_SLEEP_BUDGET_S):
+            break
+        _gemini_slept[0] += wait
+        sleep(wait)
+    return False, "", [], redact(last)
 
 
 # --------------------------------------------------------------------------
