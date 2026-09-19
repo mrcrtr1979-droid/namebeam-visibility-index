@@ -249,6 +249,20 @@ def fetch_serp(query_text, top_n=10):
     # and the next move is a different SERP provider. Either answer is worth one run.
     if os.environ.get("BRIGHTDATA_PARSED", "").strip() == "1":
         target += "&brd_json=1"
+    # 2026-09-19 [FABLE-COS-0919B] (R61). The 09-15 hypothesis above was finally run:
+    # manual workflow serp_parsed_smoke.yml, run 35419280907, same zone, same query.
+    #   raw HTML            -> 0 bytes
+    #   brd_json=1, raw     -> 209 bytes "This query recently failed ... minimum of 15 seconds"
+    #   brd_json=1, json    -> 118,297 bytes, organic_n=9 with real links, plus snack_pack
+    # So the results ARE available as data. Parsed output is now asked FIRST. If it does
+    # not come back with organic links, the raw path below runs exactly as it did before,
+    # so this can only add rows, never remove one. serp_diagnostics records which payload
+    # a row came from ("payload": parsed_json or raw_html) so the series change is visible.
+    # The 209-byte body also explains the "empty response" rows: Bright Data wants 15 s
+    # between tries and the old backoff was 3 s and 6 s.
+    parsed_text, parsed_urls = _fetch_serp_parsed(key, target, top_n)
+    if parsed_urls:
+        return True, parsed_text, parsed_urls, ""
     html = ""
     for attempt in range(3):
         try:
@@ -273,8 +287,68 @@ def fetch_serp(query_text, top_n=10):
         if len(html) >= 2000:
             break
         if attempt < 2:
-            _time.sleep(3 * (attempt + 1))
+            _time.sleep(16 if "recently failed" in html else 3 * (attempt + 1))
     return True, html, extract_organic_urls(html, top_n), ""
+
+
+def _parse_serp_json(text, top_n=10):
+    """Organic links, in rank order, from Bright Data parsed SERP JSON. [] when
+    the text is not that. Accepts the bare object or the {"body": "..."} wrapper."""
+    import json as _json
+    try:
+        j = _json.loads(text or "")
+        if isinstance(j, dict) and isinstance(j.get("body"), str):
+            j = _json.loads(j["body"])
+    except ValueError:
+        return []
+    org = j.get("organic") if isinstance(j, dict) else None
+    if not isinstance(org, list):
+        return []
+    out, seen = [], set()
+    for o in org:
+        u = o.get("link") if isinstance(o, dict) else None
+        if not isinstance(u, str) or not u.startswith("http"):
+            continue
+        if any(s in u for s in GOOGLE_SKIP):
+            continue
+        k = u.split("#")[0].rstrip("/")
+        if k in seen:
+            continue
+        seen.add(k)
+        out.append(u)
+        if len(out) >= top_n:
+            break
+    return out
+
+
+def _fetch_serp_parsed(key, target, top_n, _post=None, _sleep=None):
+    """Return (text, urls). Never raises; ("", []) means fall back to raw."""
+    import time as _t
+    post = _post or requests.post
+    sleep = _sleep or _t.sleep
+    sep = "&" if "?" in target else "?"
+    url = target if "brd_json=1" in target else target + sep + "brd_json=1"
+    for attempt in range(2):
+        try:
+            r = post(BRIGHTDATA_URL,
+                     headers={"Authorization": "Bearer " + key,
+                              "Content-Type": "application/json"},
+                     json={"zone": BRIGHTDATA_ZONE, "url": url, "format": "json",
+                           "country": "us"},
+                     timeout=TIMEOUT)
+        except requests.exceptions.RequestException:
+            return "", []
+        if r.status_code != 200:
+            return "", []
+        text = r.text or ""
+        urls = _parse_serp_json(text, top_n)
+        if urls:
+            return text, urls
+        if attempt == 0 and "recently failed" in text:
+            sleep(16)
+            continue
+        break
+    return "", []
 
 
 GOOGLE_SKIP = ("google.", "gstatic.", "googleusercontent.", "googleadservices.",
@@ -383,6 +457,9 @@ def serp_diagnostics(html, organic):
     text = _html.unescape(html)
     low = text.lower()
     return {
+        # ADDED 2026-09-19: which Bright Data payload this row was read from.
+        "payload": ("parsed_json" if (html.lstrip().startswith("{")
+                                      and '"organic"' in html) else "raw_html"),
         "html_bytes": len(html),
         "href_total": len(re.findall(r'href=', text)),
         "redirect_hrefs": len(re.findall(r'href=["\'][^"\']*?/url\?', text)),
