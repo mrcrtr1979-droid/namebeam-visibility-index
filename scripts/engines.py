@@ -173,7 +173,10 @@ def call_gemini(prompt_text, _post=None, _sleep=None):
             delay = _gemini_retry_delay(r.text)
             last = "QUOTA: gemini HTTP 429 [%s] tries=%d: %s" % (
                 _gemini_quota_id(r.text), attempt, r.text[:300])
-            wait = None if delay is None else delay + 2.0
+            # 2026-09-19 run graded: every refusal named GenerateRequestsPerDay...FreeTier and 28 of 29
+            # blocked rows burned retries (run time 42 min -> 109 min). A per-day quota cannot be
+            # waited out inside a run, so it is never retried.
+            wait = None if (delay is None or 'perday' in _gemini_quota_id(r.text).lower()) else delay + 2.0
         elif r.status_code in (500, 502, 503, 504):
             last = "gemini HTTP %s tries=%d: %s" % (r.status_code, attempt, r.text[:300])
             wait = 8.0 * attempt
@@ -321,8 +324,12 @@ def _parse_serp_json(text, top_n=10):
     return out
 
 
+_PARSED_NOTE = [""]   # why the last parsed-JSON attempt did or did not yield links; lands in serp_diagnostics
+
+
 def _fetch_serp_parsed(key, target, top_n, _post=None, _sleep=None):
     """Return (text, urls). Never raises; ("", []) means fall back to raw."""
+    _PARSED_NOTE[0] = "not attempted"
     import time as _t
     post = _post or requests.post
     sleep = _sleep or _t.sleep
@@ -336,19 +343,38 @@ def _fetch_serp_parsed(key, target, top_n, _post=None, _sleep=None):
                      json={"zone": BRIGHTDATA_ZONE, "url": url, "format": "json",
                            "country": "us"},
                      timeout=TIMEOUT)
-        except requests.exceptions.RequestException:
+        except requests.exceptions.RequestException as exc:
+            _PARSED_NOTE[0] = "request failed: %s" % type(exc).__name__
             return "", []
         if r.status_code != 200:
+            _PARSED_NOTE[0] = "HTTP %s" % r.status_code
             return "", []
         text = r.text or ""
         urls = _parse_serp_json(text, top_n)
         if urls:
+            _PARSED_NOTE[0] = "ok, %d links, try %d" % (len(urls), attempt + 1)
             return text, urls
-        if attempt == 0 and "recently failed" in text:
-            sleep(16)
-            continue
+        if "recently failed" in text:
+            _PARSED_NOTE[0] = "recently-failed body, try %d" % (attempt + 1)
+            if attempt == 0:
+                sleep(16)
+                continue
+        else:
+            _PARSED_NOTE[0] = "no organic links in %d bytes, try %d: %s" % (
+                len(text), attempt + 1, _parsed_keys(text))
         break
     return "", []
+
+
+def _parsed_keys(text):
+    import json as _json
+    try:
+        j = _json.loads(text or "")
+        if isinstance(j, dict) and isinstance(j.get("body"), str):
+            j = _json.loads(j["body"])
+        return ",".join(sorted(j.keys()))[:160] if isinstance(j, dict) else type(j).__name__
+    except ValueError:
+        return "not json"
 
 
 GOOGLE_SKIP = ("google.", "gstatic.", "googleusercontent.", "googleadservices.",
@@ -458,8 +484,11 @@ def serp_diagnostics(html, organic):
     low = text.lower()
     return {
         # ADDED 2026-09-19: which Bright Data payload this row was read from.
-        "payload": ("parsed_json" if (html.lstrip().startswith("{")
-                                      and '"organic"' in html) else "raw_html"),
+        # 2026-09-19: the first version looked for the literal "organic" key and missed the
+        # Bright Data wrapper, where the body is an escaped string; 23 parsed rows were
+        # labelled raw_html. Ask the parser itself.
+        "payload": ("parsed_json" if _parse_serp_json(html, 1) else "raw_html"),
+        "parsed_attempt": _PARSED_NOTE[0],
         "html_bytes": len(html),
         "href_total": len(re.findall(r'href=', text)),
         "redirect_hrefs": len(re.findall(r'href=["\'][^"\']*?/url\?', text)),
