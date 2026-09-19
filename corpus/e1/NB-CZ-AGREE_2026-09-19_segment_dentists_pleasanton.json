@@ -1,0 +1,206 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-19_segment_dentists_pleasanton",
+ "date_utc": "2026-09-19",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 4,
+ "pairs": [
+  {
+   "terser_names": [
+    "Pleasanton Dental Care",
+    "Yelp",
+    "Pleasanton Family Dentist",
+    "Gateway Dental Care",
+    "My Favorite Dentist",
+    "Opencare",
+    "Pleasanton Ridge Dental Group"
+   ],
+   "verbose_names": [
+    "Dr. Mona Gokani",
+    "Dr. Gokani",
+    "Dr. Ryan Chiang",
+    "Dr. Thelma B. Wright",
+    "Dr. Mahsa Esfandiari",
+    "Choose the Right One for You",
+    "Insurance Coverage",
+    "Delta Dental",
+    "MetLife",
+    "Hygiene Staff Continuity",
+    "Office Hours"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 7,
+   "verbose_entity_count": 11,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1287,
+   "answer_chars_b": 2998,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "ADA Find-a-Dentist. Look",
+    "California Dental Board"
+   ],
+   "verbose_names": [
+    "Pleasanton Dental Care",
+    "Yelp",
+    "Pleasanton Family Dentist",
+    "Gateway Dental Care",
+    "My Favorite Dentist",
+    "Opencare",
+    "Pleasanton Ridge Dental Group"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 7,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1287,
+   "answer_chars_b": 1804,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Yelp"
+   ],
+   "verbose_names": [
+    "Pleasanton Dental Care",
+    "Yelp",
+    "Pleasanton Family Dentist",
+    "Gateway Dental Care",
+    "My Favorite Dentist",
+    "Opencare",
+    "Pleasanton Ridge Dental Group"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 7,
+   "containment_pct": 100.0,
+   "shared_count": 1,
+   "answer_chars_a": 1287,
+   "answer_chars_b": 1003,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "ADA Find-a-Dentist. Look",
+    "California Dental Board"
+   ],
+   "verbose_names": [
+    "Dr. Mona Gokani",
+    "Dr. Gokani",
+    "Dr. Ryan Chiang",
+    "Dr. Thelma B. Wright",
+    "Dr. Mahsa Esfandiari",
+    "Choose the Right One for You",
+    "Insurance Coverage",
+    "Delta Dental",
+    "MetLife",
+    "Hygiene Staff Continuity",
+    "Office Hours"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "gemini",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 11,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2998,
+   "answer_chars_b": 1804,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Yelp"
+   ],
+   "verbose_names": [
+    "Dr. Mona Gokani",
+    "Dr. Gokani",
+    "Dr. Ryan Chiang",
+    "Dr. Thelma B. Wright",
+    "Dr. Mahsa Esfandiari",
+    "Choose the Right One for You",
+    "Insurance Coverage",
+    "Delta Dental",
+    "MetLife",
+    "Hygiene Staff Continuity",
+    "Office Hours"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 11,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2998,
+   "answer_chars_b": 1003,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Yelp"
+   ],
+   "verbose_names": [
+    "ADA Find-a-Dentist. Look",
+    "California Dental Board"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 2,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1804,
+   "answer_chars_b": 1003,
+   "zero_shared": true
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
