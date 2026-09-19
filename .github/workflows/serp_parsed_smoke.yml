@@ -1,0 +1,46 @@
+name: SERP parsed smoke (manual)
+# [FABLE-COS-0919B] 2026-09-19. One Bright Data request per mode, prints shapes only, never a key.
+# Settles the question engines.py has carried unanswered since 2026-09-15: does this zone
+# return organic results as data when asked with brd_json=1?
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: smoke
+        env:
+          BRIGHTDATA_API_KEY: ${{ secrets.BRIGHTDATA_API_KEY }}
+          BRIGHTDATA_ZONE: ${{ vars.BRIGHTDATA_ZONE }}
+        run: |
+          python - <<'PY'
+          import os, json, re, urllib.parse, requests
+          key=os.environ.get("BRIGHTDATA_API_KEY","").strip(); zone=os.environ.get("BRIGHTDATA_ZONE","").strip() or "serp_api1"
+          q="What is a good martial arts school for kids in St. Peters MO?"
+          base="https://www.google.com/search?q="+urllib.parse.quote(q)+"&hl=en&gl=us&pws=0"
+          for mode,url,fmt in (("raw",base,"raw"),("brd_json",base+"&brd_json=1","raw"),("brd_json_fmtjson",base+"&brd_json=1","json")):
+              try:
+                  r=requests.post("https://api.brightdata.com/request",headers={"Authorization":"Bearer "+key,"Content-Type":"application/json"},json={"zone":zone,"url":url,"format":fmt,"country":"us"},timeout=90)
+              except Exception as exc:
+                  print("SERP SMOKE",mode,"EXC",type(exc).__name__); continue
+              t=r.text or ""
+              out={"mode":mode,"http":r.status_code,"bytes":len(t),"hrefs":len(re.findall(r'href="',t)),"url_q":len(re.findall(r'/url\?q=',t))}
+              try:
+                  j=json.loads(t)
+                  if isinstance(j,dict) and isinstance(j.get("body"),str):
+                      try: j=json.loads(j["body"])
+                      except Exception: pass
+                  out["json_keys"]=sorted(j.keys())[:25] if isinstance(j,dict) else type(j).__name__
+                  org=j.get("organic") if isinstance(j,dict) else None
+                  out["organic_n"]=len(org) if isinstance(org,list) else None
+                  if isinstance(org,list) and org: out["organic0_keys"]=sorted(org[0].keys())[:15]; out["organic_links"]=[str(o.get("link"))[:60] for o in org[:5]]
+              except Exception:
+                  out["json"]=False; out["head"]=re.sub(r"\s+"," ",t[:160])
+              print("SERP SMOKE",json.dumps(out))
+          PY
