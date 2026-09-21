@@ -1,0 +1,32 @@
+{
+ "check_id": "NB-CZ-SERP_2026-09-21_segment_str_guest_discovery",
+ "date_utc": "2026-09-21",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "google_serp",
+ "run_channel": "serp",
+ "schema_version": "v4",
+ "run_status": "EXTRACTION_FAILED",
+ "serp_diagnostics": {
+  "payload": "raw_html",
+  "parsed_attempt": "no organic links in 207 bytes, try 1: not json",
+  "html_bytes": 427410,
+  "href_total": 77,
+  "redirect_hrefs": 0,
+  "nongoogle_hrefs": 0,
+  "consent_phrase_present": true,
+  "looks_like_consent_wall": false,
+  "looks_like_captcha": false,
+  "extraction_ok": false,
+  "zero_reason": "non-empty page, no result links survived the Google-property filter: see nongoogle_hrefs. If that is ~0 the results were never in the HTML and the fix is at the request layer (parsed SERP output), not in this parser"
+ },
+ "business_mentioned": false,
+ "organic_top_results": [],
+ "ai_overview_detected": true,
+ "session_note": "Organic results extracted mechanically from the returned results page. Bright Data does not document an AI Overview field, so ai_overview_detected is BEST EFFORT and may be null. Do not publish it as a measurement."
+}
