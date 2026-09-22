@@ -1,0 +1,29 @@
+{
+ "check_id": "NB-CZ-API_2026-09-22_segment_str_host_tooling_openai",
+ "date_utc": "2026-09-22",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Beyond Pricing",
+  "PriceLabs",
+  "Wheelhouse",
+  "Mashvisor",
+  "AirDNA",
+  "AllTheRooms"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- Use AirDNA MarketMinder to analyze a market before buying.\n- Use PriceLabs (or Wheelhouse/Beyond Pricing) to set/automate nightly pricing once you list.\n\nWhy those two\n- AirDNA MarketMinder — best-in-class for pre‑purchase market research: ADR, occupancy, RevPAR, seasonality, booking-window, comps by bedroom count and property type, supply trends, and an investment calculator you can use to model revenue for a specific address or neighborhood.\n- PriceLabs — one of the most flexible, granular dynamic‑pricing engines. It updates nightly based on demand, occupancy, events and seasonality, lets you set custom rules, minimums, and testing scenarios, and integrates with major channel managers/airbnb.\n\nAlternatives\n- Wheelhouse — very user friendly, strong revenue-optimization features and scenario planning.\n- Beyond Pricing — simple, fully automated, good for hosts who want “set and forget” (less customization than PriceLabs).\n- Mashvisor — useful for real-estate investors comparing short‑ vs long‑term rental returns (more investment-oriented than AirDNA).\n- AllTheRooms, Transparent — better for enterprise-level analysis or multi-market benchmarking.\n- InsideAirbnb — free scraped data useful for regulatory checks and local listing counts.\n\nHow to use them together (step-by-step before buying)\n1. Define your target market area and comparable property type (bedrooms, entire home vs private room).\n2. Use AirDNA to pull ADR, occupancy, RevPAR, seasonality, top comps, and supply growth for that micro‑area.\n3. Run the investment calculator (or export data) and build a cashflow model including mortgage, taxes, insurance, utilities, cleaning, management fees, vacancy and capex. Compute NOI, cash‑on‑cash return, and sensitivity to occupancy/ADR.\n4. Cross‑check with another source (Mashvisor, AllTheRooms, or local listings via Airbnb) and check local STR rules/permits.\n5. If the numbers look good, plan pricing strategy using PriceLabs (simulate projected revenue with its forecasting tools and custom rules).\n6. After purchase/listing, run a short A/B pricing test period, monitor booking pace, and refine rules.\n\nNotes and cautions\n- Data quality falls off for very small or non‑touristy markets — always validate with manual checks and local knowledge.\n- Consider regulation risk, insurance, and seasonality heavily — a high ADR market with low year‑round occupancy can underperform.\n- Pricing tools don’t account for listing quality. Photos, reviews, amenities and marketing still drive conversion.\n\nIf you want, tell me the city/neighborhood and property type you’re considering and I can run the key AirDNA metrics to show what to look for or sketch a sample ROI model.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,30 @@
+{
+ "check_id": "NB-CZ-API_2026-09-22_segment_str_guest_discovery_openai",
+ "date_utc": "2026-09-22",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Booking.com",
+  "Use Airbnb",
+  "Use Booking.com",
+  "PayPal",
+  "Airbnb",
+  "Instant Book",
+  "Vrbo"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- There’s no single “best” site — choose by the kind of place you want and how you like to book:\n  - Vrbo: best for whole-home rentals (families/groups, cottages, beach houses).\n  - Airbnb: biggest variety (unique stays, entire places, private rooms); good for hosts who provide a local touch and for longer/quirky stays.\n  - Booking.com: great for hotels and instantly confirmed apartments; good for last-minute bookings and flexible/corporate travel.\n\nWhich to pick depends on your trip — tell me destination, dates, group size, and priorities (price, cancellation flexibility, instant booking, family-friendly, pets, hosts who interact), and I’ll recommend one.\n\nHow to find a good host — step-by-step checklist\n1. Pick the right platform/filter\n   - Use Vrbo for whole homes and family-style rentals.\n   - Use Airbnb for variety, unique homes, and monthly stays/host interaction.\n   - Use Booking.com for hotels/apartments with instant confirmation and simpler cancellation/payment options.\n   - Use filters: entire place, number of bedrooms/beds, pet-friendly, self check-in, washer, Wi‑Fi, etc.\n\n2. Evaluate reviews\n   - Prioritize listings with many recent reviews (last 6–12 months).\n   - Read the latest 10–20 reviews and look for recurring comments (cleanliness, accuracy, noise, host responsiveness).\n   - Pay attention to recent negative reviews — a pattern is a red flag.\n\n3. Check the host profile and badges\n   - Look for Superhost / top-rated / premier-host or similar badges (indicates consistency).\n   - Check response rate/time and how long the host has been active.\n   - See if the host has other listings and whether those have good reviews.\n\n4. Verify listing accuracy\n   - Compare photos to the description and map. Street View and neighborhood photos help judge location and surroundings.\n   - Confirm sleeping arrangements (which beds are in what rooms) and exact number of guests allowed.\n   - Check total price (cleaning fee, service fee, extra guest fee, local taxes).\n\n5. Read the house rules & cancellation policy\n   - Make sure rules match your plans (no parties, quiet hours, check-in/out times).\n   - Choose a cancellation policy that suits you (flexible vs. strict). For risky dates, prefer flexible or moderate.\n\n6. Ask questions before booking (and use the reply to judge the host)\n   - Ask about self-check-in, parking, noise, recent renovations, or anything unclear.\n   - A good host replies promptly, politely, and with useful details.\n\n7. Look for practical signals of a reliable host\n   - Clear check-in instructions and house manual.\n   - Recent photos and up-to-date calendar.\n   - Willingness to confirm things like early check-in or luggage storage in advance.\n\n8. Safety and fraud prevention\n   - Always book and pay through the platform (don’t accept direct-wire/PayPal requests).\n   - Avoid listings with extremely low prices or brand-new listings with no reviews unless you can verify the host and photos.\n   - Save screenshots of the listing and messages in case of disputes.\n\nExample pre-booking message you can send (copy/paste)\n“Hi — we’re [number] guests traveling from [city/country], arriving [date] and departing [date]. We especially need [parking/Wi‑Fi/kitchen/pets]. Could you confirm self check-in, exact sleeping arrangements, and if there are any neighborhood noise issues? Also, do you accept early check-in around [time]? Thanks!”\n\nRed flags to avoid\n- Host asks you to pay outside the platform.\n- No/very few reviews, or reviews that are all short and generic.\n- Frequent last-minute cancellations or many negative comments about cleanliness or accuracy.\n- Listing photos look stock/duplicated (reverse-image search if unsure).\n- Host won’t answer basic logistical questions.\n\nPlatform-specific tips\n- Airbnb: Use Superhost and “Instant Book” filters if you want reliable, quick bookings. Check for extra guest fees and cleaning fees.\n- Vrbo: Good for properties marketed to families — check rates for high-season weeks and security deposit policies.\n- Booking.com: Often shows pay-at-property and free cancellation options; good for hotels and business travel. Read apartment host reviews carefully because Booking aggregates both hotels and private rentals.\n\nIf you want, tell me:\n- Destination, dates, how many people, and top priorities (budget, flexibility, whole home vs room, pets, etc.)\nI’ll suggest the right platform, a shortlist of what to filter for, and even a draft message tailored to your trip.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
