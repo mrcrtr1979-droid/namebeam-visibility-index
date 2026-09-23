@@ -1,0 +1,42 @@
+{
+ "check_id": "NB-CZ-SERP_2026-09-23_segment_dentists_pleasanton",
+ "date_utc": "2026-09-23",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "google_serp",
+ "run_channel": "serp",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "serp_diagnostics": {
+  "payload": "parsed_json",
+  "parsed_attempt": "ok, 9 links, try 1",
+  "html_bytes": 151088,
+  "href_total": 0,
+  "redirect_hrefs": 0,
+  "nongoogle_hrefs": 0,
+  "consent_phrase_present": false,
+  "looks_like_consent_wall": false,
+  "looks_like_captcha": false,
+  "extraction_ok": true,
+  "zero_reason": null
+ },
+ "business_mentioned": false,
+ "organic_top_results": [
+  "https://www.yelp.com/search?cflt=dentists&find_loc=Pleasanton%2C+CA",
+  "https://www.pleasantondublindental.com/",
+  "https://pleasantonstardental.com/",
+  "https://bernaldentalcare.com/",
+  "https://www.deltadental.com/member/find-a-dentist/california/pleasanton-dentists/",
+  "https://pleasanton-dentist.com/",
+  "https://dublincornersdental.com/",
+  "https://alisaldentalcare.wixsite.com/mysite",
+  "https://www.pacificdental.com/"
+ ],
+ "ai_overview_detected": true,
+ "session_note": "Organic results extracted mechanically from the returned results page. Bright Data does not document an AI Overview field, so ai_overview_detected is BEST EFFORT and may be null. Do not publish it as a measurement."
+}
