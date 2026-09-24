@@ -1,0 +1,26 @@
+{
+ "check_id": "NB-CZ-API_2026-09-24_segment_str_guest_discovery_openai",
+ "date_utc": "2026-09-24",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "Host",
+  "PayPal"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- Pick the platform that matches the kind of stay you want:\n  - Whole home for families/groups: Vrbo (strong focus on full homes) or Airbnb (lots of whole-home options).\n  - Lots of options including hotels + apartments or need instant booking and 24/7 hotel-style support: Booking.com.\n  - Unique homes, experiences, long-stay discounts, lots of solo/room-share options: Airbnb.\n- To find a good host: use filters and reviews, check the host profile and recent reviews, message the host with specific questions, and watch for red flags (off‑platform payments, evasive answers, very low price).\n\nWhich platform when (quick guide)\n- Vrbo\n  - Best for whole-home vacation rentals and family groups.\n  - Fewer shared/room-share listings, often larger properties.\n- Airbnb\n  - Wide variety (private rooms, entire homes, tiny houses, unique stays).\n  - Strong community signals (Superhost), long-stay discounts, lots of host photos and house rules.\n- Booking.com\n  - Great if you want hotels + apartments in one search and often instant-confirmation options.\n  - Good for last-minute bookings and flexible cancellation choices; customer support like a traditional booking engine.\n\nHow to find a good host — step-by-step checklist\n1. Filter & shortlist\n   - Set essentials (whole home vs private room, number of beds, wifi, self check-in, pet-friendly, parking).\n   - Use review score filter (e.g., 4.7+ or 9/10+).\n   - Sort by “guest review” or “superhosts / top-rated” where available.\n2. Scan photos & listing details\n   - Photos should be clear, show all main rooms, bathrooms, kitchen and exterior.\n   - Read the house rules, check-in/check-out, and cancellation policy.\n   - Note extra fees (cleaning, service, tourist taxes, security deposit).\n3. Read reviews (especially recent ones)\n   - Focus on reviews from the last 6–12 months.\n   - Look for repeated praise/complaints about cleanliness, accuracy, noise, communication, check-in.\n   - Check how the host replies to negative reviews — helpful and professional responses are a good sign.\n4. Check host profile & metrics\n   - Look for Superhost / Premier / Top-rated badges, high response rate, and many stays.\n   - New hosts aren’t automatically bad, but weigh the risk if there are no reviews.\n5. Message the host before booking\n   - Ask specific, practical questions (see template below).\n   - Gauge response speed, clarity, and friendliness — a slow or vague response is a red flag.\n6. Look at the listing history & calendar\n   - An active calendar that's kept up-to-date and consistent booking history is reassuring.\n7. Verify logistics & neighborhood\n   - Confirm exact check-in process, parking, public transit, noise at night, and proximity to sights.\n   - Check the address area on a map and review neighborhood comments.\n8. Protect yourself\n   - Never pay off-platform; use the booking platform for payment and mediation.\n   - Keep all messages in the platform’s messaging for protection.\n   - Consider travel insurance that covers rental issues.\n\nRed flags to avoid\n- Host asking you to pay outside the platform (PayPal, bank transfer, Venmo).\n- Extremely low price vs similar listings.\n- Host is evasive about details or refuses to provide a clear check-in plan.\n- Mostly negative or very short/low-detail reviews.\n- Unclear cancellation policy and/or very high, hidden extra fees.\n\nPractical booking tips\n- Compare total price (nightly + cleaning + service + taxes) between platforms.\n- For flexible plans, choose a more flexible cancellation policy even if slightly more expensive.\n- Ask for discounts on longer stays or last-minute bookings; many hosts will offer a reduction.\n- Verify wifi speed if you need to work remotely.\n- For families, confirm child beds/cribs, stair safety, laundry, and kitchen equipment.\n\nSample pre-book message (short)\nHi [Host name], I’m [your name]. We’re [number, e.g., 2 adults + 1 child] looking to stay [dates]. A few quick questions: is check-in self‑check-in or will you meet us? Is there parking on site? Are sheets/towels and kitchen basics provided? Any neighborhood noise at night we should know about? Thanks — we’d be happy to book if everything checks out.\n\nIf you tell me your destination, dates, and travel style (family, couple, solo, business, group), I can recommend the best platform and draft a tailored message to send hosts.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
