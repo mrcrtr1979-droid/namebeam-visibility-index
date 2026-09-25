@@ -1,0 +1,29 @@
+{
+ "check_id": "NB-CZ-API_2026-09-25_segment_str_host_tooling_openai",
+ "date_utc": "2026-09-25",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA MarketMinder",
+  "PriceLabs",
+  "Wheelhouse",
+  "Beyond Pricing",
+  "Airbnb",
+  "AllTheRooms"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: use AirDNA MarketMinder to analyze markets before you buy, and a dynamic-pricing tool (PriceLabs, Wheelhouse, or Beyond Pricing) to set nightly rates once you list. Together they give the best combination of investment-level market data + day-to-day revenue management.\n\nWhy that combination\n- AirDNA MarketMinder: industry-standard market-level data (ADR, occupancy, RevPAR, seasonality, historical trends, comps by neighborhood, revenue estimates). Great for screening cities/neighborhoods and modeling returns before purchase.\n- PriceLabs / Wheelhouse / Beyond Pricing: these connect to Airbnb/Vrbo and automatically adjust nightly rates using demand signals, events, lead time, length-of-stay rules, and custom minimum/maximums. They optimize revenue once you’re operating.\n\nQuick comparison (high level)\n- AirDNA MarketMinder\n  - Best for: market screening, comps, revenue projections, neighborhood-level analytics.\n  - Pros: large dataset, map filtering, investment modeling templates.\n  - Cons: subscription cost, estimated revenue (not perfect but good for screening).\n- PriceLabs\n  - Best for: hosts who want highly customizable, granular pricing rules and scenario testing.\n  - Pros: very flexible, good analytics, competitive price-per-listing.\n  - Cons: some learning curve.\n- Wheelhouse\n  - Best for: hosts who want easy-to-use UI + scenario testing (revenue targets, risk tolerance).\n  - Pros: clear visuals, good integrations, pricing strategies.\n  - Cons: can be pricier than PriceLabs for some features.\n- Beyond Pricing\n  - Best for: hands-off hosts who want simple automatic pricing.\n  - Pros: easy setup, reliable yield improvements vs static pricing.\n  - Cons: less granular control than PriceLabs/Wheelhouse.\n- Mashvisor / AllTheRooms / Transparent\n  - Best for: alternative market intelligence; useful as secondary checks or for multi-market operators. Typically more expensive or geared to larger portfolios.\n- Airbnb Smart Pricing\n  - Pros: free, built into Airbnb.\n  - Cons: less sophisticated and less revenue uplift than paid engines in most tests.\n\nTypical workflow I recommend\n1. Market screen: use AirDNA MarketMinder to compare cities and neighborhoods (occupancy, ADR, seasonality, monthly revenue estimates, comps).\n2. Financial model: plug those numbers into a cashflow model (purchase price, mortgage, taxes, insurance, utilities, cleaning, management fee) to estimate cap rates and cash-on-cash return.\n3. Deep-dive comps: look at top-performing listings in the immediate neighborhood (amenities, photos, minimum stays) and check local regulations.\n4. Post-listing pricing: connect your listing to PriceLabs or Wheelhouse (or Beyond Pricing if you want simpler) and set your minimums, rules, and revenue targets.\n5. Monitor and iterate: revisit market data and pricing performance monthly and tweak rules.\n\nCosts (ballpark)\n- AirDNA MarketMinder: monthly subscription per market or global plan (varies; often $30–$100+/month depending on plan).\n- PriceLabs: per-listing fee (typically ~$10–20/listing/month depending on plan).\n- Wheelhouse/Beyond Pricing: similar per-listing pricing or revenue-share models.\n\nWhich one should you pick?\n- If buying: run AirDNA MarketMinder first (single best tool for pre-purchase market analysis).\n- If you want one recommendation for pricing after listing: PriceLabs (best mix of control, price, and features). If you prefer simplicity, choose Beyond Pricing; if you want great UI + scenario tools, choose Wheelhouse.\n\nIf you want, tell me the city/neighborhood you’re looking at and I can suggest specific metrics to check or run a quick checklist of what to look for in that market.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

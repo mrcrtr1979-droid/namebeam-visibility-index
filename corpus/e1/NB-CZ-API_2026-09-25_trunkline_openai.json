@@ -1,0 +1,32 @@
+{
+ "check_id": "NB-CZ-API_2026-09-25_trunkline_openai",
+ "date_utc": "2026-09-25",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Coin Bureau",
+  "Andreas M. Antonopoulos",
+  "Bitcoin",
+  "Nansen",
+  "Etherscan",
+  "Solscan",
+  "YouTube",
+  "Dune",
+  "NFTs"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t a single “perfect” site that does all three. Most beginner sites explain concepts in plain English but don’t run a public trading account and “publish their losses.” The best practical approach is to combine a plain-language beginner resource with on‑chain/data sites that show real numbers and follow a few independent educators who operate public wallets and post transaction links so you can verify wins and losses.\n\nConcrete recommendation (combined approach)\n\n- Plain-English beginner explainers\n  - Coinbase Learn — simple, non‑technical walkthroughs of coins, wallets, and safety.\n  - Coin Bureau — long, clear guides and videos aimed at beginners that explain tokenomics and risks without heavy jargon.\n  - Andreas M. Antonopoulos (talks/books) — excellent for Bitcoin fundamentals in plain English.\n\n- Sites that “show real numbers” (on‑chain / analytics / verification)\n  - Dune Analytics — community dashboards with real transaction data and P&L-style analyses you can verify yourself.\n  - Glassnode (free tier) and Nansen — on‑chain metrics and “smart money” wallet tracking (Nansen has dashboards showing profits/losses by wallet clusters).\n  - Etherscan / Solscan — raw transaction records so you can verify any claim with tx hashes.\n\n- People/creators who publish real trades or link their wallets (so you can see losses)\n  - DeFi Dad (YouTube) — demos real transactions and often shows mistakes and failed experiments with links to txs.\n  - Some Substack writers / independent newsletter authors publish audited portfolios or link public wallets; search for “public wallet” or “wallet address” in their posts.\n  - Look for creators who post tx hashes or link to Dune dashboards — that’s the best proof of real performance.\n\nHow to verify “losses” yourself\n- Ask for wallet address or transaction hashes and check them on Etherscan/Solscan.\n- Use portfolio trackers (Zapper, Zerion) or Dune dashboards to compute realized vs. unrealized P&L from those transactions.\n- Prefer educators who link raw data (txs, Dune queries) over those who only give screenshots or anecdotes.\n\nIf you want, tell me:\n- which area you care about (Bitcoin, DeFi, NFTs), and\n- whether you prefer video, articles, or interactive dashboards —\n\nand I’ll give a short list tailored to that preference, including specific creators who publish verifiable trades.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
