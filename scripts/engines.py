@@ -69,10 +69,16 @@ def redact(text):
 
 
 # --------------------------------------------------------------------------
-# PERPLEXITY (unchanged behaviour, moved here so all engines live together)
+# PERPLEXITY (Agent API since 2026-09-27; Sonar Chat Completions retired)
 # --------------------------------------------------------------------------
-PERPLEXITY_URL = "https://api.perplexity.ai/chat/completions"
-PERPLEXITY_MODEL = "sonar"
+# 2026-09-27 SONAR SUNSET MIGRATION [COWORK-0927]: Perplexity retired Sonar Chat
+# Completions ("supported until September 27, 2026", docs.perplexity.ai migrate-from-sonar).
+# Same engine, new contract: POST /v1/agent, model "perplexity/sonar" (the documented
+# closest match to chat "sonar") with the web_search tool FORCED so every E1 row stays
+# grounded. Answer text = output[] message items; citations = the search_results item.
+# Live-verified 2026-09-27 from the Brain key: status completed, 15 sources, ~$0.005/call.
+PERPLEXITY_URL = "https://api.perplexity.ai/v1/agent"
+PERPLEXITY_MODEL = "perplexity/sonar"
 
 
 def call_perplexity(prompt_text):
@@ -85,7 +91,9 @@ def call_perplexity(prompt_text):
             headers={"Authorization": "Bearer " + key,
                      "Content-Type": "application/json"},
             json={"model": PERPLEXITY_MODEL, "temperature": TEMPERATURE,
-                  "messages": [{"role": "user", "content": prompt_text}]},
+                  "input": prompt_text,
+                  "tools": [{"type": "web_search"}],
+                  "tool_choice": {"type": "web_search"}},
             timeout=TIMEOUT,
         )
     except requests.exceptions.RequestException as exc:
@@ -96,12 +104,21 @@ def call_perplexity(prompt_text):
             "%sperplexity HTTP %s: %s" % (prefix, r.status_code, r.text[:300]))
     try:
         body = r.json()
-        text = body["choices"][0]["message"]["content"]
-    except (ValueError, KeyError, IndexError, TypeError):
+        if body.get("status") != "completed":
+            return False, "", [], redact("perplexity run %s: %s" % (
+                body.get("status"), str(body.get("error"))[:300]))
+        text = "".join(
+            part.get("text", "")
+            for item in body.get("output", []) if item.get("type") == "message"
+            for part in item.get("content", []) if part.get("type") == "output_text")
+    except (ValueError, KeyError, IndexError, TypeError, AttributeError):
         return False, "", [], redact("perplexity response shape unexpected")
-    cites = body.get("citations", [])
-    if not isinstance(cites, list):
-        cites = []
+    if not text:
+        return False, "", [], redact("perplexity returned no answer text")
+    cites = []
+    for item in body.get("output", []):
+        if item.get("type") == "search_results":
+            cites += [s.get("url") for s in item.get("results", []) if s.get("url")]
     return True, text, cites, ""
 
 
