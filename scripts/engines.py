@@ -352,7 +352,17 @@ def _fetch_serp_parsed(key, target, top_n, _post=None, _sleep=None):
     sleep = _sleep or _t.sleep
     sep = "&" if "?" in target else "?"
     url = target if "brd_json=1" in target else target + sep + "brd_json=1"
-    for attempt in range(2):
+    # 2026-09-28 [FABLE-COS-0928B] (R61). Read from the record, 09-24..09-27: 44 of 47
+    # EXTRACTION_FAILED rows in four days carried "no organic links in 2xx bytes, try 1:
+    # not json" and 4 carried "request failed: ReadTimeout". Both shapes are Bright Data
+    # not answering yet (a 200-310 byte non-JSON body, or no body in time), and the old
+    # loop retried only when the body said "recently failed", so those rows fell to the
+    # raw-HTML path, which has no organic anchors on AI-overview pages. Now: a short
+    # non-JSON body or a ReadTimeout waits 16 s and tries again, three tries in all, and
+    # the short body's first 120 characters land in the diagnostics so the next reader
+    # sees Bright Data's own words. The raw fallback below is unchanged; this can only
+    # add rows, never remove one.
+    for attempt in range(3):
         try:
             r = post(BRIGHTDATA_URL,
                      headers={"Authorization": "Bearer " + key,
@@ -361,7 +371,10 @@ def _fetch_serp_parsed(key, target, top_n, _post=None, _sleep=None):
                            "country": "us"},
                      timeout=TIMEOUT)
         except requests.exceptions.RequestException as exc:
-            _PARSED_NOTE[0] = "request failed: %s" % type(exc).__name__
+            _PARSED_NOTE[0] = "request failed: %s, try %d" % (type(exc).__name__, attempt + 1)
+            if attempt < 2:
+                sleep(16)
+                continue
             return "", []
         if r.status_code != 200:
             _PARSED_NOTE[0] = "HTTP %s" % r.status_code
@@ -371,14 +384,18 @@ def _fetch_serp_parsed(key, target, top_n, _post=None, _sleep=None):
         if urls:
             _PARSED_NOTE[0] = "ok, %d links, try %d" % (len(urls), attempt + 1)
             return text, urls
-        if "recently failed" in text:
-            _PARSED_NOTE[0] = "recently-failed body, try %d" % (attempt + 1)
-            if attempt == 0:
+        keys = _parsed_keys(text)
+        short = len(text) < 2000 and keys == "not json"
+        if "recently failed" in text or short:
+            _PARSED_NOTE[0] = "%s body, try %d: %r" % (
+                "recently-failed" if "recently failed" in text else "short non-json",
+                attempt + 1, text[:120])
+            if attempt < 2:
                 sleep(16)
                 continue
         else:
             _PARSED_NOTE[0] = "no organic links in %d bytes, try %d: %s" % (
-                len(text), attempt + 1, _parsed_keys(text))
+                len(text), attempt + 1, keys)
         break
     return "", []
 
