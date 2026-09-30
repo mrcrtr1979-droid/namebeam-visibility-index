@@ -1,0 +1,31 @@
+{
+ "check_id": "NB-CZ-API_2026-09-30_segment_str_host_tooling_openai",
+ "date_utc": "2026-09-30",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA MarketMinder",
+  "Beyond Pricing",
+  "PriceLabs",
+  "Wheelhouse",
+  "AllTheRooms",
+  "AirDNA",
+  "Mashvisor",
+  "MarketMinder"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- For market analysis before buying: AirDNA MarketMinder is the most commonly recommended, easy-to-use choice. Mashvisor and AllTheRooms are good alternatives if you want investor-focused metrics or different data coverage.\n- For setting nightly pricing day-to-day: PriceLabs and Wheelhouse are the best all-around tools (highly customizable). Beyond Pricing is simpler and easier to use. Airbnb Smart Pricing is free but limited.\n\nWhich to pick (quick guidance)\n- If you’re evaluating whether to buy a property: start with AirDNA MarketMinder to get ADR, occupancy, seasonality, revenue projections and comps for the neighborhood.\n- If you want a simple, automated pricing engine once you own the listing: try Beyond Pricing.\n- If you want granular control and advanced rules (minimum stays, custom seasonality, revenue targets): use PriceLabs or Wheelhouse.\n- If you’re operating at scale or want deeper competitive intel: look at Transparent or AllTheRooms.\n\nWhy this combo works\n- Market-level analysis (AirDNA/Mashvisor) gives you investment metrics (projected revenue, seasonality, top comps) so you can estimate cashflow and cap rate before buying.\n- A pricing engine (PriceLabs/Wheelhouse/Beyond) uses market data + your listing details to optimize nightly rates, occupancy and RevPAR once the property is live.\n\nImportant differences and considerations\n- Accuracy: All services use scraped/estimated data. Expect variance; use multiple sources or talk to local hosts for validation.\n- Granularity: PriceLabs and Wheelhouse let you set fine-grained rules (min stay per date, last-minute discounts, custom weekend/weekday pricing). Beyond Pricing is easier but less customizable.\n- Integrations: Make sure the tool integrates with Airbnb and any channel manager or PMS you plan to use (most major tools do).\n- Cost: Pricing models vary (subscription per listing vs percentage of revenue). Check current pricing on vendor sites and factor that into your pro forma.\n- Market size: In small or rural markets data may be sparse—use local comparables, property managers, and historical occupancy in addition to tools.\n\nPractical next steps (if you’re evaluating a purchase)\n1. Run AirDNA MarketMinder for the exact neighborhood(s) and property type (bedrooms, entire home vs private room).\n2. Pull ADR, occupancy, seasonality curves, revenue per month, and top comparable listings.\n3. Build a pro forma: gross revenue (from the tool), minus management, cleaning, utilities, mortgage, taxes, maintenance, vacancy buffer.\n4. Calculate cap rate and cash-on-cash return under conservative/likely/optimistic scenarios.\n5. If you like the numbers, sign up for a pricing tool trial (PriceLabs or Wheelhouse) and connect a test listing or simulate pricing to see expected revenue uplift.\n6. Factor in local regulation, licensing costs, HOA rules and insurance.\n\nIf you want, tell me:\n- the city/neighborhood you’re looking at and the property type (1BR, whole home, etc.), and I can suggest which tool or run a checklist of data points you should extract from MarketMinder or Mashvisor.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

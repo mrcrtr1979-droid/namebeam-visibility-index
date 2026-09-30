@@ -1,0 +1,117 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-09-30_segment_roofing_miami",
+ "date_utc": "2026-09-30",
+ "business": "SEGMENT: roofing, Miami",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Miami-Dade HVHZ",
+    "Miami-Dade Notice of Acceptance",
+    "HVHZ-rated Florida Product Approval",
+    "AJF Roofing",
+    "Canopy Roofing",
+    "On Call Roofing"
+   ],
+   "verbose_names": [
+    "Florida",
+    "Dade",
+    "Florida Building Code",
+    "Dade County NOA",
+    "Notice of Acceptance",
+    "Florida Product Approval",
+    "Owens Corning",
+    "CertainTeed",
+    "TAMKO",
+    "Yelp"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 6,
+   "verbose_entity_count": 10,
+   "containment_pct": 33.3,
+   "shared_count": 2,
+   "answer_chars_a": 1179,
+   "answer_chars_b": 3265,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Owens Corning Platinum",
+    "Miami-Dade County",
+    "Florida"
+   ],
+   "verbose_names": [
+    "Miami-Dade HVHZ",
+    "Miami-Dade Notice of Acceptance",
+    "HVHZ-rated Florida Product Approval",
+    "AJF Roofing",
+    "Canopy Roofing",
+    "On Call Roofing"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 6,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 1179,
+   "answer_chars_b": 1091,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Owens Corning Platinum",
+    "Miami-Dade County",
+    "Florida"
+   ],
+   "verbose_names": [
+    "Florida",
+    "Dade",
+    "Florida Building Code",
+    "Dade County NOA",
+    "Notice of Acceptance",
+    "Florida Product Approval",
+    "Owens Corning",
+    "CertainTeed",
+    "TAMKO",
+    "Yelp"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 10,
+   "containment_pct": 66.7,
+   "shared_count": 2,
+   "answer_chars_a": 3265,
+   "answer_chars_b": 1091,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
