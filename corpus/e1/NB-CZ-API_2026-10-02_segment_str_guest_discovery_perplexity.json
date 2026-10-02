@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-API_2026-10-02_segment_str_guest_discovery_perplexity",
+ "date_utc": "2026-10-02",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "Vrbo",
+  "Booking.com",
+  "Check the listing details closely",
+  "Check the cancellation deadline and total price",
+  "Keep payment and communication on the platform",
+  "Quick rule"
+ ],
+ "engine_stated_criteria": [
+  "Message the host before booking if anything is unclear"
+ ],
+ "sources_cited": [
+  "https://www.consumeraffairs.com/online/vrbo.html",
+  "https://www.booking.com/content/terms.html",
+  "https://www.vrbo.com/lp/b/terms-of-service",
+  "https://www.booking.com/content/terms.en-gb.html",
+  "https://www.vrbo.com/tlp/trust-and-safety/partner-initiated-cancellation-policy",
+  "https://www.thetraveler.org/the-vrbo-fees-and-policies-many-travelers-miss/",
+  "https://admin.booking.com/hotelreg/terms-and-conditions.html",
+  "https://www.vrbo.com/lp/b/host-terms-of-service",
+  "https://www.booking.com/pipl_terms.html",
+  "https://www.trustpilot.com/review/www.vrbo.com?page=5",
+  "https://help.vrbo.com/articles/Can-a-traveler-cancel-a-reservation",
+  "https://www.airbnb.com/help/article/2908",
+  "https://help.vrbo.com/articles/Integrated-Property-Managers-About-cancellations-and-refunds",
+  "https://help.vrbo.com/articles/How-do-I-cancel-a-reservation",
+  "https://www.airbnb.com/help/article/2039"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one best platform for every trip. **Compare the same property across all three and choose based on the total price, cancellation terms, and who you’re booking with.**\n\n- **Airbnb:** A good place to start for distinctive stays or a room in someone’s home. Check the listing’s cancellation policy carefully; refunds generally depend on the policy for that reservation.\n- **Vrbo:** Often worth checking for an entire home, especially for a family or group. Its service fee and refund rules vary by booking, so review the full checkout total and cancellation terms before paying.\n- **Booking.com:** Useful if you want to compare rentals with hotels in one place. The property’s own cancellation and other rules apply, so read those before booking.\n\n**To find a good host or property:**\n\n1. **Read recent reviews, not just the overall score.** Look for repeated comments about cleanliness, accuracy, noise, check-in, and how the host handled problems. Reviews are useful signals, not guarantees.\n2. **Check the listing details closely.** Confirm the exact location, bed and bathroom count, amenities, accessibility, house rules, and any extra charges or deposits.\n3. **Message the host before booking if anything is unclear.** A reliable host should answer specific questions clearly and promptly. Save important answers in the platform’s messaging system.\n4. **Check the cancellation deadline and total price.** Compare the final amount—including cleaning, service, and other fees—not just the nightly rate. Make sure the refund terms fit your plans.\n5. **Keep payment and communication on the platform.** Be wary of requests to pay by bank transfer, gift card, or another off-platform method; that can reduce your protections.\n6. **For a high-stakes trip, favor flexibility and a backup plan.** A refundable booking or a well-reviewed hotel may be worth paying more for if a last-minute cancellation would be costly.\n\n**Quick rule:** For a whole-home group stay, compare Vrbo and Airbnb; for a broad hotel-and-rental search, include Booking.com. Then book the listing with the clearest terms and strongest recent reviews—not simply the lowest headline price.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

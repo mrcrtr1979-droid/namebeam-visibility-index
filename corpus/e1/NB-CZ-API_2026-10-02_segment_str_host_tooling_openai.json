@@ -1,0 +1,30 @@
+{
+ "check_id": "NB-CZ-API_2026-10-02_segment_str_host_tooling_openai",
+ "date_utc": "2026-10-02",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "MarketMinder",
+  "PriceLabs",
+  "Wheelhouse and Beyond Pricing",
+  "Airbnb",
+  "Wheelhouse",
+  "Beyond Pricing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- For market research before you buy: AirDNA (MarketMinder / Rentalizer) is the best single tool for short‑term‑rental market analytics.\n- For setting nightly prices once you list the property: PriceLabs is the most powerful/flexible dynamic‑pricing tool (Wheelhouse and Beyond Pricing are good alternatives).\n\nWhy that combo\n- AirDNA gives in‑depth market metrics you need to decide whether a location and property type will cash‑flow (ADR, occupancy, seasonality, RevPAR, demand trends, comparable listings, revenue estimates for a specific address).\n- PriceLabs integrates with Airbnb and most PMS/channel managers, creates daily dynamic rates, is highly customizable (minimum/maximum, discounts, weekend/season rules) and is widely used by professional hosts. Wheelhouse is strong if you want simpler scenario planning; Beyond Pricing is simpler and charges a commission model some hosts prefer.\n\nWhat to check in your market analysis\n- ADR, occupancy, RevPAR and seasonality patterns\n- Revenue estimates for your exact address or an address‑level rentalizer\n- Number of competing listings and their amenity mix\n- Typical minimum stay and lead time\n- Local regulations, taxes and licensing costs\n- All‑in operating costs (mortgage, utilities, cleaning, management) to calculate realistic net cash flow\n\nPractical workflow I recommend\n1. Run AirDNA MarketMinder and Rentalizer for the neighborhood and the exact address to estimate realistic revenue and seasonality.  \n2. Cross‑check by manually reviewing 10–15 direct Airbnb comps (similar size/amenities) to validate assumptions.  \n3. Model expenses and worst‑case occupancy to see if the purchase makes sense.  \n4. When live, connect the listing to PriceLabs (or Wheelhouse/Beyond Pricing) to automate daily rates and maximize revenue.\n\nIf you want, tell me the city/neighborhood and property details (size, number of bedrooms, target guest type), and I can suggest which AirDNA metrics to focus on and what revenue range to expect.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
