@@ -183,6 +183,51 @@ def run_engine(business_row, engine, fn, date_utc):
     return write_row(row, check_id), True
 
 
+def extract_ai_overview(payload_text):
+    """Google AI Overview from Bright Data parsed SERP JSON (documented object
+    "ai_overview": texts[].snippet, references[].href/title/source).
+    Added 2026-10-03 [OPUS55-COS-1003A]: the parsed JSON the collector already
+    pays for carries Google's AI Overview, and it was being discarded. Returns
+    (present, text, references). present is True only when the documented
+    object is in the payload with text; None when the payload is not parsed
+    JSON (cannot tell); False when it is parsed JSON without the object.
+    Text is verbatim snippets joined by newlines, never rewritten."""
+    try:
+        j = json.loads(payload_text or "")
+        if isinstance(j, dict) and isinstance(j.get("body"), str):
+            j = json.loads(j["body"])
+    except (ValueError, TypeError):
+        return None, "", []
+    if not isinstance(j, dict):
+        return None, "", []
+    aio = j.get("ai_overview")
+    if isinstance(aio, list):
+        aio = aio[0] if aio and isinstance(aio[0], dict) else None
+    if not isinstance(aio, dict):
+        return False, "", []
+    parts = []
+
+    def walk(node):
+        if isinstance(node, dict):
+            snip = node.get("snippet")
+            if isinstance(snip, str) and snip.strip():
+                parts.append(snip.strip())
+            for k, v in node.items():
+                if k != "snippet" and isinstance(v, (list, dict)) and k != "links":
+                    walk(v)
+        elif isinstance(node, list):
+            for x in node:
+                walk(x)
+    walk(aio.get("texts", []))
+    refs = []
+    for r in aio.get("references", []) or []:
+        if isinstance(r, dict) and r.get("href"):
+            refs.append({"href": r.get("href"), "title": r.get("title", ""),
+                         "source": r.get("source", "")})
+    text = "\n".join(parts)
+    return (True if text else False), text, refs
+
+
 def run_serp(business_row, date_utc):
     """Writes a SERP row: who RANKS on Google for the same question.
     Paired with the engine rows, this is the rank-to-citation delta.
@@ -213,11 +258,18 @@ def run_serp(business_row, date_utc):
             "business_mentioned": None,
             "organic_top_results": [],
             "ai_overview_detected": None,
+            "ai_overview_present": None,
+            "ai_overview_text": "",
+            "ai_overview_references": [],
             "session_note": "FAILED RUN, logged per no-fabricated-rows law. "
                             "error detail: %s" % err,
         })
         return write_row(row, check_id), False
     diag = serp_diagnostics(html, organic)
+    try:
+        _aio = extract_ai_overview(html)
+    except Exception:  # never let the AIO read cost the SERP row
+        _aio = (None, "", [])
     row.update({
         # An extraction failure is NOT a finding. If organic is empty, this
         # row is marked EXTRACTION_FAILED so it can be excluded from any
@@ -229,6 +281,12 @@ def run_serp(business_row, date_utc):
         # None means "could not tell", and that is preserved on purpose.
         # Never coerce an unknown to False; an unknown is not a negative.
         "ai_overview_detected": detect_ai_overview(html),
+        # 2026-10-03: Google's AI Overview text and cited references, read from
+        # the documented ai_overview object of the parsed SERP JSON. Additive
+        # fields; every existing field above is unchanged.
+        "ai_overview_present": _aio[0],
+        "ai_overview_text": _aio[1],
+        "ai_overview_references": _aio[2],
         "session_note": ("Organic results extracted mechanically from the "
                          "returned results page. Bright Data does not "
                          "document an AI Overview field, so ai_overview_"
