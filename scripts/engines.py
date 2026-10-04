@@ -280,9 +280,13 @@ def fetch_serp(query_text, top_n=10):
     # a row came from ("payload": parsed_json or raw_html) so the series change is visible.
     # The 209-byte body also explains the "empty response" rows: Bright Data wants 15 s
     # between tries and the old backoff was 3 s and 6 s.
-    parsed_text, parsed_urls = _fetch_serp_parsed(key, target, top_n)
+    parsed_text, parsed_urls = _fetch_serp_parsed(key, target, top_n, query_text=query_text)
     if parsed_urls:
         return True, parsed_text, parsed_urls, ""
+    if _PARSED_DRIFT[0]:
+        # three tries all answered a different question: fail the row, do not let the
+        # raw path store a fourth unguarded answer as OK (2026-10-04, FABLE-COS-1004D)
+        return False, "", [], redact("query drift after 3 tries: " + _PARSED_DRIFT[0])
     html = ""
     for attempt in range(3):
         try:
@@ -344,9 +348,74 @@ def _parse_serp_json(text, top_n=10):
 _PARSED_NOTE = [""]   # why the last parsed-JSON attempt did or did not yield links; lands in serp_diagnostics
 
 
-def _fetch_serp_parsed(key, target, top_n, _post=None, _sleep=None):
-    """Return (text, urls). Never raises; ("", []) means fall back to raw."""
+# 2026-10-04 [FABLE-COS-1004D] (R61). QUERY-DRIFT GUARD. From 2026-09-28 the parsed SERP
+# path returned results for ONE word of our question on 2 to 10 rows a day (read from the
+# record: Dallas personal injury -> courts.mo.gov, case.org, caseknives.com, caseih.com for
+# "...truck accident case?"; Miami roofing and Pleasanton tanning -> bestbuy.com; Kansas City
+# health insurance -> health.com, cdc.gov). Those rows were stored as OK and reached the
+# public panels. Google answered a different question, so the row is not a measurement.
+# Rule: if Bright Data echoes the query Google ran (general.query) and it shares fewer than
+# half (at least 2) of our question's content words, or, with no echo, the top results
+# together match at most one content word, the attempt is DRIFT: wait 16 s and ask again;
+# after three drifted tries the row is surrendered as EXTRACTION_FAILED with the reason,
+# never stored as OK. A real answer always names the trade and the city somewhere in ten
+# results, so a correct row cannot match only one word.
+_DRIFT_STOP = {
+    "what", "which", "where", "when", "best", "good", "great", "near", "with", "that",
+    "this", "does", "from", "your", "have", "find", "need", "recommend", "recommends",
+    "company", "companies", "service", "services", "there", "they", "them", "about",
+    "into", "more", "most", "some", "like", "would", "could", "should", "will", "than",
+    "their", "other", "options", "top", "rated", "local", "area",
+}
+_PARSED_DRIFT = [""]   # set when the parsed path gave up on drift; fetch_serp then fails the row
+
+
+def _query_tokens(query_text):
+    import re as _re
+    words = _re.findall(r"[a-z0-9]+", (query_text or "").lower())
+    return {w for w in words if len(w) >= 4 and w not in _DRIFT_STOP}
+
+
+def _serp_drift(text, query_text):
+    """Reason string when the results answer a different question than ours, else ''."""
+    import json as _json
+    want = _query_tokens(query_text)
+    if len(want) < 2:
+        return ""
+    try:
+        j = _json.loads(text or "")
+        if isinstance(j, dict) and isinstance(j.get("body"), str):
+            j = _json.loads(j["body"])
+    except ValueError:
+        return ""
+    if not isinstance(j, dict):
+        return ""
+    gen = j.get("general")
+    gq = gen.get("query") if isinstance(gen, dict) else None
+    if isinstance(gq, str) and gq.strip():
+        shared = len(_query_tokens(gq) & want)
+        if shared < max(2, len(want) // 2):
+            return "google searched %r (%d of %d words)" % (gq[:80], shared, len(want))
+        return ""
+    org = j.get("organic")
+    if not isinstance(org, list) or not org:
+        return ""
+    hit = set()
+    for o in org[:10]:
+        if not isinstance(o, dict):
+            continue
+        blob = " ".join(str(o.get(k, "")) for k in ("title", "description", "link", "display_link")).lower()
+        hit |= {w for w in want if w in blob}
+    if len(hit) <= 1:
+        return "results match %d of %d question words (%s)" % (len(hit), len(want), ",".join(sorted(hit)) or "none")
+    return ""
+
+
+def _fetch_serp_parsed(key, target, top_n, _post=None, _sleep=None, query_text=None):
+    """Return (text, urls). Never raises; ("", []) means fall back to raw
+    (unless _PARSED_DRIFT is set: then the row fails, see the drift guard above)."""
     _PARSED_NOTE[0] = "not attempted"
+    _PARSED_DRIFT[0] = ""
     import time as _t
     post = _post or requests.post
     sleep = _sleep or _t.sleep
@@ -394,6 +463,14 @@ def _fetch_serp_parsed(key, target, top_n, _post=None, _sleep=None):
         text = r.text or ""
         urls = _parse_serp_json(text, top_n)
         if urls:
+            drift = _serp_drift(text, query_text) if query_text else ""
+            if drift:
+                _PARSED_NOTE[0] = "query drift, try %d: %s" % (attempt + 1, drift)
+                if attempt < 2:
+                    sleep(16)
+                    continue
+                _PARSED_DRIFT[0] = drift
+                return "", []
             _PARSED_NOTE[0] = "ok, %d links, try %d" % (len(urls), attempt + 1)
             return text, urls
         keys = _parsed_keys(text)
