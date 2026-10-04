@@ -352,6 +352,18 @@ def _fetch_serp_parsed(key, target, top_n, _post=None, _sleep=None):
     sleep = _sleep or _t.sleep
     sep = "&" if "?" in target else "?"
     url = target if "brd_json=1" in target else target + sep + "brd_json=1"
+    # 2026-10-04 [FABLE-COS-1004A] (R61). The 10-03 run carried the new ai_overview_*
+    # fields on 47 of 47 SERP rows but an AI Overview on only 1 of 47. Bright Data
+    # documents why: Google loads the AI Overview after the page, and the parsed JSON
+    # carries it only when the request adds brd_ai_overview=2 ("increases the chances
+    # of retrieving Google's Generative AI Overview sections", about 5 to 10 s more per
+    # request; docs.brightdata.com/products/serp-api/query-parameters/google and
+    # brightdata.com/products/serp-api/google-search/ai-overview, read 2026-10-04).
+    # The request count is unchanged. Repo variable BRIGHTDATA_AIO=0 turns it off
+    # without a commit; anything else, or unset, asks for it.
+    if (os.environ.get("BRIGHTDATA_AIO", "").strip() != "0"
+            and "brd_ai_overview=" not in url):
+        url += "&brd_ai_overview=2"
     # 2026-09-28 [FABLE-COS-0928B] (R61). Read from the record, 09-24..09-27: 44 of 47
     # EXTRACTION_FAILED rows in four days carried "no organic links in 2xx bytes, try 1:
     # not json" and 4 carried "request failed: ReadTimeout". Both shapes are Bright Data
