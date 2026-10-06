@@ -8,6 +8,15 @@ on:
   workflow_dispatch: {}
   schedule:
   - cron: "10 12 * * *"
+  # BACKSTOP (2026-10-06, [FABLE-COS-1006A], R61): on 2026-10-05 the 12:10Z run was
+  # delayed by GitHub to 20:31Z and then cancelled: "The job was not acquired by Runner
+  # of type hosted even after multiple attempts". No E1 record exists for 2026-10-05 and
+  # it cannot be backfilled. A second daily slot runs only when today's record is missing.
+  - cron: "40 21 * * *"
+
+concurrency:
+  group: e1-check-runner
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -19,17 +28,32 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v4
 
+      - name: Backstop guard (a scheduled run skips if today's record already exists)
+        id: guard
+        run: |
+          D=$(date -u +%Y-%m-%d)
+          if [ "${{ github.event_name }}" = "schedule" ] && ls corpus/e1/NB-CZ-API_${D}_namebeam_*.json >/dev/null 2>&1; then
+            echo "E1 record for $D already exists; this scheduled run is the backstop and skips."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No E1 record for $D yet (or a manual run); running."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Set up Python 3.12
+        if: steps.guard.outputs.skip != 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Install requests
+        if: steps.guard.outputs.skip != 'true'
         run: pip install requests
 
       # Reports which engines are wired WITHOUT ever printing a value.
       # Only ever echoes "present" or "MISSING", never the secret itself.
       - name: Report which engine keys are present
+        if: steps.guard.outputs.skip != 'true'
         env:
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -56,6 +80,7 @@ jobs:
       # "key not set" on every row and no SERP rows were ever written, even
       # though both secrets existed in the repo.
       - name: Run the E1 check runner
+        if: steps.guard.outputs.skip != 'true'
         env:
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -88,6 +113,7 @@ jobs:
         run: python scripts/e1_runner.py
 
       - name: Commit and push any new corpus rows
+        if: steps.guard.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
