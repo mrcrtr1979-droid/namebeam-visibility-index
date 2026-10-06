@@ -1,0 +1,31 @@
+{
+ "check_id": "NB-CZ-API_2026-10-06_segment_str_guest_discovery_anthropic",
+ "date_utc": "2026-10-06",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "VRBO",
+  "Booking.com",
+  "Review signals",
+  "Red flags",
+  "Before booking"
+ ],
+ "engine_stated_criteria": [
+  "Trust your gut"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Choosing a Platform\n\nEach has different strengths:\n\n**Airbnb**\n- Largest selection, especially unique/smaller properties\n- Strong review system and host verification\n- Good for shorter stays\n\n**VRBO**\n- Better for full houses/longer stays\n- Often better value for groups\n- More established hosts (many run professionally)\n\n**Booking.com**\n- Widest range (hotels + rentals)\n- Flexible cancellation often available\n- Good for last-minute deals\n\n**No single \"best\"—compare the same property across platforms if listed on multiple.**\n\n# Finding Good Hosts\n\n**Review signals:**\n- 4.8+ rating (not just 5.0—those can be new)\n- 50+ reviews minimum (more data = more reliable)\n- Read recent reviews, not just summaries\n- Look for specific details in reviews (cleanliness, communication, accuracy)\n\n**Red flags:**\n- Vague or defensive responses to criticism\n- Lots of \"communication issues\" mentioned\n- Strict cancellation + poor reviews\n- New hosts with no track record for high-stakes bookings\n\n**Before booking:**\n- Message the host with specific questions\n- Check their response time and tone\n- Ask about anything unclear in the listing\n- Verify photos match the description\n\n**Trust your gut**—if something feels off in the listing or communication, keep looking.\n\nWhat type of trip are you planning? That might help narrow the recommendation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
