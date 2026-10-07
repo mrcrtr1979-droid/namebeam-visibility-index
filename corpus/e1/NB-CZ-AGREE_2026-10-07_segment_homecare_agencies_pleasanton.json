@@ -1,0 +1,113 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-10-07_segment_homecare_agencies_pleasanton",
+ "date_utc": "2026-10-07",
+ "business": "SEGMENT: homecare agencies, Pleasanton",
+ "row_type": "agreement",
+ "prompt_text": "What is the best home care agency in Pleasanton CA for an elderly parent?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Senior Helpers of Pleasanton and Right",
+    "Home Pleasanton",
+    "Seniors Helping Seniors",
+    "Senior Helpers",
+    "California Home Care Organization"
+   ],
+   "verbose_names": [
+    "Home Instead",
+    "Visiting Angels",
+    "Home",
+    "Comfort Keepers and BrightStar Care. Each",
+    "Medicare",
+    "Right",
+    "Caring.com",
+    "COVID",
+    "Alameda County"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 9,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1603,
+   "answer_chars_b": 3339,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Research Approaches",
+    "Contact the Pleasanton Senior Services",
+    "Alameda County Area Agency"
+   ],
+   "verbose_names": [
+    "Senior Helpers of Pleasanton and Right",
+    "Home Pleasanton",
+    "Seniors Helping Seniors",
+    "Senior Helpers",
+    "California Home Care Organization"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 5,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1603,
+   "answer_chars_b": 1152,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Research Approaches",
+    "Contact the Pleasanton Senior Services",
+    "Alameda County Area Agency"
+   ],
+   "verbose_names": [
+    "Home Instead",
+    "Visiting Angels",
+    "Home",
+    "Comfort Keepers and BrightStar Care. Each",
+    "Medicare",
+    "Right",
+    "Caring.com",
+    "COVID",
+    "Alameda County"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 9,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 3339,
+   "answer_chars_b": 1152,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

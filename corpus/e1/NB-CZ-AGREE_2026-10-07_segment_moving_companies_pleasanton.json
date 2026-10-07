@@ -1,0 +1,113 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-10-07_segment_moving_companies_pleasanton",
+ "date_utc": "2026-10-07",
+ "business": "SEGMENT: moving companies, Pleasanton",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best moving company in Pleasanton CA for a local move?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Ontrack Moving",
+    "Pleasanton and Tri-Valley",
+    "FairPrice Movers",
+    "California",
+    "Eagle Moving",
+    "Bay Area"
+   ],
+   "verbose_names": [
+    "ZIPs",
+    "USDOT",
+    "Google and Yelp",
+    "Tri-Valley",
+    "Bay Area",
+    "Allied Van Lines",
+    "College HUNKS Hauling",
+    "Moving. These"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 6,
+   "verbose_entity_count": 8,
+   "containment_pct": 33.3,
+   "shared_count": 2,
+   "answer_chars_a": 686,
+   "answer_chars_b": 2275,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Angie's List",
+    "Pleasanton Facebook",
+    "Bay Area"
+   ],
+   "verbose_names": [
+    "Ontrack Moving",
+    "Pleasanton and Tri-Valley",
+    "FairPrice Movers",
+    "California",
+    "Eagle Moving",
+    "Bay Area"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 6,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 686,
+   "answer_chars_b": 994,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Angie's List",
+    "Pleasanton Facebook",
+    "Bay Area"
+   ],
+   "verbose_names": [
+    "ZIPs",
+    "USDOT",
+    "Google and Yelp",
+    "Tri-Valley",
+    "Bay Area",
+    "Allied Van Lines",
+    "College HUNKS Hauling",
+    "Moving. These"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 8,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 2275,
+   "answer_chars_b": 994,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
