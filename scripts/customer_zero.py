@@ -112,12 +112,12 @@ def read_sources(sources_dir):
     return out
 
 
-def raw_denominators(corpus):
+def raw_denominators(corpus, archives=None):
     """date -> {'engine_answers': Counter(engine), 'field_rows': Counter((engine, field)),
     'url_rows': int}. url_rows counts what the builder extracts, to cross-check the CSVs."""
     res = collections.defaultdict(lambda: {'engine_answers': collections.Counter(),
                                            'field_rows': collections.Counter(), 'url_rows': 0})
-    for name, d in bs.records(corpus, None):
+    for name, d in bs.records(corpus, archives):
         if not isinstance(d, dict) or not d.get('engine'):
             continue
         dt = bs.date_of(name, d)
@@ -131,10 +131,10 @@ def raw_denominators(corpus):
     return res
 
 
-def build(corpus, sources_dir, out_dir, extra=()):
+def build(corpus, sources_dir, out_dir, extra=(), archives=None):
     groups = make_groups(extra)
     src = read_sources(sources_dir)
-    den = raw_denominators(corpus)
+    den = raw_denominators(corpus, archives)
     status = 0
     for dt in sorted(den):
         have = len(src.get(dt, []))
@@ -312,6 +312,7 @@ def bs_rows(sources_dir):
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--corpus', default=DEFAULT_CORPUS)
+    ap.add_argument('--archives', default=None, help='dir of *.tar.gz raw archives (e1_raw)')
     ap.add_argument('--sources', default=DEFAULT_SOURCES)
     ap.add_argument('--out', default=DEFAULT_OUT)
     ap.add_argument('--extra-domain', action='append', default=[])
@@ -320,7 +321,7 @@ def main(argv=None):
     a = ap.parse_args(argv)
     if a.selftest:
         return selftest()
-    status, daily, hits, rolling = build(a.corpus, a.sources, a.out, a.extra_domain)
+    status, daily, hits, rolling = build(a.corpus, a.sources, a.out, a.extra_domain, a.archives)
     summarize(daily, hits)
     if a.check_baseline:
         return max(status, check_baseline(hits))
