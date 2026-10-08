@@ -26,7 +26,7 @@ import re
 import sys
 from datetime import datetime, timezone
 
-from engines import (ENGINES, fetch_serp, detect_ai_overview,
+from engines import (ENGINES, LAST_CALL_META, fetch_serp, detect_ai_overview,
                      serp_diagnostics)
 from agreement import build_agreement_row
 from extract_named_entities import (
@@ -149,6 +149,10 @@ def run_engine(business_row, engine, fn, date_utc):
     row = base_row(business_row, date_utc, check_id, engine)
     row["run"] = run_index
     ok, text, sources, err = fn(business_row["prompt_1"])
+    if engine == "perplexity":
+        # Forward-only audit fields: which model Perplexity served, usage,
+        # search-result count. Set on both OK and failed rows.
+        row["engine_meta"] = dict(LAST_CALL_META.get("perplexity") or {})
     if not ok:
         # A refusal for QUOTA is not the engine failing to answer. It is us
         # not being allowed to ask. Counting it as FAILED would publish a
