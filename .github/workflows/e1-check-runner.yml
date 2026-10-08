@@ -32,7 +32,16 @@ jobs:
         id: guard
         run: |
           D=$(date -u +%Y-%m-%d)
-          if [ "${{ github.event_name }}" = "schedule" ] && ls corpus/e1/NB-CZ-API_${D}_namebeam_*.json >/dev/null 2>&1; then
+          H=$(date -u +%H)
+          # MIDNIGHT GUARD (2026-10-08, [OPUS55-COS-1008A], R61): GitHub started the 21:40Z
+          # backstop of 2026-10-06 at 01:00Z on 2026-10-07, so it wrote the 10-07 record before
+          # the 02:55Z roster merge, and the real 12:10Z run (started 18:51Z) skipped; the six
+          # dental/orthodontist segments lost 2026-10-07. A scheduled run that starts before
+          # 12:00Z is a late backstop from the previous day; today's 12:10Z slot owns today.
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$H" -lt 12 ]; then
+            echo "Scheduled run started at ${H}Z: a late backstop that crossed midnight; the 12:10Z slot owns $D. Skipping."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "schedule" ] && ls corpus/e1/NB-CZ-API_${D}_namebeam_*.json >/dev/null 2>&1; then
             echo "E1 record for $D already exists; this scheduled run is the backstop and skips."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
