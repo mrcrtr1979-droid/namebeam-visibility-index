@@ -65,6 +65,28 @@ def note_path(date, mode):
     return 'siri/SIRI_%s.md' % date if mode == 'typed' else 'voice/%s/SPOKEN_%s.md' % (date, date)
 
 
+def load_jsonl(path):
+    """Extra keyed answers filed by the nightly intake: one JSON object per line with the keys of K()."""
+    import json
+    out = []
+    if not os.path.exists(path):
+        return out
+    with io.open(path, encoding='utf-8') as fh:
+        for n, ln in enumerate(fh, 1):
+            ln = ln.strip()
+            if not ln:
+                continue
+            d = json.loads(ln)
+            out.append(K(d['date'], d['q'], int(d.get('turn', 1)), d['tag'], d.get('biz', []), d.get('fmt', ''), d.get('chips', ''),
+                         d.get('names', []), d.get('note', ''), bool(d.get('captured', True)), None, d.get('q_override'), d.get('mode')))
+    return out
+
+
+def merge_keyed(base, extra):
+    seen = {(k['date'], k['mode'], k['q'], k['turn']) for k in base}
+    return base + [k for k in extra if (k['date'], k['mode'], k['q'], k['turn']) not in seen]
+
+
 def day_in_mode(keyed):
     out = {}
     for mode in ('typed', 'spoken'):
@@ -347,6 +369,14 @@ def selftest():
         chk('no provenance problems on the fixture', problems == [])
         chk('spoken said comes from the transcript range', rows[2][10].startswith('Some of the top painters include Acme Painting'))
         chk('typed said comes from OCR and fixes the leading bar', rows[0][10] == "I can help: Acme Painting and Beta Brush are well rated.")
+        import json, tempfile
+        tmp = tempfile.NamedTemporaryFile('w', suffix='.jsonl', delete=False, encoding='utf-8')
+        tmp.write(json.dumps({'date': '2026-01-01', 'q': 'Q1', 'turn': 1, 'tag': 'S', 'biz': ['X'], 'fmt': 'text'}) + '\n')
+        tmp.write(json.dumps({'date': '2026-01-03', 'q': 'Q2', 'turn': 1, 'tag': 'S', 'biz': ['Y'], 'fmt': 'text', 'chips': 'a +1', 'names': ['a']}) + '\n')
+        tmp.close()
+        merged = merge_keyed(KEYED, load_jsonl(tmp.name))
+        os.remove(tmp.name)
+        chk('jsonl intake adds new answers and does not duplicate an existing one', len(merged) == len(KEYED) + 1 and merged[-1]['date'] == '2026-01-03')
         # RED proofs
         KEYED_BAD = list(KEYED)
         KEYED = KEYED_BAD[:]; KEYED[0] = K('2026-01-01', 'Q1', 1, 'S', ['Acme Painting', 'Invented Co'], 'text + list', 'yelp.com +2', ['yelp.com'])
@@ -374,6 +404,8 @@ def main(argv=None):
         return 0 if selftest() else 1
     if not a.src:
         ap.error('--src is required')
+    global KEYED
+    KEYED = merge_keyed(KEYED, load_jsonl(os.path.join(a.src, 'siri', 'siri_keyed.jsonl')))
     rows, problems = build_rows(a.src)
     write_csv(os.path.join(a.out, 'siri_panel.csv'), rows)
     print('wrote %s (%d rows, %d dates)' % (os.path.join(a.out, 'siri_panel.csv'), len(rows), len({r[0] for r in rows})))
