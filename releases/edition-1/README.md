@@ -56,7 +56,7 @@ Every metric names its method and its denominator in `metrics/metrics_v2.csv`. T
 - Coin-flip share: the share of businesses named on 20 to 80 percent of answered days, so one day's answer is close to a coin flip.
 - Engine agreement: the mean overlap of two engines' name lists on the same day, raw and gated.
 
-A cell is a market plus a niche. US nationwide questions are left out of the cell metrics. September has 38 cells. API rows count; SERP and AGREE rows do not. A list of SERP files from 2026-10-04 that were held out is in `method/`; it removes no API rows.
+A cell is a market plus a niche. US nationwide questions are left out of the cell metrics. September has 38 cells. API rows count; SERP and AGREE rows do not. The metrics read only the cells that were asked on or before 2026-09-27 (the 38 cells of September), in every window. Research segments added to the roster after that date are in the answers table and are left out of the metrics, so a change between WA and WB is not also a change of panel. In this build no row is left out: every cell asked in the window was already asked on or before 2026-09-27. A list of SERP files from 2026-10-04 that were held out is in `method/`; it removes no API rows.
 
 ## The name gate
 

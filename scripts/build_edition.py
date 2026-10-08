@@ -120,6 +120,26 @@ def in_window(d, w0, w1):
     return w0 <= d <= w1
 
 
+# METRICS PANEL (2026-10-08, S1-5). The metrics read market+niche cells. Research segments added to the roster after
+# WA ended would enter the later windows as new cells and change the panel between WA and WB. The Edition 1 metrics
+# therefore read only the cells that have an API row on or before PANEL_CUTOFF (the 38 cells of September). Rows of
+# later cells stay in the answers table. US nationwide rows are never cells, so they pass through untouched.
+PANEL_CUTOFF = '2026-09-27'
+
+
+def panel_split(rows):
+    """Returns (kept, left_out). kept is what the metrics read."""
+    panel = {(r['niche'], r['market']) for r in rows if r['kind'] == 'API' and r['date'] <= PANEL_CUTOFF}
+    kept, out = [], []
+    for r in rows:
+        mk = (r['market'] or '').strip()
+        if mk and mk.casefold() != 'us nationwide' and (r['niche'], r['market']) not in panel:
+            out.append(r)
+        else:
+            kept.append(r)
+    return kept, out
+
+
 # ------------------------------------------------------------------ other data
 def merge_sources(src_dir, w0, w1, out):
     header = None
@@ -274,7 +294,24 @@ def main():
     if '--metrics' in a:
         tmp = tempfile.mkdtemp()
         v2 = os.path.join(HERE, 'method', 'Brain_Kit', 'status', 'staged', '1008E_S1_METRICS', 'receipts_metrics_v2.py')
-        p = subprocess.run([sys.executable, '-I', '-B', v2, '--run', '--csv', os.path.join(HERE, *pack['files']['answers'].split('/')),
+        mp = pack.get('metrics_panel') or {}
+        csv_in = os.path.join(HERE, *pack['files']['answers'].split('/'))
+        if mp.get('file'):
+            repo = os.path.abspath(os.path.join(HERE, '..', '..'))
+            spec = importlib.util.spec_from_file_location('build_edition', os.path.join(repo, 'scripts', 'build_edition.py'))
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            import csv as _csv
+            with open(csv_in, encoding='utf-8', newline='') as fh:
+                arows = list(_csv.DictReader(fh))
+            kept, left = mod.panel_split(arows)
+            pf = os.path.join(tmp, 'panel.csv')
+            mod.write_rows(pf, kept, mod.ANSWER_FIELDS)
+            good = sha(pf) == want.get(mp['file']) and len(left) == mp['rows_left_out']
+            ok = ok and good
+            print(('MATCH    ' if good else 'MISMATCH ') + 'derivation of ' + mp['file'] + ' from the answers table (%d rows left out)' % len(left))
+            csv_in = os.path.join(HERE, *mp['file'].split('/'))
+        p = subprocess.run([sys.executable, '-I', '-B', v2, '--run', '--csv', csv_in,
                             '--out', tmp, '--through', pack['window'][1]], capture_output=True, text=True)
         good = p.returncode == 0 and sha(os.path.join(tmp, 'metrics_v2.csv')) == want.get('metrics/metrics_v2.csv')
         ok = ok and good
@@ -315,6 +352,14 @@ def write_manifest(pack):
 
 
 # ------------------------------------------------------------------ build
+def panel_sentence(pm):
+    if not pm['rows_left_out']:
+        return 'In this build no row is left out: every cell asked in the window was already asked on or before %s.' % pm['cutoff']
+    return ('In this build %s rows from %d later cells are left out of the metrics. The rows the metrics read are in `%s`; '
+            '`verify.py --metrics` derives that file from the answers table and checks it.'
+            % ('{:,}'.format(pm['rows_left_out']), pm['cells_left_out'], pm['file']))
+
+
 def gaps_text(days, w0, w1):
     import datetime
     have = set(days)
@@ -349,7 +394,16 @@ def build(through, out, method_src, status):
     for name, col in (('customer_zero_daily', 'date'), ('customer_zero_hits', 'date'), ('customer_zero_rolling', 'as_of')):
         n_cz[name] = filter_by_date(os.path.join(cz, name + '.csv'), os.path.join(pack, 'data', name + '.csv'), col, W0, last)
     patches = vendor_method(method_src, pack)
-    rc, so, se = run_metrics(pack, os.path.join(pack, *ans_rel.split('/')), last, os.path.join(pack, 'metrics'))
+    kept, left_out = panel_split(rows)
+    metrics_in = os.path.join(pack, *ans_rel.split('/'))
+    panel_meta = {'cutoff': PANEL_CUTOFF, 'rows_left_out': len(left_out), 'cells_left_out': len({(r['niche'], r['market']) for r in left_out}),
+                  'file': None}
+    if left_out:
+        panel_rel = 'metrics/panel_%s' % os.path.basename(ans_rel)
+        write_rows(os.path.join(pack, *panel_rel.split('/')), kept, ANSWER_FIELDS)
+        metrics_in = os.path.join(pack, *panel_rel.split('/'))
+        panel_meta['file'] = panel_rel
+    rc, so, se = run_metrics(pack, metrics_in, last, os.path.join(pack, 'metrics'))
     sys.stdout.write(so[-1500:])
     if rc != 0:
         sys.stderr.write(se[-1500:])
@@ -360,7 +414,7 @@ def build(through, out, method_src, status):
     days = sorted({r['date'] for r in rows})
     meta = {'edition': 1, 'status': status, 'window': [W0, last], 'requested_through': through,
             'run_days': len(days), 'vendor_patches': patches, 'answers_rows': len(rows), 'rows_by_kind': by_kind,
-            'sources_rows': n_src, 'sources_days': len(src_days), 'siri_rows': n_siri, 'customer_zero_rows': n_cz,
+            'metrics_panel': panel_meta, 'sources_rows': n_src, 'sources_days': len(src_days), 'siri_rows': n_siri, 'customer_zero_rows': n_cz,
             'files': {'answers': ans_rel, 'sources': src_rel, 'siri': 'data/siri_panel.csv', 'metrics': 'metrics/metrics_v2.csv'}}
     with io.open(os.path.join(pack, 'PACK.json'), 'w', encoding='utf-8', newline='\n') as fh:
         json.dump(meta, fh, indent=1, sort_keys=True)
@@ -375,6 +429,7 @@ def build(through, out, method_src, status):
         text = io.open(note, encoding='utf-8').read()
         text = (text.replace('{{STATUS}}', status).replace('{{W0}}', W0).replace('{{W1}}', last)
                 .replace('{{RUN_DAYS}}', str(len(days))).replace('{{ANSWERS_ROWS}}', '{:,}'.format(len(rows)))
+                .replace('{{PANEL}}', panel_sentence(panel_meta))
                 .replace('{{GAPS}}', gaps_text(days, W0, last)).replace('{{ANSWERS_FILE}}', ans_rel).replace('{{SOURCES_FILE}}', src_rel))
         with io.open(os.path.join(pack, 'README.md'), 'w', encoding='utf-8', newline='\n') as fh:
             fh.write(text)
@@ -463,6 +518,29 @@ def selftest():
         '{{W' not in card and 'edition-1/data/answers_x.csv' in card and '10,152 answer rows' in card and 'staged' in card)
     chk('card: no em dash, en dash or emoji', not any(ch in card for ch in ('\u2014', '\u2013')) and all(ord(c) < 0x2000 or c in '\u2019' for c in card))
     chk('card: FINAL status line differs', 'Edition 1 is final' in render_card(dict(meta, status='FINAL'), 'data/a.csv', 'data/s.csv'))
+    def R(date, kind, niche, market):
+        return {'date': date, 'kind': kind, 'niche': niche, 'market': market}
+    rows = [R('2026-09-01', 'API', 'roofers', 'Town A'), R('2026-09-27', 'API', 'plumbers', 'Town B'),
+            R('2026-10-01', 'API', 'roofers', 'Town A'),                        # old cell, later day: stays
+            R('2026-10-08', 'API', 'mortgage lenders', 'Town C'),               # new cell: left out
+            R('2026-10-08', 'SERP', 'mortgage lenders', 'Town C'),              # its SERP row: left out too
+            R('2026-10-08', 'AGREE', 'mortgage lenders', 'Town C'),
+            R('2026-10-08', 'API', 'ai visibility checks', 'US nationwide'),    # never a cell: passes through
+            R('2026-10-08', 'API', 'x', '')]
+    kept, out = panel_split(rows)
+    chk('panel: later cell rows (API, SERP, AGREE) are left out', len(out) == 3 and all(r['niche'] == 'mortgage lenders' for r in out))
+    chk('panel: old cells on later days, US nationwide and empty-market rows stay', len(kept) == 5)
+    chk('panel: a cell asked on 2026-09-28 or later is not in the panel', panel_split([R('2026-09-28', 'API', 'n', 'Town D')])[1] != [])
+    chk('panel: a cell asked on 2026-09-27 is in the panel', panel_split([R('2026-09-27', 'API', 'n', 'Town D')])[1] == [])
+    # RED proof: a panel built from every row, not from rows up to the cutoff, leaves nothing out
+    global PANEL_CUTOFF
+    keep_cut = PANEL_CUTOFF
+    PANEL_CUTOFF = '2999-01-01'
+    red_out = panel_split(rows)[1]
+    PANEL_CUTOFF = keep_cut
+    chk('RED: with no cutoff the late cell is wrongly kept (%d left out, not 3)' % len(red_out), len(red_out) == 0)
+    chk('panel sentence: none left out', 'no row is left out' in panel_sentence({'rows_left_out': 0, 'cutoff': PANEL_CUTOFF}))
+    chk('panel sentence: counts and file named', '338 rows from 26 later cells' in panel_sentence({'rows_left_out': 338, 'cells_left_out': 26, 'cutoff': PANEL_CUTOFF, 'file': 'metrics/panel_x.csv'}))
     print('SELFTEST ' + ('FAIL: ' + ', '.join(fails) if fails else 'PASS'))
     return not fails
 

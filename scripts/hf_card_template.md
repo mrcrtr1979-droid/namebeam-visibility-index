@@ -83,6 +83,7 @@ Perplexity runs with web search on (Sonar chat completions to 2026-09-27, the Ag
 - Names are raw strings found by a program. The metrics give each figure twice, raw and after a rule-based name gate, with the denominator beside it.
 - OpenAI deprecated the `gpt-5-mini` snapshot (notified 2026-06-11, removed from the API 2026-12-11, replacement `gpt-5.6-terra`; OpenAI deprecations page, read 2026-10-08). The collector still reads `gpt-5-mini`. A model change will be dated in the method note before the first changed row.
 - Gemini returned some answers until 2026-09-26 and none from 2026-09-27 (HTTP 402, prepayment credits depleted). Its figures are small and carry their denominators.
+- The metrics read the 38 market and niche cells asked on or before 2026-09-27. Research segments added after that date are in the answers table and not in the metrics.
 - The window after 2026-09-27 is short, and the Perplexity method changed on that date. A change between the two windows mixes the method change with change over time.
 - The Siri rows are typed or spoken by hand on one phone. They are not a sample of Siri users.
 - A count is a count. It shows what was returned on the days an engine answered. It is not a rating or a ranking.

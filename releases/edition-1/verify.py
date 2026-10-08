@@ -60,7 +60,24 @@ def main():
     if '--metrics' in a:
         tmp = tempfile.mkdtemp()
         v2 = os.path.join(HERE, 'method', 'Brain_Kit', 'status', 'staged', '1008E_S1_METRICS', 'receipts_metrics_v2.py')
-        p = subprocess.run([sys.executable, '-I', '-B', v2, '--run', '--csv', os.path.join(HERE, *pack['files']['answers'].split('/')),
+        mp = pack.get('metrics_panel') or {}
+        csv_in = os.path.join(HERE, *pack['files']['answers'].split('/'))
+        if mp.get('file'):
+            repo = os.path.abspath(os.path.join(HERE, '..', '..'))
+            spec = importlib.util.spec_from_file_location('build_edition', os.path.join(repo, 'scripts', 'build_edition.py'))
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            import csv as _csv
+            with open(csv_in, encoding='utf-8', newline='') as fh:
+                arows = list(_csv.DictReader(fh))
+            kept, left = mod.panel_split(arows)
+            pf = os.path.join(tmp, 'panel.csv')
+            mod.write_rows(pf, kept, mod.ANSWER_FIELDS)
+            good = sha(pf) == want.get(mp['file']) and len(left) == mp['rows_left_out']
+            ok = ok and good
+            print(('MATCH    ' if good else 'MISMATCH ') + 'derivation of ' + mp['file'] + ' from the answers table (%d rows left out)' % len(left))
+            csv_in = os.path.join(HERE, *mp['file'].split('/'))
+        p = subprocess.run([sys.executable, '-I', '-B', v2, '--run', '--csv', csv_in,
                             '--out', tmp, '--through', pack['window'][1]], capture_output=True, text=True)
         good = p.returncode == 0 and sha(os.path.join(tmp, 'metrics_v2.csv')) == want.get('metrics/metrics_v2.csv')
         ok = ok and good
