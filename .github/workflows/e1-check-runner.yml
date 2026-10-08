@@ -121,12 +121,24 @@ jobs:
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
         run: python scripts/e1_runner.py
 
+      # S1-1 (2026-10-08, [SONNET-RECORD-1008E-S1]): the daily sources dataset.
+      # Writes datasets/e1/sources/sources_<date>.csv from the raw answers just
+      # collected, and heals any earlier day that has none. It NEVER blocks the
+      # corpus commit below: a guard (UNMAPPED field, EMPTY-DAY, selftest fail)
+      # prints a warning annotation and the run continues.
+      - name: Build the sources dataset
+        if: steps.guard.outputs.skip != 'true'
+        run: |
+          python3 -I scripts/build_sources.py --selftest || echo "::warning::sources selftest failed"
+          python3 -I scripts/build_sources.py --missing --strict || echo "::warning::sources build reported a guard (UNMAPPED or EMPTY-DAY), see the log above"
+          python3 -I scripts/build_sources.py --date "$(date -u +%Y-%m-%d)" --strict || echo "::warning::sources for today reported a guard or no raw files, see the log above"
+
       - name: Commit and push any new corpus rows
         if: steps.guard.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add corpus/e1/
+          git add corpus/e1/ datasets/e1/sources/
           if git diff --staged --quiet; then
             echo "No new corpus rows to commit."
           else
