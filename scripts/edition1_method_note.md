@@ -67,6 +67,7 @@ Engines return strings, and some are not businesses: places, directories, trade 
 - The record covers local business questions in the markets in the roster. It does not describe all businesses or all questions.
 - Names are strings returned by the engines and read by a program. A name returned is not a recommendation by us and not a claim that the business is good.
 - OpenAI, Anthropic and Gemini ran without a search tool, so their answers come from the model alone.
+- OpenAI lists the model snapshot `gpt-5-mini-2025-08-07` as deprecated. OpenAI notified developers on 2026-06-11 and removes it from the API on 2026-12-11, with `gpt-5.6-terra` as its recommended replacement (OpenAI deprecations page, read 2026-10-08). The collector still reads `gpt-5-mini`. When the model is changed, the change will be dated in this note before the first changed row, so a shift in the OpenAI rows is not read as a shift in the businesses named.
 - Gemini returned some answers until 2026-09-26 and none from 2026-09-27 (the account returned HTTP 402, prepayment credits depleted). Gemini metrics carry their own denominators and are small.
 - WB is a short window. Read its values with their denominators.
 - Siri rows are typed or spoken by hand on one phone, for a few questions on a few days. They are not a sample of Siri users.
