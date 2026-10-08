@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_paint_saint_louis_llc_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "Paint Saint Louis LLC",
+ "niche": "interior painting",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best interior painting company in St. Louis MO?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9390e6f3-7afe-4dca-ae5c-1fa5462a5db6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0007,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00406
+   },
+   "input_tokens": 3338,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2791,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 288,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3626
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Five Star Painting of St. Louis",
+  "SNL Painting"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://stlct.com/stlouis/painter/",
+  "https://snlpainting.com/services/",
+  "https://www.improovy.com/locations/st-louis",
+  "https://www.angi.com/companylist/st-louis/interior-painting.htm",
+  "https://www.thumbtack.com/mo/saint-louis/painting",
+  "https://snlpainting.com/",
+  "https://www.angi.com/companylist/us/mo/saint-louis/saint-louis-painting-reviews-2329074.htm",
+  "https://www.houzz.com/professionals/painters/st-louis-mo-us-probr0-bo~t_27105~r_4407066",
+  "https://www.angi.com/companylist/us/mo/st-louis/interior-painting.htm",
+  "https://www.fivestarpainting.com/st-louis/",
+  "https://threebestrated.com/painters-in-st-louis-mo",
+  "https://www.thumbtack.com/mo/saint-louis/interior-painting",
+  "https://paintsaintlouis.com/2022/05/20/the-best-10-painters-in-saint-louis-mo-missouri/",
+  "https://certapro.com/kirkwood/best-painting-contractors-st-louis/",
+  "https://www.expertise.com/home-improvement/painting/missouri/st-louis"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” painter, but **Five Star Painting of St. Louis** looks like a strong option to start with: its listing reports **4.9/5 from 648 customer reviews** and says it serves St. Louis and nearby communities. It offers free estimates and a two-year warranty, according to a local recommendation listing.\n\nFor a second quote, consider **SNL Painting**; it reports **4.9/5 across 383+ Google reviews** and is PCA- and BBB-accredited. Before choosing, confirm the company serves your address, get a written estimate that spells out prep and repairs, and verify insurance and warranty terms.\n\nSources: [Five Star Painting of St. Louis](https://www.fivestarpainting.com/st-louis/) · [SNL Painting](https://snlpainting.com/) · [Three Best Rated listing](https://threebestrated.com/painters-in-st-louis-mo)",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

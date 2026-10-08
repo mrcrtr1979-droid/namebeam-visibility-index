@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_title_companies_st_charles_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: title companies, St. Charles",
+ "niche": "title companies",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Charles MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ec199efe-2206-4007-a299-f6bb77f2a2a3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0004,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00056,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0036
+   },
+   "input_tokens": 2129,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 1580,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 222,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2351
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "US Title",
+  "Arch City Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.us-title.com/",
+  "https://www.archcitytitle.com/",
+  "https://ctitle.com/locations/title-company-st-charles-mo/",
+  "https://www.superpages.com/saint-charles-mo/title-companies",
+  "https://www.archcitytitle.com/who-we-are/",
+  "https://www.linkedin.com/company/investors-title-inc",
+  "https://www.linkedin.com/company/integrity-title-solutions",
+  "https://www.linkedin.com/in/peggie-ayres-193a3318",
+  "https://www.mapquest.com/us/missouri/investors-title-company-354531622",
+  "https://allcountytitleco.com/",
+  "https://www.sellingstcharlescounty.com/testimonials/",
+  "https://www.bbb.org/us/mo/saint-charles/category/title-agent",
+  "https://ctitle.com/locations/",
+  "https://www.mapquest.com/us/missouri/airogon-technologies-546147645",
+  "https://finesthomesnetwork.com/reviews"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t enough reliable, comparative review information here to name one company as definitively “best.” **US Title** is a reasonable local option to check: it lists a St. Charles office at **6229 Mid Rivers Mall Dr., St. Charles, MO 63304**, phone **636-936-8700**. **Arch City Title** also serves St. Charles County and offers title insurance and escrow closings.\n\nBefore choosing, ask each for a written estimate of title and closing fees, confirm they regularly handle your type of transaction, and check recent reviews for the specific office or closing team. You can also ask your lender or real-estate agent whether they have a preferred company—but you generally can compare providers.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

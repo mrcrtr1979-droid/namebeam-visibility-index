@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b5846625-dcc3-4756-b331-02259b2f1782",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00085,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00419
+   },
+   "input_tokens": 3952,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3403,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 279,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4231
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Loan Estimates"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bankrate.com/mortgages/mortgage-rates/florida/",
+  "https://mortgage-info.com/blog/florida-mortgage-rates-2026-best-lenders-programs",
+  "https://smartasset.com/mortgage/florida-mortgage-rates",
+  "https://www.alpinebanker.com/mortgage-rates-fl",
+  "https://saferate.com/local/miami/best-mortgage-lenders",
+  "https://www.usbank.com/home-loans/mortgage/mortgage-rates/florida.html",
+  "https://www.monitorbankrates.com/mortgage-loan-rates/florida",
+  "https://www.blackrockmortgage.com/florida-mortgage-rates/",
+  "https://www.nerdwallet.com/mortgages/mortgage-rates/florida",
+  "https://www.lendingbankers.com/",
+  "https://on-mortgage.com/",
+  "https://www.seacoastbank.com/personal/lending/mortgages/mortgage-rates",
+  "https://www.expertise.com/home-improvement/mortgage-brokers-lenders/florida/miami",
+  "https://cfn.net/reviews-for-top-miami-mortgage-lenders/",
+  "https://www.monitorbankrates.com/mortgage-loan-rates/florida/tampa"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” mortgage lender in Miami—the right choice depends on your credit, down payment, loan type, and how quickly you need to close. **My practical recommendation is to compare a local mortgage broker with at least two direct lenders or banks**, then choose based on the written Loan Estimates, not a headline rate or online ranking.\n\nFor each quote, compare the **APR, lender fees, discount points, rate-lock period, and estimated cash to close**. Ask whether the lender regularly handles Miami-Dade purchases and, if relevant, condos, jumbo loans, FHA/VA loans, or down-payment assistance. A broker may shop multiple lenders for you; a bank or credit union may offer competitive terms if you qualify.\n\nGet quotes on the same day using the same loan amount, down payment, and rate-lock period. If you share your approximate purchase price, down payment, credit range, and loan type, I can help narrow down what to compare.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

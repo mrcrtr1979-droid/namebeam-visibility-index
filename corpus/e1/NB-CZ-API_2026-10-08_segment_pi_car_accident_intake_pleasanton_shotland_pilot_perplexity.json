@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_pi_car_accident_intake_pleasanton_shotland_pilot_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: PI car accident intake, Pleasanton (Shotland pilot)",
+ "niche": "personal injury law",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I was in a car accident in Pleasanton CA. Which lawyer should I hire for my injury case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6ee60035-425e-4d07-b122-607ac1ece542",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00092,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00459
+   },
+   "input_tokens": 4657,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4102,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 369,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5026
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Stephen M. Fuerch",
+  "The Kline Simon Law Firm"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.statebarcourt.ca.gov/public-records-information",
+  "https://www.calbar.ca.gov/public/concerns-about-attorney/recent-disciplinary-actions",
+  "https://apps.calbar.ca.gov/complaint/DisciplineReferral/Index",
+  "https://oag.ca.gov/consumers/general/stbar",
+  "https://www.1000attorneys.com/california-attorney-discipline",
+  "https://www.calbar.ca.gov/public/find-legal-professionals",
+  "https://www.avvo.com/personal-injury-lawyer/ca/pleasanton.html",
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/california/pleasanton/",
+  "https://www.calbar.ca.gov/about-us/our-mission/regulation-and-discipline-overview",
+  "https://apps.calbar.ca.gov/",
+  "https://www.calbar.ca.gov/legal-professionals/maintaining-compliance/administrative-compliance/attorney-discipline",
+  "https://www.yelp.com/biz/the-law-offices-of-stephen-m-fuerch-pleasanton-2",
+  "https://www.avvo.com/attorneys/94588-ca-stephen-fuerch-87204.html",
+  "https://www.karnsandkarns.com/locations/pleasanton-california-personal-injury-lawyers/",
+  "https://www.avvo.com/attorneys/94566-ca-paulo-klinesimon-3563765.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "I can’t responsibly name one “best” lawyer from directory listings alone. A practical starting point is to interview **two or three local attorneys** whose profiles specifically mention car-accident injury work. Listings show, for example, **Stephen M. Fuerch** and **The Kline Simon Law Firm** in Pleasanton; treat those as leads to check, not endorsements. Directory ratings and testimonials aren’t a substitute for checking fit and credentials.\n\nIn each consultation, ask:\n\n- Who will personally handle my case, and how often will I hear from them?\n- Have you handled cases like mine, especially if injuries are serious or fault is disputed?\n- What is your contingency fee, and what case costs might I owe if there’s no recovery?\n- What are the strengths, risks, and likely next steps in my case?\n- Will you negotiate with insurers and take the case to trial if needed?\n\nBefore hiring, verify the attorney’s **license status and public discipline history** using the [State Bar of California Attorney Search](https://apps.calbar.ca.gov/). Don’t choose based only on a promised settlement amount, and don’t sign anything you don’t understand.\n\nIf you’re still receiving care, prioritize treatment and keep records of medical visits, expenses, missed work, and insurer communications. California deadlines can apply, so consider speaking with an attorney promptly.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

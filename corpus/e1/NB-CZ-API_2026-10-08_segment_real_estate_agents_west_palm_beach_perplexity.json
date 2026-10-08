@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_real_estate_agents_west_palm_beach_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: real estate agents, West Palm Beach",
+ "niche": "real estate agents",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in West Palm Beach FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ea261754-940a-404f-ab84-51d3eaad0f79",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00088,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00447
+   },
+   "input_tokens": 4333,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3782,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 352,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4685
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sandra Rathe of REAL",
+  "Larry Mastropieri of The Mastropieri Group"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.homelight.com/west-palm-beach-fl/top-real-estate-agents",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/west-palm-beach-fl/",
+  "https://www.effectiveagents.com/fl/west-palm-beach",
+  "https://listwithclever.com/top-real-estate-agents/florida/west-palm-beach/",
+  "https://www.homes.com/real-estate-agents/jim-banford/04bbpy2/",
+  "https://www.homes.com/real-estate-agents/dan-wenstrom/yyb56js/",
+  "https://www.realtor.com/realestateagents/West-Palm-Beach_FL",
+  "https://www.ratemyagent.com/real-estate-profile/sales/florida/west-palm-beach-fl/agents",
+  "https://www.experience.com/reviews/jessy-15594608",
+  "https://www.homes.com/real-estate-agents/alexa-mcdonald/vnbepwd/",
+  "https://www.homes.com/real-estate-agents/mark-grossman/2r498hb/",
+  "https://www.zillow.com/profile/TheTricoliTeam",
+  "https://www.homes.com/real-estate-agents/jacob-kodner/pck0jhr/",
+  "https://www.homes.com/real-estate-agents/frandy-louis/ek7zlhp/",
+  "https://www.expertise.com/home-improvement/real-estate-agents/florida/west-palm-beach"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent—the right choice depends on your home’s neighborhood, price range, and property type. Based on the available rankings, **Meike MacGregor of Coastal Living Group at Compass** is one strong candidate: EffectiveAgents ranks her first in West Palm Beach based on transaction history and other performance signals, reporting 1,851 transactions and about $1.3 billion in all-time sales.\n\nI’d interview her alongside **Sandra Rathe of REAL** and **Larry Mastropieri of The Mastropieri Group**, both listed by HomeLight among the area’s top agents with 5-star ratings and more than 120 reviews. These are third-party rankings, not guarantees of results, so check that the agent has recently sold homes like yours in your specific neighborhood.\n\nAsk each for:\n- Recent **seller-side** sales nearby, at a similar price point\n- Their suggested list price and the comparable sales behind it\n- A marketing plan and expected costs\n- Commission and contract terms\n- How often you’ll get updates and who will handle showings and negotiations\n\nIf you share your neighborhood, approximate home value, and whether it’s a house, condo, or townhouse, I can help narrow down what kind of agent to prioritize.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

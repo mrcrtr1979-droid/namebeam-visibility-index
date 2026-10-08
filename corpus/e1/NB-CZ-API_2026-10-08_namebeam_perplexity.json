@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_namebeam_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_331feb1e-c44c-47c7-9dbb-e4b305b83a00",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 4957,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4405,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 282,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5239
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Otterly.AI",
+  "HubSpot’s AI Search Grader",
+  "BrandCompanion"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.sitepoint.com/ai-brand-visibility-monitoring-tools/",
+  "https://www.gumloop.com/blog/brand-mentions-tool",
+  "https://llmpulse.ai/blog/best-ai-visibility-tools/",
+  "https://www.therankmasters.com/insights/ai-visibility/ai-brand-mention-tracking-tools",
+  "https://elfsight.com/blog/best-chatgpt-visibility-trackers/",
+  "https://www.airops.com/blog/ai-search-brand-monitoring-tools",
+  "https://elfsight.com/blog/best-ai-visibility-tools/",
+  "https://seoprofy.com/blog/ai-search-monitoring-tools/",
+  "https://llmpulse.ai/blog/best-chatgpt-tracking-tools/",
+  "https://indexly.ai/blog/ai-visibility-tools-for-small-businesses/",
+  "https://amplitude.com/compare/best-ai-visibility-monitoring-tools",
+  "https://otterly.ai/blog/the-25-best-ai-seo-tools/",
+  "https://birdeye.com/blog/best-ai-search-visibility-tools/",
+  "https://visible.seranking.com/blog/chatgpt-rank-tracking-tools/",
+  "https://brandcompanion.io/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a small business, **Otterly.AI** looks like a sensible starting point: it’s designed for AI-visibility monitoring, covers ChatGPT and several other answer engines, and its entry plan is reported at about **$25–$29/month**. It can track whether your business appears for prompts you choose and how often competitors show up instead.\n\nIf you only want a quick baseline, try **HubSpot’s AI Search Grader**, which is listed as a free, one-time diagnostic. For a more tailored check of local-business recommendations, **BrandCompanion** advertises a free ChatGPT audit, but I’d verify its coverage and pricing before relying on it.\n\nOne caveat: these tools sample answers to selected prompts; they can’t guarantee what every ChatGPT user will see. Test realistic questions customers might ask—such as “best [service] in [town]”—and compare results over time. Prices and features change, so check the provider’s current plan details before subscribing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

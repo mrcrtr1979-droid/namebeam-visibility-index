@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_property_management_st_louis_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: property management, St. Louis",
+ "niche": "property management companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Louis MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_59b3640b-70d4-456c-a3a9-a90449633322",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00463
+   },
+   "input_tokens": 5242,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4691,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 328,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5570
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Avenue Residential Leasing",
+  "Intersection Property Management"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.luxestl.com/",
+  "https://www.avenuestl.com/st-louis-property-management-pricing",
+  "https://ipropertymanagement.com/companies/st-louis-mo",
+  "https://propertymanagementstl.com/services/property-management/",
+  "https://proequity.com/",
+  "https://intersectionstl.com/",
+  "https://propertymanagementstl.com/",
+  "https://www.zillow.com/professionals/property-manager-reviews/saint-louis-mo/",
+  "https://hermannlondon.com/property-management-fees-st-louis/",
+  "https://www.decarealty.com/property-management-fees-in-st-louis-deca-property-management/",
+  "https://www.stlouispropertymanagement.co/blog/best-property-management-companies-in-st-louis",
+  "https://www.stlouispropertymanagement.co/pricing",
+  "https://www.frontierpropertymgmt.com/pricing-page",
+  "https://www.expertise.com/business/property-management/missouri/st-louis",
+  "https://www.zillow.com/professionals/property-manager-reviews/63123/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Avenue Residential Leasing** looks like a sensible first company to interview for a St. Louis-area single-family rental. Its published information describes full-service management, 24/7 maintenance coordination, and no maintenance markup; its fees vary by property, with a stated monthly management range of 5%–10% and a separate tenant-placement fee. [Avenue’s services and pricing](https://propertymanagementstl.com/services/property-management/) · [Pricing details](https://www.avenuestl.com/st-louis-property-management-pricing)\n\nI’d also get a quote from **Intersection Property Management**, which advertises a flat **$90/month** management fee for a single-family home. Compare the full agreement, not just the monthly price. [Intersection](https://intersectionstl.com/)\n\nBefore choosing, ask both companies for a written breakdown of leasing and renewal fees, inspection charges, maintenance markups, vacancy fees, repair-approval limits, and how you can end the contract. The best fit will depend on your home’s location, rent, condition, and how hands-on you want to be.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

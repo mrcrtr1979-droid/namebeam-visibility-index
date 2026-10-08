@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_str_arbitrage_entry_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: STR arbitrage entry",
+ "niche": "short-term rental business model",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "How do I start an Airbnb rental arbitrage business and what tools and data should I use?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e2deda86-ef36-47ee-924f-43ec40ed58d2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00099,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00227,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0059
+   },
+   "input_tokens": 4515,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3962,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 907,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5422
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Get explicit written permission",
+  "Research demand and competition",
+  "Build a conservative property-level budget",
+  "Negotiate the lease and prepare the unit",
+  "Set up operations before listing",
+  "Launch carefully and review results",
+  "Official local sources",
+  "Market research",
+  "Operating tools",
+  "Rule of thumb"
+ ],
+ "engine_stated_criteria": [
+  "Your own spreadsheet"
+ ],
+ "sources_cited": [
+  "https://www.airbnb.com/help/article/1397",
+  "https://help.airdna.co/en/articles/10559022-rentalizer-revenue-calculator",
+  "https://help.airdna.co/en/articles/8062155-where-can-i-download-data-in-airdna",
+  "https://www.airbnb.com/help/article/1376",
+  "https://apify.com/memo23/airdna-scraper",
+  "https://www.airbnb.com/help/article/2380",
+  "https://help.airdna.co/en/collections/5007594-understanding-airdna-data",
+  "https://awning.com/post/airbnb-arbitrage",
+  "https://www.lodgify.com/blog/airbnb-rental-arbitrage/",
+  "https://www.airbnb.com/help/article/2908",
+  "https://www.rakidzich.com/articles/is-airbnb-rental-arbitrage-legal-state-by-state-guide-2026",
+  "https://www.airdna.co/",
+  "https://help.airdna.co/en/articles/8473582-for-sale-properties-in-airdna",
+  "https://www.turbotenant.com/glossary/rental-arbitrage/",
+  "https://www.hostfully.com/blog/airbnb-rental-arbitrage/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "Rental arbitrage means leasing a property long-term, then hosting short-term guests and keeping what’s left after rent and operating costs. It can work, but it’s not passive income: the biggest risks are local restrictions, a lease that doesn’t authorize hosting, and revenue estimates that don’t hold up in practice.\n\n## A practical launch sequence\n\n1. **Choose a market and verify the rules first.** Check the city and county’s official short-term-rental rules, zoning, permit and business-license requirements, taxes, safety standards, and any limits on rental nights or who may host. Confirm whether non-owner-occupied rentals are allowed at the specific address. Rules can vary by neighborhood and change, so verify with the relevant local departments before signing a lease.\n\n2. **Get explicit written permission.** Read the lease and check building, HOA, or co-op rules. Ask the landlord for a signed lease clause or addendum that specifically permits short-term rentals and describes any conditions. Don’t rely on verbal approval or assume that silence in the lease means permission. Airbnb also advises hosts to check their lease, building rules, and applicable laws.\n\n3. **Research demand and competition.** Compare similar nearby listings by bedroom count, amenities, location, and guest capacity. Look at occupancy, average daily rate (ADR), revenue, seasonality, and how far ahead bookings are made. Treat third-party estimates as directional: for example, AirDNA’s Rentalizer estimates projected revenue, occupancy, and ADR from nearby listings, but its projection assumes the property is available all year and is not a guarantee.\n\n4. **Build a conservative property-level budget.** Estimate monthly revenue by season, then subtract:\n   - Rent and utilities\n   - Cleaning, laundry, and restocking\n   - Platform and payment fees\n   - Insurance, permits, and taxes\n   - Furnishings and setup costs\n   - Repairs, replacements, and management\n   - Vacancy, cancellations, and slow-season losses\n\n   Model a downside case—not just the average forecast. Include the cash needed for deposits, furnishing, and several months of expenses before bookings stabilize. If the numbers only work at high occupancy or peak-season rates, pass.\n\n5. **Negotiate the lease and prepare the unit.** Agree on guest limits, noise rules, maintenance responsibilities, access, insurance, and what happens if regulations change. Furnish for durability and easy cleaning. Set up reliable internet, clear check-in instructions, safety equipment, and a process for responding to guest issues.\n\n6. **Set up operations before listing.** Decide who handles guest messages, cleaning, maintenance, and emergencies. Use a calendar and pricing process, and establish house rules that comply with local requirements and the lease. Keep records of income, expenses, permits, and taxes.\n\n7. **Launch carefully and review results.** Start with accurate photos and descriptions, monitor bookings and costs, and compare actual performance with your forecast. Adjust pricing and operations based on results rather than assuming the initial estimate is right.\n\n## Tools and data to use\n\n- **Official local sources:** city/county STR pages, zoning maps, permit offices, tax agencies, and building or HOA documents. These are the source of truth for whether you can operate.\n- **Market research:** AirDNA’s Rentalizer and market dashboards can help estimate revenue, ADR, and occupancy and compare markets. Use comparable listings and seasonality data, and verify assumptions against actual listings and local demand.\n- **Your own spreadsheet:** Track monthly revenue, occupancy, ADR, cleaning turns, fees, fixed costs, startup costs, and cash reserves. Run base, downside, and break-even scenarios.\n- **Operating tools:** a shared calendar, bookkeeping software, a pricing tool, and—if you manage multiple listings—a property-management system. Choose tools only after you know your workflow and costs.\n\n**Rule of thumb:** Don’t sign a lease until you have both written landlord approval and a clear, verified legal path to operate at that address.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

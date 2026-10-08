@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ab254e72-088b-4fdf-97c6-353e1b4af2e7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00444
+   },
+   "input_tokens": 4631,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4085,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 313,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4944
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Carlos Castro at Georgia Prosthodontics",
+  "Dr. Brock Pumphrey",
+  "Dr. Brandon Frodge"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.drbrettlangston.com/",
+  "https://georgiaprosthodontics.com/",
+  "https://advancedperioatl.com/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-gregg-codelli-1821141870",
+  "https://advancedperioatl.com/implants/",
+  "https://www.periogeorgia.com/",
+  "https://www.linkedin.com/in/drdavidzelby",
+  "https://southernrootsperiodontics.com/",
+  "https://goldsteinonline.com/service/restorative-dentistry/dental-implants/",
+  "https://georgiaprosthodontics.com/meet-dr-carlos-castro/",
+  "https://aaid-implant.org/dentist/van-galder-daniel/",
+  "https://www.bbb.org/us/ga/atlanta/category/dental-implants",
+  "https://www.prosatl.com/page/about-us/",
+  "https://westcobbperio.com/our-practice/",
+  "https://georgiaprosthodontics.com/prosthodontist-atlanta/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for everyone—the right choice depends on whether you need a single implant, bone grafting, or a full-mouth restoration. Based on the credentials and services in the results, **Dr. Carlos Castro at Georgia Prosthodontics** is a strong option to consider, particularly for complex cases: he is listed as a **board-certified prosthodontist** and focuses on implant and reconstructive dentistry. The Buckhead office is at **3379 Peachtree Rd NE, Suite 830**; **770-758-5040**.\n\nIf the main need is implant surgery—especially with gum or bone issues—consider a consultation with a **board-certified periodontist** as well. Atlanta options in the results include **Dr. Brock Pumphrey** at Atlanta Center for Advanced Periodontics and **Dr. Brandon Frodge** at Southern Roots Periodontics.\n\nBefore choosing, ask who will place the implant and who will make the crown, whether 3D imaging and grafting are needed, what the full treatment cost includes, and how complications are handled. A second opinion is sensible for a major or expensive treatment plan.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

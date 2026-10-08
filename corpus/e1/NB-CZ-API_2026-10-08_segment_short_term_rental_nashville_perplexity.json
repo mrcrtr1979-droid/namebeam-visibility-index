@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_short_term_rental_nashville_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_02d9d7a5-4f63-4acc-a1c1-6ccee96430ba",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00118,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00457
+   },
+   "input_tokens": 5258,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4705,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 298,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5556
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Five Points"
+ ],
+ "engine_stated_criteria": [
+  "dates, budget, children’s ages, and whether you’ll have a car"
+ ],
+ "sources_cited": [
+  "https://www.nashville.gov/departments/codes/short-term-rentals/apply-short-term-rental-property-permit",
+  "https://www.nashville.gov/departments/codes/short-term-rentals",
+  "https://www.nashville.gov/departments/codes/short-term-rentals/frequently-asked-questions",
+  "https://www.nashville.gov/departments/codes/short-term-rentals/permit-types",
+  "https://www.nashville.gov/departments/codes/short-term-rentals/operation-rules-and-requirements",
+  "https://hub.nashville.gov/s/article/How-to-apply-for-a-Short-Term-Rental-Property-Permit?language=en_US",
+  "https://www.nashville.gov/departments/county-clerk/business-services/short-term-rental-property-business-license",
+  "https://www.nashville.gov/departments/codes/short-term-rentals/legislative-history",
+  "https://www.nashville.gov/departments/codes",
+  "https://www.nashville.gov/departments/codes/short-term-rentals/use-and-occupancy-taxes",
+  "https://stayinbnb.com/nashville-vacation-rentals/",
+  "https://www.airbnb.com/east-nashville-tn/stays/family-friendly",
+  "https://www.hometogo.com/nashville/",
+  "https://www.vrbo.com/en-ca/vacation-rentals/united-states/tennessee/davidson-county/nashville-davidson/nashville/east-nashville",
+  "https://legisarchive.nashville.gov/mc/pdfs/misc_legislation/bl2017_981.pdf"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a family of four, I’d start with a **licensed two-bedroom, two-bath rental in East Nashville**—ideally around **Five Points**. It gives you room to spread out, a kitchen and parking are useful with kids, and you can get to downtown without staying right in the busiest nightlife area. A current listing result describes a two-bedroom, two-bath Five Points rental, but I can’t verify its dates, reviews, or price from the information available here.\n\nBefore booking, check that the listing:\n- Has **two separate bedrooms** and enough beds for your family—not just a sofa bed.\n- Shows a **current Nashville short-term-rental permit**; the city requires a permit for short stays.\n- Has recent reviews mentioning cleanliness, noise, and family suitability.\n- Includes the full fees, parking details, and cancellation terms.\n\nIf you share your **dates, budget, children’s ages, and whether you’ll have a car**, I can help narrow down what to look for and compare neighborhoods.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

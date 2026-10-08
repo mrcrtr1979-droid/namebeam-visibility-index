@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_mortgage_lenders_st_louis_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: mortgage lenders, St. Louis",
+ "niche": "mortgage lenders",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Louis MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_782624b3-ec0d-411b-a424-fa658fdc8265",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00097,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00086,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00447
+   },
+   "input_tokens": 4441,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3890,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 343,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4784
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "A reasonable St. Louis shortlist to compare",
+  "USA Mortgage",
+  "Stuart’s American Mortgage",
+  "Mortgage Solutions of St. Louis",
+  "A participating MHDC lender",
+  "Loan Estimates"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://trustanalytica.org/us/mo/st.-louis/best-mortgage-brokers",
+  "https://livingstlouismo.com/best-mortgage-lenders-st-louis-mo/",
+  "https://www.developstlouis.org/homestl",
+  "https://www.midwestbankcentre.com/mortgage/",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://www.vcu.com/borrow/mortgages",
+  "https://mhdc.com/media/1tdhbcef/first-place-brochure.pdf",
+  "https://nfmlending.com/st-louis-mo/down-payment-assistance/",
+  "https://arpa.stlouis-mo.gov/individual-family-programs/",
+  "https://themortgagereports.com/89455/missouri-first-time-home-buyer-programs-grants",
+  "https://www.newamericanfunding.com/branches/st-louis-olive",
+  "https://www.newamericanfunding.com/branches/st-louis-southcounty",
+  "https://www.senate.mo.gov/17info/members/d09/mhdc-mcc.pdf",
+  "https://www.expertise.com/home-improvement/mortgage-brokers-lenders/missouri/st-louis",
+  "https://nfmlending.com/st-louis-mo/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and whether you value the lowest cost or hands-on service.\n\n**A reasonable St. Louis shortlist to compare:**\n- **USA Mortgage** — a prominent local option with a large volume of customer reviews.\n- **Stuart’s American Mortgage** — offers conventional, FHA, VA, and jumbo loans.\n- **Mortgage Solutions of St. Louis** — a local option that advertises purchase loans and specialized programs.\n- **A participating MHDC lender** — worth checking if you may qualify for Missouri first-time-buyer or down-payment assistance.\n\nTreat online ratings as a starting point, not proof of the best deal. Ask at least three lenders for written **Loan Estimates** for the same loan amount, down payment, rate-lock period, and closing date. Compare the **APR, lender fees, points, mortgage insurance, and cash to close**—and ask how quickly they can close and who will handle your loan.\n\nIf you share your approximate credit score, down payment, price range, and whether you’re a first-time buyer or eligible for VA/USDA, I can help narrow the shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

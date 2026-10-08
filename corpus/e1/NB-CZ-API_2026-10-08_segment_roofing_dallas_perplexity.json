@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_roofing_dallas_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d8aca7bb-950d-479c-8ff7-7dd64d7d4b60",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00068,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00051,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00383
+   },
+   "input_tokens": 3282,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2735,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 205,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3487
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "New View Roofing",
+  "Renown Roofing",
+  "Priority Roofing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://serviceagent.ai/directory/texas/dallas/roofing/",
+  "https://serviceagent.ai/directory/texas/dallas/roofing/replacement/",
+  "https://arringtonroofing.com/blog/best-roofing-contractors-dallas",
+  "https://www.bestprosintown.com/tx/dallas/roofing/",
+  "https://roofpitch.net/roofing-companies-dallas/",
+  "https://www.thumbtack.com/tx/dallas/roofing",
+  "https://trustanalytica.org/us/tx/best-roofing-contractors",
+  "https://tarrytownroofing.com/service-areas/roofing-company-in-dallas-tx/",
+  "https://www.poyst.com/business/we-roof-dallas-inc",
+  "https://www.drroof.com/dallas-ga/roofing/",
+  "https://www.bbb.org/us/tx/dallas/profile/general-contractor/dar-roofing-general-contractors-0875-91342351/customer-reviews",
+  "https://www.rocklineroofing.com/",
+  "https://premier-roofing.com/locations/dallas-roofing/",
+  "https://bufordroofing.com/",
+  "https://www.expertise.com/home-improvement/roofing/texas/dallas"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” roofer for every Dallas home, but **New View Roofing** is a reasonable company to put on your shortlist: the available results describe it as a Dallas-area, veteran-owned contractor with GAF Master Elite certification and substantial local installation experience.\n\nI’d compare it with **Renown Roofing** and **Priority Roofing** as well, then get at least three written estimates. Before signing, verify current insurance and references, compare the exact materials and scope, and ask who handles permits, cleanup, and warranty claims. Don’t choose on a “free inspection” or insurance-claim promise alone.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_personal_injury_law_houston_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: personal injury law, Houston",
+ "niche": "personal injury attorneys",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best personal injury lawyer in Houston for a car wreck?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_bd09701d-9cf8-4388-b6ca-29813ba6006d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00441
+   },
+   "input_tokens": 4750,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4202,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 287,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5037
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Houston Lawyer Referral Service"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://hlrs.org/for-the-public/areas-of-law/houston-personal-injury-attorneys/car-accidents/",
+  "https://guides.sll.texas.gov/find-a-lawyer",
+  "https://www.texasbar.com/Content/NavigationMenu/ForThePublic/DoYouNeedaLawyer/CertifiedLawyerReferralServices1/default.htm",
+  "https://www.texasbar.com/AM/Template.cfm?Section=Home&Template=/CM/ContentDisplay.cfm&ContentID=59826",
+  "https://www.texasbar.com/lris/",
+  "https://www.hba.org/?pg=HoustonBarBulletin&pubAction=viewIssue&pubIssueID=73136&pubIssueItemID=488523",
+  "https://txlrs.org/index.html",
+  "https://lawyers.findlaw.com/texas/houston/simmons-and-fletcher-pc-MjQ4MDYxMV8x/",
+  "https://www.hba.org/?pg=HoustonBarBulletin&pubAction=viewIssue&pubIssueID=71523&pubIssueItemID=480935",
+  "https://katybar.org/cat/injury-attorneys/",
+  "https://www.sutliffstout.com/",
+  "https://www.bestinhood.com/houston/lawyers/best-personal-injury-lawyers-in-houston/",
+  "https://www.avvo.com/car-accidents-lawyer/tx/houston.html",
+  "https://perdueandkidd.com/",
+  "https://txaccess.org/hiring-attorney"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t an objective “best” lawyer for every Houston car wreck—the right choice depends on the injuries, insurance issues, and whether the case may need to go to trial. One practical starting point is the **Houston Lawyer Referral Service**, a nonprofit service certified by the State Bar of Texas. It can match you with a personal-injury attorney; referrals are free, and the initial 30-minute consultation is listed at $20. Call **713-237-9429** or **800-289-4577**. [Houston Lawyer Referral Service](https://hlrs.org/for-the-public/areas-of-law/houston-personal-injury-attorneys/car-accidents/)\n\nWhen you speak with lawyers, ask who will handle your case day to day, how many similar car-crash cases they’ve handled, whether they’ve taken cases to trial, and what the fee and case costs would be. Check the lawyer’s license and disciplinary history with the State Bar of Texas, and talk to more than one before deciding.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

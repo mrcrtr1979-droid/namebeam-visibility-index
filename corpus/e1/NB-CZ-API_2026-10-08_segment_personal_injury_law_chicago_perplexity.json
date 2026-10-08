@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_personal_injury_law_chicago_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: personal injury law, Chicago",
+ "niche": "personal injury attorneys",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best personal injury attorney in Chicago for a car accident claim?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_54bfa833-5392-467a-a065-d155b6377149",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00092,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00087,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00443
+   },
+   "input_tokens": 4215,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3666,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 349,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4564
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Illinois State Bar Association’s Lawyer Finder"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.malmanlaw.com/",
+  "https://www.isba.org/barnews/lawyerreferralservice",
+  "https://www.isba.org/public/phonereferral",
+  "https://www.lawyers.com/personal-injury/chicago/illinois/law-firms/",
+  "https://www.powerrogers.com/",
+  "https://www.isba.org/public/illinoislawyerfinder",
+  "https://www.malmanlaw.com/malman-law-injury-blog/the-best-personal-injury-lawyers-in-chicago-in-2025/",
+  "https://phillipslawoffices.com/",
+  "https://www.briskmanandbriskman.com/",
+  "https://www.isba.org/public/guide/hiringalawyer",
+  "https://desalvolaw.com/",
+  "https://www.walnerlaw.com/",
+  "https://zayedlawoffices.com/",
+  "https://www.vlaw.com/locations/chicago/",
+  "https://www.kryderlaw.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t an objective “best” attorney for every car accident claim. The right choice depends on the seriousness of your injuries, the evidence, and whether the case may need to go to trial.\n\nA reasonable starting point is to speak with **two or three Chicago firms** that handle car crashes, then compare who would actually manage your case, their experience with similar claims, and their fee agreement. Firms appearing in the search results include **Malman Law, Power Rogers, Phillips Law Offices, and Kryder Law**. Their advertised results and reviews are claims to verify—not a guarantee of what your case will recover.\n\nAsk each lawyer:\n- Who will handle my case day to day?\n- Have you handled cases with injuries and facts like mine?\n- What is your contingency fee, and what case costs could I owe?\n- What is your assessment of the likely challenges and next steps?\n\nYou can also request a referral through the **Illinois State Bar Association’s Lawyer Finder**: [IllinoisLawyerFinder](https://www.isba.org/public/illinoislawyerfinder). Before hiring, check the attorney’s standing with the Illinois Attorney Registration and Disciplinary Commission.\n\nIf you tell me how serious the injuries are and whether the other driver’s insurer has contacted you, I can suggest what kind of attorney experience to prioritize.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

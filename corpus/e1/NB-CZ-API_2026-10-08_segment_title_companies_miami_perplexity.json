@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_title_companies_miami_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: title companies, Miami",
+ "niche": "title companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Miami FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5e920d77-126c-47ac-9425-a85b1e8e3e78",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00058,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00061,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00383
+   },
+   "input_tokens": 2871,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2324,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 245,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3116
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Worldwide Title",
+  "Miami Title & Escrow",
+  "JB Title & Escrow"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.jbtitle.com/",
+  "https://miamititleescrow.com/",
+  "https://marinatitle.com/locations/miami-fl/",
+  "https://locationtitle.com/",
+  "https://members.flta.org/member-directory/Search/title-agency-653306",
+  "https://elitetp.com/",
+  "https://oneworldwidetitle.com/",
+  "https://www.libertytitle.us/",
+  "https://besttitleservicesmiami.com/",
+  "https://reviews.birdeye.com/sharp-title-solutions-of-florida-170379099695385",
+  "https://www.titleescrowmiami.com/testimonials/",
+  "https://www.sunnytitle.com/",
+  "https://www.linkedin.com/company/worldwide-title",
+  "https://www.yelp.com/biz/hemisphere-title-company-miami-lakes",
+  "https://toptitlecompaniesinflorida.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” title company—it depends on the property, transaction, and how well the team communicates. **Worldwide Title** looks like a reasonable first call based on the search results: it reports a 4.8 Google rating and has multiple customer comments praising responsiveness and handling complex closings. Those are company-reported review details, so I’d verify the current rating and recent reviews yourself.\n\nAlso consider **Miami Title & Escrow**, which describes itself as attorney-owned and operated, or **JB Title & Escrow**. Before choosing, ask each for a written estimate of title and closing fees, confirm they regularly handle your type of transaction, and check that the title agent is properly licensed in Florida. If you tell me your neighborhood and whether you’re buying, selling, or refinancing, I can narrow the options.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

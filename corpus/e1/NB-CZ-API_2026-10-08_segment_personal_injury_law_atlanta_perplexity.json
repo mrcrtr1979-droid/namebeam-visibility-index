@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_personal_injury_law_atlanta_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: personal injury law, Atlanta",
+ "niche": "personal injury attorneys",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best personal injury lawyer in Atlanta for a car accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_684b0921-664a-4b9e-93ae-508d78e4d964",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0005,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00384
+   },
+   "input_tokens": 2543,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 1994,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 280,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2823
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Super Lawyers",
+  "State Bar of Georgia",
+  "State Bar"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://attorneys.superlawyers.com/personal-injury-defense/georgia/atlanta/",
+  "https://attorneys.superlawyers.com/personal-injury-plaintiff/georgia/atlanta/",
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/georgia/atlanta/",
+  "https://www.johnfoy.com/",
+  "https://lawyers.law.cornell.edu/lawyers/personal-injury/georgia/atlanta",
+  "https://thesuperlawyer.com/",
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/georgia/peachtree-corners/",
+  "https://www.gabar.org/public/find-a-lawyer",
+  "https://www.avvo.com/car-accidents-lawyer/ga/atlanta.html",
+  "https://www.ontoplist.com/car-accident-lawyers/ga/atlanta/",
+  "https://www.avvo.com/personal-injury-lawyer/ga/atlanta.html",
+  "https://attorneys.superlawyers.com/personal-injury-plaintiff/georgia/atlanta/?page=5",
+  "https://hammerslawfirm.com/",
+  "https://attorneyatlawmagazine.com/best-attorneys/personal-injury/georgia/atlanta-attorney",
+  "https://www.spauldinginjurylaw.com/attorneys/theodore-a-spaulding/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” Atlanta car-accident lawyer—the right choice depends on your injuries, the facts, and whether the case may need to go to trial. A practical starting point is to compare a few attorneys who regularly represent injured people in motor-vehicle cases. Super Lawyers has an Atlanta car-accident directory, and the State Bar of Georgia offers a lawyer-search tool and guidance on choosing counsel.\n\nWhen you speak with lawyers, ask:\n- How many cases like yours have you handled, and who will personally manage yours?\n- Have you taken similar cases to trial?\n- What is the fee percentage, and what case costs might you owe?\n- How will they handle medical bills, insurance communications, and updates?\n\nMost offer a free consultation and work on contingency, but confirm the fee and costs in writing. Check the lawyer’s standing with the State Bar, and don’t choose based on rankings or advertising alone.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

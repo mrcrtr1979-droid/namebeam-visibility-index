@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_real_estate_agents_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: real estate agents, Fort Lauderdale",
+ "niche": "real estate agents",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Fort Lauderdale FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_53f7dbf4-7965-41f6-8899-e561ab804da8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00444
+   },
+   "input_tokens": 5160,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4610,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 260,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5420
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Desare Kohn-Laski of Skye Louis Realty",
+  "Larry Mastropieri",
+  "Sandra Rathe"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.homelight.com/fort-lauderdale-fl/top-real-estate-agents",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/fort-lauderdale-fl/",
+  "https://www.ratemyagent.com/real-estate-profile/sales/florida/fort-lauderdale-fl",
+  "https://www.ratemyagent.com/real-estate-profile/sales/florida/fort-lauderdale-fl/agents",
+  "https://www.zillow.com/profile/megsprobstcompass",
+  "https://www.zillow.com/profile/HowardGoldbergSells",
+  "https://www.effectiveagents.com/fl/fort-lauderdale",
+  "https://www.homes.com/real-estate-agents/lauren-breslow/2748fy8/",
+  "https://www.homes.com/real-estate-agents/brian-hero/t0gb1gc/",
+  "https://tabtablabs.com/agents/top-real-estate-agents-fort-lauderdale-fl",
+  "https://www.realtor.com/realestateagents/56b0acef7e54f7010020d0d7",
+  "https://www.thumbtack.com/fl/fort-lauderdale/real-estate-agents",
+  "https://www.discoversouthflorida.com/south-florida-realtor-rankings/fort-lauderdale/",
+  "https://www.homelight.com/agents/keith-webster-fl-00649432",
+  "https://www.realtor.com/realestateagents/56d658dff384a201005f4dee"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for every Fort Lauderdale home—the right choice depends on your neighborhood, property type, and price range. Based on the available rankings and sales data, **Desare Kohn-Laski of Skye Louis Realty** is a strong first agent to interview: one performance-based ranking names her its top Fort Lauderdale agent, citing a substantial transaction history. **Larry Mastropieri** and **Sandra Rathe** also appear prominently in local agent rankings.\n\nBefore choosing, interview two or three agents and ask each for:\n- Recent **seller-side sales** of homes like yours in your neighborhood\n- Their pricing recommendation, supported by comparable sales\n- A specific marketing plan and who will handle showings and negotiations\n- Their proposed commission and listing agreement terms\n\nCompare their recent results for homes similar to yours—not just overall sales volume or star ratings.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

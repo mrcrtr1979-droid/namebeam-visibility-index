@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_orthodontists_dallas_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9e866d71-db0e-49ac-9ca2-6a2cf02a2926",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00092,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00104,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0046
+   },
+   "input_tokens": 4218,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3671,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 416,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4634
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Cameron Togrye",
+  "Dr. Larry P. Tadlock",
+  "Walnut Central Orthodontics",
+  "Dallas Orthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.dmagazine.com/sponsored/2026/08/rethinking-the-orthodontic-experience/",
+  "https://nationalorthodonticregistry.com/texas/dallas/orthodontists",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/dallas-orthodontics-dallas-tx",
+  "https://aaoinfo.org/locator/dr-cameron-togrye/",
+  "https://trustanalytica.org/us/tx/best-invisalign",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/walnut-central-orthodontics-dallas-tx",
+  "https://directory.dmagazine.com/dentists/joshika-kanabar-dds-ms/",
+  "https://go.dallas-ortho.com/",
+  "https://aaoinfo.org/locator/dr-larry-p-tadlock/",
+  "https://trustanalytica.org/us/tx/dallas/best-orthodontists",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/fusion-orthodontics-dallas-tx",
+  "https://trustanalytica.org/us/tx/best-clear-braces",
+  "https://www.orthodontistdallastx.com/who-to-see-for-crooked-teeth/",
+  "https://trustanalytica.org/us/tx/dallas/best-clear-braces",
+  "https://trustanalytica.org/us/tx/dallas/best-invisalign"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—fit depends on your case, location, budget, and whether you prefer braces or Invisalign. A good starting point is to compare **board-certified orthodontists** and get two or three consultations.\n\nA few Dallas options to consider:\n\n- **Dr. Cameron Togrye** — listed by the American Association of Orthodontists as board-certified; office on LBJ Freeway. [AAO profile](https://aaoinfo.org/locator/dr-cameron-togrye/)\n- **Dr. Larry P. Tadlock** — also listed as board-certified by the AAO; office on Gaston Avenue. [AAO profile](https://aaoinfo.org/locator/dr-larry-p-tadlock/)\n- **Walnut Central Orthodontics** — offers braces and Invisalign; reported 4.9 stars from 365+ Google reviews. [Practice listing](https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/walnut-central-orthodontics-dallas-tx)\n- **Dallas Orthodontics** — offers braces and Invisalign; reported 4.9 stars from 123 Google reviews. [Practice listing](https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/dallas-orthodontics-dallas-tx)\n\nReviews and provider rankings can change, so verify current credentials and ratings directly. At consultations, ask who will supervise your treatment, whether your case is suitable for Invisalign, what the full fee includes, and how refinements or emergencies are handled.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_tanning_salons_pleasanton_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: tanning salons, Pleasanton",
+ "niche": "tanning salons",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Pleasanton CA?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_523fac2c-620c-44e3-afaa-cb308b2aedd7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00062,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00043,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00369
+   },
+   "input_tokens": 3030,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2485,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 172,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3202
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Glow House Studio",
+  "East Bay Tanning"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://local.yahoo.com/info-168943493-the-golden-girl-pleasanton/",
+  "https://www.glow-house-studio.com/",
+  "https://www.yelp.com/biz/east-bay-tanning-pleasanton",
+  "https://freshchalk.com/b/pleasanton-ca/tanning",
+  "https://dk.yp.com/pleasanton-ca/bp/the-golden-girl-airbrush-tanning-464615063",
+  "https://www.vagaro.com/professionals/tanning/pleasanton--ca",
+  "https://www.yelp.com/biz/bella-bronze-mobile-airbrush-tanning-pleasanton-2",
+  "https://www.yellowpages.com/fremont-ca/tanning-salons",
+  "https://dk.yp.com/pleasanton-ca/tanners",
+  "https://www.yellowpages.com/union-city-ca/tanning-salons",
+  "https://www.bbb.org/us/ca/fairview/category/tanning-salons",
+  "https://www.weddingwire.com/c/ca-california/pleasanton/wedding-beauty-health/16-vendors.html",
+  "https://www.yelp.com/biz/down-under-tanning-salon-livermore-2",
+  "https://www.mapquest.com/us/california/glo-276275750",
+  "https://www.bbb.org/us/ca/pleasanton/category/beauty-salon"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a **custom spray tan**, **Glow House Studio** looks like the strongest pick from the available information. Its site reports 200+ five-star reviews, and client feedback highlights natural-looking color, even application, and clear prep and aftercare guidance.\n\nIf you’d rather have a **mobile tan**, **East Bay Tanning** also gets positive feedback for thorough, even results and at-home convenience.\n\nI’d check current availability and recent reviews before booking, since ratings and hours can change.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4f72fa31-4616-432a-9b96-fde549f13282",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00436
+   },
+   "input_tokens": 4832,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4286,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 261,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5093
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Diplomate of the American Board of Periodontology",
+  "AZPerio"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.clearchoice.com/locations/az/phoenix/20830-north-tatum-blvd/",
+  "https://doctor.webmd.com/providers/specialty/prosthodontics/arizona",
+  "https://www.clearchoice.com/providers/soo-cheol-jeong/1154648079/",
+  "https://www.azimplantdentist.com/",
+  "https://doctor.webmd.com/providers/specialty/periodontics/arizona/phoenix",
+  "https://www.clearchoice.com/locations/region/phoenix/",
+  "https://www.periodontistphoenix.com/dental-implants/",
+  "https://www.greaterphoenixpi.com/",
+  "https://www.periodontistphoenix.com/arizona-periodontal-group-business-information/",
+  "https://www.periodontistphoenix.com/",
+  "https://www.arizdental.com/admin/Specialists.aspx?areaid=1",
+  "https://www.ifadentistry.com/phoenix/",
+  "https://www.implantsandperioaz.com/",
+  "https://www.greaterphoenixpi.com/dental-implants/full-mouth-dental-implants/",
+  "https://www.superpages.com/phoenix-az/bpp/phoenix-implant-clinic-dr-eddie-harsini-dds-all-on-4-574325068"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a reliable single “best” dentist for everyone—implant needs vary, and online ratings alone don’t establish clinical quality. A strong Phoenix option to consider is **Dr. Ariel E. Trujillo at Arizona Periodontal Group**: the available information identifies him as a **Diplomate of the American Board of Periodontology**, with a practice focused on periodontal care and implants. The office is at **1717 W. Northern Ave., Suite 104**, and lists **(602) 995-5045**.\n\nFor a second opinion, **AZPerio** also lists board-certified periodontists who place implants. Before choosing, ask who will place the implant and make the final tooth, how many similar cases they handle, what the full written cost includes, and what happens if grafting or complications are needed. Confirm credentials, insurance coverage, and recent patient feedback independently.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

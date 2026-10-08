@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_hvac_phoenix_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e3c39469-e19c-4478-902c-79c476368406",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00075,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00049,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00388
+   },
+   "input_tokens": 3560,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3012,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 197,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3757
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Phoenix Air Department",
+  "Cool Zone Air Conditioning & Heating"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-contractor/parker-sons-1126-32260/customer-reviews",
+  "https://www.bbb.org/us/az/phoenix/category/air-conditioning-repair",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-repair/cool-zone-air-conditioning-heating-llc-1126-93000644",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-contractor/goettl-air-conditioning-and-plumbing-phoenix-1126-527",
+  "https://hvaccompaniesphoenix.com/best/ac-repair-installation/",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-contractor/az-perfect-comfort-1126-1000043994/customer-reviews",
+  "https://www.bbb.org/us/az/phoenix/category/air-conditioning-contractor",
+  "https://www.bbb.org/us/az/tempe/profile/air-conditioning-contractor/phoenix-air-department-1126-1000075398",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-contractor/same-day-air-repair-1126-1000021121",
+  "https://serviceagent.ai/directory/arizona/phoenix/hvac/repair/",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-contractor/same-day-air-repair-1126-1000021121/complaints",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-repair/1st-choice-mechanical-1126-1000062491",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-repair/trutek-air-conditioning-and-heating-llc-1126-1000087672",
+  "https://www.vettedbest.com/phoenix/best-hvac-companies-in-phoenix-2026/",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-contractor/six-star-ac-refrigeration-llc-1126-33006645"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company, but **Phoenix Air Department** looks like a reasonable first call based on the available results: it’s BBB-accredited with an A+ rating, serves the Phoenix area, and recent BBB reviews mention prompt AC service. **Cool Zone Air Conditioning & Heating** is another option, with a positive recent review describing reliable repairs and follow-up.\n\nBefore booking, ask about the diagnostic fee, whether it’s credited toward the repair, and the total price before authorizing work. For a major repair, get a second estimate. Ratings and reviews are only one signal, so check that the company is licensed and insured, too.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

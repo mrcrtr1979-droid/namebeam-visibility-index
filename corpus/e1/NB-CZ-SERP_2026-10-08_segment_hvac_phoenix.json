@@ -1,0 +1,39 @@
+{
+ "check_id": "NB-CZ-SERP_2026-10-08_segment_hvac_phoenix",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "google_serp",
+ "run_channel": "serp",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "serp_diagnostics": {
+  "payload": "raw_html",
+  "parsed_attempt": "short non-json body, try 3: '{\"status_code\":502,\"headers\":{\"x-brd-error\":\"No ready cookies\",\"x-brd-error-code\":\"no_ready_cookies\",\"date\":\"Thu, 08 Oct'",
+  "html_bytes": 575100,
+  "href_total": 92,
+  "redirect_hrefs": 0,
+  "nongoogle_hrefs": 0,
+  "consent_phrase_present": true,
+  "looks_like_consent_wall": false,
+  "looks_like_captcha": false,
+  "extraction_ok": true,
+  "zero_reason": null
+ },
+ "business_mentioned": false,
+ "organic_top_results": [
+  "https://book.servicetitan.com/i3yh6jot1rldp8w0gbz78pa0?rwg_token=AE37R_h0I0BYskiwK9FaM56PGnJqHl2vhYpDlEcsZXHMKJkrPMSjcZ4O9vZ3K6nN8ThEKkoLIzxtrEYJQFX8zxmuh4rcN8J1cg%3D%3D",
+  "https://book.servicetitan.com/sbl97jhmakrh7xnv9ia40bsz?rwg_token=AE37R_itVkUUdFIHSPxfUSCVo6p0qc8elsdatX-Ls6TGex8FIe7FD9ij1tzDUdix940L9AP4xhXcVp8dptR6OpkJiWTUlCXZsw%3D%3D",
+  "https://book.servicetitan.com/joocuqy3wj95ys84aqj2s4wc?rwg_token=AE37R_h-f9a7Kp8uhTcXPCVMszdWlQ_J7w0C9Wxosf0LU2IcB68KoZQJ59XJ3TzsPMMaNgrQJAd0u_JqtOKF_UcKocfxKsZNeQ%3D%3D"
+ ],
+ "ai_overview_detected": false,
+ "ai_overview_present": null,
+ "ai_overview_text": "",
+ "ai_overview_references": [],
+ "session_note": "Organic results extracted mechanically from the returned results page. Bright Data does not document an AI Overview field, so ai_overview_detected is BEST EFFORT and may be null. Do not publish it as a measurement."
+}

@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1ca30554-13e2-49ca-9126-011bce789826",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00123,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00497
+   },
+   "input_tokens": 4940,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4384,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 493,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5433
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "My quick recommendation",
+  "Lodge of the Ozarks",
+  "Table Rock Lake cabin"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/branson-mo/stays/cabins",
+  "https://www.hotels.com/de1644148/hotels-branson-and-vicinity-missouri/",
+  "https://www.hotels.com/de1463383/hotels-hollister-missouri/",
+  "https://www.hotels.com/de1644148-st5/five-star-hotels-branson-missouri/",
+  "https://www.hotels.com/de1644148-ty2/family-friendly-hotels-branson-and-vicinity-missouri/",
+  "https://www.hotels.com/de1482681/hotels-rockaway-beach-missouri/",
+  "https://www.hotels.com/de1644148-qu0/cheap-hotels-branson-and-vicinity-missouri/",
+  "https://www.airbnb.com/branson-mo/stays",
+  "https://www.hotels.com/de1690952/hotels-point-lookout-missouri/",
+  "https://au.hotels.com/de1644148/accommodation-branson-and-vicinity-missouri/",
+  "https://www.airbnb.com/missouri-united-states/stays/cabins",
+  "https://www.hotels.com/de1644148-am64/pet-friendly-hotels-branson-and-vicinity-missouri/",
+  "https://www.hotels.com/ho236136/hilton-promenade-at-branson-landing-branson-united-states-of-america/",
+  "https://www.tripadvisor.com/HotelsList-Branson-Hotels-With-Valet-Parking-zfp18498107.html",
+  "https://www.airbnb.com/branson-mo/stays/lakehouses"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**For most first-time visitors, I’d choose a hotel**—especially if you’re staying just a few nights and plan to see shows or attractions. You’ll get easier check-in, daily services, and less to coordinate. Choose an **Airbnb or cabin** if you’re staying longer, traveling with a group, want a kitchen, or care more about a private, lake-oriented getaway than being close to the action.\n\n### Specific picks\n\n- **Best all-around hotel for shows and the Highway 76 Strip: Lodge of the Ozarks.** It’s in the Theater District, with an indoor pool, free breakfast, and free parking; recent guest ratings are especially strong. A good practical choice for families and first-timers.\n- **Best for restaurants and a walkable waterfront: Hilton Promenade at Branson Landing.** Stay here if you want shops and dining right outside your door. It has an indoor pool, but it’s less convenient for the Strip than a Theater District hotel.\n- **Best for a resort-style, lakeside stay: Chateau on the Lake.** Pick it for lake views, a spa, pools, and a quieter setting—not for being in the middle of the entertainment district. Check recent room reviews and the total price before booking.\n- **Best Airbnb-style option: a cabin or lake house near Table Rock Lake.** This suits a group, a longer stay, or a trip built around relaxing outdoors. Branson-area listings include lakefront cabins and homes with features such as hot tubs, decks, and kitchens. Verify the exact location: “Branson” listings can be a drive from the Strip and attractions.\n\n**My quick recommendation:** Book **Lodge of the Ozarks** for a typical Branson sightseeing trip; choose a **Table Rock Lake cabin** if the lodging itself is part of the vacation. Compare the full checkout price—not just the nightly rate—and check parking, cleaning or resort fees, cancellation terms, and driving distance to your planned activities.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

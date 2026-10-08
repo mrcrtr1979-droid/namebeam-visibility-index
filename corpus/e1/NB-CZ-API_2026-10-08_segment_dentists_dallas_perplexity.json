@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_dentists_dallas_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_12fca96a-a4b9-455f-9237-4ada636f1ef1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00069,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 5023,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4477,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 277,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5300
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "The Dental Implant Center"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.dentalimplantcenter.com/",
+  "https://www.clearchoice.com/providers/daniel-cortes/1629558523/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-david-mcfadden-1629290267",
+  "https://www.dentalimplantcenter.com/videos/full-mouth-implant-options-help-with-self-diagnosing-which-you-qualify-for/",
+  "https://www.dentalimplantcenter.com/our-practice/",
+  "https://www.dallasdentalimplantcenter.com/faq/",
+  "https://85b.org/best-dental-implant-specialists-dallas-2026/",
+  "https://www.planotopdental.com/dentists/dr-amir-koujan/",
+  "https://directory.dmagazine.com/dentists/rowan-buskin-bds-msc/",
+  "https://www.zocdoc.com/prosthodontists/plano-211335pm",
+  "https://directory.dmagazine.com/search/?sections=Dentists&categories=Prosthodontics",
+  "https://www.superpages.com/addison-tx/prosthodontists-denture-centers",
+  "https://dental.me/tx/dallas/dental-implants/",
+  "https://dallasimplant.com/reviews/",
+  "https://dentalcountry.com/public/top-doctors/top-5-periodontists-in-dallas-tx/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for everyone, but **Dr. David McFadden at The Dental Implant Center** looks like a strong Dallas option to investigate—especially for complex cases or full-mouth reconstruction. The practice says he is board-certified in prosthodontics and oral implantology, and its site reports a large volume of patient reviews. Those are useful signals, but they’re not an independent guarantee of results.\n\nFor a **single implant**, you may also want an evaluation from a board-certified periodontist or oral surgeon, who focuses on implant placement. Ask each provider who will place the implant and who will make the crown, what the full cost includes, and what alternatives and risks apply to your case. Getting a second opinion is sensible before committing.\n\n**The Dental Implant Center:** 5120 W. Lovers Lane, Dallas · (214) 956-9100 · [dentalimplantcenter.com](https://www.dentalimplantcenter.com/)",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_tanning_salons_charlotte_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "niche": "tanning salons",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f7b971cc-eaa1-4ea6-b321-26081c7407a7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00091,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00055,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0041
+   },
+   "input_tokens": 4175,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3631,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 218,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4393
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Gorgeous GLO Beauty Bar",
+  "Dilworth Tanning Spa"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.fresha.com/lp/en/bt/tanning-studios/in/us-charlotte",
+  "https://trustanalytica.org/us/nc/charlotte/best-tanning-salons",
+  "https://palmbeachtan.com/locations/nc/charlotte-east-woodlawn-road",
+  "https://palmbeachtan.com/locations/nc/charlotte-providence-arboretum",
+  "https://www.gorgeousglo.com/",
+  "https://trustanalytica.org/us/nc/charlotte/reviews/dilworth-tanning-spa",
+  "https://palmbeachtan.com/locations/nc/charlotte-east-wt-harris-boulevard",
+  "https://www.yelp.com/biz/best-nails-and-tan-charlotte",
+  "https://maps.apple.com/place?place-id=I9845192F39EFC11F",
+  "https://organicbronzebar.com/southpark/",
+  "https://trustanalytica.org/us/nc/charlotte/reviews/gorgeous-glo-beauty-bar",
+  "https://palmbeachtan.com/locations/nc/charlotte-john-j-delaney-drive",
+  "https://www.yelp.com/biz/botanical-tans-charlotte-2",
+  "https://www.yelp.com/biz/gorgeousglo-beauty-bar-charlotte",
+  "https://palmbeachtan.com/locations/NC/Charlotte-East-WT-Harris-Boulevard"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a **custom spray tan**, **Gorgeous GLO Beauty Bar** looks like the strongest pick: it has a reported **4.9/5 rating from 100 reviews**, and customers often praise the natural-looking results and personalized color matching. It’s at **(980) 819-8411**; [visit its website](https://www.gorgeousglo.com/).\n\nIf you mean **UV tanning beds as well as spray tanning**, consider **Dilworth Tanning Spa**; reviews highlight its clean facility, equipment, and helpful staff.\n\n“Best” depends on the type of tanning you want, so check recent reviews and current prices before booking. UV tanning carries skin-damage risks; spray tanning avoids UV exposure.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

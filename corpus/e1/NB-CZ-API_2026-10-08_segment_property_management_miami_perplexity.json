@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-08_segment_property_management_miami_perplexity",
+ "date_utc": "2026-10-08",
+ "business": "SEGMENT: property management, Miami",
+ "niche": "property management companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Miami FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_96e68b6e-8fef-47ed-b9f9-a32daa933373",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00438
+   },
+   "input_tokens": 4583,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4034,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 291,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4874
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Real Property Management Miami Metro",
+  "Nadlan Management",
+  "Novel Management"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.nadlanmanagement.com/single-family-property-management.html",
+  "https://www.jmkpropertymanagement.com/",
+  "https://novelmanagement.com/property-management/",
+  "https://www.managemyproperty.com/find/florida/miami-property-management-companies",
+  "https://www.managemyproperty.com/companies/management-miami-llc-616",
+  "https://urbanresourcemanagement.com/",
+  "https://avoassetmanagement.com/",
+  "https://www.masterypm.com/",
+  "https://www.allpropertymanagement.com/property-management/companies/35790/real-property-management-miami-metro",
+  "https://www.miami-propertymanagement.com/areas-served/",
+  "https://www.linkedin.com/company/real-property-management-miami-metro",
+  "https://www.allpropertymanagement.com/property-management/companies/45310/nadlan-management/",
+  "https://luxurypropertycare.com/miami-property-management-services/",
+  "https://www.fsresidential.com/florida/florida-areas-we-serve/miami-property-management/",
+  "https://awning.com/post/best-miami-property-management-companies"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Real Property Management Miami Metro** looks like a solid first company to interview. It manages single-family homes and offers tenant screening, leasing, rent collection, inspections, maintenance coordination, and online owner reporting. Its listing also says there are no fees while a property is vacant, though you should confirm the full fee schedule directly.\n\nI’d compare it with **Nadlan Management**, which focuses on rental investment properties, including single-family homes, and **Novel Management**, which also manages homes and has positive owner testimonials in the search results.\n\nBefore choosing, ask each company for:\n- The complete fee schedule, including leasing, renewal, maintenance, and cancellation fees\n- A sample owner statement and management agreement\n- Typical time to lease a home like yours in your neighborhood\n- How maintenance approvals and after-hours emergencies are handled\n- Recent references from owners of similar properties\n\nCheck current reviews and verify the company’s Florida real-estate licensing before signing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
