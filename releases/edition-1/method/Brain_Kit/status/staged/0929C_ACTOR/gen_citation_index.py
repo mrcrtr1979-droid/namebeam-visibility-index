@@ -16,7 +16,7 @@ sys.path.insert(0, _HERE)
 sys.path.insert(0, os.path.join(os.path.dirname(_HERE), '0929B_MARKET_PANELS'))
 from gen_market_panels import is_proper_noun, is_junk, url_to_host, asc
 
-DEFAULT_CSV = ("/mnt/user-data/uploads/Alpha Vault/Carter Enterprise LLC/Brain_Kit/"
+DEFAULT_CSV = ("Brain_Kit/"
                "corpus/namebeam/Namebeam_E1_Dataset_LATEST.csv")
 MIN_DATE = "2026-09-01"
 DROP_SUFFIX_WORDS = {"llc", "inc", "co"}

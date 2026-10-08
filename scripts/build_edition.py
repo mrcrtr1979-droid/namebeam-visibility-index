@@ -159,13 +159,36 @@ def filter_by_date(src, out, col, w0, w1):
     return n
 
 
+# One documented edit: a default file path in a vendored file names a retired brand folder. The path is never
+# used by the pack (the metrics code is always given --csv). Before and after hashes go into PACK.json.
+PATCHES = {
+    'status/staged/0929C_ACTOR/gen_citation_index.py': [
+        ('"/mnt/user-data/uploads/Alpha Vault/Carter Enterprise LLC/Brain_Kit/"', '"Brain_Kit/"'),
+    ],
+}
+
+
 def vendor_method(method_src, dst_root):
-    """Copy the metrics code into the layout it expects. Byte for byte, no edits."""
+    """Copy the metrics code into the layout it expects. Byte for byte, except the PATCHES above.
+    Returns the list of patches applied, with the SHA-256 of the file before and after."""
+    done = []
     for rel in METHOD_FILES:
         s = os.path.join(method_src, *rel.split('/'))
         d = os.path.join(dst_root, METHOD_ROOT, *rel.split('/'))
         os.makedirs(os.path.dirname(d), exist_ok=True)
-        shutil.copyfile(s, d)
+        if rel in PATCHES:
+            raw = open(s, 'rb').read()
+            text = raw.decode('utf-8')
+            for old, new in PATCHES[rel]:
+                if old not in text:
+                    raise SystemExit('patch target not found in ' + rel)
+                text = text.replace(old, new)
+            out = text.encode('utf-8')
+            open(d, 'wb').write(out)
+            done.append({'file': rel, 'sha256_before': sha_bytes(raw), 'sha256_after': sha_bytes(out)})
+        else:
+            shutil.copyfile(s, d)
+    return done
 
 
 def run_metrics(pack, answers_csv, through, out_dir):
@@ -267,6 +290,23 @@ if __name__ == '__main__':
 '''
 
 
+def render_card(meta, ans_rel, src_rel):
+    """Hugging Face dataset card for the pack, from scripts/hf_card_template.md. Paths in the card are relative to edition-1/."""
+    text = io.open(os.path.join(HERE, 'hf_card_template.md'), encoding='utf-8').read()
+    w1 = meta['window'][1]
+    if meta['status'] == 'FINAL':
+        line = 'Edition 1 is final. Data through %s.' % w1
+    else:
+        line = 'Status: staged. This copy holds data through %s. The Edition 1 release adds data through %s.' % (w1, E1_END)
+    rep = {'{{STATUS_LINE}}': line, '{{W0}}': meta['window'][0], '{{W1}}': w1, '{{RUN_DAYS}}': str(meta['run_days']),
+           '{{ANSWERS_ROWS}}': '{:,}'.format(meta['answers_rows']), '{{ANSWERS_PATH}}': ans_rel, '{{SOURCES_PATH}}': src_rel}
+    for k, v in rep.items():
+        text = text.replace(k, v)
+    if '{{' in text.replace('{{Carter Enterprise LLC}}', ''):
+        raise SystemExit('unfilled placeholder in the card')
+    return text
+
+
 def write_manifest(pack):
     lines = manifest_lines(pack)
     with io.open(os.path.join(pack, 'MANIFEST.sha256'), 'w', encoding='utf-8', newline='\n') as fh:
@@ -308,7 +348,7 @@ def build(through, out, method_src, status):
     n_cz = {}
     for name, col in (('customer_zero_daily', 'date'), ('customer_zero_hits', 'date'), ('customer_zero_rolling', 'as_of')):
         n_cz[name] = filter_by_date(os.path.join(cz, name + '.csv'), os.path.join(pack, 'data', name + '.csv'), col, W0, last)
-    vendor_method(method_src, pack)
+    patches = vendor_method(method_src, pack)
     rc, so, se = run_metrics(pack, os.path.join(pack, *ans_rel.split('/')), last, os.path.join(pack, 'metrics'))
     sys.stdout.write(so[-1500:])
     if rc != 0:
@@ -319,7 +359,7 @@ def build(through, out, method_src, status):
         by_kind[r['kind']] = by_kind.get(r['kind'], 0) + 1
     days = sorted({r['date'] for r in rows})
     meta = {'edition': 1, 'status': status, 'window': [W0, last], 'requested_through': through,
-            'run_days': len(days), 'answers_rows': len(rows), 'rows_by_kind': by_kind,
+            'run_days': len(days), 'vendor_patches': patches, 'answers_rows': len(rows), 'rows_by_kind': by_kind,
             'sources_rows': n_src, 'sources_days': len(src_days), 'siri_rows': n_siri, 'customer_zero_rows': n_cz,
             'files': {'answers': ans_rel, 'sources': src_rel, 'siri': 'data/siri_panel.csv', 'metrics': 'metrics/metrics_v2.csv'}}
     with io.open(os.path.join(pack, 'PACK.json'), 'w', encoding='utf-8', newline='\n') as fh:
@@ -327,6 +367,9 @@ def build(through, out, method_src, status):
         fh.write('\n')
     with io.open(os.path.join(pack, 'verify.py'), 'w', encoding='utf-8', newline='\n') as fh:
         fh.write(VERIFY_PY)
+    os.makedirs(os.path.join(pack, 'hf'))
+    with io.open(os.path.join(pack, 'hf', 'README.md'), 'w', encoding='utf-8', newline='\n') as fh:
+        fh.write(render_card(meta, ans_rel, src_rel))
     note = os.path.join(HERE, 'edition1_method_note.md')
     if os.path.exists(note):
         text = io.open(note, encoding='utf-8').read()
@@ -393,6 +436,33 @@ def selftest():
     os.remove(os.path.join(pack, 'data', 'a.csv'))
     p = subprocess.run([sys.executable, '-I', '-B', os.path.join(pack, 'verify.py')], capture_output=True, text=True)
     chk('RED: a deleted file is reported as MISMATCH', 'MISMATCH data/a.csv' in p.stdout and p.returncode == 1)
+    # vendoring: patched file differs, hashes recorded, unpatched files stay byte for byte, a missing target stops the build
+    src = os.path.join(tmp, 'msrc')
+    for rel in METHOD_FILES:
+        f = os.path.join(src, *rel.split('/'))
+        os.makedirs(os.path.dirname(f), exist_ok=True)
+        body = 'x = ("/mnt/user-data/uploads/Alpha Vault/Carter Enterprise LLC/Brain_Kit/"\n"c.csv")\n' if rel in PATCHES else 'y = 1\n'
+        open(f, 'w').write(body)
+    dst = os.path.join(tmp, 'mdst')
+    done = vendor_method(src, dst)
+    pf = os.path.join(dst, METHOD_ROOT, 'status', 'staged', '0929C_ACTOR', 'gen_citation_index.py')
+    chk('vendor patch replaces the retired path and records before and after hashes',
+        'Alpha Vault' not in open(pf).read() and len(done) == 1 and done[0]['sha256_before'] != done[0]['sha256_after'])
+    other = os.path.join(dst, METHOD_ROOT, 'status', 'staged', '1005B_METRICS', 'receipts_metrics_v1.py')
+    chk('an unpatched file is copied byte for byte', sha_file(other) == sha_file(os.path.join(src, 'status', 'staged', '1005B_METRICS', 'receipts_metrics_v1.py')))
+    open(os.path.join(src, 'status', 'staged', '0929C_ACTOR', 'gen_citation_index.py'), 'w').write('nothing to patch\n')
+    try:
+        vendor_method(src, os.path.join(tmp, 'mdst2'))
+        stopped = False
+    except SystemExit:
+        stopped = True
+    chk('RED: a missing patch target stops the build', stopped)
+    meta = {'status': 'STAGED', 'window': ['2026-09-01', '2026-10-07'], 'run_days': 36, 'answers_rows': 10152}
+    card = render_card(meta, 'data/answers_x.csv', 'data/sources_x.csv')
+    chk('card: every placeholder filled, paths and counts in place',
+        '{{W' not in card and 'edition-1/data/answers_x.csv' in card and '10,152 answer rows' in card and 'staged' in card)
+    chk('card: no em dash, en dash or emoji', not any(ch in card for ch in ('\u2014', '\u2013')) and all(ord(c) < 0x2000 or c in '\u2019' for c in card))
+    chk('card: FINAL status line differs', 'Edition 1 is final' in render_card(dict(meta, status='FINAL'), 'data/a.csv', 'data/s.csv'))
     print('SELFTEST ' + ('FAIL: ' + ', '.join(fails) if fails else 'PASS'))
     return not fails
 

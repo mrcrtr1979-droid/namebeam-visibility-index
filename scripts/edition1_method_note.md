@@ -17,7 +17,7 @@ This pack holds the raw tables behind Edition 1, the metrics computed from them,
 | `metrics/metrics_v2_sentences.md` | One plain sentence per metric and window, each with its denominator. |
 | `metrics/metrics_v2_inputs.csv` | Size and SHA-256 of the code and data the metrics read. |
 | `metrics/metrics_v2_regress.txt` | Check that this code reproduces the values published earlier (v1) and the earlier raw overlap numbers. |
-| `method/` | The code that computes the metrics, in the folder layout it expects. |
+| `method/` | The code that computes the metrics, in the folder layout it expects. Copied unchanged except one default file path in `gen_citation_index.py`; `PACK.json` lists the file hash before and after. |
 | `PACK.json`, `MANIFEST.sha256`, `verify.py` | Pack description, file hashes, and the check. |
 
 ## How the questions were asked
