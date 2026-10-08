@@ -1,0 +1,83 @@
+# Namebeam AI Visibility Record, Edition 1 data pack
+
+Status: STAGED. Window: 2026-09-01 to 2026-10-07 (UTC dates). Run days in the window: 36. Answer rows: 10,152.
+
+This pack holds the raw tables behind Edition 1, the metrics computed from them, the code that computes the metrics, and a script that checks every file against a SHA-256 manifest. The raw answer files they come from are in `corpus/e1/` of this repository.
+
+## Files
+
+| file | what it is |
+|---|---|
+| `data/answers_2026-09-01_to_2026-10-07.csv` | One row per raw answer file: date, kind (API, SERP or AGREE), the business or segment asked about, niche, market, engine, the names the engine returned, and the SHA-256 of the raw file. |
+| `data/sources_2026-09-01_to_2026-10-07.csv` | One row per URL an engine returned as a source (Perplexity sources and Google results). Columns are described in `datasets/e1/sources/README.md`. |
+| `data/siri_panel.csv` | Questions asked of Siri by hand on an iPhone: date, mode (typed or spoken), city, question, what Siri said, businesses named, sources shown. Described in `datasets/e1/siri/README.md`. |
+| `data/customer_zero_*.csv` | How often our own domains appear in the sources an engine returned. Described in `datasets/e1/customer_zero/README.md`. |
+| `metrics/metrics_v2.csv` | Every metric, by window and engine: value, numerator, denominator, the unit of the denominator, and the method id. |
+| `metrics/metrics_v2_methods.csv` | The definition of each method id. |
+| `metrics/metrics_v2_sentences.md` | One plain sentence per metric and window, each with its denominator. |
+| `metrics/metrics_v2_inputs.csv` | Size and SHA-256 of the code and data the metrics read. |
+| `metrics/metrics_v2_regress.txt` | Check that this code reproduces the values published earlier (v1) and the earlier raw overlap numbers. |
+| `method/` | The code that computes the metrics, in the folder layout it expects. |
+| `PACK.json`, `MANIFEST.sha256`, `verify.py` | Pack description, file hashes, and the check. |
+
+## How the questions were asked
+
+Each day a program asks every engine the same fixed questions, one per business or segment in `roster/e1_roster.json`, and writes one raw file per answer. Google results are read through Bright Data. Settings, as set in `scripts/engines.py`:
+
+| engine | how it was called | search tool | temperature |
+|---|---|---|---|
+| OpenAI | Chat Completions API | not switched on | provider default |
+| Anthropic | Messages API, max 2,048 tokens | not switched on | 0.2 |
+| Gemini | Gemini API, generateContent, model gemini-3.6-flash | not switched on | provider default |
+| Perplexity, to 2026-09-27 | Sonar chat completions | web search on | not stated in the current code |
+| Perplexity, from 2026-09-28 | Agent API, model perplexity/sonar | web search forced | 0.2 |
+| Google | results page through Bright Data | not applicable | not applicable |
+
+These are API calls, not the apps people open on a phone. The rows do not record which model answered. The model strings are set in the code or in repository variables: OpenAI read `gpt-5-mini` on 2026-08-06, and Anthropic uses `claude-haiku-4-5` unless a variable overrides it. Because Perplexity is the one engine with a search tool switched on, the engines are not like for like, and no figure here compares them as if they were.
+
+## Windows
+
+- WA: 2026-09-01 to 2026-09-27, Perplexity on Sonar chat completions.
+- WB: 2026-09-28 to 2026-10-07, Perplexity on the Agent API. Perplexity retired Sonar chat completions on 2026-09-27 and the collector moved to the Agent API, so WA and WB are reported apart. Any change between them mixes the method change with change over time.
+- WE: the whole Edition 1 window. For Perplexity it mixes both methods and is marked that way in the table.
+
+Days with no run are absent from every table, not counted as zero. Days with no run in this window: 2026-10-05.
+
+## Metrics
+
+Every metric names its method and its denominator in `metrics/metrics_v2.csv`. The main ones:
+
+- Persistence: of the business names returned on one day, the share also returned the next day, pooled over cells. Two forms are given: the next day must have named someone, or the next day needs just to have been asked. Each is computed on raw names and on gated names (below).
+- List overlap: the overlap (Jaccard) of the full name lists on two consecutive days when both days named someone, as a mean and a median, raw and gated.
+- Churn: the mean of one minus the list overlap over consecutive answered days where either day has a gated name. A pair with one empty day counts as full churn.
+- Concentration: the mean over cells of H, the sum of squared shares of named days, and of 1/H, the number of equally common names the cell behaves like.
+- Name rate: the share of answered days on which at least one name survived the gate.
+- Naming rate on asked days: the share of asked days on which the engine returned at least one business name.
+- Coin-flip share: the share of businesses named on 20 to 80 percent of answered days, so one day's answer is close to a coin flip.
+- Engine agreement: the mean overlap of two engines' name lists on the same day, raw and gated.
+
+A cell is a market plus a niche. US nationwide questions are left out of the cell metrics. September has 38 cells. API rows count; SERP and AGREE rows do not. A list of SERP files from 2026-10-04 that were held out is in `method/`; it removes no API rows.
+
+## The name gate
+
+Engines return strings, and some are not businesses: places, directories, trade words, sentence fragments, and several spellings of one name. The gate is rule-based code with word lists. It drops places, directories and platforms, generic trade words and sentence fragments, and merges variants of one name. It is in `method/Brain_Kit/status/staged/1005A_AI_PICKS_CHART/gen_ai_picks_chart.py` (SHA-256 611894c48c21a512bc856463c2e4b6b7a33155375aebcce71a036e820a4edde6). Every persistence and overlap metric is given twice, raw and gated, and the two can differ a lot: for Perplexity in WA, persistence is 0.626 gated and 0.437 raw.
+
+## Limits
+
+- The record covers local business questions in the markets in the roster. It does not describe all businesses or all questions.
+- Names are strings returned by the engines and read by a program. A name returned is not a recommendation by us and not a claim that the business is good.
+- OpenAI, Anthropic and Gemini ran without a search tool, so their answers come from the model alone.
+- Gemini returned some answers until 2026-09-26 and none from 2026-09-27 (the account returned HTTP 402, prepayment credits depleted). Gemini metrics carry their own denominators and are small.
+- WB is a short window. Read its values with their denominators.
+- Siri rows are typed or spoken by hand on one phone, for a few questions on a few days. They are not a sample of Siri users.
+- Nothing here shows why a list changed. The record shows what was returned on which day.
+
+## Check the pack
+
+    python3 verify.py              # every file against MANIFEST.sha256, prints MATCH or MISMATCH
+    python3 verify.py --rebuild    # rebuilds the answers table from corpus/e1 and compares
+    python3 verify.py --metrics    # recomputes the metrics table with the code in method/ and compares
+
+Run these from `releases/edition-1/` in a clone of this repository. The last line reads `VERIFY MATCH` when everything agrees.
+
+Operated by Carter Enterprise LLC. Questions about the record: namebeam.ai.

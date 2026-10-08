@@ -1,0 +1,17 @@
+method_id,metric,name_set,statistic,denominator_unit,definition
+P.raw.pername,P,raw,share,business-day namings with the next day answered,"Of the business names returned on a day (raw strings), the share also returned on the next day; pooled over cells."
+P.gated.pername,P,gated,share,business-day namings with the next day answered,The same share after the name gate and alias merge (v1 P).
+P.raw.pername_nextasked,P,raw,share,business-day namings with a row for the next day (a next day with no names counts as not recurring),"The W2-3 form of raw P: the next day only needs to have been asked, so an empty next day counts against persistence."
+P.gated.pername_nextasked,P,gated,share,business-day namings with a row for the next day (a next day with no names counts as not recurring),The same next-day-asked form on gated names.
+J.raw.pair_bothnamed.mean,J,raw,mean,consecutive day pairs on which both days named at least one business,"Mean overlap (Jaccard) of the raw name lists on two consecutive days, pairs where both days named someone."
+J.raw.pair_bothnamed.median,J,raw,median,consecutive day pairs on which both days named at least one business,Median of the same overlap.
+J.gated.pair_bothnamed.mean,J,gated,mean,consecutive day pairs on which both days named at least one business,"Mean overlap of the gated name lists, pairs where both days named someone."
+J.gated.pair_bothnamed.median,J,gated,median,consecutive day pairs on which both days named at least one business,Median of the same overlap.
+C.gated.pair_union,C,gated,mean,consecutive answered day pairs with at least one gated name on either day,Mean of 1 minus overlap over consecutive answered days where either day has a gated name (v1 C; a pair with one empty day counts as full churn).
+H.gated.cellmean,H,gated,mean,cells with at least one gated name,"Mean over cells of the concentration index H, the sum of squared shares of named days (v1 H)."
+invH.gated.cellmean,invH,gated,mean,cells with at least one gated name,"Mean over cells of 1/H, the number of equally common names the cell behaves like (v1)."
+N.gated.day,N,gated,share,answered cell days,Share of answered days on which at least one name survived the gate (v1 N).
+Y.answered.day,Y,raw,share,asked cell days,Share of asked days (a row exists) on which the engine returned at least one business name.
+S.gated.coinflip,S,gated,share,business-cell pairs named on at least one answered day,"Share of businesses named on 20 to 80 percent of answered days, so one day's answer is close to a coin flip (v1 S)."
+A.raw.pair,A,raw,mean,days on which both engines answered and at least one named someone,Mean overlap of two engines' raw name lists on the same day.
+A.gated.pair,A,gated,mean,days on which both engines answered and at least one gated name exists,Mean overlap of two engines' gated name lists on the same day (v1 A).

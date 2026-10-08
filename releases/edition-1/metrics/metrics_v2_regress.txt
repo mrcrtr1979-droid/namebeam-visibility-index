@@ -1,0 +1,35 @@
+MATCH v1 C anthropic: v2=0.681818 published=0.681818
+MATCH v1 C gemini: v2=0.827737 published=0.827737
+MATCH v1 C openai: v2=0.921201 published=0.921201
+MATCH v1 C perplexity: v2=0.505739 published=0.505739
+MATCH v1 H anthropic: v2=0.747818 published=0.747818
+MATCH v1 H gemini: v2=0.109881 published=0.109881
+MATCH v1 H openai: v2=0.264720 published=0.264720
+MATCH v1 H perplexity: v2=0.165266 published=0.165266
+MATCH v1 N anthropic: v2=0.033138 published=0.033138
+MATCH v1 N gemini: v2=0.974110 published=0.974110
+MATCH v1 N openai: v2=0.449424 published=0.449424
+MATCH v1 N perplexity: v2=0.943522 published=0.943522
+MATCH v1 P anthropic: v2=0.368421 published=0.368421
+MATCH v1 P gemini: v2=0.286000 published=0.286000
+MATCH v1 P openai: v2=0.201175 published=0.201175
+MATCH v1 P perplexity: v2=0.626118 published=0.626118
+MATCH v1 invH anthropic: v2=1.522626 published=1.522626
+MATCH v1 invH gemini: v2=14.686539 published=14.686539
+MATCH v1 invH openai: v2=6.315111 published=6.315111
+MATCH v1 invH perplexity: v2=7.292586 published=7.292586
+MATCH v1 A gemini|anthropic: v2=0.000368 published=0.000368
+MATCH v1 A gemini|perplexity: v2=0.060973 published=0.060973
+MATCH v1 A openai|anthropic: v2=0.000473 published=0.000473
+MATCH v1 A openai|gemini: v2=0.011732 published=0.011732
+MATCH v1 A openai|perplexity: v2=0.006489 published=0.006489
+MATCH v1 A perplexity|anthropic: v2=0.000000 published=0.000000
+MATCH W2-3 raw P numerator: v2=2881 published=2881
+MATCH W2-3 raw P denominator: v2=7017 published=7017
+MATCH W2-3 raw pairs: v2=1008 published=1008
+MATCH W2-3 raw median Jaccard (4 dp): v2=0.2922 published=0.2922
+MATCH W2-3 raw mean Jaccard (4 dp): v2=0.3384 published=0.3384
+MATCH W2-3 cells: v2=46 published=46
+note: under the v1 rule (next day must have named someone) the same 46 cells give 2881 of 6768 = 0.4257
+regression rows checked against the v1 table: 26
+REGRESS MATCH
