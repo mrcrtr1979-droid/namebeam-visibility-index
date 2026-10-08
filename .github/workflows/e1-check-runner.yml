@@ -134,13 +134,15 @@ jobs:
           python3 -I scripts/build_sources.py --date "$(date -u +%Y-%m-%d)" --strict || echo "::warning::sources for today reported a guard or no raw files, see the log above"
           python3 -I scripts/customer_zero.py --selftest || echo "::warning::customer_zero selftest failed"
           python3 -I scripts/customer_zero.py --check-baseline || echo "::warning::customer_zero reported STALE-SOURCES or a baseline mismatch, see the log above"
+          python3 -I scripts/own_name_rate.py --selftest || echo "::warning::own_name_rate selftest failed"
+          python3 -I scripts/own_name_rate.py || echo "::warning::own_name_rate build failed"
 
       - name: Commit and push any new corpus rows
         if: steps.guard.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add corpus/e1/ datasets/e1/sources/ datasets/e1/customer_zero/
+          git add corpus/e1/ datasets/e1/sources/ datasets/e1/customer_zero/ datasets/e1/own_name/
           if git diff --staged --quiet; then
             echo "No new corpus rows to commit."
           else
