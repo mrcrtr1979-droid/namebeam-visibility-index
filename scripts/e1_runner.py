@@ -339,7 +339,14 @@ def main():
     wrote = ok_n = fail_n = 0
     for br in roster:
         engine_rows = []
+        # OPTIONAL PER-ENTRY LIMITS (2026-10-08, [SONNET-RECORD-1008E-S1], S1-7). A roster
+        # entry may carry "engines": [..names..] to be asked of those engines only, and
+        # "serp": false to skip the Google results page. Neither key means what it always
+        # meant: every available engine plus the SERP. An empty list asks no engine.
+        only = br.get("engines")
         for name, fn in engines.items():
+            if isinstance(only, list) and name not in only:
+                continue
             path, good = run_engine(br, name, fn, date_utc)
             if good:
                 import json as _j
@@ -348,7 +355,7 @@ def main():
             wrote += 1
             ok_n += 1 if good else 0
             fail_n += 0 if good else 1
-        if serp_on:
+        if serp_on and br.get("serp") is not False:
             _, good = run_serp(br, date_utc)
             wrote += 1
             ok_n += 1 if good else 0
