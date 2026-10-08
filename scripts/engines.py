@@ -80,8 +80,43 @@ def redact(text):
 PERPLEXITY_URL = "https://api.perplexity.ai/v1/agent"
 PERPLEXITY_MODEL = "perplexity/sonar"
 
+# PER-CALL AUDIT FIELDS, forward only [OPUS55-COS-1008C P11]. call_perplexity
+# fills LAST_CALL_META["perplexity"] from the parsed response body: which model
+# Perplexity actually served, the run id, status, usage, preset and how many
+# search results came back. e1_runner.run_engine copies it into the row as
+# engine_meta. It never holds the key, the headers or the answer text. The
+# 4-tuple returned by call_perplexity does not change.
+LAST_CALL_META = {}
+
+
+def _perplexity_meta(body):
+    """Audit fields from a parsed Perplexity body. Never raises."""
+    try:
+        output = body.get("output")
+        if isinstance(output, list):
+            items = [i for i in output if isinstance(i, dict)]
+            search_count = sum(
+                len(i.get("results") or []) for i in items
+                if i.get("type") == "search_results")
+            item_types = [i.get("type") for i in items]
+        else:
+            search_count = None
+            item_types = []
+        return {
+            "served_model": body.get("model"),
+            "response_id": body.get("id"),
+            "status": body.get("status"),
+            "usage": body.get("usage"),
+            "preset": body.get("preset"),
+            "search_results_count": search_count,
+            "output_item_types": item_types,
+        }
+    except Exception:
+        return {}
+
 
 def call_perplexity(prompt_text):
+    LAST_CALL_META["perplexity"] = {}
     key = os.environ.get("PERPLEXITY_API_KEY", "").strip()
     if not key:
         return False, "", [], redact("PERPLEXITY_API_KEY not set")
@@ -104,6 +139,7 @@ def call_perplexity(prompt_text):
             "%sperplexity HTTP %s: %s" % (prefix, r.status_code, r.text[:300]))
     try:
         body = r.json()
+        LAST_CALL_META["perplexity"] = _perplexity_meta(body)
         if body.get("status") != "completed":
             return False, "", [], redact("perplexity run %s: %s" % (
                 body.get("status"), str(body.get("error"))[:300]))
