@@ -12,6 +12,7 @@ This pack holds the raw tables behind Edition 1, the metrics computed from them,
 | `{{SOURCES_FILE}}` | One row per URL an engine returned as a source (Perplexity sources and Google results). Columns are described in `datasets/e1/sources/README.md`. |
 | `data/siri_panel.csv` | Questions asked of Siri by hand on an iPhone: date, mode (typed or spoken), city, question, what Siri said, businesses named, sources shown. Described in `datasets/e1/siri/README.md`. |
 | `data/customer_zero_*.csv` | How often our own domains appear in the sources an engine returned. Described in `datasets/e1/customer_zero/README.md`. |
+| `data/segment_pages_*.csv` | For each of the 28 record pages (27 city and segment pages and the hub): how many Perplexity answers cited it, out of the answers to its own question and out of all answers with a source list, per run day and in 7 day windows. Zeros are kept. Described in `datasets/e1/customer_zero/README.md`. |
 | `metrics/metrics_v2.csv` | Every metric, by window and engine: value, numerator, denominator, the unit of the denominator, and the method id. |
 | `metrics/metrics_v2_methods.csv` | The definition of each method id. |
 | `metrics/metrics_v2_sentences.md` | One plain sentence per metric and window, each with its denominator. |

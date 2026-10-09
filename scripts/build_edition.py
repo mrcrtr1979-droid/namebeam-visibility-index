@@ -10,6 +10,7 @@ What goes in the pack (window 2026-09-01 to the last run day, never past 2026-10
   data/sources_<w0>_to_<w1>.csv   every URL an engine returned as a source, from datasets/e1/sources
   data/siri_panel.csv             the Siri table (rows inside the window)
   data/customer_zero_*.csv        citations of our own domains, inside the window
+  data/segment_pages_*.csv        citations of our 28 record pages (own-question denominators), inside the window
   metrics/                        metrics v2 table, method list, public-safe sentences, input hashes, regression
   method/                         the code that computes the metrics, in the layout the code expects
   PACK.json, README.md, MANIFEST.sha256, verify.py
@@ -391,7 +392,8 @@ def build(through, out, method_src, status):
     n_siri = filter_by_date(os.path.join(REPO, 'datasets', 'e1', 'siri', 'siri_panel.csv'), os.path.join(pack, 'data', 'siri_panel.csv'), 'date', W0, last)
     cz = os.path.join(REPO, 'datasets', 'e1', 'customer_zero')
     n_cz = {}
-    for name, col in (('customer_zero_daily', 'date'), ('customer_zero_hits', 'date'), ('customer_zero_rolling', 'as_of')):
+    for name, col in (('customer_zero_daily', 'date'), ('customer_zero_hits', 'date'), ('customer_zero_rolling', 'as_of'),
+                       ('segment_pages_daily', 'date'), ('segment_pages_rolling', 'as_of')):
         n_cz[name] = filter_by_date(os.path.join(cz, name + '.csv'), os.path.join(pack, 'data', name + '.csv'), col, W0, last)
     patches = vendor_method(method_src, pack)
     kept, left_out = panel_split(rows)
