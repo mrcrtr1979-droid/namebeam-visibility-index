@@ -63,10 +63,11 @@ SITE = 'https://namebeam.ai'
 UA = 'NamebeamRecordWatch/1.0 (+https://namebeam.ai)'
 
 DAILY_COLS = ['date', 'phase', 'slug', 'kind', 'day_status', 'perplexity_answers_with_sources',
+              'own_question_answers', 'own_question_status',
               'answers_citing_page', 'url_rows', 'best_rank', 'answers_citing_data_json']
 ROLL_COLS = ['as_of', 'window', 'window_calendar_days', 'days_with_data', 'slug', 'kind',
-             'perplexity_answers_with_sources', 'answers_citing_page', 'url_rows',
-             'answers_citing_data_json']
+             'perplexity_answers_with_sources', 'own_question_answers', 'answers_citing_page',
+             'url_rows', 'answers_citing_data_json']
 UNLISTED_COLS = ['date', 'url', 'path', 'rank', 'check_id', 'prompt_text']
 PROBE_COLS = ['date', 'slug', 'url', 'http_status', 'bytes', 'sha256_16', 'last_modified', 'error']
 
@@ -112,7 +113,8 @@ def load_roster(path):
     pages = [(x['slug'], x['kind']) for x in d['pages']]
     if len({s for s, _ in pages}) != len(pages):
         raise ValueError('duplicate slug in roster')
-    return d['watch_start'], d['published'], pages
+    questions = {x['slug']: {(q['market'], q['niche']) for q in x.get('questions', [])} for x in d['pages']}
+    return d['watch_start'], d['published'], pages, questions
 
 
 def read_sources(sources_dir, d_from):
@@ -145,7 +147,7 @@ def read_cz_denominators(out_dir):
 
 # ---------------------------------------------------------------- compute
 
-def compute(src, pages, watch_start, published):
+def compute(src, pages, questions, watch_start, published):
     slugs = {s for s, _ in pages}
     kinds = dict(pages)
     daily, unlisted, denom = [], [], {}
@@ -170,12 +172,21 @@ def compute(src, pages, watch_start, published):
             else:
                 unlisted.append({'date': dt, 'url': r['url'], 'path': c[1], 'rank': r.get('rank', ''),
                                  'check_id': r['check_id'], 'prompt_text': r.get('prompt_text', '')})
+        asked = collections.defaultdict(set)     # (market, niche) -> check_ids with a source list
+        for r in rows:
+            asked[(r.get('market', ''), r.get('niche', ''))].add(r['check_id'])
         status = 'OK' if answers else 'NO-PERPLEXITY-SOURCES'
         phase = 'WATCH' if dt >= watch_start else ('PUBLICATION-DAY' if dt >= published else 'BEFORE')
         for s, k in pages:
             b = per_page[s]
+            if questions.get(s):
+                own = len(set().union(*[asked.get(q, set()) for q in questions[s]]))
+                own_status = 'ASKED' if own else 'QUESTION-NOT-ANSWERED'
+            else:
+                own, own_status = '', 'NO-QUESTION'
             daily.append({'date': dt, 'phase': phase, 'slug': s, 'kind': k, 'day_status': status,
                           'perplexity_answers_with_sources': len(answers),
+                          'own_question_answers': own, 'own_question_status': own_status,
                           'answers_citing_page': len(b['ans']), 'url_rows': b['url_rows'],
                           'best_rank': min(b['ranks']) if b['ranks'] else '',
                           'answers_citing_data_json': len(b['data'])})
@@ -200,6 +211,8 @@ def rolling(daily, pages, watch_start):
                             'window_calendar_days': (d_as - start).days + 1,
                             'days_with_data': len(ok_days), 'slug': s, 'kind': k,
                             'perplexity_answers_with_sources': sum(r['perplexity_answers_with_sources'] for r in rr),
+                            'own_question_answers': (sum(r['own_question_answers'] for r in rr)
+                                                     if rr and rr[0]['own_question_answers'] != '' else ''),
                             'answers_citing_page': sum(r['answers_citing_page'] for r in rr),
                             'url_rows': sum(r['url_rows'] for r in rr),
                             'answers_citing_data_json': sum(r['answers_citing_data_json'] for r in rr)})
@@ -253,10 +266,10 @@ def probe(pages, out_dir, today, fetch=default_fetch):
 # ---------------------------------------------------------------- run, readout
 
 def run(sources_dir, out_dir, roster_path, d_from=None, do_probe=False, today=None, fetch=default_fetch):
-    watch_start, published, pages = load_roster(roster_path)
+    watch_start, published, pages, questions = load_roster(roster_path)
     d_from = d_from or published
     src = read_sources(sources_dir, d_from)
-    daily, unlisted, denom = compute(src, pages, watch_start, published)
+    daily, unlisted, denom = compute(src, pages, questions, watch_start, published)
     roll = rolling(daily, pages, watch_start)
     os.makedirs(out_dir, exist_ok=True)
     write_csv(os.path.join(out_dir, 'segment_pages_daily.csv'), DAILY_COLS, daily)
@@ -300,12 +313,14 @@ def readout(out_dir, as_of=None):
         print('\n%s: %s calendar days, %s run days with data, %s answers with sources'
               % (label, sample['window_calendar_days'], sample['days_with_data'],
                  sample['perplexity_answers_with_sources']))
-        print('| page | kind | answers citing the page | url rows | answers citing the page data file |')
-        print('|---|---|---:|---:|---:|')
+        print('| page | kind | answers to its own question | answers citing the page | url rows | '
+              'answers citing the page data file |')
+        print('|---|---|---:|---:|---:|---:|')
         for (w, s), v in sel.items():
             if w == label:
-                print('| %s | %s | %s | %s | %s |' % (s, v['kind'], v['answers_citing_page'], v['url_rows'],
-                                                    v['answers_citing_data_json']))
+                print('| %s | %s | %s | %s | %s | %s |' % (s, v['kind'], v['own_question_answers'] or 'n/a',
+                                                        v['answers_citing_page'], v['url_rows'],
+                                                        v['answers_citing_data_json']))
         hit = [s for (w, s), v in sel.items() if w == label and int(v['answers_citing_page']) > 0]
         zero = [s for (w, s), v in sel.items() if w == label and int(v['answers_citing_page']) == 0]
         print('cited at least once: %d of %d pages (%s)' % (len(hit), len(hit) + len(zero), ', '.join(hit) or 'none'))
@@ -339,9 +354,14 @@ def selftest():
     check('classifier: subdomain, slash, query, case and .html match; data file separate; look-alikes and '
           'other hosts do not', all(classify(u, slugs) == want for u, want in cases))
 
+    mk = {'A': ('Atlanta GA', 'hvac'), 'B': ('Atlanta GA', 'hvac'), 'C': ('Elsewhere', 'other'),
+          'D': ('Kansas City MO', 'brokers')}
+    questions = {'atlanta-hvac': {('Atlanta GA', 'hvac')}, 'ai-name-record': set(),
+                 'kansas-city-health-insurance': {('Kansas City MO', 'brokers')}}
+
     def row(dt, cid, url, rank):
         return {'date': dt, 'engine': 'perplexity', 'field': 'sources_cited', 'check_id': cid, 'url': url,
-                'rank': str(rank), 'prompt_text': 'q'}
+                'rank': str(rank), 'prompt_text': 'q', 'market': mk[cid][0], 'niche': mk[cid][1]}
 
     src = collections.OrderedDict()
     src['2026-10-08'] = [row('2026-10-08', 'A', 'https://example.com/x', 1)]
@@ -353,7 +373,7 @@ def selftest():
                          row('2026-10-09', 'C', 'https://notnamebeam.ai/atlanta-hvac', 6)]
     src['2026-10-10'] = []
     src['2026-10-11'] = [row('2026-10-11', 'D', 'https://namebeam.ai/kansas-city-health-insurance', 2)]
-    daily, unlisted, denom = compute(src, pages, '2026-10-09', '2026-10-08')
+    daily, unlisted, denom = compute(src, pages, questions, '2026-10-09', '2026-10-08')
     d = {(r['date'], r['slug']): r for r in daily}
     a = d[('2026-10-09', 'atlanta-hvac')]
     check('one answer citing a page twice counts once, url rows 2, best rank 3',
@@ -362,6 +382,13 @@ def selftest():
           a['answers_citing_data_json'] == 1 and d[('2026-10-09', 'ai-name-record')]['answers_citing_page'] == 0)
     check('denominator is distinct answers with a source list (3 on 10-09)',
           denom['2026-10-09'] == 3 and a['perplexity_answers_with_sources'] == 3)
+    check('own-question denominator: 2 answers to the Atlanta question on 10-09, hub has none',
+          a['own_question_answers'] == 2 and a['own_question_status'] == 'ASKED'
+          and d[('2026-10-09', 'ai-name-record')]['own_question_status'] == 'NO-QUESTION')
+    check('a page whose question got no answer that day says QUESTION-NOT-ANSWERED, not a bare zero',
+          d[('2026-10-09', 'kansas-city-health-insurance')]['own_question_answers'] == 0
+          and d[('2026-10-09', 'kansas-city-health-insurance')]['own_question_status'] == 'QUESTION-NOT-ANSWERED'
+          and d[('2026-10-11', 'kansas-city-health-insurance')]['own_question_answers'] == 1)
     check('every page prints a row for every date, zeros kept (3 pages x 4 dates)', len(daily) == 12
           and d[('2026-10-09', 'kansas-city-health-insurance')]['answers_citing_page'] == 0)
     check('a day with no Perplexity sources is NO-PERPLEXITY-SOURCES, not a bare zero',
@@ -377,7 +404,8 @@ def selftest():
     k = r[('2026-10-11', 'since_watch', 'atlanta-hvac')]
     check('since_watch on 10-11: 3 calendar days, 2 days with data (10-10 excluded), 1 citing answer of 4',
           k['window_calendar_days'] == 3 and k['days_with_data'] == 2
-          and k['perplexity_answers_with_sources'] == 4 and k['answers_citing_page'] == 1)
+          and k['perplexity_answers_with_sources'] == 4 and k['answers_citing_page'] == 1
+          and k['own_question_answers'] == 2)
     check('7d window on 10-11 matches since_watch while the watch is under 7 days',
           r[('2026-10-11', '7d', 'atlanta-hvac')]['answers_citing_page'] == 1
           and r[('2026-10-11', '7d', 'atlanta-hvac')]['days_with_data'] == 2)
@@ -400,13 +428,15 @@ def selftest():
                                    lineterminator='\n')
                 w.writeheader()
                 for x in rows:
-                    w.writerow({'date': dt, 'engine': 'perplexity', 'run_channel': 'api', 'market': 'm',
-                                'niche': 'n', 'prompt_text': 'q', 'url': x['url'], 'domain': 'd',
+                    w.writerow({'date': dt, 'engine': 'perplexity', 'run_channel': 'api', 'market': x['market'],
+                                'niche': x['niche'], 'prompt_text': 'q', 'url': x['url'], 'domain': 'd',
                                 'field': 'sources_cited', 'check_id': x['check_id'], 'rank': x['rank']})
         rp = os.path.join(tmp, 'roster.json')
         with io.open(rp, 'w', encoding='utf-8') as fh:
             json.dump({'watch_start': '2026-10-09', 'published': '2026-10-08',
-                       'pages': [{'slug': s, 'kind': k_} for s, k_ in pages]}, fh)
+                       'pages': [{'slug': s, 'kind': k_,
+                                  'questions': [{'market': m_, 'niche': n_} for m_, n_ in sorted(questions[s])]}
+                                 for s, k_ in pages]}, fh)
         st = run(sdir, odir, rp)
         check('no customer_zero_daily.csv: cross-check skipped, run exits 0', st == 0)
         with io.open(os.path.join(odir, 'customer_zero_daily.csv'), 'w', encoding='utf-8', newline='') as fh:
@@ -445,7 +475,7 @@ def selftest():
             sys.stdout = old
         txt = buf.getvalue()
         check('readout prints every page including zeros and the denominator',
-              '| ai-name-record | hub | 0 | 0 | 0 |' in txt and 'answers with sources' in txt
+              '| ai-name-record | hub | n/a | 0 | 0 | 0 |' in txt and 'answers with sources' in txt
               and 'cited at least once: 2 of 3 pages' in txt)
     print('SELFTEST %s' % ('PASS' if ok else 'FAIL'))
     return 0 if ok else 1

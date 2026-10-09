@@ -1,35 +1,286 @@
 {
-  "_note": "Pages watched by scripts/segment_citations.py (loop S1b-1). Source of the 27 slugs: S2-2 return (2026-10-08), the verify list in status/returns/1008E-S2-2.md; the hub is the 28th row. kind: kc = the page cited since 2026-08-24; city = one of the 10 older city pages rebuilt 2026-10-08; segment = built 2026-10-08. Add a slug here when the site gains a page, or the unlisted-hits file will show the citation.",
+  "_note": "Pages watched by scripts/segment_citations.py (loop S1b-1). Source of the 27 slugs: S2-2 return (2026-10-08), the verify list in status/returns/1008E-S2-2.md; the hub is the 28th row. kind: kc = the page cited since 2026-08-24; city = one of the 10 older city pages rebuilt 2026-10-08; segment = built 2026-10-08. Add a slug here when the site gains a page, or the unlisted-hits file will show the citation. questions: the (market, niche) pair(s) of the prompt(s) each page prints verbatim ('Prompt:' line, read from the live page 2026-10-09 and matched to prompt_text in sources_2026-10-08.csv); the kc page is also asked a second KC question (self-employed). A page can only be cited on a day its question was asked, so own_question_answers is the denominator that matters per page. The hub has no question.",
   "watch_start": "2026-10-09",
   "published": "2026-10-08",
   "pages": [
-    {"slug": "kansas-city-health-insurance", "kind": "kc"},
-    {"slug": "atlanta-hvac", "kind": "city"},
-    {"slug": "houston-hvac", "kind": "city"},
-    {"slug": "phoenix-hvac", "kind": "city"},
-    {"slug": "atlanta-personal-injury", "kind": "city"},
-    {"slug": "chicago-personal-injury", "kind": "city"},
-    {"slug": "dallas-personal-injury", "kind": "city"},
-    {"slug": "houston-personal-injury", "kind": "city"},
-    {"slug": "dallas-roofing", "kind": "city"},
-    {"slug": "denver-roofing", "kind": "city"},
-    {"slug": "miami-roofing", "kind": "city"},
-    {"slug": "pleasanton-oil-change", "kind": "segment"},
-    {"slug": "pleasanton-real-estate-agents", "kind": "segment"},
-    {"slug": "pleasanton-dentists", "kind": "segment"},
-    {"slug": "pleasanton-home-care", "kind": "segment"},
-    {"slug": "pleasanton-moving-companies", "kind": "segment"},
-    {"slug": "pleasanton-tire-shops", "kind": "segment"},
-    {"slug": "pleasanton-tanning-salons", "kind": "segment"},
-    {"slug": "columbus-tanning-salons", "kind": "segment"},
-    {"slug": "tyler-tanning-salons", "kind": "segment"},
-    {"slug": "charlotte-tanning-salons", "kind": "segment"},
-    {"slug": "branson-short-term-rental", "kind": "segment"},
-    {"slug": "nashville-short-term-rental", "kind": "segment"},
-    {"slug": "santa-cruz-short-term-rental", "kind": "segment"},
-    {"slug": "us-short-term-rental-software", "kind": "segment"},
-    {"slug": "us-short-term-rental-business-model", "kind": "segment"},
-    {"slug": "us-short-term-rental-booking-platforms", "kind": "segment"},
-    {"slug": "ai-name-record", "kind": "hub"}
+    {
+      "slug": "kansas-city-health-insurance",
+      "kind": "kc",
+      "questions": [
+        {
+          "market": "Kansas City MO",
+          "niche": "health insurance brokerage"
+        },
+        {
+          "market": "Kansas City MO",
+          "niche": "health insurance brokers"
+        }
+      ]
+    },
+    {
+      "slug": "atlanta-hvac",
+      "kind": "city",
+      "questions": [
+        {
+          "market": "Atlanta GA",
+          "niche": "hvac repair and replacement"
+        }
+      ]
+    },
+    {
+      "slug": "houston-hvac",
+      "kind": "city",
+      "questions": [
+        {
+          "market": "Houston TX",
+          "niche": "hvac repair and replacement"
+        }
+      ]
+    },
+    {
+      "slug": "phoenix-hvac",
+      "kind": "city",
+      "questions": [
+        {
+          "market": "Phoenix AZ",
+          "niche": "hvac repair and replacement"
+        }
+      ]
+    },
+    {
+      "slug": "atlanta-personal-injury",
+      "kind": "city",
+      "questions": [
+        {
+          "market": "Atlanta GA",
+          "niche": "personal injury attorneys"
+        }
+      ]
+    },
+    {
+      "slug": "chicago-personal-injury",
+      "kind": "city",
+      "questions": [
+        {
+          "market": "Chicago IL",
+          "niche": "personal injury attorneys"
+        }
+      ]
+    },
+    {
+      "slug": "dallas-personal-injury",
+      "kind": "city",
+      "questions": [
+        {
+          "market": "Dallas TX",
+          "niche": "personal injury attorneys"
+        }
+      ]
+    },
+    {
+      "slug": "houston-personal-injury",
+      "kind": "city",
+      "questions": [
+        {
+          "market": "Houston TX",
+          "niche": "personal injury attorneys"
+        }
+      ]
+    },
+    {
+      "slug": "dallas-roofing",
+      "kind": "city",
+      "questions": [
+        {
+          "market": "Dallas TX",
+          "niche": "residential roofing"
+        }
+      ]
+    },
+    {
+      "slug": "denver-roofing",
+      "kind": "city",
+      "questions": [
+        {
+          "market": "Denver CO",
+          "niche": "residential roofing"
+        }
+      ]
+    },
+    {
+      "slug": "miami-roofing",
+      "kind": "city",
+      "questions": [
+        {
+          "market": "Miami FL",
+          "niche": "residential roofing"
+        }
+      ]
+    },
+    {
+      "slug": "pleasanton-oil-change",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "Pleasanton CA",
+          "niche": "oil change shops"
+        }
+      ]
+    },
+    {
+      "slug": "pleasanton-real-estate-agents",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "Pleasanton CA",
+          "niche": "real estate agents"
+        }
+      ]
+    },
+    {
+      "slug": "pleasanton-dentists",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "Pleasanton CA",
+          "niche": "dentists"
+        }
+      ]
+    },
+    {
+      "slug": "pleasanton-home-care",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "Pleasanton CA",
+          "niche": "home care agencies"
+        }
+      ]
+    },
+    {
+      "slug": "pleasanton-moving-companies",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "Pleasanton CA",
+          "niche": "moving companies"
+        }
+      ]
+    },
+    {
+      "slug": "pleasanton-tire-shops",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "Pleasanton CA",
+          "niche": "tire shops"
+        }
+      ]
+    },
+    {
+      "slug": "pleasanton-tanning-salons",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "Pleasanton CA",
+          "niche": "tanning salons"
+        }
+      ]
+    },
+    {
+      "slug": "columbus-tanning-salons",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "Columbus OH",
+          "niche": "tanning salons"
+        }
+      ]
+    },
+    {
+      "slug": "tyler-tanning-salons",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "Tyler TX",
+          "niche": "tanning salons"
+        }
+      ]
+    },
+    {
+      "slug": "charlotte-tanning-salons",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "Charlotte NC",
+          "niche": "tanning salons"
+        }
+      ]
+    },
+    {
+      "slug": "branson-short-term-rental",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "Branson MO",
+          "niche": "short-term rental / Airbnb"
+        }
+      ]
+    },
+    {
+      "slug": "nashville-short-term-rental",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "Nashville TN",
+          "niche": "short-term rental / Airbnb"
+        }
+      ]
+    },
+    {
+      "slug": "santa-cruz-short-term-rental",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "Santa Cruz County CA",
+          "niche": "short-term rental / Airbnb"
+        }
+      ]
+    },
+    {
+      "slug": "us-short-term-rental-software",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "US nationwide",
+          "niche": "short-term rental software"
+        }
+      ]
+    },
+    {
+      "slug": "us-short-term-rental-business-model",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "US nationwide",
+          "niche": "short-term rental business model"
+        }
+      ]
+    },
+    {
+      "slug": "us-short-term-rental-booking-platforms",
+      "kind": "segment",
+      "questions": [
+        {
+          "market": "US nationwide",
+          "niche": "short-term rental"
+        }
+      ]
+    },
+    {
+      "slug": "ai-name-record",
+      "kind": "hub",
+      "questions": []
+    }
   ]
 }
