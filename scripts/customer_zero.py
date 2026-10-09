@@ -323,9 +323,24 @@ def main(argv=None):
         return selftest()
     status, daily, hits, rolling = build(a.corpus, a.sources, a.out, a.extra_domain, a.archives)
     summarize(daily, hits)
+    seg = run_segment_watch(a.sources, a.out)
     if a.check_baseline:
-        return max(status, check_baseline(hits))
-    return status
+        return max(status, seg, check_baseline(hits))
+    return max(status, seg)
+
+
+def run_segment_watch(sources_dir, out_dir):
+    """Loop S1b-1: the segment-page citation watch is written beside this counter, in the
+    same step, so the workflow needs no new step. A failure is printed and returned as exit
+    code 3; it never stops the three files above from being written. The live page probe
+    runs only inside GitHub Actions (GITHUB_ACTIONS=true), never on a local rebuild."""
+    try:
+        import segment_citations as sc
+        return sc.run(sources_dir, out_dir, sc.DEFAULT_ROSTER,
+                      do_probe=os.environ.get('GITHUB_ACTIONS') == 'true')
+    except Exception as e:  # printed, never swallowed
+        print('SEGMENT-WATCH FAILED: %s: %s' % (type(e).__name__, e))
+        return 3
 
 
 if __name__ == '__main__':

@@ -48,3 +48,16 @@ The two Kansas City health insurance questions were asked of Perplexity on 64 da
 The build exits with an error if a day's sources file has a different row count from the raw files.
 
 Operated by Carter Enterprise LLC. Questions about the record: namebeam.ai.
+
+## Segment-page citation watch (added 2026-10-09, loop S1b-1)
+
+`scripts/segment_citations.py` runs in the same workflow step as `customer_zero.py` and writes beside it:
+
+- `segment_pages_daily.csv`: one row per run day and watched page (27 city and segment pages and the hub, list in `roster/segment_pages.json`), zeros kept. `perplexity_answers_with_sources` is the denominator (distinct Perplexity answers that returned a source list that day); `answers_citing_page` counts answers whose source list contains the page URL; `url_rows` counts URL rows; `best_rank` is the best position in a source list; `answers_citing_data_json` counts citations of `/data/e1/<slug>.json`, kept apart from the page count. `day_status` reads `NO-PERPLEXITY-SOURCES` when Perplexity returned no source rows that day (the zero is then "no data").
+- `segment_pages_rolling.csv`: for each watch-window date (from 2026-10-09), the last 7 calendar days and everything since the watch started, with `days_with_data` so a missing run day is visible.
+- `segment_pages_unlisted_hits.csv`: cited namebeam.ai URLs that are not on the roster. Empty means the roster missed nothing.
+- `segment_pages_probe.csv`: one row per day and page from a live GET inside GitHub Actions (HTTP status, bytes, a 16-character body hash). It is appended by date and is the only file here that cannot be rebuilt from the sources files.
+
+Match rule: host is namebeam.ai or a subdomain of it, path lower-cased with a trailing slash and `.html` removed equals `/<slug>`. Look-alike hosts and other owners do not match. The denominator is cross-checked against `customer_zero_daily.csv`; a difference prints `DENOM-MISMATCH` and exits 2.
+
+Verify: `python3 -I scripts/segment_citations.py --selftest` (SELFTEST PASS, includes a planted-error proof), `python3 -I scripts/segment_citations.py --readout` prints the current table.
