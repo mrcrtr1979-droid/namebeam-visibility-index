@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_real_estate_agents_st_charles_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: real estate agents, St. Charles",
+ "niche": "real estate agents",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Charles MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ec46629f-e238-4754-88ac-114f63f797f4",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00058,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00402
+   },
+   "input_tokens": 2870,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2319,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 320,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3190
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jeremy Schneider’s team at SCHNEIDER Real Estate",
+  "Leslie Tinsley"
+ ],
+ "engine_stated_criteria": [
+  "seller-side sales near your home"
+ ],
+ "sources_cited": [
+  "https://www.homelight.com/st-charles-mo/top-real-estate-agents",
+  "https://www.effectiveagents.com/mo/saint-charles",
+  "https://agentpronto.com/missouri/st-charles",
+  "https://www.zillow.com/profile/JeremySchneiderRE",
+  "https://www.homelight.com/agents/lucia-roberts-mo-00050928",
+  "https://www.homelight.com/agents/stephanie-parson-mo-1999014362",
+  "https://www.homes.com/real-estate-agents/saint-charles-mo/",
+  "https://www.homelight.com/st-charles-county-mo/top-real-estate-agents",
+  "https://www.zillow.com/profile/Gary%20Williams02",
+  "https://bhhsselectstl.com/view-agents/agents/leslie-tinsley",
+  "https://www.homes.com/real-estate-agents/stephanie-parson/rbqfsv0/",
+  "https://www.zillow.com/profile/mia%20allen",
+  "https://www.linkedin.com/in/loridillick",
+  "https://www.realtor.com/realestateagents/56cf77bb0fa417010077ff83",
+  "https://www.linkedin.com/in/granthickman"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent—the right choice depends on your home, neighborhood, and priorities. Based on the available results, **Jeremy Schneider’s team at SCHNEIDER Real Estate** is one candidate to interview: its Zillow profile shows a **5.0 rating across 464 team reviews** and a St. Charles office. Keep in mind those reviews cover the whole team and include buyers as well as sellers, so they don’t by themselves establish who will best sell your home.\n\nI’d interview two or three listing agents and ask each for:\n- Recent **seller-side sales near your home**, with sale price and days on market\n- A suggested list price and the comparable sales behind it\n- Their marketing plan and who will handle showings and negotiations\n- Commission, contract length, and cancellation terms\n\nYou could also compare Jeremy’s team with a local agent such as **Leslie Tinsley**, whose brokerage profile includes a seller testimonial describing multiple offers and a quick contract. Treat testimonials as anecdotes, not guarantees. The best pick is the agent who can show relevant recent sales and clearly explain a pricing and marketing plan for your specific property.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

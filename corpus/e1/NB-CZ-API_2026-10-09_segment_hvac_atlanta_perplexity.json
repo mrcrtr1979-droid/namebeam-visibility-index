@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_hvac_atlanta_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4ac84e58-ad56-41ff-9d68-b432bf8d9192",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00077,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00067,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00408
+   },
+   "input_tokens": 3619,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3071,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 269,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3888
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PV Heating, Cooling & Plumbing",
+  "Bell Mechanical"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/ga/atlanta/profile/heating-and-air-conditioning/bell-mechanical-llc-0443-5001518/addressId/21418",
+  "https://serviceagent.ai/directory/georgia/atlanta/hvac/replacement/",
+  "https://www.pvhvac.com/",
+  "https://www.consumeraffairs.com/homeowners/hvac-repair-atlanta.html",
+  "https://cityvetted.com/best/best-hvac-atlanta",
+  "https://www.bbb.org/us/ga/atlanta/category/heating-and-air-conditioning",
+  "https://www.bbb.org/us/ga/atlanta/profile/heating-and-air-conditioning/pv-heating-air-0443-27283921",
+  "https://www.bbb.org/us/ga/atlanta/profile/commercial-air-conditioning-contractors/indoor-experts-llc-0443-27701950",
+  "https://www.yelp.com/biz/the-air-company-atlanta-atlanta-2",
+  "https://www.bbb.org/us/ga/atlanta/profile/heating-and-air-conditioning/atlanta-heating-air-conditioning-0443-27492035",
+  "https://www.bbb.org/us/ga/atlanta/profile/heating-and-air-conditioning/bell-mechanical-llc-0443-5001518",
+  "https://www.bbb.org/us/ga/atlanta/profile/home-services/cunningham-associates-heating-and-air-conditioning-0443-27086304",
+  "https://www.zackhammonds.com/about-us/affiliations",
+  "https://www.homedepot.com/services/l/ga/atlanta/heating-air-conditioning-repair/673dcc2c8",
+  "https://www.bbb.org/us/ga/atlanta/profile/heating-and-air-conditioning/rutledge-maintenance-services-llc-0443-28144396/addressId/213427"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company for every Atlanta home, but **PV Heating, Cooling & Plumbing** looks like a reasonable first company to get a quote from: its site describes detailed home evaluations, and its BBB profile lists an A+ rating. **Bell Mechanical** is another local option; BBB lists it as accredited and says it handles cooling-system replacements.\n\nBefore choosing, get **at least three written estimates** and compare more than the equipment price. Ask each company to:\n\n- Verify its active Georgia conditioned-air contractor license and insurance.\n- Size the system based on a load calculation—not just the old unit’s size.\n- Itemize equipment, labor, permits, ductwork changes, and warranty terms.\n- Explain efficiency options and any rebates without pressuring you to decide immediately.\n\nReviews and ratings are useful starting points, not guarantees. The right choice also depends on your neighborhood, the condition of your ducts, and the specific installation proposal.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

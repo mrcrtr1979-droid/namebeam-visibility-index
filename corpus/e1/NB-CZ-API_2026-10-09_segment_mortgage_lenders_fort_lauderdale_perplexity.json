@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_mortgage_lenders_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: mortgage lenders, Fort Lauderdale",
+ "niche": "mortgage lenders",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Fort Lauderdale FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_2e8cec46-911c-4010-b1c6-e696ef076d92",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00435
+   },
+   "input_tokens": 4539,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3989,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 282,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4821
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Loan Estimate"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bankrate.com/mortgages/mortgage-rates/florida/",
+  "https://local.yahoo.com/info-210800712-fairway-independent-mortgage-fort-lauderdale/",
+  "https://www.nerdwallet.com/mortgages/mortgage-rates/florida",
+  "https://tomo.com/mortgage/interest-rates-today/fl",
+  "https://homelendingadvisor.chase.com/fl/fort-lauderdale",
+  "https://tomo.com/mortgage/interest-rates-today/30-year-fixed/fl",
+  "https://tomo.com/mortgage/interest-rates-today/bank-credit-union/fl",
+  "https://plcorp.net/",
+  "https://www.yelp.com/biz/alex-doce-the-doce-group-fort-lauderdale-4?hrid=sZB4RXujwCpp7_v82frrug",
+  "https://www.experience.com/reviews/stephen-12621747",
+  "https://www.experience.com/reviews/josh-blum-160366",
+  "https://www.floridastatemortgagegroup.com/",
+  "https://www.seacoastbank.com/personal/lending/mortgages/mortgage-rates",
+  "https://www.floridastatemortgagegroup.com/category/home-buying-tips/",
+  "https://www.expertise.com/home-improvement/mortgage-brokers-lenders/florida/fort-lauderdale"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and the property. **For a Fort Lauderdale purchase, I’d start by getting quotes from a local mortgage broker such as Florida State Mortgage Group or Premier Lending Corp, and compare them with a bank or credit union you already use.** Local brokers may be able to shop multiple loan programs, but reviews alone don’t establish that they’ll offer the best deal for you.\n\nAsk each lender for a written **Loan Estimate** based on the same purchase price, down payment, loan type, and rate-lock period. Compare the **APR, lender fees, discount points, cash to close, and closing timeline**—not just the advertised rate. The CFPB recommends comparing multiple Loan Estimates.\n\nIf you share your approximate price range, down payment, credit-score range, and whether you’re considering conventional, FHA, or VA financing, I can help narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

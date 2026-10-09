@@ -1,0 +1,117 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-10-09_segment_short_term_rental_nashville",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "row_type": "agreement",
+ "prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "SoBro",
+    "Luxe SoBro",
+    "Stay Nashville",
+    "East Nashville",
+    "Airbnb",
+    "Airbnb Nashville"
+   ],
+   "verbose_names": [
+    "Germantown",
+    "Green Hills",
+    "Hillsboro Village",
+    "Franklin",
+    "The Gulch",
+    "Country Music Hall of Fame",
+    "Airbnb",
+    "East Nash",
+    "CMA Fest"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 6,
+   "verbose_entity_count": 9,
+   "containment_pct": 33.3,
+   "shared_count": 2,
+   "answer_chars_a": 1319,
+   "answer_chars_b": 3591,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "East Nashville",
+    "Green Hills",
+    "Search Tips",
+    "Budget Reality"
+   ],
+   "verbose_names": [
+    "SoBro",
+    "Luxe SoBro",
+    "Stay Nashville",
+    "East Nashville",
+    "Airbnb",
+    "Airbnb Nashville"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 6,
+   "containment_pct": 25.0,
+   "shared_count": 1,
+   "answer_chars_a": 1319,
+   "answer_chars_b": 1214,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "East Nashville",
+    "Green Hills",
+    "Search Tips",
+    "Budget Reality"
+   ],
+   "verbose_names": [
+    "Germantown",
+    "Green Hills",
+    "Hillsboro Village",
+    "Franklin",
+    "The Gulch",
+    "Country Music Hall of Fame",
+    "Airbnb",
+    "East Nash",
+    "CMA Fest"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 9,
+   "containment_pct": 25.0,
+   "shared_count": 1,
+   "answer_chars_a": 3591,
+   "answer_chars_b": 1214,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

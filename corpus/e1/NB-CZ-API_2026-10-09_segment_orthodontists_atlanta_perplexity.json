@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_bbeaf297-0aa7-4145-a64f-05462699f4d8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00097,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00465
+   },
+   "input_tokens": 4705,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4158,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 389,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5094
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "West Paces Ferry Orthodontics",
+  "Harris Orthodontics",
+  "Atlanta Orthodontic Specialists"
+ ],
+ "engine_stated_criteria": [
+  "A strong starting point is Buckhead Orthodontics"
+ ],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-india-l-collier/",
+  "https://harrisorthodonticsatl.com/",
+  "https://www.docspot.com/d/ga/atlanta/orthodontists",
+  "https://aaoinfo.org/locator/",
+  "https://www.westpacesferryortho.com/",
+  "https://drwrightortho.com/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/buckhead-orthodontics-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/willow-orthodontics-atlanta-madison-yards-atlanta-ga",
+  "https://aaoinfo.org/locator/dr-douglas-depew-3/",
+  "https://drwrightortho.com/orthodontist-in-tucker-ga/",
+  "https://drwrightortho.com/location/orthodontist-in-marietta-ga/",
+  "https://www.atlantamagazine.com/health/marc-s-wright-dds/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/atlanta-orthodontic-specialists-3580-piedmont-rd-ne",
+  "https://www.buckheadorthodontics.com/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta/orthodontists"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—location, case complexity, budget, and whether you prefer braces or Invisalign all matter. **A strong starting point is Buckhead Orthodontics**: its practice lists ABO board certification and offers both braces and clear aligners. It’s at **2385 Peachtree Rd**; **(404) 697-7497**. [Practice details](https://www.buckheadorthodontics.com/)\n\nOther options to compare:\n- **West Paces Ferry Orthodontics** — board-certified orthodontists and Invisalign; **1218 West Paces Ferry Rd NW**. [Website](https://www.westpacesferryortho.com/)\n- **Harris Orthodontics** — Dr. Peyton Harris is listed as board-certified and offers braces and Invisalign; **800 Marietta St NW**. [Website](https://harrisorthodonticsatl.com/)\n- **Atlanta Orthodontic Specialists** — offers braces, Invisalign, and surgical orthodontics; **3580 Piedmont Rd NE**. [Website](https://www.atlantaorthodonticspecialists.com/)\n\nI’d book two consultations and ask each orthodontist to explain which treatment they recommend for your bite, the total cost and likely duration, and what follow-up or retainer care is included. Check that the treating clinician—not just the practice—is an orthodontist, and verify credentials through the [AAO locator](https://aaoinfo.org/locator/).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

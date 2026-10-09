@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_cb4194e8-ab55-49df-89a0-9dee93111ac2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00081,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00136,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00481
+   },
+   "input_tokens": 3781,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3225,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 542,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4323
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Short answer",
+  "Hotel Grand Victorian",
+  "Lodge of the Ozarks",
+  "Indian Point",
+  "Still Waters Resort"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/branson-mo/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays",
+  "https://www.expedia.com/Branson-Hotels-Family-Hotel.0-0-d6058734-tFamilyHotel.Travel-Guide-Filter-Hotels",
+  "https://www.hotels.com/de1412461/hotels-branson-west-missouri/",
+  "https://www.airbnb.com/branson-mo/stays/resorts",
+  "https://www.airbnb.com/silver-dollar-city-branson-mo/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays/lakehouses",
+  "https://www.expedia.com/Silver-Dollar-City-Hotels.0-l6064111-0.Travel-Guide-Filter-Hotels",
+  "https://www.travelocity.com/Branson-Hotels-Family-Hotel.0-0-d6058734-tFamilyHotel.Travel-Guide-Filter-Hotels",
+  "https://www.airbnb.com/missouri-united-states/stays/cabins",
+  "https://www.airbnb.com/1652-indian-point-rd-mo/stays/cabins",
+  "https://www.hotels.com/de1435659/hotels-blue-eye-missouri/",
+  "https://www.airbnb.com/branson-west-mo/stays/cabins",
+  "https://www.hotels.com/nh1663107/hotels-in-downtown-branson-branson-missouri/",
+  "https://www.hotels.com/de10517440/hotels-clever-missouri/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Short answer:** Choose a **hotel** for a short trip focused on shows and attractions; choose an **Airbnb or condo** for a larger group, a longer stay, or a lake-and-cabin getaway. Branson is spread out, so pick your base around what you’ll do most.\n\n### Best areas and specific stays\n\n- **Highway 76 (“the Strip”) — best for shows, restaurants, and first-time visitors.**  \n  **Hotel Grand Victorian** is a solid central pick, with breakfast and easy access to the Strip. **Lodge of the Ozarks** is another good option, with an indoor pool and breakfast; it’s a short walk from the Strip.\n\n- **Silver Dollar City / Indian Point — best for the theme park and a quieter setting.**  \n  Look for a cabin or condo around **Indian Point**. Airbnb listings there include lakefront cabins and properties with hot tubs; check the exact address and drive time to the park, since “near Branson” can still mean a drive.\n\n- **Table Rock Lake — best for scenery, swimming, and a resort-style stay.**  \n  **Still Waters Resort** is a hotel-style option with lake access and seasonal pool amenities. For a rental, search for a lakefront cabin or condo and confirm whether it has direct water access, a dock, or just a view.\n\n- **A little more space, with hotel-like amenities — best for families.**  \n  **Hyatt Vacation Club at The Lodges at Timber Ridge** offers apartment-style accommodations, including kitchens and laundry in some units.\n\n### My practical recommendation\n\nFor a **2–3 night sightseeing trip**, I’d book **Lodge of the Ozarks** or **Hotel Grand Victorian**. For a **family or group staying several nights**, I’d compare a condo or cabin’s total price—including cleaning and service fees—against a hotel suite. Choose a lake-area rental only if lake time is part of the plan; it may be less convenient for nightly shows.\n\nBefore booking, check recent reviews, cancellation terms, parking, pool season, and the full rental fees. Airbnb ratings and amenities vary by individual listing, so verify the specific property rather than relying on the category page.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

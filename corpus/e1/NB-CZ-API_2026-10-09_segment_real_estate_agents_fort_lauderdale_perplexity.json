@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_real_estate_agents_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: real estate agents, Fort Lauderdale",
+ "niche": "real estate agents",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Fort Lauderdale FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f2439774-00d2-45d2-89a8-86e7ae37ca3f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00119,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00084,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00467
+   },
+   "input_tokens": 5306,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4756,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 334,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5640
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Desare Kohn-Laski of Skye Louis Realty",
+  "Peter Barkin of the Barkin Group"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/fort-lauderdale-fl/",
+  "https://www.homelight.com/fort-lauderdale-fl/top-real-estate-agents",
+  "https://www.effectiveagents.com/fl/fort-lauderdale",
+  "https://www.zillow.com/profile/HowardGoldbergSells",
+  "https://www.ratemyagent.com/real-estate-profile/sales/florida/fort-lauderdale-fl",
+  "https://www.redfin.com/city/6173/FL/Fort-Lauderdale/real-estate/agents",
+  "https://www.homelight.com/agents/keith-webster-fl-00649432",
+  "https://www.ratemyagent.com/real-estate-profile/sales/florida/fort-lauderdale-fl/agents",
+  "https://www.homes.com/real-estate-agents/james-neipris/52kv0hp/",
+  "https://www.zillow.com/profile/StephaniePinder",
+  "https://www.ratemyagent.com/real-estate-agent/laurie-richter-spector-jd-mba-b0mbn2/sales/overview",
+  "https://www.realtor.com/realestateagents/56b08a020fa41701007462fd",
+  "https://www.zillow.com/profile/LoganCrewss",
+  "https://www.homelight.com/agents/charles-schneider-fl-00613287",
+  "https://www.homes.com/real-estate-agents/peter-barkin/tmfkbjc/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” agent—the right choice depends on your home’s neighborhood, price range, and property type. Based on the available rankings and sales information, **Desare Kohn-Laski of Skye Louis Realty** is a strong first agent to interview: one ranking places her at the top for Fort Lauderdale based on verified transaction data, and reports 3,908 closed transactions overall. **Peter Barkin of the Barkin Group** is another candidate, particularly for higher-priced homes; the available profile reports 43 seller-side transactions in the past year, with listings ranging from $200,000 to $7.3 million.\n\nBefore choosing, interview two or three agents who have recently sold homes like yours nearby. Ask each for a comparable-sales-based pricing plan, examples of recent listings they personally handled, their marketing and communication plan, and their proposed commission and contract terms. A high overall sales count alone doesn’t show who will be the best fit for your specific property. ([EffectiveAgents](https://www.effectiveagents.com/fl/fort-lauderdale); [Homes.com](https://www.homes.com/real-estate-agents/peter-barkin/tmfkbjc/))",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

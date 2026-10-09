@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_homecare_agencies_pleasanton_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: homecare agencies, Pleasanton",
+ "niche": "home care agencies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best home care agency in Pleasanton CA for an elderly parent?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_656ae63f-2d70-45bb-86e2-c53b60c4cc92",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00092,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00086,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00442
+   },
+   "input_tokens": 4249,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3699,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 343,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4592
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Always Best Care of Pleasanton",
+  "All Seasons Homecare"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://locations.seniorshelpingseniors.com/ca/pleasanton/care-services-250.html",
+  "https://www.caring.com/senior-care/california/pleasanton/all-seasons-homecare-94566",
+  "https://www.caring.com/senior-care/in-home-care/california/fremont",
+  "https://www.caring.com/senior-care/in-home-care/california/castro-valley",
+  "https://hillendalehomecare.com/areas-served/alameda-county/pleasanton",
+  "https://www.caring.com/senior-care/in-home-care/california/pleasanton",
+  "https://www.comforcare.com/california/trivalley/about-us/areas-served/pleasanton/",
+  "https://www.care.com/home-care-agencies/pleasanton-ca",
+  "https://carings.com/",
+  "https://www.caring.com/senior-care/in-home-care/california/mountain-house",
+  "https://www.aplaceformom.com/home-care/california/pleasanton",
+  "https://www.seniorhelpers.com/ca/pleasanton/",
+  "https://www.seniorhelpers.com/ca/pleasanton/locations/pleasanton/",
+  "https://www.cityofpleasantonca.gov/our-government/housing/housing-resources/",
+  "https://www.care.com/home-care-agencies/livermore-ca"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency—the right fit depends on your parent’s needs, schedule, and budget. **I’d start by interviewing Senior Helpers Pleasanton and Right at Home Pleasanton**, then compare them with **Always Best Care of Pleasanton**. They’re local options listed as serving Pleasanton; Senior Helpers’ local listing gives license **414700072** and phone **925-392-7643**. **All Seasons Homecare** is another option, though the review information I found is limited.\n\nBefore choosing, ask each agency:\n\n- Are you currently licensed as a California Home Care Organization, and can you provide your license number?\n- Are caregivers employees or contractors? Who handles background checks, training, insurance, and backup coverage?\n- Can you match caregivers to your parent’s language, personality, mobility, or dementia-care needs?\n- What are the hourly minimums, rates, cancellation rules, and overnight or 24-hour options?\n- How do you supervise care and keep the family informed?\n\nArrange a consultation and, if possible, a trial shift. Also clarify whether your parent needs **nonmedical help**—such as bathing, meals, companionship, or transportation—or **skilled nursing**; home-care aides generally don’t replace licensed medical care.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

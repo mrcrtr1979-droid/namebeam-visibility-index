@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_needle_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "Needle",
+ "niche": "AI marketing tool for DTC brands",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best AI marketing tool for DTC brands?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d7eca3dd-b335-4004-9dfb-626015b55d06",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00076,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00064,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00404
+   },
+   "input_tokens": 3592,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3046,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 257,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3849
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Email, SMS, and customer retention",
+  "Generating lots of paid-ad variations",
+  "Quick product-page copy inside Shopify",
+  "Klaviyo"
+ ],
+ "engine_stated_criteria": [
+  "For most DTC brands, Klaviyo is the best all-around AI marketing tool"
+ ],
+ "sources_cited": [
+  "https://www.klaviyo.com/blog/best-ai-tools-for-marketing",
+  "https://www.klaviyo.com/enterprise/marketing-automation",
+  "https://toolradar.com/guides/best-ai-ad-creative-tools",
+  "https://www.shopify.com/blog/ai-marketing-tools",
+  "https://dtcskills.com/blog/best-ai-marketing-tools-dtc",
+  "https://www.shopify.com/blog/what-is-klaviyo",
+  "https://benly.ai/learn/ai-marketing/best-ad-tools-for-dtc-brands-2026",
+  "https://adlibrary.com/posts/ai-marketing-tools-for-ecommerce",
+  "https://www.hellyeahai.com/blog/best-ai-video-ads-tools-dtc",
+  "https://www.adstellar.ai/blog/ai-marketing-platform-for-ecommerce",
+  "https://www.ayautomate.com/blog/best-ai-marketing-automation-tools",
+  "https://www.adstellar.ai/blog/facebook-ad-creative-tools-review",
+  "https://www.openpr.com/news/4586542/best-ai-campaign-planning-tools-for-dtc-brands-in-2026-marklo",
+  "https://madgicx.com/blog/top-rated-ai-advertising-platforms",
+  "https://www.klaviyo.com/solutions/ai/autonomous-marketing-ecommerce"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**For most DTC brands, Klaviyo is the best all-around AI marketing tool**—especially if you sell through Shopify and want to improve email and SMS marketing. It uses customer behavior and purchase data to personalize campaigns, segment audiences, and automate flows such as abandoned-cart and post-purchase messages. It also integrates with ecommerce platforms beyond Shopify.\n\nBut “best” depends on the job:\n\n- **Email, SMS, and customer retention:** Klaviyo  \n- **Generating lots of paid-ad variations:** AdCreative.ai  \n- **Quick product-page copy inside Shopify:** Shopify Magic  \n\nIf you’re choosing one tool to start with, I’d pick **Klaviyo** for lifecycle marketing. If paid ads are your main bottleneck, evaluate a creative tool separately; ad-creative generators don’t replace a full marketing platform.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

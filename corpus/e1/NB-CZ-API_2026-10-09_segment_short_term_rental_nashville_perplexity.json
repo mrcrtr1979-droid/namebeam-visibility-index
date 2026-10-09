@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_short_term_rental_nashville_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1de0b72d-e636-4dcf-b7b6-bf6f67c6c2f1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00096,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00472
+   },
+   "input_tokens": 5036,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4483,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 384,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5420
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Luxe SoBro"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.nashville.gov/departments/codes/short-term-rentals/operation-rules-and-requirements",
+  "https://www.nashville.gov/departments/codes/short-term-rentals",
+  "https://www.nashville.gov/departments/codes/short-term-rentals/permit-types",
+  "https://www.nashville.gov/departments/codes/short-term-rentals/frequently-asked-questions",
+  "https://www.nashville.gov/departments/codes/short-term-rentals/legislative-history",
+  "https://www.nashville.gov/departments/codes/short-term-rentals/apply-short-term-rental-property-permit",
+  "https://avantstay.com/str-management/nashville/rules",
+  "https://www.timeout.com/nashville/travel/the-best-airbnbs-in-nashville",
+  "https://www.airbnb.com/nashville-tn/stays/apartments",
+  "https://www.airbnb.com/nashville-tn/stays/bed-and-breakfast",
+  "https://www.nashville.gov/departments/county-clerk/business-services/short-term-rental-property-business-license",
+  "https://www.staynashville.co/",
+  "https://www.bnbcalc.com/blog/short-term-rental-regulation/nashville-tennessee-guide",
+  "https://www.airbnb.com/nashville-tn/stays/guesthouses",
+  "https://www.airbnb.com/nashville-tn/stays"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a family of four, I’d start with a **two-bedroom, two-bath rental in SoBro or downtown**: you’ll have separate sleeping space, a kitchen, and easy access to attractions. One concrete lead is **Luxe SoBro**, listed by Stay Nashville as sleeping four with two beds and one bath—though I’d compare it with two-bath options for a more comfortable family stay. [Stay Nashville](https://www.staynashville.co/)\n\nIf you’d rather have a quieter, more residential feel, look around **12 South, East Nashville, or Germantown**. Prioritize a full kitchen, laundry, parking, and recent reviews that mention families and noise. Airbnb’s Nashville listings include two-bedroom options, but the best fit depends heavily on your dates and budget. [Airbnb Nashville stays](https://www.airbnb.com/nashville-tn/stays)\n\nI can’t verify live availability or current prices here, so treat those as starting points rather than confirmed recommendations. Before booking, check the total price and cancellation terms, and confirm the listing has a valid Nashville short-term-rental permit; the city requires permits for short-term rentals. [Nashville permit information](https://www.nashville.gov/departments/codes/short-term-rentals)\n\nShare your dates, budget per night, and whether you’ll have a car, and I can narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

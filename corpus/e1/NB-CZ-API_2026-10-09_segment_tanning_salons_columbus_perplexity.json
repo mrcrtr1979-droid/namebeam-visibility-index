@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_tanning_salons_columbus_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: tanning salons, Columbus",
+ "niche": "tanning salons",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Columbus OH?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1a9ceada-154a-4893-94cd-edc8ad50cf3e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00063,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00047,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00374
+   },
+   "input_tokens": 3058,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2514,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 187,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3245
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sweetly Bronzed",
+  "Tan Wolf",
+  "UV tanning",
+  "Palm Beach Tan"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.yelp.com/biz/tan-wolf-columbus",
+  "https://www.yelp.com/biz/sweetly-bronzed-columbus",
+  "https://www.yelp.com/biz/teez-columbus",
+  "https://trustanalytica.org/us/oh/columbus/best-tanning-salons",
+  "https://www.yelp.com/biz/the-wash-and-tan-columbus",
+  "https://www.bbb.org/us/oh/columbus/category/spray-tanning-salon",
+  "https://reviews.birdeye.com/dolphin-beach-tan-148341609465292",
+  "https://www.yelp.com/biz/glow-airbrush-tanning-gahanna",
+  "https://www.fresha.com/a/sun-studio-tan-columbus-612-north-high-street-e0lijgjd",
+  "https://palmbeachtan.com/locations/oh/columbus-graceland-boulevard",
+  "https://www.bestprosintown.com/oh/columbus/allvera-body-wrap-and-wellness-spa-/",
+  "https://www.vagaro.com/sweetlybronzed",
+  "https://palmbeachtan.com/locations/oh/columbus-olentangy-river-road",
+  "https://trustanalytica.org/us/oh/columbus/best-beauty-salons",
+  "https://palmbeachtan.com/locations/oh/arlington-pointe"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "If you mean a **spray tan**, **Sweetly Bronzed** looks like a strong pick: reviewers praise the welcoming service and natural-looking results. **Tan Wolf** is another well-reviewed option, with customers highlighting consistent results from its technicians.\n\nIf you want **UV tanning**, consider **Palm Beach Tan**—its Columbus locations publish ratings and session options, though ratings vary by branch.\n\n“Best” depends on your neighborhood and whether you want spray or UV tanning. For spray tans, I’d start by checking availability and recent reviews at Sweetly Bronzed or Tan Wolf.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

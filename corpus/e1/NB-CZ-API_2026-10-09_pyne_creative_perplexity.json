@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_pyne_creative_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "PYNE Creative",
+ "niche": "marketing and brand strategy consultancy",
+ "market": "Maryland",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best marketing agency in Maryland?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c4013d70-674e-4e8f-b3b3-4aa57ada48b1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00054,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00055,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00373
+   },
+   "input_tokens": 2713,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2170,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 220,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2933
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "GKV",
+  "Dragonfly Digital Marketing",
+  "Marketbridge"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://themanifest.com/inbound-marketing/agencies/baltimore",
+  "https://clutch.co/agencies/digital-marketing/maryland?page",
+  "https://themanifest.com/marketing-strategy/agencies/baltimore",
+  "https://clutch.co/agencies/maryland",
+  "https://thriveagency.com/baltimore-digital-marketing-agency/",
+  "https://themanifest.com/advertising/agencies/maryland",
+  "https://themanifest.com/digital-marketing/agencies/maryland",
+  "https://www.sortlist.com/s/media-planning/maryland-md-us",
+  "https://www.designrush.com/agency/content-marketing/maryland",
+  "https://www.designrush.com/agency/ad-agencies/maryland",
+  "https://clutch.co/agencies/digital-marketing/maryland?page=6",
+  "https://www.sortlist.com/s/digital-advertising/maryland-md-us",
+  "https://mghus.com/",
+  "https://clutch.co/agencies/baltimore",
+  "https://www.designrush.com/agency/digital-marketing/maryland"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” marketing agency in Maryland—it depends on your goals, budget, and industry.\n\nIf you want a **full-service agency for a large campaign**, **GKV** in Baltimore is one established option; a directory listing shows a substantial team and a higher minimum project budget. For **SEO, paid ads, or other digital work**, agencies such as **Dragonfly Digital Marketing** and **Marketbridge** also appear in Maryland agency rankings.\n\nBefore choosing, compare agencies’ experience with businesses like yours, recent case studies, who will work on your account, and how they measure results. If you share your location, industry, and budget, I can narrow the options down.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

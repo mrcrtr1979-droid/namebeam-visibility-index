@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_oil_change_pleasanton_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6b9f4c90-ee0a-4db4-be77-ce8f669f5d49",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00089,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00056,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00409
+   },
+   "input_tokens": 4121,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3572,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 223,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4344
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "SpeeDee Oil Change & Auto Service",
+  "Old Town Auto Care"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://locations.thetirechoice.com/ca/pleasanton/4216-rosewood-rd",
+  "https://www.carfax.com/Auto-Repair-Pleasanton-CA_c12173",
+  "https://www.speedeeoil.com/locations/ca/pleasanton/44-mission-dr/",
+  "https://www.carfax.com/Auto-Repair-Livermore-CA_c23539",
+  "https://www.speedeeoil.com/locations/ca/pleasanton/",
+  "https://www.carfax.com/Auto-Repair-Dublin-CA_c27270_p3",
+  "https://www.diamondcertified.org/category/auto-oil-change/ca/pleasanton/",
+  "https://www.carfax.com/Reviews-Walmart-Auto-Care-Center-Pleasanton-CA_NMXGCLXADQ",
+  "https://www.eastbaymini.com/service/mini-oil-change.htm",
+  "https://www.bbb.org/us/ca/pleasanton/profile/lube-service/oil-changers-1116-13682",
+  "https://www.surecritic.com/reviews/old-town-auto-care",
+  "https://www.lexusofpleasanton.com/service/center.htm",
+  "https://oldtownautocare.com/",
+  "https://www.yelp.com/biz/speedee-oil-change-and-auto-service-pleasanton",
+  "https://www.carfax.com/Reviews-SpeeDee-Oil-Change-and-Auto-Service-Pleasanton-CA_4WKZDJO001"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**SpeeDee Oil Change & Auto Service** at **44 Mission Dr, Pleasanton, CA 94566** looks like a strong choice for a straightforward oil change. It specializes in quick oil changes, and CARFAX shows **4.9/5 from 125 verified reviews** (though ratings vary by site). Call **(925) 426-9669** to confirm hours, price, and availability before you go.\n\nIf you’d rather use a general repair shop, **Old Town Auto Care** at **57 California Ave., Suite O** also handles oil changes and maintenance; it’s a local independent shop with a **4.7/5 rating from 88 reviews** on SureCritic.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

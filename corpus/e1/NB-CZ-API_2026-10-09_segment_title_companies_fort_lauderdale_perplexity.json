@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_title_companies_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: title companies, Fort Lauderdale",
+ "niche": "title companies",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Fort Lauderdale FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_090ccef5-6d9d-4204-9aeb-43d84ea982fd",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00074,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00074,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00412
+   },
+   "input_tokens": 3524,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2976,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 294,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3818
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Palm Title Partners",
+  "Independent Title of Fort Lauderdale",
+  "Heritage Title Insurance Agency"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://palmtitle.com/services/lenders/",
+  "https://palmtitle.com/services/consumers/",
+  "https://www.indytitleftl.com/",
+  "https://www.heritagetitleins.com/",
+  "https://palmtitle.com/",
+  "https://www.olympiatitle.org/",
+  "https://summerlandtitle.com/",
+  "https://www.bhhsfloridarealty.com/fort-lauderdale/jose-soares/cid-3077312/our-services",
+  "https://reviews.birdeye.com/ycm-law-title-169712013216747",
+  "https://coretitle.com/fort-lauderdale/",
+  "http://completeclosingsolutions.com/",
+  "https://www.yelp.com/biz/title-partners-of-south-florida-fort-lauderdale-3",
+  "https://1sttrusttitle.com/resources/faqs/",
+  "https://www.fortlauderdaletitleandescrow.com/about-2/",
+  "https://nbtfl.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” title company, but **Palm Title Partners** looks like a solid first option for a Fort Lauderdale home closing: it’s attorney-owned and operated, has a local office, and its site includes customer testimonials describing smooth, communicative closings. [Palm Title](https://palmtitle.com/) · (954) 824-9920\n\nAlso worth comparing:\n- **Independent Title of Fort Lauderdale** — local firm handling residential closings statewide; by appointment. [Website](https://www.indytitleftl.com/) · (954) 493-8288\n- **Heritage Title Insurance Agency** — downtown Fort Lauderdale office. [Website](https://www.heritagetitleins.com/) · (954) 763-3665\n\nBefore choosing, ask for a written estimate of title and settlement fees, confirm who will handle your file and how quickly they respond, and check whether your purchase contract or lender has requirements. In Florida, who selects the title agent can also depend on the contract and local custom.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

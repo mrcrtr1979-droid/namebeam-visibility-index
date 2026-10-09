@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_mortgage_lenders_st_charles_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: mortgage lenders, St. Charles",
+ "niche": "mortgage lenders",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Charles MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_151ad0ab-8eec-4969-9458-d7fff3bb77be",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00094,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00423
+   },
+   "input_tokens": 4300,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3749,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 258,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4558
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "First State Bank Mortgage",
+  "Guild Mortgage’s St. Charles/Weldon Spring office"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://www.experience.com/reviews/office/st-charles-127891",
+  "https://www.monitorbankrates.com/calculators/mortgage/missouri",
+  "https://branches.guildmortgage.com/mo/weldonspring/st-charles-158.html",
+  "https://fsbfinancial.com/mortgage/home-loan-options/",
+  "https://fsbfinancial.com/mortgage-locations/st-charles/",
+  "https://www.bankrate.com/mortgages/mortgage-rates/missouri/",
+  "https://integritymo.com/",
+  "https://www.lendersa.com/lender/saint-charles/mortgage-solutions-llc",
+  "https://fsbfinancial.com/mortgage/mortgage-offers/",
+  "https://www.reddit.com/r/StCharlesMO/comments/1n6wkmo/mortgage_lenders/",
+  "https://homelendingadvisor.chase.com/mo/saint-charles",
+  "https://www.experience.com/reviews/thomas-cobb-273106",
+  "https://societymortgage.com/branches/st-charles-mo/",
+  "https://fsbfinancial.com/mortgage-lenders/mindy-primm/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” lender—the right choice depends on your loan type, credit, down payment, and the lender’s **rate, fees, and ability to close on time**. Based on the local information available, **First State Bank Mortgage** is a sensible first quote: it has a St. Charles office and offers purchase loans with multiple financing options. **Guild Mortgage’s St. Charles/Weldon Spring office** is another local option with strong reported customer reviews.\n\nI’d get written Loan Estimates from both, plus a third quote from a credit union or another lender. Compare the **APR, lender fees/points, rate-lock terms, and estimated cash to close** for the same loan scenario—not just the advertised rate. Ask each lender how quickly they can issue a preapproval and whether they regularly close on the timeline you need. Rates and fees change, so confirm current terms directly.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

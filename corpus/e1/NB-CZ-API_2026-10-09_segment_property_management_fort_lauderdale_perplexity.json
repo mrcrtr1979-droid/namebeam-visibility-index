@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_property_management_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: property management, Fort Lauderdale",
+ "niche": "property management companies",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Fort Lauderdale FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5b59e6b2-6bd2-47da-8e92-4810b3935c73",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00457
+   },
+   "input_tokens": 5027,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4477,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 323,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5350
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Luxury Property Care (LPC)",
+  "Atlis Property Management",
+  "CIMCO Management"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.fortlauderdalepropertymanagementinc.com/pricing",
+  "https://luxurypropertycare.com/ft-lauderdale-property-management-service/",
+  "https://www.bbb.org/us/fl/fort-lauderdale/category/hoa",
+  "https://www.atlispm.com/fort-lauderdale-property-management",
+  "https://www.bbb.org/us/fl/fort-lauderdale/category/property-management",
+  "https://www.bbb.org/us/fl/fort-lauderdale/profile/property-management/firstservice-residential-florida-inc-0633-23006761/customer-reviews?page=4",
+  "https://www.thumbtack.com/fl/fort-lauderdale/property-management/jge-property-management/service/543673055223406614",
+  "https://www.biggerpockets.com/fl/fort-lauderdale/property-managers",
+  "https://www.bbb.org/us/fl/fort-lauderdale/profile/property-management/progress-residential-property-manager-llc-0633-90356586",
+  "https://www.zillow.com/professionals/property-manager-reviews/fort-lauderdale-fl-33305/",
+  "https://cimcomanagement.com/fort-lauderdale/",
+  "https://www.bbb.org/us/fl/pompano-beach/category/property-management/accredited",
+  "https://www.unitedrpm.com/",
+  "https://www.thumbtack.com/fl/fort-lauderdale/property-management",
+  "https://www.rovetravel.com/blog/best-property-management-companies-fort-lauderdale"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a **long-term rental home**, I’d put **Luxury Property Care (LPC)** on your shortlist—and treat it as a strong candidate rather than a definitive “best,” since the right fit depends on your home and priorities.\n\nLPC says it handles leasing, tenant screening, rent collection, maintenance, inspections, and HOA approvals. Its published terms are **8–10% of collected rent**, plus a **one-time leasing fee of one month’s rent** when it places a tenant; it says there’s no management fee while the home is vacant and no renewal fee. The company reports a **4.9/5 Google rating from more than 230 reviews**—worth checking directly, along with recent review details.\n\nI’d compare it with **Atlis Property Management**, which publishes a **5–9% fee with a $200 monthly minimum** and says it charges no management fee during vacancy, and **CIMCO Management**, which advertises a flat **8%** rate. Ask each for a sample management agreement and a written, all-in fee schedule before deciding. In particular, compare leasing and renewal charges, maintenance markups, inspection frequency, cancellation terms, and how quickly owners can reach the manager.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

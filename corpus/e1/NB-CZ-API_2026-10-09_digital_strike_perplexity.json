@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_digital_strike_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "Digital Strike",
+ "niche": "digital marketing agency",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best digital marketing agency in St. Louis?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_55c1f905-da89-4cb1-85c6-1e44a194ff2a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00068,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00392
+   },
+   "input_tokens": 3267,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2721,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 242,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3509
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "Timmermann Group",
+  "Beanstalk Web Solutions",
+  "Spry Digital"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.expertise.com/business/digital-marketing-agencies/missouri/st-louis",
+  "https://www.digitalstrike.com/awards/",
+  "https://www.designrush.com/agency/digital-strategy-agencies/missouri/st-louis",
+  "https://clutch.co/agencies/digital/st-louis",
+  "https://clutch.co/agencies/digital-strategy/st-louis",
+  "https://www.vividsites.com/awards/",
+  "https://www.designrush.com/agency/profile/acumen-studio",
+  "https://www.wearetg.com/st-louis-marketing-agency/",
+  "https://www.designrush.com/agency/digital-agencies/missouri/st-louis",
+  "https://clutch.co/agencies/ppc/google-adwords/st-louis",
+  "https://clutch.co/agencies/digital-marketing/small-business/st-louis?page=2",
+  "https://www.designrush.com/agency/paid-media-pay-per-click/missouri/st-louis",
+  "https://www.uschamber.com/co/profiles/steadyrain-incorporated",
+  "https://clutch.co/agencies/content-marketing/st-louis",
+  "https://clutch.co/agencies/st-louis"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency—it depends on your goals, budget, and industry. **Timmermann Group** looks like a strong all-around St. Louis option based on the available results: it offers digital marketing services, and client feedback cited there praises its SEO results, creative campaigns, communication, and transparency.\n\nOther agencies worth comparing:\n- **Digital Strike** — consider for a digital-first, performance-oriented approach.\n- **Beanstalk Web Solutions** — offers SEO, PPC, email marketing, analytics, and social media management.\n- **Spry Digital** — appears in a current digital-strategy agency ranking.\n\nBefore choosing, ask each agency for relevant case studies, who will manage your account, how results are measured, and what’s included in the fee.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

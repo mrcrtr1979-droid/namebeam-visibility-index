@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_property_management_st_louis_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: property management, St. Louis",
+ "niche": "property management companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Louis MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d694cf25-bb53-459e-98f6-926a6c767c45",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00096,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00084,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00444
+   },
+   "input_tokens": 4385,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3834,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 336,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4721
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Avenue Residential Leasing",
+  "Intersection Real Estate",
+  "Full Scope Home"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://homestretchpropertymanagement.com/",
+  "https://www.trustindex.io/reviews/propertymanagementstl.com",
+  "https://www.luxestl.com/",
+  "https://intersectionstl.com/",
+  "https://www.zillow.com/professionals/property-manager-reviews/saint-louis-mo/",
+  "https://purehomeriver.com/locations/missouri/st-louis/",
+  "https://www.fullscopehomes.com/st-louis-property-management",
+  "https://propertymanagementstl.com/",
+  "https://www.zillow.com/professionals/property-manager-reviews/63101/",
+  "https://renterswarehouse.com/offices/st-louis",
+  "https://www.zillow.com/professionals/property-manager-reviews/63113/",
+  "https://propertymanagementstl.com/services/property-management/",
+  "https://www.avenuestl.com/st-louis-property-management-pricing",
+  "https://www.zillow.com/professionals/property-manager-reviews/63123/",
+  "https://smplpropertymanagement.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Avenue Residential Leasing** looks like a strong first company to interview based on the information available: it advertises full-service management, 24/7 maintenance coordination, no maintenance-vendor markup, and guarantees around tenant placement and eviction costs. Its published pricing is **5%–10% of monthly rent, with a $100 minimum**, plus a separate tenant-placement fee of **50%–100% of one month’s rent**. Confirm the exact terms and eligibility in the management agreement.\n\nI’d also compare **Intersection Real Estate**, which advertises a **$90/month flat management fee for a single-family home**, and **Full Scope Home**, which lists **$150/month** plus a leasing fee equal to the first month’s rent. Those fee structures can work out differently depending on your rent and how often you expect turnover.\n\nBefore choosing, ask each company for a sample owner statement and a written breakdown of all fees—including lease renewals, inspections, maintenance coordination, vacancy, and cancellation—and speak with a couple of current owner clients. The best fit will depend on your home’s location, rent, and how hands-on you want to be.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

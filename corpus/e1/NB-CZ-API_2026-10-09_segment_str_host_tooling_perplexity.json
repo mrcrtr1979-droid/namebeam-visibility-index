@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_str_host_tooling_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_479de399-9596-40c8-8a1e-497b687fdc3b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00061,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00436
+   },
+   "input_tokens": 4979,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4425,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 243,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5222
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA"
+ ],
+ "engine_stated_criteria": [
+  "PriceLabs is the best all-in-one starting point"
+ ],
+ "sources_cited": [
+  "https://hello.pricelabs.co/market-dashboards/",
+  "https://help.pricelabs.co/portal/en/kb/articles/what-is-dynamic-pricing-and-how-to-use-it-14-12-2023",
+  "https://help.pricelabs.co/portal/en/kb/articles/market-dashboard-faqs",
+  "https://www.hello.pricelabs.co/",
+  "https://help.pricelabs.co/portal/en/kb/articles/how-much-does-pricelabs-costs",
+  "https://help.pricelabs.co/portal/en/kb/articles/market-dashboard-methodology-data-sources-and-processing",
+  "https://help.pricelabs.co/portal/en/kb/articles/new-to-pricelabs-get-set-up-in-10-minutes",
+  "https://help.pricelabs.co/portal/en/kb/pricelabs/market-dashboards/market-dashboard",
+  "https://hello.pricelabs.co/dynamic-pricing/",
+  "https://hello.pricelabs.co/dynamic-pricing-automation/",
+  "https://hello.pricelabs.co/blog/airbnb-guest-experience/",
+  "https://www.airdna.co/faqs",
+  "https://hello.pricelabs.co/blog/airbnb-revenue-estimator-dynamic-pricing/",
+  "https://help.pricelabs.co/portal/en/kb/articles/pricelabs-airbnb-integration",
+  "https://hello.pricelabs.co/airbnb-pricing-tool/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**PriceLabs is the best all-in-one starting point** if you want both to set nightly rates and research a market before buying. Its dynamic pricing adjusts rates using factors such as seasonality, local events, booking pace, and lead time; its Market Dashboards let you compare nearby listings and review metrics such as occupancy, average daily rate (ADR), and revenue per available night (RevPAR).\n\nIf your main priority is **investment research**, rather than managing prices on a live listing, **AirDNA** is a strong alternative: it offers market-level historical and forward-looking occupancy, rate, and revenue data, plus investment tools.\n\nTreat either service’s revenue estimates as **screening estimates, not guarantees**. Check comparable properties carefully, account for expenses and local rules, and verify that short-term rentals are permitted before buying.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

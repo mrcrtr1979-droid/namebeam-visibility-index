@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_quickads_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "Quickads",
+ "niche": "AI video ad maker",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best AI video ad maker?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7f8c1caa-51f5-4549-b00f-be48677825e1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00127,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00051,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00442
+   },
+   "input_tokens": 5610,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 5067,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 206,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5816
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "HeyGen",
+  "Arcads",
+  "Quick rule"
+ ],
+ "engine_stated_criteria": [
+  "Creatify is probably the best pick for ecommerce ads"
+ ],
+ "sources_cited": [
+  "https://www.heygen.com/tool/ai-video-ad-generator",
+  "https://www.heygen.com/blog/best-ai-video-generator-for-ads",
+  "https://www.heygen.com/pricing",
+  "https://kive.ai/learn/best-ai-video-ad-generators",
+  "https://www.heygen.com/blog/best-ai-video-tools-ecommerce-product-videos",
+  "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-subscriptions-explained",
+  "https://www.heygen.com/blog/best-ai-video-tools-marketing-ads-2026",
+  "https://albato.com/blog/publications/best-ai-video-generators",
+  "https://gitnux.org/best/ai-product-video-ad-generator/",
+  "https://www.itechguides.com/12-best-ai-video-ad-makers-in-2026/",
+  "https://www.heygen.com/tool/ai-video-generator",
+  "https://www.wireflow.ai/blog/best-ai-ad-makers-in-2026",
+  "https://adsturbo.ai/blog/best-ai-video-ad-generators",
+  "https://www.wireflow.ai/blog/best-ai-video-ads-tools-in-2026",
+  "https://www.heygen.com/tool/ai-video-ads-generator"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Creatify is probably the best pick for ecommerce ads**: give it a product-page URL and it can generate UGC-style video ads and variations for testing.\n\nFor a more general-purpose option—especially **avatar-led ads, multilingual versions, and broader video creation**—try **HeyGen**. If your priority is lots of AI-actor talking-head variations for paid social, **Arcads** is another option, though it’s pricier.\n\n**Quick rule:** Creatify for product ads; HeyGen for versatility. Try the free tier first, since output quality and pricing can vary by plan.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

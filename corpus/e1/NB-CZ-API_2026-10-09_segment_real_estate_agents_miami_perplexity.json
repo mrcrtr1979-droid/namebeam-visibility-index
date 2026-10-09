@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_real_estate_agents_miami_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: real estate agents, Miami",
+ "niche": "real estate agents",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Miami FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a3f051e9-0555-4573-8bd7-8aa8d6b5685d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 4792,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4243,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 325,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5117
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Wesley Ulloa of LUXE Properties",
+  "The Jills Zeder Group"
+ ],
+ "engine_stated_criteria": [
+  "listed and sold homes like yours in your specific neighborhood"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/miami-fl/",
+  "https://www.effectiveagents.com/fl/miami",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33155/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33149/",
+  "https://therealdeal.com/data/miami/2025/miami-top-residential-brokers/",
+  "https://listwithclever.com/top-real-estate-agents/profiles/sandra-rathe-1394444/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33132/",
+  "https://www.ratemyagent.com/real-estate-profile/sales/florida/miami-fl",
+  "https://ark7.com/blog/articles/real-estate-agents-miami/",
+  "https://listwithclever.com/top-real-estate-agents/florida/miami/",
+  "https://www.fastexpert.com/top-real-estate-agents/miami-fl/",
+  "https://www.effectiveagents.com/agent/william-dowda",
+  "https://therealdeal.com/magazine/october-2025/ranking-the-top-resi-players-in-miami/",
+  "https://www.homes.com/real-estate-agents/alexi-altuve/e8s8fcn/",
+  "https://agentpronto.com/agents/joanna-jimenez-04302"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for every Miami home—the right choice depends on your neighborhood, price range, and property type.\n\nBased on the available rankings, **Wesley Ulloa of LUXE Properties** is one strong candidate for a broad range of homes: a recent ranking based on transaction data placed him at the top in Miami and reported substantial recent sales and client reviews. For luxury properties, **The Jills Zeder Group** is a standout: *The Real Deal* ranked the team first in Miami-Dade by deal volume in its 2025 analysis, with about $1.4 billion across 157 transactions.\n\nBefore choosing, interview two or three agents who have recently **listed and sold homes like yours in your specific neighborhood**. Ask for their comparable sales, proposed list price and marketing plan, typical time to sell, and all fees—and confirm who will personally handle your listing. Rankings and sales totals are useful starting points, not guarantees of the best result.\n\nIf you share your neighborhood, approximate home value, and whether it’s a condo or house, I can help narrow down what kind of agent to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

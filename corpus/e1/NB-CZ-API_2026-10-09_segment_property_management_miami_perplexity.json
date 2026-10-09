@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_property_management_miami_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: property management, Miami",
+ "niche": "property management companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Miami FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8eeb3c11-60fa-4034-8305-1c72ba5dae1c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00091,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00467
+   },
+   "input_tokens": 5012,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4463,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 364,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5376
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Novel Management",
+  "Pristine Property Management",
+  "My practical pick"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://allcountyprop.com/locations/florida/miami/",
+  "https://allcountyprop.com/locations/florida/pembroke-pines/",
+  "https://trustanalytica.org/us/fl/best-property-management-companies",
+  "https://www.biggerpockets.com/fl/miami/property-managers",
+  "https://www.bbb.org/us/fl/miami/profile/property-management/miami-management-inc-0633-33000905/customer-reviews",
+  "https://novelmanagement.com/",
+  "https://trustanalytica.org/us/fl/miami/best-property-management-companies",
+  "https://all-county-property-management.pissedconsumer.com/review.html",
+  "https://threebestrated.com/property-management-in-miami-fl",
+  "https://www.expertise.com/business/property-management/florida/miami",
+  "https://www.pristinepm.com/",
+  "https://www.managemyproperty.com/find/florida/miami-property-management-companies",
+  "https://ipropertymanagement.com/research/miami-property-management-fees",
+  "https://www.expertise.com/business/property-management/florida/miami-beach",
+  "https://patch.com/florida/miami/winvest-management-highlights-value-professional-property-management-miami-nodx"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Novel Management** looks like a strong first company to interview for a Miami single-family rental. It specifically manages single-family homes and advertises management starting at **5% monthly** and **no lease-renewal fee**. Those are advertised terms, so confirm what applies to your property and ask for the full fee schedule in writing.\n\nI’d compare it with **Pristine Property Management**, which also handles single-family homes and has strong review-based recognition, though its reported management fee is around **10% of rent**. A Miami fee survey puts typical monthly management fees around **7–12%**, with tenant-placement fees often about one month’s rent—so compare the *total* cost, not just the monthly percentage.\n\nBefore signing, ask each company:\n- What are the management, leasing, renewal, inspection, and cancellation fees?\n- Do you approve repairs above a set dollar amount?\n- How quickly do they respond to emergencies and owner inquiries?\n- Can they provide references from owners of similar homes?\n- What are the contract term and termination conditions?\n\n**My practical pick:** interview Novel first, then get a written comparison from Pristine. The best choice will depend on your home’s location, rent, and how hands-on you want the manager to be.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

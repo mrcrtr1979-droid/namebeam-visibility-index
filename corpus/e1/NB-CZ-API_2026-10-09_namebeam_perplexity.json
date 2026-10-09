@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_namebeam_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_bdcd2924-9a41-4004-98a6-56f4953dd693",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00094,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00067,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00425
+   },
+   "input_tokens": 4317,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3765,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 268,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4585
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "BrightLocal’s Local AI Visibility Tracker",
+  "ChatGPT and Google’s AI search results",
+  "Otterly.AI"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.brightlocal.com/research/local-ai-visibility-study/",
+  "https://www.brightlocal.com/local-seo-tools/local-ai-visibility/",
+  "https://www.brightlocal.com/blog/new-local-ai-visibility-tracker/",
+  "https://www.brightlocal.com/pricing/",
+  "https://www.brightlocal.com/?lang=en",
+  "https://www.brightlocal.com/resources/ai-directory-sources/",
+  "https://www.brightlocal.com/blog/page/7/",
+  "https://www.brightlocal.com/page/5/?p=t",
+  "https://www.brightlocal.com/tag/ai/",
+  "https://elfsight.com/blog/best-chatgpt-visibility-trackers/",
+  "https://www.brightlocal.com/author/mike-hawkes/page/5/",
+  "https://affine.pro/blog/best-ai-visibility-tools",
+  "https://siftly.ai/blog/most-affordable-ai-visibility-tracking-b2b",
+  "https://aiclicks.io/trackers/chatgpt-ai-tracker",
+  "https://visible.seranking.com/blog/best-ai-visibility-tools/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a **local small business**, **BrightLocal’s Local AI Visibility Tracker** looks like the best fit: it’s designed to check whether your business is recommended in **ChatGPT and Google’s AI search results**, and lets you compare visibility by location, prompt, and competitor. It can also show which sources AI answers rely on.\n\nIf you want a simpler, lower-cost tool for broader AI monitoring, **Otterly.AI** is another option; it tracks brand mentions across several AI engines. Check current plans and prompt limits before choosing, since pricing and coverage can change.\n\nOne caveat: these tools sample answers to selected prompts. AI recommendations can vary by wording, location, and time, so treat the results as a useful trend—not a definitive ranking. For a quick baseline, test a handful of realistic questions yourself, such as “best [service] near [neighborhood],” then track those same prompts regularly.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

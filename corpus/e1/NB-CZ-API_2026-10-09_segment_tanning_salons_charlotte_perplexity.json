@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_tanning_salons_charlotte_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "niche": "tanning salons",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_14b659b3-8446-4d35-92c4-5a68b2a1f5dc",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00065,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00061,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0039
+   },
+   "input_tokens": 3134,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2590,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 244,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3378
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Gorgeous GLO Beauty Bar",
+  "Dilworth Tanning Spa",
+  "Palm Beach Tan at The Arboretum"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://trustanalytica.org/us/nc/charlotte/best-tanning-salons",
+  "https://www.fresha.com/lp/en/bt/tanning-studios/in/us-charlotte",
+  "https://palmbeachtan.com/locations/nc/charlotte-john-j-delaney-drive",
+  "https://palmbeachtan.com/locations/nc/charlotte-east-wt-harris-boulevard",
+  "https://organicbronzebar.com/southpark/",
+  "https://palmbeachtan.com/locations/nc/charlotte-east-woodlawn-road",
+  "https://maps.apple.com/place?place-id=I9845192F39EFC11F",
+  "https://palmbeachtan.com/locations/nc/charlotte-providence-arboretum",
+  "https://www.yelp.com/biz/botanical-tans-charlotte",
+  "https://www.yelp.com/biz/palm-beach-tan-charlotte?start=40",
+  "https://www.yelp.com/biz/gorgeousglo-beauty-bar-charlotte",
+  "https://www.yelp.com/biz/miramae-charlotte-2",
+  "https://www.fresha.com/lp/en/bt/hair-salons/in/us-charlotte/southside-park",
+  "https://trustanalytica.org/us/nc/charlotte/reviews/gorgeous-glo-beauty-bar",
+  "https://www.yelp.com/biz/palm-beach-tan-charlotte-3"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "“Best” depends on whether you want a spray tan or UV tanning. For a **spray tan**, I’d start with **Gorgeous GLO Beauty Bar**: a local listing reports a **4.9/5 rating from 100 reviews**, and customers mention positive spray-tan experiences. It’s at **4724 Sharon Rd, Suite 2I**.\n\nIf you want **UV beds or both UV and spray options**, **Dilworth Tanning Spa** is another option noted for clean equipment and friendly, knowledgeable staff. For a larger chain, the **Palm Beach Tan at The Arboretum** lists **4.56/5 from 72 reviews**.\n\nRatings and availability can change, so check recent reviews and call ahead. Keep in mind that UV tanning increases skin-cancer risk; a sunless spray tan avoids UV exposure.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

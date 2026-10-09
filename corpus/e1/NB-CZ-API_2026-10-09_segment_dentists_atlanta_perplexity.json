@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e65dc17f-3523-41d2-b6ca-8485bc6bb634",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00097,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00088,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00449
+   },
+   "input_tokens": 4418,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3872,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 353,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4771
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Evan Grodin",
+  "Dr. Brandon Frodge",
+  "Dr. Brock Pumphrey"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://southernrootsperiodontics.com/",
+  "https://www.drevangrodin.com/dental-implants/",
+  "https://www.periogeorgia.com/",
+  "https://www.clearchoice.com/locations/ga/atlanta/3535-piedmont-rd-ne-bldg-14/",
+  "https://westcobbperio.com/our-practice/",
+  "https://www.zocdoc.com/dentist/woojae-chong-dmd-246966",
+  "https://allonimplantsatlanta.com/meet-dr-schiffer/",
+  "https://advancedperioatl.com/",
+  "https://allonimplantsatlanta.com/",
+  "https://dentalimplantsvinings.com/",
+  "https://www.tebra.com/care/provider/steve-hahn-dmd-1417173048",
+  "https://www.zocdoc.com/dentist/brett-langston-dmd-84083",
+  "https://www.zocdoc.com/dentist/brock-pumphrey-dmd-594272",
+  "https://southernrootsperiodontics.com/why-choose-us/",
+  "https://www.perioatlanta.com/about-us.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for everyone—implant needs vary, and the right choice depends on your bone and gum health, whether you need one tooth or a full arch, and who will handle the surgery and final tooth.\n\nA reasonable Atlanta starting point is **Dr. Evan Grodin**, a prosthodontist in Buckhead whose practice focuses on implant restorations and complex cases. For the surgical placement side, you could also consult a **board-certified periodontist**, such as **Dr. Brandon Frodge** at Southern Roots Periodontics or **Dr. Brock Pumphrey** at Advanced Periodontics. These are options to investigate, not a ranking or personal endorsement.\n\nBefore choosing, get **two consultations** and ask:\n- Who places the implant, and who makes the crown or bridge?\n- What training and experience do they have with cases like yours?\n- What does the written treatment plan include—imaging, grafting if needed, temporary tooth, final restoration, and follow-up?\n- What are the total cost, timeline, and warranty or maintenance terms?\n\nFor a single implant, a periodontist or oral surgeon may place it while a prosthodontist or general dentist restores it. For a full-arch case, ask specifically about the team’s experience with that procedure.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

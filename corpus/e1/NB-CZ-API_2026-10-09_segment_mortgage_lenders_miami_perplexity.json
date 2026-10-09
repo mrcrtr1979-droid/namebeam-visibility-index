@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1ebbbfc8-cd3c-4e01-bcac-16f40710fb3f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00086,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 4856,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4307,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 345,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5201
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "A local mortgage broker",
+  "Loan Estimate"
+ ],
+ "engine_stated_criteria": [
+  "A lender experienced with your loan type"
+ ],
+ "sources_cited": [
+  "https://saferate.com/local/miami/best-mortgage-lenders",
+  "https://saferate.com/local/miami/best-mortgage-lenders/mortgage-companies",
+  "https://www.lendingbankers.com/",
+  "https://files.consumerfinance.gov/f/documents/cfpb_your-home-loan-toolkit_print_2026-08.pdf",
+  "https://reliancefinancial.com/mortgage-lenders-miami/",
+  "https://www.expertise.com/home-improvement/mortgage-brokers-lenders/florida/miami",
+  "https://www.consumerfinance.gov/ask-cfpb/how-do-i-find-the-best-loan-available-when-im-shopping-for-a-home-mortgage-loan-en-137/",
+  "https://files.consumerfinance.gov/f/documents/cfpb_your-home-loan-toolkit_print_small.pdf",
+  "https://www.consumerfinance.gov/owning-a-home/loan-estimate/",
+  "https://www.consumerfinance.gov/owning-a-home/compare/compare-loan-estimates/",
+  "https://on-mortgage.com/testimonials.php",
+  "https://trustanalytica.org/us/fl/hialeah/best-mortgage-brokers",
+  "https://files.consumerfinance.gov/f/documents/cfpb_shopping_for_a_mortgage.pdf",
+  "https://www.miami.gov/Housing-Assistance/Home-Ownership/Apply-for-First-Time-Homebuyer-Assistance/First-Time-Homebuyer-Program-Participating-Banks",
+  "https://cfn.net/reviews-for-top-miami-mortgage-lenders/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” mortgage lender in Miami—the right choice depends on your credit, down payment, loan type, and how quickly you need to close. **My practical recommendation is to compare at least three lenders rather than choose by rankings or reviews alone.**\n\nFor a Miami purchase, you could include:\n- **A local mortgage broker**, who can compare offers from multiple lenders.\n- **A bank or credit union** you already use.\n- **A lender experienced with your loan type**—for example, FHA, VA, jumbo, or first-time-buyer assistance.\n\nIf you’re a first-time buyer, check the City of Miami’s list of participating lenders for its homebuyer assistance program; eligibility and participating lenders can vary.\n\nAsk each lender for a written **Loan Estimate** for the same loan amount, down payment, loan type, and rate-lock period. Compare the interest rate, APR, lender fees, points, lender credits, monthly payment, and estimated cash to close. The CFPB recommends getting at least three offers and comparing them side by side.\n\n**Bottom line:** The best lender is the one that gives you the strongest written offer for your situation and can reliably meet your closing timeline—not necessarily the one with the highest online rating.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

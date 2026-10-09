@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-09_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-10-09",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_95c506f4-5651-4835-93dd-81cdd768a003",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00085,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 4906,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4360,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 338,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5244
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AZPerio",
+  "Camelback Periodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://azperio.com/dental-implants/",
+  "https://camelbackperio.com/",
+  "https://www.implantsandperioaz.com/",
+  "https://www.implantsandperioaz.com/about-us/dr-niels-jensen/",
+  "https://azperio.com/services/",
+  "https://www.clearchoice.com/locations/az/phoenix/20830-north-tatum-blvd/",
+  "https://azimplantclinic.com/team-member/dr-gary-gwilt/",
+  "https://www.tempeimplantsandperio.com/",
+  "https://www.24streetdentalphoenix.com/meet-the-team/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-aristidis-pontikas-1760500169",
+  "https://www.azimplantdentist.com/",
+  "https://www.promaxsurgery.com/about-us/dr-amogh-velangi/",
+  "https://www.periodontistdirectory.com/profiles/147800",
+  "https://www.everydentist.com/profiles/141686/",
+  "https://familydentalphx.com/about-us/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for everyone, but for an implant I’d start by comparing **board-certified periodontists** or **board-certified oral and maxillofacial surgeons**—especially if you may need bone grafting, a sinus lift, or have gum disease.\n\nOne Phoenix option to consider is **AZPerio**, which says its board-certified periodontists place implants and handle related procedures such as bone grafting and sinus lifts. **Camelback Periodontics**, led by board-certified periodontist Dr. Holly McKnight, is another Phoenix practice to look into. These are starting points, not endorsements; confirm the clinician’s credentials and that the proposed treatment fits your case.\n\nBefore choosing, get **two consultations** and ask:\n- Who will place the implant, and who will make the crown?\n- What training and experience does that clinician have with cases like yours?\n- Do you need a 3D scan, grafting, or other procedures—and why?\n- What is the full written cost, timeline, and follow-up plan?\n- What are the risks and alternatives in your specific case?\n\nIf you share your part of Phoenix, whether it’s a single tooth or full-arch treatment, and any budget or insurance constraints, I can help narrow the options.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
