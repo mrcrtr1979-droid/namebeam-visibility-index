@@ -74,6 +74,18 @@ Engines return strings, and some are not businesses: places, directories, trade 
 - Siri rows are typed or spoken by hand on one phone, for a few questions on a few days. They are not a sample of Siri users.
 - Nothing here shows why a list changed. The record shows what was returned on which day.
 
+## How this record differs from another published record
+
+Another open record of a similar kind of measurement is the Zenodo deposit "AI Recommendation Calibration Study 2026" (record 21611003, published 2026-07-26). Its record page, read 2026-10-09, describes 4,800 model responses collected between May and July 2026 from four engines called through their APIs, and states: "All published files are aggregates. No business names, competitor names, cited sources, verbatim AI response text ... are included."
+
+This pack is built differently on three points, each of which you can check in the files:
+
+- Unit of publication. This pack has one row per raw answer file, with the names the engine returned and the SHA-256 of the raw file. The raw answer files, including the verbatim answer text, are in the public repository under `corpus/e1`.
+- Sources. `{{SOURCES_FILE}}` lists every URL an engine returned as a source for the engines that return a source list.
+- Dates and place. This pack covers US markets from {{W0}} to {{W1}}, with a daily collection run ({{RUN_DAYS}} run days); the other record covers the UK between May and July 2026.
+
+The two records use different engines, countries, dates and question sets. Their numbers are not comparable and neither replicates the other. Other records of this kind may exist that were not read for this note.
+
 ## Check the pack
 
     python3 verify.py              # every file against MANIFEST.sha256, prints MATCH or MISMATCH
