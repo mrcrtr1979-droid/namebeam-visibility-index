@@ -72,9 +72,12 @@ Perplexity runs with web search on (Sonar chat completions to 2026-09-27, the Ag
 | engine | string | perplexity, openai, anthropic, gemini, google_serp or agree. |
 | businesses_named_count | integer | Number of names extracted. |
 | businesses_named | string | The extracted names, separated by semicolons. Raw extraction: some entries are phrases or places, not businesses. |
-| first_named | string | The first extracted name. |
+| first_named | string | The name at the top of the extracted list. |
 | source_file | string | The raw file the row was built from. |
 | sha256 | string | SHA-256 of that raw file. |
+| rerun | integer | 0, or N when the raw file is a same-day rerun saved with the suffix _rN. |
+| headings_removed_count | integer | API and AGREE rows: how many extracted entries the heading filter (v1, 2026-10-09) removed. Blank on SERP rows. |
+| businesses_named_no_headings | string | API and AGREE rows: the extracted names with section headings removed ("Overview", "Research methods" and the like). The raw businesses_named column is unchanged. Blank on SERP rows. |
 
 ## Known limits
 
