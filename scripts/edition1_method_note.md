@@ -8,7 +8,7 @@ This pack holds the raw tables behind Edition 1, the metrics computed from them,
 
 | file | what it is |
 |---|---|
-| `{{ANSWERS_FILE}}` | One row per raw answer file: date, kind (API, SERP or AGREE), the business or segment asked about, niche, market, engine, the names the engine returned, and the SHA-256 of the raw file. |
+| `{{ANSWERS_FILE}}` | One row per raw answer file: date, kind (API, SERP or AGREE), the business or segment asked about, niche, market, engine, the names the engine returned, and the SHA-256 of the raw file. Three derived columns follow: `rerun` (0, or N for a raw file named `_rN`), `headings_removed_count` and `businesses_named_no_headings` (API and AGREE rows; blank for SERP). The raw `businesses_named` column is never changed. |
 | `{{SOURCES_FILE}}` | One row per URL an engine returned as a source (Perplexity sources and Google results). Columns are described in `datasets/e1/sources/README.md`. |
 | `data/siri_panel.csv` | Questions asked of Siri by hand on an iPhone: date, mode (typed or spoken), city, question, what Siri said, businesses named, sources shown. Described in `datasets/e1/siri/README.md`. |
 | `data/customer_zero_*.csv` | How often our own domains appear in the sources an engine returned. Described in `datasets/e1/customer_zero/README.md`. |
@@ -44,6 +44,10 @@ These are API calls, not the apps people open on a phone. The rows do not record
 
 Days with no run are absent from every table, not counted as zero. Days with no run in this window: {{GAPS}}.
 
+2026-10-05 has no raw file for any question or engine. It is a gap, not a day of zero answers, and it is absent from every table.
+
+The roster grew during the window, so the number of raw files per day changes on 2026-10-08, from 282 to 338. Six dentist and orthodontist segments (Atlanta, Dallas, Phoenix), added to `roster/e1_roster.json` in commit e81cbdeb (2026-10-07 UTC), are asked of the four API engines, Google and the agreement check: 24 API, 6 SERP and 6 AGREE files a day. Twenty real estate research segments (real estate agents, property management, mortgage lenders and title companies in Fort Lauderdale, Miami, St. Charles, St. Louis and West Palm Beach), added in commit 980286d1 (2026-10-08), are asked of Perplexity alone, with no Google rows: 20 API files a day. That is 56 more files and 50 more question ids a day. No earlier question was dropped or changed. These rows are kept in the answers table; under the panel rule below their 26 cells are left out of the metrics.
+
 ## Metrics
 
 Every metric names its method and its denominator in `metrics/metrics_v2.csv`. The main ones:
@@ -57,18 +61,26 @@ Every metric names its method and its denominator in `metrics/metrics_v2.csv`. T
 - Coin-flip share: the share of businesses named on 20 to 80 percent of answered days, so one day's answer is close to a coin flip.
 - Engine agreement: the mean overlap of two engines' name lists on the same day, raw and gated.
 
-A cell is a market plus a niche. US nationwide questions are left out of the cell metrics. September has 38 cells. API rows count; SERP and AGREE rows do not. The metrics read only the cells that were asked on or before 2026-09-27 (the 38 cells of September), in every window. Research segments added to the roster after that date are in the answers table and are left out of the metrics, so a change between WA and WB is not also a change of panel. {{PANEL}} A list of SERP files from 2026-10-04 that were held out is in `method/`; it removes no API rows.
+A cell is a market plus a niche. US nationwide questions are left out of the cell metrics. September has 38 cells. API rows count; SERP and AGREE rows do not. The metrics read just the cells that were asked on or before 2026-09-27 (the 38 cells of September), in every window. Research segments added to the roster after that date are in the answers table and are left out of the metrics, so a change between WA and WB is not also a change of panel. {{PANEL}} A list of SERP files from 2026-10-04 that were held out is in `method/`; it removes no API rows.
 
 ## The name gate
 
 Engines return strings, and some are not businesses: places, directories, trade words, sentence fragments, and several spellings of one name. The gate is rule-based code with word lists. It drops places, directories and platforms, generic trade words and sentence fragments, and merges variants of one name. It is in `method/Brain_Kit/status/staged/1005A_AI_PICKS_CHART/gen_ai_picks_chart.py` (SHA-256 611894c48c21a512bc856463c2e4b6b7a33155375aebcce71a036e820a4edde6). Every persistence and overlap metric is given twice, raw and gated, and the two can differ a lot: for Perplexity in WA, persistence is 0.626 gated and 0.437 raw.
+
+## Name lists in the answers table
+
+The engines often put section headings inside the lists that the collector reads as business names, for example "Overview", "Research methods" or "Red flags to avoid". The raw files and the raw `businesses_named` column keep them as written. The derived column `businesses_named_no_headings` drops a name when every word of it is in the heading word list of the name gate code (`BASE_GENERIC` and `EXTRA_GENERIC` in `gen_citation_index.py`), when it matches a fixed, hand-reviewed list of headings found in the rows to 2026-10-09 (`HEADING_TERMS` in `scripts/build_edition.py`), or when it holds a line break. A business name that the word rule would catch is kept by name. {{HEADINGS}} The metrics do not read this column; their own name gate is described above.
+
+Rerun files: a question asked again on the same day is saved as a new raw file ending `_r2`, `_r3` and so on, and every one is kept. Rerun files in this window: {{RERUNS}}.
+
+Google rows: {{EXTRACTION_FAILED}}
 
 ## Limits
 
 - The record covers local business questions in the markets in the roster. It does not describe all businesses or all questions.
 - Names are strings returned by the engines and read by a program. A name returned is not a recommendation by us and not a claim that the business is good.
 - OpenAI, Anthropic and Gemini ran without a search tool, so their answers come from the model alone.
-- OpenAI lists the model snapshot `gpt-5-mini-2025-08-07` as deprecated. OpenAI notified developers on 2026-06-11 and removes it from the API on 2026-12-11, with `gpt-5.6-terra` as its recommended replacement (OpenAI deprecations page, read 2026-10-08). The collector still reads `gpt-5-mini`. When the model is changed, the change will be dated in this note before the first changed row, so a shift in the OpenAI rows is not read as a shift in the businesses named.
+- OpenAI lists the model snapshot `gpt-5-mini-2025-08-07` as deprecated. OpenAI notified developers on 2026-06-11 and removes it from the API on 2026-12-11, with `gpt-5.6-terra` as its recommended replacement (OpenAI deprecations page, read 2026-10-08). The collector still reads `gpt-5-mini`. When the model is changed, the change will be dated in this note before the earliest changed row, so a shift in the OpenAI rows is not read as a shift in the businesses named.
 - Gemini returned some answers until 2026-09-26 and none from 2026-09-27 (the account returned HTTP 402, prepayment credits depleted). Gemini metrics carry their own denominators and are small.
 - WB is a short window. Read its values with their denominators.
 - Siri rows are typed or spoken by hand on one phone, for a few questions on a few days. They are not a sample of Siri users.
