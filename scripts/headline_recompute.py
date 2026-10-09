@@ -12,7 +12,8 @@ Written from the definitions in the method note, NOT by importing the metrics co
   A name is the raw string, stripped and case folded. A day is answered when at least one name came back.
   KC page: Perplexity source rows whose URL is https://namebeam.ai/kansas-city-health-insurance (answers, run days).
 With --out it writes, for the second recompute: names_long.csv (one row per cell, engine, date, name),
-answered_days.csv (one row per cell, engine, answered date), kc_sources.csv, FORMULAS.md, EXPECTED.csv.
+answered_days.csv (one row per cell, engine, answered date), kc_sources.csv, FORMULAS.md, EXPECTED.csv, and the same
+two tables after the method's name gate (names_long_gated.csv, answered_days_gated.csv; same formula 1 gives the gated figure).
 Standard library only. Reads the pack; writes only inside --out.
 """
 import argparse
@@ -96,6 +97,22 @@ def compute(pack):
     return meta, rows, ser, out
 
 
+def gated_series(pack, meta):
+    """Gated names per (cell, day) from the pack's own method code (the gate is code; this leg rechecks only the arithmetic)."""
+    v1dir = os.path.join(pack, 'method', 'Brain_Kit', 'status', 'staged', '1005B_METRICS')
+    sys.path.insert(0, v1dir)
+    import receipts_metrics_v1 as v1
+    mp = meta.get('metrics_panel') or {}
+    src = os.path.join(pack, *(mp.get('file') or meta['files']['answers']).split('/'))
+    v1.W0, v1.W1 = meta['window'][0], meta['window'][1]
+    ser, engines, cells, n = v1.load_series(src)
+    out = {}
+    for (mk, ni, eng), s in ser.items():
+        if eng == 'perplexity':
+            out[(mk, ni)] = {'answered': set(s['answered']), 'named': s['named']}
+    return out
+
+
 def export(pack, outdir, meta, rows, ser, out):
     os.makedirs(outdir, exist_ok=True)
     with io.open(os.path.join(outdir, 'names_long.csv'), 'w', encoding='utf-8', newline='') as fh:
@@ -122,6 +139,24 @@ def export(pack, outdir, meta, rows, ser, out):
         w.writerow(['metric', 'window', 'numerator', 'denominator', 'value'])
         w.writerows(out)
     io.open(os.path.join(outdir, 'FORMULAS.md'), 'w', encoding='utf-8').write(FORMULAS % meta['window'][1])
+    g = gated_series(pack, meta)
+    with io.open(os.path.join(outdir, 'names_long_gated.csv'), 'w', encoding='utf-8', newline='') as fh:
+        w = csv.writer(fh, lineterminator='\n')
+        w.writerow(['market', 'niche', 'engine', 'date', 'name'])
+        for (mk, ni), s in sorted(g.items()):
+            for d in sorted(s['named']):
+                for k in sorted(s['named'][d]):
+                    w.writerow([mk, ni, 'perplexity', d, k])
+    with io.open(os.path.join(outdir, 'answered_days_gated.csv'), 'w', encoding='utf-8', newline='') as fh:
+        w = csv.writer(fh, lineterminator='\n')
+        w.writerow(['market', 'niche', 'engine', 'date'])
+        for (mk, ni), s in sorted(g.items()):
+            for d in sorted(s['answered']):
+                w.writerow([mk, ni, 'perplexity', d])
+    for wname, (a, b) in WINDOWS.items():
+        b = b or meta['window'][1]
+        nn, dd = persistence(g, a, b)
+        print('P.gated.perplexity.%s %s..%s %d %d %s' % (wname, a, b, nn, dd, round(nn / dd, 6) if dd else ''))
 
 
 FORMULAS = """# Formulas for the second recompute (do these from the CSV files, not from any number given to you)
