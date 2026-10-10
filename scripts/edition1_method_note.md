@@ -87,7 +87,7 @@ Google rows: {{EXTRACTION_FAILED}}
 - Names are strings returned by the engines and read by a program. A name returned is not a recommendation by us and not a claim that the business is good.
 - OpenAI, Anthropic and Gemini ran without a search tool, so their answers come from the model alone.
 - OpenAI lists the model snapshot `gpt-5-mini-2025-08-07` as deprecated. OpenAI notified developers on 2026-06-11 and removes it from the API on 2026-12-11, with `gpt-5.6-terra` as its recommended replacement (OpenAI deprecations page, read 2026-10-08). The collector still reads `gpt-5-mini`. When the model is changed, the change will be dated in this note before the earliest changed row, so a shift in the OpenAI rows is not read as a shift in the businesses named.
-- Gemini returned some answers until 2026-09-26 and none from 2026-09-27 (the account returned HTTP 402, prepayment credits depleted). Gemini metrics carry their own denominators and are small.
+- Gemini answered part of the questions each day from 2026-09-01 to 2026-09-26: between 1 and 25 calls a day returned an answer and between 21 and 41 a day returned a quota error (rows marked QUOTA_BLOCKED). From 2026-09-27 every Gemini call failed (the account returned HTTP 402, prepayment credits depleted). Gemini metrics carry their own denominators and are small.
 - WB is a short window. Read its values with their denominators.
 - Siri rows are typed or spoken by hand on one phone, for a few questions on a few days. They are not a sample of Siri users.
 - Nothing here shows why a list changed. The record shows what was returned on which day.
@@ -108,7 +108,7 @@ The two records use different engines, countries, dates and question sets. Their
 
 The data and text in this pack are licensed under CC BY 4.0 (`LICENSE`): you may copy, share and adapt them for any purpose, including commercial use, if you give credit. Credit line: Namebeam AI Visibility Record, Edition 1 (Carter Enterprise LLC), CC BY 4.0. Use without credit, for example white-label use inside client reports, needs a separate commercial license from Carter Enterprise LLC; ask at namebeam.ai.
 
-The canonical copy of this pack on Hugging Face is the dataset `Namebeam/ai-visibility-daily-record` (https://huggingface.co/datasets/Namebeam/ai-visibility-daily-record), folder `edition-1/`. The dataset `Namebeam/namebeam-e1-ai-referral-index` carries the daily LATEST files of the same record. The raw answer files are in this repository under `corpus/e1/`.
+The canonical copy of this pack on Hugging Face is the dataset `Namebeam/ai-visibility-daily-record` (https://huggingface.co/datasets/Namebeam/ai-visibility-daily-record), folder `edition-1/`. The dataset `Namebeam/namebeam-e1-ai-referral-index` carries the daily LATEST files of the same record and points to it. The raw answer files are in this repository under `corpus/e1/`.
 
 ## Check the pack
 
