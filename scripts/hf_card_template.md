@@ -21,6 +21,10 @@ configs:
   data_files:
   - split: train
     path: edition-1/{{SOURCES_PATH}}
+- config_name: prompts
+  data_files:
+  - split: train
+    path: edition-1/data/prompts.csv
 - config_name: siri
   data_files:
   - split: train
@@ -37,6 +41,8 @@ A dated, public record of which businesses AI engines name when people ask for a
 
 {{STATUS_LINE}}
 
+Counts: {{COUNTS}}
+
 The record is kept by [Namebeam](https://namebeam.ai/), a Carter Enterprise LLC company.
 
 ## What is in this repository
@@ -47,10 +53,11 @@ Everything is under `edition-1/`. Edition 1 covers {{W0}} to {{W1}} (UTC dates):
 |---|---|---|
 | answers | `edition-1/{{ANSWERS_PATH}}` | One row per raw answer file: date, kind, the business or segment asked about, niche, market, engine, the names the engine returned, the SHA-256 of the raw file. |
 | sources | `edition-1/{{SOURCES_PATH}}` | One row per URL an engine returned as a source (Perplexity sources and Google results). |
+| prompts | `edition-1/data/prompts.csv` | Every question asked, word for word, with its id, the date it entered the run and the engines asked. |
 | siri | `edition-1/data/siri_panel.csv` | Questions asked of Siri by hand on an iPhone, typed and spoken: what Siri said, businesses named, sources shown. |
 | metrics | `edition-1/metrics/metrics_v2.csv` | Every metric by window and engine with its numerator, denominator and method id. |
 
-The method note is `edition-1/README.md`. The code that computes the metrics is in `edition-1/method/`. `edition-1/MANIFEST.sha256` lists the hash of every file, and `edition-1/verify.py` checks them.
+The method note is `edition-1/README.md`. The license is CC BY 4.0; the full text is `edition-1/LICENSE`. The code that computes the metrics is in `edition-1/method/`. `edition-1/MANIFEST.sha256` lists the hash of every file, and `edition-1/verify.py` checks them.
 
 ## How the data is collected
 

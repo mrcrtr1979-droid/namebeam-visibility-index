@@ -2,6 +2,8 @@
 
 Status: {{STATUS}}. Window: {{W0}} to {{W1}} (UTC dates). Run days in the window: {{RUN_DAYS}}. Answer rows: {{ANSWERS_ROWS}}.
 
+Counts: {{COUNTS}}
+
 This pack holds the raw tables behind Edition 1, the metrics computed from them, the code that computes the metrics, and a script that checks every file against a SHA-256 manifest. The raw answer files they come from are in `corpus/e1/` of this repository.
 
 ## Files
@@ -10,6 +12,8 @@ This pack holds the raw tables behind Edition 1, the metrics computed from them,
 |---|---|
 | `{{ANSWERS_FILE}}` | One row per raw answer file: date, kind (API, SERP or AGREE), the business or segment asked about, niche, market, engine, the names the engine returned, and the SHA-256 of the raw file. Three derived columns follow: `rerun` (0, or N for a raw file named `_rN`), `headings_removed_count` and `businesses_named_no_headings` (API and AGREE rows; blank for SERP). The raw `businesses_named` column is never changed. |
 | `{{SOURCES_FILE}}` | One row per URL an engine returned as a source (Perplexity sources and Google results). Columns are described in `datasets/e1/sources/README.md`. |
+| `data/prompts.csv` | Every question asked in this window, word for word: its id (the slug used in the raw file names), the business or segment it belongs to, whether it is a market or category question or a question asked to see whether one named business comes up, market, niche, the SHA-256 of the text, the date it entered the run, the last date in this window, the number of run days it was asked, and which engines were asked. |
+| `LICENSE` | Creative Commons Attribution 4.0 International (CC BY 4.0), the full legal code. |
 | `data/siri_panel.csv` | Questions asked of Siri by hand on an iPhone: date, mode (typed or spoken), city, question, what Siri said, businesses named, sources shown. Described in `datasets/e1/siri/README.md`. |
 | `data/customer_zero_*.csv` | How often our own domains appear in the sources an engine returned. Described in `datasets/e1/customer_zero/README.md`. |
 | `data/segment_pages_*.csv` | For each of the 28 record pages (27 city and segment pages and the hub): how many Perplexity answers cited it, out of the answers to its own question and out of all answers with a source list, per run day and in 7 day windows. Zeros are kept. Described in `datasets/e1/customer_zero/README.md`. |
@@ -33,6 +37,8 @@ Each day a program asks every engine the same fixed questions, one per business 
 | Perplexity, to 2026-09-27 | Sonar chat completions | web search on | not stated in the current code |
 | Perplexity, from 2026-09-28 | Agent API, model perplexity/sonar | web search forced | 0.2 |
 | Google | results page through Bright Data | not applicable | not applicable |
+
+Each question is asked once a day in the same words, with no rotation. A question asked again on the same day is a rerun, kept and marked (see below). A call that fails stays in the record as a failed row: its raw file carries a status other than OK, and its row in the answers table has no names. The metrics that count answered days leave a failed API call out. The naming rate on asked days, and the persistence form in which the next day only needs to have been asked, count a failed call as a day with no name, so those two figures can fall when a call fails.
 
 These are API calls, not the apps people open on a phone. The rows do not record which model answered. The model strings are set in the code or in repository variables: OpenAI read `gpt-5-mini` on 2026-08-06, and Anthropic uses `claude-haiku-4-5` unless a variable overrides it. Because Perplexity is the one engine with a search tool switched on, the engines are not like for like, and no figure here compares them as if they were.
 
@@ -97,6 +103,12 @@ This pack is built differently on three points, each of which you can check in t
 - Dates and place. This pack covers US markets from {{W0}} to {{W1}}, with a daily collection run ({{RUN_DAYS}} run days); the other record covers the UK between May and July 2026.
 
 The two records use different engines, countries, dates and question sets. Their numbers are not comparable and neither replicates the other. Other records of this kind may exist that were not read for this note.
+
+## License and where to get it
+
+The data and text in this pack are licensed under CC BY 4.0 (`LICENSE`): you may copy, share and adapt them for any purpose, including commercial use, if you give credit. Credit line: Namebeam AI Visibility Record, Edition 1 (Carter Enterprise LLC), CC BY 4.0. Use without credit, for example white-label use inside client reports, needs a separate commercial license from Carter Enterprise LLC; ask at namebeam.ai.
+
+The canonical copy of this pack on Hugging Face is the dataset `Namebeam/ai-visibility-daily-record` (https://huggingface.co/datasets/Namebeam/ai-visibility-daily-record), folder `edition-1/`. The dataset `Namebeam/namebeam-e1-ai-referral-index` carries the daily LATEST files of the same record. The raw answer files are in this repository under `corpus/e1/`.
 
 ## Check the pack
 
