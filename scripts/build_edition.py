@@ -252,6 +252,90 @@ def panel_split(rows):
     return kept, out
 
 
+# ------------------------------------------------------------------ prompts
+PROMPT_FIELDS = ['prompt_id', 'target', 'question_type', 'market', 'niche', 'prompt_text', 'prompt_sha256', 'first_asked',
+                 'last_asked_in_window', 'days_asked_in_window', 'engines_in_window', 'google_results', 'agreement_check']
+PROMPT_FILE = re.compile(r'NB-CZ-(API|SERP|AGREE)_(\d{4}-\d{2}-\d{2})_.+\.json$')
+
+
+def prompt_slug(business):
+    return re.sub(r'[^a-z0-9]+', '_', business.lower()).strip('_')
+
+
+def common_value(vals):
+    """The most common non-empty value; a tie goes to the value first in alphabetical order; '' if there is none."""
+    cnt = {}
+    for v in vals:
+        if v:
+            cnt[v] = cnt.get(v, 0) + 1
+    return max(sorted(cnt), key=cnt.get) if cnt else ''
+
+
+def prompts_rows(corpus_dir, w0, w1):
+    """One row per question (business and exact text) with a raw file dated in [w0, w1]. first_asked reads every file of the
+    corpus; the other fields read the in-window files only. A raw file that does not parse is skipped, as in answers_rows."""
+    groups = {}
+    for path in sorted(glob.glob(os.path.join(corpus_dir, '*.json'))):
+        m = PROMPT_FILE.match(os.path.basename(path))
+        if not m:
+            continue
+        try:
+            j = json.loads(open(path, 'rb').read())
+        except Exception:
+            continue
+        groups.setdefault((j['business'], j['prompt_text']), []).append((m.group(2), m.group(1), j))
+    by_business = {}
+    for (business, text), items in groups.items():
+        inw = [it for it in items if w0 <= it[0] <= w1]
+        if inw:
+            first = min(it[0] for it in items)
+            api = [it for it in inw if it[1] == 'API']
+            by_business.setdefault(business, []).append((first, text, inw, api))
+    rows, used = [], set()
+    for business, kept in by_business.items():
+        kept.sort(key=lambda g: (g[0], g[1]))
+        base = prompt_slug(business)
+        for n, (first, text, inw, api) in enumerate(kept, 1):
+            pid = base if n == 1 else '%s_%d' % (base, n)
+            if pid in used:
+                raise SystemExit('prompt_id %s is not unique' % pid)
+            used.add(pid)
+            rows.append({'prompt_id': pid, 'target': business,
+                         'question_type': 'segment' if business.startswith('SEGMENT:') else 'named_business',
+                         'market': common_value(it[2].get('market') or '' for it in api),
+                         'niche': common_value(it[2].get('niche') or '' for it in api),
+                         'prompt_text': text, 'prompt_sha256': sha_bytes(text.encode('utf-8')),
+                         'first_asked': first, 'last_asked_in_window': max(it[0] for it in inw),
+                         'days_asked_in_window': len({it[0] for it in inw}),
+                         'engines_in_window': ';'.join(sorted({it[2]['engine'] for it in api})),
+                         'google_results': 'yes' if any(it[1] == 'SERP' for it in inw) else 'no',
+                         'agreement_check': 'yes' if any(it[1] == 'AGREE' for it in inw) else 'no'})
+    rows.sort(key=lambda r: (r['first_asked'], r['market'], r['niche'], r['prompt_id']))
+    return rows
+
+
+def counts_sentence(prows, days, w0, w1):
+    """The COUNTS sentence for the method note and the card, computed from the prompts rows and the run days.
+    Returns (sentence, numbers)."""
+    P = len(prows)
+    S = sum(1 for r in prows if r['question_type'] == 'segment')
+    B = P - S
+    labels = sorted({r['market'] for r in prows if r['market']})
+    nat = [m for m in labels if m.startswith('US nationwide')]
+    L = len(labels) - len(nat)
+    N = len({r['niche'] for r in prows if r['niche']})
+    engines = sorted({e for r in prows for e in r['engines_in_window'].split(';') if e})
+    D = len(days)
+    sentence = ('%d questions, each asked in the same words on every run day it was in the roster (%d market or category questions '
+                'and %d questions asked to see whether one named business comes up); %d US local markets plus nationwide questions '
+                '(%d market labels as written in the roster); %d niche labels as written in the roster; API engines asked: %s, '
+                'plus Google results; %d run days from %s to %s.'
+                % (P, S, B, L, len(labels), N, ', '.join(engines), D, w0, w1))
+    return sentence, {'questions': P, 'segment_questions': S, 'named_business_questions': B, 'us_local_markets': L,
+                      'market_labels': len(labels), 'nationwide_market_labels': len(nat), 'niche_labels': N,
+                      'api_engines': engines, 'run_days': D, 'window': [w0, w1]}
+
+
 # ------------------------------------------------------------------ other data
 def merge_sources(src_dir, w0, w1, out):
     header = None
@@ -404,6 +488,14 @@ def main():
         good = sha(out) == want.get(rel)
         ok = ok and good
         print(('MATCH    ' if good else 'MISMATCH ') + 'rebuild of ' + rel + ' from corpus/e1 (%d rows)' % len(rows))
+        if 'prompts' in pack['files']:
+            prel = pack['files']['prompts']
+            prows = mod.prompts_rows(os.path.join(repo, 'corpus', 'e1'), pack['window'][0], pack['window'][1])
+            out2 = os.path.join(tmp, 'prompts.csv')
+            mod.write_rows(out2, prows, mod.PROMPT_FIELDS)
+            good = sha(out2) == want.get(prel)
+            ok = ok and good
+            print(('MATCH    ' if good else 'MISMATCH ') + 'rebuild of ' + prel + ' from corpus/e1 (%d questions)' % len(prows))
     if '--metrics' in a:
         tmp = tempfile.mkdtemp()
         v2 = os.path.join(HERE, 'method', 'Brain_Kit', 'status', 'staged', '1008E_S1_METRICS', 'receipts_metrics_v2.py')
@@ -448,7 +540,7 @@ def render_card(meta, ans_rel, src_rel):
         line = 'Edition 1 is final. Data through %s.' % w1
     else:
         line = 'Status: staged. This copy holds data through %s. The Edition 1 release adds data through %s.' % (w1, E1_END)
-    rep = {'{{STATUS_LINE}}': line, '{{W0}}': meta['window'][0], '{{W1}}': w1, '{{RUN_DAYS}}': str(meta['run_days']),
+    rep = {'{{STATUS_LINE}}': line, '{{COUNTS}}': meta['counts_sentence'], '{{W0}}': meta['window'][0], '{{W1}}': w1, '{{RUN_DAYS}}': str(meta['run_days']),
            '{{ANSWERS_ROWS}}': '{:,}'.format(meta['answers_rows']), '{{ANSWERS_PATH}}': ans_rel, '{{SOURCES_PATH}}': src_rel}
     for k, v in rep.items():
         text = text.replace(k, v)
@@ -536,6 +628,10 @@ def build(through, out, method_src, status):
     tag = '%s_to_%s' % (W0, last)
     ans_rel = 'data/answers_%s.csv' % tag
     write_rows(os.path.join(pack, *ans_rel.split('/')), rows, ANSWER_FIELDS)
+    prompts_rel = 'data/prompts.csv'
+    prows = prompts_rows(corpus, W0, last)
+    write_rows(os.path.join(pack, *prompts_rel.split('/')), prows, PROMPT_FIELDS)
+    shutil.copyfile(os.path.join(REPO, 'LICENSE'), os.path.join(pack, 'LICENSE'))
     src_rel = 'data/sources_%s.csv' % tag
     n_src, src_days = merge_sources(os.path.join(REPO, 'datasets', 'e1', 'sources'), W0, last, os.path.join(pack, *src_rel.split('/')))
     n_siri = filter_by_date(os.path.join(REPO, 'datasets', 'e1', 'siri', 'siri_panel.csv'), os.path.join(pack, 'data', 'siri_panel.csv'), 'date', W0, last)
@@ -568,10 +664,12 @@ def build(through, out, method_src, status):
     for r in rows:
         by_kind[r['kind']] = by_kind.get(r['kind'], 0) + 1
     days = sorted({r['date'] for r in rows})
+    counts_text, counts_numbers = counts_sentence(prows, days, W0, last)
     meta = {'edition': 1, 'status': status, 'window': [W0, last], 'requested_through': through,
             'run_days': len(days), 'vendor_patches': patches, 'answers_rows': len(rows), 'rows_by_kind': by_kind,
             'metrics_panel': panel_meta, 'heading_filter': hr, 'reruns_in_window': reruns, 'run_status_counts': sc, 'sources_rows': n_src, 'sources_days': len(src_days), 'siri_rows': n_siri, 'customer_zero_rows': n_cz,
-            'files': {'answers': ans_rel, 'sources': src_rel, 'siri': 'data/siri_panel.csv', 'metrics': 'metrics/metrics_v2.csv'}}
+            'files': {'answers': ans_rel, 'sources': src_rel, 'siri': 'data/siri_panel.csv', 'metrics': 'metrics/metrics_v2.csv', 'prompts': prompts_rel},
+            'prompts_rows': len(prows), 'counts': counts_numbers, 'counts_sentence': counts_text}
     with io.open(os.path.join(pack, 'PACK.json'), 'w', encoding='utf-8', newline='\n') as fh:
         json.dump(meta, fh, indent=1, sort_keys=True)
         fh.write('\n')
@@ -587,11 +685,25 @@ def build(through, out, method_src, status):
                 .replace('{{RUN_DAYS}}', str(len(days))).replace('{{ANSWERS_ROWS}}', '{:,}'.format(len(rows)))
                 .replace('{{PANEL}}', panel_sentence(panel_meta))
                 .replace('{{GAPS}}', gaps_text(days, W0, last)).replace('{{HEADINGS}}', heading_sentence(hr))
-                .replace('{{RERUNS}}', str(reruns)).replace('{{EXTRACTION_FAILED}}', extraction_failed_sentence(sc)).replace('{{ANSWERS_FILE}}', ans_rel).replace('{{SOURCES_FILE}}', src_rel))
+                .replace('{{RERUNS}}', str(reruns)).replace('{{EXTRACTION_FAILED}}', extraction_failed_sentence(sc)).replace('{{ANSWERS_FILE}}', ans_rel).replace('{{SOURCES_FILE}}', src_rel)
+                .replace('{{COUNTS}}', counts_text))
         if '{{' in text:
             raise SystemExit('unfilled placeholder in the method note')
         with io.open(os.path.join(pack, 'README.md'), 'w', encoding='utf-8', newline='\n') as fh:
             fh.write(text)
+    # reproduce kit (S1c 2026-10-10): the two scripts travel with the pack, and the build writes the expected headline
+    # values and the SHA-256 of every input they read, so `python3 -I reproduce/reproduce_edition.py --pack .` run inside
+    # the pack recomputes the headlines offline and compares.
+    shutil.copyfile(os.path.join(REPO, 'CITATION.cff'), os.path.join(pack, 'CITATION.cff'))
+    kit = os.path.join(pack, 'reproduce')
+    os.makedirs(kit)
+    for f in ('reproduce_edition.py', 'headline_recompute.py'):
+        shutil.copyfile(os.path.join(HERE, f), os.path.join(kit, f))
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('reproduce_edition_pack', os.path.join(kit, 'reproduce_edition.py'))
+    rep = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(rep)
+    rep.write_expected(pack, rep.reproduce(pack))
     n = write_manifest(pack)
     print('pack %s: window %s..%s, %d run days, %d answer rows, %d source rows, %d siri rows, %d files in the manifest'
           % (pack, W0, last, len(days), len(rows), n_src, n_siri, n))
@@ -671,10 +783,12 @@ def selftest():
     except SystemExit:
         stopped = True
     chk('RED: a missing patch target stops the build', stopped)
-    meta = {'status': 'STAGED', 'window': ['2026-09-01', '2026-10-07'], 'run_days': 36, 'answers_rows': 10152}
+    meta = {'status': 'STAGED', 'window': ['2026-09-01', '2026-10-07'], 'run_days': 36, 'answers_rows': 10152,
+            'counts_sentence': 'FIXTURE COUNTS.'}
     card = render_card(meta, 'data/answers_x.csv', 'data/sources_x.csv')
     chk('card: every placeholder filled, paths and counts in place',
         '{{W' not in card and 'edition-1/data/answers_x.csv' in card and '10,152 answer rows' in card and 'staged' in card)
+    chk('card: the COUNTS line is filled from the build', '\nCounts: FIXTURE COUNTS.\n' in card)
     chk('card: no em dash, en dash or emoji', not any(ch in card for ch in ('\u2014', '\u2013')) and all(ord(c) < 0x2000 or c in '\u2019' for c in card))
     chk('card: FINAL status line differs', 'Edition 1 is final' in render_card(dict(meta, status='FINAL'), 'data/a.csv', 'data/s.csv'))
     def R(date, kind, niche, market):
@@ -742,6 +856,51 @@ def selftest():
             % (sorted(want - HEADING_WORDS), sorted(HEADING_WORDS - want)), want == HEADING_WORDS)
     chk('derived fields come after the base fields; check-latest layout unchanged',
         ANSWER_FIELDS[:len(BASE_FIELDS)] == BASE_FIELDS and BASE_FIELDS[-1] == 'sha256')
+    # prompts.csv: its own folder, so the answers checks above see only their own files
+    cdir = os.path.join(tmp, 'prompts')
+    os.makedirs(cdir)
+    put('NB-CZ-API_2026-08-28_biz_co.json', {'date_utc': '2026-08-28', 'business': 'Biz Co', 'prompt_text': 'Best roofer in Town A?',
+                                            'engine': 'openai', 'niche': 'roofers', 'market': 'Old Town'})
+    put('NB-CZ-API_2026-09-02_biz_co.json', {'date_utc': '2026-09-02', 'business': 'Biz Co', 'prompt_text': 'Best roofer in Town A?',
+                                            'engine': 'anthropic', 'niche': 'roofers', 'market': 'Town B'})
+    put('NB-CZ-API_2026-09-02_biz_co_gemini.json', {'date_utc': '2026-09-02', 'business': 'Biz Co', 'prompt_text': 'Best roofer in Town A?',
+                                                   'engine': 'gemini', 'niche': 'roofers', 'market': 'Town A'})
+    put('NB-CZ-API_2026-09-03_biz_co.json', {'date_utc': '2026-09-03', 'business': 'Biz Co', 'prompt_text': 'Top roofer in Town A?',
+                                            'engine': 'openai', 'niche': 'roofers', 'market': 'Town A'})
+    put('NB-CZ-API_2026-09-02_seg_x.json', {'date_utc': '2026-09-02', 'business': 'SEGMENT: x, Y', 'prompt_text': 'Best x in Y?',
+                                           'engine': 'openai', 'niche': 'x', 'market': 'Y'})
+    put('NB-CZ-SERP_2026-09-02_seg_x.json', {'date_utc': '2026-09-02', 'business': 'SEGMENT: x, Y', 'prompt_text': 'Best x in Y?', 'engine': 'google_serp'})
+    put('NB-CZ-AGREE_2026-09-02_seg_x.json', {'date_utc': '2026-09-02', 'business': 'SEGMENT: x, Y', 'prompt_text': 'Best x in Y?'})
+    put('NB-CZ-API_2026-07-30_gone.json', {'date_utc': '2026-07-30', 'business': 'Gone Co', 'prompt_text': 'Who is Gone Co?',
+                                          'engine': 'openai', 'niche': 'n', 'market': 'M'})
+    put('NB-CZ-OTHER_2026-09-02_other.json', {'date_utc': '2026-09-02', 'business': 'Other Co', 'prompt_text': 'Other?'})
+    open(os.path.join(cdir, 'NB-CZ-API_2026-09-02_bad.json'), 'w').write('{not json')
+    prows = prompts_rows(cdir, '2026-09-01', '2026-09-03')
+    by_id = {r['prompt_id']: r for r in prows}
+    b1, b2, sg = by_id.get('biz_co', {}), by_id.get('biz_co_2', {}), by_id.get('segment_x_y', {})
+    chk('prompts: three questions in order; the pre-window question, the non-matching file and the broken file are left out (%d rows)'
+        % len(prows), [r['prompt_id'] for r in prows] == ['biz_co', 'segment_x_y', 'biz_co_2'])
+    chk('prompts: a text that changed inside the window is a second row (biz_co, then biz_co_2)',
+        b1.get('target') == 'Biz Co' and b1.get('prompt_text') == 'Best roofer in Town A?' and b2.get('prompt_text') == 'Top roofer in Town A?')
+    chk('prompts: first_asked of a question that began before the window is its earliest date (2026-08-28)',
+        b1.get('first_asked') == '2026-08-28' and b2.get('first_asked') == '2026-09-03')
+    chk('prompts: window fields use in-window files only (last 2026-09-02, one day, engines anthropic;gemini)',
+        b1.get('last_asked_in_window') == '2026-09-02' and b1.get('days_asked_in_window') == 1 and b1.get('engines_in_window') == 'anthropic;gemini')
+    chk('prompts: market is the most common in-window value, a tie goes alphabetical (Town A), the pre-window value is not used',
+        b1.get('market') == 'Town A' and b2.get('market') == 'Town A' and b1.get('niche') == 'roofers')
+    chk('prompts: question_type is segment for SEGMENT: and named_business otherwise',
+        sg.get('question_type') == 'segment' and b1.get('question_type') == 'named_business' and b2.get('question_type') == 'named_business')
+    chk('prompts: google_results and agreement_check follow the SERP and AGREE files (segment yes, yes; Biz Co no, no)',
+        (sg.get('google_results'), sg.get('agreement_check'), b1.get('google_results'), b1.get('agreement_check')) == ('yes', 'yes', 'no', 'no'))
+    chk('prompts: prompt_sha256 is the SHA-256 of the text as UTF-8',
+        b1.get('prompt_sha256') == hashlib.sha256('Best roofer in Town A?'.encode('utf-8')).hexdigest())
+    sent, nums = counts_sentence(prows, ['2026-09-02', '2026-09-03'], '2026-09-01', '2026-09-03')
+    chk('prompts: P, S and B are 3, 1 and 2', (nums['questions'], nums['segment_questions'], nums['named_business_questions']) == (3, 1, 2))
+    chk('counts sentence reads as the method note words it, with the fixture numbers', sent == (
+        '3 questions, each asked in the same words on every run day it was in the roster (1 market or category questions and '
+        '2 questions asked to see whether one named business comes up); 2 US local markets plus nationwide questions (2 market '
+        'labels as written in the roster); 2 niche labels as written in the roster; API engines asked: anthropic, gemini, openai, '
+        'plus Google results; 2 run days from 2026-09-01 to 2026-09-03.'))
     print('SELFTEST ' + ('FAIL: ' + ', '.join(fails) if fails else 'PASS'))
     return not fails
 
