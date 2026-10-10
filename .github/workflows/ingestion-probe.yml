@@ -1,0 +1,83 @@
+name: ingestion-probe
+# AI-ingestion lag probe, cohort experiment (prereg/). Added 2026-10-10 by [SONNET-RECORD-1010B-S1c].
+# Asks the E1 engines the cohort's probe questions once a day with the E1 call settings (scripts/engines.py),
+# saves every answer word for word under data/ingestion/raw/, and appends one row per call. Its own
+# concurrency group, so the daily E1 run (e1-check-runner.yml) is never queued behind it or changed by it.
+# Slots: 12:37Z, and a backstop at 13:12Z that runs only when today's rows are missing.
+on:
+  workflow_dispatch: {}
+  schedule:
+  - cron: "37 12 * * *"
+  - cron: "12 13 * * *"
+
+concurrency:
+  group: ingestion-probe
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Guard (a late or second scheduled run skips)
+        id: guard
+        run: |
+          D=$(date -u +%Y-%m-%d)
+          H=$(date -u +%H)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$H" -lt 12 ]; then
+            echo "Scheduled run started at ${H}Z: a late run that crossed midnight; today's 12:37Z slot owns $D. Skipping."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "schedule" ] && grep -q ",$D," data/ingestion/ingestion_probe.csv 2>/dev/null; then
+            echo "Probe rows for $D already exist; this scheduled run is the backstop and skips."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Python 3.12
+        if: steps.guard.outputs.skip != 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install requests
+        if: steps.guard.outputs.skip != 'true'
+        run: pip install requests
+
+      - name: Selftest (no network)
+        if: steps.guard.outputs.skip != 'true'
+        run: python3 -I scripts/ingestion_probe.py --selftest
+
+      - name: Run the probe
+        if: steps.guard.outputs.skip != 'true'
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BRIGHTDATA_API_KEY: ${{ secrets.BRIGHTDATA_API_KEY }}
+          BRIGHTDATA_ZONE: ${{ vars.BRIGHTDATA_ZONE }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+        run: python3 scripts/ingestion_probe.py --run
+
+      - name: Commit and push the new rows
+        if: steps.guard.outputs.skip != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ingestion/
+          if git diff --staged --quiet; then
+            echo "No new probe rows to commit."
+          else
+            git commit -m "ingestion probe run $(date -u +%Y-%m-%d)"
+            for i in 1 2 3; do
+              git push && break
+              echo "push rejected, rebasing (attempt $i)"
+              git pull --rebase origin main
+            done
+          fi
