@@ -1,0 +1,117 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-10-10_segment_tire_shops_pleasanton",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: tire shops, Pleasanton",
+ "row_type": "agreement",
+ "prompt_text": "Where should I buy tires in Pleasanton CA and who does the best installation?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Costco Tire Center",
+    "Discount Tire",
+    "Google and Yelp"
+   ],
+   "verbose_names": [
+    "Big Brand Tire",
+    "Old Santa Rita Road",
+    "Seever",
+    "Sons Tire",
+    "Costco Tire Center",
+    "Johnson Drive",
+    "Costco",
+    "San Ramon",
+    "Tire Rack",
+    "Sons. Ask"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 10,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 1098,
+   "answer_chars_b": 1691,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Chain Retailers",
+    "Costco",
+    "Independent Shops",
+    "Yelp",
+    "Tips for Finding Good Installation",
+    "Google Maps"
+   ],
+   "verbose_names": [
+    "Big Brand Tire",
+    "Old Santa Rita Road",
+    "Seever",
+    "Sons Tire",
+    "Costco Tire Center",
+    "Johnson Drive",
+    "Costco",
+    "San Ramon",
+    "Tire Rack",
+    "Sons. Ask"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 6,
+   "verbose_entity_count": 10,
+   "containment_pct": 16.7,
+   "shared_count": 1,
+   "answer_chars_a": 1098,
+   "answer_chars_b": 1020,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Costco Tire Center",
+    "Discount Tire",
+    "Google and Yelp"
+   ],
+   "verbose_names": [
+    "Chain Retailers",
+    "Costco",
+    "Independent Shops",
+    "Yelp",
+    "Tips for Finding Good Installation",
+    "Google Maps"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 6,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 1691,
+   "answer_chars_b": 1020,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

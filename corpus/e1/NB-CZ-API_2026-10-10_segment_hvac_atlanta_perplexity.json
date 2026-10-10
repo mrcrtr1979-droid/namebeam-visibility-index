@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_hvac_atlanta_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9f73bb9b-907b-4e8b-9365-3932d1a2539d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00057,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0043
+   },
+   "input_tokens": 4912,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4364,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 229,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5141
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PV Heating, Cooling & Plumbing",
+  "Reliable Heating & Air"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://serviceagent.ai/directory/georgia/atlanta/hvac/replacement/",
+  "https://cityvetted.com/best/best-hvac-atlanta",
+  "https://www.pvhvac.com/air-conditioning/ac-repair/",
+  "https://reliableair.com/cooling/central-ac-installation",
+  "https://www.theaircompanyga.com/",
+  "https://www.consumeraffairs.com/homeowners/hvac-repair-atlanta.html",
+  "https://www.theaircompanyga.com/atlanta-hvac-service",
+  "https://energyheating.com/residential-services/",
+  "https://www.homedepot.com/services/l/ga/atlanta/heating-air-conditioning-installation/c16fbb4b7",
+  "https://indoorexperts.com/financing/",
+  "https://www.theaircompanyga.com/norcross-hvac-service",
+  "https://bardi.com/air-conditioning/ac-installation",
+  "https://www.homedepot.com/services/l/ga/atlanta/heating-air-conditioning-repair/673dcc2c8",
+  "https://www.statonheatingandair.com/",
+  "https://www.homeadvisor.com/tloc/Atlanta-GA/Central-A-C-Service-or-Repair/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every Atlanta home, but **PV Heating, Cooling & Plumbing** looks like a strong first call: it reports a 4.9 Google rating with 2,000+ five-star reviews, says it’s licensed and insured, and offers free replacement estimates. **Reliable Heating & Air** is another established option, reporting nearly 15,000 reviews and a 4.8 rating.\n\nBefore choosing, get **at least three written quotes**. Ask each company to explain the equipment options, how they sized the system for your home, the full installed price, and exactly what the labor and parts warranties cover. Verify the contractor’s Georgia conditioned-air license, and compare the proposals—not just the brand or efficiency rating.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_da129857-189c-4a9f-904c-4fdf13fdd1d3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00464
+   },
+   "input_tokens": 5236,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4689,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 330,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5566
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "OoLi Orthodontics (Dr. W.W. Jonathan Park)",
+  "Murphy Orthodontics (Dr. Chris Murphy)",
+  "Dunn Orthodontics",
+  "Woolaver Orthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://teamorthodontics.com/",
+  "https://ooliortho.com/",
+  "https://dunn-orthodontics.com/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/woolaver-orthodontics-phoenix-az",
+  "https://www.murphyorthodontics.com/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/ooli-orthodontics-phoenix-az",
+  "https://serranoorthodontics.com/welcome/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/smile-straight-orthodontics-greenway-road-phoenix-az",
+  "https://woolaverorthodontics.com/about/",
+  "https://www.linkedin.com/in/buddortho",
+  "https://dunn-orthodontics.com/phoenix-invisalign/",
+  "https://serranoorthodontics.com/phoenix-orthodontics/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/premier-orthodontics-of-central-phoenix-phoenix-az",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/rusty-jones-orthodontics-phoenix-az",
+  "https://www.murphyorthodontics.com/practice-news/phoenix-orthodontist-discusses-the-potential-health-benefits-of-invisalign/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—location, treatment needs, cost, and how comfortable you feel with the doctor all matter. **OoLi Orthodontics (Dr. W.W. Jonathan Park)** looks like a strong starting point: the practice offers braces and Invisalign, and reports that Dr. Park was peer-voted a *PHOENIX Magazine* Top Orthodontist for 2026–27. It has a Phoenix office at **6843 N. 8th Ave.** and a Tempe office.\n\nOther options to compare:\n- **Murphy Orthodontics (Dr. Chris Murphy):** board-certified; offers braces and Invisalign, with a Phoenix office near High Street.\n- **Dunn Orthodontics:** board-certified orthodontists; offers braces and Invisalign, with a central Phoenix office on E. Bethany Home Road.\n- **Woolaver Orthodontics:** Phoenix office in Ahwatukee; offers braces and Invisalign.\n\nI’d book two or three consultations before choosing. Ask who will supervise your treatment, what each option would cost (including retainers and refinements), and how often you’ll need visits. Confirm credentials and current reviews independently, too.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

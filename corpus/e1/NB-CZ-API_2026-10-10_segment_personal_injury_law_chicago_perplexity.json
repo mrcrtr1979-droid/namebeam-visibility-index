@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_personal_injury_law_chicago_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: personal injury law, Chicago",
+ "niche": "personal injury attorneys",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best personal injury attorney in Chicago for a car accident claim?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_75c26694-236d-48c5-9cc1-e1cafa45277c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00073,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00402
+   },
+   "input_tokens": 3471,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2922,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 259,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3730
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Salvi, Schostok & Pritchard",
+  "Daniel J. McDevitt of McDevitt & Cobb"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/illinois/chicago/",
+  "https://www.prnewswire.com/news-releases/daniel-j-mcdevitt-of-mcdevitt--cobb-pc-selected-to-2026-illinois-super-lawyers-302818630.html",
+  "https://lawyers.findlaw.com/illinois/chicago/salvi-schostok--pritchard-pc-MjQwMzI4OV8x/?pa=2801",
+  "https://phillipslawoffices.com/",
+  "https://natlawreview.com/press-releases/paul-greenberg-briskman-briskman-greenberg-named-2026-super-lawyers-list",
+  "https://www.avvo.com/attorneys/60601-il-jennifer-ashley-1024172.html",
+  "https://lawyers.findlaw.com/illinois/chicago/salvi-schostok--pritchard-pc-MjQwMzI4OV8x/?pa=1273",
+  "https://www.powerrogers.com/",
+  "https://www.schwartzjambois.com/",
+  "https://attorneys.superlawyers.com/personal-injury-plaintiff/illinois/chicago/?page=18",
+  "https://www.avvo.com/attorneys/60602-il-philip-berenz-1154495.html",
+  "https://www.salvilaw.com/car-accident-lawyer/",
+  "https://www.avvo.com/attorneys/60602-il-david-schwaner-1078190.html",
+  "https://www.ontoplist.com/car-accident-lawyers/il/chicago/",
+  "https://illinoishammer.com/chicago/car-accident-lawyer/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t an objective, universally agreed “best” attorney. Based on the available listings, **Salvi, Schostok & Pritchard** is one Chicago firm worth considering for a car-accident claim; its directory listing shows multiple attorneys recognized by Super Lawyers, and it handles car-accident cases. **Daniel J. McDevitt of McDevitt & Cobb** is another option, with reported Super Lawyers recognition and a practice that includes car, truck, and motorcycle accidents.\n\nBefore choosing, speak with two or three firms and ask who will personally handle your case, how much of their work involves injury claims like yours, what fees and case costs apply, and how they’ll keep you updated. Recognition and firm-reported results are useful leads, not guarantees. Most offer a free initial consultation; confirm the fee agreement and deadlines directly with the attorney.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_property_management_west_palm_beach_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: property management, West Palm Beach",
+ "niche": "property management companies",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in West Palm Beach FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ebb03a89-26fd-440c-bf80-7451e0202eca",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00093,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00473
+   },
+   "input_tokens": 5208,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4657,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 372,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5580
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Florida’s Property Management (My Area Realty)",
+  "Home Property Management",
+  "Atlis Property Management",
+  "Luxury Property Care"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.thumbtack.com/fl/west-palm-beach/property-management",
+  "https://www.atlispm.com/west-palm-beach-property-management",
+  "https://www.floridaspropertymanagement.com/",
+  "https://luxurypropertycare.com/west-palm-beach-property-management-services/",
+  "https://www.floridaspropertymanagement.com/city/West-Palm-Beach.html",
+  "https://www.managewithaps.com/testimonials.html",
+  "https://www.atlispm.com/",
+  "https://www.homepropertymanagement.com/",
+  "https://www.thumbtack.com/fl/palm-beach-gardens/property-management/palm-beach-county-property-management/service/461555635430252550",
+  "https://www.homepropertymanagement.com/west-palm-beach-property-management",
+  "https://www.thumbtack.com/fl/west-palm-beach/vacation-rental-management-companies",
+  "https://floridamanagement.net/west-palm-beach-property-management/",
+  "https://www.thumbtack.com/fl/west-palm-beach/property-management/ibero-property-management-real-estate-services/service/302430548053459123",
+  "https://keyverified.com/top-10/florida/west-palm-beach/",
+  "https://www.westpalmbeach-propertymanagement.com/palm-beach-property-management"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Florida’s Property Management (My Area Realty)** looks like a strong local option to compare first. It specifically manages single-family homes in West Palm Beach and advertises tenant screening, rent collection, maintenance coordination, owner statements, and no management fee while the home is vacant. Its published pricing varies by rent level, so confirm the current total cost and contract terms.\n\nAlso worth getting proposals from:\n\n- **Home Property Management** — advertises broad rental-site and MLS marketing, frequent inspections, 24/7 maintenance response, and an owner portal. Ask how its introductory pricing changes after the first year.\n- **Atlis Property Management** — serves West Palm Beach and lists annual inspections, applicant screening, emergency support, and maintenance coordination. Its published management fee is 5–9%, with a $200 monthly minimum, plus a leasing fee.\n- **Luxury Property Care** — advertises single-family home management, inspections, HOA coordination, and no management fee while vacant; its stated fee is 8–10% of collected rent plus a leasing fee.\n\nBefore choosing, compare the **full fee schedule**—including leasing, renewals, inspections, maintenance markups, and cancellation—and ask for recent owner references and a sample management agreement. Fees and terms can change, so verify them directly.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

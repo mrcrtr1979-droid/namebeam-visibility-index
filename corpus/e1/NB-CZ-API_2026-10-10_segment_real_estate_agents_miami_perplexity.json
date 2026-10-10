@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_real_estate_agents_miami_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: real estate agents, Miami",
+ "niche": "real estate agents",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Miami FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7e6dcfc3-4ca0-448d-98e4-f66e2f946258",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0012,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00093,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00477
+   },
+   "input_tokens": 5358,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4809,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 370,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5728
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sandra Rathe (REAL)",
+  "Dominick Martinez",
+  "Desare Kohn-Laski"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/miami-fl/",
+  "https://www.ratemyagent.com/real-estate-profile/sales/florida/miami-fl",
+  "https://www.zillow.com/profile/chezrealty",
+  "https://www.homes.com/real-estate-agents/renzo-ramirez/70w9k9x/",
+  "https://www.zillow.com/profile/Dawn%20Wands",
+  "https://www.homelight.com/agents/dominick-martinez-fl-03108164",
+  "https://www.homes.com/real-estate-agents/carolina-suarez-rivas/c07ln6f/",
+  "https://www.zillow.com/profile/Gustavo%20Moreira",
+  "https://www.homes.com/real-estate-agents/alvaro-bustos/4hdm8yk/",
+  "https://www.homes.com/real-estate-agents/madeleine-romanello/vb73eyf/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33132/",
+  "https://www.homelight.com/miami-fl/top-real-estate-agents",
+  "https://www.homelight.com/agents/ileana-rodriguez-fl-00392092",
+  "https://www.realtor.com/realestateagents/Miami_FL",
+  "https://www.homes.com/real-estate-agents/angel-barreiro/msf0mkk/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for every Miami home—the right choice depends on your neighborhood, property type, and price range. Based on the available recent rankings and seller-side activity, **Sandra Rathe (REAL)** is one candidate to interview: she ranked first on HomeLight’s Miami list, which says it uses listings closed in the prior 12 months. **Dominick Martinez** and **Desare Kohn-Laski** also appeared near the top of that list. Rankings are a useful starting point, not a guarantee of the best result for your specific home.\n\nBefore choosing, interview three agents who have recently sold homes like yours nearby. Ask each for:\n- Recent comparable listings they represented as the **seller**, including final price and days on market\n- Their pricing recommendation and the comparable sales behind it\n- A written marketing and showing plan\n- Their commission and listing-agreement terms\n- References from recent sellers\n\nYou can compare their recent sales and reviews on [HomeLight’s Miami agent list](https://www.homelight.com/miami-fl/top-real-estate-agents) and [Zillow’s Miami agent directory](https://www.zillow.com/professionals/real-estate-agent-reviews/miami-fl/). If you share your neighborhood or ZIP code, home type, and approximate value, I can help narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

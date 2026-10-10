@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_real_estate_agents_st_louis_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: real estate agents, St. Louis",
+ "niche": "real estate agents",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Louis MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3af0f27a-df2b-4452-aa45-5b4ba351119b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00089,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 4742,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4191,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 357,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5099
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jenifer Garcia of Garcia Properties",
+  "Allen Brake",
+  "Dan Brassil"
+ ],
+ "engine_stated_criteria": [
+  "seller-side sales in your neighborhood"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/saint-louis-mo/",
+  "https://www.zillow.com/profile/laurasandersteam",
+  "https://www.zillow.com/profile/thedrewgroupstl",
+  "https://www.zillow.com/profile/JeniferGarcia",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/saint-louis-mo-63139-mo/",
+  "https://www.zillow.com/profile/zuser20170117184719793",
+  "https://www.zillow.com/profile/Mike%20ONeill",
+  "https://www.zillow.com/profile/DielmannSothebysIntl",
+  "https://www.zillow.com/profile/SARAHBANI",
+  "https://www.zillow.com/profile/Brnjics",
+  "https://www.zillow.com/profile/lmrisley",
+  "https://www.zillow.com/profile/zuser20160825054101119",
+  "https://listwithclever.com/top-real-estate-agents/profiles/allen-brake-35785/",
+  "https://www.realtor.com/realestateagents/636d018d260d345d96426201",
+  "https://listwithclever.com/top-real-estate-agents/profiles/david-nations-315433/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for every St. Louis home—the right choice depends on your neighborhood, price range, and property type. Based on the available results, **Jenifer Garcia of Garcia Properties** looks like a strong candidate to interview: her profile shows 5.0 stars, 171 reviews, and 66 sales in the last 12 months, with recent reviews specifically mentioning home sales in St. Louis. [See her profile](https://www.zillow.com/profile/JeniferGarcia).\n\nI’d compare her with **Allen Brake**, whose team is reported to have closed 53 transactions in the past year, and **Dan Brassil**, whose profile shows 5.0 stars and 61 sales in the past year. These figures and reviews are from online profiles, so treat them as a starting point—not a guarantee of results.\n\nBefore choosing, ask each agent for:\n- Recent **seller-side sales in your neighborhood** and a few references\n- Their suggested list price, with comparable sales to support it\n- Their marketing plan and who will handle showings and negotiations\n- Their commission, contract length, and cancellation terms\n\nIf you share your neighborhood or ZIP code, approximate home value, and whether it’s a condo, single-family home, or something else, I can help narrow the shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

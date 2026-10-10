@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_mortgage_lenders_west_palm_beach_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: mortgage lenders, West Palm Beach",
+ "niche": "mortgage lenders",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in West Palm Beach FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_685f71be-aaf8-4ca9-ba98-6b99907ffa20",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00067,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00086,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00417
+   },
+   "input_tokens": 3235,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2684,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 343,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3578
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Palm Beach Mortgage Group",
+  "New American Funding",
+  "Loan Estimates"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bvlending.com/",
+  "https://www.experience.com/reviews/office/west-palm-beach",
+  "https://dreamyleads.com/mortgage/best-mortgage-lenders-west-palm-beach",
+  "https://manifestmortgagegroup.com/",
+  "https://www.experience.com/reviews/javier-infiesta-140310",
+  "https://trustanalytica.org/us/fl/west-palm-beach/best-mortgage-brokers",
+  "https://palmbeachmortgagegroup.com/",
+  "https://www.newamericanfunding.com/branches/westpalmbeach",
+  "https://trustanalytica.org/us/fl/best-mortgage-brokers",
+  "https://www.bbb.org/us/fl/west-palm-beach/profile/mortgage-lenders/newday-usa-0633-92034734/customer-reviews?page=3",
+  "https://ahmcloans.com/home-loan-branches/fl/west-palm-beach-fl/",
+  "https://topratedlenders.com/eric-lieberman-nmls-282546",
+  "https://www.experience.com/reviews/mark-wilson-310261",
+  "https://www.ctcmortgage.com/branches/west-palm-beach",
+  "https://www.experience.com/reviews/estrella-ganas-300121"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one lender that’s best for every buyer—the right choice depends on your credit, down payment, loan type, and the property. **For a practical starting point, I’d compare Palm Beach Mortgage Group with at least one larger lender, such as New American Funding.**\n\n- **Palm Beach Mortgage Group** is a local option with purchase-loan experience and customer reviews mentioning communication and quick closings. [Website](https://palmbeachmortgagegroup.com/)\n- **New American Funding** has a West Palm Beach branch and offers conventional, FHA, and VA loans; its site also lists possible down-payment assistance for eligible buyers. [Branch details](https://www.newamericanfunding.com/branches/westpalmbeach)\n\nAsk both for written **Loan Estimates** using the same purchase price, down payment, loan type, and rate-lock period. Compare the APR, lender fees, points, cash to close, and estimated closing timeline—not just the advertised rate. Also check whether the loan officer is licensed and whether the lender can meet your contract’s deadlines.\n\nIf you share your approximate price range, down payment, and whether you’re considering conventional, FHA, or VA financing, I can help narrow down what to compare.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_mortgage_lenders_st_louis_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: mortgage lenders, St. Louis",
+ "niche": "mortgage lenders",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Louis MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_05e5538f-5588-4fc9-b9d1-8f20317568d9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00092,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00462
+   },
+   "input_tokens": 4808,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4257,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 366,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5174
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "St. Louis Community Credit Union",
+  "Stifel Bank & Trust",
+  "Community Mortgage Bank",
+  "MHDC down-payment assistance",
+  "HomeSTL",
+  "Loan Estimates",
+  "Stifel"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.developstlouis.org/homestl",
+  "https://www.cnbstl.com/first-time-home-buyer-ad-landing",
+  "https://www.midwestbankcentre.com/mortgage/",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://bankwithstifel.com/insights/stifel-bank-trusts-commitment-to-the-greater-st-louis-area/",
+  "https://arpa.stlouis-mo.gov/individual-family-programs/",
+  "https://bankwithstifel.com/mortgage/programs/",
+  "https://livingstlouismo.com/best-mortgage-lenders-st-louis-mo/",
+  "https://www.vcu.com/borrow/mortgages",
+  "https://bankwithstifel.com/mortgage/serving-st-louis/",
+  "https://themortgagereports.com/89455/missouri-first-time-home-buyer-programs-grants",
+  "https://planethomelending.com/mortgage-loan-officers/missouri/st-louis",
+  "https://www.newamericanfunding.com/branches/st-louis-olive",
+  "https://www.stlouiscommunity.com/home-loans-first-mortgage",
+  "https://www.newamericanfunding.com/branches/st-louis-southcounty"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one best lender for everyone—rates and fees depend on your credit, down payment, loan type, and the specific property. **I’d start by getting quotes from three local options:**\n\n- **St. Louis Community Credit Union** — worth checking if you want a local credit union or may qualify for its Affordable Seconds assistance.\n- **Stifel Bank & Trust** — offers conventional, FHA, VA, USDA, and other loans, and participates in Missouri Housing Development Commission (MHDC) programs.\n- **Community Mortgage Bank** — advertises first-time-buyer programs, including HOPE, for eligible buyers in the St. Louis area.\n\nIf you’re a first-time buyer, ask each lender whether you qualify for **MHDC down-payment assistance**. If you’re buying within St. Louis city, also check the current status of **HomeSTL**; the latest information in the results says its funds were fully reserved, so don’t count on it without confirming availability.\n\nCompare written **Loan Estimates** for the same loan type, down payment, rate-lock period, and closing date. Look at the APR, lender fees, points, mortgage insurance, and estimated cash to close—not just the advertised rate. My practical pick: start with **St. Louis Community Credit Union** and **Stifel**, then compare their quotes with one other lender.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

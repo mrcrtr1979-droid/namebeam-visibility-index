@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_quickads_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "Quickads",
+ "niche": "AI video ad maker",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best AI video ad maker?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_03a100e4-b078-4c2d-b31d-8ea746cd1174",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00063,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0044
+   },
+   "input_tokens": 5059,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4516,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 252,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5311
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "HeyGen",
+  "Runway",
+  "Canva"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://albato.com/blog/publications/best-ai-video-generators",
+  "https://www.heygen.com/blog/best-ai-video-generator-for-ads",
+  "https://kive.ai/learn/best-ai-video-ad-generators",
+  "https://www.adamigo.ai/blog/ai-video-ad-generators",
+  "https://higgsfield.ai/blog/9-best-ai-video-generators-social-media",
+  "https://resources.rework.com/tools/ai-tools/best-ai-ad-creative-tools-2026",
+  "https://www.ngram.com/blog/who-makes-best-ai-generated-ad-videos",
+  "https://higgsfield.ai/blog/best-ai-ad-generators",
+  "https://blog.neural4d.com/text-to-video/best-ai-video-generator-for-ads/",
+  "https://adwave.com/resources/creatify-alternatives",
+  "https://higgsfield.ai/blog/best-creatify-alternatives",
+  "https://www.wireflow.ai/blog/best-ai-ad-makers-in-2026",
+  "https://www.media.io/comparison/creatify-alternatives.html",
+  "https://shhots.ai/blog/best-ai-ad-generator/",
+  "https://fluxnote.io/best/best-ai-ad-video-maker"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**For most e-commerce and performance-marketing teams, Creatify is the best all-around AI video ad maker.** It can turn a product page or URL into UGC-style ads with AI presenters, scripts, and templates—useful when you need to produce and test multiple ad variations quickly.\n\nOther good picks depend on the job:\n\n- **HeyGen** — best for polished presenter videos, voiceovers, and multilingual ads.\n- **Runway** — best for cinematic, more creatively controlled visuals.\n- **Canva** — best for simple, budget-friendly ads you’ll edit yourself.\n\nIf you share what you’re advertising and where the ads will run (for example, TikTok, Instagram, or YouTube), I can narrow it down. Prices and plan limits change, so check the vendor’s current terms before subscribing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

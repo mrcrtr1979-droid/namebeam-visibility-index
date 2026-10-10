@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_11b2188b-cbd7-48bb-b9f9-53ec094e4a1c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00093,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0047
+   },
+   "input_tokens": 5048,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4501,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 371,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5419
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Peyton Keith Harris",
+  "Dr. Meagan Chaffins Sturm"
+ ],
+ "engine_stated_criteria": [
+  "A strong place to start is Buckhead Orthodontics"
+ ],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-meagan-chaffins-sturm/",
+  "https://artemisorthoatlanta.com/our-practice/patient-reviews/",
+  "https://aaoinfo.org/locator/dr-peyton-keith-harris/",
+  "https://aaoinfo.org/locator/dr-jobran-m-jobran/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/georgia-orthodontic-studio-atlanta-atlanta-ga",
+  "https://www.buckheadorthodontics.com/",
+  "https://aaoinfo.org/locator/dr-arjun-patel/",
+  "https://www.westpacesferryortho.com/",
+  "https://aaoinfo.org/locator/dr-virginia-mccune-2/",
+  "https://aaoinfo.org/locator/dr-kenneth-e-starling/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/atlanta-dental-spa-highlands-atlanta-ga",
+  "https://www.braces-braces.com/dr-lee",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/buckhead-orthodontics-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/willow-orthodontics-atlanta-madison-yards-atlanta-ga",
+  "https://www.americanboardortho.com/patients/orthodontist-locator/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—fit depends on your location, case, budget, and whether you prefer braces or clear aligners. **A strong place to start is Buckhead Orthodontics**, led by board-certified orthodontist Dr. Michael Everson. The practice offers both braces and Invisalign and has a reported 4.9-star rating from 384 reviews. It’s at **2385 Peachtree Rd**; **(404) 697-7497**. [Practice website](https://www.buckheadorthodontics.com/)\n\nOther Atlanta options to compare include **Dr. Peyton Keith Harris**, listed as board-certified by the American Board of Orthodontics, and **Dr. Meagan Chaffins Sturm**, also listed as board-certified. [Harris listing](https://aaoinfo.org/locator/dr-peyton-keith-harris/) · [Sturm listing](https://aaoinfo.org/locator/dr-meagan-chaffins-sturm/)\n\nI’d book two or three consultations before deciding. Ask who will supervise your treatment, whether your case is suitable for Invisalign, what’s included in the quoted fee (including retainers and refinements), and how emergencies or missed appointments are handled. You can also verify board certification through the [American Board of Orthodontics locator](https://www.americanboardortho.com/patients/orthodontist-locator/).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_title_companies_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: title companies, Fort Lauderdale",
+ "niche": "title companies",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Fort Lauderdale FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0dda0cda-159b-4514-a1ee-e9e49cb74c35",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00064,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00057,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00385
+   },
+   "input_tokens": 3095,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2547,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 228,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3323
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Palm Title",
+  "Fort Lauderdale Title & Escrow",
+  "Independent Title FTL"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.closedtitle.com/city/fort-lauderdale",
+  "https://palmtitle.com/",
+  "https://www.fortlauderdaletitleandescrow.com/",
+  "https://palmtitle.com/services/realtors/",
+  "https://www.indytitleftl.com/",
+  "https://www.heritagetitleins.com/",
+  "https://youareclosing.com/",
+  "https://bayittitle.com/cities/fort-lauderdale",
+  "https://www.olivejudd.com/practice-areas/real-estate/title-services/",
+  "https://palmtitle.com/services/lenders/",
+  "https://summerlandtitle.com/",
+  "https://palmtitle.com/closing/",
+  "https://www.linkedin.com/company/title-now",
+  "https://coretitle.com/fort-lauderdale/",
+  "https://www.linkedin.com/in/title-quest-186489105"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” title company—it depends on your contract, lender, and whether you value attorney involvement, convenience, or price. **Palm Title** looks like a solid first call: it’s attorney-owned and operated, handles residential closings, and has a Fort Lauderdale office. Its listed contact is **(954) 824-9920**.\n\nOther local options to compare include **Fort Lauderdale Title & Escrow** and **Independent Title FTL**. Before choosing, ask each for an itemized estimate, who will handle your file, how quickly they respond, and whether they can meet your lender’s requirements. You can generally choose the title/closing provider, but check your purchase contract and lender instructions first.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

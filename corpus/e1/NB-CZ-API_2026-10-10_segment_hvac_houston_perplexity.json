@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_hvac_houston_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f3b1f1a7-e2e8-4c56-98d1-f82163be1139",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00074,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00047,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00385
+   },
+   "input_tokens": 3511,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2965,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 188,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3699
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Mission Air Conditioning & Plumbing",
+  "A+ rating"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/tx/houston/category/air-conditioning-repair",
+  "https://www.bbb.org/us/tx/houston/profile/air-conditioning-repair/comfort-star-inc-0915-90006701",
+  "https://www.bbb.org/us/tx/houston/profile/air-conditioning-repair/ms-mechanical-for-ac-and-heating-0915-90060827",
+  "https://www.bbb.org/us/tx/houston/profile/air-conditioning-repair/air-city-ac-and-heating-llc-0915-90072184",
+  "https://www.bestinhood.com/houston/home-maintenance-and-repair/best-air-conditioner-repair-in-houston/",
+  "https://www.bbb.org/us/tx/houston/category/residential-air-conditioning-contractors",
+  "https://www.bbb.org/us/tx/houston/profile/air-conditioning-repair/db-ac-heating-inc-0915-13006992",
+  "https://www.homedepot.com/services/l/tx/houston/heating-air-conditioning-repair/673dcc2c8",
+  "https://www.bbb.org/us/tx/houston/category/heating-and-air-conditioning",
+  "https://www.bestprosintown.com/tx/houston/hvac/",
+  "https://www.bbb.org/us/tx/houston/profile/air-conditioning-contractor/the-lee-thompson-company-0915-4760",
+  "https://cityvetted.com/best/best-hvac-houston",
+  "https://trustanalytica.org/us/tx/houston/best-hvac-contractors",
+  "https://www.expertise.com/home-improvement/ac-repair/texas/houston",
+  "https://www.bbb.org/us/tx/houston/category/air-conditioning-contractor/accredited"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company for every Houston home, but **Mission Air Conditioning & Plumbing** looks like a reasonable place to start: the BBB listing identifies it as an AC repair provider with an **A+ rating**, and local review results include positive reports of repairs.\n\nBefore booking, confirm they serve your ZIP code and ask about the diagnostic fee, whether it’s credited toward the repair, and whether they’ll provide a written estimate before doing work. It’s also worth getting a second quote for any major repair or replacement.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

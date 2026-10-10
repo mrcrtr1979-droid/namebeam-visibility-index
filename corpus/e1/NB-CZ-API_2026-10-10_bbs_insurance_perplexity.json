@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_bbs_insurance_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "BBS Insurance",
+ "niche": "health insurance brokerage",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best health insurance broker in Kansas City MO for someone who is self-employed?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_430bb6a7-2317-4158-8e6e-e46530143f06",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00098,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00463
+   },
+   "input_tokens": 4589,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4037,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 390,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4979
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "AIS Health Insurance Advisors",
+  "Call 913-333-8627",
+  "Call 816-205-4664",
+  "ACA Marketplace plans"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://nulight-consulting.com/",
+  "https://www.healthcare.gov/find-assistance/",
+  "https://aishealthadvisors.com/health-insurance/",
+  "https://www.healthcare.gov/apply-and-enroll/get-help-applying/",
+  "https://www.healthcare.gov/find-local-help/get-contacted/",
+  "https://apollo-insurance.com/health-insurance-broker-kansas-city/",
+  "https://aishealthadvisors.com/",
+  "https://www.linkedin.com/in/stephanie-chamblin-edwards-a3a04b91",
+  "https://www.linkedin.com/in/chris-hendren-78486272",
+  "https://sites.google.com/view/health-insurance-kansas-city/home",
+  "https://bbs-insurance.com/health-insurance/",
+  "https://www.healthcare.gov/find-local-help/",
+  "https://www.linkedin.com/in/kathy-roberts-gba-gbds-19949525",
+  "https://aishealthadvisors.com/service-areas/kansas-city-mo/",
+  "https://www.healthmarkets.com/plans/aca-health/missouri/kansas-city"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” broker, but **AIS Health Insurance Advisors** looks like a strong first call for a self-employed person in Kansas City: it says it’s independent, compares carriers in Missouri and Kansas, and helps with individual ACA Marketplace coverage and subsidy eligibility. It reports that its service is free to clients because insurers pay the commission. **Call 913-333-8627** or visit [aishealthadvisors.com](https://aishealthadvisors.com/health-insurance/).\n\nFor a second quote, **BBS Insurance** also advertises help for self-employed people and compares Marketplace and private plans. **Call 816-205-4664** or visit [bbs-insurance.com/health-insurance](https://bbs-insurance.com/health-insurance/).\n\nWhen you speak with either broker, ask:\n- Which **ACA Marketplace plans** they can offer in Missouri, and whether they’ll check your eligibility for premium tax credits.\n- Whether your doctors, hospitals, and prescriptions are covered.\n- Whether they’re recommending ACA-compliant coverage or a non-ACA alternative, and what protections or exclusions differ.\n- Whether they represent multiple insurers and whether you’ll pay any fee.\n\nYou can also use [HealthCare.gov’s Find Local Help](https://www.healthcare.gov/find-local-help/) to locate a Marketplace-certified agent or assister. For many self-employed people, checking Marketplace coverage and potential subsidies is a useful starting point before considering non-Marketplace plans.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_homecare_agencies_pleasanton_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: homecare agencies, Pleasanton",
+ "niche": "home care agencies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best home care agency in Pleasanton CA for an elderly parent?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e9d1379f-b709-43e4-b0ca-01fdcb63bd50",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00435
+   },
+   "input_tokens": 4472,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3922,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 293,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4765
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "All Seasons Homecare",
+  "Right at Home Pleasanton",
+  "Senior Helpers Pleasanton"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.caring.com/senior-care/in-home-care/california/castro-valley",
+  "https://www.caring.com/senior-care/california/pleasanton/all-seasons-homecare-94566",
+  "https://www.caring.com/senior-care/in-home-care/california/fremont",
+  "https://www.aplaceformom.com/agency/silversun-home-care-1461907",
+  "https://www.agingcare.com/local/in-home-care/pleasanton-ca",
+  "https://www.caring.com/senior-care/california/pleasanton/caring-hearts-senior-services-pleasanton-ca",
+  "https://www.caring.com/senior-care/in-home-care/california/pleasanton",
+  "https://www.aplaceformom.com/home-care/california/pleasanton",
+  "https://www.caring.com/senior-care/california/pleasanton/givencare-in-home-care-corporation",
+  "https://www.homeinstead.com/home-care/usa/ca/fremont/291/service-area/home-care-in-pleasanton-ca/",
+  "https://www.care.com/home-care-agencies/pleasanton-ca",
+  "https://business.pleasanton.org/list/member/pacific-homecare-services-10738",
+  "https://www.caring.com/senior-care/in-home-care/california/livermore",
+  "https://www.yelp.com/biz/tri-valley-personal-home-care-services-pleasanton",
+  "https://www.caring.com/senior-care/in-home-care/california/tracy"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t enough reliable evidence to name one agency as *the* best, but **All Seasons Homecare** looks like a reasonable first call: local review snippets describe long-term, attentive care and responsive office support. Those are individual experiences, not a guarantee, and the review sample is small.\n\nI’d compare it with **Right at Home Pleasanton** and **Senior Helpers Pleasanton**. Both are listed as serving the area; Senior Helpers says its caregivers are state-registered, background-checked, insured, and trained. Ask each agency about the specific care your parent needs, caregiver continuity, backup coverage, and total cost.\n\nBefore hiring, verify the agency’s current California Home Care Organization license, ask how caregivers are screened and supervised, and request references from families with similar needs. Also clarify whether you need **nonmedical help** (bathing, meals, companionship, transportation) or **skilled nursing**—those are different services. A free in-home assessment can help you judge the caregiver match before committing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

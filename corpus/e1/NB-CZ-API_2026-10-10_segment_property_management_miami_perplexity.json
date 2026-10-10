@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_property_management_miami_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: property management, Miami",
+ "niche": "property management companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Miami FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ab815e46-bd85-4660-a709-1d1ed9d1c046",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00089,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00418
+   },
+   "input_tokens": 4122,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3573,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 259,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4381
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Novel Management",
+  "Real Property Management Miami Metro"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/fl/miami/category/property-management/accredited",
+  "https://www.biggerpockets.com/fl/miami/property-managers",
+  "https://trustanalytica.org/us/fl/best-property-management-companies",
+  "https://www.bbb.org/us/fl/miami/profile/property-management/miami-management-inc-0633-33000905/customer-reviews",
+  "https://www.bbb.org/us/fl/north-miami/category/property-management/accredited",
+  "https://www.bbb.org/us/fl/miami/profile/property-management/blue-star-management-0633-90101368/customer-reviews",
+  "https://luxurypropertycare.com/miami-property-management-services/",
+  "https://www.jmkpropertymanagement.com/",
+  "https://www.allpropertymanagement.com/property-management/companies/35790/real-property-management-miami-metro",
+  "https://pageonepartner.com/fl/miami/real-estate/",
+  "https://novelmanagement.com/",
+  "https://www.turbotenant.com/property-management/services/florida/miami/",
+  "https://www.keyrentermiamiwest.com/",
+  "https://www.pristinepm.com/",
+  "https://www.jmkpropertymanagement.com/miami-property-management"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every Miami rental home, but **Novel Management** looks like a good first company to interview for a long-term single-family rental. Its Miami-focused service is specifically aimed at individually owned homes, condos, and townhomes, and includes leasing, tenant communication, maintenance coordination, and owner reporting.\n\nI’d also compare it with **Real Property Management Miami Metro**, which lists single-family homes among its specialties and offers screening, inspections, rent collection, and maintenance coordination.\n\nBefore choosing, get written quotes from both and compare the **total** cost—not just the monthly management percentage. Ask about leasing and renewal fees, maintenance markups, inspection frequency, vacancy charges, cancellation terms, and how quickly they respond to owners and tenants. Check recent reviews for the specific local office, too; service can vary by team.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

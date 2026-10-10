@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_929731a8-2ead-44a0-bc35-e57a3a7be83f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00086,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 4863,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4314,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 344,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5207
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Florida Housing’s approved lenders",
+  "APR and interest rate"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.floridahousing.org/programs/homebuyer-overview-page",
+  "https://www.miami.gov/Housing-Assistance/Home-Ownership/Apply-for-First-Time-Homebuyer-Assistance/First-Time-Homebuyer-Program-Participating-Banks",
+  "https://www.miamidade.gov/global/housing/homeownership.page",
+  "https://saferate.com/local/miami/best-mortgage-lenders",
+  "https://www.lendingbankers.com/",
+  "https://www.miami.gov/My-Government/Departments/Housing-Community-Development/District-5-Expanded-First-Time-Homebuyer-Program",
+  "https://www.miamidade.gov/global/service.page?Mduid_service=ser1470429502796591",
+  "https://www.miamidade.gov/global/housing/affordable-homeownership-program.page",
+  "https://www.loc8nearme.com/florida/miami/mortgage-lenders/",
+  "https://reliancefinancial.com/mortgage-lenders-miami/",
+  "https://www.expertise.com/home-improvement/mortgage-brokers-lenders/florida/miami",
+  "https://www.miami.gov/Housing-Assistance/Home-Ownership/Apply-for-First-Time-Homebuyer-Assistance",
+  "https://www.floridahousing.org/lenders-loan-officers",
+  "https://on-mortgage.com/testimonials.php",
+  "https://www.usatoday.com/story/money/money-management/real-estate/best-mortgage-lenders/92168485007/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender in Miami—the right choice depends on your credit, down payment, loan type, and whether you qualify for assistance. **My practical recommendation is to compare at least three lenders using the same loan scenario and choose based on the written Loan Estimates, not a ranking or advertised rate.**\n\nIf you’re a first-time buyer, start by checking **Florida Housing’s approved lenders** and, if the home is within the City of Miami, the city’s **participating-lender list**. These programs may offer down-payment or closing-cost assistance, but eligibility and lender participation rules apply. Miami-Dade County also has assistance programs for eligible buyers.\n\nAsk each lender for a Loan Estimate and compare:\n- **APR and interest rate**, including whether points are charged\n- Origination and other lender fees, lender credits, and estimated cash to close\n- Rate-lock terms and expected closing timeline\n- Whether they can handle your specific loan type and any assistance program\n\nA lender offering the lowest advertised rate may not have the lowest total cost. If you share your approximate credit score, down payment, first-time-buyer status, and whether you’re buying in the City of Miami or elsewhere in Miami-Dade, I can help narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

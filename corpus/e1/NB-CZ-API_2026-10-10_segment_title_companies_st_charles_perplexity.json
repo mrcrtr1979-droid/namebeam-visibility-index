@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_title_companies_st_charles_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: title companies, St. Charles",
+ "niche": "title companies",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Charles MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3d45677e-4c88-4002-b271-b45a440c5006",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0007,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00053,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00387
+   },
+   "input_tokens": 3343,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2794,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 210,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3553
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "US Title",
+  "Arch City Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://a-better-place.com/title-partners-agency-i714279/",
+  "https://www.superpages.com/saint-charles-mo/title-companies",
+  "https://einsteinrealestatedevelopment.com/we-buy-houses-wentzville-mo.html",
+  "https://ctitle.com/locations/title-company-st-charles-mo/",
+  "https://www.eaglecashbuyers.com/sell-my-house-fast-ofallon-missouri/",
+  "https://www.archcitytitle.com/",
+  "https://www.eaglecashbuyers.com/sell-my-house-fast-lake-st.-louis-missouri/",
+  "https://www.us-title.com/",
+  "https://truetitle.com/commercial/",
+  "https://www.superpages.com/lemay-mo/escrow-service",
+  "https://titlepartnersagency.com/about/our-reviews/",
+  "https://www.dropitonthedot.net/services/loan-signing",
+  "https://granthickman.com/partners/",
+  "https://old-republic-title-co-of-st-louis-mo-2.hub.biz/",
+  "https://www.eaglecashbuyers.com/sell-my-house-fast-st-charles-missouri/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t enough reliable, current review information here to name one company as definitively “best.” **US Title** is a reasonable first call: it has a St. Charles office at **6229 Mid Rivers Mall Dr.** and handles title and escrow services. **Arch City Title** also serves St. Charles County.\n\nBefore choosing, ask each for a written estimate of closing fees, confirm they regularly handle residential closings in St. Charles County, and check who will be your point of contact. You can usually ask your lender or agent for a few options, but you’re generally free to choose the title company yourself.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

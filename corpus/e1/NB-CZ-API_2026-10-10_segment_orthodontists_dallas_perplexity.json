@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_orthodontists_dallas_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_776d5b1f-8ae7-47c5-adf5-865bad358b0c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00077,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00456
+   },
+   "input_tokens": 5165,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4618,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 307,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5472
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Walnut Central Orthodontics",
+  "Dallas Orthodontics (Dr. Benito Benitez)",
+  "Lakewood Orthodontics (Dr. Simon)",
+  "Gupta Smile Studio (Dr. Vick Gupta)"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.orthodontistdallastx.com/dallas-tx/invisalign-testimonials/",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/walnut-central-orthodontics-dallas-tx",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/dallas-orthodontics-dallas-tx",
+  "https://www.yelp.com/biz/walnut-central-orthodontics-dallas-5",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/invisalign-of-dallas-dallas-tx",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/fusion-orthodontics-dallas-tx",
+  "https://nationalorthodonticregistry.com/texas/dallas/orthodontists",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/bryan-place-dental-dentistry-orthodontics-dallas-tx",
+  "https://www.yelp.com/biz/harris-orthodontics-dallas",
+  "https://www.guptasmilestudio.com/",
+  "https://trustanalytica.org/us/best-orthodontists",
+  "https://www.lakewoodortho.net/",
+  "https://trustanalytica.org/us/tx/best-orthodontists",
+  "https://doctor.webmd.com/providers/specialty/orthodontics/texas/dallas",
+  "https://trustanalytica.org/us/tx/dallas/best-invisalign"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—case complexity, location, cost, and how comfortable you feel with the doctor all matter. A few Dallas practices worth comparing are:\n\n- **Walnut Central Orthodontics** — offers braces and Invisalign; its site lists Dallas at **9669 N. Central Expressway, Suite 105**.  \n- **Dallas Orthodontics (Dr. Benito Benitez)** — offers braces and Invisalign; patient feedback highlights communication and care for children.  \n- **Lakewood Orthodontics (Dr. Simon)** — a Dallas option for braces, with positive patient feedback from families and adults.  \n- **Gupta Smile Studio (Dr. Vick Gupta)** — offers both braces and Invisalign in the Bishop Arts area.\n\nI’d book **two or three consultations** before choosing. Ask who will personally supervise your treatment, which option they recommend for your specific bite, what’s included in the quoted fee, and how refinements or emergencies are handled. For a meaningful comparison, get the same records and ask each office to explain its plan—not just the price.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

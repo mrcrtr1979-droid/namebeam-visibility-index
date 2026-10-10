@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_property_management_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: property management, Fort Lauderdale",
+ "niche": "property management companies",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Fort Lauderdale FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3654b83a-1e0e-4973-b1f5-cc742bd59592",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00447
+   },
+   "input_tokens": 4732,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4182,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 313,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5045
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Luxury Property Care (LPC)",
+  "Real Property Management United",
+  "PMI Prime View"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://luxurypropertycare.com/ft-lauderdale-property-management-service/",
+  "https://damelecia.com/fort-lauderdale/",
+  "https://www.fortlauderdalepropertymanagementinc.com/pricing",
+  "https://propertymanagement.com/property-manager/avo-asset-management-llc-miami-fl",
+  "https://www.turbotenant.com/property-management/services/florida/fort-lauderdale/",
+  "https://winvestmanagement.com/fort-lauderdale-property-management/",
+  "https://chadypm.com/property-management-fort-lauderdale-fl/",
+  "https://www.unitedrpm.com/",
+  "https://luxurypropertycare.com/average-property-manager-fees-fort-lauderdale-2026/",
+  "https://www.rovetravel.com/blog/best-property-management-companies-fort-lauderdale",
+  "https://www.mayfairpropertymanagement.com/",
+  "https://www.yelp.com/biz/renters-warehouse-fort-lauderdale-2",
+  "https://www.keyrenterfortlauderdale.com/pricing",
+  "https://cimcomanagement.com/fort-lauderdale/",
+  "https://propertymanagement.com/property-management/fort-lauderdale--fl"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Luxury Property Care (LPC)** looks like a strong first company to interview for a long-term rental in Fort Lauderdale. Its published terms are **8–10% of rent collected**, a one-time leasing fee of one month’s rent when it places a new tenant, and no management fee while the home is vacant; it also says renewals are free. The company reports a 4.9/5 Google rating from more than 230 reviews, though that rating is company-reported.\n\nI’d compare it with **Real Property Management United**, which manages single-family homes in Fort Lauderdale and Broward, and **PMI Prime View**, which publishes several pricing tiers. Before signing, ask each for a sample owner statement and a written breakdown of the total costs—including leasing, renewals, inspections, maintenance markups, and any fees during vacancy. Also check recent independent reviews and confirm who handles after-hours emergencies.\n\nIf you share whether the home is a long-term rental, furnished/short-term rental, or luxury waterfront property, I can narrow the recommendation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

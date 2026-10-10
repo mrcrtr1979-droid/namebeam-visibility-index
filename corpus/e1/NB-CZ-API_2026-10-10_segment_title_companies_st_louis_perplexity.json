@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_title_companies_st_louis_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: title companies, St. Louis",
+ "niche": "title companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Louis MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f8a9ae73-441c-48f8-9356-b0910c61681c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00049,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00056,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00369
+   },
+   "input_tokens": 2506,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 1957,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 224,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2730
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Security Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.selecttitlegroup.com/residential",
+  "https://www.titleresourcesinc.com/missouri/",
+  "https://securitytitlestl.com/",
+  "https://www.investors-title.com/",
+  "https://hometitlestl.com/",
+  "https://freedom-title.com/",
+  "https://ctitleservices.com/",
+  "http://www.gatewaytitleinc.com/",
+  "https://www.linkedin.com/company/integrity-title-solutions-llc",
+  "https://www.linkedin.com/company/investors-title-inc",
+  "https://www.stltitle.com/services/closing-escrow",
+  "https://www.archcitytitle.com/who-we-are/",
+  "https://freedom-title.com/services",
+  "https://www.linkedin.com/company/true-title-company-llc",
+  "https://www.legacytitlestl.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” title company—the right choice often depends on your lender, agent, location, and how responsive the closing team is. **I’d start by comparing Home Title and Select Title Group**: both specifically handle residential transactions in the St. Louis area, and Select Title Group offers multiple closing locations. **Security Title** is another established local option with multiple area offices.\n\nBefore choosing, ask your lender whether it has any requirements, then compare the written fee estimates and confirm who will handle your file, how quickly they respond, and whether they can accommodate your preferred closing location or schedule. You can generally choose your own title company, but check your purchase contract and lender instructions.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

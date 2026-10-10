@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_property_management_st_louis_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: property management, St. Louis",
+ "niche": "property management companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Louis MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_561609db-c95e-421c-a157-326b64c1bc00",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 4544,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3993,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 322,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4866
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Avenue Residential Leasing",
+  "Intersection Property Management",
+  "Evernest"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://intersectionstl.com/",
+  "https://homestretchpropertymanagement.com/",
+  "https://intersectionstl.com/services/",
+  "https://www.stlouispropertymanagement.co/pricing",
+  "https://www.zillow.com/profile/STLSmartRentals",
+  "https://proequity.com/",
+  "https://purehomeriver.com/locations/missouri/st-louis/",
+  "https://www.bbb.org/us/mo/saint-louis/profile/property-management/hazel-valley-homes-llc-0734-1000046814",
+  "https://www.zillow.com/professionals/property-manager-reviews/63123/",
+  "https://www.thumbtack.com/mo/saint-louis/property-management/west-end-management-leasing-services/service/544900318122655748",
+  "https://www.zillow.com/professionals/property-manager-reviews/63103/",
+  "https://www.allpropertymanagement.com/property-management/companies/47355/keyrenter-st-louis/",
+  "https://www.renterswarehouse.com/offices/st-louis",
+  "https://propertymanagementstl.com/",
+  "https://www.zillow.com/professionals/property-manager-reviews/63113/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Avenue Residential Leasing** looks like a strong first company to interview based on the information available: it reports 22+ years of local experience, 800+ managed properties, a 4.8-star rating across 370+ reviews, and a 30-day leasing guarantee. Those are company-reported figures, so I’d verify recent owner reviews and the guarantee’s terms before signing.\n\nI’d also get quotes from **Intersection Property Management** and **Evernest** to compare pricing and service. Intersection advertises a flat **$90/month** for a single-family home; Evernest lists an **8% monthly management fee**, plus leasing and other charges. Fees and terms can change, so ask each for a written, all-in estimate.\n\nBefore choosing, compare:\n- Monthly fee and leasing/renewal charges\n- Maintenance coordination fees or contractor markups\n- Tenant screening and eviction procedures\n- Inspection frequency and owner reporting\n- Contract length, cancellation terms, and any leasing guarantee\n\nThe best fit may depend on the home’s location, rent, and condition.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

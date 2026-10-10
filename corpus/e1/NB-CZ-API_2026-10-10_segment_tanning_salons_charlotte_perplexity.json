@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_tanning_salons_charlotte_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "niche": "tanning salons",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5107a0ee-2067-45d2-a02e-221484badf2e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00078,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00057,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00399
+   },
+   "input_tokens": 3678,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3134,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 227,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3905
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Gorgeous GLO Beauty Bar",
+  "UV tanning beds",
+  "Palm Beach Tan"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://trustanalytica.org/us/nc/charlotte/best-tanning-salons",
+  "https://www.fresha.com/lp/en/bt/tanning-studios/in/us-charlotte",
+  "https://www.yelp.com/biz/botanical-tans-charlotte-2",
+  "https://maps.apple.com/place?place-id=I9845192F39EFC11F",
+  "https://palmbeachtan.com/locations/nc/charlotte-east-wt-harris-boulevard",
+  "https://palmbeachtan.com/locations/nc/charlotte-providence-arboretum",
+  "https://www.yelp.com/biz/palm-beach-tan-charlotte?start=40",
+  "https://www.yelp.com/biz/best-nails-and-tan-charlotte",
+  "https://www.yelp.com/biz/palm-beach-tan-charlotte-3",
+  "https://www.fresha.com/en-GB/lvp/bella-bronze-mobile-spray-tanning-grand-traverse-drive-charlotte-oo1Gra",
+  "https://palmbeachtan.com/locations/nc/charlotte-east-woodlawn-road",
+  "https://palmbeachtan.com/locations/nc/charlotte-john-j-delaney-drive",
+  "https://www.gorgeousglo.com/",
+  "https://www.yelp.com/biz/gorgeousglo-beauty-bar-charlotte",
+  "https://www.weddingwire.com/biz/re-salon-and-med-spa/9d625b831e01f771.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a **custom spray tan**, **Gorgeous GLO Beauty Bar** looks like a strong pick: a current Charlotte salon roundup lists it at **4.9/5 from 100 reviews**, and it specializes in personalized spray tans. It’s at [gorgeousglo.com](https://www.gorgeousglo.com/) or you can call **(980) 819-8411**.\n\nIf you mean **UV tanning beds**, consider **Palm Beach Tan**—it offers both beds and spray tans, with multiple Charlotte locations. Ratings vary by location, so check the reviews for the one nearest you.\n\n“Best” depends on whether you want spray or UV tanning; UV tanning carries skin-cancer and premature-aging risks, so a sunless spray tan is the safer option.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-10_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-10-10",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_33f7ff7c-e47d-413e-8b90-7b42a20c8c3b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00064,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00124,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00452
+   },
+   "input_tokens": 3115,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2559,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 494,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3609
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "My default recommendation: stay in a hotel",
+  "Branson’s Best",
+  "Marriott’s Willow Ridge Lodge",
+  "Grand Oaks Hotel",
+  "Seven Gables Inn",
+  "Quick area guide",
+  "Highway 76 / Green Mountain Drive",
+  "Indian Point / Table Rock Lake",
+  "Downtown / Branson Landing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.expedia.com/Branson-Hotels.d6058734.Travel-Guide-Hotels",
+  "https://www.airbnb.com/branson-mo/stays",
+  "https://www.ihg.com/branson-missouri",
+  "https://www.tripadvisor.com/Hotels-g44160-oa30-Branson_Missouri-Hotels.html",
+  "https://www.travelocity.com/Branson-Hotels.d6058734.Travel-Guide-Hotels",
+  "https://www.hotels.com/nh1663107/hotels-in-downtown-branson-branson-missouri/",
+  "https://www.airbnb.com/branson-mo/stays/condos",
+  "https://www.tripadvisor.com/Hotel_Review-g44160-d280644-Reviews-Branson_s_Best-Branson_Missouri.html",
+  "https://www.airbnb.com/branson-township-mo/stays",
+  "https://www.hotels.com/sa10233219/hotels-in-missouri-united-states-of-america/",
+  "https://www.tripadvisor.com/Hotels-g44160-zff8-Branson_Missouri-Hotels.html",
+  "https://www.hotels.com/de1412461/hotels-branson-west-missouri/",
+  "https://www.airbnb.com/branson-mo/stays/resorts",
+  "https://www.tripadvisor.com/Hotels-g44160-zff13-Branson_Missouri-Hotels.html",
+  "https://www.tripadvisor.com/Hotels-g44160-zff12-Branson_Missouri-Hotels.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**My default recommendation: stay in a hotel** if it’s a short trip for shows and attractions. Branson is spread out, and a hotel makes check-in, breakfast, parking, and changing plans simpler. Choose an **Airbnb or condo** if you’re staying several nights, traveling with a group, or want a kitchen, more room, or a quieter lake setting.\n\n### Good hotel picks\n- **Branson’s Best** — A practical, well-located choice on Green Mountain Drive, near the Highway 76 attractions without being right in the thick of the Strip.\n- **Marriott’s Willow Ridge Lodge** — A strong family option if you want villa-style space and resort amenities.\n- **Grand Oaks Hotel** — Convenient to the main Strip, with indoor and outdoor pools and breakfast; worth comparing for value.\n- **Seven Gables Inn** — A simpler option near the attractions if you mainly need a clean place to sleep.\n\n### When a rental is the better choice\nLook for a **condo around Indian Point or Table Rock Lake** if Silver Dollar City and lake time are priorities. Airbnb listings include spacious condos with lake or mountain views, and cabins near Silver Dollar City. For a rental, check the *total* price after cleaning and service fees, recent reviews, cancellation terms, and the exact drive to the places you plan to visit.\n\n**Quick area guide:**  \n- **Highway 76 / Green Mountain Drive:** best all-around base for shows, restaurants, and attractions.  \n- **Indian Point / Table Rock Lake:** quieter, scenic, and convenient for Silver Dollar City; less central for other activities.  \n- **Downtown / Branson Landing:** best if you want shops and restaurants nearby, but not as central to the Strip’s theaters.\n\nIf you share your dates, budget, group size, and whether Silver Dollar City or the shows are the priority, I can narrow this to a short list. Prices and availability vary by date, so verify current reviews and total costs before booking.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
