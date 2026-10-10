@@ -14,6 +14,8 @@ This pack holds the raw tables behind Edition 1, the metrics computed from them,
 | `{{SOURCES_FILE}}` | One row per URL an engine returned as a source (Perplexity sources and Google results). Columns are described in `datasets/e1/sources/README.md`. |
 | `data/prompts.csv` | Every question asked in this window, word for word: its id (the slug used in the raw file names), the business or segment it belongs to, whether it is a market or category question or a question asked to see whether one named business comes up, market, niche, the SHA-256 of the text, the date it entered the run, the last date in this window, the number of run days it was asked, and which engines were asked. |
 | `LICENSE` | Creative Commons Attribution 4.0 International (CC BY 4.0), the full legal code. |
+| `CITATION.cff` | How to cite the record (Citation File Format). |
+| `reproduce/`, `EXPECTED_HEADLINES.csv`, `EXPECTED_INPUTS.csv` | A kit that recomputes the headline numbers from this pack alone, offline, and compares them with the expected values and the SHA-256 of every input it read. |
 | `data/siri_panel.csv` | Questions asked of Siri by hand on an iPhone: date, mode (typed or spoken), city, question, what Siri said, businesses named, sources shown. Described in `datasets/e1/siri/README.md`. |
 | `data/customer_zero_*.csv` | How often our own domains appear in the sources an engine returned. Described in `datasets/e1/customer_zero/README.md`. |
 | `data/segment_pages_*.csv` | For each of the 28 record pages (27 city and segment pages and the hub): how many Perplexity answers cited it, out of the answers to its own question and out of all answers with a source list, per run day and in 7 day windows. Zeros are kept. Described in `datasets/e1/customer_zero/README.md`. |
@@ -115,6 +117,7 @@ The canonical copy of this pack on Hugging Face is the dataset `Namebeam/ai-visi
     python3 verify.py              # every file against MANIFEST.sha256, prints MATCH or MISMATCH
     python3 verify.py --rebuild    # rebuilds the answers table from corpus/e1 and compares
     python3 verify.py --metrics    # recomputes the metrics table with the code in method/ and compares
+    python3 -I reproduce/reproduce_edition.py --pack .    # recomputes the headline numbers from the pack alone and compares
 
 Run these from `releases/edition-1/` in a clone of this repository. The last line reads `VERIFY MATCH` when everything agrees.
 

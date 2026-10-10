@@ -691,6 +691,19 @@ def build(through, out, method_src, status):
             raise SystemExit('unfilled placeholder in the method note')
         with io.open(os.path.join(pack, 'README.md'), 'w', encoding='utf-8', newline='\n') as fh:
             fh.write(text)
+    # reproduce kit (S1c 2026-10-10): the two scripts travel with the pack, and the build writes the expected headline
+    # values and the SHA-256 of every input they read, so `python3 -I reproduce/reproduce_edition.py --pack .` run inside
+    # the pack recomputes the headlines offline and compares.
+    shutil.copyfile(os.path.join(REPO, 'CITATION.cff'), os.path.join(pack, 'CITATION.cff'))
+    kit = os.path.join(pack, 'reproduce')
+    os.makedirs(kit)
+    for f in ('reproduce_edition.py', 'headline_recompute.py'):
+        shutil.copyfile(os.path.join(HERE, f), os.path.join(kit, f))
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('reproduce_edition_pack', os.path.join(kit, 'reproduce_edition.py'))
+    rep = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(rep)
+    rep.write_expected(pack, rep.reproduce(pack))
     n = write_manifest(pack)
     print('pack %s: window %s..%s, %d run days, %d answer rows, %d source rows, %d siri rows, %d files in the manifest'
           % (pack, W0, last, len(days), len(rows), n_src, n_siri, n))
