@@ -81,7 +81,7 @@ HEADING_TERMS = set('''summary recommendation|my suggestion|ask chatgpt|ask chat
 |final recommendation|my take|quick summary|key risks|watch out|watch out for|research methods|red flags'''.replace('\n', '').split('|'))
 HEADING_TERMS = {t.strip() for t in HEADING_TERMS if t.strip()}
 HEADING_TERMS.add('my hon' + 'est take')   # split: the banned trust word is never written whole in our files
-KEEP_NAMES = ['Pro Lawn & Irrigation']
+KEEP_NAMES = ['Pro Lawn & Irrigation', 'Pro Lawn']   # 'Pro Lawn' = short form of the same business (COS live check 2026-10-10T00:46:53Z: x2 in LATEST)
 KEEP_TERMS = {n.casefold() for n in KEEP_NAMES}
 HEADING_KINDS = ('API', 'AGREE')     # SERP rows hold URLs, not names
 
@@ -707,7 +707,7 @@ def selftest():
         all(heading_reason(f) for f in flagged))
     chk('heading: case and outer punctuation ignored ("overview:", "KNOWN FOR")', heading_reason('overview:') and heading_reason('KNOWN FOR'))
     chk('heading: a line-break fragment is removed', heading_reason('My Suggestion\nRather') == 'c')
-    real = ['Extreme Roofing Inc', 'Pro Lawn & Irrigation', 'Guaranteed Rate', 'QuickBooks', 'Atomicdust', 'Zehl & Associates',
+    real = ['Extreme Roofing Inc', 'Pro Lawn & Irrigation', 'Pro Lawn', 'Guaranteed Rate', 'QuickBooks', 'Atomicdust', 'Zehl & Associates',
             'Airbnb', 'Key Realty Group']
     chk('heading: real business names pass (%s)' % ', '.join(r for r in real if heading_reason(r)), not any(heading_reason(r) for r in real))
     clean = {'kind': 'API', 'source_file': 'NB-CZ-API_2026-10-01_x.json'}
