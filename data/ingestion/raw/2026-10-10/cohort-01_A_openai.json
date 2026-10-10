@@ -1,0 +1,17 @@
+{
+ "answer_text": "I don’t have live web access, so I can’t open Namebeam’s AI Visibility Record and count the domains myself. If you can either (A) give me the URL to the specific record page or (B) paste the record’s data (or a CSV/JSON export), I’ll extract and count the distinct web domains and tell you exactly where it’s published.\n\nIf you want to do it yourself, here are quick ways to get the answer:\n\n1) If the record page lists citations in HTML\n- Save the page or copy the citation text.\n- Extract the hostnames from all cited URLs and count unique hosts.\n\n2) If there’s an export (CSV/JSON) with a column of cited URLs, use this Python snippet to count unique domains:\n\nPython (works for CSV or a list of URLs)\n- For CSV with a column named \"citation_url\":\n  ```\n  import pandas as pd\n  from urllib.parse import urlparse\n\n  df = pd.read_csv('namebeam_record.csv')            # adjust filename\n  urls = df['citation_url'].dropna().astype(str)\n  domains = {urlparse(u).netloc.lower().lstrip('www.') for u in urls}\n  print(len(domains))\n  print(sorted(domains))\n  ```\n\n- If you have a plain list of URLs in urls.txt (one per line):\n  ```\n  from urllib.parse import urlparse\n\n  with open('urls.txt') as f:\n      urls = [line.strip() for line in f if line.strip()]\n  domains = {urlparse(u).netloc.lower().lstrip('www.') for u in urls}\n  print(len(domains))\n  print(sorted(domains))\n  ```\n\nIf you prefer, paste the record (or a link) here and I’ll do the count and state the exact publication location for you.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-10T17:27:16Z",
+ "ok": true,
+ "probe_id": "A",
+ "prompt_sha256": "940f0824e14031113e8b576a7139c4427b38e8ac1ad5483a1335b3f802676221",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web domains did Perplexity cite in its answers to the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "treatment_anchored",
+ "run_id": "38071784439",
+ "search_mode": "no search tool (E1 setting)"
+}
