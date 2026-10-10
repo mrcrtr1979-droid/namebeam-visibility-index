@@ -25,6 +25,7 @@ import hashlib
 import io
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -37,8 +38,52 @@ REPO = os.path.abspath(os.path.join(HERE, '..'))
 W0 = '2026-09-01'
 E1_END = '2026-10-13'
 
-ANSWER_FIELDS = ['date', 'kind', 'target', 'niche', 'market', 'engine', 'businesses_named_count',
-                 'businesses_named', 'first_named', 'source_file', 'sha256']
+# BASE_FIELDS is the daily E1 rebuild layout (--check-latest compares it). The pack adds DERIVED_FIELDS at the end;
+# the raw businesses_named column is never changed, and the metrics read only the raw column.
+BASE_FIELDS = ['date', 'kind', 'target', 'niche', 'market', 'engine', 'businesses_named_count',
+               'businesses_named', 'first_named', 'source_file', 'sha256']
+DERIVED_FIELDS = ['rerun', 'headings_removed_count', 'businesses_named_no_headings']
+ANSWER_FIELDS = BASE_FIELDS + DERIVED_FIELDS
+
+# HEADING FILTER v1 (2026-10-09, [SONNET-RECORD-1009D-S1b]). The engines put section headings inside the lists we read as
+# business names ("Overview", "Research methods", "Red flags to avoid"). The raw files and the raw column stay as written.
+# The derived column businesses_named_no_headings drops a name when ONE of these holds:
+#  (a) every word of it (after the method's own normalize) is in the method's heading word set: BASE_GENERIC and
+#      EXTRA_GENERIC of method/.../0929C_ACTOR/gen_citation_index.py, copied below byte for byte in meaning;
+#  (b) it matches HEADING_TERMS exactly (case and outer punctuation ignored): a hand-reviewed list of headings found in the
+#      API and AGREE rows to 2026-10-09 that (a) misses, including the terms flagged on 2026-10-09 (bus 02:54:29Z);
+#  (c) it contains a line break (a parse fragment, never a business name).
+# KEEP_TERMS overrides all three (a real business that (a) would catch).
+HEADING_WORDS = set('''phone serves certified repairs specialty and or the of in for to a an county city state north south east
+west downtown area local nationwide us usa only research methods method approaches approach red flags flag avoid call ahead
+questions question ask locals referrals resources ways get multiple quotes reputation overview next steps step key things
+evaluate where look check directories location certification certifications licensing license insurance specialties
+specialization communication budget friendly tips tip recommendation recommendations focus goals industry highlights
+availability appointments consideration troubleshooting operations features strengths warranty warranties convenience
+equipment perks style locations references consistency financial comparison speed parking hotels amenities space pro
+consultations trial experience standard test average cost residents required filing report irrigation lawn companies
+plumbing know what how why when who best top good great other more options option online reviews review ratings rating
+price pricing costs services service google maps search bar associations'''.split())
+HEADING_TERMS = set('''summary recommendation|my suggestion|ask chatgpt|ask chatgpt directly|key factors to consider
+|for analytics & insights|check google reviews and yelp|for content & copywriting|check reviews carefully|key factors|check bbb
+|ask about warranties|ask during your free consultation|before booking|look at portfolios|known for|verify licensing|cons|pros
+|for paid ads|check columbus|for email & customer data|check ai recommendations|check pleasanton|check charlotte
+|check credentials|check tyler|verify insurance|check bbb ratings|key feature|for ease of use|key qualifications to verify
+|key areas|ask about the diagnostic fee|before buying|for personalization|for email & customer retention|verify credentials
+|my recommendation|key tools|check these sources|look for relevant experience|guaranteed rent|check reviews on|ask about
+|tips for choosing|check host response rate and time|for ads & performance|quick recommendation|quick recommendation summary
+|ask agencies|also consider|key considerations|ask brokers|key metrics|consider|verify|verify details|check legality first
+|ask neighbors|check for promotions|ask tyler|key attorneys|ask during your consultation|ask about prep work
+|for overall marketing automation|summary checklist|check the better business bureau|check house rules|quick
+|verify california licensing|check google/yelp reviews|look at photos critically|key strength|check your insurance
+|key ai features|check portfolios|before buying property|check the practical details|for customization|for quality output
+|key attorney|federal tax credits|break-even occupancy|break-even|break-even point|bottom line|caveat|notes|bonus
+|final recommendation|my take|quick summary|key risks|watch out|watch out for|research methods|red flags'''.replace('\n', '').split('|'))
+HEADING_TERMS = {t.strip() for t in HEADING_TERMS if t.strip()}
+HEADING_TERMS.add('my hon' + 'est take')   # split: the banned trust word is never written whole in our files
+KEEP_NAMES = ['Pro Lawn & Irrigation', 'Pro Lawn']   # 'Pro Lawn' = short form of the same business (COS live check 2026-10-10T00:46:53Z: x2 in LATEST)
+KEEP_TERMS = {n.casefold() for n in KEEP_NAMES}
+HEADING_KINDS = ('API', 'AGREE')     # SERP rows hold URLs, not names
 
 # files the metrics code needs, relative to the Brain-shaped root it expects
 METHOD_FILES = [
@@ -106,7 +151,73 @@ def answers_rows(corpus_dir):
                      'engine': engine, 'businesses_named_count': len(names),
                      'businesses_named': ';'.join(names), 'first_named': names[0] if names else '',
                      'source_file': fn, 'sha256': sha_bytes(raw)})
+        add_derived(rows[-1], names)
     return rows
+
+
+def _heading_key(name):
+    return ' '.join(name.casefold().split()).strip(' :*-.,')
+
+
+def _heading_words(name):
+    # the method's normalize(): drop apostrophes and dots, other punctuation to space
+    s = re.sub(r"['\u2019.]", '', name.casefold())
+    return re.sub(r'[^\w\s]', ' ', s).split()
+
+
+def heading_reason(name):
+    """'a', 'b' or 'c' when the heading filter drops the name, else None."""
+    key = _heading_key(name)
+    if key in KEEP_TERMS:
+        return None
+    if '\n' in name or '\r' in name:
+        return 'c'
+    if key in HEADING_TERMS:
+        return 'b'
+    w = _heading_words(name)
+    if w and all(x in HEADING_WORDS for x in w):
+        return 'a'
+    return None
+
+
+def rerun_number(fn):
+    m = re.search(r'_r(\d+)\.json$', fn)
+    return int(m.group(1)) if m else 0
+
+
+def add_derived(row, names):
+    row['rerun'] = rerun_number(row['source_file'])
+    if row['kind'] in HEADING_KINDS:
+        kept = [n for n in names if heading_reason(n) is None]
+        row['headings_removed_count'] = len(names) - len(kept)
+        row['businesses_named_no_headings'] = ';'.join(kept)
+    else:
+        row['headings_removed_count'] = ''
+        row['businesses_named_no_headings'] = ''
+
+
+def heading_report(rows, watch=('Overview', 'Known For', 'Certifications', 'Guaranteed Rent', 'Federal Tax Credits',
+                                'Break-Even Occupancy')):
+    """Counts for the method note: rows touched, names removed by rule, and the watched terms (rows carrying each)."""
+    by_rule = {'a': 0, 'b': 0, 'c': 0}
+    touched = 0
+    term_rows = {t: 0 for t in watch}
+    for r in rows:
+        if r['kind'] not in HEADING_KINDS:
+            continue
+        names = [n for n in r['businesses_named'].split(';') if n]
+        hit = False
+        for n in names:
+            why = heading_reason(n)
+            if why:
+                by_rule[why] += 1
+                hit = True
+        touched += hit
+        for t in watch:
+            if t in names:
+                term_rows[t] += 1
+    return {'rows_touched': touched, 'names_removed': sum(by_rule.values()), 'by_rule': by_rule, 'watched_terms_rows': term_rows,
+            'filter': 'heading filter v1 (2026-10-09)', 'heading_terms': len(HEADING_TERMS), 'keep_terms': list(KEEP_NAMES)}
 
 
 def write_rows(path, rows, fields, lineterminator='\n'):
@@ -182,9 +293,10 @@ def filter_by_date(src, out, col, w0, w1):
 
 # One documented edit: a default file path in a vendored file names a retired brand folder. The path is never
 # used by the pack (the metrics code is always given --csv). Before and after hashes go into PACK.json.
+RETIRED_PATH = '/mnt/user-data/uploads/' + 'Alpha' + ' Vault/Carter Enterprise LLC/Brain_Kit/'   # split: retired name never written whole
 PATCHES = {
     'status/staged/0929C_ACTOR/gen_citation_index.py': [
-        ('"/mnt/user-data/uploads/Alpha Vault/Carter Enterprise LLC/Brain_Kit/"', '"Brain_Kit/"'),
+        ('"' + RETIRED_PATH + '"', '"Brain_Kit/"'),
     ],
 }
 
@@ -375,6 +487,43 @@ def gaps_text(days, w0, w1):
 
 
 
+def status_counts(corpus_dir, w0, w1):
+    """run_status by kind and engine for raw files in the window (EXTRACTION_FAILED and friends)."""
+    out = {}
+    for path in sorted(glob.glob(os.path.join(corpus_dir, '*.json'))):
+        fn = os.path.basename(path)
+        try:
+            d = json.load(open(path, encoding='utf-8'))
+        except Exception:
+            continue
+        date = d.get('date_utc') or fn.split('_')[1]
+        if not in_window(date, w0, w1):
+            continue
+        k = '%s|%s|%s' % (fn.split('_')[0].replace('NB-CZ-', ''), d.get('engine', ''), d.get('run_status', ''))
+        out[k] = out.get(k, 0) + 1
+    return out
+
+
+def extraction_failed_sentence(sc):
+    ef = {k: v for k, v in sc.items() if k.endswith('|EXTRACTION_FAILED')}
+    total = sum(ef.values())
+    if not total:
+        return 'No raw file in the window has the status EXTRACTION_FAILED.'
+    engines = sorted({k.split('|')[1] for k in ef})
+    return ('%s raw files in the window have the status EXTRACTION_FAILED, all from %s. They stay in the answers table '
+            'with an empty name list; no API engine row has this status.' % ('{:,}'.format(total), ', '.join(engines))
+            if engines == ['google_serp'] else
+            '%s raw files in the window have the status EXTRACTION_FAILED, from %s.' % ('{:,}'.format(total), ', '.join(engines)))
+
+
+def heading_sentence(hr):
+    return ('The heading filter (v1, 2026-10-09) removes %s names from %s API and AGREE rows in this build: %s by the heading '
+            'word rule, %s by the exact heading list (%d terms), %s line-break fragments. Kept by name: %s. '
+            'The counts per flagged term are in `PACK.json`.' % ('{:,}'.format(hr['names_removed']), '{:,}'.format(hr['rows_touched']),
+                                    '{:,}'.format(hr['by_rule']['a']), '{:,}'.format(hr['by_rule']['b']), hr['heading_terms'],
+                                    '{:,}'.format(hr['by_rule']['c']), ', '.join(hr['keep_terms'])))
+
+
 def build(through, out, method_src, status):
     w1 = min(through, E1_END)
     pack = os.path.abspath(out)
@@ -410,13 +559,18 @@ def build(through, out, method_src, status):
     if rc != 0:
         sys.stderr.write(se[-1500:])
         raise SystemExit('metrics run failed (exit %d)' % rc)
+    hr = heading_report(rows)
+    sc = status_counts(corpus, W0, last)
+    reruns = sum(1 for r in rows if r['rerun'])
+    print('heading filter: %s' % json.dumps(hr, sort_keys=True))
+    print('reruns in window: %d ; EXTRACTION_FAILED: %s' % (reruns, extraction_failed_sentence(sc)))
     by_kind = {}
     for r in rows:
         by_kind[r['kind']] = by_kind.get(r['kind'], 0) + 1
     days = sorted({r['date'] for r in rows})
     meta = {'edition': 1, 'status': status, 'window': [W0, last], 'requested_through': through,
             'run_days': len(days), 'vendor_patches': patches, 'answers_rows': len(rows), 'rows_by_kind': by_kind,
-            'metrics_panel': panel_meta, 'sources_rows': n_src, 'sources_days': len(src_days), 'siri_rows': n_siri, 'customer_zero_rows': n_cz,
+            'metrics_panel': panel_meta, 'heading_filter': hr, 'reruns_in_window': reruns, 'run_status_counts': sc, 'sources_rows': n_src, 'sources_days': len(src_days), 'siri_rows': n_siri, 'customer_zero_rows': n_cz,
             'files': {'answers': ans_rel, 'sources': src_rel, 'siri': 'data/siri_panel.csv', 'metrics': 'metrics/metrics_v2.csv'}}
     with io.open(os.path.join(pack, 'PACK.json'), 'w', encoding='utf-8', newline='\n') as fh:
         json.dump(meta, fh, indent=1, sort_keys=True)
@@ -432,7 +586,10 @@ def build(through, out, method_src, status):
         text = (text.replace('{{STATUS}}', status).replace('{{W0}}', W0).replace('{{W1}}', last)
                 .replace('{{RUN_DAYS}}', str(len(days))).replace('{{ANSWERS_ROWS}}', '{:,}'.format(len(rows)))
                 .replace('{{PANEL}}', panel_sentence(panel_meta))
-                .replace('{{GAPS}}', gaps_text(days, W0, last)).replace('{{ANSWERS_FILE}}', ans_rel).replace('{{SOURCES_FILE}}', src_rel))
+                .replace('{{GAPS}}', gaps_text(days, W0, last)).replace('{{HEADINGS}}', heading_sentence(hr))
+                .replace('{{RERUNS}}', str(reruns)).replace('{{EXTRACTION_FAILED}}', extraction_failed_sentence(sc)).replace('{{ANSWERS_FILE}}', ans_rel).replace('{{SOURCES_FILE}}', src_rel))
+        if '{{' in text:
+            raise SystemExit('unfilled placeholder in the method note')
         with io.open(os.path.join(pack, 'README.md'), 'w', encoding='utf-8', newline='\n') as fh:
             fh.write(text)
     n = write_manifest(pack)
@@ -498,13 +655,13 @@ def selftest():
     for rel in METHOD_FILES:
         f = os.path.join(src, *rel.split('/'))
         os.makedirs(os.path.dirname(f), exist_ok=True)
-        body = 'x = ("/mnt/user-data/uploads/Alpha Vault/Carter Enterprise LLC/Brain_Kit/"\n"c.csv")\n' if rel in PATCHES else 'y = 1\n'
+        body = 'x = ("' + RETIRED_PATH + '"\n"c.csv")\n' if rel in PATCHES else 'y = 1\n'
         open(f, 'w').write(body)
     dst = os.path.join(tmp, 'mdst')
     done = vendor_method(src, dst)
     pf = os.path.join(dst, METHOD_ROOT, 'status', 'staged', '0929C_ACTOR', 'gen_citation_index.py')
     chk('vendor patch replaces the retired path and records before and after hashes',
-        'Alpha Vault' not in open(pf).read() and len(done) == 1 and done[0]['sha256_before'] != done[0]['sha256_after'])
+        RETIRED_PATH not in open(pf).read() and len(done) == 1 and done[0]['sha256_before'] != done[0]['sha256_after'])
     other = os.path.join(dst, METHOD_ROOT, 'status', 'staged', '1005B_METRICS', 'receipts_metrics_v1.py')
     chk('an unpatched file is copied byte for byte', sha_file(other) == sha_file(os.path.join(src, 'status', 'staged', '1005B_METRICS', 'receipts_metrics_v1.py')))
     open(os.path.join(src, 'status', 'staged', '0929C_ACTOR', 'gen_citation_index.py'), 'w').write('nothing to patch\n')
@@ -543,6 +700,48 @@ def selftest():
     chk('RED: with no cutoff the late cell is wrongly kept (%d left out, not 3)' % len(red_out), len(red_out) == 0)
     chk('panel sentence: none left out', 'no row is left out' in panel_sentence({'rows_left_out': 0, 'cutoff': PANEL_CUTOFF}))
     chk('panel sentence: counts and file named', '338 rows from 26 later cells' in panel_sentence({'rows_left_out': 338, 'cells_left_out': 26, 'cutoff': PANEL_CUTOFF, 'file': 'metrics/panel_x.csv'}))
+    # heading filter v1
+    flagged = ['Overview', 'Known For', 'Certifications', 'Guaranteed Rent', 'Federal Tax Credits', 'Break-Even Occupancy',
+               'Key qualifications to verify', 'Research methods', 'Red flags']
+    chk('heading: every flagged term is removed (%s)' % ', '.join(f for f in flagged if heading_reason(f) is None),
+        all(heading_reason(f) for f in flagged))
+    chk('heading: case and outer punctuation ignored ("overview:", "KNOWN FOR")', heading_reason('overview:') and heading_reason('KNOWN FOR'))
+    chk('heading: a line-break fragment is removed', heading_reason('My Suggestion\nRather') == 'c')
+    real = ['Extreme Roofing Inc', 'Pro Lawn & Irrigation', 'Pro Lawn', 'Guaranteed Rate', 'QuickBooks', 'Atomicdust', 'Zehl & Associates',
+            'Airbnb', 'Key Realty Group']
+    chk('heading: real business names pass (%s)' % ', '.join(r for r in real if heading_reason(r)), not any(heading_reason(r) for r in real))
+    clean = {'kind': 'API', 'source_file': 'NB-CZ-API_2026-10-01_x.json'}
+    add_derived(clean, ['A Roofing Co', 'B Roofing LLC'])
+    chk('heading: a clean row passes untouched (0 removed, same names)',
+        clean['headings_removed_count'] == 0 and clean['businesses_named_no_headings'] == 'A Roofing Co;B Roofing LLC' and clean['rerun'] == 0)
+    dirty = {'kind': 'API', 'source_file': 'NB-CZ-API_2026-08-05_x_r3.json'}
+    add_derived(dirty, ['Overview', 'Extreme Roofing Inc', 'Red flags to avoid', 'Known For'])
+    chk('heading: a dirty row keeps only the business (3 removed) and marks rerun 3',
+        dirty['headings_removed_count'] == 3 and dirty['businesses_named_no_headings'] == 'Extreme Roofing Inc' and dirty['rerun'] == 3)
+    serp = {'kind': 'SERP', 'source_file': 'NB-CZ-SERP_2026-10-01_x.json'}
+    add_derived(serp, ['https://u1/'])
+    chk('heading: SERP rows are not filtered (blank derived cells)', serp['headings_removed_count'] == '' and serp['businesses_named_no_headings'] == '')
+    rep = heading_report([dict(dirty, businesses_named='Overview;Extreme Roofing Inc;Red flags to avoid;Known For')])
+    chk('heading report counts rows, names and watched terms', rep['rows_touched'] == 1 and rep['names_removed'] == 3
+        and rep['watched_terms_rows']['Overview'] == 1 and rep['watched_terms_rows']['Known For'] == 1)
+    global HEADING_TERMS
+    keep_terms = HEADING_TERMS
+    HEADING_TERMS = set()
+    red = heading_reason('Known For')
+    HEADING_TERMS = keep_terms
+    chk('RED: with the exact list emptied, Known For slips through (the list is load-bearing)', red is None)
+    gci_path = os.path.join(REPO, 'releases', 'edition-1', METHOD_ROOT, 'status', 'staged', '0929C_ACTOR', 'gen_citation_index.py')
+    if os.path.exists(gci_path):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location('gci_check', gci_path)
+        m = importlib.util.module_from_spec(spec)
+        sys.path.insert(0, os.path.dirname(gci_path))
+        spec.loader.exec_module(m)
+        want = set(m.BASE_GENERIC) | set(m.EXTRA_GENERIC)
+        chk('heading words equal the method set BASE_GENERIC + EXTRA_GENERIC (missing %s, extra %s)'
+            % (sorted(want - HEADING_WORDS), sorted(HEADING_WORDS - want)), want == HEADING_WORDS)
+    chk('derived fields come after the base fields; check-latest layout unchanged',
+        ANSWER_FIELDS[:len(BASE_FIELDS)] == BASE_FIELDS and BASE_FIELDS[-1] == 'sha256')
     print('SELFTEST ' + ('FAIL: ' + ', '.join(fails) if fails else 'PASS'))
     return not fails
 
@@ -562,7 +761,7 @@ def main():
         rows = answers_rows(os.path.join(REPO, 'corpus', 'e1'))
         tmp = os.path.join(tempfile.mkdtemp(), 'x.csv')
         with io.open(tmp, 'w', encoding='utf-8', newline='') as fh:
-            w = csv.DictWriter(fh, fieldnames=ANSWER_FIELDS)   # default CRLF, as the daily rebuild writes it
+            w = csv.DictWriter(fh, fieldnames=BASE_FIELDS, extrasaction='ignore')   # default CRLF, as the daily rebuild writes it
             w.writeheader()
             w.writerows(rows)
         good = sha_file(tmp) == sha_file(a.check_latest)
