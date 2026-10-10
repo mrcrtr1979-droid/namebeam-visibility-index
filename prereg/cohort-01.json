@@ -1,0 +1,102 @@
+{
+ "cohort_id": "cohort-01",
+ "registered_by": "[SONNET-RECORD-1010B-S1c], Namebeam AI Visibility Record",
+ "registered_note": "This file is fixed before the first probe run. The repository commit that adds it is the registration time.",
+ "question": "How many days after a true, dated, first-party fact is published on a Namebeam page does each engine state it?",
+ "page_url": "https://markets.namebeam.ai/edition-1",
+ "sitemap_url": "https://markets.namebeam.ai/sitemap.xml",
+ "planned_publish_date": "2026-10-15",
+ "published_date": "",
+ "publication_plan": "The treatment fact is published in visible text on the page_url on the planned date, with a datePublished, linked from an already crawled page and listed in the sitemap. The fact text, its pattern and the salt are then committed in prereg/cohort-01.reveal.json and checked against the commitments below.",
+ "stop_after_date": "2026-12-14",
+ "stop_rule": "Daily probes until 60 days after publication (stop_after_date) or until every engine and treatment probe meets the decision rule, whichever is first; weekly after that.",
+ "engines": [
+  "perplexity",
+  "openai",
+  "anthropic",
+  "google_serp"
+ ],
+ "engine_settings": {
+  "perplexity": "Agent API, model perplexity/sonar, web search tool forced, temperature 0.2 (scripts/engines.py, as in the daily E1 run)",
+  "openai": "Chat Completions, model from the OPENAI_MODEL repository variable, no search tool, provider default temperature (as in E1)",
+  "anthropic": "Messages API, model claude-haiku-4-5 unless the ANTHROPIC_MODEL variable overrides it, no search tool, temperature 0.2, max 2,048 tokens (as in E1)",
+  "google_serp": "Google results page through Bright Data, US exit, hl=en gl=us; organic top 10 and the AI Overview when present (as in E1)"
+ },
+ "sampling": "One call per engine and probe per day at 12:37Z, backstop 13:12Z only when the day has no rows. The model id the provider reports is logged per row. Failed calls are rows.",
+ "watch_hosts": [
+  "namebeam.ai"
+ ],
+ "watch_names": [
+  "Namebeam",
+  "Name Beam"
+ ],
+ "decision_rule": "A probe answer is scored with its pattern. Treatment anchored (A): hit = the pattern matches the answer. Treatment unanchored (B): hit = the pattern matches and the answer names Namebeam or cites a namebeam.ai URL. days_to_first_named = the first date on or after publication with a hit that is followed by a hit on the next probed day, minus the publication date. A baseline hit (before publication) flags the cohort as contaminated for that engine and probe. Any negative control hit flags the detector or a leak. The positive control shows whether an engine and probe can register a published fact at all.",
+ "commitments": {
+  "treatment": {
+   "fact_text_commitment": "7a087477c00a56b965863b96c4ce818f7450701e857cc1820ef1ce27d6a2530a",
+   "pattern_commitment": "1898bbbd511210fede1cf4b7a5d4e00bda07e1661280554efc2f97fa8b5fa823",
+   "scheme": "sha256(salt + newline + text), UTF-8"
+  },
+  "negative_control": {
+   "fact_text_commitment": "7f2da9d4039a1aa6353e04a01c7af9d59eced1160e6a1b05c47abc05b9c9a92a",
+   "pattern_commitment": "e9f29a0001674f39997c1461e9cf6680a416a5cc0dd4207c168a9015413edb5e",
+   "scheme": "sha256(salt + newline + text), UTF-8",
+   "kept_unpublished_until": "2026-12-14"
+  }
+ },
+ "probes": [
+  {
+   "probe_id": "A",
+   "role": "treatment_anchored",
+   "prompt_text": "According to Namebeam's AI Visibility Record, how many different web domains did Perplexity cite in its answers to the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+   "prompt_sha256": "940f0824e14031113e8b576a7139c4427b38e8ac1ad5483a1335b3f802676221",
+   "engines": [
+    "perplexity",
+    "openai",
+    "anthropic",
+    "google_serp"
+   ],
+   "commitment": "treatment"
+  },
+  {
+   "probe_id": "B",
+   "role": "treatment_unanchored",
+   "prompt_text": "How many different web domains did Perplexity cite when it answered local business recommendation questions in September 2026, according to published research? Give the number and name the source.",
+   "prompt_sha256": "4b0dc6f999563b8642cd6ee3ef1e80842ed876a28633d7cceb1622d4896bb629",
+   "engines": [
+    "perplexity",
+    "openai",
+    "anthropic",
+    "google_serp"
+   ],
+   "commitment": "treatment",
+   "hit_needs_source": true
+  },
+  {
+   "probe_id": "NC",
+   "role": "negative_control",
+   "prompt_text": "According to Namebeam's AI Visibility Record, how many different web pages did Google's top 10 results list for the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+   "prompt_sha256": "efbb2eccf1f282e2dfdb6e4a46f44888ad548f405a891de2b76dea5850430d16",
+   "engines": [
+    "perplexity",
+    "openai",
+    "anthropic"
+   ],
+   "commitment": "negative_control"
+  },
+  {
+   "probe_id": "PC",
+   "role": "positive_control",
+   "prompt_text": "According to Namebeam's Kansas City health insurance page, on what date was its question first logged? Give the date and say where it is published.",
+   "prompt_sha256": "2172435b83ec4810818c0f37e03647c7ff5fc35b4470c07d045cc32375e7fd01",
+   "engines": [
+    "perplexity",
+    "openai",
+    "anthropic",
+    "google_serp"
+   ],
+   "pattern": "(?i)(2026-07-31|July\\s+31,?\\s+2026|31\\s+July,?\\s+2026|0?7/31/2026)",
+   "control_source": "https://namebeam.ai/kansas-city-health-insurance (live 2026-10-10, HTTP 200, text: 'Query logged 2026-07-31')"
+  }
+ ]
+}
