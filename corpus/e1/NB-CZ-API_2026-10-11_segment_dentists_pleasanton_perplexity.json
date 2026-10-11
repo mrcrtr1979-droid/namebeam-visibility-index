@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_dentists_pleasanton_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_21b3fcf2-d21e-4e1c-8b83-221ae08c48c8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00049,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00419
+   },
+   "input_tokens": 4776,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4226,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 196,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4972
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Stoneridge Dental with Dr. Nelson Wong",
+  "Pleasanton Dental Care with Dr. Eunice Jong"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.opencare.com/dentists/pleasanton-ca/my-favorite-dentist-24630732223c/",
+  "https://www.pleasantonfamilydentist.com/leave-a-review/testimonials/",
+  "https://doctor.webmd.com/providers/specialty/dentistry/california/pleasanton",
+  "https://www.stoneridgedds.com/",
+  "https://www.smilegeneration.com/dentist/ca/pleasanton/280-pleasanton-ridge-dental-group/",
+  "https://www.pleasantondentaloffice.com/patient-reviews",
+  "https://www.zocdoc.com/dentists/pleasanton-ca-209353pm/3",
+  "https://www.yelp.com/biz/pleasanton-family-and-cosmetic-dentistry-pleasanton",
+  "https://www.yelp.com/biz/pleasanton-dental-care-pleasanton-5",
+  "https://www.bestprosintown.com/ca/pleasanton/dentists/",
+  "https://www.yelp.com/biz/pleasanton-smile-dental-pleasanton",
+  "https://www.yelp.com/biz/jerry-a-sanchez-dds-pleasanton-5",
+  "https://www.yelp.com/biz/pleasant-dental-care-pleasanton",
+  "https://www.mainstpediatric.com/",
+  "https://pleasanton-dentist.com/dental-clinic/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist, but **Stoneridge Dental with Dr. Nelson Wong** looks like a strong option for a routine checkup and cleaning. Its practice information specifically lists regular exams and professional cleanings, and patient testimonials highlight gentle, thorough care and clear explanations.\n\nAnother promising choice is **Pleasanton Dental Care with Dr. Eunice Jong**: patient reviews mention thorough routine exams and cleanings, a reassuring approach for nervous patients, and clear treatment estimates.\n\nBefore booking, confirm the office is accepting new patients and is in-network with your dental plan.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

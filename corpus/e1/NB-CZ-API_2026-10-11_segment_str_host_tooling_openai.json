@@ -1,0 +1,28 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_str_host_tooling_openai",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "MarketMinder",
+  "PriceLabs",
+  "Beyond Pricing",
+  "Wheelhouse"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- For market research before buying: AirDNA (MarketMinder) is the best single tool for accurate, investor-focused market analysis.\n- For setting nightly pricing/optimizing revenue: PriceLabs is my top pick for flexibility and forecasting; Wheelhouse and Beyond Pricing are good alternatives (Wheelhouse for advanced analytics, Beyond Pricing for fully hands-off simplicity).\n\nWhy those picks\n- AirDNA (MarketMinder): built specifically for short‑term rental investment decisions. Gives ADR, occupancy, seasonality, revenue estimates, comps, market depth, historical trends, and supply growth — everything you need to evaluate a neighborhood before you buy.\n- PriceLabs: powerful, highly customizable dynamic-pricing engine, strong forecasting, data-driven rules, market-level analytics, and integrates with most PMS/channel managers. Good if you want control and scenario planning.\n- Wheelhouse: comparable features with strong A/B and scenario capabilities for hosts who like testing pricing strategies.\n- Beyond Pricing: simpler, less fiddly, automatically sets prices and works well if you want a “set it and forget it” approach.\n\nOther useful tools\n- Mashvisor: good for quick investment property screening (traditional + short-term rental metrics).\n- Transparent Intelligence / AirDNA alternatives: good for cross-checks and market depth in competitive cities.\n- Channel manager / PMS (Hostaway, Guesty, Hostfully): integrates pricing tools and automates syncing, reservations, and reporting — critical once you own multiple properties.\n\nHow to use them when evaluating a property\n1. Run a MarketMinder (AirDNA) report for the exact neighborhood and comparable property types (bedrooms, listing type). Look at ADR, occupancy, monthly revenue, seasonality, and supply growth.\n2. Identify 5–10 true comps and examine their amenities, reviews, minimum stays, and occupancy patterns.\n3. Use PriceLabs’ market data or its forecasting tool to model nightly prices under different occupancy scenarios and seasonality.\n4. Build a cashflow model: projected revenue (from tools) minus mortgage, taxes, insurance, utilities, cleaning, management fees, platform fees, maintenance, and vacancy buffer.\n5. Validate by checking local regulations (zoning, short-term permit costs), HOA rules, and peak-season demand drivers (events, tourism).\n6. If possible, run a test listing or contact local managers to get real booking and pricing behavior.\n\nPractical considerations when choosing a pricing tool\n- Integration: does it connect to Airbnb and your PMS/channel manager?\n- Customization: ability to set min/max, weekend rules, length-of-stay adjustments, discounts for last-minute or long stays.\n- Forecasting & reporting: can you run revenue scenarios before you buy?\n- Ease of use vs control: do you want automated, low-touch pricing or granular control?\n- Cost model: flat monthly per listing vs percentage of revenue — pick what aligns with your expected revenues.\n\nIf you want a single, practical recommendation:\n- Use AirDNA for the buy/no‑buy decision. If you decide to buy and manage pricing yourself, use PriceLabs for nightly pricing. If you want minimal fuss, pair AirDNA with Beyond Pricing for automated pricing.\n\nIf you’d like, tell me the city/neighborhood and property type you’re considering and I can suggest which metrics to pull and what reasonable ADR/occupancy targets look like.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

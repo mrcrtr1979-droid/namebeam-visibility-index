@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b18ae225-374d-43ef-b130-4523513d2a3b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00122,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00468
+   },
+   "input_tokens": 5427,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4880,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 326,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5753
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Serrano Orthodontics",
+  "Butterfly Orthodontics",
+  "Woolaver Orthodontics",
+  "E&S Orthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://smilestraightphx.com/about-us/testimonials",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/woolaver-orthodontics-phoenix-az",
+  "https://arizona-orthodontics.com/about/testimonials/",
+  "https://www.zocdoc.com/orthodontists/phoenix-220419pm/cigna-222d",
+  "https://www.brooksorthodontics.com/about-us/testimonials",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/smile-straight-orthodontics-greenway-road-phoenix-az",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/e-s-orthodontics-phoenix-phoenix-az",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/rusty-jones-orthodontics-phoenix-az",
+  "https://serranoorthodontics.com/welcome/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/butterfly-orthodontics-phoenix-az",
+  "https://teamorthodontics.com/our-practice/patient-reviews",
+  "https://www.yelp.com/biz/arizona-orthodontic-studio-phoenix",
+  "https://www.zocdoc.com/dentist/brittany-ellis-dmd-194183",
+  "https://smyleee.com/clinics/dunn-orthodontics",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/premier-orthodontics-of-central-phoenix-phoenix-az"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist—the right choice depends on your location in Phoenix, treatment needs, insurance, and budget. Based on the available information, **Serrano Orthodontics** is a strong central-Phoenix option: its doctors report board certification by the American Board of Orthodontics, and it offers both braces and Invisalign. Its Phoenix office is at **1515 E. Missouri Ave., Suite 101**.\n\nOther options worth comparing:\n- **Butterfly Orthodontics** — Dr. Chad Foster; offers braces and Invisalign; **4025 W. Bell Rd.**\n- **Woolaver Orthodontics** — offers braces and Invisalign; **4425 E. Agave Rd., Suite 126** (Ahwatukee).\n- **E&S Orthodontics** — offers braces; reported 4.9 stars across 532 Google reviews.\n\nI’d book two or three consultations before deciding. Ask who will personally supervise your treatment, whether your case is suitable for Invisalign, what the full fee includes (including retainers and refinements), and how emergencies and missed appointments are handled. Ratings and awards are useful clues, but they don’t establish clinical quality on their own.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

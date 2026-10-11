@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_digital_strike_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "Digital Strike",
+ "niche": "digital marketing agency",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best digital marketing agency in St. Louis?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_643cc86c-525c-471d-8b29-58453eb0ee1a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00076,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00069,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00409
+   },
+   "input_tokens": 3596,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3050,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 276,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3872
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "Timmermann Group",
+  "Atomicdust",
+  "VIVIDSITES"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.expertise.com/business/digital-marketing-agencies/missouri/st-louis",
+  "https://agencies.semrush.com/list/st-louis/",
+  "https://www.atomicdust.com/",
+  "https://www.digitalstrike.com/awards/",
+  "https://www.designrush.com/agency/digital-agencies/missouri/st-louis",
+  "https://www.wearetg.com/",
+  "https://www.designrush.com/agency/profile/acumen-studio",
+  "https://clutch.co/agencies/digital-marketing/small-business/st-louis?page=2",
+  "https://www.designrush.com/agency/digital-strategy-agencies/missouri/st-louis",
+  "https://www.designrush.com/agency/paid-media-pay-per-click/missouri/st-louis",
+  "https://clutch.co/agencies/ppc/google-adwords/st-louis",
+  "https://themanifest.com/digital-marketing/agencies/st-louis",
+  "https://clutch.co/agencies/digital-marketing/st-louis?page=2",
+  "https://www.vividsites.com/awards/",
+  "https://www.designrush.com/agency/content-marketing/missouri/st-louis"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency—it depends on your goals, budget, and industry. **Digital Strike** looks like a strong all-around option if you’re focused on measurable SEO and paid-search results: it reports a 2024 Search Engine Land awards finalist placement in both SEO and PPC, plus a 2025 Clutch recognition as a top digital marketing company in Missouri.\n\nOther local agencies worth comparing:\n- **Timmermann Group** — broad services including SEO, PPC, web design, and optimization; its site lists client testimonials and industry awards.\n- **Atomicdust** — a good candidate if branding and creative work are central to your marketing.\n- **VIVIDSITES** — offers web and digital marketing services and reports a 2025 Expertise recognition.\n\nBefore choosing, ask each agency for recent results from businesses like yours, who will manage your account, what reporting you’ll receive, and whether you retain ownership of your ad accounts and website.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

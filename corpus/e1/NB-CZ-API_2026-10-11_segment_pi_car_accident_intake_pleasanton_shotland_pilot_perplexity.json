@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_pi_car_accident_intake_pleasanton_shotland_pilot_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: PI car accident intake, Pleasanton (Shotland pilot)",
+ "niche": "personal injury law",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I was in a car accident in Pleasanton CA. Which lawyer should I hire for my injury case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f0cf2be3-4cb7-411d-83b6-e11f844af928",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00101,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0048
+   },
+   "input_tokens": 5139,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4584,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 404,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5543
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "GJEL Accident Attorneys",
+  "Venardi Zurada",
+  "The Law Office of Stephen M. Fuerch"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.fuerchlegal.com/",
+  "https://attorneys.superlawyers.com/personal-injury-defense/california/pleasanton/",
+  "https://www.vzlawfirm.com/pleasanton/car-accident-lawyer/",
+  "https://www.gjel.com/pleasanton",
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/california/pleasanton/",
+  "https://www.avvo.com/personal-injury-lawyer/ca/pleasanton.html",
+  "https://www.heidarilawgroup.com/locations/pleasanton-attorneys/personal-injury/",
+  "https://arashlaw.com/pleasanton/",
+  "https://attorneys.superlawyers.com/personal-injury-plaintiff/california/pleasanton/",
+  "https://www.martindale.com/personal-injury-lawyers/pleasanton/california/",
+  "https://oag.ca.gov/consumers/general/stbar",
+  "https://www.statebarcourt.ca.gov/public-records-information",
+  "https://www.lawinfo.com/personal-injury/california/pleasanton/",
+  "https://lawyers.findlaw.com/california/pleasanton/law-offices-of-teresa-li-pc-NTI0MTkyMF8x/",
+  "https://www.castate.org/Attorney_Search.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "I can’t responsibly name one “best” lawyer without knowing the seriousness and details of your injuries, and directory rankings or law-firm ads aren’t enough to judge who will handle your case well. A practical starting point is to speak with **two or three plaintiff-side car-accident attorneys** who regularly handle cases in Alameda County. Local options listed in the search results include **GJEL Accident Attorneys**, **Venardi Zurada**, and **The Law Office of Stephen M. Fuerch**; treat these as leads to compare, not endorsements.\n\nIn each free consultation, ask:\n\n- Who will personally handle my case, and how many similar car-crash cases have they taken to settlement or trial?\n- What is the contingency fee, and which case costs might I owe if there’s no recovery?\n- What do you think the main strengths, risks, and likely next steps are?\n- How often will I hear from the attorney, rather than a case manager?\n\nBefore signing, look up the specific attorney in the **[State Bar of California Attorney Search](https://apps.calbar.ca.gov/attorney/LicenseeSearch/QuickSearch)** to confirm their status and review any public discipline. Read the fee agreement carefully and don’t feel pressured to sign during the first call.\n\nKeep medical records, bills, wage-loss information, photos, and insurer communications. Don’t give the other driver’s insurer a recorded statement or sign a release before getting advice. California deadlines can be short—especially for claims involving a government vehicle or agency—so contact a lawyer promptly.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

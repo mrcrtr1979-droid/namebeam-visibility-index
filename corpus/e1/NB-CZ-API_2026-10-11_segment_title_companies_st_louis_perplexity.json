@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_title_companies_st_louis_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: title companies, St. Louis",
+ "niche": "title companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Louis MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_359f1e67-3f8c-4221-8c88-325e658d1b0b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00057,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00055,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00376
+   },
+   "input_tokens": 2833,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2284,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 220,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3053
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Title Resources Inc",
+  "Title Partners Agency",
+  "Elite Title Company"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.investors-title.com/",
+  "https://freedom-title.com/services",
+  "https://elitetitlestl.com/about-us/",
+  "https://titlepremierstl.com/",
+  "https://stltitle.com/home",
+  "https://www.titleresourcesinc.com/missouri/",
+  "https://ctitleservices.com/about/",
+  "https://ctitle.com/locations/",
+  "https://ctitle.com/",
+  "https://titlepartnersagency.com/about/",
+  "https://stltitle.com/testimonials",
+  "https://www.linkedin.com/company/true-title-company-llc",
+  "https://titlepartnersagency.com/",
+  "https://allcountytitleco.com/",
+  "https://hometitlestl.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” title company—it depends on your location, availability, fees, and how well the team communicates. **Title Resources Inc.** looks like a strong option to check first: its Missouri page reports a 5.0 rating from 92 Google reviews, with customers highlighting clear communication and smooth closings. **Title Partners Agency** and **Elite Title Company** also have positive customer testimonials.\n\nBefore choosing, ask for an itemized estimate and confirm they can meet your closing date, explain the settlement statement, and accommodate your preferred signing arrangements. You can generally choose the title/settlement provider yourself, so you don’t have to use the one suggested by your agent or lender.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

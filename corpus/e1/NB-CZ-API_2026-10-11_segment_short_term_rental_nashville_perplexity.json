@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_short_term_rental_nashville_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8ec8f5fd-8227-4e6e-9e0a-960d5fb6da51",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 4652,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4099,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 316,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4968
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Historic Lockeland Springs 2BR The Koselig Korner"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/nashville-tn/stays/bed-and-breakfast",
+  "https://www.airbnb.com/downtown-nashville-tn/stays",
+  "https://www.airbnb.com/nashville-tn/stays/guesthouses",
+  "https://www.airbnb.com/nashville-tn/stays",
+  "https://www.airbnb.com/nashville-tn/stays/apartments",
+  "https://www.airbnb.com/nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/midtown-nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/nashville-tn/stays/resorts",
+  "https://www.vrbo.com/vacation-rentals/united-states/tennessee/nashville-and-vicinity",
+  "https://www.airbnb.com/nashville-in/stays/family-friendly",
+  "https://www.vrbo.com/vacation-rentals/family/usa/tennessee/middle/nashville",
+  "https://www.vrbo.com/vacation-rentals/usa/tennessee/middle/nashville",
+  "https://www.nashvillesmls.com/blog/best-nashville-neighborhoods-for-short-term-rentals.html",
+  "https://musiccitymagnolia.com/",
+  "https://www.airbnb.com/east-nashville-tn/stays/family-friendly"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one “best” rental without your dates and budget—availability and total price can change a lot. For a family of four, I’d start with a **private two-bedroom home or guesthouse in East Nashville or Germantown**: you’ll usually get more room, a kitchen, and a quieter home base than right on Broadway, while still being a short drive or rideshare from downtown.\n\nA promising example to check is **Historic Lockeland Springs 2BR “The Koselig Korner”** in East Nashville. Its listing describes space for 4–5, a full kitchen, private patio, and access to Shelby Park. If you’d rather be closer to the main attractions, look at a **two-bedroom downtown or Music Row rental**—but expect more noise and potentially higher prices.\n\nBefore booking, compare the **total price including fees**, recent reviews, parking, bed setup for your family, and the listing’s short-term-rental permit details. Share your dates, budget, children’s ages, and whether you’ll have a car, and I can narrow down what would suit you best.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

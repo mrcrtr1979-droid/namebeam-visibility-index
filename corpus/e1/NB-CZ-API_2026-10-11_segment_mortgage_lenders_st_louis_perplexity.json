@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_mortgage_lenders_st_louis_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: mortgage lenders, St. Louis",
+ "niche": "mortgage lenders",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Louis MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4272ad0b-4b6a-45d6-a588-5490156e4816",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00096,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00471
+   },
+   "input_tokens": 5009,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4458,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 385,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5394
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Midwest BankCentre",
+  "Better Rate Mortgage",
+  "Neighbors Credit Union"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.midwestbankcentre.com/mortgage/",
+  "https://www.monitorbankrates.com/mortgage-loan-rates/missouri/saint-louis",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://www.realtor.com/mortgage/rates/Saint-Louis_MO",
+  "https://www.newamericanfunding.com/branches/st-louis-olive",
+  "https://www.firstcommunity.com/loans/personal-loans/home-loans.html",
+  "https://trustanalytica.org/us/mo/best-mortgage-brokers",
+  "https://www.monitorbankrates.com/calculators/mortgage/missouri",
+  "https://www.newamericanfunding.com/branches/st-louis-southcounty",
+  "https://www.monitorbankrates.com/mortgage-loan-rates/missouri",
+  "https://betterratemortgage.com/",
+  "https://www.experience.com/reviews/kevin-puntney-342595",
+  "https://www.bankrate.com/mortgages/mortgage-rates/missouri/",
+  "https://www.experience.com/reviews/office/chesterfield",
+  "https://www.experience.com/reviews/company/midwest-bankcentre?page=3"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and how much you value rate versus service. **For a St. Louis buyer who wants a local starting point, I’d compare Midwest BankCentre and Better Rate Mortgage.**\n\n- **Midwest BankCentre** has a local mortgage team and strong review scores in the results: 4.89/5 on Experience.com and 4.97/5 on Zillow. [Mortgage page](https://www.midwestbankcentre.com/mortgage/)\n- **Better Rate Mortgage** is a local broker with a St. Louis office and many positive customer reviews, including comments about responsiveness and help with purchase loans. [Website](https://betterratemortgage.com/)\n\nAlso get a quote from a credit union you’re eligible to join—such as **Neighbors Credit Union**—since local credit unions may be competitive. Rates change frequently, and advertised rates may assume specific credit, down-payment, and points.\n\n**Best next step:** Ask at least three lenders for written Loan Estimates on the same day, using the same loan amount, down payment, and rate-lock period. Compare the **APR, lender fees, points, and cash to close**, not just the advertised interest rate. If you share your approximate credit score, down payment, and whether you’re considering conventional, FHA, or VA financing, I can help narrow the shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8a764d96-cdf7-46e8-9696-c87e68694396",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00066,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00113,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00443
+   },
+   "input_tokens": 3200,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2644,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 453,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3653
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Short answer",
+  "Airbnb/condo",
+  "Lodge of the Ozarks",
+  "Marriott’s Willow Ridge Lodge",
+  "Grand Country Resort",
+  "Seven Gables Inn",
+  "My default recommendation",
+  "Willow Ridge Lodge"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.tripadvisor.com/Hotels-g44160-zff4-Branson_Missouri-Hotels.html",
+  "https://www.hotels.com/de1644148-ty2/family-friendly-hotels-branson-and-vicinity-missouri/",
+  "https://www.expedia.com/Branson-Hotels.d6058734.Travel-Guide-Hotels",
+  "https://www.hotels.com/nh1663107/hotels-in-downtown-branson-branson-missouri/",
+  "https://www.tripadvisor.com/HotelsList-Branson-Family-Resorts-zfp7812133.html",
+  "https://www.airbnb.com/branson-mo/stays",
+  "https://www.travelocity.com/Branson-Hotels-Family-Hotel.0-0-d6058734-tFamilyHotel.Travel-Guide-Filter-Hotels",
+  "https://www.airbnb.com/branson-mo/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays/condos",
+  "https://www.airbnb.com/branson-mo/stays/resorts",
+  "https://www.airbnb.com/branson-township-mo/stays",
+  "https://www.tripadvisor.com/Hotels-g44160-oa120-Branson_Missouri-Hotels.html",
+  "https://www.airbnb.mx/branson-mo/stays/hotels",
+  "https://www.ihg.com/branson-missouri",
+  "https://www.hotels.com/de1412461/hotels-branson-west-missouri/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Short answer:** For a first visit focused on shows, restaurants, and attractions, I’d choose a **hotel**—it’s simpler, and you’re less likely to be surprised by cleaning fees, check-in rules, or a long drive. Choose an **Airbnb/condo** if you’re staying several nights, traveling with a group, or want a kitchen and more space.\n\n### Good hotel picks\n- **Lodge of the Ozarks** — A strong all-around choice near the Highway 76 entertainment corridor; recent listings show excellent guest ratings.  \n- **Marriott’s Willow Ridge Lodge** — Best if you want resort amenities and room to spread out; it has indoor and outdoor pools and hot tubs.  \n- **Grand Country Resort** — Convenient for families who want on-site entertainment and waterpark options, right on the Strip.  \n- **Seven Gables Inn** — A simpler, often more budget-conscious option near the main attractions.\n\n### When a rental is better\nLook for a **condo or cabin around Indian Point/Table Rock Lake** if you want a quieter setting, a full kitchen, or space for a larger family. Airbnb listings include highly rated multi-bedroom condos in Indian Point, but check the **total price**, cancellation terms, pool access, and drive time to the places you plan to visit. Lake-area stays can be peaceful, but they’re less convenient if you’ll be going back and forth to the Strip.\n\n**My default recommendation:** Book **Lodge of the Ozarks** for a convenient hotel stay, or **Willow Ridge Lodge** if resort amenities matter more. For a group or a longer trip, compare a well-reviewed Indian Point condo against the hotel’s *all-in* price. Ratings and availability change, so verify recent reviews and exact dates before booking.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

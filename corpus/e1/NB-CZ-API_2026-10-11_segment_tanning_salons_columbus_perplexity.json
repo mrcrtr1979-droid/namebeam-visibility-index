@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_tanning_salons_columbus_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: tanning salons, Columbus",
+ "niche": "tanning salons",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Columbus OH?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f51984ee-0c83-461c-ba18-19fa2fa9c3b5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00049,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00054,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00367
+   },
+   "input_tokens": 2502,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 1958,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 215,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2717
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Uptown Sun Studio",
+  "The Bronzing Bar",
+  "UV tanning beds",
+  "Palm Beach Tan at OSU Campus/Grandview"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.glowairbrushtans.com/",
+  "https://palmbeachtan.com/locations/oh/columbus-olentangy-river-road",
+  "https://trustanalytica.org/us/oh/columbus/best-tanning-salons",
+  "https://www.fresha.com/lp/de/bt/sonnenstudios/us-columbus",
+  "https://www.vagaro.com/sweetlybronzed",
+  "https://www.bestprosintown.com/oh/columbus/tanning/",
+  "https://reviews.birdeye.com/dolphin-beach-tan-148341609465292",
+  "https://www.entrepreneursofcolumbus.com/top-rated/spray-tanning/",
+  "https://www.thebronzingbar.com/",
+  "https://www.bbb.org/us/oh/columbus/category/spray-tanning-salon",
+  "https://palmbeachtan.com/locations/oh/arlington-pointe",
+  "https://www.yellowpages.com/columbus-oh/tanning-salons",
+  "https://www.groupon.com/deals/sun-studio-tan-8",
+  "https://www.fresha.com/lp/en/tt/spray-tanning/in/us-columbus",
+  "https://www.sweetlybronzed.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "If you mean a **spray tan**, **Uptown Sun Studio** looks like a strong pick: it has a reported **4.8/5 from 391 Groupon reviews** and offers custom airbrush tans. **The Bronzing Bar** is another Columbus option focused on airbrush tanning.\n\nIf you mean **UV tanning beds**, **Palm Beach Tan at OSU Campus/Grandview** is a well-reviewed chain location, listed at **4.55/5 from 178 reviews**.\n\n“Best” depends on the type of tan and what matters most to you; check recent reviews, prices, and appointment availability before booking. UV tanning carries skin-cancer and skin-aging risks, so a spray tan is the safer choice.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

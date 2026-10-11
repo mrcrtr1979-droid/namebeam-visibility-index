@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_real_estate_agents_st_charles_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: real estate agents, St. Charles",
+ "niche": "real estate agents",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Charles MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_caa01ae8-f6f1-456d-b595-ccb3641d5d13",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00127,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00473
+   },
+   "input_tokens": 5613,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 5062,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 327,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5940
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Michael Swaringim"
+ ],
+ "engine_stated_criteria": [
+  "two other agents who have recently sold homes in your specific neighborhood"
+ ],
+ "sources_cited": [
+  "https://www.realtor.com/realestateagents/56b0b89589a68901006c7b9d",
+  "https://www.zillow.com/profile/JeremySchneiderRE",
+  "https://www.zillow.com/profile/Service1stHomes",
+  "https://www.realtor.com/realestateagents/567371867e54f701001dc55d",
+  "https://www.realtor.com/realestateagents/st-charles_mo",
+  "https://www.realtor.com/realestateagents/567ff8797e54f701001ec6ab",
+  "https://www.realtor.com/realestateagents/5f32ff7fde3221001171fd62",
+  "https://www.realtor.com/realestateagents/5d862f1285b1870013925f56",
+  "https://www.zillow.com/profile/EddieSpinaio",
+  "https://www.realtor.com/realestateagents/56d4bf228a13600100d5a72a",
+  "https://www.homes.com/real-estate-agents/jeremy-schneider/lg1yyqe/",
+  "https://www.homes.com/real-estate-agents/nicholas-wagenknecht/pc0ry6v/",
+  "https://www.linkedin.com/in/trisha-wolf",
+  "https://www.zillow.com/profile/juliescarpacekw",
+  "https://www.ratemyagent.com/real-estate-profile/sales/st-charles-county-missouri/agents"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a reliable way to name one “best” agent without knowing your home’s location, price range, and what matters most to you. Based on the available results, **Michael Swaringim** looks like a promising person to interview: Realtor.com lists 16 reviews, a 5.0 rating, recent St. Charles-area sales, and seller reviews praising his communication and pricing advice. [Profile and reviews](https://www.realtor.com/realestateagents/5f32ff7fde3221001171fd62)\n\nI’d compare him with **two other agents who have recently sold homes in your specific neighborhood**. Ask each for:\n- Recent *seller-side* sales nearby, especially homes like yours\n- Their suggested list price and the comparable sales behind it\n- Their marketing and showing plan\n- Their commission and any other fees\n- A recent seller reference\n\nReviews and sales counts are useful starting points, but a strong neighborhood-specific pricing plan is more important. If you share your neighborhood or ZIP code, approximate home value, and property type, I can help narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

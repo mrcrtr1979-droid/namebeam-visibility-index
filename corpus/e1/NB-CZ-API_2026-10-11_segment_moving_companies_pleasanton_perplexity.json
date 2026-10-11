@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_moving_companies_pleasanton_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: moving companies, Pleasanton",
+ "niche": "moving companies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best moving company in Pleasanton CA for a local move?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f94bb8ee-bc2e-4e4b-a640-f3aec67307cc",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00081,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0005,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00395
+   },
+   "input_tokens": 3794,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3245,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 201,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3995
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Ontrack Moving",
+  "All Star Movers & Storage"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.thumbtack.com/ca/pleasanton/movers",
+  "https://www.movebuddha.com/movers/ca/pleasanton/long-distance/",
+  "https://www.freightwaves.com/checkpoint/movers/california/pleasanton/",
+  "https://lugg.com/cities/ca/pleasanton",
+  "https://www.movebuddha.com/movers/ca/pleasanton/",
+  "https://lugg.com/pleasanton-ca-local-movers",
+  "https://www.ontrackmoving.com/pleasanton-movers",
+  "https://moveadvisor.com/moving-companies/pleasanton-ca-94566?p=2",
+  "https://bestcaliforniamovers.com/ca/pleasanton-movers/",
+  "https://www.yelp.com/biz/bp-moving-pleasanton-4",
+  "https://www.mrintegritymovers.com/service-areas/pleasanton/",
+  "https://got2move.com/local/san-francisco-bay-area/pleasanton/",
+  "https://www.greatguysmove.com/movers/california/pleasanton/",
+  "https://moveadvisor.com/moving-companies/pleasanton-ca-94566",
+  "https://b2movingcompany.com/movers-in-pleasanton/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Ontrack Moving** looks like a strong all-around choice for a local move in Pleasanton: it serves the area and reports a 4.9/5 rating across 2,800+ Google and Yelp reviews. Another good candidate is **All Star Movers & Storage**, which has strong customer feedback, including reviews specifically mentioning local moves.\n\nBefore booking, get written, itemized estimates from both and confirm the company’s California household-goods moving permit (CAL-T), insurance, hourly minimums, and any travel or stair fees. The “best” fit can depend on your move size and dates.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

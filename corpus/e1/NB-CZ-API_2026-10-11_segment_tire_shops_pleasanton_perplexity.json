@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_tire_shops_pleasanton_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: tire shops, Pleasanton",
+ "niche": "tire shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I buy tires in Pleasanton CA and who does the best installation?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1d9479e3-b7d5-430a-891d-f20b7cb3262f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00099,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00069,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00432
+   },
+   "input_tokens": 4510,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3960,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 277,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4787
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Big Brand Tire & Service",
+  "Seever & Sons Tire",
+  "My pick for installation"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bigbrandtire.com/locations/3687-old-santa-rita-rd-pleasanton-ca-94588",
+  "https://www.tirerack.com/installers/ca/pleasanton/94588/the-tire-choice-1633?id=8610837-022",
+  "https://locations.thetirechoice.com/ca/pleasanton/4216-rosewood-rd",
+  "https://www.tirerack.com/installers/ca/pleasanton/94566",
+  "https://www.tirerack.com/installers/ca/pleasanton/94588",
+  "https://www.tirerack.com/installers/ca/pleasanton/94582",
+  "https://www.carfax.com/Auto-Repair-Pleasanton-CA_c12173",
+  "https://www.bigotires.com/location/ca/pleasanton/3688a-washington-st-94566/005024",
+  "https://reviews.birdeye.com/seever-sons-tire-156070849854197",
+  "https://www.bigotires.com/location/ca-pleasanton-94566/005024/tire-services-and-repair",
+  "https://www.tirerack.com/installers/ca/blackhawk/94506",
+  "https://locations.thetirechoice.com/ca/pleasanton",
+  "https://www.yelp.com/biz/seever-and-sons-tire-pleasanton?start=40",
+  "https://www.yelp.com/biz/americas-tire-fremont-3",
+  "https://www.yelp.com/biz/valley-tire-service-pleasanton"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a **local shop with strong customer feedback**, I’d start with **Big Brand Tire & Service** at **3687 Old Santa Rita Rd**. Its listing shows **4.7/5 from 701 reviews**, with customers praising quick service and fair prices. It sells and installs tires, and is a good first call for a quote.\n\nFor a **well-reviewed independent shop**, consider **Seever & Sons Tire** in Pleasanton; its Yelp listing shows **4.8/5 from 531 reviews**. It may be especially appealing if you value a local shop and personal service.\n\n**My pick for installation:** Big Brand is the clearest bet based on the larger volume of local reviews. Seever & Sons is a strong alternative. I wouldn’t call any shop definitively “the best” from ratings alone—ask about appointment availability, the full installed price (including balancing, disposal, and any fees), and alignment if needed.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_homecare_agencies_pleasanton_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: homecare agencies, Pleasanton",
+ "niche": "home care agencies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best home care agency in Pleasanton CA for an elderly parent?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a64d1542-5410-4270-b364-f37e705b8501",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00448
+   },
+   "input_tokens": 4574,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4024,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 330,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4904
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Senior Helpers Pleasanton",
+  "Right at Home Pleasanton",
+  "Always Best Care of Pleasanton",
+  "Home Care Organization"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.cdss.ca.gov/inforesources/community-care/home-care-services",
+  "https://www.caring.com/senior-care/in-home-care/california/fremont",
+  "https://www.caring.com/senior-care/in-home-care/california/castro-valley",
+  "https://www.homeinstead.com/home-care/usa/ca/fremont/291/service-area/home-care-in-pleasanton-ca/",
+  "https://www.seniorhelpers.com/ca/pleasanton/locations/pleasanton/",
+  "https://locations.seniorshelpingseniors.com/ca/pleasanton/care-services-250.html",
+  "https://www.seniorhelpers.com/ca/pleasanton/",
+  "https://www.yelp.com/biz/tri-valley-personal-home-care-services-pleasanton",
+  "https://www.caring.com/senior-care/in-home-care/california/pleasanton",
+  "https://www.aplaceformom.com/agency/silversun-home-care-1461907",
+  "https://www.agingcare.com/local/in-home-care/pleasanton-ca",
+  "https://hillendalehomecare.com/areas-served/alameda-county/pleasanton",
+  "https://www.care.com/home-care/pleasanton-ca",
+  "https://www.care.com/home-care-agencies/livermore-ca",
+  "https://www.aplaceformom.com/home-care/california/pleasanton"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” agency—the right choice depends on your parent’s needs, schedule, and budget. **Senior Helpers Pleasanton** is one reasonable place to start: it serves Pleasanton and advertises dementia care, personal care, respite, and help with meals, transportation, and medication reminders. **Right at Home Pleasanton** and **Always Best Care of Pleasanton** are also local options worth comparing.\n\nBefore choosing, speak with at least two agencies and ask:\n- Who supervises care, and how are caregivers screened, trained, and matched?\n- Can they reliably cover the exact hours needed, including backup if someone calls out?\n- What are the hourly minimums, rates, and cancellation terms?\n- How do they handle concerns or a caregiver who isn’t a good fit?\n- Can they provide references from families with similar care needs?\n\nIn California, check that the agency is licensed as a **Home Care Organization** and verify caregiver registration through the state’s [Home Care Services Branch](https://www.cdss.ca.gov/inforesources/community-care/home-care-services). These agencies generally provide **non-medical** help; if your parent needs nursing or other clinical care, ask their doctor about a licensed home health provider.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

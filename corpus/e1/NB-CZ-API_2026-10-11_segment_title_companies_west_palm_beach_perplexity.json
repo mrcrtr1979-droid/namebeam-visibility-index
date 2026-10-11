@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_title_companies_west_palm_beach_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: title companies, West Palm Beach",
+ "niche": "title companies",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in West Palm Beach FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_fb8204f5-4005-4be9-8d19-b540e7eebc28",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00047,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00058,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00369
+   },
+   "input_tokens": 2413,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 1864,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 232,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2645
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Trusted Florida Title",
+  "Florida Fidelity Title & Escrow"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://trustedfltitle.com/",
+  "https://floridatitleco.com/",
+  "https://juristitle.com/locations/west-palm-beach",
+  "https://closewithbell.com/locations/west-palm-beach",
+  "https://www.linkedin.com/company/trident-title-company",
+  "https://synergytitlefl.com/home",
+  "https://palmbeachrealestatetitleandescrow.com/",
+  "https://www.linkedin.com/in/pegasustitle",
+  "https://www.linkedin.com/company/lighthouse-title-services-wpb",
+  "https://www.linkedin.com/company/equitylandtitle",
+  "https://suntitle.biz/about/",
+  "https://www.bbb.org/us/fl/west-palm-beach/category/title-companies",
+  "https://level10title.com/",
+  "https://www.integritylandtitle.com/default.aspx?tabid=485",
+  "https://titleunion.com/services/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t enough reliable, independent review information here to name one company as definitively “best.” **Trusted Florida Title** is one local option to consider; it lists a West Palm Beach office at **1663 S. Congress Avenue**. **Florida Fidelity Title & Escrow** also lists a West Palm Beach office at **4450 S. Tiffany Drive**.\n\nBefore choosing, compare recent independent reviews and ask each company about its fees, who will handle your file, communication and signing options, and experience with your type of transaction. Also confirm that your lender and real-estate agent are comfortable with your choice. In Florida, the buyer and seller can often negotiate who selects the title/closing agent, subject to the contract and lender requirements.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

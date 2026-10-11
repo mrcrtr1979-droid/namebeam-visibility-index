@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5b91b117-66d5-4233-b064-e9d811ce169c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00077,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00449
+   },
+   "input_tokens": 4876,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4329,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 309,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5185
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Buckhead Orthodontics",
+  "Harris Orthodontics",
+  "West Paces Ferry Orthodontics",
+  "Artemis Smiles Orthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-india-l-collier/",
+  "https://www.buckheadorthodontics.com/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/georgia-orthodontic-studio-atlanta-atlanta-ga",
+  "https://www.westpacesferryortho.com/",
+  "https://aaoinfo.org/locator/",
+  "https://harrisorthodonticsatl.com/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/atlanta-dental-spa-highlands-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/buckhead-orthodontics-atlanta-ga",
+  "https://www.artemisortho.com/our-practice/patient-reviews/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/willow-orthodontics-atlanta-madison-yards-atlanta-ga",
+  "https://www.braces-braces.com/dr-lee",
+  "https://aaoinfo.org/locator/dr-douglas-depew-3/",
+  "https://artemisorthoatlanta.com/our-practice/patient-reviews/",
+  "https://aaoinfo.org/locator/dr-nick-kim/",
+  "https://artemisorthoatlanta.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—fit depends on your case, location, budget, and whether you prefer braces or aligners. A strong starting point is **Buckhead Orthodontics**: its listing identifies Dr. Michael Everson as board-certified by the American Board of Orthodontics, and the practice offers both braces and Invisalign. It’s at **2385 Peachtree Rd**; **(404) 697-7497**.\n\nOther options to compare:\n- **Harris Orthodontics** — Dr. Peyton Harris is listed as board-certified; braces and Invisalign; **800 Marietta St NW**.\n- **West Paces Ferry Orthodontics** — board-certified orthodontists and Invisalign treatment.\n- **Artemis Smiles Orthodontics** — braces and Invisalign; **220 Sandy Springs Circle**.\n\nBefore choosing, book two or three consultations and compare the proposed treatment plan, total cost, appointment availability, and who will supervise your care. You can also verify orthodontist credentials through the [American Association of Orthodontists’ locator](https://aaoinfo.org/locator/).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

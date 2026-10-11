@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_property_management_st_louis_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: property management, St. Louis",
+ "niche": "property management companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Louis MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_18684496-d829-421d-969b-9e643c42d191",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00435
+   },
+   "input_tokens": 4583,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4032,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 280,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4863
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Avenue Real Estate Group",
+  "HomeStretch Property Management",
+  "SMPL"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.trustindex.io/reviews/propertymanagementstl.com",
+  "https://homestretchpropertymanagement.com/",
+  "https://www.stlouispropertymanagement.co/blog/best-property-management-companies-in-st-louis",
+  "https://propertymanagementstl.com/",
+  "https://www.renterswarehouse.com/offices/st-louis",
+  "https://awning.com/post/missouri-airbnb-management-companies",
+  "https://purehomeriver.com/locations/missouri/st-louis/",
+  "https://ipropertymanagement.com/companies/st-louis-mo",
+  "https://smplpropertymanagement.com/",
+  "https://www.zillow.com/professionals/property-manager-reviews/63113/",
+  "https://intersectionstl.com/",
+  "https://www.kingslandstl.com/",
+  "https://myppmrents.com/",
+  "https://www.verifiedmanagers.com/property-management-companies/MO/st-louis/",
+  "https://uat.renterswarehouse.com/offices/chesterfield"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Avenue Real Estate Group** looks like a strong first company to interview. It reports more than 22 years of local experience, 800+ managed properties, a 4.8-star rating, a 30-day leasing guarantee, and no maintenance markup. Those are promising signals, though they’re company-reported and worth verifying.\n\nI’d also get a quote from **HomeStretch Property Management** or **SMPL** as a comparison. Ask each for the full fee schedule—not just the monthly management rate—including tenant placement, lease renewals, inspections, maintenance coordination, and cancellation. Check recent reviews from **owners**, and ask for references from landlords with homes similar to yours and in the same neighborhood.\n\nIf you share the home’s neighborhood, approximate rent, and whether it’s currently occupied, I can help narrow down what to compare.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

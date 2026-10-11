@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_segment_real_estate_agents_miami_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "SEGMENT: real estate agents, Miami",
+ "niche": "real estate agents",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Miami FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_00e74418-677b-4318-8b02-fab4d20b2f47",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00461
+   },
+   "input_tokens": 5089,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4540,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 331,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5420
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sandra Rathe of REAL",
+  "Desare Kohn-Laski",
+  "Dominick Martinez"
+ ],
+ "engine_stated_criteria": [
+  "recent seller-side sales in your neighborhood and price range"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/miami-fl/",
+  "https://www.zillow.com/profile/chezrealty",
+  "https://www.realtor.com/realestateagents/Miami_FL",
+  "https://www.homelight.com/miami-fl/top-real-estate-agents",
+  "https://www.zillow.com/profile/Dawn%20Wands",
+  "https://www.ratemyagent.com/real-estate-profile/sales/florida/miami-fl",
+  "https://www.zillow.com/profile/Gustavo%20Moreira",
+  "https://www.zillow.com/profile/ONEPATH%20Team",
+  "https://www.effectiveagents.com/fl/miami",
+  "https://www.homes.com/real-estate-agents/angel-barreiro/msf0mkk/",
+  "https://www.goflydragon.com/agents/top-real-estate-agents-miami-fl/",
+  "https://www.realtor.com/realestateagency/Miami_FL",
+  "https://listwithclever.com/top-real-estate-agents/profiles/sandra-rathe-1394444/",
+  "https://www.zillow.com/profile/miamisbestagent",
+  "https://www.zillow.com/profile/Jackson%20Keddell"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for all of Miami—the right choice depends on your neighborhood, home type, and price range. Based on the available rankings, **Sandra Rathe of REAL** is a reasonable first person to interview: HomeLight lists her first among its Miami agents, with a 5.0 rating and 132 reviews. **Desare Kohn-Laski** and **Dominick Martinez** also appear near the top of that ranking.\n\nTreat rankings as a shortlist, not a guarantee. Before choosing, ask each agent for **recent seller-side sales in your neighborhood and price range**, their typical sale-to-list price and time on market, a pricing plan, marketing examples, and their commission and contract terms. Compare at least three proposals; a strong local track record matters more than a citywide ranking.\n\n[HomeLight’s Miami agent ranking](https://www.homelight.com/miami-fl/top-real-estate-agents) · [Realtor.com’s Miami agent directory](https://www.realtor.com/realestateagents/Miami_FL)\n\nIf you share your neighborhood or ZIP code, home type, and approximate value, I can help narrow the shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

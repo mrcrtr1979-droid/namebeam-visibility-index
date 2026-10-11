@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-11_namebeam_perplexity",
+ "date_utc": "2026-10-11",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_958eabec-d816-46c4-9f2f-8af07743f375",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 4960,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4408,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 304,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5264
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Otterly.AI",
+  "Rankscale"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://mentionpilot.ai/",
+  "https://visible.seranking.com/blog/profound-vs-peec-ai/",
+  "https://peec.ai/peec-vs-profound",
+  "https://elfsight.com/blog/best-tools-for-monitoring-chatgpt-mentions/",
+  "https://siftly.ai/blog/most-affordable-ai-visibility-tracking-b2b",
+  "https://elfsight.com/blog/best-chatgpt-visibility-trackers/",
+  "https://brand24.com/blog/ai-brand-visibility-tracking-tools/",
+  "https://superframeworks.com/articles/best-chatgpt-mentions-tool",
+  "https://dupple.com/learn/profound-vs-peec-ai",
+  "https://www.get-ryze.ai/blog/profound-vs-peec-ai-2026",
+  "https://visible.seranking.com/blog/best-ai-visibility-tools/",
+  "https://www.tryprofound.com/blog/choosing-ai-visibility-provider",
+  "https://www.softwaresuggest.com/blog/best-ai-visibility-tools/",
+  "https://www.semrush.com/blog/best-ai-visibility-tools/",
+  "https://www.semrush.com/blog/llm-monitoring-tools/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a small business, **Otterly.AI** is a sensible place to start: it’s designed for smaller teams and tracks whether your business appears in answers from ChatGPT and other AI search tools. Its entry plan is reported at about **$25–$29/month**, though pricing and included prompt limits can change. **Rankscale** is another budget option, with plans reported from around **$20/month**.\n\nIf you mainly want to check **local-business recommendations**—for example, “best plumber in [city]”—look for a tracker that lets you monitor your own location-specific prompts and compare competitors. A tool’s “visibility” score is only an estimate: AI answers vary by wording, location, account, and time, so no service can guarantee what every customer will see.\n\nBefore subscribing, try a free snapshot if available, then test a handful of realistic prompts such as “best [service] near [neighborhood]” and “who should I hire for [problem] in [city]?” Check that the tool shows the actual answers, not just a score.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
