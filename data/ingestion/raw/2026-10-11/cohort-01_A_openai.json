@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t fetch live web pages (my browsing is disabled and my training cuts off in 2024), so I can’t directly look up Namebeam’s 2026 AI Visibility Record to count Perplexity’s cited domains. If you can either (a) paste the record (or the Perplexity answers for 2026-09-01 through 2026-09-27) here, or (b) give the URL, I will count the unique domains and report the number and where it’s published.\n\nIf you want to do it yourself, here are quick ways to get the count.\n\n1) Command-line (if you have the page saved as text/html in file record.html)\n- Extract URLs and count unique domains:\n  grep -oE 'https?://[^\"<> ]+' record.html \\\n  | sed -E 's#https?://(www\\.)?##' \\\n  | sed -E 's#/.*$##' \\\n  | sort -u \\\n  | wc -l\n\n(If the file contains multiple models’ answers, filter the file first to Perplexity’s answers or to the 2026-09-01..09-27 date range.)\n\n2) Python (works on a list of Perplexity answer texts or on a saved HTML file)\n- Example script to extract domains from a text file:\n  ```\n  import re\n  from urllib.parse import urlparse\n\n  with open('perplexity_answers.txt', 'r', encoding='utf-8') as f:\n      text = f.read()\n\n  urls = re.findall(r'https?://[^\\s\"<>]+', text)\n  domains = {urlparse(u).netloc.lstrip('www.') for u in urls}\n  print(len(domains))\n  print(sorted(domains))\n  ```\n\n3) If the record is a CSV/JSON with a “model” field and a “sources” / “answers” field:\n- Filter rows where model == \"Perplexity\" and date between 2026-09-01 and 2026-09-27, then parse URLs from the sources field and count unique domains (the Python snippet above adapted to iterate rows).\n\nIf you paste the record (or the Perplexity answer excerpts) I will compute the exact number and say where it’s published.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-11T17:46:01Z",
+ "ok": true,
+ "probe_id": "A",
+ "prompt_sha256": "940f0824e14031113e8b576a7139c4427b38e8ac1ad5483a1335b3f802676221",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web domains did Perplexity cite in its answers to the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "treatment_anchored",
+ "run_id": "38161002051",
+ "search_mode": "no search tool (E1 setting)"
+}
