@@ -1,26 +1,24 @@
 # TEST MODE build (draft PR "do not merge"). DRY_RUN is ON unless the repo variable FULFIL_DRY_RUN is exactly "false".
-# repository_dispatch and workflow_dispatch only run from the default branch after a merge.
-# The push trigger below runs a dry run from the test branch with a fixture payload; delete it before any merge.
+# This repository is public: the dispatch payload carries only sale_id. The runner reads the buyer row from D1.
+# There is no push trigger and none may be added back: a push run would execute with a fixture and teach nothing.
+# repository_dispatch and workflow_dispatch run from the default branch only, so nothing fires until this is merged.
 name: fulfil
-run-name: fulfil ${{ github.event.client_payload.sale_id || github.event_name }}
+run-name: fulfil ${{ github.event.client_payload.sale_id || inputs.sale_id }}
 
 on:
   repository_dispatch:
     types: [namebeam-sale]
   workflow_dispatch:
     inputs:
-      payload_json:
-        description: 'Sale payload json (sale_id, email, pairs, end_date)'
+      sale_id:
+        description: 'Sale id (cs_... or in_...) already in D1 with status DISPATCHED'
         required: true
-  push:
-    branches: [autoful-test-1012b]
-    paths: ['scripts/fulfil/**', '.github/workflows/fulfil.yml']
 
 permissions:
   contents: read
 
 concurrency:
-  group: fulfil-${{ github.event.client_payload.sale_id || github.run_id }}
+  group: fulfil-${{ github.event.client_payload.sale_id || inputs.sale_id }}
   cancel-in-progress: false
 
 jobs:
@@ -40,9 +38,12 @@ jobs:
         run: python3 scripts/fulfil/test_run_fulfil.py
       - name: Fulfil
         env:
-          PAYLOAD_JSON: ${{ github.event_name == 'workflow_dispatch' && inputs.payload_json || github.event_name == 'push' && '{"sale_id":"cs_test_fixture_0001","offer":"market_1","email":"buyer@example.com","pairs":[{"market":"Phoenix AZ","niche":"hvac repair and replacement"}],"end_date":"2026-10-11"}' || toJson(github.event.client_payload) }}
-          DRY_RUN: ${{ github.event_name == 'push' && 'true' || vars.FULFIL_DRY_RUN || 'true' }}
+          SALE_ID: ${{ github.event.client_payload.sale_id || inputs.sale_id }}
+          DRY_RUN: ${{ vars.FULFIL_DRY_RUN || 'true' }}
           TEST_TO: ${{ vars.FULFIL_TEST_TO }}
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          D1_DB_ID: ${{ secrets.D1_DB_ID }}
           REPO_ROOT: ${{ github.workspace }}
         run: python3 scripts/fulfil/run_fulfil.py
