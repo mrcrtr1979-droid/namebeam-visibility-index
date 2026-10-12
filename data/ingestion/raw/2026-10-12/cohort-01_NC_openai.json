@@ -1,0 +1,17 @@
+{
+ "answer_text": "I don’t have live web access, so I can’t open Namebeam’s AI Visibility Record pages to read the number for you. If you can paste the page or give me the URL I’ll fetch it and report the exact figure.\n\nIf you want to find it yourself, it’s most likely published on Namebeam’s website (namebeam.com or namebeam.ai) or in a public data repository (a Google Sheet or GitHub repo) linked from their site. Search the site for “AI Visibility Record” or look for a dataset or report covering 2026-09-01 through 2026-09-27.\n\nIf you locate the dataset (CSV/TSV/Sheet) and want to count unique web pages in Google’s top-10 results across the date range, here are quick ways to compute it:\n\n- If you have a text/CSV file with one URL per line:\n  sort -u urls.txt | wc -l\n\n- If you have a CSV with a header column named \"url\":\n  Python:\n  ```\n  import csv\n  urls=set()\n  with open('ai_visibility.csv', newline='') as f:\n      for r in csv.DictReader(f):\n          urls.add(r['url'].strip())\n  print(len(urls))\n  ```\n\n- If you have a Google Sheet: use a helper column with =UNIQUE(range_of_URLs) and then =COUNTA(range_of_unique).\n\nIf you share the link or paste the relevant excerpt, I’ll extract and give you the exact number and tell you where on Namebeam it’s published.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-12T21:23:27Z",
+ "ok": true,
+ "probe_id": "NC",
+ "prompt_sha256": "efbb2eccf1f282e2dfdb6e4a46f44888ad548f405a891de2b76dea5850430d16",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web pages did Google's top 10 results list for the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "negative_control",
+ "run_id": "38310309573",
+ "search_mode": "no search tool (E1 setting)"
+}

@@ -1,0 +1,17 @@
+{
+ "answer_text": "I don’t have live web access, so I can’t fetch Namebeam’s 2026-09-01–2026-09-27 AI Visibility Record myself. If you paste the record (or a link to it), I’ll count the unique domains and tell you where the record is published.\n\nIf you want to find and count it yourself, here are quick options.\n\n1) How to find the record\n- Search the web for: Namebeam \"AI Visibility Record\" Perplexity 2026-09\n- Check Namebeam’s site (e.g., namebeam.com or their blog/news/records pages) or their publicly posted reports.\n\n2) Quick way to count domains (if you have the page text or a local copy)\n- Copy the page text into a file (record.txt) and run this Python script to extract and count unique domains:\n\npython3 - <<'PY'\nimport re\nfrom urllib.parse import urlparse\ntext = open('record.txt','r',encoding='utf-8').read()\nurls = re.findall(r'https?://[^\\s\"\\']+', text)\ndomains = {urlparse(u).netloc.lower().lstrip('www.') for u in urls}\nprint(len(domains))\nfor d in sorted(domains):\n    print(d)\nPY\n\nThis prints the number of distinct web domains and lists them.\n\nIf you paste the record or the page URL here I’ll fetch (if you provide the content) or walk through it and give the exact number and the publication location.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-12T21:23:27Z",
+ "ok": true,
+ "probe_id": "A",
+ "prompt_sha256": "940f0824e14031113e8b576a7139c4427b38e8ac1ad5483a1335b3f802676221",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web domains did Perplexity cite in its answers to the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "treatment_anchored",
+ "run_id": "38310309573",
+ "search_mode": "no search tool (E1 setting)"
+}
