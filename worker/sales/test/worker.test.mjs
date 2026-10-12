@@ -51,7 +51,8 @@ function fakeFetch(status = 204) {
   return f;
 }
 const count = (db) => db.raw.prepare('select count(*) c from sales_events').get().c;
-const row = (db) => db.raw.prepare('select * from sales_events').get();
+const row = (db) => db.raw.prepare('select * from sales_events order by created_utc, rowid').get();
+const rows = (db) => db.raw.prepare('select * from sales_events order by rowid').all();
 
 test('valid signature stores one row and dispatches once', async () => {
   const db = makeDb(); const f = fakeFetch();
@@ -64,9 +65,10 @@ test('valid signature stores one row and dispatches once', async () => {
   assert.equal(f.calls[0].url, 'https://api.github.com/repos/o/r/dispatches');
   const body = JSON.parse(f.calls[0].init.body);
   assert.equal(body.event_type, 'namebeam-sale');
-  assert.deepEqual(body.client_payload.pairs, [{ market: 'Phoenix AZ', niche: 'hvac repair and replacement' }]);
-  assert.equal(body.client_payload.email, 'buyer@example.com');
-  assert.equal(body.client_payload.end_date, '2026-10-11');
+  assert.deepEqual(body.client_payload, { sale_id: 'cs_test_1' });
+  assert.ok(!f.calls[0].init.body.includes('buyer@example.com'));
+  assert.deepEqual(JSON.parse(row(db).pairs_json), [{ market: 'Phoenix AZ', niche: 'hvac repair and replacement' }]);
+  assert.equal(row(db).buyer_email, 'buyer@example.com');
 });
 
 test('tampered body returns 400 and writes nothing', async () => {
@@ -124,7 +126,8 @@ test('199 offer with five pairs maps to market_5', async () => {
   const s = session({ amount_total: 19900, custom_fields: [{ key: 'pairs', type: 'text', text: { value: five } }] });
   await handleStripe(signed(event(s)), env(db), { fetch: f, now: NOW });
   assert.equal(row(db).offer, 'market_5');
-  assert.equal(JSON.parse(f.calls[0].init.body).client_payload.pairs.length, 5);
+  assert.equal(JSON.parse(row(db).pairs_json).length, 5);
+  assert.deepEqual(JSON.parse(f.calls[0].init.body).client_payload, { sale_id: 'cs_test_1' });
 });
 
 test('49 offer with two pairs goes to intake correction, no dispatch', async () => {
@@ -195,4 +198,92 @@ test('parsePairs rules', () => {
   assert.ok(parsePairs('Phoenix|hvac', 1).error);
   assert.ok(parsePairs('a|b|c', 1).error);
   assert.equal(parsePairs('Phoenix AZ|hvac', 1).pairs.length, 1);
+});
+
+function invoiceEvent(over = {}, evtOver = {}) {
+  const inv = { id: 'in_test_2', object: 'invoice', status: 'paid', billing_reason: 'subscription_cycle', subscription: 'sub_test_1', amount_paid: 4900, currency: 'usd', ...over };
+  return { id: 'evt_inv_2', object: 'event', livemode: false, type: 'invoice.paid', data: { object: inv }, ...evtOver };
+}
+async function firstSale(db, f, extra = {}) {
+  return handleStripe(signed(event(session({ subscription: 'sub_test_1', ...extra }))), env(db), { fetch: f, now: NOW });
+}
+const LATER = new Date(NOW.getTime() + 30 * 86400000);
+function signedAt(evt, at) { return signed(evt, { t: Math.floor(at.getTime() / 1000) }); }
+
+test('checkout stores the subscription id', async () => {
+  const db = makeDb(); await firstSale(db, fakeFetch());
+  assert.equal(row(db).subscription_id, 'sub_test_1');
+  assert.equal(row(db).invoice_id, null);
+});
+
+test('month one: first invoice (subscription_create) does not fulfil again', async () => {
+  const db = makeDb(); const f = fakeFetch();
+  await firstSale(db, f);
+  const res = await handleStripe(signed(invoiceEvent({ id: 'in_test_1', billing_reason: 'subscription_create' }, { id: 'evt_inv_1' })), env(db), { fetch: f, now: NOW });
+  assert.equal(res.status, 200);
+  assert.equal(count(db), 1);
+  assert.equal(f.calls.length, 1);
+});
+
+test('month two: subscription_cycle invoice creates a new row and dispatches only the invoice id', async () => {
+  const db = makeDb(); const f = fakeFetch();
+  await firstSale(db, f);
+  const res = await handleStripe(signedAt(invoiceEvent(), LATER), env(db), { fetch: f, now: LATER });
+  assert.equal(res.status, 200);
+  assert.equal(count(db), 2);
+  const r = rows(db)[1];
+  assert.equal(r.sale_id, 'in_test_2'); assert.equal(r.invoice_id, 'in_test_2'); assert.equal(r.status, 'DISPATCHED');
+  assert.equal(r.buyer_email, 'buyer@example.com'); assert.equal(r.offer, 'market_1');
+  assert.deepEqual(JSON.parse(r.pairs_json), [{ market: 'Phoenix AZ', niche: 'hvac repair and replacement' }]);
+  assert.equal(f.calls.length, 2);
+  assert.deepEqual(JSON.parse(f.calls[1].init.body).client_payload, { sale_id: 'in_test_2' });
+  assert.ok(!f.calls[1].init.body.includes('buyer@example.com'));
+});
+
+test('renewal is idempotent on event id and on invoice id', async () => {
+  const db = makeDb(); const f = fakeFetch();
+  await firstSale(db, f);
+  await handleStripe(signedAt(invoiceEvent(), LATER), env(db), { fetch: f, now: LATER });
+  const again = await handleStripe(signedAt(invoiceEvent(), LATER), env(db), { fetch: f, now: LATER });
+  assert.equal((await again.json()).duplicate, true);
+  await handleStripe(signedAt(invoiceEvent({}, { id: 'evt_other' }), LATER), env(db), { fetch: f, now: LATER });
+  assert.equal(count(db), 2); assert.equal(f.calls.length, 2);
+});
+
+test('renewal reads the newer parent.subscription_details shape', async () => {
+  const db = makeDb(); const f = fakeFetch();
+  await firstSale(db, f);
+  const inv = invoiceEvent({ subscription: undefined, parent: { subscription_details: { subscription: 'sub_test_1' } } });
+  await handleStripe(signedAt(inv, LATER), env(db), { fetch: f, now: LATER });
+  assert.equal(count(db), 2);
+});
+
+test('renewal with no original sale is NEEDS_HUMAN and not dispatched', async () => {
+  const db = makeDb(); const f = fakeFetch();
+  await handleStripe(signed(invoiceEvent()), env(db), { fetch: f, now: NOW });
+  assert.equal(row(db).status, 'NEEDS_HUMAN'); assert.equal(f.calls.length, 0);
+});
+
+test('renewal of a sale that needed intake correction is NEEDS_HUMAN', async () => {
+  const db = makeDb(); const f = fakeFetch();
+  await firstSale(db, f, { custom_fields: [] });
+  assert.equal(row(db).status, 'NEEDS_INTAKE_CORRECTION');
+  await handleStripe(signedAt(invoiceEvent(), LATER), env(db), { fetch: f, now: LATER });
+  assert.equal(rows(db)[1].status, 'NEEDS_HUMAN'); assert.equal(f.calls.length, 0);
+});
+
+test('unpaid invoice, zero amount invoice and other billing reasons', async () => {
+  const db = makeDb(); const f = fakeFetch();
+  await firstSale(db, f);
+  await handleStripe(signedAt(invoiceEvent({ status: 'open' }, { id: 'e_a' }), LATER), env(db), { fetch: f, now: LATER });
+  await handleStripe(signedAt(invoiceEvent({ billing_reason: 'subscription_update' }, { id: 'e_b' }), LATER), env(db), { fetch: f, now: LATER });
+  assert.equal(count(db), 1);
+  await handleStripe(signedAt(invoiceEvent({ amount_paid: 0, id: 'in_zero' }, { id: 'e_c' }), LATER), env(db), { fetch: f, now: LATER });
+  assert.equal(rows(db)[1].status, 'NEEDS_HUMAN'); assert.equal(f.calls.length, 1);
+});
+
+test('live invoice event is ignored while test mode only', async () => {
+  const db = makeDb(); const f = fakeFetch();
+  await handleStripe(signed(invoiceEvent({}, { livemode: true })), env(db), { fetch: f, now: NOW });
+  assert.equal(count(db), 0);
 });
