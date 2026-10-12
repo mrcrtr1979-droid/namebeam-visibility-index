@@ -1,0 +1,20 @@
+# TEST MODE ONLY. Not deployed. database_id is a placeholder until the D1 database exists.
+name = "namebeam-sales"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+GH_REPO = "mrcrtr1979-droid/namebeam-visibility-index"
+ALLOW_LIVE = "false"
+DRY_RUN = "true"
+ALERT_TO = "terry@namebeam.ai"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "namebeam_sales"
+database_id = "REPLACE_AFTER_D1_CREATE"
+
+# Secrets (set in the dashboard, never in this file): STRIPE_WEBHOOK_SECRET, GH_DISPATCH_TOKEN, BREVO_API_KEY
+# Re-dispatch backstop, enable only after the first test passes:
+# [triggers]
+# crons = ["17 * * * *"]
