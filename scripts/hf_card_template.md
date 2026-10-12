@@ -25,6 +25,10 @@ configs:
   data_files:
   - split: train
     path: edition-1/data/prompts.csv
+- config_name: mentions
+  data_files:
+  - split: train
+    path: edition-1/{{MENTIONS_PATH}}
 - config_name: siri
   data_files:
   - split: train
@@ -52,10 +56,11 @@ Everything is under `edition-1/`. Edition 1 covers {{W0}} to {{W1}} (UTC dates):
 | config | file | what it is |
 |---|---|---|
 | answers | `edition-1/{{ANSWERS_PATH}}` | One row per raw answer file: date, kind, the business or segment asked about, niche, market, engine, the names the engine returned, the SHA-256 of the raw file. |
+| mentions | `edition-1/{{MENTIONS_PATH}}` | The name table: per market, niche, business and engine, the answer days whose saved answer text names the business (named_days) out of that engine's answer days (answer_days), with the window. Read per-business counts here. |
 | sources | `edition-1/{{SOURCES_PATH}}` | One row per URL an engine returned as a source (Perplexity sources and Google results). |
 | prompts | `edition-1/data/prompts.csv` | Every question asked, word for word, with its id, the date it entered the run and the engines asked. |
 | siri | `edition-1/data/siri_panel.csv` | Questions asked of Siri by hand on an iPhone, typed and spoken: what Siri said, businesses named, sources shown. |
-| metrics | `edition-1/metrics/metrics_v2.csv` | Every metric by window and engine with its numerator, denominator and method id. |
+| metrics | `edition-1/metrics/metrics_v2.csv` | Every metric on the recorded_by_parser lists by window and engine, with its numerator, denominator and method id. No figure from it is quoted on this card (see Known limits). |
 
 The method note is `edition-1/README.md`. The license is CC BY 4.0; the full text is `edition-1/LICENSE`. The code that computes the metrics is in `edition-1/method/`. `edition-1/MANIFEST.sha256` lists the hash of every file, and `edition-1/verify.py` checks them.
 
@@ -78,7 +83,7 @@ Perplexity runs with web search on (Sonar chat completions to 2026-09-27, the Ag
 | market | string | Geographic area. Empty on some rows. |
 | engine | string | perplexity, openai, anthropic, gemini, google_serp or agree. |
 | businesses_named_count | integer | Number of names extracted. |
-| businesses_named | string | The extracted names, separated by semicolons. Raw extraction: some entries are phrases or places, not businesses. |
+| businesses_named | string | recorded_by_parser: the names the collector's parser read from the answer, separated by semicolons. Some entries are phrases or places, not businesses, and the lists under-count the businesses an answer names (DQ-5 in the method note); per-business counts are in the mentions table. |
 | first_named | string | The name at the top of the extracted list. |
 | source_file | string | The raw file the row was built from. |
 | sha256 | string | SHA-256 of that raw file. |
@@ -90,7 +95,7 @@ Perplexity runs with web search on (Sonar chat completions to 2026-09-27, the Ag
 
 - These are API calls, not the apps people open on a phone. A person using an app may see something different.
 - The model that answered is not recorded in the rows.
-- Names are raw strings found by a program. The metrics give each figure twice, raw and after a rule-based name gate, with the denominator beside it.
+- The recorded name lists (recorded_by_parser) are raw strings found by a program and under-count the businesses an answer names, by different amounts per engine (DQ-5). Per-business counts and the engine overlap on this card come from the mentions table, which counts names in the saved answer text. Persistence, Jaccard, churn and same-day agreement need day-level lists, cannot be recomputed from that table, and are not quoted here; their values on the recorded lists stay in the metrics table.
 - OpenAI deprecated the `gpt-5-mini` snapshot (notified 2026-06-11, removed from the API 2026-12-11, replacement `gpt-5.6-terra`; OpenAI deprecations page, read 2026-10-08). The collector still reads `gpt-5-mini`. A model change will be dated in the method note before the first changed row.
 - Gemini returned some answers until 2026-09-26 and none from 2026-09-27 (HTTP 402, prepayment credits depleted). Its figures are small and carry their denominators.
 - The metrics read the 38 market and niche cells asked on or before 2026-09-27. Research segments added after that date are in the answers table and not in the metrics.
@@ -100,9 +105,9 @@ Perplexity runs with web search on (Sonar chat completions to 2026-09-27, the Ag
 
 ## Examples
 
-Perplexity on Sonar, 2026-09-01 to 2026-09-27: 2,398 of 5,486 business names (43.7 percent) returned on one day were returned again the next day. Raw names, next day answered, 38 market and niche cells.
+{{MENTION_EXAMPLE}}
 
-In the same window the overlap between two consecutive days' name lists had a median of 30 percent over 832 day pairs. Raw names, both days named at least one business.
+{{MENTION_OVERLAP}}
 
 ## Load the data
 

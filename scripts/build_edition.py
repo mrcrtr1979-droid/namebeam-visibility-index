@@ -541,7 +541,8 @@ def render_card(meta, ans_rel, src_rel):
     else:
         line = 'Status: staged. This copy holds data through %s. The Edition 1 release adds data through %s.' % (w1, E1_END)
     rep = {'{{STATUS_LINE}}': line, '{{COUNTS}}': meta['counts_sentence'], '{{W0}}': meta['window'][0], '{{W1}}': w1, '{{RUN_DAYS}}': str(meta['run_days']),
-           '{{ANSWERS_ROWS}}': '{:,}'.format(meta['answers_rows']), '{{ANSWERS_PATH}}': ans_rel, '{{SOURCES_PATH}}': src_rel}
+           '{{ANSWERS_ROWS}}': '{:,}'.format(meta['answers_rows']), '{{ANSWERS_PATH}}': ans_rel, '{{SOURCES_PATH}}': src_rel,
+           '{{MENTIONS_PATH}}': MENTIONS_REL, '{{MENTION_EXAMPLE}}': meta['mention_example'], '{{MENTION_OVERLAP}}': meta['mention_overlap_sentence']}
     for k, v in rep.items():
         text = text.replace(k, v)
     if '{{' in text.replace('{{Carter Enterprise LLC}}', ''):
@@ -616,6 +617,58 @@ def heading_sentence(hr):
                                     '{:,}'.format(hr['by_rule']['c']), ', '.join(hr['keep_terms'])))
 
 
+# NAME TABLE (Edition 1.1, 2026-10-12). data/mentions_by_engine.csv counts, per market x niche, business and engine, the
+# answer days whose saved answer text names the business (scripts/mention_counts.py), out of that engine's OK answer days.
+# The recorded lists (businesses_named, read by the collector's parser; recorded_by_parser in the docs) under-count (DQ-5),
+# so every per-business count and every overlap figure in the published text is computed from this table.
+MENTIONS_REL = 'data/mentions_by_engine.csv'
+EXAMPLE_PAIR = ('Chicago IL', 'personal injury attorneys')
+ENGINES = ['openai', 'perplexity', 'gemini', 'anthropic']
+LABEL = {'openai': 'OpenAI', 'perplexity': 'Perplexity', 'gemini': 'Gemini', 'anthropic': 'Anthropic'}
+# published text removed in Edition 1.1: these sentences read the recorded lists and need day-level lists that the name
+# table does not hold, so they cannot be recomputed from it
+REMOVED_TEXT = ['metrics/metrics_v2_sentences.md']
+
+
+def mention_counts_module():
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('mention_counts', os.path.join(HERE, 'mention_counts.py'))
+    m = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(m)
+    return m
+
+
+def mention_example(trows, pair=EXAMPLE_PAIR):
+    """One sentence for the most named business of the example pair (the pair with the most rows when it is absent)."""
+    pairs = {}
+    for r in trows:
+        pairs.setdefault((r['market'], r['niche']), []).append(r)
+    if not pairs:
+        return 'The name table is empty for this window.'
+    if pair not in pairs:
+        pair = max(sorted(pairs), key=lambda p: len(pairs[p]))
+    by = {}
+    for r in pairs[pair]:
+        by.setdefault(r['business'], {})[r['engine']] = r
+    top = min(by, key=lambda b: (-max(x['named_days'] for x in by[b].values()), b.casefold()))
+    r0 = pairs[pair][0]
+    return ('Example from the table: %s, %s, %s to %s. %s is named in the answer text on %s answer days.'
+            % (pair[0], pair[1], r0['window_start'], r0['window_end'], top,
+               ', '.join('%s %d of %d' % (LABEL[e], by[top][e]['named_days'], by[top][e]['answer_days']) for e in ENGINES if e in by[top])))
+
+
+def mention_overlap_sentence(ov, w0, w1):
+    if not ov['comparisons']:
+        return 'No market and niche pair in the table has two engines naming a business, so no engine overlap is computed.'
+    parts = ', '.join('%s and %s %d of %d' % (LABEL[k.split('|')[0]], LABEL[k.split('|')[1]], v['share_one_or_more'], v['comparisons'])
+                      for k, v in sorted(ov['by_engine_pair'].items()))
+    return ('Engine overlap, recomputed from `%s`, %s to %s: in %d market and niche pairs where two or more engines named a '
+            'business, %d of %d engine pair comparisons share at least one business in their five most named (ties kept), '
+            'and %d of %d share none. By engine pair: %s.'
+            % (MENTIONS_REL, w0, w1, ov['market_niche_pairs_two_engines'], ov['share_one_or_more'], ov['comparisons'],
+               ov['share_none'], ov['comparisons'], parts))
+
+
 def build(through, out, method_src, status):
     w1 = min(through, E1_END)
     pack = os.path.abspath(out)
@@ -651,10 +704,26 @@ def build(through, out, method_src, status):
         metrics_in = os.path.join(pack, *panel_rel.split('/'))
         panel_meta['file'] = panel_rel
     rc, so, se = run_metrics(pack, metrics_in, last, os.path.join(pack, 'metrics'))
-    sys.stdout.write(so[-1500:])
     if rc != 0:
+        sys.stdout.write(so[-1500:])
         sys.stderr.write(se[-1500:])
         raise SystemExit('metrics run failed (exit %d)' % rc)
+    # the metrics run prints persistence, Jaccard and agreement values of the recorded lists; Edition 1.1 prints none of
+    # them; it prints whether the regression and copy checks passed
+    print('\n'.join(l for l in so.splitlines() if l.startswith(('REGRESS ', 'copy law', 'metric rows'))))
+    for rel in REMOVED_TEXT:
+        p = os.path.join(pack, *rel.split('/'))
+        if os.path.exists(p):
+            os.remove(p)
+    mc = mention_counts_module()
+    trows = mc.table_rows(REPO, W0, last, os.path.join(pack, METHOD_ROOT))
+    write_rows(os.path.join(pack, *MENTIONS_REL.split('/')), trows, mc.TABLE_FIELDS)
+    ov = mc.overlap_from_table(trows)
+    m_example, m_overlap = mention_example(trows), mention_overlap_sentence(ov, W0, last)
+    print('name table: %d rows, %d market and niche pairs, %d businesses' % (len(trows), len({(r['market'], r['niche']) for r in trows}),
+                                                                            len({(r['market'], r['niche'], r['business']) for r in trows})))
+    print(m_example)
+    print(m_overlap)
     hr = heading_report(rows)
     sc = status_counts(corpus, W0, last)
     reruns = sum(1 for r in rows if r['rerun'])
@@ -668,8 +737,11 @@ def build(through, out, method_src, status):
     meta = {'edition': 1, 'status': status, 'window': [W0, last], 'requested_through': through,
             'run_days': len(days), 'vendor_patches': patches, 'answers_rows': len(rows), 'rows_by_kind': by_kind,
             'metrics_panel': panel_meta, 'heading_filter': hr, 'reruns_in_window': reruns, 'run_status_counts': sc, 'sources_rows': n_src, 'sources_days': len(src_days), 'siri_rows': n_siri, 'customer_zero_rows': n_cz,
-            'files': {'answers': ans_rel, 'sources': src_rel, 'siri': 'data/siri_panel.csv', 'metrics': 'metrics/metrics_v2.csv', 'prompts': prompts_rel},
-            'prompts_rows': len(prows), 'counts': counts_numbers, 'counts_sentence': counts_text}
+            'files': {'answers': ans_rel, 'sources': src_rel, 'siri': 'data/siri_panel.csv', 'metrics': 'metrics/metrics_v2.csv', 'prompts': prompts_rel,
+                      'mentions': MENTIONS_REL},
+            'prompts_rows': len(prows), 'counts': counts_numbers, 'counts_sentence': counts_text,
+            'mentions_rows': len(trows), 'mention_overlap': ov, 'mention_example': m_example, 'mention_overlap_sentence': m_overlap,
+            'removed_text': REMOVED_TEXT}
     with io.open(os.path.join(pack, 'PACK.json'), 'w', encoding='utf-8', newline='\n') as fh:
         json.dump(meta, fh, indent=1, sort_keys=True)
         fh.write('\n')
@@ -686,7 +758,9 @@ def build(through, out, method_src, status):
                 .replace('{{PANEL}}', panel_sentence(panel_meta))
                 .replace('{{GAPS}}', gaps_text(days, W0, last)).replace('{{HEADINGS}}', heading_sentence(hr))
                 .replace('{{RERUNS}}', str(reruns)).replace('{{EXTRACTION_FAILED}}', extraction_failed_sentence(sc)).replace('{{ANSWERS_FILE}}', ans_rel).replace('{{SOURCES_FILE}}', src_rel)
-                .replace('{{COUNTS}}', counts_text))
+                .replace('{{COUNTS}}', counts_text).replace('{{MENTIONS_FILE}}', MENTIONS_REL)
+                .replace('{{MENTION_ROWS}}', '{:,}'.format(len(trows))).replace('{{MENTION_EXAMPLE}}', m_example)
+                .replace('{{MENTION_OVERLAP}}', m_overlap))
         if '{{' in text:
             raise SystemExit('unfilled placeholder in the method note')
         with io.open(os.path.join(pack, 'README.md'), 'w', encoding='utf-8', newline='\n') as fh:
@@ -704,6 +778,12 @@ def build(through, out, method_src, status):
     rep = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(rep)
     rep.write_expected(pack, rep.reproduce(pack))
+    # parity gate: no per-business count, zero count or overlap phrase in the published text without backing in the table
+    spec = importlib.util.spec_from_file_location('check_mention_parity', os.path.join(HERE, 'check_mention_parity.py'))
+    par = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(par)
+    if par.main_pack(pack) != 0:
+        raise SystemExit('parity check RED: published text differs from ' + MENTIONS_REL)
     n = write_manifest(pack)
     print('pack %s: window %s..%s, %d run days, %d answer rows, %d source rows, %d siri rows, %d files in the manifest'
           % (pack, W0, last, len(days), len(rows), n_src, n_siri, n))
@@ -784,11 +864,21 @@ def selftest():
         stopped = True
     chk('RED: a missing patch target stops the build', stopped)
     meta = {'status': 'STAGED', 'window': ['2026-09-01', '2026-10-07'], 'run_days': 36, 'answers_rows': 10152,
-            'counts_sentence': 'FIXTURE COUNTS.'}
+            'counts_sentence': 'FIXTURE COUNTS.', 'mention_example': 'FIXTURE EXAMPLE.', 'mention_overlap_sentence': 'FIXTURE OVERLAP.'}
     card = render_card(meta, 'data/answers_x.csv', 'data/sources_x.csv')
     chk('card: every placeholder filled, paths and counts in place',
         '{{W' not in card and 'edition-1/data/answers_x.csv' in card and '10,152 answer rows' in card and 'staged' in card)
     chk('card: the COUNTS line is filled from the build', '\nCounts: FIXTURE COUNTS.\n' in card)
+    chk('card: the examples come from the name table (example and overlap filled, no recorded-list figure)',
+        'FIXTURE EXAMPLE.' in card and 'FIXTURE OVERLAP.' in card and '832 day pairs' not in card and 'edition-1/data/mentions_by_engine.csv' in card)
+    tr = [{'market': 'Chicago IL', 'niche': 'personal injury attorneys', 'business': b, 'engine': e, 'named_days': k, 'answer_days': d,
+           'window_start': '2026-09-01', 'window_end': '2026-10-11'}
+          for b, ks in (('Salvi, Schostok & Pritchard', (18, 25, 19, 0)), ('Clifford Law Offices', (19, 9, 19, 0)))
+          for e, k, d in zip(ENGINES, ks, (39, 37, 19, 40))]
+    chk('name table example: the most named business of the example pair, every engine with its own denominator',
+        mention_example(tr) == 'Example from the table: Chicago IL, personal injury attorneys, 2026-09-01 to 2026-10-11. Salvi, '
+        'Schostok & Pritchard is named in the answer text on OpenAI 18 of 39, Perplexity 25 of 37, Gemini 19 of 19, Anthropic 0 of 40 answer days.')
+    chk('removed text: the recorded-list sentence file is listed for removal', REMOVED_TEXT == ['metrics/metrics_v2_sentences.md'])
     chk('card: no em dash, en dash or emoji', not any(ch in card for ch in ('\u2014', '\u2013')) and all(ord(c) < 0x2000 or c in '\u2019' for c in card))
     chk('card: FINAL status line differs', 'Edition 1 is final' in render_card(dict(meta, status='FINAL'), 'data/a.csv', 'data/s.csv'))
     def R(date, kind, niche, market):

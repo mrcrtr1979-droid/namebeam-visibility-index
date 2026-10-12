@@ -1,3 +1,4 @@
 # Changelog
 
 - 2026-10-13: scripts/e1_runner.py extract_competitors returns the de-duplicated union of bold-span and plain-text names, headings dropped, then a gazetteer pass adding names recorded earlier for the same market x niche by any engine when they appear in the text (DQ-5). Effective for collection runs dated 2026-10-14 and later. Edition 1 (through 2026-10-13) is unchanged. Replay: scripts/replay_extractor_union.py.
+- 2026-10-12: Edition 1.1 (staged). scripts/build_edition.py writes data/mentions_by_engine.csv (text-mention rule, scripts/mention_counts.py), prints and publishes per-business counts and engine overlap from that table only, drops metrics/metrics_v2_sentences.md from the pack, labels the recorded lists recorded_by_parser, and fails the build when scripts/check_mention_parity.py is RED.

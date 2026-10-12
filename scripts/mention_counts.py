@@ -47,7 +47,7 @@ red flags overview summary notes tips pricing price cost costs'''.split())
 
 
 def clean(s):
-    s = s.replace('–', '-').replace('—', '-').replace('’', "'").replace('‘', "'")
+    s = s.replace(chr(0x2013), '-').replace(chr(0x2014), '-').replace(chr(0x2019), "'").replace(chr(0x2018), "'")
     s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode('ascii')
     return re.sub(r'\s+', ' ', s).strip()
 
@@ -193,11 +193,12 @@ def is_generic_by_usage(answers, variants):
 
 
 # ------------------------------------------------------------------ corpus + gate
-def load_gate(repo):
+def load_gate(repo, method_root=None):
+    """method_root: a Brain_Kit-shaped folder holding the gate code (default: the committed Edition 1 pack's copy)."""
     sys.dont_write_bytecode = True
     sys.path.insert(0, os.path.join(repo, 'scripts'))
     import build_edition as be
-    M = os.path.join(repo, 'releases/edition-1/method/Brain_Kit/status/staged')
+    M = os.path.join(method_root or os.path.join(repo, 'releases/edition-1/method/Brain_Kit'), 'status', 'staged')
     sys.path.insert(0, os.path.join(M, '1005A_AI_PICKS_CHART'))
     import gen_ai_picks_chart as g
     q = g.load_quarantine(os.path.join(M, '..', '..', 'returns', 'COMET_1004', 'SERP_DRIFT_QUARANTINE_2026-10-04.csv'))
@@ -390,6 +391,75 @@ def main_build(repo, out, W0, W1, minans, top):
     return doc
 
 
+# ------------------------------------------------------------------ name table (Edition 1.1)
+TABLE_FIELDS = ['market', 'niche', 'business', 'engine', 'named_days', 'answer_days', 'window_start', 'window_end']
+
+
+def table_rows(repo, W0, W1, method_root=None):
+    """mentions_by_engine.csv rows: every market x niche pair in the window, every business that survives the gate and is
+    mentioned by at least one engine, one row per engine that has OK answer days in the pair. Guarded generic phrases are
+    left out. Sorted by market, niche, business, engine."""
+    be, g, quar = load_gate(repo, method_root)
+    rows = read_corpus(repo, be, W0, W1)
+    out = []
+    for mk, ni in sorted({(r['market'], r['niche']) for r in rows}):
+        if not mk.strip() or not ni.strip() or 'LOCATION NOT CAPTURED' in mk:
+            continue
+        asked, cnt, guard = build_pair(mk, ni, [r for r in rows if r['market'] == mk and r['niche'] == ni], g, quar)
+        seen = {}
+        for c in cnt:
+            disp = clean(cnt[c][0])
+            # two canonical groups with one display spelling: keep the one with more named days, so the table holds
+            # one row per (market, niche, business, engine)
+            if disp.casefold() in seen and sum(cnt[seen[disp.casefold()]][1].values()) >= sum(cnt[c][1].values()):
+                continue
+            seen[disp.casefold()] = c
+        for key in sorted(seen, key=lambda k: (k, clean(cnt[seen[k]][0]))):
+            disp, per = clean(cnt[seen[key]][0]), cnt[seen[key]][1]
+            for e in ENG:
+                if asked[e]:
+                    out.append({'market': mk, 'niche': ni, 'business': disp, 'engine': e, 'named_days': per[e],
+                                'answer_days': len(asked[e]), 'window_start': W0, 'window_end': W1})
+    return out
+
+
+def read_table(path):
+    with open(path, encoding='utf-8', newline='') as fh:
+        rows = list(csv.DictReader(fh))
+    for r in rows:
+        r['named_days'], r['answer_days'] = int(r['named_days']), int(r['answer_days'])
+    return rows
+
+
+def overlap_from_table(trows, n=5):
+    """Engine overlap recomputed from the name table alone. For each market x niche pair and engine, the engine's top n
+    is every business whose named days are at least the n-th highest count (ties kept, zero never counts). For each pair
+    of engines that both have a top n: is at least one business in both? Returns totals and a per engine pair split."""
+    by = defaultdict(lambda: defaultdict(dict))
+    for r in trows:
+        by[(r['market'], r['niche'])][r['engine']][r['business']] = r['named_days']
+    total = {'market_niche_pairs_two_engines': 0, 'comparisons': 0, 'share_one_or_more': 0, 'share_none': 0, 'by_engine_pair': {}}
+    for key in sorted(by):
+        top = {}
+        for e in ENG:
+            cnts = sorted((v for v in by[key].get(e, {}).values() if v > 0), reverse=True)
+            if cnts:
+                cut = cnts[min(n, len(cnts)) - 1]
+                top[e] = {b for b, v in by[key][e].items() if v >= cut and v > 0}
+        if len(top) < 2:
+            continue
+        total['market_niche_pairs_two_engines'] += 1
+        for a, b in itertools.combinations([e for e in ENG if e in top], 2):
+            s = total['by_engine_pair'].setdefault('%s|%s' % (a, b), {'comparisons': 0, 'share_one_or_more': 0})
+            hit = bool(top[a] & top[b])
+            s['comparisons'] += 1
+            s['share_one_or_more'] += hit
+            total['comparisons'] += 1
+            total['share_one_or_more'] += hit
+            total['share_none'] += (not hit)
+    return total
+
+
 # ------------------------------------------------------------------ selftest
 def selftest(repo=None):
     n = [0]
@@ -410,6 +480,13 @@ def selftest(repo=None):
     ok(is_guard('Google Maps') and is_guard('Chicago Bar Association') and is_guard('National chains') and is_guard('Yelp'), 'guard list catches generic phrases')
     ok(not is_guard('Jiffy Lube'), 'a real business is not guarded')
     ok(named_days([('d1', 'x Jiffy Lube y'), ('d1', 'none'), ('d2', 'none')], make_matcher({'Jiffy Lube'})) == {'d1'}, 'distinct answer days, two rows on one day count once')
+    def T(mk, b, e, k):
+        return {'market': mk, 'niche': 'n', 'business': b, 'engine': e, 'named_days': k, 'answer_days': 10}
+    tt = [T('M1', 'A', 'openai', 5), T('M1', 'A', 'perplexity', 0), T('M1', 'B', 'perplexity', 3), T('M1', 'B', 'openai', 0),
+          T('M2', 'C', 'openai', 2), T('M2', 'C', 'gemini', 1), T('M3', 'D', 'openai', 4), T('M3', 'D', 'anthropic', 0)]
+    ov = overlap_from_table(tt)
+    ok((ov['market_niche_pairs_two_engines'], ov['comparisons'], ov['share_one_or_more'], ov['share_none']) == (2, 2, 1, 1),
+       'table overlap: M1 shares none, M2 shares C, M3 has one engine naming and is skipped (got %s)' % ov)
     if repo:
         be, g, quar = load_gate(repo)
         rows = read_corpus(repo, be, '2026-09-01', '2026-10-11')
