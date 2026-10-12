@@ -103,24 +103,22 @@ def base_row(business_row, date_utc, check_id, engine):
     }
 
 
-def extract_competitors(business_row, text, sources):
-    """WO-2026-09-06-C fix. The bold-based extractor (extract_named_entities)
-    finds nothing on any engine whose plain style never emits **bold** --
-    measured on the 2026-09-06 corpus: 1,149 OK openai rows, 0 contained a
-    single "**" anywhere, so the field was mechanically guaranteed to come
-    back empty on every one of them. It is not a call failure (the answer
-    text is right there in answer_verbatim) and it is not a discarded
-    result; the bold-keyed method simply has nothing to key on for an
-    engine that writes plain prose.
+# CHANGELOG 2026-10-13 (DQ-5): from collection runs dated 2026-10-14, extract_competitors
+# returns the de-duplicated union of the bold-span names and the orthographic names, with
+# headings dropped by build_edition.heading_reason. Edition 1 (through 2026-10-13) is
+# unchanged: its rows keep the names they were written with, and runs dated before
+# 2026-10-14 use the old rule below.
+UNION_FROM = "2026-10-14"
 
-    Fix, FORWARD ONLY (no historical row is touched): try the bold-based
-    extractor first, exactly as before, so every engine that already works
-    (anthropic, most of perplexity and gemini) gets byte-identical output to
-    before this patch. Only when that comes back empty do we fall back to
-    the orthographic extractor (capitalisation-keyed, engine-independent,
-    already proven in agreement.py and now carrying the WO-2026-09-06-A/-C
-    stoplist) so a plain-prose engine is no longer guaranteed a zero.
-    """
+try:
+    from build_edition import heading_reason as _heading_reason
+except Exception:  # pragma: no cover - the filter is optional, never block a run
+    _heading_reason = None
+
+
+def extract_competitors_old(business_row, text, sources):
+    """Rule used through 2026-10-13: bold spans, else orthographic only when
+    the bold result is empty (WO-2026-09-06-C)."""
     names = extract_named_entities(
         text, business_row["business"],
         business_row.get("variants_business_name_forms", []))
@@ -129,6 +127,76 @@ def extract_competitors(business_row, text, sources):
     return extract_entities_orthographic(
         text, business_row["business"],
         business_row.get("variants_business_name_forms", []), sources)
+
+
+# Plain-text names only (never applied to bold spans): places, platforms and directories, street
+# addresses and one-word fragments that the capitalisation rule lets through. Found by the replay
+# (scripts/replay_extractor_union.py) over 2026-10-01..2026-10-11; the Edition 1 name gate drops the
+# same kinds downstream, this keeps them out of the collector's raw column from 2026-10-14.
+_PLAIN_PLACES = {
+    "atlanta", "branson", "charlotte", "chicago", "columbus", "dallas", "denver", "fort lauderdale", "houston",
+    "joplin", "kansas city", "north kansas city", "liberty", "los angeles", "miami", "nashville", "phoenix",
+    "pleasanton", "san francisco", "santa cruz", "st. charles", "st. louis", "st. peters", "tyler",
+    "west palm beach", "overland park", "bay area", "ozarks", "table rock lake", "branson landing",
+    "silver dollar city", "east nashville", "miami-dade county", "st. charles county", "maryland", "california",
+    "florida", "missouri", "texas", "illinois", "ohio", "georgia", "arizona", "colorado", "tennessee",
+    "north carolina"}
+_PLAIN_PLATFORMS = {
+    "airbnb", "vrbo", "yelp", "youtube", "clutch", "clutch.co", "realtor.com", "homeadvisor", "angie's list",
+    "angi", "super lawyers", "zillow", "homelight", "facebook", "healthcare.gov", "bbb", "avvo",
+    "google business", "google maps", "nextdoor", "thumbtack", "linkedin", "reddit", "tiktok", "instagram",
+    "paypal"}
+_PLAIN_FRAGMENTS = {"compare", "confirm", "shadow", "website", "strip", "lodge", "customer data",
+                    "budget considerations", "critical risks", "loan estimates", "jungian"}
+_STATE_ABBR = re.compile(r"[,\s]+(?:[A-Z]{2})$")
+_ADDRESS = re.compile(r"\d|\b(?:Rd|Road|Ave|Avenue|Dr|Blvd|St|Suite|Ste)\b\.?$|^Suite\b")
+
+
+def _plain_junk(name):
+    n = " ".join(str(name).split())
+    key = _STATE_ABBR.sub("", n).casefold().replace("\u2019", "'")
+    key = re.sub(r"'s$", "", key)
+    if key in _PLAIN_PLACES or key in _PLAIN_PLATFORMS or key in _PLAIN_FRAGMENTS:
+        return True
+    if _ADDRESS.search(n):
+        return True
+    words = set(re.findall(r"[a-z.']+", key))
+    return bool(words & {"airbnb", "facebook", "yelp", "google"})
+
+
+def extract_competitors_union(business_row, text, sources):
+    """Rule from 2026-10-14. The bold extractor keys on **bold**; Anthropic
+    answers carry bold section headings ("Research methods", "Red flags"), so
+    the old fallback never ran and plain-text business names such as
+    "Jiffy Lube" were dropped (DQ-5). This returns the de-duplicated union of
+    both extractors, bold names first, then drops headings with the Edition 1
+    heading filter (build_edition.heading_reason)."""
+    variants = business_row.get("variants_business_name_forms", [])
+    bold = extract_named_entities(text, business_row["business"], variants)
+    plain = extract_entities_orthographic(
+        text, business_row["business"], variants, sources)
+    bold_set = set(bold)
+    out, seen = [], set()
+    for n in list(bold) + list(plain):
+        if n not in bold_set and _plain_junk(n):
+            continue
+        key = " ".join(str(n).casefold().split())
+        if not key or key in seen:
+            continue
+        if _heading_reason is not None and _heading_reason(n) is not None:
+            continue
+        seen.add(key)
+        out.append(n)
+    return out
+
+
+def extract_competitors(business_row, text, sources, date_utc=None):
+    """Competitor names for one OK answer. date_utc is the run date: runs
+    dated before UNION_FROM keep the old rule (bold, else orthographic);
+    runs from UNION_FROM, and calls with no date, use the union."""
+    if date_utc and str(date_utc) < UNION_FROM:
+        return extract_competitors_old(business_row, text, sources)
+    return extract_competitors_union(business_row, text, sources)
 
 
 def is_mentioned(business_row, text):
@@ -177,7 +245,7 @@ def run_engine(business_row, engine, fn, date_utc):
         "run_status": "OK",
         "business_mentioned": is_mentioned(business_row, text),
         "competitors_mentioned": extract_competitors(
-            business_row, text, sources),
+            business_row, text, sources, date_utc),
         "engine_stated_criteria": extract_stated_criteria(text),
         "sources_cited": sources,
         "factor_scores": None,
