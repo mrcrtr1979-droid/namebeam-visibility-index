@@ -37,7 +37,7 @@ def main():
     a = ap.parse_args()
     top = {(m, n): l for m, n, l in json.load(open(a.top10))}
     all_top = {norm(x) for l in top.values() for x in l}
-    st = collections.defaultdict(lambda: dict(n=0, old=0, new=0, hit_old=0, hit_new=0))
+    st = collections.defaultdict(lambda: dict(n=0, old=0, new=0, hit_old=0, hit_new=0, hit_nogaz=0, hit_text=0))
     junk = collections.defaultdict(collections.Counter)
     for f in sorted(glob.glob(os.path.join(a.corpus, 'NB-CZ-API_*.json'))):
         d = json.load(open(f))
@@ -48,7 +48,9 @@ def main():
         src = d.get('sources_cited')
         src = src if isinstance(src, list) else []
         old = e1_runner.extract_competitors_old(row, text, src)
-        new = e1_runner.extract_competitors_union(row, text, src)
+        gaz = e1_runner.build_gazetteer(d.get('market'), d.get('niche'), a.corpus, d['date_utc'])
+        new = e1_runner.extract_competitors_union(row, text, src, gaz)
+        new_nogaz = e1_runner.extract_competitors_union(row, text, src)
         tn = {norm(x) for x in top.get((d.get('market'), d.get('niche')), [])}
         s = st[d['engine']]
         s['n'] += 1
@@ -56,15 +58,18 @@ def main():
         s['new'] += len(new)
         s['hit_old'] += any(norm(x) in tn for x in old)
         s['hit_new'] += any(norm(x) in tn for x in new)
+        s['hit_nogaz'] += any(norm(x) in tn for x in new_nogaz)
+        tt = ' ' + norm(text) + ' '
+        s['hit_text'] += any(norm(x) and ' ' + norm(x) + ' ' in tt for x in tn and top.get((d.get('market'), d.get('niche')), []))
         oldn = {norm(x) for x in old}
         for x in new:
             if norm(x) not in all_top and norm(x) not in oldn:
                 junk[d['engine']][x] += 1
     print('window %s..%s, run_status OK' % (a.d0, a.d1))
-    print('engine | answers | mean names old | mean names new | answers with top-10 business old | new')
+    print('engine | answers | mean names old | mean names new | top-10 business old | union without gazetteer | union with gazetteer | top-10 business in text')
     for e in sorted(st):
         s = st[e]
-        print('%s | %d | %.2f | %.2f | %d | %d' % (e, s['n'], s['old'] / s['n'], s['new'] / s['n'], s['hit_old'], s['hit_new']))
+        print('%s | %d | %.2f | %.2f | %d | %d | %d | %d' % (e, s['n'], s['old'] / s['n'], s['new'] / s['n'], s['hit_old'], s['hit_nogaz'], s['hit_new'], s['hit_text']))
     allj = collections.Counter()
     for c in junk.values():
         allj.update(c)

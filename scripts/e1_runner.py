@@ -164,7 +164,7 @@ def _plain_junk(name):
     return bool(words & {"airbnb", "facebook", "yelp", "google"})
 
 
-def extract_competitors_union(business_row, text, sources):
+def extract_competitors_union(business_row, text, sources, gazetteer=None):
     """Rule from 2026-10-14. The bold extractor keys on **bold**; Anthropic
     answers carry bold section headings ("Research methods", "Red flags"), so
     the old fallback never ran and plain-text business names such as
@@ -187,16 +187,117 @@ def extract_competitors_union(business_row, text, sources):
             continue
         seen.add(key)
         out.append(n)
+    # Third pass (gazetteer): names already recorded for this market x niche by any engine in
+    # earlier runs, added when the whole name appears in the text (case-insensitive).
+    for n in gazetteer_matches(text, gazetteer):
+        key = " ".join(n.casefold().split())
+        if key not in seen:
+            seen.add(key)
+            out.append(n)
     return out
 
 
-def extract_competitors(business_row, text, sources, date_utc=None):
+GAZETTEER_CAP = 300
+GAZETTEER_MIN_ROWS = 2
+
+
+_GAZ_INDEX = {}
+
+
+def _gaz_rows(corpus_dir):
+    """One scan of the corpus per process: {(market, niche): [(date, [names])]} for OK API rows."""
+    import ast
+    import glob
+    if corpus_dir in _GAZ_INDEX:
+        return _GAZ_INDEX[corpus_dir]
+    idx = {}
+    for path in glob.glob(os.path.join(corpus_dir, "NB-CZ-API_*.json")):
+        try:
+            d = json.load(open(path))
+        except Exception:
+            continue
+        if d.get("run_status") != "OK":
+            continue
+        names = d.get("competitors_mentioned") or []
+        if isinstance(names, str):
+            try:
+                names = ast.literal_eval(names)
+            except Exception:
+                names = []
+        idx.setdefault((d.get("market"), d.get("niche")), []).append(
+            (str(d.get("date_utc", "")), d.get("engine", ""), [str(x).strip() for x in names]))
+    _GAZ_INDEX[corpus_dir] = idx
+    return idx
+
+
+def build_gazetteer(market, niche, corpus_dir="corpus/e1", before_date=None, cap=GAZETTEER_CAP):
+    """Names recorded in competitors_mentioned, by any engine, for this market x niche in OK API rows
+    dated before before_date (None = all). A name needs GAZETTEER_MIN_ROWS rows, headings and
+    plain-text junk are dropped, most frequent first, capped at cap. Read from the corpus at run time."""
+    counts, engines = {}, {}
+    for date, engine, names in _gaz_rows(corpus_dir).get((market, niche), []):
+        if before_date and date >= str(before_date):
+            continue
+        for n in set(names):
+            counts[n] = counts.get(n, 0) + 1
+            engines.setdefault(n, set()).add(engine)
+    return gazetteer_from_counts(counts, cap, engines)
+
+
+_GAZ_GENERIC = set("""reviews review recent read client clients fee fees structure liability cancellation installation utilities
+marketplace families family find hotel hotels tire tires county kansas missouri general insurance marketing
+track record martindale hubbell martindale-hubbell justia findlaw lawyers.com gaf master elite""".split())
+
+
+def gazetteer_from_counts(counts, cap=GAZETTEER_CAP, engines=None):
+    """A single-word name must be recorded by at least two engines and three rows (a lone engine's
+    recurring heading or fragment is not a business); a multi-word name needs GAZETTEER_MIN_ROWS rows."""
+    keep = []
+    for n, c in counts.items():
+        if c < GAZETTEER_MIN_ROWS or len(n) < 4 or "\n" in n:
+            continue
+        words = re.findall(r"[A-Za-z0-9.'&-]+", n)
+        if len(words) == 1 and (c < 3 or (engines is not None and len(engines.get(n, ())) < 2)):
+            continue
+        if words and all(w.casefold() in _GAZ_GENERIC for w in words):
+            continue
+        if re.search(r"\b(?:reviews?|county)$|bar association|better business bureau|chamber of commerce|\bstate bar\b", n, re.I):
+            continue
+        if _heading_reason is not None and _heading_reason(n) is not None:
+            continue
+        if _plain_junk(n):
+            continue
+        keep.append((-c, n))
+    keep.sort()
+    return [n for _, n in keep[:cap]]
+
+
+def gazetteer_matches(text, gazetteer):
+    """Whole-name, case-insensitive matches. A single-word name must also appear capitalised exactly as
+    recorded and must not appear as a plain lowercase word in the same text (so "Salvi" matches and
+    "Cleaning" or "Taxes", ordinary words, do not)."""
+    out = []
+    for n in gazetteer or []:
+        pat = r"(?<!\w)" + re.escape(n) + r"(?!\w)"
+        if not re.search(pat, text or "", re.I):
+            continue
+        if not re.search(pat, text):          # exact case as recorded
+            if " " not in n.strip():
+                continue
+        low = n.lower()
+        if low != n and re.search(r"(?<!\w)" + re.escape(low) + r"(?!\w)", text):
+            continue                           # also written as an ordinary lowercase phrase
+        out.append(n)
+    return out
+
+
+def extract_competitors(business_row, text, sources, date_utc=None, gazetteer=None):
     """Competitor names for one OK answer. date_utc is the run date: runs
     dated before UNION_FROM keep the old rule (bold, else orthographic);
     runs from UNION_FROM, and calls with no date, use the union."""
     if date_utc and str(date_utc) < UNION_FROM:
         return extract_competitors_old(business_row, text, sources)
-    return extract_competitors_union(business_row, text, sources)
+    return extract_competitors_union(business_row, text, sources, gazetteer)
 
 
 def is_mentioned(business_row, text):
@@ -245,7 +346,10 @@ def run_engine(business_row, engine, fn, date_utc):
         "run_status": "OK",
         "business_mentioned": is_mentioned(business_row, text),
         "competitors_mentioned": extract_competitors(
-            business_row, text, sources, date_utc),
+            business_row, text, sources, date_utc,
+            build_gazetteer(business_row.get("market"), business_row.get("niche"),
+                            OUTPUT_DIR, date_utc)
+            if str(date_utc) >= UNION_FROM else None),
         "engine_stated_criteria": extract_stated_criteria(text),
         "sources_cited": sources,
         "factor_scores": None,
