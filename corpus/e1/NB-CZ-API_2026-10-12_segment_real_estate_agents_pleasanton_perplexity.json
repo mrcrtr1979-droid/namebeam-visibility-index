@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_real_estate_agents_pleasanton_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_196c423e-638e-476b-a7ad-66e4fc2f36ab",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00087,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00454
+   },
+   "input_tokens": 4662,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4112,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 349,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5011
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Doug Buenz of Compass",
+  "Susan Schall",
+  "Sandy Jamison"
+ ],
+ "engine_stated_criteria": [
+  "seller-side sales in your neighborhood"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/pleasanton-ca/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/94566/",
+  "https://www.realtor.com/realestateagents/56d6a33fde071e010063f92d",
+  "https://www.realtor.com/realestateagents/56b04eb17e54f70100206ea1",
+  "https://www.realtor.com/realestateagents/5e13d2d546325f0013f0d620",
+  "https://www.realtor.com/realestateagents/5dba8c862f819c0013688fad",
+  "https://www.realtor.com/realestateagents/5fd53bac6e2eb800119776da",
+  "https://www.realtor.com/realestateagents/661b0d85f6611165695dbb42",
+  "https://www.realtor.com/realestateagents/56ba448d0fa417010075240b",
+  "https://www.realtor.com/realestateagents/Pleasanton_CA",
+  "https://www.realtor.com/realestateagents/Pleasanton_CA/intent-buy/pg-2",
+  "https://www.ratemyagent.com/real-estate-profile/sales/california/pleasanton-ca/agents",
+  "https://www.homelight.com/pleasanton-ca/top-real-estate-agents",
+  "https://www.zillow.com/profile/DougBuenz",
+  "https://www.ratemyagent.com/real-estate-profile/sales/california/pleasanton-ca"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent—the right choice depends on your home, neighborhood, price range, and how you want the sale handled. Based on the available Pleasanton data, **Doug Buenz of Compass** is a strong candidate to interview: HomeLight lists him first among its local agents, and his Zillow profile shows extensive team reviews, including recent Pleasanton seller feedback. Keep in mind that some reviews are for the team, not necessarily Doug personally.\n\nI’d compare him with **Susan Schall**, who has strong verified seller reviews and recent Pleasanton sales, and **Sandy Jamison**, also highly rated in HomeLight’s local ranking. These rankings use different methods, so treat them as a shortlist—not a definitive verdict.\n\nInterview at least three agents and ask each for:\n- Recent **seller-side sales in your neighborhood** and a pricing analysis based on comparable homes\n- Their expected sale price, likely timeline, and marketing plan\n- A net-proceeds estimate, including fees and recommended prep or staging costs\n- Who will handle showings, negotiations, and communication day to day\n- References from recent sellers with homes similar to yours\n\nChoose the agent whose local comparable sales and plan make sense to you—not simply the one who promises the highest price.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

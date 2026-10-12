@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_personal_injury_law_dallas_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: personal injury law, Dallas",
+ "niche": "personal injury attorneys",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best personal injury lawyer in Dallas for a truck accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c69869fc-4da4-407b-a04e-bc9a8628f5e2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00084,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00463
+   },
+   "input_tokens": 5140,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4591,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 337,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5477
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Miller Weisbrod Olesky",
+  "Jay Murray Personal Injury Lawyers",
+  "Jerry D. Andrews, P.C"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://attorneys.superlawyers.com/trucking-accidents/texas/dallas/",
+  "https://attorneys.superlawyers.com/trucking-accidents/texas/lake-dallas/",
+  "https://attorneys.superlawyers.com/trucking-accidents/texas/fate/",
+  "https://www.dfwinjurylawyer.com/case-results",
+  "https://www.winocourlaw.com/practice-areas/dallas-truck-accident-lawyer/",
+  "https://lawyers.findlaw.com/truck-accident/texas/dallas/",
+  "https://jaymurraylaw.com/dallas-truck-accident-lawyer/",
+  "https://lawyers.findlaw.com/truck-accident/texas/fort-worth/",
+  "https://attorneys.superlawyers.com/trucking-accidents/",
+  "https://www.millerweisbrod.com/fort-worth-semi-truck-accident-lawyer",
+  "https://www.reyeslaw.com/dallas/truck-accidents/amazon/",
+  "https://www.arnolditkin.com/dallas-personal-injury/truck-accidents/",
+  "https://www.millerweisbrod.com/dallas-semi-truck-accident-lawyer",
+  "https://www.lawyers.com/trucking-accidents/dallas/texas/law-firms/",
+  "https://www.forbes.com/advisor/legal/personal-injury/best-wrongful-death-lawyers-dallas-tx/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t an objective, universally agreed “best” lawyer. For a serious Dallas truck-accident case, **Miller Weisbrod Olesky** is one firm worth interviewing: its truck-accident team is led by Clay Miller, who is board-certified in Personal Injury Trial Law, and the firm reports handling commercial-truck cases. Those are useful credentials, but they don’t guarantee a particular result.\n\nYou could also compare **Jay Murray Personal Injury Lawyers** and **Jerry D. Andrews, P.C.**; the available listings identify each as having a board-certified personal injury trial lawyer, and Andrews’ firm lists truck-crash case results. Treat firms’ advertised results as examples, not predictions.\n\nBefore hiring anyone, ask:\n- Who will personally handle the case, and how much truck-crash litigation have they taken to trial?\n- How will they preserve evidence such as driver logs, electronic data, and vehicle records?\n- What is the contingency fee, and who pays case expenses if there’s no recovery?\n- Can they explain the likely strengths, risks, and timeline of your specific case?\n\nConsider speaking with two or three firms before deciding. This is general information, not a legal endorsement or advice.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_oil_change_pleasanton_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_eeb0a491-9ed8-4fe7-9662-55b7e80a017d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00074,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00051,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00389
+   },
+   "input_tokens": 3517,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2968,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 202,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3719
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Oil Changers at 4210 Rosewood Dr",
+  "Old Town Auto Care"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.yelp.com/biz/speedee-oil-change-and-auto-service-pleasanton",
+  "https://locations.thetirechoice.com/ca/pleasanton/4216-rosewood-rd",
+  "https://www.yelp.com/biz/m-and-n-auto-repair-pleasanton-2",
+  "https://www.speedeeoil.com/locations/ca/pleasanton/44-mission-dr/",
+  "https://www.carfax.com/Auto-Repair-Pleasanton-CA_c12173",
+  "https://www.yelp.com/biz/old-town-auto-care-pleasanton?start=40&hrid=ApYO523-Wh5n4VW1dcTftA&rh_type=people&rh_ident=John",
+  "https://locations.thetirechoice.com/ca/castro-valley/3430-castro-valley-blvd",
+  "https://www.yelp.com/biz/oil-changers-pleasanton-3?start=80",
+  "https://oldtownautocare.com/",
+  "https://www.carfax.com/Reviews-Walmart-Auto-Care-Center-Pleasanton-CA_NMXGCLXADQ",
+  "https://maps.roadtrippers.com/us/pleasanton-ca/services/fastlane-relics",
+  "https://www.mapquest.com/us/california/speedee-oil-change-auto-service-11880643",
+  "https://www.groupon.com/biz/pleasanton-ca/tire-choice-auto-service-centers",
+  "https://www.loc8nearme.com/california/pleasanton/old-town-auto-care/4517366/",
+  "https://locations.thetirechoice.com/ca/concord/5288-a-clayton-rd"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a straightforward oil change, **Oil Changers at 4210 Rosewood Dr.** looks like a good local option: it’s convenient and has a reported **4.1/5 rating across 227 Yelp reviews**.  \n\nIf you’d rather use a full-service repair shop, **Old Town Auto Care** at **57 California Ave., Suite O** is another strong choice, with a reported **4.6/5 across 128 reviews** and oil changes among its services.  \n\nRatings and hours can change, so I’d call ahead to confirm availability and get a quote for your vehicle’s oil type.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

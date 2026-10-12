@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9f554cd9-6782-4144-9cb1-1bcd343080d9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00439
+   },
+   "input_tokens": 4748,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4202,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 281,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5029
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atlanta Center for Advanced Periodontics",
+  "Periodontal Associates of Georgia",
+  "Southern Roots Periodontics & Implant Dentistry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.periogeorgia.com/",
+  "https://advancedperioatl.com/",
+  "https://southernrootsperiodontics.com/",
+  "https://westcobbperio.com/our-practice/",
+  "https://allonimplantsatlanta.com/meet-dr-schiffer/",
+  "https://www.perioatlanta.com/about-us.html",
+  "https://advancedperioatl.com/our-locations/dental-office-sandy-springs/",
+  "https://www.drevangrodin.com/all-on-4/",
+  "https://dentalimplantsvinings.com/",
+  "https://www.zocdoc.com/dentist/brock-pumphrey-dmd-594272",
+  "https://www.myspecialtydentist.com/directory/profile/dr-gregg-codelli-1821141870",
+  "https://www.zocdoc.com/dentist/woojae-chong-dmd-246966",
+  "https://advancedperioatl.com/implants/",
+  "https://www.perioatlanta.com/meet-the-doctors.html",
+  "https://www.linkedin.com/in/emily-williams-5a806885"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for everyone—implant needs vary, and the right choice depends on your case, location, and budget. A strong place to start is **Atlanta Center for Advanced Periodontics**, where Dr. Brock Pumphrey and Dr. Rosemary Davis are listed as board-certified periodontists who place implants, with offices in Midtown and Sandy Springs. [Practice details](https://advancedperioatl.com/)\n\nOther Atlanta-area options to compare include **Periodontal Associates of Georgia**, whose team includes board-certified periodontists, and **Southern Roots Periodontics & Implant Dentistry**, led by board-certified periodontist Dr. Brandon Frodge.\n\nBefore choosing, get a consultation and ask who will place the implant and who will make the crown, how many similar cases they handle, whether you need bone grafting, and for a written estimate covering the full treatment. Consider a second opinion—especially for full-mouth work or a complex case.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_trunkline_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_34409668-abd6-42ea-945c-79c89c7bd758",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00096,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00054,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00414
+   },
+   "input_tokens": 4403,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3849,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 214,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4617
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Alpha Factory",
+  "Binance Academy"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.thealphafactory.io/insights/best-crypto-education-platforms-2026",
+  "https://pruviq.com/learn/",
+  "https://crypto-cracker.com/best-crypto-education-resources-for-new-investors/",
+  "https://www.cryptorenegades.co/",
+  "https://tradingprimer.com/",
+  "https://cryptoschool.cc/crypto-school/",
+  "https://www.thealphafactory.io/insights/best-crypto-communities-2026",
+  "https://www.stackmode.net/articles",
+  "https://forvest.io/blog/guides/",
+  "https://cryptora.institute/",
+  "https://cryptorookie101.com/how-long-to-learn-crypto-trading/",
+  "https://altfins.com/knowledge-base/best-crypto-trading-courses-for-learning-technical-analysis-in-2026-ranked-reviewed/",
+  "https://cryptoeducation.au/",
+  "https://glasslane.io/individual/guides-and-resources",
+  "https://forvest.io/blog/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Alpha Factory** looks like the closest match to what you’re describing. Its site says it connects lessons to real portfolio decisions and publishes a public trade log that includes losses, not just wins. That combination may be useful if you want to see how ideas play out with actual numbers.\n\nOne caveat: those transparency claims come from the site’s own description, so check the trade log yourself—especially whether it shows dates, entries, exits, and full performance, rather than selected examples. For a free, basics-first introduction, **Binance Academy** is another option, but it isn’t the same kind of public portfolio track record.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

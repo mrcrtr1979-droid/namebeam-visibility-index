@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_real_estate_agents_west_palm_beach_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: real estate agents, West Palm Beach",
+ "niche": "real estate agents",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in West Palm Beach FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9063645b-04d8-4671-a4d3-161cb9f6b123",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00092,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00464
+   },
+   "input_tokens": 4872,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4321,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 366,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5238
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Taryn Pisaneschi",
+  "Patrick Lafferty’s team"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.realtor.com/realestateagents/56d5d24d8a13600100d684de",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/west-palm-beach-fl/",
+  "https://www.realtor.com/realestateagents/West-Palm-Beach_FL",
+  "https://www.realtor.com/realestateagents/5c6fb4f2da4aca0012b91c2b",
+  "https://www.realtor.com/realestateagents/60b8c1fef5d4030012557828",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/downtown-west-palm-beach-fl/",
+  "https://www.realtor.com/realestateagents/57c65217bdef5501007b1241",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33417/",
+  "https://www.realtor.com/realestateagents/57e41d5f0e22930100a9c952",
+  "https://www.zillow.com/profile/TheTricoliTeam",
+  "https://www.zillow.com/profile/TolliverPrinceRealty",
+  "https://www.realtor.com/realestateagents/___914783",
+  "https://www.zillow.com/profile/JohnDiazGroup",
+  "https://www.realtor.com/realestateagents/5d9d9317521c8f0013cc4821",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/southwest-west-palm-beach-fl/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent—the right choice depends on your neighborhood, home price, and property type. Based on the available directory results, **Taryn Pisaneschi** is one candidate to interview: the results show 161 West Palm Beach sales and 11 sales in the last 12 months. **Patrick Lafferty’s team** is another, with 435 West Palm Beach team sales and 15 team sales in the last 12 months. Those figures are directory-reported and don’t guarantee either agent is the best fit for your home.\n\nBefore choosing, interview two or three agents and ask for:\n- Recent **seller-side** sales near your address and in your price range\n- A pricing recommendation supported by comparable sales\n- Their marketing plan and expected timeline\n- Commission, contract length, and cancellation terms\n- References from recent sellers\n\nYou can compare profiles on [Zillow’s West Palm Beach agent directory](https://www.zillow.com/professionals/real-estate-agent-reviews/west-palm-beach-fl/) and [Realtor.com’s directory](https://www.realtor.com/realestateagents/West-Palm-Beach_FL). If you share your neighborhood or ZIP code, approximate price range, and home type, I can help narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

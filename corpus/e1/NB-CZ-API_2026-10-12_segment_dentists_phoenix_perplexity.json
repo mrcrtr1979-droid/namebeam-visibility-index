@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4ab6e4bb-2417-45d9-8ff5-bac1eb87a4fe",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0044
+   },
+   "input_tokens": 4788,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4242,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 278,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5066
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Phoenix-area starting point",
+  "Dr. Niels Jensen",
+  "Dr. George Eifler"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.ifadentistry.com/about-our-practice/meet-dr-bensoussan/",
+  "https://www.implantsandperioaz.com/about-us/dr-niels-jensen/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-neil-zachs-1538397161",
+  "https://www.implantsandperioaz.com/about-us/dr-jonathan-peterson/",
+  "https://www.clearchoice.com/locations/az/phoenix/20830-north-tatum-blvd/",
+  "https://www.azfd.com/services/prosthodontist/",
+  "https://www.myspecialtydentist.com/best/prosthodontics/phoenix",
+  "https://www.periodontistphoenix.com/",
+  "https://desertridgepros.com/",
+  "https://www.prosmileaz.com/about/",
+  "https://www.myspecialtydentist.com/best/prosthodontics/az/phoenix",
+  "https://www.prosmileaz.com/",
+  "https://www.zocdoc.com/prosthodontists/phoenix-220419pm",
+  "https://about.me/galindoprosthodontics",
+  "https://www.speakersclubs.uk/best-dental-implant-specialists-phoenix-2026/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for every implant case. For a **Phoenix-area starting point**, I’d consider **Dr. Niels Jensen**, a board-certified periodontist who places implants, or **Dr. George Eifler**, a prosthodontist—especially if the case involves complex restoration. These are options to compare, not endorsements; credentials and online ratings alone can’t establish who’s right for you.\n\nBefore choosing, get a consultation and ask:\n- Who will place the implant, and who will make the crown?\n- What training and experience do they have with cases like yours?\n- Will they use 3D imaging, and is bone grafting needed?\n- What’s included in the written estimate, warranty, and follow-up care?\n\nA second opinion is sensible if the treatment is extensive or the quote is high. If you share your part of Phoenix and whether it’s one tooth or multiple, I can help narrow the options.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

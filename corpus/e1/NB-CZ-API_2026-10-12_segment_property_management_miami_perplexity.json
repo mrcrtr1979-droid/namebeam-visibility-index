@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_property_management_miami_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: property management, Miami",
+ "niche": "property management companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Miami FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e634adca-0ec0-4c5c-a27f-5e49d1b5ef01",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 4544,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3995,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 325,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4869
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Novel Management",
+  "PMI Sunshine State",
+  "Luxury Property Care"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.biggerpockets.com/fl/miami/property-managers",
+  "https://www.thumbtack.com/fl/miami/handyman/property-managed-properly-llc/service/441248014556930051",
+  "https://trustanalytica.org/us/fl/best-property-management-companies",
+  "https://www.jmkpropertymanagement.com/",
+  "https://novelmanagement.com/",
+  "https://www.miamipropertymanagementinc.co/",
+  "https://luxurypropertycare.com/miami-property-management-services/",
+  "https://trustanalytica.org/us/fl/miami/best-property-management-companies",
+  "https://www.keyrentermiamiwest.com/",
+  "https://www.pristinepm.com/pricing",
+  "https://www.miami-propertymanagementinc.com/guarantees",
+  "https://www.expertise.com/business/property-management/florida/miami",
+  "https://pageonepartner.com/fl/miami/real-estate/",
+  "https://threebestrated.com/property-management-in-miami-fl",
+  "https://www.pristinepm.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a **long-term rental home in Miami**, **Novel Management** looks like a strong first company to interview. It specifically manages single-family homes and other long-term rentals, advertises management fees starting at **5% of monthly rent**, and says it charges no management fee when rent isn’t collected, no lease-renewal fee, and no maintenance markup. Its site reports a **4.8 rating from 119 reviews**. These are company-reported figures, so confirm the current terms and review sources directly.\n\nI’d also get proposals from:\n\n- **PMI Sunshine State** — advertises a 21-day tenant-placement guarantee and a 30-day cancellation option; check the conditions and any add-on costs.\n- **Luxury Property Care** — manages single-family homes and advertises 8–10% management fees, with no fee during vacancies and free renewals.\n\nThere isn’t one objectively “best” manager for every home. Before signing, compare the **full fee schedule**—especially leasing, renewal, maintenance coordination, inspections, and termination fees—and ask for recent owner references and a sample monthly statement. Novel’s website: https://novelmanagement.com/",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_mortgage_lenders_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: mortgage lenders, Fort Lauderdale",
+ "niche": "mortgage lenders",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Fort Lauderdale FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0aaa1a7e-d800-4f3f-92f3-2d215b3f65df",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00092,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00077,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00433
+   },
+   "input_tokens": 4242,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3692,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 306,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4548
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Fairway Independent Mortgage",
+  "Florida State Mortgage Group"
+ ],
+ "engine_stated_criteria": [
+  "A reasonable local starting point is Dan Longman at NFM Lending"
+ ],
+ "sources_cited": [
+  "https://www.bankrate.com/mortgages/mortgage-rates/florida/",
+  "https://local.yahoo.com/info-210800712-fairway-independent-mortgage-fort-lauderdale/",
+  "https://www.experience.com/reviews/dlongman",
+  "https://dreamyleads.com/mortgage/best-mortgage-lenders-fort-lauderdale",
+  "https://www.usbank.com/home-loans/mortgage/mortgage-rates/florida.html",
+  "https://www.experience.com/reviews/josh-blum-160366",
+  "https://plcorp.net/",
+  "https://smartasset.com/mortgage/florida-mortgage-rates",
+  "https://www.yelp.com/biz/alex-doce-the-doce-group-fort-lauderdale-4?hrid=sZB4RXujwCpp7_v82frrug",
+  "https://www.experience.com/reviews/stephen-12621747",
+  "https://trustanalytica.org/us/fl/best-mortgage-brokers",
+  "https://www.floridastatemortgagegroup.com/",
+  "https://tomo.com/mortgage/interest-rates-today/fl",
+  "https://www.seacoastbank.com/personal/lending/mortgages/mortgage-rates",
+  "https://www.expertise.com/home-improvement/mortgage-brokers-lenders/florida/fort-lauderdale"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” lender—the right choice depends on your credit, down payment, loan type, and how quickly you need to close. **A reasonable local starting point is Dan Longman at NFM Lending**: the available results show strong borrower feedback and a range of purchase options, including conventional, FHA, VA, jumbo, and down-payment-assistance loans. That’s a lead to compare, not a guarantee of the lowest rate or best fit.\n\nI’d get written Loan Estimates from **at least three lenders**, including a local broker and a bank or credit union. Compare the **APR, lender fees, points, rate-lock period, cash to close, and closing timeline**—not just the advertised rate. Ask each lender to quote the same loan amount, down payment, and lock period so the offers are comparable.\n\nOther local options appearing in the available results include **Fairway Independent Mortgage** and **Florida State Mortgage Group**. Before applying, verify the loan officer’s current licensing and ask for a written estimate; rates and fees depend on your specific application.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

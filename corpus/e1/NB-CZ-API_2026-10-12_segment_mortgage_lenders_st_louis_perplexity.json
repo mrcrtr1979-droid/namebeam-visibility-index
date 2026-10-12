@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_mortgage_lenders_st_louis_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: mortgage lenders, St. Louis",
+ "niche": "mortgage lenders",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Louis MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3c3c6746-bfe3-4f92-a869-432e7fad5df6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00065,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00097,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00426
+   },
+   "input_tokens": 3160,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2609,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 387,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3547
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Midwest BankCentre",
+  "Vantage Credit Union / Mortgage Solutions",
+  "HomeSTL"
+ ],
+ "engine_stated_criteria": [
+  "If you’re buying in the City of St. Louis"
+ ],
+ "sources_cited": [
+  "https://www.developstlouis.org/homestl",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://www.vcu.com/borrow/mortgages",
+  "https://www.midwestbankcentre.com/mortgage/",
+  "https://www.cnbstl.com/first-time-home-buyer-ad-landing",
+  "https://www.monitorbankrates.com/mortgage-lenders/missouri/st-louis",
+  "https://bankwithstifel.com/mortgage/serving-st-louis/",
+  "https://bankwithstifel.com/mortgage/lender/ed-glanz/",
+  "https://www.firstcommunity.com/loans/personal-loans/home-loans.html",
+  "https://www.newamericanfunding.com/branches/st-louis-olive",
+  "https://www.planethomelending.com/mortgage-loan-officers/missouri/st-louis",
+  "https://thehomeloanexpert.com/missouri/",
+  "https://www.newamericanfunding.com/branches/st-louis-southcounty",
+  "https://arpa.stlouis-mo.gov/individual-family-programs/",
+  "https://bankwithstifel.com/mortgage/programs/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and whether you qualify for assistance. **For a St. Louis buyer, I’d start by comparing Midwest BankCentre and Vantage Credit Union’s mortgage team**, then get a third quote from a lender that specializes in your loan type.\n\n- **Midwest BankCentre** is a strong local option; it reports an average customer-service rating of 4.85/5 from more than 2,000 reviews. [Mortgage services](https://www.midwestbankcentre.com/mortgage/)\n- **Vantage Credit Union / Mortgage Solutions** may be worth a look if you’re a first-time buyer; it advertises flexible credit requirements and down-payment options. Check the eligibility and full terms directly. [Mortgage options](https://www.vcu.com/borrow/mortgages)\n- **If you’re buying in the City of St. Louis**, ask a participating lender about **HomeSTL** assistance. [Program details](https://www.developstlouis.org/homestl)\n\nBefore choosing, request written **Loan Estimates from at least three lenders on the same day**, using the same loan amount, down payment, and rate-lock period. Compare the APR, lender fees, points, cash to close, and closing timeline—not just the advertised rate. Rates and program eligibility change, so confirm current terms directly with each lender.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

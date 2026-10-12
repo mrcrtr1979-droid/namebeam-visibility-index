@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_mortgage_lenders_west_palm_beach_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: mortgage lenders, West Palm Beach",
+ "niche": "mortgage lenders",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in West Palm Beach FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_31155880-1dfe-46b6-a833-6a93e980f0a9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0008,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00085,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00429
+   },
+   "input_tokens": 3756,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3205,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 339,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4095
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Palm Beach Mortgage Group",
+  "New American Funding",
+  "Loan Estimates",
+  "Florida Housing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://saferate.com/local/west-palm-beach/best-mortgage-lenders/mortgage-companies",
+  "https://www.floridahousing.org/programs/homebuyer-overview-page",
+  "https://www.bvlending.com/",
+  "https://dreamyleads.com/mortgage/best-mortgage-lenders-west-palm-beach",
+  "https://manifestmortgagegroup.com/",
+  "https://www.experience.com/reviews/office/west-palm-beach",
+  "https://www.experience.com/reviews/javier-infiesta-140310",
+  "https://palmbeachmortgagegroup.com/",
+  "https://www.newamericanfunding.com/branches/westpalmbeach",
+  "https://ahmcloans.com/home-loan-branches/fl/west-palm-beach-fl/",
+  "https://trustanalytica.org/us/fl/best-mortgage-brokers",
+  "https://www.bbb.org/us/fl/west-palm-beach/profile/mortgage-lenders/newday-usa-0633-92034734/customer-reviews?page=3",
+  "https://trustanalytica.org/us/fl/west-palm-beach/best-mortgage-brokers",
+  "https://topratedlenders.com/eric-lieberman-nmls-282546",
+  "https://www.experience.com/reviews/kevin-crookham-383304"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and how quickly you need to close. **For a local starting point, I’d compare Palm Beach Mortgage Group with at least one larger lender such as New American Funding.** Palm Beach Mortgage Group has local purchase-loan experience and customer feedback highlighting communication and fast closings; New American Funding offers a broad range of conventional, FHA, VA, and jumbo loans.\n\nBefore choosing, get **written Loan Estimates from at least three lenders on the same day** and compare the interest rate, APR, lender fees, points, and cash to close—not just the advertised rate. Also ask about rate-lock terms, expected closing time, and whether they regularly handle your property type (for example, a condo or jumbo purchase).\n\nIf you’re a first-time buyer, check whether you qualify for Florida Housing’s programs, which are offered through participating lenders and may include down-payment or closing-cost assistance. Eligibility rules apply.\n\nIf you share your approximate credit score, down payment, price range, and whether you’re considering conventional, FHA, VA, or jumbo financing, I can help narrow down what to compare.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

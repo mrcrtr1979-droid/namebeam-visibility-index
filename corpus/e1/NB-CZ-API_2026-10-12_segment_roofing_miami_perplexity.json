@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_roofing_miami_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0e8d71df-aeb0-46f3-95e1-546420b4692e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00063,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00422
+   },
+   "input_tokens": 4363,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3815,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 250,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4613
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Robson Industrial"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://agkgc.com/miami-roofing",
+  "https://www.lionzroofing.com/service-areas/miami-dade",
+  "https://kendallroofing.net/",
+  "https://www.extremeroofingmiami.com/",
+  "https://www.mymiamiroofing.com/",
+  "https://www.roofing-network.com/services/tile-roof-replacement",
+  "https://www.havenbathroomsandroofing.com/roofing/roof-replacement",
+  "https://bgiroofing.com/roof-replacement-miami/",
+  "https://www.robsonindustrial.com/residential/roofing/",
+  "https://www.extremeroofingmiami.com/best-residential-roofers-miami-fl",
+  "https://www.extremeroofingmiami.com/best-roofers-miami",
+  "https://www.extremeroofingmiami.com/top-roofers-on-bbb-miami",
+  "https://www.extremeroofingmiami.com/best-roofers-south-florida",
+  "https://sfhomeimprovement.com/roofing",
+  "https://www.buildzoom.com/contractor/forever-roofing-remodeling-llc"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a reliable, objective “best” without comparing bids and checking recent work. **Robson Industrial** looks like a strong candidate to include: its residential roofing information describes full tear-offs, code-compliant re-nailing, Miami-Dade–approved materials, permitting, and documented closeout. [Robson Industrial](https://www.robsonindustrial.com/residential/roofing/)\n\nI’d get at least three written bids and verify each contractor’s Florida roofing license and insurance before signing. Ask for the specific Miami-Dade Notice of Acceptance (NOA) or Florida Product Approval numbers for the proposed roofing system, a detailed scope covering deck attachment and underlayment, permit and inspection responsibility, and warranty terms. Don’t rely on a general “hurricane-rated” claim—the installed system and fastening details matter.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

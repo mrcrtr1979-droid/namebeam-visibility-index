@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_backflow_boss_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "Backflow Boss",
+ "niche": "backflow testing and repair",
+ "market": "Liberty MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who does backflow testing and repair near Liberty MO?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_59bad298-38c8-48c6-be62-a89e31f31837",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00056,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00427
+   },
+   "input_tokens": 4814,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4269,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 223,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5037
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "CertPro Plumbing, LLC",
+  "Razor Rooter Co. LLC"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://central.libertyutilities.com/all/residential/safety/water-safety.html",
+  "https://www.waterone.org/DocumentCenter/View/382/Monthly-Backflow-Tester-Report-PDF",
+  "https://www.bbb.org/us/mo/liberty/category/backflow-testing",
+  "https://www.bbb.org/us/mo/liberty/profile/backflow-testing/backflow-boss-0714-1000080509",
+  "https://www.bbb.org/us/mo/kansas-city/category/backflow-testing",
+  "https://www.bbb.org/us/mo/kansas-city-north/category/backflow-testing",
+  "https://www.bbb.org/us/mo/liberty/category/plumber",
+  "https://www.backflowboss.org/",
+  "https://www.libertymissouri.gov/Faq.aspx?QID=157",
+  "https://www.backflowbossllc.com/",
+  "https://www.bbb.org/us/mo/excelsior-springs/category/plumber",
+  "https://skplumber.com/backflow-prevention-and-testing-liberty-mo/",
+  "https://gardslawns.com/",
+  "https://www.bbb.org/us/mo/missouri-city/category/plumbing-fixtures",
+  "https://huggingface.co/datasets/Namebeam/namebeam-e1-ai-referral-index"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "Here are a few options near Liberty:\n\n- **Backflow Boss** — Based in Liberty; offers backflow testing, repairs, and replacement. Call **816-226-8264**. [Website](https://www.backflowbossllc.com/)\n- **CertPro Plumbing, LLC** — Located at 212 W. Mill St. in Liberty; listed for backflow testing. Call **816-454-0247**.\n- **Razor Rooter Co. LLC** — Kansas City-based plumber listed for backflow testing and serving Clay County. Call **816-453-1964**.\n\nLiberty requires annual testing by a certified tester. When you call, confirm they’re certified for your device and can handle repairs if it fails.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_524cd8c3-c716-41c0-a6f1-890d2e069c4e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00124,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00134,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00522
+   },
+   "input_tokens": 5531,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4975,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 536,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 6067
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Short answer",
+  "Lodge of the Ozarks",
+  "Hilton Promenade at Branson Landing",
+  "Thousand Hills Resort Hotel",
+  "My default recommendation",
+  "Hilton Promenade"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.hotels.com/nh1663107/hotels-in-downtown-branson-branson-missouri/",
+  "https://www.hotels.com/de1644148-ty2/family-friendly-hotels-branson-and-vicinity-missouri/",
+  "https://www.hotels.com/de1644148-qu0/cheap-hotels-branson-and-vicinity-missouri/",
+  "https://www.hotels.com/de1644148-st5/five-star-hotels-branson-missouri/",
+  "https://www.expedia.com/Branson-Hotels.d6058734.Travel-Guide-Hotels",
+  "https://www.trip.com/hot/top-10-table-rock-lake-hotels/",
+  "https://www.hotels.com/de1644148-am128/pool-hotels-branson-and-vicinity-missouri/",
+  "https://www.hotels.com/ho236136/hilton-promenade-at-branson-landing-branson-united-states-of-america/",
+  "https://www.hotels.com/de1690952/hotels-point-lookout-missouri/",
+  "https://www.trivago.co.uk/en-GB/odr/hotels-branson-missouri?search=200-14626",
+  "https://www.tripadvisor.ca/Hotels-g44160-zfa3-Branson_Missouri-Hotels.html",
+  "https://www.airbnb.com/branson-mo/stays/condos",
+  "https://www.travelocity.com/Branson-Hotels-Hilton-Promenade-At-Branson-Landing.h1497923.Hotel-Information",
+  "https://www.tripadvisor.com/Hotels-g44160-Branson_Missouri-Hotels.html",
+  "https://www.airbnb.com/branson-mo/stays/cabins"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Short answer:** Choose a **hotel** for a short visit focused on shows and attractions; choose an **Airbnb or condo** for a longer stay, a group, or a lake-and-cabin getaway. Branson is spread out, so the best choice depends on what you’ll be doing—and you’ll likely want a car either way.\n\n### Best hotel picks\n- **Lodge of the Ozarks** — My best all-around pick for a classic Branson trip. It’s in the Theater District, with an indoor pool, free breakfast, and parking; recent guest ratings are especially strong.\n- **Hilton Promenade at Branson Landing** — Best if you want to walk to restaurants, shops, and the waterfront at Branson Landing. It has an indoor pool, but expect to pay for the central location.\n- **Chateau on the Lake Resort, Spa & Convention Center** — Best for a more relaxing, resort-style stay, with lake scenery, a spa, pools, and dining. It’s less central to the Strip, so plan on driving.\n- **Thousand Hills Resort Hotel** — A practical option to compare if price and pools matter. It offers indoor and outdoor pools and breakfast; check recent room-specific reviews and the total price before booking.\n\n### When an Airbnb makes more sense\nLook for a **condo or cabin near Indian Point or Table Rock Lake** if you want a kitchen, more space, or a quieter setting—especially for several nights or a family/group. Airbnb listings include lake-view condos and cabins near the water or Silver Dollar City. Check the exact drive to your plans, recent reviews, cleaning and service fees, cancellation terms, and whether the listing’s pool or lake access is actually available during your dates.\n\n**My default recommendation:** Book **Lodge of the Ozarks** for a first-time, attraction-heavy visit. Pick **Hilton Promenade** if walkability is your priority, or a **lake-area rental** if you’re staying longer and want space and scenery. Compare the *full stay total*, not just the nightly rate; prices and availability vary by date.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

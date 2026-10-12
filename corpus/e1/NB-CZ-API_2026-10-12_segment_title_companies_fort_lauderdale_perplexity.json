@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_title_companies_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: title companies, Fort Lauderdale",
+ "niche": "title companies",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Fort Lauderdale FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5a9c539e-a57f-4381-af99-9461a083cf92",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00058,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00059,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00381
+   },
+   "input_tokens": 2877,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2329,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 235,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3112
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Independent Title of Fort Lauderdale",
+  "Palm Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://palmtitle.com/",
+  "https://reviews.birdeye.com/independent-title-of-fort-lauderdale-170408501010792",
+  "https://summerlandtitle.com/",
+  "https://www.yelp.com/biz/straley-otto-fort-lauderdale",
+  "https://www.yelp.com/biz/title-partners-of-south-florida-fort-lauderdale-3",
+  "https://www.yelp.com/biz/title-now-fort-lauderdale",
+  "https://nbtfl.com/",
+  "https://www.yelp.com/biz/independence-title-fort-lauderdale",
+  "https://keycrew.co/company/vital-title-escrow/",
+  "https://atlantictitlefirm.com/reviews",
+  "https://www.mapquest.com/us/florida/gregory-taylor-title-llc-359872067",
+  "https://www.yelp.com/biz/galaxy-title-and-escrow-fort-lauderdale",
+  "https://reviews.birdeye.com/closed-title-171807854590467",
+  "https://www.coastaltitlellc.com/",
+  "https://reviews.birdeye.com/lawyers-1st-title-169711977288139"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "Based on the available review information, **Independent Title of Fort Lauderdale** looks like a strong first choice: it has a reported **4.8/5 rating from 97 reviews**, with reviewers often praising communication and smooth closings. [Reviews](https://reviews.birdeye.com/independent-title-of-fort-lauderdale-170408501010792)\n\n**Palm Title** is another local option, with positive testimonials about experienced staff and straightforward closings. [Website](https://palmtitle.com/)\n\nBefore choosing, ask each company for a written estimate of title and closing fees, confirm they regularly handle your type of transaction, and verify the title agent’s Florida license. Also check whether your purchase contract gives you or the other party the right to select the closing agent.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

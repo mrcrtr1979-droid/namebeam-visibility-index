@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_lambos_digital_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "Lambos Digital",
+ "niche": "connected TV and streaming advertising agency",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best connected TV advertising agency?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_65cc8333-b096-443f-b845-26548e2e38d3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00063,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00387
+   },
+   "input_tokens": 3072,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2529,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 239,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3311
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Strategus",
+  "Marketing Architects",
+  "Power Digital",
+  "Accelerated Digital Media"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.cathausler.com/case-studies/connected-tv-advertising-3/",
+  "https://www.strategus.com/",
+  "https://themanifest.com/advertising/ctv/agencies",
+  "https://www.singlegrain.com/services/connected-tv-advertising-agency/",
+  "https://directiveconsulting.com/blog/best-ctv-ads-agencies/",
+  "https://zipdo.co/service/connected-tv-advertising/",
+  "https://www.stackadapt.com/case-studies/ctv-advertising-the-ad-agency",
+  "https://wifitalents.com/service/connected-tv-advertising/",
+  "https://zipdo.co/service/ctv-advertising/",
+  "https://worldmetrics.org/service/connected-tv-advertising/",
+  "https://clutch.co/agencies/connected-tv?page=6",
+  "https://clutch.co/agencies/connected-tv",
+  "https://www.nine.am/insights/best-performance-marketing-agencies-nyc",
+  "https://advertising.amazon.com/library/case-studies/skai-grain-group-cambio-roasters-ctv",
+  "https://adsmanager.paramount.com/insights/case-study-media-matched"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” connected TV (CTV) agency—the right choice depends on your budget, audience, and whether you care most about direct-response results, brand reach, or local targeting.\n\nA reasonable starting shortlist:\n- **Strategus** — worth considering for managed CTV and cross-screen campaigns.\n- **Marketing Architects** — a fit if you want CTV alongside broader TV planning, creative, and measurement.\n- **Power Digital** or **Accelerated Digital Media** — appear on current agency-ranking lists, though rankings alone aren’t proof of fit.\n\nBefore choosing, ask each agency for relevant case studies, minimum spend and fees, which streaming inventory they can access, and how they measure incremental outcomes—not just impressions or attributed conversions. If you share your industry, location, budget, and campaign goal, I can narrow the shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

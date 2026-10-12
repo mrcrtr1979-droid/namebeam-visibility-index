@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_property_management_st_louis_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: property management, St. Louis",
+ "niche": "property management companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Louis MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_382ddb1b-f116-431a-b8ab-6e78eb7d0575",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00089,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00062,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00415
+   },
+   "input_tokens": 4117,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3566,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 249,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4366
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Intersection Property Management",
+  "SMPL Property Management"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/mo/saint-louis/profile/property-management/hazel-valley-homes-llc-0734-1000046814",
+  "https://www.luxestl.com/",
+  "https://intersectionstl.com/",
+  "https://www.bbb.org/us/mo/saint-louis/profile/real-estate-services/triple-win-property-management-0734-1000006065/customer-reviews?page=1",
+  "https://www.bbb.org/us/mo/ellisville/profile/property-management/st-louis-property-management-0734-310588166",
+  "https://reviews.birdeye.com/st-louis-property-management-149480487447527",
+  "https://www.bbb.org/us/mo/saint-louis/profile/property-management/progress-residential-property-manager-llc-0734-1000038238",
+  "https://www.bbb.org/us/mo/saint-louis/category/real-estate-rentals/accredited",
+  "https://www.bbb.org/us/mo/north-county/category/property-management",
+  "https://www.bbb.org/us/mo/saint-louis/category/property-management",
+  "https://purehomeriver.com/locations/missouri/st-louis/",
+  "https://smplpropertymanagement.com/",
+  "https://www.zillow.com/professionals/property-manager-reviews/63103/",
+  "https://www.bbb.org/us/mo/webster-groves/category/property-management",
+  "https://www.zillow.com/professionals/property-manager-reviews/63123/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” company for every rental home, but **Intersection Property Management** looks like a good first call for a standard long-term single-family rental: it advertises a flat **$90/month** management fee for a single-family home. [Intersection](https://intersectionstl.com/)\n\nI’d compare it with **SMPL Property Management**, which says it charges a percentage of rent collected and advertises no maintenance markups or surprise charges. [SMPL](https://smplpropertymanagement.com/)\n\nBefore choosing, ask each for a written, all-in fee schedule—including leasing and renewal fees, inspection costs, maintenance markups, and cancellation terms—and confirm they manage homes in your property’s specific neighborhood. The best fit can depend a lot on location, rent, and how hands-on you want to be.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

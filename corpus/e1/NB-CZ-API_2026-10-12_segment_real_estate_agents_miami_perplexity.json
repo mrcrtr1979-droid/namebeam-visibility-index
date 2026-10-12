@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_real_estate_agents_miami_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: real estate agents, Miami",
+ "niche": "real estate agents",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Miami FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c1b9c543-059c-45b8-bf20-e0fa4075673f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00086,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00087,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 3993,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3444,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 347,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4340
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dinorah de Cardenas (RESF)"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/miami-fl/",
+  "https://www.zillow.com/profile/Gustavo%20Moreira",
+  "https://www.zillow.com/profile/saudrai",
+  "https://www.zillow.com/profile/realestatebychrisd",
+  "https://www.zillow.com/profile/melvaandmaria",
+  "https://www.zillow.com/profile/chezrealty",
+  "https://www.ratemyagent.com/real-estate-profile/sales/florida/miami-fl",
+  "https://www.zillow.com/profile/Jamey%20Prezzi",
+  "https://www.zillow.com/profile/armandoarealtor",
+  "https://www.zillow.com/profile/Dawn%20Wands",
+  "https://www.zillow.com/profile/DiegoERamos",
+  "https://www.zillow.com/profile/DebraGolan",
+  "https://www.realtor.com/realestateagents/Miami_FL",
+  "https://live.miamirealtors.com/search-full-site",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33155/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for all of Miami—the right choice depends on your neighborhood, home type, and price range. A useful starting point is Zillow’s [Miami agent directory](https://www.zillow.com/professionals/real-estate-agent-reviews/miami-fl/), where you can compare recent sales, seller reviews, and local experience. Realtor.com also has a [Miami agent directory](https://www.realtor.com/realestateagents/Miami_FL).\n\nFor example, the directory results include **Dinorah de Cardenas (RESF)**, listed with 22 team sales in the prior 12 months. That’s a lead to investigate, not a definitive endorsement—team sales may not reflect the individual agent’s own work.\n\nInterview three agents who have recently sold homes like yours nearby. Ask for:\n- Recent comparable listings and closed sales in your neighborhood\n- Their suggested list price and the evidence behind it\n- A marketing plan, including photography and open houses\n- Their commission and contract terms\n- Who will handle showings, offers, and negotiations\n\nIf you share your neighborhood or ZIP code, property type, and approximate price range, I can help narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

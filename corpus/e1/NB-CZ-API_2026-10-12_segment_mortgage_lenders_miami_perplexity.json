@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_cf7c248a-519c-4cb9-884d-59b538f8aab6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0011,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00485
+   },
+   "input_tokens": 4993,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4444,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 440,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5433
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "For first-time buyers seeking assistance",
+  "For comparing multiple loan options"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://saferate.com/local/miami/best-mortgage-lenders",
+  "https://www.miami.gov/Housing-Assistance/Home-Ownership/Apply-for-First-Time-Homebuyer-Assistance/First-Time-Homebuyer-Program-Participating-Banks",
+  "https://saferate.com/miami/best-mortgage-lenders",
+  "https://trustanalytica.org/us/fl/miami/best-mortgage-brokers",
+  "https://www.floridahousing.org/programs/homebuyer-overview-page",
+  "https://www.loc8nearme.com/florida/miami/mortgage-lenders/",
+  "https://miamibeachlenders.com/reviews/",
+  "https://www.expertise.com/home-improvement/mortgage-brokers-lenders/florida/miami",
+  "https://www.floridahousing.org/lenders-loan-officers",
+  "https://trustanalytica.org/us/fl/best-mortgage-brokers",
+  "https://on-mortgage.com/testimonials.php",
+  "https://www.biggerpockets.com/fl/lenders",
+  "https://on-mortgage.com/loan-inquiry-purchase/",
+  "https://on-mortgage.com/",
+  "https://www.vaster.com/home-loans"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender in Miami—the right choice depends on your credit, down payment, loan type, and whether you qualify for assistance. **My practical recommendation is to compare at least three lenders using the same loan scenario and request written Loan Estimates.** Compare the interest rate, APR, lender fees, points, and closing timeline—not just the advertised rate.\n\nA good starting shortlist:\n\n- **For first-time buyers seeking assistance:** Check the City of Miami’s participating-lender list and Florida Housing’s approved lenders. Assistance programs have eligibility rules, and you generally need to use a participating lender. [City of Miami participating lenders](https://www.miami.gov/Housing-Assistance/Home-Ownership/Apply-for-First-Time-Homebuyer-Assistance/First-Time-Homebuyer-Program-Participating-Banks) · [Florida Housing homebuyer program](https://www.floridahousing.org/programs/homebuyer-overview-page)\n- **For comparing multiple loan options:** Consider a local mortgage broker, such as Miami Mortgage Advisors or Lending Bankers Mortgage, alongside a bank or credit union. A broker may shop several lenders, but ask how they’re compensated and which lenders they can access.\n- **For a straightforward conventional, FHA, or VA loan:** Get a quote from a local lender and at least one national lender; the lowest-cost option can vary by borrower and day.\n\nAsk each lender for a quote with the same purchase price, down payment, credit assumptions, and rate-lock period. Also confirm they regularly close loans in Miami-Dade and can meet your contract deadline. If you share your approximate credit score, down payment, price range, and whether you’re a first-time buyer, I can help narrow the shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-12_segment_real_estate_agents_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-12",
+ "business": "SEGMENT: real estate agents, Fort Lauderdale",
+ "niche": "real estate agents",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Fort Lauderdale FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_85aa88d3-f469-4021-9e83-bc3a6983933f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00459
+   },
+   "input_tokens": 5207,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4657,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 318,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5525
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sandra Rathe of REAL",
+  "Larry Mastropieri",
+  "Desare Kohn-Laski"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/fort-lauderdale-fl/",
+  "https://www.effectiveagents.com/fl/fort-lauderdale",
+  "https://www.homelight.com/fort-lauderdale-fl/top-real-estate-agents",
+  "https://www.homes.com/real-estate-agents/peter-barkin/tmfkbjc/",
+  "https://www.zillow.com/profile/Tim%20Singer",
+  "https://www.redfin.com/city/6173/FL/Fort-Lauderdale/real-estate/agents",
+  "https://www.homes.com/real-estate-agents/james-neipris/52kv0hp/",
+  "https://www.zillow.com/profile/BrandonSellsFL",
+  "https://www.zillow.com/profile/StephaniePinder",
+  "https://www.bbb.org/us/fl/fort-lauderdale/profile/real-estate-investing/fl-cash-home-buyers-llc-0633-90136196/customer-reviews",
+  "https://www.homelight.com/agents/larry-revier-fl-00455721",
+  "https://www.homes.com/real-estate-agents/steve-mcaleer/gxzsfgy/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33309/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33306/",
+  "https://www.homes.com/real-estate-agents/tim-elmes/yyqz9vv/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for every Fort Lauderdale home—the right fit depends on your neighborhood, property type, and price range. Based on the available local rankings, **Sandra Rathe of REAL** is a strong candidate to interview: she appears first in HomeLight’s Fort Lauderdale list, with a 5.0 rating and 132 reviews. **Larry Mastropieri** and **Desare Kohn-Laski** are also highly ranked there.\n\nTreat rankings as a shortlist, not a guarantee: they use different data and may not reflect results for homes like yours. Interview two or three agents and ask each for:\n- Recent **seller-side sales** in your neighborhood and price range\n- Their suggested list price, supported by comparable sales\n- A marketing plan and who will handle showings and negotiations\n- Their fee, contract length, and cancellation terms\n\nThe best choice is the agent who can show relevant recent results and clearly explain their pricing strategy—not simply the one with the most reviews. If you share your neighborhood, home type, and approximate value, I can help narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
