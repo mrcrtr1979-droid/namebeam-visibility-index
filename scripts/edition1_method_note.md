@@ -94,6 +94,17 @@ Google rows: {{EXTRACTION_FAILED}}
 - Siri rows are typed or spoken by hand on one phone, for a few questions on a few days. They are not a sample of Siri users.
 - Nothing here shows why a list changed. The record shows what was returned on which day.
 
+## Known gaps and how to read them
+
+- OpenAI name lists are empty on every row from 2026-09-01 to 2026-09-05 (235 of 235 rows, 47 a day) because the name extractor returned none; the raw answers on those days have status OK and about 1,800 characters of text. OpenAI name-based metrics start 2026-09-06. The raw files are unchanged and the names were not re-extracted.
+- Google result pages were complete on a small share of rows in the week of 2026-08-31 and on most rows from the week of 2026-09-21. Empty name lists on Google rows fall from 78% (220 of 282 rows, week of 2026-08-31) to 3% (11 of 329 rows, week of 2026-09-28), then 15% (45 of 306 rows) in the latest partial week. The count of failed extractions is stated under "Google rows" above.
+- The files named LATEST in the dataset `Namebeam/namebeam-e1-ai-referral-index` stop at 2026-09-12. They are not part of this pack. The current file for the full window is the one listed in the Files table above, in folder `edition-1/` of `Namebeam/ai-visibility-daily-record`.
+- Served model. The rows record the model name that was requested, not the model that answered, for OpenAI and Anthropic. For Perplexity, rows from 2026-09-28 on record `perplexity/sonar` in `engine_meta`. A change in the model behind a request name would not show in the rows.
+
+## Spot audit
+
+Name-gate spot audit: 100 of 564 distinct (market, niche, gated name) in window WA (2026-09-01 to 2026-09-27, Perplexity, method name gate), seed 20261010. Each name was looked up with up to 4 web searches. 86 of 100 are an operating business, practice or licensed practitioner in that line of work (Wilson 95% interval 77.9% to 91.5%); 78 of 100 were also found in the market asked (68.9% to 85.0%). 10 were not found after 4 searches and 4 were not a business (3 generic phrase, 1 place). Checked 2026-10-10 and 2026-10-12.
+
 ## How this record differs from another published record
 
 Another open record of a similar kind of measurement is the Zenodo deposit "AI Recommendation Calibration Study 2026" (record 21611003, published 2026-07-26). Its record page, read 2026-10-09, describes 4,800 model responses collected between May and July 2026 from four engines called through their APIs, and states: "All published files are aggregates. No business names, competitor names, cited sources, verbatim AI response text ... are included."
