@@ -1,4 +1,4 @@
-// namebeam-sales: Stripe checkout.session.completed -> D1 row -> GitHub repository_dispatch.
+// namebeam-sales: Stripe checkout.session.completed and invoice.paid (renewals) -> D1 row -> GitHub repository_dispatch (sale id only).
 // TEST MODE build. Secrets by name only: STRIPE_WEBHOOK_SECRET, GH_DISPATCH_TOKEN, BREVO_API_KEY.
 const ENC = new TextEncoder();
 const TOLERANCE_SEC = 300;
@@ -73,11 +73,8 @@ export function parsePairs(text, max) {
   return { pairs };
 }
 
-function yesterdayUtc(now) {
-  return new Date(now.getTime() - 86400000).toISOString().slice(0, 10);
-}
-
-async function dispatchBuild(env, row, pairs, now, fetchFn) {
+// Public repo: the dispatch payload carries the sale id and nothing else. The runner reads the row from D1.
+async function dispatchBuild(env, saleId, fetchFn) {
   const res = await fetchFn(`https://api.github.com/repos/${env.GH_REPO}/dispatches`, {
     method: 'POST',
     headers: {
@@ -87,10 +84,7 @@ async function dispatchBuild(env, row, pairs, now, fetchFn) {
       'User-Agent': 'namebeam-sales',
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({
-      event_type: 'namebeam-sale',
-      client_payload: { sale_id: row.sale_id, offer: row.offer, email: row.buyer_email, pairs, end_date: yesterdayUtc(now) },
-    }),
+    body: JSON.stringify({ event_type: 'namebeam-sale', client_payload: { sale_id: saleId } }),
   });
   return res.status;
 }
@@ -114,8 +108,59 @@ async function alertManual(env, row, fetchFn) {
 
 const json = (obj, status = 200) => new Response(JSON.stringify(obj), { status, headers: { 'content-type': 'application/json' } });
 
-export async function handleStripe(request, env, deps = {}) {
+const INSERT_SQL = 'INSERT OR IGNORE INTO sales_events (sale_id,event_id,created_utc,livemode,offer,amount_cents,currency,buyer_email,buyer_name,custom_text,pairs_json,subscription_id,invoice_id,status,note) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)';
+
+// One row per payment. Returns a Response. Idempotent: a repeated event id or sale id inserts nothing.
+async function storeAndDispatch(env, row, alertManualOffer, deps) {
   const fetchFn = deps.fetch || fetch;
+  const now = deps.now || new Date();
+  const ins = await env.DB.prepare(INSERT_SQL).bind(
+    row.sale_id, row.event_id, row.created_utc, row.livemode, row.offer, row.amount_cents, row.currency, row.buyer_email,
+    row.buyer_name, row.custom_text, row.pairs_json, row.subscription_id, row.invoice_id, row.status, row.note
+  ).run();
+  if (!ins.meta || ins.meta.changes === 0) return json({ duplicate: true, event_id: row.event_id }, 200);
+  if (alertManualOffer) await alertManual(env, row, fetchFn);
+  if (row.status !== 'PAID') return json({ stored: true, status: row.status, note: row.note }, 200);
+  let code = 0;
+  try { code = await dispatchBuild(env, row.sale_id, fetchFn); } catch { code = 0; }
+  if (code === 204) {
+    await env.DB.prepare("UPDATE sales_events SET status='DISPATCHED', dispatched_utc=? WHERE sale_id=? AND status='PAID'").bind(now.toISOString(), row.sale_id).run();
+    return json({ stored: true, status: 'DISPATCHED' }, 200);
+  }
+  await env.DB.prepare('UPDATE sales_events SET note=? WHERE sale_id=?').bind(`dispatch http ${code}`, row.sale_id).run();
+  return json({ stored: true, status: 'PAID', note: `dispatch http ${code}` }, 200);
+}
+
+function invoiceSubscription(inv) {
+  if (typeof inv.subscription === 'string') return inv.subscription;
+  const p = inv.parent && inv.parent.subscription_details;
+  return p && typeof p.subscription === 'string' ? p.subscription : null;
+}
+
+async function handleInvoice(event, env, deps) {
+  const now = deps.now || new Date();
+  const inv = event.data && event.data.object ? event.data.object : {};
+  // The first invoice (subscription_create) belongs to the checkout event. Only real renewals fulfil here.
+  if (inv.billing_reason !== 'subscription_cycle') return json({ ignored: `invoice ${inv.billing_reason || 'unknown'}` }, 200);
+  if (inv.status !== 'paid') return json({ ignored: 'invoice not paid' }, 200);
+  const sub = invoiceSubscription(inv);
+  if (!sub || !inv.id) return json({ ignored: 'invoice without subscription' }, 200);
+  const found = await env.DB.prepare(
+    'SELECT offer,buyer_email,buyer_name,pairs_json FROM sales_events WHERE subscription_id=? AND invoice_id IS NULL AND pairs_json IS NOT NULL ORDER BY created_utc LIMIT 1'
+  ).bind(sub).all();
+  const orig = found.results && found.results[0];
+  const row = {
+    sale_id: inv.id, event_id: event.id, created_utc: now.toISOString(), livemode: event.livemode ? 1 : 0,
+    offer: orig ? orig.offer : 'unknown', amount_cents: inv.amount_paid ?? null, currency: inv.currency ?? null,
+    buyer_email: orig ? orig.buyer_email : null, buyer_name: orig ? orig.buyer_name : null, custom_text: null,
+    pairs_json: orig ? orig.pairs_json : null, subscription_id: sub, invoice_id: inv.id, status: 'PAID', note: null,
+  };
+  if (!orig) { row.status = 'NEEDS_HUMAN'; row.note = 'renewal with no original sale on file'; }
+  else if (inv.currency !== 'usd' || !(inv.amount_paid > 0)) { row.status = 'NEEDS_HUMAN'; row.note = 'renewal amount or currency unexpected'; }
+  return storeAndDispatch(env, row, false, deps);
+}
+
+export async function handleStripe(request, env, deps = {}) {
   const now = deps.now || new Date();
   const raw = await request.text();
   const sig = await verifyStripeSignature(raw, request.headers.get('stripe-signature'), env.STRIPE_WEBHOOK_SECRET, Math.floor(now.getTime() / 1000));
@@ -123,6 +168,7 @@ export async function handleStripe(request, env, deps = {}) {
   let event;
   try { event = JSON.parse(raw); } catch { return json({ error: 'bad json' }, 400); }
   if (event.livemode === true && env.ALLOW_LIVE !== 'true') return json({ ignored: 'live event while test mode only' }, 200);
+  if (event.type === 'invoice.paid') return handleInvoice(event, env, deps);
   if (event.type !== 'checkout.session.completed') return json({ ignored: event.type }, 200);
   const s = event.data && event.data.object ? event.data.object : {};
   if (s.payment_status !== 'paid') return json({ ignored: 'not paid yet' }, 200);
@@ -145,24 +191,10 @@ export async function handleStripe(request, env, deps = {}) {
     sale_id: s.id, event_id: event.id, created_utc: now.toISOString(), livemode: event.livemode ? 1 : 0,
     offer: cls.offer, amount_cents: s.amount_total ?? null, currency: s.currency ?? null,
     buyer_email: email, buyer_name: (s.customer_details && s.customer_details.name) || null,
-    custom_text: text.slice(0, 255), pairs_json: pairs ? JSON.stringify(pairs) : null, status, note,
+    custom_text: text.slice(0, 255), pairs_json: pairs ? JSON.stringify(pairs) : null,
+    subscription_id: typeof s.subscription === 'string' ? s.subscription : null, invoice_id: null, status, note,
   };
-  const ins = await env.DB.prepare(
-    'INSERT OR IGNORE INTO sales_events (sale_id,event_id,created_utc,livemode,offer,amount_cents,currency,buyer_email,buyer_name,custom_text,pairs_json,status,note) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)'
-  ).bind(row.sale_id, row.event_id, row.created_utc, row.livemode, row.offer, row.amount_cents, row.currency, row.buyer_email, row.buyer_name, row.custom_text, row.pairs_json, row.status, row.note).run();
-  if (!ins.meta || ins.meta.changes === 0) return json({ duplicate: true, event_id: event.id }, 200);
-
-  if (status === 'NEEDS_HUMAN' && !cls.auto) await alertManual(env, row, fetchFn);
-  if (status !== 'PAID') return json({ stored: true, status, note }, 200);
-
-  let code = 0;
-  try { code = await dispatchBuild(env, row, pairs, now, fetchFn); } catch { code = 0; }
-  if (code === 204) {
-    await env.DB.prepare("UPDATE sales_events SET status='DISPATCHED', dispatched_utc=? WHERE sale_id=? AND status='PAID'").bind(now.toISOString(), row.sale_id).run();
-    return json({ stored: true, status: 'DISPATCHED' }, 200);
-  }
-  await env.DB.prepare('UPDATE sales_events SET note=? WHERE sale_id=?').bind(`dispatch http ${code}`, row.sale_id).run();
-  return json({ stored: true, status: 'PAID', note: `dispatch http ${code}` }, 200);
+  return storeAndDispatch(env, row, status === 'NEEDS_HUMAN' && !cls.auto, deps);
 }
 
 // Backstop: re-dispatch rows still PAID after 2 hours. Cron is off in wrangler.toml until the first test passes.
@@ -170,10 +202,10 @@ export async function redispatchStale(env, deps = {}) {
   const fetchFn = deps.fetch || fetch;
   const now = deps.now || new Date();
   const cutoff = new Date(now.getTime() - 2 * 3600000).toISOString();
-  const rs = await env.DB.prepare("SELECT sale_id,offer,buyer_email,pairs_json FROM sales_events WHERE status='PAID' AND created_utc<=?").bind(cutoff).all();
+  const rs = await env.DB.prepare("SELECT sale_id FROM sales_events WHERE status='PAID' AND created_utc<=?").bind(cutoff).all();
   let done = 0;
   for (const r of rs.results || []) {
-    const code = await dispatchBuild(env, r, JSON.parse(r.pairs_json), now, fetchFn).catch(() => 0);
+    const code = await dispatchBuild(env, r.sale_id, fetchFn).catch(() => 0);
     if (code === 204) {
       await env.DB.prepare("UPDATE sales_events SET status='DISPATCHED', dispatched_utc=? WHERE sale_id=? AND status='PAID'").bind(now.toISOString(), r.sale_id).run();
       done++;

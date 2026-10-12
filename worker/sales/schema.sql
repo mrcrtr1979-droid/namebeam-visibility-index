@@ -11,6 +11,8 @@ CREATE TABLE IF NOT EXISTS sales_events (
   buyer_name TEXT,
   custom_text TEXT,
   pairs_json TEXT,
+  subscription_id TEXT,
+  invoice_id TEXT,
   status TEXT NOT NULL,
   dispatched_utc TEXT,
   sha256 TEXT,
@@ -18,4 +20,6 @@ CREATE TABLE IF NOT EXISTS sales_events (
   note TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_sales_status ON sales_events (status, created_utc);
--- status values: PAID, DISPATCHED, NEEDS_INTAKE_CORRECTION, NEEDS_HUMAN
+CREATE INDEX IF NOT EXISTS idx_sales_sub ON sales_events (subscription_id);
+-- sale_id is the checkout session id (first purchase) or the invoice id (renewal). invoice_id is null on the first purchase.
+-- status values: PAID, DISPATCHED, BUILDING, SENT, FAILED, NEEDS_INTAKE_CORRECTION, NEEDS_HUMAN
