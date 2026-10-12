@@ -778,9 +778,137 @@ def call_anthropic(prompt_text):
     return True, text, [], ""
 
 
+# --------------------------------------------------------------------------
+# ANTHROPIC + WEB SEARCH (added 2026-10-12, [1012A-DOOR]). A second Claude door
+# that sits BESIDE call_anthropic. The no-search door above is untouched so its
+# series stays continuous; this one answers the same question WITH Anthropic's
+# server-side web search tool and returns the cited source URLs.
+#
+# Key: ANTHROPIC_API_KEY in the environment, exactly like call_anthropic, but the
+# workflow e1-claude-search.yml fills it from the repo secret ANTHROPIC_API_KEY_CREDIT.
+# Verified 2026-10-12 on platform.claude.com (web-search-tool, models/overview):
+#   model id   claude-haiku-5-5   ($0.10 in / $0.50 out per MTok)
+#   tool       {"type": "web_search_20250305", "name": "web_search", "max_uses": 3}
+#   searches   $10 per 1,000, counted in usage.server_tool_use.web_search_requests
+# 20250305 is the basic tool and needs no code-execution tool. The newer versions
+# (20260209 dynamic filtering, 20260318 response_inclusion) default their callers to
+# code execution, so they stay off until someone chooses them on purpose.
+# temperature is NOT sent: newer models can reject sampling parameters with HTTP 400
+# and a rejected row is worth less than a default-temperature one; engine_meta says so.
+# Overrides without a commit: repo variables ANTHROPIC_SEARCH_MODEL / ANTHROPIC_SEARCH_TOOL.
+# --------------------------------------------------------------------------
+ANTHROPIC_SEARCH_MODEL = (os.environ.get("ANTHROPIC_SEARCH_MODEL", "").strip()
+                          or "claude-haiku-5-5")
+ANTHROPIC_SEARCH_TOOL = (os.environ.get("ANTHROPIC_SEARCH_TOOL", "").strip()
+                         or "web_search_20250305")
+ANTHROPIC_SEARCH_MAX_USES = 3
+ANTHROPIC_SEARCH_MAX_CONTINUES = 3   # pause_turn resumptions, bounded
+ANTHROPIC_SEARCH_TIMEOUT = 120
+
+
+def _search_usage_add(total, usage):
+    """Accumulate a usage object into total. Never raises."""
+    if not isinstance(usage, dict):
+        return
+    for k in ("input_tokens", "output_tokens", "cache_read_input_tokens",
+              "cache_creation_input_tokens"):
+        if isinstance(usage.get(k), int):
+            total[k] = total.get(k, 0) + usage[k]
+    stu = usage.get("server_tool_use")
+    if isinstance(stu, dict) and isinstance(stu.get("web_search_requests"), int):
+        total["web_search_requests"] = (total.get("web_search_requests", 0)
+                                        + stu["web_search_requests"])
+
+
+def parse_anthropic_search(content):
+    """Pure parser. content = the response 'content' block list.
+    Returns (text, cited_urls, search_result_count, error_codes).
+    Text is the text blocks joined verbatim; cited_urls are the
+    web_search_result_location citation URLs, de-duplicated, in order."""
+    text_parts, cites, seen, errors, results = [], [], set(), [], 0
+    for block in content or []:
+        if not isinstance(block, dict):
+            continue
+        t = block.get("type")
+        if t == "text":
+            text_parts.append(block.get("text", "") or "")
+            for c in block.get("citations") or []:
+                if isinstance(c, dict) and c.get("type") == "web_search_result_location":
+                    u = c.get("url")
+                    if u and u not in seen:
+                        seen.add(u)
+                        cites.append(u)
+        elif t == "web_search_tool_result":
+            body = block.get("content")
+            if isinstance(body, list):
+                results += sum(1 for r in body if isinstance(r, dict)
+                               and r.get("type") == "web_search_result")
+            elif isinstance(body, dict) and body.get("type") == "web_search_tool_result_error":
+                errors.append(str(body.get("error_code")))
+    return "".join(text_parts), cites, results, errors
+
+
+def call_anthropic_search(prompt_text, _post=None):
+    LAST_CALL_META["anthropic_search"] = {}
+    key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    if not key:
+        return False, "", [], redact("ANTHROPIC_API_KEY not set")
+    post = _post or requests.post
+    tool = {"type": ANTHROPIC_SEARCH_TOOL, "name": "web_search",
+            "max_uses": ANTHROPIC_SEARCH_MAX_USES}
+    messages = [{"role": "user", "content": prompt_text}]
+    usage, content_all, stop = {}, [], None
+    meta = {"model": ANTHROPIC_SEARCH_MODEL, "tool_version": ANTHROPIC_SEARCH_TOOL,
+            "max_uses": ANTHROPIC_SEARCH_MAX_USES, "temperature_sent": False}
+    for step in range(ANTHROPIC_SEARCH_MAX_CONTINUES + 1):
+        try:
+            r = post(
+                ANTHROPIC_URL,
+                headers={"x-api-key": key,
+                         "anthropic-version": "2023-06-01",
+                         "Content-Type": "application/json"},
+                json={"model": ANTHROPIC_SEARCH_MODEL, "max_tokens": 2048,
+                      "tools": [tool], "messages": messages},
+                timeout=ANTHROPIC_SEARCH_TIMEOUT,
+            )
+        except requests.exceptions.RequestException as exc:
+            LAST_CALL_META["anthropic_search"] = dict(meta, usage=usage)
+            return False, "", [], redact("anthropic_search request failed: %s" % exc)
+        if r.status_code != 200:
+            LAST_CALL_META["anthropic_search"] = dict(meta, usage=usage)
+            prefix = "QUOTA: " if r.status_code == 429 else ""
+            return False, "", [], redact(
+                "%santhropic_search HTTP %s: %s" % (prefix, r.status_code, r.text[:300]))
+        try:
+            body = r.json()
+            blocks = body["content"]
+            if not isinstance(blocks, list):
+                raise TypeError("content not a list")
+        except (ValueError, KeyError, TypeError):
+            LAST_CALL_META["anthropic_search"] = dict(meta, usage=usage)
+            return False, "", [], redact("anthropic_search response shape unexpected")
+        _search_usage_add(usage, body.get("usage"))
+        content_all.extend(blocks)
+        stop = body.get("stop_reason")
+        meta["served_model"] = body.get("model")
+        meta["response_id"] = body.get("id")
+        if stop != "pause_turn":
+            break
+        messages = messages + [{"role": "assistant", "content": blocks}]
+    text, cites, n_results, errors = parse_anthropic_search(content_all)
+    meta.update({"stop_reason": stop, "usage": usage,
+                 "web_search_requests": usage.get("web_search_requests", 0),
+                 "search_results_count": n_results, "search_errors": errors})
+    LAST_CALL_META["anthropic_search"] = meta
+    if not text.strip():
+        return False, "", [], redact("anthropic_search returned no answer text")
+    return True, text, cites, ""
+
+
 ENGINES = {
     "perplexity": call_perplexity,
     "gemini": call_gemini,
     "openai": call_openai,
     "anthropic": call_anthropic,
+    "anthropic_search": call_anthropic_search,
 }

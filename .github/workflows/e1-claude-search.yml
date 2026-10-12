@@ -1,0 +1,87 @@
+name: E1 Claude Search Door
+
+# [1012A-DOOR] 2026-10-12. Sixth E1 engine, "anthropic_search": Claude Haiku answering
+# each E1 question WITH Anthropic's server-side web search tool, sources cited. It sits
+# beside the no-search anthropic engine in e1-check-runner.yml, which is untouched.
+#
+# DISPATCH ONLY. There is NO schedule on purpose. Adding one is a separate decision.
+# The default run is a DRY RUN: it prints the planned calls and the worst-case cost and
+# makes ZERO API calls. A live run needs dry_run=false and is capped by max_questions.
+#
+# KEY: ANTHROPIC_API_KEY below is filled from the repo secret ANTHROPIC_API_KEY_CREDIT
+# (the key from the credit-funded Console org). It must never be the secret named
+# ANTHROPIC_API_KEY, which feeds the daily runner.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run: print the plan and estimated cost, make ZERO API calls"
+        type: boolean
+        default: true
+      max_questions:
+        description: "Hard cap on questions asked this run (roster has 73)"
+        type: string
+        default: "5"
+
+concurrency:
+  group: e1-claude-search
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  claude-search:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Offline selftest (no network, no key)
+        run: python3 scripts/test_anthropic_search.py
+
+      - name: Validate max_questions
+        id: cap
+        env:
+          MAXQ: ${{ inputs.max_questions }}
+        run: |
+          if ! echo "$MAXQ" | grep -Eq '^[0-9]+$'; then echo "max_questions must be a whole number"; exit 1; fi
+          if [ "$MAXQ" -lt 1 ] || [ "$MAXQ" -gt 73 ]; then echo "max_questions must be 1 to 73"; exit 1; fi
+          echo "n=$MAXQ" >> "$GITHUB_OUTPUT"
+
+      - name: Dry run (zero API calls)
+        if: inputs.dry_run
+        run: python3 scripts/e1_claude_search.py --max-questions "${{ steps.cap.outputs.n }}"
+
+      - name: Live run (real API calls, capped)
+        if: ${{ !inputs.dry_run }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_CREDIT }}
+          ANTHROPIC_SEARCH_MODEL: ${{ vars.ANTHROPIC_SEARCH_MODEL }}
+          ANTHROPIC_SEARCH_TOOL: ${{ vars.ANTHROPIC_SEARCH_TOOL }}
+        run: python3 scripts/e1_claude_search.py --live --max-questions "${{ steps.cap.outputs.n }}"
+
+      - name: Commit new corpus rows (live runs only)
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add corpus/e1/
+          if git diff --staged --quiet; then
+            echo "No new corpus rows to commit."
+          else
+            git commit -m "e1 claude-search door run $(date -u +%Y-%m-%d)"
+            for i in 1 2 3; do
+              git push && break
+              echo "push rejected, rebasing (attempt $i)"
+              git pull --rebase origin main
+            done
+          fi
