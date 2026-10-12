@@ -1,0 +1,48 @@
+# TEST MODE build (draft PR "do not merge"). DRY_RUN is ON unless the repo variable FULFIL_DRY_RUN is exactly "false".
+# repository_dispatch and workflow_dispatch only run from the default branch after a merge.
+# The push trigger below runs a dry run from the test branch with a fixture payload; delete it before any merge.
+name: fulfil
+run-name: fulfil ${{ github.event.client_payload.sale_id || github.event_name }}
+
+on:
+  repository_dispatch:
+    types: [namebeam-sale]
+  workflow_dispatch:
+    inputs:
+      payload_json:
+        description: 'Sale payload json (sale_id, email, pairs, end_date)'
+        required: true
+  push:
+    branches: [autoful-test-1012b]
+    paths: ['scripts/fulfil/**', '.github/workflows/fulfil.yml']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fulfil-${{ github.event.client_payload.sale_id || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  fulfil:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install
+        run: pip install reportlab pypdf
+      - name: Offline tests
+        run: python3 scripts/fulfil/test_run_fulfil.py
+      - name: Fulfil
+        env:
+          PAYLOAD_JSON: ${{ github.event_name == 'workflow_dispatch' && inputs.payload_json || github.event_name == 'push' && '{"sale_id":"cs_test_fixture_0001","offer":"market_1","email":"buyer@example.com","pairs":[{"market":"Phoenix AZ","niche":"hvac repair and replacement"}],"end_date":"2026-10-11"}' || toJson(github.event.client_payload) }}
+          DRY_RUN: ${{ github.event_name == 'push' && 'true' || vars.FULFIL_DRY_RUN || 'true' }}
+          TEST_TO: ${{ vars.FULFIL_TEST_TO }}
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          REPO_ROOT: ${{ github.workspace }}
+        run: python3 scripts/fulfil/run_fulfil.py
