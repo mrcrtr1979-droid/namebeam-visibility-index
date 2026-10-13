@@ -632,6 +632,8 @@ def build(through, out, method_src, status):
     prows = prompts_rows(corpus, W0, last)
     write_rows(os.path.join(pack, *prompts_rel.split('/')), prows, PROMPT_FIELDS)
     shutil.copyfile(os.path.join(REPO, 'LICENSE'), os.path.join(pack, 'LICENSE'))
+    # 2026-10-13: the dated corrections ledger travels in every pack and is listed in the manifest
+    shutil.copyfile(os.path.join(REPO, 'CORRECTIONS.md'), os.path.join(pack, 'CORRECTIONS.md'))
     src_rel = 'data/sources_%s.csv' % tag
     n_src, src_days = merge_sources(os.path.join(REPO, 'datasets', 'e1', 'sources'), W0, last, os.path.join(pack, *src_rel.split('/')))
     n_siri = filter_by_date(os.path.join(REPO, 'datasets', 'e1', 'siri', 'siri_panel.csv'), os.path.join(pack, 'data', 'siri_panel.csv'), 'date', W0, last)
@@ -901,6 +903,12 @@ def selftest():
         '2 questions asked to see whether one named business comes up); 2 US local markets plus nationwide questions (2 market '
         'labels as written in the roster); 2 niche labels as written in the roster; API engines asked: anthropic, gemini, openai, '
         'plus Google results; 2 run days from 2026-09-01 to 2026-09-03.'))
+    corr = os.path.join(REPO, 'CORRECTIONS.md')
+    ctext = io.open(corr, encoding='utf-8').read() if os.path.exists(corr) else ''
+    chk('CORRECTIONS.md at the repo root, ASCII, append-only header, format line present',
+        ctext.startswith('# Corrections to the Edition 1 pack') and all(ord(c) < 128 for c in ctext)
+        and 'Format: date_utc | files or rows | what changed and why | action | commit' in ctext)
+    chk('build copies CORRECTIONS.md into the pack (so the manifest lists it)', "os.path.join(pack, 'CORRECTIONS.md')" in io.open(__file__, encoding='utf-8').read())
     print('SELFTEST ' + ('FAIL: ' + ', '.join(fails) if fails else 'PASS'))
     return not fails
 
