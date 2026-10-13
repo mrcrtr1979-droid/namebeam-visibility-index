@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-13_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-10-13",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_524c0109-f0eb-441d-9277-d9cf8e00cc00",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00092,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00069,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00425
+   },
+   "input_tokens": 4244,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3697,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 275,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4519
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atlanta’s West Midtown",
+  "West Paces Ferry Orthodontics",
+  "Atlanta Orthodontic Specialists"
+ ],
+ "engine_stated_criteria": [
+  "A strong starting point is Dr. Peyton Harris at Harris Orthodontics"
+ ],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-india-l-collier/",
+  "https://aaoinfo.org/locator/dr-peyton-keith-harris/",
+  "https://harrisorthodonticsatl.com/",
+  "https://aaoinfo.org/locator/",
+  "https://www.westpacesferryortho.com/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/buckhead-orthodontics-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/willow-orthodontics-atlanta-madison-yards-atlanta-ga",
+  "https://artemisorthoatlanta.com/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/drescher-cohen-midtown-atlanta-dentist-atlanta-ga",
+  "https://aaoinfo.org/locator/dr-laura-c-davis/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/georgia-orthodontic-studio-atlanta-atlanta-ga",
+  "https://emailyogi.com/best-orthodontists-atlanta-2026/",
+  "https://aaoinfo.org/locator/dr-douglas-depew-3/",
+  "https://aaoinfo.org/locator/dr-nick-kim/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/atlanta-orthodontic-specialists-3580-piedmont-rd-ne"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—case complexity, location, cost, and how comfortable you feel with the doctor all matter. **A strong starting point is Dr. Peyton Harris at Harris Orthodontics**: the American Association of Orthodontists lists him as **board-certified**, and his practice offers both braces and Invisalign. It’s in **Atlanta’s West Midtown** at 800 Marietta St NW, Suite C.\n\nOther options to compare:\n- **West Paces Ferry Orthodontics** in Buckhead: board-certified orthodontists offering braces and Invisalign.\n- **Atlanta Orthodontic Specialists** on Piedmont Road: offers braces and Invisalign; listed as board-certified.\n\nI’d book two or three consultations before deciding. Ask who will supervise your treatment, what options fit your case, the full cost and retainer plan, and how emergencies or refinements are handled. The AAO locator is a useful way to verify an orthodontist’s specialty credentials.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

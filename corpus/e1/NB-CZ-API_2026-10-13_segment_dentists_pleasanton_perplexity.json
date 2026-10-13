@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-13_segment_dentists_pleasanton_perplexity",
+ "date_utc": "2026-10-13",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6aa076d3-a3f2-4bec-a99e-b2597e762ea8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0044
+   },
+   "input_tokens": 5186,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4636,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 238,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5424
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Address",
+  "Phone",
+  "Pleasanton Ridge Dental Group"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.pleasantondentalcare.com/services/cleanings-prevention/",
+  "https://www.mfdpleasanton.co/services",
+  "https://pleasanton-dentist.com/general-dentistry/",
+  "https://pleasanton-dentist.com/services/",
+  "https://www.pleasantondentaloffice.com/patient-reviews",
+  "https://pleasantonstardental.com/dental-services/preventive/",
+  "https://pleasanton-dentist.com/family-dentistry/",
+  "https://www.brushcountrydental.com/checkups-cleanings.html",
+  "https://pleasanton-dentist.com/dental-clinic/",
+  "https://www.opencare.com/dentists/pleasanton-ca/my-favorite-dentist-24630732223c/",
+  "https://www.sunshinefamilysmile.com/",
+  "https://www.smilegeneration.com/dentist/ca/pleasanton/280-pleasanton-ridge-dental-group/",
+  "https://www.fremontstardental.com/services-in-pleasanton",
+  "https://www.yelp.com/biz/pleasanton-dental-care-pleasanton-5",
+  "https://www.bestprosintown.com/ca/pleasanton/dentists/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Pleasanton Dental Care, led by Dr. Eunice Jong, looks like a strong choice** for a routine checkup and cleaning. Recent patient reviews praise the office’s thorough exams and cleanings, gentle approach, and welcoming staff; Yelp lists it at **4.7/5 from 34 reviews**.\n\n**Address:** 5980 Stoneridge Drive, Suite 116, Pleasanton  \n**Phone:** (925) 462-7212\n\n“Best” depends on your priorities, so before booking, confirm they accept your insurance and are taking new patients. Another option with positive cleaning and checkup feedback is **Pleasanton Ridge Dental Group** at 6766 Bernal Ave., Suite 560, (925) 461-3100.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

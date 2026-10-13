@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-13_segment_orthodontists_dallas_perplexity",
+ "date_utc": "2026-10-13",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3d76a61a-88e1-4bf4-b644-91fd4547a5f1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00085,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00465
+   },
+   "input_tokens": 5193,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4646,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 338,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5531
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Gupta Smile Studio",
+  "Walnut Central Orthodontics",
+  "Fusion Orthodontics"
+ ],
+ "engine_stated_criteria": [
+  "A strong place to start is Ohlenforst Carney Orthodontics"
+ ],
+ "sources_cited": [
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/dallas-orthodontics-dallas-tx",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/walnut-central-orthodontics-dallas-tx",
+  "https://lepley-orthodontics.patientrewardshub.com/about/practice/dallas-texas",
+  "https://directory.dmagazine.com/dentists/nadia-lyotard-dmd-msd/",
+  "https://nationalorthodonticregistry.com/texas/dallas/orthodontists",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/fusion-orthodontics-dallas-tx",
+  "https://trustanalytica.org/us/tx/best-orthodontists",
+  "https://www.guptasmilestudio.com/",
+  "https://bracesbyoc.com/",
+  "https://trustanalytica.org/us/tx/dallas/best-clear-braces",
+  "https://speakersclubs.uk/best-orthodontists-dallas-2026/",
+  "https://www.oakcliffdentist.com/services/orthodontics/",
+  "https://www.yelp.com/biz/fusion-orthodontics-dallas-dallas",
+  "https://dallas-ortho.com/can-you-take-out-invisalign-for-meals/",
+  "https://nationalorthodonticregistry.com/texas/plano-tx/orthodontists/north-texas-orthodontic-associates-plano-tx"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—case complexity, location, budget, and whether you prefer braces or aligners all matter. **A strong place to start is Ohlenforst Carney Orthodontics**: Dr. Lauren Ohlenforst Carney is board-certified and offers traditional braces, clear braces, and Invisalign. The office is at **5925 Forest Lane, Suite 400** in Dallas.\n\nOther options to compare:\n- **Gupta Smile Studio** — Dr. Vick Gupta is board-certified and offers braces and Invisalign; in Oak Cliff.\n- **Walnut Central Orthodontics** — board-certified orthodontists and a reported focus on Invisalign as well as braces.\n- **Fusion Orthodontics** — offers Invisalign and several braces options, including lingual braces; in North Dallas.\n\nI’d book **two or three consultations** before deciding. Ask who will supervise your treatment, which option they recommend for your specific bite, what the total fee includes (including retainers and refinements), and how emergencies or missed appointments are handled. You can also verify an orthodontist’s credentials through the American Board of Orthodontics and the American Association of Orthodontists.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

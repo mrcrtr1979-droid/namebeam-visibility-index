@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-13_segment_mortgage_lenders_st_charles_perplexity",
+ "date_utc": "2026-10-13",
+ "business": "SEGMENT: mortgage lenders, St. Charles",
+ "niche": "mortgage lenders",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Charles MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a66bcaf7-b934-4393-8aae-327b408d4b15",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00074,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00403
+   },
+   "input_tokens": 3510,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2959,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 258,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3768
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Loan Estimates"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://www.royalbanksofmo.com/personal-lending/mortgages/",
+  "https://www.monitorbankrates.com/calculators/mortgage/missouri",
+  "https://homelendingadvisor.chase.com/mo/saint-charles/1990-zumbehl-rd-hla-735999",
+  "https://branches.guildmortgage.com/mo/weldonspring/st-charles-158.html",
+  "https://societymortgage.com/branches/st-charles-mo/",
+  "https://www.lendersa.com/lenders/private-investor/mo/weldon-spring",
+  "https://integritymortgagemo.com/",
+  "https://www.experience.com/reviews/office/st-charles-127891",
+  "https://fsbfinancial.com/mortgage/mortgage-offers/",
+  "https://www.reddit.com/r/StCharlesMO/comments/1n6wkmo/mortgage_lenders/",
+  "https://mortgage.usbank.com/mo/saint-charles",
+  "https://www.lendersa.com/lender/saint-charles/mortgage-solutions-llc",
+  "https://staterates.org/missouri/st-charles",
+  "https://www.loc8nearme.com/missouri/st.-charles/fairway-independent-mortgage-corporation/7780370/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and how much you value hands-on service. **For a local starting point, I’d compare Integrity Mortgage of Missouri and Guild Mortgage’s St. Charles office.** Integrity is nearby in Cottleville and has a strong local review profile in the results; Guild has a St. Charles branch with purchase-loan officers and positive customer feedback. Those are useful leads, not a guarantee of the best rate or fit.\n\nAlso get a quote from your bank or credit union, and compare **at least three written Loan Estimates** for the same loan type, down payment, and rate-lock period. Compare the APR, lender fees, points, and estimated cash to close—not just the advertised rate. Rates and eligibility vary by borrower, so ask each lender for a personalized quote.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-13_segment_short_term_rental_nashville_perplexity",
+ "date_utc": "2026-10-13",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_43f25915-7a4d-4f73-abb2-7eeaa65f66f2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00086,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00466
+   },
+   "input_tokens": 5201,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4648,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 342,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5543
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Nash 2BR 2BA—Private Balcony—Free Parking—Pool",
+  "East Nashville"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/nashville-tn/stays/apartments",
+  "https://www.airbnb.com/nashville-in/stays/family-friendly",
+  "https://www.airbnb.com/nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/nashville-tn/stays",
+  "https://www.vrbo.com/vacation-rentals/family/usa/tennessee/middle/nashville",
+  "https://www.airbnb.com/midtown-nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/downtown-nashville-tn/stays",
+  "https://www.airbnb.com/nashville-tn/stays/condos",
+  "https://www.cozycozy.com/us/nashville-vacation-rentals",
+  "https://www.airbnb.com/nashville-tn/stays/cabins",
+  "https://www.vacasa.com/usa/Tennessee/Nashville/",
+  "https://www.airbnb.com/downtown-nashville-tn/stays/family-friendly",
+  "https://www.vrbo.com/vacation-rentals/usa/tennessee/middle/nashville",
+  "https://www.staynashville.co/post/best-nashville-rentals",
+  "https://www.hometogo.com/nashville/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a family of four, I’d start with a **well-reviewed two-bedroom, two-bath condo in SoBro or downtown**. You’ll be close to Broadway and major attractions, while a kitchen and separate bedrooms make family stays easier. One promising option in the listings is **“Nash 2BR 2BA—Private Balcony—Free Parking—Pool”**: it’s listed with a 4.98/5 rating from 242 reviews, a balcony, pool, and free parking. [View Nashville Airbnb listings](https://www.airbnb.com/nashville-tn/stays)\n\nIf you’d rather have a quieter, more residential feel, look in **East Nashville**; it’s still a short drive from downtown and often offers more space. [Browse family-friendly Nashville rentals](https://www.airbnb.com/nashville-tn/stays/family-friendly)\n\nI can’t confirm availability or total price without your dates. Before booking, check that the listing has **two actual bedrooms**, recent reviews, clear cancellation terms, and parking details—especially if you’ll have a car. Share your dates, budget per night, and whether you prefer walkability or a quieter neighborhood, and I can narrow down the best fit.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

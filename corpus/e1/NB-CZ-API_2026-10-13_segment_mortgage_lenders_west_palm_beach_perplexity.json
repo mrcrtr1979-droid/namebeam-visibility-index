@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-13_segment_mortgage_lenders_west_palm_beach_perplexity",
+ "date_utc": "2026-10-13",
+ "business": "SEGMENT: mortgage lenders, West Palm Beach",
+ "niche": "mortgage lenders",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in West Palm Beach FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_72f316e6-6eb8-49b7-b66b-3933dfc32cf7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00092,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 4636,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4085,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 367,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5003
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Palm Beach Mortgage Group",
+  "Absolute Home Mortgage’s West Palm Beach branch",
+  "New American Funding",
+  "Loan Estimates on the same day"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bankrate.com/mortgages/mortgage-rates/florida/",
+  "https://saferate.com/local/west-palm-beach/best-mortgage-lenders/mortgage-companies",
+  "https://dreamyleads.com/mortgage/best-mortgage-lenders-west-palm-beach",
+  "https://www.bvlending.com/",
+  "https://www.usbank.com/home-loans/mortgage/mortgage-rates/florida.html",
+  "https://manifestmortgagegroup.com/",
+  "https://www.experience.com/reviews/office/west-palm-beach",
+  "https://www.experience.com/reviews/office/west-palm-beach-iii",
+  "https://palmbeachmortgagegroup.com/",
+  "https://www.zillow.com/homeloans/mortgage-rates/florida/",
+  "https://trustanalytica.org/us/fl/west-palm-beach/best-mortgage-brokers",
+  "https://www.newamericanfunding.com/branches/westpalmbeach",
+  "https://www.experience.com/reviews/autumn-lauren-krohn-407070",
+  "https://ahmcloans.com/home-loan-branches/fl/west-palm-beach-fl/",
+  "https://www.bbb.org/us/fl/west-palm-beach/profile/mortgage-lenders/newday-usa-0633-92034734/customer-reviews?page=3"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and how quickly you need to close. **For a local starting point, I’d compare Palm Beach Mortgage Group and Absolute Home Mortgage**, then get a quote from a large lender such as New American Funding or your bank/credit union.\n\n- **Palm Beach Mortgage Group** is a local option with purchase-loan reviews that mention responsive service and quick closings.\n- **Absolute Home Mortgage’s West Palm Beach branch** has strong reported customer ratings and offers conventional, FHA, VA, USDA, and jumbo loans.\n- **New American Funding** has a local branch and advertises a range of loan programs, including some first-time-buyer assistance for eligible borrowers.\n\nTreat reviews and lender rankings as a shortlist, not proof that one will offer the best deal. Ask at least three lenders for **Loan Estimates on the same day**, using the same loan amount, down payment, rate-lock period, and points. Compare the **APR, lender fees, cash to close, and estimated closing timeline**—not just the advertised rate. Also verify the lender and loan officer through the NMLS Consumer Access site.\n\nIf you share your approximate purchase price, down payment, credit range, and whether you’re considering FHA, VA, or conventional financing, I can help narrow down what to compare.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

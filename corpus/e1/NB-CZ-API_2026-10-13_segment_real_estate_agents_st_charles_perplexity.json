@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-13_segment_real_estate_agents_st_charles_perplexity",
+ "date_utc": "2026-10-13",
+ "business": "SEGMENT: real estate agents, St. Charles",
+ "niche": "real estate agents",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Charles MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c2d7e146-3b9f-4d37-a122-edbdd652be4c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00452
+   },
+   "input_tokens": 4759,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4208,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 332,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5091
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Susan Brewer",
+  "Jeremy Schneider"
+ ],
+ "engine_stated_criteria": [
+  "seller-side sales in your neighborhood and price range"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/profile/Service1stHomes",
+  "https://www.zillow.com/profile/juliescarpacekw",
+  "https://www.zillow.com/profile/NarrativeRealEstate",
+  "https://www.zillow.com/profile/user493427",
+  "https://www.zillow.com/profile/TravisTraynor",
+  "https://www.homes.com/real-estate-agents/jeremy-schneider/lg1yyqe/",
+  "https://www.homelight.com/st-charles-mo/top-real-estate-agents",
+  "https://www.zillow.com/profile/SARAHBANI",
+  "https://www.realtor.com/realestateagents/56b0b89589a68901006c7b9d",
+  "https://www.realestateagents.com/mo/saint-charles",
+  "https://www.realtor.com/realestateagents/st-charles_mo",
+  "https://www.zillow.com/profile/JeremySchneiderRE",
+  "https://agentpronto.com/missouri/st-charles",
+  "https://www.homes.com/real-estate-agents/nicholas-wagenknecht/pc0ry6v/",
+  "https://www.realtor.com/realestateagents/567ff8797e54f701001ec6ab"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a reliable, objective “best” agent for every home—fit depends on your neighborhood, price range, and what you need from the sale. Based on the available local information, **Susan Brewer** looks like a strong first person to interview: her profile reports extensive St. Charles experience and more than $550 million in sales, with seller reviews mentioning marketing and successful sales. **Jeremy Schneider** is another candidate, with reported recent listing activity in St. Charles and strong reviews for communication and service.\n\nI’d interview both, plus one agent recommended by someone who recently sold nearby. Ask each for:\n- Recent **seller-side sales in your neighborhood and price range**\n- Their suggested list price and the comparable sales behind it\n- A specific marketing and showing plan\n- Their fee, contract terms, and who will handle the sale day to day\n\nCompare their plans and evidence—not just the highest suggested price. Sources: [Susan Brewer’s profile](https://www.zillow.com/profile/Service1stHomes) · [Jeremy Schneider’s profile](https://www.homes.com/real-estate-agents/jeremy-schneider/lg1yyqe/)",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

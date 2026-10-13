@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-13_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-10-13",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c82f2103-6507-4e71-8351-d808c35bc91f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00082,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00419
+   },
+   "input_tokens": 3810,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3261,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 290,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4100
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "City of Miami"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.floridahousing.org/programs/homebuyer-overview-page",
+  "https://www.miami.gov/Housing-Assistance/Home-Ownership/Apply-for-First-Time-Homebuyer-Assistance/First-Time-Homebuyer-Program-Participating-Banks",
+  "https://saferate.com/local/miami/best-mortgage-lenders",
+  "https://www.experience.com/reviews/office/guild-mortgage-miami-107558",
+  "https://saferate.com/miami/best-mortgage-lenders",
+  "https://www.experience.com/reviews/michael-fernandez-192825",
+  "https://www.miamidade.gov/global/housing/homeownership.page",
+  "https://trustanalytica.org/us/fl/miami/best-mortgage-brokers",
+  "https://www.loc8nearme.com/florida/miami/mortgage-lenders/",
+  "https://miamibeachlenders.com/reviews/",
+  "https://www.zillow.com/lender-directory/fl/miami-fl/",
+  "https://reliancefinancial.com/mortgage-lenders-miami/",
+  "https://www.expertise.com/home-improvement/mortgage-brokers-lenders/florida/miami",
+  "https://www.miamidade.gov/housing/library/reports/mdc-phcd-homeownership-program-approved-bank-lenders.pdf",
+  "https://on-mortgage.com/testimonials.php"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” lender for every Miami buyer—the right choice depends on your credit, down payment, loan type, and whether you qualify for assistance. **A good starting point is to compare at least three lenders using written Loan Estimates**, rather than choosing by online ratings alone.\n\nIf you’re a first-time buyer in the **City of Miami**, check the city’s participating-lender list; it currently includes **True Rate Mortgage, Emigrant Mortgage, and Cornerstone First Mortgage**. If you may qualify for statewide assistance, Florida Housing offers fixed-rate purchase loans through participating lenders; its listed requirements include a minimum 640 credit score, approved homebuyer education, and county purchase-price limits.\n\nAsk each lender for the same loan scenario and compare the interest rate, APR, lender fees, points, cash to close, and rate-lock terms. Also confirm they’re licensed in Florida and experienced with your loan type—especially for condos, jumbo loans, or down-payment assistance. The lowest advertised rate isn’t necessarily the lowest-cost offer.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

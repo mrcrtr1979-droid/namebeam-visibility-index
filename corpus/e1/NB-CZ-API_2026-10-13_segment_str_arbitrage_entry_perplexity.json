@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-10-13_segment_str_arbitrage_entry_perplexity",
+ "date_utc": "2026-10-13",
+ "business": "SEGMENT: STR arbitrage entry",
+ "niche": "short-term rental business model",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "How do I start an Airbnb rental arbitrage business and what tools and data should I use?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b632b109-4f0c-4af2-a3d4-41c522e616c8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00297,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00661
+   },
+   "input_tokens": 4553,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4000,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 1188,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5741
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Get the landlord’s written approval before committing",
+  "Underwrite the property conservatively",
+  "Get insurance and tax advice before hosting",
+  "Set up operations before publishing the listing",
+  "Launch, measure, and adjust",
+  "Rules and permissions",
+  "Market research",
+  "Property-level validation",
+  "Financial model",
+  "Pricing and operations",
+  "Accounting and tax",
+  "A good go/no-go rule"
+ ],
+ "engine_stated_criteria": [
+  "Check whether the exact property can legally be used this way"
+ ],
+ "sources_cited": [
+  "https://www.airbnb.com/help/article/3305",
+  "https://www.airbnb.com/resources/hosting-homes/a/learn-about-hosting-regulations-7",
+  "https://www.airdna.co/pricing",
+  "https://www.airbnb.com/help/article/3343",
+  "https://www.airbnb.com/help/article/1376",
+  "https://awning.com/post/airdna-review",
+  "https://www.airbnb.com/help/article/376",
+  "https://www.airbnb.com/help/article/2908",
+  "https://apify.com/memo23/airdna-scraper",
+  "https://finance.yahoo.com/technology/ai/articles/airdna-launches-adapt-ai-native-150000199.html",
+  "https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/airbnb-str-policy-toolkit.pdf",
+  "https://brightdata.com/blog/web-data/best-airbnb-data-providers",
+  "https://www.airbnb.co.uk/help/article/1379",
+  "https://www.lodgify.com/blog/airbnb-rental-arbitrage/",
+  "https://news.airbnb.com/policy-toolkit-short-term-rental-regulations"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "Rental arbitrage means leasing a property long-term, then renting it to guests for shorter stays. It can work, but it is **not passive income**: you take on fixed rent and operating costs while demand, rules, and bookings can change. The safest approach is to prove that a specific property is both permitted and financially viable **before** signing a lease.\n\n## A practical start-to-finish plan\n\n1. **Choose a market and a guest niche.**  \n   Look for a clear source of demand—such as business travel, hospitals, universities, events, or tourism—and decide what kind of guest and stay length you’ll serve. Don’t choose a market based only on high advertised nightly rates.\n\n2. **Check whether the exact property can legally be used this way.**  \n   Confirm rules with the relevant city and county (and state or national authorities where applicable). Check zoning, permits or registration, limits on rental nights or guest numbers, safety requirements, taxes, and whether non-owner-occupied short-term rentals are allowed. Rules can vary by neighborhood and change over time. Use official government sources and contact the relevant office if anything is unclear. Airbnb’s local responsible-hosting pages can be a starting point, but aren’t a substitute for checking the rules directly.  \n   Also check the building’s HOA, condo, co-op, or management rules. A city permit does not override a lease or building restriction.\n\n3. **Get the landlord’s written approval before committing.**  \n   Disclose the intended short-term rental use and get explicit written permission—ideally in a lease addendum that addresses guest stays, subletting, insurance, damage, complaints, access, and who handles permits and taxes. Don’t rely on a verbal “yes” or assume silence in the lease means it’s allowed. Airbnb notes that leases and building rules may restrict hosting, and local laws may require registration or prohibit certain stays.\n\n4. **Underwrite the property conservatively.**  \n   Estimate revenue by month, not just as an annual average. Include:\n   - Rent, utilities, internet, and any building or parking fees\n   - Furnishings, setup, repairs, and replacement reserves\n   - Cleaning, laundry, supplies, and guest support\n   - Platform and payment fees\n   - Insurance, permits, licenses, and taxes\n   - Vacancy, cancellations, seasonality, and slower-than-expected ramp-up\n\n   Calculate your break-even occupancy and test a downside case—for example, lower nightly rates and fewer booked nights than your forecast. If the deal only works with optimistic occupancy, it’s fragile.\n\n5. **Get insurance and tax advice before hosting.**  \n   Ask an insurance professional whether your policy covers short-term rental activity; ordinary renter’s or landlord’s coverage may not be enough. Confirm local lodging or occupancy taxes, business-license requirements, and income-tax treatment with the relevant authorities or a qualified tax professional.\n\n6. **Set up operations before publishing the listing.**  \n   Plan cleaning and inspections, guest messaging, check-in, maintenance, emergency response, noise and complaint handling, and backup coverage. Provide required safety equipment and follow local safety rules. Airbnb says indoor security cameras and other recording devices are not allowed in listings; check its current policies and local privacy rules.\n\n7. **Launch, measure, and adjust.**  \n   Start with accurate photos and a clear listing, then track actual results against your forecast. Adjust pricing, minimum stays, and operations based on bookings, costs, reviews, and local demand—not just competitor asking prices.\n\n## Tools and data to use\n\n| Need | Useful tools or sources | What to examine |\n|---|---|---|\n| **Rules and permissions** | City/county government websites and offices; building management; lease and HOA documents; Airbnb’s local responsible-hosting pages | Whether this exact property and rental model are allowed; permits, caps, taxes, safety rules |\n| **Market research** | AirDNA or another short-term-rental analytics provider; Airbnb search results as a qualitative check | Comparable properties, seasonality, estimated occupancy, average daily rate (ADR), revenue, supply, and demand |\n| **Property-level validation** | A carefully selected set of nearby listings similar in size, location, amenities, and guest capacity | Whether the data’s comparable set actually resembles your proposed unit; rates and availability by season |\n| **Financial model** | Spreadsheet or bookkeeping software | Monthly revenue and costs, break-even occupancy, cash needed upfront, and downside scenarios |\n| **Pricing and operations** | Dynamic-pricing software; a property-management or guest-messaging system if useful | Rate changes, minimum stays, booking workflow, cleaning coordination, and performance tracking |\n| **Accounting and tax** | Bookkeeping software, tax professional, and local tax authority guidance | Income, expenses, lodging-tax obligations, and records to retain |\n\nMarket analytics are estimates, not guarantees. Availability on a listing site does not necessarily mean a night was booked, and advertised prices are not the same as realized revenue. Cross-check provider estimates against comparable listings, local demand drivers, and your own conservative assumptions.\n\n**A good go/no-go rule:** don’t sign until you have written landlord approval, a clear path to required permits, confirmation that building rules allow the use, suitable insurance, and a financial model that still works under a realistic downside case.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

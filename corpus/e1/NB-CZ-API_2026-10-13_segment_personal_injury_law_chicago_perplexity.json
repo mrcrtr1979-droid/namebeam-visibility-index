@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-13_segment_personal_injury_law_chicago_perplexity",
+ "date_utc": "2026-10-13",
+ "business": "SEGMENT: personal injury law, Chicago",
+ "niche": "personal injury attorneys",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best personal injury attorney in Chicago for a car accident claim?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_59f316f9-0155-465a-adc2-92c1a4de2c3d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00069,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00415
+   },
+   "input_tokens": 3320,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2771,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 326,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3646
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Power Rogers",
+  "Corboy & Demetrio",
+  "Salvi, Schostok & Pritchard",
+  "Malman Law"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/illinois/chicago/",
+  "https://attorneys.superlawyers.com/personal-injury-defense/illinois/chicago/",
+  "https://attorneys.superlawyers.com/personal-injury-plaintiff/illinois/chicago/",
+  "https://www.malmanlaw.com/",
+  "https://phillipslawoffices.com/",
+  "https://profiles.superlawyers.com/illinois/chicago/lawyer/david-c-wise/1161ee36-57a1-41bc-b119-3a88349a8772.html",
+  "https://www.morningstar.com/news/pr-newswire/20260707fl96049/daniel-j-mcdevitt-of-mcdevitt-cobb-pc-selected-to-2026-illinois-super-lawyers",
+  "https://lawyers.findlaw.com/illinois/chicago/salvi-schostok--pritchard-pc-MjQwMzI4OV8x/",
+  "https://apnews.com/press-release/ein-presswire-newsmatics/press-release-94679b0556da12d9306ed00dd82ea64b",
+  "https://www.avvo.com/car-accidents-lawyer/il/chicago.html",
+  "https://www.powerrogers.com/",
+  "https://www.salvilaw.com/car-accident-lawyer/",
+  "https://www.corboydemetrio.com/",
+  "https://www.iardc.org/Lawyer/Search?IsRecentSearch=False",
+  "https://www.jsonline.com/press-release/story/145097/paul-a-greenberg-of-briskman-briskman-greenberg-named-to-2026-super-lawyers-list-for-personal-injury/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” attorney for every car accident claim. The right choice depends on the severity of your injuries, the evidence, and whether the case may need to go to trial.\n\nA few Chicago firms with established personal-injury practices you could compare are **Power Rogers**, **Corboy & Demetrio**, **Salvi, Schostok & Pritchard**, and **Malman Law**. These are starting points, not endorsements. Ask each firm who would personally handle your case, how much of their work involves car-accident claims, and what similar cases they’ve taken through trial—not just settled.\n\nBefore hiring anyone, check the attorney’s current status and disciplinary history through the [Illinois Attorney Registration and Disciplinary Commission](https://www.iardc.org/Lawyer/Search). In consultations, compare the fee agreement, case costs, communication expectations, and the attorney’s assessment of your specific claim. Many firms offer free consultations, but confirm the terms before signing.\n\nIf you share whether the crash caused serious injuries, involved an uninsured driver, or has already led to an insurance offer, I can suggest what qualifications to prioritize.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

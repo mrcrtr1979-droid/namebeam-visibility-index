@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-13_segment_real_estate_agents_st_louis_perplexity",
+ "date_utc": "2026-10-13",
+ "business": "SEGMENT: real estate agents, St. Louis",
+ "niche": "real estate agents",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Louis MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_48725373-6314-4d32-9c71-29242b3630e3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00124,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00463
+   },
+   "input_tokens": 5509,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4958,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 300,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5809
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Angela Kittner",
+  "Peter Lu"
+ ],
+ "engine_stated_criteria": [
+  "listing-side sales near your address"
+ ],
+ "sources_cited": [
+  "https://www.homelight.com/saint-louis-mo/top-real-estate-agents",
+  "https://www.homelight.com/st-louis-mo/top-real-estate-agents",
+  "https://www.homes.com/real-estate-agents/angela-kittner/k8wv6jb/",
+  "https://www.homelight.com/st-louis-county-mo/top-real-estate-agents",
+  "https://www.fastexpert.com/top-real-estate-agents/saint-louis-mo/",
+  "https://www.homes.com/real-estate-agents/peter-lu/tprnpb8/",
+  "https://www.homes.com/real-estate-agents/holly-crump/9ebxld7/",
+  "https://www.homes.com/real-estate-agents/kathleen-helbig/6p7qqxr/",
+  "https://www.realtor.com/realestateagents/636d018d260d345d96426201",
+  "https://www.homes.com/real-estate-agents/kim-delapp/92fnbc7/",
+  "https://www.homes.com/real-estate-agents/jordan-schoen/p3g0m6s/",
+  "https://www.homes.com/real-estate-agents/josh-voyles/b9hfhc8/",
+  "https://www.homes.com/real-estate-agents/lucy-feicht/4834r6l/",
+  "https://www.homes.com/real-estate-agents/christy-thompson/zv8g9gx/",
+  "https://www.zillow.com/profile/DielmannSothebysIntl"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for every St. Louis home—the right fit depends on your neighborhood, price range, and property type. Based on the available results, **Angela Kittner** is one candidate worth interviewing: Homes.com reports 107 seller-side transactions in the past year. **Peter Lu** is another, with 80 reported seller-side transactions in the past year. Those are platform-reported figures, not an independent ranking, and high volume alone doesn’t guarantee the best outcome for your home.\n\nBefore choosing, interview two or three agents and ask each for:\n- Recent **listing-side sales near your address** and in your price range\n- Their suggested list price, supported by comparable sales\n- Their marketing plan, communication approach, and total fees\n- Examples of how they handled offers, inspection issues, and price changes\n\nIf you share your neighborhood or ZIP code, approximate home value, and any special features, I can help narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

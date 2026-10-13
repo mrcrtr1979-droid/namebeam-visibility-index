@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-13_segment_real_estate_agents_west_palm_beach_perplexity",
+ "date_utc": "2026-10-13",
+ "business": "SEGMENT: real estate agents, West Palm Beach",
+ "niche": "real estate agents",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in West Palm Beach FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_fa8852bf-810d-49ce-bf81-6aad079b15f0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00084,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00453
+   },
+   "input_tokens": 4732,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4181,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 334,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5066
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jeff Tricoli’s team"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.realtor.com/realestateagents/West-Palm-Beach_FL",
+  "https://sell.realtor.com/re/top-real-estate-agents/fl/west-palm-beach",
+  "https://www.homelight.com/west-palm-beach-fl/top-real-estate-agents",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/west-palm-beach-fl/",
+  "https://www.goflydragon.com/agents/top-real-estate-agents-west-palm-beach-fl/",
+  "https://www.homes.com/real-estate-agents/maximilian-stalinski/e7d6mmq/",
+  "https://www.realestateagents.com/fl/west-palm-beach",
+  "https://www.realtor.com/realestateagents/Frances-Frisbie_West-Palm-Beach_FL_1868539",
+  "https://www.ratemyagent.com/real-estate-profile/sales/florida/west-palm-beach-fl/agents",
+  "https://www.realtor.com/realestateagents/56ce0266bb954c01006ddcd2",
+  "https://www.effectiveagents.com/fl/west-palm-beach",
+  "https://www.zillow.com/profile/TolliverPrinceRealty",
+  "https://www.homes.com/real-estate-agents/west-palm-beach-fl/",
+  "https://listwithclever.com/top-real-estate-agents/florida/west-palm-beach/",
+  "https://www.discoversouthflorida.com/south-florida-realtor-rankings/west-palm-beach/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for every West Palm Beach home—the right choice depends on your neighborhood, price range, and property type. Based on the available directory results, **Jeff Tricoli’s team** is a reasonable first interview: Realtor.com lists 34 sales in the past year and 22 years’ experience, while other directories show a large volume of local transactions and many reviews. Those figures are team-level and directory rankings can use different methods, so treat them as a starting point, not a guarantee.\n\nI’d interview **two or three agents**, including one who has recently sold homes very similar to yours nearby. Ask each for:\n- Recent **seller-side** sales in your neighborhood and price range\n- Their suggested list price, supported by comparable sales\n- Typical time to sell and sale-to-list-price results\n- Their marketing plan and who will handle showings and negotiations\n- Commission, contract length, and cancellation terms\n\nCompare their plans and local track records—not just their review count. If you share your neighborhood or ZIP code, approximate home value, and property type, I can help narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

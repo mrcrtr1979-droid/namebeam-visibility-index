@@ -1,0 +1,38 @@
+{
+ "check_id": "NB-CZ-SERP_2026-10-13_segment_hvac_atlanta",
+ "date_utc": "2026-10-13",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "google_serp",
+ "run_channel": "serp",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "serp_diagnostics": {
+  "payload": "raw_html",
+  "parsed_attempt": "short non-json body, try 3: '{\"status_code\":502,\"headers\":{\"x-brd-error\":\"Navigation timeout @ https://www.google.com/search?q=Who+is+the+best+HVAC+c'",
+  "html_bytes": 624087,
+  "href_total": 90,
+  "redirect_hrefs": 0,
+  "nongoogle_hrefs": 0,
+  "consent_phrase_present": false,
+  "looks_like_consent_wall": false,
+  "looks_like_captcha": false,
+  "extraction_ok": true,
+  "zero_reason": null
+ },
+ "business_mentioned": false,
+ "organic_top_results": [
+  "https://book.servicetitan.com/eegaa01q1ysetuu4t46uy0qh?rwg_token=AE37R_iswDmmvaoNbs7s8oY3weHT1Jlv-Z90REOF6rfjtNKR10gWUGYiuuiK2JLRI3YkPYUPd6_-Ja-HSAhET52rOW0WiDwjgQ%3D%3D",
+  "https://go.thryv.com/site/LOC9005F60B/online-scheduling?show_rwg_address=true&o=rwg_redirect&rwg_token=AE37R_jcNMoTky_4wGGYdB4siuY7stsZShETONWvjJyyDkDlED1JvaKJ4pTGC0-SwXtf6VlbGsQ1OxApD7ziTXJvt3msLQI7tw%3D%3D"
+ ],
+ "ai_overview_detected": true,
+ "ai_overview_present": null,
+ "ai_overview_text": "",
+ "ai_overview_references": [],
+ "session_note": "Organic results extracted mechanically from the returned results page. Bright Data does not document an AI Overview field, so ai_overview_detected is BEST EFFORT and may be null. Do not publish it as a measurement."
+}

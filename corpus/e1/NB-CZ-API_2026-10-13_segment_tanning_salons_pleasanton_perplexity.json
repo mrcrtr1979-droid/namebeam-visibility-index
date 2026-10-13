@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-13_segment_tanning_salons_pleasanton_perplexity",
+ "date_utc": "2026-10-13",
+ "business": "SEGMENT: tanning salons, Pleasanton",
+ "niche": "tanning salons",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Pleasanton CA?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_fb8e88a9-afe0-4570-9d39-26af09e8d384",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00062,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00044,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0037
+   },
+   "input_tokens": 3014,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2469,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 177,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3191
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "East Bay Tanning"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bestprosintown.com/ca/pleasanton/tanning/",
+  "https://local.yahoo.com/info-168943493-the-golden-girl-pleasanton/",
+  "https://www.bestprosintown.com/ca/pleasanton/ibeauty-and-tan-salon-/",
+  "https://www.yelp.com/biz/east-bay-tanning-pleasanton",
+  "https://www.yelp.com/biz/bella-bronze-mobile-airbrush-tanning-pleasanton-2",
+  "https://freshchalk.com/b/pleasanton-ca/tanning",
+  "https://www.groupon.com/biz/pleasanton-ca/s-h-e-o-salon",
+  "https://www.mapquest.com/us/california/secretly-sunless-453974070",
+  "https://www.vagaro.com/professionals/tanning/pleasanton--ca",
+  "https://www.mapquest.com/us/california/glo-276275750",
+  "https://www.bbb.org/us/ca/fairview/category/tanning-salons",
+  "https://www.linkedin.com/company/nor-cal-tans",
+  "https://reviews.birdeye.com/waxing-the-city-178514325347908",
+  "https://www.vagaro.com/listings/tanning/west-sacramento--ca",
+  "https://www.vagaro.com/professionals/tanning/westminster--ca"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a **spray tan**, **iBeauty Tan Salon / S.H.E.O.** looks like a strong Pleasanton option based on the available local reviews. Customers praise the natural-looking results, helpful aftercare instructions, and customized service. It’s at **4625 First St., Suite 150**.\n\nAnother well-reviewed choice is **East Bay Tanning**, where reviewers highlight even color and a comfortable, professional experience; it may also offer mobile appointments.\n\nReviews can vary, so I’d check recent feedback and confirm current services and availability before booking.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
