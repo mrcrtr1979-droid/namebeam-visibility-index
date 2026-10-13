@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t access the web or that 2026 record from here, so I can’t directly look up Namebeam’s AI Visibility Record or count Perplexity’s cited domains for those dates. If you can either (A) paste the record or its Perplexity citation data here, or (B) give me the URL to the published record, I will compute the count and say where it’s published.\n\nIf you want to do it yourself, here’s a short method and a ready-to-run Python snippet that will count unique web domains cited by Perplexity between 2026-09-01 and 2026-09-27. It assumes you can export the record to a CSV with at least these columns: date, tool (e.g., \"Perplexity\"), and citation_url (one citation per row; if rows contain multiple URLs, see the note below).\n\nPython (requires pandas):\n```\nimport pandas as pd\nfrom urllib.parse import urlparse\n\n# load CSV (replace with your filename)\ndf = pd.read_csv(\"ai_visibility_record.csv\", parse_dates=[\"date\"])\n\n# filter date range and tool name (adjust column names if needed)\nstart = \"2026-09-01\"\nend   = \"2026-09-27\"\nmask = (df[\"date\"] >= start) & (df[\"date\"] <= end) & (df[\"tool\"].str.contains(\"Perplexity\", case=False, na=False))\ndfp = df[mask]\n\n# if each row has a single citation URL:\ndomains = dfp[\"citation_url\"].dropna().map(lambda u: urlparse(u).netloc.lower())\nunique_domains = set(domains)\nprint(\"Unique domains count:\", len(unique_domains))\nprint(\"Domains:\", sorted(unique_domains))\n\n# If a cell contains multiple URLs separated by spaces or semicolons, split them:\n# import re\n# urls = dfp[\"citation_url\"].dropna().apply(lambda s: re.split(r\"[;,\\\\s]+\", s))\n# all_urls = [u for sub in urls for u in sub if u]\n# domains = [urlparse(u).netloc.lower() for u in all_urls]\n# print(\"Unique domains count:\", len(set(domains)))\n```\n\nWhere it is published\n- If you want me to report exactly “where it is published” I’ll need the record’s URL or the publication note from the record. If you paste the record header or URL I’ll state the published location and then compute the domain count.\n\nTell me which option you prefer (paste data, give URL, or let me guide you further) and I’ll proceed.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-13T19:30:28Z",
+ "ok": true,
+ "probe_id": "A",
+ "prompt_sha256": "940f0824e14031113e8b576a7139c4427b38e8ac1ad5483a1335b3f802676221",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web domains did Perplexity cite in its answers to the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "treatment_anchored",
+ "run_id": "38455348251",
+ "search_mode": "no search tool (E1 setting)"
+}
