@@ -1,0 +1,49 @@
+name: label-names
+# Labels candidate names BUSINESS / NOT_BUSINESS / UNSURE with Claude Haiku 4.5 via the Message Batches API.
+# Appends to corpus/labels/name_labels.csv and opens a PR from a branch. Never pushes to main.
+on:
+  workflow_dispatch:
+    inputs:
+      max_names:
+        description: 'Cap on names sent to the API (0 = all unlabeled)'
+        required: false
+        default: '200'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: label-names
+  cancel-in-progress: false
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_CREDIT }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Dry run (no API call)
+        run: python3 -I scripts/label_names.py --dry-run --out "$RUNNER_TEMP"
+      - name: Label names
+        run: python3 -I scripts/label_names.py --run --max-names "${{ github.event.inputs.max_names || '200' }}"
+      - name: Open PR with new label rows
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- corpus/labels/name_labels.csv && [ -z "$(git ls-files --others --exclude-standard corpus/labels)" ]; then
+            echo "no new labels"; exit 0
+          fi
+          BR="labels/names-$(date -u +%Y%m%d-%H%M)"
+          git config user.name "label-names bot"
+          git config user.email "label-names@users.noreply.github.com"
+          git checkout -b "$BR"
+          git add corpus/labels/name_labels.csv
+          git commit -m "Append name labels (Haiku 4.5 batch) $(date -u +%F)"
+          git push origin "$BR"
+          gh pr create --base main --head "$BR" --title "Name labels $(date -u +%F)" \
+            --body "Append-only rows for corpus/labels/name_labels.csv. No existing corpus rows were edited. Model claude-haiku-4-5-20251001 via Message Batches API."
