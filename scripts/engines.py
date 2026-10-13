@@ -115,6 +115,19 @@ def _perplexity_meta(body):
         return {}
 
 
+def _served_meta(body, model_key, id_key, usage_key):
+    """Audit fields from a parsed OpenAI, Anthropic or Gemini body: the model
+    the provider says it served, the response id and usage. Never raises,
+    never holds the key, the headers or the answer text. Added 2026-10-13
+    (forward only; rows written before the merge date carry no engine_meta
+    for these three engines)."""
+    try:
+        return {"served_model": body.get(model_key), "response_id": body.get(id_key),
+                "usage": body.get(usage_key)}
+    except Exception:
+        return {}
+
+
 def call_perplexity(prompt_text):
     LAST_CALL_META["perplexity"] = {}
     key = os.environ.get("PERPLEXITY_API_KEY", "").strip()
@@ -194,6 +207,7 @@ def _gemini_quota_id(body_text):
 
 
 def call_gemini(prompt_text, _post=None, _sleep=None):
+    LAST_CALL_META["gemini"] = {}
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not key:
         return False, "", [], redact("GEMINI_API_KEY not set")
@@ -216,6 +230,7 @@ def call_gemini(prompt_text, _post=None, _sleep=None):
                 text = body["candidates"][0]["content"]["parts"][0]["text"]
             except (ValueError, KeyError, IndexError, TypeError):
                 return False, "", [], redact("gemini response shape unexpected")
+            LAST_CALL_META["gemini"] = _served_meta(body, "modelVersion", "responseId", "usageMetadata")
             # Gemini's plain generateContent returns no citation list. We do NOT
             # invent one. Sources stay empty and that is an honest empty, not a zero.
             return True, text, [], ""
@@ -710,6 +725,7 @@ OPENAI_URL = "https://api.openai.com/v1/chat/completions"
 
 
 def call_openai(prompt_text):
+    LAST_CALL_META["openai"] = {}
     key = os.environ.get("OPENAI_API_KEY", "").strip()
     if not key:
         return False, "", [], redact("OPENAI_API_KEY not set")
@@ -734,9 +750,11 @@ def call_openai(prompt_text):
         return False, "", [], redact(
             "%sopenai HTTP %s: %s" % (prefix, r.status_code, r.text[:300]))
     try:
-        text = r.json()["choices"][0]["message"]["content"]
+        body = r.json()
+        text = body["choices"][0]["message"]["content"]
     except (ValueError, KeyError, IndexError, TypeError):
         return False, "", [], redact("openai response shape unexpected")
+    LAST_CALL_META["openai"] = _served_meta(body, "model", "id", "usage")
     return True, text, [], ""
 
 
@@ -751,6 +769,7 @@ ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 
 
 def call_anthropic(prompt_text):
+    LAST_CALL_META["anthropic"] = {}
     key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
     if not key:
         return False, "", [], redact("ANTHROPIC_API_KEY not set")
@@ -772,9 +791,11 @@ def call_anthropic(prompt_text):
         return False, "", [], redact(
             "%santhropic HTTP %s: %s" % (prefix, r.status_code, r.text[:300]))
     try:
-        text = r.json()["content"][0]["text"]
+        body = r.json()
+        text = body["content"][0]["text"]
     except (ValueError, KeyError, IndexError, TypeError):
         return False, "", [], redact("anthropic response shape unexpected")
+    LAST_CALL_META["anthropic"] = _served_meta(body, "model", "id", "usage")
     return True, text, [], ""
 
 

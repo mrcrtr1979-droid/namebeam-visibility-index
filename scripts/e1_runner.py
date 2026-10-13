@@ -318,10 +318,11 @@ def run_engine(business_row, engine, fn, date_utc):
     row = base_row(business_row, date_utc, check_id, engine)
     row["run"] = run_index
     ok, text, sources, err = fn(business_row["prompt_1"])
-    if engine == "perplexity":
-        # Forward-only audit fields: which model Perplexity served, usage,
-        # search-result count. Set on both OK and failed rows.
-        row["engine_meta"] = dict(LAST_CALL_META.get("perplexity") or {})
+    # Forward-only audit fields: which model the provider says it served, the
+    # response id and usage (Perplexity since 2026-09-28, also its search-result
+    # count; OpenAI, Anthropic and Gemini from the 2026-10-13 change). Set on
+    # both OK and failed rows; empty when the body never parsed.
+    row["engine_meta"] = dict(LAST_CALL_META.get(engine) or {})
     if not ok:
         # A refusal for QUOTA is not the engine failing to answer. It is us
         # not being allowed to ask. Counting it as FAILED would publish a
