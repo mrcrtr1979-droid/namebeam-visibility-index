@@ -46,4 +46,5 @@ jobs:
           git commit -m "Append name labels (Haiku 4.5 batch) $(date -u +%F)"
           git push origin "$BR"
           gh pr create --base main --head "$BR" --title "Name labels $(date -u +%F)" \
-            --body "Append-only rows for corpus/labels/name_labels.csv. No existing corpus rows were edited. Model claude-haiku-4-5-20251001 via Message Batches API."
+            --body "Append-only rows for corpus/labels/name_labels.csv. No existing corpus rows were edited. Model claude-haiku-4-5-20251001 via Message Batches API." \
+            || echo "PR not opened (repo setting blocks Actions from creating PRs). Branch is pushed: https://github.com/$GITHUB_REPOSITORY/compare/main...$BR"

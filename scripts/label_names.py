@@ -50,6 +50,9 @@ PRE_RE = re.compile(
     r'attorney general|department of|board of|location and hours|office hours)\b')
 SUFFIX = {'law', 'firm', 'offices', 'office', 'llp', 'llc', 'pllc', 'pc', 'p', 'c', 'pa', 'inc', 'co', 'company'}
 FUNC = {'for', 'by', 'your', 'our', 'in', 'on', 'with', 'to', 'of', 'at', 'from', 'or', 'a', 'an', 'is', 'near', 'how', 'what'}
+# 1013A fix: business names often start with A, An, At, From, On (A-1 Roofing, At The Beach Tanning, From the Heart
+# Senior Services). Those words no longer reject a name by themselves; such names go to the model instead.
+LEAD = FUNC - {'a', 'an', 'at', 'from', 'on'}
 
 
 def clean(s):
@@ -83,7 +86,10 @@ def prefilter(name):
     if PRE_RE.search(s):
         return 'generic phrase, association or directory'
     w = s.split()
-    if len(w) > 1 and (w[0] in FUNC or w[-1] in FUNC):
+    # trailing word read from the cleaned original, so 'A/C' or 'A-1' is not split into 'a c' / 'a 1'
+    raw = [t.strip('.,;:()').casefold() for t in clean(name).split()]
+    raw = [t for t in raw if t]
+    if len(w) > 1 and len(raw) > 1 and (w[0] in LEAD or raw[-1] in FUNC):
         return 'sentence fragment'
     if len(w) > 7:
         return 'too long to be a name'
@@ -288,6 +294,11 @@ def selftest():
     ok(prefilter('Salvi, Schostok & Pritchard') is None, '"Salvi, Schostok & Pritchard" kept as candidate')
     ok(prefilter('Jiffy Lube') is None and prefilter('Reliable Heating & Air') is None, 'real businesses kept')
     ok(prefilter('Chicago Bar Association') is not None, 'association caught')
+    ok(all(prefilter(n) is None for n in ['A-1 Property Services', 'A-1 Roofing & Construction', 'A/C & Plumbing Doctors',
+        'At The Beach Tanning', 'From the Heart Senior Services', 'Bob Hamilton Plumbing, Heating & A/C']),
+       'business names starting with A/At/From or ending in A/C are kept (1013A regression)')
+    ok(prefilter('For UV Tanning') and prefilter('How it Works') and prefilter('Best For'),
+       'real sentence fragments still caught')
     ok(text_names('Try **Salvi, Schostok & Pritchard P.C.** or **Why it matters:** and **best price**') ==
        ['Salvi, Schostok & Pritchard P.C.'], 'M602 bolded name captured, headings and lowercase phrases dropped')
     ok(parse_labels('x [{"i":1,"label":"business","reason":"law firm"},{"i":9,"label":"BUSINESS"}]', 2) ==
