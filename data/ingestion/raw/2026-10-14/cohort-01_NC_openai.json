@@ -1,0 +1,17 @@
+{
+ "answer_text": "I don’t have live web access, so I can’t retrieve Namebeam’s AI Visibility Record or look up that specific number right now.\n\nI can either\n- compute it for you if you paste the record (or a link to it), or\n- tell you exactly how to compute it yourself from the file.\n\nHow to compute it (two common formats)\n\n1) If the record is a CSV with one row per day and columns rank_1_url … rank_10_url:\n- Python / pandas:\n  ```\n  import pandas as pd\n  df = pd.read_csv('ai_visibility_record.csv', parse_dates=['date'])\n  mask = (df['date'] >= '2026-09-01') & (df['date'] <= '2026-09-27')\n  subset = df.loc[mask]\n  urls = pd.unique(subset[[f'rank_{i}_url' for i in range(1,11)]].values.ravel())\n  urls = [u for u in urls if pd.notna(u)]\n  print(len(urls))\n  ```\n\n2) If the record is a CSV with one row per result (columns: date, rank, url):\n  ```\n  df = pd.read_csv('ai_visibility_record.csv', parse_dates=['date'])\n  mask = (df['date'] >= '2026-09-01') & (df['date'] <= '2026-09-27') & (df['rank'] <= 10)\n  unique_urls = df.loc[mask, 'url'].dropna().unique()\n  print(len(unique_urls))\n  ```\n\nIf you paste the record (or provide the URL), I’ll extract the exact number and tell you where the record is published.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-14T17:34:20Z",
+ "ok": true,
+ "probe_id": "NC",
+ "prompt_sha256": "efbb2eccf1f282e2dfdb6e4a46f44888ad548f405a891de2b76dea5850430d16",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web pages did Google's top 10 results list for the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "negative_control",
+ "run_id": "38607749631",
+ "search_mode": "no search tool (E1 setting)"
+}

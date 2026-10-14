@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t fetch or view live web content from 2026, so I can’t look up Namebeam’s AI Visibility Record myself to give the exact number or the publication location. If you can paste the record URL or the data here, I’ll extract the number and cite the source.\n\nIf you want to do it yourself, here are quick ways to get the count of distinct web domains Perplexity cited (assumes the record contains the answers or a list of source URLs for each daily question):\n\n1) Python (CSV or JSON with a column/field of source URLs)\n- CSV example (column name \"sources\" containing one or more URLs per cell, comma- or pipe-separated):\n```\nimport csv\nfrom urllib.parse import urlparse\n\ndomains = set()\nwith open('ai_visibility_record.csv', newline='') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        urls = row['sources'].split(',')\n        for u in urls:\n            u=u.strip()\n            if not u: continue\n            p=urlparse(u if u.startswith('http') else 'http://'+u)\n            domains.add(p.netloc.lower())\n\nprint(len(domains))\n```\n- JSON example (list of records, each with \"sources\" list):\n```\nimport json\nfrom urllib.parse import urlparse\n\nwith open('record.json') as f:\n    data = json.load(f)\n\ndomains = {urlparse(u).netloc.lower() for rec in data for u in rec.get('sources', []) if u}\nprint(len(domains))\n```\n\n2) Command-line (if you have a raw text file with one URL per line)\n```\nsed 's|https\\?://||' urls.txt | sed 's|/.*$||' | sort -u | wc -l\n```\n\n3) Google Sheets\n- Put all URLs in column A (A2:A). In another cell:\n```\n=COUNTA(UNIQUE(ARRAYFORMULA(IF(A2:A=\"\",\"\",REGEXEXTRACT(A2:A,\"https?://([^/]+)\"))))))\n```\n\nIf you paste the Namebeam record URL (or the relevant excerpt) here I will fetch/parse it and return:\n- the exact number of distinct web domains Perplexity cited for 2026-09-01 through 2026-09-27, and\n- the precise location where that record is published (URL or site name).",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-14T17:34:20Z",
+ "ok": true,
+ "probe_id": "A",
+ "prompt_sha256": "940f0824e14031113e8b576a7139c4427b38e8ac1ad5483a1335b3f802676221",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web domains did Perplexity cite in its answers to the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "treatment_anchored",
+ "run_id": "38607749631",
+ "search_mode": "no search tool (E1 setting)"
+}
