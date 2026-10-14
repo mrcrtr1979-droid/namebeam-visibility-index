@@ -740,6 +740,14 @@ def build(through, out, method_src, status):
     rep = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(rep)
     rep.write_expected(pack, rep.reproduce(pack))
+    # claims registry (2026-10-14): every public number of the edition with its receipt, pinned by the manifest.
+    # Business watch lines (NAME|MARKET|NICHE|RULE[|START|END]) come from scripts/claims_watch.txt when it exists.
+    import claims_registry as _cr
+    watch_path = os.path.join(HERE, 'claims_watch.txt')
+    watch = [l.strip() for l in io.open(watch_path, encoding='utf-8')] if os.path.exists(watch_path) else []
+    watch = [l for l in watch if l and not l.startswith('#')]
+    reg = _cr.generate(pack, pack, corpus, watch)
+    print('claims registry: %d claims (CLAIMS.json, CLAIMS.md, claims.jsonld)' % len(reg['claims']))
     n = write_manifest(pack)
     print('pack %s: window %s..%s, %d run days, %d answer rows, %d source rows, %d siri rows, %d files in the manifest'
           % (pack, W0, last, len(days), len(rows), n_src, n_siri, n))
