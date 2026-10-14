@@ -1,34 +1,98 @@
 {
- "answers_rows": 10152,
+ "answers_rows": 12180,
+ "counts": {
+  "api_engines": [
+   "anthropic",
+   "gemini",
+   "openai",
+   "perplexity"
+  ],
+  "market_labels": 27,
+  "named_business_questions": 18,
+  "nationwide_market_labels": 2,
+  "niche_labels": 37,
+  "questions": 73,
+  "run_days": 42,
+  "segment_questions": 55,
+  "us_local_markets": 25,
+  "window": [
+   "2026-09-01",
+   "2026-10-13"
+  ]
+ },
+ "counts_sentence": "73 questions, each asked in the same words on every run day it was in the roster (55 market or category questions and 18 questions asked to see whether one named business comes up); 25 US local markets plus nationwide questions (27 market labels as written in the roster); 37 niche labels as written in the roster; API engines asked: anthropic, gemini, openai, perplexity, plus Google results; 42 run days from 2026-09-01 to 2026-10-13.",
  "customer_zero_rows": {
-  "customer_zero_daily": 184,
-  "customer_zero_hits": 21,
-  "customer_zero_rolling": 368
+  "customer_zero_daily": 220,
+  "customer_zero_hits": 26,
+  "customer_zero_rolling": 440,
+  "segment_pages_daily": 168,
+  "segment_pages_rolling": 280
  },
  "edition": 1,
  "files": {
-  "answers": "data/answers_2026-09-01_to_2026-10-07.csv",
+  "answers": "data/answers_2026-09-01_to_2026-10-13.csv",
   "metrics": "metrics/metrics_v2.csv",
+  "prompts": "data/prompts.csv",
   "siri": "data/siri_panel.csv",
-  "sources": "data/sources_2026-09-01_to_2026-10-07.csv"
+  "sources": "data/sources_2026-09-01_to_2026-10-13.csv"
+ },
+ "heading_filter": {
+  "by_rule": {
+   "a": 4898,
+   "b": 1875,
+   "c": 161
+  },
+  "filter": "heading filter v1 (2026-10-09)",
+  "heading_terms": 99,
+  "keep_terms": [
+   "Pro Lawn & Irrigation",
+   "Pro Lawn"
+  ],
+  "names_removed": 6934,
+  "rows_touched": 3297,
+  "watched_terms_rows": {
+   "Break-Even Occupancy": 0,
+   "Certifications": 8,
+   "Federal Tax Credits": 0,
+   "Guaranteed Rent": 0,
+   "Known For": 20,
+   "Overview": 55
+  }
  },
  "metrics_panel": {
-  "cells_left_out": 0,
+  "cells_left_out": 26,
   "cutoff": "2026-09-27",
-  "file": null,
-  "rows_left_out": 0
+  "file": "metrics/panel_answers_2026-09-01_to_2026-10-13.csv",
+  "rows_left_out": 300
  },
- "requested_through": "2026-10-07",
+ "prompts_rows": 73,
+ "requested_through": "2026-10-13",
+ "reruns_in_window": 0,
  "rows_by_kind": {
-  "AGREE": 1692,
-  "API": 6768,
-  "SERP": 1692
+  "AGREE": 2010,
+  "API": 8160,
+  "SERP": 2010
  },
- "run_days": 36,
+ "run_days": 42,
+ "run_status_counts": {
+  "AGREE||": 2010,
+  "API|anthropic|OK": 2010,
+  "API|gemini|FAILED": 950,
+  "API|gemini|OK": 342,
+  "API|gemini|QUOTA_BLOCKED": 718,
+  "API|openai|FAILED": 6,
+  "API|openai|OK": 2004,
+  "API|perplexity|FAILED": 153,
+  "API|perplexity|OK": 1974,
+  "API|perplexity|QUOTA_BLOCKED": 3,
+  "SERP|google_serp|EXTRACTION_FAILED": 888,
+  "SERP|google_serp|FAILED": 4,
+  "SERP|google_serp|OK": 1118
+ },
  "siri_rows": 28,
- "sources_days": 36,
- "sources_rows": 35205,
- "status": "STAGED",
+ "sources_days": 42,
+ "sources_rows": 45637,
+ "status": "FINAL",
  "vendor_patches": [
   {
    "file": "status/staged/0929C_ACTOR/gen_citation_index.py",
@@ -38,6 +102,6 @@
  ],
  "window": [
   "2026-09-01",
-  "2026-10-07"
+  "2026-10-13"
  ]
 }

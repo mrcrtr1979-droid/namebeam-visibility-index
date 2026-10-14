@@ -16,11 +16,15 @@ configs:
   default: true
   data_files:
   - split: train
-    path: edition-1/data/answers_2026-09-01_to_2026-10-07.csv
+    path: edition-1/data/answers_2026-09-01_to_2026-10-13.csv
 - config_name: sources
   data_files:
   - split: train
-    path: edition-1/data/sources_2026-09-01_to_2026-10-07.csv
+    path: edition-1/data/sources_2026-09-01_to_2026-10-13.csv
+- config_name: prompts
+  data_files:
+  - split: train
+    path: edition-1/data/prompts.csv
 - config_name: siri
   data_files:
   - split: train
@@ -35,22 +39,25 @@ configs:
 
 A dated, public record of which businesses AI engines name when people ask for a recommendation. Each row in the answers table is one question on one date to one engine. Every claim owes the future a receipt.
 
-Status: staged. This copy holds data through 2026-10-07. The Edition 1 release adds data through 2026-10-13.
+Edition 1 is final. Data through 2026-10-13.
+
+Counts: 73 questions, each asked in the same words on every run day it was in the roster (55 market or category questions and 18 questions asked to see whether one named business comes up); 25 US local markets plus nationwide questions (27 market labels as written in the roster); 37 niche labels as written in the roster; API engines asked: anthropic, gemini, openai, perplexity, plus Google results; 42 run days from 2026-09-01 to 2026-10-13.
 
 The record is kept by [Namebeam](https://namebeam.ai/), a Carter Enterprise LLC company.
 
 ## What is in this repository
 
-Everything is under `edition-1/`. Edition 1 covers 2026-09-01 to 2026-10-07 (UTC dates): 36 run days, 10,152 answer rows.
+Everything is under `edition-1/`. Edition 1 covers 2026-09-01 to 2026-10-13 (UTC dates): 42 run days, 12,180 answer rows.
 
 | config | file | what it is |
 |---|---|---|
-| answers | `edition-1/data/answers_2026-09-01_to_2026-10-07.csv` | One row per raw answer file: date, kind, the business or segment asked about, niche, market, engine, the names the engine returned, the SHA-256 of the raw file. |
-| sources | `edition-1/data/sources_2026-09-01_to_2026-10-07.csv` | One row per URL an engine returned as a source (Perplexity sources and Google results). |
+| answers | `edition-1/data/answers_2026-09-01_to_2026-10-13.csv` | One row per raw answer file: date, kind, the business or segment asked about, niche, market, engine, the names the engine returned, the SHA-256 of the raw file. |
+| sources | `edition-1/data/sources_2026-09-01_to_2026-10-13.csv` | One row per URL an engine returned as a source (Perplexity sources and Google results). |
+| prompts | `edition-1/data/prompts.csv` | Every question asked, word for word, with its id, the date it entered the run and the engines asked. |
 | siri | `edition-1/data/siri_panel.csv` | Questions asked of Siri by hand on an iPhone, typed and spoken: what Siri said, businesses named, sources shown. |
 | metrics | `edition-1/metrics/metrics_v2.csv` | Every metric by window and engine with its numerator, denominator and method id. |
 
-The method note is `edition-1/README.md`. The code that computes the metrics is in `edition-1/method/`. `edition-1/MANIFEST.sha256` lists the hash of every file, and `edition-1/verify.py` checks them.
+The method note is `edition-1/README.md`. The license is CC BY 4.0; the full text is `edition-1/LICENSE`. The code that computes the metrics is in `edition-1/method/`. `edition-1/MANIFEST.sha256` lists the hash of every file, and `edition-1/verify.py` checks them.
 
 ## How the data is collected
 
@@ -72,9 +79,12 @@ Perplexity runs with web search on (Sonar chat completions to 2026-09-27, the Ag
 | engine | string | perplexity, openai, anthropic, gemini, google_serp or agree. |
 | businesses_named_count | integer | Number of names extracted. |
 | businesses_named | string | The extracted names, separated by semicolons. Raw extraction: some entries are phrases or places, not businesses. |
-| first_named | string | The first extracted name. |
+| first_named | string | The name at the top of the extracted list. |
 | source_file | string | The raw file the row was built from. |
 | sha256 | string | SHA-256 of that raw file. |
+| rerun | integer | 0, or N when the raw file is a same-day rerun saved with the suffix _rN. |
+| headings_removed_count | integer | API and AGREE rows: how many extracted entries the heading filter (v1, 2026-10-09) removed. Blank on SERP rows. |
+| businesses_named_no_headings | string | API and AGREE rows: the extracted names with section headings removed ("Overview", "Research methods" and the like). The raw businesses_named column is unchanged. Blank on SERP rows. |
 
 ## Known limits
 
