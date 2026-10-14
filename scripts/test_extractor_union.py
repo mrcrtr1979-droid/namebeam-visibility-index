@@ -19,7 +19,7 @@ FIX = os.path.join(HERE, "..", "tests", "fixtures", "extractor")
 
 
 def load(name):
-    d = json.load(open(os.path.join(FIX, name)))
+    d = json.load(open(os.path.join(FIX, name), encoding="utf-8"))
     return {"business": d["business"], "variants_business_name_forms": []}, d["answer_verbatim"]
 
 
@@ -59,7 +59,7 @@ u = e1_runner.extract_competitors_union(p, t, [])
 check("plain-text junk (Yelp, Airbnb) kept out of plain names", "Yelp" not in u and "Airbnb" not in u)
 check("bold names kept first", u[:2] == ["Alpha Realty", "Beta Homes"])
 
-d = json.load(open(os.path.join(FIX, "NB-CZ-API_2026-10-01_segment_personal_injury_law_chicago_openai.json")))
+d = json.load(open(os.path.join(FIX, "NB-CZ-API_2026-10-01_segment_personal_injury_law_chicago_openai.json"), encoding="utf-8"))
 row = {"business": d["business"], "variants_business_name_forms": []}
 corpus = os.path.join(HERE, "..", "corpus", "e1")
 gaz = e1_runner.build_gazetteer(d["market"], d["niche"], corpus, "2026-10-01")
