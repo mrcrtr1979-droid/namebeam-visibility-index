@@ -57,6 +57,14 @@ def main():
         good = sha(out) == want.get(rel)
         ok = ok and good
         print(('MATCH    ' if good else 'MISMATCH ') + 'rebuild of ' + rel + ' from corpus/e1 (%d rows)' % len(rows))
+        if 'prompts' in pack['files']:
+            prel = pack['files']['prompts']
+            prows = mod.prompts_rows(os.path.join(repo, 'corpus', 'e1'), pack['window'][0], pack['window'][1])
+            out2 = os.path.join(tmp, 'prompts.csv')
+            mod.write_rows(out2, prows, mod.PROMPT_FIELDS)
+            good = sha(out2) == want.get(prel)
+            ok = ok and good
+            print(('MATCH    ' if good else 'MISMATCH ') + 'rebuild of ' + prel + ' from corpus/e1 (%d questions)' % len(prows))
     if '--metrics' in a:
         tmp = tempfile.mkdtemp()
         v2 = os.path.join(HERE, 'method', 'Brain_Kit', 'status', 'staged', '1008E_S1_METRICS', 'receipts_metrics_v2.py')

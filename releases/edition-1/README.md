@@ -1,6 +1,8 @@
 # Namebeam AI Visibility Record, Edition 1 data pack
 
-Status: STAGED. Window: 2026-09-01 to 2026-10-07 (UTC dates). Run days in the window: 36. Answer rows: 10,152.
+Status: FINAL. Window: 2026-09-01 to 2026-10-13 (UTC dates). Run days in the window: 42. Answer rows: 12,180.
+
+Counts: 73 questions, each asked in the same words on every run day it was in the roster (55 market or category questions and 18 questions asked to see whether one named business comes up); 25 US local markets plus nationwide questions (27 market labels as written in the roster); 37 niche labels as written in the roster; API engines asked: anthropic, gemini, openai, perplexity, plus Google results; 42 run days from 2026-09-01 to 2026-10-13.
 
 This pack holds the raw tables behind Edition 1, the metrics computed from them, the code that computes the metrics, and a script that checks every file against a SHA-256 manifest. The raw answer files they come from are in `corpus/e1/` of this repository.
 
@@ -8,10 +10,15 @@ This pack holds the raw tables behind Edition 1, the metrics computed from them,
 
 | file | what it is |
 |---|---|
-| `data/answers_2026-09-01_to_2026-10-07.csv` | One row per raw answer file: date, kind (API, SERP or AGREE), the business or segment asked about, niche, market, engine, the names the engine returned, and the SHA-256 of the raw file. |
-| `data/sources_2026-09-01_to_2026-10-07.csv` | One row per URL an engine returned as a source (Perplexity sources and Google results). Columns are described in `datasets/e1/sources/README.md`. |
+| `data/answers_2026-09-01_to_2026-10-13.csv` | One row per raw answer file: date, kind (API, SERP or AGREE), the business or segment asked about, niche, market, engine, the names the engine returned, and the SHA-256 of the raw file. Three derived columns follow: `rerun` (0, or N for a raw file named `_rN`), `headings_removed_count` and `businesses_named_no_headings` (API and AGREE rows; blank for SERP). The raw `businesses_named` column is never changed. |
+| `data/sources_2026-09-01_to_2026-10-13.csv` | One row per URL an engine returned as a source (Perplexity sources and Google results). Columns are described in `datasets/e1/sources/README.md`. |
+| `data/prompts.csv` | Every question asked in this window, word for word: its id (the slug used in the raw file names), the business or segment it belongs to, whether it is a market or category question or a question asked to see whether one named business comes up, market, niche, the SHA-256 of the text, the date it entered the run, the last date in this window, the number of run days it was asked, and which engines were asked. |
+| `LICENSE` | Creative Commons Attribution 4.0 International (CC BY 4.0), the full legal code. |
+| `CITATION.cff` | How to cite the record (Citation File Format). |
+| `reproduce/`, `EXPECTED_HEADLINES.csv`, `EXPECTED_INPUTS.csv` | A kit that recomputes the headline numbers from this pack alone, offline, and compares them with the expected values and the SHA-256 of every input it read. |
 | `data/siri_panel.csv` | Questions asked of Siri by hand on an iPhone: date, mode (typed or spoken), city, question, what Siri said, businesses named, sources shown. Described in `datasets/e1/siri/README.md`. |
 | `data/customer_zero_*.csv` | How often our own domains appear in the sources an engine returned. Described in `datasets/e1/customer_zero/README.md`. |
+| `data/segment_pages_*.csv` | For each of the 28 record pages (27 city and segment pages and the hub): how many Perplexity answers cited it, out of the answers to its own question and out of all answers with a source list, per run day and in 7 day windows. Zeros are kept. Described in `datasets/e1/customer_zero/README.md`. |
 | `metrics/metrics_v2.csv` | Every metric, by window and engine: value, numerator, denominator, the unit of the denominator, and the method id. |
 | `metrics/metrics_v2_methods.csv` | The definition of each method id. |
 | `metrics/metrics_v2_sentences.md` | One plain sentence per metric and window, each with its denominator. |
@@ -33,15 +40,21 @@ Each day a program asks every engine the same fixed questions, one per business 
 | Perplexity, from 2026-09-28 | Agent API, model perplexity/sonar | web search forced | 0.2 |
 | Google | results page through Bright Data | not applicable | not applicable |
 
+Each question is asked once a day in the same words, with no rotation. A question asked again on the same day is a rerun, kept and marked (see below). A call that fails stays in the record as a failed row: its raw file carries a status other than OK, and its row in the answers table has no names. The metrics that count answered days leave a failed API call out. The naming rate on asked days, and the persistence form in which the next day only needs to have been asked, count a failed call as a day with no name, so those two figures can fall when a call fails.
+
 These are API calls, not the apps people open on a phone. The rows do not record which model answered. The model strings are set in the code or in repository variables: OpenAI read `gpt-5-mini` on 2026-08-06, and Anthropic uses `claude-haiku-4-5` unless a variable overrides it. Because Perplexity is the one engine with a search tool switched on, the engines are not like for like, and no figure here compares them as if they were.
 
 ## Windows
 
 - WA: 2026-09-01 to 2026-09-27, Perplexity on Sonar chat completions.
-- WB: 2026-09-28 to 2026-10-07, Perplexity on the Agent API. Perplexity retired Sonar chat completions on 2026-09-27 and the collector moved to the Agent API, so WA and WB are reported apart. Any change between them mixes the method change with change over time.
+- WB: 2026-09-28 to 2026-10-13, Perplexity on the Agent API. Perplexity retired Sonar chat completions on 2026-09-27 and the collector moved to the Agent API, so WA and WB are reported apart. Any change between them mixes the method change with change over time.
 - WE: the whole Edition 1 window. For Perplexity it mixes both methods and is marked that way in the table.
 
 Days with no run are absent from every table, not counted as zero. Days with no run in this window: 2026-10-05.
+
+2026-10-05 has no raw file for any question or engine. It is a gap, not a day of zero answers, and it is absent from every table.
+
+The roster grew during the window, so the number of raw files per day changes on 2026-10-08, from 282 to 338. Six dentist and orthodontist segments (Atlanta, Dallas, Phoenix), added to `roster/e1_roster.json` in commit e81cbdeb (2026-10-07 UTC), are asked of the four API engines, Google and the agreement check: 24 API, 6 SERP and 6 AGREE files a day. Twenty real estate research segments (real estate agents, property management, mortgage lenders and title companies in Fort Lauderdale, Miami, St. Charles, St. Louis and West Palm Beach), added in commit 980286d1 (2026-10-08), are asked of Perplexity alone, with no Google rows: 20 API files a day. That is 56 more files and 50 more question ids a day. No earlier question was dropped or changed. These rows are kept in the answers table; under the panel rule below their 26 cells are left out of the metrics.
 
 ## Metrics
 
@@ -56,28 +69,67 @@ Every metric names its method and its denominator in `metrics/metrics_v2.csv`. T
 - Coin-flip share: the share of businesses named on 20 to 80 percent of answered days, so one day's answer is close to a coin flip.
 - Engine agreement: the mean overlap of two engines' name lists on the same day, raw and gated.
 
-A cell is a market plus a niche. US nationwide questions are left out of the cell metrics. September has 38 cells. API rows count; SERP and AGREE rows do not. The metrics read only the cells that were asked on or before 2026-09-27 (the 38 cells of September), in every window. Research segments added to the roster after that date are in the answers table and are left out of the metrics, so a change between WA and WB is not also a change of panel. In this build no row is left out: every cell asked in the window was already asked on or before 2026-09-27. A list of SERP files from 2026-10-04 that were held out is in `method/`; it removes no API rows.
+A cell is a market plus a niche. US nationwide questions are left out of the cell metrics. September has 38 cells. API rows count; SERP and AGREE rows do not. The metrics read just the cells that were asked on or before 2026-09-27 (the 38 cells of September), in every window. Research segments added to the roster after that date are in the answers table and are left out of the metrics, so a change between WA and WB is not also a change of panel. In this build 300 rows from 26 later cells are left out of the metrics. The rows the metrics read are in `metrics/panel_answers_2026-09-01_to_2026-10-13.csv`; `verify.py --metrics` derives that file from the answers table and checks it. A list of SERP files from 2026-10-04 that were held out is in `method/`; it removes no API rows.
 
 ## The name gate
 
 Engines return strings, and some are not businesses: places, directories, trade words, sentence fragments, and several spellings of one name. The gate is rule-based code with word lists. It drops places, directories and platforms, generic trade words and sentence fragments, and merges variants of one name. It is in `method/Brain_Kit/status/staged/1005A_AI_PICKS_CHART/gen_ai_picks_chart.py` (SHA-256 611894c48c21a512bc856463c2e4b6b7a33155375aebcce71a036e820a4edde6). Every persistence and overlap metric is given twice, raw and gated, and the two can differ a lot: for Perplexity in WA, persistence is 0.626 gated and 0.437 raw.
+
+## Name lists in the answers table
+
+The engines often put section headings inside the lists that the collector reads as business names, for example "Overview", "Research methods" or "Red flags to avoid". The raw files and the raw `businesses_named` column keep them as written. The derived column `businesses_named_no_headings` drops a name when every word of it is in the heading word list of the name gate code (`BASE_GENERIC` and `EXTRA_GENERIC` in `gen_citation_index.py`), when it matches a fixed, hand-reviewed list of headings found in the rows to 2026-10-09 (`HEADING_TERMS` in `scripts/build_edition.py`), or when it holds a line break. A business name that the word rule would catch is kept by name. The heading filter (v1, 2026-10-09) removes 6,934 names from 3,297 API and AGREE rows in this build: 4,898 by the heading word rule, 1,875 by the exact heading list (99 terms), 161 line-break fragments. Kept by name: Pro Lawn & Irrigation, Pro Lawn. The counts per flagged term are in `PACK.json`. The metrics do not read this column; their own name gate is described above.
+
+Rerun files: a question asked again on the same day is saved as a new raw file ending `_r2`, `_r3` and so on, and every one is kept. Rerun files in this window: 0.
+
+Google rows: 888 raw files in the window have the status EXTRACTION_FAILED, all from google_serp. They stay in the answers table with an empty name list; no API engine row has this status.
 
 ## Limits
 
 - The record covers local business questions in the markets in the roster. It does not describe all businesses or all questions.
 - Names are strings returned by the engines and read by a program. A name returned is not a recommendation by us and not a claim that the business is good.
 - OpenAI, Anthropic and Gemini ran without a search tool, so their answers come from the model alone.
-- OpenAI lists the model snapshot `gpt-5-mini-2025-08-07` as deprecated. OpenAI notified developers on 2026-06-11 and removes it from the API on 2026-12-11, with `gpt-5.6-terra` as its recommended replacement (OpenAI deprecations page, read 2026-10-08). The collector still reads `gpt-5-mini`. When the model is changed, the change will be dated in this note before the first changed row, so a shift in the OpenAI rows is not read as a shift in the businesses named.
-- Gemini returned some answers until 2026-09-26 and none from 2026-09-27 (the account returned HTTP 402, prepayment credits depleted). Gemini metrics carry their own denominators and are small.
+- OpenAI lists the model snapshot `gpt-5-mini-2025-08-07` as deprecated. OpenAI notified developers on 2026-06-11 and removes it from the API on 2026-12-11, with `gpt-5.6-terra` as its recommended replacement (OpenAI deprecations page, read 2026-10-08). The collector still reads `gpt-5-mini`. When the model is changed, the change will be dated in this note before the earliest changed row, so a shift in the OpenAI rows is not read as a shift in the businesses named.
+- Gemini answered part of the questions each day from 2026-09-01 to 2026-09-26: between 1 and 25 calls a day returned an answer and between 21 and 41 a day returned a quota error (rows marked QUOTA_BLOCKED). From 2026-09-27 every Gemini call failed (the account returned HTTP 402, prepayment credits depleted). Gemini metrics carry their own denominators and are small.
 - WB is a short window. Read its values with their denominators.
 - Siri rows are typed or spoken by hand on one phone, for a few questions on a few days. They are not a sample of Siri users.
 - Nothing here shows why a list changed. The record shows what was returned on which day.
+
+## Known gaps and how to read them
+
+- OpenAI name lists are empty on every row from 2026-09-01 to 2026-09-05 (235 of 235 rows, 47 a day) because the name extractor returned none; the raw answers on those days have status OK and about 1,800 characters of text. OpenAI name-based metrics start 2026-09-06. The raw files are unchanged and the names were not re-extracted.
+- Google result pages were complete on a small share of rows in the week of 2026-08-31 and on most rows from the week of 2026-09-21. Empty name lists on Google rows fall from 78% (220 of 282 rows, week of 2026-08-31) to 3% (11 of 329 rows, week of 2026-09-28), then 15% (45 of 306 rows) in the latest partial week. The count of failed extractions is stated under "Google rows" above.
+- The files named LATEST in the dataset `Namebeam/namebeam-e1-ai-referral-index` stop at 2026-09-12. They are not part of this pack. The current file for the full window is the one listed in the Files table above, in folder `edition-1/` of `Namebeam/ai-visibility-daily-record`.
+- Served model. The rows record the model name that was requested, not the model that answered, for OpenAI and Anthropic. For Perplexity, rows from 2026-09-28 on record `perplexity/sonar` in `engine_meta`. A change in the model behind a request name would not show in the rows.
+- DQ-5. The name lists in the answers table under-count the businesses an answer mentions, on every engine, and by different amounts. Two mechanisms are known. For Anthropic, the collector reads the bold spans of an answer as names and reads the plain text only when there are no bold spans, and Anthropic answers usually carry bold section headings, so a business named in plain text is not recorded. For the other engines the names are read by a capitalisation rule that misses some names written once, at the start of a line or sentence. Counts below are from the raw files, 2026-09-01 to 2026-10-11 (the last run day in this record; the window is 2026-09-01 to 2026-10-13), answers with status OK. For each engine: OK answers; answers whose recorded name list has a business that is in that question's top 10 in the explorer; answers whose text contains a top 10 business name (whole-name, case-insensitive match in `answer_verbatim`). Anthropic 1,904; 48; 195. OpenAI 1,898; 330; 553. Perplexity 1,828; 1,142; 1,250. Gemini 342; 215; 305. The text count is an upper bound for the same reason as every top 10 list here: some top 10 entries are not businesses. Example: Chicago IL, personal injury attorneys, 'Salvi' appears in the answer text on 18 of 39 OpenAI days and is recorded on 1; on 25 of 37 Perplexity days and is recorded on 25; on 19 of 19 Gemini days and is recorded on 14; on 0 of 40 Anthropic days. The published derived name tables therefore undercount mentions. The reading to use is a text-mention recount: take candidate names from any engine for the same market and niche, and count an answer as naming a business when the whole name appears in `answer_verbatim`. Edition 1 ships the verbatim answers (the raw files in `corpus/e1`, field `answer_verbatim`), so anyone can recount. The raw files and name lists in this edition are unchanged.
+
+## Spot audit
+
+Name-gate spot audit: 100 of 564 distinct (market, niche, gated name) in window WA (2026-09-01 to 2026-09-27, Perplexity, method name gate), seed 20261010. Each name was looked up with up to 4 web searches. 86 of 100 are an operating business, practice or licensed practitioner in that line of work (Wilson 95% interval 77.9% to 91.5%); 78 of 100 were also found in the market asked (68.9% to 85.0%). 10 were not found after 4 searches and 4 were not a business (3 generic phrase, 1 place). Checked 2026-10-10 and 2026-10-12.
+
+## How this record differs from another published record
+
+Another open record of a similar kind of measurement is the Zenodo deposit "AI Recommendation Calibration Study 2026" (record 21611003, published 2026-07-26). Its record page, read 2026-10-09, describes 4,800 model responses collected between May and July 2026 from four engines called through their APIs, and states: "All published files are aggregates. No business names, competitor names, cited sources, verbatim AI response text ... are included."
+
+This pack is built differently on three points, each of which you can check in the files:
+
+- Unit of publication. This pack has one row per raw answer file, with the names the engine returned and the SHA-256 of the raw file. The raw answer files, including the verbatim answer text, are in the public repository under `corpus/e1`.
+- Sources. `data/sources_2026-09-01_to_2026-10-13.csv` lists every URL an engine returned as a source for the engines that return a source list.
+- Dates and place. This pack covers US markets from 2026-09-01 to 2026-10-13, with a daily collection run (42 run days); the other record covers the UK between May and July 2026.
+
+The two records use different engines, countries, dates and question sets. Their numbers are not comparable and neither replicates the other. Other records of this kind may exist that were not read for this note.
+
+## License and where to get it
+
+The data and text in this pack are licensed under CC BY 4.0 (`LICENSE`): you may copy, share and adapt them for any purpose, including commercial use, if you give credit. Credit line: Namebeam AI Visibility Record, Edition 1 (Carter Enterprise LLC), CC BY 4.0. Use without credit, for example white-label use inside client reports, needs a separate commercial license from Carter Enterprise LLC; ask at namebeam.ai.
+
+The canonical copy of this pack on Hugging Face is the dataset `Namebeam/ai-visibility-daily-record` (https://huggingface.co/datasets/Namebeam/ai-visibility-daily-record), folder `edition-1/`. The dataset `Namebeam/namebeam-e1-ai-referral-index` carries the daily LATEST files of the same record and points to it. The raw answer files are in this repository under `corpus/e1/`.
 
 ## Check the pack
 
     python3 verify.py              # every file against MANIFEST.sha256, prints MATCH or MISMATCH
     python3 verify.py --rebuild    # rebuilds the answers table from corpus/e1 and compares
     python3 verify.py --metrics    # recomputes the metrics table with the code in method/ and compares
+    python3 -I reproduce/reproduce_edition.py --pack .    # recomputes the headline numbers from the pack alone and compares
 
 Run these from `releases/edition-1/` in a clone of this repository. The last line reads `VERIFY MATCH` when everything agrees.
 
