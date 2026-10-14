@@ -385,14 +385,30 @@ PATCHES = {
 }
 
 
+def _method_src():
+    """The sibling module method_src.py (PINNED hashes). Imported by path, because -I drops the script folder from sys.path."""
+    if HERE not in sys.path:
+        sys.path.insert(0, HERE)
+    import method_src
+    return method_src
+
+
 def vendor_method(method_src, dst_root):
     """Copy the metrics code into the layout it expects. Byte for byte, except the PATCHES above.
+    Every file that has a pinned hash is checked against it first (the ORIGINAL bytes, before any patch); drift stops the build.
     Returns the list of patches applied, with the SHA-256 of the file before and after."""
+    pinned = _method_src().PINNED
     done = []
     for rel in METHOD_FILES:
         s = os.path.join(method_src, *rel.split('/'))
         d = os.path.join(dst_root, METHOD_ROOT, *rel.split('/'))
         os.makedirs(os.path.dirname(d), exist_ok=True)
+        if rel in pinned:
+            got = sha_file(s)
+            if got != pinned[rel]:
+                raise SystemExit('method source drift: ' + rel + ' sha256 ' + got[:16] + ' pinned ' + pinned[rel][:16]
+                                 + '; build from scripts/method_src.py --out')
+            print('METHOD PINNED OK ' + rel)
         if rel in PATCHES:
             raw = open(s, 'rb').read()
             text = raw.decode('utf-8')
@@ -765,12 +781,19 @@ def selftest():
     p = subprocess.run([sys.executable, '-I', '-B', os.path.join(pack, 'verify.py')], capture_output=True, text=True)
     chk('RED: a deleted file is reported as MISMATCH', 'MISMATCH data/a.csv' in p.stdout and p.returncode == 1)
     # vendoring: patched file differs, hashes recorded, unpatched files stay byte for byte, a missing target stops the build
+    ms = _method_src()
+
+    def vend_msg(d):
+        """'' when vendor_method passes, else the SystemExit message."""
+        try:
+            vendor_method(d, tempfile.mkdtemp())
+            return ''
+        except SystemExit as e:
+            return str(e)
+
     src = os.path.join(tmp, 'msrc')
-    for rel in METHOD_FILES:
-        f = os.path.join(src, *rel.split('/'))
-        os.makedirs(os.path.dirname(f), exist_ok=True)
-        body = 'x = ("' + RETIRED_PATH + '"\n"c.csv")\n' if rel in PATCHES else 'y = 1\n'
-        open(f, 'w').write(body)
+    bad = ms.assemble(src)   # the seven pinned originals (gen_citation_index.py keeps the retired path, as in the Brain)
+    chk('vendor source is the seven pinned originals (%s)' % '; '.join(bad), not bad)
     dst = os.path.join(tmp, 'mdst')
     done = vendor_method(src, dst)
     pf = os.path.join(dst, METHOD_ROOT, 'status', 'staged', '0929C_ACTOR', 'gen_citation_index.py')
@@ -778,12 +801,25 @@ def selftest():
         RETIRED_PATH not in open(pf).read() and len(done) == 1 and done[0]['sha256_before'] != done[0]['sha256_after'])
     other = os.path.join(dst, METHOD_ROOT, 'status', 'staged', '1005B_METRICS', 'receipts_metrics_v1.py')
     chk('an unpatched file is copied byte for byte', sha_file(other) == sha_file(os.path.join(src, 'status', 'staged', '1005B_METRICS', 'receipts_metrics_v1.py')))
-    open(os.path.join(src, 'status', 'staged', '0929C_ACTOR', 'gen_citation_index.py'), 'w').write('nothing to patch\n')
+    # method drift guard: GREEN a method_src.assemble() tree passes; RED one appended byte in a pinned file stops the build
+    gtmp = tempfile.mkdtemp()
+    gbad = ms.assemble(gtmp)
+    gmsg = vend_msg(gtmp)
+    chk('GREEN: vendor_method passes on a method_src.assemble() tree (%s)' % (gmsg or 'no error'), not gbad and gmsg == '')
+    rtmp = tempfile.mkdtemp()
+    ms.assemble(rtmp)
+    open(os.path.join(rtmp, 'status', 'staged', '1005B_METRICS', 'metrics_v1_sept.csv'), 'ab').write(b'\n')
+    rmsg = vend_msg(rtmp)
+    chk('RED: one appended byte in a pinned file stops vendor_method with method source drift', 'method source drift' in rmsg)
+    # RED: a missing patch target still stops the build (the pinned hash is swapped for this test only, then restored)
+    rel_g = 'status/staged/0929C_ACTOR/gen_citation_index.py'
+    open(os.path.join(src, 'status', 'staged', '0929C_ACTOR', 'gen_citation_index.py'), 'wb').write(b'nothing to patch\n')
+    old_pin = ms.PINNED[rel_g]
+    ms.PINNED[rel_g] = sha_bytes(b'nothing to patch\n')
     try:
-        vendor_method(src, os.path.join(tmp, 'mdst2'))
-        stopped = False
-    except SystemExit:
-        stopped = True
+        stopped = 'patch target not found' in vend_msg(src)
+    finally:
+        ms.PINNED[rel_g] = old_pin
     chk('RED: a missing patch target stops the build', stopped)
     meta = {'status': 'STAGED', 'window': ['2026-09-01', '2026-10-07'], 'run_days': 36, 'answers_rows': 10152,
             'counts_sentence': 'FIXTURE COUNTS.'}
