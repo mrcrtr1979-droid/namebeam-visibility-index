@@ -48,6 +48,7 @@ DERIVED_FIELDS = ['rerun', 'headings_removed_count', 'businesses_named_no_headin
 DERIVED_FIELDS_V2 = DERIVED_FIELDS + ['nonbusiness_removed_count', 'businesses_named_filtered']
 ANSWER_FIELDS = BASE_FIELDS + DERIVED_FIELDS
 ANSWER_FIELDS_V2 = BASE_FIELDS + DERIVED_FIELDS_V2
+_NF = None   # cached name_filter module (loaded by path, see _sibling)
 NAME_FILTER_DEFAULT = 'v2'   # what a fresh build writes; verify.py passes the pack's own value when it rebuilds
 
 # HEADING FILTER v1 (2026-10-09, [SONNET-RECORD-1009D-S1b]). The engines put section headings inside the lists we read as
@@ -122,6 +123,15 @@ def dedupe(seq):
         if s and s not in out:
             out[s] = 1
     return list(out)
+
+
+def _sibling(name):
+    """Load a sibling module from the scripts folder by path (python -I keeps the folder off sys.path)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(name, os.path.join(HERE, name + '.py'))
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
 
 
 # ------------------------------------------------------------------ answers
@@ -205,7 +215,10 @@ def add_derived(row, names, name_filter='v1', text=''):
             row['nonbusiness_removed_count'] = ''
             row['businesses_named_filtered'] = ''
         else:
-            import name_filter as _nf
+            global _NF
+            if _NF is None:
+                _NF = _sibling('name_filter')
+            _nf = _NF
             kept2, removed = _nf.apply(kept, text)
             row['nonbusiness_removed_count'] = removed
             row['businesses_named_filtered'] = ';'.join(kept2)
@@ -742,7 +755,7 @@ def build(through, out, method_src, status):
     rep.write_expected(pack, rep.reproduce(pack))
     # claims registry (2026-10-14): every public number of the edition with its receipt, pinned by the manifest.
     # Business watch lines (NAME|MARKET|NICHE|RULE[|START|END]) come from scripts/claims_watch.txt when it exists.
-    import claims_registry as _cr
+    _cr = _sibling('claims_registry')
     watch_path = os.path.join(HERE, 'claims_watch.txt')
     watch = [l.strip() for l in io.open(watch_path, encoding='utf-8')] if os.path.exists(watch_path) else []
     watch = [l for l in watch if l and not l.startswith('#')]
