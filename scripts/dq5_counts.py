@@ -456,11 +456,105 @@ def selftest():
         check(res['perplexity']['ok'] == 1, 'ERROR run is excluded from OK answers')
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
+    # --business (2026-10-14): rules on a fixture, then the Miami reconcile numbers when the corpus is on disk
+    chk = lambda name, ok: check(ok, name)
+    fx = [{'engine': 'perplexity', 'date': '2026-09-01', 'status': 'OK', 'market': 'M', 'niche': 'n', 'recorded': ['Extreme Roofing Inc'], 'answer': 'Extreme Roofing Inc is good'},
+          {'engine': 'perplexity', 'date': '2026-09-02', 'status': 'FAILED', 'market': 'M', 'niche': 'n', 'recorded': [], 'answer': ''},
+          {'engine': 'perplexity', 'date': '2026-09-03', 'status': 'OK', 'market': 'M', 'niche': 'n', 'recorded': ['Extreme Roofing'], 'answer': 'Call Extreme Roofing today'},
+          {'engine': 'perplexity', 'date': '2026-09-03', 'status': 'OK', 'market': 'M', 'niche': 'n', 'recorded': ['Other Co'], 'answer': 'Extreme Roofings is not it'},
+          {'engine': 'openai', 'date': '2026-09-01', 'status': 'OK', 'market': 'M', 'niche': 'n', 'recorded': [], 'answer': 'no names'}]
+    c = business_counts(fx, 'Extreme Roofing Inc', 'contains')['perplexity']
+    chk('business contains (Inc form): 1 answer recorded, text 1', c['rec'] == 1 and c['text'] == 1)
+    c = business_counts(fx, 'Extreme Roofing', 'contains')['perplexity']
+    chk('business contains (short form): 2 answers recorded, text 2 (plural form does not match), days asked 3 answered 2',
+        c['rec'] == 2 and c['text'] == 2 and len(c['days_asked']) == 3 and len(c['days_ok']) == 2 and len(c['days_rec']) == 2)
+    c = business_counts(fx, 'Extreme Roofing', 'exact')['perplexity']
+    chk('business exact: 1 answer, 1 day', c['rec'] == 1 and len(c['days_rec']) == 1)
+    c = business_counts(fx, 'Extreme Roofing', 'wholename')['perplexity']
+    chk('business wholename on recorded names: 2 (Inc form matches, plural does not)', c['rec'] == 2)
+    try:
+        business_match('fuzzy', 'x')
+        chk('RED: unknown rule stops', False)
+    except SystemExit:
+        chk('RED: unknown rule stops', True)
+    miami = os.path.join(REPO, 'corpus', 'e1')
+    if glob.glob(os.path.join(miami, 'NB-CZ-API_2026-08-09_segment_roofing_miami_perplexity.json')):
+        rows = filter_cell(load_api_rows(miami, '2026-08-09', '2026-10-07'), 'Miami FL', 'residential roofing')
+        a = business_counts(rows, 'Extreme Roofing', 'contains')['perplexity']
+        b = business_counts(rows, 'Extreme Roofing Inc', 'exact')['perplexity']
+        chk('MIAMI 2026-08-09..2026-10-07: contains 49 of 57 answers, exact 47 of 57 (1013E-MIAMI-RECONCILE.md)',
+            a['ok'] == 57 and a['rec'] == 49 and b['rec'] == 47)
+        rows = filter_cell(load_api_rows(miami, '2026-09-01', '2026-10-07'), 'Miami FL', 'residential roofing')
+        a = business_counts(rows, 'Extreme Roofing', 'contains')['perplexity']
+        b = business_counts(rows, 'Extreme Roofing Inc', 'exact')['perplexity']
+        chk('MIAMI 2026-09-01..2026-10-07: contains 25 days, exact 23 days, 36 asked, 33 answered',
+            len(a['days_rec']) == 25 and len(b['days_rec']) == 23 and len(a['days_asked']) == 36 and len(a['days_ok']) == 33)
+    else:
+        print('  skip MIAMI live check: corpus/e1 Miami files not on disk')
     if fails:
         print('SELFTEST FAIL %d' % len(fails))
         return 1
     print('SELFTEST PASS')
     return 0
+
+# ------------------------------------------------------------------ one business (2026-10-14, COS wave 3 item 2)
+RULES = ('contains', 'exact', 'wholename')
+
+
+def business_match(rule, name):
+    """Returns (recorded_fn, text_fn): recorded_fn(list of recorded names) and text_fn(answer text) -> bool.
+    contains: a recorded name contains the business name (case folded); text: whole-name regex.
+    exact:    a recorded name equals the business name (case folded, outer spaces); text: whole-name regex.
+    wholename: both recorded names and the text use the whole-name regex (no letter or digit touches either end)."""
+    k = ' '.join(name.casefold().split())
+    rx = name_regex(name)
+    if rule == 'contains':
+        return (lambda rec: any(k in ' '.join(n.casefold().split()) for n in rec)), (lambda t: bool(rx.search(t)))
+    if rule == 'exact':
+        return (lambda rec: any(' '.join(n.casefold().split()) == k for n in rec)), (lambda t: bool(rx.search(t)))
+    if rule == 'wholename':
+        return (lambda rec: any(rx.search(n) for n in rec)), (lambda t: bool(rx.search(t)))
+    raise SystemExit('unknown rule ' + rule)
+
+
+def business_counts(api_rows, name, rule):
+    """Per engine: ok answers, answers naming the business by the recorded rule, answers whose text names it,
+    days asked (any row), days answered (OK), days named by the recorded rule, days named in the text."""
+    recf, textf = business_match(rule, name)
+    res = {}
+    for r in api_rows:
+        e = r['engine']
+        c = res.setdefault(e, {'rows': 0, 'ok': 0, 'rec': 0, 'text': 0, 'days_asked': set(), 'days_ok': set(),
+                               'days_rec': set(), 'days_text': set()})
+        c['rows'] += 1
+        c['days_asked'].add(r['date'])
+        if r['status'] != 'OK':
+            continue
+        c['ok'] += 1
+        c['days_ok'].add(r['date'])
+        if recf(r['recorded']):
+            c['rec'] += 1
+            c['days_rec'].add(r['date'])
+        if textf(r['answer']):
+            c['text'] += 1
+            c['days_text'].add(r['date'])
+    return res
+
+
+def business_lines(res, name, rule, W0, W1, market=None, niche=None):
+    out = []
+    for e in sorted(res):
+        c = res[e]
+        out.append('%s rule=%s ANSWERS ok=%d recorded=%d text=%d | DAYS asked=%d answered=%d recorded=%d text=%d'
+                   % (e, rule, c['ok'], c['rec'], c['text'], len(c['days_asked']), len(c['days_ok']),
+                      len(c['days_rec']), len(c['days_text'])))
+    out.append('BUSINESS %r window %s..%s%s' % (name, W0, W1, (' cell %s / %s' % (market, niche)) if market or niche else ''))
+    return out
+
+
+def filter_cell(api_rows, market=None, niche=None):
+    return [r for r in api_rows if (not market or r['market'] == market) and (not niche or r['niche'] == niche)]
+
 
 
 def main():
@@ -471,11 +565,20 @@ def main():
     ap.add_argument('--end', default='2026-10-11')
     ap.add_argument('--top', type=int, default=10)
     ap.add_argument('--min-answers', type=int, default=20)
+    ap.add_argument('--business', help='print answers and days for one business per engine (no top-10 build)')
+    ap.add_argument('--rule', choices=RULES, default='contains')
+    ap.add_argument('--market', help='with --business: restrict to one market label as written in the rows')
+    ap.add_argument('--niche', help='with --business: restrict to one niche label as written in the rows')
     ap.add_argument('--selftest', action='store_true')
     A = ap.parse_args()
     if A.selftest:
         return selftest()
     CORPUS_DIR = os.path.abspath(A.corpus)
+    if A.business:
+        rows = filter_cell(load_api_rows(CORPUS_DIR, A.start, A.end), A.market, A.niche)
+        for line in business_lines(business_counts(rows, A.business, A.rule), A.business, A.rule, A.start, A.end, A.market, A.niche):
+            print(line)
+        return 0
     tops = build_tops(REPO, A.start, A.end, A.min_answers, A.top)
     rows = load_api_rows(CORPUS_DIR, A.start, A.end)
     res = dq5_counts(rows, tops)
