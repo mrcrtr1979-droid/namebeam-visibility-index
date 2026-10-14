@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_tanning_salons_charlotte_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "niche": "tanning salons",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c5cba103-649e-475b-b5b3-53f46542399d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0005,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00055,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00369
+   },
+   "input_tokens": 2561,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2017,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 219,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2780
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Gorgeous GLO Beauty Bar",
+  "Organic Bronze Bar’s SouthPark location",
+  "Organic Bronze Bar",
+  "SouthPark",
+  "Gorgeous Glo"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://trustanalytica.org/us/nc/charlotte/best-tanning-salons",
+  "https://www.fresha.com/lp/en/bt/tanning-studios/in/us-charlotte",
+  "https://palmbeachtan.com/locations/nc/charlotte-east-wt-harris-boulevard",
+  "https://charlottecharm.com/best-spray-tan-in-charlotte",
+  "https://maps.apple.com/place?place-id=I9845192F39EFC11F",
+  "https://www.yelp.com/biz/botanical-tans-charlotte-2",
+  "https://www.yelp.com/biz/best-nails-and-tan-charlotte",
+  "https://organicbronzebar.com/southpark/",
+  "https://www.yelp.com/biz/palm-beach-tan-charlotte?start=40",
+  "https://www.yelp.com/biz/palm-beach-tan-charlotte-3",
+  "https://reviews.birdeye.com/palm-beach-tan-173507733714704",
+  "https://palmbeachtan.com/locations/nc/charlotte-east-woodlawn-road",
+  "https://palmbeachtan.com/locations/nc/charlotte-john-j-delaney-drive",
+  "https://palmbeachtan.com/locations/nc/charlotte-providence-arboretum",
+  "https://lattesol.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "If you mean **spray tanning**, **Gorgeous GLO Beauty Bar** looks like a strong pick: a Charlotte salon specializing in custom spray tans and color matching, with a reported **4.9/5 from 100 reviews**. [Source](https://trustanalytica.org/us/nc/charlotte/best-tanning-salons)\n\nFor a more natural-ingredient option, **Organic Bronze Bar’s SouthPark location** offers all-natural spray tanning and reports a review score above 4.5. [Details](https://organicbronzebar.com/southpark/)\n\n“Best” depends on whether you want a spray tan or tanning beds, and on your part of town—check recent reviews and availability before booking.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

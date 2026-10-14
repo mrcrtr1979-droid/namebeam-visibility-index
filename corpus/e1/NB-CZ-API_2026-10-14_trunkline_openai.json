@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_trunkline_openai",
+ "date_utc": "2026-10-14",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EYx9k9oehskqkKIhqteC7L7xStw3x",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1882,
+   "total_tokens": 1908,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1408,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Glassnode",
+  "IntoTheBlock",
+  "CSVs",
+  "Etherscan",
+  "Dune",
+  "CoinGecko",
+  "Coin Bureau",
+  "Bankless",
+  "Dune Analytics",
+  "Messari",
+  "The Defiant"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t one obvious single site that ticks every box (plain-English for beginners + shows verifiable “real numbers” + routinely publishes its own losses). Your best bet is to combine a plain-English explainer site with on‑chain/data platforms and pick educators who publish verifiable trade/wallet history.\n\nHere’s a practical combo and how to use it:\n\n1) Plain-English primer (concepts, risks, how things work)\n- Coin Bureau — very beginner-friendly, long explanatory guides and videos in simple language.\n- The Defiant or Bankless — good for DeFi and broader crypto explained in accessible terms.\n\n2) Verifiable numbers / on‑chain data\n- Glassnode, Messari, IntoTheBlock — provide transparent, data-driven metrics (supply, flows, holders) you can inspect.\n- Dune Analytics — community dashboards that show raw queries and numbers you can verify; many authors publish dashboards that back up claims with SQL and charts.\n\n3) Look for educators who publish losses (how to verify)\n- Prefer authors who publish explicit trade logs, downloadable CSVs, or link their wallet addresses. If they give a wallet address you can verify every trade on Etherscan/Polygonscan.\n- Look for Dune dashboards or spreadsheets that show full P&L, not just cherry‑picked wins.\n- Avoid influencers who only show screenshots of profits or “% gains” without transaction evidence.\n\nHow to vet a “transparent” educator quickly\n- Do they publish a public wallet address or raw trade history? If yes, cross‑check on-chain.\n- Do they publish full dashboards/SQL (Dune) or downloadable spreadsheets? That’s good.\n- Do they admit mistakes / show losing trades in their archives? That’s a strong signal of honesty.\n- Are claims independently verifiable with public data (Etherscan, CoinGecko, Dune)?\n\nIf you want, I can:\n- Find a few specific Substack/newsletter authors or YouTube creators who publish wallet addresses or Dune dashboards.\n- Search Dune for beginner‑friendly dashboards that include full trade histories you can inspect.\n\nWhich would you prefer: a list of creators who publish verifiable trades, or a short starter learning path that mixes plain-English guides + Dune/Glassnode dashboards?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

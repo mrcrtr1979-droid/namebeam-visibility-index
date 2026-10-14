@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_flatline_contracting_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "Flatline Contracting",
+ "niche": "residential remodeling and repair",
+ "market": "Joplin MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is a reliable contractor in Joplin MO for a home remodel or repair project?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6a603240-ab9e-4345-8abf-a4084ee53c12",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00459
+   },
+   "input_tokens": 5052,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4500,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 330,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5382
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "American Construction Inc",
+  "GRC General Construction",
+  "A+ BBB rating",
+  "Roof Master’s Remodeling Inc",
+  "Roof Master",
+  "Remodeling Inc",
+  "American Construction"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/mo/joplin/category/remodel-contractors",
+  "https://www.bbb.org/us/mo/joplin/category/home-repair",
+  "https://www.bbb.org/us/mo/joplin/category/home-improvement",
+  "https://www.bbb.org/us/mo/joplin/category/general-contractor",
+  "https://www.bbb.org/us/mo/webb-city/category/home-repair",
+  "https://www.houzz.com/professionals/home-remodeling/joplin-mo-us-probr0-bo~t_34257~r_4392768",
+  "https://www.bbb.org/us/mo/joplin/category/building-contractors",
+  "https://www.bbb.org/us/mo/joplin/category/home-renovation",
+  "https://www.bbb.org/us/mo/joplin/category/new-construction/accredited",
+  "https://www.houzz.com/professionals/general-contractor/joplin-mo-us-probr0-bo~t_11786~r_4392768",
+  "https://www.houzz.com/professionals/general-contractor/webb-city-mo-us-probr0-bo~t_11786~r_4413842",
+  "https://www.homeadvisor.com/tloc/Joplin-MO/Major-Home-Repairs-General-Contractor/",
+  "https://www.houzz.com/professionals/general-contractor/joplin-mo-us-project-type-home-restoration-probr1-bo~t_11786~r_4392768~sv_29675",
+  "https://www.houzz.com/professionals/general-contractors/robbins-construction-pfvwus-pf~1384931546",
+  "https://www.bbb.org/us/mo/joplin/category/construction"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "A few Joplin-area options worth getting quotes from:\n\n- **American Construction Inc.** — listed by the BBB as serving Joplin and surrounding areas, with an **A+ rating**. **417-781-6811**. [BBB listing](https://www.bbb.org/us/mo/joplin/category/general-contractor)\n- **GRC General Construction** — listed for remodeling and general contracting, with an **A+ BBB rating**. **417-499-7424**. [BBB listing](https://www.bbb.org/us/mo/joplin/category/home-improvement)\n- **Roof Master’s Remodeling Inc.** — listed for remodeling and home improvement, with an **A+ BBB rating**. **417-726-5226**. [BBB listing](https://www.bbb.org/us/mo/joplin/category/home-repair)\n\nBBB ratings are a useful starting point, not a guarantee of workmanship. For a larger remodel, I’d get at least three written bids, ask for recent local references and proof of insurance, and make sure the contract spells out scope, materials, payment schedule, and change orders. For a small repair, ask whether the contractor handles that specific trade.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

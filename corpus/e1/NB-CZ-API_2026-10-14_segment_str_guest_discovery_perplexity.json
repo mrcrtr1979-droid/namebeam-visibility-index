@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_str_guest_discovery_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d3fc4370-1542-4ee3-83a5-124aafdff67f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00141,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00514
+   },
+   "input_tokens": 4936,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4374,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 565,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5501
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "Vrbo",
+  "Booking.com",
+  "Message the host before booking",
+  "Read the full price and cancellation policy",
+  "Keep communication and payment on the platform",
+  "Check safety details",
+  "Quick rule of thumb",
+  "Don",
+  "Quick rule"
+ ],
+ "engine_stated_criteria": [
+  "Check the listing against your needs"
+ ],
+ "sources_cited": [
+  "https://www.vrbo.com/reviews",
+  "https://www.vrbo.com/lp/b/host-terms-of-service",
+  "https://help.vrbo.com/articles/What-are-the-review-guidelines",
+  "https://www.airbnb.com/help/article/2895",
+  "https://www.airbnb.com/help/article/241",
+  "https://help.vrbo.com/articles/How-do-I-submit-a-review-about-my-travelers",
+  "https://www.vrbo.com/lp/b/content-guidelines",
+  "https://www.airbnb.com/help/article/3099",
+  "https://www.vrbo.com/vacation-rentals",
+  "https://www.vrbo.com/tlp/trust-and-safety/communication-and-property-access-policy",
+  "https://www.vrbo.com/tlp/trust-and-safety",
+  "https://www.houfy.com/blog/best-vacation-rental-websites-2026-fee-comparison",
+  "https://hospitable.com/vrbo-vs-airbnb",
+  "https://www.airbnb.jp/help/article/3099",
+  "https://www.shopback.com/blog/travel/airbnb-vs-vrbo-vs-booking-vacation-rentals-us-2026"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one best platform for every trip. Choose based on the kind of stay you want, then compare the **final price and exact cancellation terms** for the same dates.\n\n- **Airbnb:** A good place to start if you want a range of options, including private rooms and shared spaces as well as entire homes. Check the listing’s house rules, amenities, reviews, and cancellation policy carefully.\n- **Vrbo:** Often a natural fit for families or groups looking for an **entire home** with no shared living spaces. Compare the total price, including fees, and read the property’s reviews and refund terms.\n- **Booking.com:** Useful if you want to compare rentals alongside hotels in one search. Policies and fees can vary by listing and rate, so check the details before booking.\n\n**How to find a good host and listing**\n\n1. **Read recent reviews, not just the overall score.** Look for repeated comments about cleanliness, accuracy, noise, check-in, and how the host handled problems. A few detailed, recent reviews are more useful than a bare rating.\n2. **Check the listing against your needs.** Confirm the exact location, bed and bathroom count, accessibility, air conditioning or heating, parking, and whether spaces are shared. Don’t assume an amenity is included unless the listing says so.\n3. **Message the host before booking** with any important questions. A clear, timely answer is a good sign; vague answers about essentials are a reason to pause.\n4. **Read the full price and cancellation policy.** Compare the total at checkout—not just the nightly rate—and note the deadline for a full refund. If your plans may change, favor a more flexible option.\n5. **Keep communication and payment on the platform.** Don’t wire money or pay a host directly; using the platform’s messaging and payment system helps preserve its protections.\n6. **Check safety details.** Look for smoke and carbon-monoxide detectors and clear check-in instructions. If something important is missing or unclear, ask before you commit.\n\n**Quick rule of thumb:** Vrbo for a whole-home group stay; Airbnb for a wider mix of home types; Booking.com when you want to compare rentals and hotels together. The best choice is the specific listing with strong recent reviews, a responsive host, a clear policy, and a fair all-in price.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

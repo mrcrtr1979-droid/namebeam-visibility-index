@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_lambos_digital_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "Lambos Digital",
+ "niche": "connected TV and streaming advertising agency",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best connected TV advertising agency?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_da6c9716-7db2-4dd7-80b5-91bae41600d8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00047,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00062,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00373
+   },
+   "input_tokens": 2420,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 1877,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 247,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2667
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Strategus",
+  "Clutch and The Manifest",
+  "The Manifest"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://themanifest.com/advertising/ctv/agencies",
+  "https://www.sortlist.com/s/connected-tv-advertising/united-states-us",
+  "https://www.sortlist.de/s/connected-tv-advertising/deutschland-de",
+  "https://themanifest.com/advertising/ctv/agencies?page=4",
+  "https://themanifest.com/advertising/ctv/agencies?page=22",
+  "https://themanifest.com/advertising/ctv/agencies?page=12",
+  "https://gitnux.org/service/ctv-advertising/",
+  "https://www.strategus.com/",
+  "https://worldmetrics.org/service/connected-tv-advertising/",
+  "https://clutch.co/us/agencies/connected-tv",
+  "https://themanifest.com/advertising/ctv/agencies?page=8",
+  "https://www.sortlist.com/s/connected-tv-advertising/france-fr",
+  "https://marketerhire.com/blog/ctv-advertising-agency",
+  "https://themanifest.com/advertising/ctv/agencies?page=11",
+  "https://www.sortlist.com/connected-tv-advertising"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” connected TV (CTV) agency—the right choice depends on your budget, audience, geography, and whether you need strategy, media buying, creative, or measurement.\n\n**Strategus** is one option to consider if you want a CTV-focused partner that also coordinates campaigns across video, display, and audio. For a broader agency comparison, Clutch and The Manifest list CTV providers, but rankings and review counts alone aren’t enough to establish fit.\n\nWhen evaluating agencies, ask how they:\n- Measure outcomes beyond impressions, ideally with incrementality or lift testing\n- Verify reach and manage frequency across streaming platforms\n- Report fees, inventory sources, and brand-safety controls\n- Tie exposure to your actual business goal, such as sales, leads, or app installs\n\nIf you share your location, budget, and campaign goal, I can narrow down the options.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

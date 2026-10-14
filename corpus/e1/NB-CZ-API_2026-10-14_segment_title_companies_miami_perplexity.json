@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_title_companies_miami_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: title companies, Miami",
+ "niche": "title companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Miami FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_05708e07-2878-4c9f-b059-8dd3c43463c2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00075,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00399
+   },
+   "input_tokens": 3561,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3014,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 239,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3800
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Worldwide Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://palmtitle.com/",
+  "https://atlantictitlefirm.com/reviews",
+  "https://www.yelp.com/biz/hemisphere-title-company-miami-lakes",
+  "https://reviews.birdeye.com/sharp-title-solutions-of-florida-170379099695385",
+  "https://www.titleescrowmiami.com/testimonials/",
+  "https://oneworldwidetitle.com/",
+  "https://www.yelp.com/biz/florida-title-and-trust-miami",
+  "https://www.yelp.com/biz/marina-title-miami",
+  "https://locationtitle.com/best-title-company-in-miami-fl",
+  "https://www.yelp.com/biz/c-and-c-title-agency-miami",
+  "https://www.flamingotitle.com/",
+  "https://www.yelp.com/biz/southeastern-title-company-aventura",
+  "https://miamicityrealty.com/pros/title-companies/",
+  "https://www.libertytitle.us/",
+  "https://www.yelp.com/biz/prestige-title-services-miami"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” title company—it depends on your property, contract, and priorities. Based on the information available, **Worldwide Title** looks like a reasonable first company to contact: it reports a 4.8 Google rating and client comments highlight communication and handling complex closings. Those are company-reported review details, not an independent endorsement.\n\nBefore choosing, get a written estimate and ask who will handle your file, what the closing and wire fees are, which title insurer underwrites the policy, and whether they regularly handle your type of transaction. Also verify the agency and agent’s Florida license through the state, and confirm who has the right to choose the closing agent under your contract. In Florida, that choice can depend on the contract and who pays for the owner’s title policy.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

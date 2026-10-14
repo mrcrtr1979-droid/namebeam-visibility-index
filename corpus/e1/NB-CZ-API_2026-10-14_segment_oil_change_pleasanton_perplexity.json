@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_oil_change_pleasanton_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9d4ca72c-30bd-408b-8c99-d8c094dd6db7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00058,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00431
+   },
+   "input_tokens": 4920,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4371,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 231,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5151
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "SpeeDee Oil Change & Auto Service",
+  "Big Brand Tire & Service",
+  "SpeeDee Oil Change",
+  "Auto Service",
+  "Big Brand Tire",
+  "SpeeDee"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.carfax.com/Auto-Repair-Pleasanton-CA_c12173",
+  "https://locations.thetirechoice.com/ca/pleasanton/4216-rosewood-rd",
+  "https://www.speedeeoil.com/locations/ca/pleasanton/44-mission-dr/",
+  "https://www.bbb.org/us/ca/pleasanton/profile/lube-service/oil-changers-1116-13682",
+  "https://www.diamondcertified.org/category/auto-oil-change/ca/pleasanton/",
+  "https://www.yourmechanic.com/city/pleasanton-ca",
+  "https://www.carfax.com/Auto-Repair-Livermore-CA_c23539",
+  "https://www.carfax.com/Reviews-Walmart-Auto-Care-Center-Pleasanton-CA_NMXGCLXADQ",
+  "https://www.speedeeoil.com/locations/ca/milpitas/635-trade-zone-blvd/",
+  "https://www.surecritic.com/reviews/old-town-auto-care",
+  "https://www.carfax.com/Auto-Repair-Dublin-CA_c27270_p3",
+  "https://www.yelp.com/biz/speedee-oil-change-and-auto-service-pleasanton",
+  "https://www.groupon.com/biz/pleasanton-ca/tire-choice-auto-service-centers",
+  "https://www.carfax.com/Reviews-SpeeDee-Oil-Change-and-Auto-Service-Pleasanton-CA_4WKZDJO001",
+  "https://www.bigbrandtire.com/locations/3687-old-santa-rita-rd-pleasanton-ca-94588"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**SpeeDee Oil Change & Auto Service** is a good all-around pick: it’s at **44 Mission Dr, Pleasanton, CA 94566**, offers quick oil changes (typically 15–30 minutes once the car is in the bay), and has strong customer ratings on some listings. Ratings vary by site, so I’d call ahead to confirm current pricing, wait time, and that they have the right oil for your vehicle: **(925) 426-9669**.\n\nIf you’d rather use a general auto-service shop, **Big Brand Tire & Service** at **3687 Old Santa Rita Rd** also offers oil changes and has a strong reported customer rating. Compare quotes and ask whether the price includes the filter and disposal fee.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

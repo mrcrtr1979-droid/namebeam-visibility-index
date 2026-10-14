@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_property_management_miami_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: property management, Miami",
+ "niche": "property management companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Miami FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_cb7a198d-f604-436d-b996-4e47b695cdcc",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00097,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00439
+   },
+   "input_tokens": 4416,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3867,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 311,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4727
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Novel Management",
+  "CIMCO Management",
+  "CIMCO"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/fl/miami/profile/property-management/miami-management-inc-0633-33000905/customer-reviews",
+  "https://www.bbb.org/us/fl/miami-beach/profile/property-management/jmk-property-management-0633-92022514",
+  "https://luxurypropertycare.com/miami-property-management-services/",
+  "https://trustanalytica.org/us/fl/best-property-management-companies",
+  "https://www.turbotenant.com/property-management/services/florida/miami/",
+  "https://www.bbb.org/us/fl/miami/profile/property-management/firstservice-residential-property-management-inc-0633-23006761/addressId/166529",
+  "https://www.biggerpockets.com/fl/miami/property-managers",
+  "https://novelmanagement.com/",
+  "https://cimcomanagement.com/miami/",
+  "https://luxflrentals.com/miami-property-management/",
+  "https://www.bbb.org/us/fl/coral-gables/category/property-management",
+  "https://pageonepartner.com/fl/miami/real-estate/",
+  "https://www.allpropertymanagement.com/property-management/companies/35790/real-property-management-miami-metro",
+  "https://www.bbb.org/us/fl/miami/profile/property-management/novel-management-llc-0633-90562800",
+  "https://www.jmkpropertymanagement.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a **long-term rental home in Miami**, **Novel Management** looks like a strong first company to interview. It specifically manages single-family homes and other individually owned rentals, and describes services covering leasing, tenant screening, rent collection, maintenance, inspections, and owner reporting. Its published pricing starts at **5% of monthly rent**, with leasing charged separately and no lease-renewal fee. Those are company-stated terms, so confirm the full fee schedule and service area directly. [Novel Management](https://novelmanagement.com/)\n\nI wouldn’t call any one company definitively “the best” without knowing your neighborhood, property, and priorities. **CIMCO Management** is another option to compare: it advertises an **8% management fee** and service across Miami-Dade. [CIMCO](https://cimcomanagement.com/miami/)\n\nBefore signing, ask each company for an itemized sample contract covering leasing and renewal fees, maintenance markups and approval limits, inspection frequency, cancellation terms, and how quickly owners receive rent and reports. Also request references from owners of similar homes.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b157ee73-bf39-4841-87ca-315785e795a7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00093,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00064,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00421
+   },
+   "input_tokens": 4268,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3722,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 255,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4523
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Carlos Castro at Georgia Prosthodontics",
+  "Dr. Carlos Castro",
+  "Georgia Prosthodontics",
+  "Atlanta Center for Advanced Periodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://georgiaprosthodontics.com/",
+  "https://www.drevangrodin.com/dental-implants/",
+  "https://georgiaprosthodontics.com/prosthodontist-atlanta/",
+  "https://www.drevangrodin.com/all-on-4/",
+  "https://advancedperioatl.com/",
+  "https://southernrootsperiodontics.com/",
+  "https://drhalnarnold.com/",
+  "https://advancedperioatl.com/implants/",
+  "https://westcobbperio.com/our-practice/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-gregg-codelli-1821141870",
+  "https://www.clearchoice.com/providers/samira-salari/1720494784/",
+  "https://www.periogeorgia.com/",
+  "https://allonimplantsatlanta.com/meet-dr-schiffer/",
+  "https://www.castleconnolly.com/top-dentists/carlos-castro-prosthodontics-cc332832",
+  "https://advancedperioatl.com/our-locations/dental-office-sandy-springs/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for every implant case. Based on the credentials available, **Dr. Carlos Castro at Georgia Prosthodontics** is a strong Atlanta option to consider: he is a **board-certified prosthodontist**, a specialist in restoring teeth and complex implant cases, with an office in Buckhead.\n\nIf the main challenge is **gum disease, bone grafting, or implant placement**, consider getting an evaluation from a **board-certified periodontist** as well—for example, Atlanta Center for Advanced Periodontics lists board-certified implant surgeons.\n\nBefore choosing, ask who will place the implant and who will restore it, what training they have for your specific case, whether grafting is needed, and for a written estimate and treatment plan. A second opinion is especially worthwhile for full-arch or otherwise complex treatment.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

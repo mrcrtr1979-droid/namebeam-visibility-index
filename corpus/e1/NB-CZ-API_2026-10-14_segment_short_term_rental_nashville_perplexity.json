@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_short_term_rental_nashville_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_56bf83a0-a044-449c-bde3-93466737790f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00092,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00472
+   },
+   "input_tokens": 5182,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4629,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 367,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5549
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "SoBro",
+  "The Nashville Rhythm",
+  "Midtown"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.ca/nashville-tn/stays/apartments",
+  "https://www.vrbo.com/vacation-rentals/family/usa/tennessee/middle/nashville",
+  "https://www.airbnb.com/midtown-nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/nashville-in/stays/family-friendly",
+  "https://www.cozycozy.com/us/nashville-short-term-rentals",
+  "https://www.timeout.com/nashville/travel/the-best-airbnbs-in-nashville",
+  "https://www.vrbo.com/vacation-rentals/usa/tennessee/middle/nashville",
+  "https://www.airbnb.com/downtown-nashville-tn/stays/family-friendly",
+  "https://www.bode.co/blog/best-nashville-airbnbs",
+  "https://www.hometogo.com/nashville/",
+  "https://www.vrbo.com/en-ca/vacation-rentals/family/united-states/tennessee/davidson-county/nashville-davidson/nashville",
+  "https://www.airbnb.com.br/nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/east-nashville-tn/stays",
+  "https://www.thetopvillas.com/destination/nashville/things-to-do-in-nashville",
+  "https://www.airbnb.com/downtown-nashville-tn/stays"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a family of four, I’d prioritize a **two-bedroom, two-bath rental in Midtown or Edgehill**: you’ll get separate sleeping space and a quieter base than right on Broadway, while staying a short drive from downtown. If you want to walk to the main attractions, look at **SoBro** (south of Broadway), but expect more noise and a busier atmosphere.\n\nA promising option from the listings I found is **“The Nashville Rhythm”** in Midtown: a two-bedroom, two-bath condo with two king bedrooms and a twin-bunk nook. It appears to offer more flexible sleeping arrangements than a typical one-bedroom-plus-sofa-bed rental. [View Airbnb’s Midtown family-friendly listings](https://www.airbnb.com/midtown-nashville-tn/stays/family-friendly).\n\nIf you’d rather be downtown, Airbnb’s listings include **two-bedroom, two-bath apartments** with kitchens and amenities such as pools; one listing describes a balcony and included parking. [Browse downtown family-friendly listings](https://www.airbnb.com/downtown-nashville-tn/stays/family-friendly).\n\nBefore booking, check the exact dates and total price, recent reviews, parking fees, bed setup, noise comments, and whether the listing is properly permitted. Availability and rates change, so I can’t identify a single best bookable property without your dates and budget.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

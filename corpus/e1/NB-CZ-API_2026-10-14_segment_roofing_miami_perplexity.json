@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_roofing_miami_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c02eeff2-bd3c-46c1-85b4-14e53ea45b5b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00093,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00064,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00421
+   },
+   "input_tokens": 4270,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3722,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 257,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4527
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "TS Roofing Systems",
+  "Extreme Roofing",
+  "CCC1326021",
+  "Miami-Dade Notice of Acceptance",
+  "Florida Product Approval",
+  "GAF Master Elite certification",
+  "Notice of Acceptance",
+  "Dade Notice of Acceptance",
+  "Miami-Dade Notice of Acceptance (NOA)",
+  "Notice of Acceptance (NOA)"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/fl/miami",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/oh/miami",
+  "https://biggroofingmiami.com/",
+  "https://www.mycityroofing.com/storm-damage/hurricane/",
+  "https://www.extremeroofingmiami.com/services/residential-roofing",
+  "https://skyguardroofingllc.com/",
+  "https://3mg.com/location/miami-fl/",
+  "https://www.artsroofing.com/",
+  "https://www.tsroofingsystems.com/roof-replacement/",
+  "https://www.extremeroofingmiami.com/best-roofers-south-florida",
+  "https://www.tsroofingsystems.com/service-areas/miami-roofing-services/",
+  "https://kendallroofing.net/",
+  "https://pageonepartner.com/fl/miami/roofing/",
+  "https://www.extremeroofingmiami.com/best-residential-roofers-miami-fl",
+  "https://1proroof.com/roofing-miami-fl/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a reliable single “best” without comparing bids and checking your specific roof, but **TS Roofing Systems** looks like a strong Miami shortlist candidate: it’s locally based, reports GAF Master Elite certification, and handles tile, shingle, metal, and flat-roof replacements. **Extreme Roofing** is another option to compare; it reports GAF Master Elite status and Florida roofing license **CCC1326021**.\n\nBefore choosing, get at least three written bids and verify each contractor’s active Florida license and insurance. Ask for the exact **Miami-Dade Notice of Acceptance (NOA) or Florida Product Approval** for the proposed materials, the wind-uplift/fastening details, permit and inspection responsibilities, and a written workmanship warranty. A “hurricane-rated” label alone isn’t enough—the complete roof system and installation must meet the requirements for your property.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

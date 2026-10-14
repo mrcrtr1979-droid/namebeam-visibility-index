@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_mortgage_lenders_st_charles_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: mortgage lenders, St. Charles",
+ "niche": "mortgage lenders",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Charles MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_69cf495b-855d-4bba-a4b4-cf2128eeb19f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00065,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00399
+   },
+   "input_tokens": 3163,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2612,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 278,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3441
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Integrity Mortgage",
+  "Loan Estimates",
+  "First State Bank Mortgage"
+ ],
+ "engine_stated_criteria": [
+  "A good local starting point is First State Bank of St. Charles"
+ ],
+ "sources_cited": [
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://www.experience.com/reviews/company/first-state-bank-of-st-charles",
+  "https://integritymo.com/",
+  "https://fsbfinancial.com/about-us/locations/2850-west-clay-street/",
+  "https://societymortgage.com/branches/st-charles-mo/",
+  "https://locations.umb.com/mo/saintcharles/umb-mortgage-loan-services-540m.html",
+  "https://www.royalbanksofmo.com/personal-lending/mortgages/",
+  "https://branches.guildmortgage.com/mo/weldonspring/st-charles-158.html",
+  "https://www.experience.com/reviews/office/st-charles-127891",
+  "https://fsbfinancial.com/mortgage/mortgage-lenders/",
+  "https://homelendingadvisor.chase.com/mo/saint-charles/1990-zumbehl-rd-hla-735999",
+  "https://mortgage.usbank.com/mo/saint-charles",
+  "https://www.lendersa.com/lenders/private-investor/mo/weldon-spring",
+  "https://www.mortgagegrades.com/rankings/top-rated/missouri",
+  "https://www.experience.com/reviews/brad-fink"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” lender—the right choice depends on your credit, down payment, loan type, and the lender’s actual rate and fees. **A good local starting point is First State Bank of St. Charles**: it has a mortgage center in town and offers purchase loans. **Integrity Mortgage** is another local option, with a reported 4.8/5 Google rating based on 37 reviews in the available search results.\n\nBefore choosing, get written **Loan Estimates** from at least three lenders for the same loan amount, down payment, and rate-lock period. Compare the APR, lender fees, points, closing timeline, and responsiveness—not just the advertised rate. You could also include a credit union or a national lender in the comparison.\n\nSources: [First State Bank mortgage center](https://fsbfinancial.com/about-us/locations/2850-west-clay-street/) · [Integrity Mortgage](https://integritymo.com/)",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

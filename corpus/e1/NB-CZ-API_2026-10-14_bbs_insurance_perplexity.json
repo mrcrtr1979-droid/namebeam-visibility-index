@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_bbs_insurance_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "BBS Insurance",
+ "niche": "health insurance brokerage",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best health insurance broker in Kansas City MO for someone who is self-employed?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_02f9cdfb-c329-4845-9528-550c4c91bbc8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00084,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00461
+   },
+   "input_tokens": 5079,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4527,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 335,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5414
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "Abbott Insurance",
+  "ACA Marketplace plans",
+  "Missouri. It",
+  "ACA Marketplace",
+  "Marketplace plans"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.healthmarkets.com/local-health-insurance-agent/mo/kansas-city",
+  "https://abbottkc.com/health-insurance/",
+  "https://ksassist.org/",
+  "https://www.bluekc.com/agents/",
+  "https://www.bluekc.com/page-category/agents/",
+  "https://sites.google.com/view/health-insurance-kansas-city/home",
+  "https://aishealthadvisors.com/",
+  "https://bbs-insurance.com/service-areas/kansas-city/",
+  "https://www.bluekc.com/agents/contact/",
+  "https://www.healthmarkets.com/plans/aca-health/missouri/kansas-city",
+  "https://www.fdinsuranceagency.com/locations/kansas-city-mo-health-insurance",
+  "https://www.bluekc.com/",
+  "https://apollo-insurance.com/health-insurance-kansas-city/",
+  "https://www.healthmarkets.com/plans/aca-health/missouri",
+  "https://www.expertise.com/insurance/health-insurance/missouri/kansas-city"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**BBS Insurance** looks like a strong first call for a self-employed person living in Kansas City, Missouri. It’s an independent local agency that says it compares ACA Marketplace plans across carriers, checks doctors, and helps estimate subsidies. Its site lists a **5.0 Google rating from 90 reviews** and a client example involving a 1099 contractor. Call **(816) 205-4664** or visit [BBS Insurance](https://bbs-insurance.com/service-areas/kansas-city/). Broker help is described as free; confirm any fees or compensation when you speak with them.\n\nA good alternative is **Abbott Insurance**, which also describes itself as an independent agent comparing carriers and offers Marketplace coverage: **(816) 452-8810**, [Abbott Insurance](https://abbottkc.com/health-insurance/).\n\nWhen you contact either, ask them to compare **ACA Marketplace plans** based on your estimated annual income, prescriptions, preferred doctors and hospitals, and expected care. For self-employed people, income can affect eligibility for premium tax credits, so ask how they handle income estimates and updates. You can also verify options directly at [HealthCare.gov](https://www.healthcare.gov/).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

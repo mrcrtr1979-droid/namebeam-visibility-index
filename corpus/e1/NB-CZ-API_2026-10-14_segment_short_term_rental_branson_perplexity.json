@@ -1,0 +1,100 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_460bf371-5310-45e4-8c19-32a879b745b4",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00058,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00119,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00441
+   },
+   "input_tokens": 2859,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2303,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 476,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3335
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Short answer",
+  "Theatre District / Highway 76",
+  "Branson Landing / downtown",
+  "Hilton Promenade at Branson Landing",
+  "Marriott’s Willow Ridge Lodge",
+  "Hotel Grand Victorian",
+  "My default recommendation",
+  "Theatre District",
+  "Highway",
+  "Hilton Promenade",
+  "Lake Resort Spa",
+  "Convention Center",
+  "Marriott",
+  "Willow Ridge Lodge",
+  "Chateau on the Lake",
+  "Lake Resort",
+  "Chateau on the Lake Resort Spa",
+  "Table Rock",
+  "Landing",
+  "Near Silver Dollar City"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/branson-mo/stays/condos",
+  "https://www.tripadvisor.com/Hotels-g44160-zff4-Branson_Missouri-Hotels.html",
+  "https://www.airbnb.com/branson-mo/stays/cabins",
+  "https://www.hoteles.com/en/de1644148-ty2/family-friendly-hotels-branson-missouri/",
+  "https://www.airbnb.com/branson-mo/stays/resorts",
+  "https://www.marriott.com/en-us/destinations/united-states/missouri/branson.mi",
+  "https://www.airbnb.com/branson-mo/stays/apartments",
+  "https://www.expedia.com/Destinations-In-Missouri.d227.Hotel-Destinations",
+  "https://www.travelocity.com/Branson-Hotels-Family-Hotel.0-0-d6058734-tFamilyHotel.Travel-Guide-Filter-Hotels",
+  "https://www.tripadvisor.com/HotelsList-Branson-Family-Resorts-zfp7812133.html",
+  "https://www.tripadvisor.com/Hotels-g44160-oa30-Branson_Missouri-Hotels.html",
+  "https://www.hotels.com/de1412461/hotels-branson-west-missouri/",
+  "https://www.ihg.com/branson-missouri",
+  "https://www.chateauonthelake.com/",
+  "https://www.hotels.com/nh1663107/hotels-in-downtown-branson-branson-missouri/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Short answer:** Choose a **hotel** for a short visit focused on shows, restaurants, and attractions; choose an **Airbnb or condo** for a longer stay, a larger group, or a kitchen and extra space.\n\n### Best areas to stay\n- **Theatre District / Highway 76:** Convenient for shows, restaurants, and many family attractions. A good base if you’ll be driving around town.\n- **Branson Landing / downtown:** Best for walking to shops and restaurants, with a more town-center feel.\n- **Table Rock Lake / Silver Dollar City side:** Better for lake time, a quieter setting, or prioritizing the park—but farther from many Highway 76 attractions.\n\n### Specific places to consider\n- **Hilton Promenade at Branson Landing** — A strong pick if you want to be near downtown shops and dining. Recent listing results show an 8.6/10 rating.\n- **Chateau on the Lake Resort Spa & Convention Center** — A more resort-like, lakeside stay with amenities; choose it for relaxation rather than being in the middle of the attractions.\n- **Marriott’s Willow Ridge Lodge** — Worth considering for families who want resort-style accommodations.\n- **Hotel Grand Victorian** — A central hotel option; recent listings show strong guest ratings.\n- **Airbnb condos or cabins** — Best when you need multiple bedrooms, a full kitchen, or a more private setting. Look around Table Rock Lake or near Silver Dollar City if those are your priorities.\n\n**My default recommendation:** For a first Branson trip, book a well-reviewed hotel near the **Theatre District** for convenience. Pick a condo or cabin if you’re staying several nights or traveling with a group. Before booking a rental, compare the *total* price after cleaning and service fees, check recent reviews, and confirm the exact location—“Branson” listings can be a drive from the attractions.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_real_estate_agents_pleasanton_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6712fa5e-015c-4941-8e74-b9855c3925f6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00461
+   },
+   "input_tokens": 5213,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4663,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 321,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5534
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Doug Buenz of Compass",
+  "Jon and Camille Ahern of Coldwell Banker",
+  "Varsha Upadhye of Coldwell Banker",
+  "Doug Buenz",
+  "Coldwell Banker",
+  "Varsha Upadhye"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/pleasanton-ca/",
+  "https://www.effectiveagents.com/ca/pleasanton",
+  "https://www.zillow.com/profile/MichaelTessaro",
+  "https://www.homelight.com/agents/katie-moe-ca-1507863-6568",
+  "https://www.homelight.com/agents/douglas-buenz-ca-00843458-4659",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/94566/",
+  "https://www.homelight.com/pleasanton-ca/top-real-estate-agents",
+  "https://www.realtor.com/realestateagents/5e576c06cf60f5001115cc17",
+  "https://www.zillow.com/profile/SoldByYusuf",
+  "https://www.homelight.com/agents/jim-lavey-ca-00452168-7981",
+  "https://www.zillow.com/profile/DDarbyGroup",
+  "https://www.realtor.com/realestateagents/5fa184f92a11f4001100502a",
+  "https://www.zillow.com/profile/PleasantonManagement",
+  "https://www.zillow.com/profile/robinyoungrealtor",
+  "https://www.redfin.com/city/14986/CA/Pleasanton/real-estate/agents"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent—the right choice depends on your home, neighborhood, price range, and how you want the sale handled. Based on the available Pleasanton agent listings and review data, **Doug Buenz of Compass** looks like a strong first interview: HomeLight lists him among its top Pleasanton agents, with a 5.0 rating from 122 reviews and substantial local seller activity.\n\nI’d compare him with **Jon and Camille Ahern of Coldwell Banker** and **Varsha Upadhye of Coldwell Banker**. The available rankings show the Aherns with strong reviews, while Upadhye is highly ranked by a service that says it uses verified MLS transaction data. These are useful leads, not a guarantee of who will get you the best result.\n\nInterview at least three agents and ask each for:\n- Recent **seller-side** sales in your neighborhood and price range\n- Their pricing rationale and marketing plan\n- Expected costs, including commission and preparation/staging\n- References from recent sellers\n\nChoose the agent whose comparable sales, strategy, and communication feel strongest—not just the one with the highest ranking.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,62 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_namebeam_openai",
+ "date_utc": "2026-10-14",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EYwjSZGmpUumDiPrzguSs8t70PStm",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 2087,
+   "total_tokens": 2111,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1280,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bard",
+  "Bing Chat",
+  "Moz Local",
+  "BrightLocal",
+  "SEO. BrightLocal and Whitespark",
+  "BirdEye",
+  "SEMrush",
+  "APIs",
+  "OpenAI API",
+  "LocalBusiness",
+  "Apple Maps",
+  "Wikidata",
+  "Wikipedia",
+  "Claim",
+  "Yext",
+  "Ahrefs",
+  "Whitespark",
+  "Local SEO",
+  "Schema.org LocalBusiness",
+  "Use BrightLocal"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there’s no single “official” service that reports what LLMs (ChatGPT, Bard, Bing Chat, etc.) will recommend, so the best approach is a two‑part strategy: (A) use a local‑listings/knowledge‑graph management service to make sure LLMs have accurate facts about your business, and (B) run regular direct checks against the LLMs themselves (automated where possible).\n\nRecommended services and why\n\n- Yext — Best if you want centralized control of your “knowledge graph” (name, hours, services, attributes). Yext distributes accurate facts to many platforms and positions you to show up in AI-driven answers.\n- Uberall / Moz Local / BrightLocal / Whitespark — Good, lower‑cost alternatives for citation/listing distribution and local SEO. BrightLocal and Whitespark are especially useful for local ranking and review monitoring.\n- Google Business Profile (free) — must-have. If Google has your facts, many downstream systems and knowledge graphs will too.\n- Review/reputation tools (BirdEye, Podium, Trustpilot, Mention/Awario/Brand24) — track reviews and brand mentions; many LLMs rely on reputation signals.\n- SEO suites (SEMrush, Ahrefs, Moz) — track organic visibility and queries that could trigger recommendations.\n\nHow to check whether LLMs recommend you\n\n1. Direct querying (most reliable)\n   - Manually prompt ChatGPT, Bard, Bing Chat with realistic user queries (“best [service] near [city]”, “who do you recommend for [specific need]?”) and see if your business appears.\n   - Automate via APIs where available: use the OpenAI API (GPT‑4/4o) to run a battery of query variations and parse outputs for mentions. For Bard/Bing Chat you may need manual checks or browser automation (respect platform terms).\n   - Test many prompt variants, locations, user intents and personas (e.g., price‑sensitive, emergency).\n\n2. Monitor the knowledge sources LLMs use\n   - Ensure accurate, consistent NAP (name/address/phone), hours, categories, and structured data (schema.org LocalBusiness) on your site.\n   - Be present and optimized on Google Business Profile, Yelp, Apple Maps, Facebook, and major directories — LLMs often pull from those sources or the knowledge graphs they feed.\n   - Claim or create a Wikidata/Wikipedia presence if your business qualifies — many models reference Wikidata.\n\n3. Set up periodic tests\n   - Weekly or monthly automated tests via the OpenAI API for a representative list of queries.\n   - Log results, track changes, and correlate with changes you make (new reviews, updated listings).\n\nWhich single option to pick\n- If you want one paid vendor to focus on: Yext is the most explicitly geared toward feeding accurate knowledge into search/AI environments; combine it with periodic API checks of ChatGPT (OpenAI API) to see actual model behavior.\n- If you’re on a tight budget: claim and optimize Google Business Profile + use BrightLocal or Moz Local for citations, and run occasional manual ChatGPT/Bard queries.\n\nQuick checklist to improve the chances an LLM will recommend you\n- Claim and fully complete Google Business Profile + other major directories.\n- Add schema.org LocalBusiness structured data to your site.\n- Get steady, high‑quality reviews on Google/Yelp/etc.\n- Create clear “service + location” pages and FAQ content that answers common user questions.\n- Get listed in authoritative directories and, if possible, Wikidata/Wikipedia entries.\n\nIf you want, I can:\n- Draft a list of 50 realistic user prompts to test across LLMs.\n- Provide a small OpenAI API script to run those prompts and parse results for mentions.\n- Recommend the best pick for your budget and industry if you tell me location, industry, and budget.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

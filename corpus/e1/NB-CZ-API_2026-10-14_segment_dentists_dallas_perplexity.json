@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_dentists_dallas_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_501f5510-45aa-44c8-993f-4c2eeec1b57f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00067,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00435
+   },
+   "input_tokens": 4726,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4180,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 268,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4994
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. David McFadden",
+  "The Dental Implant Center",
+  "W. Lovers Lane"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.dentalimplantcenter.com/",
+  "https://www.dentalimplantcenter.com/our-practice/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-david-mcfadden-1629290267",
+  "https://dallasddspecialists.com/",
+  "https://www.dentalimplantcenter.com/videos/full-mouth-implant-options-help-with-self-diagnosing-which-you-qualify-for/",
+  "https://www.dentalimplantcenter.com/videos/dental-implant-treatment-options/",
+  "https://directory.dmagazine.com/dentists/sheena-allen-dmd/",
+  "https://kathiasteeldds.com/",
+  "https://dallasimplant.com/reviews/",
+  "https://www.dentalimplantcenter.com/videos/25-amazing-dental-implant-bridge-cases-part-1/",
+  "https://www.smileloc.com/doctor/dr-hanife-canan-bayraktaroglu-dr-bay/",
+  "https://directory.dmagazine.com/dentists/rowan-buskin-bds-msc/",
+  "https://www.clearchoice.com/providers/daniel-cortes/1629558523/",
+  "https://oralsurgerytexas.com/locations/oral-surgeon-in-dallas-tx/",
+  "https://oralsurgeryofdallas.com/procedures/dental-implants/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for every implant case, but **Dr. David McFadden at The Dental Implant Center** is a strong Dallas option to consider—particularly for complex restorations. The practice says he is board-certified in prosthodontics and oral implantology, and lists its office at **5120 W. Lovers Lane, Dallas**. [Practice details](https://www.dentalimplantcenter.com/our-practice/)\n\nFor implant surgery, you may also want an evaluation from a **board-certified oral and maxillofacial surgeon or periodontist**; the surgeon and the dentist who designs and restores the tooth may be different clinicians. Before choosing, ask for a written treatment plan and total cost, who will place and restore the implant, what alternatives are suitable, and what happens if grafting or complications are needed. A second opinion is worthwhile, especially for full-arch treatment.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

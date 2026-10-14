@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f9268f5d-72a4-45d7-934f-f8b071930471",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0009,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00464
+   },
+   "input_tokens": 4962,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4416,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 360,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5322
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Soo Cheol Jeong at ClearChoice Phoenix",
+  "AZPerio",
+  "Dr. Soo Cheol Jeong",
+  "ClearChoice Phoenix",
+  "ClearChoice"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.clearchoice.com/providers/soo-cheol-jeong/1154648079/",
+  "https://www.prosthodontics.org/find-a-dental-technician/",
+  "https://www.clearchoice.com/locations/az/phoenix/20830-north-tatum-blvd/",
+  "https://www.prosthodontics.org/contact/",
+  "https://www.prosmileaz.com/",
+  "https://www.prosmileaz.com/about/",
+  "https://azperio.com/dental-implants/",
+  "https://www.ariadentalimplantcenter.com/our-team/",
+  "https://azdentalclub.com/services/dental-implants/",
+  "https://www.prosmileaz.com/thank-you/",
+  "https://about.me/galindoprosthodontics",
+  "https://dentalspecialtyassociates.com/services/oral-surgery/",
+  "https://www.myspecialtydentist.com/best/prosthodontics/phoenix",
+  "https://www.scottsdale-smiles.com/team/doctors/",
+  "https://www.azimplantdentist.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a reliable, objective “best” dentist for everyone—the right choice depends on whether you need one tooth replaced, several implants, or a full-arch restoration, and on your bone and gum health.\n\nA reasonable Phoenix starting point is **Dr. Soo Cheol Jeong at ClearChoice Phoenix**: the available information identifies him as a board-certified prosthodontist, with advanced training in implant dentistry. ClearChoice says its prosthodontists work with oral surgeons, which can be useful for complex cases. [Provider details](https://www.clearchoice.com/providers/soo-cheol-jeong/1154648079/) · [Phoenix location](https://www.clearchoice.com/locations/az/phoenix/20830-north-tatum-blvd/)\n\nFor a second opinion, **AZPerio** reports that it has board-certified specialists who provide implant care in the Phoenix area. [AZPerio implant services](https://azperio.com/dental-implants/)\n\nBefore choosing, ask who will place the implant and who will make the crown, what the full written cost includes, what alternatives you have, and how complications or follow-up are handled. Verify credentials and get a second opinion—especially if you’re being offered multiple implants or a full-mouth plan.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_real_estate_agents_st_louis_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: real estate agents, St. Louis",
+ "niche": "real estate agents",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Louis MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a5eda523-196e-4734-a605-6b861632de15",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00453
+   },
+   "input_tokens": 5121,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4570,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 301,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5422
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jamie L. Garvey",
+  "Sarah Nguyen-Bani"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/saint-louis-mo/",
+  "https://www.homelight.com/st-louis-mo/top-real-estate-agents",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/saint-louis-mo-63139-mo/",
+  "https://www.realtor.com/realestateagents/636d018d260d345d96426201",
+  "https://agentpronto.com/missouri/st-louis",
+  "https://www.homelight.com/saint-louis-mo/top-real-estate-agents",
+  "https://www.ratemyagent.com/real-estate-profile/sales/missouri/st-louis-mo/agents",
+  "https://www.realestateagents.com/mo/saint-louis",
+  "https://www.zillow.com/profile/DielmannSothebysIntl",
+  "https://www.ratemyagent.com/real-estate-profile/sales/missouri/st-louis-mo",
+  "https://www.realtor.com/realestateagents/5f210e179d965e001154b851",
+  "https://www.homelight.com/st-louis-county-mo/top-real-estate-agents",
+  "https://www.ratemyagent.com/real-estate-profile/sales/st-louis-county-missouri/agents",
+  "https://www.zillow.com/profile/laurasandersteam",
+  "https://www.zillow.com/profile/SARAHBANI"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for all of St. Louis—the right choice depends on your neighborhood, home price, and property type. Based on the available recent results, **Jamie L. Garvey** is one candidate worth interviewing: a verified seller review describes a neighborhood-specific pricing and prep plan that led to two above-asking offers on the first day. **Sarah Nguyen-Bani** is another candidate, with many reviews that include helping clients sell.\n\nBefore choosing, interview two or three agents who have recently sold homes **near yours**. Ask each for:\n- Recent comparable sales and their list-to-sale results\n- A suggested price range, with the comps behind it\n- Their marketing and showing plan\n- Who will handle communication and negotiations\n- Their fee and contract terms\n\nThe best fit is the agent who can explain a credible plan for *your* home—not just show a high sales count. If you share your neighborhood or ZIP code, approximate price range, and home type, I can help narrow the shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

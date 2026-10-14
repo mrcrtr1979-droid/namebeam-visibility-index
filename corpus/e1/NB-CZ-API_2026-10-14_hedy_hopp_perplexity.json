@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_hedy_hopp_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "Hedy & Hopp",
+ "niche": "healthcare marketing agency",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best healthcare marketing agency in St. Louis?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_acb74763-39cf-4fc8-a538-471d3cd890b1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00453
+   },
+   "input_tokens": 4855,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4309,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 324,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5179
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atomicdust",
+  "Advertising Savants",
+  "Integrity",
+  "St. Louis-area",
+  "Cork Tree Creative",
+  "Signature Medical Group",
+  "HIPAA-sensitive"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.atomicdust.com/healthcare-branding-agency/",
+  "https://www.atomicdust.com/industries/healthcare-marketing-agency/",
+  "https://corktreecreative.com/case-studies/signature-medical-group/",
+  "https://pilotpractice.com/healthcare-digital-marketing-agency-in-st-louis-mo.html",
+  "https://www.integrityxd.com/industry/healthcare",
+  "https://www.singlegrain.com/location/paid-ads-agency-st.-louis/",
+  "https://corktreecreative.com/services/search-engine-optimization/",
+  "https://www.singlegrain.com/location/digital-marketing-agency-st-louis/",
+  "https://revitadigital.com/locations/missouri/st-louis",
+  "https://practicegrowthco.com/case-studies",
+  "https://www.digitalpiloto.com/healthcare-marketing/saint-louis/",
+  "https://www.advertisingsavants.com/health-care",
+  "https://www.digitalstrike.com/industries/healthcare-marketing/",
+  "https://corktreecreative.com/case-studies/anderson-healthcare/",
+  "https://www.expertise.com/business/marketing-consultants/missouri/st-louis"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency—it depends on whether you need patient acquisition, healthcare branding, or marketing for a larger health system.\n\n**For a St. Louis-area medical group seeking measurable patient growth, Cork Tree Creative looks like a strong option.** Its published Signature Medical Group case study reports a **416% increase in conversions** and a **57% decrease in cost per conversion** in the first year. It also lists ongoing healthcare marketing work and is based in St. Louis.\n\nOther good fits:\n- **Atomicdust** — healthcare branding and marketing, especially for B2B healthcare, health-tech, and medical-device companies; reports work with 40+ healthcare brands.\n- **Advertising Savants** — a full-service local agency with experience across hospitals, health systems, insurance, and other health-related organizations.\n- **Integrity** — healthcare-focused marketing and technology services for practices and health systems.\n\nI’d shortlist two or three and ask for recent results from organizations similar to yours, who will handle your account, and how they manage HIPAA-sensitive data and conversion tracking. The case-study figures above are agency-published claims, so it’s worth asking how they were measured.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

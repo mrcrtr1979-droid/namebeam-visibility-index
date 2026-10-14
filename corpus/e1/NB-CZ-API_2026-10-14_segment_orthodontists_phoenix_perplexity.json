@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a9fb6987-037c-448f-8978-5247cf46c8e8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0044
+   },
+   "input_tokens": 4693,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4146,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 287,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4980
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Budd at Budd Orthodontics",
+  "Dunn Orthodontics",
+  "Serrano Orthodontics",
+  "Woolaver Orthodontics",
+  "Dr. Budd",
+  "Budd Orthodontics",
+  "American Board of Orthodontics",
+  "Invisalign"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://smilestraightphx.com/about-us/testimonials",
+  "https://teamorthodontics.com/our-practice/patient-reviews",
+  "https://doctor.webmd.com/doctor/frank-meng-fa04d0a6-ac86-4b44-b8aa-9f7910b16307-overview",
+  "https://www.buddorthodontics.com/meet-dr-budd",
+  "https://dunn-orthodontics.com/",
+  "https://www.zocdoc.com/orthodontists/phoenix-220419pm",
+  "https://woolaverorthodontics.com/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/e-s-orthodontics-phoenix-phoenix-az",
+  "https://www.yelp.com/biz/team-orthodontics-phoenix",
+  "https://serranoorthodontics.com/",
+  "https://arizona-orthodontics.com/about/testimonials/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/woolaver-orthodontics-phoenix-az",
+  "https://serranoorthodontics.com/welcome/",
+  "https://doctor.webmd.com/providers/specialty/orthodontics/arizona/phoenix",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/smile-straight-orthodontics-greenway-road-phoenix-az"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—your bite, treatment goals, location, and budget matter. A good starting point is **Dr. Budd at Budd Orthodontics**: the practice lists him as board-certified by the American Board of Orthodontics and offers both braces and Invisalign, with Phoenix offices in central and north Phoenix.\n\nOther options worth comparing:\n- **Dunn Orthodontics** — board-certified orthodontists; Phoenix offices and braces/Invisalign.\n- **Serrano Orthodontics** — board-certified doctors; Phoenix office and Invisalign.\n- **Woolaver Orthodontics** — Phoenix office, braces and Invisalign; especially convenient for Ahwatukee.\n\nI’d book two or three consultations before choosing. Ask who will supervise your treatment, whether braces and Invisalign are both suitable for your case, what the quoted fee includes (retainers and refinements, for example), and how emergencies or missed appointments are handled. Check current availability and insurance coverage directly with each office.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

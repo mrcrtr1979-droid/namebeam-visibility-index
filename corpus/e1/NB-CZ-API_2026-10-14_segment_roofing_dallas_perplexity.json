@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_roofing_dallas_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a1c6d31f-f806-4cbd-8eb5-a65bdc83336a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00057,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00053,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00374
+   },
+   "input_tokens": 2812,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2265,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 210,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3022
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bold Roofing Company",
+  "Dane Roofing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/tx/dallas/profile/roofing-contractors/dane-roofing-llc-0875-90338116",
+  "https://www.bbb.org/us/tx/dallas/profile/roofing-contractors/priority-roofing-of-dallas-0875-90719612/complaints",
+  "https://eliteroofpro.com/dallas-tx/",
+  "https://www.bbb.org/us/tx/dallas/profile/roofing-contractors/bold-roofing-company-inc-0875-23000679",
+  "https://www.bbb.org/us/tx/dallas/category/roof-replacement/accredited",
+  "https://www.bbb.org/us/tx/dallas/category/roofing-contractors/accredited",
+  "https://www.bbb.org/us/ga/hiram/profile/roofing-contractors/dallas-roofing-llc-0443-28170761",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/tx/dallas",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/tx/irving/911exteriorscom-1116512",
+  "https://www.bbb.org/us/tx/dallas/category/roof-replacement",
+  "https://newviewroofing.com/",
+  "https://pickleroofing.com/roof-replacement-contractor-dallas-tx",
+  "https://jamarroofing.com/dallas-fort-worth-roofing/",
+  "https://www.jrh-construction.com/areas/dallas",
+  "https://www.bbb.org/us/tx/plano/profile/roofing-contractors/roofing-remodeling-of-dallas-0875-8001505"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a reliable single “best” roofer for every Dallas home, but **Bold Roofing Company** is one local option worth getting a quote from: its BBB profile lists roof replacements and includes positive customer reviews. **Dane Roofing** is another Dallas-area company to compare.\n\nBefore choosing, get **three written, itemized bids** and check each contractor’s recent local references, insurance, workmanship warranty, and who will handle permits and cleanup. Don’t choose on a storm-insurance promise alone. If you tell me your ZIP code and whether you want shingles, metal, or another material, I can help narrow the shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

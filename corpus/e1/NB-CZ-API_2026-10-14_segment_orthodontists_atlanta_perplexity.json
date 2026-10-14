@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f7c2794c-91ac-4cdd-852e-494515232381",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00088,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0046
+   },
+   "input_tokens": 4848,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4301,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 351,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5199
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Buckhead Orthodontics",
+  "West Paces Ferry Orthodontics",
+  "Harris Orthodontics",
+  "Drs. Michael and Cristina Everson",
+  "Drs. Kristin Huber and Paul Yurfest",
+  "Invisalign",
+  "West Paces Ferry Rd NW",
+  "Dr. Peyton Harris",
+  "Marietta St NW"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://harrisorthodonticsatl.com/",
+  "http://providerbio.invisalign.com/Details/63798",
+  "https://www.buckheadorthodontics.com/",
+  "https://www.westpacesferryortho.com/",
+  "https://artemisorthoatlanta.com/top-5-orthodontic-treatment-options-available-in-atlanta/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/georgia-orthodontic-studio-atlanta-atlanta-ga",
+  "https://www.braces-braces.com/dr-lee",
+  "https://www.artemisortho.com/our-practice/patient-reviews/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/buckhead-orthodontics-atlanta-ga",
+  "https://www.castleconnolly.com/top-dentists/tyler-rathburn-orthodontics",
+  "https://artemisorthoatlanta.com/how-much-does-invisalign-cost-in-atlanta-heres-what-to-expect/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/drescher-cohen-midtown-atlanta-dentist-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/atlanta-dental-spa-highlands-atlanta-ga",
+  "https://www.westpacesferryortho.com/invisalign-info",
+  "https://www.realself.com/find/Georgia/Atlanta/Invisalign"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—the right choice depends on your case, budget, location, and whether you prefer braces or aligners. A few Atlanta-area practices worth comparing are:\n\n- **Buckhead Orthodontics** — Drs. Michael and Cristina Everson; offers braces and clear aligners. The practice reports ABO board certification. **2385 Peachtree Rd, Atlanta** · (404) 697-7497.\n- **West Paces Ferry Orthodontics** — Drs. Kristin Huber and Paul Yurfest; offers braces and Invisalign, and lists both doctors as board-certified. **1218 West Paces Ferry Rd NW, Atlanta** · (404) 262-2212.\n- **Harris Orthodontics** — Dr. Peyton Harris; offers braces and Invisalign and reports ABO board certification. **800 Marietta St NW, Atlanta** · (404) 902-6912.\n\nI’d book consultations with two or three before deciding. Ask whether the orthodontist—not just the practice—is board-certified, what treatment they recommend for your specific bite, the total cost and retainer plan, and how emergencies or refinements are handled. Invisalign provider tiers and online ratings can be useful clues, but they don’t by themselves establish who’s best for your case.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

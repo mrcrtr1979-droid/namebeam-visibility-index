@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_hvac_atlanta_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_29f1ad35-5cd5-496e-b248-2f9dc0e2d33d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00087,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00074,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00425
+   },
+   "input_tokens": 4035,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3487,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 297,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4332
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Cunningham Associates",
+  "Estes Services",
+  "Comfort Atlanta Heating & Air",
+  "NATE- and EPA-certified. Call",
+  "Cunningham AC",
+  "Comfort Atlanta Heating",
+  "Comfort Atlanta",
+  "NATE-certified",
+  "NATE",
+  "AC replacement"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.comfortatlanta.com/",
+  "https://www.cunninghamhvac.com/air-conditioning/hvac-installation/",
+  "https://atlantahvaccontractor.com/services/",
+  "https://www.theaircompanyga.com/",
+  "https://www.comfortatlanta.com/about-us",
+  "https://www.estesair.com/ac/installation",
+  "https://www.homedepot.com/services/l/ga/atlanta/heating-air-conditioning-repair/673dcc2c8",
+  "https://www.comfortatlanta.com/services/air-conditioning",
+  "https://www.reddit.com/r/Atlanta/comments/calnoq/hvac_replacement_companycost/",
+  "https://www.comfortatlanta.com/service-area",
+  "https://www.cunninghamhvac.com/other-services/",
+  "https://www.aireserv.com/locations/georgia/atlanta/",
+  "https://airatlantahvac.com/",
+  "https://www.cunninghamhvac.com/air-conditioning/ac-installation/",
+  "https://www.cunninghamhvac.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company for all of Atlanta homes, but **Cunningham Associates** looks like a solid first company to get a quote from: it serves Atlanta, offers AC replacement, and says its technicians are NATE- and EPA-certified. Call **770-343-7565** for an estimate. [Cunningham AC installation](https://www.cunninghamhvac.com/air-conditioning/ac-installation/)\n\nI’d also get two competing quotes—**Estes Services** and **Comfort Atlanta Heating & Air** both advertise AC replacement and NATE-certified technicians. [Estes](https://www.estesair.com/ac/installation) · [Comfort Atlanta](https://www.comfortatlanta.com/)\n\nCompare written quotes, not just the equipment price. Ask each company to explain the system sizing, what’s included (permits, ductwork, thermostat, disposal), labor and equipment warranties, and the exact model numbers. Check that the contractor’s Georgia license is current, and don’t feel pressured to decide during the visit.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

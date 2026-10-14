@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_220c7003-f8d8-4e76-8a9d-a3db08f44071",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00072,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00412
+   },
+   "input_tokens": 3412,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2863,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 302,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3714
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "A sensible starting point in Miami",
+  "Navy Federal Credit Union",
+  "Loan Estimate",
+  "Navy Federal"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bankrate.com/mortgages/mortgage-rates/florida/",
+  "https://saferate.com/local/miami/best-mortgage-lenders",
+  "https://www.usbank.com/home-loans/mortgage/mortgage-rates/florida.html",
+  "https://www.mortgagenewsdaily.com/mortgage-rates/florida",
+  "https://smartasset.com/mortgage/florida-mortgage-rates",
+  "https://tomo.com/mortgage/interest-rates-today/fl",
+  "https://saferate.com/miami/best-mortgage-lenders",
+  "https://www.alpinebanker.com/mortgage-rates-fl",
+  "https://www.nerdwallet.com/mortgages/mortgage-rates/florida",
+  "https://www.seacoastbank.com/personal/lending/mortgages/mortgage-rates",
+  "https://tomo.com/mortgage/interest-rates-today/30-year-fixed/fl",
+  "https://reliancefinancial.com/mortgage-lenders-miami/",
+  "https://www.zillow.com/homeloans/mortgage-rates/florida/",
+  "https://www.loc8nearme.com/florida/miami/mortgage-lenders/",
+  "https://www.miamibeachlenders.com/reviews/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and whether you value the lowest cost or hands-on local service.\n\n**A sensible starting point in Miami:** get a quote from a local mortgage broker or lender, then compare it with **Navy Federal Credit Union** if you’re eligible and a large bank or online lender. One Miami lender comparison lists Navy Federal among its options, but that alone doesn’t establish it as the best for every borrower.\n\nAsk each lender for a **Loan Estimate** for the same loan amount, down payment, loan type, and rate-lock period. Compare the **APR, lender fees, points, and cash to close**—not just the advertised rate—and check that the lender can meet your purchase contract’s closing timeline. Getting at least three quotes is a good way to find a competitive offer.\n\nIf you share your approximate purchase price, down payment, credit-score range, and whether you’re considering conventional, FHA, VA, or jumbo financing, I can help narrow down what to compare.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

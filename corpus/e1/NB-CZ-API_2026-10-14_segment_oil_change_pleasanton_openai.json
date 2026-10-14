@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-API_2026-10-14_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-10-14",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EYy2dv6Zt7eZ9SCjz5hKLNXT15wvy",
+  "usage": {
+   "prompt_tokens": 21,
+   "completion_tokens": 895,
+   "total_tokens": 916,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 640,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jiffy Lube",
+  "Valvoline Instant Oil Change"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Do you want a quick lube (fast, while‑you‑wait) or a full‑service/independent shop (more thorough, may do inspections and additional repairs)? Also: what kind of vehicle and do you want synthetic oil?\n\nIf you’d like, I can look up current top-rated oil‑change shops in Pleasanton and give addresses, hours and recent review summaries. Otherwise here are quick guidelines and common options:\n\n- Quick/Convenience: Valvoline Instant Oil Change or Jiffy Lube — fast, inexpensive, good for routine oil/filter changes.\n- Full service / trustworthy independents: choose an ASE‑certified independent shop or your dealer if the vehicle is under warranty or has manufacturer‑specific requirements.\n- Things to check before you commit: reviews on Google/Yelp, whether they use the oil type you want (full synthetic vs conventional), filter brand, estimated wait time, price (ask about coupons), and whether they’ll show you the old oil/filter.\n- Ask for the service checklist and a written receipt listing oil type/amount and filter part number.\n\nTell me which you prefer (quick vs full service), and I’ll pull the top-rated, nearby options with addresses and hours.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
