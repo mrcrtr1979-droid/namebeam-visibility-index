@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_property_management_miami_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: property management, Miami",
+ "niche": "property management companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Miami FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_41763efa-84d3-4360-864f-53df268ed29a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00452
+   },
+   "input_tokens": 4779,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4230,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 328,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5107
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Novel Management",
+  "CIMCO Management",
+  "Pristine Property Management",
+  "Miami. It"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://novelmanagement.com/property-management-pricing/",
+  "https://luxurypropertycare.com/miami-property-management-services/",
+  "https://www.biggerpockets.com/fl/miami/property-managers",
+  "https://miamipropertymanagement.com/testimonials/",
+  "https://www.jmkpropertymanagement.com/",
+  "https://cimcomanagement.com/miami/",
+  "https://novelmanagement.com/",
+  "https://www.turbotenant.com/property-management/services/florida/miami/",
+  "https://www.pristinepm.com/pricing",
+  "https://pageonepartner.com/fl/miami/real-estate/",
+  "https://novelmanagement.com/property-management/",
+  "https://miamipropertymanagementllc.com/",
+  "https://threebestrated.com/property-management-in-miami-fl",
+  "https://bhpropertymanagementmaintenance.com/property-management/miami",
+  "https://www.pristinepm.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Novel Management** looks like a good first company to interview for a long-term single-family rental in Miami. It specifically manages single-family homes and publishes a relatively low starting management fee—**from 5% of monthly rent**—with no maintenance markup and no lease-renewal fee. Tenant placement is separate and costs **one month’s rent**, so compare the full fee schedule, not just the monthly rate.\n\nI’d also get quotes from **CIMCO Management** and **Pristine Property Management**. Their published terms differ: CIMCO lists an 8% fee that includes leasing, while Pristine lists 10% of collected rent and a separate leasing fee.\n\nBefore choosing, ask each company for a written agreement and confirm:\n- All fees, including leasing, renewals, inspections, and cancellation\n- How repairs are approved and whether vendors add markups\n- Their tenant-screening process and typical vacancy time\n- Who handles after-hours emergencies and owner reporting\n- Recent references from owners of similar Miami homes\n\nThe best fit will depend on your home’s location, rent, and whether you want leasing included.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

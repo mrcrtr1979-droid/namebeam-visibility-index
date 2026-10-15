@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_lambos_digital_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "Lambos Digital",
+ "niche": "connected TV and streaming advertising agency",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best connected TV advertising agency?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_06fb7432-4924-4f55-881d-665f022b822c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00051,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00375
+   },
+   "input_tokens": 2598,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2055,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 238,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2836
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "U.S. advertiser seeking a CTV-focused specialist",
+  "Tatari",
+  "B2B"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://themanifest.com/advertising/ctv/agencies",
+  "https://www.sortlist.de/s/connected-tv-advertising/deutschland-de",
+  "https://www.sortlist.com/s/connected-tv-advertising/france-fr",
+  "https://www.sortlist.com/s/connected-tv-advertising/united-states-us",
+  "https://themanifest.com/advertising/ctv/agencies?page=7",
+  "https://worldmetrics.org/service/connected-tv-advertising/",
+  "https://clutch.co/agencies/connected-tv",
+  "https://directiveconsulting.com/blog/best-ctv-ads-agencies/",
+  "https://themanifest.com/advertising/ctv/agencies?page=41",
+  "https://themanifest.com/advertising/ctv/agencies?page=22",
+  "https://themanifest.com/advertising/ctv/agencies?page=12",
+  "https://themanifest.com/advertising/ctv/agencies?page=9",
+  "https://zipdo.co/service/connected-tv-advertising/",
+  "https://marketerhire.com/blog/ctv-advertising-agency",
+  "https://www.linkedin.com/pulse/top-15-connected-tv-advertising-companies-clutch-global-spring-yms3e"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” CTV agency—it depends on your budget, audience, geography, and whether you prioritize reach or measurable conversions.\n\nFor a **U.S. advertiser seeking a CTV-focused specialist**, **Tatari** is a reasonable agency to shortlist: it offers streaming-TV planning, buying, measurement, and analytics. For **B2B**, look for an agency that can connect CTV exposure to account engagement and pipeline, rather than reporting only views or impressions.\n\nBefore choosing, ask agencies to show:\n- How they measure incremental reach and conversions—not just completed views\n- Which streaming inventory and platforms they can access\n- Their minimum spend, fees, and reporting transparency\n- A relevant case study with results tied to your goal\n\nIf you share your location, budget, and campaign objective, I can suggest a more tailored shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_roofing_denver_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9a5cea7a-1406-4987-98d5-7bc79b4c6619",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00091,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00415
+   },
+   "input_tokens": 4170,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3623,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 242,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4412
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Gates Enterprises",
+  "Woodberg Roofing and Restoration",
+  "Metro City Roofing",
+  "Division of Insurance"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/lr-contracting-inc-1296-90131857/customer-reviews",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/murray-roofing-llc-1296-90104041",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/woodberg-roofing-and-restoration-llc-1296-90245804",
+  "https://www.bbb.org/us/co/denver/category/hail-repair/accredited",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/metro-city-roofing-1296-90261616",
+  "https://www.gatesroof.com/services/storm-hail-damage/denver",
+  "https://www.gatesroof.com/areas/denver",
+  "https://doi.colorado.gov/news-releases-consumer-advisories/consumer-advisory-division-of-insurance-shares-tips-to-prepare",
+  "https://www.bbb.org/us/co/aurora/category/hail-repair",
+  "https://thrive-roofing.com/",
+  "https://www.bestcoloradocontractors.com/pro/roofcorp-metro-denver/",
+  "https://www.cencoroofing.com/residential-roofing/hail-damage/",
+  "https://www.hilltopcontractinggc.com/cities/denver",
+  "https://northernlightsexteriors.com/exterior-home-remodel-service-areas/denver-roofers/",
+  "https://homematchup.com/roofers/co/denver/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” roofer, but **Gates Enterprises** looks like a reasonable first company to get a quote from: it specifically handles Denver hail and storm repairs, and its site reports a 4.9-star rating from 353+ reviews. Those figures are company-reported, so compare them with other sources and get at least two written estimates.\n\nYou could also compare **Woodberg Roofing and Restoration** and **Metro City Roofing**, both of which have reviews mentioning hail-damage work. Before signing, verify the contractor’s insurance and local licensing requirements, check recent references, and get the scope, price, warranty, and payment terms in writing. Colorado’s Division of Insurance also advises getting multiple quotes, being cautious with unsolicited door-to-door offers, and reading contracts carefully.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

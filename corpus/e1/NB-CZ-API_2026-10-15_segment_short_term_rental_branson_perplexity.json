@@ -1,0 +1,97 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_fc87799a-6015-4391-8eca-1c6528c51ab0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00093,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00113,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0047
+   },
+   "input_tokens": 4284,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3728,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 453,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4737
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "My default recommendation: stay in a hotel",
+  "Lodge of the Ozarks",
+  "Hilton Promenade at Branson Landing",
+  "Quick choice",
+  "Highway",
+  "Hilton Promenade",
+  "Lake Resort Spa",
+  "Convention Center",
+  "Branson West",
+  "Chateau on the Lake",
+  "Lake Resort",
+  "Chateau on the Lake Resort Spa",
+  "Table Rock",
+  "The Landing",
+  "Landing",
+  "My default recommendation",
+  "The Strip"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/branson-mo/stays/resorts",
+  "https://www.airbnb.com/branson-mo/stays/cabins",
+  "https://www.hotels.com/de1644148-ty2/family-friendly-hotels-branson-and-vicinity-missouri/",
+  "https://www.airbnb.com/branson-mo/stays",
+  "https://www.airbnb.com/branson-west-mo/stays/cabins",
+  "https://www.expedia.com/Branson-Hotels.d6058734.Travel-Guide-Hotels",
+  "https://www.hotels.com/de1644148-qu0/cheap-hotels-branson-and-vicinity-missouri/",
+  "https://www.hotels.com/nh1663107/hotels-in-downtown-branson-branson-missouri/",
+  "https://www.tripadvisor.com/Hotels-g44160-zff4-Branson_Missouri-Hotels.html",
+  "https://www.airbnb.com/branson-township-mo/stays",
+  "https://www.tripadvisor.co.uk/Hotels-g44160-Branson_Missouri-Hotels.html",
+  "https://www.tripadvisor.com/HotelsList-Branson-Family-Resorts-zfp7812133.html",
+  "https://www.hotels.com/de1644148-qu4/luxury-hotels-branson-and-vicinity-missouri/",
+  "https://www.hotels.com/de1463383/hotels-hollister-missouri/",
+  "https://www.hotels.com/de1644148-st5/five-star-hotels-branson-missouri/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**My default recommendation: stay in a hotel** for a short Branson visit. Hotels are usually simpler for a couple or small family, and staying near Highway 76 or Branson Landing makes it easier to get around. Choose an **Airbnb or condo** if you need multiple bedrooms, a kitchen, laundry, or a quieter cabin-style stay—especially for a longer trip. Check the full price, cleaning and service fees, cancellation terms, and exact drive times before booking.\n\n### Specific places to consider\n\n- **Lodge of the Ozarks** — My pick for a well-reviewed, practical hotel near the Highway 76 theater district. Recent listings show especially strong guest ratings. Good if shows and attractions are your focus.\n- **Hilton Promenade at Branson Landing** — Best for being able to walk to the Landing’s restaurants and shops, with downtown nearby. A good fit if you’d rather park and explore on foot.\n- **Chateau on the Lake Resort Spa & Convention Center** — Best for a resort-style, scenic stay by Table Rock Lake, with a spa and pools. It’s less central to the Strip, so expect more driving.\n- **A highly rated Airbnb cabin or condo near Branson or Branson West** — Best for extra space, a kitchen, or a more secluded feel. Branson West can be convenient for Silver Dollar City; check the listing’s actual location and travel time to the Strip.\n\n**Quick choice:** Lodge of the Ozarks for shows and convenience; Hilton Promenade for walkable dining and shopping; Chateau for a lake-resort getaway; Airbnb for a group or longer stay. Compare total costs for your dates—Branson prices and availability can vary a lot by season.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

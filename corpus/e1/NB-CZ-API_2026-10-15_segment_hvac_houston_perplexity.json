@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_hvac_houston_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_52f0b9b7-8f64-457e-9266-575166439e2d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00053,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00419
+   },
+   "input_tokens": 4623,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4077,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 213,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4836
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "John Moore Services",
+  "BBB A",
+  "AC repair",
+  "John Moore"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/tx/houston/category/air-conditioning-repair",
+  "https://www.bestinhood.com/houston/home-maintenance-and-repair/best-air-conditioner-repair-in-houston/",
+  "https://www.bestinhood.com/houston/home-maintenance-and-repair/best-hvac-services-in-houston/",
+  "https://www.bbb.org/us/tx/houston/category/residential-air-conditioning-contractors",
+  "https://www.bbb.org/us/tx/houston/category/heating-contractors/accredited",
+  "https://trustanalytica.org/us/tx/houston/best-hvac-contractors",
+  "https://www.bbb.org/us/tx/houston/profile/air-conditioning-contractor/one-hour-air-conditioning-heating-0915-29008/customer-reviews",
+  "https://www.expertise.com/home-improvement/ac-repair/texas/houston",
+  "https://www.americanproac.com/",
+  "https://www.bbb.org/us/tx/houston/category/commercial-air-conditioning-contractors/accredited",
+  "https://www.bbb.org/us/tx/houston/category/air-conditioning-contractor/accredited",
+  "https://www.johnmooreservices.com/air-conditioning/",
+  "https://www.abacusplumbing.net/about-us/awards-recognition/",
+  "https://www.royalairhouston.com/",
+  "https://www.aireserv.com/houston-northwest/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every Houston home, but **John Moore Services** is a reasonable first call for AC repair: it serves Houston, advertises licensed HVAC service, and offers around-the-clock phone availability. Its website reports a 4.8/5 rating, though that figure is company-reported.\n\nBefore booking, ask about the diagnostic fee, whether it’s credited toward the repair, and the total price before authorizing work. It’s also worth getting a second quote for an expensive repair. **BBB A+ ratings are useful context, but they aren’t a guarantee of workmanship or value.**",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_property_management_st_louis_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: property management, St. Louis",
+ "niche": "property management companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Louis MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ddaa8c23-1e16-4227-be94-c60c35c2ffe4",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00444
+   },
+   "input_tokens": 4959,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4408,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 278,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5237
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Evernest St. Louis",
+  "SMPL"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://homestretchpropertymanagement.com/",
+  "https://www.luxestl.com/",
+  "https://www.bbb.org/us/mo/ellisville/profile/property-management/st-louis-property-management-0734-310588166",
+  "https://keyrenterstlwest.com/property-management-services",
+  "https://www.bbb.org/us/mo/saint-louis/profile/property-management/hazel-valley-homes-llc-0734-1000046814",
+  "https://reviews.birdeye.com/st-louis-property-management-149480487447527",
+  "https://www.bbb.org/us/mo/saint-louis/category/real-estate-rentals/accredited",
+  "https://www.stlouispropertymanagement.co/pricing",
+  "https://renterswarehouse.com/offices/st-louis",
+  "https://smplpropertymanagement.com/",
+  "https://homestretchpropertymanagement.com/property-management/areas-we-serve/st-louis-property-management/",
+  "https://www.bbb.org/us/mo/saint-louis/category/property-maintenance/accredited",
+  "https://www.zillow.com/professionals/property-manager-reviews/63123/",
+  "https://www.zillow.com/professionals/property-manager-reviews/63103/",
+  "https://www.bbb.org/us/mo/north-county/category/property-management"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Evernest St. Louis** looks like a solid starting point based on the information available: it publishes a clear fee structure and describes full-service management, including leasing, rent collection, maintenance coordination, inspections, and owner reporting.\n\nFor a single-family home, Evernest lists an **8% monthly management fee**, a separate tenant-placement fee, and a lease-renewal fee. Confirm the current terms directly, since fees and promotions can change.\n\nI’d also get a quote from **SMPL** as a local alternative, especially if you value detailed financial reporting and maintenance oversight. Before choosing, ask both companies for a sample owner statement, their full fee schedule, typical repair approval limits, inspection frequency, and references from owners with similar homes. The best fit depends on your property’s location and condition, and how hands-on you want to be.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

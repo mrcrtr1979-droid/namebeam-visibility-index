@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_dentists_dallas_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5741d355-45af-4b91-a4c3-fa77b16e4ae6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00099,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00434
+   },
+   "input_tokens": 4508,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3962,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 285,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4793
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Brad Crump at BC Perio",
+  "Dr. Laura N. Rabe",
+  "Dallas Periodontics and Dental Implants",
+  "American Board of Periodontology",
+  "Dr. Brad Crump",
+  "BC Perio",
+  "Dr. Andrew Barnett"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.periodallas.com/",
+  "https://markgloverdds.com/",
+  "https://www.bcperio.com/",
+  "https://www.northdallasdentalhealth.com/meet-dr-john-wilson/",
+  "https://www.northdallasdentalhealth.com/",
+  "https://implantperioteam.com/",
+  "https://parkcitiesperio.com/our-services/",
+  "https://www.parklaneperio.com/",
+  "https://parkcitiesperio.com/our-doctors/stephanie-c-bowers-dds-ms/",
+  "https://www.parklaneperio.com/dr-andrew-barnett.html",
+  "https://mytoothhq.com/locations/",
+  "https://www.rootdfw.com/all-on-4-dental-implants/",
+  "https://www.northdallasdentalhealth.com/meet-dr-thomas-wilson/",
+  "https://mytoothhq.com/locations/grapevine-tx/",
+  "https://www.openpr.com/news/4545626/dental-implants-dallas-tx-gain-attention-as-more-patients-look"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for everyone, but for an implant I’d start by consulting a **board-certified periodontist or oral surgeon** for the surgical part, and confirming who will make and fit the crown.\n\nOne Dallas option to consider is **Dr. Laura N. Rabe at Dallas Periodontics and Dental Implants**. The practice lists her as a Diplomate of the American Board of Periodontology and board-certified in periodontology and dental implant surgery. You could also compare **Dr. Brad Crump at BC Perio** or **Dr. Andrew Barnett at Park Lane Periodontal and Dental Implant Group**; both practices list board-certified periodontists with implant experience.\n\nBefore choosing, get a written treatment plan and ask about the clinician’s experience with cases like yours, whether bone grafting is needed, who handles the crown, total cost, and what follow-up or warranty is included. A second opinion is especially worthwhile if the plan is complex.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

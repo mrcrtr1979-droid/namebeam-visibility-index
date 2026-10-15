@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_hedy_hopp_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "Hedy & Hopp",
+ "niche": "healthcare marketing agency",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best healthcare marketing agency in St. Louis?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9f010746-f6d3-4bd6-9e06-3e8d7021bb1f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0044
+   },
+   "input_tokens": 4774,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4228,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 280,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5054
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "Atomicdust",
+  "Cork Tree Creative",
+  "Advertising Savants",
+  "Integrity",
+  "Signature Medical Group"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.linkedin.com/company/clear-to-launch-healthcare-marketing",
+  "https://www.atomicdust.com/healthcare-branding-agency/",
+  "https://pilotpractice.com/healthcare-digital-marketing-agency-in-st-louis-mo.html",
+  "https://corktreecreative.com/case-studies/signature-medical-group/",
+  "https://www.singlegrain.com/location/digital-marketing-agency-st-louis/",
+  "https://revitadigital.com/locations/missouri/st-louis",
+  "https://www.integrityxd.com/industry/healthcare",
+  "https://www.singlegrain.com/location/paid-ads-agency-st.-louis/",
+  "https://www.linkedin.com/company/anvilinsights",
+  "https://www.linkedin.com/company/werremeyer",
+  "https://builtin.com/companies/location/st-louis/type/agency-companies",
+  "https://www.advertisingsavants.com/health-care",
+  "https://corktreecreative.com/industries/healthcare/",
+  "https://www.digitalstrike.com/industries/healthcare-marketing/",
+  "https://brandingpioneers.com/locations/usa/st-louis/healthcare-digital-marketing"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency—it depends on whether you need brand strategy, hospital-system campaigns, or patient acquisition for a practice.\n\n**For a strong all-around local choice, I’d shortlist Hedy & Hopp.** It describes itself as healthcare-only and focuses on patient acquisition and privacy, which makes it a good fit for healthcare organizations seeking specialized marketing support.\n\nOther good fits from the available information:\n\n- **Atomicdust** — healthcare branding and campaigns, especially for healthcare technology and service companies; based in St. Louis.\n- **Cork Tree Creative** — broad healthcare marketing, with local experience including Signature Medical Group.\n- **Advertising Savants** — long-standing healthcare and health-related brand work, including hospitals and health systems.\n- **Integrity** — full-service marketing for healthcare providers and private groups.\n\nBefore choosing, ask each agency for recent results with organizations like yours, how it handles healthcare privacy and compliance, and who will actually work on your account.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

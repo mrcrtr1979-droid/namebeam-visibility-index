@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_property_management_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: property management, Fort Lauderdale",
+ "niche": "property management companies",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Fort Lauderdale FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_784a65ff-1568-4a3a-8b2a-929184aa8725",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 4537,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3987,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 292,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4829
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "CIMCO Management",
+  "Real Property Management United",
+  "Luxury Property Care"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/fl/fort-lauderdale/category/property-management",
+  "https://www.bbb.org/us/fl/fort-lauderdale/profile/property-management/progress-residential-property-manager-llc-0633-90356586",
+  "https://www.bbb.org/us/fl/ft-lauderdale/profile/apartments/rental-asset-management-llc-0633-23001516",
+  "https://luxurypropertycare.com/ft-lauderdale-property-management-service/",
+  "https://www.turbotenant.com/property-management/services/florida/fort-lauderdale/",
+  "https://www.bbb.org/us/fl/cooper-city/category/property-management",
+  "https://www.unitedrpm.com/property-management-fees",
+  "https://www.bbb.org/us/fl/fort-lauderdale/profile/property-management/equity-residential-property-management-0633-90577934",
+  "https://chadypm.com/property-management-fort-lauderdale-fl/",
+  "https://www.bbb.org/us/fl/fort-lauderdale/category/hoa",
+  "https://www.bbb.org/us/ca/tustin/profile/property-management/tricon-1126-172014624",
+  "https://cimcomanagement.com/fort-lauderdale/",
+  "https://bhpropertymanagementmaintenance.com/property-management/fort-lauderdale",
+  "https://www.bbb.org/us/fl/fort-lauderdale/profile/property-management/exclusive-property-management-0633-23003447/customer-reviews",
+  "https://www.fortlauderdaleflpropertymanagement.com/services/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” company, but **CIMCO Management** looks like a strong first choice for a Fort Lauderdale rental home based on the information available: it says it manages single-family homes locally, offers tenant screening, leasing, rent collection, maintenance coordination with 24/7 emergency coverage, and monthly owner reporting, with a stated **flat 8% management fee**.\n\nI’d also compare **Real Property Management United**, which serves single-family homes in Fort Lauderdale and lists a **7.9% plan** (with a separate leasing fee), and **Luxury Property Care**, which advertises local service and charges **8–10% of collected rent**, plus a one-time leasing fee when it places a tenant. Those prices and service claims are from the companies’ own listings, so confirm them directly.\n\nBefore choosing, ask each for a sample management agreement and a full fee schedule—including leasing, renewals, inspections, maintenance markups, and cancellation terms—and speak with a couple of current owner clients.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

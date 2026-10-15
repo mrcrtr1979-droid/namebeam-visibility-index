@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_str_guest_discovery_openai",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EZJHOyzF6NArbsKsFnZDFq0S3OLtW",
+  "usage": {
+   "prompt_tokens": 34,
+   "completion_tokens": 1685,
+   "total_tokens": 1719,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 576,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Booking.com",
+  "Superhost",
+  "Host",
+  "Guest Refund Policy",
+  "Host Guarantee",
+  "Message the host before booking",
+  "Clear house rules",
+  "Guest Refund"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- If you need whole homes for families/groups or want traditional vacation-home inventory: Vrbo is a strong choice.\n- If you want a wide range of options (private rooms, shared spaces, entire homes), local hosts, and community features: Airbnb.\n- If you prefer hotel-style listings, instant/last-minute bookings and the largest global inventory (apartments + hotels): Booking.com.\nPick the platform that fits the type of stay you want; then use the steps below to find a high-quality host.\n\nHow the platforms differ (quick)\n- Vrbo: mostly entire homes, family-oriented, fewer shared-space options, often better for multi-bedroom houses. Fees can be similar to Airbnb.\n- Airbnb: broad variety (entire place, private room), strong host/guest community features (Superhost, reviews, ID verification), good for unique/local stays and short/medium trips.\n- Booking.com: huge inventory including hotels and apartments, often instant booking and free cancellation options, less community feel; bookings act more like hotel reservations in many cases.\n\nWhat matters most when choosing a host/listing\n- Type of property you need (whole home vs. private room vs. hotel).\n- Cancellation/flexibility policy and refund terms.\n- Total price (nightly + cleaning + service + taxes) and security deposit.\n- Communication and responsiveness of the host.\n- Guest reviews (quantity, recency, consistency).\n- Check-in method and exact address/proximity to places you need.\n- Amenities you require (Wi‑Fi speed, workspace, parking, washer, pet-friendly).\n- Safety and legal compliance (local registration, permits, ID verification).\n\nStep-by-step checklist to find a good host\n1. Narrow platform by property type and flexibility needs (use the bullets above).\n2. Filter listings for must-have amenities, number of bedrooms, and your dates.\n3. Sort and scan listings with recent positive reviews. Prioritize:\n   - Listings with many recent reviews (last 6–12 months).\n   - Hosts with Superhost/Premier/Top-rated badges.\n   - High response rate and short response time.\n4. Read reviews carefully — both 5-star and negative ones:\n   - Look for repeat praise about cleanliness, check-in, communication, and accuracy of listing.\n   - Pay attention to specific complaints (noisy neighborhood, inaccurate photos, hidden fees).\n5. Inspect listing details and photos:\n   - Photo set should be recent and cover all bedrooms, bathrooms, kitchen and entrance.\n   - Clear house rules, cancellation policy, and fees listed.\n   - Active calendar (not overly blocked or suspiciously wide open).\n6. Message the host before booking (sample template below). Note their tone and speed of reply.\n7. Check for red flags (see below). If any appear, move on.\n8. After booking: confirm arrival instructions, parking, Wi‑Fi and emergency contact. Save receipts and host contact info.\n\nSample pre-booking message (copy + adapt)\nHi [Host name], I’m [your name]. I’m planning to stay [dates] with [number and relation of guests]. I have two quick questions before booking:\n1) Is the listing exactly as shown in the photos (any recent updates)?\n2) What is the check-in process and earliest arrival time? Is self check-in available?\n3) Are there any additional fees or house rules I should know about?\nThanks — looking forward to your reply.\n\nWhat to look for in reviews (signals of a great host)\n- Consistent mentions of helpful/fast communication.\n- Accurate listing descriptions and photos.\n- Smooth check-in and clear instructions.\n- Cleanliness and well-stocked essentials.\n- Host responsiveness to problems and willingness to fix issues.\n\nRed flags and scams\n- Host asks to pay outside the platform (wire transfer, Venmo, cash) — don’t do it.\n- Very new listing with few or no reviews and a price well below market.\n- Copy/pasted or overly generic reviews that lack specifics.\n- Host cancels repeatedly or has many negative reviews about accuracy.\n- Listing photos stolen from other listings — reverse image search if suspicious.\n\nNegotiate, long stays and special needs\n- For stays 7+ nights or a month, message the host to ask for a discount and confirm utilities, internet reliability and cleaning schedule.\n- For pets, parties, or special requirements: confirm in writing and get host agreement.\n- For business travel: look for “business ready” filters (workspace, Wi‑Fi, self check-in).\n\nTroubleshooting and safety protections\n- Keep messages and receipts on-platform until after check-in when possible.\n- If issues arise during the stay, message host first and document the problem with photos and timestamps; escalate to the platform if unresolved.\n- Check platform protections (Airbnb’s Guest Refund Policy/Host Guarantee, Booking.com support options, Vrbo’s protections) and know cancellation deadlines.\n\nBottom line\n- Choose the platform that matches the kind of stay (Vrbo for whole-home family rentals, Airbnb for local or unique homes and flexibility, Booking.com for hotel-like ease and big inventory).\n- Use reviews, host badges, response behavior, and explicit pre-booking questions to pick a trustworthy host.\nIf you tell me your destination, travel dates, group size and priorities (budget, pets, workspace, family, long stay), I can give a tailored recommendation and draft a short message to send to hosts.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,54 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_str_host_tooling_openai",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EZJF02ZGSpThpailA5CVxbySoDfAz",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1552,
+   "total_tokens": 1578,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "PriceLabs",
+  "Beyond Pricing",
+  "Wheelhouse",
+  "MarketMinder",
+  "Mashvisor",
+  "AllTheRooms",
+  "PMS. They",
+  "PMSs",
+  "Beyond",
+  "Rentalizer",
+  "Start with AirDNA"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- Use a market-data tool to evaluate a neighborhood before you buy (AirDNA is the market leader for most investors).  \n- Use a dynamic-pricing tool to set nightly rates after you list (PriceLabs, Beyond Pricing, or Wheelhouse are the most popular).  \nA common, effective combo: AirDNA (MarketMinder/Rentalizer) for market analysis + PriceLabs for day-to-day pricing.\n\nWhy two tools (and which to pick)\n- Market analysis tools (AirDNA, Mashvisor, Transparent, AllTheRooms) give historic ADR, occupancy, seasonality, comps, RevPAR, and revenue estimates so you can run cash‑flow and cap‑rate models before buying. AirDNA is the most widely used and easiest for single‑market investment decisions; Transparent is deeper and aimed at professional managers.\n- Dynamic‑pricing tools (PriceLabs, Beyond Pricing, Wheelhouse) automatically set nightly prices based on demand, events, seasonality and competitor supply and integrate with Airbnb/PMS. They differ in customization and pricing model:\n  - PriceLabs — very customizable rules, excellent for hosts who want granular control and many integrations.\n  - Beyond Pricing — simpler, more set‑and‑forget, good for new hosts.\n  - Wheelhouse — strong analytics + pricing, a good middle ground.\n\nHow to decide which to use\n- If you’re evaluating a property to buy: start with AirDNA (or Mashvisor if you prefer a real‑estate‑focused presentation). Look at ADR, occupancy, RevPAR, seasonality, booking lead times, length‑of‑stay mix, and supply trends. Run your expense and mortgage assumptions against their revenue estimates.\n- If you’re a single host and want simplicity: AirDNA + Beyond Pricing works well.\n- If you want more control/customization or manage multiple listings: AirDNA + PriceLabs.\n- If you’re a professional manager with many units: consider Transparent (for market intelligence) + PriceLabs or Wheelhouse (for revenue management), or look into enterprise PMSs that include revenue management.\n\nPractical workflow (quick)\n1. Use market tool to screen neighborhoods: check ADR, occupancy, seasonality, events, supply growth, and historical trends. Run a conservative revenue model.  \n2. Validate comps manually (search Airbnb listings in that area) and call local agents/property managers if needed.  \n3. If you buy/list: set an initial pricing strategy (base nightly, minimum nights, cleaning fee, discounts) using your modeled ADR and occupancy.  \n4. Link your listing to a dynamic pricing tool (PriceLabs/Beyond Pricing/Wheelhouse) and set rules (min/max, minimum stay around events, last‑minute discounts).  \n5. Monitor bookings and adjust rules every few weeks while you collect actual performance data.\n\nOther notes and cautions\n- Data is only an estimate: AirDNA and others use scraped listing data and sampling; results can be optimistic. Use conservative assumptions when modeling purchases.  \n- Integrations: pick a pricing tool that integrates with your channel manager or PMS (if you use one).  \n- Trials: most services offer free trials or demos — test them with your actual listing data before committing.\n\nIf you want, tell me:\n- Where you’re looking to buy (city/neighborhood), and whether you want short, medium, or long term holds — I can suggest which market‑analysis report to run and which metrics to watch, or run a quick checklist of figures to extract from AirDNA.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

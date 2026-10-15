@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_title_companies_st_louis_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: title companies, St. Louis",
+ "niche": "title companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Louis MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_16440fab-cde6-4c99-83e4-f4512e6e63c6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00079,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00062,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00405
+   },
+   "input_tokens": 3728,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3179,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 249,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3977
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Title Partners Agency",
+  "Title Resources Inc",
+  "Powerscourt Drive"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://reviews.birdeye.com/integrity-title-solutions-llc-170409128186254",
+  "https://ctitleservices.com/residential-title-2/",
+  "https://titlepartnersagency.com/",
+  "https://reviews.birdeye.com/true-title-company-llc-169735100717317",
+  "https://stltitle.com/testimonials",
+  "https://securitytitlestl.com/",
+  "https://www.yelp.com/biz/title-partners-agency-st-louis",
+  "https://www.mapquest.com/us/missouri/elite-title-company-778230871",
+  "https://www.yelp.com/biz/investors-title-company-saint-louis-5",
+  "https://www.bbb.org/us/mo/saint-louis/profile/title-agent/legacy-title-escrow-0734-1000045803",
+  "https://www.selecttitlegroup.com/residential",
+  "https://freedom-title.com/locations/maryland-heights-mo-title-company",
+  "https://www.titleresourcesinc.com/missouri/",
+  "https://exceltitleco.com/",
+  "https://www.mapquest.com/us/missouri/investors-title-27045827"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Title Partners Agency** looks like a strong option to start with for a St. Louis home closing. Its site features positive client comments about responsiveness, clear communication, and help with unusual closing issues; its Yelp snippets also mention reasonable fees and quick turnaround. It’s at **12444 Powerscourt Drive, Suite 200, St. Louis, MO 63131**, and lists **(314) 835-3600**.\n\nThere isn’t enough consistent, independent review data here to call any company definitively “the best.” Before choosing, ask your lender whether they have requirements, then compare the **total title and closing fees**, who will handle your file, and how quickly they respond. You can also compare **Title Resources Inc.**, which reports a 5.0 Google rating from 92 reviews in the available results.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

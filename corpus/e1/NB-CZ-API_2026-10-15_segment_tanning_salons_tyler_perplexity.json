@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_tanning_salons_tyler_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: tanning salons, Tyler",
+ "niche": "tanning salons",
+ "market": "Tyler TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Tyler TX?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f0e70758-9add-4a2a-bb85-a35a8e514261",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00057,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00426
+   },
+   "input_tokens": 4742,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4198,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 229,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4971
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Palm Beach Tan",
+  "The Tanning Zone",
+  "UV-free"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://local.yahoo.com/info-18805792-the-tanning-zone-tyler/",
+  "https://palmbeachtan.com/locations/tx/tyler-south-broadway-avenue",
+  "https://www.yelp.com/biz/the-tanning-zone-tyler",
+  "https://reviews.birdeye.com/tru-tan-156035765085373",
+  "https://birdeye.com/glo-tanning-174837478091399",
+  "https://www.yellowpages.com/tyler-tx/mobile-spray-tanning",
+  "https://www.yellowpages.com/bullard-tx/tanning-salons",
+  "https://reviews.birdeye.com/belladonna-day-spa-boutique-149488240087087",
+  "https://www.yellowpages.com/tyler-tx/tru-tan",
+  "https://www.findlocaltanning.com/Texas/TRU-TAN-89221124276/",
+  "https://www.yelp.com/biz/tru-tan-tyler-4",
+  "https://www.vagaro.com/listings/tanning-salon/tyler--tx",
+  "https://www.yelp.com/biz/tru-tan-tyler",
+  "https://palmbeachtan.com/locations/tx",
+  "https://www.mapquest.com/us/texas/glo-tanning-776586031"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Palm Beach Tan** looks like the strongest all-around pick based on the available review data: its Tyler location at **5385 S. Broadway Ave.** is listed at **4.78/5 from 371 reviews**, and offers UV tanning, spray tans, red-light therapy, and an infrared sauna. Call **(903) 253-9990** to confirm current hours and pricing.\n\nIf you’d rather support a local business or want a more flexible, no-commitment option, **The Tanning Zone** at **5201 S. Broadway Ave.** is also worth considering; reviews mention friendly staff, clean facilities, and affordable sessions. Tanning Zone offers UV beds and spray tans.\n\nOne note: UV tanning carries skin-cancer and skin-aging risks; a UV-free spray tan avoids that exposure.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

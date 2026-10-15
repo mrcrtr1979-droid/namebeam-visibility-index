@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_hvac_atlanta_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0e0c9c1a-1cbc-4b49-bd9d-8a6de3843d32",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00096,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00063,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00423
+   },
+   "input_tokens": 4392,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3844,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 252,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4644
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "The Air Company of Georgia",
+  "Estes Services",
+  "Reliable Heating & Air",
+  "Sandy Springs",
+  "Georgia Conditioned Air",
+  "Reliable Heating",
+  "NATE-certified",
+  "NATE",
+  "The Air Company"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://atlantatoprated.com/hvac/",
+  "https://www.theaircompanyga.com/",
+  "https://serviceagent.ai/directory/georgia/atlanta/hvac/replacement/",
+  "https://atlantaexplored.com/air-conditioning-companies/",
+  "https://www.thumbtack.com/ga/atlanta/hvac-repair-companies",
+  "https://reliableair.com/cooling/central-ac-installation",
+  "https://www.bestprosintown.com/ga/atlanta/hvac/",
+  "https://bardi.com/air-conditioning/ac-installation",
+  "https://energyheating.com/residential-services/",
+  "https://indoorexperts.com/financing/",
+  "https://www.homedepot.com/services/l/ga/atlanta/heating-air-conditioning-installation/c16fbb4b7",
+  "https://www.theaircompanyga.com/atlanta-hvac-service",
+  "https://www.expertise.com/home-improvement/ac-repair/georgia/atlanta",
+  "https://www.consumeraffairs.com/homeowners/hvac-repair-atlanta.html",
+  "https://trustdale.com/business/georgia/buford-ga/zone-heating-and-air-atlanta"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company for all of Atlanta, but **The Air Company of Georgia** looks like a solid first call based on the information available: it reports licensed, insured, NATE-certified technicians and has customer feedback specifically mentioning system replacements. It’s based in Sandy Springs, so confirm it serves your address.\n\nI’d still get **at least three written estimates** before choosing. Ask each contractor to include the equipment model and efficiency, any ductwork or electrical changes, permit details, labor and parts warranties, and the full installed price. Make sure the contractor’s Georgia Conditioned Air license is active, and compare the proposed system sizing and scope—not just the price.\n\nOther Atlanta-area companies worth getting a quote from include **Estes Services** and **Reliable Heating & Air**. Warranty and financing offers can have conditions, so get those terms in writing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

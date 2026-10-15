@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_df90400b-fe6a-4af6-8cd1-eeb8f759c8d0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00085,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 4613,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4064,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 341,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4954
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "A local mortgage broker",
+  "Mayer Capital",
+  "Lifetime Capital Funding",
+  "A direct lender with Miami loan officers",
+  "Bank of America"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bankrate.com/mortgages/mortgage-rates/florida/",
+  "https://mortgageexpert.com/rates/",
+  "https://www.approvedready.com/",
+  "https://saferate.com/local/miami/best-mortgage-lenders",
+  "https://www.zillow.com/homeloans/mortgage-rates/florida/",
+  "https://smartasset.com/mortgage/florida-mortgage-rates",
+  "https://www.usbank.com/home-loans/mortgage/mortgage-rates/florida.html",
+  "https://www.universalmortgage.com/purchase-a-home-miami",
+  "https://saferate.com/miami/best-mortgage-lenders",
+  "https://www.nerdwallet.com/mortgages/mortgage-rates/florida",
+  "https://www.mortgagenewsdaily.com/mortgage-rates/florida",
+  "https://www.seacoastbank.com/personal/lending/mortgages/mortgage-rates",
+  "https://homeloans.bankofamerica.com/locator/florida/miami",
+  "https://www.credible.com/mortgage/rates/florida",
+  "https://mayerc.com/purchase"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and how quickly you need to close. **I’d start by getting quotes from one local broker and one or two direct lenders**, then compare their written Loan Estimates.\n\nFor Miami, options to include:\n\n- **A local mortgage broker**, such as **Mayer Capital** or **Lifetime Capital Funding**. Brokers may be able to compare several loan programs, which can help if you’re self-employed, buying a higher-priced home, or need a less standard loan.\n- **A direct lender with Miami loan officers**, such as **Bank of America**. A large lender may offer a familiar process and local contacts, but its offer isn’t automatically the cheapest.\n\nAsk each for the same scenario—purchase price, down payment, credit range, and loan type—and compare **APR, lender fees, points, rate-lock period, and closing timeline**, not just the advertised rate. Get at least three quotes; pricing is specific to your application and can change.\n\nIf you share your approximate price range, down payment, credit-score range, and whether you’re a first-time buyer, I can help narrow down which lender type and loan programs to prioritize.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_roofing_dallas_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3986c248-9c89-4e38-be27-b75905c9927c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00087,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00066,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00417
+   },
+   "input_tokens": 4015,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3468,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 263,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4278
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Arrington Roofing",
+  "New View Roofing",
+  "We Roof Dallas",
+  "BBB A"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/tx/dallas/profile/general-contractor/dar-roofing-general-contractors-0875-91342351/customer-reviews",
+  "https://www.thumbtack.com/tx/dallas/roofing/we-roof-dallas-inc/service/227990734823212222",
+  "https://upnotched.com/roofing-dallas-tx",
+  "https://reviews.birdeye.com/ready-roofing-solar-dallas-168314293381819",
+  "https://www.roofwarden.com/company/new-view-roofing-dallas-tx",
+  "https://arringtonroofing.com/blog/best-roofing-contractors-dallas",
+  "https://roofpitch.net/roofing-companies-dallas/",
+  "https://dfwroofers.com/reviews",
+  "https://www.thumbtack.com/tx/dallas/roofing/built-to-last-roofing-dallas/service/353172762688905236",
+  "https://arringtonroofing.com/",
+  "https://www.roofingdalco.com/",
+  "https://www.thumbtack.com/tx/dallas/roofing",
+  "https://www.jrh-construction.com/compare",
+  "https://www.thumbtack.com/tx/dallas/sheet-metal-roofing-companies",
+  "https://homematchup.com/roofers/tx/dallas/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” roofer for every Dallas home, but **Arrington Roofing** looks like a strong first company to get a quote from: it reports 42 years in business, GAF Master Elite and CertainTeed Master Craftsman credentials, BBB A+ accreditation, and a 4.9-star rating from 300+ customers. Those are useful signals, though some of the information comes from the company itself.\n\nI’d compare it with **at least two other local contractors**—for example, **New View Roofing** or **We Roof Dallas**—and ask each for a written, itemized replacement quote. Before signing, verify current insurance and manufacturer credentials, compare the exact materials and ventilation plan, and get the workmanship and manufacturer warranties in writing. Don’t choose on the basis of an insurance claim promise or a high-pressure “today only” offer.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

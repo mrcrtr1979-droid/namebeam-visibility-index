@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_property_management_west_palm_beach_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: property management, West Palm Beach",
+ "niche": "property management companies",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in West Palm Beach FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0a18dc41-7bf4-44d1-af13-82e91de323f7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00438
+   },
+   "input_tokens": 4572,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4021,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 291,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4863
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atlis Property Management",
+  "Florida’s Property Management",
+  "PMI",
+  "My Area Realty"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.floridaspropertymanagement.com/",
+  "https://www.atlispm.com/west-palm-beach-property-management",
+  "https://www.managewithaps.com/about-us.html",
+  "https://www.bbb.org/us/fl/west-palm-beach/category/hoa",
+  "https://www.bbb.org/us/fl/west-palm-beach/category/property-management/accredited",
+  "https://www.westpalmbeach-propertymanagement.com/wellington-property-management",
+  "https://www.bbb.org/us/fl/west-palm-beach/category/condominium/accredited",
+  "https://www.bbb.org/us/fl/palm-beach-gardens/category/property-management/accredited",
+  "https://www.floridaspropertymanagement.com/city/West-Palm-Beach.html",
+  "https://www.managewithaps.com/west-palm-beach-property-management.html",
+  "https://jandnpropertygroupllc.propertyware.com/property_management.html",
+  "https://www.bbb.org/us/fl/jupiter/category/property-management",
+  "https://www.bbb.org/us/fl/west-palm-beach/category/property-management",
+  "https://www.atlispm.com/",
+  "https://luxurypropertycare.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Atlis Property Management** looks like a strong first company to interview for a West Palm Beach single-family rental. It specifically serves the area and advertises tenant screening, leasing, maintenance coordination, annual inspections, owner reporting, and written landlord guarantees. Its website says pricing starts at 5%; confirm the actual rate and any leasing or other fees for your property.\n\nI’d also get a quote from **Florida’s Property Management** (also known as My Area Realty), which advertises local single-family-home management and a no-hidden-fee approach, and **PMI** in West Palm Beach for another full-service comparison.\n\nBefore choosing, ask each for a sample management agreement and a written fee schedule. Compare the leasing fee, monthly fee, renewal and vacancy charges, maintenance markups, cancellation terms, inspection frequency, and how quickly owners are paid. Ask for references from owners with similar homes, too.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

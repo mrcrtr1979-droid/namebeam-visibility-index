@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-15_segment_tanning_salons_columbus_perplexity",
+ "date_utc": "2026-10-15",
+ "business": "SEGMENT: tanning salons, Columbus",
+ "niche": "tanning salons",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Columbus OH?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c5de478d-4749-4774-8988-503a5086d3c4",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00057,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00419
+   },
+   "input_tokens": 4449,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3905,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 228,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4677
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Palm Beach Tan’s Georgesville location",
+  "Tan Wolf",
+  "Palm Beach Tan",
+  "See"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://trustanalytica.org/us/oh/columbus/best-tanning-salons",
+  "https://palmbeachtan.com/locations/oh/columbus-olentangy-river-road",
+  "https://www.bbb.org/us/oh/columbus/category/tanning-salons/accredited",
+  "https://palmbeachtan.com/locations/oh/arlington-pointe",
+  "https://reviews.birdeye.com/dolphin-beach-tan-148341609465292",
+  "https://palmbeachtan.com/locations/oh/columbus-graceland-boulevard",
+  "https://palmbeachtan.com/locations/oh/polaris-area-sancus-boulevard",
+  "https://palmbeachtan.com/locations/oh/georgesville",
+  "https://www.yellowpages.com/columbus-oh/tanning-salons",
+  "https://www.yelp.com/biz/mahalo-spray-tanning-columbus-2",
+  "https://www.bestprosintown.com/oh/columbus/tanning/",
+  "https://www.vagaro.com/sweetlybronzed",
+  "https://www.entrepreneursofcolumbus.com/top-rated/spray-tanning/",
+  "https://www.bestprosintown.com/oh/columbus/mahalo-spray-tanning-/",
+  "https://www.sweetlybronzed.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "If you mean a **traditional salon with tanning beds**, **Palm Beach Tan’s Georgesville location** looks like a strong pick: it has a reported **4.86/5 rating from 147 reviews** and offers multiple tanning options. [See the location and reviews](https://palmbeachtan.com/locations/oh/georgesville)\n\nIf you’re after a **custom spray tan**, **Tan Wolf** is a well-reviewed local option, with reviewers praising natural-looking results and helpful staff. [See local tanning listings](https://www.bestprosintown.com/oh/columbus/tanning/)\n\n“Best” depends on whether you want beds or spray tanning—and on which part of Columbus is convenient—so check recent reviews and pricing before booking.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
