@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t access the web from here, so I can’t look up Namebeam’s AI Visibility Record or read its content to get that exact count. If you paste the record page or the list of Google top‑10 URLs for each date (or give me the URL), I’ll count the distinct web pages and report the number.\n\nIf you want to do it yourself, here are quick options:\n\n1) Where it’s published\n- The AI Visibility Record is published by Namebeam on their website (look for a page or blog post titled “AI Visibility Record” or similar). If you give me the link I’ll confirm the exact location.\n\n2) How to compute the number (one‑step method)\n- Copy the list of Google top‑10 URLs for each date into a CSV or text file, one URL per line (duplicates allowed).\n- Remove duplicates and count remaining lines.\n\n3) Python/pandas script (if you have a CSV with a column named \"url\"):\n- Save CSV as data.csv, then run:\n\nimport pandas as pd\ndf = pd.read_csv(\"data.csv\")\nunique_count = df['url'].str.strip().dropna().unique().size\nprint(unique_count)\n\n4) Command‑line quick way (Linux/macOS):\n- If you have a text file urls.txt with one URL per line:\nsort urls.txt | uniq | wc -l\n\nIf you paste the record or the URLs here (or the page URL), I’ll compute the exact number and say exactly where it’s published.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-15T17:18:57Z",
+ "ok": true,
+ "probe_id": "NC",
+ "prompt_sha256": "efbb2eccf1f282e2dfdb6e4a46f44888ad548f405a891de2b76dea5850430d16",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web pages did Google's top 10 results list for the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "negative_control",
+ "run_id": "38776265347",
+ "search_mode": "no search tool (E1 setting)"
+}
