@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_890de8c1-2d00-4c82-acf0-4fc7949035bc",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00456
+   },
+   "input_tokens": 5208,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4662,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 301,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5509
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Caesar Butura",
+  "Dr. Soo Cheol Jeong",
+  "GoToAPro.org",
+  "ClearChoice Phoenix",
+  "American College of Prosthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.periodontistphoenix.com/reviews/",
+  "https://www.clearchoice.com/providers/soo-cheol-jeong/1154648079/",
+  "https://www.yelp.com/biz/desert-ridge-periodontics-and-implant-dentistry-phoenix",
+  "https://www.promaxsurgery.com/about-us/dr-amogh-velangi/",
+  "https://www.prosthodontics.org/contact/",
+  "https://www.prosthodontics.org/find-a-dental-technician/",
+  "https://www.yelp.com/biz/dental-implants-and-periodontology-of-arizona-phoenix-3",
+  "https://www.prosmileaz.com/",
+  "https://www.prosmileaz.com/about/",
+  "https://azperio.com/dental-implants/",
+  "https://www.yelp.com/biz/jason-augustine-dds-ms-phoenix",
+  "https://www.clearchoice.com/locations/az/phoenix/20830-north-tatum-blvd/",
+  "https://www.dentalimplantsphx.com/",
+  "https://oralsurgeryphoenix.com/",
+  "https://www.zocdoc.com/prosthodontists/phoenix-220419pm"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” implant dentist for everyone—your needs, the complexity of the case, insurance, and whether you need a single tooth or a full-arch restoration all matter.\n\nA reasonable place to start is **Dr. Caesar Butura**, a board-certified oral and maxillofacial surgeon in central Phoenix, particularly if you need implant placement or a more complex surgical procedure. Another option is **Dr. Soo Cheol Jeong**, a board-certified prosthodontist at ClearChoice Phoenix, especially if you need complex restorative work or full-mouth rehabilitation. These are starting points, not independent rankings.\n\nBefore choosing, get a consultation and ask who will place the implant and who will make the crown, what the full treatment plan and total cost are, what alternatives exist, and how complications and follow-up care are handled. For a major or costly case, consider getting a second opinion. The American College of Prosthodontists’ **GoToAPro.org** directory can also help you find a prosthodontist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

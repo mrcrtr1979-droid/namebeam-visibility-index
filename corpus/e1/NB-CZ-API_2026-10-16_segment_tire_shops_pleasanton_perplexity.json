@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_tire_shops_pleasanton_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: tire shops, Pleasanton",
+ "niche": "tire shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I buy tires in Pleasanton CA and who does the best installation?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_004febff-173f-4b60-ac68-1d3421dd912b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00084,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00429
+   },
+   "input_tokens": 3924,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3374,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 323,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4247
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Seever & Son’s Tire",
+  "America’s Tire in Dublin",
+  "Costco Pleasanton",
+  "Big Brand Tire",
+  "Son",
+  "Tire",
+  "America",
+  "Tire Rack",
+  "Big Brand and Seever",
+  "Costco",
+  "America’s Tire",
+  "My pick",
+  "My pick for installation"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.tirerack.com/installers/ca/pleasanton/94588/the-tire-choice-1633?id=8610837-022",
+  "https://www.bigbrandtire.com/locations/3687-old-santa-rita-rd-pleasanton-ca-94588",
+  "https://www.tirerack.com/installers/ca/pleasanton/94588",
+  "https://www.tirerack.com/installers/ca/pleasanton/94566",
+  "https://reviews.birdeye.com/seever-sons-tire-156070849854197",
+  "https://www.bigotires.com/location/ca-pleasanton-94566/005024/tire-services-and-repair",
+  "https://www.carfax.com/Auto-Repair-Pleasanton-CA_c12173",
+  "https://www.bigotires.com/location/ca/pleasanton/3688a-washington-st-94566/005024",
+  "https://www.tirerack.com/installers/ca/pleasanton/94582",
+  "https://www.costco.com/w/-/ca/pleasanton/1341?location=Pleasanton,%20California",
+  "https://locations.thetirechoice.com/ca/pleasanton/4216-rosewood-rd",
+  "https://locations.thetirechoice.com/ca/pleasanton",
+  "https://www.yelp.com/biz/valley-tire-service-pleasanton",
+  "https://www.yelp.com/biz/seever-and-sons-tire-pleasanton?start=40",
+  "https://careers.costco.com/jobs/60283?lang=en-us"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**My pick for installation: Big Brand Tire on Old Santa Rita Road.** It’s in Pleasanton and has a strong local review profile in the results: **4.7/5 from 708 reviews**. That makes it a good first call for a straightforward purchase-and-install job.\n\nOther good options:\n\n- **Seever & Son’s Tire** — a well-reviewed local shop; Yelp shows **4.8/5 from 531 reviews**. Worth comparing for personal service and a quote.\n- **America’s Tire in Dublin** — about 3 miles away, with a large Tire Rack installer survey base (**797 ratings**). A solid nearby option if you’re buying through Tire Rack or want to compare prices.\n- **Costco Pleasanton** — convenient if you’re a member; appointments are recommended, and walk-ins depend on bay availability.\n\n**Bottom line:** Get an out-the-door quote from Big Brand and Seever & Son’s, then compare it with Costco or America’s Tire for the exact tire model. Ask whether the quote includes mounting, balancing, valve stems/TPMS service, disposal, and road-hazard coverage; availability and pricing can vary by tire and vehicle.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

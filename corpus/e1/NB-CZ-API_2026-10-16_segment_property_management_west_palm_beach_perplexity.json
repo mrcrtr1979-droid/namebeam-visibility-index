@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_property_management_west_palm_beach_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: property management, West Palm Beach",
+ "niche": "property management companies",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in West Palm Beach FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_eb35f7ee-df5f-44fc-9dc6-4ce888a63ee2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00074,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00087,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00425
+   },
+   "input_tokens": 3508,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2957,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 349,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3857
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Home Property Management II, Inc",
+  "Atlis Property Management",
+  "Home Property Management II",
+  "Home Property Management"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.atlispm.com/",
+  "https://palmbeachcountypropertymanagement.com/about/",
+  "https://www.atlispm.com/about",
+  "https://www.managewithaps.com/",
+  "https://business.palmbeaches.org/business-directory/Search/property-management-775174",
+  "https://www.atlispm.com/west-palm-beach-property-management",
+  "https://www.rpmsunstate.com/areas-we-serve",
+  "https://www.allpropertymanagement.com/property-management/companies/49190/pmi-west-palm/",
+  "https://www.managemyproperty.com/companies/professional-property-management-7500",
+  "https://luxurypropertycare.com/west-palm-beach-property-management-services/",
+  "https://www.mayfairpropertymanagement.com/palm-beach-county",
+  "https://www.biggerpockets.com/fl/west-palm-beach/property-managers",
+  "https://www.linkedin.com/company/banyan-property-management",
+  "https://www.homepropertymanagement.com/",
+  "https://www.managewithaps.com/about-us.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Home Property Management II, Inc.** looks like a strong local option to interview: it’s based in West Palm Beach and describes hands-on property reviews, detailed move-in/move-out documentation, 24/7 maintenance handling, and 3D rental tours. Its site also includes a long-term owner testimonial, though that’s not independent verification.\n\nI’d compare it with **Atlis Property Management**, which serves West Palm Beach and lists tenant screening, leasing, rent collection, maintenance coordination, inspections, and owner reporting. Atlis advertises management fees of **5–9% of collected rent, with a $200 monthly minimum**; confirm the current rate and all additional fees directly.\n\nBefore choosing, get written proposals from both and ask about:\n- Total fees, including leasing, renewals, inspections, and maintenance markups\n- Average time to place a tenant and how they screen applicants\n- Owner references for single-family homes\n- How often they inspect and how they handle after-hours repairs\n- Cancellation terms and who holds the security deposit\n\nFor a single-family rental, I’d prioritize clear fees, responsive maintenance, and strong owner references over a headline review score.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

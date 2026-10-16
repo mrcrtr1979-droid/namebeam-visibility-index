@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_paint_saint_louis_llc_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "Paint Saint Louis LLC",
+ "niche": "interior painting",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best interior painting company in St. Louis MO?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9055cbf9-b5c1-4727-91e1-450eef7f2316",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00055,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00379
+   },
+   "input_tokens": 2760,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2213,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 239,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2999
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "S&L Painting",
+  "Five Star Painting of St. Louis",
+  "Five Star Painting"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/mo/saint-louis/profile/painting-contractors/kennedy-painting-llc-0734-310243770",
+  "https://www.bbb.org/us/mo/wildwood/profile/painting-contractors/five-star-painting-of-st-louis-0734-310613215",
+  "https://snlpainting.com/",
+  "https://www.bbb.org/us/mo/brentwood/profile/painting-contractors/lime-painting-of-st-louis-0734-1000028648",
+  "https://www.bbb.org/us/mo/saint-louis/profile/painting-contractors/shahid-painting-and-decorating-0734-1000036821",
+  "https://www.bbb.org/us/mo/fenton/profile/painting-contractors/paint-saint-louis-llc-0734-310563200",
+  "https://snlpainting.com/services/",
+  "https://www.bbb.org/us/mo/saint-louis/category/painting-contractors",
+  "https://www.angi.com/companylist/us/mo/st-louis/interior-painting.htm",
+  "https://betterpainting.com/",
+  "https://malonepainting.com/locations/st-louis/lafayette-square/",
+  "https://malonepainting.com/locations/ballwin/",
+  "https://www.thumbtack.com/mo/saint-louis/painting",
+  "https://www.improovy.com/locations/st-louis",
+  "https://www.bbb.org/us/mo/ellisville/profile/painting-contractors/360-painting-of-st-louis-county-0734-1000025367"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” painter for every home, but **S&L Painting** looks like a strong local option to start with: it says it has served St. Louis for 20 years and offers residential interior painting. [S&L Painting](https://snlpainting.com/)\n\nYou could also compare **Five Star Painting of St. Louis**, which has positive customer comments about interior projects on its BBB profile. [BBB profile](https://www.bbb.org/us/mo/wildwood/profile/painting-contractors/five-star-painting-of-st-louis-0734-310613215)\n\nBefore choosing, get at least three written estimates and compare prep work, paint and materials, schedule, warranty, and proof of insurance—not just the total price.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

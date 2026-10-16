@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_tanning_salons_columbus_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: tanning salons, Columbus",
+ "niche": "tanning salons",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Columbus OH?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_03cfcd7d-6700-498f-adad-34b5277bc2a9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00072,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00058,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00394
+   },
+   "input_tokens": 3412,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2868,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 232,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3644
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sweetly Bronzed",
+  "Palm Beach Tan",
+  "UV tanning"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.sunstudiotan.com/",
+  "https://trustanalytica.org/us/oh/columbus/best-tanning-salons",
+  "https://www.yelp.com/biz/sweetly-bronzed-columbus",
+  "https://palmbeachtan.com/locations/oh/arlington-pointe",
+  "https://www.yelp.com/biz/palm-beach-tan-columbus",
+  "https://www.yelp.com/biz/glow-airbrush-tanning-gahanna",
+  "https://www.vagaro.com/sweetlybronzed",
+  "https://palmbeachtan.com/locations/oh/columbus-graceland-boulevard",
+  "https://www.yelp.com/biz/mahalo-spray-tanning-columbus-2",
+  "https://www.bestprosintown.com/oh/columbus/tanning/",
+  "https://www.yelp.com/biz/teez-columbus",
+  "https://www.entrepreneursofcolumbus.com/top-rated/spray-tanning/",
+  "https://palmbeachtan.com/locations/oh/columbus-olentangy-river-road",
+  "https://palmbeachtan.com/locations/oh/polaris-area-sancus-boulevard",
+  "https://www.bestprosintown.com/oh/columbus/mahalo-spray-tanning-/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "If you mean a **spray tan**, **Sweetly Bronzed** looks like a strong all-around pick: reviewers praise the welcoming staff, natural-looking results, and clear aftercare guidance. It’s at **234 W. Fifth Ave.** Check recent reviews and availability before booking.\n\nFor a more established chain with multiple locations, **Palm Beach Tan** is another option; its Graceland location lists a **4.63/5 rating from 208 reviews** and offers spray tans.\n\n“Best” depends on whether you want a custom spray tan or UV tanning. If you tell me your neighborhood and which kind you’re looking for, I can narrow it down. UV tanning carries skin-cancer and premature-aging risks; a sunless spray tan avoids UV exposure.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

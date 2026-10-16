@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_flatline_contracting_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "Flatline Contracting",
+ "niche": "residential remodeling and repair",
+ "market": "Joplin MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is a reliable contractor in Joplin MO for a home remodel or repair project?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5ef15d71-c76b-43cc-804f-9eb5063936c9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00449
+   },
+   "input_tokens": 5127,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4575,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 285,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5412
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Robbins Construction",
+  "American Construction Inc",
+  "GRC General Construction",
+  "Houzz",
+  "BBB Joplin",
+  "American Construction"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/mo/joplin/category/home-renovation",
+  "https://www.bbb.org/us/mo/joplin/category/remodeling",
+  "https://www.bbb.org/us/mo/joplin/category/general-contractor",
+  "https://www.bbb.org/us/mo/joplin/category/home-repair",
+  "https://www.houzz.com/professionals/general-contractor/joplin-mo-us-probr0-bo~t_11786~r_4392768",
+  "https://www.bbb.org/us/mo/joplin/category/remodel-contractors",
+  "https://www.houzz.com/professionals/home-remodeling/joplin-mo-us-probr0-bo~t_34257~r_4392768?fi=15",
+  "https://www.bbb.org/us/mo/joplin/category/home-improvement",
+  "https://www.bbb.org/us/mo/joplin/category/new-construction/accredited",
+  "https://www.houzz.com/professionals/general-contractor/webb-city-mo-us-probr0-bo~t_11786~r_4413842",
+  "https://www.bbb.org/us/mo/joplin/category/carpenter",
+  "https://www.houzz.es/professionals/contratistas/joplin-mo-us-probr0-bo~t_17804~r_4392768",
+  "https://www.homeadvisor.com/tloc/Joplin-MO/Major-Home-Repairs-General-Contractor/",
+  "https://www.houzz.com/professionals/general-contractor/joplin-mo-us-project-type-home-restoration-probr1-bo~t_11786~r_4392768~sv_29675",
+  "https://www.houzz.com/professionals/general-contractors/robbins-construction-pfvwus-pf~1384931546"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "A good starting point is **Robbins Construction**: Houzz lists it in Joplin with a **5.0 rating from 21 reviews**. For a broader remodel or repair, you could also compare **American Construction Inc.** and **GRC General Construction**; both are listed by the BBB as serving Joplin with **A+ ratings**.\n\nBefore choosing, get at least three written estimates and ask each contractor for recent local references, proof of liability insurance, a clear scope and payment schedule, and any required permits. Ratings are a useful screening signal, not a guarantee—confirm the contractor’s current availability and that their experience fits your specific project.\n\nSources: [Robbins Construction on Houzz](https://www.houzz.com/professionals/general-contractors/robbins-construction-pfvwus-pf~1384931546) · [BBB Joplin remodeling listings](https://www.bbb.org/us/mo/joplin/category/remodeling)",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

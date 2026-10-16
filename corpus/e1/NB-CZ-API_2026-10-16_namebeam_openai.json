@@ -1,0 +1,59 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_namebeam_openai",
+ "date_utc": "2026-10-16",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EZfKQKKfcm734jZ74LXezMVsz0wKU",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1843,
+   "total_tokens": 1867,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1280,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Knowledge Panel",
+  "BrightLocal",
+  "Yext",
+  "Moz Local",
+  "Knowledge Graph",
+  "AIs",
+  "Use GBP Insights",
+  "TripAdvisor",
+  "LocalBusiness",
+  "Wikipedia",
+  "Wikidata",
+  "Bing Chat",
+  "Local SEO",
+  "Schema.org LocalBusiness",
+  "Use BrightLocal",
+  "Bing Webmaster Tools",
+  "Test AI"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- There’s no single tool that tells “AI engines” broadly whether they’ll recommend your business. But for local businesses the most important single place to check and fix is your Google Business Profile (Google Maps / Knowledge Panel). After that, use a listings/monitoring service (BrightLocal, Yext or Moz Local) to scan presence across the directories that AI assistants pull from.\n\nWhy Google Business Profile first\n- Most AI assistants and search-based systems rely heavily on Google Maps / Knowledge Graph data for local recommendations. If your GBP is missing, wrong, or unclaimed, many AIs are unlikely to surface your business reliably.\n\nPractical checklist and services\n1. Claim & optimize Google Business Profile (free)\n   - Complete name, address, phone, hours, categories, photos, services, accurate website.\n   - Use GBP Insights to see searches and clicks.\n2. Scan and fix citations across directories\n   - BrightLocal (local SEO audits, citation scan, rank tracking) — great for small businesses.\n   - Yext (paid, stronger for distributing corrected info to many publishers) — good if you want to actively push updates.\n   - Moz Local or Synup are alternatives for mid-range budgets.\n3. Manage reviews and reputation\n   - Yelp, TripAdvisor, Trustpilot (vertical dependent). Keep reviews positive and respond — many AIs surface highly-rated businesses first.\n4. Ensure your website is indexable and structured\n   - Use Google Search Console and Bing Webmaster Tools to confirm indexing.\n   - Add schema.org LocalBusiness markup and clear contact info so crawlers/AI can extract facts.\n5. Build a Wikipedia/Wikidata presence (if eligible)\n   - LLMs often learn from Wikipedia/Wikidata; having a factual entry there increases the chance of being known.\n6. Test AI recommendations directly\n   - Ask ChatGPT, Google Bard, and Bing Chat (ask regional queries: “Recommend a [type] near [city/postcode]”) — use the web-enabled/browsing versions if available.\n   - If the model doesn’t cite sources or returns vague answers, try prompting it to show sources or check for a knowledge panel link.\n7. Ongoing monitoring\n   - Use BrightLocal, Yext, or Brandwatch/Mention to monitor mentions and citation health regularly.\n\nWhich single service to choose?\n- If you must pick one: start with Google Business Profile (free) and BrightLocal for a thorough presence/audit. If you want automated distribution and broad publisher reach, consider Yext (paid).\n\nIf you want, tell me your business type and city and I’ll outline the top three places you should appear and suggest exact queries to test ChatGPT and other AIs.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

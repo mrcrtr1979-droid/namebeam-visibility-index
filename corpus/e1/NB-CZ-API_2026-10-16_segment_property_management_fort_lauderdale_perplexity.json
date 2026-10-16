@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_property_management_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: property management, Fort Lauderdale",
+ "niche": "property management companies",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Fort Lauderdale FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3db72009-b9a7-4ade-bb47-01e293abc2d0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 4989,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4439,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 304,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5293
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Real Property Management United",
+  "Luxury Property Care",
+  "Fort Lauderdale and Broward County"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.fortlauderdalepropertymanagement.com/",
+  "https://www.unitedrpm.com/",
+  "https://www.fortlauderdaleflpropertymanagement.com/",
+  "https://luxurypropertycare.com/ft-lauderdale-property-management-service/",
+  "https://www.atlispm.com/fort-lauderdale-property-management",
+  "https://www.fortlauderdalepropertymanagementinc.com/fort-lauderdale-property-management",
+  "https://www.metrofla.com/",
+  "https://www.fortlauderdale-propertymanagement.com/",
+  "https://www.properties.rent/fort-lauderdale-property-management",
+  "https://truenestpm.com/",
+  "https://www.metrofla.com/fort-lauderdale-property-management",
+  "https://www.mayfairpropertymanagement.com/",
+  "https://www.kompletepropertymanagement.com/",
+  "https://patch.com/florida/miami/real-property-management-united-30-years-protecting-fort-lauderdale-rental-investments-nodx",
+  "https://www.cruiseproperty.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t an objective “best,” but **Real Property Management United** looks like a strong first company to interview for a Fort Lauderdale rental home: it specifically manages single-family homes in Fort Lauderdale and Broward County, and offers leasing, tenant screening, maintenance, inspections, rent collection, and owner reporting. It has a local office at 6750 N. Andrews Ave., Suite 200. [Website](https://www.unitedrpm.com/)\n\nAlso compare **Luxury Property Care** if you want a local alternative. It lists single-family homes among its specialties and publishes its fees: typically **8–10% of collected rent**, plus a leasing fee of one month’s rent. [Fort Lauderdale services and fees](https://luxurypropertycare.com/ft-lauderdale-property-management-service/)\n\nBefore choosing, get written proposals from both and compare the full fee schedule—not just the monthly percentage—including leasing, lease renewal, inspections, maintenance markups, and cancellation terms. Ask for references from owners of similar homes and how quickly they respond to urgent repairs.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

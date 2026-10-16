@@ -1,0 +1,54 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_str_host_tooling_openai",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EZff9ImsXoYA9ljoAQlo2L7VjXStp",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1312,
+   "total_tokens": 1338,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 640,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "MarketMinder",
+  "PriceLabs",
+  "Beyond Pricing",
+  "Wheelhouse",
+  "Mashvisor",
+  "Beyond",
+  "AllTheRooms",
+  "AirDNA MarketMinder",
+  "Use AirDNA",
+  "Beyond Pricing and Wheelhouse",
+  "For Market Research"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- For market research before buying: AirDNA (MarketMinder) is the most widely used and easiest-to-read option. Mashvisor and AllTheRooms are good alternatives.\n- For setting nightly pricing once you host: PriceLabs is my top pick for flexibility and integrations. Beyond Pricing and Wheelhouse are solid alternatives.\n\nWhy those recommendations\n- AirDNA MarketMinder: large historical dataset, ADR, occupancy, seasonality, RevPAR, market/zip comps, future supply tracking and neighborhood-level dashboards — ideal for estimating revenue, seasonality and gauging whether a market can support an STR purchase.\n- PriceLabs: powerful, highly customizable dynamic-pricing rules, smart minimum-stay and length-of-stay settings, and integrates with Airbnb/VRBO and most PMS/channel managers. It gives automated price recommendations that you can tweak.\n- Beyond Pricing / Wheelhouse: easier initial setup (Beyond Pricing) or more advanced strategy options (Wheelhouse) — both integrate well and are used by many professional hosts and management companies.\n\nOther tools to consider\n- Mashvisor: oriented toward real-estate investors, compares long-term vs short-term returns and gives cap-rate/ROI estimates.\n- AllTheRooms (Transparent): enterprise analytics and historical performance tracking — good if you want deeper analysis or agency-level data.\n- InsideAirbnb: free, listing-level snapshots for some cities (helpful to check supply and individual listing details).\n- Zillow/Redfin/Realtor: property values, comps and neighborhood trends for purchase price and financing context.\n- Local STR Facebook groups, Airbnb searches and manual comps: irreplaceable for qualitative intel (how listings actually look, amenities, guest reviews, regulations).\n\nRecommended workflow (quick)\n1. Use AirDNA MarketMinder for the city/zip to get ADR/occupancy/seasonality and supply growth trends.\n2. Pull top comparable listings (by bedrooms, occupancy, location) and verify their photos/amenities/reviews manually on Airbnb.\n3. Run a pro forma: expected occupancy x ADR (use conservative occupancy) minus operating costs, mortgage, taxes, insurance, management/cleaning — you can do this in Excel or use Mashvisor.\n4. If metrics look good, plan for pricing: sign up for a dynamic-pricing tool (PriceLabs or Beyond Pricing), connect your listing or channel manager and configure minimums, weekend premiums, minimum stay, and custom rules for events/holidays.\n5. Start with the tool’s recommended prices but monitor daily/weekly and refine rules; watch actual bookings and adjust.\n\nPractical tips\n- Use multiple data sources — a single tool can miss micro-market factors or recent regulatory changes.\n- Account for regulatory risk and future supply (new hotels or STR conversions).\n- Model conservative occupancy and higher-than-expected costs (cleaning, utilities, maintenance).\n- Take advantage of free trials or demos — most tools offer them.\n- If you plan to scale or use a PMS, consider which pricing tool integrates with that system.\n\nIf you tell me the city/zip and property type (studio/1BR/2BR, urban/coastal), I can run through what to look for in AirDNA/Mashvisor outputs and suggest target ADR/occupancy assumptions and a sample pro forma.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_real_estate_agents_pleasanton_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ef3da188-3155-4a69-89df-47cfbd5e39a7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00119,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00455
+   },
+   "input_tokens": 5329,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4779,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 286,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5615
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Doug Buenz of Compass",
+  "Doug Buenz"
+ ],
+ "engine_stated_criteria": [
+  "Pleasanton listings they personally handled"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/profile/DougBuenz",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/pleasanton-ca/",
+  "https://www.zillow.com/profile/kimdeol",
+  "https://www.homes.com/real-estate-agents/jason-pugao/x96d6mn/",
+  "https://www.zillow.com/profile/MichaelTessaro",
+  "https://www.zillow.com/profile/Jing%20Xue",
+  "https://www.homes.com/real-estate-agents/wilson-ou/4fx01tl/",
+  "https://www.zillow.com/profile/Susan%20Tang%20Realtor",
+  "https://www.zillow.com/profile/PleasantonManagement",
+  "https://www.zillow.com/profile/AlexisVenema",
+  "https://www.redfin.com/city/14986/CA/Pleasanton/real-estate/agents",
+  "https://www.homelight.com/pleasanton-ca/top-real-estate-agents",
+  "https://www.realtor.com/realestateagents/Pleasanton_CA",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/94566/",
+  "https://www.realestateagents.com/ca/pleasanton"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for every Pleasanton home, but **Doug Buenz of Compass / The 680 Group** looks like a strong first agent to interview: HomeLight ranks him first among its Pleasanton agents, and Zillow’s local directory shows 27 team sales in the past 12 months and substantial sales history in ZIP code 94566. Those are useful signals, not a guarantee of the best result for your particular property.\n\nI’d interview **two or three agents** before choosing. Ask each for:\n- Recent **Pleasanton listings they personally handled** that resemble your home\n- Their pricing strategy and comparable sales\n- A written marketing plan and expected timeline\n- Their proposed commission and any extra fees\n- References from recent sellers\n\nCompare the agents’ plans and local track records—not just online rankings or review counts. If you share your neighborhood, home type, and approximate price range, I can suggest what experience to prioritize.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_oil_change_pleasanton_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_12bf2ce4-88fd-4ba7-bfa3-5daf9294ac1d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00097,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0005,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00411
+   },
+   "input_tokens": 4419,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3870,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 201,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4620
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "SpeeDee Oil Change & Auto Service",
+  "SpeeDee Oil Change",
+  "Auto Service",
+  "CARFAX",
+  "SpeeDee"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.carfax.com/Auto-Repair-Pleasanton-CA_c12173",
+  "https://www.speedeeoil.com/locations/ca/pleasanton/44-mission-dr/",
+  "https://www.diamondcertified.org/category/auto-oil-change/ca/pleasanton/",
+  "https://www.carfax.com/Reviews-Walmart-Auto-Care-Center-Pleasanton-CA_NMXGCLXADQ",
+  "https://www.speedeeoil.com/locations/ca/milpitas/635-trade-zone-blvd/",
+  "https://www.carfax.com/Auto-Repair-Livermore-CA_c23539",
+  "https://www.yourmechanic.com/city/pleasanton-ca",
+  "https://www.carfax.com/Auto-Repair-Dublin-CA_c27270_p3",
+  "https://www.yelp.com/biz/speedee-oil-change-and-auto-service-pleasanton",
+  "https://www.carfax.com/Reviews-SpeeDee-Oil-Change-and-Auto-Service-Pleasanton-CA_4WKZDJO001",
+  "https://www.yelp.com/biz/m-and-n-auto-repair-pleasanton-2",
+  "https://www.bbb.org/us/ca/pleasanton/profile/lube-service/oil-changers-1116-13682",
+  "https://www.loc8nearme.com/california/pleasanton/auto-repair/",
+  "https://www.groupon.com/biz/pleasanton-ca/tire-choice-auto-service-centers",
+  "https://www.surecritic.com/oil-change/in/fremont-ca"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**SpeeDee Oil Change & Auto Service** at **44 Mission Dr, Pleasanton, CA 94566** looks like a strong all-around choice. It specializes in oil changes, offers a quick service, and has a solid record in the results I found: CARFAX lists **4.9/5 from 121 verified reviews** (though ratings vary by site).\n\nCall **(925) 426-9669** to confirm current hours, price, and whether they have the right oil and filter for your car. If you’d rather avoid a shop visit, mobile oil-change service is another option.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7beeb359-3eb6-4209-9ce8-fd8e2e4c11fe",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00094,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00429
+   },
+   "input_tokens": 4300,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3753,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 285,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4585
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atlanta Orthodontic Specialists",
+  "West Paces Ferry Orthodontics",
+  "Invisalign",
+  "Virginia Highland",
+  "Howell Mill",
+  "Practice",
+  "American Board of Orthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://atlantaortho.com/services/",
+  "https://atlantaortho.com/services/braces/",
+  "https://atlantaortho.com/",
+  "https://atlantaortho.com/services/invisalign/",
+  "https://atlantaortho.com/faqs/",
+  "https://www.braces-braces.com/about-us",
+  "https://drwrightortho.com/location/orthodontist-in-atlanta-ga/",
+  "https://harrisorthodonticsatl.com/",
+  "https://artemisorthoatlanta.com/invisalign/",
+  "https://www.westpacesferryortho.com/",
+  "https://www.buckheadorthodontics.com/invisalign-clear-aligners.html",
+  "https://emailyogi.com/best-orthodontists-atlanta-2026/",
+  "https://doctor.webmd.com/providers/specialty/orthodontics/georgia/atlanta",
+  "https://www.doctorwaynesuway.com/invisalign/",
+  "https://www.castleconnolly.com/top-dentists/tyler-rathburn-orthodontics"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—case complexity, location, cost, and how comfortable you feel with the doctor all matter. Based on the available information, **Atlanta Orthodontic Specialists** is a reasonable place to start: they offer both braces and Invisalign and have several Atlanta-area offices, including Buckhead, Virginia Highland, and Howell Mill. [Practice details](https://atlantaortho.com/services/)\n\nFor a comparison, **West Paces Ferry Orthodontics** also offers braces and Invisalign and lists board-certified orthodontists at its Buckhead-area office. [Practice details](https://www.westpacesferryortho.com/)\n\nI’d book consultations with two or three practices before deciding. Ask who will supervise your treatment, what options fit your bite and goals, the full cost (including retainers and refinements), and how often you’ll need visits. Check board certification through the American Board of Orthodontics, and weigh detailed patient reviews more than “top provider” marketing claims.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

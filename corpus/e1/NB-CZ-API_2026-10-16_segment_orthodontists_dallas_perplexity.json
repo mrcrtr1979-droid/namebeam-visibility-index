@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_orthodontists_dallas_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_cf79314a-0ead-47dc-8c15-710a2b8e20f7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00464
+   },
+   "input_tokens": 5207,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4660,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 332,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5539
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Walnut Central Orthodontics",
+  "Dallas Orthodontics",
+  "HPO Orthodontics",
+  "Lakewood Orthodontics",
+  "Invisalign",
+  "N. Central Expressway",
+  "Sherry Lane"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/dallas-orthodontics-dallas-tx",
+  "https://www.hporthodallasbraces.com/hpo-invisalign-landing/",
+  "https://www.yelp.com/biz/white-rock-orthodontics-dallas",
+  "https://www.orthodontistdallastx.com/dallas-tx/invisalign-testimonials/",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/walnut-central-orthodontics-dallas-tx",
+  "https://www.guptasmilestudio.com/",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/fusion-orthodontics-dallas-tx",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/invisalign-of-dallas-dallas-tx",
+  "https://trustanalytica.org/us/tx/best-orthodontists",
+  "https://trustanalytica.org/us/tx/dallas/best-clear-braces",
+  "https://nationalorthodonticregistry.com/texas/dallas/orthodontists",
+  "https://www.orthodontistdallastx.com/",
+  "https://www.lakewoodortho.net/",
+  "https://orthodontics.mintdentistry.com/services/orthodontics/invisalign-teeth-straightening-dallas-tx",
+  "https://www.myidealdental.com/orthodontist"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone, but **Walnut Central Orthodontics** looks like a strong all-around option to investigate: its Dallas practice offers both braces and Invisalign, and the available listings report board-certified orthodontists and a high volume of Invisalign cases. It’s at **9669 N. Central Expressway, Suite 105**; **(214) 692-5688**.\n\nOther options worth comparing:\n- **Dallas Orthodontics** — braces and Invisalign; Dr. Benito Benitez. **(214) 363-4500**\n- **HPO Orthodontics** — braces and Invisalign; Dr. Nadia Lyotard’s practice highlights extensive Invisalign experience. **6128 Sherry Lane; (214) 361-6644**\n- **Lakewood Orthodontics** — braces and Invisalign; its orthodontist reports more than 25 years of Dallas-area practice.\n\nBefore choosing, book consultations with two or three offices. Ask who will personally oversee your treatment, what they recommend for your bite (not just appearance), the full cost and retainer plan, and how refinements or emergencies are handled. Ratings and provider-volume labels are useful starting points, not guarantees of the best fit.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

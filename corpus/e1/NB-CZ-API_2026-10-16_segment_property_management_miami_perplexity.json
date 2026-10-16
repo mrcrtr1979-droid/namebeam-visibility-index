@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_property_management_miami_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: property management, Miami",
+ "niche": "property management companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Miami FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b41f414b-7c98-40ab-9b7b-b3ebc2576aae",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00459
+   },
+   "input_tokens": 5215,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4666,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 310,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5525
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Luxury Property Care",
+  "Real Property Management Miami Metro",
+  "CIMCO Management",
+  "Real Property Management"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://trustanalytica.org/us/fl/best-property-management-companies",
+  "https://www.expertise.com/business/property-management/florida/miami",
+  "https://www.bbb.org/us/fl/miami/profile/property-management/miami-management-inc-0633-33000905/customer-reviews",
+  "https://luxurypropertycare.com/miami-property-management-services/",
+  "https://novelmanagement.com/",
+  "https://www.biggerpockets.com/fl/miami/property-managers",
+  "https://www.realpropertymgmt.net/",
+  "https://luxurypropertycare.com/best-property-management-companies-miami/",
+  "https://cimcomanagement.com/miami/",
+  "https://belonghome.com/homeowners/miami",
+  "https://www.jmkpropertymanagement.com/",
+  "https://miamipropertymanagement.com/",
+  "https://www.allpropertymanagement.com/property-management/companies/35790/real-property-management-miami-metro",
+  "https://www.thumbtack.com/fl/miami/property-management/real-property-management-miami-metro/service/197839813597635669",
+  "https://www.pristinepm.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every Miami rental home, but **Luxury Property Care** looks like a strong starting point based on the available information: it manages residential rentals, publishes its pricing, and reports a substantial review base. Its stated full-service fee is **8–10% of collected rent**, plus **one month’s rent when it places a new tenant**; it says there’s no management fee while the home is vacant and no renewal fee. Verify those terms and its current reviews directly before signing.\n\nI’d also get quotes from **Real Property Management Miami Metro** and **CIMCO Management**. Both describe full-service management for homes in the Miami area; CIMCO advertises a flat 8% management fee, while Real Property Management says pricing is customized.\n\nBefore choosing, compare the *total* cost—not just the monthly percentage—and ask about leasing and renewal fees, maintenance markups, inspection frequency, repair-approval limits, cancellation terms, and who handles evictions. Check recent reviews and confirm the company and responsible broker are properly licensed in Florida.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

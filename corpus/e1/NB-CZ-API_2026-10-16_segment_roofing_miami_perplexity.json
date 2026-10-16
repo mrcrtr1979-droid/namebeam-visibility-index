@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_roofing_miami_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_eadf7852-2c88-4ae6-876f-27a35d75785b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00453
+   },
+   "input_tokens": 4984,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4436,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 311,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5295
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "CCC1336668",
+  "Duke Contractors",
+  "CCC1325931",
+  "Greener Roofing & Solar",
+  "CCC1333474",
+  "SkyGuard Roofing",
+  "Miami-Dade Notices of Acceptance",
+  "NOAs",
+  "HVHZ and Miami-Dade NOA",
+  "Greener Roofing",
+  "Miami-Dade NOA",
+  "Dade NOA"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://skyguardroofingllc.com/",
+  "https://frtroofpro.com/testimonials",
+  "https://www.salomonroofing.com/",
+  "https://www.salomonroofing.com/pages/miami-roofing-company-testimonials",
+  "https://www.greenerroofingandsolar.com/",
+  "https://dukecontractors.net/miami/",
+  "https://miamirooftech.com/",
+  "https://www.extremeroofingmiami.com/top-roofers-on-bbb-miami",
+  "https://orianroofingmia.com/",
+  "https://www.diamondcertified.org/roofing/fl/miamidade-county/",
+  "https://www.roofermikeinc.com/roofing-miami-style/",
+  "https://www.bestpickreports.com/roofers/south-florida",
+  "https://www.safeguardroofing.net/roofing-reviews/",
+  "https://www.hirank.ai/art-s-roofing-and-construction",
+  "https://www.bbb.org/us/fl/miami/category/roofing-contractors"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a reliable, objective “best” without comparing bids and checking recent local references. **Based on the information available, I’d put SkyGuard Roofing on the shortlist**: it reports Florida roofing license **CCC1336668**, GAF Master Elite status, and that its installed systems carry Miami-Dade Notices of Acceptance (NOAs). Those are useful signals, but verify them independently before hiring.\n\nAlso compare **Duke Contractors** (license **CCC1325931**, reports HVHZ and Miami-Dade NOA work) and **Greener Roofing & Solar** (license **CCC1333474**, reports Miami-Dade-code replacements).\n\nFor any company, ask for a written proposal that specifies the exact roof assembly and Miami-Dade NOA, wind-uplift rating, underlayment and deck-attachment details, permit and inspection responsibilities, and warranty terms. Verify the contractor’s license and insurance, and get at least three itemized bids. A “hurricane-rated” claim alone doesn’t establish that the complete roof system is appropriate for your home or compliant with current local requirements.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

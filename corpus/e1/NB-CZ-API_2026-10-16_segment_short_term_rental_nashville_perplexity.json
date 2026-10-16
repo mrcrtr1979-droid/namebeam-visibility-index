@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_short_term_rental_nashville_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f66ab751-0661-4863-983f-233d170565bd",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00072,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00099,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00435
+   },
+   "input_tokens": 3432,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2879,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 394,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3826
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Browse Nashville",
+  "Midtown",
+  "Browse Midtown",
+  "Midtown family-friendly rentals"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/nashville-tn/stays/bed-and-breakfast",
+  "https://www.airbnb.com/nashville-tn/stays",
+  "https://www.kayak.com/Nashville-Vacation-Rentals.8304.rental.ksp",
+  "https://homes-and-villas.marriott.com/en/vacation-rentals/united-states/tennessee/nashville",
+  "https://www.nashville.gov/departments/codes/short-term-rentals/operation-rules-and-requirements",
+  "https://www.airbnb.com/downtown-nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/midtown-nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/nashville-in/stays/family-friendly",
+  "https://www.airbnb.com/nashville-tn/stays/family-friendly",
+  "https://musiccityloft.com/",
+  "https://www.airbnb.com/downtown-nashville-tn/stays/apartments",
+  "https://www.expedia.com/Nashville-Vacation-Rentals.d178291.Travel-Guide-VacationRentals",
+  "https://www.vrbo.com/vacation-rentals/family/usa/tennessee/middle/nashville",
+  "https://www.bode.co/blog/best-nashville-airbnbs",
+  "https://www.nashville.gov/departments/codes/short-term-rentals"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a family of four, I’d start with a **two-bedroom, two-bath rental in Midtown or near downtown**—enough room for everyone, while keeping major sights within an easy drive or walk. A downtown listing highlighted in the search results offers two bedrooms, two baths, a balcony, and a pool; it could be a good fit if the dates and price work. [Browse Nashville family-friendly rentals on Airbnb](https://www.airbnb.com/nashville-tn/stays/family-friendly)\n\nIf you’d rather have a quieter, more residential stay, look for a whole home in a family-friendly neighborhood and plan on driving or using rideshares. Midtown listings may offer better value and parking; one example in the results is a two-bedroom suite with a full kitchen and free parking. [Browse Midtown family-friendly rentals](https://www.airbnb.com/midtown-nashville-tn/stays/family-friendly)\n\nBefore booking, check the **total price**, bed setup, parking, noise reviews, cancellation terms, and whether the listing has a valid Nashville short-term-rental permit. Nashville requires permits for short-term rentals. [City permit information](https://www.nashville.gov/departments/codes/short-term-rentals)\n\nThere isn’t one clear “best” listing without your dates, budget, and preferences—and availability and prices change. Share those, plus whether you’ll have a car and your children’s ages, and I can narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

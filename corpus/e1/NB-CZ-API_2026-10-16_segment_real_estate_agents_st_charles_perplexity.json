@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_real_estate_agents_st_charles_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: real estate agents, St. Charles",
+ "niche": "real estate agents",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Charles MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9bf17989-4c61-4ec3-84f0-8388965e4cd7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00075,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00417
+   },
+   "input_tokens": 3545,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2994,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 313,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3858
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Berkshire Hathaway HomeServices Select Properties",
+  "St. Charles-area"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.realtor.com/realestateagents/st-charles_mo",
+  "https://www.realestateagents.com/mo/saint-charles",
+  "https://www.realtor.com/realestateagents/56b0b89589a68901006c7b9d",
+  "https://www.homelight.com/st-charles-mo/top-real-estate-agents",
+  "https://www.realtor.com/realestateagents/56bb3bb289a68901006d4577",
+  "https://agentpronto.com/missouri/st-charles",
+  "https://www.homes.com/real-estate-agents/saint-charles-mo/p2/",
+  "https://www.homes.com/real-estate-agents/saint-charles-mo/",
+  "https://www.zillow.com/profile/Service1stHomes",
+  "https://www.homelight.com/agents/aimee-davison-mo-2005016536",
+  "https://www.homelight.com/agents/stephanie-parson-mo-1999014362",
+  "https://www.homelight.com/agents/logan-strain-mo-2011010930",
+  "https://www.linkedin.com/in/granthickman",
+  "https://www.fastexpert.com/top-real-estate-agents/missouri/",
+  "https://business.stcharlesregionalchamber.com/directory/Search/real-estate-agents-769972"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t enough reliable evidence to name one agent as *the* best for every St. Charles home. Based on the available local listing data, **Berkshire Hathaway HomeServices Select Properties** is a reasonable place to start: its St. Charles-area profile shows 161 sales in the last 12 months and a 5.0 rating from 31 reviews. That’s brokerage-level data, though—not proof that any particular agent there is the best fit for your home.\n\nI’d interview **two or three individual listing agents** and compare their recent sales of homes like yours in your neighborhood. Ask each for:\n- A pricing recommendation backed by nearby sold comparables\n- A specific marketing and showing plan\n- Their recent seller-side results and references\n- Their commission and any other fees, in writing\n\nThe right choice depends on your home’s location, price range, and the agent’s experience with similar properties. If you share your neighborhood, approximate home value, and whether you need a quick sale or top-dollar strategy, I can help you narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

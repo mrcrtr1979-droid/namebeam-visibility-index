@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_mortgage_lenders_west_palm_beach_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: mortgage lenders, West Palm Beach",
+ "niche": "mortgage lenders",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in West Palm Beach FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ec9684b9-d5ae-4c20-bd9a-74eff72f455c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00087,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00093,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00444
+   },
+   "input_tokens": 4029,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3478,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 370,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4399
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Palm Beach Mortgage Group",
+  "New American Funding",
+  "Loan Estimate"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://saferate.com/local/west-palm-beach/best-mortgage-lenders/mortgage-companies",
+  "https://dreamyleads.com/mortgage/best-mortgage-lenders-west-palm-beach",
+  "https://www.experience.com/reviews/office/west-palm-beach-iii",
+  "https://www.bvlending.com/",
+  "https://manifestmortgagegroup.com/",
+  "https://www.experience.com/reviews/office/west-palm-beach",
+  "https://palmbeachmortgagegroup.com/",
+  "https://www.experience.com/reviews/office/west-palm-beach-ii",
+  "https://www.bankrate.com/mortgages/mortgage-rates/florida/",
+  "https://www.experience.com/reviews/autumn-lauren-krohn-407070",
+  "https://www.newamericanfunding.com/branches/westpalmbeach",
+  "https://www.homefinancialgroup.net/locations/west-palm-beach-fl",
+  "https://www.experience.com/reviews/office/crown-westpalmbeach",
+  "https://www.experience.com/reviews/brian-cumpton-111050",
+  "https://palmbeachmortgagegroup.com/purchase/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and the property. **I’d start by getting quotes from Palm Beach Mortgage Group and New American Funding’s West Palm Beach branch**, then compare them with a bank or credit union you already use.\n\n- **Palm Beach Mortgage Group** is a local option with purchase-loan experience and customer testimonials describing responsive service and quick closings. [Website](https://palmbeachmortgagegroup.com/) · (561) 478-4780  \n- **New American Funding** has a West Palm Beach branch and offers conventional and government-backed loans; its branch page also mentions possible assistance for eligible first-time buyers. [Branch details](https://www.newamericanfunding.com/branches/westpalmbeach) · (561) 331-4029\n\nTreat reviews and lender rankings as a starting point, not proof that one will offer you the best deal. Ask each lender for a **written Loan Estimate for the same loan amount, down payment, rate-lock period, and loan type**. Compare the APR, lender fees, points, cash to close, and estimated closing timeline—not just the advertised rate. You can also check the loan officer’s NMLS credentials and ask whether they regularly handle your kind of purchase, especially if it’s a condo, jumbo loan, or VA/FHA loan.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

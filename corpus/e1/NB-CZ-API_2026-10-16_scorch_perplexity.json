@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_scorch_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SCORCH",
+ "niche": "branding agency",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best branding agency in St. Louis?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_02aa042a-6bcc-45f8-8a04-2ed798d8c8ac",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00093,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00063,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0042
+   },
+   "input_tokens": 4284,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3739,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 254,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4538
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atomicdust",
+  "Taillight",
+  "PKG Brand Design",
+  "Think Tank"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.atomicdust.com/",
+  "https://www.atomicdust.com/marketing-services/branding/",
+  "https://www.expertise.com/business/branding-agencies/missouri/st-louis",
+  "https://www.webtonic.io/blog/best-graphic-design-agencies-st-louis",
+  "https://clutch.co/agencies/branding/missouri",
+  "https://themanifest.com/branding/brand-strategy/agencies/st-louis",
+  "https://thinktankprm.com/",
+  "https://www.hownovel.co/",
+  "https://fiercecreative.agency/",
+  "https://hubandspokecreative.com/",
+  "https://dovetail-stl.com/",
+  "https://www.designrush.com/agency/logo-branding/missouri/st-louis",
+  "https://www.designrush.com/agency/profile/upbrand-collaborative-llc",
+  "https://www.designrush.com/agency/ad-agencies/missouri/st-louis",
+  "https://clutch.co/agencies/branding/st-louis"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency—it depends on your goals and budget. **Atomicdust** is a strong all-around choice to start with: it’s based in St. Louis and offers brand strategy, identity design, websites, and digital marketing. It also reports being voted Best Marketing Firm in St. Louis for five consecutive years. [Atomicdust](https://www.atomicdust.com/)\n\nOther options worth comparing:\n- **Taillight** — strong client ratings for brand strategy and identity, according to Clutch.\n- **PKG Brand Design** — a good fit if you’re building a consumer product or packaging-focused brand.\n- **Think Tank** — a full-service option if you want branding alongside PR and broader marketing.\n\nI’d compare portfolios and ask each agency for relevant case studies, process, timeline, and a clear project fee before choosing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

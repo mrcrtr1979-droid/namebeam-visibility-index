@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5101c12e-d359-4895-a192-1a96d2fef82e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00452
+   },
+   "input_tokens": 5182,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4636,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 288,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5470
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Evan Grodin",
+  "Dr. Carlos Castro at Georgia Prosthodontics",
+  "Howell Mill Rd NW",
+  "Dr. Carlos Castro",
+  "Georgia Prosthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.drevangrodin.com/dental-implants/",
+  "https://georgiaprosthodontics.com/",
+  "https://www.drevangrodin.com/all-on-4/",
+  "https://drhalnarnold.com/",
+  "https://georgiaprosthodontics.com/prosthodontist-atlanta/",
+  "https://www.drevangrodin.com/teeth-in-a-day/",
+  "https://www.zocdoc.com/dentist/brett-langston-dmd-84083",
+  "https://www.clearchoice.com/locations/ga/atlanta/3535-piedmont-rd-ne-bldg-14/",
+  "https://old.implantoption.com/",
+  "https://georgiaprosthodontics.com/what-is-a-prosthodontist-and-other-faqs/",
+  "https://www.prosthodontics.org/contact/",
+  "https://www.drevangrodin.com/single-tooth-replacement/",
+  "https://www.yelp.com/biz/prosthodontics-atlanta-atlanta",
+  "https://www.castleconnolly.com/top-dentists/carlos-castro-prosthodontics-cc332832",
+  "https://www.tebra.com/care/prosthodontists/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for everyone, but **Dr. Evan Grodin** is a strong Atlanta option to consider for implants: the available information says he is board-certified in both prosthodontics and periodontics, a combination relevant to both restoring teeth and treating the tissues around implants. His office is at **3280 Howell Mill Rd NW, Suite 327**.\n\nI’d compare him with **Dr. Carlos Castro at Georgia Prosthodontics** in Buckhead, who is also listed as a board-certified prosthodontist with implant and reconstructive dentistry experience. A prosthodontist has additional specialty training in restoring teeth and complex cases.\n\nBefore choosing, get **two consultations** and ask who will place the implant and who will make the crown, what alternatives and risks apply to your case, and for a written estimate covering the full treatment. Verify credentials and that the proposed plan fits your needs; online listings and practice claims alone can’t establish who is best for you.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

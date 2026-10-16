@@ -1,0 +1,97 @@
+{
+ "check_id": "NB-CZ-API_2026-10-16_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-10-16",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5e8a4900-af18-488a-97bc-471f7658aa8a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00102,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00473
+   },
+   "input_tokens": 4817,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4270,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 406,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5223
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Budd, Budd Orthodontics",
+  "Drs. Matthew and Courtney Dunn, Dunn Orthodontics",
+  "Dr. Dan Blue, Blue Orthodontics",
+  "Dr. Chris Murphy",
+  "Murphy Orthodontics",
+  "Invisalign. The",
+  "E. High Street",
+  "Dr. Budd",
+  "Budd Orthodontics",
+  "Invisalign",
+  "Details",
+  "Drs. Matthew and Courtney Dunn",
+  "Dunn Orthodontics",
+  "Dr. Dan Blue",
+  "Blue Orthodontics"
+ ],
+ "engine_stated_criteria": [
+  "A strong Phoenix option to start with is Dr. Chris Murphy at Murphy Orthodontics"
+ ],
+ "sources_cited": [
+  "https://smilestraightphx.com/about-us/testimonials",
+  "https://www.buddorthodontics.com/meet-dr-budd",
+  "https://teamorthodontics.com/our-practice/patient-reviews",
+  "https://doctor.webmd.com/doctor/frank-meng-fa04d0a6-ac86-4b44-b8aa-9f7910b16307-overview",
+  "https://dunn-orthodontics.com/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/blue-orthodontics-phoenix-az",
+  "https://www.zocdoc.com/orthodontists/phoenix-220419pm",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/woolaver-orthodontics-phoenix-az",
+  "https://woolaverorthodontics.com/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/e-s-orthodontics-phoenix-phoenix-az",
+  "https://doctor.webmd.com/providers/specialty/orthodontics/arizona/phoenix",
+  "https://www.murphyorthodontics.com/",
+  "https://www.yelp.com/biz/team-orthodontics-phoenix",
+  "https://serranoorthodontics.com/",
+  "https://arizona-orthodontics.com/about/testimonials/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—location, case complexity, budget, and whether you prefer braces or aligners all matter. **A strong Phoenix option to start with is Dr. Chris Murphy at Murphy Orthodontics**: he is a board-certified orthodontist and offers both braces and Invisalign. The practice has a Phoenix office at **5355 E. High Street, Suite 105**. [Practice details](https://www.murphyorthodontics.com/)\n\nOther options worth comparing:\n- **Dr. Budd, Budd Orthodontics** — board-certified; offers Invisalign and treats children and adults. [Details](https://www.buddorthodontics.com/meet-dr-budd)\n- **Drs. Matthew and Courtney Dunn, Dunn Orthodontics** — board-certified orthodontists offering braces and Invisalign, with Phoenix locations. [Details](https://dunn-orthodontics.com/)\n- **Dr. Dan Blue, Blue Orthodontics** — offers traditional braces and Invisalign; listed at 4.9 stars from 253 reviews in the search results. [Details](https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/blue-orthodontics-phoenix-az)\n\nI’d book two or three consultations before choosing. Ask who will supervise your treatment, whether your case is suitable for Invisalign, what the total fee includes (including retainers and refinements), and how emergencies or missed appointments are handled. A board-certified orthodontist and a clear, personalized treatment plan are more useful signals than a “best of” badge alone.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
