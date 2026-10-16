@@ -1,0 +1,796 @@
+{
+ "built_utc": "2026-10-16T06:31:46Z",
+ "window": [
+  "2026-09-01",
+  "2026-10-13"
+ ],
+ "dq5_window": [
+  "2026-09-01",
+  "2026-10-11"
+ ],
+ "gate": {
+  "engine": "anthropic",
+  "metric": "text_has_top10",
+  "min": 195,
+  "value": 192,
+  "verdict": "FAIL"
+ },
+ "rows_written": 12180,
+ "recount_status_counts": {
+  "NOT_APPLICABLE": 4020,
+  "RECOUNTED": 5333,
+  "FAILED": 1830,
+  "NO_GATED_CANDIDATES": 997
+ },
+ "cells": 64,
+ "per_engine": {
+  "openai": {
+   "ok_rows": 1669,
+   "before_sum": 6879,
+   "after_sum": 2294,
+   "rows_before_gt0": 1389,
+   "rows_after_gt0": 818,
+   "rows_after_gt_before": 156,
+   "rows_after_lt_before": 1250,
+   "rows_no_gated_candidates": 335
+  },
+  "perplexity": {
+   "ok_rows": 1667,
+   "before_sum": 7889,
+   "after_sum": 5041,
+   "rows_before_gt0": 1667,
+   "rows_after_gt0": 1566,
+   "rows_after_gt_before": 152,
+   "rows_after_lt_before": 1074,
+   "rows_no_gated_candidates": 307
+  },
+  "gemini": {
+   "rows_no_gated_candidates": 19,
+   "ok_rows": 323,
+   "before_sum": 3057,
+   "after_sum": 1986,
+   "rows_before_gt0": 319,
+   "rows_after_gt0": 320,
+   "rows_after_gt_before": 34,
+   "rows_after_lt_before": 268
+  },
+  "anthropic": {
+   "ok_rows": 1674,
+   "before_sum": 3061,
+   "after_sum": 295,
+   "rows_before_gt0": 1179,
+   "rows_after_gt0": 219,
+   "rows_after_gt_before": 11,
+   "rows_after_lt_before": 1121,
+   "rows_no_gated_candidates": 336
+  }
+ },
+ "dq5_replication": {
+  "openai": {
+   "ok": 1579,
+   "list_has_top10": 331,
+   "text_has_top10": 598,
+   "text_has_top10_union": 760
+  },
+  "perplexity": {
+   "ok": 1537,
+   "list_has_top10": 1277,
+   "text_has_top10": 1400,
+   "text_has_top10_union": 1426
+  },
+  "gemini": {
+   "ok": 323,
+   "list_has_top10": 222,
+   "text_has_top10": 295,
+   "text_has_top10_union": 316
+  },
+  "anthropic": {
+   "ok": 1584,
+   "list_has_top10": 4,
+   "text_has_top10": 192,
+   "text_has_top10_union": 206
+  }
+ },
+ "readme_dq5_printed": {
+  "anthropic": [
+   1904,
+   48,
+   195
+  ],
+  "openai": [
+   1898,
+   330,
+   553
+  ],
+  "perplexity": [
+   1828,
+   1142,
+   1250
+  ],
+  "gemini": [
+   342,
+   215,
+   305
+  ]
+ },
+ "top10_by_cell": {
+  "Atlanta GA | dentists": [
+   "Dr. Evan Grodin",
+   "Dr. Brandon Frodge",
+   "Dr. Brock Pumphrey",
+   "Dr. Carlos Castro at Georgia Prosthodontics",
+   "Atlanta Center for Advanced Periodontics",
+   "Nobel Biocare",
+   "Zimmer Biomet",
+   "Dr. Carlos Castro, Georgia Prosthodontics",
+   "Emory University School of Dentistry",
+   "Maxillofacial Surgery"
+  ],
+  "Atlanta GA | hvac repair and replacement": [
+   "Reliable Heating & Air",
+   "One Hour",
+   "Hope Heating & AC Repair",
+   "Rescue Rooter",
+   "Cunningham Associates",
+   "Service Experts",
+   "Benjamin Franklin",
+   "Moncrief Heating & Air",
+   "PV Heating, Cooling & Plumbing",
+   "Bell Mechanical"
+  ],
+  "Atlanta GA | orthodontists": [
+   "Buckhead Orthodontics",
+   "West Paces Ferry Orthodontics",
+   "Harris Orthodontics",
+   "Atlanta Orthodontic Specialists",
+   "Artemis Smiles Orthodontics",
+   "Atlanta's West Midtown",
+   "Dr. Meagan Chaffins Sturm",
+   "Dr. Peyton Keith Harris"
+  ],
+  "Atlanta GA | personal injury attorneys": [
+   "John Foy & Associates",
+   "Van Sant Law",
+   "Hammers Law Firm",
+   "Butler Law Firm",
+   "Morgan & Morgan",
+   "Butler Kahn",
+   "David M. Van Sant",
+   "Angell Law Firm",
+   "Bey & Associates",
+   "Stewart Miller Simmons Trial Attorneys"
+  ],
+  "Branson MO | short-term rental / Airbnb": [
+   "Table Rock",
+   "Big Cedar Lodge",
+   "Hilton Branson Convention Center",
+   "Keeter Center",
+   "Hilton Promenade",
+   "Holiday Inn",
+   "Welk Resort",
+   "Comfort Inn",
+   "Grand Country Inn",
+   "Radisson Hotel Branson"
+  ],
+  "Charlotte NC | tanning salons": [
+   "Palm Beach Tan",
+   "Gorgeous GLO Beauty Bar",
+   "Botanical Tans",
+   "Organic Bronze Bar",
+   "Mystic Tan",
+   "No Shade Spray Tanning",
+   "Muse Tan",
+   "Ultra Tan",
+   "Dilworth Tan",
+   "Glow Custom Spray Tanning"
+  ],
+  "Chicago IL | personal injury attorneys": [
+   "Salvi, Schostok & Pritchard",
+   "Clifford Law Offices",
+   "Corboy & Demetrio",
+   "Malman Law",
+   "Power Rogers",
+   "Levin & Perconti",
+   "GWC Injury Lawyers",
+   "Illinois Attorney Registration",
+   "Smith LLP",
+   "Staver Law"
+  ],
+  "Columbus OH | tanning salons": [
+   "Palm Beach Tan",
+   "Sun Studio Tan",
+   "Mystic Tan",
+   "Short North",
+   "Tan Wolf",
+   "Glo Tanning",
+   "Upper Arlington",
+   "Glow Sunless Tanning",
+   "VersaSpa Pro",
+   "Sweetly Bronzed"
+  ],
+  "Dallas TX | dentists": [
+   "American College of Prosthodontists",
+   "Dallas Dental Implant Center",
+   "Dr. Daniel Tan",
+   "Dr. Kathia Steel",
+   "Dr. Laura N. Rabe",
+   "Dr. Rowan Buskin",
+   "Park Cities Periodontics & Implant Dentistry",
+   "Uses CBCT"
+  ],
+  "Dallas TX | orthodontists": [
+   "Walnut Central Orthodontics",
+   "Dallas Orthodontics",
+   "Fusion Orthodontics",
+   "Gupta Smile Studio",
+   "Lakewood Orthodontics",
+   "Dr. Cameron Togrye",
+   "Dr. Larry P. Tadlock",
+   "Ellis Orthodontics",
+   "Invisalign Preferred"
+  ],
+  "Dallas TX | personal injury attorneys": [
+   "Grossman Law Offices",
+   "Zehl & Associates",
+   "Frank Branson",
+   "Charla Aldous",
+   "Hamilton Wingo",
+   "Mullen & Mullen",
+   "Lyons & Simmons",
+   "Slack Davis",
+   "Miller Weisbrod Olesky",
+   "Thomas J. Henry Law"
+  ],
+  "Dallas TX | residential roofing": [
+   "Arrington Roofing",
+   "New View Roofing",
+   "T Rock Roofing",
+   "Blue Hammer Roofing",
+   "Lon Smith Roofing",
+   "Bert Roofing",
+   "Peak Roofing & Construction",
+   "Priority Roofing",
+   "Platinum Preferred",
+   "StazOn Roofing"
+  ],
+  "Denver CO | residential roofing": [
+   "Gates Enterprises",
+   "Master Elite",
+   "Red Hawk Roofing",
+   "CENCO Roofing",
+   "Hilltop Contracting",
+   "Interstate Roofing",
+   "Elite Roofing",
+   "Roofcorp of Metro Denver",
+   "Ethos Roofing & Restoration",
+   "Class 4 Impact-Resistant Shingles"
+  ],
+  "Fort Lauderdale FL | mortgage lenders": [
+   "Loan Estimates",
+   "Fairway Independent Mortgage",
+   "Dan Longman at NFM Lending",
+   "Loan Estimate",
+   "CMG Financial",
+   "NFM Lending's Dan Longman"
+  ],
+  "Fort Lauderdale FL | property management companies": [
+   "Luxury Property Care",
+   "Real Property Management United",
+   "Atlis Property Management",
+   "PMI Prime View",
+   "CIMCO Management",
+   "Florida Management",
+   "Gibson Group Management"
+  ],
+  "Fort Lauderdale FL | real estate agents": [
+   "Desare Kohn-Laski",
+   "Larry Mastropieri",
+   "Sandra Rathe"
+  ],
+  "Fort Lauderdale FL | title companies": [
+   "Palm Title Partners",
+   "Independent Title of Fort Lauderdale",
+   "Heritage Title Insurance Agency",
+   "CLOSED Title",
+   "Fort Lauderdale Title & Escrow",
+   "Gibraltar Title",
+   "Independent Title FTL"
+  ],
+  "Houston TX | hvac repair and replacement": [
+   "Air Tech of Houston",
+   "One Hour",
+   "Rescue Rooter",
+   "Royal Air Houston",
+   "Abacus Plumbing, Air Conditioning & Electrical",
+   "Adams Air",
+   "Mission Air Conditioning & Plumbing",
+   "Be Cool A/C & Heating",
+   "Vibrant Mechanical",
+   "Richmond Air"
+  ],
+  "Houston TX | personal injury attorneys": [
+   "Zehl & Associates",
+   "Smith & Hassler",
+   "Jim Adler & Associates",
+   "Terry Bryant",
+   "Adibe Law Group",
+   "Johnson Garcia LLP",
+   "Joshua Davis",
+   "Baumgartner Law Firm",
+   "Brian White",
+   "Simmons & Fletcher, P.C"
+  ],
+  "Joplin MO | residential remodeling and repair": [
+   "American Construction Inc",
+   "Collins Brothers Remodeling",
+   "Tucker's 1 Handyman Service",
+   "GRC Construction",
+   "Prater Construction",
+   "GRC General Construction",
+   "Rick Benson Construction",
+   "Shere's Handyman & Construction",
+   "GNT Construction",
+   "C/C Harris Construction LLC"
+  ],
+  "Kansas City MO | health insurance brokerage": [
+   "NuLight Consulting",
+   "FD Insurance Agency",
+   "AIS Health Insurance Advisors",
+   "AIS Health Advisors",
+   "Apollo Health Insurance",
+   "Jeff David Insurance",
+   "MO. It",
+   "Blue KC",
+   "KU Med",
+   "Saint Luke"
+  ],
+  "Kansas City MO | health insurance brokers": [
+   "AIS Health Insurance Advisors",
+   "BBS Insurance",
+   "Apollo Health Insurance",
+   "NuLight Consulting",
+   "Bukaty Companies",
+   "Jeff David Insurance",
+   "Senior Health Solutions",
+   "AIS Health Advisors",
+   "Haas & Wilkerson Insurance",
+   "KC Health Insurance"
+  ],
+  "Kansas City MO | marketing agency": [
+   "EAG Advertising & Marketing",
+   "Signal Theory",
+   "Moss Marketing Group",
+   "Global Prairie",
+   "Result Kitchen",
+   "Hello Big Idea",
+   "MBB Agency",
+   "Walz Tetrick Advertising",
+   "Anderson Collaborative",
+   "EVERSANA INTOUCH"
+  ],
+  "Liberty MO | backflow testing and repair": [
+   "CertPro Plumbing",
+   "Razor Rooter",
+   "Liberty Utilities",
+   "Redline Automatic",
+   "Mayes Plumbing Inc",
+   "Mr. Rooter",
+   "Heritage Lawns & Irrigation",
+   "Mr. Plumber",
+   "Anthony Plumbing, Heating, Cooling & Electric",
+   "Ryan Lawn & Tree"
+  ],
+  "Los Angeles CA | AI marketing agency": [
+   "Single Grain",
+   "Thrive Internet Marketing Agency",
+   "Accenture Interactive",
+   "Hawke Media",
+   "Tack Media",
+   "Lumo AI Agency",
+   "Accenture Song",
+   "Publicis Sapient",
+   "Earned Media",
+   "Metric Theory"
+  ],
+  "Maryland | marketing and brand strategy consultancy": [
+   "Anderson Collaborative",
+   "Black Propeller",
+   "MGH Marketing & Advertising",
+   "Mission Agency",
+   "Bright Web Consulting",
+   "Dragonfly Digital Marketing",
+   "Level Agency",
+   "AMA Maryland",
+   "Silver Spring",
+   "Thrive Agency"
+  ],
+  "Miami FL | mortgage lenders": [
+   "Loan Estimates",
+   "Loan Estimate"
+  ],
+  "Miami FL | property management companies": [
+   "Novel Management",
+   "Luxury Property Care",
+   "Pristine Property Management",
+   "Real Property Management Miami Metro",
+   "Nadlan Management"
+  ],
+  "Miami FL | real estate agents": [
+   "Sandra Rathe",
+   "Desare Kohn-Laski",
+   "Dominick Martinez",
+   "Dinorah de Cardenas",
+   "Wesley Ulloa of LUXE Properties"
+  ],
+  "Miami FL | residential roofing": [
+   "Extreme Roofing",
+   "Atlantic Metal Roofing",
+   "Ironwood Roofing Miami",
+   "Kendall Roofing",
+   "Art's Roofing & Construction",
+   "T&S Roofing Systems",
+   "Wind Mitigation Inspection",
+   "Indigo Roofing",
+   "Standing Seam Metal Roofs",
+   "Istueta Roofing"
+  ],
+  "Miami FL | title companies": [
+   "Worldwide Title",
+   "Miami Title & Escrow",
+   "Marina Title",
+   "JB Title & Escrow"
+  ],
+  "Nashville TN | short-term rental / Airbnb": [
+   "Warm Nashville Home",
+   "Bicentennial Mall",
+   "Jeni's Splendid Ice Creams",
+   "Shelby Bottoms Greenway",
+   "Adventure Science Center",
+   "Bode Nashville",
+   "Treetop Bungalow in 12 South",
+   "Embassy Suites",
+   "Homewood Suites",
+   "Outdoor Space/Yard"
+  ],
+  "Phoenix AZ | dentists": [
+   "American College of Prosthodontists",
+   "Camelback Periodontics",
+   "Cone-beam CT",
+   "Dentsply Sirona",
+   "Dr. George Eifler",
+   "Dr. Niels Jensen",
+   "Midwestern University College of Dental Medicine",
+   "Nobel Biocare",
+   "Zimmer Biomet"
+  ],
+  "Phoenix AZ | hvac repair and replacement": [
+   "Howard Air",
+   "Parker & Sons",
+   "Phoenix's Premier HVAC & Plumbing Company",
+   "AZ Perfect Comfort",
+   "Day & Night",
+   "One Hour",
+   "American Home Water & Air",
+   "Rescue Rooter",
+   "George Brazil Air Conditioning & Heating",
+   "Goettl Air Conditioning & Plumbing"
+  ],
+  "Phoenix AZ | orthodontists": [
+   "Invisalign Provider",
+   "Serrano Orthodontics",
+   "Dunn Orthodontics",
+   "Woolaver Orthodontics",
+   "Murphy Orthodontics",
+   "Align Technology",
+   "Arizona Orthodontic Studio",
+   "Arizona Orthodontics",
+   "Butterfly Orthodontics",
+   "Dr. Budd at Budd Orthodontics"
+  ],
+  "Pleasanton CA | dentists": [
+   "ADA Find-A-Dentist",
+   "California Dental Board",
+   "Pleasanton Dental Care",
+   "Gateway Dental Care",
+   "Infinite Smile Dental",
+   "Pleasanton Ridge Dental Group",
+   "Pleasanton Dentist",
+   "Jerry A. Sanchez, DDS",
+   "Pacific Dental Care",
+   "Pleasanton Smile Dental"
+  ],
+  "Pleasanton CA | home care agencies": [
+   "Visiting Angels",
+   "Home Instead",
+   "Comfort Keepers",
+   "Right at Home",
+   "Senior Helpers",
+   "BrightStar Care",
+   "Always Best Care",
+   "Home Care Assistance",
+   "Interim HealthCare",
+   "Pleasanton Senior Center"
+  ],
+  "Pleasanton CA | moving companies": [
+   "Two Men",
+   "All Star Movers & Storage",
+   "Eagle Moving & Storage",
+   "College HUNKS",
+   "Ontrack Moving",
+   "Meathead Movers",
+   "Jay's Small Moves",
+   "Pure Moving",
+   "FairPrice Movers",
+   "Rigo's Moving Company Inc"
+  ],
+  "Pleasanton CA | oil change shops": [
+   "Jiffy Lube",
+   "Valvoline Instant Oil Change",
+   "SpeeDee Oil Change",
+   "Big O Tires",
+   "Tire Choice",
+   "Walmart Auto Care",
+   "Firestone Complete Auto Care",
+   "Old Town Auto Care",
+   "Pep Boys",
+   "Precision Auto Repair"
+  ],
+  "Pleasanton CA | personal injury law": [
+   "Fuerch Law",
+   "Stephen M. Fuerch",
+   "GJEL Accident Attorneys",
+   "J. Michael Hosterman",
+   "Mirador Law",
+   "Duncan Law Firm PC",
+   "Teresa Li",
+   "Contra Costa",
+   "Don't Give Recorded Statements",
+   "Harris Personal Injury Lawyers, Inc"
+  ],
+  "Pleasanton CA | real estate agents": [
+   "Doug Buenz",
+   "Varsha Upadhye",
+   "Keller Williams",
+   "Coldwell Banker",
+   "Gina Piper",
+   "Jon Ahern & Camille Ahern",
+   "DeAnna Armario",
+   "Jing Xue",
+   "Kim Deol",
+   "Anil Kumar"
+  ],
+  "Pleasanton CA | tanning salons": [
+   "East Bay Tanning",
+   "Bella Bronze Mobile Airbrush Tanning",
+   "Glow House Studio",
+   "Secretly Sunless",
+   "Mystic Tan",
+   "Planet Fitness",
+   "Tan Republic",
+   "Glow Spray Tanning",
+   "PF Black Card",
+   "Organic Bronze Bar"
+  ],
+  "Pleasanton CA | tire shops": [
+   "Discount Tire",
+   "Costco Tire Center",
+   "Firestone Complete Auto Care",
+   "Big O",
+   "Big Brand Tire & Service",
+   "Tire Choice",
+   "Pep Boys",
+   "America's Tire",
+   "Seever & Son's Tire",
+   "Seever & Sons"
+  ],
+  "San Francisco CA | digital marketing agency": [
+   "REViVE Marketing Partners",
+   "Metric Theory",
+   "Growth Marketing Pro",
+   "Agency Spotter",
+   "Burst Digital",
+   "Goodby Silverstein",
+   "Siege Media",
+   "Clear Digital, Inc",
+   "First Page Sage",
+   "Meta Business Partner"
+  ],
+  "Santa Cruz County CA | short-term rental / Airbnb": [
+   "Santa Cruz Vacation Rentals",
+   "Airbnb & VRBO",
+   "Capitola Rentals",
+   "Kendall & Potter Property Management",
+   "Roaring Camp Railroad",
+   "Capitola Vacation Rentals",
+   "Capitola Venetian",
+   "Cheshire Rio Realty",
+   "Gray Whale Cove",
+   "Roaring Camp Steam Train"
+  ],
+  "St. Charles MO | mortgage lenders": [
+   "Loan Estimates",
+   "Guild Mortgage",
+   "Integrity Mortgage"
+  ],
+  "St. Charles MO | property management companies": [
+   "Alpha Real Estate Group",
+   "Keyrenter St. Charles",
+   "Eaton Properties",
+   "RPM Endeavor",
+   "Property Mgmt Solutions LLC",
+   "Real Property Management Endeavor",
+   "Real Property Management Three Bridges",
+   "Touchstone Properties & More"
+  ],
+  "St. Charles MO | real estate agents": [
+   "Nicholas Wagenknecht",
+   "Susan Brewer",
+   "Leslie Tinsley",
+   "Michael Swaringim"
+  ],
+  "St. Charles MO | title companies": [
+   "US Title",
+   "Title Partners Agency"
+  ],
+  "St. Louis MO | branding agency": [
+   "AIGA St. Louis",
+   "Hub & Spoke",
+   "MarketPlace Branding",
+   "Think Tank",
+   "Enrich Creative",
+   "Rodgers Townsend",
+   "UPBrand Collaborative",
+   "Agency Spotter",
+   "AAF St. Louis",
+   "Hueman Studio"
+  ],
+  "St. Louis MO | digital marketing agency": [
+   "Timmermann Group",
+   "Think Tank",
+   "Abstrakt Marketing Group",
+   "Google Business Profiles",
+   "St. Louis Digital Media",
+   "Altec Design",
+   "Collina Digital",
+   "Spry Digital",
+   "St. Louis Small Business Monthly",
+   "Thrive Internet Marketing Agency"
+  ],
+  "St. Louis MO | healthcare marketing agency": [
+   "Ad Savants",
+   "Think Tank",
+   "Advertising Savants",
+   "Digital Capabilities",
+   "Werremeyer Creative",
+   "Agency Spotter",
+   "Cork Tree Creative",
+   "St. Louis-specific",
+   "Lewis Communications",
+   "Amplified Digital Agency"
+  ],
+  "St. Louis MO | interior painting": [
+   "SNL Painting",
+   "Kennedy Painting",
+   "Malone Painting",
+   "St. Louis Painting Company",
+   "Five Star Painting",
+   "Benjamin Moore",
+   "CertaPro Painters",
+   "Better Painting",
+   "Improovy Painters",
+   "DiPasquale Painting"
+  ],
+  "St. Louis MO | mortgage lenders": [
+   "Loan Estimates",
+   "Midwest BankCentre",
+   "Better Rate Mortgage",
+   "Loan Estimate",
+   "Stifel Bank & Trust",
+   "Stuart's American Mortgage",
+   "USA Mortgage",
+   "Community Mortgage Bank",
+   "Mortgage Solutions of St. Louis",
+   "Neighbors Credit Union"
+  ],
+  "St. Louis MO | property management companies": [
+   "Avenue Residential Leasing",
+   "Intersection Property Management",
+   "Avenue Real Estate Group",
+   "Deca Property Management",
+   "Full Scope Home",
+   "HomeStretch Property Management",
+   "Intersection Real Estate",
+   "SMPL Property Management"
+  ],
+  "St. Louis MO | real estate agents": [
+   "Dan Brassil",
+   "Allen Brake",
+   "Angela Kittner",
+   "Dave Townsend",
+   "Dennis Ciot of Sansone Residential Collective",
+   "Jenifer Garcia of Garcia Properties",
+   "Jim Vogel at Keller Williams",
+   "Peter Lu"
+  ],
+  "St. Louis MO | title companies": [
+   "Home Title",
+   "Investors Title Company",
+   "Freedom Title",
+   "Select Title Group",
+   "Title Partners Agency",
+   "Elite Title Company",
+   "Excel Title",
+   "Security Title",
+   "STL Title",
+   "True Title"
+  ],
+  "St. Peters MO | martial arts for kids": [
+   "ATA Martial Arts",
+   "Gracie Barra",
+   "All Star Karate",
+   "Onyx Grappling",
+   "Krav Maga",
+   "Revive Brazilian Jiu Jitsu",
+   "Tiny Tigers",
+   "Brazilian Jiu Jitsu St Peters",
+   "Kids BJJ",
+   "Little Tigers"
+  ],
+  "Tyler TX | tanning salons": [
+   "Palm Beach Tan",
+   "Glo Tanning",
+   "TRU TAN",
+   "South Broadway",
+   "Mystic Tan",
+   "VersaSpa Pro",
+   "Planet Fitness",
+   "Bulb Quality",
+   "First Tan Free",
+   "Glo Sun Spa"
+  ],
+  "US nationwide, online | online spiritual and shadow work courses": [
+   "Jung Platform",
+   "Sounds True",
+   "Insight Timer",
+   "Palouse Mindfulness",
+   "Light Chasers",
+   "Ford Institute",
+   "IFS Institute",
+   "Connie Zweig",
+   "Awake Academy",
+   "Shadow Mastery Diploma"
+  ],
+  "West Palm Beach FL | mortgage lenders": [
+   "Florida Housing",
+   "Loan Estimates",
+   "Palm Beach Mortgage Group",
+   "Loan Estimate",
+   "New American Funding"
+  ],
+  "West Palm Beach FL | property management companies": [
+   "Atlis Property Management",
+   "Luxury Property Care",
+   "Home Property Management",
+   "Florida's Property Management",
+   "Kanga Property Management",
+   "PMI West Palm",
+   "WPB Home Property Management"
+  ],
+  "West Palm Beach FL | real estate agents": [
+   "Larry Mastropieri",
+   "Sandra Rathe",
+   "Taryn Pisaneschi"
+  ],
+  "West Palm Beach FL | title companies": [
+   "Integrity Land Title",
+   "Trusted Florida Title",
+   "Bell Land Title",
+   "Florida Fidelity Title & Escrow"
+  ]
+ },
+ "answers_recount_v1_sha256": "eca511ff8418fbd7b946d5092a2410e8e44de36636dd77eeadd2620297b0861f",
+ "inputs": {
+  "answers_csv_sha256": "398f7cc5f76a3060eba318d0231e4b32f92a3155064debb0bc68f0c9fb499f03",
+  "run_status_csv_sha256": "8adfbd0b6fa4bddb6e2c3bc24c9cb549954324c3bb203ca9fc3149db7eeaaefd"
+ }
+}
