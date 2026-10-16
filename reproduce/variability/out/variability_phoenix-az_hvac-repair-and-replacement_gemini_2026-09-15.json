@@ -1,0 +1,104 @@
+{
+ "market": "Phoenix AZ",
+ "niche": "hvac repair and replacement",
+ "engine": "gemini",
+ "engine_label": "Google Gemini",
+ "window": [
+  "2026-09-15",
+  "2026-09-21"
+ ],
+ "rule": "raw lists as recorded (businesses_named_no_headings); top = first listed name",
+ "days_in_window": 7,
+ "rows_found": 7,
+ "days_with_row": 7,
+ "days_answered_with_name": 1,
+ "days_by_status": {
+  "FAILED": 6,
+  "OK": 1
+ },
+ "consecutive_answered_pairs": 0,
+ "top_name_changed": 0,
+ "top_name_changed_share": null,
+ "mean_list_overlap_jaccard": null,
+ "distinct_names": 3,
+ "names_on_every_answered_day": [
+  "Coverage",
+  "George Brazil Air Conditioning & Heating",
+  "Howard Air"
+ ],
+ "top_names": [
+  [
+   "George Brazil Air Conditioning & Heating",
+   1
+  ]
+ ],
+ "days": [
+  {
+   "date": "2026-09-15",
+   "status": "FAILED",
+   "reason": "QUOTA_BLOCKED: QUOTA: gemini HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current qu",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-09-15_segment_hvac_phoenix_gemini.json",
+   "sha256": "e2e6790192f7db9cdcac5b16e17e949b20e1dd83b82ed4cfa7eaa1c32ea3d76c"
+  },
+  {
+   "date": "2026-09-16",
+   "status": "FAILED",
+   "reason": "QUOTA_BLOCKED: QUOTA: gemini HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current qu",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-09-16_segment_hvac_phoenix_gemini.json",
+   "sha256": "9d83166680ac093626f008b622e63c39731113ea7d948154199a4d6324bf78d0"
+  },
+  {
+   "date": "2026-09-17",
+   "status": "FAILED",
+   "reason": "FAILED: gemini HTTP 503: { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencin",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-09-17_segment_hvac_phoenix_gemini.json",
+   "sha256": "9f736a860920415edda131290b60c53db5f9e439decac0f605ef62dbd0b39c78"
+  },
+  {
+   "date": "2026-09-18",
+   "status": "FAILED",
+   "reason": "QUOTA_BLOCKED: QUOTA: gemini HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current qu",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-09-18_segment_hvac_phoenix_gemini.json",
+   "sha256": "af3c5f26d4a0b4b50292a3614a9b9879669030c21de5807ce23ac4718c166e93"
+  },
+  {
+   "date": "2026-09-19",
+   "status": "FAILED",
+   "reason": "QUOTA_BLOCKED: QUOTA: gemini HTTP 429 [GenerateRequestsPerDayPerProjectPerModel-FreeTier] tries=1: { \"err",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-09-19_segment_hvac_phoenix_gemini.json",
+   "sha256": "c93311c20bf5a7a5260152703b99cec956725c2651087d3263893cfe0179f937"
+  },
+  {
+   "date": "2026-09-20",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "George Brazil Air Conditioning & Heating",
+    "Coverage",
+    "Howard Air"
+   ],
+   "top": "George Brazil Air Conditioning & Heating",
+   "source_file": "NB-CZ-API_2026-09-20_segment_hvac_phoenix_gemini.json",
+   "sha256": "1643a7b47f68b5a663820d1633ca0afe49f4250a82a90ee3463ead100414cb6b"
+  },
+  {
+   "date": "2026-09-21",
+   "status": "FAILED",
+   "reason": "FAILED: gemini request failed: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-09-21_segment_hvac_phoenix_gemini.json",
+   "sha256": "3b81e1b7c7f4b4e4cfe38f496c85f51925636512880e84ceb31fe78b4dfeb12e"
+  }
+ ]
+}

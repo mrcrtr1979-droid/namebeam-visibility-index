@@ -1,0 +1,121 @@
+{
+ "market": "Houston TX",
+ "niche": "hvac repair and replacement",
+ "engine": "anthropic",
+ "engine_label": "Anthropic Claude",
+ "window": [
+  "2026-09-15",
+  "2026-09-21"
+ ],
+ "rule": "raw lists as recorded (businesses_named_no_headings); top = first listed name",
+ "days_in_window": 7,
+ "rows_found": 7,
+ "days_with_row": 7,
+ "days_answered_with_name": 6,
+ "days_by_status": {
+  "OK": 6,
+  "OK_NO_NAME": 1
+ },
+ "consecutive_answered_pairs": 4,
+ "top_name_changed": 2,
+ "top_name_changed_share": 0.5,
+ "mean_list_overlap_jaccard": 0.5,
+ "distinct_names": 4,
+ "names_on_every_answered_day": [],
+ "top_names": [
+  [
+   "Popular Houston HVAC companies",
+   3
+  ],
+  [
+   "Check for 24/7 availability",
+   1
+  ],
+  [
+   "Look for these qualities",
+   1
+  ],
+  [
+   "Popular options to research",
+   1
+  ]
+ ],
+ "days": [
+  {
+   "date": "2026-09-15",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Popular options to research"
+   ],
+   "top": "Popular options to research",
+   "source_file": "NB-CZ-API_2026-09-15_segment_hvac_houston_anthropic.json",
+   "sha256": "f10773bd7dabf5b12e1c281dd8adbd2a3262797f23511a900c0faebfaee1906a"
+  },
+  {
+   "date": "2026-09-16",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Popular Houston HVAC companies"
+   ],
+   "top": "Popular Houston HVAC companies",
+   "source_file": "NB-CZ-API_2026-09-16_segment_hvac_houston_anthropic.json",
+   "sha256": "762e8379ecaece6d7fb47315c6f68f597005422c5f2953e5feaf4cc3493770a1"
+  },
+  {
+   "date": "2026-09-17",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Popular Houston HVAC companies"
+   ],
+   "top": "Popular Houston HVAC companies",
+   "source_file": "NB-CZ-API_2026-09-17_segment_hvac_houston_anthropic.json",
+   "sha256": "f3c30eaf8bffa05e1cb525743c9ecdb4672a90214b1d8258a75379542123fdd5"
+  },
+  {
+   "date": "2026-09-18",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Popular Houston HVAC companies"
+   ],
+   "top": "Popular Houston HVAC companies",
+   "source_file": "NB-CZ-API_2026-09-18_segment_hvac_houston_anthropic.json",
+   "sha256": "648099ae58898181bab5773bc8c606b1ce1f25ebf64566a08e9ce93446064d9c"
+  },
+  {
+   "date": "2026-09-19",
+   "status": "OK_NO_NAME",
+   "reason": "",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-09-19_segment_hvac_houston_anthropic.json",
+   "sha256": "a3e9b0f366868479b024b8328cde0cedad6ebb30172e4eb2b33d648f65b66dc9"
+  },
+  {
+   "date": "2026-09-20",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Check for 24/7 availability"
+   ],
+   "top": "Check for 24/7 availability",
+   "source_file": "NB-CZ-API_2026-09-20_segment_hvac_houston_anthropic.json",
+   "sha256": "973aef082527af654ce08951b79b0405e032a108929c9f707dcb7fc6bbe63ace"
+  },
+  {
+   "date": "2026-09-21",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Look for these qualities",
+    "Popular Houston HVAC companies"
+   ],
+   "top": "Look for these qualities",
+   "source_file": "NB-CZ-API_2026-09-21_segment_hvac_houston_anthropic.json",
+   "sha256": "f52bcedf8c4a034cbaded4c3e6f9a3973ef37f1853a6833ef1b5d0ca886867ba"
+  }
+ ]
+}

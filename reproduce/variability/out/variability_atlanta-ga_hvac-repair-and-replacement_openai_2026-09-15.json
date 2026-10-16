@@ -1,0 +1,144 @@
+{
+ "market": "Atlanta GA",
+ "niche": "hvac repair and replacement",
+ "engine": "openai",
+ "engine_label": "OpenAI",
+ "window": [
+  "2026-09-15",
+  "2026-09-21"
+ ],
+ "rule": "raw lists as recorded (businesses_named_no_headings); top = first listed name",
+ "days_in_window": 7,
+ "rows_found": 7,
+ "days_with_row": 7,
+ "days_answered_with_name": 7,
+ "days_by_status": {
+  "OK": 7
+ },
+ "consecutive_answered_pairs": 6,
+ "top_name_changed": 6,
+ "top_name_changed_share": 1.0,
+ "mean_list_overlap_jaccard": 0.076,
+ "distinct_names": 17,
+ "names_on_every_answered_day": [],
+ "top_names": [
+  [
+   "Air Conditioning",
+   2
+  ],
+  [
+   "Air",
+   1
+  ],
+  [
+   "Georgia",
+   1
+  ],
+  [
+   "HomeAdvisor",
+   1
+  ],
+  [
+   "Manual D",
+   1
+  ],
+  [
+   "R-410A",
+   1
+  ]
+ ],
+ "days": [
+  {
+   "date": "2026-09-15",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "HomeAdvisor",
+    "Atlanta HVAC"
+   ],
+   "top": "HomeAdvisor",
+   "source_file": "NB-CZ-API_2026-09-15_segment_hvac_atlanta_openai.json",
+   "sha256": "675a7ce8d0a312b5863e83acfb3edba3b1ce6967800b70a4bfad4b518b6be0cd"
+  },
+  {
+   "date": "2026-09-16",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Air Conditioning",
+    "Benjamin Franklin",
+    "ARS",
+    "Rescue Rooter",
+    "Service Champions"
+   ],
+   "top": "Air Conditioning",
+   "source_file": "NB-CZ-API_2026-09-16_segment_hvac_atlanta_openai.json",
+   "sha256": "86de9efcdf33bbe454f986f89d396275074e8f4a6bf8098136838fe5499806c7"
+  },
+  {
+   "date": "2026-09-17",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Georgia"
+   ],
+   "top": "Georgia",
+   "source_file": "NB-CZ-API_2026-09-17_segment_hvac_atlanta_openai.json",
+   "sha256": "038dfc151f27c90b9472da4586237cbacc8820dedd134b5cb73d8dc2581d14df"
+  },
+  {
+   "date": "2026-09-18",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "R-410A",
+    "Atlanta ZIP"
+   ],
+   "top": "R-410A",
+   "source_file": "NB-CZ-API_2026-09-18_segment_hvac_atlanta_openai.json",
+   "sha256": "1bda78e8d90136687100c33c9a801d142e9e15d9e29d5212de510ba3e71c919b"
+  },
+  {
+   "date": "2026-09-19",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Manual D",
+    "Mr. Plumber",
+    "One Hour",
+    "Atlanta ZIP"
+   ],
+   "top": "Manual D",
+   "source_file": "NB-CZ-API_2026-09-19_segment_hvac_atlanta_openai.json",
+   "sha256": "51d03d26429796fc46dd1f5c87876d228a3235bdb0c74f77a26d9d0b0594a36c"
+  },
+  {
+   "date": "2026-09-20",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Air Conditioning",
+    "Rescue Rooter",
+    "Manual S",
+    "Manual D",
+    "Georgia HVAC",
+    "ZIP and I"
+   ],
+   "top": "Air Conditioning",
+   "source_file": "NB-CZ-API_2026-09-20_segment_hvac_atlanta_openai.json",
+   "sha256": "012c9b6436b2a53a855c5da702217e92a5feb56bc7c94cdabacfa3404a7dbd9d"
+  },
+  {
+   "date": "2026-09-21",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Air",
+    "Air Conditioning"
+   ],
+   "top": "Air",
+   "source_file": "NB-CZ-API_2026-09-21_segment_hvac_atlanta_openai.json",
+   "sha256": "7fc45d5db6bc8299094e6341f2385f4b0e65571d1f3231722b5b7b381c5cb485"
+  }
+ ]
+}
