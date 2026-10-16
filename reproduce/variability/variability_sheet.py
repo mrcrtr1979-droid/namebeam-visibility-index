@@ -52,7 +52,8 @@ def build_sheet(rows, market, niche, engine, start):
         market, niche = cell[0]['market'], cell[0]['niche']
     # earliest saved row per day (rerun 0 before others, then file name)
     by_day = {}
-    for r in sorted(cell, key=lambda r: (int(r.get('rerun') or 0), r['source_file'])):
+    # earliest saved row per day; an OK row wins over a failed one on the same day (a rerun that succeeded)
+    for r in sorted(cell, key=lambda r: ((r.get('run_status') or 'OK') != 'OK', int(r.get('rerun') or 0), r['source_file'])):
         by_day.setdefault(r['date'], r)
     day_rows = []
     for d in days:
@@ -69,8 +70,8 @@ def build_sheet(rows, market, niche, engine, start):
     answered = [x for x in day_rows if x['status'] == 'OK' and x['names']]
     pairs, top_changes, jac = 0, 0, []
     for a, b in zip(answered, answered[1:]):
-        if (dt.date.fromisoformat(b['date']) - dt.date.fromisoformat(a['date'])).days < 1:
-            continue
+        if (dt.date.fromisoformat(b['date']) - dt.date.fromisoformat(a['date'])).days != 1:
+            continue  # a pair is d and d+1, both answered with a name
         pairs += 1
         if norm(a['top']) != norm(b['top']):
             top_changes += 1
@@ -111,7 +112,7 @@ def sheet_markdown(s):
          '| Days with a saved row | %d of 7 |' % s['days_with_row'],
          '| Days answered with at least one name | %d of 7 |' % s['days_answered_with_name'],
          '| Days by status | %s |' % ', '.join('%s %d' % (k, v) for k, v in s['days_by_status'].items()),
-         '| Consecutive answered-day pairs | %d |' % s['consecutive_answered_pairs'],
+         '| Consecutive-day pairs (d and d+1) both answered with a name | %d |' % s['consecutive_answered_pairs'],
          '| Pairs where the top name changed | %s of %d%s |' % (s['top_name_changed'], s['consecutive_answered_pairs'], '' if s['top_name_changed_share'] is None else ' (%.1f%%)' % (100 * s['top_name_changed_share'])),
          '| Mean list overlap between consecutive answered days (Jaccard) | %s |' % ('n/a' if s['mean_list_overlap_jaccard'] is None else '%.3f' % s['mean_list_overlap_jaccard']),
          '| Distinct names over the window | %d |' % s['distinct_names'],
@@ -122,7 +123,7 @@ def sheet_markdown(s):
     for d in s['days']:
         L.append('| %s | %s%s | %s | %s | %s | %s |' % (d['date'], d['status'], (' (' + d['reason'] + ')') if d['reason'] and d['status'] not in ('OK',) else '',
                                                      d['top'], '; '.join(d['names']), d['source_file'], d['sha256']))
-    L += ['', 'Criterion statement: over these 7 days the same question, in the same words, was asked once a day to %s; %d of 7 days returned a named answer; the business at position 1 changed on %d of %d consecutive answered-day pairs; the mean day-to-day overlap of the named list was %s. Failed and unnamed days are shown, not dropped.' % (
+    L += ['', 'Criterion statement: over these 7 days the same question, in the same words, was asked once a day to %s; %d of 7 days returned a named answer; the business at position 1 changed on %d of %d consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was %s. Failed and unnamed days are shown, not dropped.' % (
         s['engine_label'], s['days_answered_with_name'], s['top_name_changed'], s['consecutive_answered_pairs'],
         'n/a' if s['mean_list_overlap_jaccard'] is None else '%.3f' % s['mean_list_overlap_jaccard']), '']
     return '\n'.join(L)
@@ -150,6 +151,49 @@ def write_sheet(s, out):
     return base + '.md', hashlib.sha256(md.encode('utf-8')).hexdigest()
 
 
+# ------------------------------------------------------------------ atlas: every cell, every engine, fixed 7-day windows
+WEEKS = ['2026-09-01', '2026-09-08', '2026-09-15', '2026-09-22', '2026-09-29', '2026-10-06']
+PANEL_CUTOFF = '2026-09-27'
+
+
+def atlas(rows, out, weeks=WEEKS, panel=False, write_sheets=False):
+    """One index row per cell x engine x 7-day window; a per-engine-week summary; optional sheets. panel=True keeps the
+    Edition 1 metrics panel: cells with an API row on or before PANEL_CUTOFF, market not US nationwide."""
+    cells = sorted({(r['market'], r['niche']) for r in rows if r['engine'] in ENGINES and r['market'].strip() and r['niche'].strip()})
+    if panel:
+        first = {}
+        for r in rows:
+            if r['engine'] in ENGINES:
+                k = (r['market'], r['niche']); first[k] = min(first.get(k, r['date']), r['date'])
+        cells = [c for c in cells if first.get(c, '9999') <= PANEL_CUTOFF and c[0].casefold() != 'us nationwide']
+    os.makedirs(out, exist_ok=True)
+    idx_path = os.path.join(out, 'variability_index%s.csv' % ('_panel' if panel else ''))
+    summ = {}
+    with open(idx_path, 'w', newline='', encoding='utf-8') as fh:
+        w = csv.writer(fh)
+        w.writerow(['market', 'niche', 'engine', 'window_start', 'window_end', 'days_with_row', 'days_answered_with_name', 'consecutive_answered_pairs',
+                    'top_name_changed', 'top_name_changed_share', 'mean_list_overlap_jaccard', 'distinct_names', 'names_on_every_answered_day', 'top_names'])
+        for mk, ni in cells:
+            for e in ENGINES:
+                for wk in weeks:
+                    s = build_sheet(rows, mk, ni, e, wk)
+                    w.writerow([mk, ni, e, s['window'][0], s['window'][1], s['days_with_row'], s['days_answered_with_name'], s['consecutive_answered_pairs'],
+                                s['top_name_changed'], '' if s['top_name_changed_share'] is None else s['top_name_changed_share'],
+                                '' if s['mean_list_overlap_jaccard'] is None else s['mean_list_overlap_jaccard'], s['distinct_names'],
+                                ';'.join(s['names_on_every_answered_day']), ';'.join('%s:%d' % (n, c) for n, c in s['top_names'])])
+                    k = (e, wk); t = summ.setdefault(k, [0, 0, 0])
+                    t[0] += s['consecutive_answered_pairs']; t[1] += s['top_name_changed']; t[2] += s['days_answered_with_name']
+                    if write_sheets and s['days_with_row']:
+                        write_sheet(s, os.path.join(out, 'sheets'))
+    sum_path = os.path.join(out, 'variability_summary%s.csv' % ('_panel' if panel else ''))
+    with open(sum_path, 'w', newline='', encoding='utf-8') as fh:
+        w = csv.writer(fh); w.writerow(['engine', 'window_start', 'cells', 'answered_days', 'pairs', 'top_changed', 'share'])
+        for (e, wk) in sorted(summ, key=lambda k: (ENGINES.index(k[0]), k[1])):
+            p_, c_, d_ = summ[(e, wk)]
+            w.writerow([e, wk, len(cells), d_, p_, c_, '' if not p_ else round(c_ / p_, 3)])
+    return idx_path, sum_path, len(cells)
+
+
 # ------------------------------------------------------------------ tests
 def _row(date, engine, names, status='OK', reason='', market='M', niche='N', sf=None, rerun=0):
     return {'date': date, 'engine': engine, 'market': market, 'niche': niche, 'businesses_named_no_headings': ';'.join(names),
@@ -165,17 +209,22 @@ class Tests(unittest.TestCase):
         s = build_sheet(rows, 'M', 'N', 'openai', '2026-09-01')
         self.assertEqual(s['days_with_row'], 7); self.assertEqual(s['days_answered_with_name'], 5)
         self.assertEqual(s['days_by_status'], {'FAILED': 1, 'OK': 5, 'OK_NO_NAME': 1})
-        self.assertEqual(s['consecutive_answered_pairs'], 4)       # 01-02, 02-04, 04-05, 05-07
-        self.assertEqual(s['top_name_changed'], 2)                   # A->B, B->C ; B->B same, C->C same
-        self.assertAlmostEqual(s['mean_list_overlap_jaccard'], round((1.0 + 0.5 + 0.0 + 0.5) / 4, 3))
+        self.assertEqual(s['consecutive_answered_pairs'], 2)       # 01-02 and 04-05 only (d and d+1 both named)
+        self.assertEqual(s['top_name_changed'], 2)                   # A->B, B->C
+        self.assertAlmostEqual(s['mean_list_overlap_jaccard'], round((1.0 + 0.0) / 2, 3))
         self.assertEqual(s['distinct_names'], 3); self.assertEqual(s['names_on_every_answered_day'], [])
 
     def test_missing_days_and_reruns(self):
         rows = [_row('2026-09-01', 'gemini', ['X']), _row('2026-09-01', 'gemini', ['Y'], rerun=1), _row('2026-09-03', 'gemini', ['X'])]
         s = build_sheet(rows, 'M', 'N', 'gemini', '2026-09-01')
         self.assertEqual(s['days_by_status']['NO_ROW'], 5); self.assertEqual(s['days'][0]['top'], 'X')  # rerun 0 wins
-        self.assertEqual(s['consecutive_answered_pairs'], 1); self.assertEqual(s['top_name_changed'], 0)
+        self.assertEqual(s['consecutive_answered_pairs'], 0)       # 09-01 and 09-03 are not d and d+1
         self.assertEqual(s['names_on_every_answered_day'], ['X'])
+
+    def test_ok_rerun_beats_failed_first_row(self):
+        rows = [_row('2026-09-01', 'gemini', [], 'FAILED', 'HTTP 429'), _row('2026-09-01', 'gemini', ['Z'], rerun=1)]
+        s = build_sheet(rows, 'M', 'N', 'gemini', '2026-09-01')
+        self.assertEqual(s['days'][0]['status'], 'OK'); self.assertEqual(s['days'][0]['top'], 'Z')
 
     def test_empty_cell(self):
         s = build_sheet([], 'M', 'N', 'anthropic', '2026-09-01')
@@ -193,9 +242,19 @@ def main():
     ap.add_argument('--market'); ap.add_argument('--niche'); ap.add_argument('--engine', default='all'); ap.add_argument('--start')
     ap.add_argument('--out', default=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'out'))
     ap.add_argument('--selftest', action='store_true')
+    ap.add_argument('--atlas', action='store_true', help='index every cell x engine x fixed 7-day window')
+    ap.add_argument('--panel', action='store_true', help='with --atlas: Edition 1 metrics panel cells only')
+    ap.add_argument('--write-sheets', action='store_true', help='with --atlas: also write every sheet')
     a = ap.parse_args()
     if a.selftest:
         return unittest.main(argv=[sys.argv[0]], verbosity=1)
+    if a.atlas:
+        rows = load_rows(a.repo)
+        i, sm, n = atlas(rows, a.out, panel=a.panel, write_sheets=a.write_sheets)
+        print('atlas: %d cells -> %s and %s' % (n, i, sm))
+        for line in open(sm, encoding='utf-8'):
+            print('  ' + line.rstrip())
+        return 0
     if not (a.market and a.niche and a.start):
         ap.error('--market, --niche and --start are required')
     rows = load_rows(a.repo)

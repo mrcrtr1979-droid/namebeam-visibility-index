@@ -8,7 +8,7 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | Days with a saved row | 7 of 7 |
 | Days answered with at least one name | 7 of 7 |
 | Days by status | OK 7 |
-| Consecutive answered-day pairs | 6 |
+| Consecutive-day pairs (d and d+1) both answered with a name | 6 |
 | Pairs where the top name changed | 3 of 6 (50.0%) |
 | Mean list overlap between consecutive answered days (Jaccard) | 0.330 |
 | Distinct names over the window | 19 |
@@ -27,4 +27,4 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | 2026-09-20 | OK | Reliable Heating & Air | Reliable Heating & Air; Coolray; TE Certified; Hope Heating & AC Repair; Empire HVAC; Cunningham Associates | NB-CZ-API_2026-09-20_segment_hvac_atlanta_perplexity.json | 25a838e87dcb29cdf87cf5ca57eb5b50b40d9057a483dab3f0cf9253899e5c7d |
 | 2026-09-21 | OK | Hope Heating & AC Repair | Hope Heating & AC Repair; Estes Services; Reliable Heating & Air; SEER2 efficiency options | NB-CZ-API_2026-09-21_segment_hvac_atlanta_perplexity.json | 8859e3a2ea557c228b88d5ac805437d021d3783014d3de2e7c64ea4191028b0c |
 
-Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Perplexity; 7 of 7 days returned a named answer; the business at position 1 changed on 3 of 6 consecutive answered-day pairs; the mean day-to-day overlap of the named list was 0.330. Failed and unnamed days are shown, not dropped.
+Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Perplexity; 7 of 7 days returned a named answer; the business at position 1 changed on 3 of 6 consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was 0.330. Failed and unnamed days are shown, not dropped.

@@ -8,7 +8,7 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | Days with a saved row | 7 of 7 |
 | Days answered with at least one name | 7 of 7 |
 | Days by status | OK 7 |
-| Consecutive answered-day pairs | 6 |
+| Consecutive-day pairs (d and d+1) both answered with a name | 6 |
 | Pairs where the top name changed | 6 of 6 (100.0%) |
 | Mean list overlap between consecutive answered days (Jaccard) | 0.156 |
 | Distinct names over the window | 17 |
@@ -27,4 +27,4 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | 2026-09-20 | OK | Texas Dept. of Licensing | Texas Dept. of Licensing; Rescue Rooter; Air Conditioning; On Time Heating | NB-CZ-API_2026-09-20_segment_hvac_houston_openai.json | dae040fce0359f52119799a57083e8795a6989e2b2f666578ef8639dbdb3dbd5 |
 | 2026-09-21 | OK | Air Conditioning | Air Conditioning; Benjamin Franklin; Rescue Rooter; Texas Dept. of Licensing and Regulation | NB-CZ-API_2026-09-21_segment_hvac_houston_openai.json | 4929e36dce2f6fa02b6746b411ebf219ea7c1d1eeb41dcea885ff1379e7cdb90 |
 
-Criterion statement: over these 7 days the same question, in the same words, was asked once a day to OpenAI; 7 of 7 days returned a named answer; the business at position 1 changed on 6 of 6 consecutive answered-day pairs; the mean day-to-day overlap of the named list was 0.156. Failed and unnamed days are shown, not dropped.
+Criterion statement: over these 7 days the same question, in the same words, was asked once a day to OpenAI; 7 of 7 days returned a named answer; the business at position 1 changed on 6 of 6 consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was 0.156. Failed and unnamed days are shown, not dropped.

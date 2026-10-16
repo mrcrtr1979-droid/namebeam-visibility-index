@@ -8,7 +8,7 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | Days with a saved row | 7 of 7 |
 | Days answered with at least one name | 7 of 7 |
 | Days by status | OK 7 |
-| Consecutive answered-day pairs | 6 |
+| Consecutive-day pairs (d and d+1) both answered with a name | 6 |
 | Pairs where the top name changed | 6 of 6 (100.0%) |
 | Mean list overlap between consecutive answered days (Jaccard) | 0.058 |
 | Distinct names over the window | 18 |
@@ -27,4 +27,4 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | 2026-09-20 | OK | Google and Yelp | Google and Yelp; Arizona ROC; Phoenix-area HVAC | NB-CZ-API_2026-09-20_segment_hvac_phoenix_openai.json | e0247af80cacf5409826e8c68cf90dff1b95518576e42d6be560980ec400aafc |
 | 2026-09-21 | OK | Registrar of Contractors | Registrar of Contractors; NATE; Yelp | NB-CZ-API_2026-09-21_segment_hvac_phoenix_openai.json | d189baf0d8c06b41a0ef78496156905c304072a4e92efc620c23c6e567233b59 |
 
-Criterion statement: over these 7 days the same question, in the same words, was asked once a day to OpenAI; 7 of 7 days returned a named answer; the business at position 1 changed on 6 of 6 consecutive answered-day pairs; the mean day-to-day overlap of the named list was 0.058. Failed and unnamed days are shown, not dropped.
+Criterion statement: over these 7 days the same question, in the same words, was asked once a day to OpenAI; 7 of 7 days returned a named answer; the business at position 1 changed on 6 of 6 consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was 0.058. Failed and unnamed days are shown, not dropped.

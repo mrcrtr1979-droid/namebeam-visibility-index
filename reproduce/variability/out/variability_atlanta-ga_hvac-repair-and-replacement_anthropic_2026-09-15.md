@@ -8,8 +8,8 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | Days with a saved row | 7 of 7 |
 | Days answered with at least one name | 4 of 7 |
 | Days by status | OK 4, OK_NO_NAME 3 |
-| Consecutive answered-day pairs | 3 |
-| Pairs where the top name changed | 0 of 3 (0.0%) |
+| Consecutive-day pairs (d and d+1) both answered with a name | 2 |
+| Pairs where the top name changed | 0 of 2 (0.0%) |
 | Mean list overlap between consecutive answered days (Jaccard) | 1.000 |
 | Distinct names over the window | 1 |
 | Names present on every answered day | Ways to find options |
@@ -27,4 +27,4 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | 2026-09-20 | OK | Ways to find options | Ways to find options | NB-CZ-API_2026-09-20_segment_hvac_atlanta_anthropic.json | 027e8e7cfef17eb73344bd29e55861b58237932607acdcd979f74c4f81ba2c3a |
 | 2026-09-21 | OK | Ways to find options | Ways to find options | NB-CZ-API_2026-09-21_segment_hvac_atlanta_anthropic.json | a1cb3d95ef62893829b142985bb8aa8f4769f5699c467b17afed3fe3806c756c |
 
-Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Anthropic Claude; 4 of 7 days returned a named answer; the business at position 1 changed on 0 of 3 consecutive answered-day pairs; the mean day-to-day overlap of the named list was 1.000. Failed and unnamed days are shown, not dropped.
+Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Anthropic Claude; 4 of 7 days returned a named answer; the business at position 1 changed on 0 of 2 consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was 1.000. Failed and unnamed days are shown, not dropped.

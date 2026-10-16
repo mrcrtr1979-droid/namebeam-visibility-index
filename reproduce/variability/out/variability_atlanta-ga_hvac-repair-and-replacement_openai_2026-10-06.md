@@ -8,8 +8,8 @@ Window 2026-10-06 to 2026-10-12 (7 calendar days). Source: Namebeam AI Visibilit
 | Days with a saved row | 7 of 7 |
 | Days answered with at least one name | 6 of 7 |
 | Days by status | NONE_NAMED 1, OK 6 |
-| Consecutive answered-day pairs | 5 |
-| Pairs where the top name changed | 5 of 5 (100.0%) |
+| Consecutive-day pairs (d and d+1) both answered with a name | 4 |
+| Pairs where the top name changed | 4 of 4 (100.0%) |
 | Mean list overlap between consecutive answered days (Jaccard) | 0.000 |
 | Distinct names over the window | 15 |
 | Names present on every answered day | none |
@@ -27,4 +27,4 @@ Window 2026-10-06 to 2026-10-12 (7 calendar days). Source: Namebeam AI Visibilit
 | 2026-10-11 | OK | Carrier | Carrier; Trane | NB-CZ-API_2026-10-11_segment_hvac_atlanta_openai.json | 6daaf0b79c37dc6f0e9853a8e86f8e7ad6e7ace333f7b2702eaf491b9276a9de |
 | 2026-10-12 | OK | ENERGY STAR | ENERGY STAR; Benjamin Franklin | NB-CZ-API_2026-10-12_segment_hvac_atlanta_openai.json | 55ef5552c20e065ac688f0dc863554036fa680e01f445356e6babf2e3eeb5c73 |
 
-Criterion statement: over these 7 days the same question, in the same words, was asked once a day to OpenAI; 6 of 7 days returned a named answer; the business at position 1 changed on 5 of 5 consecutive answered-day pairs; the mean day-to-day overlap of the named list was 0.000. Failed and unnamed days are shown, not dropped.
+Criterion statement: over these 7 days the same question, in the same words, was asked once a day to OpenAI; 6 of 7 days returned a named answer; the business at position 1 changed on 4 of 4 consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was 0.000. Failed and unnamed days are shown, not dropped.

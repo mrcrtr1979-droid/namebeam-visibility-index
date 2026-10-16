@@ -8,7 +8,7 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | Days with a saved row | 7 of 7 |
 | Days answered with at least one name | 0 of 7 |
 | Days by status | FAILED 7 |
-| Consecutive answered-day pairs | 0 |
+| Consecutive-day pairs (d and d+1) both answered with a name | 0 |
 | Pairs where the top name changed | 0 of 0 |
 | Mean list overlap between consecutive answered days (Jaccard) | n/a |
 | Distinct names over the window | 0 |
@@ -27,4 +27,4 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | 2026-09-20 | FAILED (QUOTA_BLOCKED: QUOTA: gemini HTTP 429 [GenerateRequestsPerDayPerProjectPerModel-FreeTier] tries=1: { "err) |  |  | NB-CZ-API_2026-09-20_segment_hvac_atlanta_gemini.json | 0ac01fc1ef5f541397b9ff08f9dc667c889a952c0f67b828ba1f0b7df3412981 |
 | 2026-09-21 | FAILED (QUOTA_BLOCKED: QUOTA: gemini HTTP 429 [GenerateRequestsPerDayPerProjectPerModel-FreeTier] tries=1: { "err) |  |  | NB-CZ-API_2026-09-21_segment_hvac_atlanta_gemini.json | b80faa7269e759fcc72e293729e34bfebf7c7a7927c4505da668a3c90889c816 |
 
-Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Google Gemini; 0 of 7 days returned a named answer; the business at position 1 changed on 0 of 0 consecutive answered-day pairs; the mean day-to-day overlap of the named list was n/a. Failed and unnamed days are shown, not dropped.
+Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Google Gemini; 0 of 7 days returned a named answer; the business at position 1 changed on 0 of 0 consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was n/a. Failed and unnamed days are shown, not dropped.

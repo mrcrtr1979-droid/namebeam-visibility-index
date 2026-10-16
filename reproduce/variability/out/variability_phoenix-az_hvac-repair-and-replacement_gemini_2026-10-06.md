@@ -8,7 +8,7 @@ Window 2026-10-06 to 2026-10-12 (7 calendar days). Source: Namebeam AI Visibilit
 | Days with a saved row | 7 of 7 |
 | Days answered with at least one name | 0 of 7 |
 | Days by status | FAILED 7 |
-| Consecutive answered-day pairs | 0 |
+| Consecutive-day pairs (d and d+1) both answered with a name | 0 |
 | Pairs where the top name changed | 0 of 0 |
 | Mean list overlap between consecutive answered days (Jaccard) | n/a |
 | Distinct names over the window | 0 |
@@ -27,4 +27,4 @@ Window 2026-10-06 to 2026-10-12 (7 calendar days). Source: Namebeam AI Visibilit
 | 2026-10-11 | FAILED (FAILED: gemini HTTP 402: { "error": { "code": 402, "message": "Your prepayment credits are deplete) |  |  | NB-CZ-API_2026-10-11_segment_hvac_phoenix_gemini.json | b7fcd3a520321214cab570ea10875379af0a048215936428e5b9afd527f73585 |
 | 2026-10-12 | FAILED (FAILED: gemini HTTP 402: { "error": { "code": 402, "message": "Your prepayment credits are deplete) |  |  | NB-CZ-API_2026-10-12_segment_hvac_phoenix_gemini.json | 96e1cea2d066fec9b28eb094bd3e380664247f5c218eaf6f060d2d748da1df1c |
 
-Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Google Gemini; 0 of 7 days returned a named answer; the business at position 1 changed on 0 of 0 consecutive answered-day pairs; the mean day-to-day overlap of the named list was n/a. Failed and unnamed days are shown, not dropped.
+Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Google Gemini; 0 of 7 days returned a named answer; the business at position 1 changed on 0 of 0 consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was n/a. Failed and unnamed days are shown, not dropped.

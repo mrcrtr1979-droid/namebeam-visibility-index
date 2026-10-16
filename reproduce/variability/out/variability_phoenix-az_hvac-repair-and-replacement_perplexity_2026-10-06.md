@@ -8,7 +8,7 @@ Window 2026-10-06 to 2026-10-12 (7 calendar days). Source: Namebeam AI Visibilit
 | Days with a saved row | 7 of 7 |
 | Days answered with at least one name | 7 of 7 |
 | Days by status | OK 7 |
-| Consecutive answered-day pairs | 6 |
+| Consecutive-day pairs (d and d+1) both answered with a name | 6 |
 | Pairs where the top name changed | 6 of 6 (100.0%) |
 | Mean list overlap between consecutive answered days (Jaccard) | 0.000 |
 | Distinct names over the window | 10 |
@@ -27,4 +27,4 @@ Window 2026-10-06 to 2026-10-12 (7 calendar days). Source: Namebeam AI Visibilit
 | 2026-10-11 | OK | Hays Cooling Heating and Plumbing | Hays Cooling Heating and Plumbing | NB-CZ-API_2026-10-11_segment_hvac_phoenix_perplexity.json | 1a45be55dd25174677e2a19e92573fb920677cf315f61ffdde33a258e80c8adb |
 | 2026-10-12 | OK | Benefit Air | Benefit Air; Island Breeze Air Conditioning & Heating | NB-CZ-API_2026-10-12_segment_hvac_phoenix_perplexity.json | 8d06f79668c60c2568875c2b91083220a08823ae32a9e1481fb7b83b85e37801 |
 
-Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Perplexity; 7 of 7 days returned a named answer; the business at position 1 changed on 6 of 6 consecutive answered-day pairs; the mean day-to-day overlap of the named list was 0.000. Failed and unnamed days are shown, not dropped.
+Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Perplexity; 7 of 7 days returned a named answer; the business at position 1 changed on 6 of 6 consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was 0.000. Failed and unnamed days are shown, not dropped.

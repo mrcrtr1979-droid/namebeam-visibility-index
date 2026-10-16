@@ -8,9 +8,9 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | Days with a saved row | 7 of 7 |
 | Days answered with at least one name | 6 of 7 |
 | Days by status | OK 6, OK_NO_NAME 1 |
-| Consecutive answered-day pairs | 5 |
-| Pairs where the top name changed | 3 of 5 (60.0%) |
-| Mean list overlap between consecutive answered days (Jaccard) | 0.400 |
+| Consecutive-day pairs (d and d+1) both answered with a name | 4 |
+| Pairs where the top name changed | 2 of 4 (50.0%) |
+| Mean list overlap between consecutive answered days (Jaccard) | 0.500 |
 | Distinct names over the window | 4 |
 | Names present on every answered day | none |
 | Top names (days at position 1) | Popular Houston HVAC companies 3, Check for 24/7 availability 1, Look for these qualities 1, Popular options to research 1 |
@@ -27,4 +27,4 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | 2026-09-20 | OK | Check for 24/7 availability | Check for 24/7 availability | NB-CZ-API_2026-09-20_segment_hvac_houston_anthropic.json | 973aef082527af654ce08951b79b0405e032a108929c9f707dcb7fc6bbe63ace |
 | 2026-09-21 | OK | Look for these qualities | Look for these qualities; Popular Houston HVAC companies | NB-CZ-API_2026-09-21_segment_hvac_houston_anthropic.json | f52bcedf8c4a034cbaded4c3e6f9a3973ef37f1853a6833ef1b5d0ca886867ba |
 
-Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Anthropic Claude; 6 of 7 days returned a named answer; the business at position 1 changed on 3 of 5 consecutive answered-day pairs; the mean day-to-day overlap of the named list was 0.400. Failed and unnamed days are shown, not dropped.
+Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Anthropic Claude; 6 of 7 days returned a named answer; the business at position 1 changed on 2 of 4 consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was 0.500. Failed and unnamed days are shown, not dropped.

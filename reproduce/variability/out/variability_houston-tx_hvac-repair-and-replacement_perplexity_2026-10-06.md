@@ -8,7 +8,7 @@ Window 2026-10-06 to 2026-10-12 (7 calendar days). Source: Namebeam AI Visibilit
 | Days with a saved row | 7 of 7 |
 | Days answered with at least one name | 7 of 7 |
 | Days by status | OK 7 |
-| Consecutive answered-day pairs | 6 |
+| Consecutive-day pairs (d and d+1) both answered with a name | 6 |
 | Pairs where the top name changed | 5 of 6 (83.3%) |
 | Mean list overlap between consecutive answered days (Jaccard) | 0.083 |
 | Distinct names over the window | 10 |
@@ -27,4 +27,4 @@ Window 2026-10-06 to 2026-10-12 (7 calendar days). Source: Namebeam AI Visibilit
 | 2026-10-11 | OK | Air Tech of Houston AC & Plumbing | Air Tech of Houston AC & Plumbing; One Hour Air Conditioning & Heating | NB-CZ-API_2026-10-11_segment_hvac_houston_perplexity.json | 1600e4f5a14f0dea490501566d2f1f93f920d4a8798c19e5eeffbfd4d1ab5e95 |
 | 2026-10-12 | OK | Houston Texas Air Conditioning (HTXAC) | Houston Texas Air Conditioning (HTXAC); Abacus Plumbing, Air Conditioning & Electrical | NB-CZ-API_2026-10-12_segment_hvac_houston_perplexity.json | a946bb3fd0b2f9afa1c8746409d25840d1990fbeb5370fe17ced8c0c803a0da7 |
 
-Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Perplexity; 7 of 7 days returned a named answer; the business at position 1 changed on 5 of 6 consecutive answered-day pairs; the mean day-to-day overlap of the named list was 0.083. Failed and unnamed days are shown, not dropped.
+Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Perplexity; 7 of 7 days returned a named answer; the business at position 1 changed on 5 of 6 consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was 0.083. Failed and unnamed days are shown, not dropped.

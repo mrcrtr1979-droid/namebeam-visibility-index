@@ -8,7 +8,7 @@ Window 2026-10-06 to 2026-10-12 (7 calendar days). Source: Namebeam AI Visibilit
 | Days with a saved row | 7 of 7 |
 | Days answered with at least one name | 7 of 7 |
 | Days by status | OK 7 |
-| Consecutive answered-day pairs | 6 |
+| Consecutive-day pairs (d and d+1) both answered with a name | 6 |
 | Pairs where the top name changed | 5 of 6 (83.3%) |
 | Mean list overlap between consecutive answered days (Jaccard) | 0.292 |
 | Distinct names over the window | 8 |
@@ -27,4 +27,4 @@ Window 2026-10-06 to 2026-10-12 (7 calendar days). Source: Namebeam AI Visibilit
 | 2026-10-11 | OK | The Air Company of Georgia | The Air Company of Georgia; PV Heating, Cooling & Plumbing; Reliable Heating & Air | NB-CZ-API_2026-10-11_segment_hvac_atlanta_perplexity.json | 7ea9abac37815f159cc0e23a0dc55637c1604a8daa3d165a20ea2d1b7616cc72 |
 | 2026-10-12 | OK | PV Heating & Air | PV Heating & Air; Bell Mechanical | NB-CZ-API_2026-10-12_segment_hvac_atlanta_perplexity.json | a722a639570aa0b5c4c5c5b097c2430549b6b6660d95412e248dadb102bb7af4 |
 
-Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Perplexity; 7 of 7 days returned a named answer; the business at position 1 changed on 5 of 6 consecutive answered-day pairs; the mean day-to-day overlap of the named list was 0.292. Failed and unnamed days are shown, not dropped.
+Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Perplexity; 7 of 7 days returned a named answer; the business at position 1 changed on 5 of 6 consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was 0.292. Failed and unnamed days are shown, not dropped.

@@ -8,7 +8,7 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | Days with a saved row | 7 of 7 |
 | Days answered with at least one name | 1 of 7 |
 | Days by status | FAILED 6, OK 1 |
-| Consecutive answered-day pairs | 0 |
+| Consecutive-day pairs (d and d+1) both answered with a name | 0 |
 | Pairs where the top name changed | 0 of 0 |
 | Mean list overlap between consecutive answered days (Jaccard) | n/a |
 | Distinct names over the window | 3 |
@@ -27,4 +27,4 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | 2026-09-20 | OK | George Brazil Air Conditioning & Heating | George Brazil Air Conditioning & Heating; Coverage; Howard Air | NB-CZ-API_2026-09-20_segment_hvac_phoenix_gemini.json | 1643a7b47f68b5a663820d1633ca0afe49f4250a82a90ee3463ead100414cb6b |
 | 2026-09-21 | FAILED (FAILED: gemini request failed: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=) |  |  | NB-CZ-API_2026-09-21_segment_hvac_phoenix_gemini.json | 3b81e1b7c7f4b4e4cfe38f496c85f51925636512880e84ceb31fe78b4dfeb12e |
 
-Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Google Gemini; 1 of 7 days returned a named answer; the business at position 1 changed on 0 of 0 consecutive answered-day pairs; the mean day-to-day overlap of the named list was n/a. Failed and unnamed days are shown, not dropped.
+Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Google Gemini; 1 of 7 days returned a named answer; the business at position 1 changed on 0 of 0 consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was n/a. Failed and unnamed days are shown, not dropped.

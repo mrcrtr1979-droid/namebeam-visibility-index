@@ -8,7 +8,7 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | Days with a saved row | 7 of 7 |
 | Days answered with at least one name | 7 of 7 |
 | Days by status | OK 7 |
-| Consecutive answered-day pairs | 6 |
+| Consecutive-day pairs (d and d+1) both answered with a name | 6 |
 | Pairs where the top name changed | 2 of 6 (33.3%) |
 | Mean list overlap between consecutive answered days (Jaccard) | 0.371 |
 | Distinct names over the window | 22 |
@@ -27,4 +27,4 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | 2026-09-20 | OK | Parker & Sons | Parker & Sons; Howard Air; AC repair; AZ Perfect Comfort; A/C & Plumbing Doctors | NB-CZ-API_2026-09-20_segment_hvac_phoenix_perplexity.json | 106d195ab5efba7de19c6ce72037a1188e5093532f24214fe4ed7200f6549bbf |
 | 2026-09-21 | OK | Parker & Sons | Parker & Sons; Howard Air; Chas Roberts; Goettl; A/C & Plumbing Doctors; Emergency repair tonight; Big, established company; Compare before booking | NB-CZ-API_2026-09-21_segment_hvac_phoenix_perplexity.json | a913bbd2d41c180bf5cf56709f1308ea5506eefd13f4f67fb8ce06042243c955 |
 
-Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Perplexity; 7 of 7 days returned a named answer; the business at position 1 changed on 2 of 6 consecutive answered-day pairs; the mean day-to-day overlap of the named list was 0.371. Failed and unnamed days are shown, not dropped.
+Criterion statement: over these 7 days the same question, in the same words, was asked once a day to Perplexity; 7 of 7 days returned a named answer; the business at position 1 changed on 2 of 6 consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was 0.371. Failed and unnamed days are shown, not dropped.

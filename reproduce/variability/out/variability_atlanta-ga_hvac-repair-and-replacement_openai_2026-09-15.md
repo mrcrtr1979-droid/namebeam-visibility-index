@@ -8,7 +8,7 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | Days with a saved row | 7 of 7 |
 | Days answered with at least one name | 7 of 7 |
 | Days by status | OK 7 |
-| Consecutive answered-day pairs | 6 |
+| Consecutive-day pairs (d and d+1) both answered with a name | 6 |
 | Pairs where the top name changed | 6 of 6 (100.0%) |
 | Mean list overlap between consecutive answered days (Jaccard) | 0.076 |
 | Distinct names over the window | 17 |
@@ -27,4 +27,4 @@ Window 2026-09-15 to 2026-09-21 (7 calendar days). Source: Namebeam AI Visibilit
 | 2026-09-20 | OK | Air Conditioning | Air Conditioning; Rescue Rooter; Manual S; Manual D; Georgia HVAC; ZIP and I | NB-CZ-API_2026-09-20_segment_hvac_atlanta_openai.json | 012c9b6436b2a53a855c5da702217e92a5feb56bc7c94cdabacfa3404a7dbd9d |
 | 2026-09-21 | OK | Air | Air; Air Conditioning | NB-CZ-API_2026-09-21_segment_hvac_atlanta_openai.json | 7fc45d5db6bc8299094e6341f2385f4b0e65571d1f3231722b5b7b381c5cb485 |
 
-Criterion statement: over these 7 days the same question, in the same words, was asked once a day to OpenAI; 7 of 7 days returned a named answer; the business at position 1 changed on 6 of 6 consecutive answered-day pairs; the mean day-to-day overlap of the named list was 0.076. Failed and unnamed days are shown, not dropped.
+Criterion statement: over these 7 days the same question, in the same words, was asked once a day to OpenAI; 7 of 7 days returned a named answer; the business at position 1 changed on 6 of 6 consecutive-day pairs (d and d+1 both named); the mean day-to-day overlap of the named list was 0.076. Failed and unnamed days are shown, not dropped.
