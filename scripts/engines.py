@@ -44,6 +44,7 @@ TEMPERATURE = 0.2
 SECRET_ENV_VARS = (
     "PERPLEXITY_API_KEY",
     "GEMINI_API_KEY",
+    "GEMINI_API_KEY_FREE",
     "BRIGHTDATA_API_KEY",
     "OPENAI_API_KEY",
     "ANTHROPIC_API_KEY",
@@ -195,6 +196,50 @@ GEMINI_MAX_WAIT_S = 70
 GEMINI_SLEEP_BUDGET_S = 2400   # whole-run ceiling, so a bad day cannot hang the job
 _gemini_slept = [0.0]
 
+# FREE-TIER SPLIT 2026-10-16: the paid Gemini project is dark (HTTP 402), so the
+# collector runs on a free-tier project (key in GEMINI_API_KEY_FREE; falls back to
+# GEMINI_API_KEY when unset or empty). Free limits verified 2026-10-16 on the AI Studio
+# rate-limit page: gemini-3.6-flash 5 RPM / 20 RPD, gemini-3.5-flash-lite 15 RPM / 500 RPD.
+# A fixed 20-question continuity panel (scripts/gemini_continuity_panel.txt, the first 20
+# sorted prompt ids that ran all 42 Edition 1 days on Gemini) stays on gemini-3.6-flash so
+# the series stays comparable with Edition 1; every other question uses gemini-3.5-flash-lite.
+# The row schema and the engine name "gemini" are unchanged; the model requested is
+# recorded in engine_meta.requested_model.
+GEMINI_PANEL_MODEL = GEMINI_MODEL
+GEMINI_REST_MODEL = "gemini-3.5-flash-lite"
+GEMINI_MODEL_RPM = {GEMINI_PANEL_MODEL: 5, GEMINI_REST_MODEL: 14}
+GEMINI_PANEL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                 "gemini_continuity_panel.txt")
+CURRENT_QUESTION_ID = [None]   # set by e1_runner.run_engine before each call (slug of the business)
+_gemini_last_call = {}         # model -> monotonic time of the last request to it
+
+
+def _load_gemini_panel(path=None):
+    try:
+        with open(path or GEMINI_PANEL_PATH, "r", encoding="utf-8") as f:
+            return frozenset(l.strip() for l in f if l.strip() and not l.startswith("#"))
+    except OSError:
+        return frozenset()
+
+
+def gemini_model_for(question_id, panel=None):
+    """Deterministic model choice: panel ids -> gemini-3.6-flash, all others -> flash-lite."""
+    panel = _load_gemini_panel() if panel is None else panel
+    return GEMINI_PANEL_MODEL if question_id in panel else GEMINI_REST_MODEL
+
+
+def _gemini_pace(model, sleep, now):
+    """Sleep so requests to one model stay under its per-minute limit. Counted in the
+    whole-run sleep budget total (_gemini_slept) but never skipped."""
+    interval = 60.0 / GEMINI_MODEL_RPM[model]
+    last = _gemini_last_call.get(model)
+    if last is not None:
+        gap = interval - (now() - last)
+        if gap > 0:
+            _gemini_slept[0] += gap
+            sleep(gap)
+    _gemini_last_call[model] = now()
+
 
 def _gemini_retry_delay(body_text):
     m = re.search(r'"retryDelay"\s*:\s*"(\d+(?:\.\d+)?)s"', body_text or "")
@@ -206,18 +251,22 @@ def _gemini_quota_id(body_text):
     return m.group(1) if m else "quotaId-not-in-body"
 
 
-def call_gemini(prompt_text, _post=None, _sleep=None):
-    LAST_CALL_META["gemini"] = {}
-    key = os.environ.get("GEMINI_API_KEY", "").strip()
+def call_gemini(prompt_text, _post=None, _sleep=None, _now=None, question_id=None, _panel=None):
+    model = gemini_model_for(question_id if question_id is not None else CURRENT_QUESTION_ID[0], _panel)
+    LAST_CALL_META["gemini"] = {"requested_model": model}
+    key = (os.environ.get("GEMINI_API_KEY_FREE", "").strip()
+           or os.environ.get("GEMINI_API_KEY", "").strip())
     if not key:
         return False, "", [], redact("GEMINI_API_KEY not set")
     post = _post or requests.post
     sleep = _sleep or time.sleep
+    now = _now or time.monotonic
     last = ""
     for attempt in range(1, GEMINI_MAX_TRIES + 1):
+        _gemini_pace(model, sleep, now)
         try:
             r = post(
-                (GEMINI_URL % GEMINI_MODEL) + "?key=" + key,
+                (GEMINI_URL % model) + "?key=" + key,
                 headers={"Content-Type": "application/json"},
                 json={"contents": [{"parts": [{"text": prompt_text}]}]},
                 timeout=TIMEOUT,
@@ -231,6 +280,7 @@ def call_gemini(prompt_text, _post=None, _sleep=None):
             except (ValueError, KeyError, IndexError, TypeError):
                 return False, "", [], redact("gemini response shape unexpected")
             LAST_CALL_META["gemini"] = _served_meta(body, "modelVersion", "responseId", "usageMetadata")
+            LAST_CALL_META["gemini"]["requested_model"] = model
             # Gemini's plain generateContent returns no citation list. We do NOT
             # invent one. Sources stay empty and that is an honest empty, not a zero.
             return True, text, [], ""
