@@ -43,7 +43,13 @@ E1_END = '2026-10-13'
 BASE_FIELDS = ['date', 'kind', 'target', 'niche', 'market', 'engine', 'businesses_named_count',
                'businesses_named', 'first_named', 'source_file', 'sha256']
 DERIVED_FIELDS = ['rerun', 'headings_removed_count', 'businesses_named_no_headings']
+# NAME FILTER v2 (2026-10-14, [FABLE-PARALLEL-1013E], scripts/name_filter.py): two more derived columns, written only by
+# builds whose PACK.json carries name_filter 'v2'. Edition 1 FINAL (name_filter absent = v1) rebuilds byte for byte.
+DERIVED_FIELDS_V2 = DERIVED_FIELDS + ['nonbusiness_removed_count', 'businesses_named_filtered']
 ANSWER_FIELDS = BASE_FIELDS + DERIVED_FIELDS
+ANSWER_FIELDS_V2 = BASE_FIELDS + DERIVED_FIELDS_V2
+_NF = None   # cached name_filter module (loaded by path, see _sibling)
+NAME_FILTER_DEFAULT = 'v2'   # what a fresh build writes; verify.py passes the pack's own value when it rebuilds
 
 # HEADING FILTER v1 (2026-10-09, [SONNET-RECORD-1009D-S1b]). The engines put section headings inside the lists we read as
 # business names ("Overview", "Research methods", "Red flags to avoid"). The raw files and the raw column stay as written.
@@ -119,8 +125,17 @@ def dedupe(seq):
     return list(out)
 
 
+def _sibling(name):
+    """Load a sibling module from the scripts folder by path (python -I keeps the folder off sys.path)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(name, os.path.join(HERE, name + '.py'))
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
 # ------------------------------------------------------------------ answers
-def answers_rows(corpus_dir):
+def answers_rows(corpus_dir, name_filter='v1'):
     """One row per raw file. Same rules as the daily rebuild of the E1 dataset: names are de-duplicated in order."""
     rows = []
     for path in sorted(glob.glob(os.path.join(corpus_dir, '*.json'))):
@@ -151,7 +166,7 @@ def answers_rows(corpus_dir):
                      'engine': engine, 'businesses_named_count': len(names),
                      'businesses_named': ';'.join(names), 'first_named': names[0] if names else '',
                      'source_file': fn, 'sha256': sha_bytes(raw)})
-        add_derived(rows[-1], names)
+        add_derived(rows[-1], names, name_filter, d.get('answer_verbatim') or '')
     return rows
 
 
@@ -185,15 +200,28 @@ def rerun_number(fn):
     return int(m.group(1)) if m else 0
 
 
-def add_derived(row, names):
+def add_derived(row, names, name_filter='v1', text=''):
     row['rerun'] = rerun_number(row['source_file'])
     if row['kind'] in HEADING_KINDS:
         kept = [n for n in names if heading_reason(n) is None]
         row['headings_removed_count'] = len(names) - len(kept)
         row['businesses_named_no_headings'] = ';'.join(kept)
     else:
+        kept = None
         row['headings_removed_count'] = ''
         row['businesses_named_no_headings'] = ''
+    if name_filter == 'v2':
+        if kept is None:
+            row['nonbusiness_removed_count'] = ''
+            row['businesses_named_filtered'] = ''
+        else:
+            global _NF
+            if _NF is None:
+                _NF = _sibling('name_filter')
+            _nf = _NF
+            kept2, removed = _nf.apply(kept, text)
+            row['nonbusiness_removed_count'] = removed
+            row['businesses_named_filtered'] = ';'.join(kept2)
 
 
 def heading_report(rows, watch=('Overview', 'Known For', 'Certifications', 'Guaranteed Rent', 'Federal Tax Credits',
@@ -496,10 +524,12 @@ def main():
         spec = importlib.util.spec_from_file_location('build_edition', os.path.join(repo, 'scripts', 'build_edition.py'))
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        rows = [r for r in mod.answers_rows(os.path.join(repo, 'corpus', 'e1')) if pack['window'][0] <= r['date'] <= pack['window'][1]]
+        nf = pack.get('name_filter', 'v1')
+        fields = getattr(mod, 'ANSWER_FIELDS_V2', mod.ANSWER_FIELDS) if nf == 'v2' else mod.ANSWER_FIELDS
+        rows = [r for r in mod.answers_rows(os.path.join(repo, 'corpus', 'e1'), nf) if pack['window'][0] <= r['date'] <= pack['window'][1]]
         tmp = tempfile.mkdtemp()
         out = os.path.join(tmp, 'answers.csv')
-        mod.write_rows(out, rows, mod.ANSWER_FIELDS)
+        mod.write_rows(out, rows, fields)
         rel = pack['files']['answers']
         good = sha(out) == want.get(rel)
         ok = ok and good
@@ -527,7 +557,7 @@ def main():
                 arows = list(_csv.DictReader(fh))
             kept, left = mod.panel_split(arows)
             pf = os.path.join(tmp, 'panel.csv')
-            mod.write_rows(pf, kept, mod.ANSWER_FIELDS)
+            mod.write_rows(pf, kept, fields)
             good = sha(pf) == want.get(mp['file']) and len(left) == mp['rows_left_out']
             ok = ok and good
             print(('MATCH    ' if good else 'MISMATCH ') + 'derivation of ' + mp['file'] + ' from the answers table (%d rows left out)' % len(left))
@@ -639,11 +669,12 @@ def build(through, out, method_src, status):
         shutil.rmtree(pack)
     os.makedirs(os.path.join(pack, 'data'))
     corpus = os.path.join(REPO, 'corpus', 'e1')
-    rows = [r for r in answers_rows(corpus) if in_window(r['date'], W0, w1)]
+    rows = [r for r in answers_rows(corpus, NAME_FILTER_DEFAULT) if in_window(r['date'], W0, w1)]
+    fields = ANSWER_FIELDS_V2 if NAME_FILTER_DEFAULT == 'v2' else ANSWER_FIELDS
     last = max(r['date'] for r in rows)
     tag = '%s_to_%s' % (W0, last)
     ans_rel = 'data/answers_%s.csv' % tag
-    write_rows(os.path.join(pack, *ans_rel.split('/')), rows, ANSWER_FIELDS)
+    write_rows(os.path.join(pack, *ans_rel.split('/')), rows, fields)
     prompts_rel = 'data/prompts.csv'
     prows = prompts_rows(corpus, W0, last)
     write_rows(os.path.join(pack, *prompts_rel.split('/')), prows, PROMPT_FIELDS)
@@ -665,7 +696,7 @@ def build(through, out, method_src, status):
                   'file': None}
     if left_out:
         panel_rel = 'metrics/panel_%s' % os.path.basename(ans_rel)
-        write_rows(os.path.join(pack, *panel_rel.split('/')), kept, ANSWER_FIELDS)
+        write_rows(os.path.join(pack, *panel_rel.split('/')), kept, fields)
         metrics_in = os.path.join(pack, *panel_rel.split('/'))
         panel_meta['file'] = panel_rel
     rc, so, se = run_metrics(pack, metrics_in, last, os.path.join(pack, 'metrics'))
@@ -683,7 +714,7 @@ def build(through, out, method_src, status):
         by_kind[r['kind']] = by_kind.get(r['kind'], 0) + 1
     days = sorted({r['date'] for r in rows})
     counts_text, counts_numbers = counts_sentence(prows, days, W0, last)
-    meta = {'edition': 1, 'status': status, 'window': [W0, last], 'requested_through': through,
+    meta = {'edition': 1, 'status': status, 'window': [W0, last], 'requested_through': through, 'name_filter': NAME_FILTER_DEFAULT,
             'run_days': len(days), 'vendor_patches': patches, 'answers_rows': len(rows), 'rows_by_kind': by_kind,
             'metrics_panel': panel_meta, 'heading_filter': hr, 'reruns_in_window': reruns, 'run_status_counts': sc, 'sources_rows': n_src, 'sources_days': len(src_days), 'siri_rows': n_siri, 'customer_zero_rows': n_cz,
             'files': {'answers': ans_rel, 'sources': src_rel, 'siri': 'data/siri_panel.csv', 'metrics': 'metrics/metrics_v2.csv', 'prompts': prompts_rel},
@@ -722,6 +753,14 @@ def build(through, out, method_src, status):
     rep = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(rep)
     rep.write_expected(pack, rep.reproduce(pack))
+    # claims registry (2026-10-14): every public number of the edition with its receipt, pinned by the manifest.
+    # Business watch lines (NAME|MARKET|NICHE|RULE[|START|END]) come from scripts/claims_watch.txt when it exists.
+    _cr = _sibling('claims_registry')
+    watch_path = os.path.join(HERE, 'claims_watch.txt')
+    watch = [l.strip() for l in io.open(watch_path, encoding='utf-8')] if os.path.exists(watch_path) else []
+    watch = [l for l in watch if l and not l.startswith('#')]
+    reg = _cr.generate(pack, pack, corpus, watch)
+    print('claims registry: %d claims (CLAIMS.json, CLAIMS.md, claims.jsonld)' % len(reg['claims']))
     n = write_manifest(pack)
     print('pack %s: window %s..%s, %d run days, %d answer rows, %d source rows, %d siri rows, %d files in the manifest'
           % (pack, W0, last, len(days), len(rows), n_src, n_siri, n))
@@ -945,6 +984,17 @@ def selftest():
         ctext.startswith('# Corrections to the Edition 1 pack') and all(ord(c) < 128 for c in ctext)
         and 'Format: date_utc | files or rows | what changed and why | action | commit' in ctext)
     chk('build copies CORRECTIONS.md into the pack (so the manifest lists it)', "os.path.join(pack, 'CORRECTIONS.md')" in io.open(__file__, encoding='utf-8').read())
+    # name filter v2 (2026-10-14): derived only, versioned, Edition 1 FINAL rebuild unchanged
+    r1 = {'kind': 'API', 'source_file': 'NB-CZ-API_2026-10-14_x_openai.json'}
+    add_derived(r1, ['Planet Fitness', 'Yelp', 'Next steps', 'Georgia'], 'v2', 'text')
+    chk('v2: directory, heading label and place dropped into businesses_named_filtered, business kept',
+        r1['businesses_named_filtered'] == 'Planet Fitness' and r1['nonbusiness_removed_count'] >= 2)
+    r0 = {'kind': 'API', 'source_file': 'NB-CZ-API_2026-10-14_x_openai.json'}
+    add_derived(r0, ['Planet Fitness', 'Yelp'], 'v1', 'text')
+    chk('v1: no v2 columns are written (Edition 1 FINAL rebuild unchanged)', 'businesses_named_filtered' not in r0)
+    chk('v2 field list = v1 fields plus the two derived columns, in order',
+        ANSWER_FIELDS_V2 == ANSWER_FIELDS + ['nonbusiness_removed_count', 'businesses_named_filtered'])
+    chk('verify.py template rebuilds with the pack name_filter', "pack.get('name_filter', 'v1')" in VERIFY_PY)
     print('SELFTEST ' + ('FAIL: ' + ', '.join(fails) if fails else 'PASS'))
     return not fails
 
