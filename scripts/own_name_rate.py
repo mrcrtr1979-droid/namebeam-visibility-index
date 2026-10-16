@@ -45,7 +45,7 @@ REPO = os.path.abspath(os.path.join(HERE, '..'))
 Q_BUSINESS = 'Namebeam'
 Q_NICHE = 'ai visibility checks'
 Q_MARKET = 'US nationwide'
-ENGINES = ['openai', 'anthropic', 'gemini', 'perplexity']
+ENGINES = ['openai', 'anthropic', 'gemini', 'perplexity', 'anthropic_search']
 COLUMNS = ['date', 'engine', 'rows', 'rows_ok', 'rows_names', 'rows_named_us', 'rows_text_us']
 WORD_US = re.compile(r'(?<![A-Za-z0-9])namebeam(?![A-Za-z0-9])', re.I)
 

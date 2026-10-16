@@ -76,7 +76,7 @@ jobs:
           echo "NOTE: OPENAI is intentionally DEACTIVATED as of 2026-08-06. The secret"
           echo "still exists and reports present here, but it is NOT mapped into the"
           echo "runner step, so no openai rows are written. Reason: API account balance"
-          echo "is zero. This corpus is THREE engines (perplexity, gemini, anthropic)"
+          echo "is zero. This corpus is FOUR engines (perplexity, gemini, anthropic, anthropic_search)"
           echo "plus Bright Data SERP until credits are added."
           if [ -z "$PERPLEXITY_API_KEY" ] && [ -z "$GEMINI_API_KEY" ] && [ -z "$BRIGHTDATA_API_KEY" ]; then
             echo "ERROR: no engine keys are set. Add them in Settings > Secrets and variables > Actions."

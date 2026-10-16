@@ -222,7 +222,7 @@ def build(corpus, archives, out, dates=None, only_missing=False, strict=False):
         dt = date_of(name, d)
         if d.get('engine'):
             answers_by_date[dt] += 1
-            if d.get('engine') in ('perplexity', 'google_serp'):
+            if d.get('engine') in ('perplexity', 'google_serp', 'anthropic_search'):
                 carrying_by_date[dt] += 1
         by_date[dt].extend(rows)
         for k, n in um:
