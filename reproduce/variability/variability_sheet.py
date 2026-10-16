@@ -7,13 +7,13 @@ days, from the published Edition 1 pack. Every day on the sheet carries the raw 
 run_status, so a reader can pull the answer text from corpus/e1 and recompute every line.
 
 Rule used on the sheet (the pack's raw rule, stated on every sheet): names = businesses_named_no_headings as recorded;
-top name = the first entry of that list; a day is "answered with a name" when run_status is OK and the list is not empty.
+top name = the entry at position 1 of that list; a day is "answered with a name" when run_status is OK and the list is not empty.
 The gated and text-mention rules live in reproduce/stability/ and reproduce/recount/; this sheet shows the raw record.
 
 Run from the repo root:
   python3 -I -X utf8 reproduce/variability/variability_sheet.py --market "Atlanta GA" --niche "HVAC repair and replacement" --engine perplexity --start 2026-09-15 --out reproduce/variability/out
   python3 -I -X utf8 reproduce/variability/variability_sheet.py --selftest
---engine all writes one sheet per engine. Standard library only. Reads the pack; writes only inside --out.
+--engine all writes one sheet per engine. Standard library, no dependencies. Reads the pack; writes only inside --out.
 """
 import argparse, csv, datetime as dt, hashlib, json, os, sys, unittest
 
@@ -50,7 +50,7 @@ def build_sheet(rows, market, niche, engine, start):
     cell = [r for r in rows if r['market'].casefold().strip() == mk and r['niche'].casefold().strip() == ni and r['engine'] == engine and r['date'] in days]
     if cell:
         market, niche = cell[0]['market'], cell[0]['niche']
-    # earliest saved row per day (rerun 0 first, then file name)
+    # earliest saved row per day (rerun 0 before others, then file name)
     by_day = {}
     for r in sorted(cell, key=lambda r: (int(r.get('rerun') or 0), r['source_file'])):
         by_day.setdefault(r['date'], r)
