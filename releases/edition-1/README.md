@@ -1,6 +1,6 @@
 # Namebeam AI Visibility Record, Edition 1 data pack
 
-Status: FINAL. Window: 2026-09-01 to 2026-10-13 (UTC dates). Run days in the window: 42. Answer rows: 12,180.
+Status: FINAL. Window: 2026-09-01 to 2026-10-13 (UTC dates). Run days in the window: 42. Answer rows: 12,180: 8,160 engine rows (6,012 answered with at least one name, 318 answered with no name, 1,830 failed calls kept as rows with their error), 2,010 Google result rows (1,118 extracted, 892 extraction failed) and 2,010 engine agreement rows. The `run_status` column in `data/answers_2026-09-01_to_2026-10-13_run_status.csv` says which row is which (added 2026-10-16, see CORRECTIONS.md).
 
 Counts: 73 questions, each asked in the same words on every run day it was in the roster (55 market or category questions and 18 questions asked to see whether one named business comes up); 25 US local markets plus nationwide questions (27 market labels as written in the roster); 37 niche labels as written in the roster; API engines asked: anthropic, gemini, openai, perplexity, plus Google results; 42 run days from 2026-09-01 to 2026-10-13.
 
@@ -11,6 +11,7 @@ This pack holds the raw tables behind Edition 1, the metrics computed from them,
 | file | what it is |
 |---|---|
 | `data/answers_2026-09-01_to_2026-10-13.csv` | One row per raw answer file: date, kind (API, SERP or AGREE), the business or segment asked about, niche, market, engine, the names the engine returned, and the SHA-256 of the raw file. Three derived columns follow: `rerun` (0, or N for a raw file named `_rN`), `headings_removed_count` and `businesses_named_no_headings` (API and AGREE rows; blank for SERP). The raw `businesses_named` column is never changed. |
+| `data/answers_2026-09-01_to_2026-10-13_run_status.csv` | The answers table above, row for row and unchanged, with two added columns read from each row's raw file: `run_status` (OK: the call succeeded and at least one name was recorded; NONE_NAMED: the call succeeded and no name was recorded; FAILED: the call or the Google extraction failed, kept as a row; NOT_APPLICABLE: AGREE rows) and `run_status_reason` (the error text or reason from the raw file). Added 2026-10-16. |
 | `data/sources_2026-09-01_to_2026-10-13.csv` | One row per URL an engine returned as a source (Perplexity sources and Google results). Columns are described in `datasets/e1/sources/README.md`. |
 | `data/prompts.csv` | Every question asked in this window, word for word: its id (the slug used in the raw file names), the business or segment it belongs to, whether it is a market or category question or a question asked to see whether one named business comes up, market, niche, the SHA-256 of the text, the date it entered the run, the last date in this window, the number of run days it was asked, and which engines were asked. |
 | `LICENSE` | Creative Commons Attribution 4.0 International (CC BY 4.0), the full legal code. |
@@ -96,6 +97,7 @@ Google rows: 888 raw files in the window have the status EXTRACTION_FAILED, all 
 
 ## Known gaps and how to read them
 
+- Failed calls are rows. Engine rows by engine, from the raw files: Anthropic 2,010 OK of 2,010; Perplexity 1,971 OK, 3 NONE_NAMED, 156 FAILED of 2,130 (HTTP 401 on 2026-09-02 to 2026-09-04); OpenAI 1,692 OK, 312 NONE_NAMED, 6 FAILED of 2,010; Gemini 339 OK, 3 NONE_NAMED, 1,668 FAILED of 2,010 (HTTP 402, 429 and 503). Twenty-five engine-days carry no name on any row (Gemini 17, OpenAI 5, Perplexity 3), 1,211 rows. Before 2026-10-16 the answers table did not label these rows; use `run_status` and divide by OK rows per engine. Example: Perplexity, roofing, Dallas, Denver and Miami: 126 scheduled, 9 FAILED (2026-09-02 to 2026-09-04), and a roofing business named in 117 of the 117 OK answers.
 - OpenAI name lists are empty on every row from 2026-09-01 to 2026-09-05 (235 of 235 rows, 47 a day) because the name extractor returned none; the raw answers on those days have status OK and about 1,800 characters of text. OpenAI name-based metrics start 2026-09-06. The raw files are unchanged and the names were not re-extracted.
 - Google result pages were complete on a small share of rows in the week of 2026-08-31 and on most rows from the week of 2026-09-21. Empty name lists on Google rows fall from 78% (220 of 282 rows, week of 2026-08-31) to 3% (11 of 329 rows, week of 2026-09-28), then 15% (45 of 306 rows) in the latest partial week. The count of failed extractions is stated under "Google rows" above.
 - The files named LATEST in the dataset `Namebeam/namebeam-e1-ai-referral-index` stop at 2026-09-12. They are not part of this pack. The current file for the full window is the one listed in the Files table above, in folder `edition-1/` of `Namebeam/ai-visibility-daily-record`.

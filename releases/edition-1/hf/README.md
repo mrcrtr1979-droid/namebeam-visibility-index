@@ -12,8 +12,12 @@ tags:
 size_categories:
 - 10K<n<100K
 configs:
-- config_name: answers
+- config_name: answers_run_status
   default: true
+  data_files:
+  - split: train
+    path: edition-1/data/answers_2026-09-01_to_2026-10-13_run_status.csv
+- config_name: answers
   data_files:
   - split: train
     path: edition-1/data/answers_2026-09-01_to_2026-10-13.csv
@@ -47,10 +51,11 @@ The record is kept by [Namebeam](https://namebeam.ai/), a Carter Enterprise LLC 
 
 ## What is in this repository
 
-Everything is under `edition-1/`. Edition 1 covers 2026-09-01 to 2026-10-13 (UTC dates): 42 run days, 12,180 answer rows.
+Everything is under `edition-1/`. Edition 1 covers 2026-09-01 to 2026-10-13 (UTC dates): 42 run days, 12,180 answer rows: 8,160 engine rows (6,012 answered with at least one name, 318 answered with no name, 1,830 failed calls kept as rows with their error), 2,010 Google result rows (1,118 extracted, 892 extraction failed) and 2,010 engine agreement rows. The default config adds a `run_status` column so a failed call is never read as a zero.
 
 | config | file | what it is |
 |---|---|---|
+| answers_run_status (default) | `edition-1/data/answers_2026-09-01_to_2026-10-13_run_status.csv` | The answers table with `run_status` (OK, NONE_NAMED, FAILED, NOT_APPLICABLE) and `run_status_reason` read from each raw file. Added 2026-10-16. |
 | answers | `edition-1/data/answers_2026-09-01_to_2026-10-13.csv` | One row per raw answer file: date, kind, the business or segment asked about, niche, market, engine, the names the engine returned, the SHA-256 of the raw file. |
 | sources | `edition-1/data/sources_2026-09-01_to_2026-10-13.csv` | One row per URL an engine returned as a source (Perplexity sources and Google results). |
 | prompts | `edition-1/data/prompts.csv` | Every question asked, word for word, with its id, the date it entered the run and the engines asked. |

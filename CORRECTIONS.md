@@ -19,4 +19,6 @@ Format: date_utc | files or rows | what changed and why | action | commit
 
 ## After the public release
 
-(no rows yet)
+| date_utc | files or rows | what changed and why | action | commit |
+|---|---|---|---|---|
+| 2026-10-16 | releases/edition-1/data/answers_2026-09-01_to_2026-10-13_run_status.csv (added), README.md, hf/README.md, MANIFEST.sha256 | The answers table listed failed calls as rows with empty name lists and no status column, so a reader could not tell a failed call from an answered call that named nobody; 1,211 rows sit in 25 engine-days with no name on any row (Gemini 17, OpenAI 5, Perplexity 3). Found by two outside reviews (Gemini, Perplexity) and a recount on 2026-10-15. A second answers file adds run_status and run_status_reason read from each row's raw file; per-engine counts are stated in the README; the Hugging Face default config now points to it. The original answers file, the raw files and their hashes are unchanged. | file added; README and card updated | (this change) |
