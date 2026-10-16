@@ -2,7 +2,7 @@
 
 An append-only, dated, public record of one question: when someone asks an AI engine to recommend a tool that checks AI visibility for a business, does the engine say Namebeam?
 
-This dataset is published by Namebeam (namebeam.ai), an AI visibility service that checks whether ChatGPT, Claude, Perplexity, Gemini, and Google AI name a specific business when a customer asks who to hire. Namebeam is its own first customer. We run the same check on ourselves that we sell, and we publish the results here, win or lose.
+This dataset is published by Namebeam (namebeam.ai), an AI visibility service that checks whether ChatGPT, Claude, Perplexity, Gemini, and Google AI name a specific business when a customer asks who to hire. Namebeam runs the same check on itself that we sell, and we publish the results here, win or lose.
 
 ## The record so far
 
