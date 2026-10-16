@@ -1,0 +1,141 @@
+{
+ "market": "Phoenix AZ",
+ "niche": "hvac repair and replacement",
+ "engine": "openai",
+ "engine_label": "OpenAI",
+ "window": [
+  "2026-10-06",
+  "2026-10-12"
+ ],
+ "rule": "raw lists as recorded (businesses_named_no_headings); top = first listed name",
+ "days_in_window": 7,
+ "rows_found": 7,
+ "days_with_row": 7,
+ "days_answered_with_name": 7,
+ "days_by_status": {
+  "OK": 7
+ },
+ "consecutive_answered_pairs": 6,
+ "top_name_changed": 5,
+ "top_name_changed_share": 0.833,
+ "mean_list_overlap_jaccard": 0.133,
+ "distinct_names": 15,
+ "names_on_every_answered_day": [],
+ "top_names": [
+  [
+   "Phoenix HVAC",
+   3
+  ],
+  [
+   "HomeAdvisor and BBB",
+   1
+  ],
+  [
+   "One Hour Heating",
+   1
+  ],
+  [
+   "Phoenix ZIP",
+   1
+  ],
+  [
+   "Phoenix-area HVAC",
+   1
+  ]
+ ],
+ "days": [
+  {
+   "date": "2026-10-06",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Phoenix-area HVAC"
+   ],
+   "top": "Phoenix-area HVAC",
+   "source_file": "NB-CZ-API_2026-10-06_segment_hvac_phoenix_openai.json",
+   "sha256": "cb0b67166fcc75ab09c777e1e98e7894a0684c38f9eb65db2cae6faf000df03e"
+  },
+  {
+   "date": "2026-10-07",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "HomeAdvisor and BBB"
+   ],
+   "top": "HomeAdvisor and BBB",
+   "source_file": "NB-CZ-API_2026-10-07_segment_hvac_phoenix_openai.json",
+   "sha256": "2beccc84620319a8b00d019556034a60e53f34062d1acc1d7711b56230b1e23d"
+  },
+  {
+   "date": "2026-10-08",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Phoenix HVAC",
+    "BBB. Recent",
+    "Arizona ROC"
+   ],
+   "top": "Phoenix HVAC",
+   "source_file": "NB-CZ-API_2026-10-08_segment_hvac_phoenix_openai.json",
+   "sha256": "cc5800b707104b366250a186b4b985fe546f37f9be2bc968a1f87ec0444bb2c1"
+  },
+  {
+   "date": "2026-10-09",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Phoenix HVAC",
+    "EPA Section",
+    "Yelp"
+   ],
+   "top": "Phoenix HVAC",
+   "source_file": "NB-CZ-API_2026-10-09_segment_hvac_phoenix_openai.json",
+   "sha256": "0e843da4513602e2ed16fce2f45c0854d9d5a862cd61766f417b4c8b3860e8d3"
+  },
+  {
+   "date": "2026-10-10",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "One Hour Heating",
+    "Air Conditioning",
+    "Rescue Rooter",
+    "Service Experts Heating",
+    "Air Conditioning. These",
+    "Yelp",
+    "Arizona ROC",
+    "Registrar of Contractors"
+   ],
+   "top": "One Hour Heating",
+   "source_file": "NB-CZ-API_2026-10-10_segment_hvac_phoenix_openai.json",
+   "sha256": "4c9d3a0dfccce91d2a8ba7b4e5f90c707e3dc9c8296f8b08ea79f549784c424c"
+  },
+  {
+   "date": "2026-10-11",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Phoenix ZIP",
+    "Phoenix HVAC",
+    "Arizona ROC"
+   ],
+   "top": "Phoenix ZIP",
+   "source_file": "NB-CZ-API_2026-10-11_segment_hvac_phoenix_openai.json",
+   "sha256": "ff143de9c30e49edc29f6c39c592389a07e803d5973df131e2c4b5de95ee1256"
+  },
+  {
+   "date": "2026-10-12",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Phoenix HVAC",
+    "Arizona ROC",
+    "Registrar of Contractors",
+    "Check Better Business Bureau"
+   ],
+   "top": "Phoenix HVAC",
+   "source_file": "NB-CZ-API_2026-10-12_segment_hvac_phoenix_openai.json",
+   "sha256": "7f8587fc347c3e23cc4f8571d759ed3de80eb2471d69e3e94fa89733fd3dafc2"
+  }
+ ]
+}

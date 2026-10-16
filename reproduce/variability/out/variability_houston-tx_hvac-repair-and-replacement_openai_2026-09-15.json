@@ -1,0 +1,150 @@
+{
+ "market": "Houston TX",
+ "niche": "hvac repair and replacement",
+ "engine": "openai",
+ "engine_label": "OpenAI",
+ "window": [
+  "2026-09-15",
+  "2026-09-21"
+ ],
+ "rule": "raw lists as recorded (businesses_named_no_headings); top = first listed name",
+ "days_in_window": 7,
+ "rows_found": 7,
+ "days_with_row": 7,
+ "days_answered_with_name": 7,
+ "days_by_status": {
+  "OK": 7
+ },
+ "consecutive_answered_pairs": 6,
+ "top_name_changed": 6,
+ "top_name_changed_share": 1.0,
+ "mean_list_overlap_jaccard": 0.156,
+ "distinct_names": 17,
+ "names_on_every_answered_day": [],
+ "top_names": [
+  [
+   "Air",
+   1
+  ],
+  [
+   "Air Conditioning",
+   1
+  ],
+  [
+   "Houston AC",
+   1
+  ],
+  [
+   "Houston ZIP",
+   1
+  ],
+  [
+   "Texas Dept. of Licensing",
+   1
+  ],
+  [
+   "Texas HVAC",
+   1
+  ],
+  [
+   "ZIP",
+   1
+  ]
+ ],
+ "days": [
+  {
+   "date": "2026-09-15",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Air",
+    "Ferran Heating",
+    "Air Conditioning",
+    "Rescue Rooter"
+   ],
+   "top": "Air",
+   "source_file": "NB-CZ-API_2026-09-15_segment_hvac_houston_openai.json",
+   "sha256": "180b34824876684b4aea77beb7c0d81e7b5f719dc8ceabdc5a07e5e653c5bba3"
+  },
+  {
+   "date": "2026-09-16",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Houston ZIP",
+    "Electric",
+    "Mister Sparky"
+   ],
+   "top": "Houston ZIP",
+   "source_file": "NB-CZ-API_2026-09-16_segment_hvac_houston_openai.json",
+   "sha256": "0654ff3cda09fe9a56bcfca842032bddb4fb170015ae3bcc75d4b7cd08688303"
+  },
+  {
+   "date": "2026-09-17",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "ZIP",
+    "Harris County",
+    "Houston HVAC"
+   ],
+   "top": "ZIP",
+   "source_file": "NB-CZ-API_2026-09-17_segment_hvac_houston_openai.json",
+   "sha256": "2251db4e05277c40acc60b2dddd67fe901a3282067c755161c1e17a4ee4f4950"
+  },
+  {
+   "date": "2026-09-18",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Texas HVAC",
+    "Air Conditioning",
+    "Commercial Services"
+   ],
+   "top": "Texas HVAC",
+   "source_file": "NB-CZ-API_2026-09-18_segment_hvac_houston_openai.json",
+   "sha256": "8c6a4a6a1b23cf8f2d711a4b7011b3574a3799aff7efd252b48091e93f5e1378"
+  },
+  {
+   "date": "2026-09-19",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Houston AC",
+    "Air Conditioning",
+    "Rescue Rooter"
+   ],
+   "top": "Houston AC",
+   "source_file": "NB-CZ-API_2026-09-19_segment_hvac_houston_openai.json",
+   "sha256": "e164fc53cf3ebf42b80fc4490096f6f52d428a96dd8952bd91c87ba7fe306c84"
+  },
+  {
+   "date": "2026-09-20",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Texas Dept. of Licensing",
+    "Rescue Rooter",
+    "Air Conditioning",
+    "On Time Heating"
+   ],
+   "top": "Texas Dept. of Licensing",
+   "source_file": "NB-CZ-API_2026-09-20_segment_hvac_houston_openai.json",
+   "sha256": "dae040fce0359f52119799a57083e8795a6989e2b2f666578ef8639dbdb3dbd5"
+  },
+  {
+   "date": "2026-09-21",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Air Conditioning",
+    "Benjamin Franklin",
+    "Rescue Rooter",
+    "Texas Dept. of Licensing and Regulation"
+   ],
+   "top": "Air Conditioning",
+   "source_file": "NB-CZ-API_2026-09-21_segment_hvac_houston_openai.json",
+   "sha256": "4929e36dce2f6fa02b6746b411ebf219ea7c1d1eeb41dcea885ff1379e7cdb90"
+  }
+ ]
+}

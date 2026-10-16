@@ -1,0 +1,148 @@
+{
+ "market": "Phoenix AZ",
+ "niche": "hvac repair and replacement",
+ "engine": "openai",
+ "engine_label": "OpenAI",
+ "window": [
+  "2026-09-15",
+  "2026-09-21"
+ ],
+ "rule": "raw lists as recorded (businesses_named_no_headings); top = first listed name",
+ "days_in_window": 7,
+ "rows_found": 7,
+ "days_with_row": 7,
+ "days_answered_with_name": 7,
+ "days_by_status": {
+  "OK": 7
+ },
+ "consecutive_answered_pairs": 6,
+ "top_name_changed": 6,
+ "top_name_changed_share": 1.0,
+ "mean_list_overlap_jaccard": 0.058,
+ "distinct_names": 18,
+ "names_on_every_answered_day": [],
+ "top_names": [
+  [
+   "Phoenix HVAC",
+   2
+  ],
+  [
+   "AZ ROC",
+   1
+  ],
+  [
+   "Google and Yelp",
+   1
+  ],
+  [
+   "Phoenix ZIP",
+   1
+  ],
+  [
+   "Registrar of Contractors",
+   1
+  ],
+  [
+   "Yelp",
+   1
+  ]
+ ],
+ "days": [
+  {
+   "date": "2026-09-15",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "AZ ROC",
+    "NATE",
+    "Phoenix HVAC"
+   ],
+   "top": "AZ ROC",
+   "source_file": "NB-CZ-API_2026-09-15_segment_hvac_phoenix_openai.json",
+   "sha256": "432ef3c5b0a85bfcfd0758e88cf020ffb60ae5916748011d5fef029b18e485dd"
+  },
+  {
+   "date": "2026-09-16",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Phoenix HVAC",
+    "NATE-certified and EPA"
+   ],
+   "top": "Phoenix HVAC",
+   "source_file": "NB-CZ-API_2026-09-16_segment_hvac_phoenix_openai.json",
+   "sha256": "416881d6944f7ae9fcffef3e083559ac1b3418f3350a85f9660708b4cb3b1046"
+  },
+  {
+   "date": "2026-09-17",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Phoenix ZIP",
+    "Arizona",
+    "HomeAdvisor",
+    "NATE-certified and EPA-608",
+    "Google and Yelp",
+    "Benjamin Franklin",
+    "Rescue Rooter",
+    "Service Experts"
+   ],
+   "top": "Phoenix ZIP",
+   "source_file": "NB-CZ-API_2026-09-17_segment_hvac_phoenix_openai.json",
+   "sha256": "5e24887b96590d43699fd40b9be0076572f24548f1b8c41a8e60485b97983428"
+  },
+  {
+   "date": "2026-09-18",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Phoenix HVAC",
+    "Air Conditioning",
+    "Rescue Rooter"
+   ],
+   "top": "Phoenix HVAC",
+   "source_file": "NB-CZ-API_2026-09-18_segment_hvac_phoenix_openai.json",
+   "sha256": "b692475a5913328816a484e7f73ef74df8c8a275a71c83050c384c603ceb3455"
+  },
+  {
+   "date": "2026-09-19",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Yelp",
+    "Angi",
+    "HomeAdvisor",
+    "Phoenix ZIP"
+   ],
+   "top": "Yelp",
+   "source_file": "NB-CZ-API_2026-09-19_segment_hvac_phoenix_openai.json",
+   "sha256": "186823706aa6181977df2298ad16d9b0d718c6664a2e26397e77504e635d292a"
+  },
+  {
+   "date": "2026-09-20",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Google and Yelp",
+    "Arizona ROC",
+    "Phoenix-area HVAC"
+   ],
+   "top": "Google and Yelp",
+   "source_file": "NB-CZ-API_2026-09-20_segment_hvac_phoenix_openai.json",
+   "sha256": "e0247af80cacf5409826e8c68cf90dff1b95518576e42d6be560980ec400aafc"
+  },
+  {
+   "date": "2026-09-21",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Registrar of Contractors",
+    "NATE",
+    "Yelp"
+   ],
+   "top": "Registrar of Contractors",
+   "source_file": "NB-CZ-API_2026-09-21_segment_hvac_phoenix_openai.json",
+   "sha256": "d189baf0d8c06b41a0ef78496156905c304072a4e92efc620c23c6e567233b59"
+  }
+ ]
+}

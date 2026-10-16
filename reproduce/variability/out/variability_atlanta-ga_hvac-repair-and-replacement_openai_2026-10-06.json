@@ -1,0 +1,137 @@
+{
+ "market": "Atlanta GA",
+ "niche": "hvac repair and replacement",
+ "engine": "openai",
+ "engine_label": "OpenAI",
+ "window": [
+  "2026-10-06",
+  "2026-10-12"
+ ],
+ "rule": "raw lists as recorded (businesses_named_no_headings); top = first listed name",
+ "days_in_window": 7,
+ "rows_found": 7,
+ "days_with_row": 7,
+ "days_answered_with_name": 6,
+ "days_by_status": {
+  "NONE_NAMED": 1,
+  "OK": 6
+ },
+ "consecutive_answered_pairs": 5,
+ "top_name_changed": 5,
+ "top_name_changed_share": 1.0,
+ "mean_list_overlap_jaccard": 0.0,
+ "distinct_names": 15,
+ "names_on_every_answered_day": [],
+ "top_names": [
+  [
+   "Atlanta HVAC",
+   1
+  ],
+  [
+   "Carrier",
+   1
+  ],
+  [
+   "ENERGY STAR",
+   1
+  ],
+  [
+   "Georgia HVAC",
+   1
+  ],
+  [
+   "Manual D",
+   1
+  ],
+  [
+   "ZIP",
+   1
+  ]
+ ],
+ "days": [
+  {
+   "date": "2026-10-06",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Manual D",
+    "HomeAdvisor",
+    "BBB. Look",
+    "R.S. Andrews",
+    "One Hour Heating",
+    "Air. These"
+   ],
+   "top": "Manual D",
+   "source_file": "NB-CZ-API_2026-10-06_segment_hvac_atlanta_openai.json",
+   "sha256": "74cc2c97d2ab15857cbe0fd948c8ec1ec7979d683cccf93dc1ab9dadd8aa7f8f"
+  },
+  {
+   "date": "2026-10-07",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "ZIP"
+   ],
+   "top": "ZIP",
+   "source_file": "NB-CZ-API_2026-10-07_segment_hvac_atlanta_openai.json",
+   "sha256": "7dbf94b08ae183dbcc2d862648ab6e3a25831eb72cf8bd8ac23b687e1359d65e"
+  },
+  {
+   "date": "2026-10-08",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Atlanta HVAC"
+   ],
+   "top": "Atlanta HVAC",
+   "source_file": "NB-CZ-API_2026-10-08_segment_hvac_atlanta_openai.json",
+   "sha256": "6564cf86e6b04446daacb84fa48bec64d3873aa63a169ba41363e049d6466e15"
+  },
+  {
+   "date": "2026-10-09",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Georgia HVAC",
+    "Trane Comfort",
+    "Carrier Factory Authorized"
+   ],
+   "top": "Georgia HVAC",
+   "source_file": "NB-CZ-API_2026-10-09_segment_hvac_atlanta_openai.json",
+   "sha256": "28df94d3d7da7a2919f378ac8b7c64ff4437467b480773124bbad3172cb53054"
+  },
+  {
+   "date": "2026-10-10",
+   "status": "NONE_NAMED",
+   "reason": "OK run, no business name recorded",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-10-10_segment_hvac_atlanta_openai.json",
+   "sha256": "b6eb155013266e746679224ea4af245c77063e6a64f13b7b5e15ac8379e425b7"
+  },
+  {
+   "date": "2026-10-11",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Carrier",
+    "Trane"
+   ],
+   "top": "Carrier",
+   "source_file": "NB-CZ-API_2026-10-11_segment_hvac_atlanta_openai.json",
+   "sha256": "6daaf0b79c37dc6f0e9853a8e86f8e7ad6e7ace333f7b2702eaf491b9276a9de"
+  },
+  {
+   "date": "2026-10-12",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "ENERGY STAR",
+    "Benjamin Franklin"
+   ],
+   "top": "ENERGY STAR",
+   "source_file": "NB-CZ-API_2026-10-12_segment_hvac_atlanta_openai.json",
+   "sha256": "55ef5552c20e065ac688f0dc863554036fa680e01f445356e6babf2e3eeb5c73"
+  }
+ ]
+}

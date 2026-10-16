@@ -1,0 +1,106 @@
+{
+ "market": "Phoenix AZ",
+ "niche": "hvac repair and replacement",
+ "engine": "anthropic",
+ "engine_label": "Anthropic Claude",
+ "window": [
+  "2026-10-06",
+  "2026-10-12"
+ ],
+ "rule": "raw lists as recorded (businesses_named_no_headings); top = first listed name",
+ "days_in_window": 7,
+ "rows_found": 7,
+ "days_with_row": 7,
+ "days_answered_with_name": 3,
+ "days_by_status": {
+  "OK": 3,
+  "OK_NO_NAME": 4
+ },
+ "consecutive_answered_pairs": 2,
+ "top_name_changed": 1,
+ "top_name_changed_share": 0.5,
+ "mean_list_overlap_jaccard": 0.5,
+ "distinct_names": 2,
+ "names_on_every_answered_day": [],
+ "top_names": [
+  [
+   "Ways to find them",
+   2
+  ],
+  [
+   "Ways to find options",
+   1
+  ]
+ ],
+ "days": [
+  {
+   "date": "2026-10-06",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Ways to find options"
+   ],
+   "top": "Ways to find options",
+   "source_file": "NB-CZ-API_2026-10-06_segment_hvac_phoenix_anthropic.json",
+   "sha256": "a92ad6dd7559402b6a40c3e39643693bb188c17992fc997b8307126fd49ec089"
+  },
+  {
+   "date": "2026-10-07",
+   "status": "OK_NO_NAME",
+   "reason": "",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-10-07_segment_hvac_phoenix_anthropic.json",
+   "sha256": "161eca150533be1c63aba72d03dc1294672577dcb08244fb21fd9a603fe337a5"
+  },
+  {
+   "date": "2026-10-08",
+   "status": "OK_NO_NAME",
+   "reason": "",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-10-08_segment_hvac_phoenix_anthropic.json",
+   "sha256": "24f0b6a54467f1208584bf6142838cb7440494b74f9bf86cc850c1cbaef5ea2c"
+  },
+  {
+   "date": "2026-10-09",
+   "status": "OK_NO_NAME",
+   "reason": "",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-10-09_segment_hvac_phoenix_anthropic.json",
+   "sha256": "648b698de3ca5bbf8cba4497231696dfabc9790e131c3db9b1807fd9a87fdd73"
+  },
+  {
+   "date": "2026-10-10",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Ways to find them"
+   ],
+   "top": "Ways to find them",
+   "source_file": "NB-CZ-API_2026-10-10_segment_hvac_phoenix_anthropic.json",
+   "sha256": "6c6cd51b0393ec9aba6e5727d5bba46fb027fed061d5b6fb38dd959b2e662751"
+  },
+  {
+   "date": "2026-10-11",
+   "status": "OK_NO_NAME",
+   "reason": "",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-10-11_segment_hvac_phoenix_anthropic.json",
+   "sha256": "fa9c82b1584c5b541a4f6e34c3194010f8bc5cd94edb85cfd7c473e151cee153"
+  },
+  {
+   "date": "2026-10-12",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Ways to find them"
+   ],
+   "top": "Ways to find them",
+   "source_file": "NB-CZ-API_2026-10-12_segment_hvac_phoenix_anthropic.json",
+   "sha256": "622da7d7ec9816f58e0f71c509f1c9f800776446807741dcc883813212e23f88"
+  }
+ ]
+}

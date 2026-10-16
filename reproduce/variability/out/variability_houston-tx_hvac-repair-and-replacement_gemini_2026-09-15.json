@@ -1,0 +1,114 @@
+{
+ "market": "Houston TX",
+ "niche": "hvac repair and replacement",
+ "engine": "gemini",
+ "engine_label": "Google Gemini",
+ "window": [
+  "2026-09-15",
+  "2026-09-21"
+ ],
+ "rule": "raw lists as recorded (businesses_named_no_headings); top = first listed name",
+ "days_in_window": 7,
+ "rows_found": 7,
+ "days_with_row": 7,
+ "days_answered_with_name": 1,
+ "days_by_status": {
+  "FAILED": 6,
+  "OK": 1
+ },
+ "consecutive_answered_pairs": 0,
+ "top_name_changed": 0,
+ "top_name_changed_share": null,
+ "mean_list_overlap_jaccard": null,
+ "distinct_names": 8,
+ "names_on_every_answered_day": [
+  "Abacus Plumbing, Air Conditioning & Electrical",
+  "Air Specialist",
+  "Check NATE Certification",
+  "Custom Comfort Air",
+  "Get Multiple Quotes for Big Repairs",
+  "Mission Air Conditioning & Plumbing",
+  "Richmond Air",
+  "TACLA"
+ ],
+ "top_names": [
+  [
+   "Richmond Air",
+   1
+  ]
+ ],
+ "days": [
+  {
+   "date": "2026-09-15",
+   "status": "FAILED",
+   "reason": "QUOTA_BLOCKED: QUOTA: gemini HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current qu",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-09-15_segment_hvac_houston_gemini.json",
+   "sha256": "1c1c26d4968e9d842e115655a2f495cc975410cd64b3ba3d8082c22b5483fa1e"
+  },
+  {
+   "date": "2026-09-16",
+   "status": "FAILED",
+   "reason": "QUOTA_BLOCKED: QUOTA: gemini HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current qu",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-09-16_segment_hvac_houston_gemini.json",
+   "sha256": "eb24bad1b7e1d6444bd3691c337ba016975d6f573551ac6be912622dc4698ec4"
+  },
+  {
+   "date": "2026-09-17",
+   "status": "FAILED",
+   "reason": "QUOTA_BLOCKED: QUOTA: gemini HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current qu",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-09-17_segment_hvac_houston_gemini.json",
+   "sha256": "08228728619032a435c61cf4b7282fc1c90be04b0627e903cff26d57bdeabf0c"
+  },
+  {
+   "date": "2026-09-18",
+   "status": "FAILED",
+   "reason": "QUOTA_BLOCKED: QUOTA: gemini HTTP 429: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current qu",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-09-18_segment_hvac_houston_gemini.json",
+   "sha256": "20b07dd7193b221e4ea072d3a246fe11e04869723d4ac73324f78aa5b6be782a"
+  },
+  {
+   "date": "2026-09-19",
+   "status": "FAILED",
+   "reason": "QUOTA_BLOCKED: QUOTA: gemini HTTP 429 [GenerateRequestsPerDayPerProjectPerModel-FreeTier] tries=1: { \"err",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-09-19_segment_hvac_houston_gemini.json",
+   "sha256": "b4ebfcbb4ee980bce97be4b1d3db956dde1b7d195983fc58469b119fc6f61fbc"
+  },
+  {
+   "date": "2026-09-20",
+   "status": "OK",
+   "reason": "",
+   "names": [
+    "Richmond Air",
+    "Abacus Plumbing, Air Conditioning & Electrical",
+    "Mission Air Conditioning & Plumbing",
+    "Air Specialist",
+    "Custom Comfort Air",
+    "TACLA",
+    "Get Multiple Quotes for Big Repairs",
+    "Check NATE Certification"
+   ],
+   "top": "Richmond Air",
+   "source_file": "NB-CZ-API_2026-09-20_segment_hvac_houston_gemini.json",
+   "sha256": "63c1e13ed394e65cdfa17b18304eeda7531e563224ac52730e59e9a6b6e7347e"
+  },
+  {
+   "date": "2026-09-21",
+   "status": "FAILED",
+   "reason": "QUOTA_BLOCKED: QUOTA: gemini HTTP 429 [GenerateRequestsPerDayPerProjectPerModel-FreeTier] tries=1: { \"err",
+   "names": [],
+   "top": "",
+   "source_file": "NB-CZ-API_2026-09-21_segment_hvac_houston_gemini.json",
+   "sha256": "97a8208edc77d71c1db6fc9c4f4999b5e8409a5a7dc47acab2e14c1bdabf4d68"
+  }
+ ]
+}
