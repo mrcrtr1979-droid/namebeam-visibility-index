@@ -317,6 +317,8 @@ def run_engine(business_row, engine, fn, date_utc):
     check_id, run_index = next_run_index(date_utc, slug, engine)
     row = base_row(business_row, date_utc, check_id, engine)
     row["run"] = run_index
+    import engines as _engines
+    _engines.CURRENT_QUESTION_ID[0] = slugify(business_row["business"])
     ok, text, sources, err = fn(business_row["prompt_1"])
     # Forward-only audit fields: which model the provider says it served, the
     # response id and usage (Perplexity since 2026-09-28, also its search-result
@@ -488,7 +490,8 @@ def main():
     # with a KeyError before a single call was made (run #9, 2026-08-05).
     # Deriving the name means a new adapter can never be forgotten here.
     available = [k for k in engines
-                 if os.environ.get("%s_API_KEY" % k.upper(), "").strip()]
+                 if os.environ.get("%s_API_KEY" % k.upper(), "").strip()
+                 or (k == "gemini" and os.environ.get("GEMINI_API_KEY_FREE", "").strip())]
     serp_on = bool(os.environ.get("BRIGHTDATA_API_KEY", "").strip())
 
     print("E1 v4 run %s | roster %d active | engines available: %s | serp: %s"

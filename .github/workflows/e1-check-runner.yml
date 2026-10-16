@@ -66,11 +66,12 @@ jobs:
         env:
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_FREE: ${{ secrets.GEMINI_API_KEY_FREE }}
           BRIGHTDATA_API_KEY: ${{ secrets.BRIGHTDATA_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          for k in PERPLEXITY_API_KEY GEMINI_API_KEY BRIGHTDATA_API_KEY OPENAI_API_KEY ANTHROPIC_API_KEY; do
+          for k in PERPLEXITY_API_KEY GEMINI_API_KEY GEMINI_API_KEY_FREE BRIGHTDATA_API_KEY OPENAI_API_KEY ANTHROPIC_API_KEY; do
             if [ -n "${!k}" ]; then echo "$k: present"; else echo "$k: MISSING"; fi
           done
           echo "NOTE: OPENAI is intentionally DEACTIVATED as of 2026-08-06. The secret"
@@ -93,6 +94,7 @@ jobs:
         env:
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_FREE: ${{ secrets.GEMINI_API_KEY_FREE }}
           BRIGHTDATA_API_KEY: ${{ secrets.BRIGHTDATA_API_KEY }}
           # Bright Data zone names are chosen by the account holder. If a
           # repo variable named BRIGHTDATA_ZONE exists it is used; otherwise
