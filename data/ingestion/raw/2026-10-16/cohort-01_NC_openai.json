@@ -1,0 +1,17 @@
+{
+ "answer_text": "I don’t have live web access, so I can’t fetch Namebeam’s AI Visibility Record or confirm the number directly. I can help find or compute it if you either paste the report/page here or give me a link I can fetch.\n\nHow you (or I, if you provide the link) can get the answer quickly\n- Likely place it’s published: Namebeam’s website or blog (search site:namebeam.* \"AI Visibility Record\").  \n- Search query to use in Google: Namebeam \"AI Visibility Record\" \"2026-09-01\" OR \"2026-09-27\" OR \"daily questions\"  \n- If the record lists the top-10 Google results per day, copy all result URLs into a text file, then count unique pages:\n  - In a spreadsheet: paste URLs in one column and use UNIQUE(range) to get the number.\n  - On the command line: save URLs to urls.txt then run: sort urls.txt | uniq | wc -l\n  - In Python:\n    urls = open('urls.txt').read().splitlines()\n    print(len(set(urls)))\n\nIf you paste the relevant section or the URL here I’ll extract the number and state exactly where it’s published.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-16T16:54:47Z",
+ "ok": true,
+ "probe_id": "NC",
+ "prompt_sha256": "efbb2eccf1f282e2dfdb6e4a46f44888ad548f405a891de2b76dea5850430d16",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web pages did Google's top 10 results list for the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "negative_control",
+ "run_id": "38935593306",
+ "search_mode": "no search tool (E1 setting)"
+}

@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t access current web pages from here, so I can’t look up Namebeam’s AI Visibility Record and count the domains for you right now.\n\nI can do it if you either\n- paste the URL of the specific Namebeam page (or paste the page contents), or\n- upload the record file (CSV/JSON) or the Perplexity answers for 2026-09-01 through 2026-09-27.\n\nIf you prefer to run it yourself, here are two quick ways to get the answer.\n\n1) Python script (works if you can save the record HTML or CSV locally)\n- Save the record page as records.html or a CSV as records.csv.\n- For HTML, update the parsing as needed to find the Perplexity answers and their citation URLs.\n\nPython (HTML or CSV approach):\n```\n# html_or_csv_count_domains.py\nimport csv\nimport sys\nfrom urllib.parse import urlparse\nfrom bs4 import BeautifulSoup\n\ndef extract_domains_from_html(path):\n    with open(path, 'r', encoding='utf-8') as f:\n        soup = BeautifulSoup(f, 'html.parser')\n    domains = set()\n    # Adjust selector to match where Perplexity answers and citation links appear.\n    # Example: find all answer blocks mentioning \"Perplexity\" and then links within them.\n    for block in soup.select('.answer'):\n        if 'Perplexity' in block.get_text():\n            for a in block.select('a[href]'):\n                domains.add(urlparse(a['href']).netloc.lower())\n    return domains\n\ndef extract_domains_from_csv(path, source_col='source', link_col='citation'):\n    domains = set()\n    with open(path, newline='', encoding='utf-8') as csvfile:\n        reader = csv.DictReader(csvfile)\n        for r in reader:\n            if r.get(source_col, '').strip().lower() == 'perplexity':\n                link = r.get(link_col, '').strip()\n                if link:\n                    domains.add(urlparse(link).netloc.lower())\n    return domains\n\nif __name__ == '__main__':\n    if len(sys.argv) < 3:\n        print(\"Usage: python html_or_csv_count_domains.py <html|csv> <path>\")\n        sys.exit(1)\n    mode, path = sys.argv[1], sys.argv[2]\n    if mode == 'html':\n        domains = extract_domains_from_html(path)\n    else:\n        domains = extract_domains_from_csv(path)\n    print(len(domains))\n    for d in sorted(domains):\n        print(d)\n```\nRun:\n- HTML: python html_or_csv_count_domains.py html records.html\n- CSV:  python html_or_csv_count_domains.py csv records.csv\n\n2) Quick shell + jq (if you have a JSON export with citation URLs):\n```\njq -r '.[] | select(.source==\"Perplexity\") | .citation' records.json \\\n  | sed -E 's#^https?://##; s#/.*$##' \\\n  | sort -u \\\n  | tee domains.txt \\\n  | wc -l\n```\n\nWhere is it published?\n- The record is published on Namebeam’s site (their AI Visibility Record page). If you paste the exact Namebeam URL I’ll say the precise page address and fetch/count the domains for you.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-16T16:54:47Z",
+ "ok": true,
+ "probe_id": "A",
+ "prompt_sha256": "940f0824e14031113e8b576a7139c4427b38e8ac1ad5483a1335b3f802676221",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web domains did Perplexity cite in its answers to the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "treatment_anchored",
+ "run_id": "38935593306",
+ "search_mode": "no search tool (E1 setting)"
+}
