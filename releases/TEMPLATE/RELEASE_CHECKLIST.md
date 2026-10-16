@@ -1,10 +1,10 @@
 # Edition release checklist (from Edition 2 on)
 
-Owner of each step is printed; nothing public moves without the Terry gate at the end. Every step leaves a receipt (file or commit hash). ASCII only in every public file; the copy-law scanner must be GREEN on every page or card line before it goes live.
+Owner of each step is printed; nothing public moves without the Terry gate at the end. Every step leaves a receipt (file or commit hash). ASCII characters throughout every public file; the copy-law scanner must be GREEN on every page or card line before it goes live.
 
 | # | Step | Command or control | Receipt | Owner |
 |---|---|---|---|---|
-| 1 | Freeze the window. Last run day in, first run day of the next edition named. | decide [end]; the collector keeps running into the next window | bus line | COS |
+| 1 | Freeze the window. Last run day in, opening run day of the next edition named. | decide [end]; the collector keeps running into the next window | bus line | COS |
 | 2 | Build the pack from the corpus. | python3 -I -X utf8 scripts/build_edition.py --edition [N] --start [start] --end [end] (as Edition 1 was built, FINAL mode) | releases/edition-[N]/ files, PACK.json | credit seat |
 | 3 | Add run_status to the answers table (built in from Edition 2; the Edition 1 file was added after release). | the run_status step of build_edition (or reproduce/run_status/add_run_status.py) | answers_*_run_status.csv or the column in place | credit seat |
 | 4 | Verify: pack, rebuild from corpus, recompute metrics. | python3 -I -X utf8 releases/edition-[N]/verify.py --rebuild --metrics | log with VERIFY MATCH and the file count | credit seat, COS re-runs |
