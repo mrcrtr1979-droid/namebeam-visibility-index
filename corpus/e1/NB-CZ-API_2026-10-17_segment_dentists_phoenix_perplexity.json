@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5203a439-191d-4dd9-b886-f4fb05fd7ade",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0044
+   },
+   "input_tokens": 4567,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4021,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 300,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4867
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AZPerio",
+  "Dr. Caesar Butura",
+  "Dr. Butura"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.implantsandperioaz.com/",
+  "https://azperio.com/dental-implants/",
+  "https://www.implantsandperioaz.com/about-us/dr-niels-jensen/",
+  "https://camelbackperio.com/",
+  "https://www.azimplantdentist.com/",
+  "https://www.azimplantdentist.com/contact-us/",
+  "https://www.implantsandperioaz.com/about-us/dr-jonathan-peterson/",
+  "https://www.azimplantdentist.com/our-services/",
+  "https://www.azimplantdentist.com/our-services/oral-surgery/",
+  "https://oralsurgeryphoenix.com/doctor-referrals/referral-form",
+  "https://www.tempeimplantsandperio.com/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-aristidis-pontikas-1760500169",
+  "https://www.clearchoice.com/locations/az/phoenix/20830-north-tatum-blvd/",
+  "https://www.implantsandperioaz.com/dental-conditions/",
+  "https://www.periodontistphoenix.com/blog/dental-implant-grafting-lanap-candidacy-guide/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for everyone—implant needs vary, and the right choice depends on your bone and gum health, whether you need grafting, who will make the final crown, and your budget.\n\nA strong place to start in Phoenix is **AZPerio**, which says it has board-certified periodontists who place implants and handle procedures such as bone grafts and sinus lifts. For a second opinion—especially for a complex or full-arch case—you could also consult **Dr. Caesar Butura**, a board-certified oral and maxillofacial surgeon in Phoenix.\n\nBefore choosing, ask who will place the implant and who will restore it, what their training and experience are with cases like yours, what the full written cost includes, and what happens if the implant fails. Get at least two treatment plans, and verify credentials and current reviews independently. ([AZPerio](https://azperio.com/dental-implants/); [Dr. Butura](https://oralsurgeryphoenix.com/doctor-referrals/referral-form))",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

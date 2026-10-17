@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_paint_saint_louis_llc_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "Paint Saint Louis LLC",
+ "niche": "interior painting",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best interior painting company in St. Louis MO?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7c474aed-8404-4373-a03b-a2a6d5d2d6cf",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00063,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00046,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00373
+   },
+   "input_tokens": 3075,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2528,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 184,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3259
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Better Painting"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.yelp.com/biz/cutting-edge-painter-st-louis",
+  "https://www.yelp.com/biz/st-louis-residential-painting-contractors-saint-louis",
+  "https://www.yelp.com/biz/precision-painting-services-st-louis-5",
+  "https://www.yelp.com/biz/kennedy-painting-saint-louis",
+  "https://www.yelp.com/biz/lime-painting-brentwood",
+  "https://www.angi.com/companylist/us/mo/st-louis/interior-painting.htm",
+  "https://snlpainting.com/",
+  "https://www.yelp.com/biz/five-star-painting-of-st-louis-wildwood",
+  "https://betterpainting.com/",
+  "https://www.yelp.com/biz/garners-custom-painting-st-louis",
+  "https://stlct.com/stlouis/painter/",
+  "https://betterpainting.com/services/interior-painting/",
+  "https://www.thumbtack.com/mo/saint-louis/painting",
+  "https://www.reddit.com/r/StLouis/comments/1s588js/interior_painters_or_recommendations/",
+  "https://www.stlouishousepainting.com/testimonials/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” painter for every project, but **Better Painting** is a solid company to consider: it advertises interior painting across the greater St. Louis area, including prep and cleanup. Its website also features customer testimonials, though those are company-published rather than independent reviews.\n\nBefore choosing, get **two or three written estimates** and compare surface preparation, included repairs, paint and number of coats, schedule, and warranty. Ask each company for recent local references and proof of insurance.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

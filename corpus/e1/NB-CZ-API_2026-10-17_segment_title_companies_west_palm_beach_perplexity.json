@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_segment_title_companies_west_palm_beach_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "SEGMENT: title companies, West Palm Beach",
+ "niche": "title companies",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in West Palm Beach FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_bd47ee21-b2b0-404e-b3c0-991401647125",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00048,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00067,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00379
+   },
+   "input_tokens": 2479,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 1930,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 266,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2745
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Trusted Florida Title",
+  "Level 10 Title",
+  "Vista Parkway"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://trustedfltitle.com/",
+  "https://palmbeachrealestatetitleandescrow.com/",
+  "https://wellingtontitlecompany.com/about/",
+  "https://juristitle.com/locations/west-palm-beach",
+  "https://www.linkedin.com/company/trident-title-company",
+  "https://www.linkedin.com/company/lighthouse-title-services-wpb",
+  "https://locationtitle.com/services/west-palm-beach/",
+  "https://titleinspros.com/",
+  "https://floridatitleco.com/",
+  "https://www.linkedin.com/company/equitylandtitle",
+  "https://level10title.com/",
+  "https://www.bbb.org/us/fl/west-palm-beach/category/title-companies",
+  "https://www.southeastclosing.com/locations/west-palm-beach-title-services",
+  "https://www.mapquest.com/us/florida/title-matters-llc-385243433",
+  "https://standardtitlefl.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t enough reliable, independent information here to name one company as definitively “best.” **Trusted Florida Title** is one local option to consider; its office is at **1663 S. Congress Avenue, West Palm Beach**, and its listed phone number is **(561) 899-4435**. **Level 10 Title** is another local option, at **2041 Vista Parkway, Suite 201**, **(561) 899-0996**.\n\nBefore choosing, compare written estimates and ask who will handle your file, how quickly they respond, and whether they can accommodate your closing date and any remote-signing needs. Also confirm the title agent’s Florida license and ask your real-estate agent or lender about any experience with the company. In Florida, you may generally choose your own title/closing provider, though your purchase contract may specify who pays for the owner’s title policy.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

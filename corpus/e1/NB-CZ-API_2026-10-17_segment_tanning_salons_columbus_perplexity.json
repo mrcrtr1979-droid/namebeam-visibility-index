@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_segment_tanning_salons_columbus_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "SEGMENT: tanning salons, Columbus",
+ "niche": "tanning salons",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Columbus OH?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d1eff38a-31e8-4282-ac52-26e5f00acdfe",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00056,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00048,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00368
+   },
+   "input_tokens": 2784,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2240,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 193,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2977
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "GLOW Airbrush Tanning",
+  "Palm Beach Tan at Graceland Center",
+  "Palm Beach Tan",
+  "Graceland Center"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.vagaro.com/sweetlybronzed",
+  "https://www.yelp.com/biz/tan-wolf-columbus",
+  "https://www.bbb.org/us/oh/archbold/category/spray-tanning-salon",
+  "https://www.bbb.org/us/oh/columbus/category/spray-tanning-salon",
+  "https://palmbeachtan.com/locations/oh/columbus-graceland-boulevard",
+  "https://www.bestprosintown.com/oh/columbus/tanning/",
+  "https://www.sweetlybronzed.com/",
+  "https://www.glowairbrushtans.com/",
+  "https://www.yelp.com/biz/palm-beach-tan-columbus",
+  "https://www.yelp.com/biz/sweetly-bronzed-columbus",
+  "https://www.fresha.com/lp/en/tt/spray-tanning/in/us-columbus",
+  "https://www.yelp.com/biz/mahalo-spray-tanning-columbus-2",
+  "https://palmbeachtan.com/locations/oh/arlington-pointe",
+  "https://www.yelp.com/biz/teez-columbus",
+  "https://www.fresha.com/bg/a/sun-studio-tan-columbus-612-north-high-street-e0lijgjd"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "If you mean a **spray tan**, **GLOW Airbrush Tanning** looks like a strong pick: it’s appointment-only in Gahanna, and customer comments highlight natural-looking color and an even fade. It’s just outside Columbus proper, at **5533 Havens Corners Rd**.\n\nFor a **traditional tanning salon with beds**, **Palm Beach Tan at Graceland Center** is a convenient Columbus option; the listing shows **208 reviews**. “Best” depends on whether you want spray tanning or UV beds, and on which part of town you’re in.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

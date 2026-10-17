@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_segment_mortgage_lenders_st_charles_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "SEGMENT: mortgage lenders, St. Charles",
+ "niche": "mortgage lenders",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Charles MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_74ae6a9c-05f7-482d-a81f-cb7b55eae053",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00065,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00095,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00424
+   },
+   "input_tokens": 3136,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2585,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 381,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3517
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Integrity Mortgage of Missouri",
+  "Loan Estimates on the same day",
+  "Guild Mortgage",
+  "Melinda Movick",
+  "Cottleville",
+  "Integrity Mortgage"
+ ],
+ "engine_stated_criteria": [
+  "A good local starting point is Guild Mortgage’s St. Charles office"
+ ],
+ "sources_cited": [
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://www.experience.com/reviews/office/st-charles-127891",
+  "https://staterates.org/missouri/st-charles",
+  "https://integritymo.com/",
+  "https://www.loc8nearme.com/missouri/st.-charles/fairway-independent-mortgage-corporation/7780370/",
+  "https://addy.com/lenders/first-state-bank-of-st-charles-mo-2",
+  "https://homelendingadvisor.chase.com/mo/saint-charles",
+  "https://branches.guildmortgage.com/mo/weldonspring/st-charles-158.html",
+  "https://mortgage.usbank.com/mo/saint-charles",
+  "https://www.reddit.com/r/StCharlesMO/comments/1n6wkmo/mortgage_lenders/",
+  "https://locations.umb.com/mo/saintcharles/umb-mortgage-loan-services-540m.html",
+  "https://www.trustpilot.com/review/towerloan.com/location/st-charles",
+  "https://societymortgage.com/branches/st-charles-mo/",
+  "https://fsbfinancial.com/about-us/locations/2850-west-clay-street/",
+  "https://www.experience.com/reviews/melinda-movick-330791"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and how much you value service versus price. **A good local starting point is Guild Mortgage’s St. Charles office**, which has local loan officers and purchase-loan experience; one officer, Melinda Movick, has strong customer-review feedback in the search results. **Integrity Mortgage of Missouri** in nearby Cottleville is another local option, with a reported 4.8/5 rating from 37 Google reviews.\n\nBefore choosing, get written **Loan Estimates on the same day** from at least three lenders, including one local lender and one bank or credit union. Compare the interest rate, APR, lender fees, points, and closing timeline—not just the advertised rate. Ask each lender to quote the same loan type, down payment, and rate-lock period.\n\nLocal options to contact:\n- Guild Mortgage, St. Charles: [office details and reviews](https://www.experience.com/reviews/office/st-charles-127891)\n- Integrity Mortgage of Missouri, Cottleville: [website and contact details](https://integritymo.com/)\n- First State Bank, St. Charles: [mortgage lending team](https://fsbfinancial.com/about-us/locations/2850-west-clay-street/)\n\nRates and eligibility are personalized, so I wouldn’t rely on a rate table or review score alone to pick a lender.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

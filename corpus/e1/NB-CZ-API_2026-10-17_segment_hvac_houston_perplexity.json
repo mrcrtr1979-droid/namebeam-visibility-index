@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_segment_hvac_houston_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_df962ce4-7c7f-47e8-a8d9-9c04a595879f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00054,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00413
+   },
+   "input_tokens": 4331,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3785,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 215,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4546
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Tech of Houston",
+  "Air Solutions of Texas",
+  "BBB A"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/tx/houston/category/air-conditioning-repair",
+  "https://www.bbb.org/us/tx/houston/category/heating-contractors/accredited",
+  "https://www.bestinhood.com/houston/home-maintenance-and-repair/best-hvac-services-in-houston/",
+  "https://www.bbb.org/us/tx/houston/category/residential-air-conditioning-contractors/accredited",
+  "https://www.bbb.org/us/tx/houston/category/air-conditioning-contractor/accredited",
+  "https://www.bestinhood.com/houston/home-maintenance-and-repair/best-air-conditioner-repair-in-houston/",
+  "https://www.bbb.org/us/tx/houston/profile/air-conditioning-contractor/one-hour-air-conditioning-heating-0915-29008/customer-reviews",
+  "https://www.bbb.org/us/tx/houston/category/furnace-repair",
+  "https://texas.twupro.com/hvac-contractors/houston/",
+  "https://serviceagent.ai/directory/texas/houston/hvac/repair/",
+  "https://www.homedepot.com/services/l/tx/houston/heating-air-conditioning-repair/673dcc2c8",
+  "https://cityvetted.com/best/best-hvac-houston",
+  "https://www.bestprosintown.com/tx/houston/hvac/",
+  "https://www.expertise.com/home-improvement/hvac/texas/houston",
+  "https://www.royalairhouston.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company for every Houston home, but **Air Tech of Houston** looks like a strong all-around option: it appears on BBB’s accredited contractor listings with an **A+ rating**, and a recent local roundup reports **4.9 stars across more than 6,000 reviews**.\n\nBefore booking, get a written diagnostic and repair estimate, ask whether the diagnostic fee is credited toward the repair, and confirm any parts and labor warranty. For a second quote, **Air Solutions of Texas** is another Houston-area company listed with a BBB A+ rating. Ratings can change, so check recent reviews and confirm service coverage for your ZIP code.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

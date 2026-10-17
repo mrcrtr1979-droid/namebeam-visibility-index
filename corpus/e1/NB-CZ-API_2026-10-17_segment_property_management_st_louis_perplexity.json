@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_segment_property_management_st_louis_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "SEGMENT: property management, St. Louis",
+ "niche": "property management companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Louis MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_57b1fc6e-7dfa-4080-b564-914d68db22d5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00085,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00427
+   },
+   "input_tokens": 3957,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3406,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 311,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4268
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Avenue Residential Leasing",
+  "Homestretch Property Management"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://homestretchpropertymanagement.com/",
+  "https://www.bestinhood.com/st-louis/real-estate-and-property-services/best-property-management-in-st-louis/",
+  "https://www.stlouispropertymanagement.co/owners-faq",
+  "https://www.firstdoorpm.com/",
+  "https://intersectionstl.com/",
+  "https://www.stlouispropertymanagement.co/pricing",
+  "https://www.stlouispropertymanagement.co/st-louis-property-management",
+  "https://propertymanagementstl.com/",
+  "https://stlpropertymanagers.com/",
+  "https://www.yelp.com/biz/amoso-realty-saint-charles",
+  "https://propertymanagementstl.com/services/property-management/",
+  "https://propertymanagementstl.com/areas-we-serve/st-louis/",
+  "https://www.stlouispropertymanagement.co/blog/best-property-management-companies-in-st-louis",
+  "https://www.avenuestl.com/st-louis-property-management-pricing",
+  "https://garciapropertymanagement.com/management/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” company, but **Avenue Residential Leasing** looks like a strong first choice to interview for a St. Louis rental home. Its published services include 24/7 maintenance response, local insured vendors, and no maintenance markup. It lists management at **5%–10% of monthly rent** (with a $100 minimum), plus a separate tenant-placement fee of **50%–100% of one month’s rent**. [Services](https://propertymanagementstl.com/services/property-management/) · [Pricing](https://www.avenuestl.com/st-louis-property-management-pricing)\n\nAlso compare **Homestretch Property Management**, which has positive owner testimonials about communication and handling leasing and day-to-day management. [Website](https://homestretchpropertymanagement.com/)\n\nBefore choosing, ask each for a sample owner statement and a written fee schedule, and clarify maintenance approval limits, inspection frequency, lease-up costs, and how quickly they respond to owner questions. The best fit can depend on your home’s location and whether you value lower fees, hands-on maintenance, or frequent reporting.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

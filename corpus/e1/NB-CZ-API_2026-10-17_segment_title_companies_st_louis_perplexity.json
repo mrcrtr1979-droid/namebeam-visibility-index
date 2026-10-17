@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_segment_title_companies_st_louis_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "SEGMENT: title companies, St. Louis",
+ "niche": "title companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Louis MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d781f1bb-4353-453b-a831-c1c4737e3f4b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00047,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00056,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00367
+   },
+   "input_tokens": 2423,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 1874,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 224,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2647
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Excel Title",
+  "St. Louis-area",
+  "Home Title and Investors Title",
+  "Investors Title",
+  "Home Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.stltitle.com/services/closing-escrow",
+  "https://www.stltitle.com/services",
+  "https://stbtitle.com/",
+  "https://hometitlestl.com/",
+  "https://exceltitleco.com/",
+  "https://www.investors-title.com/",
+  "https://www.stltitle.com/home",
+  "https://securitytitlestl.com/",
+  "https://www.linkedin.com/company/investors-title-inc",
+  "https://www.regencytitlellc.com/",
+  "https://bhhsselectstl.com/other-services/select-title-group",
+  "https://www.legacytitlestl.com/",
+  "https://freedom-title.com/",
+  "https://reviews.birdeye.com/integrity-title-solutions-llc-170409128186254",
+  "https://www.archcitytitle.com/who-we-are/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” title company—it depends on the property, lender, fees, and how responsive the team is. **For a St. Louis-area home closing, I’d start by comparing Home Title and Investors Title**: both advertise residential title and closing services, and Investors Title has a local track record highlighted in the available results. **Excel Title** is another locally owned option to check.\n\nBefore choosing, ask each for a written estimate of title, escrow, and closing fees; confirm they can meet your closing date and work with your lender; and ask who your point of contact will be. You can generally choose the title company yourself, though your purchase contract or lender may affect the process.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

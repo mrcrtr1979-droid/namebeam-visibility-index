@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1fa34ae1-0dda-4906-9cac-e84a998abd7a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00121,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00105,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0049
+   },
+   "input_tokens": 5397,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4850,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 421,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5818
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dunn Orthodontics",
+  "Smile Straight Orthodontics",
+  "Meng Orthodontics",
+  "Serrano Orthodontics",
+  "Invisalign",
+  "American Board of Orthodontics",
+  "Practice",
+  "AZ Central",
+  "North Phoenix"
+ ],
+ "engine_stated_criteria": [
+  "A strong starting point is Serrano Orthodontics"
+ ],
+ "sources_cited": [
+  "https://doctor.webmd.com/doctor/frank-meng-fa04d0a6-ac86-4b44-b8aa-9f7910b16307-overview",
+  "https://smilestraightphx.com/about-us/testimonials",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/woolaver-orthodontics-phoenix-az",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/e-s-orthodontics-phoenix-phoenix-az",
+  "https://serranoorthodontics.com/welcome/",
+  "https://www.rodeodental.com/services/orthodontics/braces/buckeye-phoenix-az",
+  "https://www.zocdoc.com/orthodontists/phoenix-220419pm",
+  "https://dunn-orthodontics.com/",
+  "https://www.yelp.com/biz/team-orthodontics-phoenix",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/smile-straight-orthodontics-greenway-road-phoenix-az",
+  "https://doctor.webmd.com/providers/specialty/orthodontics/arizona/phoenix",
+  "https://www.butterflybraces.com/patient-reviews",
+  "https://www.yelp.com/biz/premier-orthodontics-phoenix-3",
+  "https://ooliortho.com/",
+  "https://www.rodeodental.com/services/orthodontics/braces/north-phoenix-az"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—fit depends on your bite, treatment goals, budget, and location. **A strong starting point is Serrano Orthodontics**: its Phoenix office offers both braces and Invisalign, and the practice says its orthodontists are board-certified by the American Board of Orthodontics. [Details and location](https://serranoorthodontics.com/welcome/)\n\nOther Phoenix options worth comparing:\n\n- **Dunn Orthodontics** — board-certified orthodontists, braces and Invisalign, with a Phoenix office on Bethany Home Road. [Practice details](https://dunn-orthodontics.com/)\n- **Smile Straight Orthodontics** — offers braces and Invisalign and reports being voted Best Orthodontist in Phoenix by AZ Central’s Best of the Desert in 2023, 2025, and 2026. [Practice details](https://smilestraightphx.com/about-us/testimonials)\n- **Meng Orthodontics** — a North Phoenix option with strong patient feedback in the results I found. [Patient ratings](https://doctor.webmd.com/doctor/frank-meng-fa04d0a6-ac86-4b44-b8aa-9f7910b16307-overview)\n\nI’d book **two or three consultations** before choosing. Ask who will supervise your treatment, whether your case is suitable for Invisalign or better treated with braces, what the full fee includes (including retainers and refinements), and how emergencies and follow-up visits are handled. Ratings and awards can help narrow the list, but they don’t establish which provider is best for your particular case.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

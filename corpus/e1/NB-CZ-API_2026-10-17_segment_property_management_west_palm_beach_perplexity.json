@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_segment_property_management_west_palm_beach_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "SEGMENT: property management, West Palm Beach",
+ "niche": "property management companies",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in West Palm Beach FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8745ffc5-3399-47e5-9707-9eb796ea7ca3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00118,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00102,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00484
+   },
+   "input_tokens": 5258,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4707,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 408,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5666
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PMI West Palm",
+  "Atlis Property Management",
+  "Florida’s Property Management",
+  "Atlis",
+  "My practical recommendation"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://allcountyprop.com/locations/florida/west-palm-beach/reviews/",
+  "https://www.westpalmbeach-propertymanagement.com/",
+  "https://luxurypropertycare.com/west-palm-beach-property-management-services/",
+  "https://www.atlispm.com/west-palm-beach-property-management",
+  "https://www.floridaspropertymanagement.com/",
+  "https://allcountyprop.com/locations/florida/west-palm-beach/",
+  "https://www.floridaspropertymanagement.com/city/West-Palm-Beach.html",
+  "https://www.homepropertymanagement.com/",
+  "https://www.westpalmbeach-propertymanagement.com/owners",
+  "https://floridamanagement.net/west-palm-beach-property-management/",
+  "https://www.atlispm.com/marketing",
+  "https://www.biggerpockets.com/fl/west-palm-beach/property-managers",
+  "https://www.villavanamanagement.com/",
+  "https://www.atlispm.com/",
+  "https://tpgpropertymanagement.com/blog/best-property-management-companies-in-west-palm-beach-2026/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **PMI West Palm** looks like a strong first company to interview for a standard long-term rental. It’s based in West Palm Beach and advertises tenant screening, rent collection, maintenance coordination, inspections, owner reporting, and eviction handling. It also lists guarantees around tenant placement, eviction costs, and cancellation with 30 days’ notice—confirm the exact terms and exclusions in its contract.\n\nI’d compare it with **Atlis Property Management** and **Florida’s Property Management** before deciding:\n\n- **PMI West Palm:** Local office and broad full-service offering; ask for its complete fee schedule, including any resident or utility-related charges.\n- **Atlis:** Advertises management at 5–9% of collected rent, with a $200 monthly minimum, plus a leasing fee of 75% to one month’s rent. It says it doesn’t charge management fees while the home is vacant.\n- **Florida’s Property Management:** Publishes flat monthly pricing—$149 for homes renting under $2,000 and $199 for higher-rent homes—plus a leasing fee. Check renewal and other charges carefully.\n\n**My practical recommendation:** Get written proposals from all three, then choose based on the contract and the manager who will actually handle your property—not just the headline rate. Ask about lease-renewal fees, maintenance markups, inspection frequency, cancellation terms, and how quickly owners receive rent. The details above are company-advertised claims, so verify them directly before signing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

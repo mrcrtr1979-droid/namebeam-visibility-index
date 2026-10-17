@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-10-17",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ea1cnfYsgV0vjvA2Vo9Wf5e1TPZYH",
+  "usage": {
+   "prompt_tokens": 21,
+   "completion_tokens": 1008,
+   "total_tokens": 1029,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Valvoline Instant Oil Change",
+  "Jiffy Lube"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Do you want the fastest/cheapest option (quick-lube), the highest-rated shop for long-term care, or a place that specifically uses full synthetic oil or services your vehicle make? Tell me your preference and your car make/model/year and I can look up the current top-rated options in Pleasanton and give addresses, hours and recent reviews.\n\nIf you want a quick answer now:\n- For fast, convenient oil changes: chains like Valvoline Instant Oil Change or Jiffy Lube in Pleasanton are good choices — quick service and frequent coupons.\n- For higher-quality workmanship or warranty/diagnostic needs: look for a local ASE‑certified independent mechanic or full-service shop (search Google/Yelp for “ASE certified Pleasanton oil change” and pick a 4+ star shop with recent reviews).\n- Always confirm they use the correct oil grade (synthetic vs conventional), replace the oil filter, provide a written invoice, and offer a multipoint inspection.\n\nIf you want, I’ll pull up the top 3+ rated shops in Pleasanton now with addresses, phone numbers, hours and price estimates. Which would you prefer?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

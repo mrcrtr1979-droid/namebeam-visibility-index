@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_atrix_digital_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "Atrix Digital",
+ "niche": "AI marketing agency",
+ "market": "Los Angeles CA",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best AI marketing agency in Los Angeles?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8c761317-e224-4f58-a65a-f4eb4af730d4",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00068,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00392
+   },
+   "input_tokens": 3260,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2715,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 240,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3500
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Emarketed",
+  "AI-related",
+  "AI marketing agency in Los Angeles",
+  "AI marketing",
+  "AI marketing agency"
+ ],
+ "engine_stated_criteria": [
+  "For a larger full-service agency, Thrive is another candidate"
+ ],
+ "sources_cited": [
+  "https://www.tackmedia.com/case-studies/",
+  "https://emarketed.com/",
+  "https://completegurus.com/services/digital-marketing-services-in-los-angeles/",
+  "https://thriveagency.com/news/best-digital-marketing-agencies-in-los-angeles/",
+  "https://exact.agency/company/case-studies/",
+  "https://elit-web.com/los-angeles-digital-marketing-agency/",
+  "https://www.enrichlabs.ai/agencies/city/los-angeles-ca",
+  "https://agencies.semrush.com/pl/list/marketing-strategy/los-angeles/",
+  "https://la-marketing.us/",
+  "https://www.tackmedia.com/case-studies-old-2/",
+  "https://www.webtonic.io/blog/best-ai-marketing-consultant-firms-los-angeles",
+  "https://agencies.semrush.com/list/los-angeles/",
+  "https://www.goddigitalmarketing.com/us/california/los-angeles/",
+  "https://www.sortlist.com/s/marketing-automation/los-angeles-ca-us",
+  "https://agencies.semrush.com/list/smm/los-angeles/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” AI marketing agency in Los Angeles—it depends on whether you need AI-driven search visibility, paid campaigns, content production, or marketing automation.\n\n**For AI search visibility and broader digital marketing, Emarketed looks like a strong option to shortlist.** Its site reports a 149% increase in AI mentions for a client across ChatGPT, Claude, Perplexity, and Gemini. **For a larger full-service agency, Thrive is another candidate:** a Los Angeles agency roundup lists it highly and cites strong SEO and lead-generation results, though that ranking is not an independent guarantee of fit.\n\nTreat those results as agency-reported, and ask for recent case studies in your industry, references, and a clear explanation of how they measure AI-related outcomes before choosing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

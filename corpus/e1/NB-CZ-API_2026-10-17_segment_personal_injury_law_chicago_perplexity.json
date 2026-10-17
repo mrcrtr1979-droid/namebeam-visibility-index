@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_segment_personal_injury_law_chicago_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "SEGMENT: personal injury law, Chicago",
+ "niche": "personal injury attorneys",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best personal injury attorney in Chicago for a car accident claim?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_db54a578-8133-48a1-b5ef-98770a67217e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0009,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00434
+   },
+   "input_tokens": 4165,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3616,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 320,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4485
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Daniel J. McDevitt",
+  "Salvi, Schostok & Pritchard",
+  "Illinois Super Lawyer",
+  "Illinois ARDC"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/illinois/chicago/",
+  "https://attorneys.superlawyers.com/personal-injury-defense/illinois/chicago/",
+  "https://profiles.superlawyers.com/illinois/chicago/lawyer/david-c-wise/1161ee36-57a1-41bc-b119-3a88349a8772.html",
+  "https://www.bestinhood.com/chicago/lawyers/best-car-accident-lawyers-in-chicago/",
+  "https://lawyers.findlaw.com/illinois/chicago/salvi-schostok--pritchard-pc-MjQwMzI4OV8x/",
+  "https://attorneys.superlawyers.com/personal-injury-plaintiff/illinois/chicago/?page=42",
+  "https://www.morningstar.com/news/pr-newswire/20260707fl96049/daniel-j-mcdevitt-of-mcdevitt-cobb-pc-selected-to-2026-illinois-super-lawyers",
+  "https://www.avvo.com/attorneys/60601-il-jennifer-ashley-1024172.html",
+  "https://lawleaderboard.com/car-accident-lawyer/chicago-il/",
+  "https://findmyaccidentlawyer.com/illinois/chicago/car-accident-lawyer",
+  "https://www.avvo.com/car-accidents-lawyer/il/chicago.html",
+  "https://www.avvo.com/attorneys/60602-il-david-schwaner-1078190.html",
+  "https://www.jsonline.com/press-release/story/145097/paul-a-greenberg-of-briskman-briskman-greenberg-named-to-2026-super-lawyers-list-for-personal-injury/",
+  "https://attorneys.superlawyers.com/personal-injury-plaintiff/illinois/chicago/?fli=fp_pp:dir:ft_lnk&page=39",
+  "https://www.iardc.org/Lawyer/Search"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t an objective “best” attorney for every car-accident claim. A reasonable starting point is to compare a few Chicago lawyers who specifically handle auto-injury cases and have independently verifiable experience. For example, **Daniel J. McDevitt** is listed as a 2026 Illinois Super Lawyer and focuses on car, truck, and motorcycle accident claims; **Salvi, Schostok & Pritchard** is another Chicago firm with multiple Super Lawyers and substantial reported settlement experience. Those credentials are useful signals, not a guarantee of results.\n\nBefore hiring anyone, ask who will personally handle your case, how often they take cases to trial, what similar cases they’ve handled, and how fees and case expenses work. Check the lawyer’s status and disciplinary information through the [Illinois ARDC lawyer search](https://www.iardc.org/Lawyer/Search), and speak with at least two or three attorneys—many offer free consultations.\n\nIf you share a little about the crash (for example, whether you were injured, the severity, and whether fault is disputed), I can suggest what kind of attorney or experience to prioritize.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

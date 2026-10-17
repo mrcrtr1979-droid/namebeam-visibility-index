@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_segment_property_management_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "SEGMENT: property management, Fort Lauderdale",
+ "niche": "property management companies",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Fort Lauderdale FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_cb178570-6790-451c-85a2-6b268adf1a41",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 5047,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4497,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 329,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5376
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Luxury Property Care (LPC)",
+  "Mayfair Property Management",
+  "Atlis Property Management",
+  "Luxury Property Care"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.thumbtack.com/fl/fort-lauderdale/property-management/jge-property-management/service/543673055223406614",
+  "https://luxurypropertycare.com/ft-lauderdale-property-management-service/",
+  "https://www.turbotenant.com/property-management/services/florida/fort-lauderdale/",
+  "https://www.mayfairpropertymanagement.com/testimonials",
+  "https://damelecia.com/fort-lauderdale/",
+  "https://luxurypropertycare.com/average-property-manager-fees-fort-lauderdale-2026/",
+  "https://www.mayfairpropertymanagement.com/",
+  "https://luxurypropertycare.com/best-property-management-companies-fort-lauderdale/",
+  "https://www.yelp.com/biz/exclusive-property-management-ft-lauderdale",
+  "https://www.bbb.org/us/fl/fort-lauderdale/profile/property-management/firstservice-residential-property-management-inc-0633-23006761/customer-reviews?page=3",
+  "https://bhpropertymanagementmaintenance.com/property-management/fort-lauderdale",
+  "https://www.yelp.com/biz/icon-realty-management-and-brokerage-fort-lauderdale",
+  "https://www.thumbtack.com/fl/fort-lauderdale/property-management/property-management-inc-fort-lauderdale/service/273601175910810712",
+  "https://www.atlispm.com/fort-lauderdale-property-management",
+  "https://www.biggerpockets.com/fl/fort-lauderdale/property-managers"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” company, but **Luxury Property Care (LPC)** looks like a strong first company to interview for a Fort Lauderdale rental home. Its site reports a **4.9/5 Google rating from more than 230 reviews** and describes full-service management for local rental owners. Because that information comes from the company’s own website, verify the reviews and ask for owner references before signing.\n\nI’d also compare **Mayfair Property Management**, which has positive client testimonials emphasizing responsiveness, and **Atlis Property Management**, which publishes its fees and says it charges no maintenance markup. Those are useful alternatives, but compare the actual service agreement—not just the headline rate.\n\nAsk each company for a written estimate covering:\n- Monthly management and tenant-placement fees\n- Lease renewal, inspection, and setup charges\n- Maintenance markups and approval limits\n- Vacancy fees, cancellation terms, and eviction support\n- How often they inspect the home and how quickly they respond to emergencies\n\nFor a typical long-term rental, local fee information suggests management commonly runs around **8–10% of collected rent**, with leasing and other charges on top. Get an all-in estimate for your specific home and compare it with at least two other proposals.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

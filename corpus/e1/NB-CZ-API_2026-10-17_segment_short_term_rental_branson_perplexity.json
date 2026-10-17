@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3c1031c0-36ee-4055-99ab-46916690220e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00061,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00137,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00462
+   },
+   "input_tokens": 2984,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2428,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 549,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3533
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Lodge of the Ozarks",
+  "Theater District",
+  "Marriott’s Willow Ridge Lodge",
+  "Chateau on the Lake",
+  "Table Rock Lake",
+  "Holiday Inn Express Branson-Green Mountain Drive",
+  "Shows, restaurants, short stay",
+  "Silver Dollar City",
+  "Lodge of the Ozarks for convenience",
+  "Marriott",
+  "Willow Ridge Lodge",
+  "Table Rock",
+  "Holiday Inn Express",
+  "Holiday Inn"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/branson-mo/stays/cabins",
+  "https://www.tripadvisor.com/Hotels-g44160-zff4-Branson_Missouri-Hotels.html",
+  "https://www.hotels.com/de1644148-ty2/family-friendly-hotels-branson-and-vicinity-missouri/",
+  "https://www.airbnb.com/missouri-united-states/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays/lakehouses",
+  "https://www.bransontourismcenter.com/lodging/info/chateau-on-the-lake",
+  "https://www.airbnb.com/branson-mo/stays/resorts",
+  "https://www.tripadvisor.com/Hotels-g44160-oa30-Branson_Missouri-Hotels.html",
+  "https://www.marriott.com/en-us/destinations/united-states/missouri/branson.mi",
+  "https://www.airbnb.com/branson-mo/stays",
+  "https://www.tripadvisor.com/HotelsList-Branson-Family-Resorts-zfp7812133.html",
+  "https://www.hotels.com/de1644148-qu0/cheap-hotels-branson-and-vicinity-missouri/",
+  "https://www.travelocity.com/Branson-Hotels-Family-Hotel.0-0-d6058734-tFamilyHotel.Travel-Guide-Filter-Hotels",
+  "https://www.hoteles.com/en/de1644148/hotels-branson-and-vicinity-missouri/",
+  "https://www.airbnb.com/silver-dollar-city-branson-mo/stays/cabins"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**For most first-time Branson visitors, I’d choose a hotel**—especially if you’re staying a few nights, seeing shows, or visiting with kids. Hotels make check-in and housekeeping simpler, and many include breakfast. Choose an **Airbnb or other vacation rental** if you want a kitchen, more bedrooms, a private hot tub, or a quieter lake-and-cabin stay; check the total price, cleaning fees, cancellation terms, and drive time to attractions before booking.\n\n### Specific places to consider\n\n- **Lodge of the Ozarks** — A practical pick for a show-focused trip: it’s in the **Theater District**, so you’re well placed for many theaters and attractions.\n- **Marriott’s Willow Ridge Lodge** — Worth considering for families who want **kitchen-equipped accommodations** and resort-style space.\n- **Chateau on the Lake** — A more upscale choice with a **Table Rock Lake** setting. Check the current resort fee and total cost before booking.\n- **Holiday Inn Express Branson-Green Mountain Drive** — A straightforward family option; compare its location and breakfast offering with the specific attractions on your itinerary.\n- **Airbnb cabin or lake house** — Best if the stay itself is part of the vacation. Listings around **Table Rock Lake** can offer lake views, decks, and more room, but properties may be well outside the main theater area. Verify the exact address and driving time; “Branson” listings can be spread out.\n\n### Quick rule of thumb\n\n- **Shows, restaurants, short stay:** hotel near the Theater District.\n- **Silver Dollar City:** prioritize a place on the west side of town or near the park, and check the actual drive time.\n- **Large group, longer stay, or lake getaway:** vacation rental with a kitchen and enough bedrooms.\n- **Want a resort experience without managing a rental:** look at a resort-style hotel or lodge.\n\nMy default pick would be **Lodge of the Ozarks for convenience**, or **Willow Ridge Lodge for a family needing more space**. If you share your dates, budget, group size, and whether you’re prioritizing shows, Silver Dollar City, or the lake, I can narrow it to a better-fit shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

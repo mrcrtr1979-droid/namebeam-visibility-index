@@ -1,0 +1,68 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_needle_openai",
+ "date_utc": "2026-10-17",
+ "business": "Needle",
+ "niche": "AI marketing tool for DTC brands",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best AI marketing tool for DTC brands?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ea13bLiG2nyidyTLz0eVCGGAaMWn6",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 1582,
+   "total_tokens": 1600,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 896,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Triple Whale",
+  "Revealbot",
+  "Albert",
+  "VidMob",
+  "Shopify",
+  "Shopify Plus",
+  "Klaviyo",
+  "LTV. Alternatives",
+  "Omnisend",
+  "SMS-first",
+  "Smartly.io",
+  "Segment",
+  "Twilio CDP",
+  "Amplitude",
+  "Dynamic Yield",
+  "Nosto",
+  "Bloomreach",
+  "Copy.ai",
+  "Writesonic and OpenAI",
+  "Phrasee",
+  "Persado",
+  "Clerk.io",
+  "LoyaltyLion",
+  "Jasper",
+  "Meta",
+  "Postscript"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there’s no single “best” AI marketing tool for every DTC brand — it depends on your channels, goals, tech stack and budget. That said, for most DTC e‑commerce brands the single highest-impact platform is Klaviyo (email + SMS with powerful data-driven segmentation and personalization). Paired with an analytics/ad-automation tool like Triple Whale and an ad automation/creative optimizer (Revealbot or Smartly/Albert + VidMob), that covers most acquisition + retention needs.\n\nHow to choose — quick framework\n- Primary goal: acquisition (ads), retention (email/SMS), personalization (on-site), or analytics/attribution?\n- Tech stack: Shopify, Shopify Plus, Magento, headless?\n- Monthly ad spend / revenue scale: small (<$1M), scaling (1–10M), enterprise (>10M)?\n- Data & privacy needs: do you need first‑party only or CDP integrations?\n- Budget & team: fully managed vs DIY tools\n\nTop recommendations by use case\n- Email & SMS (retention + personalization): Klaviyo — best Shopify integration, segmentation, flows, A/B testing, predictive LTV. Alternatives: Omnisend (cheaper), Attentive / Postscript (SMS-first).\n- Ads automation & optimization (acquisition): Revealbot (rules/automation for Meta/Google), Smartly.io (enterprise creative + scale), Albert (AI-driven media buying for larger budgets).\n- Attribution & analytics: Triple Whale (ecommerce-focused, real-time ROAS), Segment/Twilio CDP + Amplitude for product analytics.\n- On-site personalization & recommendations: Dynamic Yield, Nosto, Bloomreach — pick by budget/scale.\n- AI copy & creative generation: Copy.ai, Jasper, Writesonic and OpenAI for copy; Phrasee / Persado for subject lines/campaign language optimization.\n- Creative testing & production: VidMob (creative analytics & production), Canva + AI tools for fast assets.\n- Search & product recommendations: Algolia (search), Clerk.io, Klevu.\n- Reviews & loyalty (retention & social proof): Yotpo, LoyaltyLion.\n\nRecommended stacks (typical DTC scenarios)\n- Early-stage / small DTC (limited budget, Shopify): Klaviyo (email/SMS) + Omnisend (if cheaper) + basic analytics (Shopify + Google Analytics) + Copy.ai for creative.\n- Growing DTC (1–10M revenue): Klaviyo + Triple Whale + Revealbot + VidMob + Dynamic Yield or Nosto for personalization.\n- Enterprise DTC (scale & global): Smartly.io + Albert (ad scale) + Dynamic Yield/Bloomreach + Segment + Amplitude + VidMob + Persado/Phrasee.\n\nOther factors to evaluate before buying\n- Integration with Shopify / your CMS and ad accounts\n- Who owns the data and how easy is export?\n- Transparency of the AI (can you audit model-driven decisions?)\n- Proof: case studies for brands like yours and ROI timelines\n- Trial period, onboarding, and support availability\n\nIf you tell me:\n- your primary channel (ads vs email vs on-site),\n- platform (Shopify?),\n- monthly ad spend or revenue,\nI’ll give a concrete, prioritized tool + stack recommendation for your situation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

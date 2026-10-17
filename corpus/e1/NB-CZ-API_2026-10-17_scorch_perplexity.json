@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-17_scorch_perplexity",
+ "date_utc": "2026-10-17",
+ "business": "SCORCH",
+ "niche": "branding agency",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best branding agency in St. Louis?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8067493a-8add-44fa-afe4-f8967c6c4678",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00048,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00054,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00366
+   },
+   "input_tokens": 2447,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 1902,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 216,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2663
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atomicdust",
+  "Brighton Agency",
+  "HLK"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://clutch.co/agencies/branding/st-louis",
+  "https://clutch.co/agencies/st-louis",
+  "https://clutch.co/agencies/branding/missouri",
+  "https://clutch.co/agencies/creative/st-louis",
+  "https://www.expertise.com/business/branding-agencies/missouri/st-louis",
+  "https://www.atomicdust.com/marketing-services/branding/",
+  "https://clutch.co/agencies/content-marketing/st-louis",
+  "https://www.atomicdust.com/",
+  "https://appleccreative.com/portfolio",
+  "https://clutch.co/agencies/digital-marketing/st-louis?page=2",
+  "https://clutch.co/agencies/event/st-louis",
+  "https://themanifest.com/branding/agencies/st-louis",
+  "https://themanifest.com/branding/product/agencies/st-louis",
+  "https://themanifest.com/creative/agencies/st-louis",
+  "https://clutch.co/agencies/digital/st-louis"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” branding agency—it depends on your goals, budget, and industry. **Atomicdust** is a strong St. Louis option to consider, particularly for B2B companies: it describes its work as combining brand strategy and creative, and focuses on businesses with complex, high-trust offerings.\n\nOther local agencies worth comparing include **Brighton Agency** and **HLK**. Review each agency’s relevant case studies, ask who will do the work, and compare proposals before deciding.\n\n[Atomicdust](https://www.atomicdust.com/) · [Clutch’s St. Louis branding agency listings](https://clutch.co/agencies/branding/st-louis)",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
