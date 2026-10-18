@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_pi_car_accident_intake_pleasanton_shotland_pilot_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: PI car accident intake, Pleasanton (Shotland pilot)",
+ "niche": "personal injury law",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I was in a car accident in Pleasanton CA. Which lawyer should I hire for my injury case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_2b6f64c5-3931-45aa-9036-152ca14a01cb",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00092,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00456
+   },
+   "input_tokens": 4561,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4006,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 367,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4928
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Stephen M. Fuerch",
+  "Walia Law Firm",
+  "California State Bar Attorney Search",
+  "LicenseeSearch. Read",
+  "Pleasanton office",
+  "Attorney Search"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.fuerchlegal.com/practice-areas/personal-injury/",
+  "https://walialawfirm.com/personal-injury/car-accident-lawyer/",
+  "https://www.heidarilawgroup.com/locations/pleasanton-attorneys/personal-injury/",
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/california/pleasanton/",
+  "https://apps.calbar.ca.gov/attorney/Licensee/Detail/94852",
+  "https://www.vzlawfirm.com/pleasanton/car-accident-lawyer/",
+  "https://miradorlaw.com/pleasanton-personal-injury-lawyer/car-accident/",
+  "https://www.gjel.com/pleasanton",
+  "https://attorneys.superlawyers.com/personal-injury-defense/california/pleasanton/",
+  "https://apps.calbar.ca.gov/attorney/Licensee/Detail/104960",
+  "https://www.heidarilawgroup.com/locations/pleasanton-attorneys/",
+  "https://www.lawinfo.com/car-accident/california/pleasanton/",
+  "https://www.vzlawfirm.com/pleasanton/personal-injury-lawyer/",
+  "https://www.martindale.com/personal-injury-lawyers/pleasanton/california/",
+  "https://www.moseleycollins.com/personal-injury-lawyer-in-pleasanton-ca.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "I can’t responsibly name one “best” lawyer from a directory listing alone. A practical starting point is to speak with **two or three California personal-injury firms** and compare the actual attorney who would handle your case—not just the firm’s advertising.\n\nFor local options to contact, the search results include **Stephen M. Fuerch** in Pleasanton and **Walia Law Firm**, which lists a Pleasanton office and car-accident practice. These are leads, not endorsements. Ask each:\n\n- How many cases like mine have you handled, and who will be my day-to-day contact?\n- What are your contingency fee and case costs, and what happens if there’s no recovery?\n- What do you see as the strengths, risks, and likely next steps in my case?\n- Will you negotiate with the insurer and file suit if needed?\n\nBefore signing, check the attorney’s status and public discipline history using the **California State Bar Attorney Search**: https://apps.calbar.ca.gov/attorney/LicenseeSearch. Read the fee agreement carefully and don’t feel pressured to sign during the first call.\n\nIf you’re still receiving care, prioritize medical attention and keep records of treatment, expenses, and insurer communications. California deadlines can apply, and claims involving a government vehicle or agency may have much shorter notice deadlines, so consider getting legal advice promptly.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

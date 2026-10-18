@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ff0d7d6a-cb21-4a5f-8f40-9482987340f3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 4757,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4211,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 303,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5060
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AZPerio",
+  "Arizona Periodontal Group / Dr. Ariel Trujillo",
+  "Phoenix. For",
+  "Arizona Periodontal Group",
+  "Dr. Ariel Trujillo"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://azperio.com/dental-implants/",
+  "https://www.implantsandperioaz.com/",
+  "https://www.implantsandperioaz.com/about-us/dr-niels-jensen/",
+  "https://camelbackperio.com/",
+  "https://www.tempeimplantsandperio.com/",
+  "https://www.clearchoice.com/locations/az/phoenix/20830-north-tatum-blvd/",
+  "https://www.implantsandperioaz.com/about-us/dr-jonathan-peterson/",
+  "https://www.azimplantdentist.com/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-aristidis-pontikas-1760500169",
+  "https://www.periodontistdirectory.com/profiles/147800",
+  "https://everydentist.com/AZ/Phoenix/",
+  "https://www.periodontistphoenix.com/blog/dental-implant-grafting-lanap-candidacy-guide/",
+  "https://www.prosmileaz.com/",
+  "https://www.periodontistphoenix.com/",
+  "https://www.tebra.com/care/periodontists/phoenix-az/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a reliable way to name one “best” dentist without knowing your case, budget, and location within Phoenix. For an implant, I’d start by consulting a **board-certified periodontist or oral and maxillofacial surgeon**—especially if you may need bone grafting or have gum disease—and get a separate estimate for the final crown.\n\nA couple of Phoenix options to compare:\n\n- **AZPerio** — board-certified periodontists; Phoenix locations and implant-related procedures including grafting. [azperio.com](https://azperio.com/dental-implants/)\n- **Arizona Periodontal Group / Dr. Ariel Trujillo** — Phoenix periodontist who lists board certification and implant treatment. [periodontistphoenix.com](https://www.periodontistphoenix.com/)\n\nBefore choosing, verify the clinician’s current specialty credentials, ask who places the implant and who makes the crown, and request a written treatment plan with the total cost, alternatives, and follow-up/maintenance. A second opinion is worthwhile if the plan involves multiple implants or full-arch treatment.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_property_management_west_palm_beach_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: property management, West Palm Beach",
+ "niche": "property management companies",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in West Palm Beach FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_98309c15-b3a2-4d5b-a135-a8a43658cdb1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0046
+   },
+   "input_tokens": 5125,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4574,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 326,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5451
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Luxury Property Care (LPC)",
+  "Florida’s Property Management",
+  "Luxury Property Care",
+  "Palm Beach County"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.atlispm.com/west-palm-beach-property-management",
+  "https://www.floridaspropertymanagement.com/",
+  "https://www.westpalmbeach-propertymanagement.com/west-palm-beach-property-management",
+  "https://www.linkedin.com/company/pmi-west-palm",
+  "https://business.palmbeaches.org/business-directory/Details/atlis-property-management-4732617",
+  "https://www.homepropertymanagement.com/",
+  "https://www.floridaspropertymanagement.com/city/West-Palm-Beach.html",
+  "https://luxurypropertycare.com/west-palm-beach-property-management-services/",
+  "https://www.atlispm.com/",
+  "https://www.linkedin.com/company/managewithaps",
+  "https://www.rpmsunstate.com/",
+  "https://www.allpropertymanagement.com/property-management/companies/49190/pmi-west-palm/",
+  "https://www.managemyproperty.com/find/florida/west-palm-beach-property-management-companies",
+  "https://business.palmbeaches.org/list/member/atlis-property-management-40973",
+  "https://westpalmpropertymanagement.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Luxury Property Care (LPC)** looks like a strong option to interview: its listing reports a **4.9/5 rating from more than 230 Google reviews** and describes full-service management for single-family homes, including tenant screening, leasing, rent collection, maintenance, inspections, and evictions. It lists management fees of **8–10% of collected rent** and a leasing fee of **one month’s rent**. [LPC](https://luxurypropertycare.com/west-palm-beach-property-management-services/)\n\nI’d compare it with **Florida’s Property Management**, which advertises Palm Beach County coverage, single-family home management, and no cancellation fee or maintenance markup. Ask for its complete fee schedule, since the advertised monthly price may depend on rent and property type. [Florida’s Property Management](https://www.floridaspropertymanagement.com/)\n\nBefore choosing, get written answers about the total fees, repair-approval limits, inspection frequency, lease-up process, and how quickly owners receive rent and reports. Ask for references from owners with homes similar to yours, too.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

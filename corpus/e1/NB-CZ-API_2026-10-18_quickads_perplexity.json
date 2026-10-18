@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_quickads_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "Quickads",
+ "niche": "AI video ad maker",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best AI video ad maker?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a1d06eb8-27f3-4795-b4a8-2d4fd375375c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00118,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00055,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 5274,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4731,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 221,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5495
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "HeyGen",
+  "Runway",
+  "Creatify"
+ ],
+ "engine_stated_criteria": [
+  "Creatify is the best all-around pick for making performance-focused video ads"
+ ],
+ "sources_cited": [
+  "https://creatify.ai/pricing",
+  "https://help.creatify.ai/en/articles/9347999-pricing-plans",
+  "https://promer.ai/blog/creatify-review",
+  "https://zeely.ai/blog/creatify-ai-review/",
+  "https://www.g2.com/products/creatify-labs-inc-creatify-ai/reviews",
+  "https://moda.app/blog/best-ai-ad-generators",
+  "https://www.media.io/comparison/best-ai-ad-generators.html",
+  "https://www.g2.com/products/creatify-labs-inc-creatify-ai/pricing",
+  "https://www.hipwee.com/teknologi/top-10-ai-video-generators-for-ads/",
+  "https://docs.creatify.ai/billing",
+  "https://kive.ai/learn/best-ai-video-ad-generators",
+  "https://www.heygen.com/blog/best-ai-video-generator-for-ads",
+  "https://pixverse.ai/en/blog/best-ai-video-generator-for-ads",
+  "https://www.designkit.com/blog/creatify-ai-review",
+  "https://segwise.ai/blog/best-ai-video-ad-generators-2026"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Creatify is the best all-around pick for making performance-focused video ads**, especially for e-commerce. It can turn a product URL or image into short ads, with AI scripts, avatars, and multiple creative variations—handy when you want to test different hooks quickly.\n\nOther good fits:\n- **HeyGen** — best when you need a polished AI spokesperson or multilingual presenter.\n- **Runway** — better for cinematic, visually distinctive brand videos than quick product-ad production.\n\nIf you’re unsure, try Creatify’s free option first; exports may be watermarked and usage is limited. Check the current plan details before subscribing, since pricing and credit limits can change.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

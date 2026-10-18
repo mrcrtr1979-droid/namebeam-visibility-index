@@ -1,0 +1,60 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_namebeam_openai",
+ "date_utc": "2026-10-18",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EaNQFwyn2dXY1jgxsiUoqWK1TpYh4",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1542,
+   "total_tokens": 1566,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bing Places",
+  "Apple Maps",
+  "Bing Chat",
+  "Apple Business Register",
+  "TripAdvisor",
+  "OpenTable",
+  "BrightLocal",
+  "Your Business Name",
+  "LocalBusiness",
+  "SMB-friendly",
+  "Yext",
+  "Moz Local",
+  "Perplexity.ai",
+  "Whitespark",
+  "Local SEO",
+  "Test AI",
+  "Test LLMs",
+  "Apple Business"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there’s no single “ChatGPT directory” to check — the best approach is (1) make sure your business appears and is verified in the major local data sources (Google Business Profile, Bing Places, Yelp, Apple Maps, industry directories), (2) use a local listings / monitoring service to confirm presence across many sources, and (3) directly test AI assistants that do web-backed recommendations (Bing Chat, Perplexity, Google Bard, ChatGPT with browsing) and look for cited sources.\n\nConcrete steps and services\n\n1) Ensure your business is in the right data sources (most important)\n- Google Business Profile (must for Google and many LLMs that draw on Google knowledge panels)\n- Bing Places\n- Yelp\n- Apple Maps / Apple Business Register\n- Industry-specific directories (e.g., TripAdvisor, Zocdoc, OpenTable, etc.)\nWhy: Many web-backed AI responders rely on those knowledge graphs and public directories when recommending businesses.\n\n2) Use a listings/monitoring service to check presence and consistency\n- BrightLocal — affordable for small businesses, does citation checks, local rank tracking, review monitoring.\n- Whitespark — citation finder and local SEO services.\n- Moz Local — listings distribution and consistency checks.\n- Yext — powerful directory sync and knowledge management (more expensive; good if you want centralized control).\nThese services will tell you where your business appears, where it’s missing or inconsistent, and help you fix NAP (name/address/phone) data — which increases the chance AI systems will find and cite you.\n\n3) Monitor reviews and mentions\n- Google Business Profile Insights, Yelp for Business, and review platforms\n- Mention, Brand24, or Google Alerts for web mentions\nGood reviews and coverage increase the likelihood of being recommended.\n\n4) Directly test AI engines that cite sources\n- Bing Chat (Browse-enabled; often cites web sources)\n- Perplexity.ai (concise answers with source links)\n- Google Bard (when web-enabled)\n- ChatGPT with “Browse with Bing” / plugins or the newest web-enabled versions (note: classic ChatGPT without browsing may not know recent or local businesses)\nHow to test: ask a targeted prompt with your city and service category (example below). If the assistant cites Google/Yelp/your website or a knowledge panel, you’re being used.\n\nExample prompts to test AI:\n- “I’m in [City, ZIP]. Can you recommend the top independent [service] businesses nearby and include sources?”\n- “Recommend reputable [service] in [neighborhood], cite the web sources you used and show the business phone/address.”\n- “Do you know [Your Business Name] in [City]? Provide any web sources for it.”\n\n5) Improve the chance of being recommended\n- Claim and optimize your Google Business Profile and Bing Places (complete hours, services, photos, categories).\n- Add structured data (schema.org/LocalBusiness) to your website and an FAQ page with clear service descriptions and location info.\n- Get consistent citations on directories and directories used in your industry.\n- Encourage good, recent reviews (Google, Yelp, industry sites).\n- Earn coverage in local news or directories (backlinks and citations help LLMs find you).\n\nWhich single “best” service?\n- If you want one place to both check presence across many directories and manage listings, BrightLocal is a top SMB-friendly choice for checking whether you’re listed and tracking local visibility. Yext is stronger for enterprise-level directory sync and ensuring your data is distributed, but it’s costlier.\n\nIf you want, tell me:\n- your business name + city and I can give sample prompts to test LLMs and suggest the first checks to run (Google Business Profile, Yelp, Bing Places).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

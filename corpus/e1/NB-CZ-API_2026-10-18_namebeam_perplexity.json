@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_namebeam_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3650c4bb-9428-416e-b487-9feb20803d01",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00066,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 4828,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4276,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 262,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5090
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "HubSpot’s AI Search Grader",
+  "Otterly.AI",
+  "HubSpot",
+  "AI Search Grader"
+ ],
+ "engine_stated_criteria": [
+  "Otterly.AI is a good starting point for ongoing monitoring"
+ ],
+ "sources_cited": [
+  "https://otterly.ai/pricing",
+  "https://help.otterly.ai/pricing-of-otterlyai",
+  "https://www.g2.com/products/otterlyai/pricing",
+  "https://otterly.ai/",
+  "https://elfsight.com/blog/best-chatgpt-visibility-trackers/",
+  "https://elfsight.com/blog/best-ai-visibility-tools/",
+  "https://www.softwaresuggest.com/blog/best-ai-visibility-tools/",
+  "https://www.capterra.com/p/10023384/Otterly-AI/",
+  "https://www.airops.com/blog/best-llm-visibility-tools",
+  "https://visible.seranking.com/blog/best-ai-visibility-tools/",
+  "https://otterly.ai/blog/best-ai-search-monitoring-and-llm-monitoring-solutions/",
+  "https://www.semrush.com/kb/1487-otterly-ai-search-monitoring",
+  "https://elfsight.com/blog/best-tools-for-monitoring-chatgpt-mentions/",
+  "https://www.rankability.com/blog/otterly-ai-review/",
+  "https://peekl.io/ai-visibility/tools"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a small business, **Otterly.AI is a good starting point for ongoing monitoring**: its entry plan is about **$29/month** and tracks a limited set of prompts across ChatGPT and several other AI search services. It can show whether your business appears, how it’s described, and which sources are cited. Check the current plan details before signing up, since pricing and included engines can change.\n\nIf you only want a quick, free baseline, try **HubSpot’s AI Search Grader**; it’s a one-time snapshot rather than ongoing tracking.\n\nOne caveat: AI answers vary with the wording of the question, location, and time. Track realistic prompts such as “best [your service] in [your town]” and “who do you recommend for [customer need]?”—and treat results as a trend, not a definitive ranking.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

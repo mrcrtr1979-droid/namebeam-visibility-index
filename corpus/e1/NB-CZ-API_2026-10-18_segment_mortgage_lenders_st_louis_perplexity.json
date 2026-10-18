@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_mortgage_lenders_st_louis_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: mortgage lenders, St. Louis",
+ "niche": "mortgage lenders",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Louis MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_2d6e515b-c4cd-4048-aab8-d2aadca545b0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00096,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00441
+   },
+   "input_tokens": 4396,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3845,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 324,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4720
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "First Community Credit Union",
+  "Midwest BankCentre",
+  "Delmar Mortgage",
+  "Better Rate Mortgage",
+  "Loan Estimate"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.monitorbankrates.com/mortgage-lenders/missouri/st-louis",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://www.monitorbankrates.com/mortgage-loan-rates/missouri/st-louis",
+  "https://www.midwestbankcentre.com/mortgage/",
+  "https://www.mortgagerulebook.com/rates/missouri/st-louis",
+  "https://www.experience.com/reviews/company/delmar-mortgage",
+  "https://www.experience.com/reviews/office/st-louis-",
+  "https://saferate.com/local/st-louis-mo/best-mortgage-lenders/mortgage-companies",
+  "https://www.realtor.com/mortgage/rates/Saint-Louis_MO",
+  "https://www.newamericanfunding.com/branches/st-louis-olive",
+  "https://saferate.com/local/st-louis-mo/best-mortgage-lenders",
+  "https://betterratemortgage.com/",
+  "https://livingstlouismo.com/best-mortgage-lenders-st-louis-mo/",
+  "https://www.firstcommunity.com/loans/personal-loans/home-loans.html",
+  "https://saferate.com/local/st-louis-mo/best-mortgage-lenders/banks"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and how much you value local service versus price. **I’d start by getting quotes from First Community Credit Union, Midwest BankCentre, and a local broker such as Delmar Mortgage or Better Rate Mortgage.**\n\n- **First Community Credit Union** is worth checking for a competitive conventional-loan quote; it appeared among the lower-rate options in the available local rate listings. Membership and eligibility may apply.\n- **Midwest BankCentre** offers local decision-making and a broad range of mortgage options.\n- **Delmar Mortgage** and **Better Rate Mortgage** are local options with strong customer-review signals in the available results.\n\nTreat advertised rates and review rankings as starting points, not a definitive winner: rates change, and the lowest advertised rate may involve points or fees. Ask each lender for a **Loan Estimate for the same loan amount, down payment, loan type, and rate-lock period**, then compare the APR, lender fees, points, and estimated cash to close—not just the interest rate. A practical shortlist is three lenders, including one credit union, one local bank, and one broker.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

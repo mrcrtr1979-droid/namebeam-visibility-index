@@ -1,0 +1,98 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_str_arbitrage_entry_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: STR arbitrage entry",
+ "niche": "short-term rental business model",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "How do I start an Airbnb rental arbitrage business and what tools and data should I use?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3a0541f4-8e75-46bf-9aea-d9cb50fab661",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00093,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00302,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00659
+   },
+   "input_tokens": 4278,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3725,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 1207,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5485
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Check permission and rules before negotiating",
+  "Research demand using comparable listings",
+  "Build a conservative property-level forecast",
+  "Negotiate the lease and document the arrangement",
+  "Set up operations before accepting bookings",
+  "Launch, measure, and adjust",
+  "Legality",
+  "Market research",
+  "Financial model",
+  "A sensible go/no-go rule",
+  "AirDNA",
+  "PriceLabs Market Dashboards",
+  "PriceLabs",
+  "Market",
+  "Furnish",
+  "HOA Rules",
+  "Launch",
+  "Platform fees"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://hello.pricelabs.co/market-dashboards/",
+  "https://help.pricelabs.co/portal/en/kb/articles/market-dashboard-faqs",
+  "https://help.pricelabs.co/portal/en/kb/articles/introduction-to-market-dashboards",
+  "https://help.pricelabs.co/portal/en/kb/pricelabs/getting-started-with-pricelabs",
+  "https://www.airbnb.com/resources/hosting-homes/a/how-much-does-airbnb-charge-hosts-288",
+  "https://www.airbnb.com/resources/hosting-homes/a/simplifying-airbnb-service-fees-746",
+  "https://help.pricelabs.co/portal/en/kb/pricelabs/market-dashboards/market-dashboard",
+  "https://www.airbnb.com/resources/hosting-homes/a/simplifying-service-fees-761",
+  "https://help.pricelabs.co/portal/en/kb/articles/getting-started-with-pricelabs-a-comprehensive-guide",
+  "https://help.pricelabs.co/portal/en/kb/articles/what-is-market-dashboard-and-why-to-use-it",
+  "https://www.airbnb.com/help/article/1857",
+  "https://www.airbnb.com/resources/hosting-homes/a/simplifying-service-fees-on-airbnb-771",
+  "https://www.airbnb.com/help/article/3305",
+  "https://www.airdna.co/pricing",
+  "https://www.airbnb.com/resources/hosting-homes/a/simplifying-service-fees-749"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "Rental arbitrage means leasing a property long-term, then renting it to guests for shorter stays. It can work, but it is **not passive income**: you take on rent and operating costs whether or not guests book. The first priority is confirming that the arrangement is allowed; the second is proving the numbers conservatively before signing a lease.\n\n## A practical startup sequence\n\n1. **Choose one target area and guest type.**  \n   Narrow your search to a few neighborhoods and a likely customer—such as business travelers, families, or visitors to a hospital or university. A specific niche helps you compare like-for-like listings and choose the right layout and amenities.\n\n2. **Check permission and rules before negotiating.**  \n   Get **written approval from the property owner** that explicitly allows short-term guest stays and platform listings. Also check:\n   - City and county short-term-rental rules, permits, registration, zoning, and occupancy limits\n   - Building, condo, or HOA rules\n   - Lease terms, insurance requirements, and any limits on subletting\n   - Lodging, sales, and occupancy taxes, plus fire, safety, and accessibility requirements where applicable\n\n   Rules vary by location and can change. Airbnb’s regulations guidance is a starting point, not a substitute for checking with the local government or a qualified local professional. Don’t assume that a landlord’s verbal okay—or the fact that other listings exist—makes the use legal.\n\n3. **Research demand using comparable listings.**  \n   Compare properties with similar location, bedroom count, capacity, amenities, and quality. Look at more than advertised nightly rates: examine calendar availability, weekday versus weekend patterns, seasonality, minimum stays, booking lead times, and reviews. Public listing data is an estimate; it may not reveal actual booked revenue, cancellations, or direct bookings.\n\n4. **Build a conservative property-level forecast.**  \n   Estimate monthly revenue as:\n\n   **Booked nights × average nightly rate + guest fees**\n\n   Then subtract all costs, including:\n   - Rent, utilities, internet, and any parking\n   - Platform fees\n   - Cleaning and laundry, supplies, maintenance, and replacement items\n   - Insurance, permits, taxes, and accounting\n   - Furnishing and setup costs, plus financing costs if applicable\n   - Your own time or paid management\n\n   Airbnb says it is transitioning hosts to a single host-paid service fee structure; many hosts on that structure pay **15.5%**, though fees and exceptions vary. Check the fee shown for your account and model it explicitly. Don’t count a cleaning fee as profit if it merely covers cleaning.\n\n   Run at least three cases—conservative, expected, and strong—and test what happens if occupancy or rates fall, costs rise, or the property is temporarily unavailable. Include a cash reserve for slow months and repairs. If the conservative case cannot cover costs, don’t rely on an optimistic forecast to justify the lease.\n\n5. **Negotiate the lease and document the arrangement.**  \n   Have the lease or an addendum clearly authorize the intended short-term use, guest turnover, and any required registration. Confirm who handles permits, taxes, damage, complaints, and insurance. Consider having a local attorney review the agreement.\n\n6. **Set up operations before accepting bookings.**  \n   Furnish for the target guest, install appropriate safety equipment, arrange reliable cleaning and laundry, create check-in instructions, and set up a process for maintenance and guest issues. Use a separate business bank account and track income and expenses from the start. Ask an insurance professional about coverage for short-term rental activity; ordinary renters or landlord policies may not cover it.\n\n7. **Launch, measure, and adjust.**  \n   Start with pricing and minimum stays that fit local demand, then review actual booking pace, net revenue, cleaning costs, guest feedback, and maintenance. Keep a close eye on local rule changes and platform policies.\n\n## Tools and data worth using\n\n| Need | Useful tools or sources | What to check |\n|---|---|---|\n| **Legality** | City/county licensing and planning pages; tax authority; building or HOA documents; Airbnb’s local regulations guidance | Whether short stays are allowed, permits, taxes, caps, and registration |\n| **Market research** | AirDNA; PriceLabs Market Dashboards; manual Airbnb/Vrbo comparison research | Comparable listings, estimated occupancy, rates, seasonality, booking windows, and supply |\n| **Pricing** | PriceLabs or another dynamic-pricing tool | Demand changes, local events, weekday/weekend pricing, and minimum stays |\n| **Financial model** | Spreadsheet or bookkeeping software | Monthly revenue, all-in costs, break-even occupancy, cash reserve, and scenario analysis |\n| **Operations** | A property-management system or channel manager if you use multiple platforms; cleaning and maintenance checklists | Calendar coordination, guest messages, turnovers, and issue tracking |\n\nMarket dashboards can help identify patterns, but treat their revenue and occupancy figures as **estimates**, not guarantees. PriceLabs describes its market data as based on publicly available Airbnb and Vrbo information; it notes that direct bookings are not included. Cross-check any paid tool against actual comparable listings and local demand indicators.\n\n**A sensible go/no-go rule:** don’t sign until you have written owner approval, a clear path to legal compliance, a realistic all-in budget, and enough cash to cover setup and several weak months.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

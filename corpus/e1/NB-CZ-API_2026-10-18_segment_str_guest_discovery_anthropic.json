@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_str_guest_discovery_anthropic",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "claude-haiku-4-5-20251001",
+  "response_id": "msg_011Cg9zKzYFm8BnwQKfkXaNQ",
+  "usage": {
+   "input_tokens": 41,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 312,
+   "service_tier": "standard",
+   "inference_geo": "not_available",
+   "speed": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "VRBO",
+  "Booking.com",
+  "Reality",
+  "Review signals",
+  "Host credibility",
+  "Listing red flags",
+  "Finding a good host",
+  "Message the host before booking",
+  "Verified ID",
+  "Clear house rules",
+  "Responsive communication"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Choosing a Platform\n\n**Airbnb**: Largest selection, good for unique stays, strong review system. Fees can be high.\n\n**VRBO**: Often better for full homes/longer stays, sometimes lower fees, fewer listings.\n\n**Booking.com**: Widest range (hotels + rentals), competitive pricing, straightforward interface.\n\n**Reality**: Check all three for your dates—prices and availability vary significantly.\n\n# Finding a Good Host\n\n**Review signals:**\n- Look for 4.8+ rating with 10+ recent reviews (not just 5-star with 2 reviews)\n- Read 1-3 star reviews carefully—they're most informative\n- Check if complaints are about things that matter to you (noise, cleanliness, communication)\n\n**Host credibility:**\n- Verified ID and long history (1+ year)\n- Responsive communication (check their reply rate/time)\n- Clear house rules and cancellation policy\n\n**Listing red flags:**\n- Vague photos or missing info\n- New listings with no reviews\n- Overly cheap for the area (might indicate hidden issues)\n- Evasive answers to your pre-booking questions\n\n**Pro tip**: Message the host before booking with a specific question. Their response speed and helpfulness predict your experience.\n\nWhat type of trip are you planning? That might help narrow down which platform makes most sense.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EaO8nxmjvXQmgj5NFAMKs11j1s5FB",
+  "usage": {
+   "prompt_tokens": 23,
+   "completion_tokens": 1113,
+   "total_tokens": 1136,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Medicare",
+  "ZIP",
+  "KanCare",
+  "Missouri and Kansas",
+  "Insurance and Kansas Insurance Department",
+  "Medicare.gov",
+  "Kansas Insurance Department",
+  "Missouri Department of Commerce",
+  "Independent Brokers",
+  "Individual/Family (ACA)"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can’t reliably name one single “best” broker — that depends on which side of Kansas City you’re on (Missouri or Kansas), what kind of coverage you need (individual/family ACA plan, Medicare, small‑group, etc.), and whether you want in‑person help, phone/virtual service, bilingual staff, etc.\n\nIf you tell me your ZIP code and what kind of plan you need, I can look up highly rated local brokers and give 2–4 tailored recommendations. In the meantime, here’s practical guidance so you can pick a good broker yourself.\n\nKey first questions I need from you\n- Are you in Kansas City, MO or Kansas City, KS (or a nearby suburb)? ZIP code helps.\n- Individual/family (ACA), Medicare, Medicaid/KanCare, or employer/small‑group?\n- Do you prefer in‑person meetings or are phone/online OK?\n- Any special needs (Spanish language, specific doctors/hospitals, narrow budget)?\n\nHow to find and vet brokers\n1. Use the right directories\n   - If you’re enrolling in an ACA plan, check healthcare.gov for certified agents/navigators for your county.\n   - Use the National Association of Health Underwriters (NAHU) “Find an Agent” tool and your state insurance department’s agent lookup (Missouri and Kansas have license lookup tools).\n\n2. Verify credentials\n   - Confirm they are licensed in your state (Kansas or Missouri).\n   - Ask about professional memberships (NAHU, industry certifications) and years of experience.\n\n3. Ask these questions when you contact a broker\n   - Are you licensed to sell insurance in my state (and for Medicare, if applicable)?\n   - Do you work with multiple carriers or just one? (Independent brokers are typically better for options.)\n   - How are you compensated — commission only, fees, or both? Will this increase my premium?\n   - Do you help with subsidy/Marketplace eligibility, claims issues, and annual renewals?\n   - Can you provide references from clients with similar needs?\n   - Do you assist with provider/network verification to ensure my doctors/hospital are covered?\n\n4. Red flags\n   - Refuses to disclose carriers or compensation.\n   - Pushes one plan without discussing alternatives and trade‑offs.\n   - No online presence, reviews, or verifiable license information.\n   - Pressure to sign immediately without time to compare.\n\nLocal resources to check\n- healthcare.gov (for ACA enrollment and local agents/navigators)\n- Missouri Department of Commerce & Insurance and Kansas Insurance Department (license lookups and consumer complaint records)\n- Google and Yelp reviews for local agencies\n- Medicare.gov (for Medicare broker/agent lookup if you’re eligible)\n\nIf you want, give me your ZIP code and what type of coverage you need and I’ll find several well‑rated local brokers/agents and summarize their credentials, carrier panels, and reviews.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

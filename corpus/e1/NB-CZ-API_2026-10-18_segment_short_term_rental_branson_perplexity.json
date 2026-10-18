@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_607fbbbe-ef99-4c1a-abc1-1c287b0283c4",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00114,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00487
+   },
+   "input_tokens": 4904,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4348,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 456,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5360
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Short answer",
+  "For shows and the Highway 76 Strip",
+  "Lodge of the Ozarks",
+  "Hilton Promenade at Branson Landing",
+  "For a resort-style, lakeside stay",
+  "Chateau on the Lake",
+  "My default recommendation",
+  "Hilton Promenade",
+  "Landing. It",
+  "Table Rock",
+  "Landing",
+  "Highway",
+  "The Landing",
+  "Table Rock Lake cabin"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/branson-mo/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays",
+  "https://www.airbnb.com/branson-mo/stays/lakehouses",
+  "https://www.airbnb.com/branson-mo/stays/resorts",
+  "https://www.airbnb.com/branson-mo/stays/lake-access",
+  "https://www.airbnb.com/missouri-united-states/stays/cabins",
+  "https://www.hotels.com/nh1663107/hotels-in-downtown-branson-branson-missouri/",
+  "https://www.hotels.com/de1644148-st5/five-star-hotels-branson-missouri/",
+  "https://www.hotels.com/de1644148-qu4/luxury-hotels-branson-and-vicinity-missouri/",
+  "https://www.hotels.com/de1644148/hotels-branson-and-vicinity-missouri/",
+  "https://www.hotels.com/de1463383/hotels-hollister-missouri/",
+  "https://www.hotels.com/de1644148-ty2/family-friendly-hotels-branson-and-vicinity-missouri/",
+  "https://travel.usnews.com/hotels/branson_mo/",
+  "https://www.orbitz.com/Branson-Hotels-Hilton-Promenade-At-Branson-Landing.h1497923.Hotel-Information",
+  "https://www.momondo.com/hotels/branson-missouri/Chateau-On-The-Lake-Resort-Spa-And-Convention-Center.mhd33524.ksp"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Short answer:** Choose a **hotel** for a typical first Branson trip; choose an **Airbnb or other vacation rental** if you need multiple bedrooms, a kitchen, or a quieter lake-and-cabin stay.\n\nBranson’s attractions are spread out, so location matters:\n\n- **For shows and the Highway 76 Strip:** **Lodge of the Ozarks** is a strong all-around pick. It’s in the theater district and has especially strong guest ratings; breakfast and parking are listed as included.\n- **For restaurants, shopping, and a walkable downtown evening:** **Hilton Promenade at Branson Landing** puts you right by the Landing. It’s convenient, but typically costs more than a basic Strip-area hotel.\n- **For a resort-style, lakeside stay:** **Chateau on the Lake** offers lake views, pools, dining, and a spa. It’s a better fit if the resort itself is part of the vacation, rather than just a place to sleep.\n- **For a group or a longer stay:** Look at a **Table Rock Lake cabin or house rental**. Airbnb listings include options with kitchens, lake views, and hot tubs; compare the total price, cleaning and service fees, cancellation terms, and how far the property is from the attractions you plan to visit.\n\n**My default recommendation:** Book **Lodge of the Ozarks** if you’ll spend most of your time seeing shows and attractions. Pick **Hilton Promenade** if you value being able to walk to dinner and shops. Go with a rental if you’re traveling with a larger group or specifically want a cabin-and-lake experience.\n\nRates and availability vary by date, and rental listings can differ substantially, so check the full price and recent reviews before booking.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

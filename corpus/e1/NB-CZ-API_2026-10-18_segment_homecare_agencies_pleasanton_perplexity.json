@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_homecare_agencies_pleasanton_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: homecare agencies, Pleasanton",
+ "niche": "home care agencies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best home care agency in Pleasanton CA for an elderly parent?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_57300759-6c56-4e52-9752-bf65656a3244",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00057,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00396
+   },
+   "input_tokens": 2837,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2287,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 298,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3135
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Right at Home Pleasanton",
+  "Senior Helpers Pleasanton",
+  "Seniors Helping Seniors Tri-Valley",
+  "Home Pleasanton",
+  "California Home Care Organization",
+  "Right at Home",
+  "Senior Helpers",
+  "Home Care Organization",
+  "California Home Care Organization license"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://locations.seniorshelpingseniors.com/ca/pleasanton/care-services-250.html",
+  "https://locations.seniorshelpingseniors.com/ca/pleasanton/250.html",
+  "https://www.seniorhelpers.com/ca/pleasanton/locations/pleasanton/",
+  "https://business.pleasanton.org/list/member/pacific-homecare-services-10738",
+  "https://www.seniorhelpers.com/ca/pleasanton/resources/frequently-asked-questions/",
+  "https://www.seniorhelpers.com/ca/pleasanton/",
+  "https://www.nursenextdoor.com/location/pleasanton-ca",
+  "https://www.fromthehearthomecare.com/",
+  "https://www.rightathome.net/pleasanton/about-us/areas-served/pleasanton",
+  "https://www.caring.com/senior-care/california/pleasanton/caring-hearts-senior-services-pleasanton-ca",
+  "https://www.caring.com/senior-care/california/pleasanton/right-at-home-pleasanton",
+  "https://www.caring.com/senior-care/in-home-care/california/pleasanton",
+  "https://www.seniorhelpers.com/ca/pleasanton/services/return-home-transitional-care/",
+  "https://www.agingcare.com/local/in-home-care/pleasanton-ca",
+  "https://www.seniorhelpers.com/ca/pleasanton/is-home-care-right-for-me/benefits/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency for every family, but **Right at Home Pleasanton** is a reasonable first agency to interview: it advertises personalized non-medical care, including help with daily activities, dementia support, transportation, and 24/7 care. **Senior Helpers Pleasanton** and **Seniors Helping Seniors Tri-Valley** are also worth comparing; both describe a range of in-home support, from companionship to personal care.\n\nBefore choosing, ask each agency about caregiver screening and training, how they match and supervise caregivers, backup coverage if someone calls out, minimum hours, rates and cancellation terms, and experience with your parent’s specific needs. Ask for references, and verify the agency’s California Home Care Organization license and any relevant complaints through the state. If your parent needs skilled nursing or medical treatment, clarify whether the agency provides that or only non-medical assistance.\n\nA good next step is to arrange consultations with two or three agencies and see which one listens carefully to your parent and offers a clear, written care plan.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

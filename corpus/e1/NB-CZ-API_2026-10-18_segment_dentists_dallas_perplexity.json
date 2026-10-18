@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_dentists_dallas_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_04e0bb01-d2c3-4d6f-80b3-2fc59c25d908",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00449
+   },
+   "input_tokens": 4793,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4247,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 315,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5108
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "The Dental Implant Center",
+  "Dr. David McFadden",
+  "Dallas Periodontics and Dental Implants",
+  "W. Lovers Lane"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.dentalimplantcenter.com/",
+  "https://www.dentalimplantcenter.com/our-practice/",
+  "https://www.periodallas.com/",
+  "https://dallasimplant.com/",
+  "https://www.northdallasdentalhealth.com/",
+  "https://dallasallon4dentalimplantcenter.com/our-team/",
+  "https://www.dentalimplantcenter.com/about-dr-david-mcfadden/",
+  "https://www.ndperio.com/",
+  "https://www.dallasdentalimplantcenter.com/faq/",
+  "https://www.dallasdentalimplantcenter.com/",
+  "https://www.fastnewsmile.com/",
+  "https://directory.dmagazine.com/dentists/sheena-allen-dmd/",
+  "https://openimplantchair.com/",
+  "https://www.dallasdental.com/about/meet-your-dentists/",
+  "https://www.rootdfw.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for everyone—the right choice depends on whether you need a single implant, several teeth, or a full-arch restoration, and on your bone and gum health.\n\nA strong Dallas option to investigate is **The Dental Implant Center**, led by **Dr. David McFadden**, a board-certified prosthodontist with additional board certification in oral implantology. The practice reports that it focuses on implants and restorations and lists its office at **5120 W. Lovers Lane, Dallas**; **(214) 956-9100**. These credentials are relevant, but they’re not a guarantee that the practice is the best fit for your case.\n\nFor a second opinion—especially if you have gum disease or need bone grafting—you could also consult a **board-certified periodontist**, such as **Dallas Periodontics and Dental Implants**.\n\nBefore choosing, ask who will place the implant and who will make the crown, what the full treatment plan and total cost are, what alternatives exist, and how complications or follow-up care are handled. Verify credentials independently and compare at least two written treatment plans.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

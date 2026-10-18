@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_str_host_tooling_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c71f1c26-2640-4571-bb24-382a3660464f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00054,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00419
+   },
+   "input_tokens": 4580,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4026,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 214,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4794
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "Wheelhouse",
+  "Beyond",
+  "Market Dashboard"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://hello.pricelabs.co/market-dashboards/",
+  "https://hello.pricelabs.co/dynamic-pricing-automation/",
+  "https://help.pricelabs.co/portal/en/kb/pricelabs/dynamic-pricing/pricing-strategies",
+  "https://help.pricelabs.co/portal/en/kb/pricelabs/market-dashboards/market-dashboard",
+  "https://help.pricelabs.co/portal/en/kb/articles/what-is-dynamic-pricing-and-how-to-use-it-14-12-2023",
+  "https://hello.pricelabs.co/blog/airbnb-tips-for-hosts/",
+  "https://techbullion.com/the-10-best-airbnb-pricing-tools-in-2026-and-when-a-done-for-you-service-beats-a-tool/",
+  "https://hello.pricelabs.co/blog/compare-airbnb-income/",
+  "https://www.bnbcalc.com/blog/airbnb-business/how-to-start-airbnb/best-pricing-tool-for-airbnb",
+  "https://hello.pricelabs.co/airbnb-pricing-tool/",
+  "https://www.gowithsurge.com/blog/airbnb-dynamic-pricing-tools",
+  "https://hello.pricelabs.co/blog/airbnb-revenue-estimator-dynamic-pricing/",
+  "https://www.bnbcalc.com/reviews/the-best-dynamic-pricing-tools-for-airbnb",
+  "https://help.pricelabs.co/portal/en/kb/articles/market-dashboard-faqs",
+  "https://www.hostfully.com/blog/airbnb-pricing-tools/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**PriceLabs** is the strongest all-around choice if you want one tool for both setting nightly rates and researching a market before buying. Its dynamic pricing adjusts rates based on demand and seasonality, while its Market Dashboard lets you compare local listings and review metrics such as occupancy, average daily rate, and revenue per available night.\n\nFor a purchase decision, treat those figures as estimates—not guaranteed income. Check that the comparable listings really match the property, and account separately for expenses, taxes, regulations, and seasonality.\n\nIf you want a simpler interface, **Wheelhouse** is a reasonable alternative; for a more hands-off pricing approach, consider **Beyond**.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

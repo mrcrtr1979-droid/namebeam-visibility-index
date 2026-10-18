@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_digital_strike_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "Digital Strike",
+ "niche": "digital marketing agency",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best digital marketing agency in St. Louis?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_2ff8dacd-36cf-4e24-8fda-c4d32d7c3ded",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00075,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00053,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00392
+   },
+   "input_tokens": 3542,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2996,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 213,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3755
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atomicdust",
+  "Spry Digital",
+  "Intergetik Marketing Solutions"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://clutch.co/agencies/digital-marketing/st-louis",
+  "https://clutch.co/agencies/digital-marketing/enterprise/st-louis",
+  "https://clutch.co/agencies/digital-marketing/small-business/st-louis",
+  "https://clutch.co/agencies/ppc/st-louis",
+  "https://clutch.co/agencies/st-louis",
+  "https://clutch.co/agencies/digital-marketing/st-louis?page=5",
+  "https://clutch.co/agencies/digital/st-louis",
+  "https://clutch.co/agencies/digital-strategy/st-louis?page=2",
+  "https://www.atomicdust.com/",
+  "https://www.designrush.com/agency/digital-strategy-agencies/missouri/st-louis",
+  "https://insiteadvice.com/",
+  "https://www.designrush.com/agency/digital-agencies/missouri/st-louis",
+  "https://themanifest.com/digital-marketing/agencies/st-louis",
+  "https://fuelonline.com/service-areas/st-louis/",
+  "https://www.designrush.com/agency/ad-agencies/missouri/st-louis"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency—it depends on your goals, budget, and industry. **For a St. Louis business seeking a local, full-service digital partner, Intergetik Marketing Solutions is a reasonable agency to shortlist**: it offers SEO, PPC, web design, and social media marketing, and has been operating since 2011, according to agency directories.\n\nOther options may fit better for specific needs: **Atomicdust** for B2B branding and marketing, or **Spry Digital** for digital strategy. Before choosing, compare recent client references, relevant case studies, who will work on your account, and how the agency measures results.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

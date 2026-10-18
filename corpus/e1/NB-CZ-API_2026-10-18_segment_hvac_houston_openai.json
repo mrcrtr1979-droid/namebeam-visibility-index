@@ -1,0 +1,46 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_hvac_houston_openai",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EaNy0GZDysgbRuEk5xupklDVtTocD",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 1465,
+   "total_tokens": 1483,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "NATE",
+  "Houston HVAC",
+  "AC repair",
+  "NATE Certification"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t one single “best” HVAC company for all Houston homes — it depends on your exact location, system type, budget, and how quickly you need service. If you tell me your ZIP code and whether this is residential or commercial (and if it’s an emergency), I’ll pull top-rated local options and current contact info.\n\nMeanwhile, here’s how to find the best company for your AC repair and what to look for:\n\nWhat to check\n- License and insurance: verify the contractor is licensed in Texas and carries liability insurance. (You can verify licensing on the Texas licensing site.)  \n- Certifications: EPA Section 608 certification for refrigerant work; NATE certification for technicians is a plus.  \n- Reputation: read recent Google/Yelp/Angi/BBB reviews and check for repeated complaints.  \n- Experience with your brand and system (split system, heat pump, packaged unit, ductless, etc.).  \n- Clear, written estimate: price breakdown for parts, labor, diagnostic fee, and any warranties.  \n- Warranty and guarantees: parts/labor warranty and a satisfaction or rework guarantee.  \n- Emergency/after-hours availability if you need fast service.  \n- Upfront pricing policy and whether they do proper load calculations (Manual J) for replacements.\n\nQuestions to ask before hiring\n- Are you licensed and insured? Can I see the license number?  \n- Do your technicians have EPA 608 and NATE certifications?  \n- What is your diagnostic fee and is it applied to repair cost?  \n- What parts and labor warranties do you offer?  \n- Can you provide references or recent customer reviews in my neighborhood?  \n- Do you offer financing or maintenance plans?\n\nRed flags\n- Very low bids compared with everyone else.  \n- No physical address or no verifiable license number.  \n- High-pressure “now-or-never” sales tactics.  \n- Poor or no online reviews, or many unresolved complaints.\n\nIf you want, tell me your ZIP code and whether this is an emergency and I’ll list several highly rated Houston HVAC companies near you, plus recent review summaries and phone numbers.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_scorch_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "SCORCH",
+ "niche": "branding agency",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best branding agency in St. Louis?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_91908cb5-7cdd-487a-b7fd-b9625849ccdf",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00049,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00055,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00368
+   },
+   "input_tokens": 2499,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 1954,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 219,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 2718
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atomicdust",
+  "MarketPlace Branding",
+  "TOKY",
+  "Almanac"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://clutch.co/agencies/branding/st-louis",
+  "https://clutch.co/agencies/st-louis",
+  "https://clutch.co/agencies/branding/missouri",
+  "https://clutch.co/agencies/creative/st-louis",
+  "https://www.atomicdust.com/",
+  "https://www.expertise.com/business/branding-agencies/missouri/st-louis",
+  "https://clutch.co/agencies/content-marketing/st-louis",
+  "https://www.atomicdust.com/marketing-services/branding/",
+  "https://clutch.co/agencies/digital/st-louis",
+  "https://clutch.co/agencies/digital-marketing/st-louis",
+  "https://clutch.co/agencies/event/st-louis",
+  "https://appleccreative.com/portfolio",
+  "https://dovetail-stl.com/",
+  "https://www.hownovel.co/",
+  "https://thinktankprm.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency—it depends on your budget, industry, and whether you need strategy, a visual identity, a website, or ongoing marketing.\n\n**Atomicdust** is a strong all-around place to start: it combines brand research and strategy with creative and marketing execution. Other St. Louis agencies worth comparing include **MarketPlace Branding**, **TOKY**, and **Almanac**. They appear among local branding-agency listings, but rankings vary by directory and criteria.\n\nCompare recent work in your industry, ask who will lead the project, and get proposals from two or three agencies. If you share your industry, budget, and what you need done, I can narrow the shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

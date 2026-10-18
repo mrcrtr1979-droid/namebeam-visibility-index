@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_bbs_insurance_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "BBS Insurance",
+ "niche": "health insurance brokerage",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best health insurance broker in Kansas City MO for someone who is self-employed?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5dd9b229-717c-4285-b958-8fbc945526fe",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00093,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00472
+   },
+   "input_tokens": 5162,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4610,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 371,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5533
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "AIS Health Advisors",
+  "Missouri",
+  "ACA Marketplace"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.ramirezinsuranceservice.com/catalog/missouri/kansas-city/insurance-agency/brush-creek-partners",
+  "https://bbs-insurance.com/service-areas/kansas-city/",
+  "https://bbs-insurance.com/health-insurance/",
+  "https://bbs-insurance.com/",
+  "https://www.heartlandinsagency.com/customer-reviews/",
+  "https://www.expertise.com/insurance/health-insurance/missouri/kansas-city",
+  "https://www.bbb.org/us/mo/kansas-city/profile/insurance-agency/tallman-insurance-agency-inc-0714-99149290",
+  "https://www.indeed.com/q-Medicare-Broker-l-Kansas-City,-MO-jobs.html",
+  "https://www.cohennationwidehealth.com/states/missouri",
+  "https://sites.google.com/view/health-insurance-kansas-city/home",
+  "https://apollo-insurance.com/health-insurance-kansas-city/",
+  "https://www.medicareplanning.com/devoted-health-missouri/",
+  "https://aishealthadvisors.com/",
+  "https://apollo-insurance.com/missouri-health-insurance/",
+  "https://www.bluekc.com/shop-plans/ifp-plan-options/individual-and-family-plans/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**BBS Insurance** looks like a strong first call for a self-employed Kansas City, MO resident. It specifically serves self-employed people and 1099 contractors, and says it compares ACA Marketplace and private plans and checks subsidy eligibility. Its North Kansas City office is at **1327 Burlington St., North Kansas City, MO 64116**; phone **(816) 205-4664**. [BBS’s Kansas City page](https://bbs-insurance.com/service-areas/kansas-city/) describes its services and includes client reviews, though those are not an independent measure of quality.\n\nI’d also compare with **AIS Health Advisors**, which says it helps self-employed clients with individual and family ACA Marketplace coverage and subsidy questions: **(913) 333-8627**. [AIS Health Advisors](https://aishealthadvisors.com/)\n\nBefore choosing, ask each broker:\n- Which insurers and plans can you compare for my **Missouri** address?\n- Will you check my doctors, prescriptions, and estimated annual costs—not just the monthly premium?\n- Can you help estimate my Marketplace subsidy based on self-employment income?\n- Is your help free to me, and do you receive commissions from insurers?\n\nFor ACA coverage, you can also compare plans or enroll directly at [HealthCare.gov](https://www.healthcare.gov/). A broker can help, but you don’t have to use one.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

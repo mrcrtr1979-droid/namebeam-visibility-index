@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_roofing_miami_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_07108f5e-4041-4c1d-b4ae-bda5499fd8ae",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00099,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00088,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 4524,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3976,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 352,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4876
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Robson",
+  "CCC1337790",
+  "Guardian Impact Windows & Roofing",
+  "CCC1334906",
+  "On Call Roofing",
+  "CGC1530821",
+  "Miami-Dade NOAs",
+  "Florida Product Approvals. Those",
+  "Guardian Impact Windows",
+  "On Call Roofing BBB",
+  "NOAs",
+  "Dade NOAs"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/fl/miami/profile/contractor-referral/hurricane-safety-program-llc-0633-92043395",
+  "https://www.bbb.org/us/fl/miami/profile/roofing-contractors/city-roofing-and-construction-inc-0633-92014812/customer-reviews",
+  "https://www.bbb.org/us/fl/miami/profile/roofing-contractors/on-call-roofing-inc-0633-92022643",
+  "https://www.bbb.org/us/fl/miami/profile/roofing-contractors/canopy-roofing-inc-0633-90363783",
+  "https://siaroofing.com/services",
+  "https://www.extremeroofingmiami.com/best-roofing-companies-miami-florida",
+  "https://www.bbb.org/us/fl/miami/category/roof-replacement",
+  "https://www.robsonindustrial.com/about/",
+  "https://builtechroofing.com/roofing-services/roof-replacement-services/",
+  "https://americanrrg.com/services/roof-replacement",
+  "https://www.extremeroofingmiami.com/top-roofers-on-bbb-miami",
+  "https://agkgc.com/roofing-contractor-south-florida",
+  "https://roofer.miami/services/storm-damage",
+  "https://www.robsonindustrial.com/",
+  "https://guardwhatmatters.com/roofing/roof-replacement/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a reliable single “best” without comparing bids, but **Robson** looks like a strong candidate to include on your shortlist: it says it holds Florida roofing-contractor license **CCC1337790**, serves Miami-Dade, and provides permitted, inspected work using products with Miami-Dade NOAs or Florida Product Approvals. Those are relevant credentials for a hurricane-rated replacement—not a guarantee of workmanship or the best price.\n\nI’d also get a quote from **Guardian Impact Windows & Roofing** (license **CCC1334906**) and **On Call Roofing** (BBB lists license **CGC1530821**). Before choosing, verify each license and insurance, ask for the exact product approval and installation details for your roof system, and confirm the contractor will pull permits and arrange required inspections. Compare written bids that specify tear-off, underlayment, fastening, flashing, ventilation, and warranty—not just the roofing material.\n\nSources: [Robson](https://www.robsonindustrial.com/about/), [Guardian](https://guardwhatmatters.com/roofing/roof-replacement/), [On Call Roofing BBB profile](https://www.bbb.org/us/fl/miami/profile/roofing-contractors/on-call-roofing-inc-0633-92022643).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

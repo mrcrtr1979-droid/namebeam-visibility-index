@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0eb04cf9-f737-4c7c-a639-905c3d4ad937",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 5154,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4608,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 289,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5443
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Evan Grodin",
+  "Dr. Andreina Izarra",
+  "Dr. Brock Pumphrey",
+  "Dr. Rosemary Davis",
+  "Atlanta Center for Advanced Periodontics",
+  "Midtown and Sandy Springs",
+  "Periodontal Associates of Georgia"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.periogeorgia.com/",
+  "https://www.drevangrodin.com/dental-implants/",
+  "https://advancedperioatl.com/",
+  "https://westcobbperio.com/our-practice/",
+  "https://reviews.birdeye.com/d/prosthodontists/atlanta-ga/",
+  "https://southernrootsperiodontics.com/",
+  "https://advancedperioatl.com/our-locations/dental-office-sandy-springs/",
+  "https://advancedperioatl.com/implants/",
+  "https://allonimplantsatlanta.com/meet-dr-schiffer/",
+  "https://www.perioatlanta.com/about-us.html",
+  "https://dentalimplantsvinings.com/",
+  "https://www.clearchoice.com/locations/ga/atlanta/3535-piedmont-rd-ne-bldg-14/",
+  "https://www.zocdoc.com/dentist/brett-langston-dmd-84083",
+  "https://www.atlantawest-periodontics.com/",
+  "https://www.briarcliffdentalgroup.com/about-us/staff/dentists/dr-evan-grodin"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t an objective “best” dentist for everyone—implant needs vary, and the right choice depends on your case, budget, and location. A strong starting point is **Dr. Brock Pumphrey or Dr. Rosemary Davis at Atlanta Center for Advanced Periodontics**: both are listed as board-certified periodontists who place implants, with offices in Midtown and Sandy Springs.\n\nOther Atlanta-area options to compare include **Dr. Evan Grodin**, who is listed as board-certified in both prosthodontics and periodontics, and **Dr. Andreina Izarra** at Periodontal Associates of Georgia, who is listed as board-certified in periodontics.\n\nBefore choosing, get two consultations and ask who will place the implant and who will make the crown, what the full cost includes, whether you need bone grafting, and what follow-up or warranty is offered. Confirm credentials and that the dentist is licensed through Georgia’s licensing board; online ratings alone aren’t enough to judge clinical quality.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

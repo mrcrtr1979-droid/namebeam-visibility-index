@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_health_insurance_kansas_city_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1f4a60f7-eca9-4f16-bea6-f7e8ccfe6192",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00068,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00449
+   },
+   "input_tokens": 5233,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4682,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 270,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5503
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "BBS Insurance",
+  "Apollo Health Insurance"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://bbs-insurance.com/",
+  "https://apollo-insurance.com/health-insurance-broker-kansas-city/",
+  "https://ksassist.org/health-insurance-marketplace/what-is-it",
+  "https://aishealthadvisors.com/",
+  "https://www.bluekc.com/",
+  "https://nulight-consulting.com/",
+  "https://bbs-insurance.com/health-insurance/",
+  "https://www.ramirezinsuranceservice.com/catalog/missouri/kansas-city/insurance-agency/brush-creek-partners",
+  "https://www.heartlandinsagency.com/customer-reviews/",
+  "https://www.bluekc.com/shop-plans/ifp-plan-options/individual-and-family-plans/",
+  "https://bbs-insurance.com/service-areas/kansas-city/",
+  "https://apollo-insurance.com/health-insurance-kansas-city/",
+  "https://jeffdavidinsurance.com/",
+  "https://www.indeed.com/cmp/Selectquote/reviews?fcountry=US&floc=Kansas+City,+MO",
+  "https://www.expertise.com/insurance/health-insurance/missouri/kansas-city"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t an objective “best,” but **BBS Insurance** looks like a strong first call for individual or family coverage: it’s an independent broker serving both sides of the metro, compares Marketplace and private plans, and reports a 5.0 Google rating from 90 reviews. Call **(816) 205-4664** or visit [bbs-insurance.com](https://bbs-insurance.com/).\n\n**Apollo Health Insurance** is another good option, especially if you want a second comparison. It serves the metro and reports a 4.9 rating across 462 reviews; call **(816) 400-4477** or visit [apollo-insurance.com](https://apollo-insurance.com/).\n\nBefore choosing, ask each broker to check your doctors, prescriptions, and subsidy eligibility—and confirm whether they compare all relevant plans or only the insurers they represent. Broker help is often free, but verify that directly.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

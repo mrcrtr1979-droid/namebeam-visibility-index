@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_segment_short_term_rental_nashville_perplexity",
+ "date_utc": "2026-10-18",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3b7f33f9-b084-4007-8a42-0c7f90027cdf",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00092,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00468
+   },
+   "input_tokens": 5049,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4496,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 367,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5416
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "East Nashville",
+  "West End",
+  "Vrbo. It",
+  "SoBro"
+ ],
+ "engine_stated_criteria": [
+  "dates, budget, and whether you’ll have a car"
+ ],
+ "sources_cited": [
+  "https://www.airbnb.com.mt/downtown-nashville-tn/stays/family-friendly",
+  "https://homes-and-villas.marriott.com/en/vacation-rentals/united-states/tennessee/nashville",
+  "https://musiccitymagnolia.com/nashville-family-vacation-rentals/",
+  "https://www.airbnb.com.mt/downtown-nashville-tn/stays",
+  "https://www.vrbo.com/vacation-rentals/family/usa/tennessee/middle/nashville",
+  "https://www.bode.co/blog/best-nashville-airbnbs",
+  "https://www.vrbo.com/vacation-rentals/united-states/tennessee/nashville-and-vicinity",
+  "https://www.cozycozy.com/us/nashville-vacation-rentals",
+  "https://www.ca.kayak.com/Nashville-Vacation-Rentals.8304.rental.ksp",
+  "https://www.vrbo.com/en-ca/vacation-rentals/family/united-states/tennessee/davidson-county/nashville-davidson/nashville",
+  "https://www.nashvillesmls.com/blog/best-nashville-neighborhoods-for-short-term-rentals.html",
+  "https://www.airbnb.com/downtown-nashville-tn/stays/family-friendly",
+  "https://www.hometogo.com/nashville/",
+  "https://www.vrbo.com/en-ca/vacation-rentals/united-states/tennessee/davidson-county/nashville-davidson/nashville/downtown",
+  "https://www.vrbo.com/vacation-rentals/usa/tennessee/middle/nashville"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "Without your dates or budget, I can’t identify one definite “best” listing—availability and total price change a lot. For a family of four, I’d start with a **two-bedroom, two-bath condo near downtown**, ideally with a kitchen, parking, and a pool. It gives everyone more space than a hotel room while keeping major attractions close.\n\nOne promising option in the listings I found is **“Downtown 2 bedroom overlooking River and walk to Broadway!”** on Vrbo. It’s listed for four or more guests, has a **9.4/10 rating from 122 reviews**, and was recently shown at about **$1,512 for seven nights, including fees**—but that price and availability may not apply to your dates. [View the listing](https://www.vrbo.com/vacation-rentals/usa/tennessee/middle/nashville)\n\nIf you’d rather have a quieter, more residential stay, look at **East Nashville** or **West End**; for easy access to Broadway and downtown attractions, choose **Downtown or SoBro**. Before booking, check the exact bed setup, parking costs, cancellation terms, and recent reviews mentioning noise and cleanliness.\n\nShare your **dates, budget, and whether you’ll have a car**, and I can narrow this to a better fit.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

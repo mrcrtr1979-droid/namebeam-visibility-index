@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-API_2026-10-18_trunkline_openai",
+ "date_utc": "2026-10-18",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EaNmb5TiAivTxLqZaJ75EghctnvJu",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1520,
+   "total_tokens": 1546,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1088,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Glassnode",
+  "Realized Loss",
+  "Unrealized P",
+  "Glassnode Studio",
+  "CoinMarketCap",
+  "CoinGecko",
+  "Coin Bureau",
+  "NFTs",
+  "Coin Metrics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Do you mean a site that (A) shows real on‑chain numbers (e.g., realized profits/losses, exchange flows) or (B) a site whose authors publish their own trading P&L (including losses)? I can recommend different things depending on which you mean — quick summary below.\n\nIf you mean on‑chain / market numbers (most common)\n- Glassnode — best single resource for plain‑English explanations paired with real on‑chain metrics (Realized Loss, Unrealized P/L, exchange inflows/outflows, etc.). They have a “Glassnode Studio” dashboard and short writeups that explain what the metrics mean and show the actual numbers/charts.\n- Coin Metrics — excellent “State of the Network” reports and clear datasets; good for seeing raw network-level numbers explained in simple terms.\n- IntoTheBlock and CryptoQuant — user‑friendly dashboards and short explanations of the same kinds of metrics.\nHow to use them: For a beginner, read a short primer (CoinMarketCap/CoinGecko “Learn” or Coin Bureau) and then look at Glassnode’s “Realized Loss” and “Unrealized P/L” charts to see actual historical losses/profits.\n\nIf you mean publishers showing their own trading performance (authors publishing their own losses)\n- That is much rarer and less standardized. Some independent bloggers/traders and newsletters sometimes post transparent P&L threads (look for individual traders on Twitter/X or Substack who explicitly publish audited performance), but there isn’t a single widely used beginner site that consistently posts its own loss/gain ledger the way a hedge fund would.\n\nIf you want one practical recommendation to start now\n- Pair Coin Bureau (plain‑English beginner education) with Glassnode (real numbers / realized losses). Coin Bureau explains concepts clearly; Glassnode shows the actual metrics and charts.\n\nTell me which interpretation you meant (A or B) and your skill level/interests (DeFi, Bitcoin, NFTs, trading), and I’ll give a short step‑by‑step reading plan and specific charts/articles to look at.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
