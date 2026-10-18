@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t directly look up web pages or fetch Namebeam’s 2026 report from here (my browsing/data access is offline and my training cuts off in 2024). I don’t want to guess or invent a number.\n\nI can help in two ways — pick one:\n1) You paste or link the Namebeam “AI Visibility Record” data (or the list of Google top-10 URLs for each day 2026-09-01 → 2026-09-27), and I will count the distinct pages and tell you exactly where that came from.  \n2) I give you a short, exact procedure (and a small Python script) you can run locally to compute the number yourself from the report or CSV.\n\nIf you want option 2, here’s a ready-to-run Python snippet (assumes you have a CSV where each row is a date and columns contain the top-10 result URLs, or a long format with a column of URLs):\n\nIf your CSV has columns date, url (one row per result):\n- unique count:\n```\nimport pandas as pd\ndf = pd.read_csv('namebeam_ai_visibility.csv')   # adjust filename\nunique_pages = df['url'].str.strip().dropna().unique()\nprint(len(unique_pages))\n# optional: print(unique_pages)\n```\n\nIf your CSV has one row per date and columns rank1..rank10:\n```\nimport pandas as pd\ndf = pd.read_csv('namebeam_ai_visibility_wide.csv')\nurl_cols = [c for c in df.columns if c.lower().startswith('rank') or 'url' in c.lower()]\nall_urls = pd.Series(df[url_cols].values.ravel()).dropna().astype(str).str.strip()\nunique_pages = all_urls.unique()\nprint(len(unique_pages))\n```\n\nNormalization tips: consider lowercasing, removing UTM/query params, and trimming trailing slashes if you want to treat those as the same page:\n```\nfrom urllib.parse import urlparse, urlunparse, parse_qs\ndef normalize(u):\n    try:\n        p = urlparse(u)\n        # drop query params:\n        cleaned = urlunparse((p.scheme, p.netloc, p.path.rstrip('/'), '', '', ''))\n        return cleaned.lower()\n    except:\n        return u.strip().lower()\nall_norm = all_urls.apply(normalize)\nprint(len(all_norm.unique()))\n```\n\nWhen you provide the report or link, I’ll return the exact number and quote the publication location (URL or page title).",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-18T16:06:49Z",
+ "ok": true,
+ "probe_id": "NC",
+ "prompt_sha256": "efbb2eccf1f282e2dfdb6e4a46f44888ad548f405a891de2b76dea5850430d16",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web pages did Google's top 10 results list for the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "negative_control",
+ "run_id": "39143514166",
+ "search_mode": "no search tool (E1 setting)"
+}
