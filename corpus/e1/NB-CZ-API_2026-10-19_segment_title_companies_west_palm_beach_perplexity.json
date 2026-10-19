@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_title_companies_west_palm_beach_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: title companies, West Palm Beach",
+ "niche": "title companies",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in West Palm Beach FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d52f2dc9-2fbc-48f9-a6c4-d4107e45aef6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00456
+   },
+   "input_tokens": 5009,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4460,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 320,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5329
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Integrity Land Title",
+  "Florida Fidelity Title & Escrow",
+  "Vista Parkway",
+  "Florida Fidelity Title",
+  "S. Tiffany Drive",
+  "Florida Department of Financial Services"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.integritylandtitle.com/default.aspx?tabid=482",
+  "https://floridatitleco.com/",
+  "https://www.yelp.com/biz/palm-beach-real-estate-title-and-escrow-west-palm-beach",
+  "https://www.chamberofcommerce.com/united-states/florida/west-palm-beach/title-company/2014078385-partnership-title-escrow",
+  "https://americantitlecorp.net/",
+  "https://locationtitle.com/compare",
+  "https://housecashin.com/directory/investor-friendly-title-companies/west-palm-beach-fl/",
+  "https://level10title.com/",
+  "https://trustedfltitle.com/",
+  "https://licenseesearch.fldfs.com/Licensee/1777648",
+  "https://newdawntitlegroup.com/testimonials/",
+  "https://www.yellowpages.com/west-palm-beach-fl/title-companies",
+  "https://locationtitle.com/services/west-palm-beach/",
+  "https://juristitle.com/resources/reviews",
+  "https://www.bbb.org/us/fl/west-palm-beach/category/title-companies"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” title company, but **Integrity Land Title** looks like a reasonable first call for a West Palm Beach home closing. Its local office is at **2101 Vista Parkway, Suite 130**, and it says it handles title searches, closing documents, escrow, and flexible closing locations and hours. [Integrity Land Title](https://www.integritylandtitle.com/default.aspx?tabid=482)\n\nAnother option to compare is **Florida Fidelity Title & Escrow**, which has a West Palm Beach office at **4450 S. Tiffany Drive** and offers residential settlement services. [Florida Fidelity Title](https://floridatitleco.com/)\n\nBefore choosing, ask each for a written estimate of title and closing fees, who will handle your file, how they protect wire transfers, and whether they can meet your closing date. Also confirm the agency’s current Florida license through the [Florida Department of Financial Services license search](https://licenseesearch.fldfs.com/). In Florida, the buyer and seller may have different preferences or contractual rights about selecting the closing agent, so check your purchase contract and ask your real-estate professional.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

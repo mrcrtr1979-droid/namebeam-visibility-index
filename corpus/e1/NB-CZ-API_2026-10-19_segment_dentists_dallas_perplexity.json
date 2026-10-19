@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_dentists_dallas_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_993939e4-629c-4d7e-a430-32dd69d19d4c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00454
+   },
+   "input_tokens": 4862,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4316,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 327,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5189
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "The Dental Implant Center",
+  "Dr. Laura Rabe",
+  "Dr. Mark Glover",
+  "Dr. David McFadden",
+  "Dallas Periodontics and Dental Implants"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.periodallas.com/about-us/meet-our-doctors/",
+  "https://www.periodallas.com/",
+  "https://implantperioteam.com/",
+  "https://markgloverdds.com/",
+  "https://www.ndperio.com/",
+  "https://www.dentalimplantcenter.com/",
+  "https://www.bcperio.com/",
+  "https://www.northdallasdentalhealth.com/",
+  "https://85b.org/best-dental-implant-specialists-dallas-2026/",
+  "https://mytoothhq.com/locations/",
+  "https://www.dentalimplantcenter.com/our-practice/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-mark-margolin-1376764092",
+  "https://www.parklaneperio.com/dental-implants.html",
+  "https://www.yelp.com/biz/park-lane-periodontal-and-dental-implant-group-dallas",
+  "https://periolife.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for every implant case. If you want a **starting point in Dallas**, consider **The Dental Implant Center**, led by Dr. David McFadden, a board-certified prosthodontist. Prosthodontists specialize in replacing and restoring teeth, and the practice says it also has two other prosthodontists. [Practice details](https://www.dentalimplantcenter.com/our-practice/)\n\nFor the **surgical placement**, you may also want a consultation with a board-certified periodontist, such as **Dr. Laura Rabe** at Dallas Periodontics and Dental Implants or **Dr. Mark Glover**. Periodontists receive specialist training in gum and bone health and implant surgery. [Rabe’s practice](https://www.periodallas.com/about-us/meet-our-doctors/) · [Glover’s practice](https://markgloverdds.com/)\n\nBefore choosing, ask who will place the implant and who will make the crown, how often they handle cases like yours, whether you need bone grafting, and for a written estimate covering the full treatment. A second opinion is especially worthwhile for full-mouth work or a complex case.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

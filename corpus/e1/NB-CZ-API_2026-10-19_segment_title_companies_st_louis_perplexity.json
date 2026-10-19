@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_title_companies_st_louis_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: title companies, St. Louis",
+ "niche": "title companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Louis MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_fdb92194-be6e-4627-a003-1bf787c75d91",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00058,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00438
+   },
+   "input_tokens": 5197,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4648,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 233,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5430
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "U.S. Title",
+  "Security Title",
+  "St. Louis-area"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://stltitle.com/testimonials",
+  "https://www.yelp.com/biz/title-partners-agency-st-louis",
+  "https://reviews.birdeye.com/integrity-title-solutions-llc-170409128186254",
+  "https://www.yelp.com/biz/investors-title-company-saint-louis-5",
+  "https://www.mapquest.com/us/missouri/elite-title-company-778230871",
+  "https://www.yellowpages.com/saint-louis-mo/title-companies",
+  "https://securitytitlestl.com/",
+  "https://www.poyst.com/business/the-dawn-griffin-real-estate-group",
+  "https://www.us-title.com/",
+  "https://www.selltobird.com/testimonials/",
+  "https://www.linkedin.com/company/investors-title-inc",
+  "https://titlepartnersagency.com/",
+  "https://ctitleservices.com/about/",
+  "https://www.investors-title.com/",
+  "https://www.bbb.org/us/mo/saint-louis/profile/title-agent/legacy-title-escrow-0734-1000045803"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” title company for every closing, but **U.S. Title** looks like a strong first option based on the available local information: its St. Louis-area testimonials emphasize communication, organization, and resolving last-minute issues. **Security Title** is another solid candidate, with multiple local offices and experience handling residential closings and title issues.\n\nBefore choosing, ask each for a written estimate of title and closing fees, confirm they can meet your closing date, and ask who your point of contact will be. You can usually choose the title company, though your purchase contract or lender may affect the options. Also, verify wire instructions by calling a known, independently confirmed phone number—never rely only on emailed instructions.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

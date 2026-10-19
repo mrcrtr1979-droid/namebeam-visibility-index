@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8b7d626b-2e2d-4951-bcf0-3e5f6c250fd7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00091,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00467
+   },
+   "input_tokens": 5033,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4487,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 363,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5396
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Carlos Castro at Georgia Prosthodontics",
+  "Dr. Evan Grodin",
+  "Dr. Samira Salari",
+  "Dr. Carlos Castro",
+  "Georgia Prosthodontics",
+  "Peachtree Rd NE",
+  "ClearChoice Atlanta"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://georgiaprosthodontics.com/",
+  "https://www.drevangrodin.com/all-on-4/",
+  "https://www.drevangrodin.com/dental-implants/",
+  "https://georgiaprosthodontics.com/prosthodontist-atlanta/",
+  "https://drhalnarnold.com/",
+  "https://www.clearchoice.com/providers/samira-salari/1720494784/",
+  "https://www.castleconnolly.com/top-dentists/carlos-castro-prosthodontics-cc332832",
+  "https://goldsteinonline.com/service/restorative-dentistry/dental-implants/",
+  "https://www.drevangrodin.com/single-tooth-replacement/",
+  "https://www.perioatlanta.com/meet-the-doctors.html",
+  "https://www.clearchoice.com/locations/ga/atlanta/3535-piedmont-rd-ne-bldg-14/",
+  "https://www.tebra.com/care/prosthodontists/",
+  "https://georgiaprosthodontics.com/atlanta-dental-implant-center/",
+  "https://goldsteinonline.com/restorative-dentistry/",
+  "https://mygumdoc.com/service/regenerative-dentistry/dental-implants/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for every implant case. Based on the credentials in the information available, **Dr. Carlos Castro at Georgia Prosthodontics** is a strong Atlanta option to consider: he is a **board-certified prosthodontist**, a specialist in complex tooth replacement and implant restorations, with a Buckhead office at **3379 Peachtree Rd NE, Suite 830**. [Practice details](https://georgiaprosthodontics.com/) · [Credentials](https://www.castleconnolly.com/top-dentists/carlos-castro-prosthodontics-cc332832)\n\nOther qualified options include **Dr. Evan Grodin**, who is listed as board-certified in both prosthodontics and periodontics, and **Dr. Samira Salari** at ClearChoice Atlanta, a board-certified prosthodontist. [Grodin](https://www.drevangrodin.com/dental-implants/) · [Salari](https://www.clearchoice.com/providers/samira-salari/1720494784/)\n\nBefore choosing, ask who will **place** the implant and who will **restore** it, what the full treatment plan and total cost include, and whether bone grafting or other procedures may be needed. Consider getting two consultations, especially for a full-arch or complex case.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

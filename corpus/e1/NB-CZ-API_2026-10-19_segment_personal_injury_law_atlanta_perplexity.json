@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_personal_injury_law_atlanta_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: personal injury law, Atlanta",
+ "niche": "personal injury attorneys",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best personal injury lawyer in Atlanta for a car accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b885de6a-8269-46d8-8907-4434352896c4",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 4683,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4134,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 330,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5013
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Peter A. Law",
+  "David M. Van Sant",
+  "State Bar of Georgia"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://attorneys.superlawyers.com/personal-injury-defense/georgia/atlanta/",
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/georgia/atlanta/",
+  "https://profiles.superlawyers.com/georgia/atlanta/lawyer/steven-i-goldman/73d0a04c-7870-4a23-9d82-947db8250d03.html",
+  "https://kainelaw.com/",
+  "https://attorneys.superlawyers.com/personal-injury-plaintiff/georgia/atlanta/",
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/georgia/griffin/",
+  "https://www.tmfwins.com/",
+  "https://www.garymartinhays.com/",
+  "https://www.gabar.org/docs/default-source/office-of-general-counsel/lawreflist.pdf?sfvrsn=aed7f832_2",
+  "http://www.gabar.org/general-counsel/ethics---discipline/lawyer-referral-services",
+  "https://www.johnfoy.com/",
+  "https://www.johnfoy.com/areas-we-serve/atlanta-ga/car-accident-lawyer/",
+  "https://lawyers.law.cornell.edu/lawyers/personal-injury/georgia/atlanta",
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/georgia/lawrenceville/",
+  "https://attorneys.superlawyers.com/personal-injury-plaintiff/georgia/atlanta/?page=5"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t an objective “best” lawyer for every car-accident case. The right choice depends on the injuries, disputed fault, insurance coverage, and whether the case may need to go to trial.\n\nA reasonable starting point is to compare **two or three Atlanta attorneys who regularly handle car-accident injury claims**. Super Lawyers’ Atlanta motor-vehicle-accident directory lists attorneys including **Peter A. Law** and **David M. Van Sant**; treat directory listings as leads, not proof that one is best. Some listings are sponsored, and ratings don’t predict the outcome of your case.\n\nIn a free consultation, ask:\n- Who will personally handle the case, and how often do they take cases to trial?\n- Have they handled cases with injuries and circumstances like yours?\n- What is the contingency fee, and who pays case expenses if there’s no recovery?\n- What is a realistic timeline and what could affect the value of the claim?\n\nCheck that the attorney is licensed and in good standing with the **State Bar of Georgia**, and read the fee agreement before signing. If you share whether the crash involved serious injuries, disputed fault, or an uninsured driver, I can suggest what experience to prioritize.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

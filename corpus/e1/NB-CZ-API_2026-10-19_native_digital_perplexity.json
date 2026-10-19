@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_native_digital_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "Native Digital",
+ "niche": "marketing agency",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best marketing agency in Kansas City?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d9e579b8-6c3c-4efd-9ab5-86e718ddfc91",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 4936,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4392,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 284,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5220
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "BarkleyOKRP",
+  "VML",
+  "EVERSANA INTOUCH",
+  "Gragg Advertising",
+  "DMH"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://nationalmarketingawards.com/awards/missouri/kansas-city/",
+  "https://nitrosend.com/marketing/agency/best/kansas-city",
+  "https://www.expertise.com/business/digital-marketing-agencies/missouri/kansas-city",
+  "https://digital.marketing/locations/kansas-city",
+  "https://www.expertise.com/business/advertising-agencies/missouri/kansas-city",
+  "https://www.expertise.com/business/advertising-agencies/kansas/kansas-city",
+  "https://www.expertise.com/business/digital-marketing-agencies/kansas/kansas-city",
+  "https://ifocusmarketing.com/",
+  "https://konza-digital.com/",
+  "https://blacksmith.agency/kansas-city/",
+  "https://eagadv.com/",
+  "https://voymedia.com/kansas-city-digital-marketing-agency/",
+  "https://www.digitalstrike.com/areas-served/kansas-city-digital-marketing/",
+  "https://builtin.com/companies/location/kansas-city/type/agency-companies",
+  "https://www.designrush.com/agency/digital-agencies/missouri/kansas-city"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency—it depends on your goals, budget, and industry. **For a large, full-service brand or integrated campaign, BarkleyOKRP is a strong Kansas City name to consider.** For a smaller business focused on local SEO, paid ads, or lead generation, a specialist may be a better fit.\n\nA few options to compare:\n- **BarkleyOKRP** — broad brand and integrated marketing\n- **VML** — large-scale creative, digital, and brand work\n- **EVERSANA INTOUCH** — healthcare and life-sciences marketing\n- **Gragg Advertising** — data-driven direct response and performance marketing\n- **DMH** — local creative, strategy, and digital services\n\nRankings vary by source and methodology, so I’d shortlist agencies based on relevant case studies, who will actually work on your account, and clear reporting on results. If you share your industry, budget range, and what you need—such as branding, SEO, or paid ads—I can narrow it down.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

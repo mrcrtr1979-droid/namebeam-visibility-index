@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_str_guest_discovery_anthropic",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "claude-haiku-4-5-20251001",
+  "response_id": "msg_011CgC7NuEvUiPmB91HPWHFg",
+  "usage": {
+   "input_tokens": 41,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 324,
+   "service_tier": "standard",
+   "inference_geo": "not_available",
+   "speed": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "VRBO",
+  "Booking.com",
+  "Review signals",
+  "Finding a good host",
+  "Pick based on"
+ ],
+ "engine_stated_criteria": [
+  "Trust your gut"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Choosing a Platform\n\n**Airbnb**: Largest selection, strong review system, good for unique stays\n**VRBO**: Better for multi-bedroom homes/groups, longer stays often cheaper\n**Booking.com**: Widest range (hotels + rentals), sometimes competitive pricing\n\nPick based on what you need—there's overlap, so comparing the same property across sites can help.\n\n# Finding a Good Host\n\n**Review signals:**\n- Look for 4.8+ rating with 20+ reviews (more reviews = more reliable)\n- Read recent reviews (last 3 months), not just overall score\n- Check for patterns—don't dismiss one bad review, but watch for repeated complaints\n- Read host responses to negative reviews (tells you how they handle issues)\n\n**Red flags:**\n- New hosts with no reviews (higher risk)\n- Vague listing photos or descriptions\n- Overly strict cancellation policies without good reason\n- Hosts who don't respond to questions before booking\n\n**Before booking:**\n- Message the host with specific questions—their response speed/helpfulness matters\n- Verify house rules match your needs\n- Check the exact cancellation policy\n- Confirm what's actually included (cleaning, wifi, parking, etc.)\n\n**Trust your gut**—if something feels off in the listing or communication, keep looking. There are plenty of good options out there.\n\nWhat type of trip are you planning? That might help narrow down which platform makes most sense.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

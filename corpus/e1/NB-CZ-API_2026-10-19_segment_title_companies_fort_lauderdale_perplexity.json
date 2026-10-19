@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_title_companies_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: title companies, Fort Lauderdale",
+ "niche": "title companies",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Fort Lauderdale FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_2bad9218-2231-46ca-8208-9d3f54cfcd9c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00097,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00432
+   },
+   "input_tokens": 4438,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3890,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 282,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4720
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Palm Title",
+  "Independent Title of Fort Lauderdale",
+  "Gibraltar Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://palmtitle.com/",
+  "https://palmtitle.com/closing/",
+  "https://www.closedtitle.com/city/fort-lauderdale",
+  "https://palmtitle.com/services/realtors/",
+  "https://www.fortlauderdaletitleandescrow.com/",
+  "https://youareclosing.com/",
+  "https://nativerealty.com/native-title/",
+  "https://www.indytitleftl.com/",
+  "https://www.coastaltitlellc.com/",
+  "https://summerlandtitle.com/",
+  "https://palmtitle.com/services/lenders/",
+  "https://thetopinsurancecompanies.com/Florida/Fort_Lauderdale/Title_Partners_of_South_Florida_Inc",
+  "https://www.linkedin.com/company/association-title-services",
+  "https://www.linkedin.com/company/title-now",
+  "https://www.linkedin.com/company/actiontitlecompany"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” title company—the right choice depends on your contract, the complexity of the transaction, fees, and how responsive the closing team is. **Palm Title** looks like a reasonable first call for a typical Fort Lauderdale home closing: it has a downtown Fort Lauderdale office, handles residential purchases and sales, and its site includes client testimonials describing clear communication and smooth closings.\n\nOther local options worth comparing are **Independent Title of Fort Lauderdale**, which says it has 35+ years of closing experience, and **Gibraltar Title**, which handles residential closings and emphasizes dedicated closers and clear communication. Those are company claims, so ask for a written fee estimate and references rather than relying on marketing alone.\n\nBefore choosing, compare the **total closing/settlement fees**, who will handle your file, how quickly they respond, whether they can accommodate your signing needs, and how they protect escrow funds. Also confirm with your real-estate agent or lender whether your contract or loan has any requirements.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

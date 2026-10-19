@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_orthodontists_dallas_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3eb25e4e-a3bf-4c9b-adae-182ae3573925",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00102,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00481
+   },
+   "input_tokens": 5134,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4587,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 408,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5542
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Vick Gupta, Gupta Smile Studio",
+  "Dr. Nathan Harris",
+  "Dr. Casey Lepley",
+  "Dr. Bryan S. Elvebak",
+  "Dr. Vick Gupta",
+  "Gupta Smile Studio",
+  "Invisalign",
+  "American Association of Orthodontists",
+  "North Dallas"
+ ],
+ "engine_stated_criteria": [
+  "two or three orthodontists who are orthodontic specialists"
+ ],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-bryan-s-elvebak/",
+  "https://aaoinfo.org/locator/dr-casey-lepley-2/",
+  "https://aaoinfo.org/locator/dr-nathan-harris/",
+  "https://aaoinfo.org/locator/dr-brody-jamison-hildebrand-2/",
+  "https://aaoinfo.org/locator/dr-fernan-rodriguez-2/",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/walnut-central-orthodontics-dallas-tx",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/dallas-orthodontics-dallas-tx",
+  "https://nationalorthodonticregistry.com/texas/dallas/orthodontists",
+  "https://aaoinfo.org/locator/",
+  "https://trustanalytica.org/us/tx/best-orthodontists",
+  "https://directory.dmagazine.com/dentists/nadia-lyotard-dmd-msd/",
+  "https://speakersclubs.uk/best-orthodontists-dallas-2026/",
+  "https://www.guptasmilestudio.com/",
+  "https://www.orthodontistdallastx.com/choosing-an-orthodontist-in-dallas/",
+  "https://www.orthodontistdallastx.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—the right choice depends on your case, location, budget, and whether you prefer braces or aligners. I’d start by comparing **two or three orthodontists who are orthodontic specialists**, then choose after an in-person consultation.\n\nA few Dallas options to consider:\n\n- **Dr. Vick Gupta, Gupta Smile Studio** — offers both braces and Invisalign; the practice says he is board-certified. [Practice website](https://www.guptasmilestudio.com/)\n- **Dr. Nathan Harris** — listed by the American Association of Orthodontists (AAO); office near Preston Road. [AAO profile](https://aaoinfo.org/locator/dr-nathan-harris/)\n- **Dr. Casey Lepley** — listed by the AAO, with Dallas-area offices. [AAO profile](https://aaoinfo.org/locator/dr-casey-lepley-2/)\n- **Dr. Bryan S. Elvebak** — listed by the AAO; office in North Dallas. [AAO profile](https://aaoinfo.org/locator/dr-bryan-s-elvebak/)\n\nAt consultations, ask who will supervise your treatment, whether braces and Invisalign are both suitable for *your* bite, what’s included in the quoted fee (including retainers and refinements), and how emergencies or missed appointments are handled. The AAO locator is a useful way to verify specialist credentials and find more nearby options: [Find an orthodontist](https://aaoinfo.org/locator/).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

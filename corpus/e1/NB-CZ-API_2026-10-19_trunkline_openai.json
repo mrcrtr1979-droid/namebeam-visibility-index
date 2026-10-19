@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_trunkline_openai",
+ "date_utc": "2026-10-19",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ean0BlHR0sgIHLHeygnu81H4CD2B2",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1317,
+   "total_tokens": 1343,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "YouTubers",
+  "Bankless",
+  "Plain English",
+  "Coinbase Learn",
+  "Dune Analytics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Quick question before I answer: by “publishes its losses” do you mean (A) the site/teacher publicly posts their own trading results including losing trades, or (B) the site transparently shows real-world on‑chain numbers (TVL, stolen funds, hack losses, realized gains/losses across the ecosystem)? Also what format do you prefer — short articles, videos, newsletters, dashboards?\n\nIf you mean (B) — a beginner‑friendly site that uses plain English and backs claims with real numbers and transparent loss/hack reporting — a practical combo works best:\n\n- Coinbase Learn — extremely plain English for absolute beginners (how crypto works, wallets, basic risks). Good starting point.\n- Bankless (newsletter + podcast) — very readable guides about Ethereum/DeFi and practical “how to”s in plain language.\n- DeFiLlama — not a tutorial site, but a simple dashboard that shows real TVL numbers and historical charts (great for seeing where value sits).\n- Rekt (rekt.news) and Chainalysis blog — straightforward writeups that quantify hacks/scams and losses with real numbers; good for learning about real risks.\n- Dune Analytics — community dashboards that surface on‑chain numbers (you can find clear dashboards that show hack losses, liquidations, flows). Some are written plainly.\n\nIf you instead meant (A) — you want an educator who openly publishes their own trade P&L including losses — say so and I’ll list a few independent educators/YouTubers who keep trade journals and performance records (note: vet them carefully for transparency and conflicts).\n\nWhich meaning did you intend and which formats do you want? I’ll give a tailored shortlist after you confirm.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,39 @@
+{
+ "check_id": "NB-CZ-SERP_2026-10-19_segment_tanning_salons_charlotte",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "niche": "tanning salons",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engine": "google_serp",
+ "run_channel": "serp",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "serp_diagnostics": {
+  "payload": "raw_html",
+  "parsed_attempt": "short non-json body, try 3: '{\"status_code\":502,\"headers\":{\"x-brd-error\":\"No ready cookies\",\"x-brd-error-code\":\"no_ready_cookies\",\"date\":\"Mon, 19 Oct'",
+  "html_bytes": 659238,
+  "href_total": 99,
+  "redirect_hrefs": 0,
+  "nongoogle_hrefs": 0,
+  "consent_phrase_present": false,
+  "looks_like_consent_wall": false,
+  "looks_like_captcha": false,
+  "extraction_ok": true,
+  "zero_reason": null
+ },
+ "business_mentioned": false,
+ "organic_top_results": [
+  "https://www.mindbodyonline.com/explore/locations/organic-bronze-bar-southpark-nc?rwg_token=AE37R_iC1BF8l74_zY1m9Ubj6fOz-fWXPr7gX6Ik6TbQcu_-B-S-255mbwX4i3utE5imfODh_Xq2FDrL_qeOfyAjKxnricKryQ%3D%3D",
+  "https://app.acuityscheduling.com/schedule.php?owner=26507564&rwg_token=AE37R_jKFf4WKxR1DsOwRJoB_e80-xKxqj4xyjUhZlxBclhaak5SzuqCMiBTmPKonEwPMoIp-j5xCliTe7cxWsE6X5I5jaEjHA%3D%3D",
+  "https://app.acuityscheduling.com/schedule/13c1cb3c/category/Charlotte%2520-%2520South%2520End%2520Studio%2520/appointment/75699782/calendar/11422466?rwg_token=AE37R_iT91L7S5pG3dsT7bu2x3n3sPUTV6Iz0QDOhZcxp3Y5RsnS8lmGw9SquEhYni2SHSKSadONzPcthTANFdn71s_7UGju9g%3D%3D"
+ ],
+ "ai_overview_detected": false,
+ "ai_overview_present": null,
+ "ai_overview_text": "",
+ "ai_overview_references": [],
+ "session_note": "Organic results extracted mechanically from the returned results page. Bright Data does not document an AI Overview field, so ai_overview_detected is BEST EFFORT and may be null. Do not publish it as a measurement."
+}

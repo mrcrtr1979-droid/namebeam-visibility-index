@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_real_estate_agents_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: real estate agents, Fort Lauderdale",
+ "niche": "real estate agents",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Fort Lauderdale FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f14c8144-835f-41b8-9d43-34f8e1280f92",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00094,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00463
+   },
+   "input_tokens": 4740,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4190,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 375,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5115
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "John O’Flaherty (Compass)",
+  "Whitney Dutton (Native Realty)",
+  "Howard Goldberg (RE/MAX Consultants)",
+  "Sandra Rathe (REAL)",
+  "John O",
+  "Whitney Dutton",
+  "Native Realty",
+  "Howard Goldberg",
+  "MAX Consultants",
+  "Sandra Rathe"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/fort-lauderdale-fl/",
+  "https://www.realtor.com/realestateagents/Fort-Lauderdale_FL",
+  "https://www.zillow.com/profile/HowardGoldbergSells",
+  "https://www.zillow.com/profile/LoganCrewss",
+  "https://www.zillow.com/profile/OFlahertyTeam",
+  "https://www.zillow.com/profile/WhitneyJD",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33306/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33309/",
+  "https://www.homelight.com/fort-lauderdale-fl/top-real-estate-agents",
+  "https://www.zillow.com/profile/ronlennen",
+  "https://www.homes.com/real-estate-agents/danny-shears/6wbm7et/",
+  "https://www.zillow.com/profile/LilliSchipper",
+  "https://www.realtor.com/realestateagents/56b08a020fa41701007462fd",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33314/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/coral-ridge-fort-lauderdale-fl/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent—the right choice depends on your neighborhood, home type, and price range. Based on the available Fort Lauderdale sales and review data, I’d start by interviewing:\n\n- **John O’Flaherty (Compass):** 526 Fort Lauderdale team sales shown on Zillow, with 17 in the last 12 months; reviews mention marketing and follow-up.\n- **Whitney Dutton (Native Realty):** 52 sales in the last 12 months and 448 in Fort Lauderdale; has recent seller reviews.\n- **Howard Goldberg (RE/MAX Consultants):** 66 team sales in the last 12 months and 614 in Fort Lauderdale.\n- **Sandra Rathe (REAL):** Listed among HomeLight’s top Fort Lauderdale agents, with a 5.0 rating from 132 reviews.\n\nThese figures are from different directories and may count team activity differently, so they’re a starting point—not a definitive ranking. I’d interview two or three agents who have recently sold homes **near yours and similar to yours**. Ask each for a pricing analysis with comparable sales, their marketing plan, recent seller references, expected timeline, and total commission/fees. Choose the agent whose local comps and plan make sense—not just the one who promises the highest asking price.\n\nIf you share your neighborhood or ZIP code, property type, and approximate value, I can help narrow the shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

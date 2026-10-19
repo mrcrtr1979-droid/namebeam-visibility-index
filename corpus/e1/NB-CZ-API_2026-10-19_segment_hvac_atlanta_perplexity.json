@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_hvac_atlanta_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_73519b01-73b3-46c1-89a6-dd4c6142bdd6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00064,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00431
+   },
+   "input_tokens": 4650,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4102,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 255,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4905
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Indoor Experts",
+  "Estes Services",
+  "Coolray",
+  "Georgia HVAC",
+  "BBB A"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://indoorexperts.com/reviews/",
+  "https://www.homedepot.com/services/l/ga/atlanta/heating-air-conditioning-installation/c16fbb4b7/reviews/page/1",
+  "https://www.aireserv.com/locations/georgia/atlanta/",
+  "https://www.homedepot.com/services/l/ga/atlanta/heating-air-conditioning-repair/673dcc2c8/reviews/page/1",
+  "https://www.estesair.com/about/testimonials",
+  "https://atlantatoprated.com/hvac/",
+  "https://atlantaexplored.com/air-conditioning-companies/",
+  "https://serviceagent.ai/directory/georgia/atlanta/hvac/replacement/",
+  "https://www.thumbtack.com/ga/atlanta/hvac-installers",
+  "https://www.bbb.org/us/ga/atlanta/profile/heating-and-air-conditioning/bell-mechanical-llc-0443-5001518",
+  "https://www.bbb.org/us/ga/atlanta/profile/heating-and-air-conditioning/bell-mechanical-llc-0443-5001518/addressId/21418",
+  "https://www.thumbtack.com/ga/atlanta/hvac-repair-companies",
+  "https://atlantaairauthority.com/reviews/",
+  "https://indoorexperts.com/air-conditioning-installation-replacement-atlanta-ga/",
+  "https://www.bbb.org/us/ga/atlanta/category/air-conditioning-contractor"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every Atlanta home, but **Indoor Experts** looks like a strong local option to get a quote from: its site reports a 4.8 rating from 100+ Google reviews, a Georgia HVAC license, and BBB A+ status, with reviews specifically mentioning full-system replacements. [Details](https://indoorexperts.com/air-conditioning-installation-replacement-atlanta-ga/)\n\nI’d compare its written estimate with at least two others—perhaps **Estes Services** or **Coolray**—before deciding. Ask each company to assess your home and ductwork, explain the equipment sizing and efficiency, and itemize installation, permits, warranties, and any needed electrical or duct changes. Don’t choose on star ratings alone; compare the same scope of work and verify the contractor’s license and insurance.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

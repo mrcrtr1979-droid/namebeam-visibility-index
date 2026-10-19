@@ -1,0 +1,60 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_namebeam_openai",
+ "date_utc": "2026-10-19",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EamcQQNfOQ2wCM3P0y1DEZ2AHce8z",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1773,
+   "total_tokens": 1797,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1152,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Yext",
+  "BrightLocal",
+  "Apple Maps",
+  "TripAdvisor",
+  "LocalBusiness",
+  "Use",
+  "SEMrush Listing Management",
+  "AI-monitoring",
+  "Yext and SEMrush",
+  "Test AI",
+  "Bing Chat",
+  "Apple Siri",
+  "Alexa. Use",
+  "SEMrush",
+  "ZIP and I",
+  "Moz Local",
+  "Bing Places",
+  "Whitespark"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there’s no single “ChatGPT directory” service — the best approach is to control your business data (so AI can find and cite it) and use a local-SEO / listing-management + rank-tracking tool to monitor whether AI and search assistants surface you. For most small businesses the best combined choices are Yext (to push and control your knowledge graph across many services) and BrightLocal (to track local rankings, citations and whether you show up in map packs / assistant-like results).\n\nRecommended setup and steps\n\n1) Make sure AI can find your info\n- Claim and fully populate Google Business Profile (most generative search/assistant systems use Google data heavily).\n- Claim Bing Places, Apple Maps, Yelp, TripAdvisor etc.\n- Put structured data (schema.org/LocalBusiness) on your website (name, address, phone, hours, services).\n- Get consistent NAP citations everywhere and collect good reviews (AI models and search engines rely on reviews/ratings).\n\n2) Use a listing-distribution / knowledge-graph service\n- Yext — best if you want one service to push authoritative, consistent business data to many sources and to the platforms that feed AI knowledge graphs.\n- Alternatives: Moz Local, SEMrush Listing Management.\n\n3) Use a local-rank / AI-monitoring tool\n- BrightLocal — great for checking local pack placements, map results, and tracking visibility across cities/keywords. Good for small businesses.\n- Whitespark — rank tracking and citation building.\n- For enterprise-level distribution + analytics, Yext and SEMrush are strong.\n\n4) Test AI assistants directly (do this periodically)\n- Ask ChatGPT explicitly with location context: e.g. “You’re in browse-enabled mode. Recommend three independent [business type] near [ZIP or city]. Exclude national chains. Give name, address, phone, and a one-line reason to choose them. Cite sources or link to the website/review page.”\n- Try other assistants: Google Bard/SGE, Bing Chat/Copilot, Apple Siri, Alexa. Use the same prompts and compare results.\n- If ChatGPT is not in browsing mode, answers may be out of date or based on training data — insist on browsing/citations to verify.\n\n5) What to watch for\n- Showing up in Google Business Profile / Maps often correlates to being recommended by generative search.\n- If you don’t appear, improve on-page SEO, create more local citations, get reviews and use a distribution service (Yext) to ensure data reaches major knowledge graphs.\n- Track changes over time with BrightLocal or SEMrush.\n\nWhich single pick if you want one recommendation?\n- If you want to proactively control how AI and search assistants know you: Yext.\n- If you mainly want to monitor whether AI/search results recommend you and track local rankings: BrightLocal.\n\nIf you want, tell me your business type and city/ZIP and I can give example prompts to test ChatGPT and a short checklist tailored to your needs.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

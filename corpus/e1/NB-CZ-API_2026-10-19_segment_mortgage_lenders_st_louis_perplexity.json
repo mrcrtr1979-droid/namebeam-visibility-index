@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_mortgage_lenders_st_louis_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: mortgage lenders, St. Louis",
+ "niche": "mortgage lenders",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Louis MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_89a7715e-1c0a-44d9-a39c-b2d050870594",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00097,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00087,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00448
+   },
+   "input_tokens": 4431,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3880,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 348,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4779
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Better Rate Mortgage",
+  "USA Mortgage",
+  "Midwest BankCentre",
+  "First Community Credit Union",
+  "Neighbors Credit Union",
+  "Loan Estimate"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.monitorbankrates.com/mortgage-lenders/missouri/st-louis",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://www.midwestbankcentre.com/mortgage/",
+  "https://www.newamericanfunding.com/branches/st-louis-olive",
+  "https://www.monitorbankrates.com/mortgage-loan-rates/missouri/st-louis",
+  "https://www.bankrate.com/mortgages/mortgage-rates/missouri/",
+  "https://trustanalytica.org/us/mo/st.-louis/best-mortgage-brokers",
+  "https://betterratemortgage.com/",
+  "https://natlawreview.com/press-releases/sean-zalmanoff-better-rate-mortgage-earns-prestigious-five-star-mortgage",
+  "https://www.newamericanfunding.com/branches/st-louis-southcounty",
+  "https://www.realtor.com/mortgage/rates/Saint-Louis_MO",
+  "https://www.mortgagenewsdaily.com/mortgage-rates/missouri",
+  "https://saferate.com/local/st-louis-mo/best-mortgage-lenders/banks",
+  "https://www.ratezip.com/news/mortgage-rates-today-2026-10-16",
+  "https://www.firstcommunity.com/loans/personal-loans/home-loans.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one best lender for everyone—your best choice depends on your credit, down payment, loan type, and the lender’s actual fees and rate for your situation.\n\n**A good St. Louis shortlist to get quotes from:**\n- **Better Rate Mortgage** — a local broker with strong review scores; worth checking for personalized purchase-loan options.\n- **USA Mortgage** — a prominent local lender with a broad range of loan programs.\n- **Midwest BankCentre** — offers local decision-making and substantial home-purchase lending.\n- **First Community Credit Union** — worth comparing if you’re eligible for membership; credit-union rates and terms may be competitive.\n- **Neighbors Credit Union** — another local option, including down-payment assistance possibilities noted in rate listings.\n\nAsk at least three lenders for a **same-day Loan Estimate** using the same loan amount, down payment, loan type, and rate-lock period. Compare the **APR, lender fees, points, cash to close, and closing timeline**—not just the advertised interest rate. A lender’s preapproval and ability to close on time matter too.\n\nIf you share your approximate purchase price, down payment, credit range, and whether you’re considering conventional, FHA, or VA financing, I can help narrow the shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

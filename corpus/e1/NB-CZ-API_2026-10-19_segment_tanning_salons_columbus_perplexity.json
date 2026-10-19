@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_tanning_salons_columbus_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: tanning salons, Columbus",
+ "niche": "tanning salons",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Columbus OH?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0abdeb61-e172-4b11-b911-8071722ce852",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00092,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00053,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00409
+   },
+   "input_tokens": 4218,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3674,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 211,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4429
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sweetly Bronzed",
+  "UV tanning beds",
+  "Palm Beach Tan",
+  "UV tanning"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bestprosintown.com/oh/columbus/tanning/",
+  "https://www.yelp.com/biz/tan-wolf-columbus",
+  "https://www.vagaro.com/sweetlybronzed",
+  "https://www.bbb.org/us/oh/columbus/category/spray-tanning-salon",
+  "https://www.yelp.com/biz/palm-beach-tan-columbus",
+  "https://tanningsalonfinder.com/ohio/columbus",
+  "https://palmbeachtan.com/locations/oh/polaris-area-sancus-boulevard",
+  "https://www.yellowpages.com/columbus-oh/tanning-salons",
+  "https://www.fresha.com/lp/en/tt/spray-tanning/in/us-columbus",
+  "https://www.yelp.com/biz/mahalo-spray-tanning-columbus-2",
+  "https://palmbeachtan.com/locations/oh/columbus-olentangy-river-road",
+  "https://www.yelp.com/biz/teez-columbus",
+  "https://www.sweetlybronzed.com/",
+  "https://www.thebronzingbar.com/",
+  "https://www.yelp.com/biz/bronzed-bunny-columbus"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Sweetly Bronzed** is my best overall pick if you’re looking for a **custom spray tan**. It has a strong review profile—5.0 stars with hundreds of reviews across local listings—and reviewers often praise the friendly staff and guidance on prep and aftercare.\n\n**234 W. 5th Ave, Columbus, OH 43201**  \n[Website](https://www.sweetlybronzed.com/)\n\nIf you mean **UV tanning beds** rather than spray tanning, **Palm Beach Tan** offers UV beds as well as spray tans and wellness services, with several Columbus locations. Ratings and services can vary by location, so check the specific salon before you go.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

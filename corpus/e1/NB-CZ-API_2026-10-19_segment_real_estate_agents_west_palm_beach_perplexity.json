@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_real_estate_agents_west_palm_beach_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: real estate agents, West Palm Beach",
+ "niche": "real estate agents",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in West Palm Beach FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6707c06a-7e2d-42d8-a7a2-3035e437911d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00118,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00084,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00466
+   },
+   "input_tokens": 5258,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4707,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 335,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5593
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jeff Tricoli and his team",
+  "Sandra Rathe",
+  "Larry Mastropieri",
+  "Robert Floyd",
+  "Tonya McDonald",
+  "Jeff Tricoli"
+ ],
+ "engine_stated_criteria": [
+  "recent sales in your specific neighborhood and price bracket"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/west-palm-beach-fl/",
+  "https://www.homes.com/real-estate-agents/camila-visser/vl0v5lg/",
+  "https://www.homelight.com/west-palm-beach-fl/top-real-estate-agents",
+  "https://www.homes.com/real-estate-agents/rigoberto-gamez/645cexr/",
+  "https://www.homes.com/real-estate-agents/dwayne-barrett/297xkf9/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33417/",
+  "https://www.homes.com/real-estate-agents/kevin-boucher/7ym08gy/",
+  "https://www.homes.com/real-estate-agents/loodmy-jacques/9spfp04/",
+  "https://www.homes.com/real-estate-agents/alexa-mcdonald/vnbepwd/",
+  "https://www.homes.com/real-estate-agents/david-cepeda/s2vmfb4/",
+  "https://www.redfin.com/city/19373/FL/West-Palm-Beach/real-estate/agents",
+  "https://www.homes.com/real-estate-agents/robert-floyd/gt6mslx/",
+  "https://www.homes.com/real-estate-agents/antoinette-cummings/74mwq4z/",
+  "https://www.homes.com/real-estate-agents/sabrina-mcclover/v64xkld/",
+  "https://www.homes.com/real-estate-agents/tonya-mcdonald/w0rh58j/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent—the right choice depends on your home’s neighborhood, price range, and property type. Based on the available West Palm Beach data, **Jeff Tricoli and his team** are a strong starting point for a broad range of homes: Zillow lists 414 team sales in the past 12 months and 669 in West Palm Beach. **Sandra Rathe** and **Larry Mastropieri** also rank highly in HomeLight’s local agent list, with 5.0/5 ratings and substantial review counts.\n\nFor a higher-priced home, consider interviewing **Robert Floyd** or **Tonya McDonald**: recent listing data shows each handled roughly $21–22 million in seller transactions over the past year, with average listing prices around $1.5–1.6 million. These figures are platform-reported and may not capture every transaction.\n\nBefore choosing, interview two or three agents and ask for **recent sales in your specific neighborhood and price bracket**, their proposed list price and marketing plan, and their commission and contract terms. If you share your neighborhood, approximate home value, and whether it’s a condo or house, I can narrow the shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

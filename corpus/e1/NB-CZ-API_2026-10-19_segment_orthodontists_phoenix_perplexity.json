@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_625e8146-7ecf-4187-816e-1b01d8c78764",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00092,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00459
+   },
+   "input_tokens": 4677,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4130,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 367,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5044
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "OoLi Orthodontics (Dr. Jonathan Park)",
+  "Butterfly Orthodontics (Dr. Chad Foster)",
+  "Serrano Orthodontics",
+  "Blue Orthodontics",
+  "OoLi Orthodontics",
+  "Dr. Jonathan Park",
+  "Offers",
+  "Invisalign",
+  "Practice",
+  "Butterfly Orthodontics",
+  "Dr. Chad Foster",
+  "Offers Invisalign",
+  "Dr. Foster"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://smilestraightphx.com/about-us/testimonials",
+  "https://teamorthodontics.com/our-practice/patient-reviews",
+  "https://doctor.webmd.com/providers/specialty/orthodontics/arizona/phoenix",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/blue-orthodontics-phoenix-az",
+  "https://www.butterflybraces.com/patient-reviews",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/butterfly-orthodontics-phoenix-az",
+  "https://www.yelp.com/biz/team-orthodontics-phoenix",
+  "https://arizona-orthodontics.com/about/testimonials/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/smile-straight-orthodontics-greenway-road-phoenix-az",
+  "https://www.zocdoc.com/orthodontists/phoenix-220419pm",
+  "https://www.yelp.com/biz/arizona-orthodontic-centers-phoenix-2",
+  "https://ooliortho.com/",
+  "https://serranoorthodontics.com/welcome/",
+  "https://www.brooksorthodontics.com/about-us/testimonials",
+  "https://www.yelp.com/biz/arizona-orthodontic-studio-phoenix"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist—the right choice depends on your case, location, budget, and whether you prefer braces or clear aligners. A few Phoenix practices worth comparing are:\n\n- **OoLi Orthodontics (Dr. Jonathan Park):** Offers braces and Invisalign; patient feedback highlights clear explanations and flexible payment arrangements. [Practice website](https://ooliortho.com/)\n- **Butterfly Orthodontics (Dr. Chad Foster):** Offers Invisalign and several braces options; the search results identify Dr. Foster as board-certified. [Practice website](https://www.butterflybraces.com/)\n- **Serrano Orthodontics:** Offers braces and Invisalign, with board-certified orthodontists and Phoenix-area locations. [Practice website](https://serranoorthodontics.com/)\n- **Blue Orthodontics:** Offers braces and clear aligners, with strong patient-review ratings in the results. [Practice information](https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/blue-orthodontics-phoenix-az)\n\nI’d book consultations with two or three and compare the orthodontist’s proposed plan, total cost, what’s included (retainers and refinements, for example), and how often you’ll be seen. Ask whether the orthodontist—not just staff—will supervise your treatment, and check that the practice accepts your insurance.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

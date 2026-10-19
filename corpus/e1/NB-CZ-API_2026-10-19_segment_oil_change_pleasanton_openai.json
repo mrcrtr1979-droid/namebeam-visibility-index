@@ -1,0 +1,46 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Eana8vuRB8kdXjrQ74Us6z18VbyVc",
+  "usage": {
+   "prompt_tokens": 21,
+   "completion_tokens": 1009,
+   "total_tokens": 1030,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Valvoline Instant Oil Change",
+  "Jiffy Lube",
+  "Pep Boys",
+  "ASE-certified"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Do you want a quick express oil change (30–45 min) or a full-service shop/mechanic who’ll do a more thorough inspection? Also: what’s the car (make/model/year) and do you need full synthetic?\n\nQuick guidance now:\n- For fast, convenient service: national quick-change shops like Valvoline Instant Oil Change, Jiffy Lube, and Pep Boys are usually good — they do fast oil/filter swaps and offer synthetic options and coupons.\n- For thorough service or specialty vehicles: go to a reputable independent mechanic or your dealer (especially if under warranty or for European/Japanese vehicles that need OEM fluids).\n- How to pick the best place: look for ASE-certified techs, transparent pricing (oil + filter + disposal fee), the correct oil type (full synthetic if required), included services (fluid top-offs, multi-point inspection), recent online reviews (Google/Yelp), and whether they let you wait or provide a loaner.\n\nIf you want, tell me your car and whether you prefer fast/cheap vs thorough/official and I’ll recommend a few specific shops in Pleasanton (and what to ask them).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_str_host_tooling_openai",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Eampb2elVNZdLn1xwA21U6Z85D4IM",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1253,
+   "total_tokens": 1279,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "MarketMinder",
+  "Rentalizer",
+  "PriceLabs",
+  "Beyond Pricing",
+  "Wheelhouse",
+  "Use PriceLabs",
+  "Use Beyond Pricing",
+  "Use Wheelhouse",
+  "AllTheRooms",
+  "Mashvisor",
+  "Beyond",
+  "Use AirDNA",
+  "Smart Pricing",
+  "For Market Analysis",
+  "For ongoing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- For market analysis before buying: AirDNA (MarketMinder + Rentalizer) is the best single tool most investors use.\n- For ongoing nightly pricing/revenue management once you list: PriceLabs, Beyond Pricing, or Wheelhouse — pick PriceLabs if you want the most customizable rules and analytics; Beyond Pricing if you want a very simple, automated setup; Wheelhouse if you want advanced revenue-management features.\n\nWhy those picks\n- AirDNA: large STR dataset, neighborhood-level metrics (ADR, occupancy, RevPAR), seasonality, lead-time and booking window data, and a Rentalizer to estimate revenue for a specific address. Good for screening cities/neighborhoods and running pro forma assumptions.\n- PriceLabs: excellent dynamic-pricing engine with highly customizable rules, minimum/maximum price control, length-of-stay and weekday controls, and good integration with most PMS/channel managers.\n- Beyond Pricing: simpler, hands-off automation; good if you want set-and-forget revenue optimization.\n- Wheelhouse: more advanced forecasting and risk-adjusted pricing options for power users.\n\nHow to use them together (recommended workflow)\n1. Market screen with AirDNA: look at ADR, occupancy, RevPAR, seasonality, demand index, and comparable listings in the exact neighborhood. Use Rentalizer to estimate revenue for the address/type.\n2. Verify manually: check real Airbnb listings, read local laws/regulations, assess comps, talk to local managers/hosts, and run a full expense pro forma (mortgage, taxes, cleaning, utilities, vacancy, management fee).\n3. If you buy, connect your listing to a dynamic-pricing tool:\n   - Use PriceLabs if you want granular control, custom rules and analytics.\n   - Use Beyond Pricing to automate quickly with minimal setup.\n   - Use Wheelhouse if you want advanced testing and segmentation.\n4. Integrate with a PMS/channel manager (Hostaway, Guesty, Lodgify, etc.) if you have multiple listings; all the pricing tools integrate with major managers.\n5. Continuously monitor bookings and adjust strategy; use the analytics dashboards on AirDNA/PriceLabs to validate assumptions.\n\nOther tools to consider\n- Mashvisor: useful for combined long-term and short-term investment analysis (property-level ROI).\n- Transparent, AllTheRooms: alternative analytics providers (good in particular markets/regions).\n- Airbnb Smart Pricing: free but less sophisticated — fine for a single listing or to compare.\n\nFinal recommendation\n- If you can only pick one before buying: use AirDNA to evaluate markets and revenue potential.\n- After purchase/listing: use PriceLabs for pricing + AirDNA to keep monitoring market trends.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

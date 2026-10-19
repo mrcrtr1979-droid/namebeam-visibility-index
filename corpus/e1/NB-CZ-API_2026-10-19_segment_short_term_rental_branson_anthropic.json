@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_short_term_rental_branson_anthropic",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "claude-haiku-4-5-20251001",
+  "response_id": "msg_011CgC71j79K167PqphKa2LR",
+  "usage": {
+   "input_tokens": 33,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 304,
+   "service_tier": "standard",
+   "inference_geo": "not_available",
+   "speed": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Chateau on the Lake",
+  "Branson Landing hotels",
+  "Hollister area",
+  "Airbnb",
+  "Table Rock Lake area",
+  "Downtown Branson",
+  "Kimberling City",
+  "Silver Dollar City",
+  "Table Rock Lake",
+  "Branson Accommodation Guide",
+  "Hollister",
+  "Table Rock",
+  "Landing"
+ ],
+ "engine_stated_criteria": [
+  "Choose Airbnb if you",
+  "Choose a hotel if you"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Branson Accommodation Guide\n\n## Airbnb vs. Hotel\n\n**Choose Airbnb if you:**\n- Want a kitchen (saves money on meals)\n- Need multiple bedrooms for groups\n- Prefer a home-like atmosphere\n- Stay 3+ nights\n\n**Choose a hotel if you:**\n- Want daily housekeeping\n- Prefer front desk services\n- Only stay 1-2 nights\n- Want predictable amenities\n\n## Specific Recommendations\n\n**Hotels:**\n- **Chateau on the Lake** - Upscale, lakefront, great for special occasions\n- **Branson Landing hotels** - Convenient downtown location, walkable to restaurants\n- **Hollister area** - Quieter, scenic, 10 min from main attractions\n\n**Airbnb:**\n- **Table Rock Lake area** - Beautiful views, peaceful\n- **Downtown Branson** - Walking distance to Silver Dollar City, restaurants\n- **Kimberling City** - More secluded, nature-focused\n\n## Pro Tips\n- Book near **Silver Dollar City** or **Table Rock Lake** based on your main interests\n- Avoid the strip during peak season (summer, holidays) if you want quiet\n- Check reviews for noise levels—some areas get busy with tourist traffic\n\nWhat's your main priority—budget, location, or specific attractions?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

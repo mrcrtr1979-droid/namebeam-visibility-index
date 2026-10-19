@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_tire_shops_pleasanton_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: tire shops, Pleasanton",
+ "niche": "tire shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I buy tires in Pleasanton CA and who does the best installation?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_dbf0ca87-5747-4778-80fd-b32cb58fc05e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 4971,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4421,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 332,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5303
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton-based shop",
+  "Big Brand Tire & Service",
+  "Tire Choice",
+  "Costco",
+  "Big Brand",
+  "America",
+  "Tire",
+  "Pleasanton. Tire Rack",
+  "Big Brand Tire",
+  "Tire Rack",
+  "America’s Tire",
+  "My pick",
+  "My pick for installation",
+  "America’s Tire in Dublin"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.tirerack.com/installers/ca/pleasanton/94588/the-tire-choice-1633?id=8610837-022",
+  "https://www.bigbrandtire.com/locations/3687-old-santa-rita-rd-pleasanton-ca-94588",
+  "https://www.costco.com/w/-/ca/pleasanton/1341",
+  "https://www.costco.com/warehouse-locations-1341.html",
+  "https://www.tirerack.com/installers/ca/pleasanton/94588",
+  "https://www.tirerack.com/installers/ca/pleasanton/94566",
+  "https://www.bigbrandtire.com/tire-shop/pleasanton-ca",
+  "https://locations.thetirechoice.com/ca/pleasanton/4216-rosewood-rd",
+  "https://www.bigotires.com/location/ca-pleasanton-94566/005024/tire-services-and-repair",
+  "https://www.bigotires.com/location/ca/pleasanton/3688a-washington-st-94566/005024/tire-services-and-repair/brake-repair/tire-services-and-repair",
+  "https://www.carfax.com/Auto-Repair-Pleasanton-CA_c12173",
+  "https://www.tirerack.com/installers/ca/pleasanton/94582",
+  "https://www.bigotires.com/location/ca/pleasanton/3688a-washington-st-94566/005024",
+  "https://reviews.birdeye.com/seever-sons-tire-156070849854197",
+  "https://careers.costco.com/jobs/60283?lang=en-us"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**My pick for installation: America’s Tire in Dublin** (6450 Dublin Blvd), just outside Pleasanton. Tire Rack lists it as a top-rated installer, based on **797 customer surveys**—a much larger sample than the nearby options. It’s a good bet if you want to compare tire choices and have them installed there.\n\nFor a **Pleasanton-based shop**, **Big Brand Tire & Service** at 3687 Old Santa Rita Rd is a strong alternative: it reports a **4.7/5 average from 710 reviews**, with customers often praising speed and service. **Tire Choice** at 4216 Rosewood Rd is another local option, with a broad selection of brands and installation.\n\n**Costco** at 7200 Johnson Dr may be worth checking for tire pricing if you’re a member; appointments are recommended, and walk-ins depend on bay availability.\n\n**Bottom line:** I’d choose **America’s Tire for the strongest installation track record**, or **Big Brand** if staying in Pleasanton matters more. Get an out-the-door quote from two shops and confirm it includes mounting, balancing, disposal, and any road-hazard coverage; prices and availability can vary by tire size.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_property_management_st_louis_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: property management, St. Louis",
+ "niche": "property management companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Louis MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_bfa326f6-d09b-44e2-8b15-87ac736922c4",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00457
+   },
+   "input_tokens": 5234,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4683,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 305,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5539
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Avenue Residential Leasing & Management",
+  "Intersection Real Estate",
+  "STL Smart Rentals",
+  "Avenue Residential Leasing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bestinhood.com/st-louis/real-estate-and-property-services/best-property-management-in-st-louis/",
+  "https://www.bbb.org/us/mo/ellisville/profile/property-management/st-louis-property-management-0734-310588166",
+  "https://intersectionstl.com/",
+  "https://homestretchpropertymanagement.com/",
+  "https://www.luxestl.com/",
+  "https://www.bbb.org/us/mo/saint-louis/category/real-estate-rentals/accredited",
+  "https://www.biggerpockets.com/mo/st-louis/property-managers",
+  "https://reviews.birdeye.com/st-louis-property-management-149480487447527",
+  "https://www.zillow.com/professionals/property-manager-reviews/63123/",
+  "https://www.bbb.org/us/mo/saint-louis/profile/property-management/mccormack-baron-management-inc-0734-110144140",
+  "https://www.bbb.org/us/mo/hazelwood/category/property-management/accredited",
+  "https://propertymanagementstl.com/",
+  "https://www.stlouispropertymanagement.co/pricing",
+  "https://smplpropertymanagement.com/",
+  "https://www.zillow.com/professionals/property-manager-reviews/63113/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Avenue Residential Leasing & Management** looks like a strong first company to interview. It manages single-family rentals across the St. Louis area and reports 22+ years of local experience, 800+ managed properties, and a 4.8-star rating across 370+ reviews. It also says it doesn’t charge a management fee when a home is vacant or rent goes unpaid.\n\nI’d compare it with **Intersection Real Estate**, which advertises a flat **$90/month** management fee for a single-family home, and **STL Smart Rentals**, which is listed as focused on single-family rentals in the county. Reviews and advertised fees are only a starting point, so ask each for a sample management agreement and a complete fee schedule.\n\nBefore choosing, compare the **leasing fee, renewal fee, maintenance markup, inspection frequency, cancellation terms, and how quickly they respond to owners and tenants**. Also confirm they manage homes in your specific neighborhood—coverage and performance can vary across the metro area.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

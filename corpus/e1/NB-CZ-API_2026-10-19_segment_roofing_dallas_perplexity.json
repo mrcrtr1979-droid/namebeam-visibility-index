@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_roofing_dallas_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3eced933-9b7a-4327-88a2-773de1f911b1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00093,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00063,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0042
+   },
+   "input_tokens": 4265,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3718,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 252,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4517
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "New View Roofing",
+  "Pickle Roofing Solutions",
+  "Bold Roofing Company",
+  "Dallas-based",
+  "BBB-accredited",
+  "Bold Roofing",
+  "GAF Master Elite Contractor"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/tx/dallas/profile/roofing-contractors/dane-roofing-llc-0875-90338116",
+  "https://www.bbb.org/us/tx/dallas/category/roofing-contractors",
+  "https://www.bbb.org/us/ga/dallas/profile/roofing-contractors/apex-roofing-solutions-0443-91824743",
+  "https://eliteroofpro.com/dallas-tx/",
+  "https://www.bbb.org/us/tx/dallas/category/general-contractor",
+  "https://www.bbb.org/us/tx/dallas/category/roof-replacement/accredited",
+  "https://www.bbb.org/us/tx/dallas/profile/roofing-contractors/bold-roofing-company-inc-0875-23000679",
+  "https://www.bbb.org/us/tx/dallas/profile/roofing-contractors/remarkable-roofing-and-construction-llc-0875-90711665",
+  "https://www.bbb.org/us/ga/hiram/profile/roofing-contractors/dallas-roofing-llc-0443-28170761",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/tx/dallas",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/ga/dallas",
+  "https://www.bbb.org/us/tx/dallas/category/roof-replacement",
+  "https://newviewroofing.com/",
+  "https://pickleroofing.com/roof-replacement-contractor-dallas-tx",
+  "https://lotusroofrestoration.com/roof-repair-north-dallas-tx/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” roofer for every Dallas home, but **New View Roofing** is a strong company to include on your shortlist: it’s Dallas-based and listed as a GAF Master Elite contractor, a credential that can make enhanced GAF warranties available on qualifying roof systems.\n\nI’d also get bids from **Pickle Roofing Solutions** and **Bold Roofing Company**. Pickle is another GAF Master Elite contractor serving Dallas; Bold is Dallas-based, BBB-accredited, and lists roof replacements among its services.\n\nBefore choosing, get **three written, itemized estimates** and compare the same materials and scope. Verify current insurance, ask who supervises the crew, and get the workmanship warranty and cleanup terms in writing. BBB ratings and manufacturer credentials are useful checks, but neither guarantees the quality of a particular job.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

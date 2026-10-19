@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-19_segment_real_estate_agents_pleasanton_perplexity",
+ "date_utc": "2026-10-19",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_659359f4-8845-4dc1-90da-63aca9e06d26",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00457
+   },
+   "input_tokens": 5077,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4527,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 321,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5398
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Tim McGuire’s team at Compass",
+  "Doug Buenz’s team at Compass",
+  "Gina Piper at Elation Real Estate",
+  "Tim McGuire",
+  "Compass",
+  "Doug Buenz",
+  "Gina Piper",
+  "Elation Real Estate"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.realtor.com/realestateagents/Pleasanton_CA",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/pleasanton-ca/",
+  "https://www.zillow.com/profile/MichaelTessaro",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/94566/",
+  "https://www.zillow.com/profile/GinaPiperElationRE",
+  "https://www.realtor.com/realestateagents/6564e2af02b90e839dfc8be9",
+  "https://www.ratemyagent.com/real-estate-profile/sales/california/pleasanton-ca/agents",
+  "https://www.ratemyagent.com/real-estate-profile/sales/california/pleasanton-ca",
+  "https://www.realtor.com/realestateagents/56809b62bb954c010068fe8e",
+  "https://www.zillow.com/profile/robinyoungrealtor",
+  "https://www.zillow.com/profile/aidenkim1",
+  "https://www.homes.com/real-estate-agents/major-gill/g6pmxrx/",
+  "https://www.realtor.com/realestateagents/56736d127e54f701001dbfbb",
+  "https://www.homes.com/real-estate-agents/patricio-onquit/cz6096f/",
+  "https://www.homes.com/real-estate-agents/pleasanton-ca/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent—the right choice depends on your home’s price range, neighborhood, and how much hands-on service you want. Based on the available Pleasanton sales and review information, **Tim McGuire’s team at Compass** is a strong candidate to interview: the directory results show substantial local experience, including hundreds of Pleasanton sales and roughly 70 team sales in the past year. **Doug Buenz’s team at Compass** is another experienced option, with hundreds of local sales. For a boutique brokerage, **Gina Piper at Elation Real Estate** is worth considering; her profile reports 20 sales in the past year and a large sales history.\n\nTreat those figures as a shortlist, not a definitive ranking: team totals aren’t necessarily an individual agent’s seller-side results, and directory data can vary. Interview two or three agents and ask each for **recent sales in your neighborhood and price range, seller-side results, a proposed pricing and marketing plan, expected net proceeds, and the listing agreement’s fee and cancellation terms**. Choose the person whose plan and communication style you trust—not just the biggest sales count.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
