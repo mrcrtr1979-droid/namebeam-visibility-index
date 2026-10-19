@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t fetch or verify live web content (my browsing is disabled and my training stops in 2024), so I can’t directly look up Namebeam’s 2026 AI Visibility Record to get that count for you.\n\nIf you want the exact number now, you can either:\n- Allow me to access the web (if your interface offers a browsing capability), or\n- Paste the AI Visibility Record content or the relevant excerpt here, and I’ll extract and count the domains for you.\n\nWhere it’s published\n- The AI Visibility Record is published by Namebeam on Namebeam’s website — see the “AI Visibility Record” page or Namebeam’s blog/announcements on namebeam.com (or the Namebeam site you use).\n\nIf you want to compute the count yourself, here are two quick ways:\n\n1) Simple Python script (fetch a public HTML page, extract links Perplexity cited between the two dates, and count unique domains)\n- Note: you may need to adapt selectors if the site structure is different.\n\n```python\nimport requests\nfrom bs4 import BeautifulSoup\nfrom urllib.parse import urlparse\nimport re\n\nurl = \"https://namebeam.com/ai-visibility-record\"  # replace with the exact URL\nr = requests.get(url)\nsoup = BeautifulSoup(r.text, \"html.parser\")\n\n# adjust this to select the per-day entries and Perplexity's answers on the page\nentries = soup.select(\".daily-entry\")  # example selector; change as needed\n\nstart_date = \"2026-09-01\"\nend_date   = \"2026-09-27\"\n\ndomains = set()\nfor e in entries:\n    date = e.select_one(\".date\").get_text(strip=True)  # adapt selector\n    if start_date <= date <= end_date:\n        # find Perplexity answer block (adjust selector to match site)\n        pblock = e.select_one(\".perplexity-answer\")\n        if not pblock:\n            continue\n        for a in pblock.find_all(\"a\", href=True):\n            href = a['href']\n            parsed = urlparse(href)\n            if parsed.netloc:\n                domains.add(parsed.netloc.lower())\n\nprint(\"Unique domains cited by Perplexity:\", len(domains))\nfor d in sorted(domains):\n    print(d)\n```\n\n2) Command-line idea (if you have a scraped text/HTML file):\n- Extract URLs with a regex and print unique domains:\n\n```\ngrep -oE 'https?://[^\"'\\'' >]+' page.html | sed -E 's#https?://##' | sed -E 's#/.*$##' | sort -u | wc -l\n```\n\nIf you paste the record link or the content here, I’ll run the extraction and give you the exact number and list the publication URL. Which would you prefer?",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-19T18:49:30Z",
+ "ok": true,
+ "probe_id": "A",
+ "prompt_sha256": "940f0824e14031113e8b576a7139c4427b38e8ac1ad5483a1335b3f802676221",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web domains did Perplexity cite in its answers to the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "treatment_anchored",
+ "run_id": "39305741894",
+ "search_mode": "no search tool (E1 setting)"
+}
