@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t access the web from here, so I can’t look up Namebeam’s AI Visibility Record or verify that exact number myself. If you can either\n\n- paste the link to the Namebeam page or the dataset here, or  \n- copy/paste the record’s daily lists (or a downloadable CSV/JSON),\n\nI’ll compute the distinct-page count for 2026-09-01 through 2026-09-27 and tell you exactly where it’s published.\n\nIf you want to do it yourself, here are quick options:\n\n1) On the Namebeam page\n- Look for the “AI Visibility Record” post or dataset covering 2026-09-01 to 2026-09-27 (likely on namebeam.com or a Namebeam blog/research page).\n- If they provide daily top-10 search-result lists, union all URLs across the 27 days to get the distinct count.\n\n2) Programmatic (Python) example to count distinct URLs if you have a CSV with columns date and url:\n- Read CSV, filter rows between 2026-09-01 and 2026-09-27, get unique urls, print len(unique_urls).\n\nIf you give me the link or the data, I’ll do the count and report the number and the exact publication location.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-20T17:29:08Z",
+ "ok": true,
+ "probe_id": "NC",
+ "prompt_sha256": "efbb2eccf1f282e2dfdb6e4a46f44888ad548f405a891de2b76dea5850430d16",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web pages did Google's top 10 results list for the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "negative_control",
+ "run_id": "39466448009",
+ "search_mode": "no search tool (E1 setting)"
+}
