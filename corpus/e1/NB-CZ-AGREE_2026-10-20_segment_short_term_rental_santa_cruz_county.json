@@ -1,0 +1,131 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-10-20_segment_short_term_rental_santa_cruz_county",
+ "date_utc": "2026-10-20",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "row_type": "agreement",
+ "prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engines_compared": [
+  "anthropic",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Capitola Village",
+    "Aptos",
+    "Seacliff",
+    "Compare",
+    "Davenport"
+   ],
+   "verbose_names": [
+    "Boardwalk",
+    "Capitola Village",
+    "Aptos",
+    "Seacliff",
+    "Pleasure Point",
+    "Soquel",
+    "Davenport",
+    "Felton",
+    "Boulder Creek",
+    "Bonny Doon",
+    "Scotts Valley",
+    "Santa Cruz Beach Boardwalk",
+    "Steamer Lane",
+    "Henry Cowell",
+    "Big Basin",
+    "Capitola",
+    "Twin Lakes",
+    "Booking"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 18,
+   "containment_pct": 80.0,
+   "shared_count": 4,
+   "answer_chars_a": 2739,
+   "answer_chars_b": 5764,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Booking.com",
+    "Santa Cruz Beach",
+    "Scotts Valley"
+   ],
+   "verbose_names": [
+    "Capitola Village",
+    "Aptos",
+    "Seacliff",
+    "Compare",
+    "Davenport"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 5,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2739,
+   "answer_chars_b": 1211,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Booking.com",
+    "Santa Cruz Beach",
+    "Scotts Valley"
+   ],
+   "verbose_names": [
+    "Boardwalk",
+    "Capitola Village",
+    "Aptos",
+    "Seacliff",
+    "Pleasure Point",
+    "Soquel",
+    "Davenport",
+    "Felton",
+    "Boulder Creek",
+    "Bonny Doon",
+    "Scotts Valley",
+    "Santa Cruz Beach Boardwalk",
+    "Steamer Lane",
+    "Henry Cowell",
+    "Big Basin",
+    "Capitola",
+    "Twin Lakes",
+    "Booking"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 18,
+   "containment_pct": 100.0,
+   "shared_count": 3,
+   "answer_chars_a": 5764,
+   "answer_chars_b": 1211,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

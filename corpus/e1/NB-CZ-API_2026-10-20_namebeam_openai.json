@@ -1,0 +1,68 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_namebeam_openai",
+ "date_utc": "2026-10-20",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Eb7V7UPkgR1uiTDTvEDJug8GVHbLz",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1818,
+   "total_tokens": 1842,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1088,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bing Places",
+  "Apple Maps",
+  "AIs",
+  "Bing Chat",
+  "Yext",
+  "BrightLocal",
+  "Moz Local",
+  "TripAdvisor",
+  "Add LocalBusiness",
+  "Wikipedia and Wikidata",
+  "Bing Chat and Bard",
+  "Your Business Name",
+  "Your Business",
+  "Bing Chat APIs",
+  "Knowledge Graph",
+  "Answers and BrightLocal",
+  "ReviewTrackers",
+  "Podium",
+  "Bing Chat API",
+  "ChatGPT and Bing Chat",
+  "OpenAI",
+  "Bing API",
+  "Local SEO",
+  "Business Name",
+  "OpenAI API",
+  "Test LLMs"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: There isn’t a single commercial “AI recommendation checker.” The practical best approach is two-fold: 1) control and publish accurate business data on the services LLMs and search engines rely on (Google Business Profile, Bing Places, Yelp, Apple Maps, Wikipedia/Wikidata, schema.org) and 2) directly test/monitor generative AIs (ChatGPT, Bing Chat, Bard) — either manually or with automated API checks. For centralized paid management, Yext (or BrightLocal/Moz Local for local-SEO/listings) is the closest thing to a single service that helps your business be surfaced reliably by search/AI.\n\nRecommended plan (practical and implementable)\n1. Make sure your data sources are correct\n   - Claim and complete Google Business Profile and Bing Places listings.\n   - Be on Yelp, Apple Maps, Facebook, TripAdvisor (if relevant).\n   - Add LocalBusiness schema markup on your website and a clear NAP (name/address/phone).\n   - Create/claim Wikipedia and Wikidata pages if eligible.\n   These are the primary sources search engines and knowledge graphs use; LLMs often draw on those.\n\n2. Test LLMs directly\n   - Manually ask ChatGPT, Bing Chat and Bard location-aware prompts: e.g., “Recommend top coffee shops in [city]” or “Is [Your Business Name] a good [service] in [city]?” Include the location in the prompt.\n   - Try “compare” prompts: “Compare [Your Business] and [Competitor] for [service].”\n   - Use the chat models’ browsing/web-enabled modes where available (Bing, ChatGPT with web access).\n\n3. Automate monitoring at scale (if you want regular checks)\n   - Use the OpenAI/Bing Chat APIs to run a set of test queries (vary wording and locations) and parse responses for mentions/recommendations of your business.\n   - Run weekly/monthly checks and log results to detect changes.\n   - If you prefer an off-the-shelf product, Yext’s Knowledge Graph + Answers and BrightLocal/Moz Local for listings + reputation tools (ReviewTrackers, Podium) help you control data and monitor visibility.\n\n4. Monitor reputation and web mentions\n   - Use Mention, Brand24 or Google Alerts to track web/review mentions — LLMs often surface businesses mentioned or reviewed online.\n   - Encourage good reviews (Google, Yelp) since LLMs can surface businesses with strong review presence.\n\n5. Understand limitations\n   - LLMs can hallucinate and don’t always cite sources. A positive mention isn’t a guaranteed referral channel.\n   - Different models use different sources and update frequencies (Bing Chat uses live web results; ChatGPT depends on model/plugins or browsing settings).\n\nQuick suggested tools\n   - Free/essential: Google Business Profile, Bing Places, Yelp, Apple Maps, schema.org markup on your site.\n   - Paid/listings management: Yext (best for centralized knowledge management), BrightLocal or Moz Local (local SEO monitoring).\n   - Monitoring/alerts: Mention, Brand24, Google Alerts, ReviewTrackers, Podium.\n   - Automation testing: OpenAI API or Bing Chat API + a small script to run and parse queries.\n\nIf you want, I can:\n   - Draft example prompts to test ChatGPT and Bing Chat for your business.\n   - Give a short script (OpenAI or Bing API) to run automated checks and look for mentions. Which would you prefer?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

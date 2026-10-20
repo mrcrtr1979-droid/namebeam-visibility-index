@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-10-20",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_82ab6788-92c7-4a3a-b626-5ac5b4742a9f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00443
+   },
+   "input_tokens": 4797,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4250,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 291,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5088
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dunn Orthodontics",
+  "Serrano Orthodontics",
+  "Arizona Orthodontic Studio",
+  "Budd Orthodontics",
+  "Invisalign",
+  "American Board of Orthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.yelp.com/biz/arizona-orthodontic-studio-phoenix",
+  "https://www.zocdoc.com/orthodontists/phoenix-220419pm",
+  "https://dunn-orthodontics.com/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/premier-orthodontics-of-central-phoenix-phoenix-az",
+  "https://serranoorthodontics.com/welcome/",
+  "https://trustanalytica.org/us/az/phoenix/best-clear-braces",
+  "https://smilestraightphx.com/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/rodeo-dental-orthodontics-of-phoenix-phoenix-az",
+  "https://serranoorthodontics.com/invisalign/",
+  "https://nationalorthodonticregistry.com/treatments/invisalign/arizona/phoenix-az",
+  "https://www.buddorthodontics.com/invisalign-treatment",
+  "https://www.thekidsdentalofficeofphoenix.com/invisalign/",
+  "https://www.myspecialtydentist.com/best/orthodontics/az/phoenix",
+  "https://www.murphyorthodontics.com/services/invisalign-phoenix-az/",
+  "https://aosmiles.com/about/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist—the right choice depends on your location, case, budget, and whether you prefer braces or aligners. A few Phoenix practices worth comparing are:\n\n- **Dunn Orthodontics** — board-certified orthodontists, braces and Invisalign; Phoenix office on E. Bethany Home Road.\n- **Serrano Orthodontics** — board-certified doctors, braces and Invisalign; Phoenix office on E. Missouri Avenue.\n- **Arizona Orthodontic Studio** — offers braces and Invisalign; on N. 19th Avenue.\n- **Budd Orthodontics** — offers braces and Invisalign; Phoenix office on N. 32nd Street.\n\nI’d book two or three consultations and ask each orthodontist to explain your bite and treatment options, who will supervise your care, the full cost (including retainers and refinements), and how often visits are needed. Check board certification directly with the American Board of Orthodontics, and confirm current reviews, insurance, and availability before booking.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

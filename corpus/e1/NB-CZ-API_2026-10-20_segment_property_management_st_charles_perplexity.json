@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_segment_property_management_st_charles_perplexity",
+ "date_utc": "2026-10-20",
+ "business": "SEGMENT: property management, St. Charles",
+ "niche": "property management companies",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Charles MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c2ce0a91-0b46-4d9f-ab4b-0e891ca103b5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00064,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00442
+   },
+   "input_tokens": 5100,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4549,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 255,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5355
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Homestretch Property Management",
+  "Keyrenter St. Charles",
+  "RPM Endeavor"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.keyrenterstcharles.com/pricing",
+  "https://westward360.com/service-area/hoa-management-st-charles/",
+  "https://www.alpharealestategrp.com/",
+  "https://www.keyrenterstcharles.com/owners",
+  "https://www.propertysolutionstl.com/",
+  "https://www.keyrenterstcharles.com/",
+  "https://www.rpmendeavor.com/areas-we-serve/st-charles-county/saint-charles",
+  "https://homestretchpropertymanagement.com/property-management/areas-we-serve/st-charles-property-management/",
+  "https://homestretchpropertymanagement.com/property-management/areas-we-serve/st-charles-county-property-management/",
+  "https://www.keyrenterstcharles.com/weldon-spring-property-management",
+  "https://www.zillow.com/professionals/property-manager-reviews/saint-charles-mo/",
+  "https://www.tpm-stl.com/meet-brad",
+  "https://www.zillow.com/professionals/property-manager-reviews/63301/",
+  "https://homestretchpropertymanagement.com/property-management-cost-st-charles-mo/",
+  "https://propertymanagementstl.com/areas-we-serve/st-charles/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a definitive “best” for every rental home, but **Homestretch Property Management** looks like a strong first company to interview: it serves St. Charles, offers full-service management, and reports an “Excellent” rating based on 404 Google reviews. Those reviews are a useful signal, though they don’t guarantee the experience of every owner.\n\nI’d compare it with **Keyrenter St. Charles**, which publishes pricing and describes full-service management, and **RPM Endeavor**, which lists services including tenant screening, inspections, maintenance coordination, and accounting.\n\nBefore choosing, ask each for a written, property-specific fee schedule and clarify the leasing fee, renewal and vacancy charges, maintenance markups, inspection frequency, owner-approval limits for repairs, and how you can end the agreement. The lowest monthly percentage may not mean the lowest total cost.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

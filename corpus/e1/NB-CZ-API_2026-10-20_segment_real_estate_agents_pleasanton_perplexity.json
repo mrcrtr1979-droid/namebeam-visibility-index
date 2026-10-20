@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_segment_real_estate_agents_pleasanton_perplexity",
+ "date_utc": "2026-10-20",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1e83bbfe-f56e-41a9-830d-bde85ee54a4e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0009,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00465
+   },
+   "input_tokens": 4978,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4428,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 359,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5337
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Tim McGuire’s team at Compass",
+  "Doug Buenz’s 680 Group",
+  "Tim McGuire",
+  "Doug Buenz",
+  "Pleasanton. Those",
+  "DougBuenz"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.zillow.com/profile/DougBuenz",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/pleasanton-ca/",
+  "https://www.zillow.com/profile/MichaelTessaro",
+  "https://www.zillow.com/profile/Marjie%20Kosic",
+  "https://www.homes.com/real-estate-agents/bob-baptiste/vrj7yyd/",
+  "https://www.zillow.com/profile/eellison47",
+  "https://www.homes.com/real-estate-agents/cindy-gee/gx457ww/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/94566/",
+  "https://www.homes.com/real-estate-agents/robin-young/7ydvb3x/",
+  "https://www.zillow.com/profile/UhomeUlife",
+  "https://www.redfin.com/city/14986/CA/Pleasanton/real-estate/agents",
+  "https://www.homes.com/real-estate-agents/cindi-hagley/3m4s7eg/",
+  "https://www.homes.com/real-estate-agents/carrie-schwabacher/tvrmblc/",
+  "https://www.homes.com/real-estate-agents/gina-piper/2d7dtq9/",
+  "https://www.zillow.com/profile/PatricioOnquit"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent—the right choice depends on your home’s neighborhood, price range, and what you value in a sale. Based on the available directory results, **Tim McGuire’s team at Compass** is one candidate to interview: it reports 70 team sales in the past 12 months and 628 sales in Pleasanton. **Doug Buenz’s 680 Group** is another, with 28 team sales in the past 12 months and 569 in Pleasanton. Those are team figures, not necessarily the individual agent’s seller-side results.\n\nBefore choosing, interview two or three agents and ask each for:\n- Recent **seller-represented** sales near your home, at a similar price point\n- Their pricing strategy and comparable-sale analysis\n- A written marketing plan and who will handle showings and negotiations\n- Their proposed commission and contract terms\n\nYou can compare the agents’ profiles here: [Tim McGuire](https://www.zillow.com/professionals/real-estate-agent-reviews/pleasanton-ca/) and [Doug Buenz](https://www.zillow.com/profile/DougBuenz). I’d choose the agent who can clearly explain a realistic pricing plan and show strong, recent results with homes like yours—not simply the one with the most sales.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_segment_title_companies_miami_perplexity",
+ "date_utc": "2026-10-20",
+ "business": "SEGMENT: title companies, Miami",
+ "niche": "title companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Miami FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b3cab592-0c50-44d4-96ab-d180520a9ab9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00436
+   },
+   "input_tokens": 4601,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4054,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 282,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4883
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Worldwide Title",
+  "TBG Title Services",
+  "Marina Title",
+  "Florida Department of Financial Services",
+  "Department of Financial Services",
+  "Florida DFS"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.myfloridacfo.com/division/consumers/understanding-insurance/title-insurance-overview",
+  "https://myfloridacfo.com/docs-sf/consumer-services-libraries/consumerservices-documents/understanding-coverage/consumer-guides/english---title-insurance-guide.pdf?sfvrsn=a8bfe5a3_2",
+  "https://www.myfloridacfo.com/docs-sf/consumer-services-libraries/consumerservices-documents/understanding-coverage/consumer-guides/english---title-insurance-guide.pdf?sfvrsn",
+  "https://palmtitle.com/",
+  "https://atlantictitlefirm.com/reviews",
+  "https://www.yelp.com/biz/hemisphere-title-company-miami-lakes",
+  "https://www.titleescrowmiami.com/testimonials/",
+  "https://oneworldwidetitle.com/",
+  "https://www.yelp.com/biz/florida-title-and-trust-miami",
+  "https://www.yelp.com/biz/marina-title-miami",
+  "https://www.gftitle.com/faqs",
+  "https://www.yelp.com/biz/southeastern-title-company-aventura",
+  "https://reviews.birdeye.com/tbg-title-services-llc-168220908251280",
+  "https://completechoicetitle.com/about-us/",
+  "https://www.flamingotitle.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” title company for every Miami closing. **Worldwide Title** looks like a reasonable first company to contact: its site reports a 4.8 Google rating and highlights communication and experience with complex closings. That’s a useful lead, not an independent guarantee.\n\nI’d compare it with one or two other local firms—such as **TBG Title Services** or **Marina Title**—and ask each for a written estimate of title-agency and closing fees, who will handle your file, and how they manage title issues and closing funds. Check the company’s license with the Florida Department of Financial Services and confirm your lender will approve it.\n\nFlorida’s Department of Financial Services says you can choose your title agent, though the lender must approve the agent; it also recommends comparing fees and services. [Florida DFS title insurance guidance](https://www.myfloridacfo.com/division/consumers/understanding-insurance/title-insurance-overview)",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

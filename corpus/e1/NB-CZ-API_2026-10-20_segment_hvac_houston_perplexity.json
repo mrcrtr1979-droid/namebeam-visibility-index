@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_segment_hvac_houston_perplexity",
+ "date_utc": "2026-10-20",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d9f01b75-cb50-43db-832a-8e288f7d7b74",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00118,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00051,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00433
+   },
+   "input_tokens": 5267,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4721,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 204,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5471
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Tech of Houston AC & Plumbing",
+  "Bodensteiner Service",
+  "Air Tech of Houston AC",
+  "Texas HVAC",
+  "Air Tech of Houston"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://hvacserviceshoustontx.com/",
+  "https://www.northwindac.com/",
+  "https://www.bestinhood.com/houston/home-maintenance-and-repair/best-air-conditioner-repair-in-houston/",
+  "https://www.bestinhood.com/houston/home-maintenance-and-repair/best-hvac-services-in-houston/",
+  "https://texas.twupro.com/hvac-contractors/houston/",
+  "https://www.thumbtack.com/tx/houston/central-air-conditioning-repair/freedom-comfort-systems/service/583089603275005956",
+  "https://hvacservice.io/tx/houston/emergency-hvac",
+  "https://www.consumeraffairs.com/homeowners/hvac-repair-houston.html",
+  "https://www.expertise.com/home-improvement/ac-repair/texas/houston",
+  "https://www.bestprosintown.com/tx/houston/hvac/",
+  "https://www.royalairhouston.com/",
+  "https://www.aireserv.com/houston-northwest/",
+  "https://threebestrated.com/hvac-services-in-houston-tx",
+  "https://thechillbrothers.com/best-hvac-companies-houston/",
+  "https://www.expertise.com/home-improvement/hvac/texas/houston"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every Houston home, but **Air Tech of Houston AC & Plumbing** looks like a strong all-around option: a local directory lists it at **4.9 stars across more than 6,000 reviews**, and reports 24/7 emergency service.\n\nFor a smaller, family-owned option, **Bodensteiner Service** also stands out in local listings, with customers praising its repair work and straightforward pricing. Before booking, confirm the company serves your ZIP code, ask about the diagnostic fee and written estimate, and verify its Texas HVAC license.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_namebeam_perplexity",
+ "date_utc": "2026-10-20",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a21b329a-a02e-44c2-a2b7-9fc29216e24f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00066,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00443
+   },
+   "input_tokens": 5090,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4538,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 265,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5355
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Otterly.AI",
+  "HubSpot’s free AI Search Grader",
+  "HubSpot",
+  "AI Search Grader",
+  "ChatGPT, Perplexity, and Gemini"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.dageno.ai/blog/best-ai-search-monitoring-tools-10-platforms-tracking-ai-visibility-citations-competitors",
+  "https://elfsight.com/blog/best-ai-visibility-tools/",
+  "https://www.semrush.com/blog/ai-optimization-tools/",
+  "https://www.semrush.com/blog/best-ai-visibility-tools/",
+  "https://visible.seranking.com/",
+  "https://blog.hubspot.com/marketing/answer-engine-optimization-tools",
+  "https://ahrefs.com/aeo/track-ai-visibility",
+  "https://visible.seranking.com/blog/best-ai-visibility-tools/",
+  "https://seobotai.com/blog/best-ai-visibility-tools-for-small-businesses/",
+  "https://www.useomnia.com/blog/ai-search-monitoring-tools",
+  "https://ayzeo.com/blog/ai-search-visibility-tools-small-businesses",
+  "https://blog.hubspot.com/marketing/best-ai-visibility-tools",
+  "https://www.airops.com/blog/best-llm-visibility-tools",
+  "https://otterly.ai/blog/best-ai-search-monitoring-and-llm-monitoring-solutions/",
+  "https://www.galvnews.com/online_features/press_releases/starks-command-launches-the-all-in-one-platform-that-helps-agencies-win-local-seo-and/article_bb56a98a-2ac1-5620-a9ca-2dac9cb47464.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For most small businesses, **Otterly.AI** looks like a practical starting point: it’s designed for smaller teams and tracks brand mentions and citations in ChatGPT and several other AI search services. Search results list its entry plan at about **$25–$29/month**, depending on billing—check its current plan details before subscribing.\n\nIf you only want a quick baseline, try **HubSpot’s free AI Search Grader** first. It gives a one-time snapshot across ChatGPT, Perplexity, and Gemini, rather than ongoing monitoring.\n\nOne caveat: these tools estimate visibility by testing selected questions and locations. They can’t guarantee what every person will see—AI answers vary with wording, location, and time. For a useful test, track questions customers actually ask, such as “best [service] near [town],” and check whether the tool supports your service area.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

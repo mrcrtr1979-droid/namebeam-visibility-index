@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_segment_health_insurance_kansas_city_perplexity",
+ "date_utc": "2026-10-20",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_03742ff5-c58c-4c47-9454-8be058bbc07f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00095,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00467
+   },
+   "input_tokens": 4855,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4304,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 381,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5236
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "BBS Insurance",
+  "AIS Health Advisors",
+  "Medicare",
+  "Medicare KC",
+  "ACA Marketplace",
+  "Overland Park-based",
+  "Missouri Side",
+  "Medicare Plan"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://medicarekc.net/",
+  "https://apollo-insurance.com/health-insurance-broker-kansas-city/",
+  "https://jeffdavidinsurance.com/",
+  "https://bbs-insurance.com/",
+  "https://aishealthadvisors.com/",
+  "https://ksassist.org/",
+  "https://bbs-insurance.com/health-insurance/",
+  "https://sites.google.com/view/health-insurance-kansas-city/home",
+  "https://apollo-insurance.com/health-insurance-broker-in-kansas-city/",
+  "https://ksassist.org/health-insurance-marketplace/what-is-it",
+  "https://aishealthadvisors.com/service-areas/kansas-city-ks/",
+  "https://aishealthadvisors.com/service-areas/kansas-city-mo/",
+  "https://aishealthadvisors.com/health-insurance/",
+  "https://www.salesjobs.com/sales-job/51017720",
+  "https://bbs-insurance.com/service-areas/kansas-city/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” broker—it depends on whether you need an ACA Marketplace plan, employer coverage, or Medicare, and whether you’re on the Kansas or Missouri side.\n\nFor **individual or family coverage**, I’d start with **BBS Insurance**: it says it compares Marketplace and private plans, serves both sides of the metro, and has offices in North Kansas City and Overland Park. Its site reports a 5.0 Google rating from 90 reviews. [BBS Insurance](https://bbs-insurance.com/) · (816) 205-4664 or (913) 871-1786\n\nAnother option is **AIS Health Advisors**, an Overland Park-based independent agency that says it helps compare ACA plans, check subsidy eligibility, and verify doctors and hospitals are in-network. [AIS Health Advisors](https://aishealthadvisors.com/health-insurance/) · (913) 333-8627\n\nIf you’re looking for **Medicare** specifically, **Medicare KC** specializes in Medicare plan comparisons and says its help is at no cost. [Medicare KC](https://medicarekc.net/)\n\nBefore choosing, ask whether they compare all relevant plans in your county, whether they’ll check your doctors and prescriptions, and how they’re compensated. You can also get free, unbiased Marketplace enrollment help through [HealthCare.gov’s local assistance finder](https://www.healthcare.gov/find-assistance/).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

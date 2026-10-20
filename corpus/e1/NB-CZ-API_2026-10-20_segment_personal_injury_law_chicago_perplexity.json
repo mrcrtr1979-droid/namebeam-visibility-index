@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_segment_personal_injury_law_chicago_perplexity",
+ "date_utc": "2026-10-20",
+ "business": "SEGMENT: personal injury law, Chicago",
+ "niche": "personal injury attorneys",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best personal injury attorney in Chicago for a car accident claim?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4f7c4ec4-e7f8-4ad2-a7c8-d0a4c97036d6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00454
+   },
+   "input_tokens": 5007,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4458,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 315,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5322
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Power Rogers",
+  "Salvi, Schostok & Pritchard",
+  "Phillips Law Offices",
+  "Chicago Bar Association Lawyer Referral Service",
+  "Illinois Attorney Registration and Disciplinary Commission",
+  "Disciplinary Commission",
+  "Illinois Attorney Registration"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.malmanlaw.com/",
+  "https://phillipslawoffices.com/",
+  "https://www.avvo.com/car-accidents-lawyer/il/chicago.html",
+  "https://www.powerrogers.com/",
+  "https://www.salvilaw.com/car-accident-lawyer/",
+  "https://www.chicagobar.org/CBA/CBA/LRS/LRS_Information_for_Lawyers.aspx",
+  "https://www.lawyers.com/personal-injury/chicago/illinois/law-firms/",
+  "https://www.willenslaw.com/",
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/illinois/chicago/",
+  "https://www.walnerlaw.com/",
+  "https://www.lawyers.com/motor-vehicle-accidents/chicago/illinois/law-firms/",
+  "https://apnews.com/press-release/ein-presswire-newsmatics/press-release-94679b0556da12d9306ed00dd82ea64b",
+  "https://www.lawyers.com/automobile-accidents/chicago/illinois/law-firms/",
+  "https://www.chicagobar.org/CBA/CBA/Legal_Help_for_the_Public/Lawyer_Referral_Service.aspx",
+  "https://attorneyatlawmagazine.com/best-attorneys/car-accident/illinois/chicago-attorney"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t an objectively established “best” Chicago car-accident attorney—the right choice depends on your injuries, the facts, and whether the case may need to go to trial.\n\nA reasonable shortlist to interview includes **Power Rogers**, **Salvi, Schostok & Pritchard**, and **Phillips Law Offices**. They handle injury claims including car accidents and report substantial litigation experience and recoveries. Those figures come from the firms themselves, so treat them as starting points, not proof that one is best for your case.\n\nBefore hiring anyone, speak with two or three firms and ask:\n- Who will personally handle my case, and how often will I hear from them?\n- Have you handled cases with similar injuries and disputed fault?\n- What is your fee percentage, and what case expenses might I owe?\n- Would you recommend settlement or trial in a case like mine, and why?\n\nYou can also request a screened referral from the **Chicago Bar Association Lawyer Referral Service** at **312-554-2001**. Check the attorney’s current standing with the Illinois Attorney Registration and Disciplinary Commission before signing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

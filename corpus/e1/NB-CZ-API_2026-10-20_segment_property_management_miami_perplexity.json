@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_segment_property_management_miami_perplexity",
+ "date_utc": "2026-10-20",
+ "business": "SEGMENT: property management, Miami",
+ "niche": "property management companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Miami FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f245e769-ff37-4891-9a21-594ed56045b8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00068,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 4753,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4204,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 273,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5026
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Novel Management",
+  "Pristine Property Management",
+  "Real Property Management Dade"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.pristinepm.com/",
+  "https://www.rpmdade.com/",
+  "https://www.miami-propertymanagement.net/",
+  "https://novelmanagement.com/property-management/",
+  "https://www.homeriver.com/florida/miami-property-management",
+  "https://luxurypropertycare.com/miami-property-management-services/",
+  "https://miamipropertymanagement.com/",
+  "https://www.miamipropertyservices.com/",
+  "https://www.incomerealty.net/",
+  "https://www.biggerpockets.com/fl/miami/property-managers",
+  "https://www.pmimiamicoast.com/",
+  "https://www.bbb.org/us/fl/north-miami/category/property-management",
+  "https://www.bbb.org/us/fl/miami/profile/property-management/miami-management-inc-0633-33000905/customer-reviews",
+  "https://www.allpropertymanagement.com/property-management/companies/45310/nadlan-management/",
+  "https://novelmanagement.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Novel Management** looks like a strong first choice for a Miami single-family rental: it specifically manages individually owned homes and offers leasing, maintenance coordination, resident communication, and owner reporting. Search results list it at **4.8 stars from 119 reviews**—useful as a signal, not a guarantee.\n\nI’d also get quotes from **Pristine Property Management**, which reports **4.9 stars from 400+ Google reviews** and manages single-family homes, and **Real Property Management Dade**, which serves owners with even a single rental and offers tenant screening, leasing, and maintenance.\n\nBefore choosing, compare the full fee schedule and contract, including leasing and renewal fees, maintenance markups, inspection frequency, cancellation terms, and how quickly they respond to owners. Ask for references from owners of similar homes in your neighborhood.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

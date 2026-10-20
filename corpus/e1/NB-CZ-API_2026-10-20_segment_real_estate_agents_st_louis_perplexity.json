@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_segment_real_estate_agents_st_louis_perplexity",
+ "date_utc": "2026-10-20",
+ "business": "SEGMENT: real estate agents, St. Louis",
+ "niche": "real estate agents",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Louis MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_43f23fca-ee30-4ab0-b596-86aa04d04f44",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00099,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00468
+   },
+   "input_tokens": 4766,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4215,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 396,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5162
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dan Brassil, RedKey Realty Leaders",
+  "Allison Rossini, Laura McCarthy Real Estate",
+  "Aileen Garcia, Garcia Properties",
+  "Dan Brassil",
+  "RedKey Realty Leaders",
+  "U.S. News",
+  "Allison Rossini",
+  "Laura McCarthy Real Estate",
+  "Aileen Garcia",
+  "Garcia Properties",
+  "Mark Gellman",
+  "Agent Pronto"
+ ],
+ "engine_stated_criteria": [
+  "near yours and in your price range"
+ ],
+ "sources_cited": [
+  "https://www.homelight.com/st-louis-mo/top-real-estate-agents",
+  "https://www.homelight.com/saint-louis-mo/top-real-estate-agents",
+  "https://www.realtor.com/realestateagents/636d018d260d345d96426201",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/saint-louis-mo/",
+  "https://www.homelight.com/st-louis-county-mo/top-real-estate-agents",
+  "https://realestate.usnews.com/agents/missouri/st-louis",
+  "https://www.realestateagents.com/mo/saint-louis",
+  "https://www.zillow.com/profile/LauraMcCarthyRE",
+  "https://www.zillow.com/profile/laurasandersteam",
+  "https://www.homes.com/real-estate-agents/saint-louis-mo/p10/",
+  "https://agentpronto.com/missouri/st-louis",
+  "https://www.zillow.com/profile/zuser20170117184719793",
+  "https://bhhsselectstl.com/view-agents/agents/jacqueline-artis",
+  "https://www.zillow.com/profile/AileenGarcia",
+  "https://www.realtor.com/realestateagents/5f210e179d965e001154b851"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent—the right choice depends on your neighborhood, home price, and whether you want a hands-on individual or a larger team.\n\nA reasonable shortlist from the available rankings and sales/review data:\n\n- **Dan Brassil, RedKey Realty Leaders** — listed by U.S. News among St. Louis’s top agents, with 38 local sales in the past 12 months and a 100.23% sale-to-list ratio.\n- **Allison Rossini, Laura McCarthy Real Estate** — also listed by U.S. News, with 39 local sales and a 99.34% sale-to-list ratio.\n- **Aileen Garcia, Garcia Properties** — Zillow shows a 5.0 rating from 154 reviews and recent seller activity.\n- **Mark Gellman, eXp Realty / The Gellman Team** — Agent Pronto reports substantial recent transaction volume, though team-wide numbers may not reflect the individual agent who would handle your sale.\n\nThese figures come from third-party sites and may use different methods or date ranges, so treat them as leads—not a definitive ranking. I’d interview three agents who have recently sold homes **near yours and in your price range**. Ask each for a neighborhood-specific pricing analysis, comparable listings they personally handled, their marketing plan, who will manage showings and negotiations, and the full commission and contract terms. The best fit is the one who can clearly support their pricing strategy and communicate in the way you prefer.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

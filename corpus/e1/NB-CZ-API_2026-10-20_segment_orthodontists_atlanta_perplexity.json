@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-10-20",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_275657d9-dc8c-4a1f-93e0-e54094168d9b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00099,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00428
+   },
+   "input_tokens": 4510,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3963,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 260,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4770
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Wright Orthodontics",
+  "Atlanta Orthodontic Specialists",
+  "Invisalign"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://atlantaortho.com/services/invisalign/",
+  "https://atlantaortho.com/services/",
+  "https://atlantaortho.com/",
+  "https://atlantaortho.com/faqs/",
+  "https://drwrightortho.com/location/orthodontist-in-atlanta-ga/",
+  "https://harrisorthodonticsatl.com/",
+  "https://doctor.webmd.com/providers/specialty/orthodontics/georgia/atlanta",
+  "https://www.braces-braces.com/about-us",
+  "https://www.westpacesferryortho.com/",
+  "https://drwrightortho.com/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/atlanta-orthodontic-specialists-5555-peachtree-dunwoody-rd-ne",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/willow-orthodontics-atlanta-madison-yards-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/wright-orthodontics-atlanta-ga",
+  "https://artemisorthoatlanta.com/invisalign/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/atlanta-orthodontic-specialists-3580-piedmont-rd-ne"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist—the right choice depends on your bite, treatment goals, budget, and how convenient the office is. Based on the available information, **Wright Orthodontics** is a strong place to start: it offers both braces and Invisalign, and a directory listing reports a 5.0 rating from 633 Google reviews. **Atlanta Orthodontic Specialists** is another option, with several Atlanta locations and both braces and Invisalign; a listing reports 4.9 stars from 135 reviews.\n\nTreat ratings and Invisalign-provider tiers as starting points, not proof of who will be best for your case. I’d book consultations with two or three orthodontists and compare the proposed treatment plan, total cost, what’s included (such as retainers and refinements), and who will oversee your visits. Confirm current ratings and availability directly, since they can change.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_pyne_creative_perplexity",
+ "date_utc": "2026-10-20",
+ "business": "PYNE Creative",
+ "niche": "marketing and brand strategy consultancy",
+ "market": "Maryland",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best marketing agency in Maryland?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_eb15526a-f8ab-45d6-a9d5-c8f7b9cf2746",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00047,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00414
+   },
+   "input_tokens": 4665,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4122,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 187,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4852
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "GKV",
+  "Black Propeller",
+  "Baltimore"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://clutch.co/agencies/maryland",
+  "https://clutch.co/agencies/creative/maryland",
+  "https://nationalmarketingawards.com/awards/maryland/",
+  "https://clutch.co/agencies/branding/maryland",
+  "https://www.enrichlabs.ai/agencies/state/maryland",
+  "https://clutch.co/agencies/ppc/amazon/maryland",
+  "https://amabaltimore.org/ama-baltimore-winners-for-2026-mx-awards/",
+  "https://clutch.co/agencies/baltimore",
+  "https://clutch.co/agencies/ppc/maryland",
+  "https://www.designrush.com/agency/creative-agencies/maryland",
+  "https://clutch.co/agencies/digital-marketing/maryland",
+  "https://themanifest.com/marketing-strategy/agencies/maryland",
+  "https://seedx.us/blog/top-20-baltimore-digital-marketing-agencies",
+  "https://www.designrush.com/agency/ad-agencies/maryland",
+  "https://blackpropeller.com/blog/8-ppc-agencies-in-maryland/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency—it depends on your goals, budget, and industry. **GKV**, based in Baltimore, is a strong candidate for large-scale, full-service advertising and creative work; it ranked first in Clutch’s Maryland advertising-agency list in the results I found. For performance marketing and paid media, **Black Propeller** is another Maryland-based option that appears prominently in agency rankings.\n\nIf you share what you need—such as SEO, paid ads, branding, or social media—and your approximate budget, I can narrow it down.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

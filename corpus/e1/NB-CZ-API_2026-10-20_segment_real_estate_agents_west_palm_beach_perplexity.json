@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_segment_real_estate_agents_west_palm_beach_perplexity",
+ "date_utc": "2026-10-20",
+ "business": "SEGMENT: real estate agents, West Palm Beach",
+ "niche": "real estate agents",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in West Palm Beach FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_44111cca-165b-49a5-b380-116a2ae1dd77",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00077,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00447
+   },
+   "input_tokens": 4798,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4247,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 307,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5105
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jeff Tricoli’s team",
+  "Jeff Tricoli",
+  "FastExpert"
+ ],
+ "engine_stated_criteria": [
+  "seller-side sales near your home"
+ ],
+ "sources_cited": [
+  "https://www.realtor.com/realestateagents/West-Palm-Beach_FL",
+  "https://www.realtor.com/realestateagents/56bb98c089a68901006d559d",
+  "https://www.realtor.com/realestateagents/Ryan-Apple_Boca-Raton_FL_4415551",
+  "https://www.realtor.com/realestateagents/west-palm-beach_fl",
+  "https://www.realtor.com/realestateagents/___914783",
+  "https://www.realtor.com/realestateagents/57c65217bdef5501007b1241",
+  "https://www.realtor.com/realestateagents/56bbdfd27e54f7010021b82f",
+  "https://www.realtor.com/realestateagents/___3948181",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/west-palm-beach-fl/",
+  "https://www.realtor.com/realestateagents/57e41d5f0e22930100a9c952",
+  "https://www.realtor.com/realestateagents/63787bb529fb6f0f90a2ee15",
+  "https://www.realestateagents.com/fl/west-palm-beach",
+  "https://www.realtor.com/realestateagents/56b8e6280fa417010074febb",
+  "https://www.realtor.com/realestateagents/59422cf3c6f71f00120ec980",
+  "https://www.fastexpert.com/top-real-estate-agents/west-palm-beach-fl/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for every West Palm Beach home—the right fit depends on your neighborhood, property type, and price range. Based on the available directory results, **Jeff Tricoli’s team** is one candidate worth interviewing: Zillow’s West Palm Beach directory lists substantial local sales activity, and FastExpert also ranks him among its recommended agents for the area. Those are directory rankings, not a guarantee of the best result for your home.\n\nBefore choosing, interview two or three agents and ask each for:\n- Recent **seller-side sales near your home** and in a similar price range\n- Their suggested list price, with comparable sales to support it\n- A specific marketing and showing plan\n- Their commission and any other fees, in writing\n- Who will handle communication and negotiations day to day\n\nCompare their plans and local track records—not just their headline rating. If you share your neighborhood or ZIP code, approximate home value, and property type, I can help narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

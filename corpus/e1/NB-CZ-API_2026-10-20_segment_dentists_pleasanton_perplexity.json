@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-20_segment_dentists_pleasanton_perplexity",
+ "date_utc": "2026-10-20",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a542b411-02a1-4263-a0cc-10fd7c91b2dc",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00057,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00433
+   },
+   "input_tokens": 5033,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4483,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 228,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5261
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton Dental Care",
+  "My Favorite Dentist",
+  "Dr. Eunice Jong"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.pleasantondentaloffice.com/patient-reviews",
+  "https://www.opencare.com/dentists/pleasanton-ca/my-favorite-dentist-24630732223c/",
+  "https://pleasantondentalcare.com/services/cleanings-prevention/",
+  "https://www.yelp.com/biz/pleasanton-smile-dental-pleasanton",
+  "https://www.yelp.com/biz/pleasanton-smiles-pleasanton-3",
+  "https://www.ada.org/join-the-ada/member-benefits/find-a-dentist",
+  "https://www.yelp.com/biz/pleasanton-dental-care-pleasanton-5",
+  "https://dentistdublinwecare.com/areas/pleasanton/",
+  "https://www.smilegeneration.com/dentist/ca/pleasanton/280-pleasanton-ridge-dental-group/",
+  "https://pleasanton-dentist.com/general-dentistry/",
+  "https://www.yelp.com/biz/zhao-dental-pleasanton-2",
+  "https://doctor.webmd.com/providers/specialty/dentistry/california/pleasanton",
+  "https://www.lumidentalstudio.com/testimonials-reviews/",
+  "https://www.yelp.com/biz/pleasanton-family-and-cosmetic-dentistry-pleasanton",
+  "https://pleasantonstardental.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist, but **Pleasanton Dental Care** looks like a strong option for a routine checkup and cleaning. Reviews specifically praise Dr. Eunice Jong’s thorough exams and cleanings, gentle approach, and help with dental anxiety.\n\n**Pleasanton Dental Care**  \n5980 Stoneridge Dr., Suite 116, Pleasanton  \n[Website: cleanings and preventive care](https://pleasantondentalcare.com/services/cleanings-prevention/)\n\nAnother option is **My Favorite Dentist**, which offers checkups and cleanings and has patient reviews mentioning gentle, pain-free cleanings. Before booking, confirm they accept your insurance and ask what a new-patient exam and cleaning will cost.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
