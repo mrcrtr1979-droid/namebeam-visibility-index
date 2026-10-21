@@ -28,6 +28,7 @@ from datetime import datetime, timezone
 
 from engines import (ENGINES, LAST_CALL_META, fetch_serp, detect_ai_overview,
                      serp_diagnostics)
+import anthropic_batch
 from agreement import build_agreement_row
 from extract_named_entities import (
     extract_named_entities,
@@ -312,14 +313,21 @@ def is_mentioned(business_row, text):
     return False
 
 
-def run_engine(business_row, engine, fn, date_utc):
+def run_engine(business_row, engine, fn, date_utc, prefetched=None):
     slug = slugify(business_row["business"])
     check_id, run_index = next_run_index(date_utc, slug, engine)
     row = base_row(business_row, date_utc, check_id, engine)
     row["run"] = run_index
     import engines as _engines
     _engines.CURRENT_QUESTION_ID[0] = slugify(business_row["business"])
-    ok, text, sources, err = fn(business_row["prompt_1"])
+    if prefetched is not None:
+        # ANTHROPIC_MODE=batch (scripts/anthropic_batch.py): the answer was already
+        # fetched through the Message Batches API. Same 4-tuple and the same
+        # engine_meta source as the live call, so everything below is shared.
+        ok, text, sources, err = prefetched["tuple"]
+        LAST_CALL_META[engine] = dict(prefetched.get("meta") or {})
+    else:
+        ok, text, sources, err = fn(business_row["prompt_1"])
     # Forward-only audit fields: which model the provider says it served, the
     # response id and usage (Perplexity since 2026-09-28, also its search-result
     # count; OpenAI, Anthropic and Gemini from the 2026-10-13 change). Set on
@@ -512,6 +520,19 @@ def main():
         roster = roster[offset:] + roster[:offset]
         print("roster rotated by %d for %s" % (offset, date_utc))
 
+    # ANTHROPIC BATCH MODE (2026-10-21, off by default). ANTHROPIC_MODE=batch sends the
+    # day's Anthropic questions as one Message Batches job (50 percent price) and reads
+    # the answers back; anything unfinished at the deadline is cancelled and asked live
+    # below. Unset or any other value means live and nothing here runs.
+    anthropic_batch_on = False
+    batch_pre = {}
+    if anthropic_batch.mode() == "batch" and "anthropic" in engines:
+        anthropic_batch_on = True
+        print("[anthropic-batch] ANTHROPIC_MODE=batch for %s" % date_utc)
+        batch_pre, _bsum = anthropic_batch.prefetch(roster, date_utc, slugify)
+    else:
+        print("[anthropic-batch] ANTHROPIC_MODE=live (default)")
+
     wrote = ok_n = fail_n = 0
     for br in roster:
         engine_rows = []
@@ -523,7 +544,11 @@ def main():
         for name, fn in engines.items():
             if isinstance(only, list) and name not in only:
                 continue
-            path, good = run_engine(br, name, fn, date_utc)
+            pre = batch_pre.get(id(br)) if (anthropic_batch_on and name == "anthropic") else None
+            path, good = run_engine(br, name, fn, date_utc, prefetched=pre)
+            if anthropic_batch_on and name == "anthropic":
+                print("[anthropic-batch] %s mode=%s ok=%s"
+                      % (os.path.basename(path), "batch" if pre is not None else "live_fallback", good))
             if good:
                 import json as _j
                 with open(path, "r", encoding="utf-8") as _f:

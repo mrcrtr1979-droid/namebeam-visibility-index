@@ -1,0 +1,75 @@
+name: Anthropic Batch Test
+
+# Manual trigger only. No schedule. Runs the Anthropic batch mode on at most 3 roster
+# questions, writes the rows ONLY to this run's artifacts (never to corpus/, never
+# committed, never pushed), and prints a schema comparison against a real live row.
+# Added 2026-10-21 on branch batch-anthropic-1021. Costs a few cents at most.
+on:
+  workflow_dispatch:
+    inputs:
+      max_questions:
+        description: How many roster questions to batch (1 to 3, hard cap 3)
+        required: false
+        default: "3"
+      deadline_minutes:
+        description: Give up waiting and cancel after this many minutes
+        required: false
+        default: "20"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: anthropic-batch-test
+  cancel-in-progress: false
+
+jobs:
+  batch-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Offline self-tests (no network, no key)
+        run: |
+          python3 -I scripts/test_anthropic_batch.py
+          python3 -I scripts/test_served_model.py
+          python3 -I scripts/test_roster_engine_limit.py
+
+      # Only ever echoes present or MISSING, never the secret.
+      - name: Report whether the key is present
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_CREDIT }}
+        run: |
+          if [ -n "$ANTHROPIC_API_KEY" ]; then echo "ANTHROPIC_API_KEY_CREDIT: present"; else echo "ANTHROPIC_API_KEY_CREDIT: MISSING"; exit 1; fi
+
+      - name: Run the batch on at most 3 questions
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_CREDIT }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          ANTHROPIC_MODE: batch
+          MAX_Q: ${{ inputs.max_questions || '3' }}
+          DEADLINE_MIN: ${{ inputs.deadline_minutes || '20' }}
+        run: |
+          python3 scripts/anthropic_batch_test.py --out test_out \
+            --max-questions "$MAX_Q" \
+            --deadline-minutes "$DEADLINE_MIN" \
+            --poll-seconds 30
+
+      - name: Upload the test rows and report (artifacts only)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: anthropic-batch-test-output
+          path: test_out/
+          if-no-files-found: warn
+          retention-days: 14
