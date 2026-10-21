@@ -5,11 +5,6 @@ name: Anthropic Batch Test
 # committed, never pushed), and prints a schema comparison against a real live row.
 # Added 2026-10-21 on branch batch-anthropic-1021. Costs a few cents at most.
 on:
-  # TEMPORARY (removed in the next commit): GitHub only lets workflow_dispatch find a workflow
-  # that already exists on the default branch. One push-triggered run on this branch registers it.
-  push:
-    branches: [batch-anthropic-1021]
-    paths: [".github/workflows/anthropic-batch-test.yml"]
   workflow_dispatch:
     inputs:
       max_questions:
