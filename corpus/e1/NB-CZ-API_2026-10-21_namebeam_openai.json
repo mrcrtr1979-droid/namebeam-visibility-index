@@ -1,0 +1,64 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_namebeam_openai",
+ "date_utc": "2026-10-21",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EbUGQVlvZMc8ez6xINE2IBQXliWgj",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1645,
+   "total_tokens": 1669,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AI-recommendation",
+  "BrightLocal. If",
+  "AI-relevant",
+  "Yext",
+  "Bing Chat",
+  "Apple Maps",
+  "Bing Places",
+  "BrightLocal",
+  "Whitespark",
+  "Apple Business Connect",
+  "TripAdvisor",
+  "APIs",
+  "Bing Maps Places API",
+  "MapKit",
+  "Use",
+  "LocalBusiness",
+  "Moz Local",
+  "Local SEO",
+  "Knowledge Graph",
+  "Schema.org LocalBusiness",
+  "Apple Business",
+  "Knowledge Graph Search API"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- There’s no single “AI-recommendation registry.” For small businesses the most practical single service to check and monitor whether AI systems will recommend you is a local-search monitoring/listings platform — for most small businesses I’d recommend BrightLocal. If you want centralized control to push your data out to many AI-relevant sources, use Yext.\n\nWhy (short)\n- Modern LLMs and assistants (ChatGPT, Bing Chat, Google Assistant, Siri) pull from structured knowledge sources (Google Business Profile, Apple Maps, Bing Places, Yelp, industry directories, knowledge graphs and web pages). Monitoring and controlling those sources is the best way to influence whether an AI will recommend you.\n- BrightLocal gives local-rank tracking, citation tracking, review monitoring and reports designed for small businesses. Yext focuses more on distribution/control of listings across hundreds of platforms (better for larger or multi-location businesses).\n\nRecommended services (with when to pick each)\n- BrightLocal — best for local SEO monitoring, rank tracking, citation audits, review monitoring and affordable for small businesses.\n- Yext — best if you want to push and control your business profile across many services and map platforms (useful if you want to ensure AI sources get authoritative, consistent data).\n- Moz Local — simpler, lower-cost option for basic listings and citation management.\n- Whitespark — strong for citation building and local rank tracking.\n- Google Business Profile, Bing Places, Apple Business Connect — always claim and maintain these directly (free and essential).\n- Reputation platforms (Yelp, TripAdvisor, Facebook Business) — claim and maintain profiles there too.\n\nHow to test if AI will recommend you\n1. Directly ask the AI (but be careful):\n   - Use multiple prompts and include location/context, e.g. “I’m in [city/zipcode]. Recommend a [service type] near me — show top 3 and cite where you found them.” Try the same prompt on ChatGPT, Bing Chat, Google’s assistant.\n   - If you use ChatGPT, test the version with browsing or the web-enabled plugin (because base LLMs may not have up-to-date or verifiable local data).\n2. Check major knowledge APIs:\n   - Google Places API / Google Knowledge Graph Search API\n   - Bing Search API / Bing Maps Places API\n   - Apple Maps / MapKit data\n   These show whether your business is present in the core sources assistants query.\n3. Use a local-rank tracking tool (BrightLocal, Whitespark) to see whether you appear in local pack results for relevant queries.\n4. Use Google Search Console and Google Analytics to see search queries and impressions for your site.\n5. Monitor citations and reviews across directories — many LLMs surface highly-rated or widely-cited businesses.\n\nHow to improve the odds that AI will recommend you\n- Claim and fully populate: Google Business Profile, Bing Places, Apple Business Connect, Yelp, TripAdvisor, Facebook.\n- Keep NAP (name/address/phone) consistent across all listings.\n- Add schema.org LocalBusiness structured data on your website (with name, address, phone, hours, geo coordinates, review aggregate).\n- Get positive reviews and respond to them.\n- Earn mentions and citations on authoritative directories and local sites.\n- Keep your website content optimized for local queries (pages for services + location).\n- Use Google Merchant Center if relevant.\n\nIf you want a single recommendation\n- If your goal is primarily to “check whether AI/assistants will recommend me” and to monitor local search presence on a small-business budget: start with BrightLocal.\n- If your goal is to ensure AI systems get the authoritative, correct version of your listing across many partners: use Yext (higher cost, stronger distribution).\n\nIf you want, I can:\n- Look up the best tool for your specific city/industry and budget.\n- Walk you through a set of test prompts to try in ChatGPT/Bing and interpret the results.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

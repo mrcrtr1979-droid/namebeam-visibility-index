@@ -1,0 +1,66 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_str_host_tooling_gemini",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "wf3YapnKOLHoz7IPhqrC2As",
+  "usage": {
+   "promptTokenCount": 20,
+   "candidatesTokenCount": 877,
+   "totalTokenCount": 897,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 20
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "Rentalizer",
+  "Market Research",
+  "PriceLabs vs. Wheelhouse",
+  "Option A: PriceLabs (The Power User's Choice)",
+  "Option B: Wheelhouse (The Beginner-Friendly Choice)",
+  "Macro Market Research (AirDNA)",
+  "Mashvisor",
+  "Rabbu",
+  "Pricing Simulation (PriceLabs)",
+  "After buying",
+  "PriceLabs",
+  "Wheelhouse",
+  "Property Management System",
+  "Option B",
+  "Before You Buy",
+  "Use",
+  "Macro Market Research",
+  "Use AirDNA",
+  "Micro Validation",
+  "Pricing Simulation",
+  "Before",
+  "Market Dashboards",
+  "For Market Analysis",
+  "For Dynamic Pricing",
+  "For Market Analysis (Pre-Purchase)"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "The undisputed industry standard for both setting daily pricing and analyzing markets before buying is **AirDNA**. However, because \"pricing\" and \"market analysis\" require slightly different workflows, the best approach depends on whether you are analyzing a *new* market or managing an *existing* listing. \n\nHere is a breakdown of the best tools on the market, categorized by their strengths.\n\n---\n\n### 1. The Best Overall Tool for Market Analysis (Pre-Purchase): **AirDNA**\nIf you are looking to buy a property, **AirDNA** is the gold standard. It scrapes data directly from Airbnb and Vrbo to give you a 30,000-foot view of any market in the world.\n\n*   **Best Feature:** **Rentalizer.** You input a specific address (or drop a pin), estimate the bedroom/bathroom count and amenities, and it predicts the annual revenue, occupancy rate, and Average Daily Rate (ADR).\n*   **Market Research:** You can view historical data for entire cities or neighborhoods, seeing top-performing properties, seasonal demand curves, and market saturation.\n*   **Pricing:** Market-level data is free to browse, but specific neighborhood data and the \"Rentalizer\" tool require a subscription (ranging from $40 to $100+/month, depending on the geographic scope).\n\n### 2. The Best Tools for Dynamic Pricing (Post-Purchase): **PriceLabs vs. Wheelhouse**\nOnce you own the property, static pricing won’t maximize your revenue. You need a dynamic pricing tool that syncs with your Property Management System (PMS) or Airbnb account to change your rates daily based on supply, demand, seasonality, and local events. \n\n#### **Option A: PriceLabs (The Power User's Choice)**\nPriceLabs was built by former revenue management professionals from the airline industry and is widely considered the most customizable and powerful pricing tool for serious hosts.\n*   **Why it’s great:** It offers hyper-local market data (through their \"Market Dashboards\") and allows you to set complex rule-based pricing (e.g., \"If booking is 3 days out, drop price by 15%\"). It also has a great portfolio-level view for multiple properties.\n*   **Pricing:** Very affordable, usually a flat fee of around $20 per property per month (with discounts for multiple properties).\n\n#### **Option B: Wheelhouse (The Beginner-Friendly Choice)**\nWheelhouse is designed to be more intuitive and user-friendly than PriceLabs, offering great visualizations and helpful guidance for newer hosts.\n*   **Why it’s great:** It offers three different pricing strategies (Conservative, Moderate, and Aggressive) based on your risk tolerance. It also has great integrations with smart-pricing features.\n*   **Pricing:** You can choose between a flat monthly fee (around $20/property) or a performance fee (typically 1% of booking revenue).\n\n---\n\n### The Ultimate \"Before You Buy\" Workflow\n\nIf you are looking to buy a short-term rental today, don't rely on just one tool. Use this 3-step stack:\n\n1.  **Macro Market Research (AirDNA):** Use AirDNA to see if the city/region as a whole is growing, what the average occupancy rates are, and how seasonality affects the area.\n2.  **Micro Validation (Rabbu or Mashvisor):** These tools are specifically designed for real estate investors. **Mashvisor** helps you analyze traditional long-term rent vs. short-term rent, while **Rabbu** lets you evaluate specific properties for sale and see their projected short-term rental income.\n3.  **Pricing Simulation (PriceLabs):** Before making an offer, sign up for a trial of PriceLabs, plug in the target neighborhood, and look at their historical pricing data to see what daily rates top competitors were actually getting during peak and off-peak seasons. \n\n### Summary Recommendation\n*   **Before buying:** Use **AirDNA**.\n*   **After buying:** Use **PriceLabs** (if you want maximum control and customization) or **Wheelhouse** (if you want simplicity).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

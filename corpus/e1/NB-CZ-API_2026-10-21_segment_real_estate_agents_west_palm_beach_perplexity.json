@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_real_estate_agents_west_palm_beach_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: real estate agents, West Palm Beach",
+ "niche": "real estate agents",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in West Palm Beach FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_81a53f36-5f97-42cd-a0f9-930eb9da4be1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00441
+   },
+   "input_tokens": 4461,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3910,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 314,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4775
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jeff Tricoli’s team at Keller Williams",
+  "Sandra Rathe",
+  "Larry Mastropieri",
+  "Jeff Tricoli",
+  "Keller Williams",
+  "U.S. News",
+  "Jeff Tricoli’s team"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.realtor.com/realestateagents/West-Palm-Beach_FL",
+  "https://www.realtor.com/realestateagents/56bb98c089a68901006d559d",
+  "https://www.realtor.com/realestateagents/Ryan-Apple_Boca-Raton_FL_4415551",
+  "https://www.realtor.com/realestateagents/west-palm-beach_fl",
+  "https://www.realtor.com/realestateagents/___914783",
+  "https://www.realtor.com/realestateagents/56bbdfd27e54f7010021b82f",
+  "https://www.realtor.com/realestateagents/63787bb529fb6f0f90a2ee15",
+  "https://www.realtor.com/realestateagents/5682768489a68901006b902b",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/west-palm-beach-fl/",
+  "https://www.homelight.com/west-palm-beach-fl/top-real-estate-agents",
+  "https://www.realtor.com/realestateagents/56b8e6280fa417010074febb",
+  "https://realestate.usnews.com/agents/florida/west-palm-beach",
+  "https://www.realestateagents.com/fl/west-palm-beach",
+  "https://www.zillow.com/profile/PavonRealtyGroup",
+  "https://www.realtor.com/realestateagents/60f7fb3bace2070012d2a003"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for every West Palm Beach home—the right fit depends on your neighborhood, price range, and property type. Based on the available rankings and recent activity, **Jeff Tricoli’s team at Keller Williams** is a reasonable first interview: one source lists 416 team sales in the last 12 months, and U.S. News reports 81 West Palm Beach sales over that period. **Sandra Rathe** and **Larry Mastropieri** also appear among HomeLight’s highly rated local agents.\n\nTreat rankings as a shortlist, not a guarantee: they use different data and may reflect team-wide rather than individual results. Interview two or three agents and ask each for:\n- Recent **seller-side** sales near your home, at a similar price and property type\n- Their suggested list price and the comparable sales behind it\n- A specific marketing and showing plan\n- Commission, contract length, and cancellation terms\n- References from recent sellers\n\nThe best choice is the agent who can demonstrate relevant local sales and clearly explain how they’ll price and market *your* house.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

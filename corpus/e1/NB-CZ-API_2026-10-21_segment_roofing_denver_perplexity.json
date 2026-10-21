@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_roofing_denver_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9bb8ebdf-dd78-499e-8e48-6a850dce4fe4",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00066,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00442
+   },
+   "input_tokens": 5029,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4482,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 265,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5294
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Gates Enterprises",
+  "Ideal Roofing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://erniesroofing.com/",
+  "https://precisionroofhelp.com/",
+  "https://www.gatesroof.com/areas/denver",
+  "https://myidealpros.com/reviews/",
+  "https://www.gatesroof.com/services/storm-hail-damage/denver",
+  "https://www.axeroofing.com/roofing-contractors",
+  "https://thrive-roofing.com/",
+  "https://hriroofingdenver.com/",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/lr-contracting-inc-1296-90131857/customer-reviews",
+  "https://findinglist.com/colorado/denver/roofing/premier-roofing-company-denver",
+  "https://northernlightsexteriors.com/exterior-home-remodel-service-areas/denver-roofers/",
+  "https://www.bestcoloradocontractors.com/pro/roofcorp-metro-denver/",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/murray-roofing-llc-1296-90104041",
+  "https://www.bbb.org/us/co/denver/category/hail-repair/accredited",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/woodberg-roofing-and-restoration-llc-1296-90245804"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” roofer, but **Gates Enterprises** looks like a strong option to put on your shortlist: its Denver-area listing reports a 4.9-star rating across 353+ Google reviews and specifically describes hail-damage inspections, documentation, and repairs. [Gates Enterprises](https://www.gatesroof.com/areas/denver)\n\nI’d also get a comparison quote from **Ideal Roofing & Solar**, which has customer reviews describing hail-damage work and help navigating insurance claims. [Ideal reviews](https://myidealpros.com/reviews/)\n\nBefore hiring, get at least two written estimates, verify the contractor’s current Denver license and insurance, and ask for a detailed scope, warranty, and references for recent local hail jobs. Don’t sign over insurance benefits or rely on a roofer’s promise that a claim will be approved; your insurer makes that decision.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

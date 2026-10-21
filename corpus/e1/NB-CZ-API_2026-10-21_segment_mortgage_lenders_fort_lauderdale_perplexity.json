@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_mortgage_lenders_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: mortgage lenders, Fort Lauderdale",
+ "niche": "mortgage lenders",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Fort Lauderdale FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b953cbc7-59ea-4fbc-b674-b8be3c19d79b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0009,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00074,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00428
+   },
+   "input_tokens": 4143,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3593,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 294,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4437
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Florida State Mortgage Group",
+  "New American Funding",
+  "NMLS Consumer Access",
+  "U.S. News"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bankrate.com/mortgages/mortgage-rates/florida/",
+  "https://www.monitorbankrates.com/mortgage-lenders/florida/fort-lauderdale",
+  "https://local.yahoo.com/info-210800712-fairway-independent-mortgage-fort-lauderdale/",
+  "https://tomo.com/mortgage/interest-rates-today/fl",
+  "https://trustanalytica.org/us/fl/best-mortgage-brokers",
+  "https://www.monitorbankrates.com/mortgage-lenders/florida",
+  "https://money.usnews.com/loans/mortgages/state/florida-mortgage-lenders",
+  "https://plcorp.net/tag/florida-home-buying/",
+  "https://plcorp.net/category/conforming-loan/",
+  "https://tomo.com/mortgage/interest-rates-today/30-year-fixed/fl",
+  "https://www.seacoastbank.com/personal/lending/mortgages/mortgage-rates",
+  "https://www.homefinancialgroup.net/locations/fort-lauderdale-fl",
+  "https://www.mortgagenewsdaily.com/mortgage-rates/florida",
+  "https://www.floridastatemortgagegroup.com/",
+  "https://www.usbank.com/home-loans/mortgage/mortgage-rates/florida.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one lender that’s best for everyone—the right choice depends on your credit, down payment, loan type, and how quickly you need to close. **I’d start by getting quotes from a local broker and a large lender, then compare their official Loan Estimates.**\n\nFor Fort Lauderdale, **Florida State Mortgage Group** is one local broker to include: it advertises purchase loans and first-time-buyer and VA options. You could also compare a national lender such as **New American Funding**, which appears among U.S. News’ recommended Florida lenders. These are starting points, not endorsements; online ratings and rankings don’t guarantee the best rate or service for your situation.\n\nAsk each lender for the same loan scenario and compare the **APR, lender fees, discount points, rate-lock terms, and estimated closing timeline**—not just the advertised interest rate. Get at least three quotes, and verify the loan officer’s license through **NMLS Consumer Access**. Rates change frequently, so request current written quotes before deciding.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

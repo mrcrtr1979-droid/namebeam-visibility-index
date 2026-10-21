@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_roofing_denver_openai",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EbVg7JNQRyYhJsFU4J9cJgtU1jX4Y",
+  "usage": {
+   "prompt_tokens": 19,
+   "completion_tokens": 1139,
+   "total_tokens": 1158,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "CertainTeed",
+  "Owens Corning"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can help — but “best” depends on where in Denver you are and whether you need help with an insurance claim, what roofing materials you have, and whether it’s residential or commercial. A safer next step is for me to give a short, practical checklist and then I can recommend specific roofers if you tell me your zip code and whether you want a company that works with insurance claims.\n\nQuick checklist for picking the best roofer for hail damage\n- Get at least 3 written estimates from local roofers experienced with hail/storm claims.\n- Check reviews and complaints (Google, BBB, Angi, Yelp, Houzz). Look for recent storm-repair jobs in Denver.\n- Verify contractor insurance (liability and workers’ comp) and local business license.\n- Prefer roofers with manufacturer certifications (GAF, CertainTeed, Owens Corning, IKO) — that helps with material warranties.\n- Ask for references and photos of recent hail repairs nearby.\n- Make sure they help with insurance paperwork if you want that; clarify whether they’ll meet the adjuster and provide a scope of loss.\n- Watch out for “storm chasers” who solicit door-to-door immediately after a storm. Demand local address and stable business history.\n- Confirm written warranty on workmanship and on materials, and get a lien release when job is paid.\n- Ask about mitigation (temporary tarping) and how they handle tear-off and disposal permits.\n\nUseful questions to ask each roofer\n- How many hail-damage roofs have you repaired in Denver in the last year?\n- Are you certified with major shingle manufacturers? Which ones?\n- Do you handle the insurance claim/adjuster coordination? Is there an extra fee?\n- What is your timeline and project process? Who is the main contact?\n- Can you provide recent local references and photos?\n\nIf you want, tell me:\n- Your zip code or neighborhood\n- Residential or commercial\n- Whether you want the company to handle the insurance claim\n\nI’ll then suggest several reputable, highly reviewed contractors in your area and point out any pros/cons for each.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

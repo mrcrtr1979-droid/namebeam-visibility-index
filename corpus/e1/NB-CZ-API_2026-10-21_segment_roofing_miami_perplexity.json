@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_roofing_miami_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c2d302f5-e7d3-4dc5-92d6-6c46c3187525",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00059,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00426
+   },
+   "input_tokens": 4669,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4121,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 235,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4904
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "T&S Roofing Systems",
+  "GAF Master Elite",
+  "CCC1326032",
+  "Miami-Dade Notice of Acceptance",
+  "Notice of Acceptance",
+  "Miami-Dade",
+  "Dade Notice of Acceptance",
+  "Notice of Acceptance (NOA)",
+  "Miami-Dade Notice of Acceptance (NOA)"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://whoislicensed.com/florida/roofing-contractors/",
+  "https://uptotheroof.com/",
+  "https://roofvista.com/resources/licensing/florida",
+  "https://www.tsroofingsystems.com/",
+  "https://www.floridalicensedpros.com/",
+  "https://agkgc.com/miami-roofing",
+  "https://theroofingbrief.com/best-roofers-miami-fl/",
+  "https://www.myfloridalicense.com/portalsearches/VerifyLicensee/Results?SearchType=SearchByLicenseNumber&LicNbr=RC29027914",
+  "https://dashpages.io/florida/miami/roofing/roofing-experts-services",
+  "https://dukecontractors.net/miami/",
+  "https://www.myfloridalicense.com/wl11.asp?mode=0&search=CONTRACTOR",
+  "https://trackmyvendor.com/contractor-license-tracking-florida",
+  "https://www.robsonindustrial.com/blog/verify-florida-roofing-contractor-license/",
+  "https://assured-contracting.com/about-us",
+  "https://contractorlicensecheck.com/state/florida"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” roofer, but **T&S Roofing Systems** looks like a strong Miami candidate based on the available information: it reports a **4.8-star rating across 1,271+ reviews**, a **GAF Master Elite** certification, and Florida roofing license **CCC1326032**. Those are useful signals, not a guarantee of workmanship or a current license status.\n\nFor a hurricane-rated replacement, get at least three written bids and ask each contractor to specify the **Miami-Dade Notice of Acceptance (NOA) or other HVHZ approval for every roof component**—covering, underlayment, and fastening system—as well as the permit, inspection process, and workmanship warranty. Verify the contractor’s active license and insurance independently before signing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

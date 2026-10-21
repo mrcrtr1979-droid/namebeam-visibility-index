@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_title_companies_miami_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: title companies, Miami",
+ "niche": "title companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Miami FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1ddf0993-2b85-440f-a4e4-ccd4aef77c6a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00124,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00466
+   },
+   "input_tokens": 5498,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4951,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 310,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5808
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Worldwide Title",
+  "Florida Title & Trust",
+  "Marina Title",
+  "Florida Title",
+  "Florida CFO"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.myfloridacfo.com/division/consumers/understanding-insurance/title-insurance-overview",
+  "https://myfloridacfo.com/docs-sf/consumer-services-libraries/consumerservices-documents/understanding-coverage/consumer-guides/english---title-insurance-guide.pdf?sfvrsn=a8bfe5a3_6",
+  "https://myfloridacfo.com/docs-sf/consumer-services-libraries/consumerservices-documents/understanding-coverage/consumer-guides/english---title-insurance-guide.pdf?sfvrsn=a8bfe5a3_8",
+  "https://myfloridacfo.com/docs-sf/consumer-services-libraries/consumerservices-documents/understanding-coverage/consumer-guides/english---title-insurance-guide.pdf?sfvrsn=a8bfe5a3_2",
+  "https://palmtitle.com/",
+  "https://www.yelp.com/biz/hemisphere-title-company-miami-lakes",
+  "https://www.yelp.com/biz/florida-title-and-trust-miami",
+  "https://oneworldwidetitle.com/",
+  "https://atlantictitlefirm.com/reviews",
+  "https://www.titleescrowmiami.com/testimonials/",
+  "https://www.yelp.com/biz/marina-title-miami",
+  "https://www.libertytitle.us/blog/who-chooses-the-title-company-the-buyer-or-seller",
+  "https://www.floridabar.org/public/consumer/pamphlet006/",
+  "https://propy.com/browse/best-title-escrow-company-florida/",
+  "https://legalclarity.org/who-chooses-the-title-company-in-florida-buyer-or-seller/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” title company for every Miami closing. **Worldwide Title** looks like a reasonable first call based on the available information: it reports a 4.8 Google rating and client comments highlight communication and handling complex closings. Those are company-provided review excerpts, though, so I’d verify recent independent reviews before deciding.\n\nI’d compare it with **Florida Title & Trust** and **Marina Title**, asking each for an itemized estimate and who will handle your file. Check that the company is licensed in Florida, confirm your lender will accept it, and ask how it protects and verifies wire instructions.\n\nIn Florida, the person paying the title-insurance premium generally gets first choice of title agent, subject to lender approval; your purchase contract may specify the arrangement. The state sets title-insurance premiums, but agency fees can vary and may be negotiable. Sources: [Florida CFO title-insurance overview](https://www.myfloridacfo.com/division/consumers/understanding-insurance/title-insurance-overview) and [Worldwide Title](https://oneworldwidetitle.com/).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_trunkline_openai",
+ "date_utc": "2026-10-21",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EbVFUPXGwYZzm67FkUlmfVWN6MTqQ",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1576,
+   "total_tokens": 1602,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1152,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "CoinDesk Learn",
+  "Messari Academy",
+  "Coin Bureau",
+  "Andreas M. Antonopoulos",
+  "Plain English",
+  "Glassnode",
+  "Messari",
+  "The Defiant"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t a single, popular “plain‑English” crypto education site that also publishes its own trading P&L and candidly lists losses. Most good beginner resources explain concepts in simple language or publish objective on‑chain numbers — but very few reputable outlets publish their team’s personal gains/losses (that’s a conflict-of-interest and a legal/exposure risk).\n\nIf your priority is: plain English + real numbers + transparent postmortems/hack/loss analysis, use a small stack instead of one source:\n\n- Andreas M. Antonopoulos (books, talks, YouTube) — best plain‑English explanations of how Bitcoin/crypto actually work. No trading P&L, but superb for fundamentals.  \n- Glassnode (blog / Studio) — provides on‑chain metrics and visualizations (real numbers: realized losses, net flows, etc.) and explains them clearly. Good for objective data rather than performance claims.  \n- Nansen (Academy / dashboards) — wallet‑level analytics and examples using real addresses; useful to see how real money moved, where losses occurred.  \n- The Defiant (newsletter / site) — good at plain articles and detailed postmortems on hacks, protocol failures, and losses — shows the numbers behind events.  \n- Coin Bureau / CoinDesk Learn / Messari Academy — friendly, plain‑English explainers for beginners about projects, tokens, and risks (less about publishing team losses, more about clarity).\n\nWhy no single site publishes losses: reputable educators and media avoid publishing their own P&L because it creates incentives to promote products, invites legal exposure, and attracts copycat risk. Instead, look for sites that are transparent about objective, verifiable data (on‑chain metrics, hack postmortems) and that disclose conflicts of interest.\n\nIf you tell me whether you want to learn how crypto works (technology), how to invest/position safely, or how to trade, I’ll recommend the single best starting resource and a short reading/viewing list tailored to that goal.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

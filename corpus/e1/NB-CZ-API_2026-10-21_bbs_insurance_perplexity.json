@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_bbs_insurance_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "BBS Insurance",
+ "niche": "health insurance brokerage",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best health insurance broker in Kansas City MO for someone who is self-employed?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_cf8024ec-9570-44be-8392-10c7f1946d06",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00085,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00447
+   },
+   "input_tokens": 4490,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3938,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 339,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4829
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "Apollo Health Insurance",
+  "Missouri. It",
+  "ACA Marketplace",
+  "Apollo",
+  "Missouri Marketplace",
+  "Marketplace plans"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://nulight-consulting.com/",
+  "https://apollo-insurance.com/health-insurance-broker-kansas-city/",
+  "https://www.linkedin.com/in/dawn-sparks-30555b11",
+  "https://bbs-insurance.com/health-insurance/",
+  "https://aishealthadvisors.com/health-insurance/",
+  "https://www.insurancebusinessmag.com/us/news/benefits/employee-benefits-all-you-have-to-do-is-renew-and-get-a-raise-594226.aspx",
+  "https://sites.google.com/view/health-insurance-kansas-city/home",
+  "https://bbs-insurance.com/service-areas/kansas-city/",
+  "https://www.linkedin.com/company/morrill-insurance-group",
+  "https://www.linkedin.com/in/chris-hendren-78486272",
+  "https://bbs-insurance.com/",
+  "https://www.bluekc.com/agents/",
+  "https://apollo-insurance.com/health-insurance-broker-in-kansas-city/",
+  "https://aishealthadvisors.com/",
+  "https://www.linkedin.com/in/markschlicht"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” broker, but **BBS Insurance** looks like a strong first call for a self-employed person living in Kansas City, Missouri. It says it helps individuals and 1099 contractors compare ACA Marketplace and private plans, check subsidy eligibility, and verify doctors and hospitals are in-network. Its North Kansas City office is at 1327 Burlington St.; call **816-205-7066**. [BBS Insurance](https://bbs-insurance.com/health-insurance/)\n\nAlso worth comparing with **Apollo Health Insurance**, a local brokerage in Lee’s Summit that works with individuals and compares plans across carriers. [Apollo](https://apollo-insurance.com/health-insurance-broker-kansas-city/)\n\nWhen you call, ask whether they’ll compare **all relevant Missouri Marketplace plans**, estimate your subsidy using your projected household income, and check your doctors, prescriptions, and preferred hospitals. For many self-employed people, an ACA Marketplace plan is worth checking first because income-based premium tax credits may be available; you can also compare directly at [HealthCare.gov](https://www.healthcare.gov/). Broker services are often free to you, but confirm how the broker is compensated and whether they’re showing you every suitable option.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_health_insurance_kansas_city_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_2a80f292-bab8-4de7-89bf-ccf14b86d4b4",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00067,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 4804,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4253,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 266,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5070
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "BBS Insurance",
+  "Apollo Health Insurance",
+  "HealthCare.gov",
+  "AIS Health Insurance Advisors",
+  "Kansas and Missouri",
+  "Medicare"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://medicarekc.net/",
+  "https://aishealthadvisors.com/",
+  "https://aishealthadvisors.com/health-insurance/",
+  "https://bbs-insurance.com/",
+  "https://thepolarisagency.com/about/",
+  "https://apollo-insurance.com/health-insurance-broker-kansas-city/",
+  "https://sites.google.com/view/health-insurance-kansas-city/home",
+  "https://bbs-insurance.com/health-insurance/",
+  "https://apollo-insurance.com/health-insurance-kansas-city/",
+  "https://apollo-insurance.com/health-insurance-broker-in-kansas-city/",
+  "https://www.healthmarkets.com/plans/aca-health/kansas/kansas-city",
+  "https://aishealthadvisors.com/service-areas/kansas-city-mo/",
+  "https://www.bluekc.com/agents/contact/",
+  "https://www.healthinsurance.org/aca-marketplace/kansas/",
+  "https://ksassist.org/health-insurance-marketplace/what-is-it"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” broker—it depends on whether you need individual/ACA coverage, employer coverage, or Medicare. **For individual or family plans under 65, AIS Health Insurance Advisors looks like a good first call**: it says it compares Marketplace options in Kansas and Missouri, checks doctor networks, and helps assess subsidy eligibility. Call **913-333-8627**.\n\nYou could also compare with **BBS Insurance** (**816-205-7066**) or **Apollo Health Insurance** (**913-279-0077**); both describe themselves as local brokers offering multiple-carrier options. Broker services are often at no direct cost, but ask how they’re compensated and which insurers they represent.\n\nBefore enrolling, confirm your doctors, prescriptions, hospitals, and total out-of-pocket costs are covered—not just the monthly premium. You can also compare Marketplace plans directly at **HealthCare.gov**.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

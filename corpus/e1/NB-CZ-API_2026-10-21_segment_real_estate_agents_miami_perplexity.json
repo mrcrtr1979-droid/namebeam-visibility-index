@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_real_estate_agents_miami_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: real estate agents, Miami",
+ "niche": "real estate agents",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Miami FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_2db7b9a3-28f8-47f0-b2ba-02b271a60ec3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00439
+   },
+   "input_tokens": 4948,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4399,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 260,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5208
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Joanna Jimenez at Compass",
+  "Anthony Askowitz at RE/MAX Advance Realty",
+  "Joanna Jimenez",
+  "Anthony Askowitz",
+  "MAX Advance Realty"
+ ],
+ "engine_stated_criteria": [
+  "recent sales of homes like yours in your neighborhood"
+ ],
+ "sources_cited": [
+  "https://www.realestateagents.com/fl/miami",
+  "https://www.zillow.com/profile/realestatebychrisd",
+  "https://www.zillow.com/profile/chezrealty",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/miami-fl/",
+  "https://www.ratemyagent.com/real-estate-profile/sales/florida/miami-fl",
+  "https://live.miamirealtors.com/",
+  "https://www.homes.com/real-estate-agents/madeleine-romanello/vb73eyf/",
+  "https://agentpronto.com/florida/miami",
+  "https://www.ratemyagent.com/real-estate-agent/mario-avalos-dq454/sales/overview",
+  "https://agentpronto.com/ohio/miami",
+  "https://www.zillow.com/profile/DebraGolan",
+  "https://www.homes.com/real-estate-agents/carlos-a-rojas/hr3g7q3/",
+  "https://www.zillow.com/profile/reamikeg",
+  "https://www.homes.com/real-estate-agents/joanna-jimenez/pw4te5s/",
+  "https://www.zillow.com/profile/ldority"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for all of Miami—the right choice depends on your neighborhood, property type, and price range. Based on the available search results, **Joanna Jimenez at Compass** is one candidate to interview: the results report 31 seller-side transactions in the past year, across a broad range of prices. **Anthony Askowitz at RE/MAX Advance Realty** also stands out for high overall sales volume, though the figures shown aren’t specifically seller-side.\n\nBefore choosing, ask each agent for **recent sales of homes like yours in your neighborhood**, their pricing strategy and marketing plan, and a written breakdown of fees and listing-term options. Compare at least three agents, and verify their Florida license and transaction details. If you share your neighborhood, home type, and approximate value, I can help narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

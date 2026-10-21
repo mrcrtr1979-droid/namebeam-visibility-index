@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_23910063-24c1-4230-b7de-c5f0e31d3b56",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00454
+   },
+   "input_tokens": 5128,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4582,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 301,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5429
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AZPerio",
+  "Arizona Periodontal Group",
+  "Central Phoenix"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://azperio.com/dental-implants/",
+  "https://www.implantsandperioaz.com/",
+  "https://www.implantsandperioaz.com/about-us/dr-niels-jensen/",
+  "https://camelbackperio.com/",
+  "https://www.trueen.com/business-listing/category/dental-care/89",
+  "https://www.tempeimplantsandperio.com/",
+  "https://www.clearchoice.com/locations/az/phoenix/20830-north-tatum-blvd/",
+  "https://www.periodontistphoenix.com/",
+  "https://www.implantsandperioaz.com/about-us/dr-jonathan-peterson/",
+  "https://www.azimplantdentist.com/",
+  "https://www.periodontistdirectory.com/profiles/2731",
+  "https://www.periodontistdirectory.com/profiles/147800",
+  "https://www.periodontistdirectory.com/Arizona/Phoenix/",
+  "https://www.periodontistphoenix.com/blog/dental-implant-grafting-lanap-candidacy-guide/",
+  "https://www.periodontistphoenix.com/blog/from-dentures-to-dental-implants-how-phoenix-patients-are-reclaiming-their-lives/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t an objective “best” dentist for everyone—implant needs vary, and the right choice depends on your health, the complexity of the case, cost, and who will place and restore the implant.\n\nA reasonable Phoenix starting point is **AZPerio**, which offers implant care through board-certified periodontists and has a Central Phoenix office. Another option to consider is **Arizona Periodontal Group**, led by a board-certified periodontist. These are starting points, not endorsements; confirm current credentials, availability, and fees directly with the practice.\n\nBefore choosing, get a consultation and ask:\n- Who will place the implant, and who will make the crown?\n- Is the clinician a board-certified periodontist or oral and maxillofacial surgeon?\n- What imaging, grafting, or other procedures might be needed?\n- What is the full written cost, including the crown and follow-up care?\n- What alternatives are appropriate, and what happens if the implant doesn’t integrate?\n\nFor a complex case or a costly treatment plan, a second opinion can be useful.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

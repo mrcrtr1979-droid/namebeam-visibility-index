@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_pyne_creative_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "PYNE Creative",
+ "niche": "marketing and brand strategy consultancy",
+ "market": "Maryland",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best marketing agency in Maryland?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0deb8877-1ca9-4041-8811-a5115ab72f1a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00051,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00415
+   },
+   "input_tokens": 4533,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3990,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 203,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4736
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "For broad advertising and brand campaigns, GKV",
+  "Planit",
+  "Black Propeller"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://clutch.co/agencies/digital/maryland",
+  "https://clutch.co/agencies/maryland",
+  "https://clutch.co/agencies/digital-marketing/maryland",
+  "https://clutch.co/agencies/ppc/maryland",
+  "https://nationalmarketingawards.com/awards/maryland/",
+  "https://www.enrichlabs.ai/agencies/state/maryland",
+  "https://planitagency.com/about/",
+  "https://thebranded.company/",
+  "https://devaneyagency.com/",
+  "https://mdadagency.md.gov/about-us/",
+  "https://mojo.biz/we-asked-chatgpt-10-questions-about-maryland-digital-agencies-heres-what-we-found-about-our-own-ai",
+  "https://themanifest.com/direct-marketing/agencies/maryland",
+  "https://www.visitmaryland.org/maryland-office-tourism-campaigns-win-2024-addy-awards",
+  "https://themanifest.com/marketing-strategy/agencies/maryland",
+  "https://www.designrush.com/agency/creative-agencies/maryland"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” marketing agency in Maryland—it depends on what you need. **For paid digital advertising and performance marketing, Black Propeller** is a strong local candidate; it appears near the top of Clutch’s Maryland digital-marketing listings. **For broad advertising and brand campaigns, GKV** is another established Maryland option, while **Planit** is known for creative and integrated work.\n\nBefore choosing, compare agencies’ experience in your industry, relevant case studies, reporting approach, and fees. If you share your location, budget, and whether you need SEO, paid ads, branding, or something else, I can narrow it down.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

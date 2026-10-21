@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_83663c1b-d680-464a-ada3-a63d6ac94b83",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 4673,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4124,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 331,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5004
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "A practical shortlist to get quotes from",
+  "A local mortgage broker",
+  "Loan Estimate",
+  "Bennett Capital Partners",
+  "Bank of America"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.monitorbankrates.com/mortgage-lenders/florida/miami",
+  "https://www.consumerfinance.gov/owning-a-home/compare/compare-loan-estimates/",
+  "https://saferate.com/local/miami/best-mortgage-lenders/banks",
+  "https://www.consumerfinance.gov/owning-a-home/compare/",
+  "https://saferate.com/local/miami/best-mortgage-lenders/mortgage-companies",
+  "https://trustanalytica.org/us/fl/miami/best-private-mortgage-lenders",
+  "https://www.approvedready.com/",
+  "https://www.bankrate.com/mortgages/how-to-compare-mortgage-offers/",
+  "https://www.zillow.com/lender-directory/fl/miami-fl/",
+  "https://www.loc8nearme.com/florida/miami/mortgage-lenders/",
+  "https://www.miamibeachlenders.com/reviews/",
+  "https://www.consumerfinance.gov/owning-a-home/compare/review-loan-estimates/",
+  "https://www.mortgagesup.com/miami-fl",
+  "https://files.consumerfinance.gov/f/documents/cfpb_your-home-loan-toolkit_print.pdf",
+  "https://www.zillow.com/lender-directory/fl/brickell-miami/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one lender that’s best for every Miami buyer—the right choice depends on your credit, down payment, loan type, property, and how quickly you need to close.\n\n**A practical shortlist to get quotes from:**\n- **A local mortgage broker** such as Bennett Capital Partners, which serves Miami-area buyers and may be able to compare offers from multiple lenders.\n- **A local bank or credit union**, which may offer competitive terms or relationship discounts.\n- **A large lender such as Chase or Bank of America**, for a useful comparison and broad loan-program options.\n\nAsk at least three lenders for a written **Loan Estimate** for the same loan amount, down payment, and loan type. Compare the interest rate, lender fees, points, mortgage insurance, cash to close, and five-year borrowing cost—not just the advertised rate. The CFPB explains how to compare Loan Estimates: [consumerfinance.gov/owning-a-home/compare](https://www.consumerfinance.gov/owning-a-home/compare/).\n\nIf you share your approximate purchase price, down payment, credit range, and whether you’re considering conventional, FHA, VA, or jumbo financing, I can help narrow down what to prioritize.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

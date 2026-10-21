@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_real_estate_agents_pleasanton_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a51a7269-cf3d-429b-92ff-00b1389d5965",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00096,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00443
+   },
+   "input_tokens": 4396,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3846,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 333,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4729
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Lori Olson",
+  "Gina Piper",
+  "Tim McGuire",
+  "Doug Buenz",
+  "Homes.com"
+ ],
+ "engine_stated_criteria": [
+  "recent sales in your neighborhood and price range"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/pleasanton-ca/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/94566/",
+  "https://www.homes.com/real-estate-agents/bob-baptiste/vrj7yyd/",
+  "https://www.homes.com/real-estate-agents/cindy-gee/gx457ww/",
+  "https://www.homes.com/real-estate-agents/robin-young/7ydvb3x/",
+  "https://www.redfin.com/city/14986/CA/Pleasanton/real-estate/agents",
+  "https://www.zillow.com/profile/MichaelTessaro",
+  "https://www.homes.com/real-estate-agents/cindi-hagley/3m4s7eg/",
+  "https://www.homes.com/real-estate-agents/carrie-schwabacher/tvrmblc/",
+  "https://www.homes.com/real-estate-agents/gina-piper/2d7dtq9/",
+  "https://www.homes.com/real-estate-agents/andrea-lamadora/chmhptf/",
+  "https://www.homes.com/real-estate-agents/lori-olson/e7s8mxp/",
+  "https://ginapiper.com/",
+  "https://www.zillow.com/profile/eellison47",
+  "https://www.zillow.com/profile/UhomeUlife"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent—the right choice depends on your home’s price range, neighborhood, and what you value in a sale. Based on the available recent listing-side figures, **Lori Olson** is a strong candidate to interview: Homes.com reports 30 seller transactions in the past year, with an average sale price of about $1.38 million. **Gina Piper** is another option, particularly for a higher-priced home; the same source reports 14 seller transactions in the past year, averaging about $2.12 million, and her site describes a focus on luxury homes. **Tim McGuire** and **Doug Buenz** also show substantial recent Pleasanton team sales on Zillow, though team totals don’t necessarily reflect an individual agent’s seller-side results.\n\nBefore choosing, interview two or three agents and ask each for **recent sales in your neighborhood and price range**, a proposed pricing strategy, a marketing plan, who will handle the work day to day, and the full commission and cancellation terms. Verify their California license and compare actual seller-side results—not just total team sales or promotional rankings. These figures are from third-party profiles and may not be directly comparable.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

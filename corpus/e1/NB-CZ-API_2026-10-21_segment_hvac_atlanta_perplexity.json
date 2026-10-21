@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_hvac_atlanta_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_28a29045-f19a-43ef-a555-48ad134c309e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00062,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00428
+   },
+   "input_tokens": 4631,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4083,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 249,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4880
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PV Heating, Cooling & Plumbing",
+  "Empire Heating & Air Conditioning",
+  "The Air Company of GA",
+  "PV Heating",
+  "Empire Heating",
+  "Air Conditioning",
+  "AC replacement",
+  "The Air Company"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://atlantatoprated.com/hvac/",
+  "https://www.consumeraffairs.com/homeowners/hvac-repair-atlanta.html",
+  "https://hvacservice.io/ga/atlanta/ac-replacement",
+  "https://www.theaircompanyga.com/",
+  "https://atlantaexplored.com/air-conditioning-companies/",
+  "https://serviceagent.ai/directory/georgia/atlanta/hvac/replacement/",
+  "https://hvacservice.io/ga/atlanta/ac-repair",
+  "https://local.yahoo.com/hvac-contractors/ga/atlanta/",
+  "https://local.yahoo.com/hvac-contractors/ga/atlanta/4/",
+  "https://hvacservice.io/ga/atlanta/atlanta-hvac-pros",
+  "https://profindr.com/top/hvac-atlanta-ga",
+  "https://indoorexperts.com/air-conditioning-contractor-atlanta-ga/",
+  "https://atlantaexplored.com/air-conditioning-installers/",
+  "https://reliableair.com/cooling/central-ac-installation",
+  "https://www.pvhvac.com/air-conditioning/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every Atlanta home, but **PV Heating, Cooling & Plumbing** looks like a strong first call for an AC replacement: the available listings show a 4.9 rating with thousands of reviews, and the company specifically offers replacement and installation.\n\nI’d also get quotes from **Empire Heating & Air Conditioning** and **The Air Company of GA** so you can compare. Before choosing, ask each contractor to:\n\n- Inspect the home and size the system for it—not just match the old unit.\n- Provide an itemized written quote, including equipment, labor, permits, and warranty.\n- Explain efficiency options and any ductwork changes.\n- Share their Georgia conditioned-air contractor license number; verify it with the state.\n\nCompare the proposed equipment and scope, not just the total price. Ratings and availability can change, and service coverage depends on your neighborhood.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_mortgage_lenders_st_charles_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: mortgage lenders, St. Charles",
+ "niche": "mortgage lenders",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Charles MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b2b9949a-e846-4ae2-814a-c32ed16acd3e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00446
+   },
+   "input_tokens": 4655,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4104,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 316,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4971
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Guild Mortgage’s St. Charles branch",
+  "Integrity Mortgage",
+  "Loan Estimate",
+  "Experience.com",
+  "Guild Mortgage"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.experience.com/reviews/company/first-state-bank-of-st-charles",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://branches.guildmortgage.com/mo/weldonspring/st-charles-158.html",
+  "https://mortgage-info.com/blog/first-time-home-buyer-programs-missouri-2026",
+  "https://societymortgage.com/branches/st-charles-mo/",
+  "https://staterates.org/missouri/st-charles",
+  "https://www.monitorbankrates.com/mortgage-lenders/missouri/st-charles",
+  "https://homelendingadvisor.chase.com/mo/saint-charles/1990-zumbehl-rd-hla-735999",
+  "https://www.experience.com/reviews/office/st-charles-127891",
+  "https://fsbfinancial.com/mortgage/mortgage-offers/",
+  "https://mortgage.usbank.com/mo/saint-charles",
+  "https://fsbfinancial.com/mortgage-locations/st-charles-old-highway-94/",
+  "https://integritymortgagemo.com/",
+  "https://locations.umb.com/mo/saintcharles/umb-mortgage-loan-services-540m.html",
+  "https://www.reddit.com/r/StCharlesMO/comments/1n6wkmo/mortgage_lenders/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and how much you value service versus price. **First State Bank of St. Charles is a strong local option to include in your comparison**: it offers purchase loans and a broad range of programs, and its Experience.com profile shows a 4.94/5 rating across a large number of reviews. That rating is a useful signal, but it doesn’t tell you whether its offer will be the cheapest for your situation.\n\nI’d also get quotes from **Guild Mortgage’s St. Charles branch** and **Integrity Mortgage**, another local lender. Ask all three for a written **Loan Estimate** using the same loan amount, down payment, and rate-lock period. Compare the APR, lender fees, points, mortgage insurance, and estimated cash to close—not just the advertised rate.\n\nIf you may qualify for Missouri down-payment assistance, ask whether the lender participates in the relevant MHDC program and what that does to your rate and fees. My practical recommendation: start with First State Bank, but choose only after comparing at least two other written offers.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

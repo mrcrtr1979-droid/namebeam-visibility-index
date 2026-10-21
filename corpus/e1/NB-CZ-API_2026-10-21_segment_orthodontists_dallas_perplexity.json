@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_orthodontists_dallas_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_599eb5e1-3256-4784-9e0f-009389ca0a7a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00063,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 4948,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4401,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 252,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5200
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Walnut Central Orthodontics",
+  "Fusion Orthodontics",
+  "Invisalign"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/dallas-orthodontics-dallas-tx",
+  "https://reviews.birdeye.com/orthodontic-specialists-of-dallas-155354267961260",
+  "https://www.orthodontistdallastx.com/testimonials/",
+  "https://www.zocdoc.com/dentist/michael-ragan-dds-116895",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/walnut-central-orthodontics-dallas-tx",
+  "https://www.zocdoc.com/dentist/vikas-gupta-dds-576469",
+  "https://www.guptasmilestudio.com/",
+  "https://nationalorthodonticregistry.com/texas/dallas/orthodontists",
+  "https://www.yelp.com/biz/harris-orthodontics-dallas",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/fusion-orthodontics-dallas-tx",
+  "https://trustanalytica.org/us/tx/best-orthodontists",
+  "https://www.navmds.com/doctor/dr-sarah-pollan-dds-ms",
+  "https://trustanalytica.org/us/tx/dallas/best-clear-braces",
+  "https://reviews.birdeye.com/dr-casey-r-lepley-dmd-155354289568108",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/orthodontic-specialists-of-dallas-dallas-tx"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist—the right choice depends on your case, location, budget, and whether you prefer braces or clear aligners. Based on the available listings, **Walnut Central Orthodontics** is a strong place to start: it offers both braces and Invisalign, and its listed orthodontists are board-certified. **Fusion Orthodontics** is another option, with a listed board-certified orthodontist and both braces and Invisalign.\n\nI’d book consultations with two or three practices and compare the proposed treatment plan, total cost, what’s included (such as retainers and refinements), and who will supervise your care. Ask whether the treating doctor is an orthodontic specialist and verify credentials and recent reviews independently. Ratings and “top provider” labels are useful starting points, not proof that a practice is best for your particular case.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

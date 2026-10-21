@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_str_arbitrage_entry_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: STR arbitrage entry",
+ "niche": "short-term rental business model",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "How do I start an Airbnb rental arbitrage business and what tools and data should I use?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_bb9d694f-3c7b-4720-8b98-9556f67b5b58",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00092,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00216,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00572
+   },
+   "input_tokens": 4251,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3698,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 865,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5116
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Get written permission before committing",
+  "Research demand and comparable listings",
+  "Build a conservative financial model",
+  "Set up operations before listing",
+  "Launch small and review results",
+  "Official city/county sources",
+  "A spreadsheet",
+  "Pricing and operations tools",
+  "AirDNA",
+  "Launch"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/help/article/1397",
+  "https://www.airbnb.com/help/article/1376",
+  "https://help.airdna.co/en/articles/8374548-how-does-airdna-calculate-revenue",
+  "https://help.airdna.co/en/collections/5007594-understanding-airdna-data",
+  "https://www.airbnb.com/resources/hosting-homes/a/learn-about-hosting-regulations-7",
+  "https://www.airdna.co/llms.txt",
+  "https://www.airdna.co/airbnb-listing-performance",
+  "https://airbtics.com/best-airbnb-calculator",
+  "https://www.airbnb.com/help/article/2996",
+  "https://www.airbnb.com/help/article/3351",
+  "https://raleighnc.gov/permits/services/short-term-rentals",
+  "https://apify.com/memo23/airdna-scraper",
+  "https://www.hostfully.com/blog/airbnb-analytics-tools/",
+  "https://www.airdna.co/advanced",
+  "https://www.bnbcalc.com/rest-api"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "Rental arbitrage means leasing a property long-term, then hosting short-term guests for more than your rent and operating costs. It can work, but the biggest risks are **permission, local rules, and optimistic revenue estimates**. Treat it as a small hospitality business—not passive income.\n\n## A practical way to start\n\n1. **Choose one city and verify the rules first.**  \n   Check the city and county’s official short-term-rental pages, zoning rules, permit requirements, occupancy limits, safety standards, and tax obligations. Rules can vary by neighborhood and property type, and may change. Confirm requirements with the relevant local offices before signing a lease.\n\n2. **Get written permission before committing.**  \n   A lease that allows ordinary residential use may not allow short-term hosting. Get explicit written approval from the owner, and check building, HOA, condo, mortgage, and insurance restrictions where applicable. Ideally, use a lease addendum that spells out hosting, guest access, damage responsibility, insurance, and who handles complaints. Airbnb also advises hosts to check contracts and local requirements. [Airbnb hosting guidance](https://www.airbnb.com/help/article/1397)\n\n3. **Research demand and comparable listings.**  \n   Look at properties similar to yours in location, size, amenities, and guest capacity. Compare nightly rates, booking patterns, seasonality, and competing supply—not just a market-wide average. Tools such as AirDNA can provide market and property estimates, but their figures are estimates, not guaranteed income. For example, AirDNA’s revenue methodology includes nightly rates and cleaning fees and may not include all host expenses. [AirDNA methodology](https://help.airdna.co/en/articles/8374548-how-does-airdna-calculate-revenue)\n\n4. **Build a conservative financial model.**  \n   Estimate monthly revenue by season, then subtract:\n   - Rent and utilities\n   - Furnishing and setup costs\n   - Cleaning, laundry, and supplies\n   - Platform and payment fees\n   - Insurance, permits, and taxes\n   - Repairs, replacements, and management time\n   - Vacancy and slower-than-expected months\n\n   Model a downside case too—for example, lower occupancy and nightly rates than the tool’s estimate. Don’t sign unless the numbers still make sense under conservative assumptions and you have enough cash to cover several months of costs.\n\n5. **Set up operations before listing.**  \n   Arrange reliable cleaning and turnover, guest messaging, check-in, maintenance, emergency response, and neighbor-complaint handling. Prepare accurate listing photos and descriptions, clear house rules, safety equipment, and a process for tracking income and expenses.\n\n6. **Launch small and review results.**  \n   Start with one unit, track actual bookings and costs against your forecast, and adjust pricing and operations before considering another lease.\n\n## Useful tools and data\n\n- **Official city/county sources:** zoning, permits, registration, safety rules, and local taxes. These are the authority; market-data platforms are not.\n- **AirDNA or similar STR analytics:** comparable listings, occupancy, average daily rate, seasonality, and revenue estimates. Cross-check estimates against live listings and your own assumptions.\n- **A spreadsheet:** monthly revenue and expense model, startup budget, break-even occupancy, and downside scenarios.\n- **Bookkeeping software or a dedicated business account:** separate business transactions and keep records for tax reporting.\n- **Pricing and operations tools:** dynamic pricing, calendar/channel management, guest messaging, and cleaning coordination can help once you have confirmed the business is permitted.\n\nA useful first screen is: **Is hosting legal at this address? Will the owner explicitly allow it? Does the deal remain profitable after all costs in a conservative scenario?** If any answer is unclear, resolve it before signing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

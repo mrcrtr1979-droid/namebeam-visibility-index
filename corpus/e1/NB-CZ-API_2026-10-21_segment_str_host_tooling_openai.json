@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_str_host_tooling_openai",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EbUu580zmXzyz4uX4xGjVK3AYyit3",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 927,
+   "total_tokens": 953,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 320,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "Mashvisor",
+  "Wheelhouse",
+  "Beyond Pricing",
+  "AirDNA",
+  "Beyond",
+  "MarketMinder",
+  "AllTheRooms",
+  "AirDNA MarketMinder",
+  "Use AirDNA",
+  "AllTheRooms Analytics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- Use a two‑tool approach: AirDNA MarketMinder for market analysis before you buy, and PriceLabs for ongoing dynamic nightly pricing once you’re hosting.\n\nWhy two tools\n- Market analysis and investment underwriting require different data (demand, seasonality, comps, realistic revenue and occupancy projections) than day‑to‑day price optimization (rate curves, minimum nights, smart rules). Specialised tools do each job better.\n\nBest market‑analysis tools\n- AirDNA MarketMinder — industry standard for short‑term rental market data (daily demand, occupancy, ADR, revenue metrics, seasonality, comparable properties, historical trends, neighborhood heat maps). Great for underwriting and neighborhood-level comparisons.\n- Mashvisor — useful if you’re comparing long‑term vs short‑term ROI and want property‑level cash‑flow/ROI estimates quickly.\n- AllTheRooms Analytics — alternative with global coverage and custom reporting; good for larger portfolios or custom analytics.\n\nBest dynamic‑pricing tools (day‑to‑day pricing)\n- PriceLabs — highly configurable, strong rule engine, integrates with most PMS/channel managers, great for hosts who want control and sophisticated seasonality/LOS rules. Widely recommended for performance and value.\n- Wheelhouse — excellent interface, strong analytics and recommendations, flexible “strategy” options.\n- Beyond Pricing — simpler, automated pricing with easy setup; good choice if you want a more hands‑off solution.\n\nHow to choose\n- If you want maximum control and customization: PriceLabs.\n- If you want ease of use + automated strategy choices: Wheelhouse.\n- If you want simple, set‑and‑forget automation: Beyond Pricing.\n- If you need to decide whether to buy a property: AirDNA MarketMinder (or Mashvisor/AITR depending on region) to validate nightly rates, occupancy, and revenue expectations.\n\nTypical workflow\n1. Use AirDNA MarketMinder to analyze target neighborhoods: check ADR, occupancy, seasonality, revenue per listing, and comparable listing attributes. Look at historical trends and forecasted demand.\n2. Narrow to candidate properties and run property‑level comps (cleanliness, bedrooms, proximity to demand drivers).\n3. After purchase/listing, connect your listing to PriceLabs (or Wheelhouse/Beyond) and configure minimums, special event rules, length-of-stay adjustments, and custom seasonal adjustments.\n4. Monitor performance and tweak rules; repeat market scans periodically.\n\nCost expectations\n- AirDNA MarketMinder: subscription or market reports (varies; pay per market or subscription).\n- PriceLabs: monthly fee per listing (moderate; often a % of revenue or fixed monthly).\n- Wheelhouse/Beyond Pricing: similar per‑listing monthly fees with free trials usually available.\n\nIf you tell me your country/city and whether you’re buying one property or building a portfolio, I can recommend specific reports, comparable metrics to check, and which pricing tool settings to use.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

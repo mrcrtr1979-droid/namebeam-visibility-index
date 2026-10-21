@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-21_segment_mortgage_lenders_st_louis_perplexity",
+ "date_utc": "2026-10-21",
+ "business": "SEGMENT: mortgage lenders, St. Louis",
+ "niche": "mortgage lenders",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Louis MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8db8fb08-bab3-4e25-aa2b-28211d6d5c43",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00457
+   },
+   "input_tokens": 5139,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4588,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 311,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5450
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "USA Mortgage",
+  "Stifel Bank & Trust",
+  "Midwest BankCentre",
+  "Stifel Bank",
+  "Missouri Housing Development Commission"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bankrate.com/mortgages/mortgage-rates/missouri/",
+  "https://www.usbank.com/home-loans/mortgage/mortgage-rates/missouri.html",
+  "https://www.monitorbankrates.com/mortgage-lenders/missouri/st-louis",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://www.midwestbankcentre.com/mortgage/",
+  "https://mortgage-info.com/blog/best-mortgage-lenders-missouri-2026-top-10",
+  "https://trustanalytica.org/us/mo/st.-louis/best-mortgage-brokers",
+  "https://www.mortgagenewsdaily.com/mortgage-rates/missouri",
+  "https://money.usnews.com/loans/mortgages/state/missouri-mortgage-lenders",
+  "https://www.newamericanfunding.com/branches/st-louis-olive",
+  "https://trustanalytica.org/us/mo/best-mortgage-brokers",
+  "https://www.monitorbankrates.com/mortgage-loan-rates/missouri/st-louis",
+  "https://www.zillow.com/homeloans/mortgage-rates/missouri/",
+  "https://livingstlouismo.com/best-mortgage-lenders-st-louis-mo/",
+  "https://threebestrated.com/mortgage-companies-in-st-louis-mo"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one lender that’s best for every buyer. **For a St. Louis buyer who wants a local lender, I’d put Midwest BankCentre on the shortlist**: it offers local decision-making and a range of purchase-loan options, and reports a 4.85/5 customer-service rating based on more than 2,000 reviews. That rating is lender-reported, so treat it as one data point—not a guarantee.\n\nAlso compare **USA Mortgage** and **Stifel Bank & Trust**; both appear among the active local options in the available listings. If you’re a first-time buyer, ask each lender whether you qualify for Missouri Housing Development Commission assistance. For a VA loan, compare lenders that specialize in VA financing.\n\nThe best way to choose is to request **written Loan Estimates from at least three lenders on the same day**, using the same loan amount, down payment, and rate-lock period. Compare the APR, lender fees, points, cash to close, and closing timeline—not just the advertised rate. Rates and eligibility depend on your credit, down payment, and loan details.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
