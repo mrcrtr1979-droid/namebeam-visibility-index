@@ -849,6 +849,16 @@ def call_anthropic(prompt_text):
     return True, text, [], ""
 
 
+def anthropic_params(prompt_text):
+    """The Messages API params call_anthropic sends, in one place, so the batch
+    mode (scripts/anthropic_batch.py, ANTHROPIC_MODE=batch) asks the identical
+    question with identical settings. call_anthropic itself is unchanged;
+    test_anthropic_batch.py asserts the two stay equal."""
+    return {"model": ANTHROPIC_MODEL, "max_tokens": 2048,
+            "temperature": TEMPERATURE,
+            "messages": [{"role": "user", "content": prompt_text}]}
+
+
 ENGINES = {
     "perplexity": call_perplexity,
     "gemini": call_gemini,
