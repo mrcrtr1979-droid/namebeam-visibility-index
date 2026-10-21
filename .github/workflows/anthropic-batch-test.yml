@@ -5,6 +5,11 @@ name: Anthropic Batch Test
 # committed, never pushed), and prints a schema comparison against a real live row.
 # Added 2026-10-21 on branch batch-anthropic-1021. Costs a few cents at most.
 on:
+  # TEMPORARY (removed in the next commit): GitHub only lets workflow_dispatch find a workflow
+  # that already exists on the default branch. One push-triggered run on this branch registers it.
+  push:
+    branches: [batch-anthropic-1021]
+    paths: [".github/workflows/anthropic-batch-test.yml"]
   workflow_dispatch:
     inputs:
       max_questions:
@@ -57,8 +62,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_CREDIT }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
           ANTHROPIC_MODE: batch
-          MAX_Q: ${{ inputs.max_questions }}
-          DEADLINE_MIN: ${{ inputs.deadline_minutes }}
+          MAX_Q: ${{ inputs.max_questions || '3' }}
+          DEADLINE_MIN: ${{ inputs.deadline_minutes || '20' }}
         run: |
           python3 scripts/anthropic_batch_test.py --out test_out \
             --max-questions "$MAX_Q" \
