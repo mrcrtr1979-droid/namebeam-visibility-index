@@ -1,0 +1,4 @@
+# Added 2026-10-21. Every published sha256 is over the exact bytes as stored here (LF line endings).
+# -text stops git from rewriting line endings on checkout (Git for Windows autocrlf), so a local
+# sha256 of a cloned file matches the published value. No stored file changes.
+* -text
