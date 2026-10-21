@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t look up or verify research published after my training cutoff (June 2024), so I don’t have the September 2026 paper and can’t give the requested number directly.\n\nIf you’d like, I can quickly get the answer for you if you either:\n- paste the research paper or the relevant excerpt here, or\n- paste a link to the paper (arXiv/DOI/venue page).\n\nIf you want to find it yourself, here are precise, efficient steps and search tips:\n\n1. Search for the paper\n   - Use Google Scholar, arXiv, Semantic Scholar or the conference/journal site. Example queries:\n     - \"Perplexity local business recommendation September 2026 domains\"\n     - \"Perplexity cites web domains local business recommendations September 2026\"\n     - \"measurement Perplexity citations local businesses 2026\"\n   - Check likely venues: arXiv, ACM/WWW, CHI, CSCW, EMNLP, ACL, USENIX, or industry research blogs.\n\n2. Where to look in the paper\n   - Look for sections/tables named \"Methods\", \"Data collection\", \"Citation analysis\", \"Results\", or an appendix/supplementary dataset.\n   - Search the PDF for keywords \"domain\", \"domains\", \"web domains\", \"unique domains\", \"citation\", or \"sources\".\n\n3. If the paper has a dataset or appendix\n   - Authors often publish a CSV listing all cited URLs/domains—open that to count unique domains.\n   - If only URLs are listed, extract the registrable domain (e.g., example.com) and count uniques.\n\n4. Tools to count unique domains quickly\n   - Save the list of URLs to a text file and run:\n     - Python (one-liner):\n       from urllib.parse import urlparse\n       domains = {urlparse(u.strip()).netloc for u in open('urls.txt')}\n       print(len(domains))\n     - Command line:\n       sed 's|https\\?://||' urls.txt | cut -d/ -f1 | sort -u | wc -l\n\nIf you paste the paper (or the passage listing the count) or a link, I’ll extract and confirm the exact number and give the citation for the source.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-21T17:36:59Z",
+ "ok": true,
+ "probe_id": "B",
+ "prompt_sha256": "4b0dc6f999563b8642cd6ee3ef1e80842ed876a28633d7cceb1622d4896bb629",
+ "prompt_text": "How many different web domains did Perplexity cite when it answered local business recommendation questions in September 2026, according to published research? Give the number and name the source.",
+ "role": "treatment_unanchored",
+ "run_id": "39645340414",
+ "search_mode": "no search tool (E1 setting)"
+}
