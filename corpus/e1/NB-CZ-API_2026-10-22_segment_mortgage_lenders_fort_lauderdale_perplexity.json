@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_mortgage_lenders_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: mortgage lenders, Fort Lauderdale",
+ "niche": "mortgage lenders",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Fort Lauderdale FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e3d50cea-ea29-4fda-981e-bfaaf46ab429",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00074,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00441
+   },
+   "input_tokens": 4676,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4126,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 296,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4972
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Fairway Independent Mortgage",
+  "BrightStar Credit Union",
+  "NMLS Consumer Access"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.monitorbankrates.com/mortgage-lenders/florida/fort-lauderdale",
+  "https://local.yahoo.com/info-210800712-fairway-independent-mortgage-fort-lauderdale/",
+  "https://www.ratedirect.net/rates/florida/fort-lauderdale",
+  "https://www.monitorbankrates.com/mortgage-loan-rates/florida/fort-lauderdale",
+  "https://dreamyleads.com/mortgage/best-mortgage-lenders-fort-lauderdale",
+  "https://www.realtor.com/mortgage/rates/Weston_FL",
+  "https://www.homefinancialgroup.net/locations/fort-lauderdale-fl",
+  "https://plcorp.net/tag/buying-a-home-in-florida/",
+  "https://www.monitorbankrates.com/mortgage-lenders/florida",
+  "https://saferate.com/fort-lauderdale/best-mortgage-lenders",
+  "https://www.yelp.com/biz/alex-doce-the-doce-group-fort-lauderdale-4?hrid=sZB4RXujwCpp7_v82frrug",
+  "https://www.mortgagesup.com/fort-lauderdale-fl",
+  "https://www.stairwaymortgage.com/fl/fort-lauderdale/mortgage-broker/",
+  "https://www.cmghomeloans.com/mysite/omar-marquez",
+  "https://trustanalytica.org/us/fl/hollywood/best-mortgage-brokers"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one lender that’s best for every buyer—the right choice depends on your credit, down payment, loan type, and the property. **I’d start by getting quotes from one local mortgage broker and two direct lenders**, then compare their written Loan Estimates.\n\nA Fort Lauderdale option to include is **Fairway Independent Mortgage**, which has a local office and offers purchase loans. You could also compare a local broker with a bank or credit union, such as **BrightStar Credit Union**. These are starting points, not endorsements or a verified ranking.\n\nAsk each lender for a quote on the **same day** using the same loan amount, down payment, rate-lock period, and loan type. Compare the **APR, lender fees, discount points, cash to close, and estimated closing timeline**—not just the advertised rate. Check the loan officer’s license through **NMLS Consumer Access** and ask whether they regularly handle your kind of purchase, especially if you need a jumbo, FHA, VA, or condo loan.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

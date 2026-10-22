@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_roofing_miami_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b2d9320f-f8f5-4da5-bcec-7606de377efe",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00446
+   },
+   "input_tokens": 4899,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4351,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 292,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5191
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Art’s Roofing & Construction",
+  "CCC1333598",
+  "Robson Industrial",
+  "CCC1337790",
+  "Notice of Acceptance (NOA)",
+  "Miami-Dade NOA-approved",
+  "Notice of Acceptance",
+  "Florida DBPR and Miami-Dade",
+  "Dade NOA",
+  "Miami-Dade",
+  "Miami-Dade NOA",
+  "Dade NOA-approved"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.extremeroofingmiami.com/",
+  "https://www.robsonindustrial.com/",
+  "https://www.extremeroofingmiami.com/best-roofers-south-florida",
+  "https://www.extremeroofingmiami.com/services/residential-roofing",
+  "https://agkgc.com/",
+  "https://roofingex.com/",
+  "https://www.artsroofing.com/areas/miami/",
+  "https://agkgc.com/miami-roofing",
+  "https://www.hirank.ai/art-s-roofing-and-construction",
+  "https://roofermap.com/directory/florida/miami",
+  "https://www.empireworks.com/florida/miami/services/roofing-replacement-and-storm-restoration",
+  "https://bigfootwindowsandroofing.com/roofers-near-me-miami-dade-county/",
+  "https://aahomesolutions.us/miami/miami-dade-roofing",
+  "https://www.extremeroofingmiami.com/top-roofers-on-bbb-miami",
+  "https://3mg.com/location/miami-fl/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t enough independent evidence to name one company as *the* best. **Art’s Roofing & Construction** looks like a reasonable first company to get a quote from: it lists Florida roofing license **CCC1333598** and says it installs Miami-Dade NOA-approved products for HVHZ projects. **Robson Industrial** is another option; it lists license **CCC1337790** and says it handles permitted, inspected HVHZ roof replacements.\n\nBefore choosing, verify the contractor’s license and insurance, then ask for:\n- The exact roofing system and its Miami-Dade **Notice of Acceptance (NOA)** or applicable HVHZ approval\n- A written scope covering underlayment, fastening, flashing, and any secondary water barrier\n- Permit and inspection details, warranty terms, and references for recent local replacements\n\nGet at least three itemized bids and compare the installation details—not just the price. A contractor’s claims and license numbers should be independently checked with Florida DBPR and Miami-Dade’s product-approval records.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3e0d924d-f8aa-490a-b4bf-67b2a27cfb0b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00099,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00095,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 4515,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3966,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 378,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4893
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "A local mortgage broker",
+  "City National Bank of Florida",
+  "Chase",
+  "NMLS Consumer Access",
+  "Miami Mortgage Brokers",
+  "VA-approved",
+  "Loan Estimate"
+ ],
+ "engine_stated_criteria": [
+  "A lender suited to your loan program"
+ ],
+ "sources_cited": [
+  "https://www.experience.com/reviews/office/coral-gables-674-48509",
+  "https://saferate.com/local/miami/best-mortgage-lenders/banks",
+  "https://www.zillow.com/lender-profile/jmitch24682/",
+  "https://www.monitorbankrates.com/mortgage-lenders/florida/miami",
+  "https://on-mortgage.com/miami-mortgage-rates.php",
+  "https://www.bankrate.com/mortgages/mortgage-rates/florida/",
+  "https://saferate.com/local/miami/best-mortgage-lenders/mortgage-companies",
+  "https://www.approvedready.com/",
+  "https://on-mortgage.com/mortgage-purchase.php",
+  "https://on-mortgage.com/florida-mortgage-rates.php",
+  "https://on-mortgage.com/loan-inquiry-purchase/",
+  "https://trustanalytica.org/us/fl/miami/best-mortgage-brokers",
+  "https://www.miamibeachlenders.com/reviews/",
+  "https://reliancefinancial.com/mortgage-lenders-miami/",
+  "https://www.homefinancialgroup.net/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and how quickly you need to close. **I’d compare at least three quotes rather than choose by online ranking alone.**\n\nFor a Miami purchase, a practical shortlist is:\n\n- **A local mortgage broker**, such as Miami Mortgage Brokers, if you want someone to compare offers from multiple lenders or have a less straightforward application. Online reviews are encouraging, but they’re not a substitute for comparing your actual loan terms.\n- **City National Bank of Florida** or **Chase**, if you prefer a bank with a local presence. A Miami lender comparison lists both among local options, but rankings don’t establish which will offer you the best deal.\n- **A lender suited to your loan program**—for example, a VA-approved lender for a VA loan, or a lender experienced with jumbo financing if you’re buying above conforming limits.\n\nAsk each for a **same-day Loan Estimate** using the same loan amount, down payment, rate-lock period, and loan type. Compare the **APR, lender fees, points, cash to close, and closing timeline**—not just the advertised rate. Also verify the loan officer’s license through **NMLS Consumer Access** and check recent reviews.\n\nIf you share your approximate purchase price, down payment, credit range, and whether you’re considering conventional, FHA, VA, or jumbo financing, I can help narrow the shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

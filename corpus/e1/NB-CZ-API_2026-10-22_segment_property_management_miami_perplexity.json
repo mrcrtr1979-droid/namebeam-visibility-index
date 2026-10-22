@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_property_management_miami_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: property management, Miami",
+ "niche": "property management companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Miami FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_24b9b339-a7c7-4c91-9ed2-c14875520478",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00088,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00074,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00426
+   },
+   "input_tokens": 4052,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3503,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 297,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4349
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Novel Management",
+  "Real Property Management Dade",
+  "Keyrenter Property Management Miami West"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://trustanalytica.org/us/fl/best-property-management-companies",
+  "https://novelmanagement.com/property-management-pricing/",
+  "https://www.biggerpockets.com/fl/miami/property-managers",
+  "https://luxurypropertycare.com/miami-property-management-services/",
+  "https://propertymanagementlist.com/company/real-property-management-dade-miami-fl/",
+  "https://www.jmkpropertymanagement.com/",
+  "https://propertymanagementlist.com/cities/miami/",
+  "https://propertymanagementlist.com/company/luxury-residential-management-miami-fl/",
+  "https://housecashin.com/directory/property-management-companies/miami-fl/",
+  "https://www.jmkpropertymanagement.com/pricing",
+  "https://propertymanagementlist.com/company/homeriver-group-miami-property-management-plantation-fl/",
+  "https://miamipropertymanagementllc.com/",
+  "https://www.keyrentermiamiwest.com/pricing",
+  "https://threebestrated.com/property-management-in-miami-fl",
+  "https://novelmanagement.com/?tcid=GMB"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every Miami rental home, but **Novel Management** looks like a strong first company to interview for a long-term rental. It specifically manages single-family homes and other individually owned rentals, and its published information lists management starting at **5% of monthly rent**, with leasing charged separately and no lease-renewal fee. Those are company-reported terms, so confirm the full fee schedule and contract details directly.\n\nI’d also compare **Real Property Management Dade** and **Keyrenter Property Management Miami West**. They list single-family-home management and have favorable review scores in the available directories; Keyrenter publishes an 8% monthly management fee, plus leasing and renewal charges.\n\nBefore choosing, get written answers on the total fees, maintenance approval limits and markups, tenant-placement guarantee, eviction costs, cancellation terms, and how often the home is inspected. Ask for references from owners with similar properties, and compare the proposed rent and screening criteria—not just the headline review score.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

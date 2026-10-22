@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_pi_car_accident_intake_pleasanton_shotland_pilot_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: PI car accident intake, Pleasanton (Shotland pilot)",
+ "niche": "personal injury law",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I was in a car accident in Pleasanton CA. Which lawyer should I hire for my injury case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6237ca44-d814-40e3-a80d-23c6cda1fd15",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00088,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00466
+   },
+   "input_tokens": 5119,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4564,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 352,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5471
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Alameda County Bar Association Lawyer Referral Service",
+  "J. Michael Hosterman",
+  "GJEL Accident Attorneys",
+  "Alameda County Bar Association Lawyer Referral",
+  "Lawyer Referral Service"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.acbanet.org/need-a-lawyer/",
+  "https://www.alamedacountyca.gov/counsel/",
+  "https://resources.legallink.org/referral/alameda-county-bar-association-lawyer-referral-service/",
+  "https://trustanalytica.org/us/ca/pleasanton/best-injury-lawyer",
+  "https://www.avvo.com/personal-injury-lawyer/ca/pleasanton.html",
+  "https://www.avvo.com/attorneys/94588-ca-stephen-fuerch-87204.html",
+  "https://reviews.birdeye.com/d/personal-injury-law/pleasanton-ca/",
+  "https://reviews.birdeye.com/gjel-accident-attorneys-164738388043646",
+  "https://www.yelp.com/biz/the-law-offices-of-j-michael-hosterman-pleasanton-4",
+  "https://www.calbar.ca.gov/public/find-legal-professionals",
+  "https://dev.alamedacountyca.gov/law/refservices/referrals.htm",
+  "https://lawyers.findlaw.com/personal-injury-plaintiff/california/pleasanton/",
+  "https://www.acbanet.org/2013/04/18/how-do-you-find-a-good-lawyer/",
+  "https://www.martindale.com/personal-injury-lawyers/pleasanton/california/",
+  "https://lawlibrary.alamedacountyca.gov/project/quick-resource-guide-personal-injury/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "I can’t responsibly name one “best” lawyer without knowing the details of your injuries and case. A practical starting point is the **Alameda County Bar Association Lawyer Referral Service**: it refers people with vehicle-injury cases to screened attorneys and offers an initial consultation. The listed fee is **$40**; call **(510) 302-2222** or use its [referral service](https://www.acbanet.org/need-a-lawyer/).\n\nYou could also compare a couple of Pleasanton-area firms—for example, **J. Michael Hosterman** or **GJEL Accident Attorneys**—but treat online ratings as a starting point, not proof of fit. Before hiring anyone, check their license and disciplinary history through the [State Bar of California attorney search](https://www.calbar.ca.gov/public/find-legal-professionals).\n\nIn consultations, ask who will handle your case day to day, their experience with cases like yours, the contingency-fee percentage and case costs, and what happens if there’s no recovery. Don’t sign until you understand the fee agreement. If you tell me how seriously you were injured, whether fault is disputed, and whether you’ve already spoken with an insurer, I can help you narrow down what kind of attorney to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

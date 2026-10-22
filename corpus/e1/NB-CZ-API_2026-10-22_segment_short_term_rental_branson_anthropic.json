@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_short_term_rental_branson_anthropic",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "claude-haiku-4-5-20251001",
+  "response_id": "msg_011CgHfYPmfQaQCv9VEKTo43",
+  "usage": {
+   "input_tokens": 33,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 311,
+   "service_tier": "standard",
+   "inference_geo": "not_available",
+   "speed": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Chateau on the Lake",
+  "Branson Landing hotels",
+  "Kimpton Hotel",
+  "Airbnbs",
+  "Table Rock Lake area",
+  "Downtown Branson",
+  "Silver Dollar City vicinity",
+  "Location matters",
+  "Season",
+  "Branson Accommodation Guide",
+  "Table Rock",
+  "Landing",
+  "Lake"
+ ],
+ "engine_stated_criteria": [
+  "Choose Airbnb if you want",
+  "Choose a hotel if you prefer"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Branson Accommodation Guide\n\n## Airbnb vs. Hotel\n\n**Choose Airbnb if you want:**\n- Kitchen access (saves money on meals)\n- More space for families/groups\n- Longer stays (better value)\n- A home-like feel\n\n**Choose a hotel if you prefer:**\n- Daily housekeeping\n- Front desk support\n- No cleaning responsibilities\n- Easier for short trips\n\n## Specific Recommendations\n\n**Hotels:**\n- **Chateau on the Lake** - Upscale, lakefront, great amenities\n- **Branson Landing hotels** - Convenient downtown location with shopping/dining\n- **Kimpton Hotel** - Mid-range, good value, pet-friendly\n\n**Airbnbs:**\n- **Table Rock Lake area** - Scenic views, quieter\n- **Downtown Branson** - Walking distance to attractions\n- **Silver Dollar City vicinity** - Close to major theme park\n\n## Key Considerations\n- **Location matters**: Branson is spread out; staying near your main attractions saves drive time\n- **Season**: Peak times (summer, holidays) book up fast\n- **Budget**: Airbnbs can be cheaper for groups; hotels offer better deals off-season\n- **Reviews**: Check recent ratings carefully for either option\n\nWhat's your trip length and main interests? That would help narrow down the best choice for your situation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

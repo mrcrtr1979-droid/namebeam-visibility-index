@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_title_companies_west_palm_beach_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: title companies, West Palm Beach",
+ "niche": "title companies",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in West Palm Beach FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_426f6600-4aee-405b-b441-f38f14f93aec",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00061,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00442
+   },
+   "input_tokens": 5225,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4676,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 243,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5468
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Integrity Land Title",
+  "Florida Fidelity Title & Escrow",
+  "Florida Fidelity Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://myfloridacfo.com/division/agents/licensing/agents-and-adjusters/qualifications",
+  "https://www.myfloridacfo.com/division/agents/licensing/agencies-firms/opening-title-agency",
+  "https://licenseesearch.fldfs.com/Licensee/653692",
+  "https://www.integritylandtitle.com/default.aspx?tabid=482",
+  "https://floridatitleco.com/",
+  "https://licenseesearch.fldfs.com/Licensee/1478844",
+  "https://www.alignable.com/west-palm-beach-fl/entrust-solutions",
+  "https://www.yelp.com/biz/palm-beach-real-estate-title-and-escrow-west-palm-beach",
+  "https://licenseesearch.fldfs.com/Licensee/1852574",
+  "https://licenseesearch.fldfs.com/Licensee/367477",
+  "https://www.chamberofcommerce.com/united-states/florida/west-palm-beach/title-company/2014078385-partnership-title-escrow",
+  "https://standardtitlefl.com/",
+  "https://apify.com/j0401/fl-dfs-insurance/input-schema",
+  "https://www.myfloridacfo.com/division/agents/compliance/title-insurance-agencies",
+  "https://americantitlecorp.net/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a clear, independently verified “best” from the information available. **Integrity Land Title** is a reasonable first call: it’s based in West Palm Beach and says it handles title searches, closing documents, escrow, and lien payoffs in-house. **Florida Fidelity Title & Escrow** is another local option, with a West Palm Beach office and residential closing services.\n\nBefore choosing, ask each for a written estimate of title, settlement, and other fees; confirm they can meet your closing date and handle your needs (such as remote signing); and check the agency’s current Florida license. Also ask your lender whether it has any requirements. In Florida, you can generally shop for the title/settlement provider, though who selects or pays for the owner’s policy may depend on the contract.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

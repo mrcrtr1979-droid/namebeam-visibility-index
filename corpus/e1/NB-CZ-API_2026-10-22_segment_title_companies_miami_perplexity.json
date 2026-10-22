@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_title_companies_miami_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: title companies, Miami",
+ "niche": "title companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Miami FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b88ad1eb-44ff-4e92-9308-28ac6e82a8df",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00433
+   },
+   "input_tokens": 4707,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4160,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 260,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4967
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Worldwide Title",
+  "Guaranteed Florida Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.libertytitle.us/",
+  "https://locationtitle.com/",
+  "https://locationtitle.com/services/residential-title-services/",
+  "https://miamititleescrow.com/",
+  "https://www.libertytitle.us/realtor",
+  "https://www.gftitle.com/areas-we-serve/miami-dade-county",
+  "https://palmtitle.com/",
+  "https://www.linkedin.com/company/worldwide-title",
+  "https://allhomestitle.com/areas/miami",
+  "https://www.trinityclosings.com/about",
+  "https://www.linkedin.com/company/shield-title-and-escrow",
+  "https://oneworldwidetitle.com/",
+  "https://marinatitle.com/locations/miami-fl/",
+  "https://affiliate.miamirealtors.com/list/category/title-services-48",
+  "https://www.skybridgetitle.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” title company for every Miami closing. Based on the information available, **Worldwide Title** looks like a reasonable first company to compare: it’s Miami-based, handles residential closings, and reports a 4.8 Google rating. **Guaranteed Florida Title** is another option to check; its site reports a 4.9 rating with 418 reviews. Those ratings are company-reported, so verify them independently and read recent reviews.\n\nBefore choosing, ask each company for a written estimate of **all title, settlement, and closing fees**, who will handle your file, how often they’ll update you, and whether they can meet your lender’s requirements and closing date. In Florida, the purchase contract may specify who selects the title agent or pays for the owner’s title policy, so check that first. Also confirm wire instructions by phone using a trusted number—never rely on emailed changes alone.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_real_estate_agents_st_charles_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: real estate agents, St. Charles",
+ "niche": "real estate agents",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Charles MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_03f4c90a-ea3c-44c1-83dd-84ecd5718434",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00085,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00462
+   },
+   "input_tokens": 5090,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4539,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 338,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5428
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Tabacchi Family Real Estate Team",
+  "SCHNEIDER Real Estate (Jeremy Schneider’s team)",
+  "Berkshire Hathaway HomeServices Select Properties",
+  "St. Charles-area",
+  "SCHNEIDER Real Estate",
+  "Jeremy Schneider"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.realtor.com/realestateagents/st-charles_mo",
+  "https://www.zillow.com/profile/Georgia%20Rossel",
+  "https://www.zillow.com/profile/JeremySchneiderRE",
+  "https://www.zillow.com/profile/teresa391",
+  "https://www.zillow.com/profile/pattihayz",
+  "https://www.zillow.com/profile/Service1stHomes",
+  "https://www.zillow.com/profile/Terry%20sells",
+  "https://www.zillow.com/profile/Rich%20Crow",
+  "https://www.zillow.com/profile/sarah94718",
+  "https://www.zillow.com/profile/bmorgan77",
+  "https://www.zillow.com/profile/Jimmy%20Luetkenhaus",
+  "https://www.zillow.com/profile/Tabacchi%20Family",
+  "https://www.zillow.com/profile/mindywestre",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/saint-charles-mo/",
+  "https://www.realtor.com/realestateagents/saint-charles_mo"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent—it depends on your home’s location, price range, and what you value in a sale. Based on the available directory results, I’d interview these three:\n\n- **Tabacchi Family Real Estate Team** — 5.0 rating with 68 team reviews; the results include seller feedback and recent St. Charles-area sales.\n- **SCHNEIDER Real Estate (Jeremy Schneider’s team)** — 5.0 with 464 team reviews. Ask which team member would handle your listing and how many similar homes they’ve sold recently.\n- **Berkshire Hathaway HomeServices Select Properties** — the Realtor.com listing showed 5.0 with 31 reviews and 161 sales in the last 12 months, though that figure may be for the brokerage rather than one individual agent.\n\nBefore choosing, ask each for a **comparative market analysis**, recent sales of homes like yours in your neighborhood, their proposed list price and marketing plan, commission and other fees, and who will be your day-to-day contact. Compare their recommendations and net proceeds—not just ratings. The directory figures can change and may combine team or brokerage activity, so verify them directly.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

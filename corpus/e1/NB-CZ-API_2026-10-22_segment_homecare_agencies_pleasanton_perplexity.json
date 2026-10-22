@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_homecare_agencies_pleasanton_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: homecare agencies, Pleasanton",
+ "niche": "home care agencies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best home care agency in Pleasanton CA for an elderly parent?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ae1994d1-b007-4108-9bef-65d6bdf440aa",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00085,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00455
+   },
+   "input_tokens": 4777,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4227,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 340,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5117
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Senior Helpers Pleasanton",
+  "Seniors Helping Seniors Tri-Valley",
+  "Right at Home East Bay",
+  "Home Instead",
+  "Home East Bay",
+  "California Department of Social Services",
+  "Home Care Services Branch. If",
+  "Right at Home",
+  "Senior Helpers",
+  "East Bay",
+  "Tri-Valley"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://locations.seniorshelpingseniors.com/ca/pleasanton/care-services-250.html",
+  "https://www.seniorhelpers.com/ca/pleasanton/",
+  "https://www.caring.com/senior-care/in-home-care/california/pleasanton",
+  "https://www.comforcare.com/california/trivalley/about-us/areas-served/pleasanton/",
+  "https://www.caring.com/senior-care/in-home-care/california/castro-valley",
+  "https://locations.seniorshelpingseniors.com/ca/pleasanton/250.html",
+  "https://www.caring.com/senior-care/california/pleasanton/all-seasons-homecare-94566",
+  "https://www.cdss.ca.gov/inforesources/community-care/home-care-services",
+  "https://www.comforcare.com/california/trivalley/about-us/areas-served/downtown-pleasanton/",
+  "https://www.mylivingchoice.com/properties/best-care-at-home/pleasanton/california",
+  "https://www.agingcare.com/local/in-home-care/pleasanton-ca",
+  "https://www.homeinstead.com/home-care/usa/ca/fremont/291/service-area/home-care-in-pleasanton-ca/",
+  "https://www.care.com/home-care-agencies/pleasanton-ca",
+  "https://www.rightathome.net/pleasanton/about-us/areas-served/pleasanton",
+  "https://www.cdss.ca.gov/inforesources/community-care/home-care-services/laws-and-policies"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency—the right choice depends on your parent’s needs, schedule, budget, and personality. **Senior Helpers Pleasanton** looks like a reasonable first call: it serves Pleasanton, lists companion through specialized dementia care, and has a California home-care organization license (**#414700072**). **Seniors Helping Seniors Tri-Valley** is another local option (**license #14700237**), with a model that pairs older adults who need help with mature caregivers. You could also compare **Right at Home East Bay** and **Home Instead**, which serve Pleasanton.\n\nBefore choosing, ask each agency:\n- Who supervises care, and how are caregivers screened, trained, and matched?\n- Can they reliably cover the hours and tasks your parent needs, including backup coverage?\n- What are the hourly minimums, rates, and cancellation terms?\n- How do they communicate changes or concerns to family?\n\nVerify the agency’s current license and the aide’s registry status through the California Department of Social Services’ Home Care Services Branch. If your parent needs **skilled medical care**—such as nursing or physical therapy—ask their clinician about a Medicare-certified home health agency; nonmedical home-care agencies generally provide help with daily activities rather than medical treatment.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

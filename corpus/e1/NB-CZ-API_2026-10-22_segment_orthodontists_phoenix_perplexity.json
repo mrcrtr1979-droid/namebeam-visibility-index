@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6001ac0b-2d0d-460d-9963-52a9c0cd6fac",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00091,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00465
+   },
+   "input_tokens": 4929,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4382,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 364,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5293
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. John C. Budd",
+  "Dr. Spencer Mecham",
+  "Dr. Courtney Dunn",
+  "Serrano Orthodontics",
+  "Invisalign. A",
+  "Board-certified",
+  "American Board of Orthodontics",
+  "Invisalign",
+  "Central Phoenix"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-john-c-budd/",
+  "https://aaoinfo.org/locator/dr-spencer-mecham-2/",
+  "https://aaoinfo.org/locator/dr-andrew-richard-horne/",
+  "https://www.yelp.com/biz/arizona-orthodontic-studio-phoenix",
+  "https://aaoinfo.org/locator/dr-rustin-w-jones/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/woolaver-orthodontics-phoenix-az",
+  "https://aaoinfo.org/locator/dr-michael-adam-feinberg/",
+  "https://aaoinfo.org/locator/dr-c-chris-murphy-2/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/butterfly-orthodontics-phoenix-az",
+  "https://aaoinfo.org/locator/dr-courtney-dunn/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/premier-orthodontics-of-central-phoenix-phoenix-az",
+  "https://serranoorthodontics.com/welcome/",
+  "https://www.esorthodontics.com/service/invisalign/",
+  "https://trustanalytica.org/us/az/best-invisalign",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/rodeo-dental-orthodontics-of-phoenix-phoenix-az"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist—the right choice depends on your case, location, budget, and whether you prefer braces or Invisalign. A good starting point is to compare **board-certified orthodontists** and get two or three consultations before deciding.\n\nA few Phoenix options to consider:\n\n- **Dr. John C. Budd** — Board-certified by the American Board of Orthodontics; Phoenix offices. [AAO profile](https://aaoinfo.org/locator/dr-john-c-budd/)\n- **Dr. Spencer Mecham** — Board-certified; serves south Phoenix/Ahwatukee. [AAO profile](https://aaoinfo.org/locator/dr-spencer-mecham-2/)\n- **Dr. Courtney Dunn** — Board-certified; central Phoenix. [AAO profile](https://aaoinfo.org/locator/dr-courtney-dunn/)\n- **Serrano Orthodontics** — Offers braces and Invisalign at its Phoenix office; the practice says its orthodontists are board-certified. [Practice site](https://serranoorthodontics.com/welcome/)\n\nAt consultations, ask who will supervise your treatment, whether your case is suitable for Invisalign, what the total cost includes (especially retainers and refinements), and how emergencies are handled. Check that the office and doctor are currently accepting patients and confirm insurance coverage directly.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

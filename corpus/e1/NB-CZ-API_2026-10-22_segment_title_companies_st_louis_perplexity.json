@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_title_companies_st_louis_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: title companies, St. Louis",
+ "niche": "title companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Louis MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a5c4aaaa-4b6e-4717-9be8-28de167920d5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00438
+   },
+   "input_tokens": 4721,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4172,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 278,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4999
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Investors Title",
+  "Title Resources",
+  "Community Title Services",
+  "St. Louis-area",
+  "Community Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.investors-title.com/",
+  "https://www.selecttitlegroup.com/residential",
+  "https://www.titleresourcesinc.com/missouri/",
+  "https://hometitlestl.com/",
+  "https://securitytitlestl.com/",
+  "https://www.housesoldeasy.com/investors-title",
+  "https://www.stltitle.com/services/closing-escrow",
+  "https://ctitleservices.com/about/",
+  "https://www.linkedin.com/company/investors-title-inc",
+  "https://www.archcitytitle.com/who-we-are/",
+  "https://www.us-title.com/",
+  "https://ftatitle.com/about-us/",
+  "https://titlepartnersagency.com/",
+  "https://stltitle.com/testimonials",
+  "https://freedom-title.com/services"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” title company—the right choice depends on your location, availability, fees, and how well the team communicates. **Investors Title** is a solid starting point for a St. Louis-area home closing: it handles residential transactions and has more than 20 metro-area offices, including mobile closing options.\n\nI’d also compare **Title Resources** and **Community Title Services**. The search results show strong customer feedback for both; Title Resources lists a 5.0 rating from 92 Google reviews, while Community Title reports 115+ five-star reviews. Those figures are company-reported or search-result snapshots, so check current independent reviews before deciding.\n\nBefore choosing, ask each company for its full closing-cost estimate, whether your lender accepts them, who your point of contact will be, and whether they can accommodate your preferred closing location and date. In Missouri, you can generally shop for a title company, but coordinate your choice with your lender and real-estate agent.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

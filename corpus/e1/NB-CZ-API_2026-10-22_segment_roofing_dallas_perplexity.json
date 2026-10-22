@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_roofing_dallas_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4adbd02a-a316-4e3d-9d43-f986a75586ac",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 4913,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4366,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 313,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5226
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Results Roofing",
+  "T Rock Roofing & Contracting",
+  "New View Roofing",
+  "T Rock Roofing",
+  "Dallas ZIP"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/tx/dallas/profile/general-contractor/dar-roofing-general-contractors-0875-91342351/customer-reviews",
+  "https://arringtonroofing.com/testimonials",
+  "https://rs-roofs.com/dallas-tx/",
+  "https://theroofingbrief.com/best-roofers-dallas-tx/",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/ga/dallas",
+  "https://www.thumbtack.com/tx/dallas/roofing/built-to-last-roofing-dallas/service/353172762688905236",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/tx/dallas",
+  "https://upnotched.com/roofing-dallas-tx",
+  "https://cityvetted.com/best/best-roofing-dallas",
+  "https://mikeslist.com/dallas-tx/roofing",
+  "https://ratingsnearme.com/dallas-tx/experienced-roofers",
+  "https://stazonroof.com/",
+  "https://trustanalytica.org/us/tx/dallas/best-roofing-contractors",
+  "https://roofvista.com/directory/tx/dalco-contractors-roofing",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/or/dallas"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” roofer for every Dallas home, but **Results Roofing** looks like a strong first company to get a quote from: a recent comparison lists it as a top overall DFW pick, with a large volume of highly rated reviews and roof-replacement service.\n\nI’d also compare bids from **T Rock Roofing & Contracting** and **New View Roofing**; both appear in recent Dallas-area rankings with strong customer ratings. Rankings and review counts can change, so treat them as a starting point—not a guarantee.\n\nBefore choosing, get **three written, itemized estimates** and check that each contractor:\n- Is properly insured, and provides proof of liability and workers’ compensation coverage.\n- Specifies materials, underlayment, flashing, ventilation, cleanup, and any decking-replacement costs.\n- Gives you written workmanship and manufacturer warranties, and explains who handles warranty claims.\n- Doesn’t pressure you to sign immediately or promise that insurance will cover the work.\n\nIf you share your Dallas ZIP code and whether this is an insurance claim or an out-of-pocket replacement, I can help narrow the shortlist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

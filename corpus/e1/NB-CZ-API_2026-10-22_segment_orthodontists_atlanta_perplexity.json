@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4540460a-1a8d-48a3-8a93-54164e4a40c1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00094,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00468
+   },
+   "input_tokens": 4962,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4415,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 376,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5338
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Harris Orthodontics",
+  "Wright Orthodontics",
+  "Atlanta Orthodontic Specialists",
+  "West Paces Ferry Orthodontics",
+  "Invisalign",
+  "West Paces Ferry Rd NW",
+  "Practice",
+  "Dr. Peyton Harris"
+ ],
+ "engine_stated_criteria": [
+  "A strong option to compare is West Paces Ferry Orthodontics"
+ ],
+ "sources_cited": [
+  "https://atlantaortho.com/services/braces/",
+  "https://atlantaortho.com/services/invisalign/",
+  "https://atlantaortho.com/",
+  "https://atlantaortho.com/faqs/",
+  "https://www.cosmeticdentistryofatlanta.com/invisalign/",
+  "https://drwrightortho.com/location/orthodontist-in-atlanta-ga/",
+  "https://www.braces-braces.com/about-us",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/atlanta-orthodontic-specialists-5555-peachtree-dunwoody-rd-ne",
+  "https://harrisorthodonticsatl.com/",
+  "https://familyorthodontics.com/orthodontists/ryan-richard-dmd-ms/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/willow-orthodontics-atlanta-madison-yards-atlanta-ga",
+  "https://threebestrated.com/orthodontists-in-atlanta-ga",
+  "https://www.westpacesferryortho.com/",
+  "https://www.bestorthodontistnear.me/georgia/atlanta/",
+  "https://artemisorthoatlanta.com/invisalign/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist—it depends on your case, budget, and where in Atlanta you live. **A strong option to compare is West Paces Ferry Orthodontics**, especially if you’re considering Invisalign: its practice lists board-certified orthodontists and offers Invisalign as well as traditional and clear braces. It’s at **1218 West Paces Ferry Rd NW, Suite 100**. [Practice details](https://www.westpacesferryortho.com/)\n\nOther options to consider:\n- **Harris Orthodontics** — Dr. Peyton Harris is listed as board-certified and offers braces and Invisalign. [Practice details](https://harrisorthodonticsatl.com/)\n- **Wright Orthodontics** — offers braces and Invisalign, with an Atlanta office on North Druid Hills Road. [Practice details](https://drwrightortho.com/location/orthodontist-in-atlanta-ga/)\n- **Atlanta Orthodontic Specialists** — offers braces and Invisalign at several Atlanta locations. [Practice details](https://atlantaortho.com/)\n\nI’d book **two or three consultations** before choosing. Ask who will personally supervise your treatment, whether your case is suitable for Invisalign, what’s included in the quoted fee (including retainers and refinements), and how emergencies or missed appointments are handled. Ratings and provider tiers can be useful clues, but they don’t guarantee the best fit for your case.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

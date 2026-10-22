@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_dentists_pleasanton_openai",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EbraMQWQIoe2TUUq3bF9UOWwXwJhw",
+  "usage": {
+   "prompt_tokens": 22,
+   "completion_tokens": 1091,
+   "total_tokens": 1113,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 640,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "ZIP",
+  "X-rays"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can’t pick one single “best” dentist for you without knowing your needs and I don’t have live access to current ratings — but I can help you find the best fit quickly. A good routine checkup + cleaning dentist in Pleasanton will be a general dentist (or a hygienist in a general practice) with strong patient reviews, transparent pricing, and who accepts your insurance (if you have it).\n\nA few quick questions so I can recommend specific practices:\n- ZIP code or part of Pleasanton (north/south) for convenience?\n- Do you have dental insurance (and which plan)?\n- Is this for an adult or a child?\n- Any special needs or anxiety about dental visits?\n\nIf you want to search yourself right now, here’s an efficient approach:\n1. Use Google Maps, Yelp, Healthgrades, Zocdoc or the ADA “Find a Dentist” tool and search “general dentist Pleasanton, CA.”\n2. Filter by “accepts my insurance” (if available) and sort by rating.\n3. Read several 3–5-star and 1–2-star reviews to get a balanced view (look for consistent comments about cleanliness, friendliness, punctuality).\n4. Check credentials on the practice website (DDS/DMD, years in practice) and whether they list hygienists and modern equipment.\n5. Call the office to confirm:\n   - They accept your insurance (or get an estimate for a routine cleaning and exam)\n   - How long new‑patient visits typically take\n   - Hygiene services offered (prophylaxis vs periodontal maintenance, digital X-rays)\n   - Availability and appointment times that fit your schedule\n\nPhone script (copy/paste):\n“Hi — I’m a new patient and would like a routine exam and cleaning. Do you accept [insurance name]? What is the typical cost for a new-patient exam with X-rays and a regular cleaning if I’m paying out of pocket? How long is the appointment and do you have openings next week?”\n\nIf you tell me your ZIP and insurance (or if it’s for a child), I can give a short list of well-reviewed Pleasanton practices and help draft messages or call questions.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

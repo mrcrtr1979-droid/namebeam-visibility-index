@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_property_management_west_palm_beach_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: property management, West Palm Beach",
+ "niche": "property management companies",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in West Palm Beach FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_290bc619-ce31-4f1d-8a93-e99de8abb5ef",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00084,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00462
+   },
+   "input_tokens": 5128,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4577,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 336,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5464
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Florida’s Property Management (My Area Realty)",
+  "Home Property Management",
+  "Luxury Property Care",
+  "My Area Realty",
+  "West Palm Beach. It",
+  "Florida’s Property Management"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.atlispm.com/",
+  "https://www.floridaspropertymanagement.com/",
+  "https://www.atlispm.com/west-palm-beach-property-management",
+  "https://www.atlispm.com/blog/property-management-west-palm-beach",
+  "https://www.floridaspropertymanagement.com/city/West-Palm-Beach.html",
+  "https://luxurypropertycare.com/west-palm-beach-property-management-services/",
+  "https://purehomeriver.com/locations/florida/west-palm-beach/",
+  "https://truepatriotpropertymanagement.com/west-palm-beach-property-management/",
+  "https://luxurypropertycare.com/best-property-management-companies-west-palm-beach/",
+  "https://www.biggerpockets.com/fl/west-palm-beach/property-managers",
+  "https://www.sunworldgroup.co/pricing",
+  "https://www2.myfloridalicense.com/real-estate-commission/public-records/",
+  "https://keyverified.com/top-10/florida/west-palm-beach/",
+  "https://www.zillow.com/professionals/property-manager-reviews/33422/",
+  "https://palmbeachcountypropertymanagement.com/faq/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Florida’s Property Management (My Area Realty)** looks like a sensible first quote for a typical long-term single-family rental in West Palm Beach. It specifically manages single-family homes locally and publishes flat monthly pricing: **$149/month for homes renting under $2,000, or $199/month for higher-rent homes**, plus a leasing fee of one month’s rent. It says it has no vacancy management fee, maintenance markup, or cancellation fee. Confirm the current terms directly, since fees and services can change.\n\nAlso compare **Home Property Management** for a long-established local option, and **Luxury Property Care** if your home is higher-end or you value published guarantees. Luxury Property Care lists management at 8–10% of collected rent, a one-month leasing fee, and no setup or renewal fees.\n\nBefore choosing, ask each company for a sample management agreement and a written, all-in fee schedule. Compare tenant screening, inspection frequency, maintenance approval limits, lease-renewal charges, eviction handling, and how quickly they respond to owners. Verify the responsible real-estate license through Florida DBPR, and speak with a couple of current owner clients.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

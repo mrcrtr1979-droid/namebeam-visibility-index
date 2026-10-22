@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_property_management_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: property management, Fort Lauderdale",
+ "niche": "property management companies",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Fort Lauderdale FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c865a7e1-a6a7-47e7-8315-5c1a0e7580ea",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00074,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00444
+   },
+   "input_tokens": 4795,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4245,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 297,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5092
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Luxury Property Care (LPC)",
+  "Real Property Management United",
+  "Atlas Property Management",
+  "Luxury Property Care"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.unitedrpm.com/property-management-fees",
+  "https://www.biggerpockets.com/fl/fort-lauderdale/property-managers",
+  "https://keyverified.com/top-10/florida/fort-lauderdale/",
+  "http://chadypm.com/property-management-fort-lauderdale-fl/",
+  "https://luxurypropertycare.com/ft-lauderdale-property-management-service/",
+  "https://bhpropertymanagementmaintenance.com/property-management/fort-lauderdale",
+  "https://www.atlispm.com/fort-lauderdale-property-management",
+  "https://www.turbotenant.com/property-management/services/florida/fort-lauderdale/",
+  "https://www.unitedrpm.com/",
+  "https://www.thumbtack.com/fl/fort-lauderdale/property-management",
+  "https://www.thumbtack.com/fl/fort-lauderdale/property-management/jge-property-management/service/543673055223406614",
+  "https://www.allpropertymanagement.com/property-management/companies/50258/henion-property-management",
+  "https://www.unitedrpm.com/about-us",
+  "https://www.zillow.com/professionals/property-manager-reviews/fort-lauderdale-fl-33304/",
+  "https://purehomeriver.com/locations/florida/fort-lauderdale/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company, but **Luxury Property Care (LPC)** looks like a strong first choice for a Fort Lauderdale rental home based on the available information: it specifically manages single-family homes, advertises **8–10% of collected rent**, charges no management fee while the home is vacant, and says lease renewals are free. Its site reports a 4.9/5 Google rating from 230+ reviews—worth checking directly, since company-published ratings aren’t independent verification.\n\nI’d also get quotes from **Real Property Management United** and **Atlas Property Management**. Both advertise local home-management services; Atlas publishes a fee range of 5–9% of collected rent, with a $200 monthly minimum, plus a tenant-placement fee.\n\nBefore choosing, compare the **full fee schedule**—especially leasing, renewal, maintenance coordination, and cancellation fees—and ask how quickly they respond to repairs, how they screen tenants, and whether they manage homes similar to yours. Verify the responsible broker’s Florida license and read the management agreement before signing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

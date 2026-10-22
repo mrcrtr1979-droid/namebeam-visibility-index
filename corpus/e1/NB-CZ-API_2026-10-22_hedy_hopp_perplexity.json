@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_hedy_hopp_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "Hedy & Hopp",
+ "niche": "healthcare marketing agency",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best healthcare marketing agency in St. Louis?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_00455153-aedf-4f97-9032-f58ee9650356",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00074,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 5018,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4472,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 294,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5312
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atomicdust",
+  "Cannonball Agency",
+  "Integrity",
+  "Cork Tree Creative",
+  "Signature Medical Group",
+  "Anderson Healthcare",
+  "Siteman Cancer Center",
+  "St. Louis Children"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.atomicdust.com/healthcare-branding-agency/",
+  "https://www.integrityxd.com/industry/healthcare",
+  "https://cannonballagency.com/work/healthcare/",
+  "https://corktreecreative.com/case-studies/signature-medical-group/",
+  "https://digital.marketing/locations/st-louis",
+  "https://www.designrush.com/agency/ad-agencies/missouri/st-louis",
+  "https://www.singlegrain.com/location/paid-ads-agency-st.-louis/",
+  "https://pilotpractice.com/healthcare-digital-marketing-agency-in-st-louis-mo.html",
+  "https://www.singlegrain.com/location/digital-marketing-agency-st-louis/",
+  "https://revitadigital.com/locations/missouri/st-louis",
+  "https://builtin.com/companies/location/st-louis/type/agency-companies",
+  "https://onfolio.com/reviewed/marketing-agencies/usa/missouri/st-louis/",
+  "https://corktreecreative.com/case-studies/anderson-healthcare/",
+  "https://brandingpioneers.com/locations/usa/st-louis/hospital-marketing",
+  "https://www.apexwebseo.com/locations/saint-louis"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency—it depends on whether you need patient acquisition, hospital-level brand campaigns, or healthcare technology marketing.\n\n**For a St. Louis medical practice focused on attracting patients, I’d shortlist Cork Tree Creative.** Its published local case studies include work for Signature Medical Group, reporting a 416% increase in conversions and a 57% decrease in cost per conversion, and Anderson Healthcare, which reported increased reviews and substantial ad reach. Those are agency-reported results, so ask for references and comparable examples before deciding.\n\nOther strong fits:\n- **Atomicdust** — healthcare branding and digital work, especially for health-tech and healthcare services.\n- **Cannonball Agency** — major healthcare campaigns and storytelling for organizations including BJC, Siteman Cancer Center, and St. Louis Children’s Hospital.\n- **Integrity** — full-service marketing for healthcare providers and practices.\n\nWhen comparing them, ask who will handle your account, how they measure qualified patient inquiries, what compliance processes they use, and whether they can share results from organizations like yours.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

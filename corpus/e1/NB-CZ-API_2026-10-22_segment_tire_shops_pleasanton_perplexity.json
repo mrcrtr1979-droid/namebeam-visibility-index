@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_tire_shops_pleasanton_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: tire shops, Pleasanton",
+ "niche": "tire shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I buy tires in Pleasanton CA and who does the best installation?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_23ebba41-4888-45c5-8942-3eee9b77a71f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00449
+   },
+   "input_tokens": 4814,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4264,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 311,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5125
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "My pick: Seever & Sons Tire",
+  "America’s Tire in Dublin",
+  "Big Brand Tire",
+  "Seever",
+  "Sons Tire",
+  "Sons",
+  "America",
+  "Tire",
+  "Tire Rack",
+  "America’s Tire",
+  "Seever & Sons Tire",
+  "My pick",
+  "Big Brand"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bigbrandtire.com/locations/3687-old-santa-rita-rd-pleasanton-ca-94588",
+  "https://www.tirerack.com/installers/ca/pleasanton/94582",
+  "https://locations.thetirechoice.com/ca/pleasanton/4216-rosewood-rd",
+  "https://www.tirerack.com/installers/ca/pleasanton/94566",
+  "https://www.tirerack.com/installers/ca/pleasanton/94588",
+  "https://www.bigotires.com/location/ca-pleasanton-94566/005024/tire-services-and-repair",
+  "https://www.bigotires.com/location/ca/pleasanton/3688a-washington-st-94566/005024/tire-services-and-repair/brake-repair/tire-services-and-repair",
+  "https://www.carfax.com/Auto-Repair-Pleasanton-CA_c12173",
+  "https://www.bigotires.com/location/ca/pleasanton/3688a-washington-st-94566/005024",
+  "https://www.bigbrandtire.com/tire-shop/pleasanton-ca",
+  "https://reviews.birdeye.com/seever-sons-tire-156070849854197",
+  "https://locations.thetirechoice.com/ca/pleasanton",
+  "https://www.tirerack.com/installers/ca/diablo/94528",
+  "https://www.yelp.com/biz/valley-tire-service-pleasanton",
+  "https://www.yelp.com/biz/seever-and-sons-tire-pleasanton?start=40"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**My pick: Seever & Sons Tire** for installation. It has a strong local reputation—about **4.7 stars across roughly 390 reviews**—with customers often praising honest advice, fair prices, and quick service. It’s at **3687 Old Santa Rita Rd**; call ahead to confirm availability and get a quote.\n\nFor buying tires, I’d compare Seever & Sons’ out-the-door price with **America’s Tire in Dublin** (6450 Dublin Blvd, about 3–6 miles away). Tire Rack lists that shop as a top-rated installer, based on hundreds of customer surveys. **Big Brand Tire** is another convenient Pleasanton option at **3687 Old Santa Rita Rd**, with about **4.7 stars across 700+ reviews**.\n\n**Bottom line:** Start with Seever & Sons for a local, service-focused experience; compare the same tire and installation package at America’s Tire before deciding. Ask each shop for the total including mounting, balancing, disposal, valve stems or TPMS service, and any road-hazard coverage. Ratings and prices can change, so confirm directly.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

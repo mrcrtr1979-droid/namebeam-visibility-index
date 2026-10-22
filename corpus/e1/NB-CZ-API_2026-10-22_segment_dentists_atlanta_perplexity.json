@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4355d186-43e5-4003-957c-af3fb7634e49",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00096,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00435
+   },
+   "input_tokens": 4369,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3823,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 298,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4667
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Carlos Castro at Georgia Prosthodontics",
+  "Dr. Hal Arnold",
+  "Dr. Evan Grodin",
+  "Dr. Carlos Castro",
+  "Georgia Prosthodontics",
+  "Hal Arnold",
+  "Evan Grodin"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://georgiaprosthodontics.com/",
+  "https://www.drevangrodin.com/dental-implants/",
+  "https://www.drevangrodin.com/all-on-4/",
+  "https://georgiaprosthodontics.com/prosthodontist-atlanta/",
+  "https://southernrootsperiodontics.com/",
+  "https://advancedperioatl.com/",
+  "https://www.drevangrodin.com/prosthodontics/",
+  "https://reviews.birdeye.com/d/prosthodontists/atlanta-ga/",
+  "https://drhalnarnold.com/",
+  "https://www.periogeorgia.com/",
+  "https://www.dentalinbound.com/dentists/dr-william-zinney",
+  "https://westcobbperio.com/our-practice/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-gregg-codelli-1821141870",
+  "https://advancedperioatl.com/implants/",
+  "https://aedit.com/provider/carlos-castro-2044"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for every implant case. Based on the information available, **Dr. Carlos Castro at Georgia Prosthodontics** is a strong Atlanta candidate to consider: he is listed as a **board-certified prosthodontist** and the practice focuses on implant and complex restorative dentistry. [Georgia Prosthodontics](https://georgiaprosthodontics.com/)\n\nOther options include **Dr. Hal Arnold**, a board-certified prosthodontist, and **Dr. Evan Grodin**, whose practice lists dual board certification in prosthodontics and periodontics. [Hal Arnold](https://drhalnarnold.com/) · [Evan Grodin](https://www.drevangrodin.com/dental-implants/)\n\nBefore choosing, get **two consultations** and ask who will place the implant and who will make the crown, whether you need bone grafting, what the full written cost includes, and how they handle complications. Confirm credentials independently and check that the proposed plan fits your dental and medical history.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

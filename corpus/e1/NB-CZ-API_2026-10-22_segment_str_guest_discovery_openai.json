@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_str_guest_discovery_openai",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EbquS4i3uY1MQeeCTYA2pqNvdDtaX",
+  "usage": {
+   "prompt_tokens": 34,
+   "completion_tokens": 1779,
+   "total_tokens": 1813,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Superhost",
+  "Weaknesses",
+  "Premier Partner",
+  "Verified ID",
+  "IDs",
+  "Booking.com",
+  "Message the host before booking",
+  "Clear house rules"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- There’s no single “best” site — choose by what you need:\n  - Whole-home vacation with families/groups: Vrbo or Airbnb.\n  - Unique local stays and experiences: Airbnb.\n  - Hotels/last-minute, pay-at-arrival, business travel or loyalty discounts: Booking.com.\n- To find a good host, rely on verified reviews, responsiveness, platform badges (Superhost/Top Host), clear photos and rules, and messages on the platform asking key questions.\n\nQuick platform comparison\n- Airbnb\n  - Strengths: huge variety (private rooms, shared, unique homes), strong host–guest communication tools, Superhost badge, lots of filters.\n  - Weaknesses: cleaning/service fees can be high; cancellation varies by host; host-set rules vary widely.\n- Vrbo\n  - Strengths: focused on whole-home vacation rentals (good for families/groups), typically fewer shared spaces, strong for multi-bedroom houses.\n  - Weaknesses: smaller inventory of single rooms or unique short-term stays; fees similar to Airbnb.\n- Booking.com\n  - Strengths: huge hotel inventory plus apartments; many listings offer free cancellation and pay-at-property; good for last-minute bookings and business travel.\n  - Weaknesses: less emphasis on host relationship; some apartment listings have less host-driven detail or verification; cancellation/fees depend on property.\n\nHow to find a good host — step-by-step\n1. Filter for what matters: entire place vs private room, number of bedrooms, amenities (parking, washer, Wi‑Fi), cancellation flexibility, instant book if you need fast confirmation.\n2. Sort and scan listings by reviews and recent activity:\n   - Favor properties with many recent reviews (last 6–12 months).\n   - Read both 5-star and 3–4 star reviews to spot recurring issues.\n3. Check host signals:\n   - Airbnb “Superhost” / Vrbo “Premier Partner” / Booking “Top Reviewed” or lots of guest reviews.\n   - Verified ID and complete profile with multiple listings.\n   - High response rate / quick response time in the listing.\n4. Inspect the listing carefully:\n   - High-quality, recent photos that match the description.\n   - Clear house rules and check-in instructions.\n   - Accurate calendar (no unexplained long blocks).\n5. Look for red flags:\n   - Few or no reviews, inconsistent photos, pricing that’s much lower than similar nearby places, host asks to communicate or pay off-platform.\n6. Message the host before booking:\n   - Ask any clarifying questions (see sample message below).\n   - A good host replies promptly, politely, and answers specifics.\n\nSample message to a host (copy/paste and adapt)\nHi — I’m [Your name]. I’m traveling with [# guests, relation, e.g., two adults and a child] from [dates]. Quick questions before booking:\n1) Is the place available for check-in at [time]?  \n2) How is check-in handled (self-check-in, keypad, meet-and-greet)?  \n3) Are linens, towels, and toiletries provided?  \n4) Is parking available and is there a charge?  \n5) Any noise or neighborhood restrictions we should know about?  \n6) Where is the nearest grocery/transport?  \nThanks — we’re tidy and respectful. Looking forward to your reply.\n\nWhat a good host will do in their response\n- Answer all questions clearly and promptly.\n- Provide check-in instructions, rules, and any extra fees.\n- Offer local tips (transit, restaurants, nearest grocery).\n- Be flexible or explain policies transparently.\n\nThings to confirm before booking (checklist)\n- Exact sleeping setup (bed sizes, sofa beds).\n- Total price including cleaning, service, taxes, security deposit.\n- Cancellation and refund policy.\n- Check-in/out times and late/early arrival options.\n- Parking, elevator access, stairs, accessibility.\n- Wifi speed if you’ll work remotely.\n- Pet policy (and any extra fees).\n- Safety: locks, smoke/CO detectors, neighborhood safety if you’re concerned.\n- For long stays: laundry, garbage, weekly cleaning or supplies.\n\nSafety and payment tips\n- Always pay through the platform — never send money or communicate off-platform.\n- Prefer listings with many recent reviews and verified IDs.\n- Keep messages on the platform (use them if a problem arises — it documents your communication).\n- Take photos on arrival and report issues to the host and platform within 24 hours.\n- Consider travel insurance for nonrefundable bookings.\n\nWhen to pick each platform (quick scenarios)\n- I want a whole house for a family: Vrbo or Airbnb (compare price/fees).\n- I want a funky treehouse or local host experience: Airbnb.\n- I want a hotel, last-minute, or pay-at-arrival: Booking.com.\n- I need excellent host communication and guidance: Airbnb tends to encourage that; Vrbo hosts are often professional property owners for vacation homes.\n\nIf you want, tell me:\n- destination, travel dates, party size, and priorities (budget, entire home, pet-friendly, work Wi‑Fi) — I’ll recommend which platform is likely best and help craft targeted messages or filters.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

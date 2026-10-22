@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_real_estate_agents_st_louis_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: real estate agents, St. Louis",
+ "niche": "real estate agents",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Louis MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9a3ed82f-6d41-46fb-a5dd-b37fcf816631",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0009,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 4702,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4151,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 361,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5063
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Irene Pappas-Edwards, Coldwell Banker Realty–Gundaker",
+  "Sarah Nguyen-Bani, RE/MAX Results",
+  "Denise Eschbach, Power Home Selling Team",
+  "Irene Pappas-Edwards",
+  "Coldwell Banker Realty",
+  "Homes.com",
+  "Sarah Nguyen-Bani",
+  "MAX Results",
+  "Denise Eschbach",
+  "Power Home Selling Team"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.homelight.com/st-louis-mo/top-real-estate-agents",
+  "https://www.homelight.com/saint-louis-mo/top-real-estate-agents",
+  "https://wealthybud.com/directories/agents/st-louis-mo",
+  "https://www.fastexpert.com/top-real-estate-agents/saint-louis-mo/",
+  "https://www.homes.com/real-estate-agents/irene-pappas-edwards/3vdgrwd/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/saint-louis-mo/",
+  "https://www.zillow.com/profile/tayler84",
+  "https://www.realtor.com/realestateagents/636d018d260d345d96426201",
+  "https://listwithclever.com/top-real-estate-agents/missouri/",
+  "https://www.ratemyagent.com/real-estate-profile/sales/missouri/st-louis-mo",
+  "https://www.realtor.com/realestateagents/56c9fc4889a68901006ed8cb",
+  "https://www.homelight.com/st-louis-county-mo/top-real-estate-agents",
+  "https://realestate.usnews.com/agents/missouri/st-louis",
+  "https://www.fastexpert.com/top-real-estate-agents/missouri/",
+  "https://www.experience.com/reviews/christopher-4381163"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for all of St. Louis—the right choice depends on your neighborhood, home price, and the agent’s recent **seller-side** results there.\n\nA reasonable shortlist to interview:\n\n- **Irene Pappas-Edwards, Coldwell Banker Realty–Gundaker** — Homes.com reports 5.0 stars from 29 reviews and 15 seller-side transactions in the past year. Her reported average sale price is about $402,000, so check whether that fits your home.\n- **Sarah Nguyen-Bani, RE/MAX Results** — a recent directory lists 82 sales in the past 12 months and 132 five-star reviews; confirm how many were listings and whether the sales were in your area.\n- **Denise Eschbach, Power Home Selling Team** — the same directory lists 74 recent sales and 113 five-star reviews; ask whether those figures reflect the team or her individual work.\n\nThese are leads, not endorsements, and directory rankings can use different methods. I’d interview two or three agents and ask each for recent sales of homes like yours nearby, their list-price strategy, marketing plan, fees, and references from recent sellers. The best fit is the one who can show relevant local results and clearly explain their plan—not simply the one with the most sales.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

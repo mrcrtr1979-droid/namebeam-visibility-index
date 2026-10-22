@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-22_segment_hvac_houston_perplexity",
+ "date_utc": "2026-10-22",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7da8dad5-5f7a-405d-bf5a-447e281ad210",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00055,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00424
+   },
+   "input_tokens": 4758,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4212,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 219,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4977
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Tech of Houston AC & Plumbing",
+  "Air Tech of Houston AC",
+  "Star Repair Services",
+  "Texas HVAC",
+  "Air Tech of Houston"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/tx/houston/category/air-conditioning-repair/accredited",
+  "https://www.bestinhood.com/houston/home-maintenance-and-repair/best-hvac-services-in-houston/",
+  "https://www.bestinhood.com/houston/home-maintenance-and-repair/best-air-conditioner-repair-in-houston/",
+  "https://www.northwindac.com/",
+  "https://www.expertise.com/home-improvement/hvac/texas/houston",
+  "https://www.bbb.org/us/tx/houston/category/air-conditioning-contractor/accredited",
+  "https://www.thumbtack.com/tx/houston/hvac-repair-companies",
+  "https://profindr.com/top/hvac-houston-tx",
+  "https://texas.twupro.com/hvac-contractors/houston/",
+  "https://hvacservice.io/tx/houston/ac-repair",
+  "https://serviceagent.ai/directory/texas/houston/hvac/",
+  "https://trustanalytica.org/us/tx/houston/best-air-conditioning-contractors",
+  "https://www.consumeraffairs.com/homeowners/hvac-repair-houston.html",
+  "https://serviceagent.ai/directory/texas/houston/hvac/repair/",
+  "https://www.excellentcontractor.com/houston-tx/hvac-contractors"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company, but **Air Tech of Houston AC & Plumbing** looks like a strong all-around choice: one current directory lists it at **4.9 stars across more than 6,000 reviews**. For a smaller company with a strong repair-focused reputation, **5 Star Repair Services** is another option; a recent listing reports **5.0 stars from 242 reviews** and 24-hour emergency service.\n\nBefore booking, confirm they serve your ZIP code, ask about the diagnostic fee and repair estimate, and verify the technician’s Texas HVAC license. Ratings and availability can change, so it’s worth checking recent reviews and getting a second quote for an expensive repair.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
