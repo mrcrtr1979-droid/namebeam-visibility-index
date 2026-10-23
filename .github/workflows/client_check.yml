@@ -24,6 +24,7 @@ concurrency:
 
 permissions:
   contents: read
+  id-token: write
 
 jobs:
   client-check-dry-run:
@@ -38,13 +39,24 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install requests
-        run: pip install requests
+      - name: Install requests and boto3
+        run: pip install requests boto3
+
+      # Bedrock path (AWS credit). Runs only when the repo variable
+      # AWS_BEDROCK_ROLE_ARN is set; otherwise the API key path is used.
+      - name: Configure AWS credentials (OIDC)
+        if: vars.AWS_BEDROCK_ROLE_ARN != ''
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_BEDROCK_ROLE_ARN }}
+          aws-region: us-east-1
 
       - name: Dry run the client check
         env:
           INPUT: ${{ inputs.input_path }}
           ENGINES: ${{ inputs.engines }}
+          BEDROCK_MODEL_ID: ${{ vars.BEDROCK_MODEL_ID }}
+          AWS_REGION: us-east-1
         run: |
           case "$INPUT" in
             client_checks/inputs/*.json) ;;

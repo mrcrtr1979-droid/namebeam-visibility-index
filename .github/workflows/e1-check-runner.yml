@@ -20,6 +20,7 @@ concurrency:
 
 permissions:
   contents: write
+  id-token: write
 
 jobs:
   run-e1-check:
@@ -55,9 +56,18 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install requests
+      - name: Install requests and boto3
         if: steps.guard.outputs.skip != 'true'
-        run: pip install requests
+        run: pip install requests boto3
+
+      # Bedrock path (AWS credit). Runs only when the repo variable
+      # AWS_BEDROCK_ROLE_ARN is set; otherwise the API key path is used.
+      - name: Configure AWS credentials (OIDC)
+        if: steps.guard.outputs.skip != 'true' && vars.AWS_BEDROCK_ROLE_ARN != ''
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_BEDROCK_ROLE_ARN }}
+          aws-region: us-east-1
 
       # Reports which engines are wired WITHOUT ever printing a value.
       # Only ever echoes "present" or "MISSING", never the secret itself.
@@ -121,6 +131,9 @@ jobs:
           # ANTHROPIC_MODEL (Settings > Secrets and variables > Actions > Variables).
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          # Bedrock path: non-empty BEDROCK_MODEL_ID routes the anthropic engine to Bedrock.
+          BEDROCK_MODEL_ID: ${{ vars.BEDROCK_MODEL_ID }}
+          AWS_REGION: us-east-1
         run: python scripts/e1_runner.py
 
       # S1-1 (2026-10-08, [SONNET-RECORD-1008E-S1]): the daily sources dataset.
