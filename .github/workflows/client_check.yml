@@ -17,6 +17,11 @@ on:
         required: true
         default: "perplexity,gemini,openai,anthropic"
         type: string
+      repeats:
+        description: "Times each engine is asked each question (1 to 10); the dry run only counts requests. Default 1."
+        required: true
+        default: "1"
+        type: string
 
 concurrency:
   group: client-check
@@ -55,6 +60,7 @@ jobs:
         env:
           INPUT: ${{ inputs.input_path }}
           ENGINES: ${{ inputs.engines }}
+          REPEATS: ${{ inputs.repeats }}
           BEDROCK_MODEL_ID: ${{ vars.BEDROCK_MODEL_ID }}
           AWS_REGION: us-east-1
         run: |
@@ -63,5 +69,9 @@ jobs:
             *) echo "ERROR: input_path must be a .json file under client_checks/inputs/"; exit 2 ;;
           esac
           case "$INPUT" in *..*) echo "ERROR: input_path must not contain .."; exit 2 ;; esac
+          case "$REPEATS" in
+            [1-9]|10) ;;
+            *) echo "ERROR: repeats must be a whole number from 1 to 10"; exit 2 ;;
+          esac
           # dry_run is fixed: --dry-run is always passed. Do not remove it.
-          python -I scripts/client_check.py --input "$INPUT" --engines "$ENGINES" --dry-run
+          python -I scripts/client_check.py --input "$INPUT" --engines "$ENGINES" --repeats "$REPEATS" --dry-run

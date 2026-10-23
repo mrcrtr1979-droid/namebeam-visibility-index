@@ -20,6 +20,18 @@ Plain-language notes for a non-coder reading along:
    corpus/.
 5. An engine that errors writes run_status FAIL with the error class and the
    redacted error text. A fabricated answer is the one unforgivable bug.
+6. Optional --repeats N (default 1, which is the behaviour and the output
+   described above, byte for byte). With N above 1 each engine is asked the same
+   question N times in the one run. Run 1 keeps its usual file name; runs 2 to N
+   are saved next to it as <check_id>_<engine>_run<k>.json, each with its own
+   answer text and SHA-256. The RECEIPT then says, per engine, "named in k of N
+   runs" and lists the first three businesses named in every run. A run that
+   failed is counted as failed, never as "not named": the line then reads
+   "k of M answered runs" and states how many runs failed. Why it exists: an
+   identical request repeated on the same day changes the named businesses in
+   most comparisons (status/returns/NSF_PRELIM_RESULTS_1023.md in the private
+   Brain), so one answer is a weak measurement. Cost: N times the API calls per
+   engine.
 
 No secret is ever printed, logged, or written to a file. Keys are read from the
 environment by the adapters; every error string passes through engines.redact().
@@ -27,6 +39,7 @@ environment by the adapters; every error string passes through engines.redact().
 Run from the repo root:
     python -I scripts/client_check.py --input client_checks/inputs/AGENCY_1027.json --dry-run
     python -I scripts/client_check.py --input <file> [--engines perplexity,gemini,openai,anthropic]
+    python -I scripts/client_check.py --input <file> --repeats 3
 """
 
 import argparse
@@ -47,6 +60,7 @@ from extract_named_entities import extract_stated_criteria  # noqa: E402
 
 OUT_ROOT = "client_checks"
 DEFAULT_ENGINES = ("perplexity", "gemini", "openai", "anthropic")
+MAX_REPEATS = 10
 SCHEMA_VERSION = "v4-cc1"
 ROW_TYPE = "client_check"
 RUN_CHANNEL = "api"
@@ -184,8 +198,11 @@ def sha256_text(text):
     return hashlib.sha256((text or "").encode("utf-8")).hexdigest()
 
 
-def run_one(item, engine, fn, date_utc):
-    """One item x one engine -> the row dict. Never raises, never invents an answer."""
+def run_one(item, engine, fn, date_utc, run_index=1, repeats=1):
+    """One item x one engine -> the row dict. Never raises, never invents an answer.
+    run_index is the same-day repeat number (the record's own "run" field); repeats is
+    how many were requested. repeats is written to the row only when it is above 1, so
+    a default run keeps the exact row it always had."""
     br = _business_row(item["client"])
     row = {
         "check_id": item["check_id"],
@@ -195,12 +212,14 @@ def run_one(item, engine, fn, date_utc):
         "market": item["market"],
         "row_type": ROW_TYPE,
         "prompt_variant": 1,
-        "run": 1,
+        "run": run_index,
         "prompt_text": item["question"],
         "engine": engine,
         "run_channel": RUN_CHANNEL,
         "schema_version": SCHEMA_VERSION,
     }
+    if repeats > 1:
+        row["repeats_requested"] = repeats
     # call_gemini picks its model from this id; a client check is never on the
     # continuity panel, so it uses the free-tier rest model and its own pacing.
     _engines_mod.CURRENT_QUESTION_ID[0] = e1_runner.slugify(item["check_id"])
@@ -279,7 +298,40 @@ def _cell(s):
     return str(s).replace("|", "\\|").replace("\n", " ")
 
 
-def build_receipt(run_dir_name, date_utc, input_path, input_sha, items, rows, engines_used):
+def answer_filename(check_id, engine, run_index=1):
+    """Run 1 keeps the name it has always had; run k above 1 gets a _run<k> suffix."""
+    if run_index == 1:
+        return "%s_%s.json" % (check_id, engine)
+    return "%s_%s_run%d.json" % (check_id, engine, run_index)
+
+
+def named_in_text(k, answered, failed, requested):
+    if answered == 0:
+        return "no answer: all %d runs failed" % requested
+    if failed == 0:
+        return "named in %d of %d runs" % (k, requested)
+    return ("named in %d of %d answered runs (%d of %d runs FAILED, not counted as not named)"
+            % (k, answered, failed, requested))
+
+
+def named_in(runs, requested):
+    """The repeat tally for one engine on one item. runs = that engine's rows for the item.
+    A FAIL row is a failed call: it is counted under failed and never under not named.
+    k is counted over OK rows only, so the honest denominator is `answered`."""
+    answered = [r for r in runs if r["run_status"] == "OK"]
+    failed = len(runs) - len(answered)
+    exact = sum(1 for r in answered if r["client_named"] is True)
+    loose = sum(1 for r in answered if r["client_named_loose"] is True)
+    return {"requested": requested, "answered": len(answered), "failed": failed,
+            "exact": exact, "loose": loose,
+            "text_exact": named_in_text(exact, len(answered), failed, requested),
+            "text_loose": named_in_text(loose, len(answered), failed, requested)}
+
+
+def build_receipt(run_dir_name, date_utc, input_path, input_sha, items, rows, engines_used, repeats=1):
+    if repeats > 1:
+        return build_receipt_repeats(run_dir_name, date_utc, input_path, input_sha, items, rows,
+                                     engines_used, repeats)
     by = {(r["check_id"], r["engine"]): r for r in rows}
     ok = sum(1 for r in rows if r["run_status"] == "OK")
     L = []
@@ -332,7 +384,84 @@ def build_receipt(run_dir_name, date_utc, input_path, input_sha, items, rows, en
     return "\n".join(L) + "\n"
 
 
-def build_summary(run_dir_name, date_utc, input_path, input_sha, items, rows, engines_used):
+def _run_cells(r):
+    """The per-answer cells shared by the receipt rows: (status, named, first3, sha, cost, model)."""
+    if r["run_status"] == "OK":
+        tin, tout, tot = usage_tokens((r.get("engine_meta") or {}).get("usage"))
+        cost = "%s / %s / %s" % tuple("n/a" if v is None else v for v in (tin, tout, tot))
+        named = "%s / %s" % ("yes" if r["client_named"] else "no",
+                             "yes" if r["client_named_loose"] else "no")
+        first3 = "; ".join(r["first_three_named"]) or "none extracted"
+        sha = "`%s`" % r["answer_sha256"]
+        status = "OK"
+    else:
+        cost, named, first3, sha = "n/a", "n/a", "n/a", "n/a"
+        status = "FAIL (%s)" % r.get("error_class")
+    meta = r.get("engine_meta") or {}
+    model = meta.get("served_model") or meta.get("requested_model") or "n/a"
+    return status, named, first3, sha, cost, model
+
+
+def build_receipt_repeats(run_dir_name, date_utc, input_path, input_sha, items, rows, engines_used, repeats):
+    """Receipt for --repeats above 1: per item, a tally table (named in k of N runs, per
+    engine) then one row per run (status, first three businesses, SHA-256, file)."""
+    runs_by = {}
+    for r in rows:
+        runs_by.setdefault((r["check_id"], r["engine"]), []).append(r)
+    for v in runs_by.values():
+        v.sort(key=lambda r: r["run"])
+    ok = sum(1 for r in rows if r["run_status"] == "OK")
+    L = []
+    L.append("# Namebeam Client Check receipt, %s" % date_utc)
+    L.append("")
+    L.append("- Run folder: %s" % run_dir_name)
+    L.append("- Input: %s (SHA-256 %s)" % (input_path, input_sha))
+    L.append("- Engines: %s" % ", ".join(engines_used))
+    L.append("- Items: %d | Requests: %d | OK: %d | FAIL: %d | Repeats per engine: %d"
+             % (len(items), len(rows), ok, len(rows) - ok, repeats))
+    L.append("- Method: each question sent verbatim to each engine, %d times in one dated run, API channel "
+             "(no memory, no personalization; results can differ from logged-in consumer apps). "
+             "The %d requests per engine per question are identical, and every run is saved and hashed on "
+             "its own. SHA-256 is of the answer text as saved (UTF-8). Full answer text is in the per-answer "
+             "JSON file named below, not repeated here. Run 1 keeps the usual file name; run k above 1 adds "
+             "_run<k> before .json." % (repeats, repeats))
+    L.append("- Named in k of N runs: counted over the runs that returned an answer. A run that FAILED is "
+             "counted as failed and never as not named; when any run failed the line says so.")
+    L.append("- Client Appears in Answer: exact = the client string, case-insensitive, in the answer. "
+             "loose = punctuation-insensitive match or every distinctive word on one line; a human "
+             "confirms it. " + FIRST_THREE_NOTE)
+    L.append("- Request Cost: tokens as returned by the engine (in / out / total), per run. No price is applied here.")
+    L.append("")
+    for n, it in enumerate(items, 1):
+        L.append("## %d. %s" % (n, it["check_id"]))
+        L.append("")
+        L.append("- **Question:** %s" % it["question"])
+        L.append("- **Target Client:** %s (%s, %s)" % (it["client"], it["market"], it["niche"]))
+        L.append("")
+        L.append("| Engine | Client Named, Exact | Client Named, Loose | Runs Answered | Runs Failed |")
+        L.append("|---|---|---|---|---|")
+        for eng in engines_used:
+            runs = runs_by.get((it["check_id"], eng))
+            if not runs:
+                continue
+            t = named_in(runs, repeats)
+            L.append("| %s | %s | %s | %s | %s |" % tuple(
+                _cell(x) for x in (eng, t["text_exact"], t["text_loose"], t["answered"], t["failed"])))
+        L.append("")
+        L.append("| Engine | Run | Run Status | Client Appears (exact / loose) | First Three Businesses Named | "
+                 "SHA-256 of Answer Text | Request Cost (tokens in/out/total) | Served Model | File |")
+        L.append("|---|---|---|---|---|---|---|---|---|")
+        for eng in engines_used:
+            for r in runs_by.get((it["check_id"], eng), []):
+                status, named, first3, sha, cost, model = _run_cells(r)
+                fname = answer_filename(it["check_id"], eng, r["run"])
+                L.append("| %s | %s | %s | %s | %s | %s | %s | %s | %s |" % tuple(
+                    _cell(x) for x in (eng, r["run"], status, named, first3, sha, cost, model, fname)))
+        L.append("")
+    return "\n".join(L) + "\n"
+
+
+def build_summary(run_dir_name, date_utc, input_path, input_sha, items, rows, engines_used, repeats=1):
     per_engine = {}
     for e in engines_used:
         er = [r for r in rows if r["engine"] == e]
@@ -346,7 +475,10 @@ def build_summary(run_dir_name, date_utc, input_path, input_sha, items, rows, en
                                          or (r.get("engine_meta") or {}).get("requested_model"))
                                      for r in er if r["run_status"] == "OK"}),
         }
-    by = {(r["check_id"], r["engine"]): r for r in rows}
+    by = {(r["check_id"], r["engine"]): r for r in rows if r["run"] == 1}
+    runs_by = {}
+    for r in rows:
+        runs_by.setdefault((r["check_id"], r["engine"]), []).append(r)
     out_items = []
     for it in items:
         d = {"check_id": it["check_id"], "client": it["client"], "market": it["market"],
@@ -355,18 +487,32 @@ def build_summary(run_dir_name, date_utc, input_path, input_sha, items, rows, en
             r = by.get((it["check_id"], e))
             if r is None:
                 continue
+            if repeats > 1:
+                runs = sorted(runs_by[(it["check_id"], e)], key=lambda x: x["run"])
+                d["engines"][e] = {
+                    "named_in": named_in(runs, repeats),
+                    "runs": [{"run": x["run"], "file": answer_filename(it["check_id"], e, x["run"]),
+                              "run_status": x["run_status"], "client_named": x["client_named"],
+                              "client_named_loose": x["client_named_loose"],
+                              "answer_sha256": x["answer_sha256"],
+                              "first_three_named": x["first_three_named"],
+                              "error_class": x.get("error_class")} for x in runs]}
+                continue
             d["engines"][e] = {"run_status": r["run_status"], "client_named": r["client_named"],
                                "client_named_loose": r["client_named_loose"],
                                "answer_sha256": r["answer_sha256"],
                                "first_three_named": r["first_three_named"],
                                "error_class": r.get("error_class")}
         out_items.append(d)
-    return {"run_date_utc": date_utc, "run_folder": run_dir_name,
-            "schema_version": SCHEMA_VERSION, "input_path": input_path, "input_sha256": input_sha,
-            "engines": list(engines_used), "items": len(items), "requests": len(rows),
-            "ok": sum(1 for r in rows if r["run_status"] == "OK"),
-            "fail": sum(1 for r in rows if r["run_status"] != "OK"),
-            "per_engine": per_engine, "results": out_items}
+    out = {"run_date_utc": date_utc, "run_folder": run_dir_name,
+           "schema_version": SCHEMA_VERSION, "input_path": input_path, "input_sha256": input_sha,
+           "engines": list(engines_used), "items": len(items), "requests": len(rows),
+           "ok": sum(1 for r in rows if r["run_status"] == "OK"),
+           "fail": sum(1 for r in rows if r["run_status"] != "OK"),
+           "per_engine": per_engine, "results": out_items}
+    if repeats > 1:
+        out["repeats_per_engine"] = repeats      # key absent on a default run, so its summary is unchanged
+    return out
 
 
 # ---------------------------------------------------------------- main
@@ -385,7 +531,14 @@ def main(argv=None):
     ap.add_argument("--dry-run", action="store_true", help="build the request list, call nothing")
     ap.add_argument("--run-date", default=None, help="override the UTC run date (YYYY-MM-DD)")
     ap.add_argument("--outdir", default=OUT_ROOT, help="output folder; the dated run folder goes under it (default client_checks)")
+    ap.add_argument("--repeats", type=int, default=1,
+                    help="ask each engine the same question this many times in the one run "
+                         "(default 1 = one answer, today's behaviour; max %d). N times the API calls." % MAX_REPEATS)
     args = ap.parse_args(argv)
+    if not 1 <= args.repeats <= MAX_REPEATS:
+        print("ERROR: --repeats must be a whole number from 1 to %d" % MAX_REPEATS)
+        return 2
+    repeats = args.repeats
 
     if under_corpus(args.outdir):
         print("ERROR: refusing to write under corpus/. Client checks never touch the daily record.")
@@ -408,33 +561,39 @@ def main(argv=None):
     with open(args.input, "rb") as f:
         input_sha = hashlib.sha256(f.read()).hexdigest()
 
-    requests_list = [(it, e) for it in items for e in wanted]
+    requests_list = [(it, e, k) for it in items for e in wanted for k in range(1, repeats + 1)]
     run_dir = pick_run_dir(args.outdir, date_utc)
     run_dir_name = run_dir.replace(os.sep, "/")
-    print("client_check %s | input %s | items %d | engines %s | requests %d | run folder %s"
-          % (date_utc, args.input, len(items), ",".join(wanted), len(requests_list), run_dir))
+    print("client_check %s | input %s | items %d | engines %s%s | requests %d | run folder %s"
+          % (date_utc, args.input, len(items), ",".join(wanted),
+             " | repeats %d" % repeats if repeats > 1 else "", len(requests_list), run_dir))
     keys = {"perplexity": ("PERPLEXITY_API_KEY",), "gemini": ("GEMINI_API_KEY_FREE", "GEMINI_API_KEY"),
             "openai": ("OPENAI_API_KEY",), "anthropic": ("ANTHROPIC_API_KEY",)}
     for e in wanted:
         present = any(os.environ.get(k, "").strip() for k in keys.get(e, ()))
         print("  engine %-10s key %s" % (e, "present" if present else "MISSING"))
     if args.dry_run:
-        print("DRY RUN: no engine called, nothing written. %d items x %d engines = %d requests."
-              % (len(items), len(wanted), len(requests_list)))
+        if repeats > 1:
+            print("DRY RUN: no engine called, nothing written. %d items x %d engines x %d repeats = %d requests."
+                  % (len(items), len(wanted), repeats, len(requests_list)))
+        else:
+            print("DRY RUN: no engine called, nothing written. %d items x %d engines = %d requests."
+                  % (len(items), len(wanted), len(requests_list)))
         return 0
 
     os.makedirs(run_dir, exist_ok=True)
     rows = []
-    for it, eng in requests_list:
-        row = run_one(it, eng, ENGINES[eng], date_utc)
-        write_json(os.path.join(run_dir, "%s_%s.json" % (it["check_id"], eng)), row)
+    for it, eng, k in requests_list:
+        row = run_one(it, eng, ENGINES[eng], date_utc, run_index=k, repeats=repeats)
+        write_json(os.path.join(run_dir, answer_filename(it["check_id"], eng, k)), row)
         rows.append(row)
-        print("  %s %-10s %s%s" % (it["check_id"], eng, row["run_status"],
-                                   "" if row["run_status"] == "OK" else " " + str(row.get("error_class"))))
+        print("  %s %-10s %s%s%s" % (it["check_id"], eng, "run %d " % k if repeats > 1 else "",
+                                     row["run_status"],
+                                     "" if row["run_status"] == "OK" else " " + str(row.get("error_class"))))
     with open(os.path.join(run_dir, "RECEIPT.md"), "w", encoding="utf-8", newline="\n") as f:
-        f.write(build_receipt(run_dir_name, date_utc, args.input, input_sha, items, rows, wanted))
+        f.write(build_receipt(run_dir_name, date_utc, args.input, input_sha, items, rows, wanted, repeats))
     write_json(os.path.join(run_dir, "SUMMARY.json"),
-               build_summary(run_dir_name, date_utc, args.input, input_sha, items, rows, wanted))
+               build_summary(run_dir_name, date_utc, args.input, input_sha, items, rows, wanted, repeats))
     ok = sum(1 for r in rows if r["run_status"] == "OK")
     print("files written: %d answers + RECEIPT.md + SUMMARY.json (ok %d, fail %d)"
           % (len(rows), ok, len(rows) - ok))
