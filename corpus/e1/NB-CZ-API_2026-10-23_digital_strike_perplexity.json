@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_digital_strike_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "Digital Strike",
+ "niche": "digital marketing agency",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best digital marketing agency in St. Louis?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9ca12caa-9bd4-4c70-a3e7-0db387b15fb4",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00428
+   },
+   "input_tokens": 4714,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4168,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 241,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4955
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "Timmermann Group",
+  "Atomicdust",
+  "Insite Advice"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://clutch.co/agencies/digital-marketing/st-louis",
+  "https://clutch.co/agencies/digital-marketing/enterprise/st-louis",
+  "https://www.digitalstrike.com/case-studies/",
+  "https://clutch.co/agencies/digital-marketing/small-business/st-louis",
+  "https://www.wearetg.com/",
+  "https://www.expertise.com/business/digital-marketing-agencies/missouri/st-louis",
+  "https://www.captiva-marketing.com/portfolio.html",
+  "https://clutch.co/agencies/st-louis",
+  "https://matchboxdesigngroup.com/our-work/",
+  "https://insiteadvice.com/best-marketing-agency-st-louis/",
+  "https://thriveagency.com/st-louis-digital-marketing-agency/",
+  "https://clutch.co/agencies/digital-marketing/st-louis?page=2",
+  "https://www.digitalstrike.com/about/",
+  "https://www.10seos.com/us/best-seo-companies-in-st-louis-usa",
+  "https://liftedlogic.com/locations/st-louis/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency—it depends on your goals, budget, and industry. **Timmermann Group** is a strong all-around local option: it appears at the top of Clutch’s St. Louis digital-marketing listings, with a 5.0 rating and a range of services including SEO, paid media, and conversion-focused websites.\n\nOther good fits to consider:\n- **Digital Strike** for SEO and paid advertising, with published case studies showing lead and traffic growth.\n- **Atomicdust** for brand strategy and B2B marketing.\n- **Insite Advice** for full-service marketing aimed at small and midsize businesses.\n\nBefore choosing, compare proposals against the same goals and ask for relevant case studies, reporting practices, and a clear breakdown of fees.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

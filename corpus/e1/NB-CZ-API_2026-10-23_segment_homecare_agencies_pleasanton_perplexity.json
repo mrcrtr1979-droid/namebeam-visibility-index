@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_homecare_agencies_pleasanton_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: homecare agencies, Pleasanton",
+ "niche": "home care agencies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best home care agency in Pleasanton CA for an elderly parent?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_62a4b391-54d5-46e2-b368-9a22e609ecf5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00087,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00446
+   },
+   "input_tokens": 4342,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3792,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 349,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4691
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Home Instead",
+  "Pleasanton. Senior Helpers",
+  "Senior Helpers",
+  "Comfort Keepers",
+  "Senior Helpers of Pleasanton",
+  "Comfort Keepers of Pleasanton"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://business.pleasanton.org/list/member/pacific-homecare-services-10738",
+  "https://qualicare.com/sanfrancisco-bay-ca/areas-we-serve/pleasanton-ca/",
+  "https://www.agingcare.com/local/in-home-care/pleasanton-ca",
+  "https://www.homeinstead.com/home-care/usa/ca/fremont/291/service-area/home-care-in-pleasanton-ca/",
+  "https://www.care.com/home-care-agencies/pleasanton-ca",
+  "https://locations.seniorshelpingseniors.com/ca/pleasanton/care-services-250.html",
+  "https://www.comforcare.com/california/alameda/about-us/areas-served/pleasanton/",
+  "https://www.caring.com/senior-care/in-home-care/california/pleasanton",
+  "https://www.carescout.com/home-care/california/pleasanton?searchZip=94588",
+  "https://jmhomecare.com/area/pleasanton/",
+  "https://www.seniorhelpers.com/ca/pleasanton/locations/pleasanton/",
+  "https://www.aplaceformom.com/home-care/california/pleasanton",
+  "https://www.comforcare.com/california/trivalley/about-us/areas-served/pleasanton/",
+  "https://www.amadaseniorcare.com/east-bay-senior-care/pleasanton-home-care/",
+  "https://hillendalehomecare.com/areas-served/alameda-county/pleasanton"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agency—the right fit depends on your parent’s needs, schedule, and budget. **I’d start by interviewing Senior Helpers of Pleasanton and Comfort Keepers of Pleasanton**, then compare them with **Home Instead**, which also serves Pleasanton. Senior Helpers advertises dementia care, respite, and companion care; Comfort Keepers has a local Pleasanton presence and a strong rating in one agency directory; Home Instead offers a range of care, including 24-hour support. These are starting points, not endorsements, and directory ratings can be based on a small number of reviews.\n\nBefore choosing, ask each agency:\n- Are you licensed in California, and are caregivers employees or contractors?\n- How do you screen, train, and supervise caregivers?\n- Can you match for dementia experience, language, personality, and mobility needs?\n- What happens if a caregiver cancels or the care needs change?\n- What are the minimum hours, rates, and cancellation terms?\n- Can you provide references from families with similar care needs?\n\nConfirm the agency’s current license through California’s home-care registry, and arrange a meeting or trial shift with the caregiver if possible. If you share what help your parent needs—such as bathing, dementia support, overnight care, or just a few hours of companionship—I can help narrow the options.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ad9f8877-ab47-4a46-a45f-6ec5c7df9117",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00455
+   },
+   "input_tokens": 5191,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4642,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 299,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5490
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Chase"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.monitorbankrates.com/mortgage-lenders/florida/miami",
+  "https://saferate.com/local/miami/best-mortgage-lenders/banks",
+  "https://saferate.com/local/miami/best-mortgage-lenders/mortgage-companies",
+  "https://www.bankrate.com/mortgages/how-to-compare-mortgage-offers/",
+  "https://www.consumerfinance.gov/owning-a-home/compare/compare-loan-estimates/",
+  "https://www.lendingbankers.com/learn/buy-a-home/",
+  "https://www.lower.com/mortgages/how-to-compare-mortgage-loan-offers",
+  "https://www.lendingbankers.com/",
+  "https://saferate.com/local/miami/best-mortgage-lenders/banks/conventional-loans",
+  "https://www.consumerfinance.gov/consumer-tools/mortgages/shopping-for-a-mortgage/",
+  "https://files.consumerfinance.gov/f/documents/cfpb_your-home-loan-toolkit_print_2026-08.pdf",
+  "https://reliancefinancial.com/mortgage-lenders-miami/",
+  "https://on-mortgage.com/",
+  "https://files.consumerfinance.gov/f/documents/cfpb_your-home-loan-toolkit.pdf",
+  "https://consumer.ftc.gov/articles/shopping-mortgage-faqs"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one lender that’s best for every Miami buyer—the right choice depends on your credit, down payment, loan type, and the property. **I’d start by getting quotes from Chase, a local mortgage broker, and one other bank or credit union**, then compare their written Loan Estimates.\n\nFor a conventional loan, a recent Miami lender ranking listed **Chase** among its top options, but rankings aren’t a substitute for a quote tailored to you. A local broker may be worth including if you want to compare several lenders or need a jumbo, FHA, VA, or other specialized loan.\n\nAsk each lender for the same loan scenario and compare the **APR, lender fees, points, lender credits, rate-lock period, and estimated five-year cost**—not just the advertised rate. The CFPB recommends getting offers from at least three lenders and comparing Loan Estimates.\n\nIf you share your approximate purchase price, down payment, credit-score range, and loan type, I can help narrow down which lenders to contact first.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

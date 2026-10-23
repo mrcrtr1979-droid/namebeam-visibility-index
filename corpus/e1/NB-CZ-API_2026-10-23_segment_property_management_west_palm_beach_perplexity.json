@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_property_management_west_palm_beach_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: property management, West Palm Beach",
+ "niche": "property management companies",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in West Palm Beach FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_73be2420-6e6d-4bb4-b98b-f7d25f444804",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00439
+   },
+   "input_tokens": 4660,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4109,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 287,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4947
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Florida’s Property Management",
+  "Home Property Management II",
+  "PMI West Palm",
+  "Home Property Management"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.floridaspropertymanagement.com/",
+  "https://www.floridaspropertymanagement.com/commercial-property-management/West-Palm-Beach/service.html",
+  "https://www.atlispm.com/blog/property-management-west-palm-beach",
+  "https://luxurypropertycare.com/west-palm-beach-property-management-services/",
+  "https://purehomeriver.com/locations/florida/west-palm-beach/",
+  "https://www.biggerpockets.com/fl/west-palm-beach/property-managers",
+  "https://www.thumbtack.com/fl/west-palm-beach/property-management/three-palms-realty/service/367174515445366788",
+  "https://www.floridaspropertymanagement.com/city/West-Palm-Beach.html",
+  "https://www.westpalmbeach-propertymanagement.com/pricing",
+  "https://luxurypropertycare.com/best-property-management-companies-west-palm-beach/",
+  "https://www.westpalmbeach-propertymanagement.com/",
+  "https://keyverified.com/top-10/florida/west-palm-beach/",
+  "https://www.zillow.com/professionals/property-manager-reviews/33422/",
+  "https://www.yellowpages.com/west-palm-beach-fl/oceanview-property-management-inc",
+  "https://www.thumbtack.com/fl/west-palm-beach/property-management"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company for every rental home, but **Florida’s Property Management** looks like a strong local option to compare first. It serves West Palm Beach and publishes flat monthly rates: **$149 for homes renting under $2,000/month and $199 for homes over $2,000/month**, plus a tenant-placement fee. Its site says it doesn’t charge while the home is vacant or add a markup to maintenance.\n\nAlso get quotes from **Home Property Management II** and **PMI West Palm**. PMI advertises tenant-placement and management guarantees, but check the full fee schedule and guarantee conditions.\n\nBefore signing, compare the *total* cost—not just the monthly fee—and ask about lease-up, renewals, inspections, repair approval limits, eviction support, and how quickly owners receive updates. Confirm the company’s Florida license and read recent reviews from rental-home owners. Fees and terms can change, so verify them directly.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

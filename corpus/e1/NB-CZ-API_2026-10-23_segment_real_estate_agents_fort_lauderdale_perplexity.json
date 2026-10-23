@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_real_estate_agents_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: real estate agents, Fort Lauderdale",
+ "niche": "real estate agents",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Fort Lauderdale FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8901403e-f42a-40f2-953a-c880806a32fe",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00454
+   },
+   "input_tokens": 4860,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4310,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 326,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5186
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sandra Rathe’s team",
+  "Larry Mastropieri’s team",
+  "Laurie Finkelstein Reader’s team",
+  "Sandra Rathe",
+  "Larry Mastropieri",
+  "Laurie Finkelstein Reader"
+ ],
+ "engine_stated_criteria": [
+  "closed listings near your home"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/fort-lauderdale-fl/",
+  "https://www.zillow.com/profile/RickWaters",
+  "https://www.zillow.com/profile/LoganCrewss",
+  "https://www.homelight.com/fort-lauderdale-fl/top-real-estate-agents",
+  "https://wealthybud.com/directories/agents/fort-lauderdale-fl",
+  "https://www.realestateagents.com/fl/fort-lauderdale",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33349/",
+  "https://www.zillow.com/profile/JeffCorriolan",
+  "https://www.zillow.com/profile/SandraRatheRealtor",
+  "https://www.zillow.com/profile/ronlennen",
+  "https://www.homes.com/real-estate-agents/danny-shears/6wbm7et/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33309/",
+  "https://www.zillow.com/profile/oscargarciahomes",
+  "https://www.top10reagents.com/fl/fort-lauderdale",
+  "https://www.zillow.com/profile/cmittone"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent—the right choice depends on your neighborhood, home price, and property type. Based on the available recent rankings and public sales/review data, **Sandra Rathe’s team** and **Larry Mastropieri’s team** are strong candidates to interview: both appear near the top of a Fort Lauderdale agent ranking, with high review scores. For a high-volume team, **Laurie Finkelstein Reader’s team** also stands out in Zillow’s local data, with 466 team sales in the past 12 months. These are team figures, not necessarily the individual agent’s personal sales.\n\nBefore choosing, interview two or three agents and ask for:\n- Recent **closed listings near your home**, at a similar price and property type\n- Their sale-to-list results and typical time to sell\n- A specific pricing and marketing plan\n- Who will handle showings, negotiations, and communication\n- The listing agreement’s term, cancellation terms, and total fees\n\nThe best fit is the agent who can show relevant nearby seller results and clearly explain how they’ll price and market *your* house—not simply the one with the most reviews.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

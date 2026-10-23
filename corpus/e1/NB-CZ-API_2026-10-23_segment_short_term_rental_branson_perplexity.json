@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4f392baf-de42-4775-8af6-9a80df9760a2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00121,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00118,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00503
+   },
+   "input_tokens": 5389,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4833,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 471,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5860
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Short answer",
+  "Lodge of the Ozarks",
+  "Hilton Promenade at Branson Landing",
+  "Branson’s Best Motel",
+  "My default recommendation",
+  "Hilton Promenade",
+  "Hyatt Vacation Club",
+  "Timber Ridge",
+  "Table Rock",
+  "Landing",
+  "Highway",
+  "The Strip",
+  "The Landing",
+  "Near the Strip"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/branson-mo/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays",
+  "https://www.airbnb.com/branson-mo/stays/resorts",
+  "https://www.airbnb.com/branson-mo/stays/waterfront",
+  "https://www.hotels.com/de1644148-ty2/family-friendly-hotels-branson-and-vicinity-missouri/",
+  "https://www.airbnb.com/lampe-mo/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays/lake-access",
+  "https://www.hotels.com/de1644148/hotels-branson-and-vicinity-missouri/",
+  "https://www.hotels.com/de1412461/hotels-branson-west-missouri/",
+  "https://www.hotels.com/de1644148-qu0/cheap-hotels-branson-and-vicinity-missouri/",
+  "https://www.hotels.com/de10517440/hotels-clever-missouri/",
+  "http://www.discoverourtown.com/MO/Branson/Lodging-537.html",
+  "https://www.expedia.com/Table-Rock-State-Park-Hotels.0-l6125957-0.Travel-Guide-Filter-Hotels",
+  "https://www.hotels.com/de10422470/hotels-spokane-missouri/",
+  "https://www.hotels.com/de1435659/hotels-blue-eye-missouri/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Short answer:** For a first Branson trip focused on shows, restaurants, and attractions, I’d choose a **hotel near Highway 76 or Branson Landing**. Pick an **Airbnb or other vacation rental** if you want a full kitchen, more room for a group, or a quieter lake-and-cabin stay—and don’t mind driving.\n\n### Best hotel picks\n- **Lodge of the Ozarks** — My strongest all-around pick for the theater district: highly rated in the available listings, with an indoor pool and complimentary breakfast and parking.\n- **Hilton Promenade at Branson Landing** — Best if you want to walk to the Landing’s shops and restaurants; it has an indoor pool, but may cost more.\n- **Branson’s Best Motel** — A well-reviewed, more budget-conscious option near the Strip, with breakfast and parking included.\n- **Hyatt Vacation Club at The Lodges at Timber Ridge** — A good family choice if you want suite-style space and amenities rather than a standard hotel room.\n\n### When a rental is the better choice\nLook for a **condo or cabin in a resort community** if you’re traveling with several people, staying multiple nights, or prioritizing Table Rock Lake and Silver Dollar City. Airbnb’s Branson listings include lakefront cabins and resort rentals, but the exact experience depends heavily on the individual property. Check recent reviews, the full fee total, cancellation terms, parking, and the actual drive time to the places you plan to visit.\n\n**My default recommendation:** Book **Lodge of the Ozarks** for convenience and value, or **Hilton Promenade** if being at Branson Landing matters most. Choose a lake-area rental for a cabin getaway—not just as a cheaper substitute for a centrally located hotel. Prices and availability vary by date, so compare the total cost for your specific stay.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

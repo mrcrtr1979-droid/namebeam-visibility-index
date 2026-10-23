@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6b4ba92a-12f1-4cfb-8139-44e9fb901c69",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00097,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00097,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 4431,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3884,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 387,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4818
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Peyton Harris — Harris Orthodontics",
+  "Atlanta Orthodontic Specialists",
+  "Dr. Peyton Harris",
+  "Harris Orthodontics",
+  "Marietta St NW. The",
+  "Dr. Harris",
+  "Practice",
+  "Howell Mill",
+  "Virginia Highlands",
+  "Invisalign. Its",
+  "Buckhead Orthodontics",
+  "Peachtree Rd. The",
+  "Invisalign",
+  "Marietta St NW"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://atlantaortho.com/services/braces/",
+  "https://atlantaortho.com/services/",
+  "https://atlantaortho.com/services/invisalign/",
+  "https://atlantaortho.com/",
+  "https://atlantaortho.com/location/virginia-highlands/",
+  "https://atlantaortho.com/faqs/",
+  "https://www.artisticdentistryofatlanta.com/invisalign/",
+  "https://www.peachdentalatl.com/services/cosmetic-dentistry/orthodontics",
+  "https://www.braces-braces.com/about-us",
+  "https://atlantaortho.com/team/dr-tyler-rathburn/",
+  "https://drwrightortho.com/location/orthodontist-in-atlanta-ga/",
+  "https://harrisorthodonticsatl.com/",
+  "https://aaoinfo.org/locator/dr-meagan-chaffins-sturm/",
+  "https://atlantaortho.com/team/dr-kenneth-starling/",
+  "https://www.buckheadorthodontics.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—case complexity, location, cost, and how much you value convenience all matter. A good starting point is to compare **board-certified orthodontists** and get two or three consultations; board certification is a useful credential, not a guarantee that one provider is right for you.\n\nA few Atlanta options to consider:\n\n- **Dr. Peyton Harris — Harris Orthodontics**, 800 Marietta St NW. The practice lists braces and Invisalign, and Dr. Harris is board-certified. [Practice website](https://harrisorthodonticsatl.com/)\n- **Atlanta Orthodontic Specialists** — multiple Atlanta-area offices, including Buckhead, Howell Mill, and Virginia Highlands; offers braces and Invisalign. Its site lists board-certified orthodontists including Dr. Tyler Rathburn and Dr. Kenneth Starling. [Services and locations](https://atlantaortho.com/services/)\n- **Buckhead Orthodontics — Dr. Michael B. Everson and Dr. Cristina Everson**, 2385 Peachtree Rd. The practice lists braces and clear-aligner options; Dr. Michael Everson is board-certified. [Practice website](https://www.buckheadorthodontics.com/)\n\nAt consultations, ask who will supervise your treatment, what they recommend for your specific bite, the full cost and retainer fees, and how urgent visits are handled. For Invisalign, ask about the orthodontist’s experience with cases like yours—not just the practice’s provider tier.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

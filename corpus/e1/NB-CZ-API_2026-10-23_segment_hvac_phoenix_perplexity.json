@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_hvac_phoenix_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4349a677-e81f-4372-a379-b0bf11f07f3d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00052,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00422
+   },
+   "input_tokens": 4790,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4242,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 207,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4997
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "American Home Water & Air",
+  "Champion Air",
+  "Arizona Registrar of Contractors",
+  "American Home Water",
+  "Registrar of Contractors"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.phxairdept.com/",
+  "https://hvaccompaniesphoenix.com/best/ac-repair-installation/",
+  "https://www.championair.com/service-areas/phoenix-az",
+  "https://localfixerpro.com/10-best-hvac-repair-in-phoenix-arizona/",
+  "https://wahlair.com/",
+  "https://checkcontractorlicense.com/az/hvac-contractors/phoenix/",
+  "https://www.servicetitan.com/licensing/hvac/arizona",
+  "https://www.monroenews.com/press-release/story/691288/now-over-1500-5-star-reviews-for-az-home-services-group-ac-repair-plumbing-services/",
+  "https://www.consumeraffairs.com/homeowners/hvac-companies-phoenix.html",
+  "https://www.phxairdept.com/ac-repair/",
+  "https://www.markdanielsac.com/",
+  "https://serviceagent.ai/directory/arizona/phoenix/hvac/repair/",
+  "https://www.emergencyair.com/service-area/ac-repair-phoenix/",
+  "https://licensesbystate.com/arizona/",
+  "https://hvaccompaniesphoenix.com/category/commercial-hvac/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” company, but **American Home Water & Air** looks like a strong all-around option based on the available Phoenix-area listing: it reports a 4.9-star rating across thousands of reviews. **Champion Air** is another option if you want same-day or 24/7 service; it advertises a $89 diagnostic fee, waived with an approved repair.\n\nBefore booking, ask about the diagnostic fee, after-hours charges, and whether they’ll provide a written estimate before doing repairs. Also verify the contractor’s active license with the **Arizona Registrar of Contractors**.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

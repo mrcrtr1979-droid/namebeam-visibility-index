@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_short_term_rental_branson_anthropic",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "claude-haiku-4-5-20251001",
+  "response_id": "msg_011CgKYkoFZe44faXTN9fq5u",
+  "usage": {
+   "input_tokens": 33,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 314,
+   "service_tier": "standard",
+   "inference_geo": "not_available",
+   "speed": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Chateau on the Lake",
+  "Branson Landing hotels",
+  "Silver Dollar City hotels",
+  "Airbnb",
+  "Table Rock Lake area",
+  "Downtown Branson",
+  "Hollister",
+  "Branson Accommodation Guide",
+  "Practical Tips",
+  "Table Rock",
+  "Landing",
+  "Lake"
+ ],
+ "engine_stated_criteria": [
+  "Choose Airbnb if you",
+  "Choose a hotel if you",
+  "What's your main priority?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Branson Accommodation Guide\n\n## Airbnb vs. Hotel\n\n**Choose Airbnb if you:**\n- Want a kitchen (saves money on meals)\n- Need multiple bedrooms for groups\n- Prefer a home-like atmosphere\n- Stay 3+ nights\n\n**Choose a hotel if you:**\n- Want daily housekeeping\n- Prefer front desk services\n- Only stay 1-2 nights\n- Want predictable amenities\n\n## Specific Recommendations\n\n**Hotels:**\n- **Chateau on the Lake** - Upscale, lakefront, best for special occasions\n- **Branson Landing hotels** - Convenient downtown location with shopping/dining\n- **Silver Dollar City hotels** - On-site if visiting the theme park\n\n**Airbnb:**\n- **Table Rock Lake area** - Beautiful views, quieter\n- **Downtown Branson** - Walking distance to attractions\n- **Hollister** - Charming nearby town, slightly cheaper\n\n## Practical Tips\n- Book 2-3 months ahead during peak season (summer, holidays)\n- Consider location relative to your main activities (Silver Dollar City, shows, lakes)\n- Check reviews carefully on Airbnb for cleanliness\n- Factor in parking costs at some hotels\n\n**What's your main priority?** (Budget, location, specific attractions?) That would help narrow down the best choice for your trip.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

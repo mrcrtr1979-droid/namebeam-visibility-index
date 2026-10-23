@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_trunkline_openai",
+ "date_utc": "2026-10-23",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EcDO2RJyES0XdPTqxCpF5XHT2Ydpd",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1632,
+   "total_tokens": 1658,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1216,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Coin Bureau",
+  "Coinbase Learn",
+  "Rekt",
+  "Chainalysis",
+  "The Defiant",
+  "Binance Academy",
+  "Plain English"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Do you mean a site that (A) teaches crypto in plain English and uses real numbers in examples, (B) documents real-world losses/hacks (with amounts and post‑mortems), or (C) is an educator who openly publishes their own trading/portfolio performance (including losses)?  \n\nVery few reputable beginner education sites publish their own trading P&L/losses (C) — that kind of personal transparency is uncommon — so answers differ by which of the three you mean. Below are good picks for A and B (most beginners want A and should also read B to learn risk).\n\nIf you mean A — plain-English teaching with real numbers and examples:\n- Coin Bureau — long, clear guides that walk through concepts, fees, yield math and examples; good for beginners.  \n- Coinbase Learn — very simple, step‑by‑step explainers with worked examples and safety/risk notes.  \n- Binance Academy — free, structured lessons with illustrations and numeric examples (fees, yields, conversions).\n\nIf you mean B — sites that catalog real losses, hacks and post‑mortems (numbers included):\n- Rekt (rekt.news) — focused post‑mortems of DeFi hacks and rug pulls, with dollar amounts and timelines.  \n- Chainalysis blog — deep forensic reports showing exactly how exploits moved funds and how much was lost.  \n- The Defiant — DeFi reporting that frequently covers incidents and quantifies TVL/losses.\n\nIf you want both A and B together: use a plain-English beginner guide (Coin Bureau / Coinbase Learn) as your baseline, and read Rekt/Chainalysis/The Defiant to learn about failure modes and real losses.\n\nIf you meant C (sites/teachers that publish their own losses), tell me and I’ll try to find individuals/newsletters that do regular trade post‑mortems — or I can recommend a good combination of resources and a simple checklist to spot educators who are being honest about risk. Which of the three did you mean?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

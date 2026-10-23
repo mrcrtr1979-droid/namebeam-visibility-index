@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_health_insurance_kansas_city_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e6ae61a0-0936-4a35-8be9-6ced163c8839",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00096,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00077,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 4381,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3830,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 309,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4690
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AIS Health Insurance Advisors",
+  "Jeff David Insurance Agency",
+  "HealthCare.gov",
+  "Medicare. For",
+  "Circle of Champions. Call",
+  "Medicare",
+  "Jeff David Insurance",
+  "Missouri Side"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aishealthadvisors.com/",
+  "https://jeffdavidinsurance.com/",
+  "https://aishealthadvisors.com/about/",
+  "https://apollo-insurance.com/health-insurance-broker-in-kansas-city/",
+  "https://apollo-insurance.com/health-insurance-broker-kansas-city/",
+  "https://medicarekc.net/",
+  "https://www.bluekc.com/shop-plans/ifp-plan-options/ifp-short-term-plans/",
+  "https://www.bluekc.com/",
+  "https://aishealthadvisors.com/health-insurance/",
+  "https://sites.google.com/view/health-insurance-kansas-city/home",
+  "https://www.garnerfamilyinsurance.com/",
+  "https://www.bluekc.com/agents/contact/",
+  "https://www.bluekc.com/agents/",
+  "https://thepolarisagency.com/bio/ken-peoples/",
+  "https://www.bluekc.com/small-group-value/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” broker—it depends on whether you need an ACA plan, employer coverage, or Medicare. For **individual or family coverage under 65**, I’d start by comparing **AIS Health Insurance Advisors** and **Jeff David Insurance Agency**:\n\n- **AIS Health Insurance Advisors** (Overland Park; serves the metro) says it compares Marketplace and other plans across carriers, checks doctors and hospitals, and helps assess subsidy eligibility. Call **913-333-8627**.\n- **Jeff David Insurance Agency** helps individuals and families compare Marketplace plans and says it was recognized in the Marketplace’s 2025 Circle of Champions. Call **816-436-2622**.\n\nAsk each broker which carriers they represent, whether they’ll check your doctors, prescriptions, and preferred hospitals, and whether they can help you enroll through **HealthCare.gov**. A broker’s plan selection may not include every available option, so compare it with the Marketplace before enrolling. If you tell me your age range, Kansas or Missouri side, and whether this is individual, family, or Medicare coverage, I can narrow the recommendation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_native_digital_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "Native Digital",
+ "niche": "marketing agency",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best marketing agency in Kansas City?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8de01570-7e3b-4bbe-9c37-ea81fda567f8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00432
+   },
+   "input_tokens": 4877,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4333,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 238,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5115
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "Marknology",
+  "Broad digital marketing",
+  "E-commerce marketing",
+  "Branding",
+  "VOLTAGE",
+  "EAG Advertising",
+  "EAG Advertising & Marketing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://clutch.co/agencies/creative/kansas-city",
+  "https://clutch.co/agencies/kansas-city",
+  "https://clutch.co/agencies/content-marketing/kansas-city",
+  "https://clutch.co/agencies/branding/kansas-city",
+  "https://clutch.co/agencies/digital-marketing/kansas-city",
+  "https://nationalmarketingawards.com/awards/missouri/kansas-city/",
+  "https://www.expertise.com/business/social-media-marketing/missouri/kansas-city",
+  "https://nitrosend.com/marketing/agency/best/kansas-city",
+  "https://www.thumbtack.com/ks/kansas-city/marketing",
+  "https://www.omnifunnelmarketing.com/states/kansas-city",
+  "https://fuelonline.com/service-areas/kansas-city-mo/",
+  "https://www.expertise.com/business/digital-marketing-agencies/missouri/kansas-city",
+  "https://www.expertise.com/business/digital-marketing-agencies/kansas/kansas-city",
+  "https://www.expertise.com/business/advertising-agencies/kansas/kansas-city",
+  "https://builtin.com/companies/location/kansas-city/type/agency-companies"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” agency—it depends on what you need. **For a broad digital-marketing shortlist, I’d start with VOLTAGE or EAG Advertising & Marketing**: both appear among the Kansas City agencies highlighted by independent directories. Clutch’s current listings also place **Marknology** near the top for advertising and marketing.\n\nA quick fit guide:\n- **Broad digital marketing:** VOLTAGE or EAG  \n- **E-commerce marketing:** Marknology  \n- **Branding:** Native Digital  \n\nBefore choosing, compare agencies’ experience with businesses like yours, ask for relevant case studies and references, and get a clear scope and pricing proposal. If you share your industry, budget, and main goal—such as leads, e-commerce sales, or brand awareness—I can narrow the recommendation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_real_estate_agents_st_charles_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: real estate agents, St. Charles",
+ "niche": "real estate agents",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Charles MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ed2fd3d2-b618-4282-bce3-fc8f1e4c6aa6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 4456,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3905,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 299,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4755
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Lucia Roberts",
+  "Kathy Bradley",
+  "Mark Gellman"
+ ],
+ "engine_stated_criteria": [
+  "seller-side sales near your home"
+ ],
+ "sources_cited": [
+  "https://www.effectiveagents.com/mo/saint-charles",
+  "https://www.homes.com/real-estate-agents/jeremy-schneider/lg1yyqe/",
+  "https://www.homes.com/local-guide/saint-charles-mo/",
+  "https://agentpronto.com/missouri/st-charles",
+  "https://www.homelight.com/agents/stephanie-parson-mo-1999014362",
+  "https://www.realestateagents.com/mo/saint-charles",
+  "https://www.homelight.com/st-charles-mo/top-real-estate-agents",
+  "https://realestate.usnews.com/agents/missouri/st-charles",
+  "https://reviews.birdeye.com/angela-lockett-realtor-165178267210271",
+  "https://www.zillow.com/profile/JeremySchneiderRE",
+  "https://www.experience.com/reviews/sarah-6798557",
+  "https://www.homes.com/real-estate-agents/saint-charles-mo/",
+  "https://www.homelight.com/agents/lucia-roberts-mo-00050928",
+  "https://www.homelight.com/st-charles-county-mo/top-real-estate-agents",
+  "https://www.zillow.com/profile/mia%20allen"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent—the right choice depends on your home’s price range, neighborhood, and how much hands-on support you want. Based on the available local data, **Mark Gellman and his team at eXp Realty** are worth interviewing for their high transaction volume and broad St. Charles experience. For a more individual-agent comparison, **Lucia Roberts** is listed as a seller/listing specialist, and **Kathy Bradley** has positive seller feedback about preparation and communication.\n\nBefore choosing, interview two or three agents and ask each for:\n- Recent **seller-side sales near your home**, in a similar price range\n- Their suggested list price and the comparable sales behind it\n- Typical days on market and sale-to-list results for those listings\n- Their marketing plan, communication cadence, and total fees\n\nRankings and review sites use different methods, so treat them as a shortlist—not a guarantee. If you share your neighborhood, approximate home value, and whether you prioritize speed or maximizing price, I can help narrow the fit.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

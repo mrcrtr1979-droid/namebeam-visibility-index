@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_short_term_rental_nashville_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9baa95a8-e8da-46fd-8fe4-bdadbbaa12d8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00096,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00462
+   },
+   "input_tokens": 4628,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4075,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 382,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5010
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Nash 2BR 2BA—Private Balcony—Free Parking—Pool",
+  "East Nashville",
+  "Green Hills",
+  "My pick",
+  "Private Balcony",
+  "Free Parking"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/nashville-tn/stays/apartments",
+  "https://www.airbnb.com/downtown-nashville-tn/stays",
+  "https://www.airbnb.com/nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/nashville-tn/stays",
+  "https://www.airbnb.com/nashville-tn/stays/serviced-apartments",
+  "https://www.airbnb.com/nashville-tn/stays/guesthouses",
+  "https://www.staynashville.co/post/nashville-neighborhood-guide",
+  "https://www.airbnb.com/nashville-in/stays/family-friendly",
+  "https://www.staynashville.co/post/vrbo-nashville-guide",
+  "https://www.airbnb.ae/nashville-il/stays",
+  "https://www.airroi.com/airbnb-data/united-states/indiana/nashville",
+  "https://www.staynashville.co/post/rental-homes-in-nashville-tn",
+  "https://www.staynashville.co/post/air-b-and-b-in-nashville",
+  "https://www.thehermanhaven.com/post/vacation-rental-nashville-tn",
+  "https://www.airroi.com/airbnb-data/united-states/tennessee/nashville"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "For a family of four, I’d start with a **two-bedroom, two-bath apartment in downtown/Sobro** if you want to walk to Broadway and major attractions. One promising listing in the current results is **“Nash 2BR 2BA—Private Balcony—Free Parking—Pool”**: it’s listed at **4.97/5 from 245 reviews** and advertises a full kitchen, pool, balcony, and free parking. [View it on Airbnb](https://www.airbnb.com/nashville-tn/stays/apartments)\n\nIf you’d rather have a quieter, more residential stay, look at **East Nashville** or **Green Hills**. The results include a highly rated two-bedroom guesthouse in East Nashville (**4.97/5 from 236 reviews**) and a two-bedroom Green Hills home (**4.97/5 from 179 reviews**). These may suit a family better if you value space and a calmer setting, though you’ll likely rely more on a car or rideshares.\n\n**My pick:** the downtown two-bedroom if convenience is the priority; the East Nashville guesthouse if you prefer a neighborhood feel. I can’t identify a definitive best booking without your dates and budget, since availability and total prices vary. Before booking, confirm the beds work for your family, check the full price including fees, and verify parking, cancellation terms, and any local rental restrictions.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

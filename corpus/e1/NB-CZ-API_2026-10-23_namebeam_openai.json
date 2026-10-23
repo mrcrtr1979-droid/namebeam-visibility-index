@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_namebeam_openai",
+ "date_utc": "2026-10-23",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EcCyW3IObFeu4aKUTm3ah5dkSHre1",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1589,
+   "total_tokens": 1613,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Yext",
+  "BrightLocal",
+  "Moz Local",
+  "Bing Chat",
+  "Bard",
+  "Knowledge Graph",
+  "Apple Maps",
+  "Bing Places",
+  "LocalBusiness",
+  "TripAdvisor",
+  "Use",
+  "Whitespark",
+  "Use BrightLocal",
+  "Knowledge Graph Search API"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: If you want one commercial product that gives the best chance AI assistants will recommend your business, use Yext to manage and distribute your business “knowledge” broadly. For monitoring/auditing and local-SEO checks, combine that with a local-SEO tool such as BrightLocal or Moz Local and direct testing in LLMs (ChatGPT, Bing Chat, Bard).\n\nWhy Yext (and what it does)\n- Yext’s Knowledge Graph pushes verified business data (name, address, hours, services, photos, menus, etc.) to a large network of search engines, maps, voice assistants, directories and knowledge graphs that many AI assistants pull from. That distribution + structured data reduces the chance assistants miss or misstate your business.\n- It also offers analytics and tools to see where your data is used and to correct inconsistencies centrally.\n\nComplementary services and free essentials\n- Google Business Profile (free): claim and fully optimize — this is essential because Google’s Knowledge Graph and many assistants rely on it.\n- Apple Maps / Bing Places / Yelp: claim/update these as well.\n- BrightLocal / Moz Local / Whitespark: these audit local citations, rankings, and reputation and can monitor presence across directories.\n- Structured data on your website (schema.org/LocalBusiness): helps crawlers and knowledge graphs ingest correct facts.\n\nHow to test whether LLMs/assistants recommend you\n1. Direct LLM testing (ChatGPT, Bard, Bing Chat):\n   - Ask location-specific prompts in several ways, for example:\n     - “Recommend a [service] near [neighborhood, city, postcode]; list top 3 with one-sentence reasons.”\n     - “Where can I find a [service] that is open now in [city]?”  \n   - Repeat with variations (phrasing, time of day, user persona like “affordable” or “best for families”).\n   - Use browsing-enabled or current web-enabled modes where available (Bing Chat, Bard, ChatGPT with browsing/plugins) because base LLMs may be out of date.\n2. Knowledge Graph / API checks:\n   - Use Google’s Knowledge Graph Search API and Local APIs, or the Google Business Profile dashboard, to confirm your business appears on the Knowledge Graph.\n3. Monitor assistant-specific data:\n   - If you use Yext, check its reports for which platforms picked up your data.\n4. Reputation checks:\n   - Check reviews & presence on Yelp, TripAdvisor, industry directories — many assistants surface highly-reviewed businesses.\n\nThings to watch out for\n- LLMs can hallucinate: they may suggest businesses that don’t exist or omit yours even if it exists. Verified, structured data lowers the risk but doesn’t eliminate it.\n- No single service controls every assistant. Use a combination: distribution (Yext), local-SEO monitoring (BrightLocal/Moz), and direct LLM testing.\n- Cost: Yext is paid and targeted at businesses/agencies. The other tools range from free (Google Business Profile) to affordable monthly subscriptions.\n\nRecommended quick plan\n1. Claim/complete Google Business Profile, Apple Maps, Bing Places, Yelp.\n2. Add LocalBusiness schema to your website pages.\n3. Use Yext to push and sync accurate data across platforms.\n4. Use BrightLocal or Moz Local to audit citations and rankings.\n5. Run direct LLM queries (ChatGPT/Bard/Bing) with sample prompts to verify whether assistants recommend you; iterate on content/listings if not.\n\nIf you want, tell me your city and service and I’ll give sample prompts to test or a short checklist of the exact fields to add in Yext/Google Business Profile.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_str_host_tooling_openai",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EcDE1mrMktbMO0XfQvgbqGA054hD5",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1497,
+   "total_tokens": 1523,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 896,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "PriceLabs",
+  "MarketMinder",
+  "Rentalizer",
+  "Wheelhouse",
+  "Wheelhouse. Set",
+  "Mashvisor",
+  "Beyond Pricing",
+  "Beyond",
+  "AllTheRooms",
+  "AirDNA MarketMinder",
+  "Use AirDNA",
+  "AllTheRooms Analytics",
+  "Local regulations"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: use a two-tool approach — AirDNA for market research before you buy, and a dynamic-pricing tool (PriceLabs or Wheelhouse) to set nightly rates once you list.\n\nWhy:\n- AirDNA (MarketMinder/Rentalizer) gives the market-level data you need before buying: ADR, occupancy, RevPAR, seasonality, booking window, listing growth, room-type mix, and comparable comps. It’s designed for investment decisions.\n- PriceLabs and Wheelhouse are the most popular dynamic-pricing engines for hosts. They integrate with major PMS/channel managers and Airbnb, apply granular rules and minimums, and let you automate daily prices based on demand signals and your strategy. Beyond Pricing is simpler and works well for some hosts but is less customizable.\n\nQuick pros/cons\n- AirDNA: best for pre-purchase analysis and comps; deep market dashboards. (Paid; has pay-per-market and subscription options.)\n- PriceLabs: very flexible, excellent custom rules and seasonality controls, widely used by small and large hosts. Good value for per-listing pricing. Free trial available.\n- Wheelhouse: strong analytics and scenario planning; intuitive interface; alternative to PriceLabs.\n- Beyond Pricing: easy and low-effort, percentage-based fee model; less customizable.\n- Alternatives for market research: Transparent and AllTheRooms Analytics (good for enterprise or different visuals), Inside Airbnb (free listing-level scrape for some cities), Mashvisor (focuses long-term rentals).\n\nWhat to check in your market (use AirDNA + comps)\n- ADR (average daily rate)\n- Average occupancy and RevPAR by month and year\n- Seasonality and booking lead time\n- Number of active STR listings and growth trend\n- Typical cleaning fee and extra fees\n- Distribution by property type (entire home vs private room)\n- Typical minimum nights and guest reviews\n- Local regulations, taxes, and licensing requirements\n- Comparable listings (amenities, photos, location)\n- Estimated operating costs (utilities, cleaning, management, insurance) and financing terms\n\nSimple workflow\n1. Use AirDNA MarketMinder + Rentalizer for a 12–24 month revenue projection and to identify comps.  \n2. Estimate all operating costs, mortgage, vacancy buffer and taxes. Calculate cash-on-cash return and cap rate.  \n3. If metrics look good, list the property and connect to PriceLabs or Wheelhouse. Set base rules (min stay, weekend premiums, minimum price) and run a 2–4 week test while monitoring bookings.  \n4. Adjust rules and promotions based on real bookings and review performance vs. initial projections.\n\nIf you want a single recommendation: AirDNA for pre-purchase research + PriceLabs for day-to-day pricing is the best combo for most hosts. If you tell me the city or specific property, I can point you to the exact AirDNA metrics and what to watch in that market.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

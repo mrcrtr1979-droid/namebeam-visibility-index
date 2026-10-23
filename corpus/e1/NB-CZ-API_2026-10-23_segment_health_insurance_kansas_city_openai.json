@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EcDnM1jFh13DAcf8DqsQoh4R1lPp0",
+  "usage": {
+   "prompt_tokens": 23,
+   "completion_tokens": 853,
+   "total_tokens": 876,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 320,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Medicare",
+  "Medicare Advantage",
+  "Missouri Division of Finance",
+  "Kansas Insurance Department",
+  "Independent Agents",
+  "Medicare. Choose",
+  "ACA Marketplace",
+  "In Kansas"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can help — but “best” depends on your situation (individual vs employer, ACA marketplace vs private plan, Medicare, narrow-network needs, budget, etc.). A few quick questions will let me give specific broker names and a short list to contact:\n\n- Are you in Kansas City, Missouri or Kansas City, Kansas? (Zip code helps.)\n- Is this for individual/family coverage, a small business group plan, or Medicare/Medicare Advantage/Medigap?\n- Are you shopping during open enrollment or a special enrollment period?\n- Any must-have doctors, hospitals, medications, or budget limits?\n\nWhile you answer, here are practical tips and resources so you can quickly find a good broker and vet them:\n\nHow to find brokers and what to check\n- Use official search tools: healthcare.gov’s “Find Local Help,” Missouri Division of Finance & Insurance or Kansas Insurance Department license lookups, or local NAHU/Independent Agents directories. Those show licensed agents/brokers in your area.\n- Verify licensing: ask for their license number and confirm it on your state’s insurance department website.\n- Look for specialization: brokers often focus on ACA/open-market plans, employer group benefits, or Medicare. Choose one with the right focus.\n- Ask how they’re paid: most brokers are paid by insurers (no direct fee), but confirm if they charge you any broker fee.\n- Ask for references or client reviews and check Google/Yelp/Angie’s List.\n- Ask whether they represent multiple carriers (independent broker) or just one company (captive agent). Independent brokers can typically show more options.\n- Ask sample questions: “Which carriers do you work with?”, “Can you show cost estimates including premiums, deductibles, co-pays, and out-of-pocket max?”, “How will you help if a claim is denied?”, “Do you help with enrollment and ongoing support?”\n- Red flags: pressure to sign immediately, refusal to disclose carriers or compensation, unwillingness to provide references.\n\nLocal resources (start here)\n- healthcare.gov — “Find Local Help” tool for in-person or virtual assisters and brokers.\n- Missouri Division of Insurance license lookup and consumer pages.\n- Kansas Insurance Department license lookup and consumer pages.\n- National Association of Health Underwriters (NAHU) — find local brokers and chapters.\n- Independent Insurance Agents associations for Missouri/Kansas.\n\nIf you want, give your zip code and the type of coverage (individual/family, small business, Medicare), and I’ll pull together a short, current list of nearby, well-reviewed independent brokers and what each specializes in.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

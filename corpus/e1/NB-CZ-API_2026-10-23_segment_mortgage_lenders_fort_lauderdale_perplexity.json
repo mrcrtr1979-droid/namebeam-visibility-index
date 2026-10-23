@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_mortgage_lenders_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: mortgage lenders, Fort Lauderdale",
+ "niche": "mortgage lenders",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Fort Lauderdale FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d0dade53-a96a-49b7-a8f2-bc44bca8c3b9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00444
+   },
+   "input_tokens": 4874,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4324,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 288,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5162
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Navy Federal Credit Union",
+  "Premier Lending Corp",
+  "Navy Federal",
+  "Premier Lending",
+  "Loan Estimate"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://local.yahoo.com/info-210800712-fairway-independent-mortgage-fort-lauderdale/",
+  "https://www.seacoastbank.com/personal/lending/mortgages/mortgage-rates",
+  "https://www.usbank.com/home-loans/mortgage/mortgage-rates/florida.html",
+  "https://www.bankrate.com/mortgages/mortgage-rates/florida/",
+  "https://mortgage.usbank.com/fl/fort-lauderdale",
+  "https://homelendingadvisor.chase.com/fl/fort-lauderdale",
+  "https://plcorp.net/category/mortgage-advice/",
+  "https://plcorp.net/",
+  "https://www.cmghomeloans.com/mysite/leamsi-troya-de-armas",
+  "https://www.experience.com/reviews/josh-blum-160366",
+  "https://homelendingadvisor.chase.com/fl/fort-lauderdale/720-e-broward-blvd-hla-1609473",
+  "https://www.yelp.com/biz/alex-doce-the-doce-group-fort-lauderdale-4?hrid=sZB4RXujwCpp7_v82frrug",
+  "https://saferate.com/fort-lauderdale/best-mortgage-lenders",
+  "https://www.cmghomeloans.com/mysite/edward-geraghty",
+  "https://www.mortgagesup.com/fort-lauderdale-fl"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one lender that’s best for every buyer. **I’d start by getting quotes from Navy Federal Credit Union (if you’re eligible), a local broker such as Premier Lending Corp, and a bank or credit union you already use.** A Fort Lauderdale lender comparison also lists Navy Federal among the stronger local performers, while Premier Lending advertises a large volume of customer reviews—but neither ranking guarantees the best rate or service for your situation.\n\nAsk each for a **written Loan Estimate** for the same loan type, purchase price, down payment, and rate-lock period. Compare the **APR, lender fees, discount points, cash to close, and closing timeline**, not just the advertised rate. Also ask whether they regularly handle your loan type and, if relevant, Florida condo approvals or down-payment assistance.\n\nIf you share your approximate price range, down payment, credit-score range, and whether you’re considering conventional, FHA, VA, or jumbo financing, I can help narrow down what to compare.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

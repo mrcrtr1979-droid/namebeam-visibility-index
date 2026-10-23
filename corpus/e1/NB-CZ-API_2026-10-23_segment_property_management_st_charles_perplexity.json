@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_property_management_st_charles_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: property management, St. Charles",
+ "niche": "property management companies",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Charles MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_27bc1d0b-b219-4340-836e-abdd353ec9b6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00094,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 4321,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3770,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 315,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4636
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Keyrenter St. Charles",
+  "Alpha Real Estate Group",
+  "HomeStretch Property Management",
+  "Keyrenter and Alpha"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.keyrenterstcharles.com/",
+  "https://www.propertysolutionstl.com/",
+  "https://www.alpharealestategrp.com/",
+  "https://www.smithmgmt.com/",
+  "https://www.alpharealestategrp.com/services/",
+  "https://corporategrp.com/about-us/",
+  "https://staylage.com/about/",
+  "https://www.keyrenterstcharles.com/pricing",
+  "https://homestretchpropertymanagement.com/property-management/areas-we-serve/st-charles-county-property-management/",
+  "https://www.rpmendeavor.com/areas-we-serve/st-charles-county/saint-charles",
+  "https://www.linkedin.com/company/redwood-property-management",
+  "https://www.alpharealestategrp.com/services/property-management/",
+  "https://www.stlouispropertymanagement.co/neighborhoods-and-regions-served/st-charles-property-management",
+  "https://propertymanagementstl.com/areas-we-serve/st-charles/",
+  "https://goldengaterpm.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a definitive “best” for every rental, but **Keyrenter St. Charles** looks like a strong first company to interview: it has a local St. Charles office, advertises a **4.8 Google rating**, and publishes its pricing. Its listed single-home management rate starts at **10% for 1–2 properties**, with a **$75 minimum** and a **$795–$895 leasing fee**. Confirm the current terms directly, since fees and ratings can change.\n\nI’d also compare **Alpha Real Estate Group**, a local firm that says it has more than 25 years of experience and offers leasing, tenant screening, rent collection, inspections, maintenance, and financial reporting. **HomeStretch Property Management** is another option serving St. Charles County; its site reports an excellent rating based on 404 Google reviews.\n\nBefore choosing, ask each for a sample owner statement and management agreement, and compare the full fee schedule—including lease renewals, maintenance coordination, vacancy charges, and cancellation terms. For a single rental home, I’d start by getting proposals from Keyrenter and Alpha.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

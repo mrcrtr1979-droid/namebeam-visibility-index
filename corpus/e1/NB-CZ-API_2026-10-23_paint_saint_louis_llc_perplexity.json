@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_paint_saint_louis_llc_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "Paint Saint Louis LLC",
+ "niche": "interior painting",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best interior painting company in St. Louis MO?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_26546609-8f32-42bf-98f4-0f4c851d9cca",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00085,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0005,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00399
+   },
+   "input_tokens": 3935,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3388,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 200,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4135
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Paint the Earth",
+  "Better Painting – Missouri",
+  "Better Painting",
+  "St. Louis Painting Company"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.angi.com/companylist/us/mo/st-louis/interior-painting.htm",
+  "https://stlct.com/stlouis/painter/",
+  "https://betterpainting.com/services/interior-painting/",
+  "https://snlpainting.com/",
+  "https://snlpainting.com/services/",
+  "https://www.thumbtack.com/mo/wildwood/interior-painting/five-star-painting-st-louis/service/286916889826985108",
+  "https://www.poyst.com/business/better-painting-missouri",
+  "https://www.fivestarpainting.com/st-louis/?cid=LSTL_FSP-US000189",
+  "https://prosgrade.com/painters/st-louis/paint-the-earth",
+  "https://prosgrade.com/painters/st-louis/better-painting-missouri",
+  "https://www.improovy.com/locations/st-louis",
+  "https://snlpainting.com/service/interior-painting-services/",
+  "https://betterpainting.com/",
+  "https://www.angi.com/companylist/us/mo/st.-louis/that-1-painter-st-louis-reviews-10734555.htm",
+  "https://www.thumbtack.com/mo/fenton/interior-painting/paint-saint-louis-llc/service/567311128690106375?spotlightWebMarkupEnabled=1"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” painter, but **Paint the Earth** looks like a strong local option: a St. Louis painting company with a reported 5.0 rating across 144 reviews in one local directory. **Better Painting – Missouri** is another solid candidate, with a reported 4.9 rating and a larger review base.\n\nBefore choosing, get written estimates from at least three companies and compare prep work, paint and materials, schedule, warranty, and what’s included in cleanup. Ratings and review counts can change, so check recent reviews and confirm each company serves your neighborhood.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

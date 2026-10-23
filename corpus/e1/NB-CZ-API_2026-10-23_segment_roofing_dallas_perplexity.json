@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_roofing_dallas_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_884f0b0c-7989-4fe0-a220-e4c9a0c93ea8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00061,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00425
+   },
+   "input_tokens": 4532,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3985,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 243,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4775
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "New View Roofing",
+  "T Rock Roofing & Contracting",
+  "Shepherd Roofing & Renovations",
+  "T Rock Roofing",
+  "Shepherd Roofing",
+  "Proof of Insurance"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/tx/dallas/profile/roofing-contractors/dane-roofing-llc-0875-90338116",
+  "https://www.bbb.org/us/tx/dallas/category/roof-replacement/accredited",
+  "https://www.bbb.org/us/tx/dallas/category/roof-replacement",
+  "https://www.bbb.org/us/tx/dallas/profile/roofing-contractors/dfw-roofing-pro-llc-0875-90848199/customer-reviews",
+  "https://www.bbb.org/us/tx/dallas/category/roofing-contractors",
+  "https://www.bbb.org/us/tx/dallas/profile/roofing-contractors/new-view-roofing-0875-90538291/customer-reviews",
+  "https://www.roofingdalco.com/",
+  "https://www.bbb.org/us/tx/dallas/category/general-contractor",
+  "https://www.bbb.org/us/tx/dallas/profile/roofing-contractors/roof-repairs-plus-0875-90224333",
+  "https://cityvetted.com/best/best-roofing-dallas",
+  "https://theroofingbrief.com/best-roofers-dallas-tx/",
+  "https://ratingsnearme.com/dallas-tx/experienced-roofers",
+  "https://www.ld-roofing.com/service-areas/dallas-tx",
+  "https://trustanalytica.org/us/tx/dallas/best-roofing-contractors",
+  "https://dfwprofessionals.com/dallas/roofing-contractor"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” roofer, but **New View Roofing** looks like a strong Dallas-area option: one recent comparison lists it at **4.9 stars from about 700 reviews**, and customer feedback highlights clear explanations and attentive service.\n\nI’d also get bids from **T Rock Roofing & Contracting** and **Shepherd Roofing & Renovations** before deciding. Rankings vary by source, so compare the actual proposals—not just star ratings. Ask each company for:\n\n- A detailed, itemized scope and price\n- Proof of insurance and local references\n- Written workmanship and manufacturer warranties\n- Who will supervise the job and handle cleanup\n- Confirmation that any needed permits will be obtained\n\nGet at least three written estimates, and be cautious of high-pressure sales tactics or anyone promising to waive your insurance deductible.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_fdb6f426-0ea1-4f24-a0b1-c00f1d913406",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00123,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00457
+   },
+   "input_tokens": 5449,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4903,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 280,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5729
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Amogh Velangi",
+  "ProSmile Dental Implant Center",
+  "American Academy of Implant Dentistry",
+  "Phoenix-area starting point"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://doctor.webmd.com/providers/specialty/prosthodontics/arizona/phoenix",
+  "https://www.promaxsurgery.com/about-us/dr-amogh-velangi/",
+  "https://dental.me/az/phoenix/periodontists/",
+  "https://dev.aaid-implant.org/dentist/rodda-daniel/",
+  "https://www.tebra.com/care/periodontists/phoenix-az/",
+  "https://doctor.webmd.com/providers/specialty/prosthodontics/arizona",
+  "https://doctor.webmd.com/providers/specialty/periodontics/arizona/phoenix",
+  "https://www.periodontistphoenix.com/dental-implants/",
+  "https://www.promaxsurgery.com/",
+  "https://www.periodontistphoenix.com/",
+  "https://www.aaid.com/dental-implant-information-for-consumers",
+  "https://speakersclubs.uk/best-dental-implant-specialists-phoenix-2026/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-neil-zachs-1538397161",
+  "https://www.myspecialtydentist.com/best/prosthodontics/phoenix",
+  "https://www.realself.com/find/Arizona/Phoenix/Dental-Implants"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for everyone—implant care depends on your bone and gum health, whether you need grafting, and who will place and restore the implant.\n\nA reasonable Phoenix-area starting point is **Dr. Amogh Velangi at ProSmile Dental Implant Center**: the available information identifies him as a **board-certified oral and maxillofacial surgeon** who treats implants and complex reconstruction. That’s a credential worth considering, especially for a more involved case. [Practice information](https://www.promaxsurgery.com/about-us/dr-amogh-velangi/)\n\nBefore choosing, get **two consultations** and compare the written treatment plans. Ask who places the implant and who makes the crown, what implant system is used, what’s included in the total price, and how complications or follow-up care are handled. You can also check credentials through the [American Academy of Implant Dentistry’s dentist finder](https://www.aaid.com/dental-implant-information-for-consumers).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

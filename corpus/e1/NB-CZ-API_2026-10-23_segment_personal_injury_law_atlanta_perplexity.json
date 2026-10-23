@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_personal_injury_law_atlanta_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: personal injury law, Atlanta",
+ "niche": "personal injury attorneys",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best personal injury lawyer in Atlanta for a car accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_464b1302-5a52-4ca3-9d11-cd4156198ad0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00069,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00448
+   },
+   "input_tokens": 5164,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4615,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 276,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5440
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "State Bar of Georgia",
+  "Van Sant Law",
+  "David M. Van Sant",
+  "Lawyer Referral and Information Service"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.gabar.org/public/find-a-lawyer",
+  "http://www.gabar.org/general-counsel/ethics---discipline/lawyer-referral-services",
+  "https://www.wvnews.com/online_features/press_releases/haug-barron-law-group-named-best-car-accident-lawyer-in-atlanta-by-cx-research-institute/article_a30de1c8-163a-5649-887e-11b51e766476.html",
+  "https://www.gabar.org/docs/default-source/office-of-general-counsel/lawreflist.pdf?sfvrsn=aed7f832_2",
+  "https://findmyaccidentlawyer.com/georgia/atlanta",
+  "https://munley.com/atlanta-personal-injury-attorney/car-accident-lawyer/",
+  "https://www.vansantlaw.com/atlanta-ga/car-accident-lawyer/",
+  "https://munley.com/atlanta-personal-injury-attorney/car-accident-lawyer/injuries/",
+  "https://thebaerfirm.com/personal-injury/car-accidents/",
+  "https://www.bestinhood.com/atlanta/lawyers/best-car-accident-lawyers-in-atlanta/",
+  "https://gunnelslaw.com/client-reviews/",
+  "https://www.avvo.com/personal-injury-lawyer/ga/atlanta.html",
+  "https://www.avvo.com/car-accidents-lawyer/ga/atlanta.html",
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/georgia/atlanta/",
+  "https://www.lawyers.com/personal-injury/atlanta/georgia/law-firms/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a reliable, objective “best” lawyer for every car accident case. Based on the available listings, **David M. Van Sant of Van Sant Law** is one Atlanta attorney worth including on your shortlist: he focuses on personal injury and car/truck accidents and has substantial client-review history. That’s a starting point, not an endorsement or guarantee of results.\n\nBefore choosing, speak with two or three attorneys and ask:\n- Who will personally handle my case?\n- How many cases like mine have you taken to trial?\n- What is the fee, and what case costs might I owe?\n- What would you do first, and what challenges do you see?\n\nYou can also use the **Atlanta Bar Association Lawyer Referral and Information Service** (404-521-0777) or the State Bar of Georgia’s lawyer directory. The State Bar notes that it does not endorse individual lawyers or guarantee referral-service participants.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

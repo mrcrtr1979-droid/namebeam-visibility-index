@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-10-23_segment_mortgage_lenders_west_palm_beach_perplexity",
+ "date_utc": "2026-10-23",
+ "business": "SEGMENT: mortgage lenders, West Palm Beach",
+ "niche": "mortgage lenders",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in West Palm Beach FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_45e4607d-6783-4e40-b2b0-984b9093252f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00077,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00457
+   },
+   "input_tokens": 5207,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4656,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 308,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5515
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Loan Estimate",
+  "NMLS Consumer Access",
+  "New American Funding"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bankrate.com/mortgages/mortgage-rates/florida/",
+  "https://www.monitorbankrates.com/mortgage-lenders/florida",
+  "https://www.bvlending.com/",
+  "https://mortgage-info.com/blog/florida-mortgage-rates-2026-best-lenders-programs",
+  "https://www.erate.com/home-mortgage-loans/florida/rates",
+  "https://www.usbank.com/home-loans/mortgage/mortgage-rates/florida.html",
+  "https://bankingdeal.com/best-mortgage-rates/florida",
+  "https://mortgage-calculator.net/mortgage-rates/florida",
+  "https://money.usnews.com/loans/mortgages/state/florida-mortgage-lenders",
+  "https://www.experience.com/reviews/office/west-palm-beach",
+  "https://manifestmortgagegroup.com/",
+  "https://www.newamericanfunding.com/branches/westpalmbeach",
+  "https://www.mortgagenewsdaily.com/mortgage-rates/florida",
+  "https://www.experience.com/reviews/javier-infiesta-140310",
+  "https://www.seacoastbank.com/personal/lending/mortgages/mortgage-rates"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one lender that’s best for every buyer—the right choice depends on your credit, down payment, loan type, property, and how much you value local support versus an online process.\n\n**A reasonable local starting point is New American Funding’s West Palm Beach branch.** It has a local office and offers purchase loans; its branch page reports strong customer ratings. Those reviews are useful context, but they don’t establish that it will offer you the best rate or fees.\n\nI’d compare it with **one local mortgage broker or lender** and **one bank or online lender**. Ask each for a written **Loan Estimate** for the same loan amount, down payment, loan type, and rate-lock period. Compare the **APR, lender fees, discount points, cash to close, and estimated closing timeline**—not just the advertised interest rate. Rates and terms can change, and the lowest quote may depend on paying points.\n\nBefore choosing, verify the loan officer and company through **NMLS Consumer Access** and check Florida’s current first-time-buyer or down-payment-assistance programs if relevant.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
