@@ -1,0 +1,100 @@
+name: Client Check
+
+# Namebeam Client Check: ONE question list through the record's four engines on one
+# dated run, every answer hashed (SHA-256), results committed to client_checks/<date>/.
+# Dispatch only. No schedule. It never reads or writes corpus/e1.
+on:
+  workflow_dispatch:
+    inputs:
+      input_path:
+        description: "Input JSON list (check_id, client, market, niche, question). Must sit under client_checks/inputs/"
+        required: true
+        default: "client_checks/inputs/AGENCY_1027.json"
+        type: string
+      dry_run:
+        description: "Dry run: build the request list and print counts; call no engine, write nothing"
+        required: true
+        default: true
+        type: boolean
+      engines:
+        description: "Comma list of engines to ask"
+        required: true
+        default: "perplexity,gemini,openai,anthropic"
+        type: string
+
+concurrency:
+  group: client-check
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  client-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install requests
+        run: pip install requests
+
+      # Reports which engine keys are wired WITHOUT ever printing a value.
+      # Only ever echoes "present" or "MISSING", never the secret itself.
+      - name: Report which engine keys are present
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_FREE: ${{ secrets.GEMINI_API_KEY_FREE }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          for k in PERPLEXITY_API_KEY GEMINI_API_KEY GEMINI_API_KEY_FREE OPENAI_API_KEY ANTHROPIC_API_KEY; do
+            if [ -n "${!k}" ]; then echo "$k: present"; else echo "$k: MISSING"; fi
+          done
+
+      - name: Run the client check
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_FREE: ${{ secrets.GEMINI_API_KEY_FREE }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          INPUT: ${{ inputs.input_path }}
+          ENGINES: ${{ inputs.engines }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          case "$INPUT" in
+            client_checks/inputs/*.json) ;;
+            *) echo "ERROR: input_path must be a .json file under client_checks/inputs/"; exit 2 ;;
+          esac
+          case "$INPUT" in *..*) echo "ERROR: input_path must not contain .."; exit 2 ;; esac
+          ARGS=()
+          if [ "$DRY_RUN" = "true" ]; then ARGS+=(--dry-run); fi
+          python -I scripts/client_check.py --input "$INPUT" "${ARGS[@]}" --engines "$ENGINES"
+
+      - name: Commit and push the run folder
+        if: ${{ inputs.dry_run == false }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add client_checks/
+          if git diff --staged --quiet; then
+            echo "No client check files to commit."
+          else
+            git commit -m "client check run $(date -u +%Y-%m-%d)"
+            # Another workflow may push mid-run; rebase and retry so a finished run is never lost.
+            for i in 1 2 3; do
+              git push && break
+              echo "push rejected, rebasing (attempt $i)"
+              git pull --rebase origin "$GITHUB_REF_NAME"
+            done
+          fi
