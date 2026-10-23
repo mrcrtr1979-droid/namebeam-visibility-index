@@ -1,8 +1,9 @@
-name: Client Check
+name: Client Check (dry run only)
 
-# Namebeam Client Check: ONE question list through the record's four engines on one
-# dated run, every answer hashed (SHA-256), results committed to client_checks/<date>/.
-# Dispatch only. No schedule. It never reads or writes corpus/e1.
+# PUBLIC REPO: this workflow is DRY-RUN ONLY. It builds the request list from an input
+# file and prints counts; it calls no engine, holds no key and commits nothing.
+# Live runs happen from the private carter-brain workflow client_check_private.yml
+# (client-check outputs never land in this public repo).
 on:
   workflow_dispatch:
     inputs:
@@ -11,13 +12,8 @@ on:
         required: true
         default: "client_checks/inputs/AGENCY_1027.json"
         type: string
-      dry_run:
-        description: "Dry run: build the request list and print counts; call no engine, write nothing"
-        required: true
-        default: true
-        type: boolean
       engines:
-        description: "Comma list of engines to ask"
+        description: "Comma list of engines to count"
         required: true
         default: "perplexity,gemini,openai,anthropic"
         type: string
@@ -27,12 +23,12 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  client-check:
+  client-check-dry-run:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 10
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
@@ -45,56 +41,15 @@ jobs:
       - name: Install requests
         run: pip install requests
 
-      # Reports which engine keys are wired WITHOUT ever printing a value.
-      # Only ever echoes "present" or "MISSING", never the secret itself.
-      - name: Report which engine keys are present
+      - name: Dry run the client check
         env:
-          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_API_KEY_FREE: ${{ secrets.GEMINI_API_KEY_FREE }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: |
-          for k in PERPLEXITY_API_KEY GEMINI_API_KEY GEMINI_API_KEY_FREE OPENAI_API_KEY ANTHROPIC_API_KEY; do
-            if [ -n "${!k}" ]; then echo "$k: present"; else echo "$k: MISSING"; fi
-          done
-
-      - name: Run the client check
-        env:
-          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_API_KEY_FREE: ${{ secrets.GEMINI_API_KEY_FREE }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
           INPUT: ${{ inputs.input_path }}
           ENGINES: ${{ inputs.engines }}
-          DRY_RUN: ${{ inputs.dry_run }}
         run: |
           case "$INPUT" in
             client_checks/inputs/*.json) ;;
             *) echo "ERROR: input_path must be a .json file under client_checks/inputs/"; exit 2 ;;
           esac
           case "$INPUT" in *..*) echo "ERROR: input_path must not contain .."; exit 2 ;; esac
-          ARGS=()
-          if [ "$DRY_RUN" = "true" ]; then ARGS+=(--dry-run); fi
-          python -I scripts/client_check.py --input "$INPUT" "${ARGS[@]}" --engines "$ENGINES"
-
-      - name: Commit and push the run folder
-        if: ${{ inputs.dry_run == false }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add client_checks/
-          if git diff --staged --quiet; then
-            echo "No client check files to commit."
-          else
-            git commit -m "client check run $(date -u +%Y-%m-%d)"
-            # Another workflow may push mid-run; rebase and retry so a finished run is never lost.
-            for i in 1 2 3; do
-              git push && break
-              echo "push rejected, rebasing (attempt $i)"
-              git pull --rebase origin "$GITHUB_REF_NAME"
-            done
-          fi
+          # dry_run is fixed: --dry-run is always passed. Do not remove it.
+          python -I scripts/client_check.py --input "$INPUT" --engines "$ENGINES" --dry-run

@@ -59,7 +59,7 @@ def run(engines_map, engines_arg=",".join(ENGS), items=ITEMS):
     cc.ENGINES = engines_map
     os.environ["OPENAI_API_KEY"] = "SECRETVALUE123456"
     try:
-        rc = cc.main(["--input", inp, "--engines", engines_arg, "--out-root", out,
+        rc = cc.main(["--input", inp, "--engines", engines_arg, "--outdir", out,
                       "--run-date", "2026-10-27"])
     finally:
         cc.ENGINES = old
@@ -140,9 +140,9 @@ def test_engine_subset_and_validation():
     tmp = tempfile.mkdtemp()
     bad = os.path.join(tmp, "bad.json")
     json.dump([ITEMS[0], dict(ITEMS[1], check_id=ITEMS[0]["check_id"])], open(bad, "w"))
-    assert cc.main(["--input", bad, "--out-root", os.path.join(tmp, "o")]) == 2     # duplicate id
-    assert cc.main(["--input", bad, "--engines", "nope", "--out-root", os.path.join(tmp, "o")]) == 2
-    assert cc.main(["--input", bad, "--out-root", os.path.join(tmp, "corpus", "e1")]) == 2   # never corpus/
+    assert cc.main(["--input", bad, "--outdir", os.path.join(tmp, "o")]) == 2     # duplicate id
+    assert cc.main(["--input", bad, "--engines", "nope", "--outdir", os.path.join(tmp, "o")]) == 2
+    assert cc.main(["--input", bad, "--outdir", os.path.join(tmp, "corpus", "e1")]) == 2   # never corpus/
 
 
 def test_dry_run_calls_nothing_and_writes_nothing():
@@ -153,7 +153,7 @@ def test_dry_run_calls_nothing_and_writes_nothing():
     old = cc.ENGINES
     cc.ENGINES = {e: (lambda p, e=e: called.append(e)) for e in ENGS}
     try:
-        rc = cc.main(["--input", inp, "--dry-run", "--out-root", os.path.join(tmp, "o")])
+        rc = cc.main(["--input", inp, "--dry-run", "--outdir", os.path.join(tmp, "o")])
     finally:
         cc.ENGINES = old
     assert rc == 0 and not called and not os.path.exists(os.path.join(tmp, "o"))

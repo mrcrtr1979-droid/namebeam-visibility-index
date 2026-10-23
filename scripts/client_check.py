@@ -285,7 +285,7 @@ def build_receipt(run_dir_name, date_utc, input_path, input_sha, items, rows, en
     L = []
     L.append("# Namebeam Client Check receipt, %s" % date_utc)
     L.append("")
-    L.append("- Run folder: client_checks/%s" % run_dir_name)
+    L.append("- Run folder: %s" % run_dir_name)
     L.append("- Input: %s (SHA-256 %s)" % (input_path, input_sha))
     L.append("- Engines: %s" % ", ".join(engines_used))
     L.append("- Items: %d | Requests: %d | OK: %d | FAIL: %d"
@@ -361,7 +361,7 @@ def build_summary(run_dir_name, date_utc, input_path, input_sha, items, rows, en
                                "first_three_named": r["first_three_named"],
                                "error_class": r.get("error_class")}
         out_items.append(d)
-    return {"run_date_utc": date_utc, "run_folder": "client_checks/%s" % run_dir_name,
+    return {"run_date_utc": date_utc, "run_folder": run_dir_name,
             "schema_version": SCHEMA_VERSION, "input_path": input_path, "input_sha256": input_sha,
             "engines": list(engines_used), "items": len(items), "requests": len(rows),
             "ok": sum(1 for r in rows if r["run_status"] == "OK"),
@@ -384,10 +384,10 @@ def main(argv=None):
                     help="comma list from: " + ",".join(DEFAULT_ENGINES))
     ap.add_argument("--dry-run", action="store_true", help="build the request list, call nothing")
     ap.add_argument("--run-date", default=None, help="override the UTC run date (YYYY-MM-DD)")
-    ap.add_argument("--out-root", default=OUT_ROOT, help="output root (default client_checks)")
+    ap.add_argument("--outdir", default=OUT_ROOT, help="output folder; the dated run folder goes under it (default client_checks)")
     args = ap.parse_args(argv)
 
-    if under_corpus(args.out_root):
+    if under_corpus(args.outdir):
         print("ERROR: refusing to write under corpus/. Client checks never touch the daily record.")
         return 2
     try:
@@ -409,8 +409,8 @@ def main(argv=None):
         input_sha = hashlib.sha256(f.read()).hexdigest()
 
     requests_list = [(it, e) for it in items for e in wanted]
-    run_dir = pick_run_dir(args.out_root, date_utc)
-    run_dir_name = os.path.basename(run_dir)
+    run_dir = pick_run_dir(args.outdir, date_utc)
+    run_dir_name = run_dir.replace(os.sep, "/")
     print("client_check %s | input %s | items %d | engines %s | requests %d | run folder %s"
           % (date_utc, args.input, len(items), ",".join(wanted), len(requests_list), run_dir))
     keys = {"perplexity": ("PERPLEXITY_API_KEY",), "gemini": ("GEMINI_API_KEY_FREE", "GEMINI_API_KEY"),
