@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t look up live web pages or access Namebeam’s site from here, so I can’t directly fetch that record to read the number. If you share the Namebeam URL (or paste the record’s data — e.g., the daily top‑10 URLs or a CSV/JSON), I’ll extract the number and tell you exactly where it’s published.\n\nIf you want to do it yourself, here are quick ways to find and compute it:\n\nHow to find the record on the web\n- Check Namebeam’s website (namebeam.com) — look for an “AI Visibility Record” page or a blog post covering daily questions for September 2026.\n- Check Namebeam’s GitHub or linked data repositories (if any).\n- Sometimes these records are published as a Google Sheet or CSV link from the blog post — look for “download data” or “dataset”.\n\nHow to compute the number (if you have the daily top‑10 lists)\n- If you have a CSV with columns like date,url:\n  - Filter rows between 2026-09-01 and 2026-09-27 (inclusive).\n  - Normalize URLs (remove tracking parameters/UTM and fragments unless you want them counted separately).\n  - Count distinct URLs.\n\nExample Python (pandas) — paste into a script or Jupyter cell:\n```\nimport pandas as pd\nfrom urllib.parse import urlsplit, urlunsplit, parse_qs\n\ndf = pd.read_csv(\"namebeam_top10.csv\")  # replace with your filename\ndf['date'] = pd.to_datetime(df['date'])\nmask = (df['date'] >= '2026-09-01') & (df['date'] <= '2026-09-27')\ndf = df.loc[mask]\n\n# optional: normalize URLs by removing query params and fragment\ndef normalize(url):\n    parts = urlsplit(url)\n    return urlunsplit((parts.scheme, parts.netloc, parts.path.rstrip('/'), '', ''))\n\ndf['norm_url'] = df['url'].astype(str).apply(normalize)\nunique_count = df['norm_url'].nunique()\nprint(\"Unique pages in Google top-10 (2026-09-01 to 2026-09-27):\", unique_count)\n```\n\nIf you paste the Namebeam page URL or the file here I’ll fetch the data you provide or parse it and give the exact number and the publication location (URL) immediately.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-23T17:24:13Z",
+ "ok": true,
+ "probe_id": "NC",
+ "prompt_sha256": "efbb2eccf1f282e2dfdb6e4a46f44888ad548f405a891de2b76dea5850430d16",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web pages did Google's top 10 results list for the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "negative_control",
+ "run_id": "39994737003",
+ "search_mode": "no search tool (E1 setting)"
+}

@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t browse the web or fetch that Namebeam record from here, so I can’t directly look up the exact number or the page location. If you can either (A) paste the record page (or the HTML/text) here, or (B) give me the URL, I’ll extract and count the distinct domains for you.\n\nIf you want to do it yourself, here are two quick options.\n\n1) Quick instructions (manual)\n- Open the Namebeam “AI Visibility Record” page for the specified date range (2026-09-01 through 2026-09-27).\n- For each daily answer that lists Perplexity as the answering system, collect all cited URLs.\n- Normalize each URL to its domain (example.com).\n- Count unique domains.\n\n2) Python script you can run (fetches the page, finds Perplexity answers, extracts domains)\n- Requires: Python 3, requests, beautifulsoup4, tldextract\n\n```python\nimport requests\nfrom bs4 import BeautifulSoup\nimport tldextract\nfrom urllib.parse import urljoin\nfrom datetime import datetime\n\nURL = \"PASTE_NAMEBEAM_RECORD_URL_HERE\"\n\nresp = requests.get(URL, timeout=15)\nresp.raise_for_status()\nsoup = BeautifulSoup(resp.text, \"html.parser\")\n\ndef extract_domain(url):\n    ext = tldextract.extract(url)\n    if ext.suffix:\n        return ext.domain + \".\" + ext.suffix\n    return url\n\ndomains = set()\n\n# You may need to adjust selectors below to match the page structure.\n# This example assumes each \"daily question\" is in an element with a date,\n# and that Perplexity answers contain the word \"Perplexity\" and links (<a href>).\nfor item in soup.select(\".daily-entry, .record-item, article\"):\n    # find date text in item and parse it\n    date_text = item.select_one(\".date, .entry-date\")\n    if not date_text:\n        continue\n    try:\n        # attempt to parse YYYY-MM-DD or other common formats\n        d = datetime.fromisoformat(date_text.get_text(strip=True))\n    except Exception:\n        try:\n            d = datetime.strptime(date_text.get_text(strip=True), \"%Y-%m-%d\")\n        except Exception:\n            continue\n    if not (datetime(2026,9,1) <= d <= datetime(2026,9,27)):\n        continue\n\n    # check if this entry includes Perplexity\n    if \"perplexity\" not in item.get_text(separator=\" \").lower():\n        continue\n\n    # find all links in this item\n    for a in item.find_all(\"a\", href=True):\n        href = a['href']\n        # make absolute if needed\n        href = urljoin(URL, href)\n        domains.add(extract_domain(href))\n\nprint(\"Unique domains cited by Perplexity in date range:\", len(domains))\nfor d in sorted(domains):\n    print(d)\n```\n\nIf you paste the page URL or the record contents here I’ll run the extraction and return the exact count and the page location (where it’s published).",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-23T17:24:13Z",
+ "ok": true,
+ "probe_id": "A",
+ "prompt_sha256": "940f0824e14031113e8b576a7139c4427b38e8ac1ad5483a1335b3f802676221",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web domains did Perplexity cite in its answers to the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "treatment_anchored",
+ "run_id": "39994737003",
+ "search_mode": "no search tool (E1 setting)"
+}
