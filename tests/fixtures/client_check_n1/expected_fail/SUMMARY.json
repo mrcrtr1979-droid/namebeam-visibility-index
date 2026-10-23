@@ -1,0 +1,153 @@
+{
+ "run_date_utc": "2026-10-27",
+ "run_folder": "client_checks/2026-10-27",
+ "schema_version": "v4-cc1",
+ "input_path": "in.json",
+ "input_sha256": "465ddf01b1a58dad85338ed8dfa3155806beac13848bbbef2a860cf1e3e2e7d2",
+ "engines": [
+  "perplexity",
+  "gemini",
+  "openai",
+  "anthropic"
+ ],
+ "items": 2,
+ "requests": 8,
+ "ok": 4,
+ "fail": 4,
+ "per_engine": {
+  "perplexity": {
+   "requests": 2,
+   "ok": 2,
+   "fail": 0,
+   "client_named_exact": 1,
+   "client_named_loose": 2,
+   "served_models": [
+    "perplexity-model-x"
+   ]
+  },
+  "gemini": {
+   "requests": 2,
+   "ok": 0,
+   "fail": 2,
+   "client_named_exact": 0,
+   "client_named_loose": 0,
+   "served_models": []
+  },
+  "openai": {
+   "requests": 2,
+   "ok": 0,
+   "fail": 2,
+   "client_named_exact": 0,
+   "client_named_loose": 0,
+   "served_models": []
+  },
+  "anthropic": {
+   "requests": 2,
+   "ok": 2,
+   "fail": 0,
+   "client_named_exact": 1,
+   "client_named_loose": 2,
+   "served_models": [
+    "anthropic-model-x"
+   ]
+  }
+ },
+ "results": [
+  {
+   "check_id": "T-01-alpha",
+   "client": "Acme Roofing",
+   "market": "Springfield, MO",
+   "question": "best roofing company in Springfield MO",
+   "engines": {
+    "perplexity": {
+     "run_status": "OK",
+     "client_named": true,
+     "client_named_loose": true,
+     "answer_sha256": "843c5b4c533f05f99e75fffb53f7b467cb20c37ff7ab0dd33873d719f73bf800",
+     "first_three_named": [
+      "Acme Roofing",
+      "Zed Roofing",
+      "Orbit Roofing"
+     ],
+     "error_class": null
+    },
+    "gemini": {
+     "run_status": "FAIL",
+     "client_named": null,
+     "client_named_loose": null,
+     "answer_sha256": null,
+     "first_three_named": [],
+     "error_class": "QuotaBlocked"
+    },
+    "openai": {
+     "run_status": "FAIL",
+     "client_named": null,
+     "client_named_loose": null,
+     "answer_sha256": null,
+     "first_three_named": [],
+     "error_class": "RuntimeError"
+    },
+    "anthropic": {
+     "run_status": "OK",
+     "client_named": true,
+     "client_named_loose": true,
+     "answer_sha256": "466874f45be1bf099ec06abb11129feb802689209dfdf0aa491a64b83ff71cb8",
+     "first_three_named": [
+      "Acme Roofing",
+      "Zed Roofing",
+      "Orbit Roofing"
+     ],
+     "error_class": null
+    }
+   }
+  },
+  {
+   "check_id": "T-02-beta",
+   "client": "Doerner, Saunders, Daniel & Anderson",
+   "market": "Oklahoma City, OK",
+   "question": "best law firm in Oklahoma City",
+   "engines": {
+    "perplexity": {
+     "run_status": "OK",
+     "client_named": false,
+     "client_named_loose": true,
+     "answer_sha256": "b7a4a67aa157b644a92745d586e90ba3de658206fc3f5a080d59aafa7374b77a",
+     "first_three_named": [
+      "Crowe & Dunlevy",
+      "Doerner Saunders Daniel & Anderson",
+      "McAfee & Taft"
+     ],
+     "error_class": null
+    },
+    "gemini": {
+     "run_status": "FAIL",
+     "client_named": null,
+     "client_named_loose": null,
+     "answer_sha256": null,
+     "first_three_named": [],
+     "error_class": "QuotaBlocked"
+    },
+    "openai": {
+     "run_status": "FAIL",
+     "client_named": null,
+     "client_named_loose": null,
+     "answer_sha256": null,
+     "first_three_named": [],
+     "error_class": "RuntimeError"
+    },
+    "anthropic": {
+     "run_status": "OK",
+     "client_named": false,
+     "client_named_loose": true,
+     "answer_sha256": "68780467848f22da2a66f3e37f1e243ee42af1f6f6e91437821320cbd120ef74",
+     "first_three_named": [
+      "Crowe & Dunlevy",
+      "Doerner Saunders Daniel & Anderson",
+      "McAfee & Taft"
+     ],
+     "error_class": null
+    }
+   }
+  }
+ ]
+}
