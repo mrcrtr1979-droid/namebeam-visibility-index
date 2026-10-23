@@ -21,6 +21,7 @@ No secret is ever printed, logged, or written to a corpus row. Keys are read
 from the environment at call time and never stored on an object.
 """
 
+import json
 import os
 import time
 import re
@@ -817,9 +818,59 @@ ANTHROPIC_MODEL = (os.environ.get("ANTHROPIC_MODEL", "").strip()
                    or "claude-haiku-4-5")
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 
+# BEDROCK PATH (added 2026-10-23, paid from AWS Activate credits). If env
+# BEDROCK_MODEL_ID is non-empty, call_anthropic goes to Bedrock Runtime
+# InvokeModel in AWS_REGION (default us-east-1) instead of the API key path;
+# empty means the API key path above, unchanged. Credentials come from the
+# standard AWS chain (the workflows use OIDC via configure-aws-credentials).
+# The Bedrock cross-region inference profile for Claude Haiku 4.5 is believed
+# to be us.anthropic.claude-haiku-4-5-20251001-v1:0 (UNVERIFIED until the
+# first live run; same pattern as the ANTHROPIC_MODEL note above). Not
+# hardcoded: it comes from the repo VARIABLE BEDROCK_MODEL_ID.
+
+
+def _call_anthropic_bedrock(prompt_text, model_id):
+    try:
+        import boto3  # lazy: the module must still import where boto3 is absent
+        region = os.environ.get("AWS_REGION", "").strip() or "us-east-1"
+        client = boto3.client("bedrock-runtime", region_name=region)
+        resp = client.invoke_model(
+            modelId=model_id,
+            body=json.dumps({"anthropic_version": "bedrock-2023-05-31",
+                             "max_tokens": 2048,
+                             "temperature": TEMPERATURE,
+                             "messages": [{"role": "user",
+                                           "content": prompt_text}]}),
+        )
+        raw = resp["body"]
+        raw = raw.read() if hasattr(raw, "read") else raw
+        body = json.loads(raw)
+        text = body["content"][0]["text"]
+    except Exception as exc:
+        code = ""
+        try:
+            code = exc.response["Error"]["Code"]
+        except Exception:
+            pass
+        if code == "ThrottlingException":
+            return False, "", [], redact(
+                "QUOTA: anthropic bedrock throttled: %s" % exc)
+        if isinstance(exc, (KeyError, IndexError, TypeError, ValueError)):
+            return False, "", [], redact(
+                "anthropic bedrock failed: response shape unexpected (%s)" % exc)
+        return False, "", [], redact("anthropic bedrock failed: %s" % exc)
+    meta = _served_meta(body, "model", "id", "usage")
+    if not meta.get("served_model"):
+        meta["served_model"] = model_id
+    LAST_CALL_META["anthropic"] = meta
+    return True, text, [], ""
+
 
 def call_anthropic(prompt_text):
     LAST_CALL_META["anthropic"] = {}
+    bedrock_model = os.environ.get("BEDROCK_MODEL_ID", "").strip()
+    if bedrock_model:
+        return _call_anthropic_bedrock(prompt_text, bedrock_model)
     key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
     if not key:
         return False, "", [], redact("ANTHROPIC_API_KEY not set")
