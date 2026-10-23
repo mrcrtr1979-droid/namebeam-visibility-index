@@ -1,0 +1,55 @@
+name: Client Check (dry run only)
+
+# PUBLIC REPO: this workflow is DRY-RUN ONLY. It builds the request list from an input
+# file and prints counts; it calls no engine, holds no key and commits nothing.
+# Live runs happen from the private carter-brain workflow client_check_private.yml
+# (client-check outputs never land in this public repo).
+on:
+  workflow_dispatch:
+    inputs:
+      input_path:
+        description: "Input JSON list (check_id, client, market, niche, question). Must sit under client_checks/inputs/"
+        required: true
+        default: "client_checks/inputs/AGENCY_1027.json"
+        type: string
+      engines:
+        description: "Comma list of engines to count"
+        required: true
+        default: "perplexity,gemini,openai,anthropic"
+        type: string
+
+concurrency:
+  group: client-check
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  client-check-dry-run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Dry run the client check
+        env:
+          INPUT: ${{ inputs.input_path }}
+          ENGINES: ${{ inputs.engines }}
+        run: |
+          case "$INPUT" in
+            client_checks/inputs/*.json) ;;
+            *) echo "ERROR: input_path must be a .json file under client_checks/inputs/"; exit 2 ;;
+          esac
+          case "$INPUT" in *..*) echo "ERROR: input_path must not contain .."; exit 2 ;; esac
+          # dry_run is fixed: --dry-run is always passed. Do not remove it.
+          python -I scripts/client_check.py --input "$INPUT" --engines "$ENGINES" --dry-run
