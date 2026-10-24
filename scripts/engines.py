@@ -268,39 +268,80 @@ def _gemini_quota_id(body_text):
     return m.group(1) if m else "quotaId-not-in-body"
 
 
-def call_gemini(prompt_text, _post=None, _sleep=None, _now=None, question_id=None, _panel=None):
-    model = gemini_model_for(question_id if question_id is not None else CURRENT_QUESTION_ID[0], _panel)
-    LAST_CALL_META["gemini"] = {"requested_model": model}
-    key = (os.environ.get("GEMINI_API_KEY_FREE", "").strip()
-           or os.environ.get("GEMINI_API_KEY", "").strip())
-    if not key:
-        return False, "", [], redact("GEMINI_API_KEY not set")
-    post = _post or requests.post
-    sleep = _sleep or time.sleep
-    now = _now or time.monotonic
+GEMINI_FALLTHROUGH = (429, 402, 403)  # quota or billing refusals only; any other status stops the chain
+GEMINI_VERTEX_URL = ("https://%s-aiplatform.googleapis.com/v1/projects/%s/locations/%s"
+                     "/publishers/google/models/%s:generateContent")
+
+
+def _vertex_bearer(sa_json):
+    """Bearer token for Vertex AI minted from a service-account JSON. Returns None when the
+    google-auth library is missing or the token cannot be minted, so the rail is skipped.
+    Never raises and never returns the JSON."""
+    try:
+        import json as _json
+        from google.auth.transport.requests import Request
+        from google.oauth2 import service_account
+        creds = service_account.Credentials.from_service_account_info(
+            _json.loads(sa_json), scopes=["https://www.googleapis.com/auth/cloud-platform"])
+        creds.refresh(Request())
+        return creds.token
+    except Exception:
+        return None
+
+
+def _gemini_rails(model, env=None, vertex_bearer=_vertex_bearer):
+    """Ordered (name, url, headers) for one call: (1) AI Studio free-tier key, (2) Vertex AI on the
+    trial project, (3) the paid AI Studio key. Secrets are read by name; URLs with keys are never
+    logged (redact() strips them from every error string)."""
+    env = os.environ if env is None else env
+    rails = []
+    free = (env.get("GEMINI_API_KEY_FREE") or "").strip()
+    if free:
+        rails.append(("studio_free", (GEMINI_URL % model) + "?key=" + free,
+                      {"Content-Type": "application/json"}))
+    sa = (env.get("GCP_SA_KEY") or "").strip()
+    project = (env.get("GCP_PROJECT") or "").strip()
+    location = (env.get("GCP_LOCATION") or "us-central1").strip()
+    if sa and project:
+        token = vertex_bearer(sa)
+        if token:
+            rails.append(("vertex", GEMINI_VERTEX_URL % (location, project, location, model),
+                          {"Content-Type": "application/json", "Authorization": "Bearer " + token}))
+    paid = (env.get("GEMINI_API_KEY") or "").strip()
+    if paid:
+        rails.append(("studio_paid", (GEMINI_URL % model) + "?key=" + paid,
+                      {"Content-Type": "application/json"}))
+    return rails
+
+
+def _gemini_attempts(url, headers, prompt_text, model, post, sleep, now):
+    """One rail: the original retry, pacing and quota logic, unchanged. Returns
+    (ok, text, sources, error, last_status)."""
     last = ""
+    status = None
     for attempt in range(1, GEMINI_MAX_TRIES + 1):
         _gemini_pace(model, sleep, now)
         try:
             r = post(
-                (GEMINI_URL % model) + "?key=" + key,
-                headers={"Content-Type": "application/json"},
+                url,
+                headers=headers,
                 json={"contents": [{"parts": [{"text": prompt_text}]}]},
                 timeout=TIMEOUT,
             )
         except requests.exceptions.RequestException as exc:
-            return False, "", [], redact("gemini request failed: %s" % exc)
+            return False, "", [], redact("gemini request failed: %s" % exc), None
+        status = r.status_code
         if r.status_code == 200:
             try:
                 body = r.json()
                 text = body["candidates"][0]["content"]["parts"][0]["text"]
             except (ValueError, KeyError, IndexError, TypeError):
-                return False, "", [], redact("gemini response shape unexpected")
+                return False, "", [], redact("gemini response shape unexpected"), 200
             LAST_CALL_META["gemini"] = _served_meta(body, "modelVersion", "responseId", "usageMetadata")
             LAST_CALL_META["gemini"]["requested_model"] = model
             # Gemini's plain generateContent returns no citation list. We do NOT
             # invent one. Sources stay empty and that is an honest empty, not a zero.
-            return True, text, [], ""
+            return True, text, [], "", 200
         # Never echo the URL back, it carries the key in the query string.
         # A QUOTA refusal is not an engine failure and must never be counted
         # as one (doctrine 122: a zero produced by a refusal is not a finding).
@@ -317,14 +358,33 @@ def call_gemini(prompt_text, _post=None, _sleep=None, _now=None, question_id=Non
             wait = 8.0 * attempt
         else:
             return False, "", [], redact(
-                "gemini HTTP %s: %s" % (r.status_code, r.text[:300]))
+                "gemini HTTP %s: %s" % (r.status_code, r.text[:300])), r.status_code
         if (attempt == GEMINI_MAX_TRIES or wait is None or wait > GEMINI_MAX_WAIT_S
                 or _gemini_slept[0] + wait > GEMINI_SLEEP_BUDGET_S):
             break
         _gemini_slept[0] += wait
         sleep(wait)
-    return False, "", [], redact(last)
+    return False, "", [], redact(last), status
 
+
+def call_gemini(prompt_text, _post=None, _sleep=None, _now=None, question_id=None, _panel=None, _rails=None):
+    model = gemini_model_for(question_id if question_id is not None else CURRENT_QUESTION_ID[0], _panel)
+    LAST_CALL_META["gemini"] = {"requested_model": model}
+    rails = _rails if _rails is not None else _gemini_rails(model)
+    if not rails:
+        return False, "", [], redact("GEMINI_API_KEY not set")
+    post = _post or requests.post
+    sleep = _sleep or time.sleep
+    now = _now or time.monotonic
+    err = ""
+    for name, url, headers in rails:
+        ok, text, sources, err, status = _gemini_attempts(url, headers, prompt_text, model, post, sleep, now)
+        LAST_CALL_META["gemini"]["rail"] = name
+        if ok:
+            return True, text, sources, ""
+        if status not in GEMINI_FALLTHROUGH:
+            break
+    return False, "", [], err
 
 # --------------------------------------------------------------------------
 # BRIGHT DATA SERP
