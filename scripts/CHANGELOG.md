@@ -1,3 +1,4 @@
 # Changelog
 
+- 2026-10-23: PostHog AI Observability for the E1 collector. scripts/posthog_llm_obs.py queues one `$ai_generation` event per engine row (written by e1_runner.run_engine) and sends them in one /batch/ POST at the end of the run. Best-effort, metadata only (no prompt or answer text), never changes a corpus row or the exit code; off when POSTHOG_PROJECT_KEY is empty or DISABLE_POSTHOG is set. Env wired in .github/workflows/e1-check-runner.yml. Test: python3 scripts/test_posthog_llm_obs.py.
 - 2026-10-13: scripts/e1_runner.py extract_competitors returns the de-duplicated union of bold-span and plain-text names, headings dropped, then a gazetteer pass adding names recorded earlier for the same market x niche by any engine when they appear in the text (DQ-5). Effective for collection runs dated 2026-10-14 and later. Edition 1 (through 2026-10-13) is unchanged. Replay: scripts/replay_extractor_union.py.
