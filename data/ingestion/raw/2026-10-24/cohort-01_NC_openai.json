@@ -1,0 +1,17 @@
+{
+ "answer_text": "I don’t have live web access, so I can’t fetch Namebeam’s AI Visibility Record to look that up directly. If you want that exact number now I can either:\n\n- Look it up for you if you paste the page/CSV link or allow me to fetch the page; or\n- Compute it for you if you paste the data (or upload the CSV/Sheet).\n\nIf you prefer to run it yourself, here are quick ways to get the number and where to check:\n\nWhere it’s published\n- The AI Visibility Record is published on Namebeam’s site (Namebeam’s “AI Visibility Record” page) and typically links to the underlying dataset (often a Google Sheet or downloadable CSV) from that page. Open Namebeam’s site, find the AI Visibility Record entry and follow the dataset link.\n\nHow to compute the number (examples)\n\n1) Google Sheets\n- If the top-10 result URLs are in columns A–J (one row per question), use:\n  =COUNTA(UNIQUE(FLATTEN(A:J)))\n  That returns the number of distinct URLs.\n\n2) Excel\n- Copy the 10 result columns into one column (paste), then Data → Remove Duplicates, then check the count of remaining rows.\n\n3) Command line (CSV with result columns 2–11):\n  cut -d, -f2-11 file.csv | tr ',' '\\n' | sed '/^\\s*$/d' | sort -u | wc -l\n\n4) Python (robust for many formats)\n- Save as count_unique_urls.py and run:\n  ```\n  import pandas as pd\n\n  df = pd.read_csv('namebeam_record.csv', dtype=str)\n  # pick columns that look like result URLs (adjust if needed)\n  url_cols = [c for c in df.columns if 'result' in c.lower() or 'url' in c.lower() or 'top' in c.lower()]\n  if not url_cols:\n      # fallback: assume first 10 columns are top-10 results\n      url_cols = df.columns[:10].tolist()\n\n  all_urls = pd.Series(dtype=object)\n  for c in url_cols:\n      all_urls = all_urls.append(df[c].dropna().astype(str), ignore_index=True)\n\n  unique_count = all_urls.str.strip().replace('', pd.NA).dropna().str.lower().nunique()\n  print('Distinct URLs in Google top-10 (2026-09-01 to 2026-09-27):', unique_count)\n  ```\n\nIf you want, paste the Namebeam record link or the exported data and I’ll compute the exact number and give the precise publication URL.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-10-24T16:12:50Z",
+ "ok": true,
+ "probe_id": "NC",
+ "prompt_sha256": "efbb2eccf1f282e2dfdb6e4a46f44888ad548f405a891de2b76dea5850430d16",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web pages did Google's top 10 results list for the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "negative_control",
+ "run_id": "40110492730",
+ "search_mode": "no search tool (E1 setting)"
+}
