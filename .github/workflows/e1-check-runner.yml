@@ -143,6 +143,8 @@ jobs:
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
           # Bedrock path: non-empty BEDROCK_MODEL_ID routes the anthropic engine to Bedrock.
           BEDROCK_MODEL_ID: ${{ vars.BEDROCK_MODEL_ID }}
+          # Used only to re-assume the role when the 1-hour OIDC session expires mid-run.
+          AWS_BEDROCK_ROLE_ARN: ${{ vars.AWS_BEDROCK_ROLE_ARN }}
           AWS_REGION: us-east-1
         run: python scripts/e1_runner.py
 

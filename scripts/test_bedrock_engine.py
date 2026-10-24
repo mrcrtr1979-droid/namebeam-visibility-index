@@ -163,6 +163,120 @@ def test_empty_bedrock_id_uses_api_path():
         assert "x-api-key" in seen["headers"]
 
 
+def _install_refresh_fakes(first_error, roles_ok=True):
+    """boto3 fake: the first client raises first_error once, a refreshed
+    client (built with explicit keys) succeeds."""
+    state = {"clients": [], "invokes": 0, "refreshes": 0}
+    mod = types.ModuleType("boto3")
+
+    class Client:
+        def __init__(self, kw):
+            self.fresh = "aws_access_key_id" in kw
+
+        def invoke_model(self, **kw):
+            state["invokes"] += 1
+            if not self.fresh:
+                raise first_error
+            return bedrock_ok()
+
+    def client(name, **kw):
+        c = Client(kw)
+        state["clients"].append(c)
+        return c
+
+    mod.client = client
+    sys.modules["boto3"] = mod
+
+    def fake_token():
+        return "oidc-token-SECRET123"
+
+    def fake_assume(boto3, region, role_arn, token):
+        state["refreshes"] += 1
+        if not roles_ok:
+            raise RuntimeError("STS denied for token %s" % token)
+        return {"aws_access_key_id": "AKIAFRESHKEY0001",
+                "aws_secret_access_key": "secretFRESH0002",
+                "aws_session_token": "sessionFRESH0003"}
+    engines._fetch_oidc_token = fake_token
+    engines._assume_role_with_token = fake_assume
+    return state
+
+
+def _with_refresh_patches(fn):
+    saved = (engines._fetch_oidc_token, engines._assume_role_with_token)
+    engines._BEDROCK_STATE.update({"key": None, "client": None, "creds": None, "token": None})
+    try:
+        return fn()
+    finally:
+        engines._fetch_oidc_token, engines._assume_role_with_token = saved
+        engines._BEDROCK_STATE.update({"key": None, "client": None, "creds": None, "token": None})
+
+
+def test_expired_token_refreshes_and_retries_once():
+    def go():
+        err = FakeClientError("ExpiredTokenException", "token expired")
+        st = _install_refresh_fakes(err)
+        out = engines.call_anthropic("q")
+        return out, st
+    env = {"BEDROCK_MODEL_ID": "m", "AWS_BEDROCK_ROLE_ARN": "arn:aws:iam::1:role/r"}
+    out, st = run(env, lambda: _with_refresh_patches(go))
+    assert out == (True, "Bedrock answer", [], "")
+    assert st["refreshes"] == 1 and st["invokes"] == 2
+
+
+def test_refresh_failure_keeps_failed_and_scrubs():
+    def go():
+        err = FakeClientError("ExpiredTokenException", "token expired")
+        _install_refresh_fakes(err, roles_ok=False)
+        return engines.call_anthropic("q")
+    env = {"BEDROCK_MODEL_ID": "m", "AWS_BEDROCK_ROLE_ARN": "arn:aws:iam::1:role/r"}
+    ok, text, cites, errtxt = run(env, lambda: _with_refresh_patches(go))
+    assert (ok, text, cites) == (False, "", [])
+    assert errtxt.startswith("anthropic bedrock failed:")
+    assert "ExpiredTokenException" in errtxt or "token expired" in errtxt
+    assert "SECRET123" not in errtxt and "[REDACTED:AWS]" in errtxt
+
+
+def test_missing_role_env_keeps_failed():
+    def go():
+        err = FakeClientError("ExpiredTokenException", "token expired")
+        st = _install_refresh_fakes(err)
+        os.environ.pop("AWS_BEDROCK_ROLE_ARN", None)
+        return engines.call_anthropic("q"), st
+    out, st = run({"BEDROCK_MODEL_ID": "m"}, lambda: _with_refresh_patches(go))
+    assert out[0] is False and out[3].startswith("anthropic bedrock failed:")
+    assert st["refreshes"] == 0 and st["invokes"] == 1
+
+
+def test_non_expiry_error_does_not_refresh():
+    def go():
+        st = _install_refresh_fakes(FakeClientError("AccessDeniedException", "no"))
+        return engines.call_anthropic("q"), st
+    env = {"BEDROCK_MODEL_ID": "m", "AWS_BEDROCK_ROLE_ARN": "arn:x"}
+    out, st = run(env, lambda: _with_refresh_patches(go))
+    assert out[0] is False and st["refreshes"] == 0 and st["invokes"] == 1
+
+
+def test_proactive_rebuild_after_50_minutes():
+    def go():
+        st = _install_refresh_fakes(FakeClientError("X", "x"))
+        engines.call_anthropic("q")  # builds the stale client (fails, fine)
+        engines._BEDROCK_STATE["built"] -= 51 * 60
+        out = engines.call_anthropic("q")
+        return out, st
+    env = {"BEDROCK_MODEL_ID": "m", "AWS_BEDROCK_ROLE_ARN": "arn:x"}
+    out, st = run(env, lambda: _with_refresh_patches(go))
+    assert out[0] is True and st["refreshes"] == 1
+
+
+def test_stored_credentials_are_scrubbed_from_errors():
+    engines._BEDROCK_STATE["creds"] = {"aws_session_token": "sessionFRESH0003"}
+    try:
+        assert "sessionFRESH0003" not in engines._bedrock_scrub("bad sessionFRESH0003 x")
+    finally:
+        engines._BEDROCK_STATE["creds"] = None
+
+
 if __name__ == "__main__":
     fails = []
     for name, fn in sorted(globals().items()):

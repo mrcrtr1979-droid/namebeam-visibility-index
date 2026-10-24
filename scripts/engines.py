@@ -829,12 +829,107 @@ ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 # hardcoded: it comes from the repo VARIABLE BEDROCK_MODEL_ID.
 
 
+# Credential refresh (2026-10-24). The OIDC session from
+# configure-aws-credentials lasts 1 hour; a long run (81 minutes on
+# 2026-10-24) got ExpiredTokenException on 16 cells. On that error we fetch a
+# fresh GitHub OIDC token, assume the same role again, rebuild the client and
+# retry the request once. The client is also rebuilt proactively after 50
+# minutes. If refresh is impossible (env missing or STS error) the cell is
+# logged FAILED with the error, exactly as before; no row is ever invented.
+BEDROCK_REFRESH_AFTER_SECONDS = 50 * 60
+_BEDROCK_STATE = {"key": None, "client": None, "built": 0.0, "creds": None}
+_EXPIRED_MARKERS = ("ExpiredToken", "security token included in the request is expired",
+                    "token expired", "ExpiredTokenException")
+
+
+def _bedrock_scrub(text):
+    """redact() plus the refreshed temporary keys and the OIDC token."""
+    out = redact(text)
+    creds = dict(_BEDROCK_STATE.get("creds") or {})
+    creds["token"] = _BEDROCK_STATE.get("token")
+    for val in list(creds.values()):
+        if val and len(str(val)) >= 6:
+            out = out.replace(str(val), "[REDACTED:AWS]")
+    return out
+
+
+def _is_expired_token_error(exc):
+    code = ""
+    try:
+        code = exc.response["Error"]["Code"]
+    except Exception:
+        pass
+    if code in ("ExpiredTokenException", "ExpiredToken"):
+        return True
+    msg = str(exc).lower()
+    return any(m.lower() in msg for m in _EXPIRED_MARKERS)
+
+
+def _fetch_oidc_token():
+    """GitHub Actions OIDC token for audience sts.amazonaws.com."""
+    url = os.environ.get("ACTIONS_ID_TOKEN_REQUEST_URL", "").strip()
+    tok = os.environ.get("ACTIONS_ID_TOKEN_REQUEST_TOKEN", "").strip()
+    if not url or not tok:
+        raise RuntimeError("OIDC request env missing")
+    sep = "&" if "?" in url else "?"
+    r = requests.get(url + sep + "audience=sts.amazonaws.com",
+                     headers={"Authorization": "bearer " + tok}, timeout=30)
+    if r.status_code != 200:
+        raise RuntimeError("OIDC token request HTTP %s" % r.status_code)
+    value = r.json().get("value", "")
+    if not value:
+        raise RuntimeError("OIDC token response empty")
+    return value
+
+
+def _assume_role_with_token(boto3, region, role_arn, token):
+    from botocore import UNSIGNED
+    from botocore.config import Config
+    sts = boto3.client("sts", region_name=region,
+                       config=Config(signature_version=UNSIGNED))
+    out = sts.assume_role_with_web_identity(
+        RoleArn=role_arn, RoleSessionName="e1-refresh",
+        WebIdentityToken=token, DurationSeconds=3600)
+    c = out["Credentials"]
+    return {"aws_access_key_id": c["AccessKeyId"],
+            "aws_secret_access_key": c["SecretAccessKey"],
+            "aws_session_token": c["SessionToken"]}
+
+
+def _refresh_bedrock_client(boto3, region):
+    """Rebuild the client with fresh keys. Raises on any failure."""
+    role_arn = os.environ.get("AWS_BEDROCK_ROLE_ARN", "").strip()
+    if not role_arn:
+        raise RuntimeError("AWS_BEDROCK_ROLE_ARN not set")
+    token = _fetch_oidc_token()
+    _BEDROCK_STATE["token"] = token  # kept only so _bedrock_scrub can remove it
+    creds = _assume_role_with_token(boto3, region, role_arn, token)
+    _BEDROCK_STATE["creds"] = creds
+    _BEDROCK_STATE["client"] = boto3.client(
+        "bedrock-runtime", region_name=region, **creds)
+    _BEDROCK_STATE["built"] = time.time()
+
+
+def _get_bedrock_client(boto3, region):
+    key = (id(boto3), region)
+    st = _BEDROCK_STATE
+    if st["key"] != key or st["client"] is None:
+        st.update({"key": key, "creds": None,
+                   "client": boto3.client("bedrock-runtime", region_name=region),
+                   "built": time.time()})
+    elif time.time() - st["built"] > BEDROCK_REFRESH_AFTER_SECONDS:
+        try:
+            _refresh_bedrock_client(boto3, region)
+        except Exception:
+            pass  # keep the current client; an expiry error retries the refresh
+    return st["client"]
+
+
 def _call_anthropic_bedrock(prompt_text, model_id):
     try:
         import boto3  # lazy: the module must still import where boto3 is absent
         region = os.environ.get("AWS_REGION", "").strip() or "us-east-1"
-        client = boto3.client("bedrock-runtime", region_name=region)
-        resp = client.invoke_model(
+        request = dict(
             modelId=model_id,
             body=json.dumps({"anthropic_version": "bedrock-2023-05-31",
                              "max_tokens": 2048,
@@ -842,6 +937,19 @@ def _call_anthropic_bedrock(prompt_text, model_id):
                              "messages": [{"role": "user",
                                            "content": prompt_text}]}),
         )
+        client = _get_bedrock_client(boto3, region)
+        try:
+            resp = client.invoke_model(**request)
+        except Exception as first:
+            if not _is_expired_token_error(first):
+                raise
+            try:
+                _refresh_bedrock_client(boto3, region)
+            except Exception as rexc:
+                return False, "", [], _bedrock_scrub(
+                    "anthropic bedrock failed: %s (credential refresh failed: %s)"
+                    % (first, rexc))
+            resp = _BEDROCK_STATE["client"].invoke_model(**request)
         raw = resp["body"]
         raw = raw.read() if hasattr(raw, "read") else raw
         body = json.loads(raw)
@@ -853,12 +961,12 @@ def _call_anthropic_bedrock(prompt_text, model_id):
         except Exception:
             pass
         if code == "ThrottlingException":
-            return False, "", [], redact(
+            return False, "", [], _bedrock_scrub(
                 "QUOTA: anthropic bedrock throttled: %s" % exc)
         if isinstance(exc, (KeyError, IndexError, TypeError, ValueError)):
-            return False, "", [], redact(
+            return False, "", [], _bedrock_scrub(
                 "anthropic bedrock failed: response shape unexpected (%s)" % exc)
-        return False, "", [], redact("anthropic bedrock failed: %s" % exc)
+        return False, "", [], _bedrock_scrub("anthropic bedrock failed: %s" % exc)
     meta = _served_meta(body, "model", "id", "usage")
     if not meta.get("served_model"):
         meta["served_model"] = model_id

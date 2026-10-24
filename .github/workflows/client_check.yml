@@ -62,6 +62,8 @@ jobs:
           ENGINES: ${{ inputs.engines }}
           REPEATS: ${{ inputs.repeats }}
           BEDROCK_MODEL_ID: ${{ vars.BEDROCK_MODEL_ID }}
+          # Used only to re-assume the role when the 1-hour OIDC session expires mid-run.
+          AWS_BEDROCK_ROLE_ARN: ${{ vars.AWS_BEDROCK_ROLE_ARN }}
           AWS_REGION: us-east-1
         run: |
           case "$INPUT" in
