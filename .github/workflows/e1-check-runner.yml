@@ -5,7 +5,27 @@ name: E1 Check Runner
 # whose key is absent logs a FAILED row and the run continues; it never
 # blocks the engines that do work.
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    # RE-RUN ONLY FAILED CELLS (2026-10-24, [SONNET-BEDROCK-EXPIRY-1024]). All three inputs are
+    # optional; leave them blank for the normal full run. See scripts/e1_runner.py
+    # (parse_rerun_options) for the exact rules. Example, the 2026-10-24 Anthropic cells:
+    # only_engines = anthropic, only_failed = true, date_utc = 2026-10-24.
+    inputs:
+      only_engines:
+        description: "Comma list of engines to ask (perplexity, gemini, openai, anthropic, serp). Blank = all."
+        required: false
+        default: ""
+        type: string
+      only_failed:
+        description: "Ask only cells whose row for the date is FAILED with no OK row yet (needs only_engines). Answers land as _rN rows; FAILED rows are never overwritten."
+        required: false
+        default: false
+        type: boolean
+      date_utc:
+        description: "YYYY-MM-DD of the failed cells to re-ask (needs only_failed). Blank = today (UTC)."
+        required: false
+        default: ""
+        type: string
   schedule:
   - cron: "10 12 * * *"
   # BACKSTOP (2026-10-06, [FABLE-COS-1006A], R61): on 2026-10-05 the 12:10Z run was
@@ -78,6 +98,16 @@ jobs:
         with:
           role-to-assume: ${{ vars.AWS_BEDROCK_ROLE_ARN }}
           aws-region: us-east-1
+          # Explicit, and not above the role's maximum session. The run outlives this hour on
+          # a long day, so scripts/engines.py re-mints the session itself (see its TOKEN REFRESH
+          # note); this value only says how long each mint lasts.
+          role-duration-seconds: 3600
+
+      # Tells the Bedrock adapter when the credentials above were minted so it refreshes at 50
+      # minutes, before they expire. A timestamp only, never a credential.
+      - name: Record when the AWS credentials were minted
+        if: steps.guard.outputs.skip != 'true' && vars.AWS_BEDROCK_ROLE_ARN != ''
+        run: echo "AWS_CREDS_MINTED_AT=$(date +%s)" >> "$GITHUB_ENV"
 
       # Reports which engines are wired WITHOUT ever printing a value.
       # Only ever echoes "present" or "MISSING", never the secret itself.
@@ -144,6 +174,14 @@ jobs:
           # Bedrock path: non-empty BEDROCK_MODEL_ID routes the anthropic engine to Bedrock.
           BEDROCK_MODEL_ID: ${{ vars.BEDROCK_MODEL_ID }}
           AWS_REGION: us-east-1
+          # The same role the configure step assumed; engines.py uses it to re-mint the session
+          # (GitHub OIDC -> sts AssumeRoleWithWebIdentity) when the 1-hour token runs out.
+          AWS_ROLE_ARN: ${{ vars.AWS_BEDROCK_ROLE_ARN }}
+          # Optional re-run controls (blank on a scheduled run). Passed through env, never
+          # interpolated into the shell; e1_runner.py validates them.
+          E1_ONLY_ENGINES: ${{ inputs.only_engines }}
+          E1_ONLY_FAILED: ${{ inputs.only_failed }}
+          E1_DATE_UTC: ${{ inputs.date_utc }}
         run: python scripts/e1_runner.py
 
       # S1-1 (2026-10-08, [SONNET-RECORD-1008E-S1]): the daily sources dataset.

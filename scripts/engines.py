@@ -53,11 +53,27 @@ SECRET_ENV_VARS = (
 )
 
 
+# Secret VALUES minted at run time (the refreshed AWS credentials and the GitHub OIDC token
+# of the Bedrock path). They are not in the environment, so redact() cannot find them by
+# variable name; they are registered here the moment they exist and scrubbed from every
+# error string. Never logged, never written to a row.
+_RUNTIME_SECRETS = set()
+
+
+def register_secret(value):
+    """Mark a run-time secret value so redact() scrubs it from any string."""
+    value = str(value or "").strip()
+    if len(value) >= 6:
+        _RUNTIME_SECRETS.add(value)
+
+
 def redact(text):
     """Remove any live secret value from a string. Returns a safe string."""
     if not text:
         return ""
     out = str(text)
+    for val in _RUNTIME_SECRETS:
+        out = out.replace(val, "[REDACTED:runtime-credential]")
     for var in SECRET_ENV_VARS:
         val = os.environ.get(var, "").strip()
         # Guard against a short or empty value nuking the whole message.
@@ -829,36 +845,164 @@ ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 # hardcoded: it comes from the repo VARIABLE BEDROCK_MODEL_ID.
 
 
+# TOKEN REFRESH (2026-10-24, [SONNET-BEDROCK-EXPIRY-1024]). configure-aws-credentials mints a
+# role session that lasts one hour. The daily record runs longer than that (engine pacing), and
+# on 2026-10-24 (run 40108788743) 16 of 53 Anthropic cells failed with ExpiredTokenException.
+# Fix without any IAM change: mint a fresh GitHub OIDC token (audience sts.amazonaws.com, the
+# same request configure-aws-credentials makes), exchange it with sts AssumeRoleWithWebIdentity
+# for the SAME role, rebuild the bedrock-runtime client with the new credentials, and retry the
+# call ONCE. Refresh happens (a) before a call when the credentials are older than
+# BEDROCK_REFRESH_AFTER_SECONDS and (b) after an ExpiredTokenException. If the refresh itself
+# fails the row stays FAILED and carries the error CLASS only; no token or credential, and no
+# provider response text, is ever put in an error string.
+BEDROCK_REFRESH_AFTER_SECONDS = 50 * 60
+BEDROCK_SESSION_SECONDS = 3600
+_BEDROCK_STATE = {"creds": None, "minted_at": None, "first_use": None}
+_EXPIRED_CODES = ("ExpiredTokenException", "ExpiredToken")
+
+
+def _bedrock_now():
+    return time.time()
+
+
+def _aws_error_code(exc):
+    try:
+        return str(exc.response["Error"]["Code"])
+    except Exception:
+        return ""
+
+
+def _is_expired_token_error(exc):
+    code = _aws_error_code(exc)
+    if code:
+        return code in _EXPIRED_CODES
+    return any(c in str(exc) for c in _EXPIRED_CODES)
+
+
+def _bedrock_credentials_age():
+    """Seconds since the current Bedrock credentials were minted. The workflow exports
+    AWS_CREDS_MINTED_AT (epoch seconds) right after configure-aws-credentials; without it
+    the age is counted from the first Bedrock call of this process (a slight undercount,
+    covered by the 10 minute margin in BEDROCK_REFRESH_AFTER_SECONDS)."""
+    now = _bedrock_now()
+    minted = _BEDROCK_STATE["minted_at"]
+    if minted is None:
+        try:
+            minted = float(os.environ.get("AWS_CREDS_MINTED_AT", "").strip())
+        except ValueError:
+            minted = None
+    if minted is None:
+        if _BEDROCK_STATE["first_use"] is None:
+            _BEDROCK_STATE["first_use"] = now
+        minted = _BEDROCK_STATE["first_use"]
+    return now - minted
+
+
+def _bedrock_refresh_credentials(boto3, region):
+    """Mint a fresh OIDC token and assume the same role. Returns (ok, error_class).
+    error_class is a short class name (never a message or a value). On success the new
+    credentials are held in _BEDROCK_STATE and registered for redaction."""
+    base = os.environ.get("ACTIONS_ID_TOKEN_REQUEST_URL", "").strip()
+    req_token = os.environ.get("ACTIONS_ID_TOKEN_REQUEST_TOKEN", "").strip()
+    role_arn = os.environ.get("AWS_ROLE_ARN", "").strip()
+    if not base or not req_token:
+        return False, "OIDCEnvMissing"
+    if not role_arn:
+        return False, "RoleArnMissing"
+    register_secret(req_token)
+    try:
+        sep = "&" if "?" in base else "?"
+        r = requests.get(base + sep + "audience=sts.amazonaws.com",
+                         headers={"Authorization": "bearer " + req_token,
+                                  "Accept": "application/json; api-version=2.0"},
+                         timeout=TIMEOUT)
+    except requests.exceptions.RequestException as exc:
+        return False, "OIDCRequest:" + type(exc).__name__
+    if r.status_code != 200:
+        return False, "OIDCHTTP%s" % r.status_code
+    try:
+        web_token = r.json()["value"]
+        if not isinstance(web_token, str) or not web_token:
+            raise ValueError
+    except (ValueError, KeyError, TypeError):
+        return False, "OIDCBadResponse"
+    register_secret(web_token)
+    try:
+        sts = boto3.client("sts", region_name=region)
+        out = sts.assume_role_with_web_identity(
+            RoleArn=role_arn, RoleSessionName="GitHubActions",
+            WebIdentityToken=web_token, DurationSeconds=BEDROCK_SESSION_SECONDS)
+        c = out["Credentials"]
+        creds = {"aws_access_key_id": c["AccessKeyId"],
+                 "aws_secret_access_key": c["SecretAccessKey"],
+                 "aws_session_token": c["SessionToken"]}
+    except Exception as exc:
+        return False, "STS:" + (_aws_error_code(exc) or type(exc).__name__)
+    for v in creds.values():
+        register_secret(v)
+    _BEDROCK_STATE["creds"] = creds
+    _BEDROCK_STATE["minted_at"] = _bedrock_now()
+    return True, ""
+
+
+def _bedrock_client(boto3, region):
+    creds = _BEDROCK_STATE["creds"]
+    if creds:
+        return boto3.client("bedrock-runtime", region_name=region, **creds)
+    return boto3.client("bedrock-runtime", region_name=region)
+
+
 def _call_anthropic_bedrock(prompt_text, model_id):
+    refresh_note = ""
+    refreshed = False
+    body = None
     try:
         import boto3  # lazy: the module must still import where boto3 is absent
         region = os.environ.get("AWS_REGION", "").strip() or "us-east-1"
-        client = boto3.client("bedrock-runtime", region_name=region)
-        resp = client.invoke_model(
-            modelId=model_id,
-            body=json.dumps({"anthropic_version": "bedrock-2023-05-31",
-                             "max_tokens": 2048,
-                             "temperature": TEMPERATURE,
-                             "messages": [{"role": "user",
-                                           "content": prompt_text}]}),
-        )
-        raw = resp["body"]
-        raw = raw.read() if hasattr(raw, "read") else raw
-        body = json.loads(raw)
-        text = body["content"][0]["text"]
+        request_body = json.dumps({"anthropic_version": "bedrock-2023-05-31",
+                                   "max_tokens": 2048,
+                                   "temperature": TEMPERATURE,
+                                   "messages": [{"role": "user",
+                                                 "content": prompt_text}]})
     except Exception as exc:
-        code = ""
+        return False, "", [], redact("anthropic bedrock failed: %s" % exc)
+    if _bedrock_credentials_age() > BEDROCK_REFRESH_AFTER_SECONDS:
+        refreshed = True
+        ok_r, why = _bedrock_refresh_credentials(boto3, region)
+        if not ok_r:
+            refresh_note = "; proactive credential refresh failed (%s)" % why
+    # At most ONE refresh per call (proactive above or reactive here) and at most ONE retry.
+    last_exc = None
+    for attempt in (1, 2):
         try:
-            code = exc.response["Error"]["Code"]
-        except Exception:
-            pass
+            client = _bedrock_client(boto3, region)
+            resp = client.invoke_model(modelId=model_id, body=request_body)
+            raw = resp["body"]
+            raw = raw.read() if hasattr(raw, "read") else raw
+            body = json.loads(raw)
+            text = body["content"][0]["text"]
+            last_exc = None
+            break
+        except Exception as exc:
+            last_exc = exc
+            if attempt == 1 and not refreshed and _is_expired_token_error(exc):
+                refreshed = True
+                ok_r, why = _bedrock_refresh_credentials(boto3, region)
+                if ok_r:
+                    continue  # the one retry, on a client built from the new credentials
+                refresh_note = "; credential refresh failed (%s)" % why
+            break
+    if last_exc is not None:
+        exc = last_exc
+        code = _aws_error_code(exc)
         if code == "ThrottlingException":
             return False, "", [], redact(
-                "QUOTA: anthropic bedrock throttled: %s" % exc)
+                "QUOTA: anthropic bedrock throttled: %s%s" % (exc, refresh_note))
         if isinstance(exc, (KeyError, IndexError, TypeError, ValueError)):
             return False, "", [], redact(
-                "anthropic bedrock failed: response shape unexpected (%s)" % exc)
-        return False, "", [], redact("anthropic bedrock failed: %s" % exc)
+                "anthropic bedrock failed: response shape unexpected (%s)%s"
+                % (exc, refresh_note))
+        return False, "", [], redact("anthropic bedrock failed: %s%s" % (exc, refresh_note))
     meta = _served_meta(body, "model", "id", "usage")
     if not meta.get("served_model"):
         meta["served_model"] = model_id
