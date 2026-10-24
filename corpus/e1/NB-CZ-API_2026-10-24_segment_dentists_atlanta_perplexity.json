@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_bc44bfc9-57c7-418d-b49e-6ea7b531b766",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00453
+   },
+   "input_tokens": 5171,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4625,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 290,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5461
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Carlos Castro at Georgia Prosthodontics",
+  "Dr. Hal N. Arnold",
+  "Dr. Carlos Castro",
+  "Georgia Prosthodontics",
+  "Peachtree Rd NE",
+  "American Board of Prosthodontics. A",
+  "American Board of Prosthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://georgiaprosthodontics.com/",
+  "https://www.drevangrodin.com/dental-implants/",
+  "https://www.drevangrodin.com/prosthodontics/",
+  "https://drhalnarnold.com/",
+  "https://www.castleconnolly.com/top-dentists/hal-n-arnold-prosthodontics-cc397245",
+  "https://www.castleconnolly.com/top-dentists/carlos-castro-prosthodontics-cc332832",
+  "https://www.peachtreeperio.com/",
+  "https://aedit.com/provider/carlos-castro-2044",
+  "https://mygumdoc.com/",
+  "https://old.implantoption.com/",
+  "https://www.tebra.com/care/prosthodontists/",
+  "https://www.perioatlanta.com/reviews.html",
+  "https://www.tebra.com/care/provider/steve-hahn-dmd-1417173048",
+  "https://www.clearchoice.com/locations/ga/atlanta/3535-piedmont-rd-ne-bldg-14/",
+  "https://www.tebra.com/care/prosthodontists/atlanta-ga/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” implant dentist for everyone. For a complex case or a second opinion, **Dr. Carlos Castro at Georgia Prosthodontics** is a strong Atlanta option to consider: he is listed as a **board-certified prosthodontist** and has additional implant-dentistry training. The practice is in Buckhead at **3379 Peachtree Rd NE, Suite 830**.\n\nYou could also compare **Dr. Hal N. Arnold**, another Atlanta prosthodontist listed as a Diplomate of the American Board of Prosthodontics. A prosthodontist is especially relevant when the implant needs complex restoration or full-mouth planning; a periodontist or oral surgeon may handle the surgical placement, sometimes in coordination with your restorative dentist.\n\nBefore choosing, get a consultation and ask who will place the implant and make the crown, what alternatives are appropriate, what the full cost includes, and how they handle complications. Verify credentials and get a second opinion if the plan is extensive.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

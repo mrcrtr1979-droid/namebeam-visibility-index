@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_real_estate_agents_west_palm_beach_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: real estate agents, West Palm Beach",
+ "niche": "real estate agents",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in West Palm Beach FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_36e445f2-db50-4c66-a15a-ad510906ebcb",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00447
+   },
+   "input_tokens": 5067,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4516,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 280,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5347
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jeff Tricoli Team",
+  "Keller Williams",
+  "RateMyAgent",
+  "Jeff Tricoli"
+ ],
+ "engine_stated_criteria": [
+  "the Jeff Tricoli Team at Keller Williams is a strong starting point"
+ ],
+ "sources_cited": [
+  "https://www.realtor.com/realestateagents/west-palm-beach_fl",
+  "https://www.realtor.com/realestateagents/59422cf3c6f71f00120ec980",
+  "https://www.realtor.com/realestateagents/West-Palm-Beach_FL",
+  "https://www.realtor.com/realestateagents/5b934b4823e5520010b4155e",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/west-palm-beach-fl/",
+  "https://sell.realtor.com/re/top-real-estate-agents/fl/west-palm-beach",
+  "https://www.realtor.com/realestateteam/west-palm%20beach_fl",
+  "https://www.realtor.com/realestateagents/56bad34e0fa4170100753db1",
+  "https://www.realtor.com/realestateagency/west-palm%20beach_fl",
+  "https://www.ratemyagent.com/real-estate-profile/sales/florida/west-palm-beach-fl/agents",
+  "https://www.zillow.com/profile/TheTricoliTeam",
+  "https://www.realtor.com/realestateagents/5d16ab251227ec001364cbf6",
+  "https://www.zillow.com/profile/LivingInPalmBeach",
+  "https://www.zillow.com/profile/TolliverPrinceRealty",
+  "https://www.zillow.com/profile/JohnDiazGroup"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for every home, but **the Jeff Tricoli Team at Keller Williams is a strong starting point** based on the available local data: its profiles show substantial West Palm Beach sales activity and a large volume of client reviews. Keep in mind those figures are **team-wide**, not necessarily Jeff’s individual results.\n\nBefore choosing, interview two or three agents who have recently sold homes like yours in your neighborhood and price range. Ask each for:\n- Recent comparable sales they personally handled\n- Their suggested list price and the evidence behind it\n- A written marketing and communication plan\n- Their commission and any other fees\n- References from recent sellers\n\nYou can compare local agents on Realtor.com, Zillow, or RateMyAgent, but verify recent seller-side experience and Florida license status rather than relying on rankings alone. The best fit will depend on your home’s location, type, and price point.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

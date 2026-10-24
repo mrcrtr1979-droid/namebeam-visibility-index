@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_title_companies_miami_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: title companies, Miami",
+ "niche": "title companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Miami FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_706fb3c1-6d32-44a7-a6e8-83700bae3920",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00119,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00089,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00472
+   },
+   "input_tokens": 5289,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4742,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 355,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5644
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Marina Title",
+  "Worldwide Title",
+  "Florida Title & Trust",
+  "Florida Title",
+  "Trust",
+  "Department of Financial Services"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.myfloridacfo.com/docs-sf/consumer-services-libraries/consumerservices-documents/understanding-coverage/consumer-guides/english---title-insurance-guide.pdf?sfvrsn",
+  "https://myfloridacfo.com/docs-sf/consumer-services-libraries/consumerservices-documents/understanding-coverage/consumer-guides/english---title-insurance-guide.pdf?sfvrsn=a8bfe5a3_6",
+  "https://www.titleescrowmiami.com/testimonials/",
+  "https://www.indytitleftl.com/blog/category/uncategorized/",
+  "https://www.yelp.com/biz/hemisphere-title-company-miami-lakes",
+  "https://oneworldwidetitle.com/",
+  "https://www.yelp.com/biz/florida-title-and-trust-miami",
+  "https://reviews.birdeye.com/marina-title-floridas-premier-title-company-168437496541261",
+  "https://www.yelp.com/biz/marina-title-miami",
+  "https://completechoicetitle.com/about-us/",
+  "https://www.yelp.com/biz/southeastern-title-company-aventura",
+  "https://www.yellowpages.com/miami-lakes-fl/mip/complete-choice-title-services-inc-547521600",
+  "https://content.naic.org/sites/default/files/publication-consumer-title-insurance.pdf",
+  "https://lawfirmsquare.com/city/miami/esq-title/",
+  "https://www.libertytitle.us/realtor"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” title company, but **Marina Title** looks like a reasonable Miami option to put on your shortlist: it’s attorney-owned and operated, handles residential closings, and a review aggregator reports 4.9 stars from 58 reviews. Reviews are only one signal, though, and individual experiences can vary.\n\nI’d compare it with **Worldwide Title** and **Florida Title & Trust**. Before choosing, ask each for a written estimate of all title and settlement fees, who will handle your closing, and how they’ll keep you updated. Verify the agency’s Florida license, too. Florida’s Department of Financial Services says title premiums are state-set, but agency fees may vary; you can compare them and choose your own title agency.\n\nSources: [Marina Title](https://www.yelp.com/biz/marina-title-miami) · [Worldwide Title](https://oneworldwidetitle.com/) · [Florida Title & Trust](https://www.yelp.com/biz/florida-title-and-trust-miami) · [Florida title insurance guide](https://www.myfloridacfo.com/docs-sf/consumer-services-libraries/consumerservices-documents/understanding-coverage/consumer-guides/english---title-insurance-guide.pdf?sfvrsn)",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

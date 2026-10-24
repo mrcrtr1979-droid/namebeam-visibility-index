@@ -1,0 +1,46 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_str_guest_discovery_openai",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EcYdT124ZDS7dR9zDAA5xvOzq7Win",
+  "usage": {
+   "prompt_tokens": 34,
+   "completion_tokens": 1947,
+   "total_tokens": 1981,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Booking.com",
+  "Superhost",
+  "Verified ID",
+  "Watch for red flags"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer — it depends on what kind of place you want and what matters most to you:\n\n- Airbnb: best for unique stays, private rooms or entire homes, lots of local/independent hosts and instant-book options. Strong host ratings system (Superhosts).  \n- Vrbo: best for whole-home, family-style rentals (houses, cabins, condos) — fewer shared/room-only listings. Good for multi-bedroom stays.  \n- Booking.com: best if you want hotels/professional apartments, lots of last‑minute/“pay at property” options, or flexible cancellation. Good customer service and broad inventory.\n\nIf you tell me your destination, travel dates, group size, budget and must-haves (parking, pets, kitchen, self-check-in, etc.), I can recommend which platform to prioritize and help find specific listings. Meanwhile, use the checklist and tips below to find a good host and avoid problems.\n\nHow to choose the right platform (quick guide)\n- Choose Airbnb if you want independent hosts, unique places, or experiences. Look for “Superhost” and lots of recent reviews.  \n- Choose Vrbo if you need a full home for a family/group and prefer owner-managed houses over shared spaces.  \n- Choose Booking.com if you want professional properties, easy cancellations/pay-later, and 24/7 customer support.\n\nStep-by-step checklist to find a reliable host\n1. Filter and sort correctly\n   - Set dates, guest count, whole place vs private room, and key amenities (wifi, parking, AC, self-check-in).  \n   - Sort by “Most reviewed” or “Top rated” and read recent reviews. Always view total price (includes cleaning, service fees, taxes).\n\n2. Vet reviews\n   - Read the last 5–10 reviews, not just the average rating. Look for repeated praise/complaints about cleanliness, communication, and accuracy of listing.  \n   - Prefer listings with multiple recent stays rather than only older reviews.\n\n3. Check host/account signals\n   - Look for badges like Superhost/Top Host (Airbnb) or high review counts.  \n   - Check host profile: verified ID, how long they’ve been hosting, how many listings they have. Hosts with a single well-reviewed listing often care more about guest experience.  \n   - Check response rate/time and how they answered past review complaints.\n\n4. Check listing accuracy\n   - Compare photos to descriptions. Look for clear, recent photos that show every room.  \n   - Confirm exact sleeping arrangements (sofa vs bed), size of beds, and whether photos match reality in recent reviews.\n\n5. Ask the host a few targeted questions before booking\n   - Example: “Is on-site parking included? What is the check-in process? Is the neighborhood noisy at night? What’s the wifi speed?”  \n   - Fast, clear, friendly responses are a good signal.\n\n6. Watch for red flags\n   - Host asks to pay off-platform (wire transfer, Venmo, etc.) — don’t do it.  \n   - Vague or evasive answers to practical questions.  \n   - Many cancelled reservations or few/no recent reviews.  \n   - Listings with overly staged photos but no guest photos or details.\n\n7. Confirm policies and fees\n   - Read the cancellation policy, house rules, security deposit policy and cleaning fees.  \n   - Check check-in/out times and whether the host charges extra for late check-in, extra guests, or parties.\n\nSafety & payment\n- Always book and pay through the platform — you get consumer protections and dispute resolution.  \n- Consider travel insurance for non-refundable trips.  \n- Note platform protections vary: Airbnb/others have guest refund policies but coverage limits; don’t assume everything is covered.\n\nUseful questions to message a host (copy/paste)\n“Hi — I’m [name]. Our group is [# guests, relation]. We’re coming for [purpose, e.g., vacation/work] from [dates]. A couple quick questions: 1) Is on-site parking included/close by? 2) What is the check-in process (self-check-in/lockbox/meet)? 3) How reliable is the wifi (work calls)? 4) Any house rules we should know about (noise, garbage, neighborhood)? Thanks — we’d love to book if everything checks out.”\n\nRed flags to cancel or avoid\n- Host asks to move off-platform or to sign a private contract.  \n- Many past complaints about cleanliness, inaccurate listing, or rude host.  \n- Host has a habit of cancelling last minute.  \n- Unusual fees that aren’t explained.\n\nAfter you book\n- Save the host’s contact details and check-in instructions.  \n- Send a short confirmation message a few days before arrival.  \n- Take quick photos of the place at check-in (for safety) if anything looks off.\n\nWhen to prefer which option (examples)\n- Family of 4-6 needing 3 bedrooms + kitchen: start with Vrbo and filter to whole home.  \n- Couple wanting a downtown apartment or unique tiny house: start with Airbnb.  \n- Traveler wanting last-minute hotel-style stay with pay-at-arrival: start with Booking.com.\n\nIf you want, tell me: destination, dates, group size, must-haves, budget and whether you need flexible cancellation. I’ll suggest which platform to use and can help scan listings or draft message templates for hosts.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

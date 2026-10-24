@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_orthodontists_dallas_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_67545f6e-1e14-4613-a165-3ee6dffddcf6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00456
+   },
+   "input_tokens": 4979,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4432,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 323,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5302
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Vick Gupta, Gupta Smile Studio",
+  "Walnut Central Orthodontics",
+  "Dallas Orthodontics, Dr. Benito Benitez",
+  "Fusion Orthodontics",
+  "Dr. Vick Gupta",
+  "Gupta Smile Studio",
+  "Invisalign",
+  "American Board of Orthodontics",
+  "Dallas Orthodontics",
+  "Dr. Benito Benitez",
+  "Dr. Judy Choi"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://health.usnews.com/dentists/casey-lepley-1621217",
+  "https://reviews.birdeye.com/orthodontic-specialists-of-dallas-155354267961260",
+  "https://health.usnews.com/dentists/linda-crawford-1608636",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/dallas-orthodontics-dallas-tx",
+  "https://www.osdsmiles.com/testimonials",
+  "https://www.orthodontistdallastx.com/testimonials/",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/walnut-central-orthodontics-dallas-tx",
+  "https://nationalorthodonticregistry.com/texas/dallas/orthodontists",
+  "https://www.zocdoc.com/dentist/vikas-gupta-dds-576469",
+  "https://www.zocdoc.com/dentist/michael-ragan-dds-116895",
+  "https://www.guptasmilestudio.com/",
+  "https://nationalorthodonticregistry.com/texas/dallas-tx/orthodontists/fusion-orthodontics-dallas-tx",
+  "https://lepley-orthodontics.patientrewardshub.com/about/practice/dallas-texas",
+  "https://trustanalytica.org/us/tx/best-orthodontists",
+  "https://www.orthodontistsup.com/dallas-tx"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—case complexity, location, budget, and how much hands-on attention you want all matter. A few Dallas options worth comparing are:\n\n- **Dr. Vick Gupta, Gupta Smile Studio** — offers both braces and Invisalign; his practice profile identifies him as board-certified by the American Board of Orthodontics.\n- **Walnut Central Orthodontics** — offers braces and Invisalign, with board-certified orthodontists Dr. Judy Choi and Dr. Megan Meyer.\n- **Dallas Orthodontics, Dr. Benito Benitez** — offers braces and Invisalign and is listed as board-certified.\n- **Fusion Orthodontics** — offers several options, including traditional and clear braces and Invisalign; its practice profile describes it as board-certified.\n\nI’d book **two or three consultations** before choosing. Ask who will supervise your treatment, which option they recommend for your specific bite and why, what the total fee includes (including retainers and refinements), and how emergencies or missed appointments are handled. You can also verify an orthodontist’s credentials through the American Board of Orthodontics and check whether your insurance is accepted.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

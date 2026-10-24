@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4962cdf3-5abd-4663-bdd9-f5109d38d254",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00061,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00429
+   },
+   "input_tokens": 4724,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4178,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 245,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4969
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AZPerio"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.azimplantdentist.com/",
+  "https://www.implantsandperioaz.com/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-neil-zachs-1538397161",
+  "https://www.periodontistphoenix.com/",
+  "https://www.periodontistphoenix.com/dental-implants/",
+  "https://azperio.com/dental-implants/",
+  "https://www.clearchoice.com/locations/az/phoenix/20830-north-tatum-blvd/?trans_id=phoenixyextlisting",
+  "https://azimplantsolutions.com/p/Periodontist-Phoenix-AZ-North-Central-p77609.asp",
+  "https://www.azimplantdentist.com/contact-us/",
+  "https://www.periodontistdirectory.com/profiles/147800",
+  "https://www.clearchoice.com/locations/az/phoenix/20830-north-tatum-blvd/",
+  "https://www.tempeimplantsandperio.com/",
+  "https://www.azimplantdentist.com/our-services/",
+  "https://www.azimplantdentist.com/our-services/dental-implants/",
+  "https://www.tebra.com/care/periodontists/phoenix-az/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t an objective “best” dentist for everyone, but a good starting point in Phoenix is **AZPerio**, which lists board-certified periodontists who focus on implants and related procedures such as bone grafting. Its Central Phoenix office is at **5300 N. Central Ave., Suite 130**; the listed phone number is **(602) 242-2588**. [AZPerio](https://azperio.com/dental-implants/)\n\nBefore choosing, confirm the specific clinician’s credentials and ask for a written treatment plan, total cost, who places the implant and who restores it, and what follow-up or warranty is included. It’s sensible to get a second opinion—especially if you’ve been told you need extensive grafting or full-mouth treatment.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

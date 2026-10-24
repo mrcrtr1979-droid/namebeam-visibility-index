@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3b171501-6591-4189-b5cc-f8863e0ad847",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00069,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00438
+   },
+   "input_tokens": 4740,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4193,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 277,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5017
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Buckhead Orthodontics",
+  "West Paces Ferry Orthodontics",
+  "Wright Orthodontics",
+  "North Druid Hills",
+  "Dr. Marc Wright",
+  "Invisalign"
+ ],
+ "engine_stated_criteria": [
+  "first consultation to consider is Wright Orthodontics"
+ ],
+ "sources_cited": [
+  "https://www.westpacesferryortho.com/",
+  "https://www.dentistsranked.com/dental-services/invisalign-atlanta-ga",
+  "https://www.buckheadorthodontics.com/",
+  "https://www.braces-braces.com/dr-lee",
+  "https://www.artemisortho.com/our-practice/patient-reviews/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/georgia-orthodontic-studio-atlanta-atlanta-ga",
+  "https://www.realself.com/find/Georgia/Atlanta/Invisalign",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/wright-orthodontics-atlanta-ga",
+  "https://harrisorthodonticsatl.com/",
+  "https://www.westpacesferryortho.com/invisalign-info",
+  "https://www.jjwilmot-ortho.com/about-us",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/iconic-orthodontics-of-summerhill-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/atlanta-orthodontic-specialists-3580-piedmont-rd-ne",
+  "https://artemisorthoatlanta.com/were-in-network-orthodontic-coverage-with-delta-dental-metlife-bcbs-aetna/",
+  "https://atlantaexplored.com/orthodontists/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” orthodontist for everyone—your bite, treatment goals, location, insurance, and how comfortable you feel with the doctor all matter.\n\nA reasonable **first consultation to consider is Wright Orthodontics**, especially if you’re near North Druid Hills: the available results list Dr. Marc Wright as board-certified and report a 5.0 Google rating from more than 600 reviews, with both braces and Invisalign offered. Those ratings are a useful starting point, not a guarantee of treatment quality.\n\nOther options to compare include **Buckhead Orthodontics** (board-certified orthodontists; braces and aligners) and **West Paces Ferry Orthodontics** (board-certified doctors; braces and Invisalign, including complex cases). Ask each office for a full exam and written treatment plan, and compare the doctor’s explanation of your bite, expected timeline, total cost, and follow-up care. For Invisalign in particular, ask who will supervise your treatment and how refinements are handled.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_property_management_st_louis_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: property management, St. Louis",
+ "niche": "property management companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Louis MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_670cb991-baef-4272-911e-6bcc9b01416e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00088,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00055,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00407
+   },
+   "input_tokens": 4090,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3539,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 219,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4309
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Homestretch Property Management",
+  "STL Smart Rentals"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bestinhood.com/st-louis/real-estate-and-property-services/best-property-management-in-st-louis/",
+  "https://homestretchpropertymanagement.com/",
+  "https://www.firstdoorpm.com/",
+  "https://www.stlouispropertymanagement.co/testimonials",
+  "https://propertymanagementlist.com/company/avenue-real-estate-group-chesterfield-mo/",
+  "https://propertymanagementlist.com/company/kingsland-properties-st-louis-mo/",
+  "https://propertymanagementlist.com/company/evernest-property-management-st-louis-st-louis-mo/",
+  "https://www.zillow.com/profile/Property%20Mgr11",
+  "https://propertymanagementlist.com/cities/st-louis/",
+  "https://www.decarealty.com/",
+  "https://propertymanagementlist.com/cities/saint-louis/",
+  "https://www.stlouispropertymanagement.co/blog/best-property-management-companies-in-st-louis",
+  "https://homestretchpropertymanagement.com/property-management/areas-we-serve/st-louis-property-management/",
+  "https://www.stlouispropertymanagement.co/pricing",
+  "https://toptierstl.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one clear “best” for every rental home, but **Homestretch Property Management** looks like a strong first company to contact: it serves the greater St. Louis area and reports more than 400 reviews verified through Google. **STL Smart Rentals** is another option to compare, particularly for single-family rentals.\n\nBefore choosing, ask each for a written, all-in fee schedule and clarify leasing and renewal charges, maintenance markups, inspection frequency, and how quickly they respond to emergencies. Reviews can reflect tenants’ experiences as much as owners’, so ask for owner references and a sample management agreement too.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

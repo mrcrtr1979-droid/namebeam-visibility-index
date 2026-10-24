@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_roofing_denver_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9de1de44-b54a-444d-a5c3-8f53f91a9594",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00084,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 4958,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4411,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 334,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5292
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "CenCo Roofing",
+  "Gates Enterprises",
+  "Division of Insurance",
+  "CenCo",
+  "Colorado Division of Insurance"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.cencoroofing.com/locations/denver/storm-damage/",
+  "https://www.gatesroof.com/services/storm-hail-damage/denver",
+  "https://www.gatesroof.com/areas/denver",
+  "https://www.bestofdenver.org/roofers/denver",
+  "https://www.coloradoroofing.org/news/hail-damage-dos-and-donts-when-hiring-a-contractor",
+  "https://www.hilltopcontractinggc.com/cities/denver",
+  "https://doi.colorado.gov/news-releases-consumer-advisories/consumer-advisory-division-of-insurance-shares-tips-to-prepare",
+  "https://www.denverdeanslist.com/ranking-roofing-denver",
+  "https://homematchup.com/roofers/co/denver/",
+  "https://northernlightsexteriors.com/exterior-home-remodel-service-areas/denver-roofers/",
+  "https://frontierroofingandrestoration.com/",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/rileys-roofing-exteriors-1296-1000145109",
+  "https://redhawkroofing.com/",
+  "https://www.cencoroofing.com/residential-roofing/hail-damage/",
+  "https://metrocityroofing.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” roofer, but **CenCo Roofing** looks like a strong first call for Denver hail damage: its search listing reports a 4.9 Google rating from 843 reviews and 13+ years serving Denver. **Gates Enterprises** is another option, with a reported 4.9 rating from 353 reviews and a focus on storm and hail repairs.\n\nBefore choosing, get at least **three written estimates** and compare the inspection findings, repair scope, materials, workmanship warranty, and payment terms. Verify current insurance and local licensing, and be cautious of high-pressure sales or anyone asking for full payment upfront. Colorado’s Division of Insurance also recommends checking references, getting multiple quotes, and reading contracts carefully.\n\nSources: [CenCo hail-damage roofing](https://www.cencoroofing.com/residential-roofing/hail-damage/) · [Gates storm and hail repair](https://www.gatesroof.com/services/storm-hail-damage/denver) · [Colorado Division of Insurance storm guidance](https://doi.colorado.gov/news-releases-consumer-advisories/consumer-advisory-division-of-insurance-shares-tips-to-prepare)",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

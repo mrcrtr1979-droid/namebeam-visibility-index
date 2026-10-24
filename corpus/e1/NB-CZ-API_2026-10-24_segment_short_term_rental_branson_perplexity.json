@@ -1,0 +1,102 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_98c86a20-e3e6-46ff-a7f7-cccd97db605e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00093,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00138,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00495
+   },
+   "input_tokens": 4276,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3720,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 550,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4826
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Short answer",
+  "Lodge of the Ozarks",
+  "Highway 76 theater district",
+  "The Ozarker Lodge",
+  "Marriott’s Willow Ridge Lodge",
+  "Chateau on the Lake",
+  "Hilton Branson Convention Center",
+  "Airbnb/condo",
+  "Couple, short stay, shows and attractions",
+  "Lake time and a quieter setting",
+  "Shopping and downtown",
+  "Marriott",
+  "Willow Ridge Lodge",
+  "Lake",
+  "Branson Township",
+  "Table Rock Lake area",
+  "Convention Center",
+  "Table Rock",
+  "Landing",
+  "Highway",
+  "Near Table Rock Lake",
+  "Near Branson Landing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.tripadvisor.com/Hotels-g44160-zff4-Branson_Missouri-Hotels.html",
+  "https://www.airbnb.com/branson-township-mo/stays",
+  "https://www.airbnb.com/branson-mo/stays/condos",
+  "https://www.airbnb.com/branson-mo/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays",
+  "https://www.airbnb.com/missouri-united-states/stays/condos",
+  "https://www.airbnb.com/branson-mo/stays/resorts",
+  "https://www.hoteles.com/en/de1644148-ty2/family-friendly-hotels-branson-missouri/",
+  "https://www.marriott.com/en-us/destinations/united-states/missouri/branson.mi",
+  "https://www.tripadvisor.com/Hotels-g44160-oa30-Branson_Missouri-Hotels.html",
+  "https://www.ihg.com/branson-missouri",
+  "https://www.travelocity.com/Branson-Hotels-Family-Hotel.0-0-d6058734-tFamilyHotel.Travel-Guide-Filter-Hotels",
+  "https://www.hotels.com/sa10233219/hotels-in-missouri-united-states-of-america/",
+  "https://www.expedia.com/Branson-Hotels-Branson-Hillside-Hotel.h22730.Hotel-Information",
+  "https://www.hotels.com/de1644148/hotels-branson-and-vicinity-missouri/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Short answer:** For a typical first visit, I’d choose a **hotel**—especially if you’re staying just a few nights and plan to see shows and attractions. You’ll get simpler check-in, predictable amenities, and less to sort out. Choose an **Airbnb or other vacation rental** if you need multiple bedrooms, a kitchen, laundry, or a quieter cabin-style stay—and compare the *total* price, including cleaning and service fees.\n\n### Specific places to consider\n\n- **Lodge of the Ozarks** — My best all-around hotel pick for the **Highway 76 theater district**. It’s well located for shows and attractions, and recent listings show strong guest ratings.\n- **The Ozarker Lodge** — A good family-friendly option, with a pool and playground; a little removed from the busiest strip.\n- **Marriott’s Willow Ridge Lodge** — Consider this for a **suite-style resort stay** with more space and amenities. It also appears among Branson’s vacation-rental listings, so check whether you’re booking directly or through a host.\n- **Chateau on the Lake** — Best if you want a more **upscale resort setting** and lake views, rather than the most convenient base for every attraction.\n- **Hilton Branson Convention Center** — A strong choice if you want to be **downtown near Branson Landing**.\n- **Airbnb/condo:** Look around **Branson Township or the Table Rock Lake area** for condos and cabins, especially if you want a kitchen, more room, or a lake-oriented trip. Airbnb listings vary, so judge the specific property by recent reviews, location, cancellation terms, and the full checkout price.\n\n### Quick rule of thumb\n\n- **Couple, short stay, shows and attractions:** Lodge of the Ozarks or The Ozarker Lodge  \n- **Family or group needing space:** Willow Ridge Lodge or a well-reviewed condo  \n- **Lake time and a quieter setting:** a rental near Table Rock Lake, or Chateau on the Lake  \n- **Shopping and downtown:** Hilton Branson Convention Center  \n\nBranson is spread out, so check the map against your main plans before booking. Rates and availability change by date; verify current reviews, fees, parking, and pool hours directly before you reserve.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

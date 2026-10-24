@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_hvac_houston_openai",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EcYvetuuOWdP2ekbsePcBkZwm2y0R",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 1065,
+   "total_tokens": 1083,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "John Moore Services and ARS",
+  "Rescue Rooter. If",
+  "TACLA",
+  "John Moore Services",
+  "Rescue Rooter",
+  "John Moore",
+  "Texas HVAC",
+  "NATE"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t a single objectively “best” HVAC company for every Houston homeowner — but two firms consistently highly rated locally are John Moore Services and ARS/Rescue Rooter. If you want a short list tailored to your neighborhood I can pull top-rated techs for your ZIP code.\n\nHow to pick the best company for your situation\n- Check recent reviews (Google, Yelp, Angi) and Better Business Bureau rating.\n- Verify Texas HVAC license (TACLA) and liability insurance on the TDLR website.\n- Look for NATE-certified technicians or manufacturer training for your AC brand.\n- Ask about diagnostic fees, flat-rate vs. time & materials pricing, parts warranty, and labor warranty.\n- Confirm 24/7 emergency availability if you need quick repairs and how they handle after-hours fees.\n- Request a written estimate and get a second opinion for major repairs or replacement.\n- Prefer companies that offer maintenance plans if you want ongoing care.\n\nIf you give your ZIP code or neighborhood, I can list the top-rated HVAC repair companies near you and the pros/cons of each.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

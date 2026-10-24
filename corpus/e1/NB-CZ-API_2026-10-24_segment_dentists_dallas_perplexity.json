@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_dentists_dallas_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6679ef4e-7e6c-4ebf-b233-bbbaf5f5a723",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00058,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00436
+   },
+   "input_tokens": 5104,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4558,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 233,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5337
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Laura N. Rabe",
+  "Dallas Periodontics and Dental Implants",
+  "Dr. John Wilson",
+  "North Dallas Dental Health"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.periodallas.com/",
+  "https://www.northdallasdentalhealth.com/meet-dr-john-wilson/",
+  "https://implantperioteam.com/",
+  "https://www.bcperio.com/",
+  "https://www.northdallasdentalhealth.com/",
+  "https://sigmadentalspecialists.com/meet-us/dr-wade-knight/",
+  "https://www.dallasimplant.com/about-our-practice/",
+  "https://parkcitiesperio.com/our-doctors/stephanie-c-bowers-dds-ms/",
+  "https://www.parklaneperio.com/dr-andrew-barnett.html",
+  "https://markgloverdds.com/",
+  "https://www.centralperio.com/",
+  "https://www.parklaneperio.com/referring-doctors.html",
+  "https://www.ndperio.com/",
+  "https://www.parklaneperio.com/",
+  "https://periolife.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for every implant case. A good starting point in Dallas is **Dr. Laura N. Rabe at Dallas Periodontics and Dental Implants**: her practice lists her as board-certified in periodontology and dental implant surgery. **Dr. John Wilson at North Dallas Dental Health** is another option; his practice also lists him as a board-certified periodontist and implant specialist.\n\nBefore choosing, get a consultation and ask who will place the implant and who will make the crown, what imaging and bone-grafting might be needed, the full cost and timeline, and how complications are handled. Consider a second opinion—especially if the case involves bone loss, gum disease, or multiple implants—and verify credentials and insurance coverage directly with the office.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

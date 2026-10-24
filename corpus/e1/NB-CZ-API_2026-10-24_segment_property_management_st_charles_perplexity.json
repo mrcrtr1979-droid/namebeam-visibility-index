@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_property_management_st_charles_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: property management, St. Charles",
+ "niche": "property management companies",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Charles MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a8b09f87-a568-42c0-9686-f82e4727263e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00096,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00439
+   },
+   "input_tokens": 4377,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3826,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 317,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4694
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Homestretch Property Management",
+  "Eaton Properties",
+  "Keyrenter St. Charles",
+  "MO. It"
+ ],
+ "engine_stated_criteria": [
+  "Keyrenter St. Charles is a strong first company to interview"
+ ],
+ "sources_cited": [
+  "https://www.keyrenterstcharles.com/",
+  "https://www.rpmendeavor.com/areas-we-serve/st-charles-county/saint-charles",
+  "https://homestretchpropertymanagement.com/property-management/areas-we-serve/st-charles-property-management/",
+  "https://staylage.com/about/",
+  "https://www.bbb.org/us/mo/saint-charles/category/property-management",
+  "https://www.eatonproperties.com/",
+  "https://www.keyrenterstcharles.com/owners",
+  "https://www.thumbtack.com/mo/saint-charles/property-management/keyrenter-st-charles-property-management/service/367082134337691648",
+  "https://www.propertysolutionstl.com/",
+  "https://www.allpropertymanagement.com/property-management/companies/47355/keyrenter-st-louis/",
+  "https://www.keyrenterstcharles.com/pricing",
+  "https://www.expertise.com/business/property-management/missouri/ofallon",
+  "https://www.tpm-stl.com/contact-us",
+  "https://www.axispropmanagement.com/",
+  "https://propertymanagementstl.com/areas-we-serve/st-charles/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Keyrenter St. Charles is a strong first company to interview** for a single-family rental home in St. Charles, MO. It focuses on residential rentals, has a local St. Charles office, and advertises tenant screening, leasing, maintenance, and owner reporting. Its site reports a 4.8 Google rating and lists management pricing starting at 7% of one month’s rent, with a $75 minimum, plus a leasing fee of $795–$895. Confirm the exact fees and contract terms for your property.\n\nI wouldn’t call any one company definitively “the best” without comparing proposals. **Homestretch Property Management** is another good candidate to contact; it serves St. Charles County and reports a large volume of reviews. **Eaton Properties** may also be worth a look if you value a long-established local operator.\n\nBefore choosing, ask each for a sample management agreement and a written estimate covering leasing, renewals, maintenance markups, vacancy fees, eviction costs, and how quickly owners can end the contract. Compare recent **owner** feedback—not just tenant reviews—and ask for references from landlords with similar homes.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

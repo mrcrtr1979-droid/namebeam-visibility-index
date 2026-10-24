@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_str_host_tooling_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4dc638e5-bcf1-40e6-ad0c-544d0523a1eb",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00442
+   },
+   "input_tokens": 5065,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4511,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 261,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5326
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "AirDNA Rentalizer",
+  "AirDNA",
+  "Rentalizer",
+  "Market Dashboards",
+  "Use AirDNA",
+  "Start with AirDNA",
+  "Use PriceLabs"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://hello.pricelabs.co/market-dashboards/",
+  "https://help.pricelabs.co/portal/en/kb/articles/market-dashboard-methodology-data-sources-and-processing",
+  "https://help.airdna.co/en/articles/16189073-rentalizer-agent-what-it-is-and-how-it-works",
+  "https://help.pricelabs.co/portal/en/kb/pricelabs/market-dashboards/market-dashboard",
+  "https://www.airdna.co/llms.txt",
+  "https://help.airdna.co/en/articles/11954306-navigating-the-new-airdna-market-explorer-platform",
+  "https://www.bnbcalc.com/reviews/pricelabs-airbnb-review",
+  "https://help.pricelabs.co/portal/en/kb/articles/what-is-dynamic-pricing-and-how-to-use-it-14-12-2023",
+  "https://beyondpricing.com/blog/how-beyond-s-dynamic-pricing-algorithm-works-for-you",
+  "https://help.pricelabs.co/portal/en/kb/articles/how-much-does-pricelabs-costs",
+  "https://help.pricelabs.co/portal/en/kb/articles/market-dashboard-faqs",
+  "https://hello.pricelabs.co/pl-pl/blog/raportowanie-cen-dynamicznych-airbnb/",
+  "https://www.gowithsurge.com/blog/airbnb-dynamic-pricing-tools",
+  "https://www.rentalrecon.com/airbnb-management/smart-pricing/beyond-pricing-review/",
+  "https://hello.pricelabs.co/dynamic-pricing/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "**Best all-around choice: PriceLabs**—especially if you want one platform for both ongoing nightly-rate optimization and local market benchmarking. Its dynamic pricing adjusts rates with demand and seasonality, while its separate Market Dashboards let you compare similar listings and review metrics such as ADR, occupancy, and revenue. The market dashboard is an add-on, so check the total cost.\n\n**For evaluating a property before buying, start with AirDNA Rentalizer.** It estimates revenue, average daily rate, and occupancy for a specific address using comparable short-term rentals. Treat that as a screening estimate, not a guarantee.\n\n**Practical setup:** use AirDNA to shortlist or assess a property, then use PriceLabs to set and refine nightly prices once you’re operating. Before buying, also verify local short-term-rental rules and build your own conservative numbers for expenses, seasonality, and financing—market estimates can be imperfect.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

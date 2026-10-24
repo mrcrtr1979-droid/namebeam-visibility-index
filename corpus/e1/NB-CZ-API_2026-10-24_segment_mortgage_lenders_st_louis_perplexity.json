@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_mortgage_lenders_st_louis_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: mortgage lenders, St. Louis",
+ "niche": "mortgage lenders",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Louis MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ecfa97b5-555d-4d35-addb-52b642e27ff0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00085,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0046
+   },
+   "input_tokens": 4977,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4426,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 341,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5318
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "USA Mortgage",
+  "Midwest BankCentre",
+  "A local broker",
+  "Missouri Housing Development Commission (MHDC)",
+  "Missouri Housing Development Commission",
+  "Loan Estimate"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://mhdc.com/services/homebuyer-programs/",
+  "https://mhdc.com/programs/homeownership/",
+  "https://www.midwestbankcentre.com/mortgage/",
+  "https://www.monitorbankrates.com/mortgage-lenders/missouri/st-louis",
+  "https://www.nasb.com/lending/solutions/mortgage-programs/mhdc-mortgage-assistance-programs",
+  "https://trustanalytica.org/us/mo/st.-louis/best-mortgage-brokers",
+  "https://mhdc.com/services/lender-resources/",
+  "https://www.experience.com/reviews/office/dmc-st-louis",
+  "https://www.newamericanfunding.com/branches/st-louis-olive",
+  "https://trustanalytica.org/us/mo/best-mortgage-brokers",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://livingstlouismo.com/best-mortgage-lenders-st-louis-mo/",
+  "https://threebestrated.com/mortgage-companies-in-st-louis-mo",
+  "https://www.experience.com/reviews/company/midwest-bankcentre",
+  "https://www.vcu.com/borrow/mortgages"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender—the right choice depends on your credit, down payment, loan type, and how much you value rate versus service. **For a St. Louis home purchase, I’d start by getting quotes from USA Mortgage, Midwest BankCentre, and one independent local broker**, then compare their written Loan Estimates.\n\n- **USA Mortgage**: A local option with a broad range of loan types, including conventional, FHA, VA, USDA, and jumbo.\n- **Midwest BankCentre**: A local bank that highlights personalized service and local decision-making.\n- **A local broker**: May be able to compare offers from multiple lenders; ask which lenders they shop and how they’re compensated.\n\nIf you may qualify for down-payment or closing-cost help, check the **Missouri Housing Development Commission (MHDC)** programs and use its certified-lender locator. Program eligibility and participating lenders matter.\n\nAsk each lender for a Loan Estimate for the **same loan amount, down payment, rate-lock period, and points**. Compare the APR, lender fees, cash to close, and closing timeline—not just the advertised rate. Reviews can help assess communication, but they don’t establish who will offer you the best deal.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

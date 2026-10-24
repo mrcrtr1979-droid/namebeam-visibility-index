@@ -1,0 +1,64 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_str_host_tooling_gemini",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "FNjcasDZBY3xqtsP2oHJiAs",
+  "usage": {
+   "promptTokenCount": 20,
+   "candidatesTokenCount": 689,
+   "totalTokenCount": 709,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 20
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "For Market Analysis (Before Buying)",
+  "AirDNA’s Rentalizer",
+  "For Dynamic Pricing",
+  "Smart Rates",
+  "PriceLabs",
+  "Market Dashboard",
+  "Wheelhouse",
+  "Beyond Pricing",
+  "Use AirDNA Rentalizer",
+  "Nightly Pricing",
+  "Base Prices",
+  "Minimum Stays",
+  "PriceLabs. Wheelhouse",
+  "Budget Tool",
+  "Hostaway",
+  "Guesty",
+  "Built-in Pricing",
+  "Property Management Software",
+  "Beyond",
+  "Rentalizer",
+  "Use AirDNA",
+  "For Market Analysis",
+  "AirDNA Rentalizer"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "When it comes to both **analyzing a market before buying** and **setting daily pricing** as an Airbnb host, the undisputed industry standard is **AirDNA**. \n\nHowever, because \"pricing\" and \"market analysis\" require slightly different workflows, the best approach depends on whether you are currently *investing* or *operating*. \n\nHere is the breakdown of the best tools for both use cases, with AirDNA leading the pack.\n\n---\n\n### 1. The Overall Best Tool: **AirDNA**\nAirDNA is the most comprehensive data platform for short-term rentals globally. It scrapes Airbnb and Vrbo data daily, giving you macro-level market insights and micro-level pricing tools.\n\n*   **For Market Analysis (Before Buying):** Use **AirDNA’s Rentalizer**. You plug in a specific address, and it estimates the property's annual revenue, occupancy rate, and Average Daily Rate (ADR) based on comparable properties nearby. It also shows seasonality trends (e.g., how much you make in July vs. January).\n*   **For Dynamic Pricing:** AirDNA recently acquired *PriceLabs* features or integrates well with dynamic pricers, but AirDNA itself offers **Smart Rates**, which gives you recommended nightly rates based on local supply and demand.\n\n**Best for:** Investors doing due diligence and hosts who want deep market data.\n\n---\n\n### 2. The Best Tool for *Active* Nightly Pricing: **PriceLabs**\nWhile AirDNA is great for market research, **PriceLabs** is widely considered by professional property managers as the best tool specifically for **setting and automating nightly pricing**.\n\n*   **How it works:** It uses hyper-local market data, weather, holidays, and booking pacing to change your rates daily. \n*   **Key Feature – Base Prices & Minimum Stays:** It allows you to set rules (e.g., \"If unbooked 7 days out, drop price by 15%\"). It also has a fantastic **Market Dashboard** that lets you see local booking trends.\n*   **Cost:** Flat monthly fee per listing (usually around $20/month), which is often cheaper than taking a percentage of your revenue like some competitors.\n\n*(Note: **Wheelhouse** and **Beyond Pricing** are the main competitors to PriceLabs. Wheelhouse is often praised for being more beginner-friendly, while PriceLabs is preferred by data-nerds and multi-property hosts).*\n\n---\n\n### 3. The Best Free/Budget Tool: **Hostaway or Guesty (Built-in Pricing)**\nIf you use a Property Management Software (PMS) like Guesty, Hostaway, or Hospitable, they all now have **built-in native pricing tools** or direct integrations with dynamic pricing engines. If you are just starting out, check what your PMS offers before buying a standalone subscription.\n\n---\n\n### Summary Recommendation: The \"Playbook\"\n\nIf you are currently looking to buy a property:\n1.  **Use AirDNA Rentalizer** to run initial feasibility studies on 5–10 properties you are considering. \n2.  Once you buy and list the property, **subscribe to PriceLabs** (or Wheelhouse) and connect it to your channel manager/Airbnb calendar to automate your daily pricing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_real_estate_agents_st_charles_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: real estate agents, St. Charles",
+ "niche": "real estate agents",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Charles MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3e6040e6-aa18-490a-aeaf-0c117abc3c0a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 4835,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4284,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 320,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5155
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Mark Gellman of eXp Realty’s Gellman Team",
+  "Susan Brewer",
+  "Jeremy Schneider",
+  "Mark Gellman",
+  "Gellman Team"
+ ],
+ "engine_stated_criteria": [
+  "seller-side sales in your neighborhood"
+ ],
+ "sources_cited": [
+  "https://www.effectiveagents.com/mo/saint-charles",
+  "https://www.homes.com/real-estate-agents/jeremy-schneider/lg1yyqe/",
+  "https://www.zillow.com/profile/CEPSTLAH",
+  "https://www.homes.com/real-estate-agents/nicholas-wagenknecht/pc0ry6v/",
+  "https://www.homelight.com/st-charles-mo/top-real-estate-agents",
+  "https://www.biggerpockets.com/mo/saint-charles/agents",
+  "https://www.zillow.com/profile/Georgia%20Rossel",
+  "https://www.homes.com/real-estate-agents/susan-brewer/brvkep9/",
+  "https://www.homelight.com/agents/stephanie-parson-mo-1999014362",
+  "https://agentpronto.com/missouri/st-charles",
+  "https://www.effectiveagents.com/agent/audrey-schoem",
+  "https://www.zillow.com/profile/JeremySchneiderRE",
+  "https://www.realestateagents.com/mo/saint-charles",
+  "https://www.homelight.com/agents/lucia-roberts-mo-00050928",
+  "https://www.homelight.com/st-charles-county-mo/top-real-estate-agents"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for every home—the right fit depends on your neighborhood, price range, and how hands-on you want the sale to be.\n\nBased on the available local sales data, **Mark Gellman of eXp Realty’s Gellman Team** is a strong first person to interview: one ranking reports very high recent sales activity and extensive St. Charles experience. For comparison, **Susan Brewer** has substantial recent seller-side activity, and **Jeremy Schneider** has recent listing transactions and seller reviews describing responsive communication and quick sales. These are leads, not guarantees; ranking sites use different methods and their figures may not be directly comparable.\n\nI’d interview two or three agents and ask each for:\n- Recent **seller-side sales in your neighborhood** and your home’s price range\n- Their suggested list price, with comparable sales to support it\n- Typical days on market and sale-to-list results for those listings\n- A written marketing plan and proposed commission/fees\n- References from recent sellers\n\nChoose the agent whose pricing rationale and plan make sense for your home—not simply the one with the biggest sales count.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

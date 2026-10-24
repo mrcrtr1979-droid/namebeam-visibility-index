@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_mortgage_lenders_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: mortgage lenders, Fort Lauderdale",
+ "niche": "mortgage lenders",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Fort Lauderdale FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_044c77dd-75a5-46c2-988e-1d67da1a33bc",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00092,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00438
+   },
+   "input_tokens": 4247,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3697,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 327,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4574
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AAA Capital Funding",
+  "Chase",
+  "U.S. Bank",
+  "Loan Estimate",
+  "NMLS Consumer Access"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.primelenders.com/",
+  "https://admortgage.com/states/florida-mortgage-lender/",
+  "https://www.smlg.us/about-us/",
+  "https://www.nextwavemortgage.com/licenses",
+  "https://aaacapitalfunding.com/about/the-official-faq/",
+  "https://www.linkedin.com/company/america-s-mortgage-professionals",
+  "https://www.smlg.us/contact-us-2/",
+  "https://www.linkedin.com/company/nationwide-home-loans",
+  "https://www.smlg.us/home-equity-loan/",
+  "https://turturhomeloans.com/",
+  "https://activecomp.ly/nmls/1777771",
+  "https://admortgage.com/important-disclosures/",
+  "https://dreamyleads.com/mortgage/best-mortgage-lenders-fort-lauderdale",
+  "https://mortgage.usbank.com/fl/fort-lauderdale",
+  "https://homelendingadvisor.chase.com/fl/fort-lauderdale"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one lender that’s best for every buyer—your rate and fees depend on your credit, down payment, loan type, and property. **A good starting point is to get competing quotes from a local mortgage broker and at least two direct lenders.**\n\nFor Fort Lauderdale, you could include **AAA Capital Funding**, a local broker that says it shops multiple wholesale lenders and offers conventional, FHA, VA, renovation, and other purchase loans. Compare it with a bank or credit union you already use, plus another lender such as **Chase** or **U.S. Bank**, both of which list local mortgage advisors.\n\nAsk each for a written **Loan Estimate** for the same loan amount, down payment, loan type, and rate-lock period. Compare the **APR, lender fees, discount points, cash to close, and estimated monthly payment**—not just the advertised rate. Check the company and loan officer’s license and history through **NMLS Consumer Access** before proceeding.\n\nIf you share your approximate purchase price, down payment, credit-score range, and whether you’re considering FHA, VA, or conventional financing, I can help narrow down which lender type may fit best.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

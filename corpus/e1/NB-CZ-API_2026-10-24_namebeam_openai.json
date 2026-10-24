@@ -1,0 +1,64 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_namebeam_openai",
+ "date_utc": "2026-10-24",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EcYLNPcWyEIgcXFgKimAsD0ygk3mG",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1671,
+   "total_tokens": 1695,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bard",
+  "Bing Chat",
+  "Apple Maps",
+  "Maps Connect",
+  "TripAdvisor",
+  "LocalBusiness",
+  "BrightLocal",
+  "Test AI",
+  "OpenAI API",
+  "APIs",
+  "BirdEye",
+  "Reputation.com",
+  "AIs",
+  "Semrush",
+  "Yext",
+  "Moz Local",
+  "Bing Places",
+  "Local SEO",
+  "Whitespark",
+  "OpenAI",
+  "Knowledge Panel",
+  "ChatGPT specifically"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: There isn’t a single, dedicated “AI recommendation checker.” To know whether ChatGPT (or Bard, Bing Chat, Perplexity, etc.) will recommend your small business you should (A) make sure your business data is discoverable by search/knowledge systems and (B) test the AI assistants directly. The easiest practical workflow is:\n\n1) Make sure your business is in the places AI sources from\n- Claim and complete Google Business Profile (free) — this is the most important one.\n- Claim Bing Places, Apple Maps/Maps Connect, Yelp, TripAdvisor (if relevant).\n- Add structured data (schema.org/LocalBusiness) on your website.\nWhy: many AI assistants draw on search results, knowledge graphs and public directories. If you don’t appear there, models won’t reliably recommend you.\n\n2) Use a local-SEO / listing-management service to monitor presence\n- Recommended: BrightLocal or Yext for ongoing monitoring of listings, citations and reviews. Moz Local, Whitespark, or Semrush’s local tools are good too.\nWhy: these tools show where you appear (and don’t), fix inconsistencies, and track visibility that influences AI responses.\n\n3) Test AI assistants directly (manual and programmatic)\n- Manual: Ask ChatGPT, Google Bard, Bing Chat, Perplexity, etc., using realistic user prompts (examples below). Do this from multiple locations or specify location in the prompt.\n- Programmatic: If you want repeated checks at scale, query the OpenAI API (for ChatGPT/GPT models) with canned prompts and log responses. You can script similar queries to other assistants where APIs exist.\nWhy: models don’t expose a “recommendation list” you can inspect — the only way to know is to ask them.\n\n4) Monitor reputation and reviews\n- Use ReviewTrackers, BirdEye, or Reputation.com to consolidate reviews. High-quality, recent reviews increase the chance AIs will surface your business.\n\nSample prompts to test\n- “I’m in [neighborhood], looking for a [business type, e.g., coffee shop / plumber / salon] open now. Recommend some options and explain why.” \n- “Where can I get the best [service] in [city]? Recommend an affordable option nearby.”\n- “What are the top-rated [business type] near [address or ZIP code]?”\n\nNotes and caveats\n- Models can hallucinate or give generic answers if they don’t have direct knowledge of your business. Presence in Google Knowledge Panel and authoritative sites improves accuracy.\n- ChatGPT’s answers depend on model version and whether browsing/plugins are enabled. Results may vary between ChatGPT, Bard, Bing, Perplexity, etc.\n- If you want a one-stop paid product for visibility + citation monitoring, choose BrightLocal for local SEO monitoring and use it alongside manual/model queries. If you want automated, programmatic checks of ChatGPT specifically, use the OpenAI API.\n\nIf you tell me your business type and city (and whether you want a free or paid route), I can give a short, tailored checklist and sample prompts you can run right away.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_95c36717-3393-4616-8358-02bf6f080b30",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00105,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00471
+   },
+   "input_tokens": 4631,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4082,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 419,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5050
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Florida Housing-approved lender",
+  "Florida Housing-approved",
+  "City of Miami",
+  "Loan Estimate",
+  "Florida Housing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.floridahousing.org/programs/homebuyer-overview-page",
+  "https://www.miami.gov/Housing-Assistance/Home-Ownership/Apply-for-First-Time-Homebuyer-Assistance/First-Time-Homebuyer-Program-Participating-Banks",
+  "https://www.miamidade.gov/global/housing/homeownership.page",
+  "https://www.floridahousing.org/contact-us/questions-and-answers",
+  "https://www.miamidade.gov/global/housing/affordable-homeownership-program.page",
+  "https://www.experience.com/reviews/office/coral-gables-674-48509",
+  "https://www.monitorbankrates.com/mortgage-lenders/florida/miami",
+  "https://www.miami.gov/Housing-Assistance/Home-Ownership/Apply-for-First-Time-Homebuyer-Assistance",
+  "https://saferate.com/local/miami/best-mortgage-lenders",
+  "https://www.miami.gov/Housing-Assistance/Home-Ownership",
+  "https://www.floridahousing.org/lenders-loan-officers",
+  "https://www.truemortgagefl.com/",
+  "https://www.hfamiami.com/homebuyers",
+  "https://topratedlenders.com/jose-bencomo-nmls-1181612",
+  "https://www.miamibeachlenders.com/reviews/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one universally “best” lender in Miami—the right choice depends on your credit, down payment, loan type, and whether you qualify for assistance. **My practical recommendation is to get written Loan Estimates from at least three lenders and compare the same loan terms**, rather than choosing by a ranking or advertised rate.\n\nIf you’re a first-time buyer, start with a **Florida Housing-approved lender** and ask whether you qualify for state down-payment assistance. If the home is within the City of Miami, check the City’s participating-lender list too; Miami-Dade County has separate assistance programs. These programs have eligibility rules and may require using an approved lender.\n\nWhen comparing offers, look at the **interest rate, APR, lender fees, points, cash to close, rate-lock period, and ability to meet your closing date**. Ask each lender for a Loan Estimate for the same purchase price, down payment, and loan type.\n\nOfficial starting points:\n- [Florida Housing homebuyer programs](https://www.floridahousing.org/programs/homebuyer-overview-page)\n- [City of Miami participating lenders](https://www.miami.gov/Housing-Assistance/Home-Ownership/Apply-for-First-Time-Homebuyer-Assistance/First-Time-Homebuyer-Program-Participating-Banks)\n- [Miami-Dade County homeownership programs](https://www.miamidade.gov/global/housing/homeownership.page)\n\nIf you share your approximate price range, down payment, credit-score range, and whether you’re a first-time buyer, I can help narrow down what lender and loan options to compare.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

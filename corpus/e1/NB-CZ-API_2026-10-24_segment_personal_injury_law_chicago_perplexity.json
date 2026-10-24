@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-24_segment_personal_injury_law_chicago_perplexity",
+ "date_utc": "2026-10-24",
+ "business": "SEGMENT: personal injury law, Chicago",
+ "niche": "personal injury attorneys",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best personal injury attorney in Chicago for a car accident claim?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a927f01e-4e2f-49bc-8ebe-0d50c517b2d9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00452
+   },
+   "input_tokens": 5073,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4524,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 301,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5374
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Chicago Bar Association Lawyer Referral Service",
+  "Illinois State Bar Association’s Lawyer Finder",
+  "Illinois State Bar Association",
+  "Lawyer Finder",
+  "Lawyer Referral Service"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.lawyers.com/motor-vehicle-accidents/chicago/illinois/law-firms/",
+  "https://www.isba.org/public/guide/hiringalawyer",
+  "https://www.chicagobar.org/CBA/CBA/Legal_Help_for_the_Public/LRS_Per.aspx",
+  "https://www.lawyers.com/personal-injury/chicago/illinois/law-firms/",
+  "https://www.martindale.com/automobile-accidents-lawyers/chicago/illinois/",
+  "https://www.avvo.com/attorneys/60602-il-david-abels-1058779.html",
+  "https://lawyers.findlaw.com/motor-vehicle-accidents-plaintiff/illinois/worth/",
+  "https://lawyers.findlaw.com/personal-injury-plaintiff/illinois/chicago/",
+  "https://phillipslawoffices.com/car-accidents/",
+  "https://zayedlawoffices.com/about-us/attorney-referrals/",
+  "https://www.martindale.com/automobile-accidents-lawyers/chicago/indiana/",
+  "https://www.salvilaw.com/attorney-referrals/",
+  "https://www.isba.org/barnews?p=20977&page=545",
+  "https://lawyers.findlaw.com/motor-vehicle-accidents-plaintiff/illinois/elgin/",
+  "https://www.avvo.com/car-accidents-lawyer/il/chicago.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t an objectively “best” Chicago car-accident attorney—the right fit depends on your injuries, the facts of the crash, and whether the case may need to go to trial. Online ratings and “top lawyer” lists can be useful starting points, but they aren’t a reliable measure of who will handle your particular claim best.\n\nA practical way to compare attorneys is to speak with two or three who regularly handle car-crash injury cases. Ask:\n\n- Who will personally handle my case, and how often will I hear from them?\n- Have you handled cases with injuries and circumstances like mine?\n- What is your fee, and what case expenses might I owe?\n- What are the strengths, risks, and likely next steps in my claim?\n\nYou can also request a personal-injury referral from the **Chicago Bar Association Lawyer Referral Service** at **312-554-2001** or use the **Illinois State Bar Association’s Lawyer Finder**. Before hiring anyone, verify their Illinois license and disciplinary history through the state’s attorney-registration authority, and read the fee agreement carefully.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
