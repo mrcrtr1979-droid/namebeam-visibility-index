@@ -1,0 +1,58 @@
+# Nightly additive copy of corpus/ and releases/ to R2 bucket carter-frontier-archive.
+# Lives in the PUBLIC collector repo (free Actions minutes). Needs two repository secrets, set once by Terry:
+#   R2_ACCESS_KEY_ID        (R2 S3-style access key, from R2 > Manage API tokens; NOT the Cloudflare API token)
+#   R2_SECRET_ACCESS_KEY    (the matching secret, shown once when the R2 token is created)
+# No secret value is printed. The job is additive only: it removes nothing from the bucket. Manifest line goes to status/R2_ARCHIVE_RUNS.csv.
+name: r2_archive_nightly
+
+on:
+  schedule:
+    - cron: "40 7 * * *"   # 07:40 UTC nightly
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: r2_archive_nightly
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Offline tests
+        run: node --test test/r2_archive.test.mjs
+
+      - name: Preflight (names only; values are never printed)
+        env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: |
+          node -e 'const m=["R2_ACCESS_KEY_ID","R2_SECRET_ACCESS_KEY"].filter(n=>!process.env[n]); if(m.length){console.error("missing repository secret(s): "+m.join(", ")); process.exit(1)} console.log("R2 secrets present (values not printed)")'
+
+      - name: Sync corpus/ and releases/ to R2 (additive, no deletes)
+        env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: |
+          node scripts/r2_archive.mjs --run-id "$GITHUB_RUN_ID" --commit "$GITHUB_SHA" --date "$(date -u +%F)"
+
+      - name: Commit manifest line
+        if: always()
+        run: |
+          git config user.name "r2-archive-bot"
+          git config user.email "r2-archive-bot@users.noreply.github.com"
+          [ -f status/R2_ARCHIVE_RUNS.csv ] || exit 0
+          git add status/R2_ARCHIVE_RUNS.csv
+          git commit -m "r2 archive run ${GITHUB_RUN_ID} [skip ci]" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break || sleep 5; done
