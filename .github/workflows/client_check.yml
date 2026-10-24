@@ -55,6 +55,8 @@ jobs:
         with:
           role-to-assume: ${{ vars.AWS_BEDROCK_ROLE_ARN }}
           aws-region: us-east-1
+          # Explicit. This job is capped at 10 minutes, so it can never outlive the session.
+          role-duration-seconds: 3600
 
       - name: Dry run the client check
         env:

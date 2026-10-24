@@ -329,11 +329,16 @@ def _observe(row, latency_s, err):
         pass
 
 
-def run_engine(business_row, engine, fn, date_utc):
+def run_engine(business_row, engine, fn, date_utc, supersedes=None):
     slug = slugify(business_row["business"])
     check_id, run_index = next_run_index(date_utc, slug, engine)
     row = base_row(business_row, date_utc, check_id, engine)
     row["run"] = run_index
+    if supersedes:
+        # Re-ask of a FAILED cell: say so, with the real collection time, so the row never
+        # reads as collected at the date in its name.
+        row["rerun_supersedes"] = supersedes
+        row["rerun_collected_at_utc"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     import engines as _engines
     _engines.CURRENT_QUESTION_ID[0] = slugify(business_row["business"])
     _t0 = time.monotonic()
@@ -498,6 +503,84 @@ def run_serp(business_row, date_utc):
     return write_row(row, check_id), True
 
 
+# RE-RUN ONLY THE FAILED CELLS (2026-10-24, [SONNET-BEDROCK-EXPIRY-1024]). A "cell" is one
+# business x one engine on one date. On 2026-10-24 sixteen Anthropic cells FAILED when the
+# Bedrock session token expired mid-run. These optional env vars (the workflow's manual-run
+# inputs) re-ask ONLY those cells; a normal scheduled or manual run sets none of them and
+# behaves exactly as before.
+#   E1_ONLY_ENGINES   comma list of engines to ask (or "serp"); every other engine and the SERP
+#                     are skipped. Required whenever E1_ONLY_FAILED is set.
+#   E1_ONLY_FAILED    1/true: ask a cell only if its row for the date is FAILED and no OK row
+#                     exists for it yet, so a repeat dispatch is idempotent. Never touches an
+#                     existing row: the answer lands as the next _rN file, the FAILED row stays.
+#   E1_DATE_UTC       YYYY-MM-DD, only with E1_ONLY_FAILED: the date whose failed cells to
+#                     re-ask (default today). Never later than today. Rows keep that date in
+#                     their name and date_utc, and carry rerun_collected_at_utc with the real
+#                     collection time plus rerun_supersedes (the FAILED row's check_id).
+_KNOWN_ONLY = ("perplexity", "gemini", "openai", "anthropic", "serp")
+
+
+def _truthy(v):
+    return str(v or "").strip().lower() in ("1", "true", "yes", "on")
+
+
+def parse_rerun_options(env, today_utc):
+    """Returns (opts, error). opts is None for a normal run. Never raises."""
+    only = [x.strip().lower() for x in str(env.get("E1_ONLY_ENGINES", "")).split(",")
+            if x.strip()]
+    failed = _truthy(env.get("E1_ONLY_FAILED"))
+    date = str(env.get("E1_DATE_UTC", "")).strip()
+    if not only and not failed and not date:
+        return None, ""
+    bad = [x for x in only if x not in _KNOWN_ONLY]
+    if bad:
+        return None, "E1_ONLY_ENGINES has unknown engine(s): %s" % ", ".join(bad)
+    if failed and not only:
+        return None, "E1_ONLY_FAILED requires E1_ONLY_ENGINES (name the engine(s) to re-ask)"
+    if date:
+        if not failed:
+            return None, "E1_DATE_UTC is only allowed together with E1_ONLY_FAILED"
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
+            return None, "E1_DATE_UTC must be YYYY-MM-DD"
+        try:
+            datetime.strptime(date, "%Y-%m-%d")
+        except ValueError:
+            return None, "E1_DATE_UTC is not a real date"
+        if date > today_utc:
+            return None, "E1_DATE_UTC is in the future"
+    return {"only": only, "failed": failed, "date": date or today_utc}, ""
+
+
+def cell_files(date_utc, slug, engine):
+    """All corpus files of one cell: the base row and any _rN, in run order."""
+    base = "NB-CZ-API_%s_%s_%s" % (date_utc, slug, engine)
+    out = [base] + ["%s_r%d" % (base, n) for n in range(2, 60)]
+    paths = [os.path.join(OUTPUT_DIR, c + ".json") for c in out]
+    found = []
+    for c, pth in zip(out, paths):
+        if os.path.exists(pth):
+            found.append((c, pth))
+        elif c != base:
+            break
+    return found
+
+
+def failed_cell_check_id(date_utc, slug, engine):
+    """check_id of the cell's latest FAILED row if the cell has no OK row, else None."""
+    last_failed = None
+    for cid, pth in cell_files(date_utc, slug, engine):
+        try:
+            with open(pth, "r", encoding="utf-8") as f:
+                status = json.load(f).get("run_status")
+        except (OSError, ValueError):
+            continue
+        if status == "OK":
+            return None
+        if status == "FAILED":
+            last_failed = cid
+    return last_failed
+
+
 def main():
     """Run the collector, then send the queued PostHog events (best-effort, in a finally so a
     crash mid-run still reports the calls that did happen). The return value is untouched."""
@@ -513,6 +596,12 @@ def main():
 
 def _main():
     date_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    rerun, rerun_err = parse_rerun_options(os.environ, date_utc)
+    if rerun_err:
+        print("ERROR: %s. Nothing written." % rerun_err)
+        return 2  # a bad manual input fails the run loudly instead of passing silently
+    if rerun:
+        date_utc = rerun["date"]
     try:
         roster = load_active_roster(ROSTER_PATH)
     except (OSError, ValueError) as exc:
@@ -543,12 +632,15 @@ def _main():
     # got engine coverage and the same business would have won every day.
     # Rotating the start position by date spreads coverage evenly over time
     # without spending a cent. Deterministic, so a run is still reproducible.
-    if len(roster) > 1:
+    if len(roster) > 1 and not rerun:
         offset = sum(ord(c) for c in date_utc) % len(roster)
         roster = roster[offset:] + roster[:offset]
         print("roster rotated by %d for %s" % (offset, date_utc))
 
     wrote = ok_n = fail_n = 0
+    if rerun:
+        print("RERUN MODE | date %s | engines %s | only failed cells: %s"
+              % (date_utc, ",".join(rerun["only"]), rerun["failed"]))
     for br in roster:
         engine_rows = []
         # OPTIONAL PER-ENTRY LIMITS (2026-10-08, [SONNET-RECORD-1008E-S1], S1-7). A roster
@@ -559,7 +651,16 @@ def _main():
         for name, fn in engines.items():
             if isinstance(only, list) and name not in only:
                 continue
-            path, good = run_engine(br, name, fn, date_utc)
+            supersedes = None
+            if rerun:
+                if name not in rerun["only"]:
+                    continue
+                if rerun["failed"]:
+                    supersedes = failed_cell_check_id(date_utc, slugify(br["business"]), name)
+                    if not supersedes:
+                        continue
+                    print("rerun cell: %s %s (supersedes %s)" % (slugify(br["business"]), name, supersedes))
+            path, good = run_engine(br, name, fn, date_utc, supersedes)
             if good:
                 import json as _j
                 with open(path, "r", encoding="utf-8") as _f:
@@ -567,7 +668,7 @@ def _main():
             wrote += 1
             ok_n += 1 if good else 0
             fail_n += 0 if good else 1
-        if serp_on and br.get("serp") is not False:
+        if serp_on and br.get("serp") is not False and (not rerun or "serp" in rerun["only"]):
             _, good = run_serp(br, date_utc)
             wrote += 1
             ok_n += 1 if good else 0
