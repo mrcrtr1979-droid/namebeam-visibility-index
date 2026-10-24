@@ -24,6 +24,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timezone
 
 from engines import (ENGINES, LAST_CALL_META, fetch_serp, detect_ai_overview,
@@ -34,6 +35,11 @@ from extract_named_entities import (
     extract_stated_criteria,
 )
 from extract_entities_orthographic import extract_entities_orthographic
+
+try:
+    import posthog_llm_obs as _obs
+except Exception:  # pragma: no cover - observability is optional, never block a run
+    _obs = None
 
 ROSTER_PATH = "roster/e1_roster.json"
 OUTPUT_DIR = "corpus/e1"
@@ -312,6 +318,17 @@ def is_mentioned(business_row, text):
     return False
 
 
+def _observe(row, latency_s, err):
+    """One PostHog AI Observability event per finalized engine row (scripts/posthog_llm_obs.py).
+    Reads the row after it is written, queues a small dict, never raises, never writes."""
+    if _obs is None:
+        return
+    try:
+        _obs.record(row, latency_s, err)
+    except Exception:  # pragma: no cover
+        pass
+
+
 def run_engine(business_row, engine, fn, date_utc):
     slug = slugify(business_row["business"])
     check_id, run_index = next_run_index(date_utc, slug, engine)
@@ -319,7 +336,9 @@ def run_engine(business_row, engine, fn, date_utc):
     row["run"] = run_index
     import engines as _engines
     _engines.CURRENT_QUESTION_ID[0] = slugify(business_row["business"])
+    _t0 = time.monotonic()
     ok, text, sources, err = fn(business_row["prompt_1"])
+    _latency = time.monotonic() - _t0
     # Forward-only audit fields: which model the provider says it served, the
     # response id and usage (Perplexity since 2026-09-28, also its search-result
     # count; OpenAI, Anthropic and Gemini from the 2026-10-13 change). Set on
@@ -344,7 +363,9 @@ def run_engine(business_row, engine, fn, date_utc):
                 % ("QUOTA BLOCKED, not an engine failure" if quota
                    else "FAILED RUN", err, RUN_CHANNEL_CAVEAT)),
         })
-        return write_row(row, check_id), False
+        _path = write_row(row, check_id)
+        _observe(row, _latency, err)
+        return _path, False
     row.update({
         "run_status": "OK",
         "business_mentioned": is_mentioned(business_row, text),
@@ -359,7 +380,9 @@ def run_engine(business_row, engine, fn, date_utc):
         "answer_verbatim": text,
         "session_note": RUN_CHANNEL_CAVEAT,
     })
-    return write_row(row, check_id), True
+    _path = write_row(row, check_id)
+    _observe(row, _latency, err)
+    return _path, True
 
 
 def extract_ai_overview(payload_text):
@@ -476,6 +499,19 @@ def run_serp(business_row, date_utc):
 
 
 def main():
+    """Run the collector, then send the queued PostHog events (best-effort, in a finally so a
+    crash mid-run still reports the calls that did happen). The return value is untouched."""
+    try:
+        return _main()
+    finally:
+        if _obs is not None:
+            try:
+                _obs.flush()
+            except Exception:  # pragma: no cover
+                pass
+
+
+def _main():
     date_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     try:
         roster = load_active_roster(ROSTER_PATH)
