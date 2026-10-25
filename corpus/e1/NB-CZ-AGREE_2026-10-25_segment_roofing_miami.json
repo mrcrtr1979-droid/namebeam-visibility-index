@@ -1,0 +1,131 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-10-25_segment_roofing_miami",
+ "date_utc": "2026-10-25",
+ "business": "SEGMENT: roofing, Miami",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Istueta Roofing",
+    "South Florida",
+    "CCC054759",
+    "T&S Roofing Systems",
+    "CCC1326032",
+    "Extreme Roofing",
+    "CCC1326021",
+    "Miami-Dade HVHZ"
+   ],
+   "verbose_names": [
+    "Miami-Dade County",
+    "A-1 Property Services",
+    "Miami-Dade and Broward",
+    "GAF and Owens Corning",
+    "Key Offerings",
+    "Rovi Roofing",
+    "Notice of Acceptance",
+    "Allied Roofing",
+    "Sheet Metal",
+    "South Florida",
+    "Miami-Dade. They",
+    "Miami Hurricane-Rated Roof",
+    "Miami-Dade County Product Approval",
+    "Secondary Water Resistance",
+    "Proper Licensing and Insurance",
+    "Florida Certified Roofing Contractor",
+    "Wind Mitigation Affidavit"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 8,
+   "verbose_entity_count": 17,
+   "containment_pct": 12.5,
+   "shared_count": 1,
+   "answer_chars_a": 1078,
+   "answer_chars_b": 3640,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Look for HAAG"
+   ],
+   "verbose_names": [
+    "Istueta Roofing",
+    "South Florida",
+    "CCC054759",
+    "T&S Roofing Systems",
+    "CCC1326032",
+    "Extreme Roofing",
+    "CCC1326021",
+    "Miami-Dade HVHZ"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 8,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1078,
+   "answer_chars_b": 1269,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Look for HAAG"
+   ],
+   "verbose_names": [
+    "Miami-Dade County",
+    "A-1 Property Services",
+    "Miami-Dade and Broward",
+    "GAF and Owens Corning",
+    "Key Offerings",
+    "Rovi Roofing",
+    "Notice of Acceptance",
+    "Allied Roofing",
+    "Sheet Metal",
+    "South Florida",
+    "Miami-Dade. They",
+    "Miami Hurricane-Rated Roof",
+    "Miami-Dade County Product Approval",
+    "Secondary Water Resistance",
+    "Proper Licensing and Insurance",
+    "Florida Certified Roofing Contractor",
+    "Wind Mitigation Affidavit"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 17,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 3640,
+   "answer_chars_b": 1269,
+   "zero_shared": true
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

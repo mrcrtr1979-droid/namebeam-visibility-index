@@ -1,0 +1,101 @@
+{
+ "check_id": "NB-CZ-API_2026-10-25_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-10-25",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_10c9cec7-bbf4-4fde-9abf-764dc027d4dc",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0016,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00537
+   },
+   "input_tokens": 5055,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4503,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 640,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5695
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Beach-town convenience",
+  "Capitola Village",
+  "Resort amenities and ocean views",
+  "Seascape Beach Resort, Aptos",
+  "A quieter, distinctive getaway",
+  "Capitola’s treehouse-style ocean-view retreat",
+  "Santa Cruz attractions",
+  "Santa Cruz proper",
+  "Pick the area first",
+  "Compare the full price",
+  "Read recent reviews closely",
+  "Seascape Beach Resort",
+  "Capitola",
+  "Aptos",
+  "Boardwalk"
+ ],
+ "engine_stated_criteria": [
+  "Verify the rental is allowed"
+ ],
+ "sources_cited": [
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Ordinance%205497%20Short-Term%20Rentals.pdf",
+  "https://cdi.santacruzcountyca.gov/LinkClick.aspx?fileticket=zYimj37W0XU=&portalid=35",
+  "https://cdi.santacruzcountyca.gov/UPC/DiscretionaryPermitsZoning/DiscretionaryPermits/Short-TermRentals.aspx",
+  "https://www2.santacruzcountyca.gov/planning/plnmeetings/PLNSupMaterial/PC/Agendas/2025/20250514/007c.pdf",
+  "https://cdi.santacruzcountyca.gov/UPC/DiscretionaryPermitsZoning/DiscretionaryPermits/HostedRentals.aspx",
+  "https://www.airbnb.com/capitola-ca/stays/apartments",
+  "https://www.santacruzcountyca.gov/portals/0/county/CAO/press%20releases/2024/PrsRls_Unpermitted%20short-term%20and%20hosted%20rentals.pdf",
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Sample%20Hosted%20Rental%20agreement%20(2).docx",
+  "https://www.airbnb.com/santa-cruz-county-ca/stays/apartments",
+  "https://www.airbnb.com/aptos-ca/stays/cottages",
+  "https://www.airbnb.com/santa-cruz-ca/stays/apartments",
+  "https://www.vrbo.com/vacation-rentals/usa/california/central-coast/santa-cruz",
+  "https://www.airbnb.com/capitola-ca/stays",
+  "https://www.kayak.com/Aptos-Vacation-Rentals.19253.rental.ksp",
+  "https://www.airbnb.com/capitola-beach-ca/stays/apartments"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "f4337217d1f2e1e227a549488044951df39096288c32f9d31fbbdbc4b86b4bcc",
+ "answer_chars": 2597,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

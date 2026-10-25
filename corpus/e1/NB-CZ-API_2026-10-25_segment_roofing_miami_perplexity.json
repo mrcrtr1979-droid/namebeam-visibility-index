@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-10-25_segment_roofing_miami_perplexity",
+ "date_utc": "2026-10-25",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1e2605ed-a41c-475e-8885-7d8692f0f9ec",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00454
+   },
+   "input_tokens": 5096,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4548,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 304,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5400
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Istueta Roofing",
+  "CCC054759",
+  "T&S Roofing Systems",
+  "CCC1326032",
+  "Extreme Roofing",
+  "CCC1326021",
+  "South Florida",
+  "Miami-Dade HVHZ",
+  "Miami-Dade",
+  "Dade HVHZ"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.extremeroofingmiami.com/best-roofing-companies-miami-florida",
+  "https://www.tsroofingsystems.com/reviews/",
+  "https://floridaroofing.directory/listing/4ever-roofing",
+  "https://www.istuetaroofing.com/",
+  "https://frtroofpro.com/testimonials",
+  "https://www.tsroofingsystems.com/",
+  "https://www.bbb.org/us/fl/miami/profile/contractor-referral/hurricane-safety-program-llc-0633-92043395",
+  "https://orianroofingmia.com/reviews-testimonials/",
+  "https://www.artsroofing.com/",
+  "http://fixuproofing.com/",
+  "https://www.extremeroofingmiami.com/services/residential-roofing",
+  "https://www.trustpilot.com/review/guardwhatmatters.com",
+  "https://dashpages.io/florida/miami/roofing/roofing-experts-services",
+  "https://dukecontractors.net/miami/",
+  "https://canopyroofers.com/roof-replacement/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "b6ddc9c771e50625ac46753c5dfa8e9d04c7e48bec5e1004870a1fc9df279e68",
+ "answer_chars": 1078,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

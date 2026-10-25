@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-25_scorch_perplexity",
+ "date_utc": "2026-10-25",
+ "business": "SCORCH",
+ "niche": "branding agency",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best branding agency in St. Louis?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e21fe931-3690-4140-85e5-a8dd0d0dd614",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00118,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00061,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00443
+   },
+   "input_tokens": 5257,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4712,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 243,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5500
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atomicdust",
+  "TOKY",
+  "Enrich Creative",
+  "Taillight"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.atomicdust.com/",
+  "https://www.atomicdust.com/st-louis-branding-and-marketing-agency/",
+  "https://www.expertise.com/business/branding-agencies/missouri/st-louis",
+  "https://www.webtonic.io/blog/best-graphic-design-agencies-st-louis",
+  "https://www.notionpartners.com/",
+  "https://themanifest.com/branding/brand-strategy/agencies/st-louis",
+  "https://clutch.co/agencies/branding/st-louis",
+  "https://www.notionpartners.com/expertise/brand-identity/",
+  "https://themanifest.com/marketing-strategy/agencies/st-louis",
+  "https://www.designrush.com/agency/logo-branding/missouri/st-louis",
+  "https://www.designrush.com/agency/ad-agencies/missouri/st-louis",
+  "https://www.designrush.com/agency/creative-agencies/missouri/st-louis",
+  "https://www.designrush.com/agency/creative-agencies/missouri",
+  "https://clutch.co/agencies/branding/missouri",
+  "https://1905newmedia.com/about-1905-new-media/award-winning-marketing-agency/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "16659d59fd5ff7e49c9e71015ecb48547051e32e8429323ac4ff4f5458ae43e4",
+ "answer_chars": 777,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

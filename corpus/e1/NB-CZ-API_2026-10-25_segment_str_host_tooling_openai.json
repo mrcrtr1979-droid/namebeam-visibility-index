@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-API_2026-10-25_segment_str_host_tooling_openai",
+ "date_utc": "2026-10-25",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EcvFTG3VaQUecxXWvJ5kCPtOHQsG1",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1434,
+   "total_tokens": 1460,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "MarketMinder",
+  "Rentalizer",
+  "PriceLabs",
+  "Wheelhouse",
+  "Beyond Pricing",
+  "Smart Pricing",
+  "AirDNA MarketMinder",
+  "Mashvisor",
+  "Beyond",
+  "For ongoing",
+  "Local regulations",
+  "Wheelhouse and Beyond Pricing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- For market due diligence before buying: AirDNA (MarketMinder + Rentalizer) is the best single tool. It gives ADR, occupancy, seasonality, RevPAR, supply growth and revenue estimates for any short‑term market.\n- For ongoing dynamic nightly pricing after you buy: PriceLabs is my top pick (very flexible, affordable, deep integrations). Wheelhouse and Beyond Pricing are good alternatives (Wheelhouse = great UI/control; Beyond Pricing = simplest “set-and-forget”).\n\nWhy those recommendations\n- AirDNA — purpose-built for investment analysis. It shows historical occupancy/ADR trends, RevPAR, seasonality heatmaps, top-performing listings, neighborhood granularity and revenue projections. That’s exactly what you need to estimate future cash flow and decide whether a market/property is worth buying.\n- PriceLabs — best balance of pricing sophistication, customization and price. You can create rules by day-of-week, length-of-stay, min/max, adjust for events and seasonality, and it integrates with nearly every PMS/channel. Hosts who want fine control and good analytics favor it.\n- Wheelhouse — excellent analytics and strategy presets; good if you want guided recommendations.\n- Beyond Pricing — easiest to use, more conservative pricing, good for hosts who want minimal setup.\n\nOther tools to consider\n- Mashvisor — useful if you want a combined long‑term vs short‑term investment comparison.\n- Transparent — enterprise-grade analytics for professional managers.\n- AirBnB’s Smart Pricing — free but usually too conservative and lacks market granularity.\n- Local sources: Zillow/Redfin for comps, MLS, local property managers, and manual Airbnb searches to validate data.\n\nHow to use them together (recommended workflow)\n1. Market scan with AirDNA MarketMinder: check ADR, occupancy, RevPAR, seasonality, top dates, and supply growth for the exact neighborhood.\n2. Run Rentalizer or run your own pro forma using AirDNA numbers to estimate gross revenue.\n3. Build expense and financing assumptions (mortgage, taxes, insurance, utilities, cleaning, management fee) to get net cash flow and cap rate.\n4. If numbers look good, list the property and connect to PriceLabs (or Wheelhouse/Beyond Pricing) to automate nightly pricing and maximize revenue.\n5. Monitor and iterate: compare actual performance to the projections and tweak rules.\n\nWhat metrics to focus on when deciding to buy\n- Average Daily Rate (ADR)\n- Occupancy %\n- RevPAR (ADR × occupancy)\n- Seasonality (downtime and shoulder months)\n- Supply growth (new listings entering market)\n- Length‑of‑stay patterns\n- Event-driven demand\n- Local regulations/taxes that could limit supply or usage\n\nIf you want a single concrete next step\n- Sign up for a free AirDNA MarketMinder trial/report for the neighborhood you’re considering and run a Rentalizer estimate. If you prefer one tool that can also price your calendar, try PriceLabs (it offers a trial and shows market dashboards).\n\nIf you tell me the city/area and type of property (entire home vs private room, number of bedrooms), I can suggest specific metrics and a quick back‑of‑envelope revenue estimate using typical market numbers.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

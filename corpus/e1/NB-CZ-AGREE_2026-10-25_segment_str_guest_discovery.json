@@ -1,0 +1,221 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-10-25_segment_str_guest_discovery",
+ "date_utc": "2026-10-25",
+ "business": "SEGMENT: STR guest discovery",
+ "row_type": "agreement",
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 4,
+ "pairs": [
+  {
+   "terser_names": [
+    "Compare",
+    "Airbnb",
+    "Booking.com",
+    "Vrbo and Airbnb",
+    "Booking.com. In"
+   ],
+   "verbose_names": [
+    "Airbnb",
+    "Vrbo",
+    "Booking.com",
+    "Vacation Rentals",
+    "Avoid Scams",
+    "Airbnb Superhosts",
+    "Vrbo Premier Hosts",
+    "WhatsApp",
+    "Use",
+    "Premier Hosts"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 10,
+   "containment_pct": 80.0,
+   "shared_count": 4,
+   "answer_chars_a": 2325,
+   "answer_chars_b": 4586,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Compare",
+    "Airbnb",
+    "Booking.com",
+    "Vrbo and Airbnb",
+    "Booking.com. In"
+   ],
+   "verbose_names": [
+    "Want",
+    "Airbnb",
+    "Premier Partner",
+    "Verified ID",
+    "Street View",
+    "Google Maps",
+    "PayPal",
+    "Host Guarantee and Resolution Center",
+    "Use"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 9,
+   "containment_pct": 40.0,
+   "shared_count": 2,
+   "answer_chars_a": 2325,
+   "answer_chars_b": 4438,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Booking.com",
+    "Premier Partner"
+   ],
+   "verbose_names": [
+    "Compare",
+    "Airbnb",
+    "Booking.com",
+    "Vrbo and Airbnb",
+    "Booking.com. In"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 5,
+   "containment_pct": 50.0,
+   "shared_count": 1,
+   "answer_chars_a": 2325,
+   "answer_chars_b": 1227,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Want",
+    "Airbnb",
+    "Premier Partner",
+    "Verified ID",
+    "Street View",
+    "Google Maps",
+    "PayPal",
+    "Host Guarantee and Resolution Center",
+    "Use"
+   ],
+   "verbose_names": [
+    "Airbnb",
+    "Vrbo",
+    "Booking.com",
+    "Vacation Rentals",
+    "Avoid Scams",
+    "Airbnb Superhosts",
+    "Vrbo Premier Hosts",
+    "WhatsApp",
+    "Use",
+    "Premier Hosts"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 9,
+   "verbose_entity_count": 10,
+   "containment_pct": 22.2,
+   "shared_count": 2,
+   "answer_chars_a": 4586,
+   "answer_chars_b": 4438,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Booking.com",
+    "Premier Partner"
+   ],
+   "verbose_names": [
+    "Airbnb",
+    "Vrbo",
+    "Booking.com",
+    "Vacation Rentals",
+    "Avoid Scams",
+    "Airbnb Superhosts",
+    "Vrbo Premier Hosts",
+    "WhatsApp",
+    "Use",
+    "Premier Hosts"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 10,
+   "containment_pct": 50.0,
+   "shared_count": 1,
+   "answer_chars_a": 4586,
+   "answer_chars_b": 1227,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Booking.com",
+    "Premier Partner"
+   ],
+   "verbose_names": [
+    "Want",
+    "Airbnb",
+    "Premier Partner",
+    "Verified ID",
+    "Street View",
+    "Google Maps",
+    "PayPal",
+    "Host Guarantee and Resolution Center",
+    "Use"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 9,
+   "containment_pct": 50.0,
+   "shared_count": 1,
+   "answer_chars_a": 4438,
+   "answer_chars_b": 1227,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

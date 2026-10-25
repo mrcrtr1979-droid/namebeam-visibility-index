@@ -1,0 +1,23 @@
+{
+ "check_id": "NB-CZ-API_2026-10-25_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-10-25",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {},
+ "run_status": "QUOTA_BLOCKED",
+ "business_mentioned": null,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "QUOTA BLOCKED, not an engine failure, logged per no-fabricated-rows law. error detail: QUOTA: openai HTTP 429: {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n        \"type\": \"insufficient_quota\",\n        \"param\": null,\n        \"code\": \"credit_balance_exhausted\"\n    }\n}\n. run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

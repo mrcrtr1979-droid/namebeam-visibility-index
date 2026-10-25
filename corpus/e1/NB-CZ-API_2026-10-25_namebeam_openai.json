@@ -1,0 +1,63 @@
+{
+ "check_id": "NB-CZ-API_2026-10-25_namebeam_openai",
+ "date_utc": "2026-10-25",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ecv1NKssmPJGfq8wVn73amZwhBYb0",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1740,
+   "total_tokens": 1764,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "LLM-based",
+  "Knowledge Graph",
+  "Yext",
+  "BrightLocal",
+  "Moz Local",
+  "Bing Places",
+  "Apple Maps Connect",
+  "Bing Chat and Apple",
+  "Bing Chat",
+  "LocalBusiness",
+  "Apple Maps",
+  "LocalBusiness JSON-LD",
+  "Use",
+  "Local SEO",
+  "Whitespark",
+  "Schema.org LocalBusiness",
+  "Use BrightLocal",
+  "Test LLMs",
+  "ChatGPT specifically",
+  "LocalBusiness JSON",
+  "Maps Connect"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\nThere isn’t a single “official” service that tells you “ChatGPT recommends this business.” The best practical approach is to manage and distribute your business data (so AI systems can find it), monitor local listings with a local-SEO service, and directly test major LLM-based assistants.\n\nRecommended combo (what to use)\n- Google Business Profile (free) — absolutely essential. Many AI assistants draw on Google’s Knowledge Graph or use Google Search results as sources.\n- Yext (paid) — synchs your business data across many publishers and claims integrations with AI/assistant ecosystems; good if you want broad distribution from one dashboard.\n- BrightLocal or Moz Local or Whitespark (paid/affordable) — local-SEO monitoring and citation tracking so you can see where your business appears and how it ranks.\n- Bing Places, Apple Maps Connect, Yelp for Business — claim those profiles too (Bing Chat and Apple/Maps-based assistants may use them).\n- Manual LLM testing — directly ask ChatGPT, Bing Chat, and Google Bard to see whether they recommend your business.\n\nWhy this combination\n- LLMs don’t expose a single indexed “recommendations” feed you can query; they synthesize from many sources (search engines, review sites, knowledge graphs). Ensuring correct, consistent public listings (Google, Yelp, Apple, etc.) and structured site data (schema.org LocalBusiness) makes it much more likely an assistant will surface your business.\n- Local-SEO tools (BrightLocal, Yext, Moz) let you audit presence, fix inconsistent citations, and monitor reviews — the key drivers of being recommended.\n\nPractical steps to follow\n1. Claim and fully optimize:\n   - Google Business Profile: complete profile, hours, services, categories, photos, and get reviews.\n   - Bing Places, Apple Maps, Yelp: claim and complete those too.\n2. Add structured data to your website:\n   - Implement schema.org/LocalBusiness JSON-LD (name, address, phone, services, hours) so crawlers and knowledge graphs read it reliably.\n3. Use a distribution/monitoring service:\n   - If you want one dashboard to push and fix listings, consider Yext.\n   - If you want local SEO audits and rank/citation tracking, use BrightLocal or Moz Local.\n4. Encourage good reviews on Google/Yelp (authentic reviews boost visibility).\n5. Test LLMs regularly:\n   - Sample prompts: “Recommend a [service] in [neighborhood/city].” “Best [business type] near [zip code].” “I need a [service] with [feature].”\n   - Test ChatGPT, Bing Chat (with browsing), Google Bard, and Siri (Maps).\n6. Track changes and iterate:\n   - Use the local-SEO tool to watch citations and rankings; retest assistants after major updates or new reviews.\n\nNotes about ChatGPT specifically\n- ChatGPT (without browsing/plugins) may not have up-to-date local data and can hallucinate. Bing Chat and Bard often use live web search and are likelier to surface current business listings.\n- Large businesses and those with well-structured public data and many reviews are more likely to be recommended.\n\nIf you want a specific next step, tell me:\n- your city and business type, and whether you prefer free or paid tools — I can give a tailored, prioritized checklist and a few exact test prompts to use with ChatGPT/Bing/Bard.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

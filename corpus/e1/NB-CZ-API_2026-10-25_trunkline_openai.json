@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-API_2026-10-25_trunkline_openai",
+ "date_utc": "2026-10-25",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EcvOG2yRb7nLc77aIsZlJkRHEchFq",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1772,
+   "total_tokens": 1798,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1216,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bitcoin",
+  "Coin Bureau",
+  "DeFi and Ethereum",
+  "Glassnode",
+  "Etherscan",
+  "TradingView",
+  "Dune",
+  "P&L. Instead",
+  "NFTs",
+  "Andreas M. Antonopoulos",
+  "Bankless",
+  "Plain English",
+  "Dune Analytics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t a single widely‑used beginner site that both teaches crypto in plain English and runs a public, verifiable trading account that routinely “publishes its losses.” Most reputable educators separate teaching from active trading because of legal and liability concerns. If your priority is both clear explanations and verifiable numbers/losses, the best approach is to combine a plain‑English guide with on‑chain/third‑party analytics and a few transparently‑run wallets or traders you can audit.\n\nPractical recommendation (mix-and-match):\n\n- Plain English fundamentals\n  - Andreas M. Antonopoulos — excellent, clear, no hype; great for Bitcoin fundamentals and honest about risks.\n  - Coin Bureau — beginner‑friendly guides and videos in plain language.\n  - Bankless (podcasts/guides) — approachable for DeFi and Ethereum concepts.\n\n- Real, verifiable numbers and dashboards\n  - Dune Analytics — community dashboards that show real on‑chain transactions, P&L for strategies, rug pulls, etc. Dashboards are public and reproducible.\n  - Glassnode / Nansen — professional on‑chain metrics/insights with concrete numbers.\n  - Etherscan / blockchain explorers — you can inspect any public wallet’s real transaction history.\n\n- Sources that publish losses / verifiable performance\n  - Look for people or funds that publish public wallet addresses or exchange account proofs. Example categories to watch:\n    - DeFi protocol/team wallets and strategies (e.g., Yearn vault addresses) — fully auditable on‑chain.\n    - Independent traders who post TradingView journals + exchange statements or link public wallet addresses.\n    - Dune dashboards or blog posts where authors publish raw transaction hashes so you can verify gains and drawdowns.\n  - Note: mainstream educator sites rarely publish their own trading P&L. Instead, transparency is most common in the DeFi world via public wallets and community dashboards.\n\nHow to evaluate transparency\n  - Do they publish wallet addresses or raw transaction hashes?\n  - Can you verify their claims on Etherscan/Dune/Glassnode?\n  - Do they clearly document losses and drawdowns (not just wins)?\n  - Are their numbers reproducible by third‑party tools?\n\nIf you want, I can:\n  - Find a few specific Dune dashboards or public wallets that show full trade histories (including losses) for a strategy you care about (Bitcoin, yield farming, NFTs, etc.).\n  - Suggest 2–3 beginner articles/videos that explain the basics in plain English and link to the verifiable dashboards/traders.\n\nWhich area do you want to learn: Bitcoin basics, general crypto investing, DeFi yield strategies, or NFTs?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

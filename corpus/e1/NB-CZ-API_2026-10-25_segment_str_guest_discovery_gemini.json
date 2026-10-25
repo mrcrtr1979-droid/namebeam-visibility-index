@@ -1,0 +1,61 @@
+{
+ "check_id": "NB-CZ-API_2026-10-25_segment_str_guest_discovery_gemini",
+ "date_utc": "2026-10-25",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "NS3eao6zLPPm-sAP8sf7iAM",
+  "usage": {
+   "promptTokenCount": 29,
+   "candidatesTokenCount": 1089,
+   "totalTokenCount": 1118,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 29
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "The Vibe",
+  "Crucial difference",
+  "Airbnb Superhosts",
+  "Vrbo Premier Hosts",
+  "Ignore the 5-star fluff",
+  "Check the host’s profile history",
+  "New listings with zero reviews",
+  "Off-platform communication requests",
+  "Vrbo",
+  "Airbnb",
+  "Booking.com",
+  "Vacation Rentals",
+  "Avoid Scams",
+  "WhatsApp",
+  "Use",
+  "Premier Hosts",
+  "Superhost",
+  "Premier Host"
+ ],
+ "engine_stated_criteria": [
+  "It depends on who you are traveling with and what kind of place you want"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Choosing the right platform and finding a good host can make or break your trip. The short answer is: **It depends on who you are traveling with and what kind of place you want.** \n\nHere is a breakdown of the three platforms, followed by a step-by-step guide to finding a great host.\n\n---\n\n### Part 1: Airbnb vs. Vrbo vs. Booking.com\n\n#### 1. Airbnb\n*   **Best for:** Solo travelers, couples, unique stays (treehouses, yurts), city apartments, and digital nomads.\n*   **The Vibe:** Generally younger, more design-focused, and offers everything from a single private room to a massive estate.\n*   **Pros:** Massive selection, often the best UI/app, and great for unique architecture.\n*   **Cons:** Service fees can be high; quality control varies wildly.\n\n#### 2. Vrbo (Vacation Rentals by Owner)\n*   **Best for:** Families, large groups, and traditional vacation destinations (beach houses, cabins in the woods, ski chalets).\n*   **The Vibe:** Wholesome, family-oriented. **Crucial difference:** Vrbo *only* lists entire properties (no shared spaces or private rooms in a host's house).\n*   **Pros:** Better for large groups looking to stay under one roof; hosts are often traditional property management companies.\n*   **Cons:** Fewer urban apartments; cancellation policies can sometimes be stricter than Airbnb.\n\n#### 3. Booking.com\n*   **Best for:** Traditional hotels, but also has a massive inventory of apartments, villas, and aparthotels. \n*   **The Vibe:** Pragmatic, transactional, heavily focused on loyalty discounts (Genius levels).\n*   **Pros:** Often has free cancellation up to the last minute; you don't always have to pay upfront; great customer service compared to peer-to-peer apps.\n*   **Cons:** The search filters for \"apartment vs. hotel\" can be clunky, and customer service for vacation rentals can get complicated because Booking.com acts strictly as a middleman.\n\n---\n\n### Part 2: How to Find a Good Host (and Avoid Scams)\n\nOnce you pick a platform, finding a great host comes down to knowing what to look for and reading between the lines. Follow this checklist:\n\n#### 1. Look for \"Superhost\" or \"Premier Host\" Status\n*   **Airbnb Superhosts** and **Vrbo Premier Hosts** have met strict criteria: high ratings, very low cancellation rates, and a proven track record of quick response times. *Always filter for these if you want peace of mind.*\n\n#### 2. Read the Reviews (Carefully)\n*   **Ignore the 5-star fluff:** Anyone can get a few good reviews from friends or easygoing guests. Read the **4-star and 3-star reviews** (if any exist)—they usually contain the most objective truth about noise, uncomfortable beds, or inaccurate descriptions.\n*   **Check the host’s profile history:** How long have they been hosting? Are they managing one property they care deeply about, or are they an anonymous corporate property management company with 150 listings? (Individual hosts usually offer more personalized hospitality; big companies are efficient but sterile).\n\n#### 3. Analyze Host Responsiveness\n*   Before booking, send the host a polite, simple question (e.g., *\"Hi [Name], is parking included, or do you have a recommendation for where to park?\"*). \n*   How fast do they reply? Are they polite? If they take 24 hours to respond *before* you give them money, imagine how hard they will be to reach if the toilet overflows during your stay.\n\n#### 4. Read the House Rules and Fine Print\n*   Good hosts are transparent. They will clearly outline quiet hours, pet policies, and potential quirks (e.g., *\"Third-floor walk-up, no elevator\"* or *\"We are in a rural area, so internet can occasionally be spotty\"*). \n*   If a listing has zero rules or sounds too good to be true, be cautious.\n\n#### 5. Watch Out for Red Flags\n*   **New listings with zero reviews:** These can be great deals, but they are also high risk. Only book a brand-new listing if you are willing to take a gamble for a discount.\n*   **Off-platform communication requests:** If a host asks you to pay outside the app, communicate via WhatsApp before booking, or wire money directly, **run away.** This is a scam. Keep all communication and payments *inside* the platform so you are protected by their refund and support policies.\n\n---\n\n### Summary Recommendation\n*   **Traveling with family to a beach/mountain house?** Use **Vrbo** and filter for Premier Hosts.\n*   **Going on a city break or looking for a cool apartment/unique stay?** Use **Airbnb** and filter for Superhosts.\n*   **Want ultimate flexibility (free cancellation) or a mix of hotels and apartments?** Check **Booking.com**.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

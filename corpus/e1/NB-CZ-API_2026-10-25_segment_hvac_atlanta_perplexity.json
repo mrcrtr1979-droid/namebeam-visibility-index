@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-10-25_segment_hvac_atlanta_perplexity",
+ "date_utc": "2026-10-25",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_29cea6c9-6609-4179-a340-653d91c340fa",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00064,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00441
+   },
+   "input_tokens": 5087,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4539,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 255,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5342
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Estes Services",
+  "The Air Company of GA",
+  "PV Heating, Cooling & Plumbing",
+  "PV Heating",
+  "AC replacement",
+  "NATE-certified",
+  "NATE",
+  "The Air Company"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.statonheatingandair.com/",
+  "https://www.theaircompanyga.com/tucker-hvac-service",
+  "https://www.estesair.com/",
+  "https://www.aireserv.com/locations/georgia/atlanta/",
+  "https://serviceagent.ai/directory/georgia/atlanta/hvac/replacement/",
+  "https://prosgrade.com/hvac/atlanta/the-air-company",
+  "https://cityvetted.com/best/best-hvac-atlanta",
+  "https://www.theaircompanyga.com/atlanta-hvac-service",
+  "https://atlantaexplored.com/air-conditioning-companies/",
+  "https://atlantatoprated.com/hvac/",
+  "https://profindr.com/top/hvac-atlanta-ga",
+  "https://atlantaexplored.com/air-conditioning-installers/",
+  "https://ai.moncriefair.com/services/HVAC/AC-Installation",
+  "https://www.expertise.com/home-improvement/hvac/georgia/atlanta",
+  "https://www.consumeraffairs.com/homeowners/hvac-repair-atlanta.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "99e7a971b99cc7fd1f17e7132bc1c3c9fc1f0f9b26260be5c1527ffb8ab1febc",
+ "answer_chars": 881,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}
