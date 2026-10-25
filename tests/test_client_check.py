@@ -166,6 +166,28 @@ def test_same_day_rerun_does_not_overwrite():
     assert cc.pick_run_dir(tmp, "2026-10-27") == base + "_r2"
 
 
+def test_aliases_count_as_exact_and_are_validated():
+    """2026-10-24 dry run: the engine wrote "Coolray" for client "Coolray Heating and Air";
+    the full-name match said no. An intake alias makes it an exact hit."""
+    text = "Many homeowners recommend Coolray (Atlanta-based) and Service Experts."
+    assert cc.client_named_exact("Coolray Heating and Air", text) is False
+    assert cc.client_named_exact("Coolray Heating and Air", text, ["Coolray"]) is True
+    assert cc.client_named_exact("Coolray Heating and Air", "Service Experts only.", ["Coolray"]) is False
+    import tempfile, os
+    bad = [{"check_id": "A-1", "client": "Coolray Heating and Air", "market": "Atlanta, GA",
+            "niche": "HVAC", "question": "best HVAC company in Atlanta", "aliases": ["Air"]}]
+    with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
+        json.dump(bad, f)
+    try:
+        try:
+            cc.load_items(f.name)
+            assert False, "short alias must be refused"
+        except ValueError:
+            pass
+    finally:
+        os.unlink(f.name)
+
+
 if __name__ == "__main__":
     fails = 0
     for name, fn in sorted(globals().items()):
@@ -177,3 +199,4 @@ if __name__ == "__main__":
                 fails += 1
                 print("FAIL", name, type(exc).__name__, exc)
     sys.exit(1 if fails else 0)
+
