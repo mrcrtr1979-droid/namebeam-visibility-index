@@ -20,6 +20,7 @@ Plain-language notes for a non-coder reading along:
 No secret is ever printed, logged, or written into a corpus row.
 """
 
+import hashlib
 import json
 import os
 import re
@@ -45,6 +46,17 @@ ROSTER_PATH = "roster/e1_roster.json"
 OUTPUT_DIR = "corpus/e1"
 RUN_CHANNEL = "api"
 SCHEMA_VERSION = "v4"
+
+# R82 (Terry 2026-10-24, RULINGS.md R82, option B): the raw answer text of Perplexity API rows and
+# of Google AI Overview rows is held in the private collector, not in this public repository.
+# Counts, named-business flags, SHA-256 hashes, dates and the OpenAI and Anthropic answer text stay
+# public. Reversible: PRIVATE_RAW=0 writes the text publicly again from the next run.
+PRIVATE_DIR = "private_e1"
+PRIVATE_RAW_ENGINES = ("perplexity",)
+RAW_POLICY = "R82 2026-10-24: raw text held in the private collector"
+# Full rows of this process, keyed by check_id, for rows redacted by write_row. The agreement row
+# needs the answer text, which the public file no longer carries.
+_FULL_IN_MEMORY = {}
 
 RUN_CHANNEL_CAVEAT = ("run_channel caveat: API results can differ from "
                       "logged-in consumer apps, no memory, no personalization.")
@@ -84,11 +96,48 @@ def next_run_index(date_utc, slug, engine):
     return "%s_r%d" % (base, n), n
 
 
+def _sha256_text(text):
+    if not text:
+        return ""
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def redact_for_public(row):
+    """Returns (public_copy, full_original). The public copy holds no raw text for the held
+    engines; hashes and counts come from the full text, which is computed before this runs and
+    is never altered. With PRIVATE_RAW set to anything but 1, nothing is redacted."""
+    if os.environ.get("PRIVATE_RAW", "1") != "1":
+        return dict(row), row
+    public = dict(row)
+    engine = row.get("engine")
+    if engine in PRIVATE_RAW_ENGINES:
+        text = row.get("answer_verbatim") or ""
+        public["answer_verbatim"] = ""
+        public["answer_sha256"] = _sha256_text(text)
+        public["answer_chars"] = len(text)
+        public["answer_private"] = True
+        public["raw_policy"] = RAW_POLICY
+    if engine == "google_serp" and "ai_overview_text" in row:
+        text = row.get("ai_overview_text") or ""
+        public["ai_overview_text"] = ""
+        public["ai_overview_sha256"] = _sha256_text(text)
+        public["ai_overview_chars"] = len(text)
+        public["ai_overview_private"] = True
+        public["raw_policy"] = RAW_POLICY
+    return public, row
+
+
 def write_row(row, check_id):
+    public, full = redact_for_public(row)
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     path = os.path.join(OUTPUT_DIR, check_id + ".json")
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(row, f, indent=1, ensure_ascii=False)
+        json.dump(public, f, indent=1, ensure_ascii=False)
+    if public.get("answer_private") or public.get("ai_overview_private"):
+        os.makedirs(PRIVATE_DIR, exist_ok=True)
+        with open(os.path.join(PRIVATE_DIR, check_id + ".json"), "w", encoding="utf-8") as f:
+            json.dump(full, f, indent=1, ensure_ascii=False)
+        _FULL_IN_MEMORY[check_id] = full
     return path
 
 
@@ -662,9 +711,11 @@ def _main():
                     print("rerun cell: %s %s (supersedes %s)" % (slugify(br["business"]), name, supersedes))
             path, good = run_engine(br, name, fn, date_utc, supersedes)
             if good:
-                import json as _j
+                # The public file for a redacted row has no answer text, so the agreement uses
+                # the full in-memory copy written by this run (see write_row).
                 with open(path, "r", encoding="utf-8") as _f:
-                    engine_rows.append(_j.load(_f))
+                    _disk = json.load(_f)
+                engine_rows.append(_FULL_IN_MEMORY.get(os.path.basename(path)[:-len(".json")], _disk))
             wrote += 1
             ok_n += 1 if good else 0
             fail_n += 0 if good else 1

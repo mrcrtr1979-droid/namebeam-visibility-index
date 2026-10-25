@@ -182,7 +182,20 @@ jobs:
           E1_ONLY_ENGINES: ${{ inputs.only_engines }}
           E1_ONLY_FAILED: ${{ inputs.only_failed }}
           E1_DATE_UTC: ${{ inputs.date_utc }}
+          # R82 (2026-10-24): Perplexity and AI Overview raw text goes to private_e1/, never to the
+          # public corpus. Set to 0 to write it publicly again.
+          PRIVATE_RAW: "1"
         run: python scripts/e1_runner.py
+
+      # R82: durable private storage needs a token for the private repo (hand H464, filed by the COS); until then this artifact is the bridge.
+      - name: Keep the private raw copy
+        if: ${{ always() && steps.guard.outputs.skip != 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: private-raw-${{ github.run_id }}
+          path: private_e1/
+          retention-days: 90
+          if-no-files-found: ignore
 
       # S1-1 (2026-10-08, [SONNET-RECORD-1008E-S1]): the daily sources dataset.
       # Writes datasets/e1/sources/sources_<date>.csv from the raw answers just
