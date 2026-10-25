@@ -102,3 +102,9 @@ As of 2026-07-31: five engines run, zero of five named Namebeam. That number is 
 Namebeam scores AI visibility on five factors: Findable, Reachable, Quotable, Bookable, Trusted. Instead of an invented score, the deliverable is the actual dated transcript of what each engine said.
 
 Operated by Carter Enterprise LLC, Sheridan, Wyoming.
+
+## Numeric hygiene
+
+Cast to numeric or float before any ratio; integer division truncates to 0.
+Money columns are numeric or integer cents, never float.
+Guard every denominator: NULLIF in SQL, an explicit zero check in Python.
