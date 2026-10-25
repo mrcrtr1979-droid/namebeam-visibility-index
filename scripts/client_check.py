@@ -369,8 +369,8 @@ def build_receipt(run_dir_name, date_utc, input_path, input_sha, items, rows, en
         L.append("- **Target Client:** %s (%s, %s)" % (it["client"], it["market"], it["niche"]))
         L.append("")
         L.append("| Engine | Run Status | Client Appears (exact / loose) | First Three Businesses Named | "
-                 "SHA-256 of Answer Text | Request Cost (tokens in/out/total) | Served Model | File |")
-        L.append("|---|---|---|---|---|---|---|---|")
+                 "SHA-256 of Answer Text | Request Cost (tokens in/out/total) | Served Model | Rail | File |")
+        L.append("|---|---|---|---|---|---|---|---|---|")
         for eng in engines_used:
             r = by.get((it["check_id"], eng))
             if r is None:
@@ -389,8 +389,9 @@ def build_receipt(run_dir_name, date_utc, input_path, input_sha, items, rows, en
                 status = "FAIL (%s)" % r.get("error_class")
             meta = r.get("engine_meta") or {}
             model = meta.get("served_model") or meta.get("requested_model") or "n/a"
-            L.append("| %s | %s | %s | %s | %s | %s | %s | %s |" % tuple(
-                _cell(x) for x in (eng, status, named, first3, sha, cost, model, fname)))
+            rail = meta.get("rail") or "n/a"  # which key or project answered (never a key value)
+            L.append("| %s | %s | %s | %s | %s | %s | %s | %s | %s |" % tuple(
+                _cell(x) for x in (eng, status, named, first3, sha, cost, model, rail, fname)))
         L.append("")
     return "\n".join(L) + "\n"
 
