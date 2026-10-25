@@ -46,6 +46,7 @@ SECRET_ENV_VARS = (
     "PERPLEXITY_API_KEY",
     "GEMINI_API_KEY",
     "GEMINI_API_KEY_FREE",
+    "GCP_SA_KEY",
     "BRIGHTDATA_API_KEY",
     "OPENAI_API_KEY",
     "ANTHROPIC_API_KEY",
@@ -305,6 +306,7 @@ def _gemini_rails(model, env=None, vertex_bearer=_vertex_bearer):
     if sa and project:
         token = vertex_bearer(sa)
         if token:
+            register_secret(token)  # minted at run time; scrubbed from every error string (COS 1024C, W1B fix c)
             rails.append(("vertex", GEMINI_VERTEX_URL % (location, project, location, model),
                           {"Content-Type": "application/json", "Authorization": "Bearer " + token}))
     paid = (env.get("GEMINI_API_KEY") or "").strip()

@@ -461,14 +461,15 @@ def build_receipt_repeats(run_dir_name, date_utc, input_path, input_sha, items, 
                 _cell(x) for x in (eng, t["text_exact"], t["text_loose"], t["answered"], t["failed"])))
         L.append("")
         L.append("| Engine | Run | Run Status | Client Appears (exact / loose) | First Three Businesses Named | "
-                 "SHA-256 of Answer Text | Request Cost (tokens in/out/total) | Served Model | File |")
-        L.append("|---|---|---|---|---|---|---|---|---|")
+                 "SHA-256 of Answer Text | Request Cost (tokens in/out/total) | Served Model | Rail | File |")
+        L.append("|---|---|---|---|---|---|---|---|---|---|")
         for eng in engines_used:
             for r in runs_by.get((it["check_id"], eng), []):
                 status, named, first3, sha, cost, model = _run_cells(r)
+                rail = (r.get("engine_meta") or {}).get("rail") or "n/a"  # which key or project answered (never a key value)
                 fname = answer_filename(it["check_id"], eng, r["run"])
-                L.append("| %s | %s | %s | %s | %s | %s | %s | %s | %s |" % tuple(
-                    _cell(x) for x in (eng, r["run"], status, named, first3, sha, cost, model, fname)))
+                L.append("| %s | %s | %s | %s | %s | %s | %s | %s | %s | %s |" % tuple(
+                    _cell(x) for x in (eng, r["run"], status, named, first3, sha, cost, model, rail, fname)))
         L.append("")
     return "\n".join(L) + "\n"
 
