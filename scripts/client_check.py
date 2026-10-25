@@ -69,12 +69,16 @@ CHECK_ID_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,80}$")
 _STOP = {"the", "and", "of", "llc", "inc", "pc", "co", "corp", "ltd", "a", "an"}
 
 FIRST_THREE_NOTE = (
-    "first_three_named: the record's name extractor (scripts/e1_runner.py "
-    "extract_competitors, client NOT excluded), ordered by first appearance in the "
-    "answer; names that are only the market's place (city or state) or that sit "
-    "inside a longer name in the same list are dropped. Mechanical, not a human "
-    "read: headings and look-alike names can slip through. competitors_mentioned "
-    "is the record's own field (client excluded) and is not altered by this rule.")
+    "first_three_named: the first three businesses the answer names, ordered by first "
+    "appearance. Built from the record's name extractor (scripts/e1_runner.py "
+    "extract_competitors) plus numbered headings, then filtered: place names, headings and "
+    "generic phrases, sentence fragments, directories and utilities, and equipment "
+    "manufacturers listed as brands (Carrier, Trane, Lennox and similar) are dropped, and so "
+    "is a name that sits inside a longer name in the same list. The client, or an intake "
+    "alias, is listed in its position when the answer names it. Mechanical, not a human "
+    "read: an unusual business name can be missed and a look-alike can slip through. "
+    "competitors_mentioned is the record's own field (client excluded) and is not altered "
+    "by this rule.")
 
 
 # ---------------------------------------------------------------- input
@@ -155,31 +159,196 @@ def _business_row(client, extra_variants=None):
     return {"business": client, "variants_business_name_forms": list(extra_variants or [])}
 
 
-def first_three_named(text, sources, market, date_utc):
-    names = e1_runner.extract_competitors(_business_row(""), text, sources, date_utc, None)
-    low = (text or "").lower()
-    place = set()
-    for part in re.split(r"[,]", market or ""):
-        p = _norm(part)
-        if p:
-            place.add(p)
-    place.add(_norm(market))
-    keep = []
-    for n in names:
-        nn = _norm(n)
-        if not nn or nn in place:
+# ---- first_three_named: a business filter on top of the record's extractor.
+# The record's extractor (e1_runner.extract_competitors) is NOT changed. This block only
+# filters its output and adds a few candidates it does not see (numbered headings, a
+# longer "X Heating & Air" form, the client or an intake alias when named in the text).
+# Rule of thumb: when unsure whether a phrase is a business, drop it; never invent a name.
+
+_CONNECTORS = {"and", "of", "the", "&", "de", "la", "du", "van", "von"}
+# lone/headline words that never make a business name on their own
+_GENERIC = set("""
+homeowners homeowner companies company contractors contractor replacement replacements conditioning
+factory authorized authorised certified dealer dealers installer installers services service
+favorites favourites favorite tips tip search questions question warranties warranty matter matters
+reviews review quotes quote rebates rebate season calculation load furnace furnaces hvac heating
+cooling air plumbing roofing repair installation system systems options option best top local
+well well-established established metro greater area areas county suburbs intown downtown midtown
+north south east west northern southern eastern western central general key note notes next step
+steps summary why what how when which who where expect look need needs ask about check get read
+verify confirm insist compare choose find call make consider avoid require prefer request
+brands brand equipment energy efficient credit credits improvement home price pricing cost costs
+red flags flag process timeline typical credentials experience licensed insured
+""".split())
+# a first word like these makes the phrase an instruction or heading, not a name
+_LEAD_VERBS = set("""
+get check ask read verify confirm insist compare choose find call make consider avoid require
+prefer request look expect compare tips tip why what how when which who where do does don't
+is are be this that these those there here your you i'd i'll we it its they their
+""".split())
+# words that mark a service business name (a name needs one more, distinctive, word besides these)
+_BIZ = set("""
+heating cooling air plumbing roofing roofers electric electrical mechanical services service systems
+company contractors contractor construction restoration solutions group law firm attorneys lawyers
+partners associates remodeling exteriors builders conditioning hvac comfort design inc llc llp pllc
+pc co corp ltd
+""".split())
+_MFR_PHRASES = ["american standard", "owens corning", "day & night", "day and night", "carrier",
+                "trane", "lennox", "rheem", "ruud", "goodman", "daikin", "york", "bryant", "gaf",
+                "certainteed", "amana", "mitsubishi"]
+_MFR_FILLER = set("""dealer dealers authorized authorised factory certified installer installers
+comfort specialist specialists elite master contractor brand brands equipment systems and""".split())
+# directories, utilities, standards bodies and local areas that are not competitors
+_NOT_BUSINESS_PHRASES = {"georgia power", "atlanta gas light", "cobb emc", "north fulton",
+                         "better business bureau", "consumer reports", "energy star",
+                         "angie's list", "angies list"}
+_NOT_BUSINESS_WORDS = {"google", "yelp", "angi", "bbb", "kudzu", "nextdoor", "facebook",
+                       "homeadvisor", "thumbtack", "reddit", "nate", "ahri", "epa", "gwinnett",
+                       "dekalb", "fulton", "cobb", "cherokee", "forsyth"}
+_ABBREV = r"(?:St|Mt|Mr|Mrs|Ms|Dr|Co|Inc|Ltd|Jr|Sr|No|Ft|vs)"
+_SENTENCE_BREAK = re.compile(r"\b(?!%s\b)[A-Za-z]{2,}[.!?]\s+\S" % _ABBREV)
+_TITLE_TOKEN = re.compile(r"^[A-Z0-9][A-Za-z0-9'&.]*(?:-[A-Z0-9][A-Za-z0-9']*)*$")
+_NUM_HEADING = [
+    re.compile(r"^\s{0,3}#{1,6}\s*\d+[.)]\s+(.+?)\s*#*\s*$", re.M),
+    re.compile(r"^\s*\*\*\d+[.)]\s+(.+?)\*\*", re.M),
+]
+_BIZ_TAIL = re.compile(r"\s*&\s*(?:Air|Cooling|Plumbing|Heating|Electric|Roofing)(?:\s+Conditioning)?\b")
+
+
+def _tokens(name):
+    return [t for t in re.split(r"[\s,;/]+", name) if t]
+
+
+def _clean_candidate(name):
+    n = " ".join(str(name).replace("*", " ").replace("_", " ").split())
+    n = re.sub(r"\s+[-\u2013\u2014]\s+.*$", "", n)      # "Name - descriptor"
+    n = re.sub(r"\s*\([^)]*\)\s*$", "", n)               # trailing "(Atlanta-based)"
+    return n.strip(" \t:-.,")
+
+
+def _place_words(market):
+    words = set()
+    for part in re.split(r",", market or ""):
+        for w in _norm(part).split():
+            words.add(w)
+    place = getattr(e1_runner, "_PLAIN_PLACES", set())
+    for p in place:
+        for w in _norm(p).split():
+            words.add(w)
+    return words
+
+
+def _is_manufacturer_only(name):
+    low = " " + name.lower().replace("/", " ").replace(";", " ").replace(",", " ") + " "
+    for m in sorted(_MFR_PHRASES, key=len, reverse=True):
+        low = re.sub(r"(?<![a-z])%s(?![a-z])" % re.escape(m), " ", low)
+    rest = [w for w in re.split(r"[\s&]+", low) if w and w not in _MFR_FILLER and w != "and"]
+    had = low.strip() != name.lower().strip()
+    return had and not rest
+
+
+def _business_like(name, city_norm, place_words):
+    """True when `name` reads as a local business. Conservative: unsure means False."""
+    n = _clean_candidate(name)
+    if not n or len(n) < 3 or len(n) > 80:
+        return False
+    if re.search(r"[:;?!\"\u201c\u201d]", n) or "\n" in n or _SENTENCE_BREAK.search(n):
+        return False
+    toks = _tokens(n)
+    if not toks or re.search(r"(?:^|\s)\d+(?:-\d+)?(?=\s|$)", n):
+        return False
+    lows = [t.lower().strip(".,'") for t in toks]
+    if lows[0] in _LEAD_VERBS:
+        return False
+    if _is_manufacturer_only(n):
+        return False
+    nn = _norm(n)
+    if nn in _NOT_BUSINESS_PHRASES or any(w in _NOT_BUSINESS_WORDS for w in nn.split()):
+        return False
+    for t, lw in zip(toks, lows):
+        if lw in _CONNECTORS:
             continue
+        if not _TITLE_TOKEN.match(t):
+            return False
+    words = [w for w in nn.split() if w not in _CONNECTORS and w != "and"]
+    if not words:
+        return False
+    has_biz = any(w in _BIZ for w in words)
+    distinct = [w for w in words if w not in _GENERIC and w not in _BIZ and w not in place_words]
+    if not distinct:
+        # "The Air Company": a business word pair led by "The" is a name; a lone word or heading is not
+        if not (lows[0] == "the" and has_biz and len(words) >= 2):
+            return False
+    if city_norm and nn.split()[0] == city_norm.split()[0] and not has_biz:
+        return False                    # "Atlanta for Furnace Replacement", "Atlanta. They"
+    if not has_biz and len(words) > 4:
+        return False                    # a long capitalised phrase with no business word
+    return True
+
+
+def _extra_candidates(text):
+    """Names the record's extractor does not return: numbered headings such as
+    "### 1. Conditioned Air Systems" or "**1. Cool Air Design**"."""
+    out = []
+    for rx in _NUM_HEADING:
+        for m in rx.finditer(text or ""):
+            out.append(m.group(1))
+    return out
+
+
+def _extend_tail(name, text):
+    """Extend "One Hour Heating" to "One Hour Heating & Air" when the answer itself writes it."""
+    m = re.search(re.escape(name) + _BIZ_TAIL.pattern, text or "")
+    return text[m.start():m.end()] if m else name
+
+
+def first_three_named(text, sources, market, date_utc, client=None, aliases=None):
+    """The first three businesses an answer names, in order of first appearance. The record's
+    extractor feeds it; this filters out places, headings, generic phrases, equipment
+    manufacturers listed as brands and sentence fragments, and shows the client (or an intake
+    alias) in its position when the answer names it. A name that is not in the answer text
+    is never returned."""
+    text = text or ""
+    raw = list(e1_runner.extract_competitors(_business_row(""), text, sources, date_utc, None))
+    raw += _extra_candidates(text)
+    low = text.lower()
+    city = _norm((market or "").split(",")[0])
+    place_words = _place_words(market)
+    keep = []
+    seen = set()
+    for n in raw:
+        n = _extend_tail(_clean_candidate(n), text)
+        key = _norm(n)
+        if not key or key in seen:
+            continue
+        if not _business_like(n, city, place_words):
+            continue
+        seen.add(key)
         keep.append(n)
-    # drop a name that sits inside a longer name in the same list
+    own = []
+    for c in [client] + list(aliases or []):
+        c = (c or "").strip()
+        if not c or _norm(c) in {_norm(o) for o in own}:
+            continue
+        m = re.search(r"(?<!\w)" + re.escape(c) + r"(?!\w)", text, re.I)
+        if m:
+            own.append(text[m.start():m.end()])
+    own_keys = {_norm(o) for o in own}
+    keep = [n for n in keep if _norm(n) not in own_keys] + own
+    # position of a name: its first appearance, or the first appearance of a shorter form inside it
+    def contains(longer, shorter):
+        return longer != shorter and (" " + shorter + " ") in (" " + longer + " ")
+    pos = {}
+    for n in keep:
+        p = low.find(n.lower())
+        pos[_norm(n)] = p if p >= 0 else 10 ** 9
     final = []
     for n in keep:
         nn = _norm(n)
-        if any(m is not n and nn != _norm(m) and (" " + nn + " ") in (" " + _norm(m) + " ")
-               for m in keep):
+        if any(contains(_norm(m), nn) for m in keep):
             continue
         final.append(n)
-    order = sorted(range(len(final)),
-                   key=lambda i: (low.find(final[i].lower()) if final[i].lower() in low else 10 ** 9, i))
+    order = sorted(range(len(final)), key=lambda i: (pos[_norm(final[i])], i))
     return [final[i] for i in order][:3]
 
 
@@ -279,7 +448,8 @@ def run_one(item, engine, fn, date_utc, run_index=1, repeats=1):
         "answer_sha256": sha256_text(text),
         "client_named": client_named_exact(item["client"], text, item.get("aliases")),
         "client_named_loose": client_named_loose(item["client"], text),
-        "first_three_named": first_three_named(text, sources, item["market"], date_utc),
+        "first_three_named": first_three_named(text, sources, item["market"], date_utc,
+                                               item["client"], item.get("aliases")),
         "session_note": e1_runner.RUN_CHANNEL_CAVEAT,
     })
     return row
