@@ -96,6 +96,10 @@ def load_items(path):
         if not CHECK_ID_RE.match(it["check_id"]):
             raise ValueError("item %d check_id %r has characters outside A-Za-z0-9._-"
                              % (i, it["check_id"]))
+        aliases = it.get("aliases")
+        if aliases is not None:
+            if (not isinstance(aliases, list) or not all(isinstance(a, str) and len(a.strip()) >= 4 for a in aliases)):
+                raise ValueError("item %d aliases must be a list of names of 4 or more characters" % i)
         if it["check_id"] in seen:
             raise ValueError("duplicate check_id %r" % it["check_id"])
         seen.add(it["check_id"])
@@ -114,9 +118,16 @@ def _stem(w):
     return w[:-1] if len(w) > 3 and w.endswith("s") else w
 
 
-def client_named_exact(client, text):
-    """Exact string match, case-insensitive. Same rule as the AG-PPLX-AGENCY-CHECK file."""
-    return bool(client) and bool(text) and client.lower() in text.lower()
+def client_named_exact(client, text, aliases=None):
+    """Exact string match, case-insensitive. Same rule as the AG-PPLX-AGENCY-CHECK file.
+    aliases (optional, from intake): other names buyers use for the same business, for
+    example "Coolray" for "Coolray Heating and Air". The 2026-10-24 dry run showed why:
+    an engine wrote "Coolray" and the full-name match said no. Each alias is matched the
+    same way as the client name and must be 4 or more characters (checked at load)."""
+    if not client or not text:
+        return False
+    low = text.lower()
+    return any(n.strip().lower() in low for n in [client] + list(aliases or []) if n and n.strip())
 
 
 def client_named_loose(client, text):
@@ -266,7 +277,7 @@ def run_one(item, engine, fn, date_utc, run_index=1, repeats=1):
         "factor_scores": None,
         "answer_verbatim": text,
         "answer_sha256": sha256_text(text),
-        "client_named": client_named_exact(item["client"], text),
+        "client_named": client_named_exact(item["client"], text, item.get("aliases")),
         "client_named_loose": client_named_loose(item["client"], text),
         "first_three_named": first_three_named(text, sources, item["market"], date_utc),
         "session_note": e1_runner.RUN_CHANNEL_CAVEAT,
@@ -427,7 +438,7 @@ def build_receipt_repeats(run_dir_name, date_utc, input_path, input_sha, items, 
              "_run<k> before .json." % (repeats, repeats))
     L.append("- Named in k of N runs: counted over the runs that returned an answer. A run that FAILED is "
              "counted as failed and never as not named; when any run failed the line says so.")
-    L.append("- Client Appears in Answer: exact = the client string, case-insensitive, in the answer. "
+    L.append("- Client Appears in Answer: exact = the client string, or any alias given at intake, case-insensitive, in the answer. "
              "loose = punctuation-insensitive match or every distinctive word on one line; a human "
              "confirms it. " + FIRST_THREE_NOTE)
     L.append("- Request Cost: tokens as returned by the engine (in / out / total), per run. No price is applied here.")
