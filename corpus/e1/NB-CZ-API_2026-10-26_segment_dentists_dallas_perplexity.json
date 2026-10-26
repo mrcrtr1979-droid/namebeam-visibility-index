@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-10-26_segment_dentists_dallas_perplexity",
+ "date_utc": "2026-10-26",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_34a1aaf9-3fc4-400b-923b-531374064885",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0046
+   },
+   "input_tokens": 5050,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4504,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 331,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5381
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Sheena Allen at Dallas Dental Arts",
+  "Dr. Rowan Buskin at Dallas Prosthodontics",
+  "Dr. David McFadden",
+  "The Dental Implant Center",
+  "W. Lovers Lane",
+  "Dr. Sheena Allen",
+  "Dallas Dental Arts",
+  "Dr. Rowan Buskin",
+  "Dallas Prosthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.dentalimplantcenter.com/our-practice/",
+  "https://www.dentalimplantcenter.com/",
+  "https://www.dentalimplantcenter.com/about-dr-david-mcfadden/",
+  "https://www.dallasprosthodontics.com/p/Sitemap-p.asp",
+  "https://aedit.com/provider/elias-kontogiorgos-8210",
+  "https://www.dallasdentalimplantcenter.com/faq/",
+  "https://dallasddspecialists.com/",
+  "https://www.prosthodontics.org/contact/",
+  "https://www.dentalimplantcenter.com/videos/full-mouth-implant-options-help-with-self-diagnosing-which-you-qualify-for/",
+  "https://www.gotoapro.org/",
+  "https://www.dallasdentalspa.com/single-tooth-replacement",
+  "https://85b.org/best-dental-implant-specialists-dallas-2026/",
+  "https://www.dentalimplantcenter.com/videos/dental-implant-bridge-designs-which-is-best-over-vs-in/",
+  "https://www.dentalimplantcenter.com/videos/out-of-town-dental-implant-treatment/",
+  "https://www.dentalimplantcenter.com/videos/25-amazing-dental-implant-bridge-cases-part-2/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9bbb1700ab3770a46fe86344a08ba630f9f072d13fe9c70c33ba6dd85a4ce20a",
+ "answer_chars": 1143,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

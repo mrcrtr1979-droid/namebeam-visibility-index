@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-26_segment_real_estate_agents_west_palm_beach_perplexity",
+ "date_utc": "2026-10-26",
+ "business": "SEGMENT: real estate agents, West Palm Beach",
+ "niche": "real estate agents",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in West Palm Beach FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_46c398c1-afdd-4912-857c-11c1c5aae8e5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00086,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00452
+   },
+   "input_tokens": 4633,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4082,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 344,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4977
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jeff Tricoli Team",
+  "Jeff Tricoli"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.realtor.com/realestateagents/59422cf3c6f71f00120ec980",
+  "https://www.realtor.com/realestateagents/Stephanie-Heist_West-Palm-Beach_FL_1966984_193384327",
+  "https://www.realtor.com/realestateagents/west-palm-beach_fl",
+  "https://www.realtor.com/realestateagents/5939745c2fe13a00122b9133",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/west-palm-beach-fl/",
+  "https://www.realtor.com/realestateagents/56c8fc657e54f7010022ffa3",
+  "https://www.realtor.com/realestateagents/56bb98c089a68901006d559d",
+  "https://www.realtor.com/realestateagents/West-Palm-Beach_FL",
+  "https://www.realtor.com/realestateagents/57c65217bdef5501007b1241",
+  "https://www.realtor.com/realestateagents/56cd0f1ebb954c01006daafc",
+  "https://www.realtor.com/realestateagents/5b7ed479f447c3001131965c",
+  "https://www.realtor.com/realestateagents/___914783",
+  "https://www.realtor.com/realestateagents/5b53cc0f6e3c590012a4fa4f",
+  "https://www.realtor.com/realestateagents/5673ce3abb954c010067ed78",
+  "https://www.realtor.com/realestateagents/5ecafe538ed98700119554cf"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "993c6c269e24e6c092e6b00fd44811f24fae0de87d8bd5756b7e99f5e18deacf",
+ "answer_chars": 1121,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

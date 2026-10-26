@@ -1,0 +1,110 @@
+{
+ "check_id": "NB-CZ-API_2026-10-26_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-10-26",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e812a624-bdea-4bab-854a-8b5938c4c79b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00086,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0018,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0053
+   },
+   "input_tokens": 3994,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3442,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 721,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4715
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Capitola Village",
+  "Aptos / Rio del Mar",
+  "Santa Cruz",
+  "Davenport and the north coast",
+  "Felton and the redwoods",
+  "Oceanview Bungalow With Hot Tub",
+  "Pick the area first",
+  "Compare the full price",
+  "Read recent reviews closely",
+  "Check rules and legitimacy",
+  "Book with clear protections",
+  "Capitola Nook Along the Creek",
+  "Capitola Village Beach",
+  "Aptos",
+  "Mar",
+  "Seacliff and Rio",
+  "Boardwalk",
+  "West Cliff",
+  "East Cliff",
+  "Beach House Overlooking Seacliff State Park",
+  "Rio Del Mar Beach",
+  "Capitola",
+  "Seacliff",
+  "Davenport",
+  "Felton",
+  "Rio Del Mar"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://cdi.santacruzcountyca.gov/UPC/DiscretionaryPermitsZoning/DiscretionaryPermits/HostedRentals.aspx",
+  "https://www.vrbo.com/vacation-rentals/usa/california/central-coast/santa-cruz",
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Ordinance%205497%20Short-Term%20Rentals.pdf",
+  "https://www.airbnb.com/aptos-ca/stays/apartments",
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Sample%20Hosted%20Rental%20agreement%20(2).docx",
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Vacation%20Rental%20Ord-%20BoS%20Approved%201-26-2021.pdf",
+  "https://www.airbnb.com/capitola-ca/stays/apartments",
+  "https://www2.santacruzcountyca.gov/planning/plnmeetings/PLNSupMaterial/Zoning/Agendas/2025/20250221/004.pdf",
+  "https://www.airbnb.com/santa-cruz-county-ca/stays/apartments",
+  "https://www.airbnb.com/capitola-beach-ca/stays/apartments",
+  "https://www.expedia.com/Davenport-Private-Vacation-Homes.d6085019-aaPrivateVacationHomes.Travel-Guide-Accommodation",
+  "https://www.airbnb.com/capitola-ca/stays/beachfront",
+  "https://www.travelocity.com/Destinations-In-Santa-Cruz-County.d553248635996998000.Vacation-Rental-Destinations",
+  "https://www.hometogo.com/aptos/",
+  "https://www.airbnb.com/capitola-ca/stays"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "767b3cd7801d10d395adf66d30b776b2d8ac6a3dce459ae9dc213a7506b40a0c",
+ "answer_chars": 2897,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

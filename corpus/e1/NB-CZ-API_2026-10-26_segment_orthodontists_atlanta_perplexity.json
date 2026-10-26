@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-10-26_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-10-26",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_418fda67-ca9a-4906-95f4-ee2db2a0ff22",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00095,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0047
+   },
+   "input_tokens": 4986,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4439,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 379,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5365
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Harris Orthodontics",
+  "West Paces Ferry Orthodontics",
+  "Buckhead Orthodontics",
+  "Atlanta Orthodontic Specialists",
+  "Dr. Peyton Harris",
+  "Invisalign",
+  "Marietta St NW",
+  "Practice",
+  "West Paces Ferry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://atlantaortho.com/services/braces/",
+  "https://atlantaortho.com/",
+  "https://atlantaortho.com/services/invisalign/",
+  "https://atlantaortho.com/services/",
+  "https://drwrightortho.com/location/orthodontist-in-atlanta-ga/",
+  "https://harrisorthodonticsatl.com/",
+  "https://www.westpacesferryortho.com/",
+  "https://www.buckheadorthodontics.com/",
+  "https://artemisorthoatlanta.com/",
+  "https://dforthodon.com/",
+  "https://atlantaortho.com/faqs/",
+  "https://www.elitesmileschastain.com/",
+  "https://www.peachdentalatl.com/services/cosmetic-dentistry/orthodontics",
+  "https://poncedentalstudio.com/orthodontics/",
+  "https://chamblee-orthodontics.com/services/invisalign/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "c608ab48957ca7f3d169e97b77ad70daa996467c016bea6b5f1ed4e74b0ccdb8",
+ "answer_chars": 1398,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

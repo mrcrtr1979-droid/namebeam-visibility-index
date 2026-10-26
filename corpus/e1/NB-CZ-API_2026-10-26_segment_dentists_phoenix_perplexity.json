@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-10-26_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-10-26",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_34bfb196-c79b-482c-bc90-ff2362235bec",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 5045,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4499,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 299,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5344
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Arizona Periodontal Group",
+  "Dr. Michael Rosen",
+  "Brighter Way Dental Center",
+  "American Board of Oral Implantology",
+  "Implant Dentistry",
+  "Practice",
+  "Dr. Ariel Trujillo"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.brighterwaydentalcenter.org/providers/dr-michael-rosen",
+  "https://www.periodontistphoenix.com/reviews/",
+  "https://www.prosmileaz.com/",
+  "https://doctor.webmd.com/providers/specialty/prosthodontics/arizona/phoenix",
+  "https://doctor.webmd.com/providers/specialty/periodontics/arizona/phoenix",
+  "https://www.clearchoice.com/locations/az/phoenix/20830-north-tatum-blvd/",
+  "https://www.brighterwaydentalcenter.org/faq",
+  "https://www.prosmileaz.com/about/",
+  "https://doctor.webmd.com/providers/specialty/prosthodontics/arizona",
+  "https://azperio.com/dental-implants/",
+  "https://www.scottsdale-smiles.com/team/doctors/",
+  "https://dentalspecialtyassociates.com/services/oral-surgery/",
+  "https://www.prosmileaz.com/thank-you/",
+  "https://www.dentistsranked.com/dental-services/dental-implants-phoenix-az",
+  "https://www.myspecialtydentist.com/best/prosthodontics/phoenix"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "7ca39cf6111204d35f7aeb0e3ff0c6e7249a44b7aa635e6f9625aeae583da9bc",
+ "answer_chars": 976,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

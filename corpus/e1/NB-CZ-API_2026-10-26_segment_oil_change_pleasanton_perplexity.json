@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-26_segment_oil_change_pleasanton_perplexity",
+ "date_utc": "2026-10-26",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3e326a3c-0c2d-4247-9fa8-de6e61fea87d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00042,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00417
+   },
+   "input_tokens": 4993,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4444,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 168,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5161
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "SpeeDee Oil Change & Auto Service",
+  "SpeeDee Oil Change",
+  "Auto Service",
+  "SpeeDee"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.speedeeoil.com/locations/ca/pleasanton/44-mission-dr/",
+  "https://www.carfax.com/Auto-Repair-Pleasanton-CA_c12173",
+  "https://locations.thetirechoice.com/ca/pleasanton/4216-rosewood-rd",
+  "https://www.speedeeoil.com/locations/ca/milpitas/635-trade-zone-blvd/",
+  "https://maps.apple.com/place?place-id=I232A35B8DE3B2CE4",
+  "https://www.diamondcertified.org/category/auto-oil-change/ca/pleasanton/",
+  "https://www.carfax.com/Auto-Repair-Livermore-CA_c23539",
+  "https://www.yelp.com/biz/speedee-oil-change-and-auto-service-pleasanton",
+  "https://www.carfax.com/Reviews-Walmart-Auto-Care-Center-Pleasanton-CA_NMXGCLXADQ",
+  "https://www.yourmechanic.com/city/pleasanton-ca",
+  "https://www.autotronservicecenter.com/about-us",
+  "https://autorepairscore.com/ca/pleasanton",
+  "https://business.google.com/v/_/AKsrIN3s5C3yBrEmXwX5YqSNMZth9QBNv3Tdcfekc2SOc-fdWrBWQueP2cj0/bff3/_",
+  "https://www.bbb.org/us/ca/pleasanton/profile/lube-service/oil-changers-1116-13682/complaints",
+  "https://www.bbb.org/us/ca/pleasanton/profile/lube-service/oil-changers-1116-13682"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "eb61f1ed941aae032874b706c0913276f8d2e1c4debbfe1e87a20f32a4385f66",
+ "answer_chars": 415,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

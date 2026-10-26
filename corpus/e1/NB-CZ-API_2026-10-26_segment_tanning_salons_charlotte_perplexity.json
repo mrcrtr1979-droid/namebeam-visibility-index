@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-26_segment_tanning_salons_charlotte_perplexity",
+ "date_utc": "2026-10-26",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "niche": "tanning salons",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_76e13275-f347-4450-bdc8-b2ff48eb548e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00118,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00053,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00435
+   },
+   "input_tokens": 5282,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4738,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 213,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5495
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Gorgeous GLO Beauty Bar",
+  "Palm Beach Tan",
+  "SouthPark",
+  "Gorgeous GLO"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://palmbeachtan.com/locations/nc/charlotte-providence-arboretum",
+  "https://palmbeachtan.com/locations/NC/Charlotte-East-WT-Harris-Boulevard",
+  "https://noshadespraytanning.com/book-now",
+  "https://trustanalytica.org/us/nc/charlotte/best-tanning-salons",
+  "https://noshadespraytanning.com/about",
+  "https://palmbeachtan.com/locations/nc/charlotte-east-woodlawn-road",
+  "https://www.yelp.com/biz/botanical-tans-charlotte-2",
+  "https://www.fresha.com/lp/en/bt/tanning-studios/in/us-charlotte",
+  "https://trustanalytica.org/us/nc/best-tanning-salons",
+  "https://organicbronzebar.com/southpark/",
+  "https://palmbeachtan.com/locations/nc/charlotte-john-j-delaney-drive",
+  "https://maps.apple.com/place?place-id=I9845192F39EFC11F",
+  "https://reviews.birdeye.com/palm-beach-tan-173507733714704",
+  "https://www.yelp.com/biz/gorgeousglo-beauty-bar-charlotte",
+  "https://reviews.birdeye.com/d/tanning/charlotte-nc/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "5d87a8b0718bedbc1b7c9532bcf9f95c23a554af7c2a2b09fbd7f7307975db6f",
+ "answer_chars": 619,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

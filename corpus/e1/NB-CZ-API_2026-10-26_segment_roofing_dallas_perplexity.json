@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-26_segment_roofing_dallas_perplexity",
+ "date_utc": "2026-10-26",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5f9961fd-9d8d-4eaf-b732-4d6197147630",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00056,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00426
+   },
+   "input_tokens": 4778,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4231,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 225,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5003
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Shepherd Roofing & Renovations",
+  "Results Roofing",
+  "Shepherd Roofing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.desmoinesregister.com/press-release/story/125947/new-view-roofing-named-best-overall-dallas-roofing-company-by-yahoo-local",
+  "https://ratingsnearme.com/dallas-tx/experienced-roofers",
+  "https://www.roofingdalco.com/",
+  "https://dallastoprated.com/roofing/",
+  "https://dfwprofessionals.com/dallas/roofing-contractor",
+  "https://cityvetted.com/best/best-roofing-dallas",
+  "https://www.roofingdalco.com/roof-replacement-in-dallas-texas/",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/pa/dallas",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/ga/dallas",
+  "https://serviceagent.ai/directory/texas/dallas/roofing/replacement/",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/tx/dallas",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/wi/dallas",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/or/dallas",
+  "https://bluehammerroofing.com/areas-served/dallas/",
+  "https://theroofingbrief.com/best-roofers-dallas-tx/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "93660d828e9367dd7911ea1b98e336f01d7d3906a5b57860d5ea66a3f8acd9f8",
+ "answer_chars": 749,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

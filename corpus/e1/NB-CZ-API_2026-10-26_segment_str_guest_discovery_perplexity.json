@@ -1,0 +1,97 @@
+{
+ "check_id": "NB-CZ-API_2026-10-26_segment_str_guest_discovery_perplexity",
+ "date_utc": "2026-10-26",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_23eae750-2330-441d-81c6-28b8c3bf2935",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00137,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00508
+   },
+   "input_tokens": 4841,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4279,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 546,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5387
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "Vrbo",
+  "Booking.com",
+  "Before booking, compare the final checkout total",
+  "Read recent reviews closely",
+  "Check the host’s track record",
+  "Ask a practical question before booking",
+  "Check that the listing makes sense",
+  "Keep messages and payment on the platform",
+  "Save the listing and terms",
+  "Quick rule",
+  "Keep",
+  "Booking.com. Then"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.quorumfcu.org/learn/dont-get-caught-in-a-vacation-rental-scam",
+  "https://www.lilachbullock.com/vrbo-vs-airbnb/",
+  "https://hospitable.com/vrbo-vs-airbnb",
+  "https://www.shopback.com/blog/travel/airbnb-vs-vrbo-vs-booking-vacation-rentals-us-2026",
+  "https://www.firstbankweb.com/blog/post/vacation-rental-scam-checklist-how-to-spot-red-flags-before-you-pay",
+  "https://consumer.ftc.gov/articles/rental-listing-scams",
+  "https://www.houfy.com/blog/best-vacation-rental-websites-2026-fee-comparison",
+  "https://beatofhawaii.com/airline-refunded-them-hawaii-vacation-rental-kept-12000/",
+  "https://www.houfy.com/blog/cheap-alternatives-to-airbnb-that-work-in-2026",
+  "https://skift.com/2026/09/29/vrbo-to-double-commissions-as-it-plays-catch-up-to-airbnb/",
+  "https://chargeautomation.com/best-short-term-rental-platform/",
+  "https://www.lodgify.com/blog/airbnb-vs-vrbo/",
+  "https://www.cnb.com/personal-banking/insights/vacation-rental-scams.html",
+  "https://www.acfe.com/acfe-insights-blog/blog-detail?s=ways-to-avoid-vacation-rental-scams",
+  "https://www.afar.com/magazine/airbnb-scams-how-to-avoid-them-and-find-legit-rentals?link_source=ta_first_comment&taid=677326a676995a0001f97e46"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "640122585aa71338f2a7e2ea4477546ee22c23cfd0f8f96e8a05cbe07646d28a",
+ "answer_chars": 2236,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

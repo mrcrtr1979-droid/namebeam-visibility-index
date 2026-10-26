@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-10-26_segment_title_companies_st_louis_perplexity",
+ "date_utc": "2026-10-26",
+ "business": "SEGMENT: title companies, St. Louis",
+ "niche": "title companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Louis MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_2284f7d5-3998-4eee-9170-a89731aba3cb",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00056,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0042
+   },
+   "input_tokens": 4548,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3999,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 223,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4771
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Investors Title Company",
+  "Home Title",
+  "Freedom Title",
+  "Community Title Services",
+  "St. Louis-area",
+  "Investors Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://insurance.mo.gov/sites/insurance/files/2026-08/Consumer%20Guide%20to%20Title%20Insurance.pdf",
+  "https://www.investors-title.com/",
+  "https://hometitlestl.com/",
+  "https://www.stltitle.com/services/closing-escrow",
+  "https://freedom-title.com/",
+  "https://www.oldrepublictitle.com/missouri/",
+  "https://securitytitlestl.com/",
+  "https://ctitleservices.com/about/",
+  "https://hometitlestl.com/our-team/",
+  "https://www.archcitytitle.com/who-we-are/",
+  "https://ctitle.com/locations/",
+  "https://www.legacytitlestl.com/",
+  "https://freedom-title.com/services",
+  "https://www.us-title.com/",
+  "https://titlepartnersagency.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "28eeb4f6293065dc7125df7180c5c60842f8a61cc62270bc581e89269f4586e6",
+ "answer_chars": 723,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

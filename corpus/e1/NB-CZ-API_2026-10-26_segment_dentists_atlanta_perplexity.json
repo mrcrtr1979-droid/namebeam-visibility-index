@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-26_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-10-26",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_487c7631-246c-4610-a516-9de1b3ce0189",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00064,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00432
+   },
+   "input_tokens": 4715,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4169,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 255,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4970
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atlanta Center for Advanced Periodontics",
+  "Georgia Prosthodontics",
+  "Dr. Brock Pumphrey"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.drevangrodin.com/dental-implants/",
+  "https://georgiaprosthodontics.com/",
+  "https://georgiaprosthodontics.com/dr-kim/",
+  "https://www.prosatl.com/page/about-us/",
+  "https://georgiaprosthodontics.com/meet-dr-carlos-castro/",
+  "https://goldsteinonline.com/service/restorative-dentistry/dental-implants/",
+  "https://dentalimplantsvinings.com/",
+  "https://advancedperioatl.com/",
+  "https://www.linkedin.com/in/drdavidzelby",
+  "https://gavricdental.com/services/implant-restorations/",
+  "https://www.perio.org/for-patients/find-a-periodontist/advanced-search/",
+  "https://georgiaprosthodontics.com/what-is-a-prosthodontist-and-other-faqs/",
+  "https://dentalarchplanner.com/clinics/us-atlanta-atlanta-center-for-advanced-periodontics/",
+  "https://www.perio.org/for-patients/find-a-periodontist/?keywords&searchtype=zip",
+  "https://southernrootsperiodontics.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ae206c71398db873e67351120bf59eb1ce2f46f683a063fc6ee739e3b37406be",
+ "answer_chars": 881,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

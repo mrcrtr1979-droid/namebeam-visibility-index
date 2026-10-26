@@ -1,0 +1,95 @@
+{
+ "check_id": "NB-CZ-API_2026-10-26_segment_tire_shops_pleasanton_perplexity",
+ "date_utc": "2026-10-26",
+ "business": "SEGMENT: tire shops, Pleasanton",
+ "niche": "tire shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I buy tires in Pleasanton CA and who does the best installation?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d50b778b-1e99-427b-bc7d-a3bab97d881a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 5150,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4600,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 287,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5437
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "My pick: Big Brand Tire & Service",
+  "America’s Tire in Dublin",
+  "Big Brand Tire",
+  "America",
+  "Tire",
+  "Tire Rack",
+  "Big Brand",
+  "America’s Tire",
+  "Big Brand Tire & Service",
+  "My pick",
+  "Dublin"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bigbrandtire.com/locations/3687-old-santa-rita-rd-pleasanton-ca-94588",
+  "https://www.tirerack.com/installers/ca/pleasanton/94582",
+  "https://www.tirerack.com/installers/ca/pleasanton/94588",
+  "https://www.tirerack.com/installers/ca/pleasanton/94588/the-tire-choice-1633?id=8610837-022",
+  "https://locations.thetirechoice.com/ca/pleasanton/4216-rosewood-rd",
+  "https://www.tirerack.com/installers/ca/pleasanton/94566",
+  "https://www.carfax.com/Auto-Repair-Pleasanton-CA_c12173",
+  "https://www.bigotires.com/location/ca-pleasanton-94566/005024/tire-services-and-repair",
+  "https://www.bigotires.com/location/ca/pleasanton/3688a-washington-st-94566/005024/tire-services-and-repair/brake-repair/tire-services-and-repair",
+  "https://www.tirerack.com/installers/ca/pleasanton/94588/big-brand-tire-service-1060?id=0183706-242",
+  "https://www.tirerack.com/installers/ca/livermore/94551",
+  "https://www.bigotires.com/location/ca/pleasanton/3688a-washington-st-94566/005024",
+  "https://reviews.birdeye.com/seever-sons-tire-156070849854197",
+  "https://www.tirerack.com/installers/ca/fremont/94536",
+  "https://www.tirerack.com/installers/ca/livermore/94550"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "487021276cce9ea235a3b640b5a1dbd8c6f10fbadfa7342f19acbe8bbcb6453b",
+ "answer_chars": 933,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

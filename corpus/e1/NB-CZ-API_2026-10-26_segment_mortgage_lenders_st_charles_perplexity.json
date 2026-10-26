@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-26_segment_mortgage_lenders_st_charles_perplexity",
+ "date_utc": "2026-10-26",
+ "business": "SEGMENT: mortgage lenders, St. Charles",
+ "niche": "mortgage lenders",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Charles MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b4d62555-fb85-4ebe-81a7-20c8cc82b99a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00457
+   },
+   "input_tokens": 5027,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4476,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 324,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5351
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Loan Estimate"
+ ],
+ "engine_stated_criteria": [
+  "A good local starting point is First State Bank of St. Charles"
+ ],
+ "sources_cited": [
+  "https://www.bankrate.com/mortgages/mortgage-rates/missouri/",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://www.usbank.com/home-loans/mortgage/mortgage-rates/missouri.html",
+  "https://www.royalbanksofmo.com/personal-lending/mortgages/",
+  "https://www.experience.com/reviews/company/first-state-bank-of-st-charles",
+  "https://fsbfinancial.com/mortgage/home-loan-options/",
+  "https://money.usnews.com/loans/mortgages/state/missouri-mortgage-lenders",
+  "https://mortgage.usbank.com/mo/saint-charles",
+  "https://www.nerdwallet.com/mortgages/mortgage-rates/missouri",
+  "https://fsbfinancial.com/mortgage/mortgage-offers/",
+  "https://www.erate.com/home-mortgage-loans/missouri/rates",
+  "https://www.monitorbankrates.com/mortgage-lenders/missouri/st-charles",
+  "https://mortgage-info.com/blog/best-mortgage-lenders-missouri-2026-top-10",
+  "https://branches.guildmortgage.com/mo/weldonspring/st-charles-158.html",
+  "https://www.mortgagenewsdaily.com/mortgage-rates/missouri"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "246336e62e3f10630a580f24bbddab1b5032f3504303ea0e1ba5e4f2e73bacfb",
+ "answer_chars": 1111,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,133 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-10-26_tachology_digital",
+ "date_utc": "2026-10-26",
+ "business": "Tachology Digital",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best digital marketing agency in San Francisco?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Siege Media",
+    "San Francisco-based",
+    "Clutch",
+    "San Francisco",
+    "Jives Media",
+    "Disruptive Advertising"
+   ],
+   "verbose_names": [
+    "San Francisco",
+    "Bay Leaf Digital",
+    "Ironpaper",
+    "Simple Machines Marketing",
+    "Enterprise Agencies",
+    "Disruptive Advertising",
+    "KlientBoost",
+    "Thrive Internet Marketing Agency",
+    "Organic Growth",
+    "Victorious SEO",
+    "San Francisco SEO Agency",
+    "Coalition Technologies",
+    "Venture-Backed Companies",
+    "Propellant.media",
+    "Single Grain",
+    "SF. Run",
+    "Eric Siu",
+    "Choose the Right Agency for You",
+    "KlientBoost. If",
+    "Top-tier SF"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 6,
+   "verbose_entity_count": 20,
+   "containment_pct": 50.0,
+   "shared_count": 3,
+   "answer_chars_a": 746,
+   "answer_chars_b": 3394,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "San Francisco"
+   ],
+   "verbose_names": [
+    "Siege Media",
+    "San Francisco-based",
+    "Clutch",
+    "San Francisco",
+    "Jives Media",
+    "Disruptive Advertising"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 6,
+   "containment_pct": 100.0,
+   "shared_count": 1,
+   "answer_chars_a": 746,
+   "answer_chars_b": 941,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "San Francisco"
+   ],
+   "verbose_names": [
+    "San Francisco",
+    "Bay Leaf Digital",
+    "Ironpaper",
+    "Simple Machines Marketing",
+    "Enterprise Agencies",
+    "Disruptive Advertising",
+    "KlientBoost",
+    "Thrive Internet Marketing Agency",
+    "Organic Growth",
+    "Victorious SEO",
+    "San Francisco SEO Agency",
+    "Coalition Technologies",
+    "Venture-Backed Companies",
+    "Propellant.media",
+    "Single Grain",
+    "SF. Run",
+    "Eric Siu",
+    "Choose the Right Agency for You",
+    "KlientBoost. If",
+    "Top-tier SF"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 20,
+   "containment_pct": 100.0,
+   "shared_count": 1,
+   "answer_chars_a": 3394,
+   "answer_chars_b": 941,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}
