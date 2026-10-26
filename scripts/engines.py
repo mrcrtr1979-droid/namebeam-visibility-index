@@ -50,6 +50,7 @@ SECRET_ENV_VARS = (
     "BRIGHTDATA_API_KEY",
     "OPENAI_API_KEY",
     "ANTHROPIC_API_KEY",
+    "OPENROUTER_API_KEY",
     "SERPAPI_KEY",
 )
 
@@ -145,6 +146,27 @@ def _served_meta(body, model_key, id_key, usage_key):
                 "usage": body.get(usage_key)}
     except Exception:
         return {}
+
+
+# OPENROUTER OPT-IN PATH (added 2026-10-25, [OPUS55-COS-1025], OFF by default, no cutover).
+# ENGINE_VIA_OPENROUTER is a comma list of engine names ("openai,anthropic,gemini"). An engine
+# goes through scripts/openrouter_client.py only when it is named there AND OPENROUTER_API_KEY
+# is set and non-empty. Empty flag, unnamed engine or no key: the original code below runs,
+# unchanged. Perplexity and the SERP paths never read this flag. Rows served this way carry
+# engine_meta.served_via = "openrouter"; direct rows carry no such field.
+def _via_openrouter(engine):
+    flagged = {e.strip().lower() for e in
+               os.environ.get("ENGINE_VIA_OPENROUTER", "").split(",") if e.strip()}
+    return engine in flagged and bool(os.environ.get("OPENROUTER_API_KEY", "").strip())
+
+
+def _call_via_openrouter(engine, model_id, prompt_text, temperature=None, max_tokens=None):
+    """Same 4-tuple as every adapter; the audit meta lands in LAST_CALL_META[engine]."""
+    import openrouter_client  # lazy: engines.py must still import without it
+    ok, text, sources, err, meta = openrouter_client.call_openrouter(
+        engine, model_id, prompt_text, temperature=temperature, max_tokens=max_tokens)
+    LAST_CALL_META[engine] = meta
+    return ok, text, sources, err
 
 
 def call_perplexity(prompt_text):
@@ -372,6 +394,8 @@ def _gemini_attempts(url, headers, prompt_text, model, post, sleep, now):
 def call_gemini(prompt_text, _post=None, _sleep=None, _now=None, question_id=None, _panel=None, _rails=None):
     model = gemini_model_for(question_id if question_id is not None else CURRENT_QUESTION_ID[0], _panel)
     LAST_CALL_META["gemini"] = {"requested_model": model}
+    if _via_openrouter("gemini"):
+        return _call_via_openrouter("gemini", model, prompt_text)
     rails = _rails if _rails is not None else _gemini_rails(model)
     if not rails:
         return False, "", [], redact("GEMINI_API_KEY not set")
@@ -855,6 +879,9 @@ OPENAI_URL = "https://api.openai.com/v1/chat/completions"
 
 def call_openai(prompt_text):
     LAST_CALL_META["openai"] = {}
+    if _via_openrouter("openai"):
+        # same as the direct call below: no temperature sent for this engine
+        return _call_via_openrouter("openai", OPENAI_MODEL, prompt_text)
     key = os.environ.get("OPENAI_API_KEY", "").strip()
     if not key:
         return False, "", [], redact("OPENAI_API_KEY not set")
@@ -1074,6 +1101,10 @@ def _call_anthropic_bedrock(prompt_text, model_id):
 
 def call_anthropic(prompt_text):
     LAST_CALL_META["anthropic"] = {}
+    if _via_openrouter("anthropic"):
+        # same sampling settings as the direct and Bedrock calls: temperature 0.2, 2048 max tokens
+        return _call_via_openrouter("anthropic", ANTHROPIC_MODEL, prompt_text,
+                                    temperature=TEMPERATURE, max_tokens=2048)
     bedrock_model = os.environ.get("BEDROCK_MODEL_ID", "").strip()
     if bedrock_model:
         return _call_anthropic_bedrock(prompt_text, bedrock_model)
