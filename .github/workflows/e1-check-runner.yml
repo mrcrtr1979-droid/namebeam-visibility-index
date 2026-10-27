@@ -187,14 +187,39 @@ jobs:
           PRIVATE_RAW: "1"
         run: python scripts/e1_runner.py
 
-      # R82: durable private storage needs a token for the private repo (hand H464, filed by the COS); until then this artifact is the bridge.
-      - name: Keep the private raw copy
-        if: ${{ always() && steps.guard.outputs.skip != 'true' }}
+      # R82 option B (2026-10-26, FABLE-TEAM-COS-1027A, NS_SECURITY_1026 HIGH 1): the private raw text goes to the
+      # PRIVATE Brain repo over PRIVATE_BRAIN_TOKEN (Contents read and write on carter-brain, hand H464).
+      # The token is used only as a git credential on the clone URL and is never echoed.
+      - name: Push the private raw copy to the private Brain
+        id: private_push
+        if: ${{ always() && steps.guard.outputs.skip != 'true' && hashFiles('private_e1/**') != '' }}
+        env:
+          PRIVATE_BRAIN_TOKEN: ${{ secrets.PRIVATE_BRAIN_TOKEN }}
+        run: |
+          set -euo pipefail
+          test -n "$PRIVATE_BRAIN_TOKEN"
+          day="$(date -u +%F)"
+          git clone -q --depth 1 "https://x-access-token:${PRIVATE_BRAIN_TOKEN}@github.com/mrcrtr1979-droid/carter-brain" /tmp/brain
+          mkdir -p "/tmp/brain/private_e1/${day}"
+          cp -r private_e1/. "/tmp/brain/private_e1/${day}/"
+          cd /tmp/brain
+          git config user.name "e1-private-sink"
+          git config user.email "actions@namebeam.ai"
+          git add private_e1
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -q -m "private_e1 ${day}: R82 raw text from run ${GITHUB_RUN_ID}"
+          git push -q origin HEAD:main
+          echo "pushed private_e1/${day} to carter-brain"
+
+      # Fallback only: if the private push failed, keep the artifact so the day's text is not lost (public-repo
+      # artifacts are downloadable by any signed-in GitHub user, so this is never the primary sink).
+      - name: Keep the private raw copy (fallback, push failed)
+        if: ${{ always() && steps.guard.outputs.skip != 'true' && steps.private_push.outcome == 'failure' }}
         uses: actions/upload-artifact@v4
         with:
           name: private-raw-${{ github.run_id }}
           path: private_e1/
-          retention-days: 90
+          retention-days: 7
           if-no-files-found: ignore
 
       # S1-1 (2026-10-08, [SONNET-RECORD-1008E-S1]): the daily sources dataset.
