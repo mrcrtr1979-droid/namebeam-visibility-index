@@ -23,6 +23,9 @@ jobs:
     timeout-minutes: 360
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY_CREDIT }}
+      # Boolean only, never the token. GitHub does not allow the secrets context in a step `if`, so the
+      # shadow steps gate on this env flag; it is 'false' until CLOUDFLARE_AI_TOKEN is pasted into this repo.
+      CF_AI_PRESENT: ${{ secrets.CLOUDFLARE_AI_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -31,6 +34,29 @@ jobs:
         run: python3 -I scripts/label_names.py --dry-run --out "$RUNNER_TEMP"
       - name: Label names
         run: python3 -I scripts/label_names.py --run --max-names "${{ github.event.inputs.max_names || '200' }}"
+      # WORKERSAI-LANE1-1026 shadow: same names, same prompt, Workers AI gpt-oss-120b. Reads the rows the step
+      # above appended, writes only to RUNNER_TEMP, never edits name_labels.csv. No-op until the secret exists.
+      - name: Shadow label with Workers AI (agreement report only)
+        if: ${{ env.CF_AI_PRESENT == 'true' }}
+        continue-on-error: true
+        env:
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          WORKERSAI_COST_LOG: ${{ runner.temp }}/WORKERSAI_COST_LOG.csv
+        run: |
+          python3 -I scripts/workers_ai/selftest.py
+          python3 -I scripts/workers_ai/shadow.py --repo . --report "$RUNNER_TEMP/WORKERSAI_SHADOW_REPORT.md"
+      - name: Keep the shadow report and cost log
+        if: ${{ always() && env.CF_AI_PRESENT == 'true' }}
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: workersai-shadow-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/WORKERSAI_SHADOW_REPORT.md
+            ${{ runner.temp }}/WORKERSAI_COST_LOG.csv
+          retention-days: 90
+          if-no-files-found: ignore
       - name: Open PR with new label rows
         env:
           GH_TOKEN: ${{ github.token }}
