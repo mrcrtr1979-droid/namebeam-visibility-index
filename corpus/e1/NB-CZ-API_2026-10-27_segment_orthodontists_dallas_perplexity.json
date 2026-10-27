@@ -1,0 +1,97 @@
+{
+ "check_id": "NB-CZ-API_2026-10-27_segment_orthodontists_dallas_perplexity",
+ "date_utc": "2026-10-27",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_474b51e3-3192-41c7-93df-c24f76cc6fa0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00116,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00475
+   },
+   "input_tokens": 4330,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3783,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 462,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4792
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Nyle Bradley Blanck",
+  "Dr. Chance Choate",
+  "Dr. Diana-Beatrix Velicu",
+  "Dr. Doug Crosby",
+  "Walnut Central Orthodontics",
+  "Dallas Orthodontics",
+  "Invisalign. A",
+  "Some Dallas",
+  "American Association of Orthodontists",
+  "LBJ Freeway",
+  "Walnut Hill Lane",
+  "North Central Expressway",
+  "Invisalign"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://dallas-ortho.com/about-us/",
+  "https://www.orthodontistdallastx.com/dallas-tx/invisalign/",
+  "https://aaoinfo.org/locator/dr-terry-b-adams/",
+  "https://aaoinfo.org/locator/dr-nyle-bradley-blanck/",
+  "https://aaoinfo.org/locator/dr-jacqueline-l-p-zimmer/",
+  "https://aaoinfo.org/locator/dr-william-fletcher/",
+  "https://aaoinfo.org/locator/dr-camille-laird-3/",
+  "https://aaoinfo.org/locator/dr-bryan-s-elvebak/",
+  "https://aaoinfo.org/locator/dr-chance-choate/",
+  "https://aaoinfo.org/locator/dr-casey-lepley-2/",
+  "https://aaoinfo.org/locator/dr-shad-hanis-4/",
+  "https://aaoinfo.org/locator/dr-diana-beatrix-velicu/",
+  "https://aaoinfo.org/locator/dr-doug-r-crosby-2/",
+  "https://aaoinfo.org/locator/dr-cameron-togrye-2/",
+  "https://aaoinfo.org/locator/dr-vikas-gupta/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "28c74661eac48fb64a7a142c99b28a1b70a39de7d492b2884b0f7ba1d2abd263",
+ "answer_chars": 1563,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

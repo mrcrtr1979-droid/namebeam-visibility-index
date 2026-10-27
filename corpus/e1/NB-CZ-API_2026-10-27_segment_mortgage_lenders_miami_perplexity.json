@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-10-27_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-10-27",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a1ef8c08-117b-4a3d-93bb-20f7f784dcbe",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00094,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00453
+   },
+   "input_tokens": 4329,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3780,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 376,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4705
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "A local mortgage broker",
+  "On Mortgage",
+  "Lending Bankers Mortgage",
+  "JPMorgan Chase",
+  "Loan Estimates",
+  "NMLS Consumer Access",
+  "Safe Rate"
+ ],
+ "engine_stated_criteria": [
+  "A bank or credit union you already use",
+  "A lender suited to your loan program"
+ ],
+ "sources_cited": [
+  "https://columbuscl.mymortgage-online.com/KendallBranch.html",
+  "https://patriothomemortgage.com/mortgage-officer/jenny-mourino/",
+  "https://saferate.com/local/miami/best-mortgage-lenders/banks",
+  "https://www.columbuscl.com/rafaelbenitez",
+  "https://topratedlenders.com/lending-llc-nmls-375339",
+  "https://www.lendingbankers.com/learn/buy-a-home/",
+  "https://approvedmortgage.com/",
+  "https://on-mortgage.com/",
+  "https://patriothomemortgage.com/mortgage-officer/janell-vega/",
+  "https://www.nationalmortgagehomeloans.com/mortgage/florida/miami",
+  "https://www.lendingbankers.com/",
+  "https://saferate.com/local/miami/best-mortgage-lenders/banks/conventional-loans",
+  "https://www.suncapitalmortgage.com/aboutus/licensing",
+  "https://mistermortgageusa.com/government-disclosure",
+  "https://saferate.com/local/miami/best-mortgage-lenders/mortgage-companies"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "6a5d6891bba1b685a333c3a6bacae2c61f56c2173975d9d8dee24af427acde6a",
+ "answer_chars": 1383,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

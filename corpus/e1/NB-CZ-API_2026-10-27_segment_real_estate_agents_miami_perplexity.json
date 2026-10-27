@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-27_segment_real_estate_agents_miami_perplexity",
+ "date_utc": "2026-10-27",
+ "business": "SEGMENT: real estate agents, Miami",
+ "niche": "real estate agents",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Miami FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_670a9fbf-140e-47f7-8801-2d350b7c4d1c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00119,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00454
+   },
+   "input_tokens": 5302,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4753,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 284,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5586
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sandra Rathe of REAL",
+  "Sandra Rathe"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.homelight.com/miami-fl/top-real-estate-agents",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/miami-fl/",
+  "https://www.realtrends.com/ranking/best-real-estate-agents-miami-florida/",
+  "https://realestate.usnews.com/agents/florida/miami",
+  "https://therealdeal.com/magazine/october-2026/these-are-miamis-top-real-estate-agents-and-brokerages/",
+  "https://www.ratemyagent.com/real-estate-profile/sales/florida/miami-fl",
+  "https://www.homes.com/real-estate-agents/mario-avalos/qbgptjx/",
+  "https://listwithclever.com/top-real-estate-agents/florida/miami/",
+  "https://www.expertise.com/home-improvement/real-estate-agents/florida/miami",
+  "https://www.realtrends.com/agent-profile/dan-benichou-florida/",
+  "https://www.zillow.com/profile/chezrealty",
+  "https://www.zillow.com/profile/Gustavo%20Moreira",
+  "https://www.realtrends.com/agent-profile/marco-tine-florida/",
+  "https://www.zillow.com/profile/DebraGolan",
+  "https://listwithclever.com/top-real-estate-agents/profiles/larry-mastropieri-1394788/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "170bb65b98f1664cdc52d6210ba63c428ff84427a133b0031d0f391a353675d2",
+ "answer_chars": 1023,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

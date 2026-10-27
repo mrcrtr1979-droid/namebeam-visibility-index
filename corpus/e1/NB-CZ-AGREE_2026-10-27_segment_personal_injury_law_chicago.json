@@ -1,0 +1,103 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-10-27_segment_personal_injury_law_chicago",
+ "date_utc": "2026-10-27",
+ "business": "SEGMENT: personal injury law, Chicago",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best personal injury attorney in Chicago for a car accident claim?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Horwitz",
+    "Illinois State Bar Association",
+    "Attorney Registration and Disciplinary Commission"
+   ],
+   "verbose_names": [
+    "Notable",
+    "Illinois",
+    "Robert A. Clifford",
+    "Pritchard P.C",
+    "Illinois Super Lawyers",
+    "Look for Contingency Fees",
+    "Check Track Record and Trial Experience",
+    "Read Client Reviews",
+    "Google Reviews",
+    "Schedule Free Consultations"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 10,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 1133,
+   "answer_chars_b": 3475,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Horwitz",
+    "Illinois State Bar Association",
+    "Attorney Registration and Disciplinary Commission"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 3,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 1133,
+   "answer_chars_b": 1045,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Notable",
+    "Illinois",
+    "Robert A. Clifford",
+    "Pritchard P.C",
+    "Illinois Super Lawyers",
+    "Look for Contingency Fees",
+    "Check Track Record and Trial Experience",
+    "Read Client Reviews",
+    "Google Reviews",
+    "Schedule Free Consultations"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 10,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 3475,
+   "answer_chars_b": 1045,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

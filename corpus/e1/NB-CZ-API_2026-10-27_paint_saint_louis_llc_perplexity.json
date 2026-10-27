@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-27_paint_saint_louis_llc_perplexity",
+ "date_utc": "2026-10-27",
+ "business": "Paint Saint Louis LLC",
+ "niche": "interior painting",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best interior painting company in St. Louis MO?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6a202c7f-dfcd-4366-80f4-0ac8c0b3363c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00053,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00425
+   },
+   "input_tokens": 4855,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4308,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 213,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5068
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "SNL Painting",
+  "Better Painting"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.angi.com/companylist/us/mo/st-louis/interior-painting.htm",
+  "https://www.angi.com/companylist/us/mo/st-louis/angel-lagunas-painting-reviews-1.htm",
+  "https://snlpainting.com/services/",
+  "https://snlpainting.com/",
+  "https://www.yelp.com/biz/jw-painting-and-remodeling-saint-louis",
+  "https://www.bbb.org/us/mo/wildwood/profile/painting-contractors/five-star-painting-of-st-louis-0734-310613215",
+  "https://www.angi.com/companylist/us/mo/imperial/suzie-paints-reviews-2065439.htm",
+  "https://betterpainting.com/services/",
+  "https://www.yelp.com/biz/kennedy-painting-saint-louis",
+  "https://www.improovy.com/locations/st-louis",
+  "https://local.yahoo.com/info-238192788-stellar-painting-renovations-st-louis/",
+  "https://prosgrade.com/painters/st-louis/better-painting-missouri",
+  "https://www.angi.com/companylist/us/mo/st.-louis/that-1-painter-st-louis-reviews-10734555.htm",
+  "https://www.angi.com/companylist/us/mo/saint-louis/saint-louis-painting-reviews-2329074.htm",
+  "https://www.fivestarpainting.com/st-louis/?cid=LSTL_FSP-US000189"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9fb84430970a0fd7334308a1a45f7af6aba50b006393a4aaadade157dae01bb4",
+ "answer_chars": 669,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

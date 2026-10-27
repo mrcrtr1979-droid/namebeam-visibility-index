@@ -1,0 +1,131 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-10-27_segment_real_estate_agents_pleasanton",
+ "date_utc": "2026-10-27",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "Doug Buenz of Compass",
+    "Tim McGuire of Compass",
+    "Pleasanton. For",
+    "Jake Fahnhorst"
+   ],
+   "verbose_names": [
+    "Tri-Valley",
+    "Highly Rated Local Agents",
+    "Intero Real Estate Services",
+    "Rama Mehra",
+    "Compass",
+    "Armida Asis",
+    "East Bay",
+    "Susan Schall",
+    "Coldwell Banker Realty",
+    "Ruby Hill and Vintage Hills",
+    "Pamela Hughes",
+    "COMPASS",
+    "Pleasanton and Dublin",
+    "Toll Faucher",
+    "Keller Williams Tri-Valley",
+    "Comparative Market Analysis",
+    "Verify Credentials",
+    "California Department of Real Estate",
+    "Realtor.com",
+    "Ruby Hill",
+    "Kottinger Ranch"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 21,
+   "containment_pct": 50.0,
+   "shared_count": 2,
+   "answer_chars_a": 1375,
+   "answer_chars_b": 4160,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "CA. However"
+   ],
+   "verbose_names": [
+    "Doug Buenz of Compass",
+    "Tim McGuire of Compass",
+    "Pleasanton. For",
+    "Jake Fahnhorst"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 4,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1375,
+   "answer_chars_b": 1000,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "CA. However"
+   ],
+   "verbose_names": [
+    "Tri-Valley",
+    "Highly Rated Local Agents",
+    "Intero Real Estate Services",
+    "Rama Mehra",
+    "Compass",
+    "Armida Asis",
+    "East Bay",
+    "Susan Schall",
+    "Coldwell Banker Realty",
+    "Ruby Hill and Vintage Hills",
+    "Pamela Hughes",
+    "COMPASS",
+    "Pleasanton and Dublin",
+    "Toll Faucher",
+    "Keller Williams Tri-Valley",
+    "Comparative Market Analysis",
+    "Verify Credentials",
+    "California Department of Real Estate",
+    "Realtor.com",
+    "Ruby Hill",
+    "Kottinger Ranch"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 21,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 4160,
+   "answer_chars_b": 1000,
+   "zero_shared": true
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

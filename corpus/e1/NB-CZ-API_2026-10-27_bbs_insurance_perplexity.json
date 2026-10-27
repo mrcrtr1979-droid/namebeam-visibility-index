@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-10-27_bbs_insurance_perplexity",
+ "date_utc": "2026-10-27",
+ "business": "BBS Insurance",
+ "niche": "health insurance brokerage",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best health insurance broker in Kansas City MO for someone who is self-employed?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_41bc78c6-60ce-47c6-b935-7cd4af7f53ba",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00449
+   },
+   "input_tokens": 4735,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4183,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 320,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5055
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "AIS Health Insurance Advisors",
+  "Missouri and Kansas",
+  "ACA Marketplace",
+  "ACA Marketplace plans",
+  "Marketplace plans",
+  "KC Metro"
+ ],
+ "engine_stated_criteria": [
+  "If you’d prefer an office in Missouri",
+  "all ACA Marketplace plans available in your ZIP code"
+ ],
+ "sources_cited": [
+  "https://www.guidancehealthpartners.com/",
+  "https://aishealthadvisors.com/about/",
+  "https://www.bluekc.com/agents/",
+  "https://nulight-consulting.com/",
+  "https://uiginsurancegroup.com/",
+  "https://www.linkedin.com/company/coleinsure",
+  "https://www.bluekc.com/",
+  "https://thepolarisagency.com/about/",
+  "https://aishealthadvisors.com/health-insurance/",
+  "https://bbs-insurance.com/",
+  "https://apollo-insurance.com/health-insurance-broker-kansas-city/",
+  "https://www.linkedin.com/company/morrill-insurance-group",
+  "https://sites.google.com/view/health-insurance-kansas-city/home",
+  "https://www.linkedin.com/company/candcinsurancegroup",
+  "https://www.linkedin.com/company/abbott-insurance-inc"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "3fef401f80a4284ab1a7962469bd9816238fd45595725d1d008430faedf27719",
+ "answer_chars": 1129,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

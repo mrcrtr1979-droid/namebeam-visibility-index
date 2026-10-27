@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-27_segment_roofing_miami_perplexity",
+ "date_utc": "2026-10-27",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_dcdbdd8c-74a3-48aa-b8d8-63bca7d84858",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00064,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00438
+   },
+   "input_tokens": 4950,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4402,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 255,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5205
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "On Call Roofing",
+  "Florida Building Code",
+  "High-Velocity Hurricane Zone",
+  "Miami-Dade",
+  "Velocity Hurricane Zone"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/fl/miami/profile/contractor-referral/hurricane-safety-program-llc-0633-92043395",
+  "https://www.bbb.org/us/fl/west-park/profile/home-improvement/nf-home-improvement-llc-0633-92034903",
+  "https://www.bbb.org/us/fl/miami-beach/profile/general-contractor/gulf-atlantic-industries-of-america-inc-0633-26002744",
+  "https://www.bbb.org/us/fl/miami/category/storm-damage-repair",
+  "https://www.bbb.org/us/fl/miami/profile/roofing-contractors/4ever-roofing-0633-92022341",
+  "https://www.bbb.org/us/fl/sunny-isles-beach/category/roof-replacement",
+  "https://uptotheroof.com/",
+  "https://www.bbb.org/us/fl/miami/profile/roofing-contractors/on-call-roofing-inc-0633-92022643",
+  "https://www.bbb.org/us/fl/miami/category/roof-replacement",
+  "https://www.bbb.org/us/fl/miami/profile/roofing-contractors/city-roofing-and-construction-inc-0633-92014812/customer-reviews",
+  "https://www.bbb.org/us/fl/miami/category/roofing-contractors",
+  "https://www.bbb.org/us/fl/miami-gardens/profile/roofing-contractors/salomon-roofing-waterproofing-0633-90275093",
+  "https://www.bbb.org/us/fl/miami/profile/roofing-contractors/canopy-roofing-inc-0633-90363783",
+  "https://www.bbb.org/us/fl/miami/profile/roofing-contractors/a-1-roofing-contractor-0633-92015213",
+  "https://www.bbb.org/us/fl/miami/profile/general-contractor/state-upgrades-0633-92032989"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "0acd13a87267816f9fb1f1c49bbf7d07f28717598e8218b054dd883e93718d80",
+ "answer_chars": 972,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

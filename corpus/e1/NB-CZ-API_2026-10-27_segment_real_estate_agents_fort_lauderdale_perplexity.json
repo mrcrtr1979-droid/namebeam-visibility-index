@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-27_segment_real_estate_agents_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-27",
+ "business": "SEGMENT: real estate agents, Fort Lauderdale",
+ "niche": "real estate agents",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Fort Lauderdale FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_689f6422-6e3a-4b03-a1b3-d9828e2e62f0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00118,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00465
+   },
+   "input_tokens": 5284,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4734,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 331,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5615
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Laurie Finkelstein Reader’s team",
+  "Howard Goldberg’s team",
+  "Laurie Finkelstein Reader",
+  "Howard Goldberg"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/fort-lauderdale-fl/",
+  "https://www.zillow.com/profile/HowardGoldbergSells",
+  "https://www.zillow.com/profile/jennifer94964",
+  "https://www.realtor.com/realestateagents/56b4fe2dbb954c01006b14d6",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33309/",
+  "https://www.realtor.com/realestateagents/56b08a020fa41701007462fd",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33306/",
+  "https://www.realtor.com/realestateagents/George-Khoury_Ft-Lauderdale_FL_1549123_743959127",
+  "https://www.realtor.com/realestateagents/Fort-Lauderdale_FL",
+  "https://www.realtor.com/realestateagents/5fa9471ae5955100118d81d4",
+  "https://www.zillow.com/profile/LoganCrewss",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33349/",
+  "https://www.zillow.com/profile/TrustLarry",
+  "https://www.zillow.com/profile/ronlennen",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33314/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "dbe7c56070d1cdf643da62e0bba1cec1519096def3594a3f5306b4004c0d3e88",
+ "answer_chars": 1107,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

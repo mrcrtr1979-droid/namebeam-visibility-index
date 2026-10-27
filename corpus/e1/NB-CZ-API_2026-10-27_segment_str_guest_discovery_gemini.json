@@ -1,0 +1,61 @@
+{
+ "check_id": "NB-CZ-API_2026-10-27_segment_str_guest_discovery_gemini",
+ "date_utc": "2026-10-27",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "nOngatCECf2yytMPttT0iQE",
+  "usage": {
+   "promptTokenCount": 29,
+   "candidatesTokenCount": 1127,
+   "totalTokenCount": 1156,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 29
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "Vrbo",
+  "Booking.com",
+  "Airbnb Superhosts",
+  "Vrbo Premier Hosts",
+  "Good sign",
+  "Individual hosts",
+  "Property management companies",
+  "Couple Travel",
+  "Apartments",
+  "Vacation Rentals",
+  "Large Groups",
+  "Traditional Hotels",
+  "Summary Rule of Thumb",
+  "Reviews First",
+  "Bad Reviews",
+  "Pro-Tip for Booking Anywhere",
+  "Superhost",
+  "Premier Host",
+  "Premier Hosts"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Choosing the right platform depends entirely on **who you are traveling with, the type of trip you want, and your cancellation risk tolerance**. Meanwhile, finding a good host is all about knowing how to read between the lines of reviews and listings.\n\nHere is a breakdown of the platforms and a step-by-step guide to finding a great host.\n\n---\n\n### Part 1: Which platform should you use?\n\n#### 1. Airbnb: Best for Unique Stays & Solo/Couple Travel\n* **Best for:** Apartments, unique architecture (treehouses, yurts), urban destinations, and solo travelers or couples.\n* **Pros:** The largest inventory of urban apartments; user-friendly app; often has the most stylish/trendy interior designs.\n* **Cons:** Service fees can be high; customer support has a reputation for being inconsistent when things go wrong.\n\n#### 2. Vrbo (Vacation Rentals by Owner): Best for Families & Large Groups\n* **Best for:** Entire houses, beach cabins, ski chalets, and family reunions. \n* **Pros:** Vrbo *only* lists entire properties (no shared rooms or private rooms in someone's house), making it ideal for privacy. They also have a \"Book with Confidence\" guarantee and traditionally cater more to professional property managers.\n* **Cons:** Less ideal for solo travelers or budget city-center apartments; fewer quirky/unique design options compared to Airbnb.\n\n#### 3. Booking.com: Best for Flexibility & Traditional Hotels/Apartments\n* **Best for:** Travelers who want a mix of hotels, hostels, and apartments with maximum flexibility.\n* **Pros:** Excellent \"Genius\" loyalty program (discounts after a few stays); many properties offer **free cancellation** up to 24–48 hours before check-in without heavy penalties; no hidden surprise fees at checkout (prices usually include taxes).\n* **Cons:** Their customer service is geared more toward traditional hotel bookings; apartment listings can sometimes be double-posted from other sites with less curation.\n\n**Summary Rule of Thumb:** \n* City trip or unique vibe? $\\rightarrow$ **Airbnb**\n* Family beach trip or mountain cabin? $\\rightarrow$ **Vrbo**\n* Need ultimate flexibility/free cancellation or mixing hotels with apartments? $\\rightarrow$ **Booking.com**\n\n---\n\n### Part 2: How to find a good host\n\nFinding a great place isn't just about the photos; it's about vetting the person behind the listing. Follow this checklist:\n\n#### 1. Look for the \"Superhost\" or \"Premier Host\" Badge\n* **Airbnb Superhosts** and **Vrbo Premier Hosts** have met strict criteria: high ratings (usually 4.8+), low cancellation rates by the host, and a proven track record of quick response times. Start your search filtered by these badges if you are nervous.\n\n#### 2. Read the *Negative* Reviews First\n* Don’t just look at the 5-star average. Scroll down to the 3-, 2-, and 1-star reviews. \n* **What to look for:** Look for recurring complaints. If one person complained that the neighborhood was loud, it might just be a sensitive sleeper. If *three* people complained about a bedbug, a broken AC, or a dishonest host, **run**.\n\n#### 3. Check How the Host Responds to Bad Reviews\n* Good hosts respond professionally to criticism, apologize if something went wrong, and explain how they fixed it. \n* Bad hosts get defensive, argue with the guest, or insult them. Avoid combative hosts at all costs.\n\n#### 4. Test Their Communication *Before* Booking\n* Send the host a polite, simple question before booking (e.g., *\"Hi [Name], we are excited about your place! Is parking available on-site, or is street parking better?\"*).\n* **Good sign:** They reply within a few hours with a helpful, friendly answer.\n* **Red flag:** They take days to reply, or give a curt, unhelpful one-word answer. If they are unresponsive *before* you give them your money, imagine how hard it will be to reach them if the toilet overflows at 10 PM.\n\n#### 5. Read the House Rules Carefully\n* Great hosts are clear about their expectations. Make sure you read the house rules regarding noise, smoking, pets, and check-out procedures. If a host has overly aggressive or unreasonable rules (e.g., \"Do all the laundry and take out the trash or face a $200 fine\"), they might be difficult to deal with.\n\n#### 6. Check Their Profile\n* Click on the host’s profile picture. How long have they been hosting? How many properties do they manage? \n* **Individual hosts** often provide a more personal, localized experience. \n* **Property management companies** (which run dozens or hundreds of units) are usually more reliable and business-like, but you might miss out on local warmth and personal recommendations.\n\n### Pro-Tip for Booking Anywhere:\nAlways communicate *exclusively through the platform's messaging system*. If a host tries to take you off-platform to pay via wire transfer, Venmo, or cash to \"save on fees,\" it is almost certainly a scam, and you will lose all customer support protections.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

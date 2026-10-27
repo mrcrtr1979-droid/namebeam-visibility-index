@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-10-27_segment_dentists_pleasanton_perplexity",
+ "date_utc": "2026-10-27",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_299d34d0-297f-4cf7-b8af-74f05fe7f420",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00099,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00423
+   },
+   "input_tokens": 4503,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3953,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 240,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4743
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton Dental Care",
+  "Address",
+  "Dr. Mona Gokani at Pleasanton Dental Office",
+  "Stoneridge Drive",
+  "Dr. Mona Gokani",
+  "Pleasanton Dental Office"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.pleasantondentaloffice.com/patient-reviews",
+  "https://pleasantondentalcare.com/services/cleanings-prevention/",
+  "https://pleasantonstardental.com/dental-services/preventive/",
+  "https://pleasanton-dentist.com/services/",
+  "https://pleasanton-dentist.com/general-dentistry/",
+  "https://www.brushcountrydental.com/preventive-dentistry.html",
+  "https://www.pleasantondental.com/procedures/family-dentistry/",
+  "https://pleasanton-dentist.com/family-dentistry/",
+  "https://www.mfdpleasanton.co/services",
+  "https://www.brushcountrydental.com/checkups-cleanings.html",
+  "https://www.stoneridgedds.com/",
+  "https://www.pleasanton-dental.com/preventative-dentistry/",
+  "https://www.dentistsranked.com/dentists/pleasanton-ca",
+  "https://pleasanton-dentist.com/dental-clinic/",
+  "https://www.opencare.com/dentists/pleasanton-ca/my-favorite-dentist-24630732223c/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2c38e88e03961c4c3e78a76f99e67bfb35b383543cde6a54d967df84792c7973",
+ "answer_chars": 681,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

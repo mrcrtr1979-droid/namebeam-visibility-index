@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-27_segment_roofing_dallas_perplexity",
+ "date_utc": "2026-10-27",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7ff06e98-5eb2-4c31-beff-98e7760a8f76",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00083,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00059,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00406
+   },
+   "input_tokens": 3883,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3336,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 234,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4117
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dalco Contractors & Roofing",
+  "DAR Roofing",
+  "Dalco Contractors"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/tx/dallas",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/pa/dallas",
+  "https://www.bbb.org/us/tx/dallas/category/roof-replacement",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/or/dallas",
+  "https://www.desmoinesregister.com/press-release/story/125947/new-view-roofing-named-best-overall-dallas-roofing-company-by-yahoo-local",
+  "https://www.bbb.org/us/tx/dallas/category/roof-replacement/accredited",
+  "https://www.bbb.org/us/tx/dallas/profile/general-contractor/dar-roofing-general-contractors-0875-91342351/customer-reviews",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/ga/dallas",
+  "https://arringtonroofing.com/testimonials",
+  "https://www.roofingdalco.com/residential-2/",
+  "https://ratingsnearme.com/dallas-tx/experienced-roofers",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/wi/dallas",
+  "https://stazonroof.com/",
+  "https://www.bbb.org/us/tx/dallas/category/roofing-contractors/accredited",
+  "https://roofskill.com/roofer/we-roof-dallas-inc/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "970ac15fc3fa5e9efeb8c8b56bbee1a0dc0efe18c9a8b12fe6963d96f352356c",
+ "answer_chars": 785,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-27_segment_real_estate_agents_st_charles_perplexity",
+ "date_utc": "2026-10-27",
+ "business": "SEGMENT: real estate agents, St. Charles",
+ "niche": "real estate agents",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Charles MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a5fcd632-9234-414b-9fb4-0f7353bc761a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00094,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00074,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00432
+   },
+   "input_tokens": 4321,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3770,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 295,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4616
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Stephanie Parson of Keller Williams Realty West",
+  "Joanna Horstmeier"
+ ],
+ "engine_stated_criteria": [
+  "seller-side sales near your home"
+ ],
+ "sources_cited": [
+  "https://www.homelight.com/st-charles-mo/top-real-estate-agents",
+  "https://www.zillow.com/profile/JeremySchneiderRE",
+  "https://www.zillow.com/profile/CEPSTLAH",
+  "https://www.zillow.com/profile/bmorgan77",
+  "https://www.zillow.com/profile/cjhorst",
+  "https://www.realestateagents.com/mo/saint-charles",
+  "https://realestate.usnews.com/agents/missouri/st-charles",
+  "https://www.homelight.com/agents/stephanie-parson-mo-1999014362",
+  "https://www.zillow.com/profile/Casey%20Samuels",
+  "https://www.zillow.com/profile/elizabethjefferson",
+  "https://www.realtor.com/realestateagents/st-charles_mo",
+  "https://www.zillow.com/profile/SoldByTrudy",
+  "https://www.zillow.com/profile/jlorton12",
+  "https://www.zillow.com/profile/Stephanie%20Eley",
+  "https://agentpronto.com/missouri/st-charles"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "fc106e7b61f06efd31d00b840941922f1d8f4e34f15ce43d26041a79606e4cbd",
+ "answer_chars": 1032,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

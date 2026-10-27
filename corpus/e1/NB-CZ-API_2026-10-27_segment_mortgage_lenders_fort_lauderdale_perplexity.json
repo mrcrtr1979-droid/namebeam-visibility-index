@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-10-27_segment_mortgage_lenders_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-27",
+ "business": "SEGMENT: mortgage lenders, Fort Lauderdale",
+ "niche": "mortgage lenders",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Fort Lauderdale FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_2ec6b051-51cd-439e-8ebe-d66ca95900d5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00094,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00474
+   },
+   "input_tokens": 5191,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4641,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 374,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5565
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Navy Federal Credit Union",
+  "Chase",
+  "U.S. Bank",
+  "Fairway Independent Mortgage",
+  "Loan Estimates from at least three lenders",
+  "Navy Federal"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.seacoastbank.com/personal/lending/mortgages/mortgage-rates",
+  "https://www.erate.com/home-mortgage-loans/florida/rates",
+  "https://www.bankrate.com/mortgages/mortgage-rates/florida/",
+  "https://homelendingadvisor.chase.com/fl/fort-lauderdale",
+  "https://mortgage.usbank.com/fl/fort-lauderdale",
+  "https://www.usbank.com/home-loans/mortgage/mortgage-rates/florida.html",
+  "https://local.yahoo.com/info-210800712-fairway-independent-mortgage-fort-lauderdale/",
+  "https://plcorp.net/tag/florida-real-estate/",
+  "https://tomo.com/mortgage/interest-rates-today/fl",
+  "https://www.cmghomeloans.com/mysite/leamsi-troya-de-armas",
+  "https://www.zillow.com/homeloans/mortgage-rates/florida/",
+  "https://www.trompetacapital.com/",
+  "https://saferate.com/local/fort-lauderdale/best-mortgage-lenders",
+  "https://www.communityfirstfl.org/resources/rates/mortgage-rates",
+  "https://plcorp.net/category/conforming-loan/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "cf0787839bca98bef0b6612113ef6b7bee6b5a162593cc52b017ffe7449a16c4",
+ "answer_chars": 1370,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}
