@@ -1,6 +1,6 @@
 # Namebeam AI Visibility Index
 
-A dated public record of which local businesses four AI engines name when they are asked the same buyer questions. Every answer is saved with its date and a SHA-256 hash of the raw file.
+A dated public record of which local businesses AI engines (ChatGPT, Claude, Gemini and Perplexity) name when they are asked the same buyer questions. ChatGPT has not been asked since 2026-10-26 (API quota), so days from then carry three engines. Every answer is saved with its date and a SHA-256 hash of the raw file.
 
 ## MCP server (receipts-index-mcp)
 
