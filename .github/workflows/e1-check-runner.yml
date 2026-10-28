@@ -271,4 +271,4 @@ jobs:
         env:
           SENTRY_DSN: ${{ vars.SENTRY_DSN || 'https://fac773179a0ef5c7296de8b92796d144@o4512319421349888.ingest.us.sentry.io/4512319519195136' }}
           DISABLE_SENTRY: ${{ vars.DISABLE_SENTRY }}
-        run: python3 scripts/sentry_checkin.py e1-daily-record "${{ job.status }}" "10 12 * * *" 480
+        run: python3 scripts/sentry_checkin.py e1-daily-record "${{ job.status }}" "10 12 * * *" 600
