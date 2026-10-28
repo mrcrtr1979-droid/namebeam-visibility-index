@@ -39,7 +39,7 @@ Turn it off with `RECEIPTS_INDEX_TELEMETRY=0` or `DO_NOT_TRACK=1` in the server'
 
 ## Remote endpoint (Streamable HTTP)
 
-Planned URL: `https://api.receiptsindex.com/mcp`. It goes live when the Receipts API Worker that serves `api.receiptsindex.com` is redeployed with the `/mcp` route and the zone route for `/mcp*` is added; until then use the stdio install below.
+URL: `https://api.receiptsindex.com/mcp`. Live since 2026-10-28 (initialize, tools/list and all three tools answered). No sign-in, no key.
 
 It exposes the same three tools as the stdio server, read-only, with no sign-in and no API key. `receipts_index` and `receipts_sample` return the free data. `receipts_pricing` returns the x402 payment terms for the paid routes (route, USDC price, network, pay-to address). The endpoint never pays and never signs anything; paying is done by an x402 client against the listed route.
 

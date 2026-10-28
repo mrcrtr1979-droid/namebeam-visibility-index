@@ -1,5 +1,5 @@
 export const DEFAULT_BASE_URL = "https://api.receiptsindex.com";
-export const USER_AGENT = "receipts-index-mcp/0.1.3";
+export const USER_AGENT = "receipts-index-mcp/0.1.4";
 
 export type FetchLike = (url: string, init?: { headers?: Record<string, string>; signal?: AbortSignal }) => Promise<{
   ok: boolean;
@@ -109,11 +109,15 @@ export function buildPricing(wellKnown: unknown, manifest: unknown) {
     }
     routes.push({ route, url: templateUrl(url, route), method: "GET", price_usdc, amount_atomic, note });
   }
+  // Payment terms: the discovery file first, then the manifest "payment" block (Worker v3.5 and later).
+  const pay = (mf.payment ?? {}) as Record<string, unknown>;
+  const str = (v: unknown): string | null => (typeof v === "string" && v ? v : null);
   return {
     currency: "USDC",
-    network: typeof wk.network === "string" ? wk.network : "eip155:8453 (Base mainnet, per the API manifest text; confirm in the 402 challenge)",
-    pay_to: typeof wk.payTo === "string" ? wk.payTo : null,
-    facilitator: typeof wk.facilitator === "string" ? wk.facilitator : null,
+    network: str(wk.network) ?? str(pay.network) ?? "eip155:8453 (Base mainnet, per the API manifest text; confirm in the 402 challenge)",
+    asset: str(wk.asset) ?? str(pay.asset),
+    pay_to: str(wk.payTo) ?? str(pay.pay_to),
+    facilitator: str(wk.facilitator) ?? str(pay.facilitator),
     routes,
     source: ["/.well-known/x402", "/v1/manifest"],
     note: "Prices are as listed by the API. This tool never pays. To buy, use an x402 client against the route; the 402 response carries the exact payment terms."

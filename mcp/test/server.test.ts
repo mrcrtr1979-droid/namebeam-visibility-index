@@ -102,6 +102,27 @@ test("receipts_pricing joins the discovery url list with manifest prices", async
   assert.equal(data.currency, "USDC");
 });
 
+test("receipts_pricing reads pay_to, network and asset from the manifest payment block", async () => {
+  const mf = JSON.parse(fx("manifest.json"));
+  mf.payment = { scheme: "exact", network: "eip155:8453", asset: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913", pay_to: "0x608260991Af56eFa1380E0e7bA7F3Ae239f5421a", facilitator: "https://facilitator.payai.network" };
+  const c = await connect(
+    mockFetch({ "/.well-known/x402": { body: fx("well-known-x402.json") }, "/v1/manifest": { body: JSON.stringify(mf) } })
+  );
+  const data = JSON.parse(textOf(await c.callTool({ name: "receipts_pricing", arguments: {} })));
+  assert.equal(data.pay_to, "0x608260991Af56eFa1380E0e7bA7F3Ae239f5421a");
+  assert.equal(data.network, "eip155:8453");
+  assert.equal(data.asset, "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913");
+  assert.equal(data.facilitator, "https://facilitator.payai.network");
+});
+
+test("receipts_pricing leaves pay_to null when neither source carries it", async () => {
+  const c = await connect(
+    mockFetch({ "/.well-known/x402": { body: fx("well-known-x402.json") }, "/v1/manifest": { body: fx("manifest.json") } })
+  );
+  const data = JSON.parse(textOf(await c.callTool({ name: "receipts_pricing", arguments: {} })));
+  assert.equal(data.pay_to, null);
+});
+
 test("receipts_pricing reads the older discovery format that carries prices inline", async () => {
   const c = await connect(mockFetch({ "/.well-known/x402": { body: fx("well-known-x402-1019.json") } }));
   const res = await c.callTool({ name: "receipts_pricing", arguments: {} });
