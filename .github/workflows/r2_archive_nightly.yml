@@ -34,13 +34,17 @@ jobs:
         run: node --test test/r2_archive.test.mjs
 
       - name: Preflight (names only; values are never printed)
+        id: pre
         env:
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        # 2026-10-28: a missing secret now ends the run green with a notice instead of a red X and an email every night.
+        # The nightly record backup also runs from carter-brain (r2_archive_nightly_brain.yml), where these keys exist.
         run: |
-          node -e 'const m=["R2_ACCESS_KEY_ID","R2_SECRET_ACCESS_KEY"].filter(n=>!process.env[n]); if(m.length){console.error("missing repository secret(s): "+m.join(", ")); process.exit(1)} console.log("R2 secrets present (values not printed)")'
+          node -e 'const m=["R2_ACCESS_KEY_ID","R2_SECRET_ACCESS_KEY"].filter(n=>!process.env[n]); if(m.length){console.log("::notice::R2 archive skipped, missing repository secret(s): "+m.join(", ")); require("fs").appendFileSync(process.env.GITHUB_OUTPUT,"ready=false\n")} else {console.log("R2 secrets present (values not printed)"); require("fs").appendFileSync(process.env.GITHUB_OUTPUT,"ready=true\n")}'
 
       - name: Sync corpus/ and releases/ to R2 (additive, no deletes)
+        if: steps.pre.outputs.ready == 'true'
         env:
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
