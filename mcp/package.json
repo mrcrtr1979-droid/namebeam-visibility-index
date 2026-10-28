@@ -1,0 +1,48 @@
+{
+  "name": "receipts-index-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the Receipts Index API: free row index, free sample row, and x402 price listing. It never pays.",
+  "mcpName": "io.github.mrcrtr1979-droid/receipts-index",
+  "type": "module",
+  "license": "MIT",
+  "author": "Carter Enterprise LLC",
+  "homepage": "https://api.receiptsindex.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrcrtr1979-droid/namebeam-visibility-index.git",
+    "directory": "mcp"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "x402",
+    "receipts-index",
+    "namebeam"
+  ],
+  "bin": {
+    "receipts-index-mcp": "dist/src/index.js"
+  },
+  "main": "dist/src/server.js",
+  "files": [
+    "dist/src",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "prepublishOnly": "npm run test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.0",
+    "typescript": "^5.9.0"
+  }
+}

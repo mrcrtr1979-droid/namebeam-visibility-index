@@ -1,0 +1,28 @@
+{
+  "index": "Receipts Index free row index. Row ids and UTC dates only; row content is paid.",
+  "row_id_format": "integer, 1-based record number of a data row in the corpus CSV (header excluded); valid when 1 <= row_id <= row_count",
+  "row_count": 3,
+  "first_row_id": 1,
+  "last_row_id": 3,
+  "first_date_utc": "2026-09-01",
+  "last_date_utc": "2026-09-02",
+  "page": { "start": 1, "limit": 100, "returned": 3, "next_start": null },
+  "rows": [
+    { "row_id": 1, "date_utc": "2026-09-01" },
+    { "row_id": 2, "date_utc": "2026-09-01" },
+    { "row_id": 3, "date_utc": "2026-09-02" }
+  ],
+  "days": [
+    { "date_utc": "2026-09-01", "rows": 2 },
+    { "date_utc": "2026-09-02", "rows": 1 }
+  ],
+  "rows_outside_days": 0,
+  "days_note": "days lists the YYYY-MM-DD dates that /v1/day/{date} can serve; rows_outside_days counts rows whose date_utc has another shape, which are available by row id and in the corpus but not by day",
+  "paid_routes": {
+    "/v1/row/{row_id}": "270000 USDC atomic units (0.27 USDC)",
+    "/v1/day/{YYYY-MM-DD}": "1810000 USDC atomic units (1.81 USDC)",
+    "/v1/corpus": "540000000 USDC atomic units (540 USDC)",
+    "/v1/feed/founding-partner": "200000000 USDC atomic units (200 USDC per month)"
+  },
+  "free_sample": "https://api.receiptsindex.com/v1/sample"
+}
