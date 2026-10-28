@@ -517,7 +517,8 @@ def selftest():
     real = os.path.join(REPO, 'prereg')
     if os.path.isdir(real):
         for f in sorted(os.listdir(real)):
-            if f.endswith('.json') and not f.endswith('.reveal.json'):
+            # cohort-NN.json only: prereg/ also holds series registrations that are not cohorts (e1-q2-01.json)
+            if f.startswith('cohort-') and f.endswith('.json') and not f.endswith('.reveal.json'):
                 rc = load_cohort(os.path.join(real, f))
                 chk('repo cohort %s passes its own checks (%s)' % (f, '; '.join(check_cohort(rc)) or 'clean'), check_cohort(rc) == [])
                 chk('repo cohort %s holds no plain fact text or hidden pattern' % f,
