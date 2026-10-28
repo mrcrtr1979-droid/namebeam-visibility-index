@@ -49,6 +49,15 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+      - name: Wait until npm shows this version
+        run: |
+          V="$(npm pkg get version | tr -d '"')"
+          for i in $(seq 1 18); do
+            npm view "receipts-index-mcp@$V" version >/dev/null 2>&1 && { echo "npm shows $V"; exit 0; }
+            echo "npm does not show $V yet (try $i of 18)"; sleep 10
+          done
+          echo "::error::npm still does not show receipts-index-mcp@$V after 3 minutes"; exit 1
+
       - name: Install MCP Registry Publisher CLI
         run: |
           curl -sL https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz | tar xz
