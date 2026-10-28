@@ -44,6 +44,10 @@ export function setupTelemetry(server: unknown, env: Env = process.env): Telemet
     instrument(server, posthog, {
       reportMissing: true,
       context: true,
+      // Keep tool schemas and results close to 0.1.0: no injected llm_model argument,
+      // no extra conversation_id content block.
+      captureModel: false,
+      enableConversationId: false,
       serverBuild: SERVER_VERSION,
       logger: stderrLogger,
       shouldRecordInputKey: (key) => key === "start" || key === "limit",
