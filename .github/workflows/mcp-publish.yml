@@ -17,6 +17,7 @@ jobs:
       id-token: write
     steps:
       - name: Check NPM_TOKEN
+        working-directory: .
         run: |
           if [ -z "${{ secrets.NPM_TOKEN }}" ]; then
             echo "Error: NPM_TOKEN secret is empty"
@@ -44,7 +45,7 @@ jobs:
         run: npm test
 
       - name: Publish to npm
-        run: npm publish --provenance --access public
+        run: npm view "receipts-index-mcp@$(npm pkg get version | tr -d '"')" version || npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
