@@ -1,6 +1,6 @@
 # receipts-index-mcp
 
-An MCP server (stdio) for the Receipts Index API at https://api.receiptsindex.com/?utm_source=npm, published by Carter Enterprise LLC.
+An MCP server for the Receipts Index API (stdio through npm, and a remote Streamable HTTP endpoint) at https://api.receiptsindex.com/?utm_source=npm, published by Carter Enterprise LLC.
 
 The Receipts Index is the Namebeam record of which US local businesses AI engines name for fixed buyer questions: one dated row per check, engine and UTC date (2,714 rows, 2026-07-29 to 2026-10-27 as read on 2026-10-27).
 
@@ -36,6 +36,27 @@ Row fields: date_utc, check_id, business, niche, market, engine, prompt_variant,
 From 0.1.1 the server sends anonymous usage events to PostHog (project of Carter Enterprise LLC) through PostHog MCP Analytics: one event per tool call (tool name, client name and version, duration, error), tool listings, the handshake, and the short reason the agent gives in the `context` argument. Only the `start` and `limit` argument values are recorded; nothing else you pass is recorded. With telemetry on, each tool takes a `context` argument and the server adds a `get_more_tools` tool where an agent can say what it needed and did not find.
 
 Turn it off with `RECEIPTS_INDEX_TELEMETRY=0` or `DO_NOT_TRACK=1` in the server's environment. Off means no PostHog client is created and the tools are exactly the three above.
+
+## Remote endpoint (Streamable HTTP)
+
+Planned URL: `https://api.receiptsindex.com/mcp`. It goes live when the Receipts API Worker that serves `api.receiptsindex.com` is redeployed with the `/mcp` route and the zone route for `/mcp*` is added; until then use the stdio install below.
+
+It exposes the same three tools as the stdio server, read-only, with no sign-in and no API key. `receipts_index` and `receipts_sample` return the free data. `receipts_pricing` returns the x402 payment terms for the paid routes (route, USDC price, network, pay-to address). The endpoint never pays and never signs anything; paying is done by an x402 client against the listed route.
+
+Add it to any client that takes a remote MCP URL (Claude and ChatGPT custom connectors, or any assistant that can add an MCP server by URL):
+
+```
+https://api.receiptsindex.com/mcp
+```
+
+Protocol notes: stateless Streamable HTTP, JSON responses. `POST` a JSON-RPC message (`initialize`, `ping`, `tools/list`, `tools/call`); notifications get `202`. `GET` and `DELETE` return `405` because there is no server-initiated stream and no session. Protocol versions 2025-11-25, 2025-06-18, 2025-03-26 and 2024-11-05 are accepted; an unsupported `MCP-Protocol-Version` header returns `400`. CORS is open (`Access-Control-Allow-Origin: *`) because the endpoint takes no credentials and serves public data. The remote endpoint sends no telemetry.
+
+```
+curl -sS https://api.receiptsindex.com/mcp -H 'content-type: application/json' -H 'accept: application/json, text/event-stream' \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
+```
+
+The handler is `src/remote.ts` (no SDK dependency, Fetch API only). `npm run build` plus `node scripts/build-worker-module.mjs` writes `dist/worker/mcp-remote.worker.js`, the single-file form that is pasted into the Worker. `test/remote.test.ts` checks that its tool list matches the stdio server's field by field.
 
 ## Install
 
