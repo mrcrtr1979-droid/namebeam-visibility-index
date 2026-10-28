@@ -2,6 +2,24 @@
 
 A dated public record of which local businesses four AI engines name when they are asked the same buyer questions. Every answer is saved with its date and a SHA-256 hash of the raw file.
 
+## MCP server (receipts-index-mcp)
+
+This repository also contains a Model Context Protocol (MCP) server in [`mcp/`](mcp/). It is a TypeScript stdio server built on the official MCP SDK (`@modelcontextprotocol/sdk`, `McpServer`) and published to npm as `receipts-index-mcp` and to the official MCP Registry as `io.github.mrcrtr1979-droid/receipts-index`.
+
+Tools:
+
+- `receipts_index`: free. Calls `GET https://api.receiptsindex.com/v1/index` and returns row ids and UTC dates.
+- `receipts_sample`: free. Calls `GET https://api.receiptsindex.com/v1/sample` and returns one real row labeled as a sample.
+- `receipts_pricing`: free. Reads `/.well-known/x402` and `/v1/manifest` and lists the paid x402 routes and their prices (0.27 USDC per row, 1.81 USDC per day file).
+
+The server never pays and never signs anything. Install:
+
+```json
+{ "mcpServers": { "receipts-index": { "command": "npx", "args": ["-y", "receipts-index-mcp"] } } }
+```
+
+Source, tests and the full tool reference: [`mcp/README.md`](mcp/README.md).
+
 ## Edition 1
 
 - Window: 2026-09-01 to 2026-10-13, 42 run days (no run on 2026-10-05).

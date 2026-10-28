@@ -1,4 +1,6 @@
 import { test } from "node:test";
+// Tests never touch the network: keep telemetry off even when run without the npm script.
+process.env.RECEIPTS_INDEX_TELEMETRY = "0";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";

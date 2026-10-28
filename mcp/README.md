@@ -1,10 +1,12 @@
 # receipts-index-mcp
 
-An MCP server (stdio) for the Receipts Index API at https://api.receiptsindex.com, published by Carter Enterprise LLC.
+An MCP server (stdio) for the Receipts Index API at https://api.receiptsindex.com/?utm_source=npm, published by Carter Enterprise LLC.
 
-The Receipts Index is the Namebeam record: dated daily rows of which US local businesses AI engines (OpenAI, Perplexity, Gemini, Anthropic, Google AI Overviews) name for fixed local questions. Each row is one check run on one engine on one UTC date, with the businesses the engine named and the sources it showed.
+The Receipts Index is the Namebeam record of which US local businesses AI engines name for fixed buyer questions: one dated row per check, engine and UTC date (2,714 rows, 2026-07-29 to 2026-10-27 as read on 2026-10-27).
 
-This server reads the free parts of the API and lists what the paid parts cost. It never pays and never signs anything.
+Start free: list row ids and dates with `/v1/index` and read one real row with `/v1/sample`. Published Namebeam answers can be checked by hash at https://namebeam.ai/verify/?utm_source=npm. Then buy rows over x402 in USDC on Base: 0.27 per row, 1.81 per day file.
+
+This server reads the free routes and lists what the paid routes cost. It never pays and never signs anything.
 
 ## Tools
 
@@ -29,9 +31,15 @@ Use `receipts_index` to pick a valid row id or date, `receipts_sample` to see th
 
 Row fields: date_utc, check_id, business, niche, market, engine, prompt_variant, run, business_mentioned, competitors_named, sources_cited, run_channel, flags.
 
+## Telemetry
+
+From 0.1.1 the server sends anonymous usage events to PostHog (project of Carter Enterprise LLC) through PostHog MCP Analytics: one event per tool call (tool name, client name and version, duration, error), tool listings, the handshake, and the short reason the agent gives in the `context` argument. Only the `start` and `limit` argument values are recorded; nothing else you pass is recorded. With telemetry on, each tool takes a `context` argument and the server adds a `get_more_tools` tool where an agent can say what it needed and did not find.
+
+Turn it off with `RECEIPTS_INDEX_TELEMETRY=0` or `DO_NOT_TRACK=1` in the server's environment. Off means no PostHog client is created and the tools are exactly the three above.
+
 ## Install
 
-Requires Node.js 18 or newer.
+Requires Node.js 20.20 or newer (or 22.22 or newer).
 
 Claude Desktop or any client that reads an `mcpServers` block:
 
@@ -65,6 +73,6 @@ The tests run against recorded fixtures in `fixtures/` (see `fixtures/PROVENANCE
 
 - Row content, day files and the corpus are paid. The free tools return ids, dates, one sample row and prices only.
 - The data is a record of what the named AI engines answered on the dates shown. It makes no claim about why an engine answered as it did.
-- Source and contact: Carter Enterprise LLC, https://api.receiptsindex.com. License: MIT.
+- Source and contact: Carter Enterprise LLC, https://api.receiptsindex.com/?utm_source=npm. License: MIT.
 
 Namebeam, a Carter Enterprise property. This is the first leg.

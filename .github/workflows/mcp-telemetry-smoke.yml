@@ -1,0 +1,35 @@
+name: MCP Telemetry Smoke
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'mcp-telemetry-*'
+    paths:
+      - 'mcp/**'
+      - '.github/workflows/mcp-telemetry-smoke.yml'
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    defaults:
+      run:
+        working-directory: mcp
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install and test
+        run: |
+          npm ci
+          npm test
+
+      - name: Telemetry smoke (one tools/call, PostHog flush must not error)
+        run: node scripts/smoke.mjs
