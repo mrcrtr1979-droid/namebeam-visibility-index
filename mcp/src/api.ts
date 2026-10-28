@@ -1,5 +1,5 @@
 export const DEFAULT_BASE_URL = "https://api.receiptsindex.com";
-export const USER_AGENT = "receipts-index-mcp/0.1.1";
+export const USER_AGENT = "receipts-index-mcp/0.1.2";
 
 export type FetchLike = (url: string, init?: { headers?: Record<string, string>; signal?: AbortSignal }) => Promise<{
   ok: boolean;

@@ -3,7 +3,7 @@ import { z } from "zod";
 import { ApiError, buildPricing, makeClient, type Client, type FetchLike, DEFAULT_BASE_URL } from "./api.js";
 
 export const SERVER_NAME = "receipts-index";
-export const SERVER_VERSION = "0.1.1";
+export const SERVER_VERSION = "0.1.2";
 
 type ToolResult = { content: { type: "text"; text: string }[]; isError?: boolean };
 
