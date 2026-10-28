@@ -3,7 +3,7 @@ import { z } from "zod";
 import { ApiError, buildPricing, makeClient, type Client, type FetchLike, DEFAULT_BASE_URL } from "./api.js";
 
 export const SERVER_NAME = "receipts-index";
-export const SERVER_VERSION = "0.1.4";
+export const SERVER_VERSION = "0.1.5";
 
 type ToolResult = { content: { type: "text"; text: string }[]; isError?: boolean };
 
@@ -39,7 +39,7 @@ export function createServer(opts: ServerOptions = {}): McpServer {
         start: z.number().int().min(1).optional().describe("First row id of the page. Default 1."),
         limit: z.number().int().min(1).max(500).optional().describe("Rows per page, 1 to 500. The API default applies when omitted.")
       },
-      annotations: { readOnlyHint: true, openWorldHint: true }
+      annotations: { title: "Receipts Index: free row index", readOnlyHint: true, openWorldHint: true }
     },
     async ({ start, limit }) => {
       try {
@@ -61,7 +61,7 @@ export function createServer(opts: ServerOptions = {}): McpServer {
       description:
         "Calls GET /v1/sample on the Receipts API. Free. Returns one real record row labeled as a sample, with its row id, the paid route and price for that row, and the row as fields and as CSV. It takes no parameters and is not a purchase.",
       inputSchema: {},
-      annotations: { readOnlyHint: true, openWorldHint: true }
+      annotations: { title: "Receipts Index: free sample row", readOnlyHint: true, openWorldHint: true }
     },
     async () => {
       try {
@@ -79,7 +79,7 @@ export function createServer(opts: ServerOptions = {}): McpServer {
       description:
         "Reads GET /.well-known/x402 (and /v1/manifest for the price text) on the Receipts API and returns the paid endpoints with their prices in USDC. Free to call. It never pays and never signs anything. Paying is done by an x402 client against the listed route.",
       inputSchema: {},
-      annotations: { readOnlyHint: true, openWorldHint: true }
+      annotations: { title: "Receipts Index: paid endpoints and prices", readOnlyHint: true, openWorldHint: true }
     },
     async () => {
       try {

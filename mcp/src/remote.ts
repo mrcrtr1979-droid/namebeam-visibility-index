@@ -53,7 +53,7 @@ export const TOOLS: ToolDef[] = [
       },
       $schema: DRAFT07
     },
-    annotations: ANNOTATIONS,
+    annotations: { title: "Receipts Index: free row index", ...ANNOTATIONS },
     execution: EXECUTION
   },
   {
@@ -62,7 +62,7 @@ export const TOOLS: ToolDef[] = [
     description:
       "Calls GET /v1/sample on the Receipts API. Free. Returns one real record row labeled as a sample, with its row id, the paid route and price for that row, and the row as fields and as CSV. It takes no parameters and is not a purchase.",
     inputSchema: { type: "object", properties: {}, $schema: DRAFT07 },
-    annotations: ANNOTATIONS,
+    annotations: { title: "Receipts Index: free sample row", ...ANNOTATIONS },
     execution: EXECUTION
   },
   {
@@ -71,7 +71,7 @@ export const TOOLS: ToolDef[] = [
     description:
       "Reads GET /.well-known/x402 (and /v1/manifest for the price text) on the Receipts API and returns the paid endpoints with their prices in USDC. Free to call. It never pays and never signs anything. Paying is done by an x402 client against the listed route.",
     inputSchema: { type: "object", properties: {}, $schema: DRAFT07 },
-    annotations: ANNOTATIONS,
+    annotations: { title: "Receipts Index: paid endpoints and prices", ...ANNOTATIONS },
     execution: EXECUTION
   }
 ];

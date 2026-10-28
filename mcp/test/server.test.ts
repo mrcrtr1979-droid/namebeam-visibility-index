@@ -43,6 +43,7 @@ test("lists exactly three tools", async () => {
   const { tools } = await c.listTools();
   assert.deepEqual(tools.map((t) => t.name).sort(), ["receipts_index", "receipts_pricing", "receipts_sample"]);
   for (const t of tools) assert.equal(t.annotations?.readOnlyHint, true);
+  for (const t of tools) assert.equal(t.annotations?.title, t.title, "annotations.title matches title for " + t.name);
 });
 
 test("receipts_index passes start and limit and returns the fixture", async () => {
