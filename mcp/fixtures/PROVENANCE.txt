@@ -1,0 +1,7 @@
+Fixture provenance (read 2026-10-27 CT, build lane A3-MCP-BUILD-1027D)
+sample.json        live read of https://api.receiptsindex.com/v1/sample via WebFetch 2026-10-27 (real row 602).
+index.json         NOT a live capture. /v1/index fetch was blocked in this session. Shape taken from handleIndex() in
+                   STAGED_EDGE_x402-route_2026-08-18/w3c_v33_1027/worker_v33.js; counts and dates are small made-up values.
+well-known-x402.json       NOT a live capture. Shape taken from the /.well-known/x402 handler in worker_v33.js (version 1, url list).
+well-known-x402-1019.json  live curl capture from status/staged/DATA_LISTINGS_1019/API_CHECK_1019.md (2026-10-19), older object format.
+manifest.json      live curl capture of /v1/manifest from API_CHECK_1019.md (2026-10-19); pricing_info matches the live openapi read 2026-10-27.
