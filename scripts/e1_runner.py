@@ -44,6 +44,19 @@ except Exception:  # pragma: no cover - observability is optional, never block a
 
 ROSTER_PATH = "roster/e1_roster.json"
 OUTPUT_DIR = "corpus/e1"
+
+# SECOND DAILY QUESTION (2026-10-28, prereg/e1-q2-01.json). For the market-cut rows listed in
+# roster/e1_q2.json the runner also asks a differently worded question (prompt_2) of every
+# configured engine, AFTER the whole prompt_1 pass. HARD DESIGN RULE: a q2 row must be invisible to
+# every consumer of the prompt_1 record. So q2 rows go to their own folder (corpus/e1_q2/), carry
+# their own check_id prefix (NB-CZ-Q2API_), and carry prompt_variant 2. The prompt_1 files, their
+# NB-CZ-API_ names, their same-day _rN numbering and every count built from corpus/e1 are untouched.
+# A q2 row is never merged into a prompt_1 count; it is a separate series.
+Q2_ROSTER_PATH = "roster/e1_q2.json"
+Q2_OUTPUT_DIR = "corpus/e1_q2"
+Q2_ID_PREFIX = "NB-CZ-Q2API"
+Q2_SERIES = "e1_q2"
+Q2_PREREG = "prereg/e1-q2-01.json"
 RUN_CHANNEL = "api"
 SCHEMA_VERSION = "v4"
 
@@ -73,7 +86,15 @@ def load_active_roster(path):
     return [r for r in data.get("roster", []) if r.get("active") is True]
 
 
-def next_run_index(date_utc, slug, engine):
+def _variant_layout(variant):
+    """(check_id prefix, output dir) for a prompt variant. Variant 1 is the Edition 1 record and
+    keeps its historical names and folder; variant 2 is the separate q2 series."""
+    if variant == 2:
+        return Q2_ID_PREFIX, Q2_OUTPUT_DIR
+    return "NB-CZ-API", OUTPUT_DIR
+
+
+def next_run_index(date_utc, slug, engine, variant=1):
     """Same-day re-runs must ACCUMULATE, never overwrite.
 
     Found the hard way on 2026-08-05: the identical roster was run twice in
@@ -87,11 +108,12 @@ def next_run_index(date_utc, slug, engine):
     for. Run 1 keeps the historical filename so nothing already committed
     breaks; run 2 and beyond get a _rN suffix.
     """
-    base = "NB-CZ-API_%s_%s_%s" % (date_utc, slug, engine)
-    if not os.path.exists(os.path.join(OUTPUT_DIR, base + ".json")):
+    prefix, out_dir = _variant_layout(variant)
+    base = "%s_%s_%s_%s" % (prefix, date_utc, slug, engine)
+    if not os.path.exists(os.path.join(out_dir, base + ".json")):
         return base, 1
     n = 2
-    while os.path.exists(os.path.join(OUTPUT_DIR, "%s_r%d.json" % (base, n))):
+    while os.path.exists(os.path.join(out_dir, "%s_r%d.json" % (base, n))):
         n += 1
     return "%s_r%d" % (base, n), n
 
@@ -127,10 +149,11 @@ def redact_for_public(row):
     return public, row
 
 
-def write_row(row, check_id):
+def write_row(row, check_id, output_dir=None):
     public, full = redact_for_public(row)
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    path = os.path.join(OUTPUT_DIR, check_id + ".json")
+    output_dir = output_dir or OUTPUT_DIR
+    os.makedirs(output_dir, exist_ok=True)
+    path = os.path.join(output_dir, check_id + ".json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(public, f, indent=1, ensure_ascii=False)
     if public.get("answer_private") or public.get("ai_overview_private"):
@@ -141,7 +164,27 @@ def write_row(row, check_id):
     return path
 
 
-def base_row(business_row, date_utc, check_id, engine):
+def base_row(business_row, date_utc, check_id, engine, variant=1):
+    if variant == 2:
+        # The second question: same business, market and niche, different wording. The prompt_1
+        # text is carried only so a reader can pair the two series without opening the roster.
+        return {
+            "check_id": check_id,
+            "date_utc": date_utc,
+            "business": business_row["business"],
+            "niche": business_row.get("niche", ""),
+            "market": business_row.get("market", ""),
+            "row_type": business_row.get("row_type", "business"),
+            "prompt_variant": 2,
+            "series": Q2_SERIES,
+            "prereg": Q2_PREREG,
+            "run": 1,
+            "prompt_text": business_row["prompt_2"],
+            "q1_prompt_text": business_row["prompt_1"],
+            "engine": engine,
+            "run_channel": RUN_CHANNEL,
+            "schema_version": SCHEMA_VERSION,
+        }
     return {
         "check_id": check_id,
         "date_utc": date_utc,
@@ -378,10 +421,27 @@ def _observe(row, latency_s, err):
         pass
 
 
-def run_engine(business_row, engine, fn, date_utc, supersedes=None):
+# GEMINI FREE-RAIL GUARD FOR THE SECOND QUESTION (2026-10-28). The free tier is thin: 20 requests a
+# day on gemini-3.6-flash (the 20-question continuity panel uses all of them) and 500 a day on
+# gemini-3.5-flash-lite (see scripts/engines.py, FREE-TIER SPLIT). The q2 pass runs after the whole
+# prompt_1 pass, and its question ids (<slug>_q2) are never on the panel, so q2 can only spend
+# flash-lite. If any Gemini call in this run was refused for quota or billing, q2 does not ask
+# Gemini at all: it logs a QUOTA_BLOCKED row (the protocol's status for "we were not allowed to
+# ask", never counted as an engine failure) and the prompt_1 record is untouched.
+_GEMINI_EXHAUSTED = [False]
+_GEMINI_QUOTA_ERR = re.compile(r"^QUOTA: |HTTP (?:402|403|429)\b")
+
+
+def _note_gemini_quota(engine, err):
+    if engine == "gemini" and _GEMINI_QUOTA_ERR.search(str(err or "")):
+        _GEMINI_EXHAUSTED[0] = True
+
+
+def run_engine(business_row, engine, fn, date_utc, supersedes=None, variant=1):
     slug = slugify(business_row["business"])
-    check_id, run_index = next_run_index(date_utc, slug, engine)
-    row = base_row(business_row, date_utc, check_id, engine)
+    check_id, run_index = next_run_index(date_utc, slug, engine, variant)
+    out_dir = _variant_layout(variant)[1]
+    row = base_row(business_row, date_utc, check_id, engine, variant)
     row["run"] = run_index
     if supersedes:
         # Re-ask of a FAILED cell: say so, with the real collection time, so the row never
@@ -389,21 +449,32 @@ def run_engine(business_row, engine, fn, date_utc, supersedes=None):
         row["rerun_supersedes"] = supersedes
         row["rerun_collected_at_utc"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     import engines as _engines
-    _engines.CURRENT_QUESTION_ID[0] = slugify(business_row["business"])
+    # Model choice for Gemini is keyed on this id. A q2 id is never on the continuity panel.
+    _engines.CURRENT_QUESTION_ID[0] = slug if variant != 2 else slug + "_q2"
+    prompt = business_row["prompt_2"] if variant == 2 else business_row["prompt_1"]
+    skipped = False
     _t0 = time.monotonic()
-    ok, text, sources, err = fn(business_row["prompt_1"])
+    if variant == 2 and engine == "gemini" and _GEMINI_EXHAUSTED[0]:
+        skipped = True
+        ok, text, sources = False, "", []
+        err = ("QUOTA: gemini q2 not asked, the Gemini rails were refused for quota earlier in "
+               "this run; the prompt_1 calls come first and keep the free tier")
+    else:
+        ok, text, sources, err = fn(prompt)
     _latency = time.monotonic() - _t0
     # Forward-only audit fields: which model the provider says it served, the
     # response id and usage (Perplexity since 2026-09-28, also its search-result
     # count; OpenAI, Anthropic and Gemini from the 2026-10-13 change). Set on
     # both OK and failed rows; empty when the body never parsed.
-    row["engine_meta"] = dict(LAST_CALL_META.get(engine) or {})
+    row["engine_meta"] = ({"skipped": "gemini rails refused for quota earlier in this run"} if skipped
+                          else dict(LAST_CALL_META.get(engine) or {}))
     if not ok:
         # A refusal for QUOTA is not the engine failing to answer. It is us
         # not being allowed to ask. Counting it as FAILED would publish a
         # false statement about the engine, so it gets its own status and
         # must be excluded from any failure rate or denominator.
         quota = str(err or "").startswith("QUOTA: ")
+        _note_gemini_quota(engine, err)
         row.update({
             "run_status": "QUOTA_BLOCKED" if quota else "FAILED",
             "business_mentioned": None,
@@ -417,12 +488,15 @@ def run_engine(business_row, engine, fn, date_utc, supersedes=None):
                 % ("QUOTA BLOCKED, not an engine failure" if quota
                    else "FAILED RUN", err, RUN_CHANNEL_CAVEAT)),
         })
-        _path = write_row(row, check_id)
-        _observe(row, _latency, err)
+        _path = write_row(row, check_id, out_dir)
+        if not skipped:
+            _observe(row, _latency, err)
         return _path, False
     row.update({
         "run_status": "OK",
         "business_mentioned": is_mentioned(business_row, text),
+        # The gazetteer is read from the prompt_1 record (names already recorded for this market and
+        # niche) so q1 and q2 answers are parsed by the same rule; q2 rows never enter that record.
         "competitors_mentioned": extract_competitors(
             business_row, text, sources, date_utc,
             build_gazetteer(business_row.get("market"), business_row.get("niche"),
@@ -434,7 +508,7 @@ def run_engine(business_row, engine, fn, date_utc, supersedes=None):
         "answer_verbatim": text,
         "session_note": RUN_CHANNEL_CAVEAT,
     })
-    _path = write_row(row, check_id)
+    _path = write_row(row, check_id, out_dir)
     _observe(row, _latency, err)
     return _path, True
 
@@ -600,11 +674,12 @@ def parse_rerun_options(env, today_utc):
     return {"only": only, "failed": failed, "date": date or today_utc}, ""
 
 
-def cell_files(date_utc, slug, engine):
+def cell_files(date_utc, slug, engine, variant=1):
     """All corpus files of one cell: the base row and any _rN, in run order."""
-    base = "NB-CZ-API_%s_%s_%s" % (date_utc, slug, engine)
+    prefix, out_dir = _variant_layout(variant)
+    base = "%s_%s_%s_%s" % (prefix, date_utc, slug, engine)
     out = [base] + ["%s_r%d" % (base, n) for n in range(2, 60)]
-    paths = [os.path.join(OUTPUT_DIR, c + ".json") for c in out]
+    paths = [os.path.join(out_dir, c + ".json") for c in out]
     found = []
     for c, pth in zip(out, paths):
         if os.path.exists(pth):
@@ -614,10 +689,10 @@ def cell_files(date_utc, slug, engine):
     return found
 
 
-def failed_cell_check_id(date_utc, slug, engine):
+def failed_cell_check_id(date_utc, slug, engine, variant=1):
     """check_id of the cell's latest FAILED row if the cell has no OK row, else None."""
     last_failed = None
-    for cid, pth in cell_files(date_utc, slug, engine):
+    for cid, pth in cell_files(date_utc, slug, engine, variant):
         try:
             with open(pth, "r", encoding="utf-8") as f:
                 status = json.load(f).get("run_status")
@@ -628,6 +703,150 @@ def failed_cell_check_id(date_utc, slug, engine):
         if status == "FAILED":
             last_failed = cid
     return last_failed
+
+
+# SECOND DAILY QUESTION: roster, validation and the q2 pass.
+_Q2_FIELDS = ("cut_slug", "business", "market", "niche", "prompt_1_ref", "prompt_2")
+_Q2_MAX_WORDS = 24      # "under 25 words"
+_Q2_BRANDS = ("namebeam", "trunkline", "alpha vault", "carter studio")
+
+
+def _city_of(market):
+    """'Atlanta GA' -> 'atlanta'; 'Los Angeles CA' -> 'los angeles'. The state code is dropped."""
+    words = str(market or "").split()
+    if len(words) > 1 and re.fullmatch(r"[A-Z]{2}", words[-1]):
+        words = words[:-1]
+    return " ".join(words).lower()
+
+
+def validate_q2(doc, roster_rows):
+    """Problems (a list of strings, empty when clean) with a roster/e1_q2.json document against the
+    full roster. A row is valid only if: its fields are all present; its business is exactly one
+    ACTIVE roster row whose market, niche and prompt_1 equal the ones recorded (so q2 can never be
+    paired with a question whose wording moved); cut_slug and business are not repeated; and
+    prompt_2 is a single ASCII line under 25 words with no em or en dash, different from prompt_1,
+    naming the market's city and no brand or roster business name."""
+    problems = []
+    rows = (doc or {}).get("rows")
+    if not isinstance(rows, list) or not rows:
+        return ["rows missing or empty"]
+    by_business = {}
+    for r in roster_rows:
+        by_business.setdefault(r.get("business"), []).append(r)
+    brand_names = set(_Q2_BRANDS)
+    for r in roster_rows:
+        if r.get("row_type") != "research_segment" and r.get("business"):
+            brand_names.add(str(r["business"]).lower())
+    seen_slug, seen_business = set(), set()
+    for i, q in enumerate(rows):
+        tag = "row %d (%s)" % (i, (q or {}).get("cut_slug", "?")) if isinstance(q, dict) else "row %d" % i
+        if not isinstance(q, dict):
+            problems.append("%s: not an object" % tag)
+            continue
+        miss = [k for k in _Q2_FIELDS if not isinstance(q.get(k), str) or not q.get(k).strip()]
+        if miss:
+            problems.append("%s: missing or empty %s" % (tag, ", ".join(miss)))
+            continue
+        if q["cut_slug"] in seen_slug:
+            problems.append("%s: cut_slug repeated" % tag)
+        if q["business"] in seen_business:
+            problems.append("%s: business repeated" % tag)
+        seen_slug.add(q["cut_slug"])
+        seen_business.add(q["business"])
+        match = [r for r in by_business.get(q["business"], []) if r.get("active") is True]
+        if len(match) != 1:
+            problems.append("%s: %d active roster rows named %r (need exactly 1)" % (tag, len(match), q["business"]))
+            continue
+        m = match[0]
+        if m.get("market") != q["market"] or m.get("niche") != q["niche"]:
+            problems.append("%s: roster market/niche is %r/%r, not %r/%r"
+                            % (tag, m.get("market"), m.get("niche"), q["market"], q["niche"]))
+        if m.get("prompt_1") != q["prompt_1_ref"]:
+            problems.append("%s: roster prompt_1 no longer equals prompt_1_ref" % tag)
+        twins = [r for r in roster_rows if r is not m and r.get("active") is True
+                 and r.get("market") == q["market"] and r.get("niche") == q["niche"]]
+        if twins:
+            problems.append("%s: other active roster rows share its market and niche: %s"
+                            % (tag, ", ".join(str(t.get("business")) for t in twins)))
+        p2 = q["prompt_2"]
+        try:
+            p2.encode("ascii")
+        except UnicodeEncodeError:
+            problems.append("%s: prompt_2 is not ASCII" % tag)
+        if "\n" in p2 or "\r" in p2:
+            problems.append("%s: prompt_2 spans lines" % tag)
+        if len(p2.split()) > _Q2_MAX_WORDS:
+            problems.append("%s: prompt_2 is %d words (limit %d)" % (tag, len(p2.split()), _Q2_MAX_WORDS))
+        if p2.strip().lower() == str(m.get("prompt_1", "")).strip().lower():
+            problems.append("%s: prompt_2 equals prompt_1" % tag)
+        low = p2.lower()
+        if _city_of(q["market"]) and _city_of(q["market"]) not in low:
+            problems.append("%s: prompt_2 does not name the city %r" % (tag, _city_of(q["market"])))
+        hit = [b for b in brand_names if b and b in low]
+        if hit:
+            problems.append("%s: prompt_2 names a brand or roster business: %s" % (tag, ", ".join(sorted(hit))))
+    return problems
+
+
+def load_q2_rows(roster_rows, q2_path=None):
+    """Returns (rows, problems). Each row is the matching ACTIVE roster row plus prompt_2, ready for
+    run_engine(variant=2). Rows with a problem are dropped and listed; a missing or unreadable file
+    returns ([], [reason]) and q2 is simply not asked. Never raises, never touches the prompt_1 pass."""
+    path = q2_path or Q2_ROSTER_PATH
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            doc = json.load(f)
+    except OSError:
+        return [], ["%s not found; the second question is not asked" % path]
+    except ValueError as exc:
+        return [], ["%s is not valid JSON (%s); the second question is not asked" % (path, exc)]
+    problems = validate_q2(doc, roster_rows)
+    bad = set()
+    for p in problems:
+        m = re.match(r"row (\d+)", p)
+        if m:
+            bad.add(int(m.group(1)))
+    rows_doc = (doc or {}).get("rows")
+    if not isinstance(rows_doc, list):
+        return [], problems
+    out = []
+    for i, q in enumerate(rows_doc):
+        if i in bad or not isinstance(q, dict):
+            continue
+        for r in roster_rows:
+            if r.get("business") == q.get("business") and r.get("active") is True:
+                row = dict(r)
+                row["prompt_2"] = q["prompt_2"]
+                row["q2_cut_slug"] = q["cut_slug"]
+                out.append(row)
+                break
+    return out, problems
+
+
+def run_q2_pass(q2_rows, engines, date_utc, rerun=None):
+    """Ask prompt_2 of every configured engine for each q2 row, in the roster's order, after the
+    prompt_1 pass. No SERP row and no agreement row: q2 is the answer engines' naming only.
+    Returns (wrote, ok, failed). Rows land in Q2_OUTPUT_DIR as NB-CZ-Q2API_ files."""
+    wrote = ok_n = fail_n = 0
+    for br in q2_rows:
+        only = br.get("engines")
+        for name, fn in engines.items():
+            if isinstance(only, list) and name not in only:
+                continue
+            supersedes = None
+            if rerun:
+                if name not in rerun["only"]:
+                    continue
+                if rerun["failed"]:
+                    supersedes = failed_cell_check_id(date_utc, slugify(br["business"]), name, 2)
+                    if not supersedes:
+                        continue
+                    print("rerun q2 cell: %s %s (supersedes %s)" % (slugify(br["business"]), name, supersedes))
+            _, good = run_engine(br, name, fn, date_utc, supersedes, variant=2)
+            wrote += 1
+            ok_n += 1 if good else 0
+            fail_n += 0 if good else 1
+    return wrote, ok_n, fail_n
 
 
 def main():
@@ -653,6 +872,7 @@ def _main():
         date_utc = rerun["date"]
     try:
         roster = load_active_roster(ROSTER_PATH)
+        roster_all = list(roster)   # every ACTIVE row, file order, before the date rotation below
     except (OSError, ValueError) as exc:
         print("ERROR: could not read roster: %s" % exc)
         return 0
@@ -686,6 +906,7 @@ def _main():
         roster = roster[offset:] + roster[:offset]
         print("roster rotated by %d for %s" % (offset, date_utc))
 
+    _GEMINI_EXHAUSTED[0] = False
     wrote = ok_n = fail_n = 0
     if rerun:
         print("RERUN MODE | date %s | engines %s | only failed cells: %s"
@@ -741,6 +962,24 @@ def _main():
             ok_n += 1
 
     print("rows written: %d (ok %d, failed %d)" % (wrote, ok_n, fail_n))
+
+    # SECOND DAILY QUESTION, after everything above so it can never delay or starve a prompt_1 call.
+    # Kill switch without a commit: set the repo variable E1_DISABLE_Q2 to 1. Any problem here is
+    # logged and the run still exits 0; nothing in this block can change a prompt_1 row.
+    if _truthy(os.environ.get("E1_DISABLE_Q2")):
+        print("q2: E1_DISABLE_Q2 is set; the second question is not asked")
+        return 0
+    try:
+        q2_rows, q2_problems = load_q2_rows(roster_all)
+        for p in q2_problems:
+            print("q2 problem: %s" % p)
+        if q2_rows:
+            pos = {r.get("business"): i for i, r in enumerate(roster)}   # the day's rotated order
+            q2_rows.sort(key=lambda r: pos.get(r.get("business"), 0))
+            q2w, q2ok, q2f = run_q2_pass(q2_rows, engines, date_utc, rerun)
+            print("q2 rows written: %d (ok %d, failed or blocked %d) in %s" % (q2w, q2ok, q2f, Q2_OUTPUT_DIR))
+    except Exception as exc:  # the second question is optional; never let it fail the day's run
+        print("q2 aborted: %s: %s" % (type(exc).__name__, exc))
     return 0
 
 

@@ -1,0 +1,142 @@
+{
+ "series_id": "e1-q2-01",
+ "registered_by": "[SONNET-BUILD-1028-Q2], Namebeam AI Visibility Record",
+ "registered_on": "2026-10-28",
+ "registered_note": "This file is fixed before the first q2 run. The repository commit that adds it is the registration time. Approved by Terry J Carter 2026-10-28 11:57 CT. The wording of a prompt_2 is never edited after the start date; a change is a new series file (e1-q2-02) with its own start date.",
+ "question": "When the wording of the daily question changes, does an engine still name the same businesses for a market cut? In plain terms: does being named hold up under a second, differently worded buyer question?",
+ "what_prompt_2_is": "A second daily question for each row listed below: same market and niche as the row's prompt_1, a different buyer phrasing, neutral, no brand names, asks for specific businesses. It is asked of every configured answer engine (perplexity, gemini, anthropic, openai) once per day, after the whole prompt_1 pass. prompt_1 is not changed in any way.",
+ "wording_frame": "I need [service or situation] in [CITY]. Which specific [company type] should I call, and why?  One frame for all ten rows; only the situation and company type change.",
+ "start_date": "",
+ "start_rule": "The first scheduled collector run after the pull request that adds this file is merged to main. Fill start_date with that run's date_utc in a later commit; rows are dated by the collector, not by this field.",
+ "stop_rule": "None before the first comparison is published. The series stops when Terry J Carter says so or when roster/e1_q2.json is replaced by a new version.",
+ "output": {
+  "folder": "corpus/e1_q2/",
+  "file_name": "NB-CZ-Q2API_<date_utc>_<business_slug>_<engine>[_rN].json",
+  "row_marker": "prompt_variant = 2, series = e1_q2, prereg = prereg/e1-q2-01.json",
+  "never_merged": "q2 rows are a separate series. They are never merged into a prompt_1 count, never added to a prompt_1 denominator, and never enter Edition 1, a market cut, a public_numbers_check figure, the verify page, an evidence file or the daily datasets. Those read corpus/e1/ and NB-CZ-API_ files only; the q2 folder and prefix are chosen so that none of them can match.",
+  "same_extraction": "Names are extracted from a q2 answer by the same code path as a prompt_1 answer (scripts/e1_runner.py extract_competitors, same gazetteer read from the prompt_1 record). A q2 answer never feeds that gazetteer."
+ },
+ "engines": [
+  "perplexity",
+  "gemini",
+  "anthropic",
+  "openai"
+ ],
+ "engine_notes": {
+  "openai": "QUOTA_BLOCKED since 2026-10-26 (API balance). q2 rows for openai are written as QUOTA_BLOCKED like the prompt_1 rows and excluded from every denominator. If credits return they count from that day.",
+  "gemini": "Free tier. q2 ids are never on the 20-question gemini-3.6-flash continuity panel, so a q2 Gemini call always uses gemini-3.5-flash-lite (500 requests a day). Three of the ten rows (atlanta-hvac, houston-hvac, los-angeles-ca-ai-marketing-agency) are on that panel, so their prompt_1 Gemini rows use gemini-3.6-flash and a q1 versus q2 difference there mixes wording with model. Those three are reported separately and are not part of the Gemini headline; the Gemini headline uses the seven rows whose prompt_1 and prompt_2 are both answered by gemini-3.5-flash-lite (engine_meta.requested_model records the model per row). If Gemini refuses a prompt_1 call for quota or billing earlier in the same run, the q2 Gemini cells for that day are not asked and are logged as QUOTA_BLOCKED.",
+  "perplexity_anthropic": "Same model setting as the prompt_1 calls (scripts/engines.py). The model id each provider reports is logged per row in engine_meta."
+ },
+ "rows": [
+  {
+   "cut_slug": "atlanta-hvac",
+   "business": "SEGMENT: HVAC, Atlanta",
+   "market": "Atlanta GA",
+   "niche": "hvac repair and replacement",
+   "prompt_1": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+   "prompt_2": "I need a new air conditioner installed in Atlanta. Which specific HVAC companies should I call, and why?",
+   "prompt_2_sha256": "cf655018f6bcdb7b9d137cb9d9a1648710d5a703d551999719b3b135d3cc76d6"
+  },
+  {
+   "cut_slug": "atlanta-personal-injury",
+   "business": "SEGMENT: personal injury law, Atlanta",
+   "market": "Atlanta GA",
+   "niche": "personal injury attorneys",
+   "prompt_1": "Who is the best personal injury lawyer in Atlanta for a car accident case?",
+   "prompt_2": "I need a personal injury lawyer in Atlanta after a car accident. Which specific law firms should I call, and why?",
+   "prompt_2_sha256": "be4cfa5d7732efbd750fba42b998e9f86fce051d74426822053ed842b6e5aecf"
+  },
+  {
+   "cut_slug": "chicago-personal-injury",
+   "business": "SEGMENT: personal injury law, Chicago",
+   "market": "Chicago IL",
+   "niche": "personal injury attorneys",
+   "prompt_1": "Who is the best personal injury attorney in Chicago for a car accident claim?",
+   "prompt_2": "I need a personal injury attorney in Chicago after a car accident. Which specific law firms should I call, and why?",
+   "prompt_2_sha256": "43a850c7011286aa89752c6c921749913e2c5c0e7f74589754a44a5b9e3adee6"
+  },
+  {
+   "cut_slug": "dallas-roofing",
+   "business": "SEGMENT: roofing, Dallas",
+   "market": "Dallas TX",
+   "niche": "residential roofing",
+   "prompt_1": "Who is the best roofing company in Dallas for a roof replacement?",
+   "prompt_2": "I need my roof replaced in Dallas. Which specific roofing companies should I call, and why?",
+   "prompt_2_sha256": "cc1f2bfe9c78b80ada7fe4cd3269f348474f66bd057b6a83ce86b4400a5db692"
+  },
+  {
+   "cut_slug": "denver-roofing",
+   "business": "SEGMENT: roofing, Denver",
+   "market": "Denver CO",
+   "niche": "residential roofing",
+   "prompt_1": "Who is the best roofer in Denver for hail damage repair?",
+   "prompt_2": "My roof has hail damage in Denver. Which specific roofing companies should I call, and why?",
+   "prompt_2_sha256": "df8e4e704ca49744c20aceb856fa12fcdda2f5cf814dd37631aaed4b97816e3e"
+  },
+  {
+   "cut_slug": "houston-hvac",
+   "business": "SEGMENT: HVAC, Houston",
+   "market": "Houston TX",
+   "niche": "hvac repair and replacement",
+   "prompt_1": "Who is the best HVAC company in Houston for AC repair?",
+   "prompt_2": "My AC needs repair in Houston. Which specific HVAC companies should I call, and why?",
+   "prompt_2_sha256": "befe0a0ebe673c89b04cb9ae8c0dd8c13dd7d3b4c3f4c7004f00d22ba049d3f6"
+  },
+  {
+   "cut_slug": "houston-personal-injury",
+   "business": "SEGMENT: personal injury law, Houston",
+   "market": "Houston TX",
+   "niche": "personal injury attorneys",
+   "prompt_1": "Who is the best personal injury lawyer in Houston for a car wreck?",
+   "prompt_2": "I need a personal injury lawyer in Houston after a car wreck. Which specific law firms should I call, and why?",
+   "prompt_2_sha256": "605c281062d19cca082286a2defa261083f6dda47fd7a729a10875a42d5e4739"
+  },
+  {
+   "cut_slug": "los-angeles-ca-ai-marketing-agency",
+   "business": "Atrix Digital",
+   "market": "Los Angeles CA",
+   "niche": "AI marketing agency",
+   "prompt_1": "Who is the best AI marketing agency in Los Angeles?",
+   "prompt_2": "I need an AI marketing agency in Los Angeles. Which specific agencies should I call, and why?",
+   "prompt_2_sha256": "0c45fc100e901c0817b3084637d2f285b0986c14e38d03c7747224ba3bacf879"
+  },
+  {
+   "cut_slug": "miami-roofing",
+   "business": "SEGMENT: roofing, Miami",
+   "market": "Miami FL",
+   "niche": "residential roofing",
+   "prompt_1": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+   "prompt_2": "I need a hurricane-rated roof replacement in Miami. Which specific roofing companies should I call, and why?",
+   "prompt_2_sha256": "8736daeb2b53590b1763e4e0f5b6854b50d54227bdb58a715219557981af4e67"
+  },
+  {
+   "cut_slug": "phoenix-hvac",
+   "business": "SEGMENT: HVAC, Phoenix",
+   "market": "Phoenix AZ",
+   "niche": "hvac repair and replacement",
+   "prompt_1": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+   "prompt_2": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?",
+   "prompt_2_sha256": "173a97fbf6c89e7e9a9588936994a8f30b8264f8f78292cb33fce395be1f7b07"
+  }
+ ],
+ "planned_comparison": {
+  "unit": "One cell is one row x one engine x one day (date_utc).",
+  "pairing": "A cell is paired when the same row, engine and day has an OK prompt_1 row and an OK prompt_2 row. Only the first OK file of the day for each (the base file, not an _rN rerun) is used; reruns are reported separately. Unpaired cells are counted and shown, never imputed.",
+  "named": "For the nine research-segment rows, a business is named in an answer when it is in competitors_mentioned after the same entity gate that builds the corresponding market cut. For the Los Angeles AI marketing agency row, named is business_mentioned for Atrix Digital and, for other agencies, the same gate on competitors_mentioned.",
+  "primary_measures": [
+   "1. Hold rate, per engine and per day: of the businesses named under prompt_1 in paired cells, the share also named under prompt_2 on the same day by the same engine. Reported as k of n with n = the number of (business, row) pairs named under prompt_1.",
+   "2. Reverse hold rate, same layout: of the businesses named under prompt_2, the share also named under prompt_1.",
+   "3. Named-count comparison, per engine and per day: distinct businesses named under prompt_1 versus prompt_2, with the number of paired cells behind each figure.",
+   "4. For a business the record already counts as named under prompt_1 on a given day: whether it is named under prompt_2 on that day, shown per row, engine and day."
+  ],
+  "denominators": "Every figure prints its denominator: paired cells, OK rows per variant, QUOTA_BLOCKED rows, FAILED rows and rows not asked, per engine and per day. QUOTA_BLOCKED and FAILED rows are never counted as not named.",
+  "aggregation": "Per day and per engine first, then a pooled figure per engine over all days with the day count. No pooled figure across engines. Gemini is split into the seven same-model rows (headline) and the three panel rows (descriptive).",
+  "not_claimed": "No claim that prompt_2 is a better or truer question than prompt_1. No claim about which businesses are best. A low hold rate says the naming is sensitive to wording for that engine and market on those days; it does not say which wording is right.",
+  "first_publication": "Not before 14 paired days per engine, and never before Terry J Carter approves the text. Until then the series is collected and not cited."
+ },
+ "disclosures": {
+  "cost": "Up to 40 extra calls a day (10 rows x 4 engines); 30 are billable while openai is blocked.",
+  "code": "scripts/e1_runner.py (run_q2_pass, validate_q2), roster/e1_q2.json, scripts/test_e1_q2.py.",
+  "kill_switch": "Repository variable E1_DISABLE_Q2 = 1 stops the q2 pass on the next run; no row is deleted."
+ }
+}

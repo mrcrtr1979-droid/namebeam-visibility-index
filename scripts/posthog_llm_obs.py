@@ -186,6 +186,9 @@ def build_event(row, latency_s, err="", run_id=None, now=None):
         "market": row.get("market"),
         "date_utc": row.get("date_utc"),
         "check_id": row.get("check_id"),
+        # 2026-10-28: 1 for the daily record, 2 for the separate second-question series (e1_q2),
+        # so the two never blur in one dashboard. Additive.
+        "prompt_variant": row.get("prompt_variant", 1),
         "run_id": run_id if run_id is not None else (os.environ.get("GITHUB_RUN_ID", "").strip() or None),
     }
     if tin is not None:

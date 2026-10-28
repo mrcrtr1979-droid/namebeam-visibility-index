@@ -182,6 +182,11 @@ jobs:
           E1_ONLY_ENGINES: ${{ inputs.only_engines }}
           E1_ONLY_FAILED: ${{ inputs.only_failed }}
           E1_DATE_UTC: ${{ inputs.date_utc }}
+          # SECOND DAILY QUESTION (2026-10-28, prereg/e1-q2-01.json): after the prompt_1 pass the runner
+          # asks the differently worded prompt_2 of roster/e1_q2.json to every engine and writes the rows
+          # to corpus/e1_q2/ (never corpus/e1/). Kill switch with no commit: set the repo variable
+          # E1_DISABLE_Q2 to 1 (1, true, yes or on).
+          E1_DISABLE_Q2: ${{ vars.E1_DISABLE_Q2 }}
           # R82 (2026-10-24): Perplexity and AI Overview raw text goes to private_e1/, never to the
           # public corpus. Set to 0 to write it publicly again.
           PRIVATE_RAW: "1"
@@ -244,6 +249,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add corpus/e1/ datasets/e1/sources/ datasets/e1/customer_zero/ datasets/e1/own_name/
+          # The second-question series lives in its own folder; no generator reads it (see the PR reader list).
+          git add corpus/e1_q2/ 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No new corpus rows to commit."
           else

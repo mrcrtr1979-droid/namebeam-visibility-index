@@ -1,0 +1,89 @@
+{
+ "series": "e1_q2",
+ "version": 1,
+ "registered": "2026-10-28",
+ "prereg": "prereg/e1-q2-01.json",
+ "note": "Second daily question for the ten Namebeam market-cut rows. Read by scripts/e1_runner.py after the prompt_1 pass; rows go to corpus/e1_q2/ as NB-CZ-Q2API_ files with prompt_variant 2 and are never merged into any prompt_1 count. prompt_1_ref is the roster wording this prompt_2 is paired with; the runner drops a row whose roster prompt_1 no longer equals it. Do not edit a prompt_2 after its start date: add a new version instead.",
+ "rows": [
+  {
+   "cut_slug": "atlanta-hvac",
+   "business": "SEGMENT: HVAC, Atlanta",
+   "market": "Atlanta GA",
+   "niche": "hvac repair and replacement",
+   "prompt_1_ref": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+   "prompt_2": "I need a new air conditioner installed in Atlanta. Which specific HVAC companies should I call, and why?"
+  },
+  {
+   "cut_slug": "atlanta-personal-injury",
+   "business": "SEGMENT: personal injury law, Atlanta",
+   "market": "Atlanta GA",
+   "niche": "personal injury attorneys",
+   "prompt_1_ref": "Who is the best personal injury lawyer in Atlanta for a car accident case?",
+   "prompt_2": "I need a personal injury lawyer in Atlanta after a car accident. Which specific law firms should I call, and why?"
+  },
+  {
+   "cut_slug": "chicago-personal-injury",
+   "business": "SEGMENT: personal injury law, Chicago",
+   "market": "Chicago IL",
+   "niche": "personal injury attorneys",
+   "prompt_1_ref": "Who is the best personal injury attorney in Chicago for a car accident claim?",
+   "prompt_2": "I need a personal injury attorney in Chicago after a car accident. Which specific law firms should I call, and why?"
+  },
+  {
+   "cut_slug": "dallas-roofing",
+   "business": "SEGMENT: roofing, Dallas",
+   "market": "Dallas TX",
+   "niche": "residential roofing",
+   "prompt_1_ref": "Who is the best roofing company in Dallas for a roof replacement?",
+   "prompt_2": "I need my roof replaced in Dallas. Which specific roofing companies should I call, and why?"
+  },
+  {
+   "cut_slug": "denver-roofing",
+   "business": "SEGMENT: roofing, Denver",
+   "market": "Denver CO",
+   "niche": "residential roofing",
+   "prompt_1_ref": "Who is the best roofer in Denver for hail damage repair?",
+   "prompt_2": "My roof has hail damage in Denver. Which specific roofing companies should I call, and why?"
+  },
+  {
+   "cut_slug": "houston-hvac",
+   "business": "SEGMENT: HVAC, Houston",
+   "market": "Houston TX",
+   "niche": "hvac repair and replacement",
+   "prompt_1_ref": "Who is the best HVAC company in Houston for AC repair?",
+   "prompt_2": "My AC needs repair in Houston. Which specific HVAC companies should I call, and why?"
+  },
+  {
+   "cut_slug": "houston-personal-injury",
+   "business": "SEGMENT: personal injury law, Houston",
+   "market": "Houston TX",
+   "niche": "personal injury attorneys",
+   "prompt_1_ref": "Who is the best personal injury lawyer in Houston for a car wreck?",
+   "prompt_2": "I need a personal injury lawyer in Houston after a car wreck. Which specific law firms should I call, and why?"
+  },
+  {
+   "cut_slug": "los-angeles-ca-ai-marketing-agency",
+   "business": "Atrix Digital",
+   "market": "Los Angeles CA",
+   "niche": "AI marketing agency",
+   "prompt_1_ref": "Who is the best AI marketing agency in Los Angeles?",
+   "prompt_2": "I need an AI marketing agency in Los Angeles. Which specific agencies should I call, and why?"
+  },
+  {
+   "cut_slug": "miami-roofing",
+   "business": "SEGMENT: roofing, Miami",
+   "market": "Miami FL",
+   "niche": "residential roofing",
+   "prompt_1_ref": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+   "prompt_2": "I need a hurricane-rated roof replacement in Miami. Which specific roofing companies should I call, and why?"
+  },
+  {
+   "cut_slug": "phoenix-hvac",
+   "business": "SEGMENT: HVAC, Phoenix",
+   "market": "Phoenix AZ",
+   "niche": "hvac repair and replacement",
+   "prompt_1_ref": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+   "prompt_2": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?"
+  }
+ ]
+}
