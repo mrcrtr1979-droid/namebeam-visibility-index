@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_property_management_st_louis_perplexity",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: property management, St. Louis",
+ "niche": "property management companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Louis MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_af82e2b6-d32b-476b-9691-0ea411a45a59",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00069,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 4720,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4169,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 275,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4995
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Kingsland Properties",
+  "Avenue Residential Leasing",
+  "STL Smart Rentals"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bestinhood.com/st-louis/real-estate-and-property-services/best-property-management-in-st-louis/",
+  "https://www.stlouispropertymanagementinc.com/owners",
+  "https://purehomeriver.com/locations/missouri/st-louis/",
+  "https://www.biggerpockets.com/mo/st-louis/property-managers",
+  "https://www.trustindex.io/reviews/propertymanagementstl.com",
+  "https://www.ehpmgmt.com/owner",
+  "https://www.renterswarehouse.com/offices/st-louis",
+  "https://www.zillow.com/professionals/property-manager-reviews/63123/",
+  "https://www.zillow.com/professionals/property-manager-reviews/63143/",
+  "https://propertymanagement.com/property-manager/abodebucks-st-louis-mo",
+  "https://www.stlouispropertymanagement.co/pricing",
+  "https://www.zillow.com/professionals/property-manager-reviews/63120/",
+  "https://stlpropertymanagers.com/",
+  "https://www.zillow.com/professionals/property-manager-reviews/63101/",
+  "https://www.fsresidential.com/missouri/local-services/st-louis-property-management-company/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "49c72ee057655c3313bd922467d100f798a8e35f7e5879b4f07ffe03c389f2a0",
+ "answer_chars": 995,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

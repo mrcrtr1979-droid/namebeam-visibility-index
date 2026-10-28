@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_real_estate_agents_st_louis_perplexity",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: real estate agents, St. Louis",
+ "niche": "real estate agents",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Louis MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7011fc13-d426-47ae-9bd9-811bec9bf481",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00099,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00469
+   },
+   "input_tokens": 4774,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4223,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 395,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5169
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Aileen Garcia of Garcia Properties",
+  "Dawn Griffin and her team",
+  "Delhougne Realty Group",
+  "Dawn Griffin",
+  "Aileen Garcia",
+  "AileenGarcia",
+  "Garcia Properties"
+ ],
+ "engine_stated_criteria": [
+  "seller-side sales in your neighborhood and price range"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/profile/lmrisley",
+  "https://www.zillow.com/profile/JessicaTumminello",
+  "https://www.zillow.com/profile/timtanz",
+  "https://www.zillow.com/profile/AileenGarcia",
+  "https://www.zillow.com/profile/STLMETRO",
+  "https://www.zillow.com/profile/dgriffinSTL",
+  "https://www.zillow.com/profile/michaelholden5",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/saint-louis-mo/",
+  "https://www.zillow.com/profile/Sarah%20Belmar",
+  "https://www.zillow.com/profile/Kelli%20Graf",
+  "https://www.zillow.com/profile/angelakittner",
+  "https://www.zillow.com/profile/brookemead",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/63137/",
+  "https://www.zillow.com/profile/TEAM%20Ribaudo",
+  "https://www.zillow.com/profile/zuser20170117184719793"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "b352d49e9db6171166dea1364f80e29582e2f3c208554814c0d58d4d65edf7bd",
+ "answer_chars": 1363,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_property_management_st_charles_perplexity",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: property management, St. Charles",
+ "niche": "property management companies",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Charles MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_425d37e6-3049-4af5-bf1b-ebf205cd8e76",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00435
+   },
+   "input_tokens": 4533,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3982,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 283,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4816
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Keyrenter St. Charles",
+  "Eaton Properties",
+  "Homestretch Property Management"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.keyrenterstcharles.com/",
+  "https://www.keyrenterstcharles.com/owners",
+  "https://stlpropertymanagers.com/",
+  "https://www.rpmendeavor.com/areas-we-serve/st-charles-county/saint-charles",
+  "https://homestretchpropertymanagement.com/property-management/areas-we-serve/st-charles-property-management/",
+  "https://www.keyrenterstcharles.com/property-management-services",
+  "https://www.keyrenterstcharles.com/pricing",
+  "https://www.eatonproperties.com/st-louis-county-property-management",
+  "https://www.eatonproperties.com/",
+  "https://www.allpropertymanagement.com/property-management/companies/47355/keyrenter-st-louis/",
+  "https://www.bbb.org/us/mo/saint-charles/category/property-management",
+  "https://myppmrents.com/",
+  "https://www.fullscopehomes.com/st-charles-county-property-management",
+  "https://local.yahoo.com/real-estate/property-management/mo/st-charles/6/",
+  "https://www.rpmthreebridges.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "527e2331e9f25a6dc2e42f3793c33d1d186ed018c0f1923ac91c1ee9d2a02d84",
+ "answer_chars": 883,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

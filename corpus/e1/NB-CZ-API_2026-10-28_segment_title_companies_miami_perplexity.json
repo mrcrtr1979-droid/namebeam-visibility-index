@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_title_companies_miami_perplexity",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: title companies, Miami",
+ "niche": "title companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Miami FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1341860e-7e3a-4fe2-a0a6-8f85c49f5fa2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00068,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00449
+   },
+   "input_tokens": 5207,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4660,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 273,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5480
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Marina Title",
+  "Key Title & Escrow",
+  "Key Title",
+  "Florida Department of Financial Services",
+  "Department of Financial Services"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.titleescrowmiami.com/testimonials/",
+  "https://www.myfloridacfo.com/division/consumers/understanding-insurance/title-insurance-overview",
+  "https://atlantictitlefirm.com/reviews",
+  "https://www.mapquest.com/us/florida/fifty-stars-title-and-escrow-788500740",
+  "https://www.yelp.com/biz/hemisphere-title-company-miami-lakes",
+  "https://www.myfloridacfo.com/docs-sf/consumer-services-libraries/consumerservices-documents/understanding-coverage/consumer-guides/english---title-insurance-guide.pdf?sfvrsna8bfe5a3_4",
+  "https://myfloridacfo.com/docs-sf/consumer-services-libraries/consumerservices-documents/understanding-coverage/consumer-guides/english---title-insurance-guide.pdf?sfvrsn=a8bfe5a3_6",
+  "https://www.yelp.com/biz/marina-title-miami",
+  "https://www.mapquest.com/us/florida/marina-title-365532515",
+  "https://www.libertytitle.us/realtor",
+  "https://completechoicetitle.com/about-us/",
+  "https://miamitoprated.com/title-companies/",
+  "https://propy.com/browse/best-title-escrow-company-florida/",
+  "https://bayittitle.com/about",
+  "https://www.yelp.com/biz/southeastern-title-company-aventura"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "fe88e5800f570524749a53780191f8de8547657acf6d5a1a1a75d9e5b860af99",
+ "answer_chars": 993,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_real_estate_agents_west_palm_beach_perplexity",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: real estate agents, West Palm Beach",
+ "niche": "real estate agents",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in West Palm Beach FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_faa18d36-93f3-4d03-a38d-87790a835912",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0012,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00459
+   },
+   "input_tokens": 5360,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4809,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 301,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5661
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jeff Tricoli Team",
+  "Keller Williams Reserve",
+  "Jeff Tricoli",
+  "Keller Williams"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/west-palm-beach-fl/",
+  "https://www.realtor.com/realestateagents/5c6fb4f2da4aca0012b91c2b",
+  "https://www.realtor.com/realestateagents/West-Palm-Beach_FL",
+  "https://www.realtor.com/realestateagents/56bb98c089a68901006d559d",
+  "https://www.realtor.com/realestateagents/5673ce3abb954c010067ed78",
+  "https://www.realtor.com/realestateagents/Ryan-Apple_Boca-Raton_FL_4415551",
+  "https://www.realtor.com/realestateagents/56b3290089a68901006cb9b9",
+  "https://www.realtor.com/realestateagents/west-palm-beach_fl",
+  "https://www.realtor.com/realestateagents/___914783",
+  "https://www.realtor.com/realestateagents/David-Shiling_West-Palm-Beach_FL_3205281_517654327",
+  "https://www.realtor.com/realestateagents/___1561127",
+  "https://www.realtor.com/realestateagents/Sabra-Kirkpatrick_Lake-Worth-Beach_FL_1554719_630504327",
+  "https://www.realtor.com/realestateagents/57c65217bdef5501007b1241",
+  "https://www.realtor.com/realestateagents/5bb6ac30cbc155001580ddde",
+  "https://www.realtor.com/realestateagents/5682768489a68901006b902b"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "a4400840fcdbc9b697466121939ecaf5779535e7f17c4f9c4be38b91816fdabf",
+ "answer_chars": 997,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

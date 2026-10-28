@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_real_estate_agents_st_charles_perplexity",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: real estate agents, St. Charles",
+ "niche": "real estate agents",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Charles MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d80c9aba-a7e3-4fcb-a22d-1049fae9ba00",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00084,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 4689,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4138,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 337,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5026
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jeremy Schneider’s team (SCHNEIDER Real Estate)",
+  "Joanna Horstmeier",
+  "Jeremy Schneider",
+  "SCHNEIDER Real Estate",
+  "JeremySchneiderRE"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.realtor.com/realestateagents/st-charles_mo",
+  "https://www.zillow.com/profile/JeremySchneiderRE",
+  "https://www.realtor.com/local/market/missouri/st-charles-county/st-charles",
+  "https://www.zillow.com/profile/Service1stHomes",
+  "https://www.zillow.com/profile/Sylvia%20Zim",
+  "https://www.zillow.com/profile/bmorgan77",
+  "https://www.zillow.com/profile/cjhorst",
+  "https://www.realtor.com/realestateagents/567ff8797e54f701001ec6ab",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/63304/",
+  "https://www.zillow.com/profile/PaigeGossett",
+  "https://www.zillow.com/profile/srichards220",
+  "https://www.realtor.com/local/market/missouri/st.-charles-county/st.-charles",
+  "https://www.zillow.com/profile/user4421705",
+  "https://www.zillow.com/profile/soldwithabby",
+  "https://www.zillow.com/profile/SandraSellsSTL"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "24ded11f55446c8076cb778df17a0b90d35478e62ea78c612ec3e8f69def09d9",
+ "answer_chars": 1098,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_real_estate_agents_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: real estate agents, Fort Lauderdale",
+ "niche": "real estate agents",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Fort Lauderdale FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b310cd4a-7d2b-4e14-acfc-e8b5c8412ed3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 4581,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4031,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 289,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4870
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sandra Rathe",
+  "Larry and Joy Mastropieri",
+  "Claudio & Robyn Petasne",
+  "Robyn Petasne"
+ ],
+ "engine_stated_criteria": [
+  "seller-side sales near your home"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/fort-lauderdale-fl/",
+  "https://joinbulletproof.com/agents/top-real-estate-agents-fort-lauderdale-fl",
+  "https://www.zillow.com/profile/Donna%20Incorvaja",
+  "https://www.realestateagents.com/fl/fort-lauderdale",
+  "https://www.zillow.com/profile/juliesellsfl",
+  "https://www.homelight.com/fort-lauderdale-fl/top-real-estate-agents",
+  "https://www.zillow.com/profile/gocoloney",
+  "https://www.zillow.com/profile/hboutros4",
+  "https://www.whitneydutton.com/about-me",
+  "https://www.zillow.com/profile/itscrystalk",
+  "https://realestate.usnews.com/agents/florida/fort-lauderdale",
+  "https://www.realtrends.com/agent-profile/veroushka-volkert-florida/",
+  "https://agentpronto.com/florida/fort-lauderdale",
+  "https://www.zillow.com/profile/LilliSchipper",
+  "https://www.zillow.com/profile/StephaniePinder"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "71a1b74acdd0c9279a486be34302402e44d5834daf7dd539cd9c0a1d8cdce2ac",
+ "answer_chars": 1046,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

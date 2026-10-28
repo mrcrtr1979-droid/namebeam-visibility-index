@@ -1,0 +1,123 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-10-28_hedy_hopp",
+ "date_utc": "2026-10-28",
+ "business": "Hedy & Hopp",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best healthcare marketing agency in St. Louis?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "St. Louis",
+    "M Awards",
+    "Cork Tree Creative",
+    "Advertising Savants",
+    "Atomicdust"
+   ],
+   "verbose_names": [
+    "St. Louis",
+    "HLK",
+    "Hagerty Lassiter",
+    "Strengths",
+    "Atomicdust",
+    "St. Louis. They",
+    "Elasticity",
+    "Brighton",
+    "SteadyRain",
+    "Healthcare Web Development",
+    "Portal Building",
+    "One for You",
+    "Technical Compliance",
+    "Protected Health Information",
+    "Life Sciences"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": true,
+   "named_by_b": false,
+   "naming_disagreement": true,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 15,
+   "containment_pct": 40.0,
+   "shared_count": 2,
+   "answer_chars_a": 1051,
+   "answer_chars_b": 3715,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "St. Louis",
+    "Google Business"
+   ],
+   "verbose_names": [
+    "St. Louis",
+    "M Awards",
+    "Cork Tree Creative",
+    "Advertising Savants",
+    "Atomicdust"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": true,
+   "named_by_b": false,
+   "naming_disagreement": true,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 5,
+   "containment_pct": 50.0,
+   "shared_count": 1,
+   "answer_chars_a": 1051,
+   "answer_chars_b": 915,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "St. Louis",
+    "Google Business"
+   ],
+   "verbose_names": [
+    "St. Louis",
+    "HLK",
+    "Hagerty Lassiter",
+    "Strengths",
+    "Atomicdust",
+    "St. Louis. They",
+    "Elasticity",
+    "Brighton",
+    "SteadyRain",
+    "Healthcare Web Development",
+    "Portal Building",
+    "One for You",
+    "Technical Compliance",
+    "Protected Health Information",
+    "Life Sciences"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 15,
+   "containment_pct": 50.0,
+   "shared_count": 1,
+   "answer_chars_a": 3715,
+   "answer_chars_b": 915,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

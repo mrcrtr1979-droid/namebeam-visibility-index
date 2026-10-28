@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_property_management_miami_perplexity",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: property management, Miami",
+ "niche": "property management companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Miami FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_da3e6028-f4fa-4232-9c72-18d2ddd97fa3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00086,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0046
+   },
+   "input_tokens": 4929,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4380,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 342,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5271
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Novel Management",
+  "Luxury Property Care",
+  "Novel Management and Luxury Property Care"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.biggerpockets.com/fl/miami/property-managers",
+  "https://miamipropertymanagement.com/testimonials/",
+  "https://novelmanagement.com/property-management-pricing/",
+  "https://www.myfpms.com/",
+  "https://managementmiami.com/services/property-management/",
+  "https://www.jmkpropertymanagement.com/",
+  "https://www.yelp.com/biz/exclusive-property-management-group-miami",
+  "https://thsld.com/",
+  "https://www.pmimiamicoast.com/",
+  "https://luxurypropertycare.com/best-property-management-companies-miami/",
+  "https://www.bbb.org/us/fl/miami/profile/property-management/miami-management-inc-0633-33000905/customer-reviews",
+  "https://www.yelp.com/biz/vesta-property-services-miami",
+  "https://luxurypropertycare.com/miami-property-management-services/",
+  "https://miamipropertymanagementllc.com/",
+  "https://www.jmkpropertymanagement.com/miami-property-management"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "3e6cb2e1a70581d9bb5d10a64644bc71ef4ce68cb70b38e237deab8712237c2f",
+ "answer_chars": 1261,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

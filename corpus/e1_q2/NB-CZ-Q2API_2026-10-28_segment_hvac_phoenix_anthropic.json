@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-28_segment_hvac_phoenix_anthropic",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_w45ewc6hskjrxxoz5we3y7f5yhpa7j5s5anghcxt4mvjrubttfhq",
+  "usage": {
+   "input_tokens": 28,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 266,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Verification steps",
+  "Arizona's Registrar of Contractors",
+  "Registrar of Contractors"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can't recommend specific HVAC companies since I don't have current information about their reliability, pricing, or service quality in Phoenix.\n\nHere's how to find good options:\n\n**Verification steps:**\n- Check Google Reviews, Yelp, and BBB ratings (look for patterns, not just one review)\n- Verify licensing through Arizona's Registrar of Contractors\n- Get 2-3 quotes to compare pricing\n- Ask if they're available for emergency service (important in Phoenix heat)\n\n**Red flags to avoid:**\n- Pressure to buy immediately\n- Unwillingness to provide written estimates\n- Prices significantly lower than others (often indicates corners cut)\n- No clear warranty information\n\n**What to ask:**\n- Are they licensed and insured?\n- What's included in the service call?\n- Do they offer emergency/same-day service?\n- What's their warranty?\n\n**Local resources:**\n- Ask neighbors or your property manager for recommendations\n- Contact the Arizona Registrar of Contractors for verified licensed companies\n- Your utility company sometimes has contractor lists\n\nGiven Phoenix's heat, getting this fixed quickly matters. Start with verification and quotes rather than relying on any single recommendation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_07ec1253-7518-4d2a-9626-6acbf517b105",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00077,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00087,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00428
+   },
+   "input_tokens": 3645,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3098,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 348,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3993
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Andrew Serrano",
+  "Dr. Courtney Dunn",
+  "Dr. Kenneth E. Danyluk",
+  "Dr. C. Chris Murphy",
+  "Dr. Todd E. Dickerson",
+  "American Association of Orthodontists",
+  "High Street",
+  "Shea Boulevard",
+  "Invisalign",
+  "North Phoenix"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-kenneth-e-danyluk/",
+  "https://aaoinfo.org/locator/dr-patrick-brent-rickheim-2/",
+  "https://aaoinfo.org/locator/dr-todd-e-dickerson-2/",
+  "https://aaoinfo.org/locator/dr-timothy-j-yu-7/",
+  "https://aaoinfo.org/locator/dr-andrew-serrano/",
+  "https://aaoinfo.org/locator/dr-jae-hyun-park/",
+  "https://aaoinfo.org/locator/dr-courtney-dunn/",
+  "https://aaoinfo.org/locator/dr-rustin-w-jones/",
+  "https://aaoinfo.org/locator/dr-gregory-olsen/",
+  "https://aaoinfo.org/locator/dr-brent-brooks/",
+  "https://aaoinfo.org/locator/dr-c-chris-murphy-2/",
+  "https://aaoinfo.org/locator/",
+  "https://aaoinfo.org/locator/dr-robert-a-macdonald/",
+  "https://aaoinfo.org/locator/dr-daniel-s-blue/",
+  "https://aaoinfo.org/locator/dr-thy-minh-ly-2/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ce78bbceed86aa09e6387ca7689d482f7aa2dd645bd11c564462942a29cbb62a",
+ "answer_chars": 1253,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

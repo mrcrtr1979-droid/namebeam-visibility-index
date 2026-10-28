@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_roofing_miami_perplexity",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4f31e208-15f6-402d-b5f5-a031f49a94ab",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00062,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00434
+   },
+   "input_tokens": 4855,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4307,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 246,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5101
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Art’s Roofing & Construction",
+  "CCC1333598",
+  "Miami-Dade NOA-approved",
+  "High-Velocity Hurricane Zone",
+  "Dade NOA",
+  "Miami-Dade",
+  "Velocity Hurricane Zone",
+  "Miami-Dade NOA",
+  "Dade NOA-approved"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://agkgc.com/miami-roofing",
+  "https://www.roofing-network.com/residential-roofing",
+  "https://pro.miami/roofing",
+  "https://bigfootwindowsandroofing.com/bigfoot-roofing-south-florida-hvhz-contractor/",
+  "https://roofingex.com/",
+  "https://properoofing.com/",
+  "https://bigfootwindowsandroofing.com/bigfoot-roofing-miami-dade/",
+  "https://jamesroofingchicago.com/",
+  "https://www.robsonindustrial.com/blog/",
+  "https://1proroof.com/roofing-miami-fl/",
+  "https://agkgc.com/",
+  "https://www.artsroofing.com/",
+  "https://bigfootwindowsandroofing.com/roofers-near-me-miami-dade-county/",
+  "https://www.artsroofing.com/areas/miami/",
+  "https://theroofingbrief.com/best-roofers-miami-fl/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "a0cf91be0f9b18428c0da012237642fc3c94869d30e5bdde9538a3e34a7277a1",
+ "answer_chars": 826,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_str_host_tooling_perplexity",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c5399d81-ecbc-494c-aca6-7bfbfeba06ff",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00061,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 5035,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4481,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 245,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5280
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Before buying, cross-check with AirDNA",
+  "PriceLabs",
+  "AirDNA",
+  "Use AirDNA"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://realtyverdict.com/airbnb-pricing-tools/",
+  "https://www.airdna.co/pricing",
+  "https://www.bnbcalc.com/reviews/best-short-term-rental-data-analytics-software-2026",
+  "https://hello.pricelabs.co/airbnb-dynamic-pricing/",
+  "https://www.rentaclara.com/en/blog/mejor-herramienta-comparables-antes-de-comprar-airbnb",
+  "https://therealestaterobinsons.com/free-tools/",
+  "https://www.airroi.com/blog/best-airbnb-calculator",
+  "https://www.revfactor.io/blog/best-airbnb-pricing-tools-2026/",
+  "https://www.getchalet.com/blog/best-airbnb-pricing-software-comparison",
+  "https://hello.pricelabs.co/blog/dynamic-pricing-reporting-rental-management/",
+  "https://chargeautomation.com/airbnb-data-analytics-tools/",
+  "https://hello.pricelabs.co/category/dynamic-pricing/",
+  "https://hello.pricelabs.co/dynamic-pricing/",
+  "https://hello.pricelabs.co/dynamic-pricing-automation/",
+  "https://awning.com/post/best-airdna-alternatives"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "40cb1bca1d0e16e31414d7d18e5ac5f74878c6c9d2be2896f03997fe5df7cccc",
+ "answer_chars": 809,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

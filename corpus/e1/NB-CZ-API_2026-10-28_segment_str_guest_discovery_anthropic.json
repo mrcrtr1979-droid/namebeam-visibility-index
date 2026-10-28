@@ -1,0 +1,45 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_str_guest_discovery_anthropic",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_r7nhfqokkshqxaevwl3pr6fvtef6zlmlqx23bgkzwcq3k42whm6a",
+  "usage": {
+   "input_tokens": 41,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 316,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "VRBO",
+  "Booking.com",
+  "Green flags",
+  "Finding a good host",
+  "Check cancellation policy",
+  "Verify the listing matches photos"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Choosing a Platform\n\n**Airbnb**: Largest selection, strong review system, good for unique stays\n**VRBO**: Better for larger groups/houses, often longer-term friendly\n**Booking.com**: Competitive pricing, straightforward hotel-style listings\n\nNo single \"best\" option—it depends on what you're looking for.\n\n# Finding a Good Host\n\n**Check reviews carefully:**\n- Read recent ones (last 3-6 months matter most)\n- Look for patterns, not just star ratings\n- Verify reviews mention specifics (cleanliness, communication, accuracy)\n\n**Red flags:**\n- Few reviews or mostly new listings\n- Vague/generic positive reviews\n- Complaints about cleanliness, missing amenities, or unresponsive hosts\n- Lots of one-star reviews\n\n**Green flags:**\n- 4.8+ rating with 20+ reviews\n- Host responds quickly to questions\n- Detailed house rules and clear photos\n- Specific positive feedback about communication\n\n**Before booking:**\n- Message the host with questions—gauge responsiveness\n- Verify the listing matches photos\n- Check cancellation policy\n- Confirm what's actually included\n\n**Pro tip:** Sometimes a 4.7 with 100 reviews is safer than a 5.0 with 3 reviews.\n\nWhat type of trip are you planning? That might help narrow down which platform makes most sense.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

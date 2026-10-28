@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_mortgage_lenders_st_louis_perplexity",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: mortgage lenders, St. Louis",
+ "niche": "mortgage lenders",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Louis MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_78d04bd3-5a69-44ed-98ae-54740e55e418",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00097,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00441
+   },
+   "input_tokens": 4416,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3865,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 320,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4736
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Midwest BankCentre",
+  "A local mortgage broker",
+  "An MHDC-certified lender",
+  "Loan Estimate",
+  "My practical recommendation"
+ ],
+ "engine_stated_criteria": [
+  "My practical recommendation is to get written quotes from at least three lenders"
+ ],
+ "sources_cited": [
+  "https://mhdc.com/services/homebuyer-programs/",
+  "https://mhdc.com/services/homebuyer-programs/first-place",
+  "https://www.nasb.com/lending/solutions/mortgage-programs/mhdc-mortgage-assistance-programs",
+  "https://www.midwestbankcentre.com/mortgage/",
+  "https://mhdc.com/services/lender-resources/",
+  "https://www.mhdc.com/",
+  "https://mhdc.com/programs/homeownership/",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://mhdc.com/media/buqdkh0o/homebuyer-programs-overview.pdf",
+  "https://mhdc.com/media/ua4fxipo/homebuyer-programs-overview.pdf",
+  "https://toptenstlouis.com/best-home-lenders-st-louis/",
+  "https://mhdc.com/media/wf2onuss/next-step-learn-more_11182025.pdf",
+  "https://www.fscb.com/missouri-housing-department",
+  "https://mhdc.com/media/y51bkknn/next-step-learn-more_11182025.pdf",
+  "https://www.monitorbankrates.com/mortgage-lenders/missouri/st-louis"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "3e8e01b6bd1f72ee8dc2f38b5b71c019f8f6bc44b7a8b17b6980d9d56bd7a539",
+ "answer_chars": 1109,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

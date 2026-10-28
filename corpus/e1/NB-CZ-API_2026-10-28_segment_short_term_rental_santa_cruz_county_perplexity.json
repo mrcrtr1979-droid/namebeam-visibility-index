@@ -1,0 +1,106 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4e63e326-4066-4ea1-8ef9-94630bb34d9f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00152,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00528
+   },
+   "input_tokens": 5051,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4499,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 608,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5659
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Capitola Village beachfront condos",
+  "Aptos / Seacliff beachfront homes and condos",
+  "Santa Cruz near the beach",
+  "A quieter redwoods-and-coast retreat",
+  "Pick the area first",
+  "Compare the full price",
+  "Read recent reviews",
+  "Book through a reputable platform",
+  "Capitola Village",
+  "Capitola",
+  "Beachfront Venetian",
+  "Pink Venetian",
+  "Upper Unit",
+  "Aptos",
+  "Santa Cruz County Short-Term Rentals",
+  "DiscretionaryPermitsZoning",
+  "DiscretionaryPermits",
+  "Short-TermRentals.aspx",
+  "Seacliff",
+  "Aptos / Seacliff"
+ ],
+ "engine_stated_criteria": [
+  "Verify the rental is permitted"
+ ],
+ "sources_cited": [
+  "https://cdi.santacruzcountyca.gov/UPC/DiscretionaryPermitsZoning/DiscretionaryPermits/HostedRentals.aspx",
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Ordinance%205497%20Short-Term%20Rentals.pdf",
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Vacation%20Rental%20Ord-%20BoS%20Approved%201-26-2021.pdf",
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Sample%20Hosted%20Rental%20agreement%20(2).docx",
+  "https://www2.santacruzcountyca.gov/planning/plnmeetings/PLNSupMaterial/Zoning/Agendas/2023/20230106/003.pdf",
+  "https://www.airbnb.com/aptos-ca/stays/beachfront",
+  "https://cdi.santacruzcountyca.gov/UPC/DiscretionaryPermitsZoning/DiscretionaryPermits/Short-TermRentals.aspx",
+  "https://www.vrbo.com/vacation-rentals/beach/usa/california/central-coast/aptos",
+  "https://www.santacruzcountyca.gov/portals/0/county/CAO/press%20releases/2024/PrsRls_Unpermitted%20short-term%20and%20hosted%20rentals.pdf",
+  "https://www.airbnb.com/santa-cruz-county-ca/stays/waterfront",
+  "https://www2.santacruzcountyca.gov/planning/plnmeetings/PLNSupMaterial/PC/Agendas/2025/20250514/007c.pdf",
+  "https://www.airbnb.ca/santa-cruz-county-ca/stays/apartments",
+  "https://www.airbnb.com/capitola-ca/stays/beachfront",
+  "https://www2.santacruzcountyca.gov/planning/plnmeetings/PLNSupMaterial/Zoning/Agendas/2025/20250221/004.pdf",
+  "https://www.airbnb.com/santa-cruz-ca/stays/beachfront"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "55c99ba20790868959e14176299830b3e99d44ad2f7d53057b8dd3fe55c6259a",
+ "answer_chars": 2464,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

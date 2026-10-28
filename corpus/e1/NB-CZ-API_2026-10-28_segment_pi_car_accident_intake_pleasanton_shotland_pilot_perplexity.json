@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-28_segment_pi_car_accident_intake_pleasanton_shotland_pilot_perplexity",
+ "date_utc": "2026-10-28",
+ "business": "SEGMENT: PI car accident intake, Pleasanton (Shotland pilot)",
+ "niche": "personal injury law",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I was in a car accident in Pleasanton CA. Which lawyer should I hire for my injury case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5390f508-7f8b-4196-90de-9060a70d022a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00093,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00096,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00453
+   },
+   "input_tokens": 4290,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3735,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 385,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4675
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "GJEL",
+  "The Kline Simon Law Firm",
+  "Duncan Law Firm",
+  "Pleasanton office",
+  "Kline Simon Law Firm"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.calbar.ca.gov/public/find-legal-professionals",
+  "https://www.avvo.com/attorneys/94566-ca-paulo-klinesimon-3563765.html",
+  "https://www.avvo.com/personal-injury-lawyer/ca/pleasanton.html",
+  "https://www.justia.com/lawyers/personal-injury/california/pleasanton",
+  "https://www.gjel.com/pleasanton",
+  "https://www.avvo.com/attorneys/94588-ca-stephen-fuerch-87204.html",
+  "https://www.avvo.com/attorneys/94588-ca-david-duncan-4469491.html",
+  "https://lawyers.law.cornell.edu/lawyer/john-michael-hosterman-6093",
+  "https://apps.calbar.ca.gov/attorney/LicenseeSearch/AdvancedSearch?LastNameOption=b&LastName=&FirstNameOption=b&FirstName=&MiddleNameOption=b&MiddleName=&FirmNameOption=b&FirmName=&CityOption=b&City=&State=&Zip=&District=&County=&LegalSpecialty=&LanguageSpoken=&PracticeArea=63",
+  "https://www.vzlawfirm.com/pleasanton/car-accident-lawyer/",
+  "https://www.bestlawyers.com/united-states/california/pleasanton/criminal-defense-general-practice",
+  "https://www.calbar.ca.gov/public/find-legal-professionals/find-certified-specialist",
+  "https://www.martindale.com/personal-injury-lawyers/pleasanton/california/",
+  "https://www.karnsandkarns.com/locations/pleasanton-california-personal-injury-lawyers/",
+  "https://apps.calbar.ca.gov/attorney/LicenseeSearch/QuickSearch?..."
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ac8c76b4b28c21cfe84623012892388a9aa44d086fb35fbbc0e6f314da3417d8",
+ "answer_chars": 1328,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}
