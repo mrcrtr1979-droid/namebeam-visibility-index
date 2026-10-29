@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-29_segment_tanning_salons_columbus_perplexity",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: tanning salons, Columbus",
+ "niche": "tanning salons",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Columbus OH?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9cbd1e62-bd93-4340-aad0-7d127fb109ea",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00061,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00429
+   },
+   "input_tokens": 4722,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4178,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 245,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4967
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sweetly Bronzed",
+  "Palm Beach Tan’s Georgesville location",
+  "Palm Beach Tan",
+  "UV tanning"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.thebronzingbar.com/",
+  "https://palmbeachtan.com/locations/oh/columbus-olentangy-river-road",
+  "https://palmbeachtan.com/locations/oh/polaris-area-sancus-boulevard",
+  "https://www.bbb.org/us/oh/columbus/category/spray-tanning-salon",
+  "https://www.bbb.org/us/oh/columbus/category/tanning-salons",
+  "https://www.fresha.com/lp/en/tt/spray-tanning/in/us-columbus",
+  "https://www.bbb.org/us/oh/westerville/category/spray-tanning-salon",
+  "https://palmbeachtan.com/locations/oh/georgesville",
+  "https://trustanalytica.org/us/oh/columbus/best-tanning-salons",
+  "https://palmbeachtan.com/locations/oh/arlington-pointe",
+  "https://www.bbb.org/us/oh/brown-county/category/spray-tanning-salon",
+  "https://www.vagaro.com/listings/tanning/washington-court-house--oh",
+  "https://www.vagaro.com/sweetlybronzed",
+  "https://www.fresha.com/lp/en/bt/tanning-studios/in/us-columbus",
+  "https://www.fresha.com/a/sun-studio-tan-columbus-612-north-high-street-e0lijgjd"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "a97a8a8152424a42d79d1c48831a2bd5426a063fa77d261aa7ec513a0ffe2fd7",
+ "answer_chars": 700,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-10-29_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5f209ba9-15f9-459b-b7cb-34bea72b7902",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00085,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00111,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0046
+   },
+   "input_tokens": 3957,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3410,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 444,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4401
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Michael H. Sebastian",
+  "Dr. Arjun Patel",
+  "Dr. Peyton K. Harris",
+  "Dr. Christopher Brady",
+  "Wright Orthodontics",
+  "American Association of Orthodontists",
+  "Sandy Springs",
+  "Invisalign"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-adam-c-spencer/",
+  "https://aaoinfo.org/locator/dr-michael-harley-sebastian/",
+  "https://aaoinfo.org/locator/dr-arjun-patel/",
+  "https://aaoinfo.org/locator/dr-tarnjit-kaur-sangha/",
+  "https://aaoinfo.org/locator/dr-india-l-collier/",
+  "https://aaoinfo.org/locator/dr-peyton-keith-harris/",
+  "https://aaoinfo.org/locator/dr-brandon-small-morgan/",
+  "https://aaoinfo.org/locator/dr-christopher-brady-2/",
+  "https://aaoinfo.org/locator/",
+  "https://aaoinfo.org/locator/dr-priya-v-patel/",
+  "https://aaoinfo.org/locator/dr-kevin-g-eatmon-6/",
+  "https://aaoinfo.org/locator/dr-bryan-keith-blankenship-2/",
+  "https://drwrightortho.com/location/orthodontist-in-atlanta-ga/",
+  "https://aaoinfo.org/locator/dr-laura-c-davis/",
+  "https://www.braces-braces.com/dr-lee"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "bd7b93ea6c5680bc9b5d206ee3ba4318fccb9f8398eab833a560f87657d2e901",
+ "answer_chars": 1569,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

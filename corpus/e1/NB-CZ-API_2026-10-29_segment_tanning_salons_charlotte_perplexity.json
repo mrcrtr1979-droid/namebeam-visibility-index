@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-10-29_segment_tanning_salons_charlotte_perplexity",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "niche": "tanning salons",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_190c5cc0-385f-40a2-bd43-0e44495d4ef6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00051,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00429
+   },
+   "input_tokens": 5103,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4559,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 204,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5307
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Organic Bronze Bar in SouthPark",
+  "Palm Beach Tan at the Arboretum",
+  "Organic Bronze Bar",
+  "SouthPark",
+  "Palm Beach Tan",
+  "UV tanning beds",
+  "The Arboretum"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://palmbeachtan.com/locations/nc/charlotte-providence-arboretum",
+  "https://palmbeachtan.com/locations/nc/charlotte-east-woodlawn-road",
+  "https://palmbeachtan.com/locations/nc/charlotte-east-wt-harris-boulevard",
+  "https://noshadespraytanning.com/book-now",
+  "https://palmbeachtan.com/locations/nc/charlotte-john-j-delaney-drive",
+  "https://noshadespraytanning.com/about",
+  "https://trustanalytica.org/us/nc/charlotte/best-tanning-salons",
+  "https://www.yelp.com/biz/botanical-tans-charlotte-2",
+  "https://www.fresha.com/lp/en/bt/tanning-studios/in/us-charlotte",
+  "https://trustanalytica.org/us/nc/best-tanning-salons",
+  "https://maps.apple.com/place?place-id=I9845192F39EFC11F",
+  "https://www.yelp.com/biz/gorgeousglo-beauty-bar-charlotte",
+  "https://reviews.birdeye.com/palm-beach-tan-173507733714704",
+  "https://organicbronzebar.com/southpark/",
+  "https://zipappointments.com/charlotte-nc/kaylux-spray-tan-vdci3"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "f32f868dc2d13ae0a2842b30d3b5a595a98676bcd86b0cd92807e205fb4bd67b",
+ "answer_chars": 567,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

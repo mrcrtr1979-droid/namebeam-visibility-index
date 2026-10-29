@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-29_segment_title_companies_st_louis_perplexity",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: title companies, St. Louis",
+ "niche": "title companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Louis MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_76025a9a-e644-4821-91b9-ae25524dfcc6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00082,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00406
+   },
+   "input_tokens": 3823,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3274,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 239,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4062
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Excel Title Company",
+  "Investors Title",
+  "Freedom Title",
+  "Excel Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.stltitle.com/services/closing-escrow",
+  "https://www.stltitle.com/services",
+  "https://stltitle.com/expertise",
+  "https://stbtitle.com/",
+  "https://www.investors-title.com/",
+  "https://www.stltitle.com/home",
+  "https://exceltitleco.com/",
+  "https://www.redkeystlouis.com/title-and-mortgage",
+  "https://securitytitlestl.com/",
+  "https://freedom-title.com/",
+  "https://www.archcitytitle.com/who-we-are/",
+  "https://stltitle.com/testimonials",
+  "https://bhhsselectstl.com/other-services/select-title-group",
+  "https://ctitle.com/commercial/",
+  "https://ctitle.com/locations/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "19badb38e82076e8d13ab4e1b42db689a33e7e52eccd04905fb21e37ae562e4e",
+ "answer_chars": 808,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

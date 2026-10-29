@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-29_segment_real_estate_agents_fort_lauderdale_perplexity",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: real estate agents, Fort Lauderdale",
+ "niche": "real estate agents",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Fort Lauderdale FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_960080e9-1a07-4b15-b6f8-b21f8b600809",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00088,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00465
+   },
+   "input_tokens": 5064,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4514,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 351,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5415
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sandra Rathe",
+  "Larry Mastropieri",
+  "Desare Kohn-Laski",
+  "Veroushka Volkert",
+  "RealTrends"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/fort-lauderdale-fl/",
+  "https://www.homelight.com/fort-lauderdale-fl/top-real-estate-agents",
+  "https://www.homelight.com/fort-lauderdale-fl/imperial-point/top-real-estate-agents",
+  "https://www.zillow.com/profile/HectorValdesRealtor",
+  "https://www.zillow.com/profile/LindaSHoytRealtor",
+  "https://realestate.usnews.com/agents/florida/fort-lauderdale",
+  "https://www.realestateagents.com/fl/fort-lauderdale",
+  "https://www.realtrends.com/agent-profile/veroushka-volkert-florida/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33309/",
+  "https://www.zillow.com/profile/BrandonSellsFL",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33306/",
+  "https://agentpronto.com/florida/fort-lauderdale",
+  "https://www.thumbtack.com/fl/fort-lauderdale/real-estate-agents",
+  "https://www.zillow.com/profile/juliesellsfl",
+  "https://www.realtrends.com/agent-profile/sasha-valdes-florida/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "7682542958da23ae5b87f1afca9f3b3f076aabe256697b073d61808f7e2a7b8e",
+ "answer_chars": 1268,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

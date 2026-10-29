@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-29_segment_roofing_denver_perplexity",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d039c97c-3413-4f9f-bb86-005f0aec460e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00085,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00464
+   },
+   "input_tokens": 5130,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4583,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 338,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5468
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Red Hawk Roofing",
+  "Cenco Roofing",
+  "Division of Insurance",
+  "Colorado Division of Insurance"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://doi.colorado.gov/news-releases-consumer-advisories/consumer-advisory-division-of-insurance-shares-tips-to-prepare",
+  "https://www.bbb.org/us/co/englewood/profile/roofing-contractors/red-hawk-roofing-llc-1296-1000191850",
+  "https://www.cencoroofing.com/locations/denver/storm-damage/",
+  "https://www.coloradoroofing.org/news/hail-damage-dos-and-donts-when-hiring-a-contractor",
+  "https://www.hilltopcontractinggc.com/cities/denver",
+  "https://qntum.com/locations/denver-co",
+  "https://www.bbb.org/us/co/denver/category/storm-damage-repair",
+  "https://metrocityroofing.com/",
+  "https://www.firstindenver.com/guides/the-best-roofers-in-denver-2026-a-locals-guide",
+  "https://www.gatesroof.com/areas/denver",
+  "https://www.cencoroofing.com/residential-roofing/hail-damage/",
+  "https://homematchup.com/roofers/co/denver/",
+  "https://www.coloradoroofing.org/news/hail-damage-the-colorado-roofing-association-warns-homeowners-of-storm-chasers-",
+  "https://www.roofingandsiding.com/roofing/hail-damage-restoration/",
+  "https://redhawkroofing.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "4e12fa2a5f3251bd041638ffc9241f9be4515f878dab8cda6e4ad263c44a523a",
+ "answer_chars": 1134,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

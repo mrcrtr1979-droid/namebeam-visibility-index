@@ -1,0 +1,133 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-10-29_segment_hvac_houston",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: HVAC, Houston",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "perplexity"
+ ],
+ "engines_usable": 3,
+ "pairs": [
+  {
+   "terser_names": [
+    "A-1 Tops Services",
+    "Comfort Star",
+    "Mission Air Conditioning"
+   ],
+   "verbose_names": [
+    "Greater Houston",
+    "Fair Pricing",
+    "Mission AC",
+    "Yelp and Google. They",
+    "Air",
+    "Full-Service Companies",
+    "Fast Availability",
+    "Abacus Plumbing",
+    "Air Conditioning",
+    "Houston. They",
+    "Abacus Club",
+    "John Moore Services",
+    "Family-Owned Companies",
+    "Universal Home Experts",
+    "Village Plumbing",
+    "Verify Licensing",
+    "Ask About the Service",
+    "Diagnostic Fee",
+    "Watch Out for Sales Pushiness",
+    "Check Location",
+    "Sugar Land",
+    "Pearland. Look"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 22,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 653,
+   "answer_chars_b": 3695,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Popular Houston HVAC",
+    "Google Maps"
+   ],
+   "verbose_names": [
+    "A-1 Tops Services",
+    "Comfort Star",
+    "Mission Air Conditioning"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 3,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 653,
+   "answer_chars_b": 1075,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Popular Houston HVAC",
+    "Google Maps"
+   ],
+   "verbose_names": [
+    "Greater Houston",
+    "Fair Pricing",
+    "Mission AC",
+    "Yelp and Google. They",
+    "Air",
+    "Full-Service Companies",
+    "Fast Availability",
+    "Abacus Plumbing",
+    "Air Conditioning",
+    "Houston. They",
+    "Abacus Club",
+    "John Moore Services",
+    "Family-Owned Companies",
+    "Universal Home Experts",
+    "Village Plumbing",
+    "Verify Licensing",
+    "Ask About the Service",
+    "Diagnostic Fee",
+    "Watch Out for Sales Pushiness",
+    "Check Location",
+    "Sugar Land",
+    "Pearland. Look"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 22,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 3695,
+   "answer_chars_b": 1075,
+   "zero_shared": true
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

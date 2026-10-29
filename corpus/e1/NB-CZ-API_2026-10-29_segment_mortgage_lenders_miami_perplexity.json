@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-29_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_dceef23c-0eb5-43c9-9e7f-9043abc90bf2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00454
+   },
+   "input_tokens": 4829,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4280,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 330,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5159
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Loan Estimate for the same loan scenario",
+  "City of Miami First-Time Homebuyer Program",
+  "Loan Estimate",
+  "City of Miami"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.consumerfinance.gov/owning-a-home/compare/choose-loan-offer/",
+  "https://www.consumerfinance.gov/owning-a-home/mortgage-estimate/",
+  "https://saferate.com/local/miami/best-mortgage-lenders/banks",
+  "https://files.consumerfinance.gov/f/documents/cfpb_your-home-loan-toolkit_print_2026-08.pdf",
+  "https://www.consumerfinance.gov/owning-a-home/explore-rates/",
+  "https://www.consumerfinance.gov/owning-a-home/compare/review-loan-estimates/",
+  "https://saferate.com/local/miami/best-mortgage-lenders/mortgage-companies",
+  "https://www.consumerfinance.gov/ask-cfpb/how-do-i-find-the-best-loan-available-when-im-shopping-for-a-home-mortgage-loan-en-137/",
+  "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-mortgage-interest-rate-and-an-apr-en-135/",
+  "https://on-mortgage.com/",
+  "https://www.lendingbankers.com/learn/buy-a-home/",
+  "https://www.miami.gov/Housing-Assistance/Home-Ownership/Apply-for-First-Time-Homebuyer-Assistance/First-Time-Homebuyer-Program-Participating-Banks",
+  "https://www.consumerfinance.gov/owning-a-home/compare/",
+  "https://www.consumerfinance.gov/owning-a-home/compare/request-and-review-multiple-loan-estimates/",
+  "https://reliancefinancial.com/mortgage-lenders-miami/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "49357fd570ef583ba18c6c60b48aa6b467f423509a370d10ca7114314c918a60",
+ "answer_chars": 1233,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

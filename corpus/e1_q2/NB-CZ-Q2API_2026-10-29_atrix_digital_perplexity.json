@@ -1,0 +1,101 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-29_atrix_digital_perplexity",
+ "date_utc": "2026-10-29",
+ "business": "Atrix Digital",
+ "niche": "AI marketing agency",
+ "market": "Los Angeles CA",
+ "row_type": "business",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need an AI marketing agency in Los Angeles. Which specific agencies should I call, and why?",
+ "q1_prompt_text": "Who is the best AI marketing agency in Los Angeles?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d08260ac-2a79-4898-8dd1-279001afdced",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00143,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00502
+   },
+   "input_tokens": 4338,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3784,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 573,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4911
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Imprint",
+  "Tack Media",
+  "My shortlist",
+  "Los Angeles-area",
+  "Santa Monica",
+  "AEO and GEO",
+  "Sherman Oaks",
+  "Contact Tack Media",
+  "Top It Marketing",
+  "AI SEO",
+  "Single Grain",
+  "AI-supported",
+  "AI-search",
+  "AI marketing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.topitmarketing.com/",
+  "https://www.imprint.la/services/ai-automation",
+  "https://losangelesdigitalmarketingagency.com/contact/",
+  "https://chaosmap.com/about/",
+  "https://www.tackmedia.com/contact-us/",
+  "https://www.singlegrain.com/location/ai-marketing-agency-los-angeles/",
+  "https://www.melleka.com/press",
+  "https://agencies.semrush.com/list/los-angeles/",
+  "https://agencies.semrush.com/list/marketing-automation/los-angeles/",
+  "https://tested.media/los-angeles-seo/",
+  "https://www.designrush.com/agency/digital-marketing/entertainment/california/los-angeles",
+  "https://www.vdigitalservices.com/location/los-angeles-california/",
+  "https://castiron.la/los-angeles-marketing-agency",
+  "https://foxtownmarketing.com/los-angeles-ai-marketing-agency/",
+  "https://www.icrossing.com/en-gb/locations/los-angeles"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "5b6829a532c7f62266cb1610f24a35e8e2dcdf317f900f208e978fdf3ac45190",
+ "answer_chars": 2211,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

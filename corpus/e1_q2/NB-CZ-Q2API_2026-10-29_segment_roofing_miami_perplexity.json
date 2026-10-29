@@ -1,0 +1,115 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-29_segment_roofing_miami_perplexity",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a hurricane-rated roof replacement in Miami. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4f9b3d3f-d099-438c-8d2f-4f274b372774",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00151,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00521
+   },
+   "input_tokens": 4814,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4259,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 605,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5419
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Art’s Roofing & Construction",
+  "CCC1333598",
+  "CGC1541858",
+  "BGI Roofing",
+  "CCC1337074",
+  "T&S Roofing Systems",
+  "CCC1326032",
+  "Crown Roofing & Waterproofing",
+  "Before choosing",
+  "HVHZ-compliant",
+  "Coral Gables",
+  "Miami-Dade NOA-approved",
+  "High-Velocity Hurricane Zone",
+  "Miami-Dade and Broward",
+  "CertainTeed ShingleMaster",
+  "HVHZ-approved",
+  "Crown Roofing",
+  "Serves Miami-Dade",
+  "NOA-approved",
+  "Miami-Dade NOA",
+  "HVHZ Florida Product Approval",
+  "Dade NOA",
+  "Miami-Dade",
+  "CertainTeed",
+  "High-Velocity Hurricane Zone (HVHZ)",
+  "Velocity Hurricane Zone",
+  "Florida Product Approval",
+  "Dade NOA-approved"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/fl/miami",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/oh/miami",
+  "https://agkgc.com/miami-roofing",
+  "https://3mg.com/location/miami-fl/",
+  "https://www.artsroofing.com/areas/miami/",
+  "https://bgiroofing.com/roof-replacement-miami/",
+  "https://crownroofing.com/roofing-in-miami/",
+  "https://www.tsroofingsystems.com/roof-replacement/",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/wa/miami-beach",
+  "https://www.artsroofing.com/",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/fl/miami/ts-roofing-systems-inc-1003830",
+  "https://properoofing.com/",
+  "https://frtroofpro.com/testimonials",
+  "https://www.havenhrg.com/roof-replacement-miami",
+  "https://iwdmiami.com/roofing/james-hardie-siding/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "1a80d39b925a67e13ca04c6e43791763212cf57350b162f782e5f74314d81e26",
+ "answer_chars": 2139,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

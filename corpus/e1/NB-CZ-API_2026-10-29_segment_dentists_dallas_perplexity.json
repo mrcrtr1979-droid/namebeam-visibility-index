@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-29_segment_dentists_dallas_perplexity",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e1a70245-fe67-4245-ae4e-543ad31efd1b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00068,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00438
+   },
+   "input_tokens": 4766,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4220,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 270,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5036
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. David McFadden",
+  "The Dental Implant Center",
+  "W. Lovers Lane",
+  "Dental Implant Center"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.dentalimplantcenter.com/",
+  "https://www.dentalimplantcenter.com/our-practice/",
+  "https://www.dentalimplantcenter.com/about-dr-david-mcfadden/",
+  "https://aedit.com/provider/elias-kontogiorgos-8210",
+  "https://www.dallasdentalimplantcenter.com/faq/",
+  "https://www.dentalimplantcenter.com/videos/full-mouth-implant-options-help-with-self-diagnosing-which-you-qualify-for/",
+  "https://dallasprosthodontics.com/p/Sitemap-p.asp",
+  "https://www.dentalimplantcenter.com/full-mouth-reconstruction/",
+  "https://www.periodallas.com/about-us/meet-dr-yaritza-vasquez/",
+  "https://www.prosthodontics.org/contact/",
+  "https://dallasimplant.com/reviews/",
+  "https://www.clearchoice.com/providers/daniel-cortes/1629558523/",
+  "https://www.dentalimplantcenter.com/check-credentials/",
+  "https://www.zocdoc.com/periodontists/dallas-211240pm",
+  "https://www.dentalimplantcenter.com/videos/dental-implant-treatment-options/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "86dff53e1b793ad326f35159d143a981e96df69d25bd5adac596f6d825ba9c90",
+ "answer_chars": 880,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

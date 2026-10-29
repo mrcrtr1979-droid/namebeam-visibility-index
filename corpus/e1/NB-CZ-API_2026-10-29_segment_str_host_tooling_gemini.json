@@ -1,0 +1,60 @@
+{
+ "check_id": "NB-CZ-API_2026-10-29_segment_str_host_tooling_gemini",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "uJPjatT2EomrytMPtqissQI",
+  "usage": {
+   "promptTokenCount": 20,
+   "candidatesTokenCount": 726,
+   "totalTokenCount": 746,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 20
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "PriceLabs",
+  "Rentalizer",
+  "Market Minder",
+  "Pace",
+  "Mashvisor",
+  "Hyper-Local Data",
+  "Customization (Rules-Based)",
+  "Market Dashboards",
+  "Wheelhouse",
+  "Beyond Pricing",
+  "After Buying",
+  "Pre-Purchase Analysis",
+  "After You Own",
+  "Beyond",
+  "Market Analysis",
+  "For Market Analysis",
+  "For Dynamic Pricing",
+  "For Market Analysis (Before Buying)"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For both setting nightly pricing as an active host and analyzing a market before buying, **AirDNA** and **PriceLabs** are the undisputed industry standards. \n\nHowever, because your needs span two different phases (Pre-Purchase Analysis vs. Active Day-to-Day Hosting), the \"best\" tool depends on which stage you are currently in. \n\nHere is the breakdown of the best tools for each purpose and the ultimate recommendation.\n\n---\n\n### 1. Best for Market Analysis (Before Buying): **AirDNA**\nIf you are evaluating a new city, neighborhood, or specific property, **AirDNA** is the gold standard for macro-level market research.\n\n*   **Rentalizer:** This is AirDNA’s signature tool. You plug in a specific address (or drop a pin), and it estimates the property's annual revenue, average daily rate (ADR), and occupancy rate based on historical data of comparable properties nearby.\n*   **Market Minder:** Gives you a bird’s-eye view of an entire city or zip code. You can see total active listings, seasonality trends, revenue percentiles (e.g., how much top 10% earners make vs. average earners), and booking lead times.\n*   **Pace:** Shows how fast bookings are filling up in a specific market in real-time, helping you spot emerging trends.\n*   **Best For:** Determining if a market is saturated, estimating return on investment (ROI) before making an offer, and understanding seasonal highs and lows.\n\n*Alternative for Pre-Purchase:* **Mashvisor** (great if you want to analyze traditional long-term rental data side-by-side with short-term rental data).\n\n---\n\n### 2. Best for Dynamic Pricing (After You Own/While Hosting): **PriceLabs**\nOnce you own the property and need to maximize your daily revenue, **PriceLabs** is widely considered the best dynamic pricing tool for independent hosts and property managers.\n\n*   **Hyper-Local Data:** It analyzes supply and demand in your immediate neighborhood down to the specific day, adjusting your prices automatically.\n*   **Customization (Rules-Based):** PriceLabs gives you incredible control. You can set minimum stay rules for weekends vs. weekdays, last-minute discounts, far-out premiums, and minimum price floors so you never accidentally rent your place for too cheap.\n*   **Market Dashboards:** It includes high-level market data similar to AirDNA, allowing you to see what competitors are charging and how many listings are booked in your area.\n*   **Cost:** It operates on a flat monthly fee per listing (usually around $20/month), which is often much cheaper than commission-based pricing tools.\n\n*Alternative for Hosting:* **Wheelhouse** (very user-friendly with flexible pricing models, including a flat fee or a percentage of revenue) or **Beyond Pricing** (one of the original dynamic pricing tools).\n\n---\n\n### The Verdict: The Ideal Tech Stack for an Investor/Host\n\nIf you want the absolute best results across the entire lifecycle of your short-term rental business, use a combination of the two market leaders:\n\n1.  **Before Buying:** Use **AirDNA** to run the numbers, vet the neighborhood, and ensure the purchase makes financial sense.\n2.  **After Buying:** Connect your property management system (PMS) or Airbnb account to **PriceLabs** to automate your nightly rates, maximize revenue, and stay competitive.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,100 @@
+{
+ "check_id": "NB-CZ-API_2026-10-29_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_75112168-c159-4870-852c-ee4407915718",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00121,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0048
+   },
+   "input_tokens": 4341,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3785,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 483,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4824
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Short answer",
+  "Lodge of the Ozarks",
+  "Hotel Grand Victorian",
+  "Hilton Promenade at Branson Landing",
+  "Chateau on the Lake",
+  "Still Waters Resort",
+  "Silver Dollar City",
+  "Highway 76",
+  "Branson Landing",
+  "My default recommendation",
+  "Highway",
+  "Hilton Promenade",
+  "Table Rock",
+  "Landing",
+  "Book",
+  "Still Waters"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.expedia.com/Branson-Hotels-Family-Hotel.0-0-d6058734-tFamilyHotel.Travel-Guide-Filter-Hotels",
+  "https://www.airbnb.com.mt/branson-mo/stays",
+  "https://www.tripadvisor.com/Hotels-g44160-zff4-Branson_Missouri-Hotels.html",
+  "https://www.airbnb.com/wonderworks-branson-mo/stays",
+  "https://www.momondo.com/hotels/Branson-Hotels_Family.Hff.25238.hotel.ksp",
+  "https://www.marriott.com/en-us/destinations/united-states/missouri/branson.mi",
+  "https://www.airbnb.com/silver-dollar-city-branson-mo/stays/houses",
+  "https://www.expedia.com/Branson-Hotels.d6058734.Travel-Guide-Hotels",
+  "https://www.airbnb.com/missouri-united-states/stays/vacation-homes",
+  "https://www.airbnb.com/missouri-united-states/stays/villas",
+  "https://travel.usnews.com/hotels/branson_mo/",
+  "https://www.hotels.com/sa10233219/hotels-in-missouri-united-states-of-america/",
+  "https://www.hotels.com/de1746716-ty2/family-friendly-hotels-near-highway-76-strip-branson-united-states-of-america/",
+  "https://www.theozarkerlodge.com/",
+  "https://www.hotels.com/ho236136/hilton-promenade-at-branson-landing-branson-united-states-of-america/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "87f6a9d884ee4d832d9d4f275f85bf419c9255247e80d3d8e3f70ca3f717af63",
+ "answer_chars": 1813,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,100 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-29_segment_roofing_denver_perplexity",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My roof has hail damage in Denver. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_def82df0-c5b3-4a78-aa09-06e1efd7d72f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00097,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00148,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00509
+   },
+   "input_tokens": 4449,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3896,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 591,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5040
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Cenco Roofing",
+  "Red Hawk Roofing",
+  "Precise Roofing",
+  "Metro City Roofing",
+  "Reports Colorado Roofing Association",
+  "Roofing Association",
+  "The Colorado Division of Insurance",
+  "Colorado Roofing Association",
+  "Colorado Division of Insurance",
+  "Owens Corning",
+  "Owens Corning Platinum Preferred",
+  "Owens Corning Platinum",
+  "Division of Insurance"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://doi.colorado.gov/news-releases-consumer-advisories/consumer-advisory-division-of-insurance-shares-tips-to-prepare",
+  "https://tsvconstructionandroofing.com/",
+  "https://force5roofing.com/",
+  "https://www.preciseroofingllc.com/",
+  "https://www.coloradoroofing.org/news/consumer-news",
+  "https://www.bbb.org/us/co/denver/category/storm-damage-repair",
+  "https://www.coloradoroofing.org/news/hail-damage-dos-and-donts-when-hiring-a-contractor",
+  "https://www.coloradovirtuallibrary.org/resource-sharing/state-pubs-blog/tips-to-avoid-roofing-fraud/",
+  "https://metrocityroofing.com/",
+  "https://www.coloradoroofing.org/consumer/looking-for-a-trusted-colorado-roofer",
+  "https://www.coloradoroofing.org/consumer/hailstorms-and-your-roof",
+  "https://americanbestroofingllc.com/",
+  "https://redhawkroofing.com/",
+  "https://www.bbb.org/us/co/denver/category/hail-repair/accredited",
+  "https://www.cencoroofing.com/locations/denver/roof-repair/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "1fbfbf7a43f53030416506380935e13d48b3a5c678ddeb6696b3cf7dde4cb3e3",
+ "answer_chars": 2404,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

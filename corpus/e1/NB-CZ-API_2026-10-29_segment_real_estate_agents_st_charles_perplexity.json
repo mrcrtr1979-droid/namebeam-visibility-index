@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-29_segment_real_estate_agents_st_charles_perplexity",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: real estate agents, St. Charles",
+ "niche": "real estate agents",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Charles MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_319e5d74-3256-4f4e-af30-6460ed785050",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00119,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00463
+   },
+   "input_tokens": 5292,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4741,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 320,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5612
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Patti Hayes",
+  "Grant Hickman",
+  "Tom Bruening"
+ ],
+ "engine_stated_criteria": [
+  "seller-side sales near your home"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/profile/GrantHickman",
+  "https://www.zillow.com/profile/pattihayz",
+  "https://www.zillow.com/profile/tammie%20meyer",
+  "https://www.zillow.com/profile/jeannepiglowski",
+  "https://www.zillow.com/profile/cjhorst",
+  "https://www.zillow.com/profile/bmorgan77",
+  "https://www.zillow.com/profile/user1201078",
+  "https://www.zillow.com/profile/aliciakinsella6",
+  "https://www.zillow.com/profile/Stephanie%20Eley",
+  "https://www.zillow.com/profile/LisaJBrown",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/saint-charles-mo/",
+  "https://www.zillow.com/profile/sarah94718",
+  "https://www.zillow.com/profile/Tombruening",
+  "https://www.zillow.com/profile/Sylvia%20Zim",
+  "https://www.zillow.com/profile/SoldByTrudy"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "18b00d992c4c7fbf102982d063fb4c46d6375ce0f31c85eda804d47fbc416243",
+ "answer_chars": 1079,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,97 @@
+{
+ "check_id": "NB-CZ-API_2026-10-29_segment_roofing_miami_perplexity",
+ "date_utc": "2026-10-29",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c3b67498-3e0e-4651-8579-b79c4489cb1f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00099,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00077,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0044
+   },
+   "input_tokens": 4505,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3957,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 309,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4814
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Art’s Roofing & Construction",
+  "CCC1333598",
+  "Big Al’s Roofing",
+  "CCC1330874",
+  "Miami-Dade HVHZ",
+  "NOA-approved",
+  "Company",
+  "Big Al",
+  "Miami-Dade NOA",
+  "Florida Product Approval",
+  "Dade NOA",
+  "Miami-Dade",
+  "Dade HVHZ"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://miamimetalroofcompany.com/about/",
+  "https://miamimetalroofcompany.com/",
+  "https://miaroofers.com/",
+  "https://www.greenerroofingandsolar.com/",
+  "https://canopyroofers.com/services/",
+  "https://www.artsroofing.com/areas/miami/",
+  "https://www.bbb.org/us/fl/miami/profile/roofing-contractors/roofing-experts-services-inc-0633-92054336",
+  "https://bigalsroofing.com/miami-shores",
+  "https://agkgc.com/miami-roofing",
+  "https://republicwindow.com/roofing",
+  "https://www.artsroofing.com/",
+  "https://www.roofing-network.com/residential-roofing/miami",
+  "https://www.istuetaroofing.com/roof-replacement/",
+  "https://3mg.com/location/miami-fl/",
+  "https://bigalsroofing.com/miami"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ba085cc24ee19c882b02a10763a28fee50fd1ec47b8bf4b5bb0a4f6b355f5e11",
+ "answer_chars": 1053,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}
