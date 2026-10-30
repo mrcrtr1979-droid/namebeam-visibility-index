@@ -1,9 +1,16 @@
 {
  "series": "e1_q2",
- "version": 1,
+ "version": 2,
  "registered": "2026-10-28",
  "prereg": "prereg/e1-q2-01.json",
  "note": "Second daily question for the ten Namebeam market-cut rows. Read by scripts/e1_runner.py after the prompt_1 pass; rows go to corpus/e1_q2/ as NB-CZ-Q2API_ files with prompt_variant 2 and are never merged into any prompt_1 count. prompt_1_ref is the roster wording this prompt_2 is paired with; the runner drops a row whose roster prompt_1 no longer equals it. Do not edit a prompt_2 after its start date: add a new version instead.",
+ "v2": {
+  "registered": "2026-10-30",
+  "start_date": "PLACEHOLDER: the UTC day this PR is merged; the merger confirms. Rows run from the first scheduled collector run after the merge (roster rule R17: merge before 12:10Z).",
+  "rows": "Rows marked version 2 below. The ten rows without a version key are version 1 and are unchanged.",
+  "segments": "Version 2 asks the second question for 41 segments: the 21 segments, not in version 1, that have usable paired Google results and AI answers in the 2026-09-28 to 2026-10-27 window, and the 20 research segments added by PRs #66 and #67 (first run 2026-10-30).",
+  "wording": "Same paired-wording rule as version 1: prompt_1_ref is the roster wording this prompt_2 is paired with, the runner drops a row whose roster prompt_1 no longer equals it, and prompt_2 follows the frame in prereg/e1-q2-01.json (I need [situation] in [CITY]. Which specific [company type] should I call, and why?)."
+ },
  "rows": [
   {
    "cut_slug": "atlanta-hvac",
@@ -84,6 +91,375 @@
    "niche": "hvac repair and replacement",
    "prompt_1_ref": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
    "prompt_2": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "atlanta-dentists",
+   "business": "SEGMENT: dentists, Atlanta",
+   "market": "Atlanta GA",
+   "niche": "dentists",
+   "prompt_1_ref": "Who is the best dentist in Atlanta for a dental implant?",
+   "prompt_2": "I need a dental implant in Atlanta. Which specific dental practices should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "dallas-dentists",
+   "business": "SEGMENT: dentists, Dallas",
+   "market": "Dallas TX",
+   "niche": "dentists",
+   "prompt_1_ref": "Who is the best dentist in Dallas for a dental implant?",
+   "prompt_2": "I need a dental implant in Dallas. Which specific dental practices should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "phoenix-dentists",
+   "business": "SEGMENT: dentists, Phoenix",
+   "market": "Phoenix AZ",
+   "niche": "dentists",
+   "prompt_1_ref": "Who is the best dentist in Phoenix for a dental implant?",
+   "prompt_2": "I need a dental implant in Phoenix. Which specific dental practices should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "pleasanton-dentists",
+   "business": "SEGMENT: dentists, Pleasanton",
+   "market": "Pleasanton CA",
+   "niche": "dentists",
+   "prompt_1_ref": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+   "prompt_2": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "kansas-city-health-insurance",
+   "business": "SEGMENT: health insurance, Kansas City",
+   "market": "Kansas City MO",
+   "niche": "health insurance brokers",
+   "prompt_1_ref": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+   "prompt_2": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "pleasanton-home-care",
+   "business": "SEGMENT: homecare agencies, Pleasanton",
+   "market": "Pleasanton CA",
+   "niche": "home care agencies",
+   "prompt_1_ref": "What is the best home care agency in Pleasanton CA for an elderly parent?",
+   "prompt_2": "My elderly parent needs home care in Pleasanton. Which specific home care agencies should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "pleasanton-moving-companies",
+   "business": "SEGMENT: moving companies, Pleasanton",
+   "market": "Pleasanton CA",
+   "niche": "moving companies",
+   "prompt_1_ref": "Who is the best moving company in Pleasanton CA for a local move?",
+   "prompt_2": "I have a local move coming up in Pleasanton. Which specific moving companies should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "pleasanton-oil-change",
+   "business": "SEGMENT: oil change, Pleasanton",
+   "market": "Pleasanton CA",
+   "niche": "oil change shops",
+   "prompt_1_ref": "Where is the best place to get an oil change in Pleasanton CA?",
+   "prompt_2": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "atlanta-orthodontists",
+   "business": "SEGMENT: orthodontists, Atlanta",
+   "market": "Atlanta GA",
+   "niche": "orthodontists",
+   "prompt_1_ref": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+   "prompt_2": "I need braces or Invisalign in Atlanta. Which specific orthodontists should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "dallas-orthodontists",
+   "business": "SEGMENT: orthodontists, Dallas",
+   "market": "Dallas TX",
+   "niche": "orthodontists",
+   "prompt_1_ref": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+   "prompt_2": "I need braces or Invisalign in Dallas. Which specific orthodontists should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "phoenix-orthodontists",
+   "business": "SEGMENT: orthodontists, Phoenix",
+   "market": "Phoenix AZ",
+   "niche": "orthodontists",
+   "prompt_1_ref": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+   "prompt_2": "I need braces or Invisalign in Phoenix. Which specific orthodontists should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "dallas-personal-injury",
+   "business": "SEGMENT: personal injury law, Dallas",
+   "market": "Dallas TX",
+   "niche": "personal injury attorneys",
+   "prompt_1_ref": "Who is the best personal injury lawyer in Dallas for a truck accident case?",
+   "prompt_2": "I need a personal injury lawyer in Dallas after a truck accident. Which specific law firms should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "pleasanton-real-estate-agents",
+   "business": "SEGMENT: real estate agents, Pleasanton",
+   "market": "Pleasanton CA",
+   "niche": "real estate agents",
+   "prompt_1_ref": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+   "prompt_2": "I want to sell my house in Pleasanton. Which specific real estate agents should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "branson-short-term-rental",
+   "business": "SEGMENT: short-term rental, Branson",
+   "market": "Branson MO",
+   "niche": "short-term rental / Airbnb",
+   "prompt_1_ref": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+   "prompt_2": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "nashville-short-term-rental",
+   "business": "SEGMENT: short-term rental, Nashville",
+   "market": "Nashville TN",
+   "niche": "short-term rental / Airbnb",
+   "prompt_1_ref": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+   "prompt_2": "I need a vacation rental in Nashville for a family of four. Which specific rental companies should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "santa-cruz-short-term-rental",
+   "business": "SEGMENT: short-term rental, Santa Cruz County",
+   "market": "Santa Cruz County CA",
+   "niche": "short-term rental / Airbnb",
+   "prompt_1_ref": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+   "prompt_2": "I need a vacation rental in Santa Cruz County. Which specific rental companies should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "charlotte-tanning-salons",
+   "business": "SEGMENT: tanning salons, Charlotte",
+   "market": "Charlotte NC",
+   "niche": "tanning salons",
+   "prompt_1_ref": "What is the best tanning salon in Charlotte NC?",
+   "prompt_2": "I want to try a tanning salon in Charlotte. Which specific salons should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "columbus-tanning-salons",
+   "business": "SEGMENT: tanning salons, Columbus",
+   "market": "Columbus OH",
+   "niche": "tanning salons",
+   "prompt_1_ref": "What is the best tanning salon in Columbus OH?",
+   "prompt_2": "I want to try a tanning salon in Columbus. Which specific salons should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "pleasanton-tanning-salons",
+   "business": "SEGMENT: tanning salons, Pleasanton",
+   "market": "Pleasanton CA",
+   "niche": "tanning salons",
+   "prompt_1_ref": "What is the best tanning salon in Pleasanton CA?",
+   "prompt_2": "I want to try a tanning salon in Pleasanton. Which specific salons should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "tyler-tanning-salons",
+   "business": "SEGMENT: tanning salons, Tyler",
+   "market": "Tyler TX",
+   "niche": "tanning salons",
+   "prompt_1_ref": "What is the best tanning salon in Tyler TX?",
+   "prompt_2": "I want to try a tanning salon in Tyler. Which specific salons should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "pleasanton-tire-shops",
+   "business": "SEGMENT: tire shops, Pleasanton",
+   "market": "Pleasanton CA",
+   "niche": "tire shops",
+   "prompt_1_ref": "Where should I buy tires in Pleasanton CA and who does the best installation?",
+   "prompt_2": "I need new tires installed in Pleasanton. Which specific tire shops should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "miami-personal-injury",
+   "business": "SEGMENT: personal injury law, Miami",
+   "market": "Miami FL",
+   "niche": "personal injury attorneys",
+   "prompt_1_ref": "Who is the best personal injury lawyer in Miami for a car accident case?",
+   "prompt_2": "I need a personal injury lawyer in Miami after a car accident. Which specific law firms should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "phoenix-personal-injury",
+   "business": "SEGMENT: personal injury law, Phoenix",
+   "market": "Phoenix AZ",
+   "niche": "personal injury attorneys",
+   "prompt_1_ref": "Who is the best personal injury lawyer in Phoenix for a car accident case?",
+   "prompt_2": "I need a personal injury lawyer in Phoenix after a car accident. Which specific law firms should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "denver-personal-injury",
+   "business": "SEGMENT: personal injury law, Denver",
+   "market": "Denver CO",
+   "niche": "personal injury attorneys",
+   "prompt_1_ref": "Who is the best personal injury lawyer in Denver for a car accident case?",
+   "prompt_2": "I need a personal injury lawyer in Denver after a car accident. Which specific law firms should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "charlotte-personal-injury",
+   "business": "SEGMENT: personal injury law, Charlotte",
+   "market": "Charlotte NC",
+   "niche": "personal injury attorneys",
+   "prompt_1_ref": "Who is the best personal injury lawyer in Charlotte for a car accident case?",
+   "prompt_2": "I need a personal injury lawyer in Charlotte after a car accident. Which specific law firms should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "chicago-dentists",
+   "business": "SEGMENT: dentists, Chicago",
+   "market": "Chicago IL",
+   "niche": "dentists",
+   "prompt_1_ref": "Who is the best dentist in Chicago for a dental implant?",
+   "prompt_2": "I need a dental implant in Chicago. Which specific dental practices should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "miami-dentists",
+   "business": "SEGMENT: dentists, Miami",
+   "market": "Miami FL",
+   "niche": "dentists",
+   "prompt_1_ref": "Who is the best dentist in Miami for a dental implant?",
+   "prompt_2": "I need a dental implant in Miami. Which specific dental practices should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "denver-dentists",
+   "business": "SEGMENT: dentists, Denver",
+   "market": "Denver CO",
+   "niche": "dentists",
+   "prompt_1_ref": "Who is the best dentist in Denver for a dental implant?",
+   "prompt_2": "I need a dental implant in Denver. Which specific dental practices should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "houston-dentists",
+   "business": "SEGMENT: dentists, Houston",
+   "market": "Houston TX",
+   "niche": "dentists",
+   "prompt_1_ref": "Who is the best dentist in Houston for a dental implant?",
+   "prompt_2": "I need a dental implant in Houston. Which specific dental practices should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "charlotte-dentists",
+   "business": "SEGMENT: dentists, Charlotte",
+   "market": "Charlotte NC",
+   "niche": "dentists",
+   "prompt_1_ref": "Who is the best dentist in Charlotte for a dental implant?",
+   "prompt_2": "I need a dental implant in Charlotte. Which specific dental practices should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "miami-orthodontists",
+   "business": "SEGMENT: orthodontists, Miami",
+   "market": "Miami FL",
+   "niche": "orthodontists",
+   "prompt_1_ref": "Who is the best orthodontist in Miami for braces or Invisalign?",
+   "prompt_2": "I need braces or Invisalign in Miami. Which specific orthodontists should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "columbus-personal-injury",
+   "business": "SEGMENT: personal injury law, Columbus",
+   "market": "Columbus OH",
+   "niche": "personal injury attorneys",
+   "prompt_1_ref": "Who is the best personal injury lawyer in Columbus Ohio for a car accident case?",
+   "prompt_2": "I need a personal injury lawyer in Columbus after a car accident. Which specific law firms should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "kansas-city-personal-injury",
+   "business": "SEGMENT: personal injury law, Kansas City",
+   "market": "Kansas City MO",
+   "niche": "personal injury attorneys",
+   "prompt_1_ref": "Who is the best personal injury lawyer in Kansas City Missouri for a car accident case?",
+   "prompt_2": "I need a personal injury lawyer in Kansas City after a car accident. Which specific law firms should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "columbus-dentists",
+   "business": "SEGMENT: dentists, Columbus",
+   "market": "Columbus OH",
+   "niche": "dentists",
+   "prompt_1_ref": "Who is the best dentist in Columbus Ohio for a dental implant?",
+   "prompt_2": "I need a dental implant in Columbus. Which specific dental practices should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "kansas-city-dentists",
+   "business": "SEGMENT: dentists, Kansas City",
+   "market": "Kansas City MO",
+   "niche": "dentists",
+   "prompt_1_ref": "Who is the best dentist in Kansas City Missouri for a dental implant?",
+   "prompt_2": "I need a dental implant in Kansas City. Which specific dental practices should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "charlotte-orthodontists",
+   "business": "SEGMENT: orthodontists, Charlotte",
+   "market": "Charlotte NC",
+   "niche": "orthodontists",
+   "prompt_1_ref": "Who is the best orthodontist in Charlotte for braces or Invisalign?",
+   "prompt_2": "I need braces or Invisalign in Charlotte. Which specific orthodontists should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "chicago-orthodontists",
+   "business": "SEGMENT: orthodontists, Chicago",
+   "market": "Chicago IL",
+   "niche": "orthodontists",
+   "prompt_1_ref": "Who is the best orthodontist in Chicago for braces or Invisalign?",
+   "prompt_2": "I need braces or Invisalign in Chicago. Which specific orthodontists should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "denver-orthodontists",
+   "business": "SEGMENT: orthodontists, Denver",
+   "market": "Denver CO",
+   "niche": "orthodontists",
+   "prompt_1_ref": "Who is the best orthodontist in Denver for braces or Invisalign?",
+   "prompt_2": "I need braces or Invisalign in Denver. Which specific orthodontists should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "houston-orthodontists",
+   "business": "SEGMENT: orthodontists, Houston",
+   "market": "Houston TX",
+   "niche": "orthodontists",
+   "prompt_1_ref": "Who is the best orthodontist in Houston for braces or Invisalign?",
+   "prompt_2": "I need braces or Invisalign in Houston. Which specific orthodontists should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "columbus-orthodontists",
+   "business": "SEGMENT: orthodontists, Columbus",
+   "market": "Columbus OH",
+   "niche": "orthodontists",
+   "prompt_1_ref": "Who is the best orthodontist in Columbus Ohio for braces or Invisalign?",
+   "prompt_2": "I need braces or Invisalign in Columbus. Which specific orthodontists should I call, and why?"
+  },
+  {
+   "version": 2,
+   "cut_slug": "kansas-city-orthodontists",
+   "business": "SEGMENT: orthodontists, Kansas City",
+   "market": "Kansas City MO",
+   "niche": "orthodontists",
+   "prompt_1_ref": "Who is the best orthodontist in Kansas City Missouri for braces or Invisalign?",
+   "prompt_2": "I need braces or Invisalign in Kansas City. Which specific orthodontists should I call, and why?"
   }
  ]
 }
