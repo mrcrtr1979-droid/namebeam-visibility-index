@@ -6,7 +6,7 @@
  "note": "Second daily question for the ten Namebeam market-cut rows. Read by scripts/e1_runner.py after the prompt_1 pass; rows go to corpus/e1_q2/ as NB-CZ-Q2API_ files with prompt_variant 2 and are never merged into any prompt_1 count. prompt_1_ref is the roster wording this prompt_2 is paired with; the runner drops a row whose roster prompt_1 no longer equals it. Do not edit a prompt_2 after its start date: add a new version instead.",
  "v2": {
   "registered": "2026-10-30",
-  "start_date": "PLACEHOLDER: the UTC day this PR is merged; the merger confirms. Rows run from the first scheduled collector run after the merge (roster rule R17: merge before 12:10Z).",
+  "start_date": "2026-10-31",
   "rows": "Rows marked version 2 below. The ten rows without a version key are version 1 and are unchanged.",
   "segments": "Version 2 asks the second question for 41 segments: the 21 segments, not in version 1, that have usable paired Google results and AI answers in the 2026-09-28 to 2026-10-27 window, and the 20 research segments added by PRs #66 and #67 (first run 2026-10-30).",
   "wording": "Same paired-wording rule as version 1: prompt_1_ref is the roster wording this prompt_2 is paired with, the runner drops a row whose roster prompt_1 no longer equals it, and prompt_2 follows the frame in prereg/e1-q2-01.json (I need [situation] in [CITY]. Which specific [company type] should I call, and why?)."
