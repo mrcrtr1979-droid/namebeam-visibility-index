@@ -1,0 +1,43 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_roofing_denver_anthropic",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My roof has hail damage in Denver. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_bjf2nfvkjtfoerfgntc3cjxxv5zj4b74lnadudv2pdeb6fxfcjjq",
+  "usage": {
+   "input_tokens": 29,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 289,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "In Colorado",
+  "The Colorado Roofing Association"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd recommend getting quotes from several local companies rather than relying on a specific recommendation, since quality varies by individual contractor. Here's a practical approach:\n\n**How to find qualified roofers:**\n- Check Google Reviews and Yelp filtered for Denver, focusing on hail damage repairs\n- Ask your insurance company for their preferred contractor list (they often have vetted options)\n- Contact the Colorado Roofing Association for members\n- Get 3-4 quotes to compare pricing and approaches\n\n**What to verify with any company:**\n- Licensed and insured in Colorado\n- Handles insurance claims (they'll often work directly with your adjuster)\n- Provides written estimates with specific materials/warranty details\n- Has local references you can check\n- Explains whether they recommend repair vs. full replacement\n\n**Red flags to avoid:**\n- Pressure to decide immediately\n- Door-to-door solicitation (common after hail, but quality varies wildly)\n- Unwillingness to work with your insurance adjuster\n- Prices significantly lower than others\n\n**Next step:** File a claim with your insurance first—they'll send an adjuster. Many roofers are experienced working through this process, which can significantly reduce your out-of-pocket costs.\n\nDo you have homeowners insurance? That'll shape your best options.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

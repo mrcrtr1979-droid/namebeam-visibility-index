@@ -1,0 +1,98 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_orthodontists_columbus_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: orthodontists, Columbus",
+ "niche": "orthodontists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Columbus Ohio for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a625fa14-bfd7-4e5b-a68e-db4fcdabb904",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00083,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00091,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00438
+   },
+   "input_tokens": 3881,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3333,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 365,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4246
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Andrew B. Wade, Wade Orthodontics",
+  "Dr. Amin Mason, Polaris Orthodontic Center",
+  "Dr. Dennis Denny Johnson, Johnson Orthodontics",
+  "Dr. Andrew B. Wade",
+  "Wade Orthodontics",
+  "AAO-listed",
+  "Invisalign. Office",
+  "Riverside Drive",
+  "Dr. Amin Mason",
+  "Polaris Orthodontic Center",
+  "Invisalign",
+  "Dr. Dennis",
+  "Johnson Orthodontics",
+  "Crown Park Court"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-carroll-ann-trotman/",
+  "https://aaoinfo.org/locator/dr-kaitrin-kramer/",
+  "https://aaoinfo.org/locator/dr-ana-m-mercado/",
+  "https://aaoinfo.org/locator/dr-andrew-b-wade/",
+  "https://aaoinfo.org/locator/dr-elizabeth-johnson/",
+  "https://aaoinfo.org/locator/dr-dennis-l-johnson-2/",
+  "https://aaoinfo.org/locator/dr-joseph-mess/",
+  "https://aaoinfo.org/locator/",
+  "https://www.polarisorthodonticcenter.com/",
+  "https://aaoinfo.org/locator/dr-dennis-l-johnson/",
+  "https://www.wadeorthodontics.com/",
+  "https://www.johnsonbraces.com/",
+  "https://huttasmiles.com/orthodontic-treatments/",
+  "https://www.wadeorthodontics.com/our-services/",
+  "https://aaoinfo.org/locator/dr-erik-w-hrabowy-2/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "06411e95e6ab20b117564890c5c1102b86f6f16c2fa866f23364bf9b36da8e4a",
+ "answer_chars": 1261,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

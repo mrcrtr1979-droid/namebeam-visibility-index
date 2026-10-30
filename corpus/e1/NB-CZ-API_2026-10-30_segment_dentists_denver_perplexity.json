@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_dentists_denver_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: dentists, Denver",
+ "niche": "dentists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Denver for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_39df9d47-8b9e-4063-806e-4e976d379760",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 4926,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4380,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 304,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5230
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Gregory G. Farthing",
+  "Periodontal Associates",
+  "Aurora and Centennial",
+  "The American Academy of Periodontology",
+  "Periodontist"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.farthingperio.com/",
+  "https://www.louisagallegosdds.com/",
+  "https://www.implantexcellence.net/",
+  "https://www.advancedimplants.com/dental-implants-in-denver-colorado/cosmetic-dentistry/",
+  "https://www.advancedimplants.com/dental-implants-in-denver-colorado/",
+  "https://www.periodontalhealth.com/areas/denver-co/",
+  "https://www.advancedimplants.com/dental-implants-in-denver-colorado/contact-us/",
+  "https://www.perio.org/for-patients/find-a-periodontist/",
+  "https://www.perio.org/for-patients/find-a-periodontist/advanced-search/",
+  "https://www.advancedimplants.com/dental-implants-in-denver-colorado/services/full-and-partial-dentures/",
+  "https://www.denverrestorativedentistry.com/referring-doctors/",
+  "https://www.superpages.com/denver-co/denture-service-centers",
+  "https://www.advancedimplants.com/contact-us/",
+  "https://milehighdentalcenters.com/about-us/meet-our-team/",
+  "https://home.perio.org/personifyebusiness/Find-an-AAP-Member-Periodontist"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "1ac212b4a83f6e5bb0c82f4c49e48f045f0e28e57aa3b2c593f7f9c866bc680e",
+ "answer_chars": 1073,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

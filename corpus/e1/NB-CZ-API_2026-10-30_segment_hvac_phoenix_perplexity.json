@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_hvac_phoenix_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_949fde95-8071-4b7d-92f8-9f0f9528534d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00051,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00415
+   },
+   "input_tokens": 4564,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4016,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 202,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4766
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "American Home Water & Air",
+  "Air Conditioning of Arizona",
+  "Hansen Family Air Conditioning & Plumbing",
+  "Arizona Registrar of Contractors",
+  "American Home Water",
+  "Phoenix AC-repair",
+  "Hansen Family Air Conditioning",
+  "Registrar of Contractors",
+  "Air Conditioning"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://avistahvac.com/",
+  "https://www.carrier.com/us/en/residential/dealers/az/phoenix/9828-n-19th-ave-3735-loc",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-contractor/parker-sons-1126-32260/customer-reviews",
+  "https://www.parkerandsons.com/cooling",
+  "https://azroc.my.site.com/AZRoc/s/contractor-search?licenseId=a0o8y0000016FMIAA2",
+  "https://www.consumeraffairs.com/homeowners/hvac-companies-phoenix.html",
+  "https://www.servicetitan.com/licensing/hvac/arizona",
+  "https://checkcontractorlicense.com/az/hvac-contractors/phoenix/",
+  "https://localhelpnow.com/us/az/phoenix/hvac",
+  "https://goodmenproject.com/everyday-life-2/best-ac-maintenance-companies-in-phoenix-az-top-picks-for-2026-ranked/",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-contractor/penguin-air-plumbing-electrical-1126-1000016873/customer-reviews",
+  "https://hvaccompaniesphoenix.com/best/ac-repair-installation/",
+  "https://rapidrooteraz.com/licensed-insured/",
+  "https://www.thumbtack.com/az/phoenix/carrier-ac-repair",
+  "https://samedayairrepair.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "cc8385ae83b22b6225f6cb84d2be45f272ed6c30dac9736c9cf9e5ff6c594a72",
+ "answer_chars": 608,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

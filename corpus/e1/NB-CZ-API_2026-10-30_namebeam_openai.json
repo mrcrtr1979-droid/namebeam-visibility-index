@@ -1,0 +1,61 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_namebeam_openai",
+ "date_utc": "2026-10-30",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EemDH07NiuvxQ6Atk8M0MdF7TlAWZ",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1408,
+   "total_tokens": 1432,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bing Chat",
+  "Siri",
+  "Alexa",
+  "AIs",
+  "Business Profile",
+  "Bing Places",
+  "Apple Maps",
+  "Yext",
+  "Bing Places for Business",
+  "Apple Maps Connect",
+  "TripAdvisor",
+  "Keep NAP",
+  "Moz Local",
+  "Business Name",
+  "BrightLocal",
+  "LocalBusiness",
+  "Whitespark",
+  "LocalBusiness Schema",
+  "Maps Connect"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\nThere isn’t a single “AI recommendation checker” that tells you whether every chat AI (ChatGPT, Bard/Gemini, Bing Chat, Siri, Alexa, etc.) will recommend your business. The best practical approach is to (A) make sure you appear in the underlying sources those AIs draw from (Google Maps/Business Profile, Yelp, Bing Places, Apple Maps, directory sites), and (B) use a local-SEO/listings monitoring service plus a few direct chatbot checks.\n\nBest single platform to start with\n- BrightLocal (or Yext if you want aggressive listing-syncing): BrightLocal gives local rank tracking, citation (directory) audits, review monitoring and reporting for local search — the things that most influence whether AI assistants will surface your business. It’s the best single tool for checking and improving the local visibility that AI systems usually rely on.\n\nComplementary tools and checks\n1. Claim and optimize primary listings\n   - Google Business Profile, Bing Places for Business, Apple Maps Connect, Yelp, Facebook/Meta, TripAdvisor, Foursquare.\n   - Keep NAP (name, address, phone), hours, categories, services, photos, and descriptions accurate.\n\n2. Use local-SEO platforms\n   - BrightLocal, Whitespark, Moz Local for citation audits and local rank tracking.\n   - Yext if you want automated syncing to many directories and analytics.\n\n3. Monitor mentions and reputation\n   - Google Alerts, Mention, Brand24, Talkwalker, or Awario to get notified if AI/online sources mention you.\n\n4. Check chatbots directly (sample prompt)\n   - Query the assistants yourself from a typical customer perspective. Example prompt:\n     “I need a [service] near [city or ZIP]. Would you recommend [Business Name, address]? Why or why not? Please list sources (links).”\n   - Test ChatGPT (with browsing/plugin enabled if available), Bing Chat, Google Bard/Gemini, and Siri/Alexa (voice/Maps).\n\n5. Use your website schema and content\n   - Add LocalBusiness schema and structured markup so search engines and retrieval-augmented AI systems can clearly read your details.\n\nWhy this approach\n- Most chat AIs surface local business suggestions from search indexes, maps, review sites and knowledge panels. If you’re visible and accurate in those sources, you’re much more likely to be recommended.\n- Chatbot answers vary by model, location, and the model’s data/retrieval plugins — they’re not static. Monitoring and optimizing your underlying listings gives the best ongoing payoff.\n\nIf you want, tell me:\n- your business type and city/zip and I’ll suggest the most important directories to claim and give a sample chatbot prompt to test whether the major AIs recommend you.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,96 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_orthodontists_denver_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: orthodontists, Denver",
+ "niche": "orthodontists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Denver for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1b83cb71-ba82-4f08-a421-d5ac41287ecc",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00093,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00066,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00423
+   },
+   "input_tokens": 4278,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3731,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 264,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4542
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Gregory Dietmeier, Dietmeier Orthodontics",
+  "Dr. Isaac Chung, i-Orthodontics",
+  "Dr. Gregory Dietmeier",
+  "Dietmeier Orthodontics",
+  "Invisalign",
+  "American Board of Orthodontics",
+  "Dr. Isaac Chung",
+  "Orthodontics",
+  "Cherry Creek",
+  "Dr. Desirea Scott",
+  "Denver Orthodontics",
+  "Dental Lounge"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.i-ortho.com/site/invisalign-clear-aligners",
+  "https://www.i-ortho.com/site/home",
+  "https://www.dietmeierortho.com/",
+  "https://colorado-braces.com/en/",
+  "https://www.i-ortho.com/site/orthodontist-dr-isaac-chung",
+  "https://centralparkorthodonticsdenver.com/invisalign/",
+  "https://www.dietmeierortho.com/invisalign",
+  "https://doctor.webmd.com/providers/specialty/orthodontics/colorado/denver",
+  "https://www.smilewithunion.com/invisalign/",
+  "https://nationalorthodonticregistry.com/colorado/denver-co/orthodontists/smilebliss-orthodontics-denver-co",
+  "https://www.averylopezdds.com/services/invisalign/",
+  "https://www.yelp.com/biz/all-about-braces-denver-7",
+  "https://nationalorthodonticregistry.com/colorado/denver-co/orthodontists/denver-orthodontics-dental-lounge-denver-co",
+  "https://icondentaldenver.com/denver-clear-aligners-provider/",
+  "https://www.cherrycreeksmiles.com/reviews/?reviews_page=34"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "797239b0166e26135d451c334b4ed4289d904910eb7f01f5dad9b1fddc9fbaab",
+ "answer_chars": 911,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

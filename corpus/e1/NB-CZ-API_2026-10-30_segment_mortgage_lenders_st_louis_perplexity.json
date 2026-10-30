@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_mortgage_lenders_st_louis_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: mortgage lenders, St. Louis",
+ "niche": "mortgage lenders",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Louis MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_11cacaca-a82a-4d97-a13f-b30e3fac932b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00447
+   },
+   "input_tokens": 4695,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4144,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 314,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5009
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Loan Estimate",
+  "Midwest BankCentre"
+ ],
+ "engine_stated_criteria": [
+  "A good local lender to include in your comparison is Midwest BankCentre"
+ ],
+ "sources_cited": [
+  "https://www.bankrate.com/mortgages/mortgage-rates/missouri/",
+  "https://www.nerdwallet.com/mortgages/mortgage-rates/missouri",
+  "https://www.midwestbankcentre.com/mortgage/",
+  "https://www.usbank.com/home-loans/mortgage/mortgage-rates/missouri.html",
+  "https://www.erate.com/home-mortgage-loans/missouri/rates",
+  "https://www.vcu.com/borrow/mortgages",
+  "https://www.mortgagenewsdaily.com/mortgage-rates/missouri",
+  "https://mortgage-calculator.net/mortgage-rates/missouri",
+  "https://tomo.com/mortgage/interest-rates-today/30-year-fixed/mo",
+  "https://www.monitorbankrates.com/mortgage-lenders/missouri/st-louis",
+  "https://tomo.com/mortgage/interest-rates-today/mo",
+  "https://tomo.com/mortgage/interest-rates-today/truerate/mo",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://money.usnews.com/loans/mortgages/state/missouri-mortgage-lenders",
+  "https://www.firstcommunity.com/loans/personal-loans/home-loans.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "f404f15f37024ef28bd6d3708c8a469088e1bad1300deb06c88b4dddfe8073db",
+ "answer_chars": 1108,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

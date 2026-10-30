@@ -1,0 +1,95 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_dentists_kansas_city_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: dentists, Kansas City",
+ "niche": "dentists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Kansas City. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Kansas City Missouri for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ee6b6e46-93d3-4995-b7a7-268a41129eb5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00099,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00127,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0049
+   },
+   "input_tokens": 4523,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3969,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 506,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5029
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Periodontal Specialists, P.A. — 913-663-4867",
+  "Seth Rush, DDS, MS — 816-444-8822",
+  "Periodontal Specialists",
+  "Country Club Plaza",
+  "Seth Rush",
+  "Ward Parkway",
+  "Kansas City Dental Implants",
+  "Oral Surgery"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.periodontal-specialists.com/",
+  "https://www.rushperio.com/",
+  "https://kcdios.com/procedures/oral-pathology/",
+  "https://kansascitydi.com/",
+  "https://dentalspecialistskc.com/",
+  "https://www.periodontal-specialists.com/services/dental-implant-placement",
+  "https://www.periodontal-specialists.com/locations-3/country-club-plaza",
+  "https://kansascitydi.com/our-team",
+  "https://www.gordondentalimplantsandcosmetics.com/about/",
+  "https://midwestomskc.com/dental-clinics-about-us",
+  "https://www.rushperio.com/procedures/",
+  "https://www.periodontal-specialists.com/services/gum-grafting",
+  "https://www.rushperio.com/procedures/dental-implants/",
+  "https://www.periodontal-specialists.com/team",
+  "https://www.periodontal-specialists.com/locations-3/st-jo"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ce1170900db25ca11c3a19b66fa49c74e68df2f68f72bb1eba11be05f1661130",
+ "answer_chars": 1897,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

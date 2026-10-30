@@ -1,0 +1,42 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_dentists_houston_anthropic",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: dentists, Houston",
+ "niche": "dentists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Houston. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Houston for a dental implant?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_stivx4zuf7vwd5gjg7ffyrc5efv2m7coqbjiitdl2pbzsdpyihaq",
+  "usage": {
+   "input_tokens": 27,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 291,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Questions to ask when calling"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I don't have current information about specific dental practices in Houston or their implant capabilities, so I can't recommend particular ones.\n\nHere's how to find good options:\n\n**Research approaches:**\n- Search \"dental implants Houston\" + read recent Google/Yelp reviews\n- Check if dentists have implant-specific credentials (prosthodontist, implant specialist certifications)\n- Verify they're in-network with your insurance\n- Look for practices offering consultations (many are free)\n\n**What to evaluate:**\n- Board certifications and years of implant experience\n- Before/after photos of their work\n- Whether they handle the full process or refer out\n- Cost transparency and financing options\n- Patient reviews mentioning implant outcomes\n\n**Questions to ask when calling:**\n- How many implants have they placed?\n- Do they do bone grafts if needed?\n- What's included in their fee?\n- Timeline from consultation to completion?\n\n**Consider:**\n- University of Texas dental school (often lower cost, supervised care)\n- Prosthodontists (specialists in implants/restorations)\n- Your general dentist's referrals\n\nSince implants are a significant investment, it's worth calling 2-3 practices to compare. Most offer free consultations where they can assess your specific needs.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

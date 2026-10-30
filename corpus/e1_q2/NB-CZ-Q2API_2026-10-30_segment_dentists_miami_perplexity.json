@@ -1,0 +1,103 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_dentists_miami_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: dentists, Miami",
+ "niche": "dentists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Miami. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Miami for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8a500b26-dcb7-4d49-9570-bde7838db4b2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00125,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.005
+   },
+   "input_tokens": 4980,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4427,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 500,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5480
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Call: (305) 689-6725",
+  "South Florida Periodontics & Dental Implants",
+  "Website",
+  "Sharp Dentistry & Associates, Coconut Grove",
+  "Call: (305) 857-0990",
+  "Address",
+  "University of Miami Health System",
+  "Maxillofacial Surgery and Dentistry",
+  "South Florida Periodontics",
+  "Dental Implants",
+  "Dr. Bradley Ross",
+  "Dr. Scott Ross",
+  "Sharp Dentistry",
+  "Coconut Grove",
+  "Dr. Bruno Sharp",
+  "S. Bayshore Drive"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://miamiperiodontist.com/",
+  "https://umiamihealth.org/en/treatments-and-services/dentistry/implants-and-bone-grafts",
+  "https://sharpdentistry.com/service/dental-implants-miami/",
+  "https://sharpdentistry.com/",
+  "https://umiamihealth.org/en/treatments-and-services/dentistry",
+  "https://www.miamicosmeticdentalcare.com/",
+  "https://miamidentaldistrict.com/",
+  "https://umiamihealth.org/es/tratamientos-y-servicios/cirug%C3%ADa-maxilofacial-y-odontolog%C3%ADa/implants-and-bone-grafts",
+  "https://www.garazidmd.com/about-us/",
+  "https://lamasdental.com/",
+  "https://www.miamiperio.com/procedures/dental-implants",
+  "https://www.garazidmd.com/",
+  "https://www.onesolutionnow.com/dental-implants/implants-team/",
+  "https://www.southfloridaperio.com/treatments/dental-implants/",
+  "https://carrolldentistry.com/team/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "03c0ce16fe4ff648b985b136807d7b09fd4022d87ce5c07bbbc1c4dd0519c4a9",
+ "answer_chars": 1816,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

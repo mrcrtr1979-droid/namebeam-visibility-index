@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_short_term_rental_branson_openai",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EenAgJLOfdm3i0hKxNazz4g6ku562",
+  "usage": {
+   "prompt_tokens": 29,
+   "completion_tokens": 1771,
+   "total_tokens": 1800,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Big Cedar Lodge",
+  "Branson Tourism Center",
+  "Visit Branson",
+  "Vacasa",
+  "Evolve",
+  "TurnKey",
+  "Booking.com",
+  "Hotels.com",
+  "Table Rock",
+  "Big Cedar"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Good — I can point you to the best places to call. Before I list them: do you have dates, group size, budget, or must-haves (lakefront, cabin, condo, pet-friendly, near shows, hot tub)? That will let me narrow suggestions. If you want a quick starter list, below are smart places to call and why each is useful for a Branson trip.\n\nCompanies/places to call and why\n\n1) Airbnb (hosts)\n- Why: Huge inventory of condos, cabins and homes in and around Branson; often good for unique properties and flexible host communication.\n- When to call: When you want direct contact with a host about last‑minute availability, special requests, or to confirm amenities and arrival details.\n\n2) Vrbo\n- Why: Longstanding vacation-home marketplace with many whole-home lakefront cabins and large family homes — good for larger groups.\n- When to call: If you need a multi‑bedroom home, lake access, or properties managed by professional local owners.\n\n3) Big Cedar Lodge\n- Why: A high‑end resort just outside Branson on Table Rock Lake with cabins, cottages, resort amenities (restaurants, marina, golf) — great if you want a full‑service stay.\n- When to call: If you want resort amenities, golf or marina access, or an upscale cabin experience with on‑site services.\n\n4) Branson Tourism Center / Visit Branson (local visitor services)\n- Why: Official local visitor bureau / concierge that can recommend vetted lodging options, package shows and lodging, and sometimes arrange local rental referrals.\n- When to call: If you want help matching lodging to shows, maps, or need trusted local recommendations.\n\n5) National professional managers that often operate in Branson: Vacasa, Evolve, TurnKey (or similar)\n- Why: These companies professionally manage many homes — consistent cleaning standards, easy booking, local support and clear policies (good for group trips).\n- When to call: If you prefer a professionally managed home with responsive local staff, standardized check‑in and guest services.\n\n6) Major travel sites (Booking.com, Expedia/Hotels.com)\n- Why: Aggregators that list condos, cabins and small hotels; useful to compare prices, instant booking and flexible cancellations.\n- When to call: If you want to compare availability or find a last‑minute condo/room near town.\n\nHow to choose which to call first\n- Want a cabin or lakefront home for a family: start with Vrbo, Vacasa/Evolve, and Big Cedar Lodge.\n- Want a boutique/unique place or host interaction: start with Airbnb.\n- Want full service or packages (shows, dining): call Branson Tourism Center and Big Cedar Lodge.\n- Need dependable professional management and simpler policies: call Vacasa/Evolve/TurnKey.\n\nWhat to ask when you call (quick checklist)\n- Exact address / distance to Branson shows and Silver Dollar City\n- Number/type of beds, sofa beds, max guests\n- Parking, vehicle limits, accessibility\n- Pet policy and fees\n- Cleaning fee, taxes and total price for your dates\n- Cancellation and refund policy\n- Check‑in/out procedures and local contact for problems\n- On-site amenities: hot tub, grill, AC, Wi‑Fi, boat slip if lakefront\n- Any noise or HOA rules (important around neighborhoods)\n\nIf you tell me your travel dates, group size, budget and whether you want lakefront vs downtown vs cabin in the woods, I’ll narrow this into 3–5 specific properties/managers to contact and suggest the best order to call them.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

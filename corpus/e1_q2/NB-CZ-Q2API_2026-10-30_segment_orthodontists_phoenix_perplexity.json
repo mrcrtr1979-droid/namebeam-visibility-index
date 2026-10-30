@@ -1,0 +1,110 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Phoenix. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_450dc09e-8a34-47b7-ad7a-e6f488b072f0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00154,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00523
+   },
+   "input_tokens": 4740,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4187,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 614,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5354
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dunn Orthodontics — Phoenix",
+  "Budd Orthodontics — central Phoenix",
+  "Murphy Orthodontics — north Phoenix",
+  "Serrano Orthodontics — central Phoenix",
+  "Call to confirm",
+  "My practical shortlist",
+  "Dunn Orthodontics",
+  "Drs. Matthew and Courtney Dunn",
+  "Invisalign. A",
+  "Budd Orthodontics",
+  "Dr. John Budd",
+  "American Board of Orthodontics",
+  "Invisalign",
+  "Murphy Orthodontics",
+  "Dr. Chris Murphy",
+  "American Board of Orthodontics-certified",
+  "Invisalign. Worth",
+  "Serrano Orthodontics",
+  "Invisalign. I",
+  "Dunn and Budd",
+  "Phoenix. Get",
+  "Central Phoenix",
+  "North Phoenix"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://dunn-orthodontics.com/",
+  "https://www.buddorthodontics.com/",
+  "https://woolaverorthodontics.com/",
+  "https://www.buddorthodontics.com/testimonials",
+  "https://www.murphyorthodontics.com/",
+  "https://starlightdentalgroup.com/",
+  "https://dunn-orthodontics.com/phoenix-invisalign/",
+  "https://www.buddorthodontics.com/meet-dr-budd",
+  "https://gentledental.interdent.com/locations/az/phoenix-bell-road",
+  "https://serranoorthodontics.com/phoenix-orthodontics/",
+  "https://www.phoenixorthodontics.net/pages/testimonials",
+  "https://woolaverorthodontics.com/contact/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/serrano-orthodontics-phoenix-az",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/butterfly-orthodontics-phoenix-az",
+  "https://www.linkedin.com/in/buddortho"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "0c9851a8efa6fa2afb1d608a2effebc7e911b7f288495b9d61f10b142d6b850d",
+ "answer_chars": 2312,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

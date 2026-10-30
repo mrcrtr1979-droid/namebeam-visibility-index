@@ -1,0 +1,70 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_health_insurance_kansas_city_gemini",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "hPTkarbJEZe_qtsP7_CCwQE",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 844,
+   "totalTokenCount": 866,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UnitedHealthcare",
+  "Affordable Care Act",
+  "Medicare",
+  "Missouri and Kansas",
+  "BCBSKC",
+  "Kansas City Regional Offices",
+  "Individual Brokers",
+  "NABIP Kansas City",
+  "NABIP",
+  "Ask Any Broker When You Call",
+  "Johnson County",
+  "Jackson County",
+  "Pro-Tip Before You Call",
+  "KU Medical Center",
+  "University of Kansas Health System",
+  "St. Luke's",
+  "Olathe Health",
+  "In Kansas",
+  "Independent Brokers",
+  "In Missouri",
+  "KC Metro",
+  "Questions to ask any broker"
+ ],
+ "engine_stated_criteria": [
+  "\"Are my preferred doctors in-network on both sides of the state line?\"",
+  "\"Are you appointment-ready with all major carriers in KC?\"",
+  "\"Do you charge a fee for your services?\""
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Navigating the health insurance market in Kansas City can be tricky due to the dominance of a few major carriers (primarily Blue Cross and Blue Shield of Kansas City, UnitedHealthcare, and Aetna/Cigna) and the nuances of the ACA (Affordable Care Act) marketplace versus off-exchange and employer-sponsored plans. \n\nHere are the specific, reputable brokerages and independent agencies in the Kansas City metro area that you should consider calling, along with why they are recommended.\n\n---\n\n### 1. Cornerstone Brokerage Services\n* **Best for:** Small-to-medium business owners, self-employed individuals, and those needing deep marketplace (Obamacare) guidance.\n* **Why call them:** Cornerstone is one of the largest independent general agencies in the region. They specialize in individual health, Medicare, and group benefits. Because they work with virtually every major carrier in Missouri and Kansas, they can give you an unbiased comparison of BCBSKC, United, and others without pushing a specific brand. \n\n### 2. KC Benefits Group\n* **Best for:** Individuals, families, and small business owners looking for a high-touch, local boutique experience.\n* **Why call them:** Run by local experts who understand the specific dynamics of the KC metro (including crossing the state line between Missouri and Kansas, which heavily impacts network availability), they excel at finding the right balance between premium costs and out-of-pocket maximums. They are particularly helpful if you have complex medical needs or specific prescription drugs you need covered.\n\n### 3. Mutual of Omaha – Overland Park / Kansas City Regional Offices (Captive vs. Independent Brokers)\n* **Best for:** Supplemental insurance, dental/vision add-ons, and traditional major medical.\n* **Why call them:** While Mutual of Omaha is a major carrier, their local Kansas City advisory offices employ multi-line brokers who can often package your health insurance with ancillary products (like life, dental, or critical illness) to lower overall risk exposure. \n\n### 4. Local Independent Medicare & Individual Brokers (via NAHU/NABIP Kansas City)\n* **Best for:** Seniors transitioning to Medicare or individuals buying off-exchange individual plans.\n* **Why call them:** The **National Association of Benefits and Insurance Professionals (NABIP)** has a very active Kansas City chapter. You can use their \"Find an Agent\" directory for the KC metro. Brokers who belong to NABIP are held to a higher standard of continuing education and ethics regarding compliance with ACA regulations.\n\n---\n\n### Key Questions to Ask Any Broker When You Call:\n\nWhen you connect with one of these brokers, make sure to ask these specific questions tailored to the Kansas City market:\n\n1. **\"Are my preferred doctors in-network on both sides of the state line?\"** \n   *(Crucial in KC: Many plans differ significantly depending on whether your doctor is in Johnson County, KS or Jackson County, MO).*\n2. **\"Are you appointment-ready with all major carriers in KC?\"** \n   *(Ensure they can sell you plans from both Blue Cross and Blue Shield of KC and competing networks).*\n3. **\"Do you charge a fee for your services?\"** \n   *(In the vast majority of cases, health insurance brokers are **free** for the consumer because they are compensated via commissions paid directly by the insurance companies, which do not raise your premium).*\n4. **\"Should I buy on-exchange (HealthCare.gov) or off-exchange?\"** \n   *(They can quickly calculate if you qualify for ACA tax subsidies, which are only available through the official marketplace).*\n\n---\n\n### Pro-Tip Before You Call:\nBefore speaking with a broker, write down:\n* A list of your current prescriptions.\n* The names of the doctors, specialists, and hospitals (e.g., KU Medical Center, University of Kansas Health System, St. Luke's, or Olathe Health) you want to keep seeing. *Network restrictions are the #1 reason people regret their health plan choice in KC.*",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_real_estate_agents_st_louis_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: real estate agents, St. Louis",
+ "niche": "real estate agents",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Louis MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_78d41edb-fbbb-4988-92b8-56c1db6465fa",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00448
+   },
+   "input_tokens": 4786,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4235,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 313,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5099
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Angela Kittner",
+  "Mark Gellman"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.stlrealtors.com/member-directory/",
+  "https://www.homelight.com/st-louis-mo/top-real-estate-agents",
+  "https://www.realtor.com/realestateagents/St-Louis_MO/intent-buy",
+  "https://realestate.usnews.com/agents/missouri/st-louis",
+  "https://wealthybud.com/directories/agents/st-louis-mo",
+  "https://www.homelight.com/saint-louis-mo/top-real-estate-agents",
+  "https://www.homelight.com/st-louis-county-mo/top-real-estate-agents",
+  "https://www.homes.com/real-estate-agents/angela-kittner/k8wv6jb/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/saint-louis-mo/",
+  "https://www.fastexpert.com/top-real-estate-agents/missouri/",
+  "https://www.realtrends.com/ranking/best-real-estate-agents-saint-louis-missouri/individuals-by-volume/",
+  "https://www.realtor.com/realestateagents/63135",
+  "https://www.realtor.com/realestateagents/636d018d260d345d96426201",
+  "https://www.homes.com/real-estate-agents/kathleen-helbig/6p7qqxr/",
+  "https://www.effectiveagents.com/mo/st-louis"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "fa6cdfeb7945a38e6e836a25451f431ed9e0539f52e13f2cddc91ae2d6c812c0",
+ "answer_chars": 1109,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

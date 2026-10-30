@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_str_host_tooling_openai",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EemTF9JnIoPwT3yosY4lsV8OBdnb9",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1501,
+   "total_tokens": 1527,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA MarketMinder",
+  "PriceLabs",
+  "Smart Pricing",
+  "MarketMinder",
+  "AirDNA",
+  "Wheelhouse",
+  "Beyond Pricing",
+  "Weaknesses",
+  "PMSs",
+  "AllTheRooms Analytics",
+  "Mashvisor",
+  "Beyond",
+  "AllTheRooms",
+  "For Market Research",
+  "Start with AirDNA",
+  "Wheelhouse and Beyond Pricing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- For market research before you buy: AirDNA MarketMinder is the best single tool for deep, data-driven market analysis.\n- For setting dynamic nightly pricing once you host: PriceLabs is the best overall balance of accuracy, control, and value. Wheelhouse and Beyond Pricing are good alternatives; Airbnb’s built‑in Smart Pricing is okay if you want free/simple.\n\nWhy two separate tools\n- “Market analysis before buying” and “nightly pricing while operating” are related but different problems. MarketMinder (AirDNA) gives buy/no‑buy metrics (ADR, occupancy, seasonality, RevPAR, revenue projections, comps, historical trend charts, booking lead times, event heatmaps). A dynamic‑pricing engine (PriceLabs, Wheelhouse, Beyond Pricing) optimizes day‑to‑day rates, min‑stays and discounts and integrates with calendars/channel managers.\n\nTop picks and quick pros/cons\n- AirDNA (MarketMinder)\n  - Best for: market-level research before purchase and investment modeling.\n  - Strengths: large dataset, neighborhood-level breakdowns, revenue projections, seasonality, comps, event analysis.\n  - Weaknesses: estimates from scraped listing data (not perfect), subscription cost for detailed reports.\n- PriceLabs\n  - Best for: dynamic, highly configurable pricing for 1–many listings.\n  - Strengths: granular rules/seasonality customization, strong calendar and min‑stay controls, integrates with major channels/PMSs, predictable pricing (per listing/month).\n  - Weaknesses: learning curve for advanced rules.\n- Wheelhouse\n  - Best for: hosts who want granular analytics + automatic optimization with different UI choices.\n  - Strengths: market data + pricing, constructive UI for revenue strategies.\n  - Weaknesses: fewer customization examples than PriceLabs for very complicated rules (depends on version).\n- Beyond Pricing\n  - Best for: hosts who want hands‑off pricing with minimal setup.\n  - Strengths: simple, good integrations, auto‑adjusts prices.\n  - Weaknesses: less customization; usually priced as a percentage of revenue.\n- Airbnb Smart Pricing\n  - Best for: absolute free/low-effort option.\n  - Strengths: built into Airbnb.\n  - Weaknesses: limited control and less sophisticated demand modeling.\n\nOther useful tools\n- Mashvisor: quick ROI/cap-rate calculators and comps for investment properties (good companion to AirDNA).\n- Transparent / AllTheRooms Analytics: enterprise-level datasets and competitive intel (more for managers with many properties).\n- InsideAirbnb: free scraped data useful for city-level snapshots and regulatory research.\n- Local comps: Zillow, county records and a local realtor are essential complements to data tools.\n\nWhat to look at in market analysis\n- ADR, occupancy, RevPAR, seasonality, booking lead times\n- Historical demand trends and event sensitivity\n- Comparable listings (size, amenities, location)\n- Nightly rate distribution and minimum‑stay patterns\n- Regulatory environment and licensing\n- Estimated operating costs, cleaning, management fees, and realistic revenue (don’t assume 100% occupancy)\n\nPractical recommendation\n- If you can only pick one before buying: start with AirDNA MarketMinder to validate demand and revenue potential in neighborhoods you’re considering.\n- Once you have a property, run a 1–2 month trial of PriceLabs to handle daily pricing and tune rules. If you prefer simpler, hands‑off pricing, try Beyond Pricing; if you want more strategic analytics + pricing, try Wheelhouse.\n- Always validate model projections with 3–6 months of real bookings and local comps.\n\nIf you tell me city/neighborhood and whether you’re buying one property or scaling a portfolio, I can recommend which subscription level and which exact reports to pull (and which metrics to watch) for your decision.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_mortgage_lenders_st_charles_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: mortgage lenders, St. Charles",
+ "niche": "mortgage lenders",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Charles MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6043dd71-4e0c-45f5-b0b9-707cb4b96914",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00092,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00091,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00447
+   },
+   "input_tokens": 4226,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3675,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 365,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4591
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "First Community Credit Union",
+  "Guild Mortgage’s St. Charles branch",
+  "Guild Mortgage",
+  "First Community",
+  "Guild Mortgage St. Charles"
+ ],
+ "engine_stated_criteria": [
+  "A good local starting point is First State Bank of St. Charles"
+ ],
+ "sources_cited": [
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://www.royalbanksofmo.com/personal-lending/mortgages/",
+  "https://www.experience.com/reviews/company/first-state-bank-of-st-charles",
+  "https://fsbfinancial.com/mortgage/home-loan-options/",
+  "https://fsbfinancial.com/mortgage/home-loan-options/home-buying/",
+  "https://files.consumerfinance.gov/f/documents/cfpb_your-home-loan-toolkit_print_2026-08.pdf",
+  "https://www.consumerfinance.gov/owning-a-home/compare/compare-loan-estimates/",
+  "https://fsbfinancial.com/mortgage/mortgage-offers/",
+  "https://www.consumerfinance.gov/ask-cfpb/how-do-i-find-the-best-loan-available-when-im-shopping-for-a-home-mortgage-loan-en-137/",
+  "https://fsbfinancial.com/mortgage/mortgage-lenders/",
+  "https://www.firstcommunity.com/loans/personal-loans/home-loans.html",
+  "https://www.experience.com/reviews/beau-house",
+  "https://branches.guildmortgage.com/mo/weldonspring/st-charles-158.html",
+  "https://mortgage.usbank.com/mo/saint-charles",
+  "https://www.experience.com/reviews/office/st-charles-127891"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "3d552288e3be2f59e4bbf347c601c8a2ca12fa66fec2c72ce81a5b616b574ec9",
+ "answer_chars": 1227,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

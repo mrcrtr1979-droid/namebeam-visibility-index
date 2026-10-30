@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_orthodontists_charlotte_openai",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: orthodontists, Charlotte",
+ "niche": "orthodontists",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Charlotte. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Charlotte for braces or Invisalign?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Een7SCN9kEZXb82s3EWPeYxZn0uXR",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1112,
+   "total_tokens": 1137,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 640,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Invisalign",
+  "American Board of Orthodontics",
+  "AAO Find-an-Orthodontist and Invisalign"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need one quick detail: what part of Charlotte (zip code or neighborhood) and are you looking for treatment for an adult, teen, or child? Do you already prefer Invisalign over traditional braces, or are you open to either?\n\nMeanwhile, here’s a fast, practical plan and what to call for:\n\n1) Tell me your area + patient type and I’ll give 4–6 specific, current practice names and phone numbers near you (one high-volume Invisalign provider, one board-certified orthodontist, one pediatric/teen specialist if needed, and one lower-cost/insurance-friendly option).\n\n2) Why these different types? \n- Board-certified orthodontists (American Board of Orthodontics certification) show higher levels of training and commitment to the specialty.  \n- High-volume Invisalign providers have more experience handling complex clear-aligner cases.  \n- Pediatric/teen specialists know growth-phase timing, appliances, and cooperation issues.  \n- Insurance-friendly or university clinics can lower cost.\n\n3) What to ask when you call (short script):\n- “Do you have an orthodontist who treats my age group and does Invisalign?”  \n- “Is your orthodontist board-certified (ABO)?”  \n- “About how many Invisalign cases do you treat per year?”  \n- “Do you offer free consultations or a treatment estimate? What’s the ballpark cost and length of treatment?”  \n- “Do you accept my insurance (name insurer) or offer payment plans/financing?”  \n- “Do you use digital scans (iTero) or still do impressions?”  \n- “What is your emergency policy if brackets break or aligners are lost?”  \n\n4) How to choose after consultations:\n- Compare treatment plans, total cost, and estimated time.  \n- Prefer practices that show before/after photos of similar cases and explain tradeoffs (braces vs Invisalign) clearly.  \n- Check recent patient reviews (Google/Yelp) and verify credentials on the AAO Find-an-Orthodontist and Invisalign provider locator.\n\nIf you give your neighborhood or zip code and whether this is for an adult/teen/child and whether you want Invisalign specifically, I’ll return a tailored, ranked list of 4–6 specific orthodontists in Charlotte and why I recommend each.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

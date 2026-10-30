@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_real_estate_agents_pleasanton_openai",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to sell my house in Pleasanton. Which specific real estate agents should I call, and why?",
+ "q1_prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EemwrJWIVSho69bKoxXjwVftIPPZX",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1166,
+   "total_tokens": 1194,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need a few quick details so I can pick the best, specific agents for your house.\n\nQuick questions\n1. Which Pleasanton do you mean (Pleasanton, CA vs Pleasanton, OH)?\n2. Full address or at least neighborhood? (If you prefer not to give the full address, a cross street or subdivision + zip is fine.)\n3. Home type and basics: SFH vs condo/townhouse, beds/baths, sqft, lot size, year built, recent upgrades.\n4. Rough target price or market range (or what you expect to get).\n5. Timeline and priorities: top dollar vs fastest sale vs minimal hassle (i.e., cash buyers, sell as-is).\n6. Any preferences: individual agent vs team, bilingual, discount broker, top-producer, luxury specialist?\n\nWhat I’ll do once you answer\n- Research current MLS/sold data for your neighborhood.\n- Produce a short list (3–5) of specific agents or teams who are best matches, with:\n  - Why each one is a good fit (recent comparable sales, average list‑to‑sale ratio, marketing strengths, reviews).\n  - What to ask them on the first call and how to compare their offers.\n  - Recommended next step (who to interview first).\n\nIf you’d like to move faster without giving details, I can immediately give general guidance on how to choose 3–4 agents to call and provide a script and interview checklist — but the names will be much more useful if I have your neighborhood and price range. Which would you prefer?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

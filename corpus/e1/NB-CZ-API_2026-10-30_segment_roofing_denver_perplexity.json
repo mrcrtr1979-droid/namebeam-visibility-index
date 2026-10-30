@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_roofing_denver_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_32b1231c-4b8e-45ea-98b6-e53895699e4d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 4997,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4450,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 302,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5299
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "MTN Roofing",
+  "Woodberg Roofing and Restoration",
+  "Denver-area BBB",
+  "Woodberg Roofing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/mtn-roofing-1296-90278215/addressId/863266",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/accurate-america-1296-90248637",
+  "https://www.bbb.org/us/co/denver/category/hail-repair/accredited",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/lr-contracting-inc-1296-90131857/customer-reviews?page=2",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/woodberg-roofing-and-restoration-llc-1296-90245804",
+  "https://qntum.com/locations/denver-co",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/murray-roofing-llc-1296-90104041/addressId/875348",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/hail-pro-restoration-1296-90254921",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/a-grade-property-solutions-llc-dba-done-right-roofing-1296-90166636",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/metro-city-roofing-1296-90261616",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/trusted-roofing-exteriors-1296-90256948/customer-reviews?page=3",
+  "https://countryw.com/",
+  "https://redhawkroofing.com/",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/premier-roofing-company-1296-27001387/complaints?page=2",
+  "https://apcroofing.com/denver-colorado/storm-damage/hail-damage-roof-repair/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "855027d467fbf75fd3e4735442b528b2e480cb69e7dde3fe16ef2198bd159478",
+ "answer_chars": 994,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

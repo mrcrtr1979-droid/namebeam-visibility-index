@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_dentists_kansas_city_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: dentists, Kansas City",
+ "niche": "dentists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Kansas City Missouri for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4608c99a-e679-4230-bbd1-e5801a4517ce",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00121,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00084,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00469
+   },
+   "input_tokens": 5381,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4833,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 335,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5716
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Kansas City, Missouri",
+  "Periodontal Specialists",
+  "Dr. Melissa Combs",
+  "American Board of Periodontology. The"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.periodontal-specialists.com/",
+  "https://www.periodontal-specialists.com/services/dental-implant-placement",
+  "https://www.periodontal-specialists.com/services/gum-grafting",
+  "https://kcdios.com/meet-dr-rezaei/",
+  "https://www.periodontal-specialists.com/patient-info/patient-forms",
+  "https://www.periodontal-specialists.com/services/periodontally-accelerated-orthodontics",
+  "https://www.rushperio.com/about/meet-our-team/",
+  "https://toothcompass.com/state/missouri/",
+  "https://www.periodontal-specialists.com/referring-doctors",
+  "https://www.periodontal-specialists.com/services/laser-periodontal-treatment",
+  "https://blackerfamilydental.com/trusted-specialists/",
+  "https://www.gordondentalimplantsandcosmetics.com/about/",
+  "https://cosmeticimplantdentistrykc.com/about-us/",
+  "https://www.periodontal-specialists.com/patient-info",
+  "https://dentillo.com/city/kansas-city"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "44f1729bb26d49281336fac208e3235ad52804ce3c94781b730b16d1df0980fa",
+ "answer_chars": 1192,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

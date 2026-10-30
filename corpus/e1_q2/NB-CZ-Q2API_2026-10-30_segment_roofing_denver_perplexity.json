@@ -1,0 +1,106 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_roofing_denver_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My roof has hail damage in Denver. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_05605f0b-d111-4fbe-b977-f93cbb274039",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00168,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00527
+   },
+   "input_tokens": 4349,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3796,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 672,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5021
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Beall’s Roofing LLC — (303) 522-2465",
+  "Murray Roofing LLC — (720) 464-7663",
+  "Woodberg Roofing and Restoration — (720) 464-7498",
+  "Hart Roofing — (720) 283-7997",
+  "Red Diamond Roofing —",
+  "Denver-area",
+  "Roofing LLC",
+  "Denver-based",
+  "Murray Roofing LLC",
+  "BBB-accredited",
+  "Woodberg Roofing and Restoration",
+  "Hart Roofing",
+  "Red Diamond Roofing",
+  "BBB-accredited. Confirm",
+  "Division of Insurance",
+  "Colorado-based",
+  "Colorado DOI",
+  "Woodberg Roofing",
+  "Murray Roofing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/hail-pro-restoration-1296-90254921",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/murray-roofing-llc-1296-90104041",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/bealls-roofing-llc-1296-90147319",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/murray-roofing-llc-1296-90104041/addressId/875348",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/the-roofing-siding-company-1296-1000194283",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/advocate-construction-inc-1296-90222846",
+  "https://www.bbb.org/us/co/denver/category/hail-repair/accredited",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/woodberg-roofing-and-restoration-llc-1296-90245804",
+  "https://www.bbb.org/us/co/denver/category/storm-damage-repair",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/red-diamond-roofing-inc-1296-90121154",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/hart-roofing-inc-1296-9036641",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/lr-contracting-inc-1296-90131857",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/a-denver-roofing-1296-1000105608/addressId/861058",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/midwest-homes-llc-1296-90227972",
+  "https://doi.colorado.gov/news-releases-consumer-advisories/consumer-advisory-division-of-insurance-shares-tips-to-prepare"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "bdbf1648cb150bffcb90608817784c7ef5971622789b2aa76af9073244057949",
+ "answer_chars": 2437,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

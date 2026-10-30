@@ -1,0 +1,62 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EemsK3tdCsLX0qAFK3550FqmRvq8f",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1818,
+   "total_tokens": 1846,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Part A",
+  "HUB International",
+  "Brown",
+  "Alera Group",
+  "Certified ACA",
+  "Medicare",
+  "SHIP-analog",
+  "Medicare Advantage",
+  "Medigap",
+  "Missouri SMP",
+  "SHICK",
+  "Missouri SHIP",
+  "In Kansas",
+  "ACA Marketplace",
+  "In Missouri",
+  "Independent Agents",
+  "SHIP"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — but first I need a couple quick details so I give the best, specific recommendations:\n\n- Are you in Kansas City, Missouri or Kansas City, Kansas? (Different state rules, brokers, and programs.)\n- What kind of coverage are you shopping for: individual/family (ACA marketplace), small-group (employer), Medicare (Part A/B/D/Medigap/Advantage), Medicaid/CHIP, or short-term/other?\n- Any must-haves (specific doctors or hospitals, prescription needs, budget target, preferred carriers)?\n- Do you want a local agent you can meet in person, or are you okay with phone/online brokers?\n\nIf you want an immediate, general starter list, here are the types of brokers/assistance to contact in Kansas City and why each is useful. Tell me which plan type (from above) and I’ll give direct broker names, phone numbers, and a suggested script for your calls.\n\n1) Local independent insurance agencies (best if you want someone who can compare multiple carriers and handle enrollment, claims help, and renewals)\n- Why call: Independent agents represent multiple carriers, can shop options for you, and often help with appeals and claims problems.\n- How to find: Search for “independent health insurance agency Kansas City” or ask for agencies with A+ reviews and an active local office. Large regional firms with KC offices often include HUB International, Brown & Brown, or Alera Group — they serve businesses and individuals and can help with group and individual plans. (I can confirm current local office contact details once you tell me MO or KS.)\n\n2) Certified ACA navigators / in-person assisters (best for Marketplace enrollment, subsidies, and free help)\n- Why call: Navigators are trained and free — they can check eligibility for subsidies, walk you through HealthCare.gov or your state exchange, and help submit your application.\n- How to find: Use HealthCare.gov’s “Find Local Help” tool or contact local community health centers and county health departments. If you’re in Missouri or Kansas, each state lists local assister organizations that serve Kansas City.\n\n3) Medicare-specific counselors (best for seniors/Medicare-eligible people)\n- Why call: Medicare counselors (SHIP/SHIP-analog) are unbiased and free — they don’t sell plans and can explain Medicare Advantage vs. Medigap, prescription drug plans, and enrollment penalties.\n- How to find: Contact Missouri’s SHIP (Missouri SMP/SHIP) or Kansas’ SHICK/SHIP program. I can give the phone numbers for the Kansas or Missouri SHIP office for Kansas City.\n\n4) Online brokers (convenient for quick quotes and side-by-side comparisons)\n- Why call: Sites like eHealth or Policygenius provide multiple plan quotes quickly and can arrange phone support. Good for comparing costs and networks rapidly, though some agents working through online sites may represent a limited panel.\n- Caveat: Check reviews and ask whether the agent is independent or tied to a single carrier.\n\n5) Employer / small-business brokers (if you’re buying a group plan)\n- Why call: Specialized small-business brokers handle rating, employee eligibility, and benefits packages and often have established relationships with carriers used in the KC market.\n- How to find: Look for local benefits brokers who advertise small-business services (HUB, Alera, and other local independent benefits brokers).\n\nWhat I’ll do next when you answer:\n- Provide 4–6 specific broker/agency names with phone numbers (local office) for your location and plan type.\n- Explain why each is a good fit for your situation and what to ask them on the call.\n- Give a short script and a checklist of questions to compare plans and broker compensation (commissions/fees).\n\nTell me the city/state and plan type and I’ll pull specific names and contact details.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

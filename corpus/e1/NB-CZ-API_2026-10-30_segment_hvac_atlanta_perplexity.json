@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_hvac_atlanta_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8d0937d0-4fb2-4ead-ad49-755b87f7054f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00088,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00428
+   },
+   "input_tokens": 4056,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3508,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 305,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4361
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bell Mechanical",
+  "Cunningham Associates",
+  "Manual J load calculation",
+  "Atlanta ZIP"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/ga/atlanta/profile/heating-and-air-conditioning/bell-mechanical-llc-0443-5001518/addressId/21418",
+  "https://www.bbb.org/us/ga/atlanta/category/air-conditioning-contractor/accredited",
+  "https://www.bbb.org/us/ga/atlanta/profile/heating-and-air-conditioning/bell-mechanical-llc-0443-5001518",
+  "https://www.bbb.org/us/ga/atlanta/profile/air-conditioning-contractor/american-hvac-pros-llc-0443-91839538/addressId/253206",
+  "https://www.homedepot.com/services/l/ga/atlanta/heating-air-conditioning-installation/c16fbb4b7/reviews/page/1",
+  "https://www.bbb.org/us/ga/atlanta/profile/commercial-air-conditioning-contractors/indoor-experts-llc-0443-27701950",
+  "https://www.bbb.org/us/ga/atlanta/category/heating-and-air-conditioning",
+  "https://www.bbb.org/us/ga/atlanta/profile/heating-and-air-conditioning/airbender-hvac-llc-0443-27544186",
+  "https://carterandsonshvac.com/review/",
+  "https://www.houzz.com/professionals/hvac-contractors/atlanta-ga-us-probr0-bo~t_11814~r_4180439",
+  "https://www.bbb.org/us/ga/atlanta/profile/home-services/cunningham-associates-heating-and-air-conditioning-0443-27086304",
+  "https://www.homedepot.com/services/l/ga/atlanta/heating-air-conditioning-installation/c16fbb4b7",
+  "https://www.bbb.org/us/ga/atlanta/category/air-conditioning-contractor",
+  "https://www.bbb.org/us/ga/doraville/category/air-conditioning-repair",
+  "https://www.aireserv.com/locations/georgia/atlanta/furnace-repair/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "d924700f533ed2925382112258ce93125aae6adb0a5110941baf55e0d76921f7",
+ "answer_chars": 1141,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

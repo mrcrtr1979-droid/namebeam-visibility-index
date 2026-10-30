@@ -1,0 +1,45 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_orthodontists_chicago_anthropic",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: orthodontists, Chicago",
+ "niche": "orthodontists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Chicago. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Chicago for braces or Invisalign?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_4nrqvxhz2igzc6xy7gxpniinrshs7m3nt6zvr7vnc3sg4qwpjuea",
+  "usage": {
+   "input_tokens": 31,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 252,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Finding qualified options",
+  "American Board of Orthodontics"
+ ],
+ "engine_stated_criteria": [
+  "What to evaluate when you call"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can't recommend specific orthodontists since I don't have current, verified information about individual practitioners in Chicago.\n\nHere's what I'd suggest instead:\n\n**Finding qualified options:**\n- Check your dental insurance provider's directory\n- Ask your dentist for referrals (they know local practitioners)\n- Search the American Association of Orthodontists (AAO) website for members in Chicago\n- Read recent Google/Yelp reviews, focusing on treatment outcomes and experience with your preferred method\n\n**What to evaluate when you call:**\n- Board certification (look for \"Diplomate, American Board of Orthodontics\")\n- Experience with your specific choice (braces vs. Invisalign)\n- Whether they offer free consultations\n- Treatment timeline and cost estimates\n- How they handle emergencies\n\n**Questions to ask:**\n- How many cases like yours have they treated?\n- What's their experience with your age group?\n- Do they offer payment plans?\n\nMost practices offer free initial consultations, so you can compare a few before deciding. This direct approach will give you current information and help you find someone who's a good fit for your needs.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

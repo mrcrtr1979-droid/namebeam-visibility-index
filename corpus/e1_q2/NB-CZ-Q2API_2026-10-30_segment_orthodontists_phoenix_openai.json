@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_orthodontists_phoenix_openai",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Phoenix. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EemziG8E4W5wWlz6IHWcHQuZU9smt",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1174,
+   "total_tokens": 1199,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Invisalign",
+  "American Board of Orthodontics",
+  "AAO"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you specific orthodontists to call — I just need a couple quick details so the list is useful for you. Could you tell me:\n- Your ZIP code (or nearest cross-streets in Phoenix)\n- Age (child/teen vs adult)\n- Do you have dental insurance? If so, carrier/plan name\n- Any preference: metal braces, ceramic, Invisalign/clear aligners, budget sensitivity?\n\nWhile you reply, here’s a practical plan so you get great options and know what to ask when you call.\n\nHow I’ll choose who to recommend\n- Board certification (American Board of Orthodontics) — shows higher standard of training/competency.\n- Proven Invisalign experience (Platinum/Elite providers have treated many cases).\n- Use of digital technology (iTero or 3D scanners) for accurate planning.\n- Good before/after gallery and patient reviews.\n- Complimentary or low-cost consultations and clear pricing/financing.\n- Availability for emergencies/retention follow-up.\n\nQuestions to ask when you call (short script)\n- “Do you do both braces and Invisalign? How many Invisalign cases have you treated this year?”\n- “Do you use digital impressions (iTero) or do you take physical molds?”\n- “Are you board-certified by the American Board of Orthodontics?”\n- “What’s the estimated length and cost of treatment for my case type (I can describe my concerns) — and do you offer payment plans?”\n- “Will I see the same orthodontist each visit? Who handles emergencies after hours?”\n- “Do you include retainers in the treatment cost? How many sets?”\n\nWhere to look right away (if you want to self-search)\n- AAO’s Find an Orthodontist (americanboardortho.org/AAO locator)\n- Invisalign Provider Locator (invisalign.com/find-a-doctor)\n- Local residency/teaching clinics for lower-cost care (Arizona dental school clinics)\n\nIf you give your ZIP and the other details I asked, I’ll compile 4–6 specific, well-reviewed orthodontists/clinics in Phoenix, say why each is a good call for your situation (Invisalign experience, board certification, pricing/tech), and include the best questions to ask each one.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

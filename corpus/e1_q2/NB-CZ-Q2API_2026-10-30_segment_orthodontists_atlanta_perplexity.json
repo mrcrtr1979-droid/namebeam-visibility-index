@@ -1,0 +1,107 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Atlanta. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5b854190-c591-407c-981c-b91d2df21776",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00142,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00509
+   },
+   "input_tokens": 4666,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4113,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 569,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5235
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Harris Orthodontics",
+  "Buckhead Orthodontics",
+  "West Paces Ferry Orthodontics",
+  "Atlanta Orthodontic Specialists — Virginia Highlands",
+  "Invisalign",
+  "Dr. Peyton Harris",
+  "American Board of Orthodontics",
+  "Invisalign. Convenient",
+  "Georgia Tech",
+  "Marietta St NW",
+  "Dr. Michael Everson",
+  "Offers",
+  "Diamond Plus Invisalign",
+  "West Paces Ferry",
+  "West Paces Ferry Rd NW",
+  "Atlanta Orthodontic Specialists",
+  "Virginia Highlands",
+  "Christopher Brady and Kenneth Starling",
+  "Diamond Plus",
+  "Diamond Plus Invisalign Providers"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://atlantaortho.com/locations/",
+  "https://atlantaortho.com/",
+  "https://atlantaortho.com/services/",
+  "https://atlantaortho.com/services/invisalign/",
+  "https://atlantaortho.com/faqs/",
+  "https://www.buckheadorthodontics.com/",
+  "https://harrisorthodonticsatl.com/",
+  "https://www.westpacesferryortho.com/",
+  "https://drwrightortho.com/location/orthodontist-in-atlanta-ga/",
+  "https://atlantaortho.com/location/virginia-highlands/",
+  "https://atlantasmilestudio.com/",
+  "https://artemisorthoatlanta.com/our-practice/patient-reviews/",
+  "https://www.mcdonoughsmiles.com/orthodontics-dental-services/invisalign",
+  "https://www.braces-braces.com/",
+  "https://www.buckheadorthodontics.com/orthodontic-services.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "61a349f1176000a7ecb10e0c9f019cd9b2b084a5833108e6cbc2ae9cfccf63b7",
+ "answer_chars": 2058,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

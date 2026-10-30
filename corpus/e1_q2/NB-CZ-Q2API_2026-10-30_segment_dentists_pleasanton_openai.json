@@ -1,0 +1,46 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_dentists_pleasanton_openai",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EemvaU7Z92q3Y13OEqNaDhqSKw4VE",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1083,
+   "total_tokens": 1111,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 576,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Office Hours"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — do you mean Pleasanton, California? Also tell me any preferences (insurance plan, new patient, pediatric care, weekend availability, nervous about needles, language needs). If you confirm, I’ll pull a short list of nearby practices with phone numbers and why each would be a good choice.\n\nIn the meantime, here are practical suggestions for which kinds of practices to call and why — plus the exact questions to ask them when you call:\n\nWhich practices to call (types)\n- A local family/general dentist that accepts new patients — best for routine checkups and cleanings, often convenient hours.\n- A high-volume preventive/hygiene-focused practice — may have more same-week openings for cleanings.\n- Your dental insurance’s in-network providers — to minimize out-of-pocket cost.\n- A community dental clinic or county dental center (if cost is a concern) — lower-cost options or sliding-scale fees.\n- A sedation-friendly or “anxiety-friendly” dentist if you’re nervous about cleanings.\n\nWhy call each\n- Family/general dentist: comprehensive care and continuity (they’ll spot dental trends early).\n- Hygiene-focused practice: often faster scheduling for cleanings and good preventive protocols.\n- In-network dentists: to ensure coverage for exams, x‑rays, and cleanings and avoid surprise fees.\n- Community clinic: affordable care and eligibility-based pricing.\n- Anxiety/sedation dentists: to ask about nitrous oxide, oral sedation, or calming office protocols.\n\nWhat to ask when you call (quick checklist)\n- Do you accept new patients and what is your next available appointment for a cleaning?\n- Do you accept my insurance (give plan name) and is there a difference between in-network vs out-of-network pricing?\n- What’s included in the “checkup and cleaning” fee (exam, prophylaxis, x‑rays, fluoride)?\n- If I haven’t been to a dentist in a while, will you need extra time or deep cleaning (scaling/root planing)?\n- Office hours, weekend availability, and estimated appointment length.\n- Cancellation/no-show fees and payment options.\n- COVID/vaccine or mask policies (if relevant to you).\n- If you have dental anxiety: ask about sedation options and whether you can request a longer or split appointment.\n\nIf you confirm Pleasanton, CA (or give a different location) and any preferences, I’ll list 4–6 specific nearby practices to call and explain why I picked each one.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

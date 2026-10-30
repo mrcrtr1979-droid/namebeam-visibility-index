@@ -1,0 +1,95 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_dentists_pleasanton_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_45546487-7508-4893-beb8-ecc291f5f10b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0011,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00478
+   },
+   "input_tokens": 4708,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4152,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 441,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5149
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton Dental Care",
+  "Zhao Dental",
+  "Pleasanton Star Dental",
+  "Stoneridge Drive",
+  "Delta Dental",
+  "MetLife",
+  "Aetna. Ask",
+  "X-rays"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://pleasantonstardental.com/",
+  "https://www.liveandsmiledental.com/family-dentistry/",
+  "https://pleasantondentalcare.com/services/cleanings-prevention/",
+  "https://pleasanton-dentist.com/new-patients-dentist-pleasanton/",
+  "https://www.stoneridgedds.com/",
+  "https://pleasantondentalcare.com/contact/",
+  "https://www.liveandsmiledental.com/cosmetic-dentistry/",
+  "https://www.liveandsmiledental.com/general-dentistry/",
+  "https://www.liveandsmiledental.com/frequently-asked-questions/",
+  "https://pleasanton-dentist.com/services/",
+  "https://pleasantondentalcare.com/",
+  "https://www.mfdpleasanton.co/services",
+  "https://www.pleasantondublindental.com/page/office-specials/",
+  "https://pleasanton-dentist.com/about-us/",
+  "https://pleasanton-dentist.com/dental-clinic/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "17d9bcbbf3897c49a41826c41a615e4c7b0de5ffc525ea0dc038ec91f7182643",
+ "answer_chars": 1457,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

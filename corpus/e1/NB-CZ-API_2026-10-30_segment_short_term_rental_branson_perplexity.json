@@ -1,0 +1,102 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_61fe7e98-7914-4bca-9ec4-a31044cc6558",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00088,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0014,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00492
+   },
+   "input_tokens": 4061,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3505,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 559,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4620
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Short answer",
+  "Branson Landing/downtown",
+  "Indian Point/Table Rock Lake",
+  "The Bradford",
+  "The Drift Branson",
+  "A hotel near the 76 Strip",
+  "Airbnb/cabins",
+  "StoneBridge Resort",
+  "Indian Point / Table Rock Lake",
+  "Near Branson Landing",
+  "My default recommendation",
+  "Indian Point",
+  "Lake Taneycomo",
+  "StoneBridge",
+  "Table Rock",
+  "Landing",
+  "The Strip",
+  "Near the Strip"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/branson-mo/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays",
+  "https://www.airbnb.com/branson-mo/stays/resorts",
+  "https://www.airbnb.com/branson-mo/stays/lakehouses",
+  "https://www.airbnb.com/moonshine-beach-mo/stays/cabins",
+  "https://www.airbnb.com/taney-county-mo/stays/cabins",
+  "https://www.airbnb.com/indian-point-mo/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays/lake-access",
+  "https://www.airbnb.com/table-rock-lake/stays/cabins",
+  "https://www.airbnb.com/missouri-united-states/stays",
+  "https://www.airbnb.com/missouri-united-states/stays/cabins",
+  "https://www.airbnb.com/branson-west-mo/stays/lake-access",
+  "https://www.airbnb.com/hollister-mo/stays/resorts",
+  "https://www.airbnb.com/table-rock-lake/stays/cottages",
+  "https://www.airbnb.com/lampe-mo/stays/cabins"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "46735f31446bce2a7c19bdec6b74997df59ab7ce3c33cad206f7fc0f9fcc44ba",
+ "answer_chars": 2158,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

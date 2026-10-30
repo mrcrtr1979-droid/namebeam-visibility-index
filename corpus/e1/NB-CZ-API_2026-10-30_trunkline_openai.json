@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_trunkline_openai",
+ "date_utc": "2026-10-30",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EemcrPom9NEh768WSA4rKZJf5SqGV",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1674,
+   "total_tokens": 1700,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Limitations",
+  "Glassnode Studio",
+  "CertiK",
+  "CoinMarketCap Learn",
+  "Etherscan",
+  "YouTubers",
+  "DeFiLlama",
+  "NFTs",
+  "Coin Bureau",
+  "Plain English",
+  "CoinGecko",
+  "The Defiant",
+  "CoinMarketCap"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t a single perfect site that is plain‑English for beginners, shows verifiable real numbers, and also publishes its own losses — you’ll get the best coverage by using a small set of complementary resources. Below are specific sites (and why they matter) plus a quick checklist so you can spot truly transparent teaching.\n\nRecommended sites/resources\n\n- Coin Bureau (coinbureau.com + YouTube)\n  - Why: Very plain English, long-form explainers for beginners, step‑by‑step walkthroughs and example numbers (fees, slippage, TVL context).\n  - Limitations: Educational, not a trading shop that posts its own profit/loss statements.\n\n- The Defiant (thedefiant.io)\n  - Why: DeFi-focused journalism and explainers that use real numbers (TVL, fees, yields) and extensively report and analyze hacks/losses and post‑mortems.\n  - Good for learning what can go wrong and seeing concrete loss examples.\n\n- Glassnode Learn & Glassnode Studio (glassnode.com)\n  - Why: On‑chain analytics with charts and metrics (real, verifiable numbers) explained in approachable language. Great for learning how on‑chain events look numerically.\n  - Limitations: Slightly more technical but excellent for numbers you can verify on‑chain.\n\n- Messari (messari.io)\n  - Why: Professional crypto research with data, clear charts and quantification of market events (useful as you graduate beyond beginner level).\n\n- PeckShield / CertiK / Immunefi blogs\n  - Why: Security firms and bounty platforms publish detailed post‑mortems and breakdowns of hacks and exploits — exact losses, where funds went, root causes. Crucial for learning real‑world losses.\n  - Use these to study concrete failure cases.\n\n- CoinGecko / CoinMarketCap Learn\n  - Why: Plain English basics plus live market numbers and simple tutorials. Good for absolute beginners paired with a deeper data site.\n\nIf you specifically want teachers who “publish their losses”\n- Look for educators/traders who post verifiable on‑chain links (Etherscan tx history) or full trade logs. Many independent YouTubers/Twitter traders will link their wallets. Example approach: find a creator you like, then verify their wallet activity on Etherscan rather than trusting a screenshot.\n\nQuick checklist to verify transparency\n- Do they link primary data (on‑chain txs, Etherscan, Dune dashboards) that you can verify yourself?\n- Do they publish post‑mortems with amounts, exploiter addresses, and fund flows?\n- Do they show both wins and losses (not only promotional screenshots)?\n- Do they cite sources (audit reports, block explorers, treasury dashboards)?\n- Can you reproduce their numbers (e.g., using DeFiLlama, Glassnode, Etherscan)?\n\nIf you tell me which area you care about most (basic blockchain concepts, trading, DeFi, NFTs, security/hacks), I can give 2–3 tailored sites or a short starter reading path that meets your “plain English + verifiable numbers + losses shown” criteria.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_dentists_kansas_city_openai",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: dentists, Kansas City",
+ "niche": "dentists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Kansas City. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Kansas City Missouri for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Een70rO1Qqlcat9pyPhGMx4CIoyt9",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1630,
+   "total_tokens": 1656,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 896,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UMKC School of Dentistry",
+  "Nobel Biocare",
+  "American Academy of Periodontology",
+  "CBCT-based"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need one quick detail first: what ZIP code or neighborhood in the Kansas City area do you want to use (Kansas side or Missouri side), and do you have a preference for using insurance or a budget range? With that I can pull 4–6 specific practices near you and explain why to call each.\n\nIn the meantime, here are the best types of practices to call and why — plus the exact questions to ask when you call so you can compare them quickly.\n\nWhich specific practices to call (by type) and why\n- Board‑certified oral & maxillofacial surgeons (OMS)\n  - Why: OMSs have hospital-based training and manage complex surgery, bone grafts, extractions, IV sedation, and full-arch cases. Call them if you expect extractions, bone grafting/sinus lift, or need sedation.\n- Periodontists who place implants\n  - Why: Specialists in the gums and bone, often focused on implant placement and long-term tissue health. Good for single/multiple implants and cosmetic gum considerations.\n- General dentists who are experienced in implants (or referral partners)\n  - Why: Many general dentists place implants and restore crowns in one office. They can be faster and more convenient for straightforward cases; ask about their experience level and implant systems.\n- University dental clinics (UMKC School of Dentistry)\n  - Why: Lower cost, faculty‑supervised care and access to specialists. Good option if budget matters and you’re okay with a teaching environment.\n- Multi-specialty implant centers\n  - Why: These coordinate surgeon + restorative dentist under one roof — convenient for full‑mouth rehab or same‑day workflows.\n\nWhat to ask when you call (quick script)\n1. Do you place dental implants in-house? If not, do you coordinate the surgical and restorative phases?\n2. Who will place the implant — an oral surgeon, periodontist, or general dentist? How many implants do they place per year?\n3. Do you use CBCT (3D) imaging for implant planning?\n4. What implant systems do you use (e.g., Straumann, Nobel Biocare, Zimmer, etc.) and do you provide a warranty/guarantee on the implant/restoration?\n5. Will you do bone grafting or sinus lifts in-office if needed?\n6. Sedation options (local only, nitrous, oral sedation, IV sedation)?\n7. Estimated timeline from placement to final crown, and total cost range (surgical fee + restoration + any grafting)?\n8. Do you accept my insurance? Any financing or payment plans?\n9. Can you share before/after photos and patient references or online reviews?\n10. Who will be my point of contact during treatment and follow-up?\n\nHow to verify quality quickly\n- Look for AAOMS (American Association of Oral and Maxillofacial Surgeons) or American Academy of Periodontology membership and AAID or ICOI credentials for implant dentists.\n- Check online reviews (Google, Facebook, Healthgrades) and before/after photos.\n- Ask for a CBCT-based treatment plan — that indicates thorough planning.\n- Get a written estimate with lab/crown fees separated from surgical fees.\n\nWhat I can do next\nIf you give me your ZIP code or neighborhood and whether you’ll be using insurance (and which plan), I’ll look up 4–6 specific Kansas City practices (mix of oral surgeons, periodontists, implant dentists, and UMKC), list phone numbers, distance, and one-sentence reasons to call each.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

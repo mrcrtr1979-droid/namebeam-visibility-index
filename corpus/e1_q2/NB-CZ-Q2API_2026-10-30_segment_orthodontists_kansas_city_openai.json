@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_orthodontists_kansas_city_openai",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: orthodontists, Kansas City",
+ "niche": "orthodontists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Kansas City. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Kansas City Missouri for braces or Invisalign?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Een9dj9cBsSsJFP9sjywBZI8yAVne",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1390,
+   "total_tokens": 1416,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 640,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Invisalign",
+  "American Board of Orthodontics",
+  "ZIP"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can help — but rather than risk giving you outdated or incorrect names/phone numbers, I can either (A) walk you through exactly how to find the best orthodontists in your immediate area and what to ask them, or (B) look up a short, targeted list for you right now if you tell me your ZIP code or which part of Kansas City you’re in (MO or KS), whether this is for a child or an adult, and whether you have insurance or a budget constraint.\n\nQuick summary of the best approach (so you can call confidently):\n\n1) Where I can help most effectively\n- If you give me your ZIP code (or neighborhood) and a couple preferences (adult vs. child, Invisalign vs. open to braces, insurance), I’ll fetch 3–5 specific orthodontists near you with reasons to call each one (expertise, board certification, Invisalign status, tech, reviews, convenience).\n\n2) If you want to search on your own now — the best sources and what to look for\n- Use the Invisalign provider locator (https://www.invisalign.com/find-a-doctor) to find certified Invisalign providers and their experience levels (often listed as Preferred/Platinum/Diamond).\n- Use the American Association of Orthodontists search (https://www1.aaoinfo.org/find-an-orthodontist) to confirm the doctor is a trained orthodontist (not just a general dentist offering aligners).\n- Check American Board of Orthodontics (https://www.americanboardortho.com/find-an-orthodontist/) to see if they’re board-certified (a strong quality indicator).\n- Read recent Google and Yelp reviews and look for consistency across multiple sites (wait times, follow-up care, results, staff friendliness).\n- Look for practices that advertise digital scanning (iTero), 3D imaging, and in-house financing — these improve comfort, predictability, and payment flexibility.\n\n3) What to ask when you call (or bring to a consult)\n- Do you offer free or low-cost consultations? (Many do.)\n- Are you an Invisalign provider, and how many Invisalign cases have you treated this year?\n- Are you board-certified by the American Board of Orthodontics?\n- What options do you offer for adults/children (clear aligners, ceramic braces, lingual, traditional metal)?\n- Typical estimated treatment time and what influences it.\n- Total estimated cost and what’s included (retainers, follow-ups, emergency visits).\n- Financing options, in-house plans, or accepted insurance.\n- What technologies do you use (digital scans, 3D treatment planning)?\n- How often will I have appointments and how long are adjustments?\n\n4) How to choose between a few consults\n- Get at least two consultations. Compare: provider’s confidence in treatment plan, clarity of cost and timeline, willingness to show before/after cases, and how comfortable you felt with the team.\n- Favor board-certified orthodontists and those with significant Invisalign experience for adult/esthetic cases.\n\n5) Sample phone script\n“Hi — I’m interested in orthodontic treatment (Invisalign or braces). Do you offer consultations? Is Dr. [Name] board-certified, and how many Invisalign cases has the doctor treated? Could you tell me your general price range and whether you offer financing?”\n\nIf you want, give me:\n- ZIP code or which side of KC (MO or KS)\n- Age (adult vs. child)\n- Invisalign preference or open to any braces\n- Insurance (yes/no, provider)\n\nI’ll return a short list of specific orthodontists to call and why each is a good fit.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

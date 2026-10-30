@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0bff4df4-2fe3-4baa-b638-f9baf0ee20ab",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00446
+   },
+   "input_tokens": 4993,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4447,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 285,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5278
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atlanta Center for Advanced Periodontics",
+  "Dr. Carlos Castro at Georgia Prosthodontics",
+  "Dr. Jay Smith at Prosthodontics Atlanta",
+  "Drs. Brock Pumphrey and Rosemary Davis",
+  "Peachtree St. NE",
+  "Dr. Carlos Castro",
+  "Georgia Prosthodontics",
+  "Dr. Jay Smith",
+  "Prosthodontics Atlanta"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.drevangrodin.com/prosthodontics/",
+  "https://www.drevangrodin.com/dental-implants/",
+  "https://www.drevangrodin.com/all-on-4/",
+  "https://www.prosatl.com/page/about-us/",
+  "https://www.drevangrodin.com/teeth-in-a-day/",
+  "https://georgiaprosthodontics.com/meet-dr-carlos-castro/",
+  "https://georgiaprosthodontics.com/",
+  "https://dentalimplantsvinings.com/",
+  "https://goldsteinonline.com/service/restorative-dentistry/dental-implants/",
+  "https://goldsteinonline.com/restorative-dentistry/",
+  "https://www.prosatl.com/page/meet-the-doctor/",
+  "https://advancedperioatl.com/",
+  "https://www.drevangrodin.com/blog/details-matter-for-the-best-dental-implants/",
+  "https://www.drevangrodin.com/blog/caring-for-your-dental-implants/",
+  "https://dentalarchplanner.com/clinics/us-atlanta-atlanta-center-for-advanced-periodontics/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "f3e069c7396157ecec18e861e94c0733375634931a6794e5e9c1868035ada499",
+ "answer_chars": 943,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

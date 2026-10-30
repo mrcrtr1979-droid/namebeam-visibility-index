@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_roofing_dallas_openai",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need my roof replaced in Dallas. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EemoRW9Mba0bfn4WK3JK9AegfN8FJ",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1437,
+   "total_tokens": 1462,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 640,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "City of Dallas",
+  "Owens Corning",
+  "CertainTeed"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do this two ways:\n\n- If you want immediate, actionable names I can recommend a short list of contractors for you to call — but I should first ask a few quick questions so I can tailor the list to your neighborhood, roof type and whether you’re filing an insurance claim. I don’t have live web access, so I’ll base recommendations on generally well-regarded local/national companies and best-practice criteria and I’ll note that you should verify current licensing, insurance, reviews and recent work before hiring.\n\n- Or I can skip specific names and give a step-by-step shortlist method, the exact questions to ask, what to compare in bids, and how to vet contractors (fast, reliable, low-risk approach). This is the safest route if you want to independently find the best contractor.\n\nQuick questions so I can tailor specific names:\n1. Are you in the City of Dallas proper, or a suburb (Plano, Garland, Irving, Mesquite, etc.)?\n2. Is the project through an insurance claim (storm damage) or out-of-pocket?\n3. Roof type and approximate size/age (asphalt shingles, tile, metal; roof age)?\n4. Any preference for national vs. local companies, or for certain shingle brands (GAF, Owens Corning, CertainTeed, etc.)?\n\nIf you want names now, say so. If you’d prefer the vetting checklist and phone script, here it is so you can start calling today.\n\nWhat to call (categories — call one from each)\n1. A well-reviewed local roofer with a strong neighborhood presence — they often respond fast and know local codes.\n2. A Dallas-based roofing company that specializes in insurance/restoration (if you’re filing a claim).\n3. A national manufacturer-certified roofer (GAF/OC/etc.) for warranty-backed installations.\n4. One or two highly-rated independents from Google/Yelp/BBB for price comparison.\n\nWhat to check before calling\n- Valid contractor registration/permit status with the City of Dallas (if in city limits) or your municipality.\n- General liability insurance and workers’ comp (get insurance carrier/name & policy number).\n- Proof of roofer’s certification for the shingle brand you want (e.g., GAF Master Elite).\n- Current references or recent job photos in your neighborhood.\n- Written estimate on company letterhead with scope, materials, warranty, payment schedule, and start/finish dates.\n\nPhone script (short)\n“Hi — I’m calling to get a written estimate to replace my asphalt shingle roof at [address]. I need the estimate to include scope, brand/model of shingles, underlayment, ventilation work, dimensional shingle warranty length and workmanship warranty, start/finish dates, and who pulls the permits. Are you insured, and can you provide proof of insurance, city registration, and references from recent jobs in my area?”\n\nKey things to compare in bids\n- Scope: tear-off vs. overlay, number of layers removed.\n- Materials: shingle brand/model, underlayment, flashing, ventilation.\n- Labor & warranty: workmanship warranty length and terms; is it transferable?\n- Price breakdown: materials, labor, permits, disposal.\n- Permitting: who pulls the permit and handles inspections.\n- Timeline and payment schedule: avoid large up-front payments (typical deposit 10–30%).\n\nRed flags\n- High-pressure “storm chaser” tactics or “special discount only today.”\n- Only takes cash or asks you to sign insurance check over immediately.\n- No local address or poor/no references.\n- Refuses to provide insurance proof or written estimate.\n\nIf you want, tell me your neighborhood and whether it’s an insurance job and I’ll give 4–6 specific roofing companies (local + manufacturer-certified + insurance/restoration options) to call and a suggested order to contact them. Which do you prefer?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

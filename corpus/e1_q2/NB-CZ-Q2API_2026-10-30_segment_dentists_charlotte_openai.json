@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_dentists_charlotte_openai",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: dentists, Charlotte",
+ "niche": "dentists",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Charlotte. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Charlotte for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Een4POnBCDu0vL6r2hdCvnQ9IZD1z",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1212,
+   "total_tokens": 1237,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Nobel Biocare",
+  "BioHorizons"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I can either (A) give guidance now on how to pick which practices to call and what to ask, or (B) search and return a short, current list of specific implant practices in Charlotte with phone, reason to call each, and what to ask them.\n\nQuick question before I proceed: which do you prefer, and can you tell me:\n- Your ZIP code or area of Charlotte (so I search nearby)?  \n- Type of implant you need (single tooth, several, full-arch/All‑on‑4, replacing old denture)?  \n- Any preferences: oral surgeon vs periodontist vs prosthodontist, sedation, weekend appointments, insurance or budget constraints?\n\nIf you want to start immediately without a live search, here’s useful guidance you can use right away.\n\nWhat to look for (and why)\n- Specialist credentials: Prefer board-certified oral & maxillofacial surgeons, board-certified periodontists, or prosthodontists for complex reconstructions — they place lots of implants and manage complications.  \n- Digital planning and imaging: Practices that use CBCT 3D imaging and digital implant planning/guide surgery tend to get more predictable results.  \n- Experience and volume: Ask how many implants the clinician places per year and how long they’ve done implants. More experience = fewer surprises.  \n- In-house restorative team or collaboration: Good implant results require coordination between the surgeon and the restorative dentist (prosthodontist). Look for practices that provide both services or have a documented partnership.  \n- Implant brands and warranty: Reputable brands (Nobel Biocare, Straumann, Zimmer/BioHorizons, etc.) and transparent warranty/maintenance policies matter.  \n- Sedation and comfort options: If you’re anxious, check for IV sedation, oral sedation, or nitrous oxide.  \n- Before/after photos & patient reviews: Look for case galleries and reviews on Google/Yelp/Healthgrades.  \n- Financing & timeframe: Ask about payment plans, implant cost breakdown (surgery, abutment, crown), and estimated timeline.  \n- Follow-up care and emergency policy: How do they handle complications or implant failures?\n\nQuestions to ask when you call\n- Do you place implants in-house, or refer out? If in-house, who places them and what are their credentials?  \n- Do you use CBCT 3D imaging and guided implant placement?  \n- How many implants do you place per year? How long have you been placing implants?  \n- What implant systems do you use? Do you offer a warranty or guarantee?  \n- What is the total estimated cost (surgery, abutment, crown)? Do you offer financing?  \n- Do you restore the crown in-house or coordinate with my dentist?  \n- Do you offer sedation? What are the recovery expectations?  \n- Can I see before/after photos and patient references?\n\nRed flags\n- No clear credentials or specialist training listed.  \n- No CBCT or 3D planning for implant cases.  \n- Vague answers about implant brand, cost, or timeline.  \n- Poor reviews mentioning pain, complications, or lack of follow-up.\n\nIf you want, tell me your ZIP and preferences and I’ll compile a current shortlist (contact info + 3–6 practices) in Charlotte and explain why each is a good call. Which would you like?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

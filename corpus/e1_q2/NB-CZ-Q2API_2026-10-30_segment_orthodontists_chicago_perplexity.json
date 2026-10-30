@@ -1,0 +1,104 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_orthodontists_chicago_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: orthodontists, Chicago",
+ "niche": "orthodontists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Chicago. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Chicago for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0b23d604-c45d-4aa6-af39-00436ccb6704",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00092,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0014,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00496
+   },
+   "input_tokens": 4214,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3661,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 561,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4775
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Karen Seder",
+  "Dr. Neil Warshawsky",
+  "Dr. Robert Nudera",
+  "Dr. Budi Kusnoto",
+  "Dr. Angela Lu",
+  "Dr. Emilia Taneva",
+  "My practical starting point",
+  "American Association of Orthodontists",
+  "Lincoln Park",
+  "AAO-listed",
+  "American Board of Orthodontics",
+  "Hyde Park",
+  "University of Illinois",
+  "South Loop",
+  "Bridgeport and Albany Park",
+  "Multiple Chicago-area",
+  "Invisalign"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-angela-lu/",
+  "https://aaoinfo.org/locator/dr-flavio-jose-castelli-sanchez/",
+  "https://aaoinfo.org/locator/dr-ashley-barnes/",
+  "https://aaoinfo.org/locator/dr-paul-wine/",
+  "https://aaoinfo.org/locator/dr-anthony-p-eltink/",
+  "https://aaoinfo.org/locator/dr-darshana-s-novick/",
+  "https://aaoinfo.org/locator/dr-ronald-scott-jacobson/",
+  "https://aaoinfo.org/locator/dr-neil-m-warshawsky-3/",
+  "https://aaoinfo.org/locator/dr-samim-taraji/",
+  "https://aaoinfo.org/locator/dr-karen-seder/",
+  "https://aaoinfo.org/locator/dr-budi-kusnoto-4/",
+  "https://aaoinfo.org/locator/dr-gregory-jay-berman-2/",
+  "https://aaoinfo.org/locator/dr-robert-j-nudera-2/",
+  "https://midwestorthodontics.com/",
+  "https://dremiliataneva.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "57cf068dd01e030786d0ec786bc5a023fc852120214da7024a77b99b98b9c008",
+ "answer_chars": 2252,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

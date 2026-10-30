@@ -1,0 +1,102 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f13e14fa-56a6-4140-a9cd-602a1d01d855",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0016,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00538
+   },
+   "input_tokens": 5107,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4555,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 640,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5747
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Capitola Village",
+  "Aptos / Rio del Mar",
+  "Santa Cruz",
+  "Davenport and the north coast",
+  "Start with location",
+  "Compare the full cost",
+  "Read recent reviews",
+  "Check practical details",
+  "Verify the host and rules",
+  "Aptos",
+  "Visit Santa Cruz County",
+  "Capitola",
+  "Boardwalk",
+  "Davenport",
+  "Rio Del Mar",
+  "Capitola Village Home"
+ ],
+ "engine_stated_criteria": [
+  "Match the rental to your group"
+ ],
+ "sources_cited": [
+  "https://cdi.santacruzcountyca.gov/UPC/DiscretionaryPermitsZoning/DiscretionaryPermits/Short-TermRentals.aspx",
+  "https://www.santacruz.org/places-to-stay/",
+  "https://cdi.santacruzcountyca.gov/UPC/DiscretionaryPermitsZoning/DiscretionaryPermits/HostedRentals.aspx",
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Ordinance%205497%20Short-Term%20Rentals.pdf",
+  "https://www.santacruzcountyca.gov/portals/0/county/CAO/press%20releases/2026/Prs%20Rls_County%20launches%20short-term%20rental%20hotline.pdf",
+  "https://www.santacruz.org/plan-your-trip/frequently-asked-questions/",
+  "https://www.airbnb.ca/santa-cruz-county-ca/stays/apartments",
+  "https://www.expedia.com/Davenport-Private-Vacation-Homes.d6085019-aaPrivateVacationHomes.Travel-Guide-Accommodation",
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Sample%20Hosted%20Rental%20agreement%20(2).docx",
+  "https://www.airbnb.com/capitola-ca/stays/beachfront",
+  "https://www.vrbo.com/vacation-rentals/usa/california/central-coast/santa-cruz",
+  "https://www.airbnb.com/aptos-ca/stays/apartments",
+  "https://www.hometogo.com/aptos/",
+  "https://www2.santacruzcountyca.gov/planning/plnmeetings/PLNSupMaterial/Level4Applications/261123.pdf",
+  "https://www.vrbo.com/vacation-rentals/usa/california/central-coast/davenport"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "e46fc8afbe7e7f01c7d956ed62feebfaab345106ab18436e7a1d53f0f7aca3c3",
+ "answer_chars": 2634,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

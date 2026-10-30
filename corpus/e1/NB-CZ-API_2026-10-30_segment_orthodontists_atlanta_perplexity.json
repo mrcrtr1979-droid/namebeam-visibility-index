@@ -1,0 +1,96 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1638683e-20e1-4638-a76c-d8db4963cce1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 5148,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4601,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 289,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5437
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Peyton Harris at Harris Orthodontics",
+  "West Paces Ferry Orthodontics",
+  "Wright Orthodontics",
+  "Dr. Peyton Harris",
+  "Harris Orthodontics",
+  "Invisalign",
+  "West Midtown",
+  "North Druid Hills",
+  "Invisalign. Provider",
+  "American Board of Orthodontics",
+  "American Association of Orthodontists",
+  "West Paces Ferry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://drwrightortho.com/location/orthodontist-in-atlanta-ga/",
+  "https://www.artemisortho.com/our-practice/patient-reviews/",
+  "https://drwrightortho.com/invisalign-atlanta/",
+  "https://www.realself.com/find/Georgia/Invisalign",
+  "https://drwrightortho.com/our-practice/patient-reviews/",
+  "https://www.braces-braces.com/dr-lee",
+  "https://www.zocdoc.com/dentist/behnaz-yavari-dmd-620721",
+  "https://www.bestorthodontistnear.me/georgia/atlanta/",
+  "https://www.westpacesferryortho.com/",
+  "https://www.realself.com/find/Georgia/Atlanta/Invisalign",
+  "https://harrisorthodonticsatl.com/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/georgia-orthodontic-studio-atlanta-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/harris-orthodontics-atlanta-atlanta-ga",
+  "https://www.healthgrades.com/orthodontics-directory/ga-georgia/atlanta",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/wright-orthodontics-atlanta-ga"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "17f804753c05ab5517da028b873636227f3843f5a4186413fade031b243f9ba1",
+ "answer_chars": 1095,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

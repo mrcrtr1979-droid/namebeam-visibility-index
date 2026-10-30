@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_tanning_salons_charlotte_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "niche": "tanning salons",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4424e496-0ea3-40e6-b1ba-fddefe4fe4db",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00086,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0005,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.004
+   },
+   "input_tokens": 4001,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3457,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 198,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4199
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Gorgeous GLO Beauty Bar",
+  "UV tanning beds",
+  "Palm Beach Tan",
+  "Midtown and SouthPark",
+  "SouthPark",
+  "Gorgeous Glo"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.yelp.com/biz/best-nails-and-tan-charlotte",
+  "https://www.yelp.com/biz/palm-beach-tan-charlotte-3",
+  "https://www.yelp.com/biz/botanical-tans-charlotte-2",
+  "https://www.yelp.com/biz/gorgeousglo-beauty-bar-charlotte",
+  "https://www.yelp.com/biz/carmen-carmen-salon-charlotte",
+  "https://www.yelp.com/biz/globody-charlotte-2",
+  "https://www.yelp.com/biz/palm-beach-tan-charlotte",
+  "https://palmbeachtan.com/locations/nc/charlotte-east-wt-harris-boulevard",
+  "https://trustanalytica.org/us/nc/charlotte/best-tanning-salons",
+  "https://www.yelp.com/biz/hands-of-pure-pleasure-charlotte",
+  "https://www.yelp.com/biz/salon-h2o-charlotte-2",
+  "https://maps.apple.com/place?place-id=I9845192F39EFC11F",
+  "https://www.yelp.com/biz/a-blue-rose-salon-charlotte",
+  "https://www.yelp.com/biz/organic-bronze-bar-ballantyne-charlotte",
+  "https://palmbeachtan.com/locations/nc/charlotte-providence-arboretum"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "309fb89187dc146d491a9ae96a8b98b1662c5e6254bbc68618b991f5121403c5",
+ "answer_chars": 560,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

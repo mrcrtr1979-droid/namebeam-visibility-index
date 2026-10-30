@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_hvac_atlanta_anthropic",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a new air conditioner installed in Atlanta. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_3gxyfbeoq7mt4a5hcrffnuvfri7tbi2tzd2ldmsr5lmjisp6sk2a",
+  "usage": {
+   "input_tokens": 31,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 277,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Better ways to find reliable HVAC installers",
+  "Google/Yelp reviews",
+  "BBB.org",
+  "Ask neighbors/friends",
+  "NATE",
+  "NATE certification",
+  "Response time"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest a different approach than me naming specific companies, since I can't verify current quality, licensing, or recent reviews.\n\n**Better ways to find reliable HVAC installers:**\n\n- **Google/Yelp reviews** - Filter by recent reviews and look for patterns (not just star count)\n- **BBB.org** - Check licensing and complaint history\n- **Angie's List or HomeAdvisor** - Verified customer reviews\n- **Ask neighbors/friends** - Personal referrals are valuable\n- **Check licensing** - Georgia requires HVAC contractors to be licensed; verify on the state board\n\n**What to compare when calling:**\n\n- Multiple quotes (3+ is standard)\n- NATE certification of technicians\n- Warranty details (equipment + labor)\n- Whether they're local or national\n- Response time for service calls\n\n**Red flags to avoid:**\n- Pressure to decide immediately\n- Quotes significantly lower than others\n- No written warranty\n- Unlicensed operators\n\nAtlanta's a large market with many options, so you have leverage. Take time to compare rather than calling the first name you find.\n\nWhat size/type of unit are you looking to install? That might help you ask better questions when you call.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

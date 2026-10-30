@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_short_term_rental_nashville_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_21c7d350-366c-4b71-a205-1fbe54825db3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00089,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00469
+   },
+   "input_tokens": 5197,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4644,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 354,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5551
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Nash 2BR 2BA—Private Balcony—Free Parking—Pool",
+  "Private Balcony",
+  "Free Parking",
+  "Nashville. The",
+  "Browse Nashville"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/nashville-tn/stays/apartments",
+  "https://www.airbnb.com/downtown-nashville-tn/stays",
+  "https://www.airbnb.com/nashville-tn/stays/farmstays",
+  "https://www.airbnb.com/nashville-tn/stays/bed-and-breakfast",
+  "https://www.airbnb.com/downtown-nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/nashville-tn/stays/resorts",
+  "https://www.airbnb.com/nashville-in/stays",
+  "https://www.airbnb.com/nashville-mi/stays",
+  "https://www.airbnb.com/franklin-tn/stays/townhouses",
+  "https://www.airbnb.com/nashville-tn/stays/townhouses",
+  "https://www.airbnb.com/davidson-county-tn/stays",
+  "https://www.airbnb.com/nashville-tn/stays/serviced-apartments",
+  "https://www.airbnb.com/nashville-in/stays/family-friendly",
+  "https://www.airbnb.com/nashville-tn/stays/guesthouses"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "8421fd35f2821b2b9a376bf197cdc4c99c543fcdfba3e02a3cef835275b26b5a",
+ "answer_chars": 1103,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

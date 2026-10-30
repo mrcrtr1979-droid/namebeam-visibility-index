@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_property_management_miami_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: property management, Miami",
+ "niche": "property management companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Miami FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7991709b-1e3a-4417-9e90-c3b7fa36b34d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00457
+   },
+   "input_tokens": 5108,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4559,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 314,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5422
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Novel Management",
+  "Luxury Property Care",
+  "Keyrenter Property Management Miami West"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.biggerpockets.com/fl/miami/property-managers",
+  "https://novelmanagement.com/single-family-townhome-property-management-miami/",
+  "https://novelmanagement.com/property-management-pricing/",
+  "https://www.jmkpropertymanagement.com/",
+  "https://www.zillow.com/profile/rpmmiamimetro",
+  "https://novelmanagement.com/downtown-miami-property-management/",
+  "https://renpro.com/property-management-cost-miami-fl/",
+  "https://www.rpmdade.com/property-management-fees",
+  "https://belonghome.com/homeowners/miami",
+  "https://propertymanagementlist.com/company/novel-management-miami-fl/",
+  "https://www.expertise.com/business/property-management/florida/miami",
+  "https://propertymanagementlist.com/company/belong-miami-fl/",
+  "https://luxurypropertycare.com/miami-property-management-services/",
+  "https://propertymanagementlist.com/company/frost-property-management-miami-fl/",
+  "https://propertymanagementlist.com/company/firstservice-residential-miami-fl/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "a67264e68a7844c15c2a507d4420e35015332579707f3e59df5a81039f62c169",
+ "answer_chars": 1112,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

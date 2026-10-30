@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_real_estate_agents_pleasanton_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_24444843-61b5-4587-90c6-8288b4e44939",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0046
+   },
+   "input_tokens": 5129,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4579,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 329,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5458
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Doug Buenz of Compass",
+  "Gina Piper",
+  "Kim Deol",
+  "Doug Buenz",
+  "Compass"
+ ],
+ "engine_stated_criteria": [
+  "seller-side sales in your neighborhood"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/pleasanton-ca/",
+  "https://www.homelight.com/pleasanton-ca/top-real-estate-agents",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/94566/",
+  "https://www.fastexpert.com/top-real-estate-agents/pleasanton-ca/",
+  "https://www.ratemyagent.com/real-estate-profile/sales/california/pleasanton-ca",
+  "https://realestate.usnews.com/agents/california/pleasanton",
+  "https://www.homes.com/real-estate-agents/gina-piper/2d7dtq9/",
+  "https://www.fastexpert.com/real-estate-company/elation-real-estate-75081/",
+  "https://www.century21.com/agent/list/city/ca/pleasanton",
+  "https://www.homes.com/real-estate-agents/jake-fahnhorst/ty8gqv8/",
+  "https://www.zillow.com/profile/DougBuenz",
+  "https://www.realtrends.com/ranking/best-real-estate-agents-united-states/?__hstc=44321979.b60de0096d9d248b26b438436157a67e.1777075200820.1777075200821.1777075200822.1&__hssc=44321979.1.1777075200823&__hsfp=1fa4b3639dba563d913703edf8889e09&page=51",
+  "https://www.zillow.com/profile/Jing%20Xue",
+  "https://www.effectiveagents.com/ca/pleasanton",
+  "https://www.homelight.com/agents/susan-schall-ca-01713497"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "bf29020cf3d982c6efdea44546d08100fd79c1c4ea29d76184ddf9c014ccadd8",
+ "answer_chars": 1108,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

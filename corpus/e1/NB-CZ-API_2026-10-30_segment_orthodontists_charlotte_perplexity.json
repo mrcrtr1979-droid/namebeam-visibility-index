@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_orthodontists_charlotte_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: orthodontists, Charlotte",
+ "niche": "orthodontists",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Charlotte for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_037d00db-bece-4231-b083-d21f144e3ce2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00096,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0042
+   },
+   "input_tokens": 4384,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3837,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 239,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4623
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Victor Bond at Bond Orthodontics",
+  "Dr. Christopher Harris",
+  "Dr. Jeffrey Johnson",
+  "Dr. Victor Bond",
+  "Bond Orthodontics",
+  "Dr. Bond",
+  "American Association of Orthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-danette-eleanor-osbourne-smart/",
+  "https://aaoinfo.org/locator/dr-ford-s-cooper/",
+  "https://aaoinfo.org/locator/dr-justin-timothy-groody/",
+  "https://aaoinfo.org/locator/dr-robert-m-selden-iii/",
+  "https://aaoinfo.org/locator/dr-christopher-t-harris-2/",
+  "https://aaoinfo.org/locator/dr-keith-t-sellers/",
+  "https://aaoinfo.org/locator/dr-jeffrey-chad-johnson/",
+  "https://aaoinfo.org/locator/dr-james-sacksteder/",
+  "https://aaoinfo.org/locator/dr-peter-h-nasser-4/",
+  "https://bondorthodontics.com/",
+  "https://aaoinfo.org/locator/dr-robin-harrison/",
+  "https://aaoinfo.org/locator/dr-amy-j-dover/",
+  "https://aaoinfo.org/locator/dr-gregory-f-valeriano-2/",
+  "https://aaoinfo.org/locator/dr-lindsey-koerich/",
+  "https://qcsmilesorthodontics.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9392084e61d2597fa9e01472380b2377699c2e0e5dee6567f9d2ddb2d802a01f",
+ "answer_chars": 792,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_dentists_pleasanton_gemini",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "T_XkatC3Nr_pz7IP14vY0AI",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 575,
+   "totalTokenCount": 597,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Patients",
+  "Jade Dental",
+  "Dr. Veronica Wu",
+  "Next Steps Before You Call",
+  "X-rays"
+ ],
+ "engine_stated_criteria": [
+  "\"Do you take my specific dental insurance?\"",
+  "\"What is your availability for a new patient routine cleaning and exam?\"",
+  "\"Do you offer any new-patient specials?\""
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "To give you the most tailored recommendations, it helps to know a few things—like whether you prefer a modern, tech-forward office, a family-friendly practice, or if you have specific dental anxiety. However, Pleasanton has several highly-rated dental practices known for routine checkups and cleanings. \n\nHere are four specific dental practices in Pleasanton you should consider calling, along with why they stand out:\n\n### 1. Pleasanton Dental\n* **Why call them:** They are widely praised for a welcoming, patient-first environment, which makes them a great choice if you experience dental anxiety. Their team is known for being thorough yet gentle during routine cleanings, and they take time to explain preventative care without being pushy about unnecessary procedures.\n* **Best for:** Patients looking for a reliable, all-around family dentist with a gentle touch.\n\n### 2. Jade Dental\n* **Why call them:** Jade Dental is known for combining modern dental technology with a comfortable, spa-like atmosphere. Patients frequently highlight the thoroughness of their hygienists during cleanings and the modern diagnostic tools they use during checkups to catch issues early. \n* **Best for:** Patients who appreciate a modern office with advanced technology and a sleek, comfortable environment.\n\n### 3. Rasmussen Canyon Dental\n* **Why call them:** Located right in Pleasanton, this practice has built a strong local reputation for exceptional patient service and punctuality (they respect your time). Dr. Rasmussen and the staff are noted for their warm, community-oriented approach, making routine visits feel personal rather than clinical.\n* **Best for:** People who value a small-business feel, personalized attention, and great bedside manner.\n\n### 4. Pleasanton Aesthetic Dentistry (Dr. Veronica Wu)\n* **Why call them:** If you want a cleaning and checkup that also keeps aesthetics in mind, this is a top-tier choice. They are meticulous with cleanings and preventative care, and the office is exceptionally clean, modern, and well-reviewed for thoroughness.\n* **Best for:** Detail-oriented patients who want top-tier preventative care alongside cosmetic awareness.\n\n---\n\n### Next Steps Before You Call:\nWhen you call these offices, be sure to ask a few quick questions to ensure they are the right fit for you:\n1. **\"Do you take my specific dental insurance?\"** (Always verify network status directly with the office).\n2. **\"What is your availability for a new patient routine cleaning and exam?\"** (Some high-demand offices might have a few weeks' wait for non-emergency appointments).\n3. **\"Do you offer any new-patient specials?\"** (Many offices offer discounted exams, cleanings, or X-rays for patients without insurance).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-API_2026-10-30_segment_str_guest_discovery_openai",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EemVVeI7Ie822T7OChoZIV68RZ374",
+  "usage": {
+   "prompt_tokens": 34,
+   "completion_tokens": 1840,
+   "total_tokens": 1874,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 640,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Superhost",
+  "Booking.com",
+  "Message the host before booking",
+  "Street View",
+  "Preferred Partner"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- Pick the platform that fits your trip style: Airbnb for local/unique stays and flexible host-run places; Vrbo for whole-home, family-friendly rentals; Booking.com if you want hotel-like properties, last-minute availability, or lots of instant-book options.\n- To find a good host: filter carefully, read recent reviews for reliability, check host verification (Superhost/Top Host), message the host with specific questions before booking, and watch for red flags (poor communication, inconsistent photos, weird payment requests).\n\nQuick platform comparison\nAirbnb\n- Strengths: huge variety (private rooms, apartments, unique stays), strong review system, host badges (Superhost), built-in messaging and experience add-ons.\n- Weaknesses: cleaner/booking fees can be high, some last-minute service variability, host cancellations still happen.\n\nVrbo\n- Strengths: focused on whole homes — good for families/groups; many listings are professionally managed; transparent filters for family amenities.\n- Weaknesses: fewer single-room/shared options; review depth varies by property; fees still apply.\n\nBooking.com\n- Strengths: lots of hotels and professionally managed apartments, many instant-book listings, often easier last‑minute availability and clearer cancellation options.\n- Weaknesses: less community feel; some properties only post minimal host info; communication sometimes handled by property manager/hotel system rather than an individual host.\n\nHow to find a good host — step-by-step checklist\n1. Start with filters\n   - Entire place vs private room, number of bedrooms, beds, amenities (kitchen, washer, parking, AC), pet policy, instant book, flexible cancellation.\n2. Use review filters and sort by “most recent” or “highest rated”\n   - Prioritize listings with many recent reviews (last 6–12 months). One or two old 5-star reviews are less useful than consistent recent praise.\n3. Look at the host profile and badges\n   - Superhost/Top Host/Preferred partner are good signs. Check how long the host has been active and their response rate/time.\n4. Read reviews for specifics\n   - Look for comments about cleanliness, accuracy of listing, check-in process, neighborhood noise, any recurring complaints.\n5. Inspect photos and calendar\n   - Photos should be clear, show essential rooms, and match the description. A constantly carried calendar with many blocked dates can mean multiple properties or unreliable availability.\n6. Message the host before booking\n   - Ask specific questions (see templates below). Gauge response time, politeness, and willingness to provide details.\n7. Check cancellation, house rules, and extra fees\n   - Note cleaning fees, security deposits, city taxes, and how strict the cancellation policy is.\n8. Verify safety/logistics\n   - Confirm check-in process (self-check-in, keypad, meet-and-greet), street address or neighborhood, secure locks, smoke/CO alarms.\n9. Look up neighborhood and local rules\n   - Check Google Maps Street View, transit options, restaurants; verify any short-term rental restrictions in that city.\n10. Keep a backup option\n   - Save two good listings in case the host cancels or something changes.\n\nRed flags (don’t book if you see these)\n- Host asks to pay off-platform or via wire/Venmo.\n- Very few or no reviews, and host is evasive about details.\n- Photos are minimal, watermarked, or look like stock images that don’t show all rooms.\n- Inconsistent descriptions vs photos (e.g., claimed 2 bedrooms but pictures show 1).\n- Extremely low price compared to similar listings in same area.\n- Host cancels frequently, has poor or no recent bookings.\n- Reviews mention safety, theft, pests, or gross cleanliness issues.\n\nWhat to ask the host (pre-booking)\n- “Is the address the same as shown on the listing? If not, can you describe the neighborhood?”\n- “How does check-in work? Is someone meeting us or is it self-check-in? Can we check in late at night?”\n- “Are there any building rules or quiet hours? Any ongoing construction nearby?”\n- “Is cleaning provided for stays longer than X nights? Any additional fees I should know about?”\n- “Are linens/towels provided? Is there reliable Wi‑Fi (how fast)?”\n- “Do you have a local contact for emergencies or maintenance?”\n\nMessage templates\n- Quick pre-booking:\n  “Hi — we’re [names], traveling to [city] from [dates]. Your place looks great. Can you confirm check‑in time and whether the apartment has a working washer and fast Wi‑Fi? Thanks!”\n- Pre-arrival (after booking):\n  “Hi — we’re arriving on [date/time]. Could you confirm check-in instructions and provide the keypad code or where to pick up keys? Also any parking tips or building rules?”\n- Long-stay/discount request:\n  “Hi — we’re interested in staying [dates] for X nights. Is a long-stay discount available? Also, are linens changed weekly and is there onsite support for maintenance?”\n\nBooking & safety best practices\n- Always pay through the platform. Never wire money or pay cash off-platform.\n- Keep all messages in the platform (helps if you need support).\n- Save the listing, host name, booking reference, and receipts.\n- Take photos of the space on arrival (timestamped if possible) to document condition.\n- Consider travel insurance for cancellations or property problems.\n- Know how to contact platform support and local authorities if needed.\n- For long stays, confirm cleaning and maintenance expectations in writing.\n\nIf you tell me: destination, travel dates, group size, priorities (budget, family, nightlife, work/Wi‑Fi, pet), I can recommend which platform and help pick/filter listings and draft a message to hosts.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

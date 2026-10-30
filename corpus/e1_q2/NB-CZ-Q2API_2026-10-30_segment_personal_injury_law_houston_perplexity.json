@@ -1,0 +1,100 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-30_segment_personal_injury_law_houston_perplexity",
+ "date_utc": "2026-10-30",
+ "business": "SEGMENT: personal injury law, Houston",
+ "niche": "personal injury attorneys",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Houston after a car wreck. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Houston for a car wreck?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5ad560bd-978f-4a52-bb58-5a0a1479c94f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00149,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00519
+   },
+   "input_tokens": 4796,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4238,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 594,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5390
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Fibich, Leebron, Copeland & Briggs — 713-751-0025",
+  "Denena Points — 713-807-9500",
+  "Simmons and Fletcher — 713-932-0777",
+  "Spurlock & Associates — 281-548-0900",
+  "Handles",
+  "Denena Points",
+  "Personal Injury Trial Law. Offers",
+  "Terry Bryant Accident",
+  "Terry Bryant",
+  "Simmons and Fletcher",
+  "Paul Cannon",
+  "Terry Bryant Accident & Injury Law",
+  "Fibich, Leebron, Copeland & Briggs"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.terrybryant.com/",
+  "https://www.terrybryant.com/about-us",
+  "https://fibichlaw.com/",
+  "https://www.denenapoints.com/",
+  "https://spurlocklaw.com/",
+  "https://www.terrybryant.com/houston-car-accident-lawyer/resources",
+  "https://www.ddhlawyers.com/",
+  "https://www.simmonsandfletcher.com/",
+  "https://texasbulldoglaw.com/practice-areas/car-accidents/",
+  "https://www.thehadilawfirm.com/",
+  "https://fibichlaw.com/car-accident-lawyer/",
+  "https://www.johnsongarcialaw.com/",
+  "https://www.zehllaw.com/practice-areas/motor-vehicle-accidents/",
+  "https://zaidlaw.com/practice-areas/car-accidents/",
+  "https://www.toughinjurylawyers.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "e1d703d5c620b919b86e1a7a3eb60140f3ccb08d895aeb0873a94dddf269cd62",
+ "answer_chars": 2268,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}
