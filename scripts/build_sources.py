@@ -68,10 +68,12 @@ FIELD_MAP = collections.OrderedDict([
 
 # Top-level keys that legitimately hold prose or analysis, never a source list.
 # serp_diagnostics, pairs and the prose fields are checked by --census only.
+# local_pack_top (google_serp, from 2026-10-31) lists the businesses in Google's local pack with
+# their listing links; those are results, not sources an answer cited, so they make no URL rows.
 PROSE_KEYS = {
     'answer_verbatim', 'ai_overview_text', 'session_note', 'method_note',
     'prompt_text', 'serp_diagnostics', 'pairs', 'competitors_mentioned',
-    'engine_stated_criteria', 'check_id', 'business',
+    'engine_stated_criteria', 'check_id', 'business', 'local_pack_top',
 }
 
 DATE_IN_NAME = re.compile(r'_(\d{4}-\d{2}-\d{2})_')
