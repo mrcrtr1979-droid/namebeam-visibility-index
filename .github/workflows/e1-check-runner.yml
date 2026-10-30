@@ -109,6 +109,23 @@ jobs:
         if: steps.guard.outputs.skip != 'true' && vars.AWS_BEDROCK_ROLE_ARN != ''
         run: echo "AWS_CREDS_MINTED_AT=$(date +%s)" >> "$GITHUB_ENV"
 
+      # Gemini through Vertex AI (GCP credits) [GEMINI-VERTEX-1030]. Both steps run only when the repo
+      # variable GEMINI_BACKEND is exactly 'vertex'; with it unset (the default) neither runs and nothing
+      # about the job changes. No JSON key: Workload Identity Federation over GitHub OIDC. The workflow
+      # already grants `id-token: write` (top of file, used by the Bedrock path), so no permission is added.
+      # The auth step writes a credential file and exports GOOGLE_APPLICATION_CREDENTIALS; scripts/engines.py
+      # reads it through google-auth (Application Default Credentials). Setup: docs/VERTEX_WIF_SETUP.md.
+      - name: Install google-auth (Vertex backend only)
+        if: steps.guard.outputs.skip != 'true' && vars.GEMINI_BACKEND == 'vertex'
+        run: pip install google-auth
+
+      - name: Authenticate to Google Cloud (Workload Identity Federation, Vertex backend only)
+        if: steps.guard.outputs.skip != 'true' && vars.GEMINI_BACKEND == 'vertex'
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.WIF_PROVIDER }}
+          service_account: ${{ vars.WIF_SA }}
+
       # Reports which engines are wired WITHOUT ever printing a value.
       # Only ever echoes "present" or "MISSING", never the secret itself.
       - name: Report which engine keys are present
@@ -177,6 +194,12 @@ jobs:
           # The same role the configure step assumed; engines.py uses it to re-mint the session
           # (GitHub OIDC -> sts AssumeRoleWithWebIdentity) when the 1-hour token runs out.
           AWS_ROLE_ARN: ${{ vars.AWS_BEDROCK_ROLE_ARN }}
+          # Gemini backend switch [GEMINI-VERTEX-1030]. Blank (the default) = the AI Studio key path, as
+          # before. 'vertex' = Vertex AI first, on the credentials the auth step above exported; the AI
+          # Studio keys stay behind it as a quota/billing fallthrough. Names, not secrets.
+          GEMINI_BACKEND: ${{ vars.GEMINI_BACKEND }}
+          GCP_PROJECT: ${{ vars.GCP_PROJECT }}
+          GCP_LOCATION: ${{ vars.GCP_LOCATION }}
           # Optional re-run controls (blank on a scheduled run). Passed through env, never
           # interpolated into the shell; e1_runner.py validates them.
           E1_ONLY_ENGINES: ${{ inputs.only_engines }}

@@ -862,6 +862,22 @@ def main():
                 pass
 
 
+def engine_available(name, env):
+    """True when the engine has a credential in env. Convention <ENGINE>_API_KEY; Gemini also counts
+    GEMINI_API_KEY_FREE, and (GEMINI-VERTEX-1030) the Vertex backend: GEMINI_BACKEND=vertex with GCP_PROJECT
+    set, so removing the AI Studio keys after the switch does not silently drop Gemini from the run. With
+    GEMINI_BACKEND unset the answer is exactly what it was before."""
+    if (env.get("%s_API_KEY" % name.upper()) or "").strip():
+        return True
+    if name == "gemini":
+        if (env.get("GEMINI_API_KEY_FREE") or "").strip():
+            return True
+        if ((env.get("GEMINI_BACKEND") or "").strip().lower() == "vertex"
+                and (env.get("GCP_PROJECT") or "").strip()):
+            return True
+    return False
+
+
 def _main():
     date_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     rerun, rerun_err = parse_rerun_options(os.environ, date_utc)
@@ -883,9 +899,7 @@ def _main():
     # adapter to ENGINES without touching this line crashed the whole run
     # with a KeyError before a single call was made (run #9, 2026-08-05).
     # Deriving the name means a new adapter can never be forgotten here.
-    available = [k for k in engines
-                 if os.environ.get("%s_API_KEY" % k.upper(), "").strip()
-                 or (k == "gemini" and os.environ.get("GEMINI_API_KEY_FREE", "").strip())]
+    available = [k for k in engines if engine_available(k, os.environ)]
     serp_on = bool(os.environ.get("BRIGHTDATA_API_KEY", "").strip())
 
     print("E1 v4 run %s | roster %d active | engines available: %s | serp: %s"

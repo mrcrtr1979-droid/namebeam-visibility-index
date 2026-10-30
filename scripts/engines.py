@@ -270,8 +270,16 @@ def _gemini_quota_id(body_text):
 
 
 GEMINI_FALLTHROUGH = (429, 402, 403)  # quota or billing refusals only; any other status stops the chain
-GEMINI_VERTEX_URL = ("https://%s-aiplatform.googleapis.com/v1/projects/%s/locations/%s"
-                     "/publishers/google/models/%s:generateContent")
+
+# VERTEX ENDPOINT. Regional locations use a location-prefixed host; the "global" location drops the
+# prefix (aiplatform.googleapis.com, path locations/global). Both forms read from the Vertex AI
+# locations page on 2026-10-30 (docs/VERTEX_WIF_SETUP.md, Sources). Same publisher-model path as
+# before; for us-central1 the URL is byte-for-byte what this file built until 2026-10-30.
+def _vertex_url(project, location, model):
+    host = ("aiplatform.googleapis.com" if location == "global"
+            else "%s-aiplatform.googleapis.com" % location)
+    return ("https://%s/v1/projects/%s/locations/%s/publishers/google/models/%s:generateContent"
+            % (host, project, location, model))
 
 
 def _vertex_bearer(sa_json):
@@ -290,24 +298,86 @@ def _vertex_bearer(sa_json):
         return None
 
 
-def _gemini_rails(model, env=None, vertex_bearer=_vertex_bearer):
-    """Ordered (name, url, headers) for one call: (1) AI Studio free-tier key, (2) Vertex AI on the
-    trial project, (3) the paid AI Studio key. Secrets are read by name; URLs with keys are never
-    logged (redact() strips them from every error string)."""
+# OPTIONAL VERTEX BACKEND, 2026-10-30 [GEMINI-VERTEX-1030]. Env GEMINI_BACKEND=vertex puts a Vertex AI rail
+# FIRST in the chain, so the Gemini calls draw GCP credits instead of the AI Studio key quotas. Unset, empty
+# or any other value leaves the chain exactly as it was (free key, legacy Vertex rail, paid key). The Vertex
+# rail authenticates with Application Default Credentials: in CI the google-github-actions/auth step writes
+# a Workload Identity Federation credential file and exports GOOGLE_APPLICATION_CREDENTIALS, so no JSON
+# key exists anywhere. Same model ids as the API-key path (gemini_model_for), same request body (plus the
+# role Vertex expects on a content turn), no tools on either path (no grounding is switched on by us, so
+# nothing to translate). The AI Studio rails stay behind it as a quota/billing fallthrough; the row records
+# which rail answered (engine_meta.rail) and, for a Vertex answer, engine_meta.method = "gemini via vertex".
+GEMINI_BACKEND_ENV = "GEMINI_BACKEND"
+GEMINI_RAIL_METHOD = {"vertex": "gemini via vertex"}
+_VERTEX_ADC = {"creds": None, "error": None}
+_vertex_warned = set()
+
+
+def _warn_once(key, message):
+    """One GitHub Actions warning annotation per process and key. Never carries a secret value."""
+    if key not in _vertex_warned:
+        _vertex_warned.add(key)
+        print("::warning::" + message, flush=True)
+
+
+def _vertex_adc_bearer():
+    """Bearer token for Vertex AI from Application Default Credentials. Cached; google-auth refreshes it
+    ahead of expiry (credentials.valid goes False a few minutes before the hour is up), so a long run
+    keeps working. Returns None when google-auth is missing or no usable credentials exist, and records
+    only the exception CLASS name in _VERTEX_ADC["error"]. Never raises, never returns anything but the token."""
+    try:
+        import google.auth
+        from google.auth.transport.requests import Request
+        creds = _VERTEX_ADC["creds"]
+        if creds is None:
+            creds, _project = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])
+            _VERTEX_ADC["creds"] = creds
+        if not creds.valid:
+            creds.refresh(Request())
+        _VERTEX_ADC["error"] = None
+        return creds.token
+    except Exception as exc:
+        _VERTEX_ADC["creds"] = None
+        _VERTEX_ADC["error"] = type(exc).__name__
+        return None
+
+
+def _gemini_rails(model, env=None, vertex_bearer=_vertex_bearer, adc_bearer=None):
+    """Ordered (name, url, headers) for one call. Default: (1) AI Studio free-tier key, (2) Vertex AI on the
+    trial project via a service-account JSON, (3) the paid AI Studio key. With GEMINI_BACKEND=vertex a Vertex
+    rail on Application Default Credentials goes first and the legacy service-account rail is not added.
+    Secrets are read by name; URLs with keys are never logged (redact() strips them from every error string)."""
     env = os.environ if env is None else env
     rails = []
+    project = (env.get("GCP_PROJECT") or "").strip()
+    location = (env.get("GCP_LOCATION") or "").strip() or "us-central1"
+    backend = (env.get(GEMINI_BACKEND_ENV) or "").strip().lower()
+    adc_rail = False
+    if backend == "vertex":
+        token = (adc_bearer or _vertex_adc_bearer)() if project else None
+        if token:
+            register_secret(token)  # minted at run time; scrubbed from every error string
+            rails.append(("vertex", _vertex_url(project, location, model),
+                          {"Content-Type": "application/json", "Authorization": "Bearer " + token}))
+            adc_rail = True
+        else:
+            why = "GCP_PROJECT is empty" if not project else \
+                ("no usable Application Default Credentials: %s" % (_VERTEX_ADC["error"] or "token not returned"))
+            _warn_once("vertex-unavailable",
+                       "GEMINI_BACKEND=vertex but the Vertex rail is unavailable (%s); Gemini falls back to the "
+                       "AI Studio key rails, and rows say so in engine_meta.rail." % why)
+    elif backend:
+        _warn_once("backend-unknown", "GEMINI_BACKEND is set but is not 'vertex'; using the AI Studio key path.")
     free = (env.get("GEMINI_API_KEY_FREE") or "").strip()
     if free:
         rails.append(("studio_free", (GEMINI_URL % model) + "?key=" + free,
                       {"Content-Type": "application/json"}))
     sa = (env.get("GCP_SA_KEY") or "").strip()
-    project = (env.get("GCP_PROJECT") or "").strip()
-    location = (env.get("GCP_LOCATION") or "us-central1").strip()
-    if sa and project:
+    if sa and project and not adc_rail:
         token = vertex_bearer(sa)
         if token:
             register_secret(token)  # minted at run time; scrubbed from every error string (COS 1024C, W1B fix c)
-            rails.append(("vertex", GEMINI_VERTEX_URL % (location, project, location, model),
+            rails.append(("vertex", _vertex_url(project, location, model),
                           {"Content-Type": "application/json", "Authorization": "Bearer " + token}))
     paid = (env.get("GEMINI_API_KEY") or "").strip()
     if paid:
@@ -316,9 +386,11 @@ def _gemini_rails(model, env=None, vertex_bearer=_vertex_bearer):
     return rails
 
 
-def _gemini_attempts(url, headers, prompt_text, model, post, sleep, now):
+def _gemini_attempts(url, headers, prompt_text, model, post, sleep, now, vertex=False):
     """One rail: the original retry, pacing and quota logic, unchanged. Returns
-    (ok, text, sources, error, last_status)."""
+    (ok, text, sources, error, last_status). vertex=True adds role "user" to the content turn, which the
+    Vertex generateContent request carries; the AI Studio body is byte-for-byte what it always was."""
+    turn = {"role": "user", "parts": [{"text": prompt_text}]} if vertex else {"parts": [{"text": prompt_text}]}
     last = ""
     status = None
     for attempt in range(1, GEMINI_MAX_TRIES + 1):
@@ -327,7 +399,7 @@ def _gemini_attempts(url, headers, prompt_text, model, post, sleep, now):
             r = post(
                 url,
                 headers=headers,
-                json={"contents": [{"parts": [{"text": prompt_text}]}]},
+                json={"contents": [turn]},
                 timeout=TIMEOUT,
             )
         except requests.exceptions.RequestException as exc:
@@ -374,14 +446,30 @@ def call_gemini(prompt_text, _post=None, _sleep=None, _now=None, question_id=Non
     LAST_CALL_META["gemini"] = {"requested_model": model}
     rails = _rails if _rails is not None else _gemini_rails(model)
     if not rails:
+        if (os.environ.get(GEMINI_BACKEND_ENV) or "").strip().lower() == "vertex":
+            return False, "", [], redact("GEMINI_API_KEY not set and the Vertex rail is unavailable (GEMINI_BACKEND=vertex)")
         return False, "", [], redact("GEMINI_API_KEY not set")
     post = _post or requests.post
     sleep = _sleep or time.sleep
     now = _now or time.monotonic
     err = ""
+    vertex_refused = None
     for name, url, headers in rails:
-        ok, text, sources, err, status = _gemini_attempts(url, headers, prompt_text, model, post, sleep, now)
-        LAST_CALL_META["gemini"]["rail"] = name
+        ok, text, sources, err, status = _gemini_attempts(url, headers, prompt_text, model, post, sleep, now,
+                                                          vertex=(name == "vertex"))
+        meta = LAST_CALL_META["gemini"]
+        meta["rail"] = name
+        # Backend visible per row, only when Vertex was involved: an AI Studio row never gains a key, so a
+        # run with GEMINI_BACKEND unset writes the same engine_meta as before. A later AI Studio answer
+        # after a refused Vertex call says so (vertex_refused_http) instead of passing as a plain studio row.
+        if name in GEMINI_RAIL_METHOD:
+            meta["method"] = GEMINI_RAIL_METHOD[name]
+            if not ok:
+                vertex_refused = status
+        else:
+            meta.pop("method", None)
+            if vertex_refused is not None:
+                meta["vertex_refused_http"] = vertex_refused
         if ok:
             return True, text, sources, ""
         if status not in GEMINI_FALLTHROUGH:
