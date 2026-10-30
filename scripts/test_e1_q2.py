@@ -11,10 +11,13 @@ prefix; no collision with a prompt_1 check_id or with the prompt_1 same-day reru
 file validates against the real roster (market, niche, prompt_1, wording rules); the Gemini model
 for a q2 id is flash-lite, never the 20-a-day panel model; q2 runs after the prompt_1 pass and is
 skipped for Gemini once the Gemini rails were refused for quota, logged as QUOTA_BLOCKED; the kill
-switch; a bad q2 file never touches prompt_1.  Exits 0 only when every case passes.
+switch; a bad q2 file never touches prompt_1.  Version 2 (2026-10-30): the version 1 rows hash to the
+sha256 registered in prereg/e1-q2-01.json, the version 2 rows are the agreed set and follow the same
+wording frame.  Exits 0 only when every case passes.
 """
 import copy
 import glob
+import hashlib
 import json
 import os
 import re
@@ -36,6 +39,20 @@ ENGINE_NAMES = ("perplexity", "gemini", "openai", "anthropic")
 CUT_SLUGS = ["atlanta-hvac", "atlanta-personal-injury", "chicago-personal-injury", "dallas-roofing",
              "denver-roofing", "houston-hvac", "houston-personal-injury",
              "los-angeles-ca-ai-marketing-agency", "miami-roofing", "phoenix-hvac"]
+# Version 2 (2026-10-30): 21 segments not in version 1 plus the 20 research segments of PRs #66 and #67.
+V2_CUT_SLUGS = ["atlanta-dentists", "dallas-dentists", "phoenix-dentists", "pleasanton-dentists",
+                "kansas-city-health-insurance", "pleasanton-home-care", "pleasanton-moving-companies",
+                "pleasanton-oil-change", "atlanta-orthodontists", "dallas-orthodontists",
+                "phoenix-orthodontists", "dallas-personal-injury", "pleasanton-real-estate-agents",
+                "branson-short-term-rental", "nashville-short-term-rental", "santa-cruz-short-term-rental",
+                "charlotte-tanning-salons", "columbus-tanning-salons", "pleasanton-tanning-salons",
+                "tyler-tanning-salons", "pleasanton-tire-shops", "miami-personal-injury",
+                "phoenix-personal-injury", "denver-personal-injury", "charlotte-personal-injury",
+                "chicago-dentists", "miami-dentists", "denver-dentists", "houston-dentists",
+                "charlotte-dentists", "miami-orthodontists", "columbus-personal-injury",
+                "kansas-city-personal-injury", "columbus-dentists", "kansas-city-dentists",
+                "charlotte-orthodontists", "chicago-orthodontists", "denver-orthodontists",
+                "houston-orthodontists", "columbus-orthodontists", "kansas-city-orthodontists"]
 ANSWER = "Top picks: **Alpha Realty** and **Beta Homes** serve this area."
 
 CALLS = []          # (engine, prompt, question_id) in call order
@@ -137,23 +154,50 @@ def real_q2():
 doc = real_q2()
 problems = e1_runner.validate_q2(doc, real_roster())
 check("A1 the real roster/e1_q2.json has no problems %s" % (problems or ""), problems == [])
-check("A2 ten rows, one per market cut, in the agreed slugs",
-      sorted(r["cut_slug"] for r in doc["rows"]) == sorted(CUT_SLUGS))
+v1_doc_rows = [r for r in doc["rows"] if r.get("version", 1) == 1]
+v2_doc_rows = [r for r in doc["rows"] if r.get("version") == 2]
+check("A2 version 1: ten rows, one per market cut, in the agreed slugs",
+      sorted(r["cut_slug"] for r in v1_doc_rows) == sorted(CUT_SLUGS))
 rows, probs = e1_runner.load_q2_rows(real_roster(), os.path.join(REPO, "roster", "e1_q2.json"))
-check("A3 load_q2_rows returns all ten, each joined to exactly one active roster row",
-      len(rows) == 10 and probs == [] and all(r.get("prompt_2") and r.get("prompt_1") for r in rows))
+check("A3 load_q2_rows returns every version 1 and version 2 row, each joined to exactly one active roster row",
+      len(rows) == len(CUT_SLUGS) + len(V2_CUT_SLUGS) and probs == []
+      and all(r.get("prompt_2") and r.get("prompt_1") for r in rows))
 check("A4 every prompt_2 differs from its prompt_1", all(r["prompt_2"] != r["prompt_1"] for r in rows))
 check("A5 every prompt_2 is ASCII, one line, under 25 words, no dash character",
       all(r["prompt_2"].isascii() and "\n" not in r["prompt_2"] and len(r["prompt_2"].split()) < 25
           and not re.search("[\u2013\u2014]", r["prompt_2"]) for r in rows))
-check("A6 prompt_2 values are unique", len({r["prompt_2"] for r in rows}) == 10)
+check("A6 prompt_2 values are unique", len({r["prompt_2"] for r in rows}) == len(rows))
 sp = {p["slug"]: p["questions"] for p in json.load(open(os.path.join(REPO, "roster", "segment_pages.json")))["pages"]}
-check("A7 market and niche equal roster/segment_pages.json for every slug that file lists",
-      all(sp[r["cut_slug"]] == [{"market": r["market"], "niche": r["niche"]}] for r in doc["rows"] if r["cut_slug"] in sp))
+check("A7 version 1: market and niche equal roster/segment_pages.json for every slug that file lists",
+      all(sp[r["cut_slug"]] == [{"market": r["market"], "niche": r["niche"]}] for r in v1_doc_rows if r["cut_slug"] in sp))
 check("A8 no prompt_2 names a brand or a roster business",
       not [r for r in rows if any(b in r["prompt_2"].lower() for b in ("namebeam", "trunkline", "atrix"))])
-check("A9 none of the ten q2 businesses is engine-limited in the roster (every engine is asked)",
+check("A9 none of the q2 businesses is engine-limited in the roster (every engine is asked)",
       all("engines" not in r for r in rows))
+
+# --- A10 to A15: version 2 rows; version 1 stays exactly as registered ---------------------------------
+prereg = json.load(open(os.path.join(REPO, "prereg", "e1-q2-01.json"), encoding="utf-8"))
+reg_sha = {r["cut_slug"]: r["prompt_2_sha256"] for r in prereg["rows"]}
+check("A10 version 1 untouched: each of the ten prompt_2 hashes to the sha256 registered in prereg/e1-q2-01.json",
+      sorted(reg_sha) == sorted(CUT_SLUGS)
+      and all(hashlib.sha256(r["prompt_2"].encode("utf-8")).hexdigest() == reg_sha[r["cut_slug"]]
+              for r in v1_doc_rows))
+check("A11 the file is version 2, the version 1 rows carry no version key, and the v2 block has a start_date key",
+      doc.get("version") == 2 and all("version" not in r for r in v1_doc_rows)
+      and isinstance(doc.get("v2"), dict) and "start_date" in doc["v2"])
+check("A12 version 2: 41 rows marked version 2, in the agreed slugs, none repeating a version 1 slug or business",
+      sorted(r["cut_slug"] for r in v2_doc_rows) == sorted(V2_CUT_SLUGS) and len(v2_doc_rows) == 41
+      and not ({r["cut_slug"] for r in v2_doc_rows} & set(CUT_SLUGS))
+      and not ({r["business"] for r in v2_doc_rows} & {r["business"] for r in v1_doc_rows})
+      and len(v1_doc_rows) + len(v2_doc_rows) == len(doc["rows"]))
+frame = re.compile(r"^[^.?!]+\. Which specific [A-Za-z ]+ should I call, and why\?$")
+check("A13 paired wording: every prompt_2 is one situation sentence then 'Which specific X should I call, and why?'",
+      all(frame.match(r["prompt_2"]) for r in doc["rows"]))
+check("A14 version 2: market and niche equal roster/segment_pages.json for every slug that file lists",
+      all({"market": r["market"], "niche": r["niche"]} in sp[r["cut_slug"]]
+          for r in v2_doc_rows if r["cut_slug"] in sp))
+check("A15 version 2: every row is a research_segment row of the active roster",
+      all(r.get("row_type") == "research_segment" for r in rows if r["q2_cut_slug"] in V2_CUT_SLUGS))
 
 # --- B. validation rejects what it must ------------------------------------------------------------
 roster = real_roster()
