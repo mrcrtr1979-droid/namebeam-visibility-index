@@ -22,6 +22,7 @@ No secret is ever printed, logged, or written into a corpus row.
 
 import hashlib
 import json
+import math
 import os
 import re
 import sys
@@ -558,6 +559,80 @@ def extract_ai_overview(payload_text):
     return (True if text else False), text, refs
 
 
+LOCAL_PACK_MAX = 3
+
+
+def _lp_text(v):
+    return v if isinstance(v, str) and v.strip() else None
+
+
+def _lp_rating(v):
+    if isinstance(v, bool):
+        return None
+    if isinstance(v, str):
+        try:
+            v = float(v.strip())
+        except ValueError:
+            return None
+    if isinstance(v, (int, float)) and math.isfinite(v):
+        return v
+    return None
+
+
+def _lp_count(v):
+    if isinstance(v, bool):
+        return None
+    if isinstance(v, float):
+        v = int(v) if math.isfinite(v) and v == int(v) else None
+    elif isinstance(v, str):
+        digits = v.strip().replace(",", "")
+        v = int(digits) if digits.isascii() and digits.isdigit() else None
+    if isinstance(v, int) and v >= 0:
+        return v
+    return None
+
+
+def extract_local_pack(payload_text):
+    """Google local pack (the map "3-pack") from the SAME Bright Data parsed SERP JSON the
+    collector already requests: the top-level "snack_pack" array (docs: name, link, address,
+    rating, reviews_cnt, global_rank). Added 2026-10-31 [PACK-BUILD-1030]. No new request and no
+    new parameter; extract_ai_overview and the organic reader are not touched.
+
+    Returns (present, top). present is True when the payload is parsed JSON whose snack_pack is a
+    list with at least one object; False when it is parsed JSON without a usable snack_pack
+    (Google showed no pack for the query); None when the payload is not parsed JSON (the raw-HTML
+    fallback, cannot tell: an unknown is never coerced to False). top is at most LOCAL_PACK_MAX
+    items, each {position, name, link, address, rating, reviews}; position is the 1-based place
+    in snack_pack, a non-object item is skipped and keeps its place, a missing or wrongly typed
+    key reads as null. Text is verbatim, never rewritten."""
+    try:
+        j = json.loads(payload_text or "")
+        if isinstance(j, dict) and isinstance(j.get("body"), str):
+            j = json.loads(j["body"])
+    except (ValueError, TypeError):
+        return None, []
+    if not isinstance(j, dict):
+        return None, []
+    pack = j.get("snack_pack")
+    if not isinstance(pack, list):
+        return False, []
+    top = []
+    for i, item in enumerate(pack):
+        if not isinstance(item, dict):
+            continue
+        top.append({
+            "position": i + 1,
+            "name": _lp_text(item.get("name")),
+            "link": _lp_text(item.get("link")),
+            "address": _lp_text(item.get("address")),
+            "rating": _lp_rating(item.get("rating")),
+            "reviews": _lp_count(item.get("reviews_cnt")),
+        })
+        if len(top) >= LOCAL_PACK_MAX:
+            break
+    return bool(top), top
+
+
 def run_serp(business_row, date_utc):
     """Writes a SERP row: who RANKS on Google for the same question.
     Paired with the engine rows, this is the rank-to-citation delta.
@@ -593,6 +668,8 @@ def run_serp(business_row, date_utc):
             "ai_overview_references": [],
             "session_note": "FAILED RUN, logged per no-fabricated-rows law. "
                             "error detail: %s" % err,
+            "local_pack_present": None,
+            "local_pack_top": [],
         })
         return write_row(row, check_id), False
     diag = serp_diagnostics(html, organic)
@@ -600,6 +677,10 @@ def run_serp(business_row, date_utc):
         _aio = extract_ai_overview(html)
     except Exception:  # never let the AIO read cost the SERP row
         _aio = (None, "", [])
+    try:
+        _lp = extract_local_pack(html)
+    except Exception:  # never let the local pack read cost the SERP row
+        _lp = (None, [])
     row.update({
         # An extraction failure is NOT a finding. If organic is empty, this
         # row is marked EXTRACTION_FAILED so it can be excluded from any
@@ -622,6 +703,11 @@ def run_serp(business_row, date_utc):
                          "document an AI Overview field, so ai_overview_"
                          "detected is BEST EFFORT and may be null. Do not "
                          "publish it as a measurement."),
+        # 2026-10-31: the local pack (up to 3 items) read from the snack_pack array of the
+        # same parsed response. Additive: appended after every existing field, none changed.
+        # local_pack_present None = payload was not parsed JSON (cannot tell).
+        "local_pack_present": _lp[0],
+        "local_pack_top": _lp[1],
     })
     return write_row(row, check_id), True
 
