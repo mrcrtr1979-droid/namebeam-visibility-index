@@ -253,7 +253,11 @@ GOLDEN = json.loads(r'''{
 
 
 def without_new(row):
-    return {k: v for k, v in row.items() if k not in NEW_KEYS}
+    # the two row keys, and the one serp_diagnostics key added by PACKKEY-1031F (checked on its own)
+    out = {k: v for k, v in row.items() if k not in NEW_KEYS}
+    out["serp_diagnostics"] = {k: v for k, v in row["serp_diagnostics"].items()
+                               if k != "snack_pack_keys0"}
+    return out
 
 
 # ------------------------------------------------------------------ the reader
@@ -368,6 +372,7 @@ def test_row_with_snack_pack():
                                                           "KC Backflow Pros"]
     assert pub["local_pack_top"][1] == {"position": 2, "name": "Liberty Plumbing", "link": None,
                                         "address": None, "rating": 4.5, "reviews": None}
+    assert pub["serp_diagnostics"]["snack_pack_keys0"] == sorted(snack_pack_items()[0].keys())
 
 
 def test_row_without_snack_pack():
@@ -445,6 +450,41 @@ def test_a_pack_read_error_never_costs_the_row():
         shutil.rmtree(tmp, ignore_errors=True)
     assert ok is True and pub["run_status"] == "OK" and pub["organic_top_results"]
     assert pub["local_pack_present"] is None and pub["local_pack_top"] == []
+
+
+# ------------------------------------------------------------------ the diagnostics key
+# [PACKKEY-1031F, 2026-10-31] serp_diagnostics["snack_pack_keys0"]: the sorted KEY NAMES of the first
+# snack_pack item, so a run record shows which key the pack link lives under. Names only, no values.
+def pack_payload(first_item, n_more=1):
+    j = inner_payload(False)
+    j["snack_pack"] = [first_item] + [{"name": "Other %d" % i} for i in range(n_more)]
+    return json.dumps({"body": json.dumps(j)})
+
+
+def test_snack_pack_keys0_records_key_names_only():
+    first = {"title": "Backflow Boss", "website": "https://backflowboss.example/", "rating": 4.8}
+    tmp = tempfile.mkdtemp()
+    try:
+        pub, _, _ = run_serp_once(pack_payload(first), tmp)
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+    assert pub["serp_diagnostics"]["snack_pack_keys0"] == ["rating", "title", "website"]
+    assert pub["run_status"] == "OK" and pub["organic_top_results"]
+    # no value leaves the diagnostics: neither the names nor the URL of the item
+    diag_text = json.dumps(pub["serp_diagnostics"])
+    assert "Backflow Boss" not in diag_text and "backflowboss.example" not in diag_text
+
+
+def test_snack_pack_keys0_absent_without_a_pack_or_a_dict_first_item():
+    tmp_a, tmp_b = tempfile.mkdtemp(), tempfile.mkdtemp()
+    try:
+        pub_a, _, _ = run_serp_once(wrapped(False), tmp_a)
+        pub_b, _, _ = run_serp_once(pack_payload("Backflow Boss"), tmp_b)
+    finally:
+        shutil.rmtree(tmp_a, ignore_errors=True)
+        shutil.rmtree(tmp_b, ignore_errors=True)
+    assert "snack_pack_keys0" not in pub_a["serp_diagnostics"]
+    assert "snack_pack_keys0" not in pub_b["serp_diagnostics"]
 
 
 # ------------------------------------------------------------------ the sources builder
