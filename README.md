@@ -1,6 +1,6 @@
 # Namebeam AI Visibility Index
 
-A dated public record of which local businesses AI engines (ChatGPT, Claude, Gemini and Perplexity) name when they are asked the same buyer questions. ChatGPT returned no answers from 2026-10-26 to 2026-10-29 because the OpenAI API quota ran out (33 of 53 calls on 2026-10-25 were blocked the same way), so those days carry three engines. ChatGPT answers resumed on 2026-10-30. Every answer is saved with its date and a SHA-256 hash of the raw file.
+A dated public record of which local businesses AI engines (ChatGPT, Claude, Gemini and Perplexity) name when they are asked the same buyer questions. ChatGPT returned no answers from 2026-10-26 to 2026-10-29: every call was recorded as blocked on the OpenAI API quota (33 of 53 calls on 2026-10-25 were too), so those days carry three engines. ChatGPT answers resumed on 2026-10-30. Every answer is saved with its date and a SHA-256 hash of the raw file.
 
 ## MCP server (receipts-index-mcp)
 
