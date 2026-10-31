@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_dentists_pleasanton_openai",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ef8xqFUEkORk07CmdLgFbq5raGvjT",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1354,
+   "total_tokens": 1382,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can help — quick clarification first so I give useful, specific recommendations:\n\n1) Do you mean Pleasanton, CA (Bay Area)?  \n2) Do you have dental insurance (and which plan) or need a low-cost / Medi‑Cal option?  \n3) Any preferences: female dentist, Spanish-speaking, weekend hours, sedation, pediatric care, cosmetic services, etc.?\n\nIf you want to proceed immediately without those details, I can’t do a live web search from here, but I can do one of two helpful things:\n- If you give your ZIP code and insurance (or say none), I’ll produce a tailored short list of likely good practices and a phone script you can use to confirm availability and pricing.  \n- Or I’ll give general, practical guidance so you can quickly find and choose a dentist yourself (what sites to use, what ratings/credentials to look for, what questions to ask when you call).\n\nEither tell me the city/zip and insurance details or tell me which option you prefer. If you want to find and call practices yourself right away, here’s a quick checklist and phone script you can use:\n\nChecklist for choosing a dental practice\n- Use Google Maps, Yelp, Zocdoc, Healthgrades or your insurer’s provider list. Look for average ratings ≥4.0 with recent reviews.  \n- Confirm they accept your insurance or offer a clear self-pay price list/new‑patient specials.  \n- Check whether they do a full new‑patient cleaning (prophy) vs. periodontal scaling if you have gum disease.  \n- Note location, parking, hours (evening/weekend), language support, and whether they handle emergencies.  \n- Look for credentials: DDS or DMD, membership in ADA or local dental societies, and any specialist affiliations if needed.\n\nPhone script (quick)\n“Hi, I’m a new patient. I need a routine exam and cleaning. Do you have a new‑patient appointment available in the next X weeks? Do you accept [insurance name]? What is your cost for a standard adult cleaning, exam, and bitewing X‑rays if I’m paying out of pocket? Do you perform the cleaning with a hygienist, and do you require full X‑rays today? Are there any new‑patient specials or payment plans? Finally, what’s your cancellation policy?”\n\nIf you give me ZIP + insurance or confirm Pleasanton, CA, I’ll prepare a short list of 4–6 specific practices to call and explain why I picked each one.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

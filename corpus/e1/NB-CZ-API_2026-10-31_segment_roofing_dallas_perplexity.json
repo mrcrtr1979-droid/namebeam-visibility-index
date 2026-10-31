@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-10-31_segment_roofing_dallas_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_2a76d9cf-5df6-448b-bcee-bc14d66b0734",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00424
+   },
+   "input_tokens": 4341,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3794,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 259,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4600
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "New View Roofing",
+  "Bert Roofing",
+  "Shepherd Roofing & Renovations",
+  "Dallas-focused and RCAT-licensed",
+  "Shepherd Roofing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/tx/dallas",
+  "https://www.bbb.org/us/tx/dallas/profile/general-contractor/dar-roofing-general-contractors-0875-91342351/customer-reviews",
+  "https://www.tennessean.com/press-release/story/234516/new-view-roofing-named-best-overall-dallas-roofing-company-by-yahoo-local/",
+  "https://www.bbb.org/us/tx/dallas/profile/roofing-contractors/dfw-roofing-pro-llc-0875-90848199/customer-reviews",
+  "https://www.bbb.org/us/tx/dallas/category/roof-replacement",
+  "https://www.bbb.org/us/tx/dallas/category/roof-replacement/accredited",
+  "https://www.bbb.org/us/tx/dallas/category/roofing-contractors",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/pa/dallas",
+  "https://bertroofing.com/our-reviews/",
+  "https://www.bestpickreports.com/roofers/dallas",
+  "https://www.bbb.org/us/ga/dallas/category/roofing-contractors",
+  "https://www.angi.com/companylist/us/tx/dallas/roofing.htm",
+  "https://dfwprofessionals.com/dallas/roofing-contractor",
+  "https://www.thumbtack.com/tx/dallas/roofing/roof-pros-dallas-inc/service/581916567030095879",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/ia/melcher-dallas"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "12406620bfec1f6d17dcc65a21ad3e547d9636771c4c8ef95b372285b0264e1c",
+ "answer_chars": 843,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

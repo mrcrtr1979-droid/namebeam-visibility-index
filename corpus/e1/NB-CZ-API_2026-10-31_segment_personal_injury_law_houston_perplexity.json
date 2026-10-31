@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-10-31_segment_personal_injury_law_houston_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: personal injury law, Houston",
+ "niche": "personal injury attorneys",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best personal injury lawyer in Houston for a car wreck?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_275f48c7-a52a-414a-ab76-ffc49454954a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00096,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00066,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00426
+   },
+   "input_tokens": 4397,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3849,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 263,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4660
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Houston Lawyer Referral Service"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://guides.sll.texas.gov/find-a-lawyer",
+  "https://www.texasbar.com/Content/NavigationMenu/ForThePublic/DoYouNeedaLawyer/CertifiedLawyerReferralServices1/default.htm",
+  "https://www.texasbar.com/AM/Template.cfm?Section=Find_A_Lawyer&Template=/CustomSource/MemberDirectory/Search_Form_Client_Main.cfm&Find=1",
+  "https://www.hba.org/?pg=HoustonBarBulletin&pubAction=viewIssue&pubIssueID=71523&pubIssueItemID=480935",
+  "https://hlrs.org/contact-us/",
+  "https://hlrs.org/",
+  "https://hlrs.org/request-a-lawyer-referral/",
+  "https://www.lawyers.com/houston/texas/mark-levin-2131172-a/",
+  "https://hlrs.org/for-the-public/areas-of-law/houston-criminal-defense-attorneys/duidwi/",
+  "https://www.zehllaw.com/testimonials/",
+  "https://www.texasbar.com/Content/NavigationMenu/ForThePublic/DoYouNeedaLawyer/default.htm",
+  "https://hlrs.org/for-the-public/areas-of-law/houston-personal-injury-attorneys/car-accidents/",
+  "https://www.terrybryant.com/",
+  "https://hlrs.org/for-the-public/areas-of-law/intellectual-property-rights/",
+  "https://hlrs.org/about-hlrs/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "4fc94839e0c6a8dcb6daf129b73c30cb1899f3c993e487880f848e83b10a96c6",
+ "answer_chars": 809,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

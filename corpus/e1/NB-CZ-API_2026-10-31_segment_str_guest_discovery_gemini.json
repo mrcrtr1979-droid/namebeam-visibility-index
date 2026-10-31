@@ -1,0 +1,63 @@
+{
+ "check_id": "NB-CZ-API_2026-10-31_segment_str_guest_discovery_gemini",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "bjnmarD3OIjZqtsPva32iQ0",
+  "usage": {
+   "promptTokenCount": 29,
+   "candidatesTokenCount": 1102,
+   "totalTokenCount": 1131,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 29
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "No shared spaces",
+  "Use Airbnb",
+  "Use Vrbo",
+  "Use Booking.com",
+  "Airbnb",
+  "Superhost",
+  "Vrbo",
+  "Premier Host.",
+  "Search reviews for keywords",
+  "Watch out for red flags",
+  "Pay attention to the response time",
+  "Never",
+  "Booking.com",
+  "Vacation Rentals",
+  "Booking",
+  "House Rules",
+  "Never Pay Off-Platform",
+  "Quick Checklist Before You Click",
+  "Highly Rated",
+  "Premier Host",
+  "Read the fine print",
+  "Entire homes"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Choosing the right platform and finding a good host can make or break your trip. Here is a breakdown of how Airbnb, Vrbo, and Booking.com compare, followed by a step-by-step guide to finding the best host.\n\n---\n\n### Part 1: Which platform should you use?\n\n#### 1. Airbnb\n*   **Best for:** Apartments, unique stays (treehouses, yurts, villas), city breaks, and solo travelers or couples.\n*   **Pros:** The widest selection of properties globally; generally the best user interface and app; strong review system for both guests and hosts.\n*   **Cons:** Service fees can be high; strict cancellation policies are common; some cities have heavy regulations on short-term rentals.\n\n#### 2. Vrbo (Vacation Rentals by Owner)\n*   **Best for:** Entire homes, large families, groups, and beach/mountain/lake destinations.\n*   **Pros:** **No shared spaces** (Vrbo only lists entire properties, no private rooms in someone's house); often better for long-term or weekly stays; great for cabins and beach houses.\n*   **Cons:** Fewer urban/apartment options; customer service can be difficult to reach if things go wrong.\n\n#### 3. Booking.com\n*   **Best for:** Traditional hotels, aparthotels, hostels, and flexible travelers who want a mix of hotels and apartments.\n*   **Pros:** Free cancellation is very common; \"Genius\" loyalty program offers great discounts; no hidden fees (taxes and cleaning fees are usually included in the upfront price).\n*   **Cons:** Customer service varies wildly depending on whether you booked a hotel or an independent apartment; vacation rental inventory is often pulled from other sites, leading to occasional double-booking issues.\n\n**Summary Recommendation:**\n*   Going to a city or want a unique vibe? **Use Airbnb.**\n*   Traveling with a big group to a vacation destination (beach/mountains)? **Use Vrbo.**\n*   Want a hotel or need ultimate flexibility with free cancellation? **Use Booking.com.**\n\n---\n\n### Part 2: How to find a good host (and avoid scams)\n\nOnce you’ve picked your platform, follow these rules to ensure you are booking with a reliable, high-quality host.\n\n#### 1. Look for \"Superhost\" or \"Premier Host\" Status\n*   **Airbnb:** Look for the **\"Superhost\"** badge. These hosts must maintain a high rating (4.8+), have a low cancellation rate, and respond quickly to messages.\n*   **Vrbo:** Look for **\"Premier Host.\"** Similar to Airbnb, these hosts have proven track records of excellent guest reviews and reliable communication.\n*   *Note for Booking.com:* Look for properties with a review score of **8.5 or higher** and read recent reviews specifically mentioning the host or staff.\n\n#### 2. Read the *Reviews* (Crucial)\n*   Don’t just look at the star rating; read the text.\n*   Look for recent reviews (within the last 3–6 months). If a property hasn't had a review in over a year, beware—management might have changed, or the property could be neglected.\n*   **Search reviews for keywords:** Use the search bar in the reviews to look for terms like \"clean,\" \"noisy,\" \"wifi,\" or \"host.\"\n*   **Watch out for red flags:** If multiple reviews mention dampness, uncomfortable beds, or a host who didn't respond to emergencies, skip the property.\n\n#### 3. Test Their Communication *Before* Booking\n*   Send the host a polite message before you book (e.g., asking a simple question about parking or local transportation).\n*   **Pay attention to the response time.** A good host usually replies within a few hours. If they take days to respond *before* you give them your money, imagine how hard they will be to reach if the plumbing breaks during your stay.\n\n#### 4. Read the Fine Print (House Rules & Fees)\n*   A good host is transparent. Read the cancellation policy, check-in instructions, and house rules thoroughly.\n*   Check the total price breakdown (cleaning fees, service fees, local taxes) so you don't get sticker shock at checkout.\n\n#### 5. Protect Yourself (Never Pay Off-Platform)\n*   **Never** wire money, use Zelle, Venmo, or crypto to pay a host directly. \n*   Always keep your communication and payments **inside the platform**. If a host asks you to pay outside the app to \"avoid fees,\" it is almost certainly a scam, and you will lose all customer support protections.\n\n---\n\n### Quick Checklist Before You Click \"Book\":\n1. [ ] Is the host a Superhost / Premier Host / Highly Rated (>8.5 on Booking)?\n2. [ ] Are there multiple recent, positive reviews?\n3. [ ] Did the host respond quickly and politely to a pre-booking message?\n4. [ ] Is the cancellation policy clear and acceptable to you?\n5. [ ] Are you paying entirely through the official app/website?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

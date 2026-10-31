@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ef8un5wZhrWp1OC7iD1QuKzgYA7vK",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1500,
+   "total_tokens": 1528,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Medicare",
+  "Part A",
+  "Medicare Advantage",
+  "KanCare",
+  "ACA Marketplace",
+  "Local NAHU",
+  "Saint Luke",
+  "KU Health",
+  "Kansas Insurance Department",
+  "In Kansas",
+  "Missouri Department of Insurance"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — but first I need one quick clarification: what kind of coverage are you shopping for?\n- Individual/family on the ACA (HealthCare.gov) or off‑exchange\n- Employer/small‑group coverage for a business\n- Medicare (Part A/B/D/Medicare Advantage)\n- Medicaid/KanCare eligibility help\n- Something else\n\nOnce you tell me that I’ll pull a short list of specific, licensed Kansas City brokers/agents to call (with phone numbers, what products they handle, and why I picked each).  \n\nMeanwhile, here’s immediate, practical guidance so you can start calling today and know what to look for.\n\nHow to choose the right broker (and where to find them)\n- Prefer an independent broker (shops multiple carriers) rather than a captive agent who only sells one brand. Ask up front if they’re independent.\n- Verify they are licensed in Kansas and/or Missouri (whichever applies). Use the Kansas Insurance Department and Missouri Department of Insurance producer/agent lookup tools to confirm license and any disciplinary actions.\n- Use these sources to find local, reputable help:\n  - HealthCare.gov “local help” tool for certified application counselors and brokers if you’re using the ACA Marketplace.\n  - State insurance department “find an agent/producer” lookups.\n  - Local NAHU (National Association of Health Underwriters) chapter — they list credentialed health insurance brokers in the Kansas City area.\n  - Google/Yelp reviews for specific agencies; look for repeated praise about plan comparisons, customer service, and claims assistance.\n\nWhat to ask any broker when you call (quick script)\n- “Are you an independent broker or do you represent a single carrier?” (Independent = better for comparisons.)\n- “Do you help with [ACA marketplace / off‑exchange / Medicare / employer plans]?”\n- “Do you charge clients a fee, or do you earn commission from the carrier?” (Many consumer brokers don’t charge extra for individual plans, but confirm.)\n- “Can you show me side‑by‑side comparisons for cost, deductible, out‑of‑pocket max, provider network, and prescription coverage?”\n- “Do you assist with claims and ongoing support after enrollment?” (Important for long‑term help.)\n\nWhat to prioritize when comparing plans\n- Total monthly cost = premium + expected out‑of‑pocket costs for your anticipated services\n- Provider network: confirm your primary doctor and prescriptions are in‑network\n- Deductible vs coinsurance vs copays — which applies first and to what services\n- Out‑of‑pocket maximum — worst‑case annual financial exposure\n- Prescription drug tiers and formularies if you take meds regularly\n- Access to customer service and a broker who will help with claims/appeals\n\nRed flags to avoid\n- Agent refuses to put plan comparisons in writing or won’t explain tradeoffs\n- Agent cannot verify license or has unresolved disciplinary actions\n- Agent pushes a single product without explaining alternatives\n\nIf you want, tell me:\n- Which of the coverage types above you need\n- Ages and number of people (if family)\n- Any regular medications or planned care (surgeries, pregnancy, ongoing specialists)\n- Preference for specific doctors/hospitals (e.g., Children’s Mercy, Saint Luke’s, KU Health)\n- Budget target for monthly premium\n\nI’ll then return a tailored list of 4–6 specific Kansas City brokers/agencies to call, with contact info, what markets they serve (ACA, Medicare, small group), and exactly why I recommend each one.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

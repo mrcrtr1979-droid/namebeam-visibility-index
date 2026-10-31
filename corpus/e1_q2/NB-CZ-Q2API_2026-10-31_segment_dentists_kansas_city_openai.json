@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_dentists_kansas_city_openai",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: dentists, Kansas City",
+ "niche": "dentists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Kansas City. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Kansas City Missouri for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ef99HxUlDxpIsgwQjHW9zk8IUyOTW",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1618,
+   "total_tokens": 1644,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 896,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Maxillofacial Surgeon",
+  "Dr. X"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I can give names, phone/web info and short reasons to call — but first I need one quick detail: where in the Kansas City area are you (ZIP code or neighborhood, and do you prefer Missouri or Kansas side)? That lets me find practices closest to you and show options at different price/complexity levels.\n\nWhile you reply, here’s useful guidance so you know what I’ll look for and what to ask when you call:\n\nWhich types of practices to call (and why)\n- Periodontist (periodontal surgeon) — expert in placing implants and treating gums and bone; good if you need bone grafts or have gum disease.\n- Oral & Maxillofacial Surgeon — good for complex surgical cases, impacted teeth removal, major bone grafting and IV/general sedation.\n- Prosthodontist — specialist in restoring implants (crowns, bridges, full-arch prostheses); best for complex aesthetics or full-mouth reconstructions.\n- Multidisciplinary implant centers or advanced general dentists who do full implant care — convenient if you want one office to manage everything; pick one that uses in-house CBCT and has a lab/implant team.\n- University dental clinic (UMKC) — often lower cost, faculty oversight, good for complex cases, and students/faculty work together.\n\nWhat to ask when you call (concise script)\n- Do you place dental implants in-office? If so, who places the implant (periodontist/surgeon/DDS/Dr. name)? How many implants does that clinician place per year?\n- Do you have an on-site CBCT (3D) scanner and digital planning software?\n- Will the office do the entire process (surgery + final crown/bridge) or will parts be referred out?\n- Do you perform any bone grafts/sinus lifts if needed?\n- Sedation options (local only, nitrous, oral sedation, IV)?\n- Typical timeline from consultation to final crown?\n- Do you provide a written estimate breaking down surgeon, graft, implant, abutment, and crown fees?\n- Financing/insurance accepted and any in-office payment plans?\n- Any warranty/guarantee on implant/crown and who handles complications?\n\nRed flags to avoid\n- No CBCT for implant planning (in most cases now considered standard).\n- No clear breakdown of costs or inability to say who does what.\n- High-pressure “you must do it today” upsell tactics.\n- No before/after photos or patient references.\n\nTypical cost and timeline (ballpark)\n- Single implant + abutment + crown: commonly $2,500–$6,000 (varies widely).\n- Bone grafting or sinus lift adds $300–$2,000+ depending on complexity.\n- Timeline: 3–6 months typical (longer if grafts/sinus lift needed); immediate-load options exist for selected cases.\n\nIf you tell me your ZIP or neighborhood, I’ll:\n- Find 5–8 specific practices near you (mix of periodontists, oral surgeons, prosthodontists, and a university clinic).\n- Give phone numbers/addresses/websites and one-line reasons to call each (e.g., “Dr. X — board-certified periodontist, in-office CBCT, 15+ years implant experience”).\n- Highlight a good first call for uncomplicated single-tooth implant vs. complex/full-arch needs.\n\nWhich ZIP or part of KC should I search? Any insurance or budget constraints I should know about?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

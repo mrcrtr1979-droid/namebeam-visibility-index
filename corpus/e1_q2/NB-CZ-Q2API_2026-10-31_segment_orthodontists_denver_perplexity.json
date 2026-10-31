@@ -1,0 +1,98 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_orthodontists_denver_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: orthodontists, Denver",
+ "niche": "orthodontists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Denver. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Denver for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b666a0a8-4677-44d5-8354-ab98d72fa88a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00121,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00498
+   },
+   "input_tokens": 5063,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4510,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 483,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5546
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Speaks Orthodontics",
+  "Central Park Orthodontics",
+  "Advanced Orthodontic Care",
+  "Call to confirm",
+  "Offers",
+  "American Board of Orthodontics",
+  "Invisalign. Dr. Amanda Vanderstelt",
+  "Invisalign",
+  "Cherry Creek"
+ ],
+ "engine_stated_criteria": [
+  "When you call, ask"
+ ],
+ "sources_cited": [
+  "https://alignedonpearl.com/",
+  "https://smiledoctors.com/locations/denver-highway-73/",
+  "https://www.smilewithunion.com/invisalign/",
+  "https://www.barotzdental.com/invisalign.html",
+  "https://speaksorthodontics.com/location/denver/",
+  "https://speaksorthodontics.com/braces-in-denver-co/",
+  "https://centralparkorthodonticsdenver.com/",
+  "https://www.speaksorthodontics.com/lp/treatment/",
+  "https://nationalorthodonticregistry.com/colorado/denver-co/orthodontists/i-orthodontics-denver-co",
+  "https://smiledoctors.com/locations/denver-w-2nd/",
+  "https://nationalorthodonticregistry.com/colorado/denver-co/orthodontists/eberle-orthodontics-denver-co",
+  "https://www.zocdoc.com/orthodontists/denver-228319pm",
+  "https://nationalorthodonticregistry.com/colorado/denver-co/orthodontists/denver-orthodontics-dental-lounge-denver-co",
+  "https://nationalorthodonticregistry.com/colorado/denver-co/orthodontists/advanced-orthodontic-care-denver-co",
+  "https://alignedonpearl.com/invisalign-in-south-denver-aligned-orthodontics/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "25d7204b4b8c5b9c3587779f0cd60dd7c00d7267c98d318750b94faa900b61a4",
+ "answer_chars": 1739,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

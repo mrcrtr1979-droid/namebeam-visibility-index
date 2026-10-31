@@ -1,0 +1,57 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_hvac_houston_openai",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My AC needs repair in Houston. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ef8q0J8bcZW7JZiu1qIe71QlE5A6h",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1801,
+   "total_tokens": 1825,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1152,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "John Moore Services",
+  "Service Experts Heating",
+  "Air Conditioning",
+  "Rescue Rooter",
+  "One Hour Heating",
+  "ABC Home",
+  "Commercial Services",
+  "Texas HVAC",
+  "John Moore",
+  "Texas Department of Licensing and Regulation (TDLR)",
+  "NATE",
+  "One Hour"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you specific companies to call in Houston — and what to expect from each — but if you want recommendations tightly targeted to your neighborhood, tell me your ZIP code and whether this is an emergency (no cooling, strange smell, etc.). For now, here are reputable options that serve Houston and why to call them:\n\n1) John Moore Services (Houston)\n- Why: Houston-founded company with a long local history, 24/7 emergency service, routine maintenance plans, and generally strong online reviews. Known for NATE-certified technicians and whole-home services (HVAC + plumbing + electrical) if you need more than a simple repair.\n- Call if: You want a local company with fast same-day or emergency response and maintenance plan options.\n\n2) Service Experts Heating & Air Conditioning (Houston area franchise)\n- Why: Large national franchise with standardized diagnostic processes, manufacturer-authorized warranties, lots of technician training, and financing options. Good if you want a company that often honors extended warranties or equipment deals.\n- Call if: You prefer a business with national back-end support and predictable policies.\n\n3) ARS/Rescue Rooter (Houston)\n- Why: National service company with broad capabilities and 24/7 emergency dispatch. They do a lot of HVAC repair/replacement work and typically offer service agreements.\n- Call if: You need emergency response or a company that handles both HVAC and related plumbing issues in one visit.\n\n4) One Hour Heating & Air Conditioning (Houston franchise)\n- Why: Franchise model that emphasizes on-time arrival windows and often flat-rate pricing guarantees. Many franchises also offer satisfaction guarantees.\n- Call if: You want a guaranteed arrival window and clear pricing expectations.\n\n5) ABC Home & Commercial Services (Houston)\n- Why: Regional full-service company that handles residential and commercial HVAC, known for service plans and preventative maintenance. Good local reputation.\n- Call if: You want a company that offers comprehensive maintenance plans and experience on commercial systems.\n\nHow to choose which to call (quick checklist)\n- Verify the company’s Texas HVAC license via the Texas Department of Licensing and Regulation (TDLR).\n- Ask if technicians are NATE-certified or factory-trained for your brand.\n- Ask about diagnostic fee amount, whether it’s waived if they perform the repair, and estimated arrival time.\n- Ask about parts and labor warranty and any service-plan options.\n- For older systems, ask whether they’ll check refrigerant type (R22 vs R410A) and give options for repair vs replacement.\n- Get at least 2 written estimates for any repair over $400–500 (or if an expensive part is needed).\n\nSafety note\n- If you smell gas, suspect a refrigerant leak, see smoke, or detect electrical burning: turn off the system, leave the home if needed, and call 911 or the gas company first.\n\nIf you want, give me your ZIP code and a short description of the problem (no cooling, uneven cooling, loud noises, leak, age of system, brand) and I’ll find 3–4 highly rated, licensed HVAC techs in your immediate area and prioritize them (fastest, best value, best for replacements).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

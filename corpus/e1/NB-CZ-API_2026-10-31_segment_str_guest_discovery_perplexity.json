@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-10-31_segment_str_guest_discovery_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f59970eb-b815-4239-822a-ac28d2316caa",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00097,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0012,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00481
+   },
+   "input_tokens": 4444,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3882,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 480,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4924
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "Vrbo",
+  "Booking.com",
+  "Booking.com. In"
+ ],
+ "engine_stated_criteria": [
+  "you"
+ ],
+ "sources_cited": [
+  "https://www.vrbo.com/tlp/trust-and-safety/partner-initiated-cancellation-policy",
+  "https://www.vrbo.com/lp/b/terms-of-service",
+  "https://www.airbnb.com/help/article/2039",
+  "https://admin.booking.com/hotelreg/terms-and-conditions.html?language=en",
+  "https://www.airbnb.com/help/article/990",
+  "https://www.vrbo.com/tlp/trust-and-safety/partner-initiated-cancellation-policy-notice",
+  "https://www.airbnb.com/help/article/4117",
+  "https://partner.booking.com/en-us/help/property-guest-experience/reviews/guest-review-process-and-conditions",
+  "https://www.booking.com/customer-service.html",
+  "https://www.vrbo.com/tlp/trust-and-safety/extenuating-circumstances-policy",
+  "https://www.vrbo.com/tlp/trust-and-safety/marketplace-standards",
+  "https://www.airbnb.com/help/article/1451",
+  "https://www.airbnb.com/help/article/166",
+  "https://www.airbnb.com/help/article/2895",
+  "https://developers.booking.com/demand/docs/orders-api/cancel-order"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "8657679282b329c38a3af20d11d7e5865ab0d1743a97c1c2e6410cb04e31c176",
+ "answer_chars": 1934,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

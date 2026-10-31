@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_short_term_rental_santa_cruz_county_openai",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a vacation rental in Santa Cruz County. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ef9DTMUf5Y2LuXdnEc0YZchXiZe0D",
+  "usage": {
+   "prompt_tokens": 27,
+   "completion_tokens": 1565,
+   "total_tokens": 1592,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Capitola",
+  "West Cliff",
+  "Pleasure Point",
+  "Bonny Doon",
+  "Capitola Village",
+  "Aptos",
+  "Seacliff",
+  "Aptos/Seacliff",
+  "Davenport",
+  "Vacasa",
+  "Total price"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can help — before I list companies, quick clarification will let me be specific: what are your dates (or season), number of guests, budget range, preferred town or vibe (Capitola village, Santa Cruz/West Cliff, Pleasure Point, Aptos/Seacliff, Davenport/Bonny Doon), and any must-haves (oceanfront, pet-friendly, hot tub, accessibility)? \n\nIf you want general recommendations now, call these types of companies and these specific names — I explain why each is worth a call:\n\n1. Vacasa (national, with Santa Cruz inventory)\n   - Why: large selection of professionally managed homes across Santa Cruz County, reliable 24/7 guest support, standard cleaning and booking processes (good for worry-free stays and last‑minute help).\n\n2. Airbnb and VRBO (owner-to-guest platforms)\n   - Why: biggest selection of private homes (including unique cottages and budget options). You can message hosts directly about details, negotiate stays, and read many guest reviews for each listing.\n\n3. TurnKey Vacation Rentals (or similar tech-enabled property managers)\n   - Why: professional management plus tech conveniences (self-check-in, digital support, consistent cleaning standards). Good balance between big-company reliability and owner-run personality.\n\n4. Evolve Vacation Rental (marketing/management platform)\n   - Why: focuses on guest experience and simplified bookings; often lists competitively priced, professionally supported homes.\n\n5. Local Santa Cruz / Capitola boutique property managers and vacation-rental specialists\n   - Why: smaller local managers know neighborhood differences, beach access, local parking/permit rules, and can arrange concierge requests (surf lessons, wineries). They often handle the County short‑term rental regulations better than national platforms. Because local manager names change frequently, I can pull current, reputable local managers for your specific area once you tell me where you want to stay.\n\n6. Visit Santa Cruz County (official tourism office)\n   - Why: can point you to licensed accommodations, seasonal events, and local resources; useful if you want to avoid unlicensed listings or want official visitor guidance.\n\nWhat to ask when you call any company or host\n- Exact location (street or distance to beach/Capitola Village/boardwalk)\n- Total price including cleaning, service, and local TOT (transient occupancy tax)\n- Pet policy and any pet fees\n- Parking (onsite, permit, number of spaces)\n- Check-in/check-out process; late arrivals\n- Security deposit/damage policy and how/when it’s refunded\n- Cancellation and refund policy\n- Accessibility (stairs, elevators, ground-floor bedrooms)\n- Confirm the listing’s permits/licenses (some parts of Santa Cruz County require short‑term rental permits)\n\nIf you give me dates, guest count, budget, and preferred area, I’ll pull 6–8 specific local managers and direct listings (with phone numbers and the best reason to call each).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

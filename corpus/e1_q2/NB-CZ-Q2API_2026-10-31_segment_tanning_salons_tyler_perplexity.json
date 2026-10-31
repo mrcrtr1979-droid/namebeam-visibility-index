@@ -1,0 +1,97 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_tanning_salons_tyler_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: tanning salons, Tyler",
+ "niche": "tanning salons",
+ "market": "Tyler TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to try a tanning salon in Tyler. Which specific salons should I call, and why?",
+ "q1_prompt_text": "What is the best tanning salon in Tyler TX?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_da60ed3b-3b09-41f0-bd72-e81c43df96cc",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00128,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.005
+   },
+   "input_tokens": 4889,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4335,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 512,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5401
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Tyler, Texas",
+  "The Tanning Zone",
+  "Palm Beach Tan",
+  "Glo Tanning",
+  "Safety note",
+  "VersaSpa",
+  "Details",
+  "S Broadway Ave. Offers",
+  "W Southwest Loop",
+  "UV tanning beds"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.fda.gov/radiation-emitting-products/radiation-emitting-products-and-procedures/tanning",
+  "https://www.cancer.org/cancer/risk-prevention/sun-and-uv/tanning-pills-and-products.html",
+  "https://www.fda.gov/radiation-emitting-products/tanning/tanning-products",
+  "https://www.fda.gov/radiation-emitting-products/home-business-and-entertainment-products/sunlamps-and-sunlamp-products-tanning-bedsbooths",
+  "https://www.aad.org/public/diseases/skin-cancer/surprising-facts-indoor-tanning",
+  "https://www.cancer.org/cancer/risk-prevention/sun-and-uv/uv-radiation.html",
+  "https://www.drugs.com/fda-consumer/indoor-tanning-the-risks-of-ultraviolet-rays-104.html",
+  "https://www.glotanning.com/location/tyler-tx/",
+  "https://local.yahoo.com/info-18805792-the-tanning-zone-tyler/",
+  "https://palmbeachtan.com/locations/tx/tyler-south-broadway-avenue",
+  "https://downloads.regulations.gov/FDA-2015-N-1765-0063/content.pdf",
+  "https://birdeye.com/glo-tanning-174837478091399",
+  "https://maps.apple.com/place?place-id=I839D2985C6405C92",
+  "https://www.groupon.com/biz/tyler-tx/the-tanning-zone",
+  "https://www.fda.gov/radiation-emitting-products/tanning/risks-tanning"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "7403d6da889399da4bc1bee8a3262d54b30eacc1811a8aa726c2d5dbef5bc6e1",
+ "answer_chars": 1716,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

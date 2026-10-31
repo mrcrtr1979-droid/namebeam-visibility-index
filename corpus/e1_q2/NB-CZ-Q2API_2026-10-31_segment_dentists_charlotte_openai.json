@@ -1,0 +1,46 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_dentists_charlotte_openai",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: dentists, Charlotte",
+ "niche": "dentists",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Charlotte. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Charlotte for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ef96tvg96VJmBZbK5hdoVZDkAvwK9",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1364,
+   "total_tokens": 1389,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Maxillofacial Surgeon"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — first a couple quick questions so I give you the best, targeted options:\n\n- Where in Charlotte or what ZIP code are you located (or how far are you willing to travel)?  \n- Is this for a single tooth, multiple teeth, or a full-arch/All‑on‑4 type restoration?  \n- Do you have dental insurance, and will you want in-network providers?  \n- Any medical issues (e.g., diabetes, blood thinners) or strong preferences (sedation, same‑day teeth)?\n\nIf you want immediate next steps without giving details: here’s what to call and why, plus a script and what to look for.\n\nWhich specific practices to call (types, not individual names)\n- Oral & Maxillofacial Surgeon (OMS)\n  - Why: OMSs have hospital training, handle complex extractions, bone grafting and implant placement, IV sedation/general anesthesia for anxious patients or complicated cases.\n- Periodontist\n  - Why: Specialists in gums and bone, often place implants and perform bone grafts and sinus lifts. Good for compromised bone/gum health.\n- Prosthodontist (or restorative dentist who does implants)\n  - Why: Focus on the crown, bridge, or denture that attaches to the implant — essential for the final esthetic and functional result. Look for practices that coordinate surgeon + restorative dentist.\n- Multi‑specialty implant center\n  - Why: These clinics often have OMS/periodontist and prosthodontist under one roof, CBCT scanning, guided surgery, and digital workflows (can reduce surprises and appointments).\n\nWhat to ask when you call (short phone script)\n- “I’m considering a dental implant for [single tooth/multiple teeth/full arch]. Do you place implants here, and who will do the implant surgery and who will do the crown/restoration?”  \n- “Do you have on‑site CBCT 3D imaging and digital treatment planning?”  \n- “How many implants does the doctor place per year, and can I see before/after photos or patient testimonials?”  \n- “Do you handle bone grafts/sinus lifts if needed?”  \n- “What sedation options do you offer?”  \n- “Do you accept my insurance (name insurer) and do you offer financing?”  \n- “What is the total estimated timeline and cost range for someone in my situation?”  \n\nRed flags to avoid\n- Provider cannot explain who will restore the implant (crowns/dentures).  \n- No 3D imaging available for implant planning.  \n- Vague answers on experience/number of implants placed.  \n- No discussion of alternatives, risks, or follow‑up care.\n\nHow I can help next\n- If you give your ZIP code or neighborhood I will find 4–6 specific, well‑rated practices in the Charlotte area (names, phone, website, brief reason to call each), and I’ll tailor them to single vs full‑arch needs and insurance/preferences.\n\nWhich would you like me to do — search for actual practices near you, or do you want recommendations based on a specific type (e.g., same‑day implants, sedation, best for complex bone grafts)?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

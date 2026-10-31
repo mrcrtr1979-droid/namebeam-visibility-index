@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-10-31_segment_mortgage_lenders_st_charles_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: mortgage lenders, St. Charles",
+ "niche": "mortgage lenders",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Charles MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e1ef3c35-ef14-40e5-b468-b3093a6fe1ca",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00087,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00429
+   },
+   "input_tokens": 4047,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3496,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 313,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4360
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Loan Estimates",
+  "MHDC and HomeStart. Its",
+  "Guild Mortgage. Compare",
+  "Betsy Maassen and Matt Maassen",
+  "St. Charles. Verify",
+  "Loan Estimate",
+  "Guild Mortgage"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://locations.umb.com/mo/saintcharles/umb-mortgage-loan-services-540m.html",
+  "https://fsbfinancial.com/about-us/locations/2850-west-clay-street/",
+  "https://www.royalbanksofmo.com/personal-lending/mortgages/",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://societymortgage.com/branches/st-charles-mo/",
+  "https://branches.guildmortgage.com/mo/weldonspring/st-charles-158.html",
+  "https://fsbfinancial.com/mortgage/mortgage-lenders/",
+  "https://www.experience.com/reviews/company/first-state-bank-of-st-charles",
+  "https://fsbfinancial.com/mortgage/mortgage-lenders/matt-maassen/",
+  "https://fsbfinancial.com/",
+  "https://www.experience.com/reviews/don-macpherson",
+  "https://mortgage.usbank.com/mo/saint-charles",
+  "https://fsbfinancial.com/mortgage/mortgage-lenders/brad-fink/",
+  "https://homelendingadvisor.chase.com/mo/saint-charles",
+  "https://www.experience.com/reviews/maggie-rivera"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "3ae4e6fec1caa6ab0d50dc3de2dc85ecb936c6240cbc04fafc89413bfec980fe",
+ "answer_chars": 1054,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

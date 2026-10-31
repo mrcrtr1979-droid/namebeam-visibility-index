@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-10-31_segment_orthodontists_kansas_city_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: orthodontists, Kansas City",
+ "niche": "orthodontists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Kansas City Missouri for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1d52b0a6-64ce-437c-88d0-6bd2fd9306f1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0011,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00476
+   },
+   "input_tokens": 4629,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4080,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 440,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5069
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Henry Hoffman",
+  "Dr. Abraham B. Lifshitz",
+  "Dr. Neil C. Kanning",
+  "Invisalign",
+  "Dr. Dustin Burleson",
+  "Smile Doctors",
+  "Dr. Burleson",
+  "American Board of Orthodontics",
+  "American Association of Orthodontists",
+  "AAO-listed"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-abraham-b-lifshitz/",
+  "https://aaoinfo.org/locator/dr-neil-c-kanning/",
+  "https://aaoinfo.org/locator/dr-henry-hoffman/",
+  "https://aaoinfo.org/locator/dr-kurt-e-kavanaugh/",
+  "https://aaoinfo.org/locator/dr-meenakshi-vishwanath/",
+  "https://aaoinfo.org/locator/dr-duncan-reid-billings/",
+  "https://smiledoctors.com/locations/kansas-city-nichols/",
+  "https://aaoinfo.org/locator/",
+  "https://aaoinfo.org/locator/dr-jeffrey-e-gust-3/",
+  "https://fryorthodontics.com/services/invisalign/",
+  "https://aaoinfo.org/locator/dr-gerald-f-johnson-2/",
+  "https://aaoinfo.org/locator/dr-laura-elisabeth-moore/",
+  "https://aaoinfo.org/locator/dr-jeffrey-thomas-cavanaugh-2/",
+  "https://celebratedental.com/orthodontist/mo/kansas-city/319-ne-vivion-rd/",
+  "https://nationalorthodonticregistry.com/missouri/kansas-city-mo/orthodontists/river-market-dental-kansas-city-mo"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "7e04cb3100879d16ba5d7ec2793e69de33b4be0a9b56489c46387c3b3b07ca8b",
+ "answer_chars": 1445,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

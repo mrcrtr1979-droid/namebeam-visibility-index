@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_health_insurance_kansas_city_anthropic",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_g3gxd7oj775iauj4hwuljjtiym2kj66upajhdceyr6s47s6jjbya",
+  "usage": {
+   "input_tokens": 30,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 256,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Better starting points",
+  "Healthcare.gov",
+  "Kansas City area resources",
+  "Kansas Insurance Department",
+  "Missouri Department of Insurance"
+ ],
+ "engine_stated_criteria": [
+  "If you want broker help"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest a different approach than targeting specific brokers, since I can't reliably recommend particular ones:\n\n**Better starting points:**\n\n- **Healthcare.gov** - Compare plans directly, see costs/coverage for your situation\n- **Kansas City area resources:**\n  - Missouri Department of Insurance (if you're on the MO side)\n  - Kansas Insurance Department (if you're on the KS side)\n  - 211.org - connects you to local enrollment assistance\n  - Community health centers often have enrollment counselors\n\n**If you want broker help:**\n- Ask your employer if they use one (they often have established relationships)\n- Check if local nonprofits offer free enrollment assistance\n- Verify any broker is licensed through your state's insurance department\n\n**What matters more than which broker:**\n- Their licensing status\n- Whether they represent multiple insurers (not just one)\n- If they charge you (many don't - they're paid by insurers)\n- Your specific needs (coverage area, doctors, medications, budget)\n\nWhat's your main priority - cost, specific doctors/hospitals, or something else? That would help narrow down what actually matters for your choice.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

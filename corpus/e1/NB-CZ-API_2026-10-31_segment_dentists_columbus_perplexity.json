@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-10-31_segment_dentists_columbus_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: dentists, Columbus",
+ "niche": "dentists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Columbus Ohio for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5526dda2-facf-496c-9609-14730222f605",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00447
+   },
+   "input_tokens": 4622,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4075,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 325,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4947
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Stoner Periodontic & Implant Specialists",
+  "Implant & Oral Surgery of Columbus",
+  "Stoner Periodontic",
+  "Implant Specialists",
+  "American Board of Periodontology",
+  "Upper Arlington",
+  "Oral Surgery of Columbus",
+  "Dr. Patel"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://ioscolumbus.com/reviews/",
+  "https://ioscolumbus.com/",
+  "https://www.stonerperiospecialists.com/",
+  "https://www.stonerperiospecialists.com/dental-implants/",
+  "https://www.stonerperiospecialists.com/dr-jason-c-stoner-dds-ms/",
+  "https://www.yelp.com/biz/williams-oral-surgery-jonathan-t-williams-dmd-md-columbus-7",
+  "https://dentillo.com/provider/oral-facial-surgery-for-adults-children-llc/columbus",
+  "https://www.dentistsranked.com/dental-services/dental-implants-columbus-oh",
+  "https://dentillo.com/city/columbus",
+  "https://www.stonerperiospecialists.com/dr-muhammad-takriti/",
+  "https://dentillo.com/provider/mark-a-straka-dds-inc/columbus",
+  "https://www.stonerperiospecialists.com/new-albany-ohio/",
+  "https://www.linkedin.com/in/jennifer-elzinga-swedlow-dmd-ms",
+  "https://columbusimplantclinic.com/",
+  "https://www.yelp.com/biz/douglas-anderson-dds-columbus"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "8bccc05169ab0bd9a60c2e9d8340b385b8dd611eaf8ea3a6d2066ba34d433dfb",
+ "answer_chars": 1133,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

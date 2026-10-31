@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_orthodontists_chicago_openai",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: orthodontists, Chicago",
+ "niche": "orthodontists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Chicago. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Chicago for braces or Invisalign?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ef9A8r8NUYEDxRSMnRZYK3Vf8slPR",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1025,
+   "total_tokens": 1050,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 576,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Invisalign",
+  "AcceleDent"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need one quick detail first so I give names that are close and a good fit: what Chicago neighborhood or ZIP code are you in (or where do you want to go), and do you have a preference or requirement for Invisalign vs braces, insurance, or a budget?\n\nWhile you reply, here’s how I’ll pick the best specific orthodontists for you and what I’ll look for (so you know why I’ll recommend them):\n\nWhat I’ll use to choose specific doctors\n- Proximity to your home/work (so visits are convenient).\n- Board certification and AAO membership (shows specialized orthodontic training).\n- Invisalign provider level or experience with clear aligners (Platinum/Diamond levels indicate many cases).\n- Years of experience and reputation for the treatment you want (complex tooth movements vs straightforward clear-aligner cases).\n- Patient reviews and before/after case photos.\n- Technology (digital scans, 3D imaging, accelerated orthodontics if needed).\n- Office logistics: weekend/evening hours, financing and insurance handling, and typical consultation cost.\n- Communication style and patient experience (reviews mentioning clear explanations, friendliness, child vs adult friendliness).\n\nQuestions to confirm or ask at each office\n- Are you an orthodontist or a general dentist? (You want an orthodontist for complex cases.)\n- How many Invisalign/clear-aligner cases do you treat per year?\n- Do you have experience treating cases like mine (bite issues, crowding, prior braces)?\n- What’s the estimated treatment time and total cost (including retainers)?\n- What tech do you use (iTero/3D scans, CBCT, AcceleDent, etc.)?\n- Are consultations free? Do you offer payment plans/insurance billing?\n- What happens if attachments break or I need refinements?\n\nIf you give your ZIP or neighborhood and any preferences (Invisalign vs braces, insurance, adult/teen/child), I’ll produce a short, prioritized list of 4–6 specific Chicago orthodontists to call — with one-line reasons for each (experience level, Invisalign status, location, patient ratings, what type of cases they’re best for).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

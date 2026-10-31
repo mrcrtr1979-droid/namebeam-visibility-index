@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-10-31_segment_mortgage_lenders_st_louis_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: mortgage lenders, St. Louis",
+ "niche": "mortgage lenders",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Louis MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_25e91bb8-edc2-4477-a2d6-33266bc1d980",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0044
+   },
+   "input_tokens": 4454,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3903,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 311,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4765
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Loan Estimates from at least three lenders",
+  "Midwest BankCentre",
+  "First Community Credit Union",
+  "Delmar Mortgage",
+  "Stifel Bank",
+  "Stifel Bank & Trust"
+ ],
+ "engine_stated_criteria": [
+  "A reasonable local lender to include in your comparison is Midwest BankCentre"
+ ],
+ "sources_cited": [
+  "https://www.midwestbankcentre.com/mortgage/",
+  "https://files.consumerfinance.gov/f/documents/cfpb_your-home-loan-toolkit_print_2026-08.pdf",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://www.consumerfinance.gov/ask-cfpb/how-do-i-find-the-best-loan-available-when-im-shopping-for-a-home-mortgage-loan-en-137/",
+  "https://www.consumerfinance.gov/owning-a-home/explore-rates/",
+  "https://www.experience.com/reviews/office/dmc-st-louis",
+  "https://www.newamericanfunding.com/branches/st-louis-olive",
+  "https://www.firstcommunity.com/loans/personal-loans/home-loans.html",
+  "https://www.lower.com/mortgages/mortgage-rates/missouri/st-louis",
+  "https://www.consumerfinance.gov/consumer-tools/mortgages/shopping-for-a-mortgage/",
+  "https://www.monitorbankrates.com/mortgage-lenders/missouri/st-louis",
+  "https://www.experience.com/reviews/company/midwest-bankcentre",
+  "https://livingstlouismo.com/best-mortgage-lenders-st-louis-mo/",
+  "https://saferate.com/st-louis-mo/best-mortgage-lenders/banks",
+  "https://consumer.ftc.gov/articles/shopping-mortgage-faqs"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "7ca450534f03e1d3afec10cd18c3ec66ec38e201202a41465a5555b0e0487420",
+ "answer_chars": 1096,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

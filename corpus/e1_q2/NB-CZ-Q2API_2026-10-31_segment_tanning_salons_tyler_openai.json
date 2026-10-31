@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_tanning_salons_tyler_openai",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: tanning salons, Tyler",
+ "niche": "tanning salons",
+ "market": "Tyler TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to try a tanning salon in Tyler. Which specific salons should I call, and why?",
+ "q1_prompt_text": "What is the best tanning salon in Tyler TX?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ef8vaUw4h1K9r1YaLiwgaEjWvt0ZM",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 951,
+   "total_tokens": 977,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Tyler Pounds Regional Airport",
+  "UV tanning beds"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Quick question before I pull specific salon names: do you mean Tyler, Texas (the city near Tyler Pounds Regional Airport), or a different Tyler? Also, do you want UV tanning (bed) or spray tan / sunless options?\n\nIf you confirm, I’ll give a short list of recommended salons in that city with phone numbers and exactly why each is worth calling. In the meantime, here are useful things to decide and ask when you call any salon:\n\nWhat to decide up front\n- UV (tanning bed) vs spray tan (sunless). UV increases skin‑cancer/aging risk; spray is safer for a tan look.  \n- Budget: single session, package, or monthly membership?  \n- Speed: quick “high‑pressure” beds vs low‑UV gradual beds vs spray tan.  \n- Location/hours and walk‑in availability.\n\nQuestions to ask when you call\n- Do you offer UV tanning beds, spray tans, or both? Which brands/models? (e.g., high‑pressure/lay‑down, stand‑up, red‑light therapy)  \n- What first‑time specials and package prices do you have? Any membership requirements?  \n- Can you recommend session lengths for my skin type? Do you require a skin‑type assessment?  \n- What sanitation and maintenance procedures do you follow (cleaning between clients, replacement bulbs)?  \n- For spray: which spray solution/brand do you use? Do you do a patch test, and how long does the tan last? Do you offer airbrush or booth spray?  \n- Do you provide protective eyewear, nose plugs, or disposable underwear for spray tanning?  \n- Do you have certified/experienced technicians? Are appointments required?  \n- Cancellation policy, parking, and typical wait times.\n\nHealth note\n- UV tanning increases risk of melanoma and premature aging. If your priority is appearance rather than tanning from UV exposure, consider a professional spray tan or a reputable self‑tanner.\n\nIf you confirm which Tyler and your tanning preference, I’ll fetch a targeted list of specific salons to call and the top reasons to contact each.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

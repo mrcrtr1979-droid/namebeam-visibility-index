@@ -1,0 +1,99 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_dentists_denver_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: dentists, Denver",
+ "niche": "dentists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Denver. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Denver for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_251d265a-096c-42af-83b9-12bef3caf1e0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0016,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00535
+   },
+   "input_tokens": 5006,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4453,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 640,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5646
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Altura Periodontics",
+  "Denver Oral & Maxillofacial Surgery",
+  "BridgeCreek Prosthetic Dentistry",
+  "Advanced Dental Implant Center",
+  "Peak Oral",
+  "Maxillofacial Surgery and Dental Implant Center",
+  "Denver Oral",
+  "Maxillofacial Surgery",
+  "Implant Centers of Colorado",
+  "Cherry Creek"
+ ],
+ "engine_stated_criteria": [
+  "When you call, ask"
+ ],
+ "sources_cited": [
+  "https://www.yourdentalimplants.com/",
+  "https://milehighdentalcenters.com/about-us/meet-our-team/",
+  "https://www.castleconnolly.com/top-dentists/brian-c-butler-prosthodontics-cc394871",
+  "https://diccolorado.com/cherrycreek-dental-office/",
+  "https://www.castleconnolly.com/top-dentists/aaron-bellis-prosthodontics-cc396057",
+  "https://www.castleconnolly.com/top-dentists/louisa-i-gallegos-prosthodontics-cc395809",
+  "https://diccolorado.com/new-patient-special-cherry-creek/",
+  "https://www.advancedimplants.com/dental-implants-in-denver-colorado/",
+  "https://directory.cherrycreekchamber.org/list/member/cherry-creek-restorative-dentistry-3480",
+  "https://peakoms.com/about/",
+  "https://www.superpages.com/denver-co/denture-clinic",
+  "https://denveroms.com/oral-surgery/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-brian-butler-1295758381",
+  "https://denveroms.com/oral-surgery/dental-implants/",
+  "https://www.nuviasmiles.com/doctors/dr-mia-kutner"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "26c5004e56e8c686793c963c022191bd03147b0accd1a21be299fec2c0b50b88",
+ "answer_chars": 2593,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

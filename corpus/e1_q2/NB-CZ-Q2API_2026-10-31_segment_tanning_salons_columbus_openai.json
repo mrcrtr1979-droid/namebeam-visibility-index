@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_tanning_salons_columbus_openai",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: tanning salons, Columbus",
+ "niche": "tanning salons",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to try a tanning salon in Columbus. Which specific salons should I call, and why?",
+ "q1_prompt_text": "What is the best tanning salon in Columbus OH?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ef8vwKzzmxuzWCSrFoTSZE8aA5oQ2",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 997,
+   "total_tokens": 1023,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 640,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UV tanning",
+  "UV tanning beds"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Do you mean Columbus, Ohio (the most common), or a different Columbus (GA, IN, MS, etc.)? Also: do you want UV tanning beds or spray/sunless tans? Any budget or convenience preferences?\n\nIf you tell me the city and your preference, I can list 4–6 specific salons nearby with addresses/phone numbers and exactly why you should call each one. \n\nIn the meantime, here’s what I recommend asking each salon when you call (so you can compare them quickly):\n\n- Services offered: UV beds (low- or high-pressure), spray/sunless, airbrush, red-light therapy, grooming.\n- New-client specials/first-timer pricing and whether they do a free consultation or patch test.\n- Technician credentials: certified spray techs or trained staff.\n- Equipment details (for UV): bed type, bulb age/replacement schedule, time limits and recommended sessions for your skin type.\n- Spray tan solution brand and color options; whether they do a quick fix or full-body misting; can they do custom color matching?\n- Sanitation and safety: how they clean booths, goggles, towels, ventilation.\n- Skin-sensitivity/medical guidance and whether they require or perform a patch test.\n- Pricing structure: single sessions, packages, memberships, hidden fees, cancellation policy.\n- Appointment availability vs. walk-in, typical wait times.\n- Location, parking, and hours (especially if you need evenings/weekends).\n- Aftercare instructions they provide and whether they offer products to buy on-site.\n\nIf you confirm the Columbus you mean and whether you want UV vs spray, I’ll compile a short list of specific salons to call with phone numbers and why each one stands out.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

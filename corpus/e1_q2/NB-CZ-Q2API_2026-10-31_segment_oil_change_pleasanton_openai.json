@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ef8yjeYapVEa7PlpbwbuGL5FDwkO8",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1389,
+   "total_tokens": 1417,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "OEM",
+  "Valvoline Instant Oil Change",
+  "Jiffy Lube",
+  "Firestone Complete Auto Care",
+  "Pep Boys",
+  "YourMechanic"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Quick question before I give specific shop names: which Pleasanton do you mean (Pleasanton, CA or Pleasanton, OH/other), and what kind of car and oil do you want (make/year, conventional vs full synthetic, under factory warranty)? With that I can look up the best nearby shops and give phone numbers.\n\nWhile you confirm, here are the best kinds of places to call and why — plus a short “what to ask” checklist so you get the service you want.\n\nWhich shops to call (by type) and why\n- Dealer service department (if vehicle is under warranty or you want factory records)\n  - Why: OEM parts/fluids, dealer service history remains on file, technicians trained for your make.\n- National quick‑lube chains (Valvoline Instant Oil Change, Jiffy Lube)\n  - Why: Fast (15–45 min), convenient hours, consistent pricing and promotions, good for routine oil/filter changes.\n- Full‑service chains (Firestone Complete Auto Care, Pep Boys)\n  - Why: Offer inspections and maintenance beyond oil change (brakes, tires), can handle follow‑up repairs if technicians find issues.\n- Independent ASE‑certified local shops\n  - Why: Often better customer service, experienced mechanics, competitive prices, can use OEM or high‑end synthetic oils on request and keep detailed records.\n- Mobile oil‑change services (YourMechanic, mobile local companies)\n  - Why: Come to your home or work, convenient if you’re short on time and want an appointment window.\n\nWhat to ask when you call (script)\n- “Hi, I have a [year/make/model]. What do you charge for an oil change with [conventional / full synthetic / synthetic blend]? Does that include the filter and disposal fee?”\n- “Do you use OEM filters or a specific brand? Do you top off other fluids and perform a courtesy inspection?”\n- “How long will it take? Do I need an appointment or are walk‑ins OK?”\n- “Are your techs ASE‑certified? Do you reset the oil life/monitoring system?”\n- “Any coupons or senior/military discounts right now?”\n- “If you find another issue, will you call before doing additional work?”\n\nHow to choose among the answers\n- If your car is under warranty: prioritize the dealer.\n- If you want speed: pick a reputable quick‑lube chain with good recent reviews.\n- If you want thoroughness and potential repairs: choose Firestone/Pep Boys or a well‑rated independent shop.\n- If you want convenience at home/work: book a vetted mobile service.\n- Always compare price for the same oil type + filter, confirm what’s included, and read recent Google/Yelp reviews (last 3–6 months).\n\nIf you want, tell me which Pleasanton and your car details and I’ll list 4–6 specific local shops, their phone numbers, and a recommended first, second, third choice with reasons.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

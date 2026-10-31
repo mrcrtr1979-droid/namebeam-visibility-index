@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_dentists_pleasanton_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_17d89572-0b8b-42ef-b857-536209c0bcab",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 4682,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4126,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 332,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5014
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton Ridge Dental Group",
+  "My Favorite Dentist",
+  "Pleasanton Smile Dental",
+  "Saturdays. A",
+  "Gibraltar Drive",
+  "Santa Rita Road. It"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.mfdpleasanton.co/",
+  "https://www.mfdpleasanton.co/services",
+  "https://www.opencare.com/dentists/pleasanton-ca/my-favorite-dentist-24630732223c/",
+  "https://www.castleconnolly.com/top-dentists/todd-yerondopoulos-general-dentistry-cc138990",
+  "https://www.opencare.com/dentists/pleasanton-ca/breeze-dental-group-24630734426c/",
+  "https://www.mfdpleasanton.co/about",
+  "https://www.opencare.com/dentists/pleasanton-ca/smile-solutions-24630709168c/",
+  "https://www.mfdpleasanton.co/meet-dr-varun-yadav-dmd",
+  "https://www.smilegeneration.com/dentist/ca/pleasanton/280-pleasanton-ridge-dental-group/",
+  "https://www.yelp.com/biz/pleasanton-smile-dental-pleasanton",
+  "https://www.patientconnect365.com/Dentists/California/Pleasanton/94566/Pleasanton_Smile_Dental",
+  "https://www.deltadental.com/member/find-a-dentist/california/pleasanton-dentists/",
+  "https://www.yelp.com/biz/pleasanton-dental-care-pleasanton-5",
+  "https://www.yelp.com/biz/pleasant-dental-care-pleasanton",
+  "https://www.yelp.com/biz/patt-dental-care-pleasanton"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "22dd1c7552110d71d8c7240b180462d7cf22bd7a9fd4288993a3f844ca26c8e8",
+ "answer_chars": 1018,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

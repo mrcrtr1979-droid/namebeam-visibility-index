@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-10-31_segment_dentists_houston_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: dentists, Houston",
+ "niche": "dentists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Houston for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_18f2fbf7-3017-4cef-b8b8-08c5908a44be",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00444
+   },
+   "input_tokens": 4821,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4275,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 292,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5113
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Mark Stankewitz",
+  "UTHealth Houston School of Dentistry",
+  "GoToAPro.org",
+  "American College of Prosthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://houstonprosthodontics.com/katy-dental-implants/",
+  "https://dentistry.uth.edu/directory/profile/mohamad-koutrach",
+  "https://www.prosthodontics.org/contact/",
+  "https://www.gotoapro.org/",
+  "https://houstonprosthodontics.com/dental-implant-houston/",
+  "https://www.dentalimplanthouston.com/doctors/",
+  "https://www.dentalimplanthouston.com/about/",
+  "https://www.zocdoc.com/prosthodontists/houston-215108pm",
+  "https://www.clearchoice.com/providers/andreina-sananez/1104054816/",
+  "https://dentistry.uth.edu/directory/profile/chun-yeh-chien",
+  "https://www.prosthodontics.org/find-a-dental-technician/",
+  "https://www.zocdoc.com/dentist/mark-stankewitz-dds-591414",
+  "https://www.zocdoc.com/dentist/arun-vashisht-mds-663348",
+  "https://mapdentalcenter.com/",
+  "https://www.zocdoc.com/practice/houston-dental-implants-and-prosthodontics-131878"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2afd511b96211764ea356e1f704e9210f7bb1002508f6a582ba80770ae195f80",
+ "answer_chars": 950,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

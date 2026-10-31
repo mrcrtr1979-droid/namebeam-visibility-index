@@ -1,0 +1,107 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_orthodontists_charlotte_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: orthodontists, Charlotte",
+ "niche": "orthodontists",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Charlotte. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Charlotte for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1611647f-3180-45f9-b749-4c34d1a3f499",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00175,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00541
+   },
+   "input_tokens": 4614,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4061,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 699,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5313
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Harris Orthodontics",
+  "Mockaitis Orthodontics",
+  "Webb & Goldsmith Orthodontics",
+  "Check the office’s current number",
+  "Lineberger Orthodontics",
+  "Connolly Orthodontics, Ballantyne",
+  "Sellers Orthodontics",
+  "My shortlist",
+  "Harris",
+  "Mockaitis",
+  "Sellers",
+  "Connolly",
+  "Invisalign",
+  "American Board of Orthodontics",
+  "Offers",
+  "Goldsmith Orthodontics",
+  "Offers Invisalign",
+  "Connolly Orthodontics",
+  "Ballantyne",
+  "Copper Way"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.drcooperortho.com/",
+  "http://providerbio.invisalign.com/details/903988",
+  "https://www.charlottedentistry.com/orthodontics/invisalign/",
+  "https://providencepdo.com/orthodontics/",
+  "http://providerbio.invisalign.com/details/61606",
+  "https://www.smartorthodontics.com/services/",
+  "https://nationalorthodonticregistry.com/north-carolina/charlotte-nc/orthodontists/lineberger-orthodontics-charlotte-charlotte-nc",
+  "https://smiledoctors.com/locations/charlotte-carmel/",
+  "https://nationalorthodonticregistry.com/treatments/invisalign/north-carolina/charlotte-nc",
+  "https://www.castleconnolly.com/top-practices/bond-orthodontics",
+  "https://nationalorthodonticregistry.com/north-carolina/charlotte-nc/orthodontists/mockaitis-orthodontics-charlotte-nc",
+  "https://www.smartorthodontics.com/services/invisalign/",
+  "https://www.connollyorthodontics.com/invisalign/",
+  "https://www.charlottedentistry.com/orthodontics/",
+  "https://nationalorthodonticregistry.com/north-carolina/charlotte-nc/orthodontists/harris-orthodontics-charlotte-nc"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2ac83dbe5516f7002b4ff34cb14483ccfc60e1ca955c9379ef42a3ceb0994bda",
+ "answer_chars": 2649,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

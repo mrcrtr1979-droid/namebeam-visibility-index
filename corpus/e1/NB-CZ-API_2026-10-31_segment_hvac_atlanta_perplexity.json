@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-10-31_segment_hvac_atlanta_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b6f15e91-7a2b-44a9-bcec-1ac533d1af41",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00068,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0043
+   },
+   "input_tokens": 4457,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3909,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 272,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4729
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PV Heating, Cooling & Plumbing",
+  "Estes Services",
+  "Cunningham Associates",
+  "PV Heating",
+  "NATE- and EPA-certified",
+  "AC replacement",
+  "NATE-certified",
+  "NATE"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/ga/rockmart/profile/heating-and-air-conditioning/atlanta-affordable-comfort-heating-air-conditioning-llc-0443-91839593",
+  "https://www.bbb.org/us/ga/atlanta/profile/heating-and-air-conditioning/bell-mechanical-llc-0443-5001518",
+  "https://www.bbb.org/us/ga/atlanta/category/furnace-repair/accredited",
+  "https://www.cunninghamhvac.com/other-services/hvac-installation/",
+  "https://www.bbb.org/us/ga/doraville/category/air-conditioning-repair",
+  "https://www.bbb.org/us/ga/atlanta/category/air-conditioning-contractor/accredited",
+  "https://www.comfortatlanta.com/",
+  "https://www.comfortatlanta.com/services/air-conditioning",
+  "https://www.bbb.org/us/ga/category/air-conditioning-repair",
+  "https://www.pvhvac.com/",
+  "https://www.bbb.org/us/ga/atlanta/category/air-duct-cleaning/accredited",
+  "https://www.bbb.org/us/ga/atlanta/category/air-conditioning-repair/accredited",
+  "https://www.estesair.com/",
+  "https://www.theaircompanyga.com/",
+  "https://www.bbb.org/us/ga/atlanta/category/heating-and-air-conditioning/accredited"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "5119c1debb3fd47e2a9d58b1be00a89161d9d3c5409a5ba9fd99572a2b2cad62",
+ "answer_chars": 1007,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

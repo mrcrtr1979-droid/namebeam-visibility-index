@@ -1,0 +1,98 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_personal_injury_law_denver_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: personal injury law, Denver",
+ "niche": "personal injury attorneys",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Denver after a car accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Denver for a car accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5e964a6a-0646-45a4-a5b0-e76d075b58d5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00112,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00481
+   },
+   "input_tokens": 4766,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4208,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 448,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5214
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Flesch Law Firm — (303) 218-9394",
+  "Johnson Law — (303) 586-4829",
+  "Manning Herington — (720) 515-3191",
+  "Jordan Law — (303) 465-8733",
+  "Harding & Associates — (303) 762-9500",
+  "Flesch Law Firm",
+  "Denver and Englewood",
+  "Johnson Law",
+  "Handles",
+  "Manning Herington",
+  "Jordan Law"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.303law4040.com/",
+  "https://fleschlawfirm.com/car-accidents/",
+  "https://www.fdazar.com/",
+  "https://www.denverlaw.com/car-accident-claim/",
+  "https://chadjohnsonlaw.com/areas-of-practice/personal-injury-claims-cases/car-accident-lawyer-denver/",
+  "https://jordanlaw.com/denver-co/car-accident-lawyer/",
+  "https://www.fdazar.com/denver-personal-injury-lawyer/",
+  "https://manninglaw.us/denver-personal-injury-attorney/",
+  "https://boesenlaw.com/denver/car-accident-lawyer/",
+  "https://www.mintzlawfirm.com/auto/auto-accident/",
+  "https://manninglaw.us/",
+  "https://andersonhemmat.com/practice-areas/car-accident-lawyers",
+  "https://www.thegoldlawfirm.net/practice-areas",
+  "https://www.hlaw.com/",
+  "https://lawyers.findlaw.com/motor-vehicle-accidents-plaintiff/colorado/denver/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "d0577b8f6ab3386e57fc128d6636fb07371dd849581a7a5b6da9c8baedfd0c59",
+ "answer_chars": 1666,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

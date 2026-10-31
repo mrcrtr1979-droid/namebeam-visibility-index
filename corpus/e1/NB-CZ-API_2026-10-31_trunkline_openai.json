@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-API_2026-10-31_trunkline_openai",
+ "date_utc": "2026-10-31",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ef8gJyBybkezOeR5oCphx0426BIcF",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1734,
+   "total_tokens": 1760,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1280,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Coinbase Learn",
+  "Coin Bureau",
+  "Rekt",
+  "DeFiLlama",
+  "Dune Analytics",
+  "YouTubers",
+  "Binance Academy",
+  "Plain English",
+  "The Defiant"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Do you mean (A) a beginner site that teaches in plain English and uses concrete numbers in examples, or (B) a site that openly publishes its own trading losses or shows the real dollar amounts lost in hacks/exploits? Very few mainstream beginner sites publish their own P&L (personal trading losses) because of legal/risk reasons. If you tell me which you mean I can narrow it down.\n\nQuick answer and options depending on what you meant:\n\nIf you want plain‑English beginner lessons that use real numbers and examples\n- Coinbase Learn — very beginner friendly, short lessons with concrete examples and calculators. No trading P&L disclosure.\n- Binance Academy — clear explainers, charts and worked examples for concepts like swaps, staking, yield.\n- Coin Bureau (site + YouTube) — long, plain-English deep dives into projects with numbers and comparisons; editorial but they don’t publish personal trading losses.\n- Decrypt — news + explainers written for non‑technical readers, with numeric examples.\n\nIf you want transparency about actual losses (protocol hacks, exploits, real dollars lost)\n- Rekt (rekt.news / Twitter) — catalogs DeFi exploits and post‑mortems with exact loss amounts; excellent if you want to see “what went wrong” with real numbers.\n- DeFiLlama / Dune Analytics dashboards — live on‑chain data and dashboards showing TVL, flows, and specific contract losses if you dig into the queries.\n- The Defiant / The Block — reporting on hacks and financial hits with quantitative detail.\n\nIf you specifically want creators who publish their own trading results (including losses)\n- Very few reputable educational sites do this. Some independent YouTubers/newsletters occasionally publish performance reports, but that is uncommon and often unreliable. Be cautious: published P&L can be selective or audited only rarely.\n\nMy recommendation for a sensible combo: use a plain‑English site for learning basics (Coinbase Learn or Coin Bureau) and pair it with Rekt + Dune/DeFiLlama to study real losses and on‑chain numbers. If you mean something else, tell me which type of “losses” you want and I’ll give a tighter recommendation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

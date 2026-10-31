@@ -1,0 +1,57 @@
+{
+ "check_id": "NB-CZ-API_2026-10-31_namebeam_openai",
+ "date_utc": "2026-10-31",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ef8AVyOBDYrmtNvzyboGE5EKvcYTz",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1607,
+   "total_tokens": 1631,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bard",
+  "Bing Chat",
+  "Yext",
+  "BrightLocal",
+  "Moz Local",
+  "Whitespark",
+  "Microsoft Bing Chat",
+  "Bing Places",
+  "Apple Business Connect",
+  "Knowledge Graph",
+  "Query ChatGPT",
+  "Your Business Name",
+  "LocalBusiness",
+  "Local SEO",
+  "Apple Business"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there’s no single “official” checker for whether LLMs (ChatGPT, Bard, Bing Chat) recommend your business. For the best practical coverage, use a combination of (1) a local-SEO / knowledge-graph management service (Yext is the closest thing to a single best product), (2) local SEO tools (BrightLocal, Moz Local, Whitespark), and (3) direct testing of major LLMs (ChatGPT, Google Bard, Microsoft Bing Chat). Also claim/optimize your business listings (Google Business Profile, Bing Places, Apple Business Connect, Yelp) and add structured data on your site.\n\nRecommendations and why\n\n- Yext — Best single commercial service to both manage your structured business data across many platforms and to increase the chance AI systems will surface your info. Yext builds and syndicates a Knowledge Graph and has integrations/partnerships that target digital assistants and search features. Good for businesses wanting centralized control and monitoring of how knowledge platforms see them.\n\n- BrightLocal / Moz Local / Whitespark — Great for auditing local citation consistency, local search rankings, and presence in directory listings and maps. Cheaper and more narrowly focused than Yext, and useful to monitor local pack visibility and reviews.\n\n- Google Business Profile + Bing Places + Apple Business Connect + Yelp — You must claim and optimize these free listings. Most AI systems draw heavily on these sources (or on the knowledge graphs built from them).\n\n- Direct LLM testing (free) — Query ChatGPT, Google Bard, and Bing Chat yourself with location-specific prompts to see whether they recommend you. This is the most direct way to know if an LLM will mention your business.\n\nHow to test quickly (step-by-step)\n\n1. Prepare neutral prompts (use incognito or a new session so results aren’t personalized). Examples:\n   - “Recommend a coffee shop near [city/neighborhood].”\n   - “What are the best [service type] in [city + zip code]?”\n   - “I’m looking for a highly rated [service] near [address]. What do you recommend?”\n   - “Is [Your Business Name] in [city] a good option for [service]?”\n\n2. Test across models:\n   - ChatGPT (web app)\n   - Google Bard\n   - Microsoft Bing Chat (Copilot)\n   - If relevant, industry-specific assistants or voice assistants (Siri, Alexa)\n\n3. Try variations: ask for “top 3”, “top 5”, “best rated”, and include more context (price, hours, family-friendly) so the model has a reason to include you.\n\n4. Save screenshots and transcripts to monitor over time.\n\nActions to increase the chance your business is recommended\n\n- Claim and fully optimize Google Business Profile (GBP): correct name, address, phone, website, categories, hours, high-quality photos, Q&A, and frequent posts.\n- Ensure consistent NAP (Name, Address, Phone) across directories.\n- Add schema.org structured data (LocalBusiness) to your website.\n- Get more high-quality reviews on Google, Yelp, Facebook — models often cite “highly rated” businesses.\n- Syndicate accurate data via Yext or similar, so knowledge graphs see consistent facts.\n- Create good content and clear service pages that answer common queries (FAQ pages help retrieval-augmented models).\n- Consider Yext or platforms that advertise integrations with AI assistants if you want a managed solution.\n\nWhich to pick?\n- If you want centralized, enterprise-grade control and are willing to pay: Yext.\n- If you want affordable local SEO audits and citation monitoring: BrightLocal or Moz Local.\n- If you want free testing: query ChatGPT/Bard/Bing directly and fix any issues found by optimizing GBP and structured data.\n\nIf you want, tell me your business name, city, and service category and I can:\n- give step-by-step prompts you can paste into ChatGPT/Bard,\n- run a few example prompts and report back (if you want to try them yourself I’ll provide the exact queries).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

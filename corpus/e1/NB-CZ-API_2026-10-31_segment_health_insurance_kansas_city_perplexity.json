@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-10-31_segment_health_insurance_kansas_city_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_40f8a3e4-9e38-409c-9d84-f79167c6ed70",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00067,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00448
+   },
+   "input_tokens": 5216,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4665,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 268,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5484
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "BBS Insurance",
+  "Apollo Health Insurance",
+  "BBB A",
+  "Apollo",
+  "ACA Marketplace",
+  "BBB A+ accreditation"
+ ],
+ "engine_stated_criteria": [
+  "your state"
+ ],
+ "sources_cited": [
+  "https://bbs-insurance.com/",
+  "https://apollo-insurance.com/health-insurance-broker-kansas-city/",
+  "https://www.expertise.com/insurance/health-insurance/kansas",
+  "https://sites.google.com/view/health-insurance-kansas-city/home",
+  "https://www.linkedin.com/in/swood2",
+  "https://jeffdavidinsurance.com/",
+  "https://www.bbb.org/us/mo/kansas-city/category/health-insurance/accredited",
+  "https://www.bluekc.com/agents/contact/",
+  "https://www.healthmarkets.com/plans/aca-health/kansas/kansas-city",
+  "https://www.bluekc.com/",
+  "https://bbs-insurance.com/service-areas/kansas-city/",
+  "https://www.bluekc.com/agents/",
+  "https://apollo-insurance.com/health-insurance-kansas-city/",
+  "https://ca.trustpilot.com/review/bluekc.com",
+  "https://www.expertise.com/insurance/health-insurance/kansas/kansas-city"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "7384d517faa02a39242c6ed1e16127572a6d134eb951bacc33facf65795903cd",
+ "answer_chars": 916,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

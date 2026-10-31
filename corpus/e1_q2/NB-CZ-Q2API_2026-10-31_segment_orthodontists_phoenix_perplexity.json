@@ -1,0 +1,98 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-10-31_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-10-31",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Phoenix. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_2efc65f2-4700-42a8-96d3-8bda91837c72",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00117,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00484
+   },
+   "input_tokens": 4685,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4132,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 469,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5154
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Serrano Orthodontics",
+  "Premier Orthodontics",
+  "Smile Straight Orthodontics",
+  "Woolaver Orthodontics",
+  "Offers",
+  "Invisalign",
+  "Drs. Paul and Andrew Serrano",
+  "American Board of Orthodontics",
+  "In Ahwatukee",
+  "Central Phoenix",
+  "Diamond"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://serranoorthodontics.com/phoenix-orthodontics/",
+  "https://yourazbraces.com/our-practice/",
+  "https://serranoorthodontics.com/welcome/",
+  "https://www.thekidsdentalofficeofphoenix.com/orthodontics/",
+  "https://yourazbraces.com/before-afters/",
+  "https://arizona-orthodontics.com/",
+  "http://providerbio.invisalign.com/details/1646417",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/butterfly-orthodontics-phoenix-az",
+  "https://yourazbraces.com/treatment-options/",
+  "https://serranoorthodontics.com/why-choose-us/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/woolaver-orthodontics-phoenix-az",
+  "https://gentledental.interdent.com/locations/az/phoenix-bell-road",
+  "https://smilestraightphx.com/",
+  "https://serranoorthodontics.com/testimonials/",
+  "https://serranoorthodontics.com/invisalign/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "6492532b480eab7b971b150f3fb11f68b0e5ca4ae04c91a09cca505ab0592d4f",
+ "answer_chars": 1700,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}
