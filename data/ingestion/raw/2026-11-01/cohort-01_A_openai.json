@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t access the live web from here, so I can’t look up Namebeam’s 2026 AI Visibility Record and count Perplexity’s cited domains directly. If you want, I can do that two ways:\n\n1) If you give me a link to the specific Namebeam AI Visibility Record page (or paste the record’s text/Perplexity answers for 2026-09-01 through 2026-09-27), I’ll extract and count the unique domains and tell you where the record is published.\n\n2) Or I can fetch the page for you if you enable a web-browsing tool or paste the page URL here and permit me to retrieve it.\n\nIf you prefer to do it yourself, here are quick instructions and a small script you can run to get the count:\n\n- Manual steps:\n  - Open Namebeam’s AI Visibility Record page for the date range (likely on namebeam.com or their blog).\n  - Copy Perplexity’s answers for 2026-09-01 through 2026-09-27.\n  - Extract all URLs and collect their hostnames (domains).\n  - Count unique hostnames.\n\n- Python script (paste the Perplexity answers into a file called answers.txt):\n  ```\n  import re\n  from urllib.parse import urlparse\n\n  with open('answers.txt', 'r', encoding='utf-8') as f:\n      text = f.read()\n  urls = re.findall(r'https?://[^\\s)>\\\"]+', text)\n  domains = {urlparse(u).netloc.lower().lstrip('www.') for u in urls}\n  print(len(domains))\n  print('\\n'.join(sorted(domains)))\n  ```\n\nTell me how you’d like to proceed (share the URL, paste the content, or enable browsing) and I’ll get the exact number and confirm where it’s published.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-11-01T18:04:16Z",
+ "ok": true,
+ "probe_id": "A",
+ "prompt_sha256": "940f0824e14031113e8b576a7139c4427b38e8ac1ad5483a1335b3f802676221",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web domains did Perplexity cite in its answers to the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "treatment_anchored",
+ "run_id": "41334649474",
+ "search_mode": "no search tool (E1 setting)"
+}
