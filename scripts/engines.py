@@ -775,6 +775,23 @@ def extract_organic_urls(html, top_n=10):
     return out[:top_n]
 
 
+def _snack_pack_keys0(html):
+    """[PACKKEY-1031F, 2026-10-31] Sorted KEY NAMES of the first snack_pack item in the parsed SERP
+    JSON, never its values. None when there is no snack_pack list, it is empty, or its first item
+    is not an object (or the text is not parsed JSON)."""
+    import json as _json
+    try:
+        j = _json.loads(html or "")
+        if isinstance(j, dict) and isinstance(j.get("body"), str):
+            j = _json.loads(j["body"])
+    except (ValueError, TypeError):
+        return None
+    pack = j.get("snack_pack") if isinstance(j, dict) else None
+    if not isinstance(pack, list) or not pack or not isinstance(pack[0], dict):
+        return None
+    return sorted(str(k) for k in pack[0].keys())
+
+
 def serp_diagnostics(html, organic):
     """Why did extraction return what it returned? Recorded on every SERP row
     so a zero is SELF-EXPLAINING and never mistaken for a finding (doctrine 122).
@@ -785,7 +802,7 @@ def serp_diagnostics(html, organic):
         html = ""
     text = _html.unescape(html)
     low = text.lower()
-    return {
+    diag = {
         # ADDED 2026-09-19: which Bright Data payload this row was read from.
         # 2026-09-19: the first version looked for the literal "organic" key and missed the
         # Bright Data wrapper, where the body is an escaped string; 23 parsed rows were
@@ -824,6 +841,11 @@ def serp_diagnostics(html, organic):
                          "never in the HTML and the fix is at the request layer "
                          "(parsed SERP output), not in this parser")),
     }
+    # [PACKKEY-1031F] added only when the pack has a first item: which key names it carries.
+    _k0 = _snack_pack_keys0(html)
+    if _k0 is not None:
+        diag["snack_pack_keys0"] = _k0
+    return diag
 
 
 def detect_ai_overview(html):
