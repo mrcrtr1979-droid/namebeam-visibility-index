@@ -1,0 +1,98 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_personal_injury_law_miami_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: personal injury law, Miami",
+ "niche": "personal injury attorneys",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Miami after a car accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Miami for a car accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_fc016f61-b303-43bf-9363-70588990cb91",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00073,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00114,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 3486,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2928,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 457,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3943
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Aronfeld Trial Lawyers",
+  "Wolfson & Leon",
+  "Gerson & Schwartz Accident & Injury Lawyers",
+  "The Perazzo Law Firm",
+  "Altman Law Firm",
+  "Payer Law Personal Injury Lawyers",
+  "Florida Bar Board Certified Civil Trial",
+  "Lawyer. It",
+  "Schwartz Accident",
+  "Injury Lawyers",
+  "Florida Bar"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.perazzolaw.com/personal-injury/miami-car-accident-lawyer/",
+  "https://www.bernsteinandmaryanoff.com//",
+  "https://www.aronfeld.com/practice-areas/personal-injuries/auto-accidents/",
+  "https://www.jasonturchin.com/practice-areas/motor-vehicle-crashes/car-accidents/miami-car-accident-lawyer/",
+  "https://www.payerlawgroup.com/client-reviews/car-accident-survivor-reviews/",
+  "https://www.wolfsonlawfirm.com/",
+  "https://www.perazzolaw.com/personal-injury/",
+  "https://www.injuryattorneyfla.com/",
+  "https://www.wolfsonlawfirm.com/communities-served/south-miami-personal-injury-law-firm/miami-car-crash-attorney-for-south-miami/",
+  "https://www.newmaninjurylaw.com/miami-car-accident-lawyers/",
+  "https://www.dmtlaw.com/criminal-defense/other-practice-areas/personal-injury/",
+  "https://www.fortheinjured.com/miami/vehicle-accidents/car-accident-lawyer/",
+  "https://altmanlawfirm.com/practice/car-accidents",
+  "https://www.injuryattorneyfla.com/car-accidents.html",
+  "https://zayedlawoffices.com/miami-car-accident-lawyer/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "d3031648f33124e9eb9373d394711d8f61fdbe8db4f878ce3bf02218dad55309",
+ "answer_chars": 1662,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_roofing_dallas_openai",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need my roof replaced in Dallas. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfVXvAQWXbsmvR9FSUrzVHK9VNjkn",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1325,
+   "total_tokens": 1350,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 640,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Owens Corning",
+  "CertainTeed",
+  "Master Elite",
+  "City of Dallas",
+  "BBB A",
+  "Dallas ZIP",
+  "Owens Corning Platinum",
+  "Owens Corning Platinum Preferred",
+  "CertainTeed SELECT",
+  "Platinum Preferred",
+  "CertainTeed Select ShingleMaster"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you specific names — but to narrow the best companies for your job I need a couple details (neighborhood or ZIP in Dallas, roof type/age, whether you’re filing an insurance claim, and your timeline). If you want, give that and I’ll produce a short, tailored list of 4–6 contractors with phone numbers and why each is a good choice.\n\nIf you want an immediate next step, here’s a safe, practical plan you can use right away plus the kinds of companies you should call and why:\n\nWhich companies to call (three types — call at least one of each)\n1. Manufacturer-certified contractor\n   - Why: They meet training/insurance standards and can offer better workmanship warranties (e.g., GAF Master Elite, Owens Corning Platinum Preferred, CertainTeed SELECT ShingleMaster).\n   - How to find: Use the manufacturer locator (GAF, Owens Corning, CertainTeed) and search by your ZIP for “Master Elite” / “Platinum” contractors.\n\n2. Reputable local Dallas roofer with long history and strong reviews\n   - Why: Local companies know City of Dallas permit/processes, local weather concerns, and have community references.\n   - How to find: Search Google/BBB/Angi/Yelp for “roofing Dallas” and filter for high ratings and many recent reviews; look for businesses with 5–10+ years in business and BBB A+/accredited status.\n\n3. Storm-damage/insurance-claim specialist (if applicable)\n   - Why: If your roof was damaged in a storm and you’re filing an insurance claim, these contractors know claim documentation and public adjuster coordination.\n   - How to find: Look for companies that explicitly list “insurance claims” and show sample claims work and adjuster communication policies.\n\nHow I can produce specific names now\n- Give me your Dallas ZIP/neighborhood and whether this is storm-related or routine replacement. I’ll return a short list (3–6 specific companies) with phone numbers, why each fits your situation, and what to ask them.\n\nWhat to verify when you call (questions/documents)\n- Are you licensed and insured? (Ask for license number; verify insurance such as general liability and worker’s comp.)\n- What manufacturer certifications do you have? (GAF Master Elite, Owens Corning Platinum, CertainTeed, etc.)\n- Can you provide references from recent Dallas roof replacements?\n- Do you handle permits and inspections? Will you provide lien waivers and final paperwork?\n- What’s included in the estimate (tear-off, underlayment, ventilation, drip edge, disposal)?\n- What warranty is provided (manufacturer + workmanship) and is it transferable?\n- Timeline: start date and completion window.\n- Payment schedule: avoid large up-front cash payments; typical is deposit then payments at milestones.\n\nRed flags to avoid\n- No physical address or only a cell phone contact.\n- Door-to-door storm chasers who pressure you to sign immediately.\n- No written estimate or unwillingness to provide references.\n- Extremely low quote far below other bids (could indicate inferior materials or subcontracting).\n\nIf you want those specific company names and phone numbers, tell me your ZIP/neighborhood and whether insurance is involved and I’ll pull a tailored list of recommended Dallas roofers with reasons to call each.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_dentists_pleasanton_gemini",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "9JTnauqOKcXVz7IPgOvP4Qk",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 592,
+   "totalTokenCount": 614,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Standout features",
+  "Standout",
+  "X-rays",
+  "Dr. Grace Liu",
+  "Dr. Kevin Nguyen",
+  "Dr. Veronica Wu",
+  "Ask When You Call"
+ ],
+ "engine_stated_criteria": [
+  "\"Do you take my specific dental insurance?\"",
+  "\"What is your current wait time for a routine cleaning and exam?\"",
+  "\"Are you currently running any new patient specials?\""
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "To help you find the right dental practice for a checkup and cleaning in Pleasanton, it helps to narrow down what matters most to you—whether that’s modern technology, a gentle approach for dental anxiety, insurance acceptance, or family-friendly scheduling. \n\nHere are four well-regarded dental practices in Pleasanton known for routine cleanings and checkups, along with why you might want to call them:\n\n### 1. Pleasanton Dental\n* **Why call them:** They are widely praised for a comfortable, patient-first environment, making them a great choice if you have dental anxiety or haven't had a checkup in a while. \n* **Standout features:** They use modern diagnostic technology (like digital X-rays and intraoral cameras) which helps patients clearly see what the dentist sees during a checkup. They also handle a wide range of preventive, cosmetic, and restorative services in-house.\n\n### 2. Grace Dental\n* **Why call them:** Dr. Grace Liu and her team are frequently recommended in the Pleasanton community for their meticulous cleaning thoroughness and warm, welcoming chairside manner.\n* **Standout features:** The office is known for running efficiently (minimal wait times) and taking the time to educate patients on preventative hygiene habits without being pushy about unnecessary procedures. \n\n### 3. Alluring Smiles (Dr. Kevin Nguyen)\n* **Why call them:** If you are looking for a practice that blends routine preventative care with a high-end, aesthetic eye, this is a strong contender. \n* **Standout features:** They focus heavily on comprehensive dental health. Patients frequently highlight the thoroughness of the dental hygienists during cleanings and the modern, clean feel of the office. \n\n### 4. Pleasanton Aesthetic Dentistry (Dr. Veronica Wu)\n* **Why call them:** This practice is ideal if you value a holistic or highly personalized approach to your dental health and want a dentist who explains every step of the exam.\n* **Standout features:** Known for a very gentle touch during cleanings and periodontal (gum) evaluations. The staff is also noted for being extremely transparent about insurance coverage and out-of-pocket costs before performing any work.\n\n---\n\n### Next Steps: What to Ask When You Call\nBefore booking your appointment, call 2 or 3 of these practices and ask these quick screening questions:\n\n1. **\"Do you take my specific dental insurance?\"** (Always verify directly with the front desk, as insurance participation changes frequently).\n2. **\"What is your current wait time for a routine cleaning and exam?\"** (Some busy practices might be booked out a month or more).\n3. **\"Are you currently running any new patient specials?\"** (Many Pleasanton offices offer discounted exams, X-rays, or cleanings for new patients without insurance).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

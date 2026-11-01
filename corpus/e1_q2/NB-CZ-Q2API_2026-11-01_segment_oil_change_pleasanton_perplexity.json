@@ -1,0 +1,104 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_oil_change_pleasanton_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_cbf5295d-7766-4695-8daa-03d2e2e72085",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00111,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00488
+   },
+   "input_tokens": 5091,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4535,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 443,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5534
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton, California",
+  "SpeeDee Oil Change & Auto Service",
+  "Big Brand Tire & Service",
+  "Big O Tires",
+  "Tire Choice Auto Service Centers",
+  "Walmart Auto Care Center",
+  "SpeeDee Oil Change",
+  "Auto Service",
+  "Mission Dr. A",
+  "Big Brand Tire",
+  "Old Santa Rita Rd. A",
+  "Washington St. Its",
+  "Rosewood Dr. Offers",
+  "Rosewood Dr. Worth",
+  "SpeeDee",
+  "Walmart Auto Care",
+  "Tire Choice"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bigbrandtire.com/tire-shop/pleasanton-ca/oil-change",
+  "https://www.speedeeoil.com/locations/ca/pleasanton/44-mission-dr/",
+  "https://www.walmart.com/store/2161-pleasanton-ca/auto-care-center",
+  "https://www.speedeeoil.com/locations/ca/milpitas/635-trade-zone-blvd/",
+  "https://www.yourmechanic.com/city/pleasanton-ca",
+  "https://www.bigotires.com/location/ca/pleasanton/3688a-washington-st-94566/005024/oil-change-lube-and-filters",
+  "https://smogcheckdeals.com/speedee-oil-change-tune-up-pleasanton",
+  "https://locations.thetirechoice.com/ca/pleasanton/4216-rosewood-rd",
+  "https://www.carfax.com/Auto-Repair-Pleasanton-CA_c12173",
+  "https://www.bbb.org/us/ca/pleasanton/profile/lube-service/oil-changers-1116-13682/complaints",
+  "https://www.bbb.org/us/ca/pleasanton/profile/lube-service/oil-changers-1116-13682",
+  "https://maps.apple.com/place?place-id=I232A35B8DE3B2CE4",
+  "https://www.bigbrandtire.com/locations/3687-old-santa-rita-rd-pleasanton-ca-94588",
+  "https://www.yellowpages.com/pleasanton-ca/mip/big-o-tires-4272407",
+  "https://www.mapquest.com/us/california/oil-changers-inc-353851695"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "419aab1bc1c0d9f2432c8202273658cb2d3573bb1f9953a86ea7264c3a4e6f8f",
+ "answer_chars": 1491,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-API_2026-11-01_segment_short_term_rental_branson_anthropic",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_6xi42omzuvpetyfjfncmpryxwqf2akggu7x3qzftkymv63jswglq",
+  "usage": {
+   "input_tokens": 33,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 310,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Chateau on the Lake",
+  "Branson Landing hotels",
+  "Hilton Branson Convention Center",
+  "Airbnb considerations",
+  "Table Rock Lake",
+  "Silver Dollar City area",
+  "Downtown Branson",
+  "Branson Accommodation Guide",
+  "Recommended Specific Places",
+  "Airbnbs",
+  "Table Rock",
+  "Convention Center",
+  "Landing",
+  "Book",
+  "Branson Convention Center"
+ ],
+ "engine_stated_criteria": [
+  "Choose Airbnb if you",
+  "Choose a hotel if you"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Branson Accommodation Guide\n\n## Airbnb vs. Hotel\n\n**Choose Airbnb if you:**\n- Want a kitchen (saves money on meals)\n- Need more space for families\n- Prefer a home-like feel\n- Stay 3+ nights\n\n**Choose a hotel if you:**\n- Want daily housekeeping\n- Prefer front desk services\n- Only stay 1-2 nights\n- Want predictable amenities\n\n## Recommended Specific Places\n\n**Hotels:**\n- **Chateau on the Lake** - Upscale, lakefront, great views\n- **Branson Landing hotels** - Convenient downtown location with shops/restaurants\n- **Hilton Branson Convention Center** - Good mid-range option\n\n**Airbnb considerations:**\n- Look for properties near **Table Rock Lake** for scenic views\n- **Silver Dollar City area** - close to attractions\n- **Downtown Branson** - walkable to restaurants and shops\n- Check reviews carefully; quality varies significantly\n\n## Pro Tips\n- Book directly with hotels for better rates than third-party sites\n- Airbnbs near attractions may have higher cleaning fees\n- Weekday rates are typically cheaper\n- Consider location relative to your main activities (shows, lake, Silver Dollar City)\n\nWhat's your main priority—budget, location, or specific amenities? That would help narrow it down further.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-11-01_segment_str_host_tooling_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a044f341-846b-4efc-a39f-908f454cf80c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00077,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 4945,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4391,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 307,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5252
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "Quick guide",
+  "For ongoing nightly pricing",
+  "Comparing Airbnb with long-term renting",
+  "AirDNA",
+  "Consider Mashvisor",
+  "Mashvisor",
+  "For ongoing"
+ ],
+ "engine_stated_criteria": [
+  "setting nightly prices on a property you already host"
+ ],
+ "sources_cited": [
+  "https://www.mashvisor.com/blog/how-to-analyze-airbnb-market-before-you-buy-2026/",
+  "https://www.hostcamp.com/blog/airbnb-market-data-tools",
+  "https://www.airdna.co/blog/perfecting-your-airbnb-pricing-strategy",
+  "https://www.airdna.co/blog/pricelab-alternatives",
+  "https://www.softwareadvice.com.au/compare/67389/520325/pricelabs/vs/AirDNA",
+  "https://www.techvestor.com/blog/best-airbnb-analyzer-investors",
+  "https://www.hostfully.com/blog/airbnb-analytics-tools/",
+  "https://www.bnbcalc.com/reviews/best-short-term-rental-data-analytics-software-2026",
+  "https://www.lodgify.com/blog/best-airbnb-analytics/",
+  "https://www.bnbcalc.com/blog/airbnb-business/buying-rental-property/airbnb-data-tools-pricing-compared",
+  "https://www.nightlydata.com/articles/airdna-vs-mashvisor-str-market-research/",
+  "https://www.mashvisor.com/blog/airbnb-data-api/",
+  "https://plugnplayva.com/airdna-review/",
+  "https://www.airroi.com/airbnb-data/analytics",
+  "https://skift.com/2026/09/01/airdna-enters-revenue-management-market-with-host-dynamic-pricing-tool-exclusive/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "d9ed6dd1ca0273a466ab02a9cd38581e58cfd6c6a21245a5ffb14541fb615597",
+ "answer_chars": 1100,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

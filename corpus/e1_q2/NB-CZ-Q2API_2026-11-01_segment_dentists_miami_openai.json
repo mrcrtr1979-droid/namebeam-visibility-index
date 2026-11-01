@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_dentists_miami_openai",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: dentists, Miami",
+ "niche": "dentists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Miami. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Miami for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfVmOaIXGL75KZZjz4w4dNji3Qcwi",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1196,
+   "total_tokens": 1221,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "American Board of Periodontology",
+  "American Academy of Implant Dentistry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I’ll need one quick detail to give you specific names: what Miami neighborhood or ZIP code are you in (or where would you like the office to be near)? Also tell me any preferences: do you want an oral surgeon vs. periodontist vs. prosthodontist, need sedation, have insurance, want same‑day implants or lowest cost, etc.  \n\nWhile you reply, here’s how I’ll pick the best practices for you and what I’ll include for each recommendation:\n\nWhat I’ll look for and why\n- Specialist credentials: board‑certified oral & maxillofacial surgeons, periodontists, or prosthodontists are the most experienced with implants. That matters for complex cases.  \n- Years/volume of implant experience: practices that place many implants tend to have higher success and predictable workflows.  \n- Technologies offered: CBCT (3D imaging), guided implant surgery, digital impressions and CAD/CAM prosthetics speed up treatment and improve fit.  \n- Reputation & reviews: Google/Yelp/Healthgrades and professional referrals.  \n- Implant systems used: established systems (Straumann, Nobel, Zimmer, etc.) have strong track records and parts availability.  \n- Financing/warranty and aftercare: clear pricing, payment plans, and follow‑up care are important for cost and long‑term success.  \n\nUseful resources I’ll use to verify them\n- American Academy of Implant Dentistry (AAID) “Find a Dentist”  \n- American Board of Oral and Maxillofacial Surgery / American Board of Periodontology directories  \n- Local hospital affiliations and patient reviews\n\nWhat I can provide once you give location/preferences\n- A short list (3–6) of specific Miami practices to call, with:\n  - Why I recommend each (credentials, tech, specialties, patient feedback)\n  - What to ask when you call (pre‑visit checklist)\n  - Estimated price ranges and typical timelines (if available)\n  - Notes about insurance/financing and whether they do same‑day or full‑arch options\n\nIf you prefer, tell me your ZIP code now and I’ll start a tailored list. If you want to move forward immediately but don’t want to share location, I can instead give a general list of well‑known implant centers in the Miami area plus the phone questions to ask — tell me which you prefer.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

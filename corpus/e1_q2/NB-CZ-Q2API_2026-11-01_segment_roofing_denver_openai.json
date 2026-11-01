@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_roofing_denver_openai",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My roof has hail damage in Denver. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfVYQMQIOs5s04Q5HUys41aQtOPIR",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1507,
+   "total_tokens": 1532,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 576,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Denver ZIP",
+  "CertainTeed ShingleMaster",
+  "Owens Corning Preferred Contractor",
+  "Xactimate",
+  "CertainTeed",
+  "Owens Corning",
+  "Storm Chasers"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give better, safer recommendations if I can look up current local ratings and licenses for your exact neighborhood (or at least your Denver ZIP code). I don’t have live internet access right now, so instead I’ll do two things:\n\n- Tell you the exact types of companies you should call (and why each type is useful), plus red flags to avoid.\n- Give the specific vetting questions and next steps to use when you call or get estimates.\nIf you want, give me your ZIP code and I’ll list 4–6 specific roofers in your area to contact (I’ll note you’ll still want to verify current licensing, insurance, reviews, and storm-related credentials).\n\nWho to call and why\n- A manufacturer-certified installer (e.g., GAF Master Elite, CertainTeed ShingleMaster, Owens Corning Preferred Contractor)\n  - Why: These companies meet manufacturer standards and can provide extended product and workmanship warranties tied to manufacturer coverage.\n- An experienced local roofer who has handled Denver hail and insurance claims frequently\n  - Why: They know Colorado hail patterns, local building codes, and how to document damage for insurers. They can help expedite the claim and avoid common pitfalls.\n- A storm-damage/insurance-claim specialist (local, reputable)\n  - Why: If the hail was severe, specialists understand the claim process, Xactimate pricing, and can advocate for full repair/replacement rather than a minimal repair.\n- One or two additional independent roofers (to get competitive estimates)\n  - Why: Multiple estimates give you leverage and perspective on scope and price.\n\nRed flags and things to avoid\n- “Storm chasers”: companies that show up uninvited right after a storm, pressure you for immediate signing, or only have mobile numbers and PO boxes.\n- Demanding full payment up front (especially cash).\n- No proof of local license, insurance (general liability + workers’ comp), or contractor registration.\n- No physical address or very recent business registration.\n- Poor or no verifiable reviews or many unresolved BBB complaints.\n\nWhat to verify for each contractor (call or look up before signing)\n- Local business address and phone number.\n- Colorado contractor license or registration (confirm via Colorado’s relevant state/local registry).\n- Proof of general liability and workers’ compensation insurance (ask for certificates).\n- Manufacturer certifications (GAF, CertainTeed, Owens Corning, etc.) — ask for certification numbers.\n- Written estimate on company letterhead that lists scope (tear-off or overlay), materials (brand, type, color), ventilation, underlayment, flashing, removal/disposal fees, permit fees, timeline, and warranty details.\n- Warranty specifics: manufacturer vs. workmanship, length, and transferability.\n- References from recent local hail-repair jobs and photos of completed work (ideally in Denver area).\n- How they handle insurance claims: do they bill insurance directly, provide line-item estimates (Xactimate), or push for higher scope?\n\nSuggested questions to ask on the phone\n- How long have you been doing hail-damage roofing work in Denver?\n- Are you certified by any shingle manufacturer? Which ones?\n- Can you provide proof of insurance and a local business address?\n- Do you work with insurance claims? Will you supply an Xactimate-compatible estimate and help document the damage?\n- What is your normal timeline from signing to completion?\n- Do you provide a written warranty for your workmanship? How long?\n\nHow many estimates and pricing approach\n- Get at least three written estimates. Compare scope more than just price — two cheap bids may be missing key items like underlayment, flashing, or proper ventilation.\n- Ask for line-item estimates so you can compare materials and labor side-by-side.\n\nImmediate next steps you can take\n1. Photograph all damage (close-ups and wide shots), keep receipts for any temporary repairs.\n2. Contact your insurer to report the claim; ask what documentation they need and whether they will send an adjuster.\n3. Get at least three written estimates that include manufacturer names and warranties.\n4. Verify each contractor’s license, insurance, and manufacturer certifications before signing.\n5. Ask for a written contract with payment milestones tied to completed work and final inspection.\n\nIf you want specific names and phone numbers in Denver\n- Tell me your ZIP code (or neighborhood) and whether you prefer independent local shops or manufacturers-certified installers. I’ll produce a short prioritized list of 4–6 contractors to call and include why each is a good choice and what to check for with each one.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

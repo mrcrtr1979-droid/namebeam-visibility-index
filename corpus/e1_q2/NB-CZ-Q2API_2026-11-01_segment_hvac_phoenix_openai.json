@@ -1,0 +1,57 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_hvac_phoenix_openai",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfVXRPLDgOok9l7jsNppRl6HwKyZG",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1457,
+   "total_tokens": 1482,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Phoenix ZIP",
+  "One Hour Heating",
+  "Air Conditioning and ARS",
+  "Rescue Rooter",
+  "ZIP and I",
+  "Phoenix-area HVAC",
+  "Registrar of Contractors",
+  "Air Conditioning",
+  "In Arizona",
+  "In Phoenix",
+  "Arizona Registrar of Contractors",
+  "One Hour"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you specific, trustworthy companies to call — but first I need one quick detail so I can pick the best local options: what Phoenix ZIP code or neighborhood are you in? Also, is this an emergency (no cooling right now, small children/elderly at risk)?\n\nIf you want a fast answer without giving your ZIP, here’s a safe, practical plan plus what to call for (and why):\n\nWhich companies to call (short, immediate guidance)\n- If it’s an emergency (no cooling, high indoor temps, vulnerable people): call a company that advertises 24/7 emergency service and same‑day dispatch. National/local chains that commonly provide that service in Phoenix include One Hour Heating & Air Conditioning and ARS/Rescue Rooter — they have local branches and generally answer after‑hours calls. If you prefer a local company, tell me your ZIP and I’ll find the nearest 24/7 option with strong reviews.\n- For non-emergency or if you want multiple bids: get 2–3 local, highly rated HVAC contractors to compare quotes and warranties. I can pull 3–5 vetted local companies (with reviews, license checks and contact info) if you give your ZIP/neighborhood.\n\nWhy these types of companies\n- 24/7 national or large local companies: more likely to offer emergency same‑day service and have parts on hand.\n- Local, well‑reviewed contractors: often better long‑term service, competitive pricing, and accountability in the community.\n- Multiple bids: separates a quick fix from a recommended replacement and protects you from overpriced or unnecessary repairs.\n\nHow I’ll vet and pick specific companies for you (if you want me to look them up)\n- Confirm Arizona Registrar of Contractors license and insurance\n- Check NATE or EPA 608 certification (for refrigerant work)\n- Read recent Google/Yelp/Angi/Bing reviews and BBB rating\n- Compare whether they give written estimates, parts & labor warranties, and flat-rate diagnostic fees\n- Prefer companies with transparent pricing, on‑time arrival reputation, and emergency service if needed\n\nWhat to ask when you call (short checklist)\n1. Are you licensed in Arizona (give license number)? Are you insured?  \n2. Do you have NATE-certified technicians and EPA 608 certification?  \n3. Do you charge a diagnostic fee, and is it applied to the repair cost?  \n4. Can you give a written estimate and parts/labor warranty? How long?  \n5. If it’s a replacement, what brands and efficiency options do you install?  \n6. How soon can you come? Do you offer priority/emergency service?  \n\nIf you like, tell me:\n- your ZIP or neighborhood,\n- whether it’s urgent (no cooling now),\n- the AC brand/model or age (if known),\n\nand I’ll find 3–5 specific, highly rated Phoenix-area HVAC contractors to call — with brief notes on why each one is recommended, their specialties, and what to expect price/timewise.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

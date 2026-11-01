@@ -1,0 +1,98 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_personal_injury_law_houston_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: personal injury law, Houston",
+ "niche": "personal injury attorneys",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Houston after a car wreck. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Houston for a car wreck?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_99946d74-754e-4b62-a466-3a6ed306f81d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00086,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00133,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00483
+   },
+   "input_tokens": 3983,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3425,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 534,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4517
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Fibich, Leebron, Copeland & Briggs",
+  "Baumgartner Law Firm",
+  "Zehl & Associates",
+  "Davis Law Group",
+  "Terry Bryant Accident & Injury Law",
+  "Car-accident",
+  "Super Lawyers Houston",
+  "Joshua P. Davis",
+  "Terry Bryant Accident",
+  "Directory",
+  "Terry Bryant"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/texas/houston/",
+  "https://attorneys.superlawyers.com/personal-injury-plaintiff/texas/houston/",
+  "https://profiles.superlawyers.com/texas/houston/lawyer/r-james-amaro-jr/60860518-f1bd-4c4e-b905-a557e1b92b7a.html",
+  "https://www.zehllaw.com/practice-areas/motor-vehicle-accidents/",
+  "https://fibichlaw.com/car-accident-lawyer/",
+  "https://www.johnsongarcialaw.com/",
+  "https://www.terrybryant.com/",
+  "https://www.bestinhood.com/houston/lawyers/best-car-accident-lawyers-in-houston/",
+  "https://www.toughinjurylawyers.com/",
+  "https://www.avrek.com/locations/houston/car-accident-lawyer/",
+  "https://www.reyeslaw.com/houston/car-accidents/",
+  "https://baumgartnerlawyers.com/practice-area/houston-car-accident-lawyer/",
+  "https://attorneybrianwhite.com/faqs/how-much-do-lawyers-take-from-a-car-accident-settlement/",
+  "https://www.houstoninjurylawyer.com/car-accidents/",
+  "https://www.reichandbinstock.com/houston-personal-injury-lawyers/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "f235894778b5df05be03f427d321d7742f8acb0a083dc9c0e1d0744ecf085bd0",
+ "answer_chars": 1987,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

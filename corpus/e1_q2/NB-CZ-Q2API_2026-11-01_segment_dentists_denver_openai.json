@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_dentists_denver_openai",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: dentists, Denver",
+ "niche": "dentists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Denver. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Denver for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfVmtFYlzyHBp3TgYazNROjHupNf7",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 2069,
+   "total_tokens": 2094,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1280,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Capitol Hill",
+  "Cherry Creek",
+  "Washington Park",
+  "ABOMS",
+  "American Board of Periodontology",
+  "American Board of Prosthodontics",
+  "Nobel Biocare"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need one quick detail: what ZIP code or Denver neighborhood are you near (e.g., Capitol Hill, Cherry Creek, Washington Park, Aurora, etc.)? Also tell me if you have dental insurance and whether you prefer a specialist (oral surgeon, periodontist, prosthodontist), a one‑stop implant center, or a lower‑cost dental school clinic. With that I’ll give a short list of specific practices to call and why each is a good choice.\n\nMeanwhile, here’s a useful plan so you know what to ask and what types of providers to call now.\n\nWho to call (call 2–3 of these types)\n- Oral & maxillofacial surgeon (OMFS)\n  - Why: Specialists in complex extractions, bone grafting, sinus lifts, sedation/general anesthesia, and surgical placement of implants — best for medically complex cases or major grafting.\n- Periodontist\n  - Why: Gum and bone specialists who commonly place implants and perform bone/regenerative procedures; good when periodontal health is a key factor.\n- Prosthodontist (or restorative implant dentist)\n  - Why: Focused on designing and restoring teeth — important for the final crown/bridge/implant prosthesis and aesthetic outcomes (especially for front teeth or full‑mouth work).\n- Multidisciplinary implant center\n  - Why: Teams that include surgeon + prosthodontist + lab/CBCT on‑site — convenient and often faster coordination for complex/reconstructive work.\n- University dental clinic (University of Colorado School of Dental Medicine)\n  - Why: Faculty‑supervised residents often offer high-quality care at lower cost; good option if budget or access is a concern.\n\nWhat to ask when you call (use for any practice)\n- Credentials: Is the implant surgeon a Diplomate / board‑certified (ABOMS for oral surgeons, American Board of Periodontology, American Board of Prosthodontics) or a Fellow of implant organizations?\n- Experience: How many implants do they place per month? Do they place the specific procedure you need (single implant, multiple implants, All‑on‑4)?\n- Imaging & planning: Do they use CBCT/3D imaging and guided implant planning?\n- On‑site capabilities: Do they do bone grafts, sinus lifts, sedation, and lab work on site?\n- Implant systems: Which implant brands do they use (Nobel Biocare, Straumann, Zimmer, etc.) and why?\n- Timeline & steps: How many visits and how long from placement to final crown?\n- Costs & financing: Ask for a written estimate (separate line items: implant, abutment, crown, grafting, extractions) and whether they accept your insurance or offer payment plans/third‑party financing.\n- Warranty & follow‑up: Do they offer a warranty on the implant/restoration and what follow‑up/maintenance is included?\n- Before/after photos & references: Can they show cases like yours and provide patient reviews?\n\nTypical cost ballpark (Denver area; get clinic quotes)\n- Single implant + abutment + crown: commonly about $3,000–$6,000 (can be lower/higher)\n- Bone grafting: $300–$2,000 (depends on extent and material)\n- Sinus lift: $1,000–$3,000\n- Full-arch solutions (All‑on‑4/All‑on‑6): $15,000–$35,000 per arch (wide variability)\n(These are estimates—get a written estimate from any clinic.)\n\nIf you give me your ZIP code/neighborhood and any preferences (insurance, budget, sedation), I’ll list 4–6 specific Denver practices to call and explain why each is a good fit for your situation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

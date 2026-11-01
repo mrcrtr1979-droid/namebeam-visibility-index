@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_short_term_rental_branson_openai",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfVtgFZdbTRTdAzbtL4BFNCoIWWRb",
+  "usage": {
+   "prompt_tokens": 29,
+   "completion_tokens": 2064,
+   "total_tokens": 2093,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1344,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Vacasa",
+  "Branson and Table Rock Lake. They",
+  "Vacation Rentals",
+  "Branson Strip",
+  "TurnKey",
+  "VacayHome Connect",
+  "Big Cedar Lodge",
+  "Big Cedar",
+  "Local Branson",
+  "Table Rock",
+  "Landing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Good — I can recommend who to call, but first: do you already know dates, number of guests, must-haves (lakefront, hot tub, pet-friendly, near Strip, cabin vs condo) and budget? That will let me pick the best contacts and actual properties. If you want a quick starter list, call these companies and why each is worth contacting:\n\n1) Vacasa\n- Why: National professional manager with a large inventory around Branson and Table Rock Lake. They offer 24/7 guest support, professional cleaning, clear fees and damage protection — good if you want reliable service and full support on arrival/maintenance.\n- Best for: Lakeside cabins, family-ready homes, clean professional operations.\n\n2) Vrbo (Vacation Rentals by Owner)\n- Why: Marketplace focused on whole-home rentals; lots of privately owned cabins, lakefront houses and large homes suitable for groups. You can contact owners directly and often negotiate for longer stays or off-season deals.\n- Best for: Finding large family homes, private lake access, and owner-hosted properties.\n\n3) Airbnb\n- Why: Large variety including unique stays, condos close to the Branson Strip, and flexible short-term options. Good for smaller groups or those wanting host interaction / local tips.\n- Best for: Unique properties, condos within walking distance of shows and restaurants.\n\n4) Vacasa competitors / management networks (Evolve, TurnKey, VacayHome Connect, etc.)\n- Why: These management companies often list professionally-managed Branson properties that may not appear on every site. They combine local knowledge with professional operations, sometimes at different fee structures than Vacasa.\n- Best for: Comparing prices, service levels and availability across professionally managed homes.\n\n5) Big Cedar Lodge (and other Branson-area resorts)\n- Why: Big Cedar is a well-known resort near Branson/Table Rock Lake offering cabins, cottages and lodge rooms with on-site restaurants, activities, and recreation. Good if you want resort amenities (golf, guided activities, pools) rather than an independent rental.\n- Best for: Families who want on-site services and activities, or those wanting an upscale lakeside stay.\n\n6) Local Branson property managers / independent vacation-rental companies\n- Why: Small local managers often know the market best, have the most up-to-date availability for specific neighborhoods, and can provide local concierge services. They may also offer deals for direct bookings.\n- How to find: Search “Branson vacation rentals” or “Branson cabin rentals” and call 2–3 local managers to compare availability, rates and extra fees.\n- Best for: Personalized local service, insider knowledge (boat rentals, local rules), and direct-booking discounts.\n\nHow to prioritize calls\n- If you want a lakefront cabin or resort experience: call Big Cedar + Vacasa/local managers first.\n- If you need a large house for a family reunion: search Vrbo and then call the owner/manager to negotiate and confirm details.\n- If you want walkable/central accommodations near shows: check Airbnb and condo/property managers near “Branson Strip” or “Branson Landing.”\n\nWhat I can do next\n- If you tell me your dates, number of guests, budget, and must-haves (pets, hot tub, boat dock, proximity to shows), I’ll shortlist 3–6 specific companies/properties to call and include what to ask each (cancellation, cleaning fees, deposit, parking, check-in, and boat/dock rules).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

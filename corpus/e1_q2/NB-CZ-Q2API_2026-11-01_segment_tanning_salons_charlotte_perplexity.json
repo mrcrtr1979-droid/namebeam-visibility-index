@@ -1,0 +1,102 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_tanning_salons_charlotte_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "niche": "tanning salons",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to try a tanning salon in Charlotte. Which specific salons should I call, and why?",
+ "q1_prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5d0cd0cb-f270-4e8e-8611-4bb7aff36e29",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00114,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00493
+   },
+   "input_tokens": 5154,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4600,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 457,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5611
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "MUSE Tan Atelier — South End",
+  "Organic Bronze Bar — SouthPark",
+  "No Shade Spray Tanning — SouthPark",
+  "Gorgeous GLO Beauty Bar",
+  "UV tanning beds",
+  "Dilworth Tanning Spa",
+  "Palm Beach Tan",
+  "UV tanning increases skin-cancer and skin-aging risk",
+  "MUSE Tan Atelier",
+  "South End",
+  "Organic Bronze Bar",
+  "SouthPark",
+  "Gorgeous Glo",
+  "No Shade Spray Tanning",
+  "Muse Tan"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://palmbeachtan.com/locations/nc/charlotte-d-statesville-road",
+  "https://organicbronzebar.com/southpark/",
+  "https://www.fresha.com/lp/en/bt/tanning-studios/in/us-charlotte",
+  "https://trustanalytica.org/us/nc/charlotte/best-tanning-salons",
+  "https://palmbeachtan.com/locations/nc/charlotte-east-wt-harris-boulevard",
+  "https://www.glotanning.com/location/charlotte/",
+  "https://palmbeachtan.com/locations/NC/Charlotte-John-J-Delaney-Drive",
+  "https://tanningsalonfinder.com/north-carolina/charlotte",
+  "https://palmbeachtan.com/pricing-rewards/reserve-your-membership/139/wellness",
+  "https://www.yelp.com/biz/botanical-tans-charlotte-2",
+  "https://trustanalytica.org/us/nc/best-tanning-salons",
+  "https://palmbeachtan.com/pricing-rewards/331",
+  "https://zipappointments.com/charlotte-nc/kaylux-spray-tan-vdci3",
+  "https://www.reddit.com/r/Charlotte/comments/1wzg6eg/sprayairbrush_tan_recs/",
+  "https://southendclt.org/go/muse-tan-atelier"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "c463e60287e3a4105a18ae97a4c383aa3f713e4a2d41243110052ea6c45e7970",
+ "answer_chars": 1522,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

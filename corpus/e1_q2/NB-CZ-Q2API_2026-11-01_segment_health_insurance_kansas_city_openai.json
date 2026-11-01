@@ -1,0 +1,64 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfVbmqwtF6TYpxqquNrQtHnMVSEqo",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1663,
+   "total_tokens": 1691,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Medicaid",
+  "Medicare",
+  "Part A",
+  "Healthcare.gov. Good",
+  "Missouri Department of Commerce",
+  "Kansas Insurance Department",
+  "Independent",
+  "Certified Application Counselors",
+  "SHICK",
+  "State Health Insurance Assistance Program",
+  "In Kansas",
+  "ACA Marketplace",
+  "For Medicare",
+  "SHIP",
+  "Small Business",
+  "Contact",
+  "NAHU",
+  "Family ACA",
+  "HealthSherpa"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — but to give the best specific names to call I need two quick clarifying details:\n1) Which side of Kansas City are you on (Missouri or Kansas — or do you live in the city but want coverage in a specific county)?  \n2) What kind of coverage are you shopping for: individual/family on the ACA marketplace, Medicaid/CHIP, Medicare (Part A/B/D/Advantage), small‑group (employer), or short‑term/specialized coverage?\n\nIf you want a quick, usable starting point now, here are practical options and how to choose among them. If you reply with your state/county and type of coverage I’ll give 3–5 named local brokers/agents (with reasons and what to expect from each).\n\nRecommended brokers and services to call (good for general ACA and individual/family shopping)\n- HealthSherpa — marketplace‑focused, easy to check eligibility for premium tax credits and enroll in plans on Healthcare.gov. Good if you want a streamlined, subsidy-aware search.\n- eHealth Insurance — large national broker with lots of carrier options and licensed agents who can walk you through plan differences and subsidies.\n- GoHealth — national broker with strong enrollment support and local licensed agents; helpful if you want multiple carriers compared quickly.\n- Policygenius — more consumer-facing comparison tool; good for straightforward side‑by‑side quotes and agent support.\n\nWhy call these first:\n- They have experience with the ACA marketplace and subsidies, can run eligibility for premium tax credits, and can compare multiple carriers quickly.\n- They’re licensed to sell in most states and typically won’t charge you a fee for individual/family plans because they’re paid by the insurers.\n\nHow to find and choose a local Kansas City broker (recommended if you have provider‑network preferences or complex needs)\n- Use NAHU’s “Find an Agent” or your state insurance department’s agent search (Missouri Department of Commerce & Insurance or Kansas Insurance Department) to locate independent brokers in your county. Independent brokers can offer plans from multiple insurers (vs. captive agents who only sell one carrier).\n- Look for brokers who advertise ACA enrollment experience or certifications (Navigators, Certified Application Counselors) if you need help with subsidies or Medicaid.\n- For Medicare, search for certified Medicare counselors (SHICK or local SHIP programs) and independent Medicare agents with good reviews.\n\nWhat to ask any broker when you call (to quickly vet them)\n1. Are you an independent broker or affiliated with a specific insurer? (Independent = can show multiple carriers)  \n2. Are you licensed to sell in [Kansas/Missouri]? (Ask for license number if you want to verify)  \n3. Do you help with Marketplace (Healthcare.gov) enrollments and check eligibility for subsidies?  \n4. How are you compensated — do you charge any fees or are you paid by the insurer?  \n5. Do you have experience with my preferred doctors/hospital system [name providers you want]? Can you confirm which plans include them?  \n6. If I have a billing or claims problem later, do you assist with appeals and denials?  \n7. Can you provide references or online reviews from local clients?\n\nWho to call for specialized needs\n- Medicare: Contact your local SHIP (State Health Insurance Assistance Program) counselors first for unbiased help; then call independent Medicare agents for plan quotes and comparisons.\n- Small business / group plans: Call local independent commercial brokers that specialize in small-group benefits. Ask about broker fees, payroll integration, and employee education.\n- Medicaid/CHIP: Contact your state’s Medicaid consumer line or local community health navigators (often free).\n\nNext step\nTell me:\n- Which state/county you’re in (or ZIP) and\n- Which type of coverage (individual/family ACA, Medicare, Medicaid, small‑group, etc.)\n\nI’ll return 3–5 specific, locally licensed brokers/assisters to call in Kansas City, with one‑line reasons for each and suggested questions to ask each of them.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

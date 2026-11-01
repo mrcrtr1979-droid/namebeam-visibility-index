@@ -1,0 +1,96 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_personal_injury_law_chicago_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: personal injury law, Chicago",
+ "niche": "personal injury attorneys",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury attorney in Chicago after a car accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury attorney in Chicago for a car accident claim?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0270b06c-a0d8-4570-ac84-0a845c712937",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00122,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00492
+   },
+   "input_tokens": 4809,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4251,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 488,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5297
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Phillips Law Offices",
+  "Gill, Ports & Hoste LLC",
+  "Anesi Ozmon, Ltd",
+  "Power Rogers",
+  "Hoste LLC",
+  "Directory",
+  "Anesi Ozmon"
+ ],
+ "engine_stated_criteria": [
+  "who will personally manage your case"
+ ],
+ "sources_cited": [
+  "https://attorneys.superlawyers.com/personal-injury-plaintiff/illinois/chicago/",
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/illinois/chicago/",
+  "https://attorneys.superlawyers.com/personal-injury-defense/illinois/chicago/",
+  "https://attorneys.superlawyers.com/personal-injury-plaintiff/illinois/cook-county/",
+  "https://lawyers.findlaw.com/motor-vehicle-accidents-plaintiff/illinois/normal/",
+  "https://lawyers.findlaw.com/motor-vehicle-accidents-plaintiff/illinois/elgin/",
+  "https://www.powerrogers.com/",
+  "https://lawyers.findlaw.com/motor-vehicle-accidents-plaintiff/illinois/oak-park/",
+  "https://lawyers.findlaw.com/motor-vehicle-accidents-plaintiff/illinois/skokie/",
+  "https://attorneys.superlawyers.com/personal-injury-plaintiff/illinois/schaumburg/?page=16",
+  "https://phillipslawoffices.com/car-accidents/",
+  "https://lawyers.findlaw.com/motor-vehicle-accidents-plaintiff/illinois/kane-county/",
+  "https://www.lawyers.com/motor-vehicle-accidents/chicago/illinois/law-firms/",
+  "https://lawyers.findlaw.com/motor-vehicle-accidents-plaintiff/illinois/champaign/",
+  "https://lawyers.findlaw.com/motor-vehicle-accidents-plaintiff/illinois/lincoln/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "0b65f732dcd3c440c8a9d057dc5c69bb9b40f3e9af1677a7a54eedefe1e24021",
+ "answer_chars": 1801,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

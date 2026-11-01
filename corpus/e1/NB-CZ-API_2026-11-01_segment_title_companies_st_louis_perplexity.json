@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-11-01_segment_title_companies_st_louis_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: title companies, St. Louis",
+ "niche": "title companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Louis MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8aa21506-2658-44c1-a25b-8bea5deda944",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00077,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00456
+   },
+   "input_tokens": 5143,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4594,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 308,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5451
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Investors Title Company",
+  "Home Title",
+  "Clear Title Group",
+  "True Title",
+  "Missouri and Illinois",
+  "Investors Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://hometitlestl.com/",
+  "https://www.cleartitlenow.com/residential",
+  "https://www.investors-title.com/",
+  "https://www.redkeystlouis.com/title-and-mortgage",
+  "https://bhhsselectstl.com/other-services/select-title-group",
+  "https://titlepartnersagency.com/services/real-estate-agents/",
+  "https://www.housesoldeasy.com/investors-title",
+  "https://www.mapquest.com/us/missouri/elite-title-company-778230871",
+  "https://www.yelp.com/biz/community-title-services-st-louis",
+  "https://reviews.birdeye.com/true-title-company-llc-169735100717317",
+  "https://www.yelp.com/biz/title-partners-agency-st-louis",
+  "https://www.linkedin.com/company/st-louis-title",
+  "https://www.us-title.com/",
+  "https://www.mapquest.com/us/missouri/insight-title-llc-405995079",
+  "https://business.farmingtonregionalchamber.com/active-member-directory/Details/true-title-4335695?rendermode=print"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "698f96744f8b35021ace7bd6adda986c0439ff46dc7e59a44f62e1f0285b7b24",
+ "answer_chars": 1067,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

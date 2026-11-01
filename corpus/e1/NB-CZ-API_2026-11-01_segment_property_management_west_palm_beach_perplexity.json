@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-11-01_segment_property_management_west_palm_beach_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: property management, West Palm Beach",
+ "niche": "property management companies",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in West Palm Beach FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ca7a1b88-2678-4771-a58b-52fa4ded7b02",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00088,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0043
+   },
+   "input_tokens": 4052,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3501,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 310,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4362
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atlis Property Management",
+  "PMI West Palm",
+  "Luxury Property Care"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.atlispm.com/about",
+  "https://www.atlispm.com/west-palm-beach-property-management",
+  "https://purehomeriver.com/locations/florida/west-palm-beach/",
+  "https://allcountyprop.com/locations/florida/west-palm-beach/",
+  "https://www.atlispm.com/",
+  "https://business.palmbeaches.org/business-directory/Details/atlis-property-management-4732617",
+  "https://www.westpalmbeach-propertymanagement.com/west-palm-beach-property-management",
+  "https://business.palmbeaches.org/business-directory/Details/pmi-west-palm-4784186",
+  "https://www.atlispm.com/blog/why-hire-professional-property-managers-in-palm-beach",
+  "https://www.atlispm.com/maintenance-services",
+  "https://www.fsresidential.com/florida/florida-areas-we-serve/west-palm-beach-property-management/",
+  "https://luxurypropertycare.com/west-palm-beach-property-management-services/",
+  "https://www.biggerpockets.com/fl/west-palm-beach/property-managers",
+  "https://www.atlispm.com/multi-family-property-management",
+  "https://truepatriotpropertymanagement.com/average-rent-west-palm-beach-florida-2026/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "8946a44fc336c8a827a9a8e0fffa33fbfc6692019e9e65cd40328182707dba69",
+ "answer_chars": 1153,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

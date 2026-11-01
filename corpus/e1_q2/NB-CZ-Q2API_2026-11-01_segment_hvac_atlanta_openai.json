@@ -1,0 +1,63 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a new air conditioner installed in Atlanta. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfVWKUw69VyMKWkNPOVBRzevgfRgk",
+  "usage": {
+   "prompt_tokens": 27,
+   "completion_tokens": 1986,
+   "total_tokens": 2013,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1152,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Carrier",
+  "Trane",
+  "Lennox",
+  "Service Experts",
+  "One Hour",
+  "Rescue Rooter",
+  "Coolray",
+  "Air Conditioning",
+  "Benjamin Franklin",
+  "ARS",
+  "One Hour and ARS",
+  "Manual S",
+  "Atlanta ZIP",
+  "NATE-certified",
+  "NATE",
+  "Manual J Load Calculation",
+  "One Hour Heating",
+  "HVAC Contractor"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: Call (1) a manufacturer-authorized dealer (Carrier, Trane or Lennox dealer) for factory warranties and properly‑matched equipment, (2) at least one large local/national service franchise with a strong Atlanta presence (Coolray, Service Experts, One Hour or ARS/Rescue Rooter), and (3) a reputable independent Atlanta contractor with lots of local reviews. Below I explain specific names to try, why, and what to ask them.\n\nSpecific companies to call (good starting shortlist)\n- Coolray (southeast regional company with a big Atlanta presence) — pros: lots of local crews, fast service/emergency repair, financing options, common in Atlanta so lots of local reviews to check.\n- Service Experts Heating & Air Conditioning (Atlanta franchise) — pros: national network, factory-trained techs, service plans and financing, often used for full replacements and warranties.\n- One Hour Heating & Air Conditioning / Benjamin Franklin (franchises in Atlanta) — pros: national franchise standards, often offer punctuality guarantees and maintenance plans.\n- ARS/Rescue Rooter (local/national HVAC & plumbing service) — pros: broad service footprint, emergency availability, maintenance plans.\n- Carrier / Trane / Lennox factory-authorized dealers — pros: manufacturer-authorized installation, extended factory warranties, certified installers who do proper equipment matching and commissioning. Use the manufacturer “Find a Dealer” lookup on Carrier/Trane/Lennox websites to locate the nearest authorized dealer in Atlanta.\nWhy these choices\n- Authorized dealers (Carrier/Trane/Lennox) are important when you want the strongest warranty protection and correct equipment matching. If you pick a brand you like (e.g., Carrier or Trane), call their local authorized dealer.\n- Coolray, Service Experts, One Hour and ARS are well established in the Atlanta market and offer service/installation experience, financing, emergency service, and maintenance plans—useful if you want proven local capacity and quick response.\n- An independent local contractor can sometimes offer lower price or more personalized service; look for one with many recent 4–5 star reviews, NATE-certified techs and good BBB rating.\n\nHow to pick among bids (what to demand from each company)\n- Ask for a Manual J load calculation and Manual S equipment selection (not a “rule of thumb” tonnage).\n- Written, itemized estimate: equipment brand/model, SEER rating, matched indoor coil, refrigerant type, estimated runtime, labor, permits, disposal of old unit, and startup/commissioning.\n- Ask for projected energy savings, estimated annual operating cost and available tax credits/rebates.\n- Warranty details: parts and labor length, who services warranty (dealer vs manufacturer), and any necessary maintenance requirements to keep warranty valid.\n- Installer credentials: NATE-certified technicians, HVAC contractor license/registration for Georgia/county, proof of insurance, local references.\n- Timeline and scope: permit handling, date to start, expected install duration, and how they handle unexpected issues (ductwork upgrades, electrical).\n- Financing and maintenance: 0% or low-interest financing, maintenance plans, service response time.\n\nRed flags to avoid\n- High-pressure “today only” sales to push oversized units or very lowball quotes without a load calc.\n- No written warranty or vague warranty terms.\n- No permits offered/insisted on — permits protect you.\n- Poor or no proof of insurance, no references, or many unresolved BBB complaints.\n\nNext steps I can help with\n- If you give your Atlanta ZIP code I can suggest local authorized dealers and franchises near you (you’ll want to confirm current phone numbers and licensing).\n- I can draft an email/phone script and checklist to use when you call for quotes.\n- If you get 2–3 written estimates, you can paste them here and I’ll help compare line‑by‑line.\n\nWould you like me to draft a short phone/email checklist you can use when contacting those companies, or do you want me to narrow the list by ZIP code?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

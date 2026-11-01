@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-11-01_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7248a8f8-fa93-4889-abba-5372db904127",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00454
+   },
+   "input_tokens": 5219,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4672,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 290,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5509
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Wright Orthodontics",
+  "Buckhead Orthodontics",
+  "Artemis Smiles Orthodontics",
+  "Dr. Marc Wright",
+  "Invisalign",
+  "Drs. Michael and Cristina Everson",
+  "Sandy Springs",
+  "Dr. Behnaz"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://artemisorthoatlanta.com/our-practice/patient-reviews/",
+  "https://artemisorthoatlanta.com/",
+  "https://artemisorthoatlanta.com/our-practice/meet-our-doctor/dr-behnaz-yavari/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/georgia-orthodontic-studio-atlanta-atlanta-ga",
+  "https://www.myspecialtydentist.com/directory/profile/dr-arjun-patel-1912263591",
+  "https://artemisorthoatlanta.com/meet-our-team/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/wright-orthodontics-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/iconic-orthodontics-of-summerhill-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/alliance-orthodontics-atlanta-ga",
+  "https://www.myspecialtydentist.com/directory/profile/dr-michael-sebastian-1891819652",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/buckhead-orthodontics-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/harris-orthodontics-atlanta-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/willow-orthodontics-atlanta-madison-yards-atlanta-ga",
+  "https://artemisorthoatlanta.com/invisalign-myths-vs-facts-what-atlanta-adults-need-to-know/",
+  "https://www.yelp.com/biz/wright-orthodontics-atlanta"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "c70d2c95fe0f039a86682e041c7d2c6d4a3b028c7523dbcaafd7cdc5a656d804",
+ "answer_chars": 945,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

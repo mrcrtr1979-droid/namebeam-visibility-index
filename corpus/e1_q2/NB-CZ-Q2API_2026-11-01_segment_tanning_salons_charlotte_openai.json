@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_tanning_salons_charlotte_openai",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "niche": "tanning salons",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to try a tanning salon in Charlotte. Which specific salons should I call, and why?",
+ "q1_prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfVdIdOwLNHXbJCjOhZq7lrwRauCM",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1479,
+   "total_tokens": 1505,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "SouthPark",
+  "University City",
+  "UV tanning beds"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — quick question first: do you want UV tanning (beds/booths) or a sunless/spray tan? Also, which part of Charlotte or ZIP code are you near (Uptown, SouthPark, Ballantyne, University City, etc.)? That will let me give specific salons to call.\n\nIf you want a fast answer now, here’s a practical plan you can follow — call one of each of these types of places so you can compare price, safety, and results:\n\n1) A national chain (consistent equipment and membership options)\n- Why call: chains typically have multiple bed types, clear pricing/membership plans, and reliable first‑time specials. Ask about bed levels, packages, and any new‑client deals.\n\n2) A local boutique spray‑tan studio (customized sunless tans)\n- Why call: boutique studios often use professional technicians and higher‑end solutions for a more natural, longer‑lasting result. Ask about technician certification, brands of solution, and whether they do patch tests or sample photos.\n\n3) A gym or budget salon that offers tanning\n- Why call: often the cheapest per session and good if you plan frequent sessions. Ask about membership requirements and maintenance/cleanliness routines.\n\nQuestions to ask when you call (so you can compare):\n- Do you offer UV tanning beds, spray tans, or both?\n- What bed types/levels do you have (e.g., Level 1–4, high-pressure, red light)? Which do you recommend for a fair-skinned beginner?\n- First-time client price or package discounts? Any membership commitments?\n- Spray tan: what solution/brand do you use, can I see before/after photos, are techs certified, how long before an event should I schedule?\n- How do you clean and maintain equipment between clients?\n- Any age limits, health/safety screening, or contraindications I should know about?\n- Do you accept walk-ins or require appointments? Cancellation policy?\n\nIf you tell me your neighborhood or ZIP code and whether you want UV or spray, I’ll list 4–6 specific salons in Charlotte to call (with brief notes on why each is worth contacting).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-11-01_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7d66daf8-de82-457b-9481-5d1cb03c8536",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00089,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 4745,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4198,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 354,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5099
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Serrano Orthodontics",
+  "Butterfly Orthodontics",
+  "Arizona Orthodontic Studio",
+  "Invisalign",
+  "American Board of Orthodontics. It",
+  "Phoenix and Chandler",
+  "Practice",
+  "American Board of Orthodontics",
+  "Central Phoenix"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://teamorthodontics.com/our-practice/patient-reviews",
+  "https://health.usnews.com/dentists/john-budd-1639169",
+  "https://health.usnews.com/dentists/mark-mcalister-1801489",
+  "https://health.usnews.com/dentists/joe-pearson-1730175",
+  "https://health.usnews.com/dentists/c-murphy-1767546",
+  "https://www.yelp.com/biz/butterfly-orthodontics-phoenix",
+  "https://www.yelp.com/biz/arizona-orthodontic-studio-phoenix",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/serrano-orthodontics-phoenix-az",
+  "https://doctor.webmd.com/providers/specialty/orthodontics/arizona/phoenix",
+  "https://7northdental.com/phoenix-az/invisalign-invisalign-teen/",
+  "https://serranoorthodontics.com/welcome/",
+  "https://serranoorthodontics.com/invisalign/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/premier-orthodontics-of-central-phoenix-phoenix-az",
+  "https://www.thekidsdentalofficeofphoenix.com/invisalign/",
+  "https://nationalorthodonticregistry.com/arizona/phoenix-az/orthodontists/butterfly-orthodontics-phoenix-az"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "783b13aad48d045f9873c8d2bde7f7a809082feb0c32daad8fe7a38d132c5a2b",
+ "answer_chars": 1264,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

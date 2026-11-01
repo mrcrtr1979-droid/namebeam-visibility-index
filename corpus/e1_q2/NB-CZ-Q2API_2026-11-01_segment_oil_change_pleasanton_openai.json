@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfVfbqgb90zbxhMLTJaH91k93ywQj",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1266,
+   "total_tokens": 1294,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "OEM-quality",
+  "OEM-spec",
+  "ASE-certified",
+  "Your Mechanic",
+  "Jiffy Lube",
+  "Valvoline Instant Oil Change",
+  "Pep Boys",
+  "Firestone Complete Auto Care"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you targeted shop recommendations — but first a couple quick clarifying questions so I don’t point you to the wrong Pleasanton or the wrong type of service:\n\n1. Do you mean Pleasanton, CA (Bay Area) or a different Pleasanton?\n2. What’s the car year/make/model and do you want conventional, synthetic blend, or full synthetic oil?\n3. Any priorities: fastest/cheapest, OEM-quality/warranty-compliant, or a local shop that will inspect other items?\n\nIf you want a quick answer now, here’s practical guidance you can use immediately — types of shops to call, specific national chains commonly available in Pleasanton (CA), and why you’d choose each:\n\nRecommended places to call (common in Pleasanton, CA area)\n- Dealership for your car’s brand — why: guaranteed OEM-spec oil and parts, technicians trained on your model, best choice if vehicle is under warranty or needs manufacturer-specified fluids.\n- Valvoline Instant Oil Change — why: fast service, clear pricing on conventional and full-synthetic, usually does a quick vehicle check and often has coupons.\n- Jiffy Lube — why: widespread, quick, reliable for routine oil/filter changes; sometimes does promotions and same-day service.\n- Firestone Complete Auto Care — why: more thorough service options (tires, brakes) and multi-point inspection included; good if you want more than just an oil change.\n- Pep Boys or Meineke — why: good mid-range shops that can do additional repairs if a problem is found during inspection.\n- Local independent (ASE-certified) auto shop — why: personalized service, often lower labor rates, and they may use OEM or high-quality aftermarket parts. Look for shops with good Yelp/Google reviews and ASE certifications.\n- Mobile tech services (Your Mechanic, Wrench, or local mobile oil-change providers) — why: they come to your home or work, very convenient if you can’t wait or go to a shop.\n\nWhat to ask when you call (short checklist)\n- Do you have my car’s year/make/model on file and can you use the manufacturer-recommended oil weight and type?\n- Price for conventional vs synthetic oil (include filter and disposal fees).\n- Is the filter OEM or brand-name? Any up-sells I should expect?\n- How long will it take / do I need an appointment?\n- Do you do a multi-point inspection and top off fluids?\n- Is there a warranty on the oil change work and parts?\n- Any current coupons or online specials?\n\nIf you tell me which Pleasanton and your car details I’ll look up 3–5 highly rated nearby shops (with phone numbers and concise reasons to call each).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

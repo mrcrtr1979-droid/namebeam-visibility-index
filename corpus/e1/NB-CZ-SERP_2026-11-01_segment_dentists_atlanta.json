@@ -1,0 +1,111 @@
+{
+ "check_id": "NB-CZ-SERP_2026-11-01_segment_dentists_atlanta",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "google_serp",
+ "run_channel": "serp",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "serp_diagnostics": {
+  "payload": "parsed_json",
+  "parsed_attempt": "ok, 3 links, try 1",
+  "html_bytes": 210331,
+  "href_total": 0,
+  "redirect_hrefs": 0,
+  "nongoogle_hrefs": 0,
+  "consent_phrase_present": false,
+  "looks_like_consent_wall": false,
+  "looks_like_captcha": false,
+  "extraction_ok": true,
+  "zero_reason": null,
+  "snack_pack_keys0": [
+   "address",
+   "cid",
+   "global_rank",
+   "image",
+   "image_base64",
+   "image_url",
+   "name",
+   "rank",
+   "rating",
+   "reviews_cnt",
+   "type",
+   "work_status",
+   "work_status_details"
+  ]
+ },
+ "business_mentioned": false,
+ "organic_top_results": [
+  "https://restorein24.com/atlantas-top-clinics-for-dental-implants/",
+  "https://www.youtube.com/watch?v=0lwI21wotwA",
+  "https://www.realself.com/find/Georgia/Atlanta/All-on-4-Dental-Implants"
+ ],
+ "ai_overview_detected": false,
+ "ai_overview_present": true,
+ "ai_overview_text": "",
+ "ai_overview_references": [
+  {
+   "href": "https://restorein24.com/atlantas-top-clinics-for-dental-implants/",
+   "title": "Best Dental Implant Centers in Atlanta - Restore in 24",
+   "source": ""
+  },
+  {
+   "href": "https://www.tebra.com",
+   "title": "All-On-4 Dental Implants",
+   "source": ""
+  },
+  {
+   "href": "https://www.google.com/searchviewer/10?svid=CAwSHBIaCgNwdnESE0Nnd3ZaeTh4YUdNeE9XdG9OWEEYCg",
+   "title": "Dental Implant and Aesthetic Specialists",
+   "source": ""
+  },
+  {
+   "href": "https://www.google.com/searchviewer/10?svid=CAwSHRIbCgNwdnESFENnMHZaeTh4TVhCeE1uSm9hak5mGAo",
+   "title": "TITANIUM DENTAL Implants & Periodontics **$1,999 Implant Special** Best Price in GA!",
+   "source": ""
+  },
+  {
+   "href": "https://www.google.com/searchviewer/10?svid=CAwSGxIZCgNwdnESEkNnc3ZaeTh4ZEdOZmJIcGZZdxgK",
+   "title": "Atlanta Dental Spa - Buckhead",
+   "source": ""
+  }
+ ],
+ "session_note": "Organic results extracted mechanically from the returned results page. Bright Data does not document an AI Overview field, so ai_overview_detected is BEST EFFORT and may be null. Do not publish it as a measurement.",
+ "local_pack_present": true,
+ "local_pack_top": [
+  {
+   "position": 1,
+   "name": "Dental Implant and Aesthetic Specialists",
+   "link": null,
+   "address": "2801 Buford Hwy NE #250",
+   "rating": 5,
+   "reviews": 566
+  },
+  {
+   "position": 2,
+   "name": "TITANIUM DENTAL Implants & Periodontics **$1,999 Implant Special** Best Price in GA!",
+   "link": null,
+   "address": "Duluth, GA",
+   "rating": 4.9,
+   "reviews": 4100
+  },
+  {
+   "position": 3,
+   "name": "Nuvia Dental Implant Center",
+   "link": null,
+   "address": "Marietta, GA",
+   "rating": 4.9,
+   "reviews": 3200
+  }
+ ],
+ "ai_overview_sha256": "9a5daed2c94f1198a52e03f6d0a47bb8df022f3b89fe920e97024fcf1e9e721d",
+ "ai_overview_chars": 1706,
+ "ai_overview_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

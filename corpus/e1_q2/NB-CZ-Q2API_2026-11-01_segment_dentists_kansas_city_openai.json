@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_dentists_kansas_city_openai",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: dentists, Kansas City",
+ "niche": "dentists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Kansas City. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Kansas City Missouri for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfVqFmDXalDn6IVKm3pAWWcR20Nnz",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 767,
+   "total_tokens": 793,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 576,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need a bit more info so I give you the most useful, local recommendations.\n\nQuick questions:\n1. Do you mean Kansas City, MO or Kansas City, KS (or a particular ZIP or neighborhood)?  \n2. Do you prefer an oral surgeon, periodontist, or a general dentist who places implants? (Or do you want the highest-specialty center available?)  \n3. Is insurance or staying in-network important? Any budget constraints or need for financing?  \n4. Do you expect a complicated case (bone grafting, sinus lift, multiple implants, failing teeth) or a straightforward single implant?\n\nIf you prefer, I can also just give a short list of the top things to look for and exact questions to ask when you call — plus a template phone script — and then compile specific practices once you confirm your ZIP and preferences. Which would you like?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-11-01_segment_dentists_chicago_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_fbdc0d56-a781-4526-8b3f-fdd3c3b47f29",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00447
+   },
+   "input_tokens": 4872,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4326,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 301,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5173
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Stuart Schelkopf, DDS, MS, FACP",
+  "Dr. Stuart Schelkopf",
+  "American College of Prosthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aedit.com/provider/stuart-schelkopf-16672",
+  "https://www.dentartchicago.com/about-us/dr-bin-yang/",
+  "https://www.prosthodontics.org/contact/",
+  "https://hospital.uillinois.edu/find-a-doctor/alex-sarpong",
+  "https://www.dentistsranked.com/dental-clinic/chicago-il/perio-implant-chicago",
+  "https://chicagoildentalimplants.com/category/implant-dentistry-specialist/",
+  "https://www.gotoapro.org/find-a-prosthodontist/?m=50&l=rawal&sort=distance-ASC",
+  "https://dentistry.uic.edu/profiles/gheisarifar-maryam/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-salvador-nares-1508980772",
+  "https://www.zocdoc.com/periodontists/chicago-210499pm",
+  "https://www.gotoapro.org/",
+  "https://www.yelp.com/biz/periodontics-chicago-chicago",
+  "https://www.dentistsranked.com/dental-services/dental-implants-chicago-il",
+  "https://www.dentalprofessionals.com/meet-us/dr-bryan-jacobs/",
+  "https://www.linkedin.com/in/stuart-schelkopf-dds-ms-facp-205b01116"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "8482b0e3cd158bf32c88e00db0daa45fe045cdf3875151679196e828f10059f7",
+ "answer_chars": 1011,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

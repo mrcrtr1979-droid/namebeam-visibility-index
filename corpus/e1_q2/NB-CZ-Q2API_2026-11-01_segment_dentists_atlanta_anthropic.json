@@ -1,0 +1,43 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_dentists_atlanta_anthropic",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Atlanta. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_3ogyzpy33hdoej5sgjblibdisfyqdc2lhc4qaq5eqr3d7iajcl2q",
+  "usage": {
+   "input_tokens": 27,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 267,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "American Academy of Implant Dentistry",
+  "Georgia Dental Board"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest a practical approach rather than specific recommendations I can't verify:\n\n**How to find qualified practices:**\n- Check the Georgia Dental Board's license verification tool\n- Look for prosthodontists or implant specialists (additional training beyond general dentistry)\n- Read recent Google/Yelp reviews, noting patterns rather than individual reviews\n- Verify credentials like membership in the American Academy of Implant Dentistry\n\n**What to evaluate when calling:**\n- Years of implant experience\n- Before/after photos of similar cases\n- Whether they do the full process or refer out\n- Cost breakdown and warranty details\n- Complication rates (good practices can discuss this)\n- Consultation fees and what's included\n\n**Red flags:**\n- Pressure to decide immediately\n- Unusually cheap pricing\n- Unwillingness to discuss their experience\n- No clear aftercare plan\n\n**Next step:**\nGet 2-3 consultations. A good implant dentist will spend time explaining your specific situation rather than giving a generic quote.\n\nSince implants are significant (cost, time, outcomes), the consultation itself tells you a lot about how they practice. Would you like guidance on specific questions to ask during consultations?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

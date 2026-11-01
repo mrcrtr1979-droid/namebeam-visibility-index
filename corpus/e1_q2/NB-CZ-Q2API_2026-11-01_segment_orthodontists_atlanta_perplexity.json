@@ -1,0 +1,106 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Atlanta. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_89775445-677c-4f1b-924c-e67d1a3fb979",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00133,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0051
+   },
+   "input_tokens": 5070,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4517,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 531,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5601
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Wright Orthodontics",
+  "Harris Orthodontics",
+  "Buckhead Orthodontics",
+  "Quest Orthodontics / Dr. Arjun Patel",
+  "Atlanta Orthodontic Specialists",
+  "Davis Family Orthodontics",
+  "N. Druid Hills Rd. Offers",
+  "Invisalign",
+  "Druid Hills",
+  "Marietta St. NW",
+  "West Midtown. Offers",
+  "West Midtown",
+  "Peachtree Rd. Offers",
+  "Quest Orthodontics",
+  "Dr. Arjun Patel",
+  "Sandy Springs Pl. NE. Offers Invisalign",
+  "LightForce",
+  "Sandy Springs",
+  "Atlanta-area"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.braces-braces.com/",
+  "https://www.dentistsranked.com/dental-services/invisalign-atlanta-ga",
+  "https://dforthodon.com/",
+  "https://mommypoppins.com/atlanta-kids/directory/stores-services/artemis-smiles-orthodontics-atlanta",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/buckhead-orthodontics-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/harris-orthodontics-atlanta-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/wright-orthodontics-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/alliance-orthodontics-atlanta-ga",
+  "https://www.myspecialtydentist.com/directory/profile/dr-michael-sebastian-1891819652",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/quest-orthodontics-dr-arjun-patel-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/reve-orthodontics-midtown-atlanta-atlanta-ga",
+  "https://www.myspecialtydentist.com/directory/profile/dr-arjun-patel-1912263591",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/atlanta-orthodontic-specialists-3580-piedmont-rd-ne",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/west-paces-ferry-orthodontics-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/willow-orthodontics-atlanta-madison-yards-atlanta-ga"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "4082a25f3f6ce4bc29fd045b6fcd1b398f55f8c5cfd62ac07dba983fd4ccd2a8",
+ "answer_chars": 2035,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

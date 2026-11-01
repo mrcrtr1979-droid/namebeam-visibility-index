@@ -1,0 +1,103 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_personal_injury_law_dallas_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: personal injury law, Dallas",
+ "niche": "personal injury attorneys",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Dallas after a truck accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Dallas for a truck accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7e9f5640-b716-49e7-8286-72479692c577",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00139,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00509
+   },
+   "input_tokens": 4793,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4235,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 557,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5350
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Aaron A. Herbert, P.C. — (214) 200-4878",
+  "Angel Reyes & Associates — (469) 289-1910",
+  "Miller Weisbrod Olesky — (214) 987-0005",
+  "Laird & McCloskey at (817) 531-3000",
+  "Aaron A. Herbert",
+  "Firm",
+  "Angel Reyes",
+  "Douglas Avenue. The",
+  "Miller Weisbrod Olesky",
+  "Forest Central Drive. The",
+  "McCloskey",
+  "Fort Worth",
+  "Truck Accident Law",
+  "Board Certified in Personal Injury Trial Law",
+  "Laird & McCloskey",
+  "Angel Reyes & Associates"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.texlawyers.com/dallas-truck-accident-lawyer/",
+  "https://thomasjhenrylaw.com/locations/dallas/truck-accident-lawyers/",
+  "https://www.reyeslaw.com/dallas/truck-accidents/",
+  "https://www.kelsolegal.com/dallas-truck-accident-lawyer/",
+  "https://www.arnolditkin.com/dallas-personal-injury/truck-accidents/",
+  "https://injuryattorneyofdallas.com/practice-areas/truck-accidents/",
+  "https://www.millerweisbrod.com/dallas-truck-accident-attorney",
+  "https://www.zdfirm.com/truck-accident-lawyer/commercial/texas/dallas/",
+  "https://www.mullenandmullen.com/personal-injury-lawyer/car-accident/commercial-truck/",
+  "https://www.herrmanandherrman.com/texas-personal-injury-firm/dallas/truck-accident-lawyer/",
+  "https://www.wooleylaw.com/personal-injury/18-wheeler-wrecks/dallas-truck-accident-lawyer",
+  "https://www.triallawyersjournal.com/lawyers/texas/dallas/spencer-browne/",
+  "https://tedlyon.com/dallas-injury/truck-accident-lawyer/",
+  "https://theleonlawfirm.com/dallas-tx/",
+  "https://jaymurraylaw.com/dallas-truck-accident-lawyer/commercial-work-truck/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "235132a743b952c6496501166116b2e850fe9e5dfdd8eb086417dadbc8c9fb32",
+ "answer_chars": 2067,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

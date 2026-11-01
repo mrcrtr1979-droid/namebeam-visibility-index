@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_short_term_rental_nashville_openai",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a vacation rental in Nashville for a family of four. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfVtAkuFCL2H8BVsEN1dcZC2udLE3",
+  "usage": {
+   "prompt_tokens": 30,
+   "completion_tokens": 1768,
+   "total_tokens": 1798,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1088,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Green Hills",
+  "Vacasa",
+  "Marriott Homes",
+  "Villas",
+  "Music City",
+  "TurnKey",
+  "Germantown"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Quick question before I list names: what are your travel dates, budget per night, preferred neighborhood(s) in Nashville (downtown, East Nashville, 12South, Germantown, Green Hills, etc.), and any must-have amenities (two bedrooms, kitchen, parking, baby gear, yard)? With that I can give a targeted short list and direct booking options.  \n\nMeanwhile, here are the specific rental companies and platforms I recommend calling (or contacting) for a family of four — and why each is useful:\n\n1. Airbnb (platform)\n   - Why: Massive inventory and many family-friendly hosts. Excellent search filters (number of bedrooms, entire home, crib, kitchen) and easy host messaging to confirm child-specific needs. Good for unique homes near neighborhoods like 12South or East Nashville.\n\n2. Vrbo (platform)\n   - Why: Strong for whole-home rentals (houses, condos) — often better for families who want two bedrooms or more, full kitchens, and fewer shared spaces. Hosts often list family amenities and parking.\n\n3. Vacasa (professional manager)\n   - Why: Large national property manager with local operations. They offer professionally managed homes with consistent cleaning standards, 24/7 guest support, clear check-in instructions, and family-friendly filters. Good if you want reliability and on-call help.\n\n4. TurnKey Vacation Rentals (professional manager)\n   - Why: Emphasizes professional guest services, tech-enabled self-check-in, and standardized amenities. Good option for families who want dependable quality and customer support.\n\n5. Evolve Vacation Rental (manager/marketing company)\n   - Why: Focuses on marketing owner properties with guest support backing — often lower booking fees and reliable property descriptions. Good to check for competitively priced family homes.\n\n6. Marriott Homes & Villas (branded homes)\n   - Why: Branded, higher-consistency homes with hospitality standards, customer service, and loyalty program benefits. Good if you prefer hotel-like reliability in a vacation rental.\n\n7. Sonder / Blueground (apartment-style stays; availability varies)\n   - Why: If you want an apartment-like stay with consistent modern furnishings, simple booking, and predictable standards. Useful if you want something between a hotel and a home.\n\n8. Local Nashville vacation rental/property managers (call for curated family options)\n   - Why: Boutique/local managers often specialize in Music City properties and can recommend neighborhoods, kid-friendly houses, and offer local support. I can pull a short list of reputable local managers if you tell me dates/needs.\n\nHow to choose which to call first\n- If you want convenient browsing and many options fast: search Airbnb and Vrbo.\n- If you want dependable, professionally managed homes with 24/7 support: call Vacasa, TurnKey, or Evolve.\n- If you want hotel-like consistency and loyalty perks: call Marriott Homes & Villas.\n- If you want help narrowing to family-focused properties or need baby gear, ask local managers or message hosts directly on Airbnb/Vrbo.\n\nIf you share dates, budget, preferred neighborhoods, and must-have amenities, I’ll:\n- Pull 6–8 specific listings (with links) that fit a family of four, and\n- Provide contact info for 3–5 local managers in Nashville to call for availability and family-friendly options.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

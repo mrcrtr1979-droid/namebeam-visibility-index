@@ -1,0 +1,108 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_orthodontists_dallas_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Dallas. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8511428f-161c-4827-ac88-da376f12506d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00155,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00519
+   },
+   "input_tokens": 4559,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4006,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 621,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5180
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Lakewood Orthodontics — Dr. Patricia Simon",
+  "Dallas Orthodontics — Dr. Benito Benitez",
+  "Fusion Orthodontics — Dr. Hessam Rahimi",
+  "Walnut Central Orthodontics — Dr. Meyer",
+  "Dallas-area",
+  "Lakewood Orthodontics",
+  "Dr. Patricia Simon",
+  "Board-certified",
+  "Offers",
+  "Invisalign",
+  "Ohlenforst Carney Orthodontics",
+  "Dr. Lauren Ohlenforst Carney",
+  "Invisalign. A",
+  "Dallas Orthodontics",
+  "Dr. Benito Benitez",
+  "Dr. Benitez",
+  "Fusion Orthodontics",
+  "Dr. Hessam Rahimi",
+  "Walnut Central Orthodontics",
+  "Dr. Meyer",
+  "N. Central Expy"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.orthodontistdallastx.com/dallas-tx/invisalign/",
+  "https://go.dallas-ortho.com/",
+  "https://www.fusionorthodontics.com/",
+  "https://dallas-ortho.com/about-us/",
+  "https://dallas-ortho.com/services/",
+  "https://www.lakewoodortho.net/",
+  "https://dallas-ortho.com/get-your-dream-smile-with-invisalign-clear-aligners/",
+  "http://providerbio.invisalign.com/details/955170",
+  "https://bracesbyoc.com/",
+  "https://www.orthodontistdallastx.com/dallas-tx/invisalign-videos/",
+  "https://www.guptasmilestudio.com/",
+  "https://dallas-ortho.com/",
+  "https://nationalorthodonticregistry.com/texas/dallas/orthodontists",
+  "https://dallas-ortho.com/financial-policy/",
+  "http://providerbio.invisalign.com/details/291673"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "d25d477d1c0ca5dabec963dc10e6e1770d1735499c2516faff5ad631e09ccd71",
+ "answer_chars": 2280,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

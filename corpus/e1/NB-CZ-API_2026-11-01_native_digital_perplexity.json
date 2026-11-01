@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-11-01_native_digital_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "Native Digital",
+ "niche": "marketing agency",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best marketing agency in Kansas City?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_36b9f438-847c-4ae5-8892-a1cda45976cd",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0005,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00426
+   },
+   "input_tokens": 5011,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4467,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 199,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5210
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "BarkleyOKRP",
+  "VOLTAGE",
+  "Searchbloom"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.nationalmarketingawards.com/awards/missouri/kansas-city/",
+  "https://www.expertise.com/business/digital-marketing-agencies/missouri/kansas-city",
+  "https://www.expertise.com/business/digital-marketing-agencies/kansas/kansas-city",
+  "https://nitrosend.com/marketing/agency/best/kansas-city",
+  "https://www.designrush.com/agency/digital-agencies/missouri/kansas-city",
+  "https://themanifest.com/digital-marketing/agencies/kansas-city",
+  "https://clutch.co/agencies/kansas-city",
+  "https://www.designrush.com/agency/digital-marketing/missouri/kansas-city",
+  "https://www.expertise.com/business/advertising-agencies/kansas/kansas-city",
+  "https://agencies.semrush.com/list/advertising/kansas-city-missouri-united-states/",
+  "https://agencies.semrush.com/list/kansas-city-missouri-united-states/",
+  "https://www.goodfirms.co/seo-agencies/kansas-city",
+  "https://clutch.co/agencies/social-media-marketing/kansas-city",
+  "https://themanifest.com/marketing-strategy/agencies/kansas-city",
+  "https://clutch.co/agencies/creative/kansas-city"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "20ada615ee7b21e29f9d1c03b283e46cfe4467876ef19d5679731520a2ea8af4",
+ "answer_chars": 568,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

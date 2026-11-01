@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-01_bbs_insurance_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "BBS Insurance",
+ "niche": "health insurance brokerage",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best health insurance broker in Kansas City MO for someone who is self-employed?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_40060235-df36-4713-91bb-2b4c72662d88",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00459
+   },
+   "input_tokens": 5036,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4484,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 331,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5367
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "Apollo Health Insurance",
+  "ACA Marketplace plans and subsidies",
+  "Missouri. It",
+  "Apollo",
+  "ACA Marketplace",
+  "ACA Marketplace plans",
+  "Marketplace plans"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://bbs-insurance.com/",
+  "https://mbhealth.com/aca-insurance/",
+  "https://apollo-insurance.com/health-insurance-broker-kansas-city/",
+  "https://www.linkedin.com/in/john-underwood-insurance",
+  "https://aishealthadvisors.com/",
+  "https://www.forhealthinsurance.com/missouri-best-health-insurance/",
+  "https://apollo-insurance.com/",
+  "https://sites.google.com/view/health-insurance-kansas-city/home",
+  "https://bbs-insurance.com/service-areas/kansas-city/",
+  "https://www.bluekc.com/",
+  "https://bbs-insurance.com/health-insurance/",
+  "https://apollo-insurance.com/health-insurance-kansas-city/",
+  "https://www.trustpilot.com/review/bluekc.com",
+  "https://aishealthadvisors.com/health-insurance/",
+  "https://www.experience.com/reviews/brian-18851774"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "0970c86c8164778c99b0fc70b2d76bbf6f9e3c48a15c418d9700173cfcb182a3",
+ "answer_chars": 1121,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

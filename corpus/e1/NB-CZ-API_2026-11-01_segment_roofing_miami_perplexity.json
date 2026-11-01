@@ -1,0 +1,104 @@
+{
+ "check_id": "NB-CZ-API_2026-11-01_segment_roofing_miami_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_114c8952-ce68-4062-8857-d13ccd873a75",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00442
+   },
+   "input_tokens": 4461,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3913,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 321,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4782
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "CCC1326032",
+  "Art’s Roofing & Construction",
+  "Crown Roofing",
+  "T&S Roofing Systems",
+  "Miami-Dade",
+  "Miami-area",
+  "High-Velocity Hurricane Zone",
+  "Miami-Dade Notice of Acceptance",
+  "HVHZ-rated",
+  "Miami-Dade NOA",
+  "Florida Product Approval. Verify",
+  "Notice of Acceptance",
+  "Dade NOA",
+  "High-Velocity Hurricane Zone (HVHZ)",
+  "Notice of Acceptance (NOA)",
+  "Velocity Hurricane Zone",
+  "Dade Notice of Acceptance",
+  "Florida Product Approval",
+  "Miami-Dade Notice of Acceptance (NOA)",
+  "Product Approval"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.miamidade.gov/global/license.page?Mduid_license=lic1677270526169670",
+  "https://www.miami.gov/Permits-Construction/Permit-Catalog/Get-a-Roofing-Permit",
+  "https://www.tsroofingsystems.com/reviews/",
+  "https://www.miamidade.gov/apps/ISD/stratproc/Home/SolicitationDetails?solNumber=MCC%207360%20RPQ%2010364699",
+  "https://www.artsroofing.com/areas/miami/",
+  "https://agkgc.com/miami-roofing",
+  "https://siaroofing.com/services",
+  "https://www.roofermikeinc.com/roofing-miami-style/reviews/",
+  "https://agkgc.com/roofing-contractor-south-florida",
+  "https://www.robsonindustrial.com/residential/roofing/",
+  "https://www.tsroofingsystems.com/",
+  "https://www.artsroofing.com/reviews/",
+  "https://crownroofing.com/roofing-in-miami/",
+  "https://prosgrade.com/roofers/miami/t-and-s-roofing-systems",
+  "https://theroofingbrief.com/best-roofers-miami-fl/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "6f0b3802e356e86596956526a5bacf062cc8292e26596abceb357c66d6b66c95",
+ "answer_chars": 1164,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

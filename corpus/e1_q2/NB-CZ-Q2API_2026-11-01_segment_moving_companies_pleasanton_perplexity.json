@@ -1,0 +1,95 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_moving_companies_pleasanton_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: moving companies, Pleasanton",
+ "niche": "moving companies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I have a local move coming up in Pleasanton. Which specific moving companies should I call, and why?",
+ "q1_prompt_text": "Who is the best moving company in Pleasanton CA for a local move?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_04933633-7fb7-4b24-8768-8671a79933a6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00462
+   },
+   "input_tokens": 5195,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4639,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 328,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5523
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton, California",
+  "All Star Movers & Storage",
+  "Chipman Relocation & Logistics",
+  "One Move Movers",
+  "BHGS license lookup",
+  "Pleasanton-area",
+  "Chipman Relocation",
+  "A+ BBB rating"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.yelp.com/biz/bp-moving-pleasanton-4",
+  "https://www.movebuddha.com/movers/ca/pleasanton/",
+  "https://www.thumbtack.com/ca/pleasanton/movers",
+  "https://www.movebuddha.com/movers/ca/pleasanton/long-distance/",
+  "https://bhgs.dca.ca.gov/enforcement/lookup",
+  "https://www.greatguysmove.com/movers/california/pleasanton/",
+  "https://www.freightwaves.com/checkpoint/movers/california/pleasanton/",
+  "https://www.expertise.com/home-improvement/moving/california/pleasanton",
+  "https://www.allied.com/moving-companies/california-old/pleasanton",
+  "https://dependablemoverssf.com/service-area/pleasanton-movers/",
+  "https://www.movebuddha.com/movers/ca/magic-moving-storage-2669/",
+  "https://www.freightwaves.com/checkpoint/movers/california/pleasanton.md",
+  "https://bestcaliforniamovers.com/services/licence/",
+  "https://bhgs.dca.ca.gov/consumers/hhm.html",
+  "https://lugg.com/cities/ca/pleasanton"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9d48d0e2c6feec06dacb7735a8b72fe0ea9c4b3327ecc429633eef72f60c22fe",
+ "answer_chars": 1198,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

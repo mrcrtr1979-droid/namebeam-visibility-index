@@ -1,0 +1,54 @@
+{
+ "check_id": "NB-CZ-API_2026-11-01_segment_str_host_tooling_openai",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfVJY7NKlFLywl3GwQK7YFus0zo6o",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1719,
+   "total_tokens": 1745,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "MarketMinder",
+  "PriceLabs",
+  "Beyond Pricing",
+  "Wheelhouse",
+  "STR-focused",
+  "Very",
+  "Smart Pricing",
+  "Beyond",
+  "Use AirDNA",
+  "Hostaway",
+  "Use PriceLabs"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: use AirDNA (MarketMinder) to analyze a market before buying, and pair it with a dynamic-pricing tool—PriceLabs, Beyond Pricing or Wheelhouse—to set nightly rates once you list. That combo gives the best mix of market-level intelligence and day-to-day price optimization.\n\nWhy this combo\n- AirDNA: best-known, STR-focused market data (ADR, occupancy, seasonality, revenue estimates, comps, booking lead times, historical trends, unit mix, and demand drivers). Great for evaluating neighborhoods and forecasting cash flow and ROI before purchasing.\n- PriceLabs / Beyond Pricing / Wheelhouse: these connect to Airbnb/VRBO/channel managers and automatically set nightly prices based on demand, events, seasonality, length-of-stay rules and your revenue goals. PriceLabs is highly customizable; Beyond Pricing is very simple to get started; Wheelhouse has strong analytics and a useful marketplace view.\n\nQuick comparison\n- AirDNA: Best for market research and investment analysis. (Paid market reports; deep visuals and historical data.)\n- PriceLabs: Very flexible rules and forecasts; good for hosts who want control and many listings. (Monthly fee per listing.)\n- Beyond Pricing: Easy, hands-off setup; often uses a commission or subscription model. (Very user-friendly.)\n- Wheelhouse: Powerful analytics and testing tools; good middle ground between control and simplicity.\n- Free options: Airbnb Smart Pricing (built-in, basic), manual competitor checks (time-consuming), public data (limited).\n\nTypical workflow\n1. Market screen (AirDNA): check ADR, occupancy, RevPAR, seasonality, active listings, revenue distribution by property type, and booking lead times. Run comps for properties similar to what you’d buy.\n2. Financial model: estimate gross revenue (AirDNA), subtract operating expenses (cleaning, utilities, management, insurance, taxes, HOA, vacancy), mortgage, and capex to calculate cash-on-cash return and cap rate. Stress-test for lower occupancy and regulatory downtime.\n3. Check local rules: permits, taxes, HOA restrictions, noise/parking rules—these can kill returns.\n4. Listing setup: once purchased, use PriceLabs/Beyond/Wheelhouse to set a base price and apply rules (min stays, weekend premiums, length-of-stay discounts, last-minute adjustments).\n5. Monitor & iterate: review weekly/monthly, tune rules for events and long weekends, update cleaning fees and minimums.\n\nMetrics to pay attention to when buying\n- Average daily rate (ADR) for comps\n- Occupancy rate and seasonality swings\n- RevPAR (revenue per available rental night)\n- Market growth trends and supply changes\n- Booking lead time and cancellation patterns\n- Median days on market for STRs\n- Local regulatory risk and allowed rental nights\n- All-in expenses to compute net operating income and cash-on-cash return\n\nWhich to pick based on your situation\n- Shopping for an investment (one property or a few): AirDNA for market research + PriceLabs for pricing. AirDNA gives confident buy/no-buy data; PriceLabs optimizes revenue after listing.\n- Managing many properties: AirDNA or Transparent for enterprise data; PriceLabs/Wheelhouse + a channel manager (Hostaway, Guesty, iGMS) for scalable pricing & operations.\n- Just want simple/low-cost: start with Airbnb’s Smart Pricing and manual AirDNA comps or free competitor checks, then upgrade as revenue grows.\n\nIf you tell me your target city, property type (studio/2BR/house), and budget, I can run a short checklist of what to look for in that specific market and recommend whether AirDNA’s data looks strong enough to proceed.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

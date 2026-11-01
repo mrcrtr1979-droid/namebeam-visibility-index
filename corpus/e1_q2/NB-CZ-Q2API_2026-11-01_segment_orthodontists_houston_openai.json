@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-01_segment_orthodontists_houston_openai",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: orthodontists, Houston",
+ "niche": "orthodontists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Houston. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Houston for braces or Invisalign?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfVrvk4RWqhuUIP1Dnvx4EqGNHRvo",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1329,
+   "total_tokens": 1354,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Spring Branch",
+  "Sugar Land",
+  "Invisalign",
+  "Platinum",
+  "Diamond",
+  "HSAs",
+  "X-rays"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need one quick detail: what ZIP code or neighborhood in Houston are you in (for example: Montrose, Memorial, Spring Branch, Sugar Land, Katy, etc.)? That lets me pick specific orthodontists close to you.\n\nWhile you reply, here’s a practical plan so you know what I’ll look for and why I’ll recommend each office:\n\nWhat I’ll prioritize when picking specific orthodontists\n- Board certification / orthodontic specialty training (orthodontic residency) — reduces risk of non-specialists treating you.  \n- Invisalign experience level (Platinum/Gold/Diamond tiers) or general clear-aligner expertise for more predictable Invisalign outcomes.  \n- Years of experience and number of cases for adults/teens (if you have a preference).  \n- Technology: digital 3D scanners (iTero), digital treatment planning, CBCT when needed — helps precision and comfort.  \n- Before/after galleries and patient reviews.  \n- Transparent pricing, payment plans, insurance/HSAs accepted.  \n- Office location, hours, and emergency/after-care accessibility.  \n- Good initial consult policy (free/low-cost, includes digital scan or X-rays).\n\nPhone script: what to ask when you call (copy/paste)\n1. “Are you a board-certified orthodontist or did you complete an orthodontic residency?”  \n2. “Do you offer Invisalign, and what level of Invisalign provider are you?” (Diamond/Platinum/etc.)  \n3. “Do you do a free or low-cost initial consult? Does it include a digital scan or X-rays?”  \n4. “What’s a typical price range for full braces vs Invisalign for an adult?” (I understand you might only get a range.)  \n5. “What payment plans/financing do you offer and do you accept my insurance?”  \n6. “How long is the expected treatment time and how often are appointments?”  \n7. “Can I see before/after photos of cases like mine?”  \n8. “Who handles emergencies after-hours?”  \n\nHow I’ll present the results\n- 5–7 specific orthodontists near your ZIP code (name, address, phone, why I recommend them — based on the criteria above).  \n- Quick comparison (e.g., best for Invisalign experience, best value, best for teens, best for complicated cases).  \n- Suggested first two to call and what to ask each office.\n\nIf you tell me your ZIP code (or nearest cross-street/neighborhood) and whether you prefer braces vs Invisalign, adult vs teen treatment, or any budget/insurance constraints, I’ll pull a targeted list of specific orthodontists in Houston and explain why to call each one.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

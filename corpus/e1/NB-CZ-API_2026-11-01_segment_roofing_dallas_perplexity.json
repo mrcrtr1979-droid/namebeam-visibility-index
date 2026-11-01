@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-01_segment_roofing_dallas_perplexity",
+ "date_utc": "2026-11-01",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_251564b4-b241-4cfa-a97d-4ca76527d2ee",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00097,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00431
+   },
+   "input_tokens": 4445,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3898,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 280,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4725
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "StazOn Roofing",
+  "Shepherd Roofing & Renovations",
+  "New View Roofing",
+  "Fort Worth",
+  "Shepherd Roofing",
+  "New View",
+  "GAF Master Elite Contractor"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.angi.com/companylist/us/tx/dallas/roofing.htm",
+  "https://www.angi.com/articles/how-much-does-shingle-roof-cost/tx/dallas",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/tx/dallas/stazon-roofing-inc-1100649",
+  "https://www.angi.com/articles/how-much-does-flat-roof-replacement-cost/tx/dallas",
+  "https://www.angi.com/articles/how-much-does-metal-roofing-cost/tx/dallas",
+  "https://www.angi.com/companylist/us/tx/dallas/t-rock-roofing-and-construction-reviews-6224784.htm",
+  "https://www.desmoinesregister.com/press-release/story/125947/new-view-roofing-named-best-overall-dallas-roofing-company-by-yahoo-local",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/tx/frisco/elevated-roofing-llc-1001167",
+  "https://www.angi.com/articles/garage-roof-replacement-cost/tx/dallas",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/pa/dallas",
+  "https://www.bbb.org/us/tx/dallas/category/roofing-contractors/accredited",
+  "https://www.bbb.org/us/ga/dallas/category/roofing-contractors/accredited",
+  "https://www.bbb.org/us/tx/dallas/category/roof-structure/accredited",
+  "https://dfwprofessionals.com/dallas/roofing-contractor",
+  "https://eliteroofpro.com/dallas-tx/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "88953c8e072db9a5fdbb9895ae15bc830555d32a9160a2ccb4f83bca37f68102",
+ "answer_chars": 947,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}
