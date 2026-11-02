@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_orthodontists_chicago_openai",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: orthodontists, Chicago",
+ "niche": "orthodontists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Chicago. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Chicago for braces or Invisalign?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Efw6zWxjuGpVaby9bVo2ZBqETXdyn",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1206,
+   "total_tokens": 1231,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Lincoln Park",
+  "River North",
+  "West Loop",
+  "Invisalign",
+  "American Board of Orthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I’ll find specific, up-to-date orthodontists near you and explain why each is a good choice. Quick question first so I target the right offices:\n\n- What Chicago zip code or neighborhood are you in or prefer (e.g., Lincoln Park, River North, West Loop)?\n- Are you an adult, teen, or child?\n- Do you have dental insurance that covers orthodontics? If so, which plan?\n- Any preferences: Invisalign only, clear/ceramic braces, lingual braces, faster treatment, lowest cost?\n\nIf you want a quick next step right now, here’s what I recommend and what to ask when you call or book a consult.\n\nHow I’ll pick offices for you\n- Board-certified orthodontists (American Board of Orthodontics) when possible\n- High Invisalign experience level (Preferred/Platinum/Diamond) if you want clear aligners\n- Practices with digital scanning (iTero/3Shape), CBCT or 3D planning if complex movement is likely\n- Strong patient reviews and before/after photos\n- Clear pricing/financing and good patient communication\n\nWhat to ask when you call (short script)\n- “Do you do Invisalign and how many Invisalign cases do you treat per year?”\n- “Is the doctor board-certified by the American Board of Orthodontics?”\n- “Do you use digital scans instead of impressions?”\n- “What’s the estimated treatment time and total cost range for Invisalign vs braces?”\n- “Do you offer payment plans, and does my insurance (name plan) apply?”\n- “Will the doctor see me at most appointments or an assistant?”\n- “What is your emergency policy and retention plan after treatment?”\n\nRed flags to avoid\n- No doctor involvement (only technicians or salespeople)\n- Vague answers on cost or estimated time\n- No ability to show before/after photos or patient references\n- Unwillingness to provide a digital scan or 2nd opinion\n\nTypical Chicago price range (ballpark)\n- Traditional braces: $3,000–7,000\n- Invisalign: $3,500–8,000\n(cost varies by case complexity and practice)\n\nIf you give your zip code/neighborhood and any of the preference details above I’ll return a tailored list of 5–8 specific orthodontists in Chicago to call, with why each one may be the best fit. Which area should I search?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_segment_property_management_fort_lauderdale_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: property management, Fort Lauderdale",
+ "niche": "property management companies",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Fort Lauderdale FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a4b92ad2-7494-4fe4-8e77-826b0327b67e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00085,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 4609,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4059,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 340,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4949
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "TrueNest Property Management",
+  "PURE HomeRiver",
+  "The Caspi Team"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.biggerpockets.com/fl/fort-lauderdale/property-managers",
+  "https://www.expertise.com/business/property-management/florida/fort-lauderdale",
+  "https://www.atlia.com/",
+  "https://www.zillow.com/professionals/property-manager-reviews/fort-lauderdale-fl-33339/",
+  "https://www.thumbtack.com/fl/fort-lauderdale/property-management",
+  "https://www.zillow.com/professionals/property-manager-reviews/fort-lauderdale-fl-33316/",
+  "https://propertymanagement.com/property-management/fort-lauderdale--fl",
+  "https://purehomeriver.com/locations/florida/fort-lauderdale/",
+  "https://www.allpropertymanagement.com/property-management/companies/50258/henion-property-management",
+  "https://www.thumbtack.com/fl/fort-lauderdale/property-management/jge-property-management/service/543673055223406614",
+  "https://www.zillow.com/professionals/property-manager-reviews/fort-lauderdale-fl-33334/",
+  "https://www.turbotenant.com/property-management/services/florida/fort-lauderdale/",
+  "https://www.zillow.com/professionals/property-manager-reviews/fort-lauderdale-fl-33314/",
+  "https://www.zillow.com/professionals/property-manager-reviews/33306/",
+  "https://purehomeriver.com/locations/florida/fort-lauderdale/victoria-park/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2b72b2bbed0501444e53d07fdd261b4cbc793c200a2f55d0186fe3aa03348dc0",
+ "answer_chars": 1219,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

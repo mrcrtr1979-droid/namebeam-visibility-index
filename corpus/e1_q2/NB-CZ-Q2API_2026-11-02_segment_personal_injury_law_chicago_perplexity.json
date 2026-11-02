@@ -1,0 +1,97 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_personal_injury_law_chicago_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: personal injury law, Chicago",
+ "niche": "personal injury attorneys",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury attorney in Chicago after a car accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury attorney in Chicago for a car accident claim?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_933ac2bd-b313-4d4f-8248-2cdf3f4195a5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00136,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00509
+   },
+   "input_tokens": 4906,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4348,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 542,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5448
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Corboy & Demetrio",
+  "Salvi, Schostok & Pritchard",
+  "Rosenfeld Injury Lawyers",
+  "Loevy + Loevy",
+  "Willens & Baez",
+  "Chicago Bar Association Lawyer Referral Service",
+  "Handles",
+  "Loevy",
+  "Cook County",
+  "Lawyer Referral Service"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.salvilaw.com/",
+  "https://www.vlaw.com/locations/chicago/",
+  "https://www.chicagobar.org/CBA/CBA/Legal_Help_for_the_Public/Lawyer_Referral_Service.aspx",
+  "https://www.chicagobar.org/CBA/CBA/Resources/Law_Firm_Profiles/Rosenfeld_Injury.aspx",
+  "https://www.experience.com/reviews/lauren-8289648",
+  "https://www.loevy.com/personal-injury/car-accidents/",
+  "https://www.willenslaw.com/chicago-car-accident-lawyer/",
+  "https://www.corboydemetrio.com/practices-car-accident",
+  "https://www.chicagobar.org/CBA/CBA/Legal_Help_for_the_Public/LRS_Per.aspx",
+  "https://lawyers.findlaw.com/motor-vehicle-accidents-plaintiff/illinois/bartlett/",
+  "https://www.curcio-law.com/practice-areas/motor-vehicle-accidents/car-accidents/",
+  "https://lawyers.findlaw.com/motor-vehicle-accidents-plaintiff/illinois/oak-brook/",
+  "https://phillipslawoffices.com/car-accidents/",
+  "https://lawyers.findlaw.com/motor-vehicle-accidents-plaintiff/illinois/olympia-fields/",
+  "https://www.lawyers.com/motor-vehicle-accidents/chicago/illinois/law-firms/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "482cb2a11d1f8d189ea82d66d2cf8e71efd30dad6afaa4ad89e2dd417ce2fc03",
+ "answer_chars": 1854,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

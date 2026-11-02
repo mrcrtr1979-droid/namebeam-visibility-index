@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_orthodontists_phoenix_openai",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Phoenix. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Efvy26G0UTNyKhZsIQPy99ZwYCYTZ",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1225,
+   "total_tokens": 1250,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 576,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Invisalign",
+  "American Board of Orthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you specific orthodontists to call, but to make the list useful I need your ZIP code or the neighborhood(s) in Phoenix you prefer (North, Central, East/Scottsdale, West/Glendale, Tempe/Chandler). If you share that I’ll look up nearby, reputable options and explain why each is a good call.\n\nIn the meantime, here’s a quick plan and what to look for so you get good options for braces or Invisalign:\n\nWhat I recommend you call (types of providers, not just names)\n- Board-certified orthodontists (American Board of Orthodontics (ABO) certification) — they’ve passed additional testing showing clinical competence.\n- Invisalign Premier/Platinum/Elite providers — these have treated many Invisalign cases and know how to manage difficult alignments with clear aligners.\n- Offices with in-house 3D scanning (iTero/3Shape) and digital treatment planning — gives more predictable results and lets you see a simulation.\n- Practices that offer a free or low-cost consult so you can compare treatment plans, timelines, and cost.\n\nIf you want immediate names without giving your ZIP, here’s how to get reliable specific options now\n1. AAO “Find an Orthodontist” (americanassociationoforthodontists.org) — filter by Phoenix area and look for “orthodontist” (not general dentist offering braces).\n2. Invisalign provider locator (invisalign.com) — shows providers and their provider level.\n3. Google Maps / Yelp — sort by rating and read recent reviews; prefer clinics with many recent positive reviews, photos, and before/after galleries.\n4. Check ABO certification at americanboardortho.com (search by name).\n\nQuestions to ask on the phone or at a consult\n- Are you an orthodontist (DDS/DMD + orthodontics residency)? Are you board-certified by the ABO?\n- Do you provide both braces and Invisalign? Which would you recommend for my case (describe: crowding, spacing, bite)?\n- How many Invisalign cases have you treated? (Higher numbers and higher Invisalign provider tiers are better for complex aligner cases.)\n- Do you use in-office digital scanning (no goopy impressions)? Can I see before/after photos of similar cases?\n- Estimated treatment time and total cost (what’s included: retainers, adjustments, X-rays)?\n- Do you accept my insurance / offer financing? Any special adult packages?\n- What is your emergency protocol if a bracket breaks or an aligner is lost?\n- Do you handle complex cases (crossbite, open bite, surgical orthodontics if needed)?\n\nRed flags\n- Office repeatedly refuses to show before/after cases or options.\n- Provider is a general dentist offering “Invisalign” but hasn’t done many cases or lacks a certified orthodontic residency.\n- Vague answers about cost or treatment timeline.\n\nIf you tell me your ZIP code or neighborhood and whether you prefer braces or Invisalign (or are open to either), I’ll list 5–7 specific orthodontists in the Phoenix metro area to call and say why each is a good choice (credentials, Invisalign level, location, strengths).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6ef2bde5-2b0c-473c-afe3-0595638308a6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00084,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00455
+   },
+   "input_tokens": 4830,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4284,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 334,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5164
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Oral & Facial Surgeons of Arizona",
+  "Dr. Alexander Kim",
+  "Phoenix Oral",
+  "Facial Surgery",
+  "Facial Surgeons of Arizona",
+  "Dr. George Eifler",
+  "Dr. Gregory Libby",
+  "Dr. Ramin Damadzadeh",
+  "Phoenix Oral & Facial Surgery"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.realself.com/find/Arizona/Phoenix/Dental-Implants",
+  "https://www.myspecialtydentist.com/best/prosthodontics/phoenix",
+  "https://www.myspecialtydentist.com/best/prosthodontics/az/phoenix",
+  "https://www.linkedin.com/in/drdanielfgalindo",
+  "https://www.aaid.com/contact-us",
+  "https://www.implantpathway.com/courses/restorative-aox",
+  "https://www.realself.com/find/Arizona/Phoenix/ClearChoice-Dental-Implants",
+  "https://dev.aaid-implant.org/dentist/rodda-daniel/",
+  "https://www.aaid.com/dental-implant-information-for-consumers/",
+  "https://dentalimplantdirectory.com/provider/phoenix-oral-facial-surgery-575577",
+  "https://www.thephoenixreview.com/best-oral-surgeons-phoenix/",
+  "https://www.oralsurgeryarizona.com/why-patients-trust-our-oral-surgeons/",
+  "https://www.aaid.com/about-us",
+  "https://www.oralsurgeryarizona.com/phoenix-az/dental-implants/",
+  "https://www.realself.com/find/Arizona/Phoenix/Mini-Dental-Implants"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "e9168c9815652db5e8671dfb635e564917294d55b903e150c65820050af0242b",
+ "answer_chars": 1207,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

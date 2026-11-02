@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_segment_health_insurance_kansas_city_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_cacc7d7f-7b8b-4155-9908-fc6192f604e9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 4554,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4003,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 293,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4847
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "BBS Insurance",
+  "North Kansas City",
+  "Overland Park",
+  "North Kansas City and Overland Park",
+  "BBB A",
+  "Marketplace Plans",
+  "BBB A+ accreditation"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://bbs-insurance.com/",
+  "https://bbs-insurance.com/about/",
+  "https://www.insurancebusinessmag.com/us/news/benefits/cbiz-benefits-and-insurance-launches-as-standalone-firm-so-whats-next-595726.aspx",
+  "https://dedicatedadvisors.net/about-us/",
+  "https://bbs-insurance.com/licensing-and-disclosures/",
+  "https://nekcchamber.com/directory/where-theres-a-wilt-theres-a-way/",
+  "https://www.linkedin.com/in/albert-bell-3a4551184",
+  "https://www.bluekc.com/",
+  "https://www.linkedin.com/in/drew-padgett-178a95362",
+  "https://bbs-insurance.com/service-areas/kansas-city/",
+  "https://www.linkedin.com/company/integrity-benefit-solutions-llc",
+  "https://sites.google.com/view/health-insurance-kansas-city/home",
+  "https://www.bluekc.com/page-category/agents/",
+  "https://info.npconnect.org/list/category/insurance-28",
+  "https://bbs-insurance.com/health-insurance/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "fb7c598f22d2ecee00bc58e869d2ad8cc045d4ae1627bc5efa5be99aa7de13eb",
+ "answer_chars": 988,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_hvac_phoenix_anthropic",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_7ab3dwbbx63dmtgjx4hb4awuk7jtbkkp4a35qzq6v2lhvn34yf7q",
+  "usage": {
+   "input_tokens": 28,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 269,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Timing note",
+  "ROC",
+  "Registrar of Contractors",
+  "Arizona Registrar of Contractors (ROC)",
+  "In Phoenix",
+  "Arizona Registrar of Contractors",
+  "Emergency availability"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd recommend starting with these approaches rather than specific company names:\n\n**How to find reliable options:**\n- Check Google Reviews and Yelp filtered for recent reviews (last 6-12 months)\n- Ask neighbors or your HOA for recommendations\n- Verify licensing through Arizona Registrar of Contractors (ROC)\n- Get 2-3 quotes before deciding\n\n**What to prioritize:**\n- ROC license and good standing\n- Transparent pricing (written estimates)\n- Local presence (easier for follow-ups)\n- Emergency availability (important in Phoenix heat)\n- Warranty details on parts and labor\n\n**Red flags to avoid:**\n- Pressure to replace rather than repair\n- Vague pricing\n- No written estimate\n- Unlicensed contractors\n\n**Timing note:** Summer is peak season, so response times may be slower and prices higher. If it's not an emergency, scheduling during spring might get better rates.\n\nSince I can't recommend specific companies (they change, quality varies, and I can't verify current performance), the review sites and ROC database will give you current, verified information for your area.\n\nWhat's the issue you're experiencing? That might help you prioritize urgency.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

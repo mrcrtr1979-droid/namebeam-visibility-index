@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_segment_roofing_dallas_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3871a1ba-2693-4a7d-918f-8a7ea4891bbb",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00447
+   },
+   "input_tokens": 4867,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4320,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 300,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5167
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Arrington Roofing",
+  "GAF Master Elite",
+  "StazOn Roofing",
+  "KPost Company",
+  "StazOn"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/tx/dallas",
+  "https://www.bbb.org/us/tx/dallas/category/roof-replacement",
+  "https://www.bbb.org/us/tx/dallas/category/roof-replacement/accredited",
+  "https://www.courier-journal.com/press-release/story/228484/new-view-roofing-named-best-overall-dallas-roofing-company-by-yahoo-local/",
+  "https://www.bbb.org/us/tx/dallas/category/roofing-contractors",
+  "https://homematchup.com/roofers/tx/dallas/",
+  "https://www.bbb.org/us/tx/dallas/profile/roofing-contractors/dfw-roofing-pro-llc-0875-90848199/customer-reviews",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/pa/dallas",
+  "https://www.angi.com/companylist/us/tx/dallas/roofing.htm",
+  "https://arringtonroofing.com/areas-we-serve/lakewood-roofing",
+  "https://dfwprofessionals.com/dallas/roofing-contractor",
+  "https://industryoversight.com/roofing-contractors/dallas-dallas-tx/",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/nc/dallas",
+  "https://www.gaf.com/en-us/roofing-contractors/residential/usa/or/dallas",
+  "https://www.thumbtack.com/tx/dallas/roofing/roof-pros-dallas-inc/service/581916567030095879"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ad448956eeb58f947db96439e509690557be35e22d18911300484c301af6b5a8",
+ "answer_chars": 974,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

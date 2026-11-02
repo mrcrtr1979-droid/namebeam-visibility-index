@@ -1,0 +1,95 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_tanning_salons_tyler_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: tanning salons, Tyler",
+ "niche": "tanning salons",
+ "market": "Tyler TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to try a tanning salon in Tyler. Which specific salons should I call, and why?",
+ "q1_prompt_text": "What is the best tanning salon in Tyler TX?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b0339450-5b20-4e2b-9b34-dd8353453f37",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00092,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00473
+   },
+   "input_tokens": 5218,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4664,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 366,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5584
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "The Tanning Zone — (903) 534-8266",
+  "Palm Beach Tan — (903) 253-9990",
+  "Also worth checking",
+  "Tru Tan — (903) 534-1818",
+  "Palm Beach Tan",
+  "Tru Tan",
+  "W Southwest Loop",
+  "The Tanning Zone"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://tylertanning.com/",
+  "https://www.glotanning.com/location/tyler-tx/",
+  "https://palmbeachtan.com/locations/tx/tyler-south-broadway-avenue",
+  "https://local.yahoo.com/info-18805792-the-tanning-zone-tyler/",
+  "https://www.yelp.com/biz/the-tanning-zone-tyler",
+  "https://www.groupon.com/biz/tyler-tx/the-tanning-zone",
+  "https://workoutanytime.com/wa-tanning/tyler-south/",
+  "https://www.findlocaltanning.com/Texas/The-Tanning-Zone-81918566032/",
+  "https://maps.apple.com/place?place-id=I839D2985C6405C92",
+  "https://www.yelp.com/biz/tru-tan-tyler-4",
+  "https://www.yelp.com/biz/tru-tan-tyler",
+  "https://reviews.birdeye.com/tru-tan-156035765085373",
+  "https://www.bbb.org/us/tx/tyler/profile/tanning-salons/tru-tan-1075-28003726",
+  "https://palmbeachtan.com/pricing-rewards/167",
+  "https://www.yellowpages.com/tyler-tx/tru-tan"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "35bd0e9d1001e7d2f4a136a49ff81270b72f7eb25b81a72bb32b3895c5194093",
+ "answer_chars": 1206,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

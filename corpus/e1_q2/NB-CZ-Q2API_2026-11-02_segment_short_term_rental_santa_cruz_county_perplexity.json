@@ -1,0 +1,110 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a vacation rental in Santa Cruz County. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_80ad3c05-c05e-46c3-97e0-9ef8cc81c08b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00123,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00493
+   },
+   "input_tokens": 4796,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4241,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 494,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5290
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Beachnest Vacation Rentals — (831) 722-0888",
+  "Blue Sky Property Management — (831) 334-7676",
+  "Aptos, Capitola, and Santa Cruz",
+  "Beachnest Vacation Rentals",
+  "Capitola",
+  "Aptos",
+  "Potter Property Management",
+  "Vacation Rentals",
+  "Twin Lakes",
+  "Live Oak",
+  "La Selva Beach",
+  "Blue Sky Property Management",
+  "A Santa Cruz-based",
+  "Visit Santa Cruz County",
+  "Cheshire Rio Realty and Property Management",
+  "Pajaro Dunes Company",
+  "Pajaro Dunes",
+  "Watsonville",
+  "Seabright",
+  "Kendall & Potter Property Management",
+  "Kendall & Potter",
+  "Santa Cruz proper",
+  "Cheshire Rio Realty"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://montereycoast.com/santa-cruz-vacation-rental-property-management/",
+  "https://www.santacruz.org/listings/blue-sky-property-management/",
+  "https://www.santacruz.org/destinations/santa-cruz/",
+  "https://www.beachnest.com/property-management/",
+  "https://www.beachnest.com/unfurnished-management/",
+  "https://propertymanagementlist.com/company/bailey-vacation-property-management-aptos-ca/",
+  "https://www.indeed.com/viewjob?jk=e3344a3fcbaec21f",
+  "https://www.santacruz.org/places-to-stay/",
+  "https://www.beachnest.com/",
+  "https://www.bbb.org/us/ca/capitola/category/vacation-rentals",
+  "https://www.bbb.org/us/ca/fresno/category/vacation-rentals",
+  "https://www.bbb.org/us/ca/santa-cruz/category/property-management",
+  "https://talents.vaia.com/companies/kendall-potter-property-management-inc/capitola/property-manager-136840477/",
+  "https://www.linkedin.com/in/shaneoneal",
+  "https://www.beachnest.com/about-us/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "7c275e1b25cca0e300cafd0dc51f76503b40031bead57bc7d5a8a8c4f83a52c4",
+ "answer_chars": 1761,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

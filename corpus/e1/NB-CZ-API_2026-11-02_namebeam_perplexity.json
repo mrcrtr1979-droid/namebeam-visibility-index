@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_namebeam_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5a90cb80-de0e-4e3e-8ed1-fa7010d5a4e9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00066,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00438
+   },
+   "input_tokens": 4885,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4333,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 263,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5148
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Otterly.ai",
+  "HubSpot’s AI Search Grader",
+  "AI-visibility",
+  "HubSpot",
+  "AI Search Grader"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.sona.com/blog/agency-or-tool-to-track-brand-mentions-in-chatgpt-and-perplexity/",
+  "https://www.sona.com/blog/7-best-ai-visibility-tools-for-b2b-companies-compared/",
+  "https://apify.com/steady-scrape/ai-brand-visibility-tracker",
+  "https://www.sona.com/blog/6-tools-to-track-ai-search-visibility-in-chatgpt-and-gemini/",
+  "https://moz.com/blog/best-brand-monitoring-tools",
+  "https://mettevo.com/blog/article/chatgpt-visibility-tracker-vs-service",
+  "https://www.sona.com/blog/how-to-track-chatgpt-brand-mentions-and-what-tools-cost/",
+  "https://elfsight.com/blog/best-chatgpt-visibility-trackers/",
+  "https://listenlabs.com/articles/ai-brand-tracking-pricing/",
+  "https://www.sona.com/blog/how-to-measure-and-improve-chatgpt-search-visibility/",
+  "https://toolradar.com/guides/best-ai-brand-monitoring-tools",
+  "https://blog.hubspot.com/marketing/best-ai-visibility-tools",
+  "https://growbydata.com/best-chatgpt-monitoring-tools/",
+  "https://www.business.com/categories/best-ai-visibility/",
+  "https://superframeworks.com/articles/best-chatgpt-mentions-tool"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "0e1f54dd79b85d56caab2bec418092ca0e9d9e5e4430dc0f9ce982fd3a08b170",
+ "answer_chars": 833,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

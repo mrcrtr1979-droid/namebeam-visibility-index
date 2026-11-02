@@ -1,0 +1,62 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_real_estate_agents_pleasanton_gemini",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to sell my house in Pleasanton. Which specific real estate agents should I call, and why?",
+ "q1_prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "HR_paui7LNSFqtsPivj6oAM",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 554,
+   "totalTokenCount": 576,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Action",
+  "Days on Market (DOM)",
+  "List-to-Sale Ratio",
+  "Marketing Quality",
+  "Ruby Hill",
+  "Kottinger Ranch",
+  "Val Vista",
+  "Listing Agent",
+  "Silicon Valley",
+  "Least Three Agents",
+  "Keller Williams",
+  "Compass",
+  "Keller Williams Tri-Valley",
+  "Intero Real Estate Services",
+  "In Pleasanton",
+  "Berkshire Hathaway",
+  "Dudum Real Estate Group",
+  "Downtown Pleasanton"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I cannot recommend specific real estate agents to call. Because I am an AI, I do not have access to real-time performance metrics, local reputation shifts, recent transaction data, or personal chemistry, all of which are critical when choosing an agent to sell your home. \n\nFurthermore, real estate is hyper-local and subjective. The \"best\" agent for a luxury estate in Ruby Hill might not be the best agent for a starter home near downtown Pleasanton. \n\nInstead of relying on a static list, here is a step-by-step strategy to identify and vet the specific agents you should call in Pleasanton:\n\n### 1. Look for Proven Neighborhood Dominance\nYou want an agent who actively sells homes in your specific pocket of Pleasanton (e.g., Foothill, Kottinger Ranch, Val Vista, or the Downtown area). \n* **Action:** Go to Zillow, Realtor.com, or Redfin and search for recently sold homes in your immediate neighborhood (within the last 6–12 months). Make a note of which agents’ names appear most frequently on the \"Listing Agent\" signs. \n\n### 2. Check Local Brokerage Market Share\nIn the Pleasanton/Tri-Valley market, certain brokerages consistently handle a large volume of transactions. Look at top-producing offices for companies like:\n* Compass\n* Intero Real Estate Services\n* Dudum Real Estate Group\n* Keller Williams Tri-Valley\n* Berkshire Hathaway HomeServices\n\n### 3. Vet Their Recent Track Record\nOnce you have 3 to 4 names from your research, check their credentials online:\n* **Days on Market (DOM):** Do their listings sell faster than the Pleasanton average?\n* **List-to-Sale Ratio:** Do their homes sell close to or above asking price?\n* **Marketing Quality:** Look at their active and past listings. Do they use professional twilight photography, 3D virtual tours, and polished video walkthroughs? (Crucial for attracting buyers moving out from Silicon Valley/San Francisco).\n\n### 4. Interview at Least Three Agents\nNever hire the first agent you speak with. Invite three different agents to do a walkthrough of your home. Ask them:\n* *\"What is your specific marketing strategy for Pleasanton buyers?\"* (Ask how they target commuters, tech workers, and local families).\n* *\"Can you provide references from your last three Pleasanton sellers?\"*\n* *\"What is your commission structure, and is it negotiable?\"*\n\nBy doing this research yourself, you will ensure you are calling the agents who currently hold the strongest market share in your specific neighborhood, rather than relying on outdated recommendations.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_dentists_atlanta_openai",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Atlanta. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfvwC7O1lffNu7gXCZUfhSCcyzF4X",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1760,
+   "total_tokens": 1785,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1152,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Oral Surgery",
+  "AAOMS",
+  "Board Certification"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need one quick detail so I give accurate, local names: what part of Atlanta are you closest to (zip code or neighborhood)? Also tell me whether this is a single-tooth implant, multiple implants or full-arch (All‑on‑4 type), and whether insurance/price or sedation are important to you.\n\nWhile you reply, here’s useful guidance so you know what I’ll look for and why:\n\nWhich types of practices you should call (and why)\n- Emory University Dental/Oral Surgery (academic center): great if you want experienced specialists, complex-case expertise, and multidisciplinary care. Good for complicated medical histories.\n- Board-certified oral & maxillofacial surgeons: they place implants surgically and manage extractions, bone grafting, sinus lifts, IV sedation; call them if you want the surgeon to do the implant placement.\n- Board-certified periodontists (implant specialists): focused on implant placement and gum/bone health; excellent for esthetic cases and grafting.\n- Prosthodontists or restorative dental specialists: important when the final crown, bridge, or implant-supported denture is complex — they design the restoration.\n- High-volume implant centers / All-on-4 specialists (if you need full-arch replacement): some practices do same-day teeth; ask about long-term outcomes and who does the final restoration.\n- Full-service practices that do both surgery and restoration in-house: convenient coordination and fewer handoffs.\n\nWhat I’ll prioritize when picking specific clinics for you\n- Board certification and specialist credentials (AAOMS for surgeons, AAP board-certified periodontists, prosthodontist credentials)\n- Experience with the procedure you need (single implant vs full-arch)\n- Availability of CBCT 3D imaging (important for planning)\n- On-site sedation/IV sedation if needed\n- Positive before/after photos and patient reviews\n- Transparent pricing, warranty/guarantee on restorations, and financing options\n\nQuestions to ask when you call (quick script)\n- “Do you place dental implants? How many implant cases do you do per year?”\n- “Are you a board-certified oral surgeon / periodontist / prosthodontist?”\n- “Do you do the surgical placement and the restorative crown/denture here, or will I need a separate restorative dentist?”\n- “Do you use CBCT 3D imaging and digital planning?”\n- “What implant brands do you use and do you offer warranties?”\n- “Estimated timeline and typical total cost (including grafting and final restoration)?”\n- “Do you accept my insurance and do you offer financing?”\n- “Do you provide IV sedation or nitrous oxide?”\n\nIf you tell me your zip code/neighborhood and the type of implant you need, I’ll compile a short list (5–8) of specific practices in Atlanta with brief reasons to call each, plus phone/website links and a recommended first choice based on your priorities.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

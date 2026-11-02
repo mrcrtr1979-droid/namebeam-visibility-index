@@ -1,0 +1,43 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_hvac_atlanta_anthropic",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a new air conditioner installed in Atlanta. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_tzuh7aasysvyqcp5lkit5k75g5sygqfhcng3yebjmioawyh5bgna",
+  "usage": {
+   "input_tokens": 31,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 276,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "NATE",
+  "NATE certification"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd recommend starting with these approaches rather than specific company names:\n\n**How to find good options:**\n- Check Google Reviews and Yelp for local HVAC companies with 4.5+ stars and recent reviews\n- Ask neighbors or your realtor for recommendations\n- Verify any company is licensed, insured, and bonded in Georgia\n- Get 3-5 quotes before deciding\n\n**What to look for:**\n- NATE certification (technician credential)\n- Transparent pricing with written estimates\n- Warranty details clearly explained\n- Local presence (easier for service calls)\n- Better Business Bureau rating\n\n**Red flags to avoid:**\n- Pressure to decide immediately\n- Prices significantly lower than others\n- No written contract\n- Unwillingness to provide references\n\n**Questions to ask:**\n- Do they handle your specific unit type?\n- What's included in installation?\n- What's the warranty period?\n- Are they available for emergency service?\n\nSince HVAC companies vary widely by neighborhood and change over time, current reviews will be more reliable than me naming specific companies. Local Facebook groups for your Atlanta neighborhood often have recent recommendations too.\n\nWhat size space are you cooling, or do you have other specific needs I can help you think through?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,100 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_dentists_chicago_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Chicago. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4d75768a-d1f9-41ea-93ca-e293ade7d7d1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00152,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00518
+   },
+   "input_tokens": 4637,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4084,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 609,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5246
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UIC College of Dentistry",
+  "Perio Implant Chicago",
+  "UIC College of Dentistry — Periodontics",
+  "ORA Oral Surgery & Implant Studio",
+  "Dental Group of Chicago — South Loop",
+  "Innovations Center",
+  "Dr. Bahareh Sabzehei",
+  "ORA Oral Surgery",
+  "Implant Studio",
+  "Dr. Steven Koos",
+  "Dental Group of Chicago",
+  "South Loop",
+  "Implant"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.perioimplantchicago.com/",
+  "https://dentistry.uic.edu/academics/academic-departments/department-of-restorative-dentistry/impant-and-innovations-center/",
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/prosthodontics-implant-innovation/",
+  "https://www.perioimplantchicago.com/dr-bahareh-sabzehei/",
+  "https://cameods.com/oral-surgeon-chicago-il-about/",
+  "https://www.clearchoice.com/locations/il/chicago/630-w-washington-blvd/",
+  "https://www.cds.org/meet-your-2026-2027-north-suburban-branch-president/",
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/periodontal-gum-disease-therapy/",
+  "https://dentalgroupofchicago.com/dental-implants/",
+  "https://www.clearchoice.com/locations/region/chicago/",
+  "https://www.dentartchicago.com/dental-services/",
+  "https://dentistry.uic.edu/patients/dental-services/",
+  "https://www.orasurgery.com/about-the-studio/steven-koos/",
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/oral-maxillofacial-surgery/",
+  "https://dentistry.uic.edu/profiles/george-mandelaris/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "35eafd9fc6e1fe20d97a349e019bfa9f9e42151f66666d75eb1e6f298fe37049",
+ "answer_chars": 2386,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,100 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_roofing_denver_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My roof has hail damage in Denver. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_72a7b089-7f65-44db-9d4c-8363de8731e9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00171,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00542
+   },
+   "input_tokens": 4830,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4277,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 684,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5514
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Murray Roofing LLC — (720) 464-7663",
+  "Woodberg Roofing and Restoration — (720) 464-7498",
+  "Metro City Roofing — (303) 524-1000",
+  "Golden Spike Roofing — (303) 942-1386",
+  "Murray Roofing LLC",
+  "Woodberg Roofing and Restoration",
+  "Metro City Roofing",
+  "Siding Company",
+  "Golden Spike Roofing",
+  "Division of Insurance",
+  "Colorado Division of Insurance",
+  "Murray Roofing",
+  "Woodberg Roofing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/the-roofing-siding-company-1296-1000194283",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/murray-roofing-llc-1296-90104041",
+  "https://www.bbb.org/us/co/castle-rock/profile/construction/verity-roofing-llc-1296-1000165674",
+  "https://www.bbb.org/us/co/denver/category/hail-repair/accredited",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/woodberg-roofing-and-restoration-llc-1296-90245804",
+  "https://www.bbb.org/us/co/commerce-city/category/hail-repair",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/golden-spike-roofing-inc-1296-90126426",
+  "https://www.bbb.org/us/co/denver/category/storm-damage-repair",
+  "https://doi.colorado.gov/news-releases-consumer-advisories/consumer-advisory-division-of-insurance-shares-tips-to-prepare",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/metro-city-roofing-1296-90261616",
+  "https://www.bbb.org/us/co/aurora/category/hail-repair",
+  "https://www.bbb.org/us/co/englewood/profile/roofing-contractors/beyond-roofing-1296-23034941",
+  "https://www.bbb.org/us/co/lakewood/category/storm-damage-repair",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/premier-roofing-company-1296-27001387",
+  "https://www.coloradoroofing.org/news/hail-damage-dos-and-donts-when-hiring-a-contractor"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "6f5d7f53701b2aaa8bf943c2ac3447c25ec1935adbe7f1e3de3fd2402d3b1977",
+ "answer_chars": 2583,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

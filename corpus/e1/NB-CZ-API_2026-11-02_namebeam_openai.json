@@ -1,0 +1,64 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_namebeam_openai",
+ "date_utc": "2026-11-02",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Efv7bweoWKjn4Ke8hPZEIvTMJ8qEf",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1875,
+   "total_tokens": 1899,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bard",
+  "Bing Chat",
+  "Bing Places for Business",
+  "BrightLocal",
+  "Whitespark",
+  "Moz Local",
+  "You.com",
+  "OpenAI API",
+  "SerpApi",
+  "You.com APIs",
+  "Chatmeter",
+  "Reputation.com",
+  "TripAdvisor",
+  "Use OpenAI API",
+  "Use SerpApi",
+  "Yext",
+  "Semrush",
+  "Bing Places",
+  "Local SEO",
+  "Mention",
+  "OpenAI",
+  "Use BrightLocal"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t one single “best” service that will tell you whether every AI engine (ChatGPT, Bard, Bing Chat, Perplexity, etc.) recommends your business. The practical approach is a two‑part strategy: (A) make sure your business listings and structured data are perfect using a local‑SEO/listing management service, and (B) actively test and monitor major LLMs and search/answer engines. Below I give the best services and a simple testing plan.\n\nWhat to use\n- For listings and structured data (critical because LLMs and search engines draw on these):\n  - Google Business Profile (free) — mandatory for local recommendations.\n  - Bing Places for Business (free).\n  - Yext — enterprise listing management and “answers” features that integrate with AI experiences.\n  - BrightLocal or Whitespark — affordable/local SEO + citation monitoring and audit.\n  - Semrush / Moz Local — listing audits and local SEO insights.\n\n- For monitoring brand/web mentions (helps detect if AI is citing or using you as a source):\n  - Mention, Brandwatch, or Talkwalker.\n  - Google Alerts (free).\n\n- For checking what LLMs actually say:\n  - Manual testing across ChatGPT (web with browsing or API), Google Bard, Bing Chat, Perplexity, You.com.\n  - For automation / programmatic checks: OpenAI API (for ChatGPT/GPT models), SerpApi or Google Search API (to track SERP/features that generative answers pull from), Perplexity/You.com APIs where available.\n\n- For local reputation/voice/AI monitoring (paid specialized tools):\n  - Chatmeter — monitors local search and voice results, good for multi-location businesses.\n  - Reputation.com — review and listings management.\n\nWhy a combo is necessary\n- LLMs draw from different sources: some use live web/search (Bing Chat, Bard/Perplexity), others use static training data unless you use browsing plugins (ChatGPT default may not have live results).\n- If you’re listed in authoritative directories (Google Business Profile, Yelp, TripAdvisor, industry directories), those are far more likely to appear in model answers and in search results that LLMs cite.\n- There is no single “AI index” service that guarantees coverage across all LLMs yet.\n\nA simple testing process you can do right now\n1. Make sure your Google Business Profile and Bing Places are complete and verified.\n2. Use BrightLocal or Whitespark to audit your citations and correct NAP (name/address/phone) inconsistencies.\n3. Manually ask the major LLMs these example prompts, tailoring location/category:\n   - “Recommend a [category] near me in [city or zip].”\n   - “What are the best [coffee shops/electricians/plumbers] in [city]?”\n   - “Who do you recommend for [service] near [street or neighborhood]?”\n   Record whether your business appears and whether the response cites a source.\n4. Automate weekly checks (if you want ongoing monitoring):\n   - Use OpenAI API to send those prompts to ChatGPT/GPT models.\n   - Use SerpApi / Google Search API to track whether your site appears in featured snippets / local packs (these heavily influence LLM answers).\n   - Optionally call Perplexity/You.com APIs for the same prompts.\n\nPractical recommendation (if you want one path)\n- Small local business: start with Google Business Profile + BrightLocal (or Whitespark) to fix listings, and manually test ChatGPT/Bard/Bing Chat monthly.\n- If you want more automated enterprise-ish coverage: Yext + SerpApi + OpenAI API (or managed services like Chatmeter) to push accurate data to AI channels and monitor answers.\n\nNotes and caveats\n- ChatGPT without browsing may not reflect very recent changes; test engines that use live web results for more realistic “recommendation” behavior.\n- LLMs can hallucinate; presence in their reply doesn’t guarantee accuracy. Structured listings reduce hallucination risk.\n- There’s no guarantee an LLM will “recommend” a business even if listed — relevance, reviews, proximity, and SEO influence it.\n\nIf you want, tell me:\n- your business type and city (or several sample queries you care about), and I’ll give a short list of exact prompts to test and recommend one concrete service stack for you.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

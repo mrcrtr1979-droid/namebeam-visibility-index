@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_orthodontists_denver_openai",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: orthodontists, Denver",
+ "niche": "orthodontists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Denver. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Denver for braces or Invisalign?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Efw7TpXH7NXmmd4AIlotxRFCgmBCQ",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1453,
+   "total_tokens": 1478,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 896,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "ZIP I",
+  "D.D.S",
+  "D.M.D",
+  "American Board of Orthodontics",
+  "ABO",
+  "Invisalign",
+  "ClinCheck",
+  "Invisalign. Why"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — but to give useful, specific names I need one quick detail from you:\n\n- What Denver neighborhood or ZIP code are you in (or nearest cross-streets)?  \nAlso tell me whether the patient is an adult or a child/teen, whether you have dental insurance, and whether cost or speed is a top concern.\n\nIf you want an immediate, general answer without that, here’s a practical plan plus a checklist of what to look for when calling offices. If you share your ZIP I’ll return a targeted list of 6–8 specific Denver orthodontists (with short reasons for each).\n\nWhat to call and ask (why these matter)\n- Ask if the orthodontist is a specialist in orthodontics (D.D.S./D.M.D. + orthodontic residency) and whether they’re board-certified by the American Board of Orthodontics (ABO). Why: ABO board certification shows extra peer-reviewed competence.\n- Ask how much Invisalign experience they have (number of cases) or their Invisalign status (e.g., Diamond/Platinum—if they still use those tiers). Why: more cases = more predictable results and fewer mid-treatment surprises.\n- Ask whether they offer free or low-cost consultations and if they use digital impressions (iTero/3D scanner). Why: digital scans are faster and more accurate than messy impressions and many practices will show a ClinCheck or predicted outcome for Invisalign.\n- Ask to see before/after photos of similar cases to yours. Why: you’ll get a better sense of their aesthetic results.\n- Ask about total cost, what’s included (retainers, emergency visits), financing options, and whether they accept your insurance. Why: big cost and access differences across practices.\n- Ask about appointment availability (evenings/weekends) and typical treatment length for your concern. Why: practical scheduling and realistic timeline matter.\n- Ask what retention plan they use after braces/Invisalign. Why: retention is crucial to keep results.\n\nHow I’ll pick the specific offices once you tell me your location\n- Prefer ABO board-certified orthodontists when available.\n- Prioritize high-volume Invisalign/clear-aligner experience for adults who want Invisalign.\n- Look for modern technology (3D imaging/digital scanning) and clear before/after galleries.\n- Prefer practices with good recent patient reviews, transparent pricing, and flexible financing.\n- I’ll include options across price/comfort levels and note which are kid-friendly vs. adult/cosmetic-focused.\n\nIf you want me to pull specific names now, give your ZIP or neighborhood and whether this is for an adult or child — I’ll return 6–8 recommended Denver orthodontists to call, with one-line reasons for each.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

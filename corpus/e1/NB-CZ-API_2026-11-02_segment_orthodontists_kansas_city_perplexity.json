@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_segment_orthodontists_kansas_city_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: orthodontists, Kansas City",
+ "niche": "orthodontists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Kansas City Missouri for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b2555a93-9e54-4f72-8abc-430b17360523",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00098,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00474
+   },
+   "input_tokens": 5019,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4470,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 391,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5410
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Abraham B. Lifshitz",
+  "Dr. Henry Hoffman",
+  "Dr. Dustin Burleson",
+  "Invisalign. Based",
+  "American Association of Orthodontists",
+  "American Board of Orthodontics",
+  "Smile Doctors",
+  "Invisalign"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-abraham-b-lifshitz/",
+  "https://aaoinfo.org/locator/dr-henry-hoffman/",
+  "https://aaoinfo.org/locator/dr-kurt-e-kavanaugh/",
+  "https://aaoinfo.org/locator/dr-john-p-roth-2/",
+  "https://aaoinfo.org/locator/dr-gerard-w-huerter-jr-2/",
+  "https://aaoinfo.org/locator/dr-stephen-r-haught/",
+  "https://aaoinfo.org/locator/dr-duncan-reid-billings/",
+  "https://aaoinfo.org/locator/dr-kaylee-bergman/",
+  "https://smiledoctors.com/locations/kansas-city-nichols/",
+  "https://aaoinfo.org/locator/dr-kelly-tabacchi/",
+  "https://aaoinfo.org/locator/dr-kurt-w-hoffman/",
+  "https://aaoinfo.org/locator/dr-michael-s-klein-2/",
+  "https://aaoinfo.org/locator/",
+  "https://fryorthodontics.com/services/invisalign/",
+  "https://aaoinfo.org/locator/dr-donald-c-wilson-2/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "833583efd763be330cdcdff9f1d7af35a51626141945852acd8fa01d60d51425",
+ "answer_chars": 1313,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

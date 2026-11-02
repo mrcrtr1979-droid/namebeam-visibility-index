@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_dentists_miami_openai",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: dentists, Miami",
+ "niche": "dentists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Miami. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Miami for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Efw1V7uvprArIXpQFuLXZgbF1hpbx",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1943,
+   "total_tokens": 1968,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1152,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Miami ZIP",
+  "Coral Gables",
+  "North Miami",
+  "AAOMS",
+  "American Academy of Periodontology",
+  "University of Miami Health"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can help — before I give specific clinic names, a quick question: what Miami ZIP code or neighborhood are you in (e.g., Brickell, Coral Gables, North Miami, etc.), and do you have dental insurance or a budget/financing preference? That lets me recommend nearby practices that fit your needs.\n\nMeanwhile, here’s exactly which types of dental practices you should call and why, plus what to ask each one so you can compare them quickly.\n\nWhich practices to call\n- University/teaching clinic: University of Miami School of Dentistry (Coral Gables)\n  - Why: faculty-supervised care, access to specialists (oral surgery, perio, prosthodontics), lower-cost options through student clinics while supervised by experienced faculty.\n- Board-certified oral & maxillofacial surgeons in Miami\n  - Why: they place complex implants and manage bone grafts/sedation/complications. Call them if you need extractions, bone grafting, or IV sedation.\n- Board-certified periodontists (specialists in gums and implants)\n  - Why: periodontists specialize in implant placement and gum/bone health — good for single-tooth implants and peri-implant management.\n- Prosthodontists (specialists in implant restorations)\n  - Why: they design and place the final crowns, bridges, or implant-retained dentures — call them if you want the best long-term restorative outcome.\n- Multi-specialty implant centers\n  - Why: centers that house surgeons, periodontists, and prosthodontists in one practice streamline communication and treatment planning.\n- Community clinics/VA (if eligible) or dental school clinics\n  - Why: lower-cost supervised care and treatment plans that may be more affordable.\n\nHow to find the best specific offices (quick sources)\n- ADA “Find-a-Dentist,” AAOMS (oral surgeon) directory, American Academy of Periodontology directory, and local hospital affiliations (e.g., University of Miami Health).\n- Google Maps + reviews, but weigh reviews alongside credentials and before/after photos.\n\nQuestions to ask when you call (use these for all offices)\n1. Do you place and restore dental implants in-house? (some practices refer out for one of the steps)\n2. Who will place the implant (oral surgeon, periodontist, general dentist)? Are they board-certified?\n3. How many implants do you place per year? (volume is an indicator of experience)\n4. What implant system/brand do you use? (Nobel, Straumann, etc. — reputable systems matter)\n5. Will you take a CBCT 3D scan before treatment? (essential for planning)\n6. Do you perform bone grafting/sinus lifts if needed?\n7. What sedation options are available (local, nitrous, oral sedation, IV sedation)?\n8. What is the estimated total cost (placement + abutment + crown) and payment/financing options?\n9. Do you offer a written treatment plan, timeline, and warranty/guarantee for the implant/restoration?\n10. Can I see before/after photos and speak with recent patients or read testimonials?\n\nRed flags to avoid\n- No CBCT/3D imaging for implant planning.\n- Vague answers about who does which part of the treatment.\n- Extremely low prices without clear explanation (may mean low-quality parts or inexperienced providers).\n- Clinics that pressure you into immediate treatment without diagnostic imaging and a written plan.\n\nIf you give me your ZIP code/neighborhood and any preferences (insurance, budget, single tooth vs. full-arch, sedation needs), I’ll list 4–6 specific Miami-area practices to call (including phone numbers and brief reasons to call each). I can also draft a short phone script you can use so each call gets the same information. Which would you like next?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

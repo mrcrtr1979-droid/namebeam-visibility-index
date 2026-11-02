@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_needle_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "Needle",
+ "niche": "AI marketing tool for DTC brands",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best AI marketing tool for DTC brands?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ec7d1748-b160-430d-a894-6807b9a7e326",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00058,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00432
+   },
+   "input_tokens": 4945,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4399,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 232,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5177
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Quick rule",
+  "Klaviyo",
+  "AI-written",
+  "Email and SMS",
+  "Choose Klaviyo"
+ ],
+ "engine_stated_criteria": [
+  "For most DTC brands, Klaviyo is the strongest all-around choice"
+ ],
+ "sources_cited": [
+  "https://www.klaviyo.com/blog/how-kai-klaviyo-helps-brands-grow-smarter",
+  "https://www.klaviyo.com/composer/improve-campaign-performance-ai-ecommerce-data",
+  "https://www.klaviyo.com/enterprise/marketing-automation",
+  "https://www.klaviyo.com/blog/gartner-magic-quadrant-multichannel-marketing-hubs",
+  "https://www.klaviyo.com/newsroom/klaviyo-expands-ai-suite",
+  "https://www.klaviyo.com/solutions/ai/ai-product-recommendation-agent",
+  "https://www.klaviyo.com/composer/what-is-an-ai-marketing-platform",
+  "https://www.klaviyo.com/use-cases/ecommerce",
+  "https://www.klaviyo.com/newsroom/ai-shopping-agent",
+  "https://www.klaviyo.com/blog/best-ai-tools-for-marketing",
+  "https://www.klaviyo.com/use-cases/marketing-personalization",
+  "https://www.klaviyo.com/blog/klaviyo-ai-for-autonomous-marketing-and-customer-service",
+  "https://www.klaviyo.com/use-cases/small-business",
+  "https://www.klaviyo.com/uk/blog/what-is-an-ecommerce-crm",
+  "https://www.klaviyo.com/newsroom/composer"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "5e9455ce3c870f7b51d85e0441945b82e6d903e17e0ee61362c479cfefb3c318",
+ "answer_chars": 797,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_segment_str_guest_discovery_openai",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfvRyyV5yc9kC9wAv3DSBqXcTqUxd",
+  "usage": {
+   "prompt_tokens": 34,
+   "completion_tokens": 1859,
+   "total_tokens": 1893,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Booking.com",
+  "AirCover",
+  "Watch",
+  "Use",
+  "Superhost",
+  "Vrbo. These",
+  "Verified ID",
+  "Premier Host",
+  "Filter",
+  "On Vrbo"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: It depends on your trip. Here’s a quick guide to choose between Airbnb, Vrbo, and Booking.com, plus a practical checklist to help you find a reliable host and avoid surprises.\n\nWhich platform to use\n- Airbnb\n  - Best if you want unique places, private rooms or shared stays, local experiences, and a large selection of entire homes. Strong host/guest profiles, AirCover protection, and badges (Superhost, Plus).\n  - Watch: service fees can be high, some listings are managed by companies rather than individuals.\n\n- Vrbo\n  - Best for whole-home rentals for families or groups (fewer shared rooms), long weekends, cabins or beach houses. Hosts are often owners, and the inventory skewed to vacation homes.\n  - Watch: cleaning and extra-fee transparency varies. Fewer “shared space” options.\n\n- Booking.com\n  - Best for last-minute bookings, hotels and aparthotels, and if you prefer flexible, pay-later/free-cancellation options. Huge volume of listings including apartments.\n  - Watch: less host-screening, some apartment owners get added by property managers; guest-host direct control may be smaller.\n\nHow to choose depending on your trip\n- Family or big group wanting a whole house → Vrbo or Airbnb entire-home filters.\n- Solo traveler wanting local host interaction or a room → Airbnb.\n- Need flexible cancellation or last-minute hotel-style stay → Booking.com.\n- Long stay / digital nomad → compare long-stay discounts on all three; check Wi‑Fi, workspace, monthly rate.\n\nHow to find a good host — step-by-step checklist\n1. Use filters and map view\n   - Filter by entire home, number of bedrooms, amenities (Wi‑Fi, washer, AC, parking), pet policy, and cancellation policy.\n   - Use the map to check exact neighborhood and proximity to transport/attractions.\n\n2. Prioritize recent, quality photos and an accurate description\n   - Clear photos of every room, outdoor space, and entrance. If photos are sparse or look staged, ask for more.\n   - Look for floor plans or layout descriptions.\n\n3. Read reviews selectively\n   - Prioritize recent reviews (last 6–12 months) and look for repeated mentions (cleanliness, noise, check-in).\n   - Check for how the host responds to negative reviews — thoughtful responses = good communication.\n   - Watch for patterns: many short, generic reviews can mean inexperienced guests or brokered listings.\n\n4. Evaluate the host profile\n   - Badges/levels: Superhost (Airbnb), Premier Host (Booking may vary), “Top Rated” on Vrbo. These aren’t perfect but help.\n   - Check host’s number of listings and response rate/time. A quick responder is valuable.\n   - Verified ID or linked social/profile details are a plus.\n\n5. Check fees, rules, and calendar closely\n   - Look for cleaning fees, extra-guest fees, security deposit, local taxes — compare the total price.\n   - Confirm check-in/check-out times, minimum-night rules, and any house rules (quiet hours, smoking, parties).\n   - Ensure the listing’s calendar is up-to-date — avoid owners who frequently change availability last-minute.\n\n6. Ask the host specific questions before booking\n   - Sample questions: “Is the address the same as shown? How is check-in handled (keybox/in-person)? Is parking guaranteed/free? How noisy is the street at night? Is the Wi‑Fi speed sufficient for video calls? Any recent construction?” \n   - If it’s a long stay, ask for a written agreement/receipt and clarify utilities and cleaning frequency.\n\n7. Look for safety and legal signs\n   - Confirm the rental is allowed locally (some cities restrict short-term rentals).\n   - Ask if smoke/carbon detectors are present.\n   - If something feels sketchy (host refuses to communicate via platform, asks for off-platform payment), do not book.\n\n8. Red flags to avoid\n   - Host asks you to pay outside the platform.\n   - Listing price that’s extremely low and vague photos.\n   - No reviews and a very new account with multiple listings.\n   - Many last-minute cancellations or inconsistent calendar.\n\n9. After you book — confirm logistics\n   - Ask for arrival instructions, key pickup, emergency contact, and any building access codes.\n   - Save the host’s phone number, and keep a screenshot of the listing and messages.\n\n10. If staying long-term or for a group\n   - Get everything in writing (length of stay, price, deposit terms).\n   - Consider a short written contract and request receipts for payments.\n   - Verify internet speed and workspace if you’ll work remotely.\n\nSample message to send a host before booking\n- “Hi — I’m [name]. We’re [number] guests (ages), traveling for [reason] from [dates]. Quick questions: Is the address the same as shown? How is check-in handled and what time is earliest arrival? Is parking available? Is Wi‑Fi fast enough for video calls? Any house rules we should know? Thanks!”\n\nExtra tips for best price and peace of mind\n- Book early for popular dates; check last-minute for discounts.\n- Consider longer stays for weekly/monthly discounts.\n- Compare total prices across platforms (fees and taxes differ).\n- Always pay and message via the platform for protections and documented communication.\n\nIf you tell me destination, trip dates, group size, and preferences (budget, whole-home vs room, work needs, pets), I can recommend the best platform and help screen a few listings.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

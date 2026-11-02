@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_segment_dentists_columbus_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: dentists, Columbus",
+ "niche": "dentists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Columbus Ohio for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6d22d580-5352-4b3e-a740-d2f9767a523e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00089,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00063,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00416
+   },
+   "input_tokens": 4123,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3576,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 250,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4373
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Stoner Periodontic & Implant Specialists",
+  "Find a Periodontist",
+  "Stoner Periodontic",
+  "Implant Specialists",
+  "Upper Arlington",
+  "American Academy of Periodontology",
+  "Periodontist"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.stonerperiospecialists.com/",
+  "https://www.stonerperiospecialists.com/dental-implants/",
+  "https://www.stonerperiospecialists.com/dr-jason-c-stoner-dds-ms/",
+  "https://www.stonerperiospecialists.com/dr-muhammad-takriti/",
+  "https://www.perio.org/for-patients/find-a-periodontist/advanced-search/",
+  "https://www.linkedin.com/in/jennifer-elzinga-swedlow-dmd-ms",
+  "https://www.stonerperiospecialists.com/new-albany-ohio/",
+  "https://www.affordabledentures.com/locations/oh/east-columbus/our-team",
+  "https://www.perio.org/for-patients/find-a-periodontist/",
+  "https://people.equilar.com/bio/person/jason-stoner-first-bank-of-central-ohio/49332054",
+  "https://www.yelp.com/biz/principi-ronald-m-dds-columbus",
+  "https://dental.me/oh/columbus/endodontists/",
+  "https://www.yelp.com/biz/midwest-implant-institute-columbus",
+  "https://www.drfredalger.com/dental-implants/choosing-a-surgeon/",
+  "https://www.yelp.com/biz/scott-a-kelly-dds-columbus"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "794507600bd785152e30171a36b5a94cae293d2ae0a38160556a981f03f3f4ea",
+ "answer_chars": 811,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

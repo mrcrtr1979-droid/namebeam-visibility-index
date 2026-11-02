@@ -1,0 +1,57 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_hvac_phoenix_openai",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfvkJf3gAHJI9nQX9vJI9dUXdVqhR",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1828,
+   "total_tokens": 1853,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1216,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Rescue Rooter",
+  "Air Conditioning",
+  "Phoenix HVAC",
+  "ZIP and I",
+  "Registrar of Contractors",
+  "Arizona Registrar of Contractors (ROC)",
+  "In Phoenix",
+  "In Arizona",
+  "Arizona Registrar of Contractors",
+  "One Hour",
+  "Service Experts",
+  "One Hour Heating"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you specific companies, but to make the recommendations most useful I need your ZIP code (Phoenix is large — good local techs vary by neighborhood). Also tell me any details you know about the problem (no cooling, short-cycling, leaking water, noise), the unit brand and age, and whether you need same‑day emergency service.\n\nWhile you reply, here’s a short, actionable plan and a few widely available companies I suggest calling in Phoenix — plus why — and what to ask each:\n\nRecommended companies to call right away\n- ARS/Rescue Rooter (Phoenix area): large network, 24/7 emergency service, does warranty and complex repairs, typically stocks parts. Good if you need same‑day service in extreme heat.\n- One Hour Heating & Air Conditioning (local Phoenix franchise): franchise model with emphasis on punctuality and service agreements; often offers same‑day appointments and clear flat‑rate pricing.\n- Service Experts Heating & Air Conditioning (local branches in Arizona): offers maintenance plans and extended warranties; good if you want a company that will handle follow‑up and seasonal tuneups.\n\nWhy these three\n- 24/7/heat‑season availability — important in Phoenix summers.\n- Typically have NATE‑certified techs, structured dispatch, parts availability, and standardized warranties/maintenance plans.\n- Good for emergency diagnostics and larger jobs; they also handle permit work and refrigerant recovery.\n\nHow to pick the best tech (questions to ask every company)\n- Are you licensed through the Arizona Registrar of Contractors (ROC)? What’s your license number?\n- Are your technicians NATE‑certified? Do they carry EPA refrigerant certification?\n- Are you insured? Can you provide proof of liability insurance?\n- Do you charge a diagnostic/service call fee? If so, is it applied toward the repair?\n- Will I get a written estimate with parts, labor, and warranty? Any flat‑rate pricing options?\n- What warranties do you offer on parts and labor?\n- Do you handle permits if required?\n- Do you dispose/recycle refrigerant legally and document it?\n- Can you do same‑day or after‑hours service if needed?\n\nWhat to do next\n1. Give me your ZIP and any unit/problem details and I’ll tailor a short list of top-rated local independent techs to call.\n2. Call at least three companies (mix of one national franchise + one local independent + an authorized dealer for your unit’s brand) and compare written estimates.\n3. If a company recommends replacing the system, ask for a written lifecycle/efficiency comparison (SEER ratings, upfront cost vs. estimated annual savings) and check available rebates.\n4. If you want, paste the written estimates you receive here and I’ll walk through them with you.\n\nIf you want immediate names of well-reviewed independent Phoenix HVAC companies near you, share your ZIP and I’ll produce a targeted list and a short script you can use on the phone.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

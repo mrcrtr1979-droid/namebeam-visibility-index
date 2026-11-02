@@ -1,0 +1,109 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_orthodontists_dallas_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Dallas. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_68c8ca9d-3e09-477a-931c-5f6c66ddac7c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00092,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00151,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00507
+   },
+   "input_tokens": 4251,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3698,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 605,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4856
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Christine Porter Ellis — East Dallas",
+  "Dr. Vikas Gupta — Bishop Arts",
+  "Dr. Diana-Beatrix Velicu — near SMU/University Park",
+  "Dr. Doug Crosby — Downtown",
+  "Dr. Christine Porter Ellis",
+  "East Dallas",
+  "E. Mockingbird Ln",
+  "American Board of Orthodontics",
+  "Saint Louis University",
+  "Dr. Vikas Gupta",
+  "Bishop Arts",
+  "Dr. Diana-Beatrix Velicu",
+  "University Park",
+  "Dr. Doug Crosby",
+  "University of North Carolina",
+  "Walnut Central Orthodontics",
+  "Dr. Meyer",
+  "North Dallas",
+  "N. Central Expy",
+  "Invisalign",
+  "Practice Invisalign",
+  "American Association of Orthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-william-fletcher/",
+  "https://aaoinfo.org/locator/dr-cameron-togrye/",
+  "https://aaoinfo.org/locator/dr-codie-n-bontz/",
+  "https://aaoinfo.org/locator/dr-christine-porter-ellis/",
+  "https://aaoinfo.org/locator/dr-vikas-gupta/",
+  "https://aaoinfo.org/locator/dr-cameron-togrye-2/",
+  "https://www.orthodontistdallastx.com/dallas-tx/invisalign/",
+  "https://aaoinfo.org/locator/dr-nyle-bradley-blanck/",
+  "https://aaoinfo.org/locator/dr-camille-laird-3/",
+  "https://aaoinfo.org/locator/dr-hessam-rahimi-2/",
+  "https://aaoinfo.org/locator/dr-doug-r-crosby-2/",
+  "https://aaoinfo.org/locator/dr-sheng-wang/",
+  "https://aaoinfo.org/locator/dr-diana-beatrix-velicu/",
+  "https://aaoinfo.org/locator/dr-patricia-a-simon/",
+  "https://aaoinfo.org/locator/dr-jeffrey-s-genecov-3/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "31d01d0e1e2c71be408fc8c8f1ef33501071253289cb11b152a40ba89ccf52be",
+ "answer_chars": 2116,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

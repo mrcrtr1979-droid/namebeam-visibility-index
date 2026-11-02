@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_segment_str_guest_discovery_gemini",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "PhjpavmgD_-yqtsPzv7E8QM",
+  "usage": {
+   "promptTokenCount": 29,
+   "candidatesTokenCount": 1084,
+   "totalTokenCount": 1113,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 29
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb, Vrbo, and Booking.com",
+  "Inventory",
+  "Use Vrbo",
+  "Use Airbnb",
+  "Use Booking.com",
+  "Airbnb Superhosts",
+  "Vrbo Premier Hosts",
+  "Never",
+  "Booking.com",
+  "Vacation Rentals",
+  "Superhost",
+  "Premier Host",
+  "Message the host before booking",
+  "Premier Hosts",
+  "Entire homes"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Choosing the right platform and finding a great host can make or break your trip. Here is a breakdown of how **Airbnb, Vrbo, and Booking.com** compare, along with a step-by-step guide to finding the best accommodation.\n\n---\n\n### Part 1: Which platform should you use?\n\n#### 1. Airbnb\n*   **Best for:** Apartments, unique stays (treehouses, yurts, villas), city breaks, and solo travelers or couples.\n*   **Inventory:** Mostly apartments, condos, and private rooms in shared homes, though it has expanded into traditional rentals.\n*   **Pros:** The widest selection of unique properties; generally the best user interface and app for messaging hosts.\n*   **Cons:** Guest service can be notoriously difficult to reach if something goes wrong. Cleaning fees and service fees can sometimes double the nightly rate.\n\n#### 2. Vrbo (Vacation Rentals by Owner)\n*   **Best for:** Families, large groups, and traditional whole-house vacation rentals (beach houses, cabins, chalets).\n*   **Inventory:** Entire homes *only* (no shared rooms or apartments within a larger building). \n*   **Pros:** Better suited for long-term family vacations; hosts are often professional property managers.\n*   **Cons:** Fewer unique/urban properties; cancellation policies can be stricter than Airbnb.\n\n#### 3. Booking.com\n*   **Best for:** Flexibility, traditional hotels, last-minute bookings, and frequent travelers who want loyalty perks.\n*   **Inventory:** Hotels, resorts, and hostels, but also a massive number of private apartments and homes.\n*   **Pros:** Often offers free cancellation right up until a few days before the trip; \"Genius\" loyalty program offers 10–20% discounts after a few bookings; price matching is common.\n*   **Cons:** Customer service for private apartments booked through Booking.com can be messy because the platform acts more like an aggregator.\n\n**Summary Recommendation:**\n*   Going with a group/family to a beach or mountain cabin? **Use Vrbo.**\n*   Looking for a cool city apartment or unique stay? **Use Airbnb.**\n*   Want hotel-level security/flexibility or a mix of hotels and apartments? **Use Booking.com.**\n\n---\n\n### Part 2: How to find a good host (and avoid scams)\n\nNo matter which platform you use, finding a good host comes down to reading between the lines. Follow these steps:\n\n#### 1. Look for \"Superhost\" or \"Premier Host\" status\n*   **Airbnb Superhosts** and **Vrbo Premier Hosts** have met strict criteria: high ratings, very low cancellation rates, and a proven track record of quick response times. \n*   *Note:* New hosts can be great, but booking with a Superhost drastically reduces your risk.\n\n#### 2. Read the reviews carefully (Look for the \"complaint pattern\")\n*   Don't just look at the star rating (4.8 is standard; anything below 4.5 is a red flag). Read the written reviews.\n*   **Look for consistency:** Do multiple people mention that the bed is uncomfortable? Is the street noisy? Is the Wi-Fi slow? \n*   **Check how the host responds to bad reviews:** A defensive, rude host is a massive red flag. A polite, solution-oriented host shows professionalism.\n\n#### 3. Analyze the photos\n*   Are the photos professional, bright, and show every room? Be wary of fish-lens lenses that make rooms look twice as big as they are, or listings that only show three close-up photos of a plant and a coffee cup.\n*   Check if there are photos of the *outside* of the building and the street so you know what the neighborhood looks like.\n\n#### 4. Message the host before booking\n*   Send a quick, polite message asking a specific question (e.g., *\"Hi [Name], I'm interested in your place. Is street parking easy to find, or do you recommend a nearby garage?\"*).\n*   **Why this matters:** This tests their communication speed and helpfulness. If they take 48 hours to reply *before* you give them money, imagine how hard they'll be to reach if the toilet overflows during your stay.\n\n#### 5. Check the cancellation and house rules\n*   A good host is transparent. Make sure their cancellation policy matches your comfort level (look for \"Flexible\" or \"Moderate\" if your plans might change).\n*   Read the house rules—if they have a 50-point list of strict rules and threats of fines, the host may be high-stress to deal with.\n\n#### 6. Protect yourself (Never pay off-platform)\n*   **Never** wire money, use Zelle, or pay cash outside of the Airbnb/Vrbo/Booking.com app. Scammers often try to lure guests off the platform with promises of a \"discount.\" If you pay outside the app, customer support cannot help you if the rental turns out to be fake.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

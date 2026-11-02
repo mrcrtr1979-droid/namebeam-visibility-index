@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_segment_dentists_miami_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: dentists, Miami",
+ "niche": "dentists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Miami for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d8ddd0c0-5031-4ca6-838b-d7bad5d849a1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00066,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00433
+   },
+   "input_tokens": 4653,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4107,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 264,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4917
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Todd Barsky",
+  "American College of Prosthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://sharpdentistry.com/service/dental-implants-miami/",
+  "https://barskydds.com/dental-implants/",
+  "https://www.navmds.com/doctor/dr-todd-b-barsky-dds",
+  "https://www.myspecialtydentist.com/directory/profile/dr-todd-barsky-1609852508",
+  "https://www.prosthodontics.org/contact/",
+  "https://www.loveyourjaws.com/dental-implants/ceramic-dental-implants/",
+  "https://www.prosthodontics.org/find-a-dental-technician/",
+  "https://barskydds.com/cosmetic-dentistry/",
+  "https://www.gotoapro.org/find-a-prosthodontist/",
+  "https://www.myspecialtydentist.com/best/prosthodontics/fl/miami",
+  "https://implantdentistmiamibeach.com/",
+  "https://www.gotoapro.org/",
+  "https://barskydds.com/videos/",
+  "https://www.drimplantexpert.com/meet-our-doctors/dr-navarro/",
+  "https://barskydds.com/barsky-dds-opens-press/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "96fa994b184c662d4e35f229f71afe37dd298fb4f57124d7df624e2281c49e8e",
+ "answer_chars": 814,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

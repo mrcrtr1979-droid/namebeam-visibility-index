@@ -1,0 +1,57 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_short_term_rental_branson_openai",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EfwADqjH4ZVaOb5iWleTXmBE1KSsu",
+  "usage": {
+   "prompt_tokens": 29,
+   "completion_tokens": 1735,
+   "total_tokens": 1764,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1152,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Booking.com",
+  "Big Cedar Lodge",
+  "Bass Pro",
+  "Branson Convention",
+  "Visitors Bureau",
+  "Explore Branson",
+  "Branson Visitor Center",
+  "Local Branson",
+  "Table Rock",
+  "Big Cedar",
+  "The Strip",
+  "Near the Strip"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Good — I can recommend the best places to call, plus why each is worth contacting. If you want, tell me your travel dates, group size and must-haves (lakefront, pet-friendly, number of bedrooms, budget) and I’ll shortlist specific properties and phone numbers.\n\nWho to call (and why)\n\n1) Vrbo\n- Why: Biggest inventory of whole vacation homes and lake cabins around Branson/Table Rock Lake; good for families and large groups. Many owners/managers respond quickly and sometimes offer direct-booking discounts.\n\n2) Airbnb\n- Why: Wide range of unique homes and condos, flexible booking options and filters (pet-friendly, instant book, entire place). Good for smaller groups or one-off unique stays.\n\n3) Vacasa\n- Why: National professional manager with local Branson properties. Standardized cleaning, 24/7 guest support, clear policies — helpful if you want a managed stay and reliable customer service.\n\n4) Booking.com (and Expedia)\n- Why: Aggregators with broad inventory and frequent last-minute deals; useful if you want to compare prices across multiple platforms quickly or need flexible cancellation.\n\n5) Big Cedar Lodge / Top of the Rock\n- Why: One of the most popular resort-style options near Branson (Bass Pro family). Offers cabins, lodges and resort amenities (marina, golf, spa) — great if you want full-service resort comforts and outdoor recreation.\n\n6) Branson Convention & Visitors Bureau (Explore Branson / Branson Visitor Center)\n- Why: The official tourism office can give up-to-date lists of reputable local property managers, package deals, and seasonal availability. They can point you to local specialists for lakefront cabins, group homes, or corporate stays.\n\n7) Local Branson property managers (general)\n- Why: Smaller, local managers often control the best lakefront cabins and multi-bedroom homes that don’t always appear on big platforms. They can be more flexible on pricing, minimum nights, and last-minute availability. Ask the visitor center for recommended local managers for Table Rock Lake cabins, condos near the Strip, or properties near specific attractions.\n\nWhat to ask when you call\n- Confirm total price (cleaning, service fees, taxes) and cancellation policy.\n- Ask about parking, linens, number of beds vs. bedrooms, and AC/heating.\n- If traveling with kids/pets, ask about childproofing and pet rules/fees.\n- For lake access: private dock vs. community access, boat slip availability.\n- Ask about check-in procedure and 24/7 contact for problems.\n\nIf you want, give me:\n- dates, number of people, must-haves (lakefront, pet, hot tub, near shows), and budget\nI’ll find 3–5 specific properties and provide contact numbers/links and booking tips.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

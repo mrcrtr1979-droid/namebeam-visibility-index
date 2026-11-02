@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-02_segment_dentists_columbus_openai",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: dentists, Columbus",
+ "niche": "dentists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Columbus. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Columbus Ohio for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Efw5QiFcTrIPQS94wiblTv3PZDivw",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1231,
+   "total_tokens": 1256,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Upper Arlington",
+  "College of Dentistry",
+  "Ohio State University"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need a couple quick details so I pick the best offices for you.\n\nQuick questions\n1. Do you mean Columbus, Ohio (or another Columbus)?  \n2. What is your ZIP or neighborhood (downtown, Westerville, Gahanna, Upper Arlington, etc.)?  \n3. Do you have dental insurance (and name of plan) or need financing/self-pay?  \n4. Any preferences: specialist type (oral surgeon, periodontist, prosthodontist), same‑day implants or “teeth in a day,” IV sedation, weekend hours, Spanish/other language, or a particular price range?\n\nIf you want an immediate, general place to start (without your ZIP), call these types of providers and why:\n\n- Ohio State University College of Dentistry (faculty clinic / specialty care)\n  - Why call: academic clinic with specialists (oral surgery, periodontics, prosthodontics) and advanced imaging — good for complex cases and second opinions; transparent treatment planning and oversight from experienced faculty.\n- A board‑certified oral and maxillofacial surgeon in Columbus\n  - Why call: they handle surgical placement, complex bone grafting, IV sedation/general anesthesia, medical‑complex patients and multi‑tooth/full‑arch cases.\n- A board‑certified periodontist who does implants\n  - Why call: specializes in the gums and bone — good for patients who need bone grafting, sinus lifts, or aesthetic implant placement.\n- A prosthodontist who restores implants\n  - Why call: specialist in implant crowns/bridges and full‑arch prosthetics — important when you want the best long‑term restoration and occlusion (bite).\n- A high‑volume private implant practice that offers CBCT, guided/digital planning, and in‑office financing\n  - Why call: can streamline treatment (digital planning, implant warranty programs, financing options, shorter timelines).\n\nWhat I’ll do if you give me your ZIP/neighborhood and preferences\n- I’ll give 5–8 specific practices near you with: name, specialty (oral surgeon/periodontist/prosthodontist), phone, website, address, and one sentence why each is a good fit for your needs.  \n- I’ll also include the top questions to ask when you call (cost estimate, CBCT availability, implant brand, who does the restoration, timeline, sedation options, financing, warranty).\n\nWhich option do you prefer — should I search for practices near a particular ZIP or neighborhood now?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

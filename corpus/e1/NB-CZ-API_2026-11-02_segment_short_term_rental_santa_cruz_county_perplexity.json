@@ -1,0 +1,103 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_40c5de8b-a6b2-4436-85bc-8656f350e500",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00122,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00178,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00564
+   },
+   "input_tokens": 5415,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4863,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 714,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 6129
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Capitola Village",
+  "Aptos and Seacliff",
+  "Santa Cruz",
+  "Davenport and the north coast",
+  "Pajaro Dunes",
+  "Capitola Village home with parking",
+  "Pick the right base first",
+  "Compare the full price",
+  "Read recent reviews closely",
+  "Confirm the practical details in writing",
+  "Check local compliance",
+  "Aptos/Seacliff",
+  "Davenport",
+  "Capitola",
+  "Aptos",
+  "Seacliff",
+  "Capitola Venetian",
+  "Capitola Village Home",
+  "Confirm the practical details"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.cdi.santacruzcountyca.gov/UPC/DiscretionaryPermitsZoning/DiscretionaryPermits/Short-TermRentals.aspx",
+  "https://cdi.santacruzcountyca.gov/UPC/DiscretionaryPermitsZoning/DiscretionaryPermits/HostedRentals.aspx",
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Ordinance%205497%20Short-Term%20Rentals.pdf",
+  "https://documents.coastal.ca.gov/reports/2026/4/Th12a/Th12a-4-2026-exhibits.pdf",
+  "https://www.santacruzcountyca.gov/portals/0/county/CAO/press%20releases/2026/Prs%20Rls_County%20launches%20short-term%20rental%20hotline.pdf",
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Sample%20Hosted%20Rental%20agreement%20(2).docx",
+  "https://www.santacruzcountyca.gov/portals/0/county/CAO/press%20releases/2024/PrsRls_Unpermitted%20short-term%20and%20hosted%20rentals.pdf",
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Vacation%20Rental%20Ord-%20BoS%20Approved%201-26-2021.pdf",
+  "https://www.expedia.com/Santa-Cruz-Hotels-Capitola-Venetian-Hotel.h12356727.Hotel-Information",
+  "https://www.airbnb.com/santa-cruz-ca/stays",
+  "https://www.santacruzcountyca.gov/portals/0/county/BOS/district1/press-releases/PR_Vacation_Rental_Laws.9.24.2024.pdf",
+  "https://www.vrbo.com/vacation-rentals/beach/usa/california/central-coast/aptos",
+  "https://www.airbnb.com/aptos-ca/stays",
+  "https://www.expedia.com/Davenport-Private-Vacation-Homes.d6085019-aaPrivateVacationHomes.Travel-Guide-Accommodation",
+  "https://www.airbnb.com/capitola-ca/stays"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "683cc1b9230883a63cc586223f6fa64170dbb9a9dfae11b9ec1576cad72b2624",
+ "answer_chars": 2940,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

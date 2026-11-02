@@ -1,0 +1,98 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_segment_orthodontists_columbus_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: orthodontists, Columbus",
+ "niche": "orthodontists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Columbus Ohio for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_304d2ae0-3be3-4d3c-b6cf-2932df6792d3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00087,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00091,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00442
+   },
+   "input_tokens": 4009,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3461,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 362,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4371
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Polaris Orthodontic Center (Dr. Amin Mason)",
+  "Carmen Orthodontics (Dr. Jesse Carmen)",
+  "Johnson Orthodontics (Dr. Denny Johnson)",
+  "Hrabowy Orthodontics",
+  "Polaris Orthodontic Center",
+  "Dr. Amin Mason",
+  "Invisalign",
+  "Polaris Pkwy",
+  "Carmen Orthodontics",
+  "Dr. Jesse Carmen",
+  "Johnson Orthodontics",
+  "Dr. Denny Johnson",
+  "SureSmile",
+  "Crown Park Ct"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.johnsonbraces.com/",
+  "https://health.usnews.com/dentists/lucy-deguzman-1806183",
+  "https://www.carmenorthodontics.com/orthodontist-columbus-ohio/",
+  "https://www.dentistsranked.com/dentists/columbus-oh",
+  "https://health.usnews.com/dentists/sahira-kortam-1616554",
+  "https://www.johnsonbraces.com/suresmile-and-invisalign-clear-aligners",
+  "https://health.usnews.com/dentists/barry-quinn-1641908",
+  "https://nationalorthodonticregistry.com/ohio/columbus-oh/orthodontists/hrabowy-orthodontics-columbus-oh",
+  "https://health.usnews.com/dentists/jeffrey-price-1774234",
+  "https://health.usnews.com/dentists/jennifer-burzynski-1725329",
+  "https://health.usnews.com/dentists/victor-cook-1651450",
+  "https://health.usnews.com/dentists/victoria-mclaughlin-1623366",
+  "https://www.carmenorthodontics.com/about/meet-dr-jesse/",
+  "https://www.carmenorthodontics.com/about/",
+  "https://nationalorthodonticregistry.com/ohio/columbus-oh/orthodontists/polaris-orthodontic-center-columbus-oh"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "473b84a04c6625f843b8a5a76fcbaf1ace35efa3fce072a2d18aa61a85dd8318",
+ "answer_chars": 1331,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

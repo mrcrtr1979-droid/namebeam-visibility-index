@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_segment_orthodontists_denver_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: orthodontists, Denver",
+ "niche": "orthodontists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Denver for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8871dd1c-cb78-43a2-98f4-c897f61bd013",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 4857,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4310,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 313,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5170
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Gregory Dietmeier",
+  "Central Park Orthodontics",
+  "Dr. Robert Rudman",
+  "Invisalign",
+  "American Board of Orthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://health.usnews.com/dentists/mark-gregston-1650089",
+  "https://smiledoctors.com/locations/denver-highway-73/",
+  "https://doctor.webmd.com/providers/specialty/orthodontics/colorado/denver",
+  "https://health.usnews.com/dentists/sean-pawelek-1642168",
+  "https://alignedonpearl.com/",
+  "https://local.yahoo.com/health-and-medicine/orthodontists/co/kersey/46/;_ylt=A2RRaZCebtBq3MABk6BXNyoA;_ylu=Y29sbwN1cy1lYXN0LTEEcG9zAzcEdnRpZAMEc2VjA3Ny",
+  "https://www.speaksorthodontics.com/lp/treatment/",
+  "https://nationalorthodonticregistry.com/colorado/denver-co/orthodontists/central-park-orthodontics-denver-co",
+  "https://www.myspecialtydentist.com/directory/profile/dr-gregory-dietmeier-1396884490",
+  "https://nationalorthodonticregistry.com/colorado/denver-co/orthodontists/sierra-dental-orthodontics-tennyson-denver-co",
+  "https://www.myspecialtydentist.com/directory/profile/dr-nathan-helm-1518281229",
+  "https://www.zocdoc.com/orthodontists/denver-228319pm",
+  "https://www.healthgrades.com/dentist/dr-robert-rudman-22dvh",
+  "https://nationalorthodonticregistry.com/treatments/invisalign/colorado/denver-co",
+  "https://www.yelp.com/biz/eberle-orthodontics-denver-2"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "292956b971d42a5592b35cc9b714104c6f929b000591d2967b61972672504c1f",
+ "answer_chars": 1137,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

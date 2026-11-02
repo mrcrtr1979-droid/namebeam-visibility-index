@@ -1,0 +1,95 @@
+{
+ "check_id": "NB-CZ-API_2026-11-02_segment_roofing_miami_perplexity",
+ "date_utc": "2026-11-02",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_321b8630-a63b-481a-95fa-f4e12273862f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00099,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00063,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00426
+   },
+   "input_tokens": 4523,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3975,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 251,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4774
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Duke Contractors",
+  "CCC1325931",
+  "Art’s Roofing & Construction",
+  "CCC1333598",
+  "Miami-Dade HVHZ-compliant",
+  "Miami-Dade NOA",
+  "HVHZ-approved",
+  "Miami-Dade",
+  "Dade NOA",
+  "Dade HVHZ",
+  "Miami-Dade HVHZ"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://agkgc.com/roofing-contractor-south-florida",
+  "https://www.robsonindustrial.com/",
+  "https://agkgc.com/miami-roofing",
+  "https://dukecontractors.net/miami/",
+  "https://www.artsroofing.com/",
+  "https://siaroofing.com/service-area/miami-dade",
+  "https://www.robsonindustrial.com/residential/roofing/replacement/",
+  "https://agkgc.com/roofing-miami-dade",
+  "https://www.tsroofingsystems.com/",
+  "https://dukecontractors.net/roof-replacement/",
+  "https://siaroofing.com/services",
+  "https://agkgc.com/cutler-bay-roofing",
+  "https://agkgc.com/metal-roofing-contractor",
+  "https://www.artsroofing.com/faq/",
+  "https://bigfootwindowsandroofing.com/category/roofing/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "a2037895f501d11793f2924fe41b56549aa9c3bcb1e3738c91e3cf831b05a69f",
+ "answer_chars": 805,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}
