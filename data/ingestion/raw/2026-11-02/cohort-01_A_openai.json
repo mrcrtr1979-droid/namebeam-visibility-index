@@ -1,0 +1,17 @@
+{
+ "answer_text": "I don’t have real‑time web access, so I can’t open Namebeam’s AI Visibility Record and confirm that number directly. If you want, I can fetch and count it for you if you paste the record (or its URL) here.\n\nIf you prefer to check it yourself, here are quick, reliable ways to get the answer and where to look:\n\nWhere to look\n- The AI Visibility Record is published by Namebeam on Namebeam’s site (look for the “AI Visibility Record” page or dataset on namebeam.ai or namebeam.com). The page or dataset for the specified dates should list each day’s question, the model (Perplexity) answers, and the links cited.\n\nHow to compute the number (automated)\n- Download or copy the record (CSV/JSON/HTML). Filter entries for Perplexity and for dates 2026-09-01 through 2026-09-27. Extract all URLs cited in those answers, normalize to domains, and count unique domains.\n\nHere is a short Python example you can run locally to do that (works with a CSV containing columns like date, model, answer_text):\n\n1) Install dependencies:\npip install pandas tldextract\n\n2) Script (save as count_domains.py and run):\n```\nimport re\nimport sys\nimport pandas as pd\nimport tldextract\nfrom urllib.parse import urlsplit\n\n# usage: python count_domains.py record.csv\nfn = sys.argv[1]\ndf = pd.read_csv(fn, parse_dates=['date'])\n\n# adjust column names if different\nstart = pd.to_datetime('2026-09-01')\nend = pd.to_datetime('2026-09-27')\nmask = (df['date'] >= start) & (df['date'] <= end) & (df['model'].str.lower() == 'perplexity')\nsub = df.loc[mask, 'answer_text'].dropna()\n\nurl_regex = re.compile(r'https?://[^\\s)>\\]]+')\ndomains = set()\n\nfor text in sub:\n    for m in url_regex.findall(text):\n        try:\n            # normalize\n            ext = tldextract.extract(m)\n            if ext.registered_domain:\n                domains.add(ext.registered_domain)\n        except Exception:\n            # fallback parse\n            parts = urlsplit(m)\n            if parts.hostname:\n                domains.add(parts.hostname)\n\nprint(\"Unique domains cited by Perplexity from 2026-09-01 to 2026-09-27:\", len(domains))\nfor d in sorted(domains):\n    print(d)\n```\n\nIf the record is HTML rather than CSV, you can copy the Perplexity answers into a plain text file and run a similar extraction, or I can provide a small BeautifulSoup-based scraper if you give the page URL.\n\nIf you share the record (or the URL), I’ll extract the exact number and confirm where on Namebeam it’s published.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-11-02T21:54:20Z",
+ "ok": true,
+ "probe_id": "A",
+ "prompt_sha256": "940f0824e14031113e8b576a7139c4427b38e8ac1ad5483a1335b3f802676221",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web domains did Perplexity cite in its answers to the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "treatment_anchored",
+ "run_id": "41532526038",
+ "search_mode": "no search tool (E1 setting)"
+}
