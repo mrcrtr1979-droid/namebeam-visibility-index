@@ -1,0 +1,17 @@
+{
+ "answer_text": "I don’t have live web access, so I can’t look up Namebeam’s AI Visibility Record or compute that count directly from the published data right now.\n\nI can do one of the following — which would you prefer?\n- I can fetch the page and compute the answer now if you allow me to browse the web (or paste the record URL).  \n- You can paste the record (or the relevant table/CSV) here and I’ll compute the distinct-page count.  \n- I can give exact, copy‑pasteable instructions (or a short script) so you can compute the number yourself.\n\nIf you want to compute it yourself, here are two quick ways:\n\n1) Google Sheets\n- Suppose you have a sheet with Date in column A and the Google top‑10 URL entries in column B (one row per result). Use:\n  =COUNTUNIQUE(FILTER(B:B, A:A >= DATE(2026,9,1), A:A <= DATE(2026,9,27)))\n\n2) Python (pandas) for a CSV (columns: date, engine, rank, url)\n- Example script:\n  import pandas as pd\n  df = pd.read_csv('ai_visibility_record.csv', parse_dates=['date'])\n  mask = (df['date'] >= '2026-09-01') & (df['date'] <= '2026-09-27') & (df['engine'].str.lower()=='google') & (df['rank'] <= 10)\n  count = df.loc[mask, 'url'].nunique()\n  print(count)\n\nIf you want, give me the link or paste the data and I’ll get the exact number and tell you where it’s published.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-11-03T19:45:56Z",
+ "ok": true,
+ "probe_id": "NC",
+ "prompt_sha256": "efbb2eccf1f282e2dfdb6e4a46f44888ad548f405a891de2b76dea5850430d16",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web pages did Google's top 10 results list for the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "negative_control",
+ "run_id": "41706236742",
+ "search_mode": "no search tool (E1 setting)"
+}
