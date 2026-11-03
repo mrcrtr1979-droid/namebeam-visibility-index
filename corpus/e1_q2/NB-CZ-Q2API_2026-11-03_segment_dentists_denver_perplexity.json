@@ -1,0 +1,96 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_dentists_denver_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: dentists, Denver",
+ "niche": "dentists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Denver. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Denver for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e7e16434-21db-4b90-a927-0932791ae5b0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0012,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00488
+   },
+   "input_tokens": 4719,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4166,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 478,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5197
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Denver Oral & Maxillofacial Surgery",
+  "Altura Periodontics",
+  "Peak Oral",
+  "Maxillofacial Surgery and Dental Implant Center",
+  "Practice",
+  "Denver Oral",
+  "Maxillofacial Surgery",
+  "Rampart Way",
+  "Implant Center"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://denveroms.com/oral-surgery/",
+  "https://denveroms.com/",
+  "https://denveroms.com/oral-surgery/dental-implants/",
+  "https://www.advancedimplants.com/dental-implants-in-denver-colorado/services/oral-surgery/",
+  "https://www.yourdentalimplants.com/",
+  "https://peakoms.com/about/",
+  "https://peakoms.com/oral-surgery/",
+  "https://denveroms.com/oral-surgery/dental-implants/ridge-augmentation-sinus-lift/",
+  "https://www.thedenverdentists.com/services/dental-implants",
+  "https://denveroms.com/oral-surgery/dental-implants/teeth-in-a-day/",
+  "https://denveroms.com/oral-surgery/dental-implants/nobelpearl-implants/",
+  "https://www.denverhealth.org/services/surgery/oral-and-maxillofacial-surgery/our-oral-and-maxillofacial-surgery-team",
+  "https://peakoms.com/about/dr-alex-podaru/",
+  "https://www.carecredit.com/doctor-locator/denver-co/denver-cosmetic-implant-dentistry-548xdp/",
+  "https://dentillo.com/provider/denver-oral-maxillofacial-surgery/denver"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "f9d69afd7b5f6b64df61f7b292c3a096b4eb32eabf3a528ce98215dcd1e80543",
+ "answer_chars": 1792,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,45 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_hvac_houston_openai",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgETIC7N7Gs9g64Mn9nc0JDOhA3VQ",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 1144,
+   "total_tokens": 1162,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AC repair",
+  "NATE",
+  "Houston ZIP"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” HVAC company for everyone — the right choice depends on your location in Houston, whether you need emergency service, if it’s a homeowner or commercial job, your budget, and whether your system is still under manufacturer warranty. I can find the top-rated providers near you, but first a few quick questions so I give the best recommendation:\n\n- What Houston ZIP code are you in?  \n- Is this a residential or commercial system?  \n- Is it an emergency (no cooling now) or can it wait for a scheduled visit?  \n- Do you have a brand/model still under warranty or prefer a specific brand/tech (Carrier, Trane, etc.)?\n\nWhile you answer, here’s a short checklist you can use to vet any HVAC company:\n\n- Licensing & insurance: Ask for the contractor license and proof of liability insurance.  \n- Certifications: Look for NATE-certified technicians and manufacturer dealer certifications (if you want warranty service).  \n- Reviews & reputation: Check Google/Yelp, BBB, and local Facebook groups for recent reviews.  \n- Written estimate: Get a written, itemized estimate before work begins (parts, labor, diagnostic fee).  \n- Warranties & maintenance: Ask about labor and part warranties and whether they offer maintenance plans.  \n- Upfront pricing & diagnostics: Ask how they charge (flat rate vs. hourly) and if diagnostic fees are credited toward repair.  \n- Permits & compliance: For major replacements, confirm the company will pull necessary permits and provide system sizing (Manual J) and proper installation.\n\nIf you want, I’ll pull a short list (3–5) of highly rated AC repair companies near your ZIP code with contact info, average ratings, and any notes about specialties or warranty service. Which ZIP code should I use?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

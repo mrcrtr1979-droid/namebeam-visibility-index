@@ -1,0 +1,95 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_real_estate_agents_miami_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: real estate agents, Miami",
+ "niche": "real estate agents",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Miami FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0e89521c-d57a-43b2-933b-1125987e0dce",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00461
+   },
+   "input_tokens": 5164,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4615,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 328,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5492
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "The Jills Zeder Group at Coldwell Banker",
+  "Dina Goldentayer’s team at Douglas Elliman",
+  "Coldwell Banker",
+  "Dina Goldentayer",
+  "Douglas Elliman",
+  "Riley Smith Group",
+  "Compass",
+  "Carroll Group",
+  "The Jills Zeder Group"
+ ],
+ "engine_stated_criteria": [
+  "near yours and in your price range"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/miami-fl/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33157/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33165/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33149/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/miami-fl-33150/?isSelling=true",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33155/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33255/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33102/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33186/",
+  "https://www.zillow.com/profile/Margend-Palacios",
+  "https://therealdeal.com/magazine/october-2026/these-are-miamis-top-real-estate-agents-and-brokerages/",
+  "https://therealdeal.com/data/miami/2026/top-miami-real-estate-agent-with-highest-median-deal-price/",
+  "https://www.zillow.com/profile/DoraPuig",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/buena-vista-miami-fl/",
+  "https://ark7.com/blog/articles/real-estate-agents-miami/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "d43b6c5878a044ef5682612adacd9555fa51e7caa51e6c4f57f299d0bc86d22e",
+ "answer_chars": 1128,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

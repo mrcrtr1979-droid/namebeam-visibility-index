@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_dentists_denver_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: dentists, Denver",
+ "niche": "dentists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Denver for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b19de858-9ad8-4893-a7dc-6ad30fd68c09",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00066,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0043
+   },
+   "input_tokens": 4538,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3992,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 262,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4800
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Alan Pomeranz at Altura Periodontics",
+  "Dr. Kyle Diehl",
+  "Dental Implants of Central Park",
+  "Dr. Alan Pomeranz",
+  "Altura Periodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://dentalimplantdirectory.com/provider/periodontics-and-dental-implants-of-central-park-120822",
+  "https://dentalimplantdirectory.com/best/denver-co",
+  "https://dewda.com/dr-michael-dewitt/",
+  "https://www.yourdentalimplants.com/doctors/dr-alan-pomeranz/",
+  "https://ceraroot.com/patients/find-a-dentist/usa/colorado/denver-accord-dental-professional/",
+  "https://disc.events/dr-daniel-esposito/",
+  "https://facialesthetics.org/staff-members/olinga-hargreaves-dds-daboi-faaid-2/",
+  "https://local.yahoo.com/info-235633926-diehl-kyle-dds-periodontics-dental-implants-of-central-park-denver/",
+  "https://regenerated.com/clinics/us/co/denver/poulos-somers-and-marshall",
+  "https://milehighdentalcenters.com/board-certified/",
+  "https://prod.smilegeneration.com/dentist/co/denver/547-city-park-dental-group/",
+  "https://denveroms.com/oral-surgery/",
+  "https://dentistrydirectories.com/colorado/denver",
+  "https://denveroms.com/oral-surgery/dental-implants/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-ann-somers-1174692602"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "1ac5c73cff1c0acfdca3307d1a13300bf775a7fbac6ce13b7b2d0199f796812c",
+ "answer_chars": 921,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

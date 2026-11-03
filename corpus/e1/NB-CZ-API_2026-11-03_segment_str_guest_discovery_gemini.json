@@ -1,0 +1,61 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_str_guest_discovery_gemini",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "0E3qapbUMvDS0_gP8KiXuQU",
+  "usage": {
+   "promptTokenCount": 29,
+   "candidatesTokenCount": 1054,
+   "totalTokenCount": 1083,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 29
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Inventory",
+  "Vrbo does not allow shared spaces",
+  "A good host",
+  "A bad host",
+  "No reviews / too-good-to-be-true photos",
+  "Off-platform payment requests",
+  "Never",
+  "Use Vrbo",
+  "Use Airbnb",
+  "Use Booking.com",
+  "Booking.com",
+  "Vacation Rentals",
+  "Been Hosting",
+  "Superhost",
+  "Premier Host",
+  "Entire homes",
+  "House Rules",
+  "Off-Platform Payment"
+ ],
+ "engine_stated_criteria": [
+  "who you are traveling with, where you are going, and what kind of stay you want"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Choosing between Airbnb, Vrbo, and Booking.com depends entirely on **who you are traveling with, where you are going, and what kind of stay you want.** \n\nHere is a breakdown of which platform to use, followed by a step-by-step guide on how to find a reliable, high-quality host.\n\n---\n\n### Part 1: Which platform should you use?\n\n#### 1. Airbnb\n*   **Best for:** City breaks, unique stays (treehouses, yurts, design apartments), solo travelers, and couples.\n*   **Inventory:** Mostly apartments, private rooms in homes, and unique properties, though it now has plenty of traditional homes.\n*   **Pros:** Best user interface, huge variety of unique properties, and generally the most active review system.\n*   **Cons:** Service fees can be high; strict party/event bans; quality can be a gamble if you don't read reviews carefully.\n\n#### 2. Vrbo (Vacation Rentals by Owner)\n*   **Best for:** Family vacations, large groups, and traditional beach/mountain/lake house rentals.\n*   **Inventory:** Entire homes, cabins, and villas. **Vrbo does not allow shared spaces** (like renting a room in someone's house).\n*   **Pros:** Better suited for multi-generational families or groups; typically features more professional property management companies; fewer hidden camera/surveillance controversies compared to Airbnb.\n*   **Cons:** Fewer options for solo travelers or budget city apartments; cancellation policies can sometimes be stricter.\n\n#### 3. Booking.com\n*   **Best for:** Flexibility, traditional hotels, and people who want zero hassle.\n*   **Inventory:** Hotels, hostels, apartments, and occasionally vacation homes.\n*   **Pros:** Excellent \"Genius\" loyalty discounts; many properties offer free cancellation up to 24–48 hours before check-in; no guessing game—you usually get standard hotel-like amenities.\n*   **Cons:** Their customer service for private apartment rentals can be harder to navigate than Airbnb or Vrbo if something goes wrong.\n\n---\n\n### Part 2: How to find a good host\n\nFinding a great place isn't just about the photos; it’s about vetting the person behind the listing. Follow this checklist to avoid scams and bad experiences:\n\n#### 1. Look for \"Superhost\" (Airbnb) or \"Premier Host\" (Vrbo)\n*   These badges mean the host has a proven track record: high average ratings (usually 4.8+), a very low cancellation rate, and quick response times. \n*   *Note for Booking.com:* Look for properties with a review score of **8.5 or higher** and read the most recent reviews.\n\n#### 2. Read the *Most Recent* Reviews\n*   Don't just look at the overall score. Scroll down and read reviews from the last 3 to 6 months. \n*   **Red flag:** If a host has 5 stars overall, but the last three reviews mention cleanliness issues or broken amenities, the property may be declining in quality.\n\n#### 3. Check How Long They’ve Been Hosting\n*   A host who has been on the platform since 2016 with hundreds of reviews is generally a safer bet than a brand-new listing with zero reviews—unless you are willing to take a slight discount risk for a new property trying to build its reputation.\n\n#### 4. Read the House Rules Carefully\n*   Good hosts are clear about what they expect. If the rules are reasonable and clearly stated, it usually indicates an organized, professional host. If the rules are overly aggressive or confusing, keep scrolling.\n\n#### 5. Test Their Communication\n*   Before booking, send the host a polite, simple question (e.g., asking about parking or local grocery stores). \n*   **A good host** will respond within a few hours, be polite, and offer helpful local tips.\n*   **A bad host** will take 24+ hours to reply or give a blunt, unhelpful one-word answer. (Imagine trying to reach them if your key breaks at midnight!)\n\n#### 6. Watch Out for Red Flags\n*   **No reviews / too-good-to-be-true photos:** If a luxury villa in Paris is priced at $50 a night and has no reviews, it’s a scam.\n*   **Off-platform payment requests:** **Never** communicate or pay outside of the Airbnb, Vrbo, or Booking.com apps. If a host asks you to wire money, use Zelle, or pay via crypto, report them immediately—it is a scam.\n\n### Summary Recommendation\n*   Traveling with family to a beach house? **Use Vrbo.**\n*   Traveling to a city for a weekend getaway? **Use Airbnb.**\n*   Want a hotel or a totally stress-free booking with easy cancellation? **Use Booking.com.**",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

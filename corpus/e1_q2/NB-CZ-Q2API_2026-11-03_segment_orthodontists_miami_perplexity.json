@@ -1,0 +1,110 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_orthodontists_miami_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: orthodontists, Miami",
+ "niche": "orthodontists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Miami. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Miami for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ddc01e21-aca0-4940-a92d-58d0f9098e78",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00158,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00527
+   },
+   "input_tokens": 4741,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4188,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 631,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5372
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Amores Dental — Dadeland/Kendall",
+  "Garcia Orthodontics — Kendall",
+  "Centre for Invisible Orthodontics — Brickell/downtown",
+  "Miami Orthodontic Specialists — South Miami",
+  "North Miami: (786) 540-1919",
+  "Miami Lakes: (786) 946-0005",
+  "My shortlist",
+  "Amores Dental",
+  "Miami Orthodontic Specialists",
+  "Centre for Invisible Orthodontics",
+  "Kendall",
+  "Dr. Albert Lucas Jr",
+  "Nova Southeastern. They",
+  "Invisalign",
+  "Garcia Orthodontics",
+  "Offers",
+  "Invisalign. Its",
+  "Offers Invisalign",
+  "South Miami",
+  "Dr. Carmen Garcia-Paul",
+  "IVANOV Orthodontics",
+  "North Miami",
+  "Miami Lakes"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://orthodontistmiami.com/",
+  "https://orthodontistmiami.com/invisalign-in-miami-fl/",
+  "https://amoresdental.com/orthodontics",
+  "https://ivanovortho.com/meet-your-orthodontist/",
+  "https://miamibraces.com/miami-family-orthodontist/",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/dr-stephen-grussmark-miami-fl",
+  "https://smiledoctors.com/locations/miami-beach-w-41st/",
+  "https://orthodontistmiami.com/invisalign/",
+  "https://amoresdental.com/invisalign",
+  "https://nationalorthodonticregistry.com/treatments/invisalign/florida/miami-fl",
+  "https://local.yahoo.com/info-67880846-deroode-elaine-s-dds-deroode-orthodontics-miami/",
+  "https://ivanovortho.com/invisalign-doctor-site/",
+  "https://www.dentistsranked.com/dental-services/invisalign-miami-fl",
+  "https://orthodontistmiami.com/adult-orthodontics/",
+  "https://www.linkedin.com/in/drcarmencrespi"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "75361312255e2c42d1ae81d6aac8573230801e5ecec645a24ec454770393c3cc",
+ "answer_chars": 2439,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

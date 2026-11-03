@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_roofing_denver_openai",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My roof has hail damage in Denver. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgGTwtEBQM19vdH3JCFSh28sJ9vsn",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1295,
+   "total_tokens": 1320,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "CertainTeed SELECT",
+  "Owens Corning",
+  "CertainTeed",
+  "In Colorado"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you specific, vetted roofing companies in Denver — but to pick the best local options I need your neighborhood or ZIP code so I can target companies that actually serve your area and have current reviews/certifications.\n\nIn the meantime, here’s a short, practical plan and the exact kinds of companies you should call (and why):\n\n1) Call 3 local, manufacturer‑certified roofers (examples: GAF Master Elite, CertainTeed SELECT, Owens Corning Preferred). Why: manufacturer‑certified contractors meet training/insurance standards and are more likely to install warranty‑eligible work after hail damage.\n\n2) Call 1–2 storm‑damage specialists / restoration companies that handle insurance claims (e.g., local hail/storm crews or national restoration firms with Denver offices). Why: they’re experienced documenting hail damage, working with adjusters, and can speed the insurance process.\n\n3) Call your insurance company’s recommended contractors (if they provide any), but don’t rely only on them. Why: they’ll be familiar with your insurer’s claim process — but you still want independent estimates.\n\n4) If damage looks extensive or you’re being pressured, call a public adjuster for one inspection. Why: they advocate for policyholders and can help maximize your claim payout (they charge a fee or percentage, so weigh the benefit).\n\nWhat I’ll need from you to produce a short list of specific companies:\n- Your ZIP code or neighborhood in Denver\n- Any preferences (local-only, national firms ok, prefer family-owned, etc.)\n\nAlso — immediate checklist for the calls/appointments:\n- Take clear photos of roof from ground and of downspouts, gutters, vehicles, siding, and any interior leaks.\n- Ask each contractor: Are you licensed/insured in Colorado? Do you carry general liability and workers’ comp? Are you a manufacturer‑certified installer (which brands)? Do you handle insurance documentation and meet with adjuster? Do you provide a written estimate and scope of work? What warranties do you offer (materials vs workmanship)?\n- Get 3 written estimates and compare line items (tear-off vs overlay, materials, ventilation, drip edge, ice/water shield, permit costs).\n- Don’t sign anything the day they show up under “storm special” pressure — get it in writing and confirm timelines and payment schedule.\n\nIf you share your ZIP code, I’ll return a short list (3–6) of reputable Denver roofing companies — with why to call each (certifications, storm/insurance experience, specialties, and contact tips).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

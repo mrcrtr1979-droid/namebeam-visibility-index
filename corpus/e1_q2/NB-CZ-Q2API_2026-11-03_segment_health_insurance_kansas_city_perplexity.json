@@ -1,0 +1,105 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_health_insurance_kansas_city_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_cbd1d796-a197-43bd-881a-ce086134615f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00115,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0048
+   },
+   "input_tokens": 4586,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4030,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 460,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5046
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "BBS Insurance — (816) 205-4664",
+  "AIS Health Advisors — (913) 333-8627",
+  "Another option",
+  "INSURICA / Broker Source — (913) 333-3385",
+  "Medicare-eligible",
+  "BBS Insurance",
+  "AIS Health Advisors",
+  "Kansas and Missouri. It",
+  "ACA Marketplace",
+  "INSURICA",
+  "Broker Source",
+  "Leawood. Its",
+  "Medicare",
+  "BBS and INSURICA",
+  "In Kansas",
+  "Kansas and Missouri",
+  "Family ACA",
+  "North Kansas City and Overland Park"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aishealthadvisors.com/",
+  "https://www.bluekc.com/",
+  "https://insurica.com/locations/leawood/",
+  "https://www.bluekc.com/shop-plans/ifp-plan-options/individual-and-family-plans/",
+  "https://www.bluekc.com/agents/contact/",
+  "https://www.bluekc.com/employers/shop-plans/small-group-plans/",
+  "https://apollo-insurance.com/health-insurance-broker-kansas-city/",
+  "https://www.bluekc.com/page-category/agents/",
+  "https://www.bluekc.com/small-group/",
+  "https://www.kansascity.com/news/business/article317830379.html",
+  "https://www.bluekc.com/employers/shop-plans/",
+  "https://www.bluekc.com/small-group-value/",
+  "https://bbs-insurance.com/",
+  "https://www.bluekc.com/wp-content/uploads/2026/08/Blue-KC-Small-Group-2026-Offer-Guide.pdf",
+  "https://www.bluekc.com/agents/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "74339bd9d2a90201dd6932c73c0d1955ad49c0ed9018402f85b4a40355b5559e",
+ "answer_chars": 1785,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_short_term_rental_nashville_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8c12dcf6-48c3-41da-91b1-d3e94e15c6a3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00447
+   },
+   "input_tokens": 4539,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3986,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 333,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4872
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "The Treetop Bungalow in 12 South",
+  "SoBro",
+  "Private Balcony",
+  "Free Parking",
+  "Browse SoBro"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/nashville-tn/stays/bed-and-breakfast",
+  "https://www.airbnb.com/sobro-tn/stays",
+  "https://www.airbnb.com/nashville-tn/stays/apartments",
+  "https://www.airbnb.com/downtown-nashville-tn/stays",
+  "https://www.airbnb.com/nashville-tn/stays/guesthouses",
+  "https://www.airbnb.com/nashville-tn/stays",
+  "https://www.airbnb.com/nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/nashville-tn/stays/cabins",
+  "https://www.airbnb.com/vanderbilt-university-nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/nashville-in/stays",
+  "https://www.airbnb.com/west-nashville-tn/stays",
+  "https://www.airbnb.com/nashville-tn/stays/private-suites",
+  "https://www.airbnb.com/davidson-county-tn/stays",
+  "https://www.airbnb.com/nashville-tn/stays/houses",
+  "https://www.airbnb.com/nashville-in/stays/family-friendly"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "457e01f3e04d3828b85b47a5e1d1c9924e8019b3c31bc3b829a1131552212e0a",
+ "answer_chars": 1012,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

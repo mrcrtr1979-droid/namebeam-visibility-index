@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_dentists_chicago_openai",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Chicago. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgGijQjpF9glXUUZ1Gd35yiGuFevv",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1701,
+   "total_tokens": 1726,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1088,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "College of Dentistry",
+  "AAOMS",
+  "American Academy of Implant Dentistry. These",
+  "American Academy of Implant Dentistry",
+  "University of Illinois"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I’ll give you a tailored list of specific practices to call, but first I need two quick things so the recommendations fit you:\n\n1) Where in Chicago (zip code or neighborhood) will be most convenient?  \n2) Is this for a single tooth, multiple teeth, or a full-arch (All‑on‑4) restoration? Also tell me if you have major constraints (insurance plan, budget, need for sedation, preference for a periodontist vs oral surgeon).\n\nIf you want a quick actionable start now, here’s what I recommend calling right away and what to ask — even before I build a neighborhood-specific list.\n\nPlaces to call (good initial options)\n- University clinic: University of Illinois at Chicago (UIC) College of Dentistry — teaching clinic. Pros: supervised by experienced faculty, often lower fees, handles complex cases and referrals. Good if budget or complex grafting/sinus lifts may be needed.\n- Hospital/academic oral surgery department: Call any oral & maxillofacial surgery department at a major hospital near you if you have medical complexity or need IV sedation/general anesthesia.\n- Local board-certified specialists: call a periodontist or oral surgeon in your neighborhood who lists “dental implants” on their site and is a member of AAOMS, AAP (periodontology), or the American Academy of Implant Dentistry. These specialists routinely place implants and manage grafts/sinus lifts.\n- Restorative/implant-focused private practice: look for practices advertising full-service implant care (placement + restoration) or a team approach (surgeon + prosthodontist). This reduces coordination errors and unexpected costs.\n\nWhat to ask when you call (phone script)\n- Do you place implants, or do you refer out for placement? Who will do the restoration?\n- Do you use CBCT (3D) imaging before surgery?\n- What implant system/brand do you use?\n- Do you provide a full written estimate? Is the crown/abutment included or separate?\n- Do you perform bone grafting or sinus lifts if needed?\n- What sedation options are available (local, oral sedation, IV)?\n- Length of the treatment timeline from implant placement to final crown?\n- Warranty/guarantee and follow-up care?\n- Do you accept my insurance or offer financing?\n\nHow I’ll proceed once you tell me your neighborhood and needs\n- I’ll give 5–8 specific practices near you (names, brief reason to call each — e.g., expert in full-arch, oral surgeon with sedation, teaching clinic with lower fees, prosthodontist for complex esthetic restorations).\n- I’ll flag any top-reviewed specialists with appropriate board memberships and links to verify credentials.\n- I’ll include a short comparison (approx. cost ranges, typical wait time, whether they do single implants vs full-arch).\n\nTell me your zip code or neighborhood and whether this is a single implant or larger restoration, and I’ll prepare that specific list.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

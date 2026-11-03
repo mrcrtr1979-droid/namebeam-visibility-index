@@ -1,0 +1,99 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_dentists_kansas_city_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: dentists, Kansas City",
+ "niche": "dentists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Kansas City. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Kansas City Missouri for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4e6ca174-8f46-495e-9af0-6c45ace9ac27",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00147,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00516
+   },
+   "input_tokens": 4759,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4205,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 588,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5347
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Periodontal Specialists & Implant Surgeons",
+  "Midwest Oral and Maxillofacial Surgery",
+  "University Health Oral & Maxillofacial Surgery Clinic",
+  "Nuvia Dental Implant Center",
+  "Kansas City-area",
+  "Periodontal Specialists",
+  "Implant Surgeons",
+  "Leawood",
+  "Country Club Plaza",
+  "University Health Oral",
+  "Maxillofacial Surgery Clinic",
+  "CRNA. Ask"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.periodontal-specialists.com/",
+  "https://www.periodontal-specialists.com/services/dental-implant-placement",
+  "https://www.universityhealthkc.org/services/oral-maxillofacial-surgery/",
+  "https://midwestomskc.com/",
+  "https://midwestomskc.com/dental-clinics-procedures",
+  "https://midwestomskc.com/home-page",
+  "https://www.carecredit.com/doctor-locator/kansas-city-mo/cosmetic-and-implant-dentistry-of-kansas-city-nnx724/",
+  "https://local.yahoo.com/info-198731762-goodman-john-john-p-goodman-kansas-city/",
+  "https://midwestomskc.com/dental-clinics-meet-us",
+  "https://www.patientconnect365.com/Dentists/Missouri/KansasCity/64155/Periodontal_Specialists__Implant_Surgeons__North_KC",
+  "https://midwestomskc.com/dental-clinics-about-us",
+  "https://dentillo.com/city/kansas-city",
+  "https://www.carecredit.com/doctor-locator/independence-mo/kansas-city-dental-implants-oral-surgery-independence-727kkg/",
+  "https://www.nuviasmiles.com/locations/dental-implants-kansas-city-kansas",
+  "https://www.carecredit.com/doctor-locator/kansas-city-mo/kc-dental-implants-oral-surgery-253krr/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "cde337f8bfdba803cd260c94c9eccf08b8f36b739b328b01b562dd3c2b133119",
+ "answer_chars": 2128,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

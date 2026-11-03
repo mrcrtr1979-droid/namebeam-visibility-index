@@ -1,0 +1,54 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_dentists_phoenix_openai",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Phoenix. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgGfBvAQyWUptyHKCPULq4ly84PMc",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1985,
+   "total_tokens": 2010,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1216,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Board-certified",
+  "Midwestern University College of Dental Medicine",
+  "Glendale for Phoenix",
+  "ZIP and I",
+  "ClearChoice Dental Implant Centers",
+  "Dental Clinic",
+  "Nobel Biocare",
+  "ClearChoice",
+  "Oral and Maxillofacial Surgery"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do a targeted list of specific offices for you — but first I need two quick details so my recommendations match your needs:\n- Which part of Phoenix or what ZIP code are you in or willing to travel to? (Phoenix is large.)\n- Do you have dental insurance, a budget range, or a timeline? Also: is this a single tooth implant, multiple, or full-arch replacement?\n\nIf you want suggestions right away, here’s a practical approach plus a few specific options you can call now.\n\nWho you should call (and why)\n- Board-certified oral and maxillofacial surgeons — best for surgical complexity, bone grafting, extractions and sedation. Call them if you expect difficult anatomy or want IV sedation.\n- Periodontists who place implants — specialists in the gum/bone supporting the implant; great for bone grafts and esthetic cases.\n- Prosthodontists (or general dentists who restore implants) — essential for the crown/bridge/overdenture portion; for complex restorations, call a prosthodontist.\n- Multidisciplinary implant centers (implant-only clinics) — often offer consultation, CBCT imaging and same-site surgical + restorative coordination.\n- Dental school clinics (Midwestern University College of Dental Medicine in Glendale for Phoenix area) — lower cost, supervised by faculty; good if budget is a priority and you don’t need urgent treatment.\n\nThree specific, commonly used options to call now (general-purpose; you can tell me your ZIP and I’ll find closer alternatives)\n1) ClearChoice Dental Implant Centers (Scottsdale/Phoenix area)\n   - Why call: national implant-focused centers that handle single implants through full-arch replacements; they coordinate surgical and restorative care and often offer financing and guaranteed treatment plans. Good if you want a single point of contact for the whole process.\n\n2) Board-certified oral & maxillofacial surgeon practices in Phoenix (search the American Board of Oral and Maxillofacial Surgery directory for “Phoenix”)\n   - Why call: ideal for complex surgical cases, extractions with immediate implants, bone grafting, and sedation options. Ask for the surgeon’s board-certification and number of implants placed annually.\n\n3) Midwestern University College of Dental Medicine — Dental Clinic (Glendale)\n   - Why call: lower-cost option with supervised student care. They offer diagnostics and many procedures under faculty oversight; good if budget is important and you can accept a teaching-clinic timeline.\n\nWhat to ask when you call (keeps you from wasting time)\n- Do you place implants on-site and do you do the restoration (crown/bridge/denture) in-house, or is it referred out?\n- Which implant brands do you use (Straumann, Nobel Biocare, Zimmer, etc.) and why?\n- Do you use CBCT (3D) imaging and guided surgery?\n- How many implant cases like mine do you do per year?\n- Cost estimate (implant + abutment + crown) and what’s included; financing options.\n- Do you require bone grafting or sinus lift for my situation? (You can’t know without an exam, but they should explain typical scenarios.)\n- Sedation options and whether you’re comfortable with my medical history (briefly describe any major conditions/meds).\n- Request before/after photos or patient references for similar cases.\n\nIf you want, I can:\n- Look up 4–6 highly-rated implant providers near your exact ZIP (names, phone numbers, addresses, short notes) and a recommended first-call script.\nTell me your ZIP code and any preferences (insurance, budget, single vs multiple teeth, sedation needs) and I’ll pull together the specific practices to call and why each one fits your case.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

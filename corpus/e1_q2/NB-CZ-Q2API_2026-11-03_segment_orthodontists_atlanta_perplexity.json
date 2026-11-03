@@ -1,0 +1,106 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Atlanta. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_51e82c57-aaa4-4540-a604-ceb0c315b9e0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00127,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00501
+   },
+   "input_tokens": 4947,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4394,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 507,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5454
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Harris Orthodontics — Dr. Peyton Harris",
+  "Rêve Orthodontics — Midtown",
+  "Invisalign",
+  "Harris Orthodontics",
+  "Dr. Peyton Harris",
+  "Marietta St NW",
+  "Dr. Harris",
+  "American Board of Orthodontics",
+  "Invisalign. A",
+  "West Midtown",
+  "Practice",
+  "Atlanta Orthodontic Specialists",
+  "Dr. Tyler Rathburn",
+  "Howell Mill Rd NW",
+  "Dr. Rathburn",
+  "Invisalign. The",
+  "Midtown",
+  "Monroe Dr NE",
+  "Howell Mill"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://harrisorthodonticsatl.com/",
+  "https://www.castleconnolly.com/top-dentists/tyler-rathburn-orthodontics",
+  "https://www.braces-braces.com/",
+  "https://atlantaortho.com/location/virginia-highlands/",
+  "https://poncedentalstudio.com/invisalign/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/wright-orthodontics-atlanta-ga",
+  "https://www.dentistsranked.com/dental-services/invisalign-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/buckhead-orthodontics-atlanta-ga",
+  "https://mommypoppins.com/atlanta-kids/directory/stores-services/artemis-smiles-orthodontics-atlanta",
+  "https://dforthodon.com/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/reve-orthodontics-midtown-atlanta-atlanta-ga",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/atlanta-orthodontic-specialists-3580-piedmont-rd-ne",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/alliance-orthodontics-atlanta-ga",
+  "https://artemisorthoatlanta.com/our-practice/meet-our-doctor/dr-behnaz-yavari/",
+  "https://nationalorthodonticregistry.com/georgia/atlanta-ga/orthodontists/atlanta-orthodontic-specialists-5555-peachtree-dunwoody-rd-ne"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "7800f1d7b809ddda4968bd5893db8717c453ae93106d1c2d3cc13b3011bbb804",
+ "answer_chars": 1834,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

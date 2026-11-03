@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_tanning_salons_columbus_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: tanning salons, Columbus",
+ "niche": "tanning salons",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Columbus OH?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b70aa01d-7dca-471c-998e-5f274200059f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00088,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00054,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00406
+   },
+   "input_tokens": 4067,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3523,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 218,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4285
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UV tanning",
+  "Palm Beach Tan’s Georgesville location",
+  "Tan Wolf",
+  "Palm Beach Tan"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.yelp.com/biz/the-wash-and-tan-columbus",
+  "https://www.yelp.com/biz/tan-wolf-columbus",
+  "https://www.yelp.com/biz/sweetly-bronzed-columbus",
+  "https://www.yelp.com/biz/palm-beach-tan-columbus",
+  "https://www.yelp.com/biz/mahalo-spray-tanning-columbus-2",
+  "https://www.yelp.com/biz/bronzed-bunny-columbus",
+  "https://www.yelp.com/biz/palm-beach-tan-columbus-6",
+  "https://www.yelp.com/biz/bella-nails-and-spa-columbus",
+  "https://www.yelp.com/biz/tan-pro-columbus",
+  "https://palmbeachtan.com/locations/oh/columbus-olentangy-river-road",
+  "https://www.yelp.com/biz/mukha-custom-cosmetics-and-medi-spa-columbus-2",
+  "https://palmbeachtan.com/locations/oh/arlington-pointe",
+  "https://easyweek.io/tanning-and-spray-tan/columbus/",
+  "https://www.yelp.com/biz/truglam-columbus",
+  "https://palmbeachtan.com/locations/oh/georgesville"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "02be5d62e9e0fabee0aefadbb1cec0b06328d7fdfcd4fa8b2e18382112327b56",
+ "answer_chars": 650,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

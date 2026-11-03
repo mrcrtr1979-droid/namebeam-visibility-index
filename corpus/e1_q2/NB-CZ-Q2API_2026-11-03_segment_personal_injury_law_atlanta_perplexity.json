@@ -1,0 +1,96 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_personal_injury_law_atlanta_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: personal injury law, Atlanta",
+ "niche": "personal injury attorneys",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Atlanta after a car accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Atlanta for a car accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6d79a808-caf1-4775-8554-9d030e96f179",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00096,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00149,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00509
+   },
+   "input_tokens": 4384,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3826,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 594,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4978
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Ragland Law Firm",
+  "Mabra Law",
+  "Gardner Trial Attorneys",
+  "Johnson & Ward",
+  "The Kalka Law Group",
+  "Perimeter Center Place NE",
+  "Booth St. NW",
+  "Handles Atlanta",
+  "State Bar of Georgia"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.atlantainjurylawyer.com/",
+  "https://mabrafirm.com/car-accident-lawyer/",
+  "http://www.gabar.org/public/find-a-lawyer",
+  "https://www.raglandjones.com/practice-areas/car-accidents/",
+  "https://www.atlantainjurylawyer.com/practice-areas/serious-personal-injury/auto-accidents/",
+  "https://www.teamjsglaw.com/personal-injury/car-accidents/",
+  "https://legalatlanta.com/personal-injury/georgia-car-accident-lawyer/atlanta-car-accident-lawyer/",
+  "https://www.gardnertrialattorneys.com/practice-areas/car-accidents/",
+  "http://www.gabar.org/general-counsel/ethics---discipline/lawyer-referral-services",
+  "https://www.kalkalaw.com/car-accident-lawyer-atlanta-ga-car-crash-injury-lawyer-near-me/",
+  "https://www.bennettlawgroup.net/",
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/georgia/atlanta/",
+  "https://www.lawyers.com/automobile-accidents/all-cities/georgia/law-firms/",
+  "https://www.lawyers.com/automobile-accidents/atlanta/georgia/law-firms/",
+  "https://www.avvo.com/personal-injury-lawyer/ga/atlanta.html"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9da803c23a7cb0685c59a88c77b2ee62a544a9d160c8eb9c9cda88eea06dd99c",
+ "answer_chars": 2163,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

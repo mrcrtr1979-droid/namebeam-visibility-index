@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_046e42b1-63c3-49ee-8387-b449a4604913",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00068,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00434
+   },
+   "input_tokens": 4620,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4074,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 272,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4892
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Carlos Castro at Georgia Prosthodontics",
+  "Dr. Hal Arnold",
+  "Dr. Carlos Castro",
+  "Georgia Prosthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://georgiaprosthodontics.com/",
+  "https://www.drevangrodin.com/all-on-4/",
+  "https://aedit.com/provider/carlos-castro-2044",
+  "https://drhalnarnold.com/",
+  "https://www.atlantaperiodontics.com/",
+  "https://pumphreyperio.com/",
+  "https://aedit.com/provider/hal-arnold-1944",
+  "https://www.perioatlanta.com/reviews.html",
+  "https://www.castleconnolly.com/top-dentists/carlos-castro-prosthodontics-cc332832",
+  "https://georgiaprosthodontics.com/what-is-a-prosthodontist-and-other-faqs/",
+  "https://www.atlantawest-periodontics.com/reviews/",
+  "https://www.castleconnolly.com/top-dentists/hal-n-arnold-prosthodontics-cc397245",
+  "https://old.implantoption.com/",
+  "https://aaid-implant.org/dentist/flax-hugh/",
+  "https://www.linkedin.com/in/halarnolddmd"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "93a468894e1b6ccb9084de74106ac3534b6839f8ca7b599905084822a17a16fd",
+ "answer_chars": 940,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_hedy_hopp_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "Hedy & Hopp",
+ "niche": "healthcare marketing agency",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best healthcare marketing agency in St. Louis?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a80c9fde-9295-46ee-9339-f57bc8518c7c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00068,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00435
+   },
+   "input_tokens": 4674,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4128,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 272,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4946
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "Werremeyer",
+  "Atomicdust",
+  "Cork Tree Creative",
+  "Launch Healthcare Marketing",
+  "Clear to Launch",
+  "Clear to Launch Healthcare Marketing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.atomicdust.com/healthcare-branding-agency/",
+  "https://www.linkedin.com/company/clear-to-launch-healthcare-marketing",
+  "https://pilotpractice.com/healthcare-digital-marketing-agency-in-st-louis-mo.html",
+  "https://brandingpioneers.com/locations/usa/st-louis",
+  "https://www.singlegrain.com/location/paid-ads-agency-st-louis/",
+  "https://www.integrityxd.com/industry/healthcare",
+  "https://www.singlegrain.com/location/digital-marketing-agency-st-louis/",
+  "https://corktreecreative.com/branding/",
+  "https://digital.marketing/locations/st-louis",
+  "https://www.linkedin.com/company/anvilinsights",
+  "https://onfolio.com/reviewed/marketing-agencies/usa/missouri/st-louis/",
+  "https://www.cbinsights.com/company/werremeyer-creative",
+  "https://onfolio.com/reviewed/social-media-agencies/usa/missouri/st-louis/",
+  "https://brandingpioneers.com/locations/usa/st-louis/digital-marketing-agency",
+  "https://www.linkedin.com/company/werremeyer"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "a6b572014d942a2a90693b13e2cd3240bb0ccd30220e5567b809517c479cda16",
+ "answer_chars": 1007,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

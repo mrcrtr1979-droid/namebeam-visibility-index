@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_dentists_pleasanton_openai",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgGb37pg67dlIKnzRr85Rlvnhduxj",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1419,
+   "total_tokens": 1447,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Medicaid",
+  "Aspen Dental"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I’ll need two quick clarifying details so I give you useful, current recommendations:\n\n1) Do you mean Pleasanton, California?  \n2) Do you have dental insurance (or need a low‑cost / Medicaid option)?  \n3) Any special needs or preferences — e.g., kids, anxious/needle‑phobic, weekend hours, bilingual staff, sedation, implants/complex work?\n\nIf you want me to look up current phone numbers, hours and new‑patient availability, I can search and return a short curated list of 5–8 specific practices in Pleasanton with why each is a good fit and what to ask when you call. If you prefer not to wait, here’s what to call and why (general guidance you can use immediately):\n\n- A highly rated local family dentist near you — for routine checkups and cleanings, good reviews typically mean consistent hygiene care and friendly staff. Ask about new‑patient specials, whether they take your insurance, and how long cleanings typically take.\n- A larger group practice (or franchise like Aspen Dental if nearby) — often easier to get an appointment quickly and they commonly accept many insurance plans. Ask about wait times, accepted plans, and whether they do digital x‑rays.\n- A dentist with strong hygiene focus (search “dental hygienist clinic” or “preventive dental care”) — if you mainly need a cleaning and scaling, these offices may prioritize preventive care and spend more time on hygiene.\n- A community health clinic or county dental clinic (if cost is a concern) — for sliding-scale or Medicaid services. Ask about eligibility, waitlists, and what services are included.\n- A clinic that advertises sedation or “anxiety‑friendly” dentistry if you’re nervous — ask what sedation options are available, whether they require a medical consult, and if they handle post‑op monitoring.\n\nWhat I’ll include if you want the curated list:\n- 5–8 specific practices in Pleasanton with phone, address, hours, average rating, why I recommend them (speed of new‑patient appointments, insurance friendliness, special services), and a short script of what to ask when you call.\n\nWhich option do you prefer?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

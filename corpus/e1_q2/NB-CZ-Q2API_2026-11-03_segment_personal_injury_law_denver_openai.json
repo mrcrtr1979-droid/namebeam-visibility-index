@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_personal_injury_law_denver_openai",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: personal injury law, Denver",
+ "niche": "personal injury attorneys",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Denver after a car accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Denver for a car accident case?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgGhYFP0M32ROYqNcL32YKx0dHOVX",
+  "usage": {
+   "prompt_tokens": 30,
+   "completion_tokens": 1288,
+   "total_tokens": 1318,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1088,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I usually give a short, targeted list of 4–6 firms and why each is a good fit. Before I pick names, a couple quick questions so I give the best matches:\n\n1. How serious were your injuries (minor/medical treatment/hospitalized/permanent)?  \n2. Do you want Denver-based firms only, or are national firms with Denver offices fine?  \n3. Any language needs (Spanish etc.) or other preferences (trial experience, aggressive negotiators, low caseloads, boutique vs big firm)?  \n4. Do you already have an insurer/adjuster contact or a police report?\n\nIf you want names right away, I can also provide a short list based on general reputation and what most people in Denver look for. Also helpful: I can include a script of the 8–10 questions to ask each firm when you call and what documents to have ready. Which would you prefer?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

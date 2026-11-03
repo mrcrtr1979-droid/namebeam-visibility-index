@@ -1,0 +1,95 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_roofing_miami_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_625a2fa8-0a88-4903-a9d2-214ac94b2b12",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00067,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 4791,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4243,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 269,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5060
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Art’s Roofing & Construction",
+  "CCC1333598",
+  "Roofer Mike Inc",
+  "CCC1327413",
+  "Miami-Dade NOA-approved",
+  "Miami-Dade NOA",
+  "HVHZ-approved",
+  "Miami-Dade",
+  "Dade NOA",
+  "Dade NOA-approved",
+  "NOA-approved"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://agkgc.com/miami-roofing",
+  "https://www.havenhrg.com/roofing",
+  "https://www.robsonindustrial.com/residential/roofing/replacement/",
+  "https://agkgc.com/roofing-miami-dade",
+  "https://siaroofing.com/services",
+  "https://www.artsroofing.com/areas/miami/",
+  "https://agkgc.com/doral-roofing",
+  "https://www.havenhrg.com/roofing/roof-replacement",
+  "https://kendallroofing.net/",
+  "https://crownroofing.com/roofing-in-miami/",
+  "https://siaroofing.com/service-area/miami-dade",
+  "https://www.roofermikeinc.com/roofing-miami-style/roofer-mike-inc-facts-faq/",
+  "https://www.houzz.com/professionals/window-sales-and-installation/premier-hurricane-solutions-pfvwus-pf~30714147",
+  "https://www.robsonindustrial.com/service-areas/",
+  "https://bigfootwindowsandroofing.com/roofing-contractors-near-me-miami-dade/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "5d2322e0730cf61070e82714d88807ec2dbcf0589ca62fb369480ea5bcf859be",
+ "answer_chars": 922,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

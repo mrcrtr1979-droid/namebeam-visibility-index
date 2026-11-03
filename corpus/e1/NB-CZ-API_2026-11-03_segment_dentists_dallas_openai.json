@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_dentists_dallas_openai",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgF4eM7qC5AQ7lRHpCM0JbQkpevE0",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 1232,
+   "total_tokens": 1250,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 576,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dallas ZIP",
+  "AAOMS",
+  "American Academy of Implant Dentistry",
+  "CBCT",
+  "Implant Dentistry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t a single objectively “best” implant dentist for everyone — the right one depends on your needs (complexity of the case), location, budget, and whether you prefer a specialist (oral surgeon, periodontist, prosthodontist) or a restorative/general dentist who places implants.\n\nIf you want, tell me your Dallas ZIP code (or a neighborhood), whether you have insurance, and any preferences (price, sedation, weekend hours). I can then find and compare a few highly rated local implant specialists. Meanwhile, use the guidance below to choose a top provider.\n\nHow to identify a top implant dentist\n- Prioritize the right specialty:\n  - Oral & maxillofacial surgeons and periodontists place most implants and handle complex bone/sinus work.\n  - Prosthodontists specialize in the restorative (crown/prosthesis) part and are valuable for full-mouth or cosmetic implant cases.\n- Credentials & training: look for board certification or membership in professional bodies (AAOMS, AAP, American Academy of Implant Dentistry). Additional implant-specific training and continuing education are a plus.\n- Experience & case complexity: ask how many implants they place annually and whether they’ve handled cases like yours (bone grafts, sinuses, full-arch).\n- Technology: CBCT 3D imaging, guided implant planning, digital impressions, and in-office milling or CAD/CAM workflows improve outcomes.\n- Before/after photos & patient testimonials: review similar-case photos and independent reviews (Google, Yelp, Healthgrades).\n- Collaboration: ideally the surgeon and the restorative dentist coordinate or are part of the same team.\n- Implant systems & warranties: ask what implant brand they use and whether they offer any guarantee or maintenance program.\n- Infection/complication rates and emergency availability.\n\nQuestions to ask at a consultation\n- What are your qualifications and how many implants have you placed?\n- Have you treated cases like mine (bone loss, multiple teeth, full arch)?\n- Will you take a CBCT scan and show me the digital treatment plan?\n- What implant system do you use and why?\n- What are the full costs (implant, abutment, crown, grafts, extractions, follow-ups)?\n- What is the expected timeline from placement to final restoration?\n- What sedation/anesthesia options do you offer?\n- What complications have you encountered and how were they managed?\n- Do you accept my insurance or offer financing?\n\nTypical cost and timeline (Dallas area ballpark)\n- Single implant (implant, abutment & crown): commonly $3,000–$6,000 (complex cases or premium providers may be more).\n- Bone graft: $200–$2,000+ depending on size/type.\n- Sinus lift: $1,000–$3,000+ if required.\n- Timeline: 3–6 months typical for standard implant healing; immediate implants or full-arch solutions can shorten or change the timeline.\n\nNext step\nTell me your Dallas ZIP code/neighborhood and any constraints (insurance, budget, timeline). I’ll find a short list of well-regarded local implant specialists and what to expect from each (you can then book consultations).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

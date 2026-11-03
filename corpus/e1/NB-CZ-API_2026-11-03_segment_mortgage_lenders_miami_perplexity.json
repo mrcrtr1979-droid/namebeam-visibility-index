@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_81f736df-a5f4-4ad5-88e4-7bd8053883ba",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00111,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00486
+   },
+   "input_tokens": 5006,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4457,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 444,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5450
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "City of Miami",
+  "Florida Housing",
+  "Miami-Dade County",
+  "Offers",
+  "Loan Estimate",
+  "Miami-Dade"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.floridahousing.org/programs/homebuyer-overview-page",
+  "https://www.consumerfinance.gov/owning-a-home/compare/compare-loan-estimates/",
+  "https://www.consumerfinance.gov/consumer-tools/mortgages/shopping-for-a-mortgage/",
+  "https://www.miami.gov/Housing-Assistance/Home-Ownership",
+  "https://www.miami.gov/Housing-Assistance/Home-Ownership/Apply-for-First-Time-Homebuyer-Assistance",
+  "https://www.miami.gov/Housing-Assistance/Home-Ownership/Apply-for-First-Time-Homebuyer-Assistance/First-Time-Homebuyer-Program-Participating-Banks",
+  "https://www.miami.gov/My-Government/Departments/Housing-Community-Development/District-5-Expanded-First-Time-Homebuyer-Program",
+  "https://www.floridahousing.org/buyers-renters/buy-or-rent/resources",
+  "https://www.consumerfinance.gov/owning-a-home/loan-estimate/",
+  "https://www.consumerfinance.gov/owning-a-home/compare/review-loan-estimates/",
+  "https://www.miamidade.gov/global/housing/homeownership.page",
+  "https://www.miamibeachfl.gov/city-hall/housing-and-community-development/housing-and-community/housing-services/",
+  "https://www.hud.gov/states/florida-assistance-by-county",
+  "https://www.miamidade.gov/global/service.page?Mduid_service=ser1470429502796591",
+  "https://www.miamidade.gov/global/housing/affordable-homeownership-program.page"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "0fa1a6a7d1a44aa3b11f1492c3b0bdc88ec31daa67b0261a1425d4bba69bdc3b",
+ "answer_chars": 1670,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

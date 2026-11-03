@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_dentists_charlotte_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: dentists, Charlotte",
+ "niche": "dentists",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Charlotte for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_01880174-c74f-4f81-ad71-7cb07a55892a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00442
+   },
+   "input_tokens": 4797,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4251,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 289,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5086
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sharma Oral Surgery",
+  "Dr. Ramon Peleaux",
+  "Oral Surgeons of Charlotte",
+  "Dr. Sharma",
+  "Oral Surgeons"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.yelp.com/biz/oral-surgeons-of-charlotte-charlotte",
+  "https://www.dentistsranked.com/dental-services/dental-implants-charlotte-nc",
+  "https://mycenters.com/locations/oral-surgery-charlotte-nc-billingsley-rd/",
+  "https://mycenters.com/blog/oral-surgery/richards-journey-to-a-confident-smile-with-dental-implants/",
+  "https://local.yahoo.com/health-and-medicine/oral-surgeons/nc/charlotte/",
+  "https://www.realself.com/dr/ramon-peleaux-charlotte-nc",
+  "https://www.realself.com/find/North-Carolina/Dental-Implants",
+  "https://www.realself.com/find/North-Carolina/Charlotte/Dental-Implants",
+  "https://www.dentistsranked.com/dental-services/wisdom-teeth-removal-charlotte-nc",
+  "https://www.myspecialtydentist.com/best/prosthodontics/nc/charlotte",
+  "https://mycenters.com/locations/oral-surgery-charlotte-nc-blakeney/",
+  "https://www.sharmaoralsurgery.com/",
+  "https://www.24-7pressrelease.com/press-release/534331/marquis-whos-who-honors-r-bruce-miller-dds-ms-for-expertise-in-dentistry",
+  "https://mycenters.com/",
+  "https://www.mapquest.com/us/north-carolina/oral-surgeons-of-charlotte-284400655"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "4fe2e38a120a13036097d85e297c9ae19d770048a51c3438614c7194ddd2eb16",
+ "answer_chars": 1033,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

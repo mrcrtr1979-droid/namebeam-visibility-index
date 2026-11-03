@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_orthodontists_denver_openai",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: orthodontists, Denver",
+ "niche": "orthodontists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Denver. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Denver for braces or Invisalign?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgGotSPUudA18FThcJtyO8hHcQ8Oz",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1337,
+   "total_tokens": 1362,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Invisalign",
+  "Platinum",
+  "Diamond",
+  "Find",
+  "American Board of Orthodontics",
+  "Invisalign Platinum",
+  "American Association of Orthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you specific names — but to make the list most useful I need a couple quick details: your Denver zip code (or neighborhood), whether this is for an adult or a teen/child, and whether you have dental insurance or a budget range. If you want Invisalign specifically say so.\n\nWhile you reply, here’s a practical plan plus what to call and why — so you can start right away if you prefer.\n\nWhat to call first (general, useful no matter your location or age)\n- A nearby board-certified orthodontist (ABO diplomate) — board certification means additional testing and peer review; good for complex cases.\n- An experienced Invisalign provider (Platinum/Diamond status on Invisalign locator) if you want clear aligners — that indicates high volume and familiarity with tricky aligner cases.\n- A pediatric orthodontist if this is for a child/teen (their training focuses on growth and timing).\n- The University of Colorado orthodontic residency clinic (if cost is a concern or you have a complex case) — supervised care from residents can be lower cost.\n\nHow to find specific names right away\n- Use Invisalign’s “Find a Provider” and filter for Diamond/Platinum providers near Denver.\n- Use the American Association of Orthodontists (AAO) “Find an Orthodontist” lookup to confirm membership.\n- Check Google/Yelp/Healthgrades for recent patient reviews and before/after photos.\n- Verify “ABO diplomate” status on the American Board of Orthodontics site if you want board-certified.\n\nWhat I recommend you call (what to ask and why)\nCall 3–4 practices: one high-volume Invisalign provider, one ABO diplomate, one pediatric orthodontist (if applicable), and one lower-cost/university option. On the call, ask:\n- Are you an Invisalign provider? (If yes: what level — e.g., Platinum/Diamond?)\n- Are you board certified by the American Board of Orthodontics?\n- Do you offer a free or low-cost initial consult and 3D scans (iTero or similar)?\n- Estimated cost range for braces vs Invisalign and what’s included (retainers, adjustments).\n- Typical treatment time for cases like mine (briefly describe crowding, spacing, overbite, etc.)\n- Payment/financing options and whether you accept my insurance.\n\nSample phone script (30–45 seconds)\n“Hi, I’m interested in orthodontic treatment and wondering whether you treat adults/teens with Invisalign or braces. Do you offer a free consultation and digital scans? Are you an Invisalign Platinum/Diamond provider and/or board certified by the American Board of Orthodontics? Also, do you accept [my insurance name] or offer financing?”\n\nIf you want, I can:\n- Provide a tailored list of 4–6 specific Denver orthodontists (with phone numbers and short reasons to call) if you tell me your zip code, age, and insurance status.\n- Or I can run the Invisalign/AAO searches for you and summarize the best local matches (I’ll need your location).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_property_management_miami_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: property management, Miami",
+ "niche": "property management companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Miami FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d1395afb-e467-4758-9922-ee1c1a3e7cb3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00099,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00433
+   },
+   "input_tokens": 4513,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3964,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 279,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4792
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pristine Property Management",
+  "HomeRiver Group Miami",
+  "JMK Property Management",
+  "Miami. Its"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.jmkpropertymanagement.com/",
+  "https://www.turbotenant.com/property-management/services/florida/miami/",
+  "https://purehomeriver.com/locations/florida/miami/",
+  "https://www.pristinepm.com/pricing",
+  "https://www.zillow.com/professionals/property-manager-reviews/miami-fl-33145/",
+  "https://ipropertymanagement.com/research/miami-property-management-fees",
+  "https://www.zillow.com/professionals/property-manager-reviews/miami-fl-33138/",
+  "https://www.jmkpropertymanagement.com/pricing",
+  "https://miamipropertymanagement.com/",
+  "https://www.allpropertymanagement.com/property-management/companies/47774/keyrenter-property-management-miami-west",
+  "https://www.allpropertymanagement.com/property-management/companies/35790/real-property-management-miami-metro",
+  "https://www.pristinepm.com/",
+  "https://www.zillow.com/professionals/property-manager-reviews/miami-fl-33247/",
+  "https://belonghome.com/homeowners/miami",
+  "https://luxurypropertycare.com/miami-property-management-services/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "8fc7263c9c93e19375e69f9613f3793d1c73644cfede959b87ba8b0b2a92402f",
+ "answer_chars": 976,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_orthodontists_miami_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: orthodontists, Miami",
+ "niche": "orthodontists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Miami for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4339e236-f1b7-4c55-90a3-6b2e0cc22b59",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00077,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00448
+   },
+   "input_tokens": 4832,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4285,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 306,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5138
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Orthodontics Only",
+  "Super Smiles Orthodontics",
+  "Miami Center for Orthodontics (Dr. Enrique Gallo)",
+  "Miami Orthodontic Specialists",
+  "Dr. Carmen Garcia-Paul",
+  "Invisalign",
+  "Miami Center for Orthodontics",
+  "Dr. Enrique Gallo",
+  "American Association of Orthodontists",
+  "American Board of Orthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://orthodontistmiami.com/",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/orthodontics-only-miami-fl",
+  "https://nationalorthodonticregistry.com/florida/miami/orthodontists",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/super-smiles-orthodontics-miami-fl",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/garcia-orthodontics-miami-miami-fl",
+  "https://threebestrated.com/orthodontists-in-miami-fl",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/miami-orthodontic-specialists-dr-carmen-garcia-paul-miami-fl",
+  "https://www.zocdoc.com/orthodontists/miami-218306pm",
+  "https://www.dentistsranked.com/dental-services/braces-miami-fl",
+  "https://smiledoctors.com/locations/miami-beach-w-41st/",
+  "https://ivanovortho.com/braces-dentist-near-me/",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/mia-smiles-orthodontics-miami-fl",
+  "https://www.navmds.com/doctor/specialty/invisalign/florida/miami",
+  "https://www.linkedin.com/in/dr-carlos-f-feo-a705a088",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/miami-bay-oral-health-miami-fl"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "837e8afa93bbab36c0376e2671d7563802bfa8b2eee42a983f83709c8cb2f46a",
+ "answer_chars": 1089,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

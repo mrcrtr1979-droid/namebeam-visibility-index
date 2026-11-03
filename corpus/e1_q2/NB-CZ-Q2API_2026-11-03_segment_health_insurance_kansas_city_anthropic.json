@@ -1,0 +1,46 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_health_insurance_kansas_city_anthropic",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_bgeudhw35w3ociwp6p4aot6jjr7yyn2oqpwp2qvwb4sx2gfu2ysa",
+  "usage": {
+   "input_tokens": 30,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 271,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Getting multiple quotes yourself",
+  "Finding qualified help",
+  "Blue Cross Blue Shield",
+  "In Kansas",
+  "Contact"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest a different approach than targeting specific brokers, since I can't reliably recommend particular firms in Kansas City.\n\nInstead, consider:\n\n**Getting multiple quotes yourself:**\n- Healthcare.gov (federal marketplace)\n- Your state marketplace (Kansas or Missouri, depending on location)\n- Major insurers directly (Blue Cross Blue Shield, Cigna, Aetna, etc.)\n\n**Finding qualified help:**\n- Call 211 (connects to local health resources)\n- Contact your state's insurance commissioner's office for licensed broker referrals\n- Ask your employer if they offer benefits counseling\n- Check if you qualify for free assistance through community health centers\n\n**What matters more than the broker:**\n- Your actual healthcare needs (prescriptions, doctors, frequency of care)\n- Deductible vs. premium trade-offs\n- Whether your preferred providers are in-network\n- Out-of-pocket maximums\n\n**Red flags to avoid:**\n- Brokers who push one plan heavily\n- Pressure to decide quickly\n- Fees that aren't transparent upfront\n\nIf you tell me more about your situation (self-employed, employer coverage, specific health needs), I can give more targeted guidance on what to prioritize when comparing plans.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

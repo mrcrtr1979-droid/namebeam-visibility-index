@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_dentists_miami_openai",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: dentists, Miami",
+ "niche": "dentists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Miami. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Miami for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgGjGbu4TDLds36tft4MSrh2QqKW5",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1858,
+   "total_tokens": 1883,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1152,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Maxillofacial Surgeons",
+  "American Academy of Periodontology",
+  "Find",
+  "American College of Prosthodontists",
+  "Oral and Maxillofacial Surgeons",
+  "Florida Department of Health"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need one quick detail: what neighborhood or ZIP code in Miami do you want practices near, and do you prefer a surgeon (oral & maxillofacial), a periodontist, or a prosthodontist? Also tell me any constraints (insurance, budget, desire for sedation, full‑arch vs single tooth). With that I’ll give a tailored list of local practices and why to call each.\n\nMeanwhile, here are immediate, practical steps plus the kinds of providers you should contact and why — so you can start calling right away if you prefer:\n\nWhich specific types of practices to call (and why)\n- Oral & Maxillofacial Surgeons (OMFS)\n  - Why: they do the surgical placement of implants, complex extractions, bone grafts and IV sedation/general anesthesia. Call them for complex cases or if you need bone work or IV sedation.\n- Periodontists\n  - Why: gum and bone specialists who commonly place implants and manage soft-tissue health. Good for esthetic single-tooth implants and grafting cases.\n- Prosthodontists\n  - Why: specialists in tooth replacement and the final restoration (crowns, bridges, full‑arch). Call for complex prosthetic planning, full‑arch restorations, or when you want the most predictable esthetic outcome.\n- Multidisciplinary implant centers\n  - Why: teams of surgeons + prosthodontists + dental lab on site, useful for full-mouth rehab and streamlined care.\n- Teaching clinics / university programs (lower cost, supervised care)\n  - Why: supervised by faculty, usually more affordable; a good option if budget is a constraint (may take longer).\n\nWhere to find reputable local providers now\n- AAOMS surgeon finder (American Association of Oral and Maxillofacial Surgeons) — for board‑certified oral surgeons.\n- AAP (American Academy of Periodontology) “Find a Periodontist” directory.\n- ACP (American College of Prosthodontists) “Find a Prosthodontist.”\n- ADA Find‑a‑Dentist and Google Maps for local reviews.\n- Florida Department of Health license lookup — verify licenses and disciplinary history.\n\nKey questions to ask when you call (helps pick the right office)\n- Do you place implants in‑office, and who will place them (name and specialty)? Are they board certified?\n- How many implant placements do you perform monthly/yearly?\n- Do you use CBCT (3D) imaging for treatment planning?\n- Which implant systems/brands do you use and why?\n- Will the same clinician handle the final crown/bridge, or will that be referred out?\n- Do you do bone grafting/sinus lifts in‑house if needed?\n- Options for sedation (oral, nitrous, IV) and where sedation is performed (office vs hospital)?\n- Typical timeline from placement to final restoration, and estimated total cost (placement + abutment + crown)?\n- Do you offer warranties, follow-up care, or financing?\n- Can you see before/after photos of similar cases and provide patient references?\n\nIf you want, I’ll compile a short, vetted list (5–8 practices) near your exact location with phone numbers, specialties, and a one‑sentence reason to call each. Tell me your ZIP or neighborhood and any preferences (surgeon vs periodontist, insurance, budget), and I’ll prepare it.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

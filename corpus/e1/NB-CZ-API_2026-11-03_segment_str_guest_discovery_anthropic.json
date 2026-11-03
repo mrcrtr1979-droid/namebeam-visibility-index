@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_str_guest_discovery_anthropic",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_q7jqnpdoa6glhqw4wt6zwb2jwzxkzkd6mxfoz2ucgtvgtborey5q",
+  "usage": {
+   "input_tokens": 41,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 288,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "VRBO",
+  "Booking.com",
+  "Green flags",
+  "Premier Partner",
+  "Superhost",
+  "Finding a good host",
+  "Pick based on",
+  "Good Host"
+ ],
+ "engine_stated_criteria": [
+  "Trust your gut"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Choosing a Platform\n\n**Airbnb**: Largest selection, strong review system, good for unique stays\n**VRBO**: Better for full homes/longer stays, often better value\n**Booking.com**: Widest range (hotels + rentals), easiest cancellations\n\nPick based on what you need—no single \"best\" option.\n\n# Finding a Good Host\n\n**Check reviews carefully:**\n- Read recent ones (last 3-6 months)\n- Look for specific details, not just star ratings\n- Watch for patterns in complaints\n- Verify the reviewer actually stayed there\n\n**Red flags:**\n- Few reviews or mostly new\n- Vague negative comments about communication/cleanliness\n- Host doesn't respond to questions before booking\n\n**Green flags:**\n- Superhost/Premier Partner status\n- Detailed house rules and photos\n- Quick response time\n- Specific positive feedback about similar concerns to yours\n\n**Before booking:**\n- Message the host with questions—gauge responsiveness\n- Check their cancellation policy\n- Verify the listing matches your needs (location, amenities, bed types)\n\n**Trust your gut.** If something feels off in the listing or communication, move on.\n\nWhat type of trip are you planning? That might help narrow down which platform makes most sense.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

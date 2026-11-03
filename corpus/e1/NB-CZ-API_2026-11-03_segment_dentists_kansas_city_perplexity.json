@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_dentists_kansas_city_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: dentists, Kansas City",
+ "niche": "dentists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Kansas City Missouri for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_51848db3-8c5b-43e2-acaf-62ff40f54663",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00438
+   },
+   "input_tokens": 5093,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4545,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 242,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5335
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Kansas City, Missouri",
+  "Seth Rush, DDS, MS",
+  "University Health’s Oral & Maxillofacial Surgery Clinic",
+  "Seth Rush",
+  "Ward Parkway",
+  "University Health",
+  "Maxillofacial Surgery Clinic"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.periodontal-specialists.com/",
+  "https://www.periodontal-specialists.com/services/dental-implant-placement",
+  "https://www.universityhealthkc.org/services/oral-maxillofacial-surgery/",
+  "https://blackerfamilydental.com/trusted-specialists/",
+  "https://www.gordondentalimplantsandcosmetics.com/about/",
+  "https://www.kansashealthsystem.com/care/specialties/",
+  "https://www.linkedin.com/in/seth-rush-6b84629a",
+  "https://www.healthgrades.com/physician/dr-christopher-vogel-3qvbd",
+  "https://www.periodontalcarepa.com/staff",
+  "https://www.universityhealthkc.org/locations/university-health-oral-maxillofacial-surgery-clinic/",
+  "https://www.mapquest.com/us/missouri/ann-fay-dds-fay-periodontics-275292659",
+  "https://www.realself.com/find/Missouri/Kansas-City/Dental-Implants",
+  "https://kansascitymag.com/best-dentists-periodontics-kansas-city-2021/",
+  "https://kansascitymag.com/doctors/category/oral-and-maxillofacial-surgery-2/",
+  "https://kansascitymag.com/top-dentists-2025-is-your-dentist-on-the-list/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2f2cba9239766d6154cb2b5e7b195a44e06e5e5db39d1f840dc0900f2971612f",
+ "answer_chars": 755,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,43 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_roofing_denver_anthropic",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My roof has hail damage in Denver. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_d25gf3nbl3wtctkea4v4eyr2gcvz3kxcbx7i5iwgyrnkjzrn77fq",
+  "usage": {
+   "input_tokens": 29,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 264,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Better approach",
+  "Colorado Division of Professions"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd recommend getting quotes from several local companies rather than relying on specific names I might suggest, since:\n\n**Better approach:**\n- Check Google Reviews and BBB ratings for Denver roofers (filter by recent reviews and hail damage mentions)\n- Ask your insurance company for their preferred contractor list\n- Get 3-4 quotes to compare pricing and timelines\n- Verify licensing/bonding through Colorado Division of Professions\n\n**What to look for:**\n- Experience with insurance claims (they'll handle paperwork)\n- Familiarity with Denver's hail damage patterns\n- Clear warranty terms\n- Local references you can contact\n\n**Red flags to avoid:**\n- Door-to-door solicitors (common after hail)\n- Pressure to decide immediately\n- Unwillingness to work with your insurance adjuster\n- Prices significantly lower than others\n\n**Practical next steps:**\n1. File an insurance claim first\n2. Get your adjuster's assessment\n3. Then solicit bids from established local companies\n\nYour insurance adjuster's recommendations are often most reliable since they know which contractors handle claims smoothly.\n\nDo you have homeowner's insurance? That'll significantly affect your process.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

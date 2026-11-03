@@ -1,0 +1,61 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_short_term_rental_branson_openai",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgGrFoth4HLSz497G0pnLPCtWvhyb",
+  "usage": {
+   "prompt_tokens": 29,
+   "completion_tokens": 1862,
+   "total_tokens": 1891,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1216,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Branson. If",
+  "Big Cedar Lodge",
+  "Vacasa",
+  "Branson. You",
+  "TurnKey",
+  "Local Branson",
+  "VisitBranson",
+  "Branson Convention",
+  "Visitors Bureau",
+  "Branson Strip",
+  "Branson Landing and Table Rock Lake",
+  "Table Rock",
+  "Landing",
+  "Big Cedar",
+  "The Strip",
+  "Near the Strip"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Good — I can recommend who to contact and why so you get the right place in Branson. If you want, tell me your travel dates, group size, budget, and must-haves (lake access, hot tub, pet‑friendly, near the Strip, etc.) and I’ll give tailored picks.\n\nWho to call (and why)\n\n1) Big Cedar Lodge (resort)\n- Why: Branson’s best-known upscale resort on Table Rock Lake with cabins, lodges and on-site activities (marina, restaurants, golf, kid programs). Good if you want a full‑service resort experience rather than a private house.\n- Best for: Families, couples seeking amenities, lake-focused stays.\n\n2) Vacasa\n- Why: Large national property manager with many professionally managed homes in the Branson area. They offer consistent service (24/7 support), easy booking, and clear policies.\n- Best for: Travelers who want predictable service and professionally managed homes.\n\n3) Vrbo and Airbnb (use the platforms/websites)\n- Why: These are the largest marketplaces for privately owned cabins and houses in Branson. You’ll find the widest selection across price points, unique cabins and large group homes. Use filters (location, beds, pet policy, reviews).\n- Best for: People who want choice, unique properties, or host-direct deals.\n\n4) Evolve or TurnKey (vacation rental managers)\n- Why: These managers list many local homes with professional cleaning, guest support and damage protection—similar benefits to Vacasa but sometimes different inventory and fee structures.\n- Best for: Travelers who want professionally managed private homes but prefer the managers’ different fee/pricing models.\n\n5) Local Branson property management companies / independent cabin rental agencies\n- Why: Local managers often have deep knowledge of neighborhoods, can point to hidden gems, and sometimes offer more flexible check-in or deals. Search for “Branson vacation rentals” + “cabin rentals Branson” to find local companies and read reviews.\n- Best for: Travelers wanting local recommendations and more personalized service.\n\n6) VisitBranson / Branson Convention & Visitors Bureau (official tourism office)\n- Why: They can give up‑to‑date lodging guidance, event calendars and sometimes lodging referrals. Good resource for planning where to stay relative to shows and attractions.\n- Best for: First-time visitors wanting orientation on neighborhoods and show/attraction proximity.\n\nWhat to ask when you call\n- Exact location and distance/time to the Branson Strip, Branson Landing and Table Rock Lake\n- Sleeps/beds and layout (important for groups)\n- Parking and accessibility (stairs/elevator)\n- Amenities: kitchen, washer/dryer, hot tub, AC/heat, Wi‑Fi, boat slip\n- Pet policy and fees (if bringing pets)\n- Cleaning fees, taxes, security deposit and total price\n- Cancellation policy and check‑in/out process\n- Guest support (local phone for emergencies)\n\nIf you tell me your dates, group size and priorities (lake vs. Strip, budget, pets), I’ll recommend 3–5 specific properties and give direct contacts/links.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

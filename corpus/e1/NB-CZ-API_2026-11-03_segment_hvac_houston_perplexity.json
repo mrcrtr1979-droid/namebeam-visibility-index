@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_hvac_houston_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7a41d564-79f7-4d57-a601-8485a6d5a3a9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00088,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00054,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00406
+   },
+   "input_tokens": 4063,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3517,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 217,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4280
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Got Flow: Plumbing & AC Services",
+  "Vibrant Mechanical",
+  "Got Flow",
+  "AC Services",
+  "Star Repair Services"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/tx/houston/category/air-conditioning-repair",
+  "https://www.bbb.org/us/tx/houston/profile/air-conditioning-contractor/gilberts-air-specialists-0915-31001874/customer-reviews",
+  "https://www.bbb.org/us/tx/houston/category/heating-contractors/accredited",
+  "https://www.bbb.org/us/tx/houston/category/residential-air-conditioning-contractors",
+  "https://www.bbb.org/us/tx/bellaire/category/residential-air-conditioning-contractors/accredited",
+  "https://www.bbb.org/us/tx/houston/profile/air-conditioning-repair/ms-mechanical-for-ac-and-heating-0915-90060827",
+  "https://www.bbb.org/us/tx/houston/category/air-conditioning-cleaning/accredited",
+  "https://www.bbb.org/us/tx/houston/category/commercial-air-conditioning-contractors/accredited",
+  "https://www.bbb.org/us/tx/houston/category/furnace-repair",
+  "https://www.bbb.org/us/tx/houston/category/air-conditioning-equipment",
+  "https://www.bbb.org/us/tx/houston/category/heating-and-air-conditioning/accredited",
+  "https://www.bbb.org/us/tx/houston/profile/air-conditioning-contractor/one-hour-air-conditioning-heating-0915-29008/customer-reviews",
+  "https://www.aireserv.com/houston-northwest/",
+  "https://www.bestinhood.com/houston/home-maintenance-and-repair/best-air-conditioner-repair-in-houston/",
+  "https://www.bbb.org/us/tx/houston/category/heating-and-cooling-demolition"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ca418f2abeb35ad7486a7b608ad55682f9cfecd2895645a5d6c4caf5723008bf",
+ "answer_chars": 622,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

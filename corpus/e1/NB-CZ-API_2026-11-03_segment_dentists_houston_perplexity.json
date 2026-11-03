@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_dentists_houston_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: dentists, Houston",
+ "niche": "dentists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Houston for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5578545f-771d-4f75-a863-0270c6d277e7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00455
+   },
+   "input_tokens": 4944,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4398,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 322,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5266
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Mark L. Stankewitz",
+  "UTHealth Houston School of Dentistry",
+  "UTHealth",
+  "Dr. Mohamad Koutrach"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://houstonprosthodontics.com/",
+  "https://dentistry.uth.edu/directory/profile/mohamad-koutrach",
+  "https://www.prosthodontics.org/contact/",
+  "https://www.dentalimplanthouston.com/doctors/",
+  "https://www.dentalimplanthouston.com/about/",
+  "https://dentistry.uth.edu/directory/profile/chun-yeh-chien",
+  "https://mapdentalcenter.com/",
+  "https://www.prosthodontics.org/find-a-dental-technician/",
+  "https://www.zocdoc.com/dentist/mark-stankewitz-dds-591414",
+  "https://www.zocdoc.com/practice/houston-dental-implants-and-prosthodontics-131878",
+  "https://houstondentalimplantcenter.com/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-mark-stankewitz-1285715722",
+  "https://www.zocdoc.com/dentist/pedro-trejo-dds-584388",
+  "https://www.mapquest.com/us/texas/houston-dental-implants-and-prosthodontics-777682875",
+  "https://www.myspecialtydentist.com/directory/profile/dr-frank-greider-1255663902"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "951f592981a3053b4f3e5b0107e92b7f871668af44fe5be647ece0256fe27030",
+ "answer_chars": 1021,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

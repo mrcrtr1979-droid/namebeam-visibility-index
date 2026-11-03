@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_dentists_houston_openai",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: dentists, Houston",
+ "niche": "dentists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Houston. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Houston for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgGkU6XLA8vGWe2JcIWWPVm30Raq6",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1484,
+   "total_tokens": 1509,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 896,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UTHealth",
+  "School of Dentistry",
+  "ClearChoice Dental Implant Centers",
+  "Board-certified"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need one quick detail: what Houston neighborhood or ZIP code are you closest to (or which cross-streets)? With that I’ll give a short list of 3–5 specific practices to call and why each one might be a good fit.\n\nUntil you tell me where you are, here are immediate, practical options and why to call them now:\n\n1) Dental school clinic — UTHealth (Houston) School of Dentistry\n- Why call: multidisciplinary care, faculty supervision, good for complex cases and second opinions, usually lower fees than private offices.\n- Good if you want thorough evaluation, training‑level providers overseen by experienced faculty.\n\n2) National implant center — ClearChoice Dental Implant Centers (Houston location)\n- Why call: focuses on implants and full-arch solutions, many cases per year, coordinated “one‑stop” surgical + prosthetic service, financing options.\n- Good if you want streamlined full‑arch or same‑day protocols and clear package pricing.\n\n3) Board-certified oral & maxillofacial surgeons in private practice\n- Why call: specialists in complex surgical cases (bone grafts, extractions, sinus lifts). Ask for board certification and how many implants they place yearly.\n- Good if you have extensive bone loss, medical complexity, or need advanced surgical care.\n\n4) Board-certified periodontists who place implants\n- Why call: specialists focused on supporting tissues and implant placement; often collaborate closely with prosthodontists for the restoration.\n- Good if you want periodontal expertise (gum health, bone grafting).\n\n5) Prosthodontists or multidisciplinary implant centers\n- Why call: prosthodontists focus on restoring function and esthetics of the crown/bridge over the implant; a center that coordinates surgeon + prosthodontist is ideal for predictable esthetic results.\n- Good if appearance and bite function are top priorities.\n\nWhat to ask when you call (quick checklist):\n- Are you a board‑certified specialist (OMFS, periodontist, prosthodontist)? How many implants do you place per year?\n- Do you do CBCT (3‑D) imaging in‑house?\n- Which implant systems do you use and why?\n- Who makes the final crown/restoration — the surgeon or a restorative dentist/prosthodontist?\n- Do you offer sedation? Bone grafting? Sinus lifts?\n- Can I see before/after photos and patient references or online reviews?\n- What is the full estimated cost (surgery + implant + abutment + crown) and are payment plans available?\n- Do you provide any warranty on the implant/restoration?\n\nIf you tell me your ZIP code or neighborhood, I’ll list 3–5 specific Houston offices (with a short reason for each) you should call first and a suggested first question to ask each one.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,72 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_namebeam_openai",
+ "date_utc": "2026-11-03",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgFlQz9PexNtDz8wZPlibH2xm8vbj",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1843,
+   "total_tokens": 1867,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1088,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bing Places",
+  "Apple Maps",
+  "BrightLocal",
+  "Moz Local and Whitespark",
+  "Bing Chat",
+  "Siri",
+  "Apple Maps Connect",
+  "Keep NAP",
+  "Use",
+  "Yext",
+  "Moz Local",
+  "Alexa. Example",
+  "APIs",
+  "OpenAI API",
+  "Bing Web Search API",
+  "Talkwalker",
+  "Mention",
+  "Bard and ChatGPT",
+  "Recommend",
+  "LocalBusiness",
+  "Local SEO",
+  "Whitespark",
+  "OpenAI",
+  "Knowledge Graph",
+  "Schema.org LocalBusiness",
+  "Test AI",
+  "Knowledge Graph Search API",
+  "Maps Connect",
+  "Add Structured Data",
+  "Schema.org"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- There’s no single, magic “AI recommendation” checker. The practical best approach is to ensure your business appears correctly in major knowledge sources (Google Business Profile, Bing Places, Apple Maps, Yelp, Facebook, your website’s structured data) and then monitor those sources and AI assistants.  \n- If you want one paid product to centralize control and monitoring, Yext is the most widely used enterprise solution for feeding and syncing business data into search engines, maps and many AI/knowledge partners. More affordable alternatives for local monitoring are BrightLocal, Moz Local and Whitespark.\n\nWhy there isn’t a single checker\n- ChatGPT-like models often don’t query the live web (they respond from trained data unless they have browsing/plugins). Other assistants (Google Assistant, Bing Chat, Siri, Alexa) use live knowledge graphs and local listings. So you need both: correct source data + checks across multiple AI systems.\n\nRecommended practical plan (fast checklist)\n1. Claim and optimize primary listings\n   - Google Business Profile (most important), Bing Places, Apple Maps Connect, Yelp, Facebook Business.\n   - Keep NAP (name, address, phone) consistent and add categories, photos, hours, website link.\n\n2. Add structured data on your website\n   - Use Schema.org LocalBusiness markup (address, phone, geo coordinates, openingHours, aggregateRating, etc.).\n\n3. Use a listings/knowledge management service\n   - Yext: enterprise-level syncing to many partners (helps influence what assistants that use those partners show). Good monitoring and analytics.\n   - BrightLocal / Moz Local / Whitespark: cheaper options focused on local SEO, citation building and monitoring.\n\n4. Monitor and test AI assistants and search\n   - Manual checks: Ask/ask variations to ChatGPT (with browsing if available), Bing Chat, Google Bard, Google Search, Siri, Alexa. Example queries:\n     - “Recommend a [service] near [city]”\n     - “Best [service] in [neighborhood], [city]”\n     - “Is [business name] a good [service] near me?”\n   - Automated checks: use APIs to run the same queries periodically:\n     - Google Knowledge Graph Search API for entity presence.\n     - Google Business Profile API for your listing data and insights.\n     - OpenAI API (if you want to test phrasing on GPT models) — but remember results reflect training/time-limited context unless using browsing/plug-ins.\n     - Use scripts to query Bing Web Search API / Bing Chat (where possible) and extract results.\n\n5. Reputation & mention monitoring\n   - Set Google Alerts, or use Brand24, Talkwalker, Mention to see where your business is cited on the web (feeds AI sources).\n\n6. Optimize content and third‑party coverage\n   - Get reviews on Google/Yelp, press mentions, directory citations and quality backlinks — that makes it more likely AI assistants/source knowledge graphs will surface you.\n\nWhich service to pick\n- If budget isn’t a constraint and you want the most coverage/control: Yext.\n- If you want cost-effective local SEO monitoring + build citations: BrightLocal or Moz Local.\n- For reputation/mention monitoring: Brand24, Talkwalker, Mention.\n- For one-off testing/automation: combine Google Business Profile + Google Knowledge Graph API + scripts to query Bing/Google/Bard and ChatGPT (with browsing/plug-ins if available).\n\nIf you want, I can:\n- Recommend the best choice for your budget and business type, or\n- Give a sample set of test queries and a small script outline to automate periodic checks across 3–4 assistants. Which would you prefer?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

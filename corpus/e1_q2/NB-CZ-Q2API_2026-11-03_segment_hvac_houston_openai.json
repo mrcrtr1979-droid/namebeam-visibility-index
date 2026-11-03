@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_hvac_houston_openai",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My AC needs repair in Houston. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgGSHNgEUoKJ3UsGML7dladoLyXSa",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1906,
+   "total_tokens": 1930,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1216,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Houston-area HVAC",
+  "Commercial Services",
+  "Rescue Rooter",
+  "Air Conditioning",
+  "John Moore Services",
+  "John Moore",
+  "NATE",
+  "One Hour",
+  "In Texas",
+  "NATE Certification",
+  "One Hour Heating"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give a short list of Houston-area HVAC companies you can call now plus why they’re worth calling — and a checklist of the key questions to ask so you get a fair, safe repair. If you want, tell me your ZIP code, the type of AC (central/mini‑split/window), and whether it’s an emergency and I’ll find exact local phone numbers and same‑day availability.\n\nRecommended HVAC companies to call (Houston)\n\n- John Moore Services\n  - Why: Houston‑based, long history, large tech team and parts inventory, offers 24/7 emergency service and maintenance plans. Good for fast dispatch and comprehensive residential work.\n\n- ABC Home & Commercial Services\n  - Why: Local, full‑service company that handles repairs, replacements, energy‑efficiency upgrades and maintenance agreements. Usually has good availability and warranties.\n\n- ARS / Rescue Rooter (Houston area)\n  - Why: National network with local franchise operators — reliable for emergency or after‑hours repairs and typically has many technicians available if you need fast service.\n\n- Service Experts Heating & Air Conditioning (Houston franchises)\n  - Why: National brand with standardized processes, NATE‑certified techs, diagnostic transparency and finance options — useful if you want predictable pricing and warranties.\n\n- One Hour Heating & Air Conditioning (Houston franchises)\n  - Why: Known for on‑time guarantees, flat‑rate pricing options and 24/7 service. Good if timeliness and predictable arrival windows matter.\n\n- Independent NATE‑certified local contractors (search for high‑rated ones)\n  - Why: Smaller local businesses often provide lower labor rates and more personalized service. Look for independent contractors with NATE certification, high Google/Yelp ratings and recent customer reviews.\n\nHow to choose which to call (quick vetting questions to ask when you call)\n- Are you licensed and insured in Texas? (Ask for license/registration number.)\n- Do your technicians hold NATE or manufacturer certifications?\n- Do you charge a diagnostic/dispatch fee? If so, how much and is it applied to the repair?\n- Can you give a written estimate and a written warranty for parts and labor?\n- Will the estimate include permit requirements (if replacement is needed)?\n- What refrigerant do you use/handle (R‑22 or R‑410A)? (Important for older units.)\n- Do you offer emergency/same‑day service and what are the after‑hours fees?\n- Do you have references or recent customer reviews (Google/Yelp/BBB)?\n- Are financing or payment plans available (if replacement is recommended)?\n\nPractical next steps\n1. Call 2–3 of the companies above (or a top independent contractor) and request a diagnostic visit. Compare written estimates.\n2. If it’s an emergency (no cooling in hot Houston weather), say so — ask about immediate/after‑hours availability and estimated arrival time.\n3. Don’t sign anything until you have a written scope, price, parts/labor warranty, and a timeline.\n4. If repair cost is more than ~50% of replacement cost for an older unit (10–15+ years), get a replacement quote too.\n\nIf you share your ZIP code and whether you need same‑day help, I’ll pull up 2–3 highly rated providers in your immediate area with phone numbers and current availability.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

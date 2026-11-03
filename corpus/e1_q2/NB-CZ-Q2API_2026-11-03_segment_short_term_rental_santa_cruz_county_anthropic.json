@@ -1,0 +1,43 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-03_segment_short_term_rental_santa_cruz_county_anthropic",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a vacation rental in Santa Cruz County. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_vffktqsyzvm2vbdgi4sdlbbn44bnfqigkwgzg4kxrmufz72jreyq",
+  "usage": {
+   "input_tokens": 28,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 231,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Search platforms",
+  "Booking.com"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I don't have current information about specific vacation rental companies operating in Santa Cruz County, so I can't reliably recommend particular businesses to call.\n\nHere's a better approach:\n\n**Search platforms** (check multiple):\n- Airbnb, VRBO, Booking.com\n- Local tourism sites (santacruzcounty.us or local chamber of commerce)\n- Google Maps search for \"vacation rentals Santa Cruz County\"\n\n**Why this matters:**\n- Companies change, close, or shift their focus\n- Availability and pricing vary seasonally\n- Reviews on these platforms are current and verified\n- You can compare options directly\n\n**When calling, ask about:**\n- Local regulations (Santa Cruz has specific short-term rental rules)\n- Cancellation policies\n- What's included\n- Parking and pet policies\n\n**Tip:** Santa Cruz County has been tightening vacation rental regulations, so confirm the property is legally permitted before booking.\n\nWould you like help thinking through what features matter most for your trip (location, budget, amenities)?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

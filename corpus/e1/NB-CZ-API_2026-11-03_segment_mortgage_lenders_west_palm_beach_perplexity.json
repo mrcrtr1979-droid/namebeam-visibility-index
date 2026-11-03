@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_mortgage_lenders_west_palm_beach_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: mortgage lenders, West Palm Beach",
+ "niche": "mortgage lenders",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in West Palm Beach FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b6873212-8cb9-4440-9177-86a6ac5e706b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00448
+   },
+   "input_tokens": 5005,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4454,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 290,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5295
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "New American Funding",
+  "Loan Estimate",
+  "Florida Housing",
+  "Palm Beach County",
+  "Palm Beach Mortgage Group",
+  "Absolute Home Mortgage",
+  "Florida Housing’s participating-lender program"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.floridahousing.org/programs/homebuyer-overview-page",
+  "https://www.newamericanfunding.com/branches/westpalmbeach",
+  "https://www.experience.com/reviews/javier-infiesta-140310",
+  "https://www.experience.com/reviews/office/west-palm-beach-iii",
+  "https://www.experience.com/reviews/office/west-palm-beach",
+  "https://saferate.com/local/west-palm-beach/best-mortgage-lenders",
+  "https://wallethub.com/mortgage-lenders",
+  "https://www.experience.com/reviews/office/west-palm-beach-ii",
+  "https://www.floridahousing.org/docs/default-source/programs/homebuyers/first-time-homebuyer-loan-program-(english).pdf?sfvrsn=8a08f77b_2",
+  "https://reviews.birdeye.com/d/mortgage-lenders/west-palm-beach-fl/",
+  "https://www.homefinancialgroup.net/locations/west-palm-beach-fl",
+  "https://www.hud.gov/states/florida-assistance-by-county",
+  "https://palmbeachmortgagegroup.com/",
+  "https://www.fastexpert.com/loan-officers/west-palm-beach-fl/",
+  "https://www.lendfriendmtg.com/learning-center/best-mortgage-lenders-in-palm-beach-county-florida"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "8aed792d2efbc6f727c88c9c9220f1927df93d0250f282334267f580dac9e65a",
+ "answer_chars": 943,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

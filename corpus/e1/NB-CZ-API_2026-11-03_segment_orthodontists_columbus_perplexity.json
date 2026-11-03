@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_orthodontists_columbus_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: orthodontists, Columbus",
+ "niche": "orthodontists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Columbus Ohio for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a7e6e40f-1a0a-4d66-9e3b-0a668cc631ce",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00439
+   },
+   "input_tokens": 4660,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4112,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 287,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4947
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Andrew B. Wade",
+  "Dr. Amin Mason at Columbus Orthodontic Center",
+  "Dr. Amin Mason",
+  "Columbus Orthodontic Center",
+  "Invisalign. Its",
+  "Invisalign"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://health.usnews.com/dentists/sahira-kortam-1616554",
+  "https://health.usnews.com/dentists/victor-cook-1651450",
+  "https://health.usnews.com/dentists/andrew-wade-1806751",
+  "https://health.usnews.com/dentists/victoria-mclaughlin-1623366",
+  "https://health.usnews.com/dentists/lucy-deguzman-1806183",
+  "https://health.usnews.com/dentists/jennifer-burzynski-1725329",
+  "https://health.usnews.com/dentists/kara-morris-1671372",
+  "https://www.columbusorthodonticcenter.com/",
+  "https://www.columbusorthodonticcenter.com/meet-the-orthodontist.html",
+  "https://www.columbusorthodonticcenter.com/orthodontist-grandview-heights.html",
+  "https://smiledoctors.com/locations/pickerington-columbus/",
+  "https://health.usnews.com/dentists/orthodontists/ohio/commercial-point",
+  "https://www.dentistsranked.com/dental-services/invisalign-columbus-oh",
+  "https://www.carmenorthodontics.com/about/reviews/",
+  "https://www.orthodontistsup.com/columbus-oh"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "0b6751df7c70bdc89c5c757ed59fdd751734e0236f74cbb366ef87335cb0856e",
+ "answer_chars": 1024,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

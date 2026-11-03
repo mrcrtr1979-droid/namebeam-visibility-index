@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-03_segment_dentists_miami_perplexity",
+ "date_utc": "2026-11-03",
+ "business": "SEGMENT: dentists, Miami",
+ "niche": "dentists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Miami for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f093f323-d74c-4a95-87cb-3410b4131560",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00432
+   },
+   "input_tokens": 4353,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3807,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 290,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4643
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Beatriz E. Terry",
+  "Dr. Bradley Ross",
+  "Dr. Kroum Dimitrov",
+  "Sunset Drive"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://friedmandentalgroup.com/the-team/dr-blake-hauer-d-m-d/",
+  "https://www.colgateoralhealthnetwork.com/dental-expert/irene-marron-tarrazzi/",
+  "https://www.greatexpressions.com/dental-offices/dentist-in-miami-florida-old-cutler-rd/",
+  "https://artisticsmilesmiamidentist.com/implant-dentistry-miami/dental-implants/",
+  "https://www.miamiperio.com/blog/types-of-dental-implants",
+  "https://www.loveyourjaws.com/",
+  "https://artisticsmilesmiamidentist.com/about/",
+  "https://www.loveyourjaws.com/meet-us/meet-the-doctor-dr-kroum-dimitrov/",
+  "https://www.linkedin.com/in/dr-beatriz-e-terry-716a8328",
+  "https://www.loveyourjaws.com/dental-implants/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-bradley-ross-1467770693",
+  "https://www.yelp.com/biz/beatriz-e-terry-dds-ms-miami-2",
+  "https://doctor.webmd.com/doctor/isaac-garazi-1b92066a-5cb8-4ca1-b46a-12a16b1925d5-overview",
+  "https://www.loveyourjaws.com/news/need-dental-implants-heres-what-you-should-know/",
+  "https://www.mapquest.com/us/florida/south-florida-periodontics-dental-implants-365512670"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "1a30ddd6992287f7d7b704829ef372ac0aa99e94808848c01eb4983e47e3f4a1",
+ "answer_chars": 1074,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}
