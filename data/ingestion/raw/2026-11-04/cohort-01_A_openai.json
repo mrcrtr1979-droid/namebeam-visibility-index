@@ -1,0 +1,17 @@
+{
+ "answer_text": "I don’t have live web access, so I can’t open Namebeam’s AI Visibility Record or verify that count myself. If you can either (A) paste the record’s Perplexity answers (or the list of URLs Perplexity cited) here, or (B) give me the record’s URL, I’ll extract and count the distinct domains and tell you exactly where it’s published.\n\nIf you want to do it yourself, here are quick, reliable ways to get the number and the publication location:\n\n1) Find the record on the web\n- Search for “Namebeam AI Visibility Record Perplexity 2026-09” (or go to Namebeam’s site and look for “AI Visibility Record”).\n- The page that contains the daily-question entries for 2026-09-01 through 2026-09-27 is the publication location (copy that page’s URL).\n\n2) Extract and count unique domains (two options)\n\nA. Command-line (Linux/macOS) — if you can download the page as HTML or have a plain list of URLs:\n- If you have a plain list of URLs (one per line) in file urls.txt:\n  cat urls.txt | sed -E 's@https?://@@; s@/.*@@' | sed 's/^www\\.//' | sort -u | wc -l\n- That prints the number of distinct domains.\n\nB. Python — paste URLs into a file urls.txt (one per line) and run:\n  ```python\n  import urllib.parse\n  urls = open('urls.txt').read().splitlines()\n  domains = {urllib.parse.urlparse(u).netloc.lower().removeprefix('www.') for u in urls if u.strip()}\n  print(len(domains))\n  print('\\n'.join(sorted(domains)))\n  ```\n\nIf you give me the page URL or paste the relevant list of cited URLs, I’ll run the extraction and reply with the exact number and the exact publication URL.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-11-04T19:59:25Z",
+ "ok": true,
+ "probe_id": "A",
+ "prompt_sha256": "940f0824e14031113e8b576a7139c4427b38e8ac1ad5483a1335b3f802676221",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web domains did Perplexity cite in its answers to the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "treatment_anchored",
+ "run_id": "41902207081",
+ "search_mode": "no search tool (E1 setting)"
+}
