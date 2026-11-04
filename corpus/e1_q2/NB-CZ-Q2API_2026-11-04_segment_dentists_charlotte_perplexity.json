@@ -1,0 +1,107 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_dentists_charlotte_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: dentists, Charlotte",
+ "niche": "dentists",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Charlotte. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Charlotte for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3e023483-0bb3-4b29-873e-32f8d1063c86",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0014,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00506
+   },
+   "input_tokens": 4636,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4083,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 558,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5194
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "CharlottePerio",
+  "Signature Periodontics & Implant Dentistry",
+  "Sharma Oral Surgery",
+  "Carolinas Center for Oral & Facial Surgery",
+  "Blakeney: (704) 716-9840",
+  "Billingsley Rd: (704) 347-3900",
+  "University: (704) 547-0837",
+  "North State Periodontists & Dental Implants",
+  "Signature Periodontics",
+  "Implant Dentistry",
+  "CT-guided",
+  "Copper Way",
+  "Carolinas Center for Oral",
+  "Facial Surgery",
+  "Multiple Charlotte",
+  "North State Periodontists",
+  "Dental Implants",
+  "Charlotte. At",
+  "West Arbors Drive",
+  "Oral Surgeons"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.signatureperiodontics.com/",
+  "https://www.northstateperio.com/",
+  "https://www.northstateperio.com/dental-implants/",
+  "https://www.sharmaoralsurgery.com/dental-implants/",
+  "https://imaginedentistryarboretum.com/services/periodontics/",
+  "https://www.charlotteperio.com/",
+  "https://www.smilecharlotte.com/dr-sam-smith/",
+  "https://www.sharmaoralsurgery.com/oral-surgery-charlotte/",
+  "https://www.northstateperio.com/for-patients/",
+  "https://mycenters.com/locations/oral-surgery-charlotte-nc/",
+  "https://www.northstateperio.com/for-patients/scheduling/",
+  "https://www.charlotteperio.com/our-doctors",
+  "https://www.sharmaoralsurgery.com/oral-surgery/",
+  "https://www.charlotteperio.com/full-mouth-dental-implant",
+  "https://imaginedentistryarboretum.com/services/restorative/dental-implants/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "3552fbff80ae28c9dc6f507b457e24621c5ae58806cbfa80b41ee319659e5b1d",
+ "answer_chars": 2002,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

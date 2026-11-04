@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_short_term_rental_branson_anthropic",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_g7lok3uuzyxdo4jhadlszdhvou4qu4gmlrirtcgtxhsjk3ctgpbq",
+  "usage": {
+   "input_tokens": 31,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 282,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Major platforms",
+  "Airbnb",
+  "VRBO",
+  "Booking.com",
+  "Local angle",
+  "Before booking, consider",
+  "Vacation Rental Options for Branson",
+  "Table Rock",
+  "Lake",
+  "Near Silver Dollar City",
+  "Peak season"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Vacation Rental Options for Branson\n\nI'd recommend starting with these general platforms rather than specific companies, since they let you compare options:\n\n**Major platforms:**\n- **Airbnb** - Wide selection, user reviews, flexible cancellation\n- **VRBO** (Vacations by Owner) - Specializes in vacation homes, good for longer stays\n- **Booking.com** - Competitive pricing, various property types\n\n**Why these work well:**\n- You can filter by location (near Silver Dollar City, Table Rock Lake, etc.)\n- Read verified guest reviews\n- Compare prices across properties\n- See exact amenities and house rules upfront\n\n**Local angle:**\n- Search \"Branson vacation rentals\" to find local property management companies too—they sometimes offer deals not listed on major platforms\n\n**Before booking, consider:**\n- Peak season (summer/holidays) vs. off-season pricing\n- Proximity to attractions you want\n- Minimum stay requirements\n- Cancellation policies\n\nRather than recommending specific companies (which vary in quality), I'd suggest browsing 3-4 properties on these platforms to compare what's available for your dates and budget.\n\nWhat time of year are you planning to visit? That might help narrow down what's typically available.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

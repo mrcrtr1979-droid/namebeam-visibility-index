@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgdAIzPE2U9wxQN18OilAyPjqnBqZ",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1469,
+   "total_tokens": 1497,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jiffy Lube",
+  "Valvoline Instant Oil Change",
+  "Pep Boys",
+  "Firestone Complete Auto Care"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Quick question before I list places: do you mean Pleasanton, California? And do you know whether your car needs conventional or full‑synthetic oil (or does the owner’s manual specify a special oil)? If you tell me your car make/model and any oil preference I can give a tighter recommendation.\n\nIf you want options now, call a mix of these types of shops in Pleasanton (CA) so you can compare price, wait time and oil type:\n\n1. Valvoline Instant Oil Change (local Pleasanton location)\n   - Why call: true “drive‑thru” quick service (15–30 minutes), offers conventional and full‑synthetic, often has online coupons and transparent pricing. Good if you want fast and inexpensive.\n\n2. Jiffy Lube (Pleasanton)\n   - Why call: quick service, nationwide training and standards, often runs specials. Good for quick turnarounds and convenience, but confirm oil spec if your car needs OEM‑specified oil.\n\n3. Firestone Complete Auto Care (Pleasanton)\n   - Why call: more thorough multi‑point inspection and capability to handle follow‑up repairs. Good if you want a more detailed check of brakes/tires/fluids along with the oil change.\n\n4. Christian Brothers Automotive (or other reputable independent shop near Pleasanton)\n   - Why call: independent shops often provide more personalized service, better diagnostics, and customer care with warranties on repairs. Good if you prefer an independent shop that takes time and documents issues.\n\n5. Your dealership service department\n   - Why call: best if your car is under warranty, requires manufacturer‑specified oil, or you want dealer records kept for resale/service history. Usually pricier but follows OEM procedure.\n\n6. Pep Boys (if you need parts or additional services)\n   - Why call: combines oil change with quick parts replacement (air filter, wipers) and can do repairs if they find anything during inspection.\n\nWhat to ask when you call (so you can compare apples to apples)\n- Price for conventional vs full‑synthetic and whether a synthetic blend is available.\n- Exactly which oil brand and viscosity they use (and whether it meets your OEM spec).\n- Whether the oil filter brand/type is included and its brand.\n- Whether the price includes disposal, topping off other fluids, and a multi‑point inspection.\n- How long the service will take and whether you need an appointment.\n- Any coupons, membership discounts, or online deals.\n- If they will reset the oil‑life indicator (if applicable) and provide a service receipt.\n\nTypical expectations\n- Time: 15–45 minutes for quick lube; 1–2 hours at dealers/shops if busier or if extra services are requested.\n- Cost: roughly $30–50 for conventional; $60–120 for full synthetic (prices vary by location and vehicle).\n\nIf you tell me your car make/model and whether you want fast & cheap or thorough & documented, I’ll give the best single shop(s) to call in Pleasanton and can look up phone numbers and exact addresses.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

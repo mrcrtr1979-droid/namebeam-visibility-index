@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_dentists_houston_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: dentists, Houston",
+ "niche": "dentists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Houston. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Houston for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_cdecc2fc-8631-4cea-9fc9-a1e012f821ae",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00146,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00518
+   },
+   "input_tokens": 4892,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4339,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 582,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5474
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Omega Dental Specialists",
+  "ClearChoice Dental Implant Center",
+  "Periodontal and Implant Surgeons of Houston",
+  "Practice",
+  "UTHealth Houston School of Dentistry"
+ ],
+ "engine_stated_criteria": [
+  "If cost is a major concern"
+ ],
+ "sources_cited": [
+  "https://www.clearchoice.com/locations/tx/houston/929-gessner-road/",
+  "https://www.dentalimplanthouston.com/doctors/",
+  "https://dentalimplantsathouston.com/",
+  "https://www.dentalimplanthouston.com/about/",
+  "https://www.dentalimplanthouston.com/doctors/dr-jonathan-rosenstein/",
+  "https://dentistry.uth.edu/patient-care/office",
+  "https://omegadentists.com/dental-implants/",
+  "https://omegadentists.com/all-on-4/",
+  "https://www.dentalimplanthouston.com/",
+  "https://mapdentalcenter.com/services/full-mouth-rehabilitation/",
+  "https://www.linkedin.com/in/don-cohen-97292927",
+  "https://www.zocdoc.com/practice/periodontist-prosthodontics-dual-specialty-130496",
+  "https://mapdentalcenter.com/patient-resources/",
+  "https://omegadentists.com/",
+  "https://www.nuviasmiles.com/doctors/dr-jonathan-rosenstein"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "6b50b8f6c5588821097a89d0de6d3180c97b6f5a9d0ddd94df880e82221de5b2",
+ "answer_chars": 2169,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

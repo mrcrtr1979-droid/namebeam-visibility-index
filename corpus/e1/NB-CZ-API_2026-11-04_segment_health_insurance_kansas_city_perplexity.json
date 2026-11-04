@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_health_insurance_kansas_city_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5a99ccfd-5d60-461c-af43-8d290fc4ec55",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00068,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00449
+   },
+   "input_tokens": 5216,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4665,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 272,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5488
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Apollo Health Insurance",
+  "BBS Insurance",
+  "HealthCare.gov",
+  "Apollo",
+  "Medicare",
+  "For Medicare",
+  "Marketplace Plans"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://bbs-insurance.com/",
+  "https://coleinsure.com/kansas-city/",
+  "https://www.bluekc.com/page-category/agents/",
+  "https://www.bluekc.com/agents/",
+  "https://coleinsure.com/about/",
+  "https://www.linkedin.com/in/swood2",
+  "https://www.healthmarkets.com/plans/aca-health/kansas/kansas-city",
+  "https://apollo-insurance.com/health-insurance-broker-kansas-city/",
+  "https://www.healthmarkets.com/plans/blue-cross-and-blue-shield-of-kansas-city/blue-kc-standard-bronze-preferred-care-blue-epo-34762mo0590020",
+  "https://www.healthmarkets.com/plans/aca-health/missouri/kansas-city",
+  "https://coleinsure.com/reviews/",
+  "https://coleinsure.com/kansas-city-mo/",
+  "https://apollo-insurance.com/",
+  "https://destinali.com/kansas-city/insurance/apollo-health-insurance-kansas-city",
+  "https://bbs-insurance.com/service-areas/kansas-city/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9f5f57a325bea70c9ecefd635f293414837695538488e831f102b78b6e6c0eea",
+ "answer_chars": 896,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

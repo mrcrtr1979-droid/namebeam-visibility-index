@@ -1,0 +1,64 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_needle_openai",
+ "date_utc": "2026-11-04",
+ "business": "Needle",
+ "niche": "AI marketing tool for DTC brands",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best AI marketing tool for DTC brands?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Egcp2xZ2JePbUPPFWWYg56guCmuka",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 1396,
+   "total_tokens": 1414,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Shopify",
+  "BigCommerce",
+  "Klaviyo",
+  "Smartly.io",
+  "Revealbot",
+  "AdCreative.ai",
+  "Jasper",
+  "Copy.ai",
+  "Phrasee",
+  "Persado",
+  "Dynamic Yield",
+  "Nosto",
+  "Optimizely",
+  "RudderStack",
+  "Shopify Plus",
+  "Segment",
+  "Meta",
+  "AI Features",
+  "Postscript",
+  "On-Site Personalization",
+  "Twilio Segment",
+  "Ad creative generation"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t one single “best” AI marketing tool for DTC — the right choice depends on your goal (email/SMS, ad automation, creative, personalization, analytics), budget, tech stack (Shopify, BigCommerce), and team skills. Below is a practical shortlist and recommended stacks by stage to help you choose.\n\nTop AI-powered tools by use case\n- Email & SMS automation + predictive analytics: Klaviyo — best-in-class for DTC, deep Shopify integration and strong predictive segmentation.  \n- SMS-first marketing: Attentive or Postscript — industry leaders for conversational SMS.  \n- Ad automation & bidding: Smartly.io (enterprise), Revealbot (mid-market) — automate creative testing, bidding and scaling across Meta/Google.  \n- Ad creative generation: AdCreative.ai, Creatopy, Canva (AI features) — fast, on-brand ad creative variants.  \n- AI copy generation: Jasper, Copy.ai, Writesonic — scale product descriptions, ads, landing page and email copy.  \n- Message optimization / language AI: Phrasee, Persado — optimize subject lines and ad copy using language AI (enterprise-level lifts).  \n- On-site personalization & recommendations: Dynamic Yield, Nosto, Optimizely — real-time product recommendations and personalization.  \n- Customer Data Platform (CDP) / analytics: Twilio Segment, RudderStack, Amplitude — unify customer data for personalization and measurement.  \n- Performance analytics and creative scoring: Bidalgo, Hunch, Pattern89 (acquired) — help optimize creatives and placements using insights.\n\nRecommended stacks by company size/need\n- Small DTC (just starting / <$5M ARR)\n  - Core: Shopify + Klaviyo (email) + AdCreative.ai (creative) + Jasper/Copy.ai (copy)\n  - Why: low lift, quick integrations, affordable entry points.\n- Growth DTC (scaling, $5M–$50M)\n  - Core: Shopify + Klaviyo + Revealbot (ads automation) or Smartly.io + Nosto/Dynamic Yield (personalization) + Persado/Phrasee for subject line lifts\n  - Why: automation and personalization at scale, better ROI on ad spend.\n- Enterprise DTC (>$50M, many markets)\n  - Core: Twilio Segment (CDP) + Smartly.io + Dynamic Yield/Optimizely + Persado + enterprise creative ops\n  - Why: unified data, advanced experimentation and cross-channel orchestration.\n\nHow to decide quickly\n1. Define the primary KPI (ROAS, CAC, LTV, AOV, retention).  \n2. Match tool to KPI (email retention → Klaviyo; lower CAC via ads → Smartly/Revealbot + creative AI).  \n3. Check integrations (Shopify/Shopify Plus, ad accounts, Klaviyo, Segment).  \n4. Run a 30–60 day pilot with measurable success criteria (e.g., +10% CVR, -15% CPA).  \n5. Watch privacy/compliance — ensure tools support consent and server-side tracking where needed.\n\nIf you tell me your main channel (email, SMS, paid social), monthly ad spend, tech stack (Shopify?), and target KPI, I’ll recommend the single best tool or a compact stack for your situation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

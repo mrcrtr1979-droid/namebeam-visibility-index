@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_str_host_tooling_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d6d76ba9-0658-4564-932a-b1db9a37aee4",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 4980,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4426,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 303,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5283
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "AirDNA",
+  "PriceLabs Market Dashboards",
+  "AirDNA Rentalizer",
+  "Rentalizer",
+  "Market Dashboards",
+  "Use AirDNA"
+ ],
+ "engine_stated_criteria": [
+  "If buying analysis is your main priority, consider AirDNA as well"
+ ],
+ "sources_cited": [
+  "https://hello.pricelabs.co/market-dashboards/",
+  "https://hello.pricelabs.co/",
+  "https://help.airdna.co/en/articles/16189073-rentalizer-agent-what-it-is-and-how-it-works",
+  "https://hello.pricelabs.co/dynamic-pricing-automation/",
+  "https://hello.pricelabs.co/dynamic-pricing/",
+  "https://hello.pricelabs.co/blog/airbnb-revenue-estimator-dynamic-pricing/",
+  "https://help.pricelabs.co/portal/en/kb/articles/how-much-does-pricelabs-costs",
+  "https://help.pricelabs.co/portal/en/kb/articles/new-to-pricelabs-get-set-up-in-10-minutes",
+  "https://www.airdna.co/",
+  "https://help.pricelabs.co/portal/en/kb/articles/market-dashboard-faqs",
+  "https://www.airdna.co/real-estate",
+  "https://help.pricelabs.co/portal/en/kb/pricelabs/market-dashboards/market-dashboard",
+  "https://hello.pricelabs.co/airbnb-pricing-tool/",
+  "https://help.pricelabs.co/portal/en/kb/pricelabs/getting-started-with-pricelabs",
+  "https://help.pricelabs.co/portal/en/kb/pricelabs/pricing-and-billing"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9671664ca13d379c92e86af934ba32d4ab0fbf09e3e02196c6e71c474f15c7d0",
+ "answer_chars": 980,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

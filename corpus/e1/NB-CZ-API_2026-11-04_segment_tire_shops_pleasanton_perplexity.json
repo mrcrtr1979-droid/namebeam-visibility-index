@@ -1,0 +1,98 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_tire_shops_pleasanton_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: tire shops, Pleasanton",
+ "niche": "tire shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I buy tires in Pleasanton CA and who does the best installation?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8eb71ccf-306b-4496-afaf-aa0f8151e8bd",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00446
+   },
+   "input_tokens": 4540,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3990,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 329,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4869
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Big Brand Tire & Service",
+  "Costco Tire Center",
+  "The Tire Choice",
+  "America’s Tire",
+  "My pick",
+  "Big Brand Tire",
+  "Old Santa Rita Rd. Its Pleasanton",
+  "Tire Rack",
+  "Big Brand",
+  "Costco",
+  "America",
+  "Dublin",
+  "Tire Choice",
+  "Pleasanton shop"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bigbrandtire.com/locations/3687-old-santa-rita-rd-pleasanton-ca-94588",
+  "https://www.tirerack.com/installers/ca/pleasanton/94588/the-tire-choice-1633?id=8610837-022",
+  "https://locations.thetirechoice.com/ca/pleasanton/4216-rosewood-rd",
+  "https://www.tirerack.com/installers/ca/pleasanton/94582",
+  "https://www.costco.com/warehouse-locations-1341.html",
+  "https://www.yelp.com/biz/big-o-tires-pleasanton",
+  "https://tires.costco.ca/Home",
+  "https://www.costco.com/w/-/ca/pleasanton/1341",
+  "https://www.bigotires.com/location/ca/pleasanton/3688a-washington-st-94566/005024/tire-services-and-repair/brake-repair/tire-services-and-repair",
+  "https://www.bigbrandtire.com/tire-shop/pleasanton-ca/flat-repair",
+  "https://www.bigbrandtire.com/tire-shop/pleasanton-ca",
+  "https://www.costco.com/pharmacy/auto-tires.html",
+  "https://www.tirerack.com/installers/ca/san-ramon/94583",
+  "https://www.tirerack.com/installers/ca/fremont/94536",
+  "https://www.tirerack.com/installers/ca/blackhawk/94506"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "8a14f71734925df9aaee07c6f537fa95fb345521faca50ce319d028b7341ec88",
+ "answer_chars": 1226,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

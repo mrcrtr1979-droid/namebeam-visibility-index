@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_hvac_houston_openai",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My AC needs repair in Houston. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Egd0ZMWXr6fY4QMihDIrVkLPKR3ag",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1899,
+   "total_tokens": 1923,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1216,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Houston ZIP",
+  "Rescue Rooter",
+  "Air Conditioning",
+  "Ask for TX",
+  "John Moore Services",
+  "Abacus",
+  "John Moore",
+  "NATE",
+  "Abacus Plumbing",
+  "One Hour",
+  "One Hour Heating"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can help — before I give more tailored names, quick question: what is your Houston ZIP code and is this a residential or commercial system? Is it an emergency (no cooling right now)? That lets me recommend the nearest, best-fit contractors.\n\nMeanwhile, here are four reputable HVAC companies that serve Houston and why you might call each, plus what to ask when they arrive.\n\nTop local options to call\n- John Moore Services\n  - Why: Long-established, Houston-based company with strong local reputation, NATE-certified techs, preventative maintenance plans, and 24/7 emergency service. Good for homeowners who want a company familiar with Houston climates and codes.\n- Abacus Plumbing, AC & Electric\n  - Why: Large Houston firm that offers rapid response, transparent pricing, financing options, and good customer reviews. Known for emergency availability and bundled services if you also need plumbing/electric help.\n- ARS/Rescue Rooter (Houston area)\n  - Why: National network with local crews; broad parts inventory, emergency service, and standardized training. Good when you want a large company that can rapidly dispatch replacement parts.\n- One Hour Heating & Air Conditioning (Houston franchise)\n  - Why: National brand with flat-rate or guaranteed time windows and emergency service. Often quicker response and clear service guarantees for common repairs.\n\nIf you prefer a smaller independent contractor\n- Ask for a local NATE-certified, insured HVAC tech with good Google/Yelp/BBB reviews in your ZIP code. Smaller shops can be less expensive and more personal, but vet licensing and insurance.\n\nWhat to ask when you call (so you can compare quotes)\n- Are you licensed and insured? (Ask for TX license or registration number.)\n- Are your techs NATE-certified?\n- Do you offer a written diagnosis and estimate before repair?\n- Is there a diagnostic fee and is it applied to the repair?\n- Do you provide a workmanship warranty and parts warranty? How long?\n- Do you offer financing or payment plans?\n- Do you provide 24/7 emergency service and how quickly can you arrive?\n\nRed flags to avoid\n- Extremely low “drive-by” estimate without inspection.\n- Pressure to replace the whole system immediately without diagnostic evidence.\n- No written estimate or no warranty on repairs.\n- No proof of insurance or license.\n\nQuick troubleshooting steps before they arrive\n- Check the thermostat (batteries, settings, and cooling mode).\n- Check circuit breakers for the AC disconnect or breaker.\n- Change/inspect the air filter.\n- Look for obvious ice on the evaporator or refrigerant lines — if iced, turn the system off and call a pro.\n\nBallpark repair cost ranges (Houston area, approximate)\n- Capacitor or contactor: $100–$350\n- Condenser fan or blower motor: $200–$700\n- Refrigerant recharge (if legal and minor leak fixed): $200–$600+\n- Compressor replacement or major refrigerant/coil repairs: $1,200–$4,000+\n\nIf you give your ZIP code and a brief description (no cooling at all, short cycling, strange noises, leaks, age of system, make/model if known), I’ll list 3–5 highly rated contractors nearest you and highlight which is best for emergency, warranty work, lowest cost, or ongoing maintenance.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

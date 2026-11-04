@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_hvac_houston_openai",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Egb9e1AB7cOhWVQVomXfJBBcEKAFb",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 1381,
+   "total_tokens": 1399,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "EPA Section",
+  "Air Conditioning",
+  "Rescue Rooter",
+  "John Moore Services",
+  "AC repair",
+  "Abacus",
+  "John Moore",
+  "Texas Department of Licensing and Regulation (TDLR)",
+  "Abacus Plumbing",
+  "One Hour",
+  "One Hour Heating"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t one single “best” HVAC company for every Houston homeowner — the best choice depends on your location, the type/age of your system, how quickly you need service, and whether you want a low-cost repair or a longer warranty/maintenance relationship.\n\nTo help you pick the right company, here’s a quick plan and some options:\n\nHow to choose a good AC repair company\n- Verify licensing and insurance: confirm the technician is registered with the Texas Department of Licensing and Regulation (TDLR) and has general liability insurance. Technicians who handle refrigerant should have EPA Section 608 certification.\n- Check reviews and complaints: look at Google Reviews, Yelp, Angi, and the BBB for recent feedback and complaint resolution.\n- Ask about fees and warranties: get a written estimate. Ask about diagnostic fees, parts & labor warranties, and whether estimates are flat-rate or hourly.\n- Ask about experience with your system: confirm they’ve worked on your brand/model and refrigerant type (R-22 vs R-410A).\n- Availability and response time: if it’s an emergency, ask about after-hours/overnight service and typical arrival windows.\n- Get 2–3 quotes for any major repair or replacement.\n\nWell-known Houston companies to consider\n- John Moore Services (large, Houston-based; offers emergency service and maintenance plans)\n- Abacus Plumbing, AC & Electrical (local company with full-service offerings)\n- Baker Brothers Heating & Air Conditioning (Houston-area specialists)\n- Franchises operating in Houston: One Hour Heating & Air Conditioning, ARS/Rescue Rooter (options if you prefer a national brand)\n\n(I can look up top-rated providers near you and compare recent reviews if you give your ZIP code.)\n\nIf you want, tell me:\n- your ZIP code\n- whether this is an emergency\n- your AC brand/age and the problem symptoms\n\nI’ll find a few highly rated local companies, note their typical fees/warranties (if available), and recommend the best next step.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

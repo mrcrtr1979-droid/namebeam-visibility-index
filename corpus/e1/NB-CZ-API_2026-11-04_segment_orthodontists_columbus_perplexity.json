@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_orthodontists_columbus_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: orthodontists, Columbus",
+ "niche": "orthodontists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Columbus Ohio for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_bd7d8c02-fbb9-490e-8ea5-e22fb586f3d1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00066,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00425
+   },
+   "input_tokens": 4351,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3803,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 262,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4613
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Amin Mason at Columbus Orthodontic Center",
+  "Johnson Orthodontics",
+  "Dr. Amin Mason",
+  "Columbus Orthodontic Center",
+  "Invisalign",
+  "American Board of Orthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.johnsonbraces.com/",
+  "https://www.columbusorthodonticcenter.com/",
+  "https://www.johnsonbraces.com/metal-braces",
+  "https://www.columbusorthodonticcenter.com/meet-the-orthodontist.html",
+  "https://www.columbusorthodonticcenter.com/office-info.html",
+  "https://www.columbusorthodonticcenter.com/orthodontist-grandview-heights.html",
+  "https://www.johnsonbraces.com/what-sets-us-apart",
+  "https://nationalorthodonticregistry.com/ohio/columbus-oh/orthodontists/hrabowy-orthodontics-columbus-oh",
+  "https://www.columbusorthodonticcenter.com/orthodontist-near-bexley-german-village.html",
+  "https://www.dentistsranked.com/dentists/columbus-oh",
+  "https://nationalorthodonticregistry.com/ohio/columbus-oh/orthodontists/polaris-orthodontic-center-columbus-oh",
+  "https://www.toprateddentist.com/dentists/columbus-oh/invisalign",
+  "https://nationalorthodonticregistry.com/ohio/columbus-oh/orthodontists",
+  "https://www.carmenorthodontics.com/meet-dr-ron/",
+  "https://www.dentistsranked.com/dental-services/invisalign-columbus-oh"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9e2d25c271def660eb8e55d5a2cb9203f2a1cbadd7129485c01fb6ca4633bae3",
+ "answer_chars": 864,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

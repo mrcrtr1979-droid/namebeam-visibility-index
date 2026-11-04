@@ -1,0 +1,99 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_hvac_houston_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My AC needs repair in Houston. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e4104f3a-43fb-4b4f-890d-77aef0bed683",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00097,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0009,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 4439,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3887,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 358,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4797
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Northwind Air Conditioning, Heating & Mechanical Services",
+  "Houston HVAC Repair",
+  "Texas TDLR contractor license number",
+  "Northwind Air Conditioning",
+  "Mechanical Services",
+  "Texas-licensed",
+  "Texas TDLR",
+  "Houston ZIP",
+  "AC repair",
+  "Air Conditioning",
+  "Houston HVAC",
+  "Greater Houston"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.tdlr.texas.gov/acr/acrforms.htm",
+  "https://www.tdlr.texas.gov/acr/contractor-apply.htm",
+  "https://www.tdlr.texas.gov/acr/",
+  "https://houstonhvacrepair.com/",
+  "https://www.tdlr.texas.gov/dbproduction2/Ltcepacr.csv",
+  "https://www.tdlr.texas.gov/acr/acrstart.htm",
+  "https://www.tdlr.texas.gov/dbproduction2/ltairref.csv",
+  "https://www.tdlr.texas.gov/acr/acrfaq.htm",
+  "https://whoislicensed.com/texas/ac-contractors/austin-county/",
+  "https://whoislicensed.com/texas/ac-contractors/",
+  "https://whoislicensed.com/texas/ac-contractors/harris-county/",
+  "https://whoislicensed.com/texas/ac-contractors/dallas-county/",
+  "https://whoislicensed.com/texas/ac-contractors/tarrant-county/",
+  "https://www.carrier.com/us/en/residential/dealers/tx/houston/9247-colleen-rd-9054741-loc",
+  "https://www.northwindac.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "b8302754fd786d9b437e6569e35e209e803f9c5899f6587732ace48ec6637749",
+ "answer_chars": 1188,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

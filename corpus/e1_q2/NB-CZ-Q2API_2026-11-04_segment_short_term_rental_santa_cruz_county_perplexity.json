@@ -1,0 +1,110 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a vacation rental in Santa Cruz County. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_aaaedcf0-299c-4227-9692-95d1a6808125",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00119,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0049
+   },
+   "input_tokens": 4841,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4286,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 476,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5317
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Beachnest Vacation Rentals",
+  "Cheshire Rio Realty and Property Management",
+  "Blue Sky Property Management",
+  "Pajaro Dunes Company & Resort",
+  "Potter Property Management",
+  "Vacation Rentals",
+  "Capitola",
+  "Aptos",
+  "La Selva Beach. The",
+  "South County. Its",
+  "Visit Santa Cruz County",
+  "Another Santa Cruz-focused",
+  "Pajaro Dunes Company",
+  "Watsonville",
+  "Soquel",
+  "Beach",
+  "Pajaro Dunes",
+  "La Selva Beach",
+  "Kendall & Potter Property Management",
+  "Kendall & Potter",
+  "Cheshire Rio Realty"
+ ],
+ "engine_stated_criteria": [
+  "vacation rental you can book"
+ ],
+ "sources_cited": [
+  "https://www.santacruz.org/destinations/aptos/",
+  "https://www.santacruz.org/destinations/capitola-and-soquel/",
+  "https://www.santacruz.org/plan-your-trip/",
+  "https://montereycoast.com/santa-cruz-vacation-rental-property-management/",
+  "https://www.beachnest.com/property-management/",
+  "https://www.santacruz.org/destinations/santa-cruz/",
+  "https://www.bbb.org/us/ca/capitola/category/vacation-rentals",
+  "https://www.santacruz.org/listings/blue-sky-property-management/",
+  "https://www.santacruz.org/Places-to-stay/",
+  "https://www.beachnest.com/unfurnished-management/",
+  "https://master.capitolachamber.com/list/ql/accommodations-14",
+  "https://www.beachnest.com/about-us/",
+  "https://www.aptoschamber.com/trial",
+  "https://www.bbb.org/us/ca/santa-cruz/category/property-management",
+  "https://www.mapquest.com/us/california/shoreline-hoa-402931149"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "f2976f95190352897f195a916d3753c7316b163a96efb43c9e2a69f2630f4f65",
+ "answer_chars": 1637,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

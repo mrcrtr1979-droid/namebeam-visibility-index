@@ -1,0 +1,46 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_dentists_dallas_openai",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Dallas. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgdBOrcLg2v5J3kwOJYpzMoJkXKEN",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1842,
+   "total_tokens": 1867,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1088,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Board"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — but first a quick question so I give the best matches: what ZIP code or neighborhood in Dallas are you near, and do you have any preferences or constraints (insurance, budget, sedation/nitrous/IV, need for same‑day/All‑on‑4, want a prosthodontist to do the crown, etc.)?\n\nIf you want names now, I’ll give a short, safe plan you can act on immediately and I’ll list the specific types of practices you should call plus exactly what to ask them and why. Once you tell me your ZIP or neighborhood I’ll return 3–6 nearby, highly relevant offices (with phone numbers and a one‑line reason to call each).\n\nImmediate plan (call these types of practices and why)\n1) Board‑certified oral & maxillofacial surgeon (OMS)\n   - Why: They perform the surgical placement of implants and handle complex extractions, bone grafts and IV sedation. Good for medically complex cases or multiple implants/All‑on‑4.\n2) Board‑certified periodontist\n   - Why: Specialists in the gums and bone around teeth; they commonly place implants and do bone grafting when needed.\n3) Prosthodontist or restorative dentist experienced in implants\n   - Why: They design and place the final crowns/bridges — critical for function and esthetics. For best results, have a prosthodontist coordinating the restorative phase.\n4) Full‑service implant centers or multidisciplinary clinics\n   - Why: These group practices coordinate surgery and restorations in one location (saves phone calls and transfers of records).\n5) University or teaching clinic (if budget is a concern)\n   - Why: Supervised residents provide care at reduced cost and the clinic often uses up‑to‑date protocols.\n\nWhat to ask when you call (quick script)\n- “Are you a board‑certified oral surgeon / periodontist / prosthodontist?” (ask to confirm)\n- “How many implants do you place per year?” (experience matters)\n- “Do you use CBCT (3D) imaging and guided implant planning?” (important for accuracy)\n- “Which implant systems do you use (Straumann, Nobel, Zimmer, etc.)?” (ask about availability of parts long‑term)\n- “Will the same office do both surgery and the final crown/abutment?” (coordination)\n- “Do you offer sedation or IV sedation?” (if needed)\n- “What is the estimated timeline and cost range for my case?” (request a cost breakdown: consultation, imaging, grafts, implant, abutment, crown)\n- “Do you provide a warranty or maintenance plan for the implant/restoration?” (some clinics offer limited guarantees)\n- “Can I see before/after photos and patient references?” (real examples of similar cases)\n- “Do you accept my insurance or offer financing?” (cost logistics)\n- “What is your complication protocol if implant fails?” (who covers re‑placement)\n\nRed flags to avoid\n- Provider cannot show examples or explain the implant system and parts.\n- No 3D imaging available for implant planning.\n- Clinic tries to upsell “one‑size‑fits‑all” implants without individualized planning.\n- No clear cost breakdown or unwillingness to discuss complications/warranty.\n\nIf you tell me your neighborhood/ZIP and any preferences (insurance, sedation, budget), I’ll return 4–6 specific Dallas practices to call with direct reasons to contact each (e.g., board certification, full‑service clinic, All‑on‑4 experience, highly reviewed prosthodontist).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

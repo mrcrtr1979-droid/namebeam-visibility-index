@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_roofing_dallas_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need my roof replaced in Dallas. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0e5b9281-5f89-4ee4-bf77-efac26cda9a7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00118,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00121,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00503
+   },
+   "input_tokens": 5264,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4711,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 485,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5749
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Arrington Roofing",
+  "New View Roofing",
+  "Results Roofing",
+  "GAF President"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://homematchup.com/roofers/tx/dallas/",
+  "https://skyryedesign.com/architecture/home/dallas-roofing-companies-roof-replacement/",
+  "https://www.angi.com/companylist/us/tx/dallas/roofing.htm",
+  "https://homebusinessmag.com/blog/locations/dallas/7-leading-roofing-contractors-north-dallas-collin-county-denton-county-2026/",
+  "https://www.thumbtack.com/tx/dallas/roofing",
+  "https://www.bbb.org/us/tx/dallas/category/roof-replacement",
+  "https://www.chamberofcommerce.com/business-directory/texas/dallas/contractors/roofs-ceilings/roofing-contractor/",
+  "https://priorityroofs.com/location/dallas/",
+  "https://theroofingbrief.com/best-roofers-dallas-tx/",
+  "https://reputationtiger.com/roofing/dallas",
+  "https://local.yahoo.com/consumer-services/home-and-garden-services/roofing-contractors/tx/dallas/",
+  "https://arringtonroofing.com/blog/best-roofing-contractors-dallas",
+  "https://rooferbutler.com/residential-roofing/dallas-tx",
+  "https://www.bbb.org/us/tx/dallas/category/roofing-contractors",
+  "https://www.renovationsup.com/dallas-tx/roofers"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "43a475d0e86cb2f394fc5a1d3d2523bf072893cf89ceef32ccdeffe7612839b5",
+ "answer_chars": 2043,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

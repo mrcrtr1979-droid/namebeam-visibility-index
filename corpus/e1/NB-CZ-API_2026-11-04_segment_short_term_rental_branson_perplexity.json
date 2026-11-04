@@ -1,0 +1,96 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d4c43014-adc7-4695-9aeb-4dce91eca3b9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00099,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00119,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00482
+   },
+   "input_tokens": 4523,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3967,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 477,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5000
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Short answer",
+  "Lodge of the Ozarks",
+  "Hotel Grand Victorian",
+  "Table Rock Lake",
+  "Silver Dollar City",
+  "Strip. It",
+  "Theater District",
+  "Lake Resort",
+  "Convention Center",
+  "Chateau on the Lake",
+  "Table Rock",
+  "The Strip"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/branson-mo/stays",
+  "https://www.airbnb.com/branson-mo/stays/lakehouses",
+  "https://www.airbnb.com/branson-mo/stays/resorts",
+  "https://www.airbnb.com/branson-mo/stays/cabins",
+  "https://www.airbnb.com/missouri-united-states/stays/cabins",
+  "https://www.marriott.com/en-us/destinations/united-states/missouri/branson.mi",
+  "https://www.airbnb.com/branson-west-mo/stays/lake-access",
+  "https://www.expedia.com/Branson-Hotels-Family-Hotel.0-0-d6058734-tFamilyHotel.Travel-Guide-Filter-Hotels",
+  "https://www.tripadvisor.com/Hotels-g44160-zff4-Branson_Missouri-Hotels.html",
+  "https://www.airbnb.com/branson-mo/stays/cottages",
+  "https://www.airbnb.com/missouri-united-states/stays/houses",
+  "https://www.airbnb.com/missouri-united-states/stays/luxury",
+  "https://www.airbnb.com/branson-mo/stays/kayak",
+  "https://www.airbnb.com/table-rock-lake/stays",
+  "https://www.airbnb.com/hollister-mo/stays/resorts"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2a5735a5a661e39a234c2ff9562364c075a4c994a02d2c52df72c088ea0f0c9e",
+ "answer_chars": 1805,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

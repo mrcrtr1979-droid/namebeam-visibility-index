@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_orthodontists_houston_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: orthodontists, Houston",
+ "niche": "orthodontists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Houston for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_744abc3b-b26b-404c-81d1-2d8ef88db669",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00121,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 5373,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4826,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 259,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5632
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Davoody & Hablinski Orthodontics",
+  "Greater Houston Orthodontics",
+  "Invisalign. Another",
+  "Hablinski Orthodontics",
+  "Dr. Amir Davoody",
+  "Invisalign",
+  "Greater Houston"
+ ],
+ "engine_stated_criteria": [
+  "A strong starting point is Greater Houston Orthodontics"
+ ],
+ "sources_cited": [
+  "https://www.myidealdental.com/houston-orthodontist",
+  "https://greaterhoustonorthodontist.com/meet-the-doctors/",
+  "https://www.bestinhood.com/houston/healthcare/best-orthodontists-in-houston/",
+  "https://www.myidealdental.com/stone-park/our-dentists",
+  "https://nationalorthodonticregistry.com/texas/houston-tx/orthodontists/davoody-hablinski-orthodontics-houston-tx",
+  "https://thevillagedentistry.com/staff-member/dr-robert-schudy/",
+  "https://nationalorthodonticregistry.com/texas/houston-tx/orthodontists/urbn-dental-implants-invisalign-midtown-houston-tx",
+  "https://clearchoiceortho.com/our-doctors/dr-ray-mclendon-dds-founder/",
+  "https://nationalorthodonticregistry.com/treatments/traditional-braces/texas/houston-tx",
+  "https://nationalorthodonticregistry.com/texas/houston-tx/orthodontists/greater-houston-orthodontics-memorial-location-houston-tx",
+  "https://www.zocdoc.com/dentist/mohamed-mostafa-dds-413065",
+  "https://nationalorthodonticregistry.com/texas/houston-tx/orthodontists/houston-orthodontic-specialists-houston-tx",
+  "https://dhorthodontics.com/orthodontist-near-me-houston-tx/",
+  "https://www.houstonortho.com/",
+  "https://www.zocdoc.com/dentist/lina-aljoudeh-dds-815070"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "6ac2e9759343ce42f8d98a4e88ff69bde0c1c43224e0f5880e0d176bbe2c3228",
+ "answer_chars": 915,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

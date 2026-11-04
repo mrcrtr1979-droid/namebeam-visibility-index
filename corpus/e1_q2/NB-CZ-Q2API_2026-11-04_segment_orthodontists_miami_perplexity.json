@@ -1,0 +1,110 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_orthodontists_miami_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: orthodontists, Miami",
+ "niche": "orthodontists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Miami. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Miami for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_dfa63a2c-78e5-4c5d-a296-116b1589f169",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00142,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00512
+   },
+   "input_tokens": 4811,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4258,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 566,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5377
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sun Orthodontist — Dr. Nick Kallis",
+  "Miami Orthodontic Specialists — Dr. Carmen Garcia-Paul",
+  "DeRoode Orthodontics — Dr. Elaine deRoode",
+  "Sun Orthodontist",
+  "Dr. Nick Kallis",
+  "Offers",
+  "Invisalign",
+  "Dr. Kallis",
+  "American Board of Orthodontics. A",
+  "Little Havana",
+  "Brickell",
+  "Miami Orthodontic Specialists",
+  "Dr. Carmen Garcia-Paul",
+  "South Miami",
+  "DeRoode Orthodontics",
+  "Dr. Elaine",
+  "Offers Invisalign",
+  "Coral Gables",
+  "Centre for Invisible Orthodontics",
+  "Diamond Pro",
+  "American Board of Orthodontics"
+ ],
+ "engine_stated_criteria": [
+  "If you’re closer to Coral Gables"
+ ],
+ "sources_cited": [
+  "https://local.yahoo.com/info-67880846-deroode-elaine-s-dds-deroode-orthodontics-miami/",
+  "https://sunorthodontist.com/invisalign-miami/",
+  "https://www.linkedin.com/in/drcarmencrespi",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/dr-stephen-grussmark-miami-fl",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/orthodontics-of-south-miami-miami-fl",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/miami-orthodontic-specialists-dr-carmen-garcia-paul-miami-fl",
+  "https://nationalorthodonticregistry.com/treatments/clear-aligners/florida/miami-fl",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/orthodontics-only-miami-fl",
+  "https://nationalorthodonticregistry.com/treatments/invisalign/florida/miami-fl",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/creative-orthodontic-associates-miami-fl",
+  "https://ivanovortho.com/braces-dentist-near-me/",
+  "https://nationalorthodonticregistry.com/treatments/traditional-braces/florida/miami-fl",
+  "https://nationalorthodonticregistry.com/florida/coral-gables-fl/orthodontists/centre-for-invisible-orthodontics-coral-gables-fl",
+  "http://providerbio.invisalign.com/details/62999",
+  "https://www.yelp.com/biz/centre-for-invisible-orthodontics-coral-gables-4"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ae979cc49c998b5e4364785a362a99a27d7d6fff5c42d4cd8729bcfc2115be55",
+ "answer_chars": 1997,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

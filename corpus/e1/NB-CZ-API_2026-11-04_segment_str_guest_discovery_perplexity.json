@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_str_guest_discovery_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8033e096-e039-4dc4-8ebe-572f324edb21",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00122,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0049
+   },
+   "input_tokens": 4717,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4155,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 489,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5206
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "Vrbo",
+  "Booking.com",
+  "To find a good host",
+  "Quick rule",
+  "Booking.com. But"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://bookednews.com/data/platform-fees-compared/",
+  "https://chargeautomation.com/vacation-rental-cancellation-policy-platforms/",
+  "https://www.houfy.com/blog/best-vacation-rental-sites-in-2026-10-websites-compared",
+  "https://www.eset.com/blog/en/home-topics/privacy-and-identity-protection/airbnb-booking-scams/",
+  "https://skift.com/2026/10/28/vrbo-launches-reserve-now-pay-later-with-a-twist-on-airbnbs-approach/",
+  "https://www.airbnb.com/help/article/241",
+  "https://www.bookwithhaven.com/blog/guides/airbnb-alternatives",
+  "https://www.bookwithhaven.com/blog/how-to-book-a-vacation-rental-directly",
+  "https://www.usatoday.com/story/travel/2026/09/20/vacation-rental-airbnb-scams-ai-photos/91682623007/",
+  "https://www.shopback.com/blog/travel/airbnb-vs-vrbo-vs-booking-vacation-rentals-us-2026",
+  "https://guard.io/blog/airbnb-vacation-rental-scams-fake-listing",
+  "https://www.hostaway.com/blog/vrbo-cancellation-policies/",
+  "https://thenightlyrate.com/airbnb-vrbo-host-fees-cancellation-rules-differ-2026",
+  "https://www.airbnb.com/help/article/2673",
+  "https://www.lodgify.com/blog/airbnb-vs-vrbo/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "6808789e62ffb4e1204fd77458ee8ce76cdbc00689b4165d63bd0a7cbd241599",
+ "answer_chars": 1960,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

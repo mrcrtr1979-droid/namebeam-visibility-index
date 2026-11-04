@@ -1,0 +1,104 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_cf975d93-043c-401c-98a2-03449f95a290",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00175,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0055
+   },
+   "input_tokens": 5006,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4454,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 700,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5706
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Capitola Village",
+  "Pajaro Dunes",
+  "Visit Santa Cruz County’s Places to Stay",
+  "Pick the right location first",
+  "Compare the full price",
+  "Check the essentials in the listing",
+  "Read recent reviews for specifics",
+  "Read cancellation and house rules before booking",
+  "Aptos",
+  "West Cliff",
+  "Visit Santa Cruz County",
+  "La Selva. Major",
+  "Capitola",
+  "Boardwalk",
+  "Seacliff",
+  "Seascape",
+  "Places to Stay",
+  "Seascape Beach Resort"
+ ],
+ "engine_stated_criteria": [
+  "Verify the rental is allowed"
+ ],
+ "sources_cited": [
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Ordinance%205497%20Short-Term%20Rentals.pdf",
+  "https://www.cdi.santacruzcountyca.gov/UPC/DiscretionaryPermitsZoning/DiscretionaryPermits/Short-TermRentals.aspx",
+  "https://homes-and-villas.marriott.com/en/vacation-rentals/united-states/california/capitola",
+  "https://www.kayak.com/Capitola-Vacation-Rentals.6533.rental.ksp",
+  "https://www2.santacruzcountyca.gov/planning/plnmeetings/PLNSupMaterial/Zoning/Agendas/2024/20240419/003.1.pdf",
+  "https://www.santacruz.org/Places-to-stay/",
+  "https://homes-and-villas.marriott.com/en/vacation-rentals/united-states/california/aptos",
+  "https://www.santacruzcountyca.gov/Departments/TaxCollector/TaxCollectionDivision/TOT.aspx",
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Vacation%20Rental%20Ord-%20BoS%20Approved%201-26-2021.pdf",
+  "https://www.santacruz.org/plan-your-trip/frequently-asked-questions/",
+  "https://santacruzcountyca.gov/Departments/TaxCollector/TaxCollectionDivision/TOT/TOTFAQs.aspx",
+  "https://www.cdi.santacruzcountyca.gov/UPC/DiscretionaryPermitsZoning/DiscretionaryPermits/HostedRentals.aspx",
+  "https://www.santacruzcountyca.gov/portals/0/county/CAO/press%20releases/2024/PrsRls_Unpermitted%20short-term%20and%20hosted%20rentals.pdf",
+  "https://www.hometogo.com/capitola/",
+  "https://www.airbnb.ca/santa-cruz-county-ca/stays/waterfront"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "6e586c44cc69880d4748f379dddaaaab4031b3992ce9707cb2568604339d44c1",
+ "answer_chars": 2965,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

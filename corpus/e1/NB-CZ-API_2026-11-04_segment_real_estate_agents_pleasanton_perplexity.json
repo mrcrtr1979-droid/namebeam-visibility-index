@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_real_estate_agents_pleasanton_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_bdbf62e8-17e8-45fd-a2a7-779ac8db6cdf",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 4889,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4339,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 312,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5201
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Doug Buenz’s 680 Group at Compass",
+  "Tim McGuire’s Compass team",
+  "Doug Buenz",
+  "Compass",
+  "Tim McGuire",
+  "In Pleasanton"
+ ],
+ "engine_stated_criteria": [
+  "recent sales of homes like yours in your specific neighborhood"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/pleasanton-ca/",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/94566/",
+  "https://www.zillow.com/profile/kimdeol",
+  "https://www.zillow.com/profile/dennisserrao",
+  "https://www.zillow.com/profile/DougBuenz",
+  "https://www.zillow.com/profile/rm2sell",
+  "https://www.zillow.com/profile/qurashisonia",
+  "https://www.zillow.com/profile/homeandtracy",
+  "https://www.zillow.com/profile/DDarbyGroup",
+  "https://www.zillow.com/profile/lolson917",
+  "https://www.zillow.com/profile/elisachao",
+  "https://www.zillow.com/profile/SonaliSells",
+  "https://www.zillow.com/profile/Jane%20Cresswell",
+  "https://www.zillow.com/profile/AlexisVenema",
+  "https://www.zillow.com/profile/melissapedersonhomes"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "4d5776e7316433d4edad5088fd767171a2e536ad38b7999596b343a4ca15ce6e",
+ "answer_chars": 1084,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

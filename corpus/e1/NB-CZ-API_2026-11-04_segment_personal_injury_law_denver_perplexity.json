@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_personal_injury_law_denver_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: personal injury law, Denver",
+ "niche": "personal injury attorneys",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best personal injury lawyer in Denver for a car accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c67ded33-86b6-439f-aac7-7141a158c637",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00077,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00455
+   },
+   "input_tokens": 5112,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4563,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 309,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5421
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Fuicelli & Lee",
+  "Dan Caplis Law",
+  "The Wilhite Law Firm",
+  "Manning Herington",
+  "Dormer Harpring",
+  "Colorado Supreme Court’s attorney search",
+  "Colorado Supreme Court"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.denverlaw.com/",
+  "https://www.wilhitelawfirm.com/",
+  "https://manninglaw.us/denver-personal-injury-attorney/",
+  "https://www.dancaplislaw.com/",
+  "https://www.metierlaw.com/colorado/denver/personal-injury-lawyers",
+  "https://www.stuckeyinjurylaw.com/about/case-results/",
+  "https://www.fdazar.com/",
+  "https://jordanlaw.com//",
+  "https://www.tengelaw.com/denver-personal-injury-attorneys/",
+  "https://www.burgsimpson.com/colorado/personal-injury-lawyer/car-accident-lawyer/",
+  "https://www.bestinhood.com/denver/lawyers/best-personal-injury-lawyers-in-denver/",
+  "https://fleschlawfirm.com/",
+  "https://www.ontoplist.com/personal-injury-lawyers/co/denver/",
+  "https://www.denvertrial.com/",
+  "https://www.ontoplist.com/car-accident-lawyers/co/denver/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9df63f798ee2871e138ca89ce3605587213681151d510431b78958d214b9812d",
+ "answer_chars": 1077,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_short_term_rental_nashville_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_10b98c01-5ff2-4ff1-8dd5-0f47e8b0f59a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00449
+   },
+   "input_tokens": 4696,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4143,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 324,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5020
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Nashville, Tennessee",
+  "The Koselig Korner",
+  "Guest Favorite",
+  "Browse East Nashville"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.co.za/nashville-tn/stays/apartments",
+  "https://www.airbnb.com.mt/nashville-ga/stays",
+  "https://www.airbnb.com/west-nashville-tn/stays",
+  "https://www.airbnb.com/nashville-in/stays/family-friendly",
+  "https://www.airbnb.com/vanderbilt-university-nashville-tn/stays/family-friendly",
+  "https://www.hometogo.com/nashville-in/",
+  "https://www.hometogo.com/nashville/family-vacation/",
+  "https://www.hometogo.com/nashville/new-year/",
+  "https://www.airbnb.com/nashville-in/stays",
+  "https://www.airbnb.com/east-nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/downtown-nashville-tn/stays/family-friendly",
+  "https://www.airbnb.com/sumner-county-tn/stays/family-friendly",
+  "https://www.vrbo.com/vacation-rentals/family/usa/tennessee/middle/nashville",
+  "https://musiccitymagnolia.com/nashville-family-vacation-rentals/",
+  "https://www.maverickstr.co/post/vacation-home-rentals-nashville"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "07f53c8cec9e2b340ac7c81b700a394bd6b3821e776835d542b92eacc6ec3617",
+ "answer_chars": 1002,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

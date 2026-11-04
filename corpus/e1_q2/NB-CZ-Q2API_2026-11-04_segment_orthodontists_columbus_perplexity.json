@@ -1,0 +1,102 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_orthodontists_columbus_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: orthodontists, Columbus",
+ "niche": "orthodontists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Columbus. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Columbus Ohio for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b9dc8905-4439-4a30-9740-faa7c8db320a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0014,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00519
+   },
+   "input_tokens": 5151,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4598,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 558,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5709
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Columbus, Ohio",
+  "Columbus Orthodontic Center — Dr. Amin Mason",
+  "Johnson Orthodontics",
+  "Carmen Orthodontics — Columbus office",
+  "Smile Doctors — Old Henderson Road",
+  "Columbus Orthodontic Center",
+  "Dr. Amin Mason",
+  "Invisalign",
+  "Dr. Mason",
+  "American Board of Orthodontics",
+  "Practice",
+  "Crown Park Ct",
+  "SureSmile",
+  "Carmen Orthodontics",
+  "Smile Doctors"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://harrisbraces.com/",
+  "https://smiledoctors.com/locations/orthodontist-columbus-bradley-park-drive/",
+  "https://www.chattahoocheevalleydental.com/orthodontics",
+  "https://smiledoctors.com/locations/pickerington-columbus/",
+  "https://www.johnsonbraces.com/",
+  "https://www.columbusorthodonticcenter.com/",
+  "https://www.columbusorthodonticcenter.com/orthodontist-grandview-heights.html",
+  "https://www.columbusorthodonticcenter.com/meet-the-orthodontist.html",
+  "https://smiledoctors.com/locations/orthodontist-upper-arlington-old-henderson-road/",
+  "https://www.carmenorthodontics.com/about/meet-dr-jesse/",
+  "https://local.yahoo.com/health-and-medicine/orthodontists/ga/columbus/",
+  "https://www.orthodontistsup.com/columbus-oh",
+  "https://www.dentistsranked.com/dental-services/invisalign-columbus-oh",
+  "https://www.columbusorthodonticcenter.com/orthodontist-near-bexley-german-village.html",
+  "https://nationalorthodonticregistry.com/ohio/columbus-oh/orthodontists/polaris-orthodontic-center-columbus-oh"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "3b7fef07fd36b8ce058ff37677d6f4d9423fcdec72d5c2b6ce3ca620b9ba2a9b",
+ "answer_chars": 1959,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

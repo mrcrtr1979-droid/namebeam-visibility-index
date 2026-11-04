@@ -1,0 +1,42 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_dentists_phoenix_anthropic",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Phoenix. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_mnhsiynd5v3iguomf4btquk62wswrn4hkfc2ta6tpk2s2tnzkoqa",
+  "usage": {
+   "input_tokens": 27,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 292,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [
+  "What to evaluate when you call"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd recommend starting with these practical steps rather than me naming specific practices:\n\n**How to find good options:**\n- Check your dental insurance for in-network implant providers\n- Search \"dental implants Phoenix\" + read recent Google/Yelp reviews (look for patterns, not just ratings)\n- Verify credentials: look for prosthodontists or general dentists with implant certification\n- Ask your regular dentist for referrals—they know local practitioners\n\n**What to evaluate when you call:**\n- Do they offer a consultation? (Usually free or low-cost)\n- How long have they done implants?\n- What's included in their pricing? (implant, abutment, crown, bone grafting if needed)\n- Do they handle complications if they arise?\n- What's their timeline?\n\n**Red flags:**\n- Pressure to decide immediately\n- Unusually cheap pricing without explanation\n- Unwillingness to discuss alternatives\n\n**Consider asking about:**\n- Whether they do the full procedure or refer out portions\n- Warranty/guarantee terms\n\nPhoenix has many qualified practitioners. Rather than me recommending specific names (which I can't verify are current or right for your situation), this approach helps you find someone actually suited to your needs and budget.\n\nWhat's your main concern—cost, timeline, or something else?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

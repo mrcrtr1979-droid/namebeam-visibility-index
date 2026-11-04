@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_orthodontists_dallas_openai",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Dallas. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgdC1RCNba6qZOnFkrk0xK5ChscUX",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1204,
+   "total_tokens": 1229,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Invisalign",
+  "ClinCheck",
+  "Diamond",
+  "Platinum"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need one quick detail: what part of Dallas (ZIP code or neighborhood) and do you have insurance or a preference for adult vs teen treatment? With that I’ll pull 3–5 specific orthodontists near you and explain why each is a good call.\n\nWhile you reply, here’s how I’ll choose and what to look for so you know why I recommend each office:\n\nHow I’ll pick providers\n- Invisalign status/experience: prefer Platinum/Diamond or high-volume Invisalign providers (more experience with aligners).  \n- Board-certified orthodontists (DDS/DMD + orthodontic specialty training).  \n- Positive, recent patient reviews and ratings.  \n- Technology & diagnostics: digital scans (iTero or equivalent), 3D/CBCT if needed, virtual consult options.  \n- Transparent pricing, free/low-cost consults, payment plans.  \n- Good location and office hours for your needs.\n\nQuestions to ask each office (phone or at consult)\n- Are you a certified Invisalign provider? How many Invisalign cases have you treated this year?  \n- Who will be providing my care — the orthodontist or an associate/assistant — and how often are in-person visits?  \n- Do you use digital scans (no messy impressions)? Can I see predicted outcome (ClinCheck or similar)?  \n- Estimated treatment time and typical total cost (including retainers, refinements, attachments).  \n- What are payment/financing options, and do you accept my insurance?  \n- Do you offer a free consult or second opinion?  \n- How do you handle emergencies/loose brackets or aligners?\n\nRed flags\n- No clear orthodontic specialist listed (make sure they are an orthodontist, not a general dentist offering braces).  \n- No Invisalign experience or unwilling to share case numbers.  \n- Vague cost estimates or pressured sales tactics.  \n- No follow-up or retention plan.\n\nIf you want, give me your ZIP code or neighborhood now and I’ll list 3–5 specific orthodontists in Dallas (with a short reason for each) you should call.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

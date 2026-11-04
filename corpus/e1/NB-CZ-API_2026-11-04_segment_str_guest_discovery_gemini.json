@@ -1,0 +1,67 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_str_guest_discovery_gemini",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "uKDrap3hGvKNjMcPusGGmA8",
+  "usage": {
+   "promptTokenCount": 29,
+   "candidatesTokenCount": 1063,
+   "totalTokenCount": 1092,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 29
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "The Vibe",
+  "No shared spaces allowed",
+  "Airbnb",
+  "Vrbo",
+  "Booking.com",
+  "Airbnb Superhosts",
+  "Vrbo Premier Hosts",
+  "Look for mentions of the host",
+  "Check the dates of reviews",
+  "Never pay off-platform",
+  "Too good to be true",
+  "Self Check-in",
+  "Vacation Rentals",
+  "Summary Rule of Thumb",
+  "WhatsApp",
+  "Final Pro-Tip",
+  "Superhost",
+  "Premier Host",
+  "Premier Hosts",
+  "Read between the lines",
+  "Read the house rules and cancellation policy",
+  "Rule of Thumb",
+  "No shared spaces"
+ ],
+ "engine_stated_criteria": [
+  "It depends on who you are traveling with and what kind of vibe you want",
+  "What you are testing"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Choosing the right platform and finding a great host can make or break your trip. The short answer is: **It depends on who you are traveling with and what kind of vibe you want.** \n\nHere is a breakdown of the three platforms, followed by a foolproof guide to finding a great host.\n\n---\n\n### Part 1: Which platform should you use?\n\n#### 1. Airbnb\n*   **Best for:** Solo travelers, couples, unique stays (treehouses, yurts), and city apartments.\n*   **The Vibe:** Generally younger, more design-forward, and offers everything from a shared room to luxury villas.\n*   **Pros:** Massive inventory worldwide; best review system; often has the most unique/aesthetic properties.\n*   **Cons:** Service fees can be high; customer support has a reputation for being inconsistent if something goes wrong.\n\n#### 2. Vrbo (Vacation Rentals by Owner)\n*   **Best for:** Families, large groups, and traditional whole-house vacation rentals (beach houses, cabins).\n*   **The Vibe:** More traditional, family-oriented. \n*   **Pros:** **No shared spaces allowed** (you never accidentally book a room in someone's occupied house). Generally better for multi-day/weekly family getaways.\n*   **Cons:** Fewer urban apartments; fewer budget options; search filters can be clunky.\n\n#### 3. Booking.com\n*   **Best for:** Traditional hotels, aparthotels, and travelers who want flexibility.\n*   **The Vibe:** Utilitarian, reliable, transactional. \n*   **Pros:** They list private apartments *alongside* standard hotels. Their \"Genius\" loyalty program offers great discounts and free breakfast quickly. Often allows free cancellation closer to the check-in date than Airbnb/Vrbo.\n*   **Cons:** Customer service for private apartments booked through them can be a nightmare compared to traditional hotels. \n\n**Summary Rule of Thumb:** Use **Airbnb** for cities and unique spots; use **Vrbo** for large family beach/mountain trips; use **Booking.com** if you want the safety net of a hotel or flexible cancellation.\n\n---\n\n### Part 2: How to find a good host (and avoid scams)\n\nOnce you pick a platform, finding a great host comes down to looking at specific signals. Here is how to vet them:\n\n#### 1. Look for the \"Superhost\" or \"Premier Host\" badge\n*   **Airbnb Superhosts** and **Vrbo Premier Hosts** have met strict criteria: high ratings, low cancellation rates, and a proven track record of quick response times. \n*   *Caveat:* Don't automatically write off new hosts with no reviews—everyone has to start somewhere—but if you are nervous, stick to Superhosts.\n\n#### 2. Read between the lines of the reviews\n*   Don’t just look at the star rating (4.8 is standard; anything below 4.5 is a red flag). Read the **text** of the reviews.\n*   **Look for mentions of the host:** Do guests say, \"The host was extremely responsive and helpful\"? That’s what you want.\n*   **Check the dates of reviews:** If a property has 5 stars, but the last review was from two years ago, the management may have changed.\n\n#### 3. Test the host’s communication *before* booking\n*   Send the host a polite, simple question before booking (e.g., *\"Hi [Name], we are excited about our trip! Is street parking easy to find nearby, or do you recommend a lot?\"*).\n*   **What you are testing:** How fast do they reply? Are they polite? Do they answer the question directly? If they take 24 hours to answer a simple pre-booking question, imagine how long they’ll take if the toilet overflows during your stay.\n\n#### 4. Read the house rules and cancellation policy thoroughly\n*   Good hosts are clear, upfront, and reasonable in their rules. \n*   If the house rules read like a military bootcamp (\"No smiling after 9 PM, strip beds, take out trash, wash dishes or face a $200 fine\"), it’s usually a sign of a rigid, unpleasant host. \n\n#### 5. Watch out for red flags (Scams)\n*   **Never pay off-platform.** If a host messages you asking to wire money, pay via Zelle, or take the conversation to WhatsApp before booking, **report them immediately.** It is a scam.\n*   **Too good to be true:** A 5-bedroom luxury beachfront villa for $75/night with zero reviews? Run.\n\n### Final Pro-Tip\nAlways turn on the filter for **\"Self Check-in\"** unless you specifically want a B&B experience where someone meets you. Being able to arrive at midnight with a smart lock code removes a massive amount of travel stress if your flight gets delayed.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

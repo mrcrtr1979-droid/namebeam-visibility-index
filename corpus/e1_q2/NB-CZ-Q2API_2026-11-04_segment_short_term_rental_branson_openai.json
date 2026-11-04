@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_short_term_rental_branson_openai",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgdQdc6COm0cKKk8M4cULAqdNVPej",
+  "usage": {
+   "prompt_tokens": 29,
+   "completion_tokens": 1522,
+   "total_tokens": 1551,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1088,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Branson. Call",
+  "Table Rock",
+  "Big Cedar Lodge",
+  "Big Cedar",
+  "Still Waters Resort",
+  "Still Waters"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give a short, targeted list — but it helps to know your dates, party size, budget, and whether you want a cabin, condo, or house. Do you want to tell me that first? If you just want a quick shortlist now, call these and why:\n\n- Big Cedar Lodge — a well-known resort just outside Branson. Call for resort cabins with on-site restaurants, spa, golf and lake access if you want resort amenities and consistent service for families or groups.\n- Vrbo — marketplace with the largest selection of whole-home rentals in Branson. Call or message hosts to confirm exact sleeping configurations, discounts for multi-week or last-minute stays, and cleaning/cancellation policies.\n- Airbnb — for unique cabins, guest-ready homes, or places with flexible check-in and host communication. Good if you want something quirky or locally owned and want direct host answers.\n- Vacasa (vacation rental management) — professional management company that often manages Branson properties; call for consistent standards, 24/7 guest support, and reliable cleaning/maintenance.\n- Still Waters Resort — condo-style rentals close to Branson’s Strip and shows. Call if you want proximity to theaters and shopping plus condo amenities and established on-site management.\n- Local Branson property managers (search “Branson vacation rentals” or “Branson cabin rentals”) — local companies often know the area best, can recommend neighborhoods (near the strip vs. Table Rock Lake), and sometimes offer discounts for repeat or direct bookings.\n\nWhat to ask when you call:\n- Exact sleeping layout and whether the beds/sleeper sofas match your needs.\n- Total price with all fees and taxes, cancellation policy, deposit/refundable damage hold.\n- Check-in/check-out process and late-arrival options.\n- Parking, pet rules, and whether linens/towels are included.\n- Proximity to shows/Strip/Table Rock Lake and travel time.\n- On-call maintenance and cleaning response times.\n\nIf you tell me your dates, group size, and preferences I’ll recommend 3–5 specific properties and the best companies/managers to call for them.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

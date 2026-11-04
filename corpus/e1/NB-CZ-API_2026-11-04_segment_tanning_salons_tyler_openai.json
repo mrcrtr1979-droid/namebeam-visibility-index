@@ -1,0 +1,41 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_tanning_salons_tyler_openai",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: tanning salons, Tyler",
+ "niche": "tanning salons",
+ "market": "Tyler TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Tyler TX?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgbTc0oOm0chVLG8B8bRgdnrMa4j3",
+  "usage": {
+   "prompt_tokens": 16,
+   "completion_tokens": 752,
+   "total_tokens": 768,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Do you mean UV tanning (beds/booths) or spray/airbrush tanning? Also, do you want recommendations near a particular part of Tyler?\n\nIf you want, I can look up current top-rated salons and give a short list with addresses, hours, prices and recent review highlights. Otherwise, here are quick tips to pick the best salon locally:\n\n- Decide type: spray tans are safer than UV; if you choose UV, ask about bed type and bulb age.\n- Check reviews on Google and Yelp for consistency (aim for 4.0+ with many reviews).\n- Look for a clean, well-lit reception and treatment area and staff who explain pre/post care.\n- For spray tans: ask about the solution brands, technician training, and whether they offer a preview or patch test for color match.\n- For UV beds: ask how often bulbs are replaced, whether beds are cleaned between uses, and about eye protection.\n- Compare prices, membership options, package deals, and sanitation protocols.\n\nTell me which type you want and whether you want me to search online now — I’ll pull the top-rated salons in Tyler and summarize them.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

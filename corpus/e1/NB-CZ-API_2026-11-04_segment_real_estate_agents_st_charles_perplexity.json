@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_real_estate_agents_st_charles_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: real estate agents, St. Charles",
+ "niche": "real estate agents",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Charles MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c1bac0b7-7ca2-4f40-8d44-05e32dfb4e7e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00094,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0047
+   },
+   "input_tokens": 5026,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4475,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 374,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5400
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "The Cort Schneider Group",
+  "Blue Line Real Estate Team",
+  "Profile",
+  "The Realtor.com"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.realtor.com/realestateagents/5defc1ae286ff00013c6616f",
+  "https://www.realtor.com/realestateagents/st-charles_mo",
+  "https://www.realtor.com/realestateagents/5674883a7e54f701001e8bdb",
+  "https://www.realtor.com/realestateagents/5674184bbb954c0100681c56",
+  "https://www.realtor.com/realestateagents/56d6062b8a13600100d6d16c",
+  "https://www.realtor.com/realestateagents/Nick-Wagenknecht_Ballwin_MO_2898120_737654574",
+  "https://www.realtor.com/realestateagents/56b312957e54f70100210a91",
+  "https://www.realtor.com/realestateagents/56d5432cde071e010062652f",
+  "https://www.realtor.com/realestateagents/56817e960fa4170100733f79",
+  "https://www.realtor.com/realestateagents/5772b9c2cbc1dc0100470096",
+  "https://www.realtor.com/realestateagency/58e6e5e2eb3a5d001003ea6c",
+  "https://www.realtor.com/realestateagents/56b0b89589a68901006c7b9d",
+  "https://www.realtor.com/local/market/missouri/st-charles-county/st-charles",
+  "https://www.realtor.com/realestateagents/Rodney-Wallner-The-Wallner-Home-Selling-Team_Webster-Groves_MO_100147112_211464574",
+  "https://www.realtor.com/realestateandhomes-search/St.-Charles_MO?msockid=261f2460efe860771359320bee236137"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "92413d538008f0dd250f5a3bdcafec7059c57f7d1a637b41266530357210e1d3",
+ "answer_chars": 1264,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

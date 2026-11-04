@@ -1,0 +1,95 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_personal_injury_law_charlotte_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: personal injury law, Charlotte",
+ "niche": "personal injury attorneys",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Charlotte after a car accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Charlotte for a car accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_588477c6-ec97-428d-9cd1-a8cd692cbbf0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00132,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00507
+   },
+   "input_tokens": 4998,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4440,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 528,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5526
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Brown Moore & Associates",
+  "The Layton Law Firm",
+  "The Devin Law Firm",
+  "Powers Law Firm",
+  "Dr. Ted Injury Law",
+  "Brown Moore",
+  "Christopher Layton",
+  "Mecklenburg County"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://injury.carolinaattorneys.com/firm-overview/",
+  "https://brownmoorelaw.com/practice-areas/motor-vehicle-accidents/",
+  "https://injury.carolinaattorneys.com/",
+  "https://www.shanesmithlaw.com/charlotte/car-accident-lawyer/",
+  "https://www.thelaytonlawfirm.com/",
+  "https://www.devinlaw.com/practice-areas/personal-injury/",
+  "https://injury.carolinaattorneys.com/do-i-need-a-lawyer/",
+  "https://dpslaw.com/personal-injury",
+  "https://mehtamcconnell.com/personal-injury/",
+  "https://drtedinjurylaw.com/charlotte/",
+  "https://drtedinjurylaw.com/",
+  "https://www.thelaytonlawfirm.com/charlotte-car-accident-lawyer/",
+  "https://www.riccilawnc.com/practice-areas/car-accidents/",
+  "https://vasquezlawnc.com/charlotte-nc/personal-injury-lawyer/car-accident",
+  "https://justicecounts.com/charlotte-personal-injury-lawyer/car-accidents/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "c581624d465719e4feaaf8dd41239b528b8f029884e6706a9fa5bec8a50a6b15",
+ "answer_chars": 1950,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

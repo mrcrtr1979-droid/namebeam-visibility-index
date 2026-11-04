@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgcyHPrD5h8PVkCqx7lbLHMcyVyw7",
+  "usage": {
+   "prompt_tokens": 20,
+   "completion_tokens": 1101,
+   "total_tokens": 1121,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Manual D",
+  "Atlanta HVAC",
+  "NATE-certified",
+  "NATE",
+  "Manual J Load Calculation",
+  "Carrier",
+  "Require a Manual J Load Calculation",
+  "Atlanta ZIP",
+  "Trane",
+  "Verify Licensing and Insurance"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” HVAC company for everyone — the right contractor depends on your exact location in Atlanta, your home size and ductwork, your budget, brand preference, and whether you want highest efficiency or lowest upfront cost.\n\nI can help find a great contractor for you, but first a few quick questions:\n- What Atlanta ZIP code or neighborhood are you in?\n- Is this a full system replacement (outdoor condenser + indoor coil/furnace) or just the outdoor unit?\n- Do you have a brand you prefer (Trane, Carrier, Lennox, Goodman, etc.) or a SEER target?\n- Any timeline or budget constraints?\n\nWhile you decide, here are practical tips to pick the best company and get a good installation:\n- Get at least 3 on-site written estimates. Avoid quotes based only on phone descriptions.\n- Require a Manual J load calculation (proper sizing) and ask for the Manual D duct plan if ducts are being changed.\n- Verify licensing and insurance for Georgia/Atlanta and ask for proof. Check city permits: good contractors pull permits.\n- Ask for NATE-certified technicians, and for membership in ACCA or other trade organizations (good sign).\n- Compare equipment by model number and SEER rating, not just price. Ask for AHRI ratings if needed.\n- Check warranties: equipment warranty vs. workmanship warranty (look for at least 1–2 years on labor).\n- Read recent Google/BBB/Angi reviews and ask for local references.\n- Confirm they will test airflow, refrigerant charge, and provide start-up paperwork and manuals.\n- Ask about rebates, tax credits, and financing options.\n\nIf you give your ZIP code and the points above, I’ll compile a short list (3–5) of highly rated Atlanta HVAC companies, summarizing their strengths and recent ratings so you can pick the best fit. Which ZIP code are you in?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_dentists_chicago_openai",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Chicago. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgdGu84TkubkaMqVTMBiVUVNBf9Yp",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1424,
+   "total_tokens": 1449,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 896,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "University of Illinois",
+  "Chicago College of Dentistry",
+  "AAOMS",
+  "ABOMS",
+  "College of Dentistry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — but to give you the most useful, specific recommendations I need one quick detail: what part of Chicago (or what ZIP code) are you near, and do you have any preferences (insurance, budget, wanting a dental-school clinic, need sedation, single implant vs full-arch/all-on-4)?\n\nIf you want recommendations now without giving a location, here’s a practical plan plus what I’ll do once you tell me your area.\n\nWhy you should call specialists and which types to contact\n- Oral & maxillofacial surgeons: best for complex surgical cases (impacted teeth, bone grafting, sinus lifts, full-arch extractions + immediate implants). Look for ABOMS board certification.\n- Periodontists: specialists in gums and bone; good for implants when bone/soft-tissue management is central.\n- Prosthodontists: specialists in rebuilding teeth — ideal if you need complex restorations, full-mouth implants, or implant-supported dentures.\n- Implant-focused general dentists / multispecialty implant centers: good for straightforward implants and single crowns — many coordinate with surgeons and labs.\n- Dental school clinics (e.g., University of Illinois at Chicago College of Dentistry): lower-cost care under supervision of experienced faculty; good if you’re price-conscious.\n\nWhat I recommend you ask when you call (so you can compare quickly)\n- Do you have a specialist on-site (oral surgeon, periodontist, prosthodontist)? Who will place the implant and who will restore it?\n- Do you use CBCT 3D imaging for planning?\n- Are you board-certified or a specialist member of AAOMS / AAP / ACP / AAID?\n- Estimated timeline and number of visits (including grafts/sinus lift if needed).\n- Total estimated cost (implant, abutment, crown) and payment/financing options.\n- Warranty or guarantee policy on implants and restorations.\n- Do you accept my insurance? (or will you provide an estimate to submit to insurance?)\n- Before/after photos and patient references or online reviews.\n\nIf you tell me your ZIP code or neighborhood, I will:\n- Pull 5–8 specific, highly rated practices near you (mix of oral surgeons, periodontists, prosthodontists, and an academic clinic).\n- Give phone numbers, addresses, a short reason to call each (credentials, what they’re known for), and which cases each is best suited for (single tooth vs complex reconstruction).\nTell me your ZIP or neighborhood and any preferences and I’ll find tailored practices to call.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

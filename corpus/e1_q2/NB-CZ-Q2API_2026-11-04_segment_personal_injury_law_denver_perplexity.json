@@ -1,0 +1,99 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_personal_injury_law_denver_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: personal injury law, Denver",
+ "niche": "personal injury attorneys",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Denver after a car accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Denver for a car accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_19d6d8aa-433f-4933-a89a-3dc6b69b956d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00122,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00494
+   },
+   "input_tokens": 4861,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4303,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 487,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5348
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Flesch Law Firm — (303) 218-9394",
+  "Ramos Law — (303) 214-7927",
+  "Denver Trial Lawyers — (303) 647-9990",
+  "Jordan Law — (303) 256-2724",
+  "Flesch Law Firm",
+  "Ramos Law",
+  "Handles",
+  "Denver Trial Lawyers",
+  "The Law Firm of Jeremy Rosenthal",
+  "Jordan Law",
+  "Greenwood Village. Its",
+  "Jeremy Rosenthal"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/colorado/denver/",
+  "https://attorneys.superlawyers.com/personal-injury-plaintiff/colorado/denver/",
+  "https://www.denvertriallawyers.com/",
+  "https://fleschlawfirm.com/car-accidents/",
+  "https://www.denvertriallawyers.com/practice-areas/",
+  "https://www.cotriallawyers.com/",
+  "https://www.ramoslaw.com/auto-accidents/",
+  "https://attorneys.superlawyers.com/personal-injury-defense/colorado/denver/",
+  "https://www.cghlawfirm.com/denver/car-accident-lawyer/",
+  "https://www.lawfirmofjeremyrosenthal.com/",
+  "https://attorneys.superlawyers.com/motor-vehicle-accidents/colorado/lochbuie/?page=8",
+  "https://jordanlaw.com/denver-co/car-accident-lawyer/",
+  "https://chadjohnsonlaw.com/areas-of-practice/personal-injury-claims-cases/car-accident-lawyer-denver/",
+  "https://www.denvertriallawyers.com/car-accidents/hit-run/",
+  "https://boesenlaw.com/denver/car-accident-lawyer/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "be45dbe486a8f6e9cd4fb5f2c20418526762d15c2ea2b72d918e1dff59cda9a9",
+ "answer_chars": 1764,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

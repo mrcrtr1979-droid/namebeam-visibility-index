@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_tanning_salons_charlotte_openai",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "niche": "tanning salons",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to try a tanning salon in Charlotte. Which specific salons should I call, and why?",
+ "q1_prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Egd7yVxswwoSQI7RkQ5vQuar2d0A1",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1102,
+   "total_tokens": 1128,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "South End",
+  "Plaza Midwood",
+  "COVID",
+  "UV tanning beds"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — quick question first so I give useful, specific picks: do you want an indoor UV tanning bed, a spray/sunless tan, or both? And what part of Charlotte is most convenient for you (Uptown, South End, Ballantyne, Plaza Midwood, University area, etc.)?\n\nWhile you answer, here’s what I’ll do and what to ask when you call salons:\n\nWhat I can do for you\n- If you tell me the tanning method and a neighborhood or ZIP, I’ll pull a short list (3–6) of nearby salons with good reputations and tell you why each is worth calling.\n- I can also include phone numbers, addresses, typical price ranges, and what to expect for a first visit.\n\nWhat to ask when you call (helps compare quickly)\n- Do you offer UV tanning beds, spray tans, or both?\n- What types of tanning beds do you have? (High-pressure vs. low-pressure, lay-down vs. stand-up)\n- Do you offer a first-time client discount or package memberships?\n- How old are your tanning units and how often are they serviced/cleaned?\n- Do you provide a brief skin type assessment and tanning plan for new clients?\n- For spray tans: is it automated or technician-applied? What products do you use? Is there an airbrush option for a more tailored result?\n- What are your COVID/cleaning and client privacy procedures?\n- Can you book online, and what’s your cancellation policy?\n\nSafety note\n- UV tanning increases risk of skin aging and skin cancer. If you have fair skin, a history of sunburns, or a personal/family history of skin cancer, check with a dermatologist before UV tanning. Sunless spray tans are a safer cosmetic option.\n\nTell me which tanning method and the neighborhood/ZIP you prefer and I’ll pull and explain specific salons to call.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_namebeam_openai",
+ "date_utc": "2026-11-04",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgcJr99mw9irFgBI7gDPutU268VKW",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1640,
+   "total_tokens": 1664,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 896,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AIs",
+  "BrightLocal",
+  "Whitespark",
+  "Mention",
+  "Bing Chat",
+  "Bard",
+  "Apple Business Connect",
+  "Bing Places",
+  "TripAdvisor",
+  "Moz Local",
+  "Choose Yext",
+  "Yext",
+  "Local SEO",
+  "LocalBusiness",
+  "Apple Business",
+  "LocalBusiness Schema"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: There isn’t a single “AI recommendation checker” you can turn on — the best approach is to make sure your business appears reliably in the authoritative data sources AIs draw from, then monitor those sources and test the models directly. For practical tools, use a listings-sync service plus a local‑SEO/monitoring tool — e.g. Yext (sync & presence), BrightLocal or Whitespark (local SEO audits and rank checking), and Brand24/Mention (mentions monitoring). Then test ChatGPT/Bing Chat/Bard directly with sample prompts.\n\nWhat to do, step by step\n1. Verify and optimize authoritative listings (these matter most for AI recommendations)\n   - Google Business Profile, Apple Business Connect/Maps, Bing Places, Yelp, Foursquare, TripAdvisor, Facebook.\n   - Add consistent name/address/phone (NAP), up‑to‑date hours, categories, photos, services, and many good reviews.\n\n2. Publish structured data on your site\n   - Add LocalBusiness schema, openingHours, geo coordinates, service offerings, FAQ markup. That helps knowledge graphs that AI systems use.\n\n3. Use a listings/management service to cover many sources\n   - Yext: best for continuous, enterprise-level syncing across multiple directories (reduces inconsistent data that hurts AI visibility).\n   - Moz Local / BrightLocal /Whitespark: more affordable; good for audits, citations, and local rank tracking.\n   - Choose Yext if you want one-stop sync; choose BrightLocal/Whitespark if you want detailed local SEO reports and rank checks.\n\n4. Monitor web mentions and reputation\n   - Brand24, Mention, Meltwater, or Google Alerts can detect when your business is referenced online (helps you see what AI could be trained on).\n\n5. Test the AI systems directly\n   - Ask ChatGPT, Bing Chat, and Bard targeted prompts from different locations and personas. Examples:\n     - “What are the best [business type] in [neighborhood, city]?”\n     - “Recommend a [business type] near [address or ZIP].”\n     - “Is [your business name] a good place for [service] in [city]?”\n   - Use different phrasings, “near me” queries (with location), and incognito sessions or specify location in the prompt.\n   - For models tied to search (Bing Chat/Copilot, Bard/SGE), they will more likely surface businesses that rank well in search engines and in knowledge graphs.\n\n6. Track local search and “near me” rankings\n   - BrightLocal and Whitespark have local rank trackers that simulate searches from specific coordinates; this approximates what AI using search data will surface.\n\nWhy there’s no single “AI recommend checker”\n- ChatGPT and other LLMs don’t publish a public, queryable list of “recommended businesses.” They synthesize from many data sources (web pages, knowledge graphs, licensed and trained corpora). The best way to influence whether they recommend you is to control the authoritative signals they rely on (accurate listings, high‑quality website content, strong reviews).\n\nQuick recommendation\n- If you want one product to start with: BrightLocal (for auditing and testing) plus Google Business Profile (should be your first priority).\n- If you want continuous automated distribution across directories (to maximize AI visibility): Yext + monitoring (Brand24 or Mention).\n\nIf you want, tell me:\n- your business type and city and whether you prefer a low-cost or enterprise solution — I can recommend a specific toolchain and give sample test prompts tailored to your business.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

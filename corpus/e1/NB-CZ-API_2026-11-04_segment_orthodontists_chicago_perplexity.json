@@ -1,0 +1,98 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_orthodontists_chicago_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: orthodontists, Chicago",
+ "niche": "orthodontists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Chicago for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4e71bfe5-45ea-4028-aefe-e3f1cc947e16",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00079,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00419
+   },
+   "input_tokens": 3704,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3157,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 303,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4007
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Angela Lu",
+  "Dr. Paul Wine",
+  "Dr. Shirley Zhang",
+  "Dr. Karen Seder",
+  "Dr. Neil Warshawsky",
+  "American Board of Orthodontics",
+  "Pilsen and Albany Park",
+  "Wicker Park",
+  "West Loop",
+  "Lincoln Park",
+  "Hyde Park and Lakeview",
+  "Invisalign",
+  "American Association of Orthodontists",
+  "Hyde Park"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-angela-lu/",
+  "https://aaoinfo.org/locator/dr-ashley-barnes/",
+  "https://aaoinfo.org/locator/dr-flavio-jose-castelli-sanchez/",
+  "https://aaoinfo.org/locator/dr-francisco-villalobos-2/",
+  "https://aaoinfo.org/locator/dr-anthony-p-eltink/",
+  "https://aaoinfo.org/locator/dr-paul-wine/",
+  "https://aaoinfo.org/locator/dr-james-h-harris-jr/",
+  "https://aaoinfo.org/locator/dr-yomi-akintorin/",
+  "https://aaoinfo.org/locator/dr-shirley-zhang/",
+  "https://aaoinfo.org/locator/dr-darshana-s-novick/",
+  "https://aaoinfo.org/locator/dr-samim-taraji/",
+  "https://aaoinfo.org/locator/dr-ronald-scott-jacobson/",
+  "https://aaoinfo.org/locator/dr-karen-seder/",
+  "https://aaoinfo.org/locator/dr-kwang-kyun-chang-3/",
+  "https://aaoinfo.org/locator/dr-neil-m-warshawsky-4/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "80ce099c1efb7d8025d4986a8f0cbef7816a71593c0bc31206bed431e2d417f0",
+ "answer_chars": 1060,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_dentists_kansas_city_openai",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: dentists, Kansas City",
+ "niche": "dentists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Kansas City. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Kansas City Missouri for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgdLeFvMKHMu5St0n3Wai2C8fq6dc",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1485,
+   "total_tokens": 1511,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AAOMS",
+  "UMKC School of Dentistry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need one quick detail: what ZIP code or neighborhood in the Kansas City metro do you want the recommendations for (Kansas City, MO vs Kansas City, KS)? Also tell me if you care about: price/insurance, sedation/sleep dentistry, same-day implants / All-on-4, or seeing a specialist (oral surgeon, periodontist, prosthodontist).\n\nMeanwhile, here’s a short, practical plan and the exact kinds of offices you should call — and why each one matters:\n\nWhich types of practices to call and why\n- Board‑certified oral and maxillofacial surgeons (AAOMS): best for surgical placement, complex extractions, sinus lifts and bone grafting. Call them if you anticipate difficult surgery or want IV sedation/general anesthesia.\n- Periodontists (AAP): specialists in gums and supporting bone; excellent for implant placement when periodontal disease or bone loss is present.\n- Prosthodontists (ACP): specialists in reconstructive/esthetic implant restorations — call one if you need an implant crown, bridge, or a full‑arch prosthesis and want the best esthetic/function outcome.\n- Comprehensive implant centers (multi‑discipline): often coordinate surgery and restoration in one location — convenient for full‑arch solutions (All‑on‑4) and same‑day provisional teeth.\n- University dental clinic (UMKC School of Dentistry): lower cost, supervised by faculty. Good if cost is a priority and you’re comfortable being treated in a training environment.\n\nWhat to ask when you call\n- Are you a specialist (oral surgeon, periodontist, prosthodontist) or a general dentist who places implants?\n- Do you perform CBCT (3D) imaging on-site?\n- How many implants do you place per year and what is your success rate for cases like mine?\n- Do you handle bone grafting/sinus lifts in-house?\n- What sedation options do you offer (local, oral sedation, IV)?\n- Estimated range of cost (implant body + abutment + crown) and financing options\n- Do you provide warranties or follow-up care if something fails?\n- Can I see before/after photos and patient references?\n\nHow I can help next\nIf you give me your ZIP code or neighborhood and priorities (insurance, sedation, same‑day, budget), I’ll compile 4–6 specific Kansas City‑area practices (names, addresses, phone numbers, short reason to call each) and note any that are board‑certified or affiliated with universities.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

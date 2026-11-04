@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-11-04_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_07632171-13fb-47e7-8a51-8fb5b70f1e69",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00449
+   },
+   "input_tokens": 4819,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4273,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 311,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5130
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Arizona Periodontal Group",
+  "AZPerio",
+  "Dr. Ariel Trujillo"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.implantsandperioaz.com/",
+  "https://www.periodontistphoenix.com/reviews/",
+  "https://www.azimplantsolutions.com/p/Periodontist-Phoenix-AZ-North-Central-p77609.asp",
+  "https://www.azimplantdentist.com/",
+  "https://www.everydentist.com/profiles/2744/",
+  "https://www.clearchoice.com/locations/az/phoenix/20830-north-tatum-blvd/",
+  "https://www.toprateddentist.com/dentists/phoenix-az/dental-implants",
+  "https://www.periodontistphoenix.com/dental-implants/",
+  "https://birdeye.com/clearchoice-dental-implant-center-phoenix-165818082117574",
+  "https://azimplantsolutions.com/p/Sitemap-p.asp",
+  "https://www.periodontistphoenix.com/blog/dental-implant-grafting-lanap-candidacy-guide/",
+  "https://www.yelp.com/biz/dr-david-barget-dmd-scottsdale",
+  "https://www.periodontistphoenix.com/",
+  "https://www.linkedin.com/company/azperio",
+  "https://dentalimplantdirectory.com/cities/phoenix-az"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "c7624b32e86debc31d43badb606b916c6d7234d5c05e26761b22947e3d1877c3",
+ "answer_chars": 1105,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

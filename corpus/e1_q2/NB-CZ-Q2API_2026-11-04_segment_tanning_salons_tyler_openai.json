@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_tanning_salons_tyler_openai",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: tanning salons, Tyler",
+ "niche": "tanning salons",
+ "market": "Tyler TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to try a tanning salon in Tyler. Which specific salons should I call, and why?",
+ "q1_prompt_text": "What is the best tanning salon in Tyler TX?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Egd7Cv3vdKw54aLN34G03Pe7GRV6K",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 664,
+   "total_tokens": 690,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — quick question before I look up specific salons:\n\n1. Do you mean Tyler, Texas?  \n2. Do you want UV tanning (beds) or sunless/spray tanning? (Or both.)  \n3. Any priorities: price, best/fastest tan, safest option for fair skin, late hours, walk-in availability, memberships, or a location near a particular part of town?\n\nIf you want, I can immediately pull a short list (5–7 salons) in Tyler with phone numbers, addresses, a one‑line reason to call each, and a short script of key questions to ask. Would you like me to include review scores and current first‑time specials?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

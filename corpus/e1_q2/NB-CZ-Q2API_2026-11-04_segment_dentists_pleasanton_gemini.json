@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_dentists_pleasanton_gemini",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "fqjrapngHZ-Q6dkPu_S7mQQ",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 623,
+   "totalTokenCount": 645,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "New Patient Specials",
+  "Heritage Dental",
+  "Patients",
+  "Pleasanton Office",
+  "X-rays",
+  "Next Steps Before You Call",
+  "Your Dental Insurance"
+ ],
+ "engine_stated_criteria": [
+  "Your Dental Insurance"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "To give you the most tailored recommendations, it helps to know a few details about what you’re looking for—such as your dental insurance, whether you prefer a modern boutique office or a family-oriented practice, and if you have any dental anxiety. \n\nHowever, based on reputation, patient reviews, and standard of care, here are four well-regarded dental practices in Pleasanton for a routine checkup and cleaning, along with why you might choose each one:\n\n### 1. Pleasanton Dental\n* **Why call them:** They are widely known for combining advanced technology with a comfortable, patient-first approach. If you are someone who gets anxious about dental visits, they emphasize gentle care and modern amenities to keep you at ease. \n* **Best for:** Patients looking for a reliable, comprehensive general practice with a strong local reputation for routine preventative care.\n\n### 2. Heritage Dental Pleasanton\n* **Why call them:** Heritage Dental is frequently praised in the community for its warm, welcoming staff and efficient scheduling. Patients often note that the hygienists are thorough yet gentle during cleanings, and the dentists take time to explain their findings without pushing unnecessary procedures.\n* **Best for:** Families and individuals looking for a friendly, neighborhood-feel practice where you won't feel like just another number.\n\n### 3. Vasona Family Dentistry (Pleasanton Office)\n* **Why call them:** If you are looking for a practice that handles everything from basic cleanings to more complex restorative work under one roof, this is a strong option. They have a reputation for meticulous preventative cleanings and clear, transparent treatment planning.\n* **Best for:** Those who want a seamless experience for routine checkups with the reassurance that advanced dental care is available if needed.\n\n### 4. Country Club Dental Pleasanton\n* **Why call them:** This practice is often noted for its modern office environment, punctuality, and use of up-to-date diagnostic technology (like digital X-rays and intraoral cameras). Patients appreciate the professional, streamlined experience from check-in to cleaning.\n* **Best for:** Professionals or individuals who value modern tech, efficiency, and a sleek, contemporary office setting.\n\n---\n\n### Next Steps Before You Call:\nTo narrow down your choice and save time, have the following ready when you call these offices:\n1. **Your Dental Insurance:** Ask specifically, *\"Are you in-network with [your insurance provider name/plan]?\"* (Being \"in-network\" generally saves you more out-of-pocket than simply \"accepting\" your insurance).\n2. **New Patient Specials:** Many Pleasanton dental offices offer new patient specials for checkups and cleanings (often including exams, cleanings, and X-rays at a bundled rate if you are paying out-of-pocket or uninsured). \n3. **Availability:** Ask about their current lead time for a standard hygiene appointment, as popular offices can sometimes book a few weeks out for routine cleanings.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

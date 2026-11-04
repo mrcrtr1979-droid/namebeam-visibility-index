@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-04_segment_roofing_dallas_openai",
+ "date_utc": "2026-11-04",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need my roof replaced in Dallas. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Egd1m5r6Yi9TDXhx2Uati7somZcCD",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1294,
+   "total_tokens": 1319,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "ZIP",
+  "CertainTeed",
+  "Manufacturer Certifications",
+  "CertainTeed SELECT",
+  "CertainTeed Select ShingleMaster"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you specific Dallas roofers — but to make the recommendations useful I need your neighborhood or ZIP code and a few details (roof type, approximate size/age, are you filing an insurance claim, and your timeline). Do you want only highly rated local contractors, national firms with Dallas crews, or a mix?\n\nWhile you reply, here are immediate, practical steps and what I’ll use to pick the best companies for you:\n\nWhat I need from you\n- ZIP code / neighborhood in Dallas\n- Roof type (asphalt shingle, tile, metal, flat/TPO/modified)\n- Is this a storm/insurance claim or out-of-pocket replacement?\n- Desired timeline (ASAP, within 1–3 months, flexible)\n- Any budget or warranty preferences\n\nHow I’ll choose which companies to recommend\n- Manufacturer certifications (GAF Master Elite, CertainTeed SELECT ShingleMaster, etc.)\n- Local experience with Dallas climate and storm claims\n- Positive recent customer reviews (Google/Yelp)\n- BBB rating and any complaint history\n- Proper insurance (liability + workers’ comp) and local licensing/registration\n- Warranty offerings (manufacturer + workmanship)\n- Willingness to provide written detailed estimates & references\n\nIf you want to call companies right away — what to ask (quick call script)\n- Are you licensed and insured? Can you email proof of insurance now?\n- Are you a [manufacturer] certified installer? Which warranties do you offer?\n- Do you handle permits and HOA requirements?\n- Do you provide a written estimate with tear-off, disposal, and ventilation details?\n- Can you provide 3 recent Dallas references and a project timeline?\n- Who will manage my insurance claim (if applicable)?\n\nRed flags (stop and verify)\n- Door-to-door storm-chaser pressure tactics; insist on written bids and time to compare\n- Demands for large upfront cash payments or “we can only start if you pay full now”\n- No physical address or unverifiable references\n- No written warranty or vague estimate\n\nNext steps\n- Tell me your ZIP and the details listed above and I’ll return a short list (3–6) of specific Dallas contractors to call with reasons why each one is a good fit and which jobs they’re best for (insurance claims, budget replacements, premium warranties, etc.).\n- If you already have 1–2 estimates, send me the key details and I’ll compare them and point out potential issues.\n\nTell me your ZIP and a couple of those details and I’ll make a tailored list.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
