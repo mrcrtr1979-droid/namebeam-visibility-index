@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t browse the web or fetch Namebeam’s AI Visibility Record pages from here, so I can’t directly look up the count. If you can paste the record page (or a link) I’ll extract and count the domains for you.\n\nIf you’d rather do it yourself, here are two easy options.\n\n1) Quick manual method\n- Open the Namebeam AI Visibility Record for 2026-09-01 through 2026-09-27.\n- For each day, find the Perplexity answer and note the web links it cites.\n- Collect all domains (the hostname part of each URL, e.g., example.com) and count unique entries.\n\n2) Automated method (Python)\nSave the record HTML (or provide a URL) and run this script — it finds links in the Perplexity answers and counts distinct domains:\n\n```python\n# Requires: pip install requests beautifulsoup4\nimport requests\nfrom bs4 import BeautifulSoup\nfrom urllib.parse import urlparse\nimport re\n\n# If you have a single page URL:\nurl = \"PASTE_RECORD_PAGE_URL_HERE\"\nr = requests.get(url)\nsoup = BeautifulSoup(r.text, \"html.parser\")\n\ndomains = set()\n\n# Heuristic: find blocks that mention \"Perplexity\" (adjust selector to the page structure)\n# This searches text nodes containing \"Perplexity\" and gathers links within that block.\nfor tag in soup.find_all(string=re.compile(r'Perplexity', re.I)):\n    parent = tag.parent\n    # expand to a containing block (adjust tag name if needed)\n    block = parent.find_parent(['article','div','section','li','td']) or parent\n    for a in block.find_all('a', href=True):\n        href = a['href']\n        parsed = urlparse(href)\n        if parsed.netloc:\n            domains.add(parsed.netloc.lower())\n\nprint(\"Unique domains cited by Perplexity:\", len(domains))\nfor d in sorted(domains):\n    print(d)\n```\n\nIf the record is split across daily pages, loop over each daily page URL and apply the same extraction.\n\nIf you paste the record content or a link here I’ll run the extraction and give you the exact number and the page where it’s published.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-11-05T20:14:46Z",
+ "ok": true,
+ "probe_id": "A",
+ "prompt_sha256": "940f0824e14031113e8b576a7139c4427b38e8ac1ad5483a1335b3f802676221",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web domains did Perplexity cite in its answers to the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "treatment_anchored",
+ "run_id": "42101539121",
+ "search_mode": "no search tool (E1 setting)"
+}

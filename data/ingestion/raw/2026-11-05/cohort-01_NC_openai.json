@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t look that up live — I don’t have web access — so I can’t directly read Namebeam’s AI Visibility Record for those dates. If you paste the record (or a link to it) I’ll extract the number immediately.\n\nIf you want to find it yourself, here’s how and where it’s usually published and how to compute the answer:\n\nWhere to look\n- Namebeam’s website or blog (try namebeam.com or namebeam.ai and their “AI Visibility Record” / “Reports” / “Blog” pages).\n- A public data repository (GitHub) belonging to Namebeam — search GitHub for “Namebeam AI Visibility Record”.\n- Any linked CSV/JSON or PDF on those pages; the report often contains a dataset or a downloadable file listing the daily top-10 results.\n\nSearch queries to use\n- \"Namebeam AI Visibility Record 2026-09\"\n- \"Namebeam AI Visibility Record Google top 10 2026-09-01..2026-09-27\"\n- \"Namebeam AI Visibility Record dataset\"\n\nHow to compute the number (if you download a CSV/JSON of daily top-10 URLs)\n- Union all URLs that appear in Google’s top 10 for each day in the range 2026-09-01 through 2026-09-27.\n- Count the unique URLs.\n\nExample Python (works if you have a CSV with columns date,url or a CSV where each row lists the top10 URLs for a date):\n\n- If you paste the dataset or a link, I’ll run this logic for you and tell you the exact number and the URL where it’s published.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-11-05T20:14:46Z",
+ "ok": true,
+ "probe_id": "NC",
+ "prompt_sha256": "efbb2eccf1f282e2dfdb6e4a46f44888ad548f405a891de2b76dea5850430d16",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web pages did Google's top 10 results list for the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "negative_control",
+ "run_id": "42101539121",
+ "search_mode": "no search tool (E1 setting)"
+}
