@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_dentists_kansas_city_openai",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: dentists, Kansas City",
+ "niche": "dentists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Kansas City. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Kansas City Missouri for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgzTb77TT9BXeyEeS9G2LmdvofQny",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1677,
+   "total_tokens": 1703,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UMKC School of Dentistry",
+  "AAOMS",
+  "Find",
+  "American Academy of Implant Dentistry",
+  "Implant Dentist",
+  "American Academy of Periodontology"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need one quick detail: do you mean Kansas City, MO or Kansas City, KS (or a specific ZIP)? If you tell me where you are and how far you’re willing to travel (e.g., 10–30 miles), I’ll pull a short list of current, local practices to call and explain why each is a good choice.\n\nIn the meantime, here’s practical guidance so you can start calling today and compare options:\n\nWhich specific kinds of practices to call (and why)\n- Board-certified oral & maxillofacial surgeons (OMS)\n  - Why: OMSs are surgical specialists who place implants routinely, handle extractions, bone grafting and complex cases, and offer IV/IV sedation for anxious patients or long procedures.\n- Periodontists\n  - Why: Periodontists specialize in gum and supporting-bone health and commonly place implants, especially when bone-grafting or periodontal disease is a factor.\n- Prosthodontists or implant-focused restorative dentists\n  - Why: Prosthodontists specialize in the design and placement of implant crowns, bridges and full-arch restorations — important for the final esthetic/function result.\n- Dental implant centers that coordinate surgery + restoration\n  - Why: These centers often provide a “one-stop” experience (planning, surgery, restoration) and may use guided/digital workflows for faster, more predictable results.\n- Dental school clinic (UMKC School of Dentistry in KC)\n  - Why: Dental schools often provide high-quality care supervised by faculty, at lower cost. Good option if cost is a concern.\n\nHow to find reputable local practices quickly\n- Use professional directories:\n  - AAOMS (American Association of Oral and Maxillofacial Surgeons) “Find a Surgeon”\n  - AAID (American Academy of Implant Dentistry) “Find an Implant Dentist”\n  - AAP (American Academy of Periodontology) find-a-periodontist tool\n- Check Google reviews, Healthgrades, and Yelp for recent patient experiences, but weigh professional credentials more heavily than star count.\n- Ask your general dentist for a referral — they typically refer complex implant surgery to a trusted specialist and will coordinate your restoration.\n\nExact questions to ask when you call (get answers in writing when possible)\n- Are you a board-certified oral surgeon/periodontist/prosthodontist? How many implant cases do you place per year?\n- Do you use CBCT (3D) imaging for implant planning?\n- Will the surgeon/restorative dentist do the whole implant process (surgery + crown) or is it a shared approach?\n- Do you offer guided/digital implant planning and immediate/temporary teeth if needed?\n- What are the sedation options (local, oral, IV)?\n- Do I need bone grafting/sinus lift and is that included in the estimate?\n- Total estimated cost (surgery + implant + abutment + crown) and financing/payment options\n- Implant system/brand used and what warranty/guarantee is provided\n- Typical timeline from surgery to final crown and policy on complications/implant failures\n- Request before/after photos of cases like yours and patient references if available\n\nNext steps I can do for you\n- If you give me your ZIP code or whether you’re on the Missouri or Kansas side, I’ll compile 4–6 specific local practices (OMS, perio, prostho, and a dental school option), include addresses/phones and short reasons to call each.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

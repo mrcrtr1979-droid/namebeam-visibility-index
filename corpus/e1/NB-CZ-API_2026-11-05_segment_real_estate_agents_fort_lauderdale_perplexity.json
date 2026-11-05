@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_real_estate_agents_fort_lauderdale_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: real estate agents, Fort Lauderdale",
+ "niche": "real estate agents",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Fort Lauderdale FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ab3a7406-393a-4750-b175-a3d877d83bc3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00087,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00455
+   },
+   "input_tokens": 4696,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4146,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 347,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5043
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Brian Scharick of Compass",
+  "Sandra Rathe",
+  "Larry Mastropieri",
+  "Laurie Finkelstein Reader’s team",
+  "Laurie Finkelstein Reader"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/fort-lauderdale-fl/",
+  "https://www.zillow.com/profile/AgnesSellesFllorida",
+  "https://www.realestateagents.com/fl/fort-lauderdale",
+  "https://www.homelight.com/fort-lauderdale-fl/top-real-estate-agents",
+  "https://www.homelight.com/agents/dennis-matson-fl-03030285",
+  "https://www.homelight.com/agents/william-mclaren-fl-03009266",
+  "https://www.zillow.com/profile/AFFFsdcsdc",
+  "https://www.homelight.com/agents/brian-scharick-fl-sl3246440",
+  "https://www.zillow.com/profile/Heather%20Parnass%20TFHT",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33349/",
+  "https://www.fastexpert.com/agents/alexander-steinhardt-66064/",
+  "https://www.zillow.com/profile/Janet%20Leyva",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/33305/",
+  "https://www.zillow.com/profile/ByTheSea%20Realty",
+  "https://www.zillow.com/profile/megsprobstcompass"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "c6eb9f492d9463e1d8c0d5ffc1a523f85d54e28ec43da796823c3f5b0f28b145",
+ "answer_chars": 1299,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

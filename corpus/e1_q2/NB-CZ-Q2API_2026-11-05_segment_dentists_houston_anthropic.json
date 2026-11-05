@@ -1,0 +1,42 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_dentists_houston_anthropic",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: dentists, Houston",
+ "niche": "dentists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Houston. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Houston for a dental implant?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_a65d2g4fczvfd3jmm2vwbfoek42deqwyghyksgjbswajtlhhgtgq",
+  "usage": {
+   "input_tokens": 27,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 283,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [
+  "What to evaluate when you call"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest a practical approach rather than me recommending specific practices:\n\n**How to find qualified providers:**\n- Search \"prosthodontist\" or \"implant dentist\" in Houston (specialists often have better training)\n- Check credentials: look for ADA membership, board certification, years of implant experience\n- Read recent reviews on Google, Healthgrades, or Zocdoc\n- Verify they use modern imaging (CBCT scans) for planning\n\n**What to evaluate when you call:**\n- Do they offer consultations? (many are free)\n- How many implants have they placed?\n- What's their success rate?\n- Do they handle complications if issues arise?\n- What's included in pricing?\n\n**Red flags:**\n- Pressure to decide immediately\n- Unusually cheap pricing\n- Unwillingness to discuss their experience\n\n**Consider asking:**\n- Can they show before/after cases?\n- What's their process for complex cases?\n- Do they have a relationship with a specialist if needed?\n\nHouston has many qualified implant dentists. Rather than relying on my recommendation, a consultation or two will give you a real sense of who you're comfortable with and their actual experience level.\n\nWould you like guidance on what questions to ask during consultations?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

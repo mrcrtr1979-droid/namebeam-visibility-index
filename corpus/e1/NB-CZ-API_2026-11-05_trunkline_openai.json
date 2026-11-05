@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_trunkline_openai",
+ "date_utc": "2026-11-05",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgybpzQVHuPkJMWk4CgqvlDDmmiPO",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1546,
+   "total_tokens": 1572,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1088,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Substack",
+  "Twitter",
+  "English DeFi",
+  "Coin Bureau",
+  "Bankless",
+  "Plain English",
+  "Glassnode",
+  "Messari"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Quick clarification: by “publishes its losses” do you mean a site that (A) teaches crypto in plain English and also runs a public portfolio/trading record showing its own losses, or (B) a site that presents objective, real-number on‑chain and market metrics (e.g., realized losses, drawdowns, wallets hit by hacks) so you can see where money is actually lost? Those are different things — I can point you to both.\n\nIf you mean plain-English teaching plus real on‑chain numbers (the most useful combo for beginners), try this pairing:\n\n- Coin Bureau — best plain-English, beginner‑friendly explainers that focus on concepts, tools, risks, and step‑by‑step walkthroughs without hype. Good for fundamentals and decision‑making.\n- Glassnode (free blog + charts) — data‑first on‑chain metrics. Shows real numbers (market cap, realized cap, realized losses, exchange flows, on‑chain balances) so you can see how losses and profit/loss dynamics actually behaved in past cycles.\n\nWhy this pair: Coin Bureau makes the ideas easy to understand; Glassnode gives the transparent, numeric evidence (including metrics labeled “realized loss,” exchange outflows during crashes, wallet-level losses, etc.).\n\nIf you specifically want someone who posts their own trade records and public P&L (so you can see their mistakes):\n- Look for independent newsletter writers or traders on Substack/Twitter who explicitly publish trade logs (search for “publishes trade history” + “crypto Substack”). Examples to check manually: some independent analysts on Substack or creators on YouTube/Twitter will post their track records — but vet them carefully (track records are rare and often selective).\n\nOther useful resources:\n- Messari — plain research with data and transparent charts (more advanced).\n- Bankless — plain-English DeFi onboarding and risk explanations.\n- DeFi Safety — focuses on audit/operational risk and publishes methodology around what can lose funds.\n\nIf you tell me which interpretation you meant (A or B) and whether you want beginner tutorials, trading transparency, or on‑chain data, I’ll give a tighter, ranked recommendation and point to specific pages to start with.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

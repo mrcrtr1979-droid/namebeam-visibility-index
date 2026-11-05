@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_roofing_denver_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ccb86273-b5a1-4436-913f-b9275312b309",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00061,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00434
+   },
+   "input_tokens": 4893,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4346,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 243,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5136
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Gates Enterprises",
+  "AC INC Roofing",
+  "Woodberg Roofing and Restoration",
+  "HAAG-certified",
+  "Woodberg Roofing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/co/castle-rock/profile/construction/verity-roofing-llc-1296-1000165674/addressId/888837",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/woodberg-roofing-and-restoration-llc-1296-90245804",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/lr-contracting-inc-1296-90131857/customer-reviews?page=2",
+  "https://www.gatesroof.com/areas/denver",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/premier-roofing-company-1296-27001387/complaints?page=1",
+  "https://www.bbb.org/us/co/denver/profile/commercial-roofing/commercial-roofing-contractor-1296-90278840/customer-reviews",
+  "https://metrocityroofing.com/",
+  "https://www.firstindenver.com/guides/the-best-roofers-in-denver-2026-a-locals-guide",
+  "https://acincroofing.com/services/hail-damage",
+  "https://www.gatesroof.com/services/storm-hail-damage/denver",
+  "https://graysoncontracting.com/reviews",
+  "https://homematchup.com/roofers/co/denver/",
+  "https://acincroofing.com/locations/denver",
+  "https://www.bbb.org/us/co/denver/category/hail-repair/accredited",
+  "https://www.bestcoloradocontractors.com/local/aurora/roofers/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "6dfcfc8bb985257ac2b5ff0e0da68a4a203241127997b0f63d56587f86730a7c",
+ "answer_chars": 813,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

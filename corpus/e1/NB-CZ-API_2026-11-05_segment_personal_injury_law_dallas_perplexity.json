@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_personal_injury_law_dallas_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: personal injury law, Dallas",
+ "niche": "personal injury attorneys",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best personal injury lawyer in Dallas for a truck accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_02e90695-f121-495c-a170-12abf018177d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 4760,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4211,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 325,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5085
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Hamilton Wingo",
+  "Arnold & Itkin",
+  "Dallas Bar Association Lawyer Referral Service",
+  "Dallas County"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.arnolditkin.com/dallas-personal-injury/truck-accidents/",
+  "https://www.texasbar.com/Content/NavigationMenu/ForThePublic/DoYouNeedaLawyer/CertifiedLawyerReferralServices1/default.htm",
+  "https://www.texasbar.com/AM/Template.cfm?Section=Free_Legal_Information2&Template=/CM/ContentDisplay.cfm&ContentID=30849",
+  "https://www.zehllaw.com/texas-truck-accident-lawyer/18-wheeler-accidents/",
+  "https://guides.sll.texas.gov/find-a-lawyer",
+  "https://www.winocourlaw.com/practice-areas/dallas-truck-accident-lawyer/",
+  "https://www.reyeslaw.com/dallas/truck-accidents/",
+  "https://txlrs.org/",
+  "https://www.hamiltonwingo.com/practice-areas/truck-accidents/",
+  "https://www.injuryrelief.com/how-to-hire-a-lawyer/",
+  "https://www.winocourlaw.com/practice-areas/dallas-truck-accident-lawyer/maximizing-truck-accident-settlements/",
+  "https://frenkelfirm.com/dallas/truck-accidents-dallas/",
+  "https://www.dallasbar.org/?pg=LawyerReferralService",
+  "https://www.texasbar.com/Content/NavigationMenu/ForThePublic/DoYouNeedaLawyer/default.htm",
+  "https://lawyers.findlaw.com/truck-accident/texas/garland/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "51a310de74b7d632f8f58e7d259c7618119a43e719675cf010a7d7cfa89fc0e3",
+ "answer_chars": 1182,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

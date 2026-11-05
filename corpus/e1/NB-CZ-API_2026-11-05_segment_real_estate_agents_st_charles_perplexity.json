@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_real_estate_agents_st_charles_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: real estate agents, St. Charles",
+ "niche": "real estate agents",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Charles MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_06c6aa20-d8fd-4936-837a-aa9ac37c551a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00448
+   },
+   "input_tokens": 5084,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4533,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 284,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5368
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Lucia Roberts",
+  "U.S. News",
+  "St. Charles-area"
+ ],
+ "engine_stated_criteria": [
+  "two other agents who have recently sold homes similar to yours nearby"
+ ],
+ "sources_cited": [
+  "https://www.homelight.com/saint-charles-mo/top-real-estate-agents",
+  "https://www.homelight.com/st-charles-county-mo/top-real-estate-agents",
+  "https://www.homelight.com/st-charles-mo/top-real-estate-agents",
+  "https://realestate.usnews.com/agents/missouri/st-charles",
+  "https://www.zillow.com/profile/JeremySchneiderRE",
+  "https://bhhsselectstl.com/view-agents/agents/joe-and-leslie-tinsley",
+  "https://www.realestateagents.com/mo/saint-charles",
+  "https://www.homelight.com/agents/michael-fisher-mo-1999034012",
+  "https://www.homelight.com/agents/diane-donati-mo-1999111456",
+  "https://agentpronto.com/missouri/st-charles",
+  "https://www.homes.com/real-estate-agents/jeremy-schneider/lg1yyqe/",
+  "https://business.stcharlesregionalchamber.com/directory/Search/real-estate-agents-769972",
+  "https://www.zillow.com/profile/janisschade",
+  "https://www.zillow.com/profile/cjhorst",
+  "https://www.zillow.com/profile/elizabethjefferson"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "3fa869082e3dd2d86bc406892fbfd77d17a5709360e24430e67615c0d4a54cf8",
+ "answer_chars": 943,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

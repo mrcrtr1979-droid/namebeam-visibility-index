@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_dentists_houston_openai",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: dentists, Houston",
+ "niche": "dentists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Houston. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Houston for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgzM1NnXnfOOQt1peb9fW84n7m0Sr",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1613,
+   "total_tokens": 1638,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 896,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Maxillofacial Surgeons",
+  "UTHealth School of Dentistry",
+  "AAOMS"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I’ll need one quick detail to give specific names and phone numbers: what ZIP code or neighborhood in Houston are you closest to (or do you prefer a particular area of town)?\n\nMeanwhile, here’s a concise plan and the kinds of practices you should call right now, and why each type is useful. This will help you compare options when I pull specific offices for your area.\n\nWhich practices to call (by type) and why\n- Oral & Maxillofacial Surgeons (OMS)\n  - Why: Specialists in the surgical placement of implants and complex extractions, bone grafting, sinus lifts, and sedation/general anesthesia. Best if you have significant bone loss, impacted teeth, or medical/health concerns.\n- Periodontists\n  - Why: Specialists in the gums and supporting bone; they commonly place implants and manage gum disease and grafts around implants. Good for focused implant work and periodontal health.\n- Prosthodontists\n  - Why: Specialists in restoring teeth (crowns, bridges, complex implant-supported dentures). If your case requires a highly cosmetic or technically complex prosthesis, call a prosthodontist for the restorative phase (or a team that includes one).\n- Multi‑disciplinary implant centers / full‑service implant practices\n  - Why: These coordinate surgery and restoration in-house (OMS/periodontist + prosthodontist), which simplifies communication and scheduling. Good for full‑arch reconstructions or streamlined care.\n- Academic dental clinics (UTHealth School of Dentistry)\n  - Why: Faculty-supervised specialists-in-training often provide advanced care at lower cost; good option if cost is an issue and you’re comfortable with a teaching environment.\n\nWhat to ask when you call (quick checklist)\n- Do you place dental implants? If so, which specialists (OMS / perio / prostho)?\n- How many implants do you place per year (or per doctor) and what implant systems do you use?\n- Do you do CBCT 3D imaging in-office and is it included in the consult?\n- Will the same office do the final crown/bridge/denture or will I be referred out?\n- Do you offer sedation or IV anesthesia and do you have hospital privileges if needed?\n- What’s the estimated cost range for a single implant (implant + abutment + crown) and are CT, grafts, or temporary teeth included?\n- Do you provide a written treatment plan, timeline, and warranty/guarantee on the implant/restoration?\n- Do you accept my insurance or offer financing/third‑party plans?\n\nHow to choose between offices\n- Choose an OMS or periodontist for surgical complexity (bone grafts, sinus lifts).\n- Choose a prosthodontist or a team-based center for complex restorations or esthetics.\n- Look for in‑office CBCT, digital planning (guided surgery), and case photos/reviews.\n- Confirm board certification and membership in professional bodies (AAOMS, AAP, AAID, ACP).\n- Read recent patient reviews and ask to see before/after photos of cases like yours.\n\nIf you want, I will:\n- Look up 3–5 specific practices within your ZIP code or neighborhood (OMS, perio, prostho, and a university option), include phone numbers, one-sentence reason to call each, and any notes about insurance/financing. Just tell me your ZIP code or area and any preferences (insurance, budget, timeline, single tooth vs full arch).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

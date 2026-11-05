@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_title_companies_st_charles_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: title companies, St. Charles",
+ "niche": "title companies",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Charles MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8a874c82-45b7-4653-b4e5-433b6681eb95",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00054,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00421
+   },
+   "input_tokens": 4655,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4106,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 218,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4873
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "U.S. Title’s Hwy 94/Mid Rivers office",
+  "Investors Title",
+  "U.S. Title",
+  "Mid Rivers"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.us-title.com/",
+  "https://www.mapquest.com/us/missouri/investors-title-company-354531622",
+  "https://www.mapquest.com/us/missouri/title-partners-agency-284866368",
+  "https://easterntitle.com/missouri/st-charles/title-company",
+  "https://www.linkedin.com/company/investors-title-inc",
+  "https://easterntitle.com/missouri/st-charles/deed-preparation",
+  "https://www.yellowpages.com/saint-charles-mo/title-companies",
+  "https://www.linkedin.com/company/title-partners-agency-llc",
+  "https://www.mapquest.com/us/missouri/airogon-technologies-546147645",
+  "https://www.linkedin.com/in/peggie-ayres-193a3318",
+  "https://www.bbb.org/us/mo/category/title-companies",
+  "https://www.alta.org/membership/directory-profile/1128963",
+  "https://truetitle.com/join-our-team/",
+  "https://allcountytitleco.com/",
+  "https://www.fairway.com/lo/brian-alkire-559044"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "67874579877219ea3d0cb9641f9f108da17fafc14eb415883d1402e323f7457b",
+ "answer_chars": 714,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

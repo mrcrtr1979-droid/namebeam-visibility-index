@@ -1,0 +1,98 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_personal_injury_law_chicago_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: personal injury law, Chicago",
+ "niche": "personal injury attorneys",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury attorney in Chicago after a car accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury attorney in Chicago for a car accident claim?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_485f175e-f7d8-43a6-bca2-056380e605a3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00159,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00531
+   },
+   "input_tokens": 4860,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4302,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 635,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5495
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Curcio & Casciato",
+  "Salvi, Schostok & Pritchard P.C",
+  "Smith LaCien LLP",
+  "Power Rogers",
+  "VanDerGinst Law",
+  "Chicago Bar Association Lawyer Referral Service",
+  "Curcio",
+  "Pritchard P.C",
+  "Handles",
+  "Salvi, Schostok & Pritchard",
+  "Lawyer Referral Service"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.chicagobar.org/CBA/CBA/Legal_Help_for_the_Public/LRS_Per.aspx",
+  "https://www.chicagobar.org/CBA/CBA/Programs/Lawyer_Referral_Service_Programs_for_Lawyers.aspx",
+  "https://www.chicagobar.org/CBA/CBA/Legal_Help_for_the_Public/Lawyer_Referral_Service.aspx",
+  "https://www.chicagobar.org/CBA/CBA/LRS/LRS_Information_for_Lawyers.aspx",
+  "https://www.chicagobar.org/CBA/Legal_Help/CBA/Legal_Help_for_the_Public/Legal_Help_Main_Page.aspx",
+  "https://www.chicagobar.org/CBA/Legal_Help/Lawyer_Referral_Service/Personal_Injury/CBA/Legal_Help_for_the_Public/LRS_Per.aspx?hkey=95be0553-01da-42ec-b62f-a63b314bbdbe",
+  "https://www.powerrogers.com/",
+  "https://www.chicagobar.org/CBA/CBA/Legal_Help_for_the_Public/LRSVariousAreas.aspx",
+  "https://www.vlaw.com/locations/chicago/",
+  "https://www.curcio-law.com/practice-areas/motor-vehicle-accidents/car-accidents/",
+  "https://www.salvilaw.com/car-accident-lawyer/",
+  "https://www.molllawgroup.com/contact-us.html",
+  "https://www.chicagobar.org/CBA/Committees_Groups/Lawyer_Referral_Service/LRS_Information_for_Attorneys_/CBA/LRS/LRS_Information_for_Lawyers.aspx?hkey=bac829cb-523b-463a-a724-bfa4b603db27",
+  "https://www.meyers-flowers.com/personal-injury/chicago-car-accident-lawyer/",
+  "https://www.smithlacien.com/chicago-car-accident-attorney/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "d60bf82cc9cc70cb301d1201a047a45542241573e47887d5c3c68d95c00051b5",
+ "answer_chars": 2339,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

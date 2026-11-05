@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_dentists_dallas_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_eef32346-34ec-412c-9c8e-e57d8e49f3b0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00119,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00063,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00446
+   },
+   "input_tokens": 5308,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4762,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 250,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5558
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "ARCHPOINT Implant Dentistry",
+  "Dr. David McFadden",
+  "The Dental Implant Center",
+  "W. Lovers Lane",
+  "Implant Dentistry",
+  "Dental Implant Center"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.dentalimplantcenter.com/",
+  "https://www.dentalimplantcenter.com/our-practice/",
+  "https://aedit.com/provider/elias-kontogiorgos-8210",
+  "https://www.dentalimplantcenter.com/about-dr-david-mcfadden/",
+  "https://www.dentalimplantcenter.com/videos/full-mouth-implant-options-help-with-self-diagnosing-which-you-qualify-for/",
+  "https://www.archpointid.com/",
+  "https://www.archpointid.com/office/dallas/",
+  "https://www.dentalimplantcenter.com/full-mouth-reconstruction/",
+  "https://www.dentalimplantcenter.com/videos/out-of-town-dental-implant-treatment/",
+  "https://www.dentistsranked.com/dental-services/dental-implants-dallas-tx",
+  "https://www.dentalimplantcenter.com/check-credentials/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-rowan-buskin-1902023054",
+  "https://www.beyondsmiles.com/about-us/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-raymond-rodriguez-1649380072",
+  "https://www.yelp.com/biz/goodman-craig-dds-dallas-2"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "dbe03375a61a8e89648a19abb48fff2c1702bd0f78e382583244d81a40fce307",
+ "answer_chars": 765,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_orthodontists_houston_openai",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: orthodontists, Houston",
+ "niche": "orthodontists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Houston. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Houston for braces or Invisalign?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgzX1Ap6ceqr9iiCZqgx6WPTI3FA9",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1238,
+   "total_tokens": 1263,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 640,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Invisalign",
+  "American Board of Orthodontics",
+  "Gold",
+  "Platinum",
+  "Diamond",
+  "Dr. X",
+  "Board-Certified Orthodontist"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I’ll find specific orthodontists near you and explain why each is a good call. To give accurate, local recommendations I need one quick detail:\n\n- What ZIP code or neighborhood in Houston are you in (or willing to travel to)?\n- Also: are you an adult or is this for a teen/child? Any insurance or price range limits? Do you already prefer Invisalign vs braces or are you open to both?\n\nIf you want a fast checklist now (so you can call places yourself), here are the exact criteria and call questions that will quickly tell you which offices to prioritize — and why those things matter:\n\nWhat to look for (why it matters)\n- Board-certified orthodontist (American Board of Orthodontics diplomate): shows extra testing and proven clinical competence.\n- Specialist (orthodontist) rather than a general dentist offering Invisalign: specialists have 2–3 years extra training focused only on tooth movement.\n- Invisalign provider level (Gold/Platinum/Preferred/Elite/Diamond): higher tiers mean the doctor does many Invisalign cases — useful for predictable aligner outcomes.\n- Digital scanner (iTero/3Shape) and digital treatment simulation: faster, more comfortable records and better visualization of expected results.\n- Before-and-after photos of cases similar to yours: shows relevant experience (e.g., crowding, gaps, bite correction).\n- Clear pricing, financing, and insurance handling: avoids surprises; ask about total cost, monthly plans, and what’s included (retainers, emergency visits).\n- Retention plan and follow-up frequency: good outcomes depend on retainers and proper follow-up.\n- Hospital privileges/CBCT (if you have complex bite or jaw issues): indicates ability to handle more complex skeletal cases or coordinate surgical care.\n\nQuestions to ask on the phone (and what to expect)\n- “Is Dr. X an orthodontic specialist and are they board-certified?” — Expect a clear yes/no; if yes they should say “ABO diplomate” if applicable.\n- “How many Invisalign cases does Dr. X do per year, and do you have Gold/Platinum/Diamond status?” — Higher numbers/status indicate experience.\n- “Do you use an intraoral scanner for impressions?” — Yes is better.\n- “What’s an estimated cost and typical treatment time for someone with [my age/issue]?” — You’ll get a ballpark; final estimate after exam.\n- “Are retainers included? What if I need an emergency visit?” — Look for inclusive retention and easy emergency access.\n- “Do you accept my insurance?” — Confirm billing and any out-of-pocket estimate.\n\nNext step\nTell me your ZIP code and the other details above, and I’ll return a short list (4–6 specific Houston orthodontists/clinics to call) with 1–2 clear reasons to call each, plus their phone number and expected travel area.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

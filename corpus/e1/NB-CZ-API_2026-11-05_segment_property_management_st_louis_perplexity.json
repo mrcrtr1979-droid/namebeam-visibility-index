@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_property_management_st_louis_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: property management, St. Louis",
+ "niche": "property management companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Louis MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b29ffba4-e262-4baa-ba11-eb508334e422",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 4640,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4089,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 315,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4955
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Botanical Property Management",
+  "Intersection Real Estate Management",
+  "Arch Rental Services",
+  "Intersection Real Estate"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bestinhood.com/st-louis/real-estate-and-property-services/best-property-management-in-st-louis/",
+  "https://www.trustindex.io/reviews/propertymanagementstl.com",
+  "https://www.verifiedmanagers.com/property-management-companies/MO/st-louis/arch-rental-services-llc/",
+  "https://www.verifiedmanagers.com/property-management-companies/MO/st-louis/smpl-simple-property-management/",
+  "https://triplewinpm.com/reviews/",
+  "https://www.biggerpockets.com/mo/st-louis/property-managers",
+  "https://www.verifiedmanagers.com/property-management-companies/MO/st-louis/botanical-property-management/",
+  "https://www.verifiedmanagers.com/property-management-companies/MO/st-louis/progress-residential/",
+  "https://www.verifiedmanagers.com/property-management-companies/MO/st-louis/stl-smart-rentals/",
+  "https://intersectionstl.com/",
+  "https://www.verifiedmanagers.com/property-management-companies/MO/st-louis/the-smith-management-group/",
+  "https://www.verifiedmanagers.com/property-management-companies/MO/st-louis/rjk-management-llc/",
+  "https://www.verifiedmanagers.com/property-management-companies/MO/st-louis/mills-properties/",
+  "https://www.verifiedmanagers.com/property-management-companies/MO/st-louis/select-leasing-management/",
+  "https://www.zillow.com/professionals/property-manager-reviews/63123/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "b56945b4fbca346b6dc64b208e640f3cd8f218913a45ec4a69a5bbec060349fe",
+ "answer_chars": 1146,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

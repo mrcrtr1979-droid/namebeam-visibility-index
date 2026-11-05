@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_real_estate_agents_pleasanton_openai",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to sell my house in Pleasanton. Which specific real estate agents should I call, and why?",
+ "q1_prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Egz5IlYQGEUjG3WCASUaaeoad1Wt0",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1773,
+   "total_tokens": 1801,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Coldwell Banker",
+  "Compass",
+  "Keller Williams",
+  "In Pleasanton"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — but to give the best specific names I need one piece of information from you first. Do you want agents for Pleasanton, CA (Bay Area) or another Pleasanton (e.g., Pleasanton, IA)? And please tell me the property ZIP or the street/neighborhood (or a target price range) plus your top priorities (maximize price vs sell fast vs low hassle, any timeline).\n\nIf you’d rather not share location details, I’ll give general instructions now plus how to pick and vet 3–5 named agents; if you give the location I’ll produce a tailored short list with reasons.\n\nWhat I’ll do once you give location/priority:\n- Pull recent sales in your neighborhood and identify the actual agents who closed homes like yours in the past 6–12 months.\n- Produce a short list (3–6 recommended agents or teams), with: why each is a good fit (recent comps, marketing strengths, track record), typical commission and listing agreement length, and suggested interview questions to ask them.\n\nIf you want immediate help without giving the address, here’s a practical plan you can use now to find specific agents and what to ask:\n\nWhich specific types of agents to call (call at least three — different strengths)\n1. Top-producing local team in Pleasanton (broad buyer network, strong negotiation, often good for higher-end or multiple-offer markets).\n2. Neighborhood specialist (someone who has sold multiple homes in your street/tract in last 12 months).\n3. High-marketing agent (strong online advertising, professional photography, virtual tours, social media/paid ads — good if your home needs to stand out).\n4. If you want a quick sale: a listing agent known for price-aggressive, quick-closing strategies (may trade a bit of price for speed).\n\nWhere to find names quickly\n- Zillow / Redfin /Realtor.com — search recent closed listings in your neighborhood; note the listing agents.\n- County Recorder or MLS access (if available to you) — for sales data.\n- Local brokerage offices in Pleasanton: Keller Williams (Tri-Valley), Compass, Coldwell Banker, Intero, Century 21/Sotheby’s have active teams there — look at their top-producing agents for the zip code.\n- Nextdoor / local Facebook groups — you’ll see who locals recommend and who has recent “just sold” posts.\n\nHow to vet and compare (call at least 3; meet in person or do a video call)\nAsk each agent these core questions and compare answers:\n- How many homes like mine have you sold in the past 12 months and what were their list vs sale prices and days on market?\n- What’s your suggested listing price range and how did you arrive at it (show recent comparable sales)?\n- What is your marketing plan (staging, professional photos, 3D tour, targeted online ads, email blasts, broker open, paid social, print)?\n- Will you use a team? Who will be my day-to-day contact?\n- What’s your commission rate and are there any extra seller fees? Any flexibility?\n- How long is the listing agreement and is there an early termination clause if I’m unhappy?\n- Do you provide a net proceeds estimate and can you show three recent seller references?\n- How do you handle showings/lockboxes/open houses and vetting buyers?\n- Examples of negotiation wins for sellers (multiple-offer strategy, appraisal gap handling).\n\nHow to decide\n- Look for a combination of local comps and clear marketing plan. Don’t pick solely on highest price promise — unrealistic pricing is a common red flag.\n- Prioritize agents who have closed similarly priced homes in your exact neighborhood recently.\n- Strong seller references and visible recent sales photos/listings are important.\n- Consider a team if you want lots of marketing, and a solo neighborhood pro if you prefer a single point of contact.\n\nSample initial phone script\n“Hi, I’m selling a house at [ZIP or neighborhood]. I saw you recently sold [address] nearby. Can you tell me quickly how you’d price my home, what your marketing plan would be, and whether you’re available to meet for a CMA this week? I’m interviewing agents and plan to list in [timeframe].”\n\nIf you want, give me:\n- the property address or ZIP\n- estimated home value or list price range\n- a sentence about your priority (max price vs speed vs convenience)\n\nI’ll return a short list of specific agents/teams in Pleasanton with the reasons to call each and suggested questions tailored to them.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

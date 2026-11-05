@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_health_insurance_kansas_city_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7c2f46d1-24cb-4184-9531-2089bafd37a6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00074,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 5023,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4472,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 297,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5320
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Apollo Health Insurance",
+  "BBS Insurance",
+  "ACA Marketplace plans",
+  "ACA Marketplace",
+  "Medicare",
+  "Missouri Side",
+  "Marketplace Plans"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://bbs-insurance.com/",
+  "https://www.bluekc.com/agents/",
+  "https://coleinsure.com/kansas-city/",
+  "https://www.bluekc.com/page-category/agents/",
+  "https://www.linkedin.com/in/swood2",
+  "https://www.experience.com/reviews/guina-18707093",
+  "https://apollo-insurance.com/health-insurance-broker-kansas-city/",
+  "https://www.benavest.com/bcbs-of-kansas-city-aca-all-products/",
+  "https://castrocoverage.com/health-insurance-kansas.html",
+  "https://coleinsure.com/about/",
+  "https://coleinsure.com/",
+  "https://www.bluekc.com/agents/contact/",
+  "https://vivna.net/health-insurance-kansas-city-ks/",
+  "https://sites.google.com/view/health-insurance-kansas-city/home",
+  "https://apollo-insurance.com/missouri-health-insurance/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "45deec40904fc75d4e682c76a63ae1d5a0413c8968abd24f3aaaac529b011614",
+ "answer_chars": 1075,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

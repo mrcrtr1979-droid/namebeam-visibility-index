@@ -1,0 +1,95 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_dentists_chicago_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Chicago. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7a45041a-5e11-4ae0-b08f-dc3b00c7edab",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00114,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00479
+   },
+   "input_tokens": 4597,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4044,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 455,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5052
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "University Associates in Dentistry",
+  "Armitage Oral Surgery",
+  "UIC College of Dentistry",
+  "Innovations Center",
+  "University Associates",
+  "Dentistry",
+  "Dr. Firas F. Katabi",
+  "College of Dentistry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://dentistry.uic.edu/academics/academic-departments/department-of-restorative-dentistry/impant-and-innovations-center/",
+  "https://dentistry.uic.edu/academics/academic-departments/department-of-restorative-dentistry/",
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/prosthodontics-implant-innovation/",
+  "https://www.perioimplantchicago.com/",
+  "https://dentistry.uic.edu/patients/dental-services/general-family-dentistry/",
+  "https://dentistry.uic.edu/news-stories/5-reasons-why-dental-implants-are-so-popular/",
+  "https://www.uadchicago.com/",
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/oral-maxillofacial-surgery/",
+  "https://dentistry.uic.edu/patients/dental-services/",
+  "https://dentistry.uic.edu/patients/dental-services/general-family-dentistry/deciding-if-dental-implants-are-right-for-you/here-is-your-free-dental-implant-guide/",
+  "https://dentistry.uic.edu/patients/dental-services/general-family-dentistry/crowns-bridges/",
+  "https://www.armitageoralsurgery.com/services/dental-implants",
+  "https://doctors.rush.edu/details/18051",
+  "https://clinics.midwestern.edu/downers-grove-clinic/dental-institute-il/oral-surgery-implants-il",
+  "https://periodonticsltd.com/about-us-2/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "82f48f03109f3231e9015d3b9d88eb9a12888d787030e25d65b132ee33547d06",
+ "answer_chars": 1730,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

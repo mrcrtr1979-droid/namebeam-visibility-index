@@ -1,0 +1,97 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_short_term_rental_nashville_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a vacation rental in Nashville for a family of four. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a9981e03-66db-4043-bb82-074426fb6fbe",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00103,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00469
+   },
+   "input_tokens": 4629,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4071,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 412,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5041
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Southbound Stays",
+  "The Country Cottage",
+  "Lyric at Leiper’s Fork",
+  "Music City Magnolia",
+  "Casago Middle Tennessee",
+  "Leiper",
+  "Fork",
+  "A Nashville-based",
+  "Germantown",
+  "Music City"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.southboundstays.com/",
+  "https://homes-and-villas.marriott.com/en/vacation-rentals/united-states/tennessee/nashville",
+  "https://musiccitymagnolia.com/",
+  "https://www.southboundstays.com/family-friendly-rentals/",
+  "https://chadypm.com/short-term-rental-management/",
+  "https://homes-and-villas.marriott.com/en/vacation-rentals/united-states/tennessee",
+  "https://homes-and-villas.marriott.com/en/vacation-rentals/united-states/indiana/nashville",
+  "https://www.nashville.gov/departments/codes/short-term-rentals/contact-information",
+  "https://www.staynashville.co/",
+  "https://chadypm.com/",
+  "https://musiccitymagnolia.com/about/",
+  "https://casago.com/middle-tennessee/",
+  "https://musiccitymagnolia.com/nashville-family-vacation-rentals/",
+  "https://chadypm.com/vacation-rentals/tennessee/nashville/",
+  "https://www.gngvacation.com/locations/nashville"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ff8e3f266a2940c791faadb7e74b9d63a345dbf3a641fc15b3f0a56112e7a0c8",
+ "answer_chars": 1423,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

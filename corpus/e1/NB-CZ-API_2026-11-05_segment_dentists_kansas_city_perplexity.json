@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_dentists_kansas_city_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: dentists, Kansas City",
+ "niche": "dentists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Kansas City Missouri for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_bb6478f4-55be-4949-87ce-e9c4dad128fe",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 4618,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4070,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 315,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4933
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Bruce Cummings",
+  "University Health",
+  "Maxillofacial Surgery Clinic",
+  "Kansas City, Missouri",
+  "Maxillofacial Surgery",
+  "University Health’s Oral & Maxillofacial Surgery Clinic"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.universityhealthkc.org/services/oral-maxillofacial-surgery/",
+  "https://www.carecredit.com/doctor-locator/kansas-city-mo/kc-dental-implants-oral-surgery-253krr/",
+  "https://www.carecredit.com/doctor-locator/independence-mo/kansas-city-dental-implants-oral-surgery-independence-727kkg/",
+  "https://www.dentistsranked.com/dentists/kansas-city-mo",
+  "https://www.yelp.com/biz/kansas-city-dentures-and-implants-kansas-city",
+  "https://local.yahoo.com/info-198731762-goodman-john-john-p-goodman-kansas-city/",
+  "https://toothcompass.com/state/missouri/",
+  "https://www.healthgrades.com/dentist/dr-hormoz-hormozdi-7oi3z",
+  "https://www.tiffanyspringsdentalgroup.com/dental-services/dental-implants/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-bruce-cummings-1174647333",
+  "https://www.realself.com/find/Missouri/Kansas-City/Dental-Implants",
+  "https://www.mapquest.com/us/missouri/taylor-l-markle-dds-oral-maxillofacial-surgery-372330331",
+  "https://midwestomskc.com/home-page",
+  "https://www.linkedin.com/in/edward-amet-109b9b28",
+  "https://www.yelp.com/biz/stephen-d-akimoto-dds-kansas-city"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "b62df07b1aaad28ef31bf78b90d98384500b8a76fdb2b67527a4da0f4f9efd59",
+ "answer_chars": 1132,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

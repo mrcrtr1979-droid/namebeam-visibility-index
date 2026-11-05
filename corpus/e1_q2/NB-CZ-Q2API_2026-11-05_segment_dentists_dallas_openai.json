@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_dentists_dallas_openai",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Dallas. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Egz6kESu5qlcIdJFrFkXfdoafLcul",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1360,
+   "total_tokens": 1385,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "ABOMS",
+  "American Board of Periodontology",
+  "American College of Prosthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — to give specific practices with phone numbers, addresses and reasons to call I need one quick detail: what zip code or neighborhood in Dallas are you in (or are you willing to travel across the metro area)? Also: is this a single-tooth implant, multiple implants/full-arch, and do you have dental insurance?\n\nWhile you reply, here’s useful guidance and what I’ll look for when I pick specific offices for you:\n\nWhich type of provider to call (and why)\n- Periodontist or oral & maxillofacial surgeon for implant placement — they have advanced surgical training and manage complications, bone grafting and extractions.  \n- Prosthodontist for complex restorations or full-mouth rehabilitation — they specialize in the tooth replacement/restoration piece (abutments and crowns).  \n- Implant specialty centers that coordinate surgery + restoration can be convenient if you want one place to handle everything.\n\nWhat I will prioritize when selecting practices\n- Board-certified specialists (ABOMS for oral surgeons, American Board of Periodontology, American College of Prosthodontists).  \n- Experience with dental implants (number of years, full-arch or complex cases if that’s relevant).  \n- Use of CBCT/3D imaging and guided implant planning (better accuracy).  \n- Clear treatment planning (written estimate, timeline, alternatives).  \n- Good patient reviews and before/after photos.  \n- Sedation options if you need it, and clear cost/financing options.  \n- Communication and aftercare (warranty/guarantee policies, follow-up).\n\nWhat to ask when you call (so you can compare offices)\n- Which specialist will place the implant and will they handle the crown or coordinate with a restorative dentist?  \n- Do you use CBCT 3D imaging and do you provide a treatment plan with timelines?  \n- How many implants of this type do you place per year (or per month)?  \n- What brands of implants do you use? Do you offer guided surgery or same-day (immediate) implants?  \n- Expected total cost breakdown (implant, abutment, crown, grafts) and financing/insurance policies.  \n- Do you handle bone grafting or sinus lifts if needed? What is the typical healing timeline?  \n- Do you have patient photos/references for similar cases?\n\nCosts & timeline (quick expectations)\n- Single implant + abutment + crown commonly ranges widely (ask office for a written estimate).  \n- Typical process: consult + CBCT → implant placement → 3–6 months healing (depending on bone) → abutment/crown. Some offices offer immediate or same-day implants in select cases.\n\nIf you give your neighborhood/zip code and treatment details I’ll pull together 4–6 specific, well-vetted Dallas-area practices to call and explain why each one is a good fit for you.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

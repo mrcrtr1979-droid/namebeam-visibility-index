@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e497ea2e-d3bb-4223-b314-aec04cb96ad9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00075,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00101,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0044
+   },
+   "input_tokens": 3537,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 2990,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 405,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3942
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Raquel Capote",
+  "Dr. Matthew D. Dunn",
+  "Dr. Jennifer Thomas Mirabelli",
+  "Dr. John C. Budd",
+  "E. Bell Road and N",
+  "Invisalign",
+  "American Association of Orthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-kenneth-e-danyluk/",
+  "https://aaoinfo.org/locator/dr-raquel-capote-2/",
+  "https://aaoinfo.org/locator/dr-john-c-budd/",
+  "https://aaoinfo.org/locator/dr-matthew-d-dunn/",
+  "https://aaoinfo.org/locator/dr-john-c-budd-2/",
+  "https://aaoinfo.org/locator/dr-won-woo-park/",
+  "https://aaoinfo.org/locator/dr-jae-hyun-park/",
+  "https://aaoinfo.org/locator/dr-jennifer-thomas-mirabelli/",
+  "https://aaoinfo.org/locator/dr-dawn-pruzansky/",
+  "https://aaoinfo.org/locator/dr-rustin-w-jones/",
+  "https://aaoinfo.org/locator/dr-spencer-mecham-2/",
+  "https://aaoinfo.org/locator/dr-michael-adam-feinberg/",
+  "https://aaoinfo.org/locator/dr-c-chris-murphy-2/",
+  "https://aaoinfo.org/locator/dr-andrew-serrano-2/",
+  "https://aaoinfo.org/locator/dr-alyssa-levin/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2e7375de710a081f9963e82a47b63b056480ae29d137708e8c9e6d893eee7681",
+ "answer_chars": 1242,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

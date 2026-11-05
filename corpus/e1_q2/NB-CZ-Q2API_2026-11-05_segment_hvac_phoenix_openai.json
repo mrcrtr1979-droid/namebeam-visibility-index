@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_hvac_phoenix_openai",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgyiiTI2V4IY3YMShBOap41tFf5l9",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1275,
+   "total_tokens": 1300,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Phoenix ZIP",
+  "Arizona ROC",
+  "Registrar of Contractors"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you specific companies — I just need your Phoenix ZIP code (or neighborhood) so I can pick reputable, nearby options and check which companies service your exact area. Do you also need an emergency same‑day visit, or is this a non‑urgent repair?\n\nWhile you reply, here are practical next steps and what I’ll include when I look up companies for your ZIP:\n\nWhat I’ll provide\n- 3–5 nearby HVAC companies (names, phone or website if you want) that consistently get good recent reviews and service your ZIP.\n- Why I recommend each one: licensing/insurance status, NATE or manufacturer certifications, experience with Phoenix heat, emergency availability, warranty/maintenance plans, and typical strengths (e.g., fast emergency response, good for replacements, best for older systems).\n- A short checklist of questions to ask and red flags to watch for.\n\nImmediate checklist you can use now when calling any company\n- Ask for their Arizona ROC (Registrar of Contractors) license number and confirm it’s active.\n- Confirm they carry liability insurance and workers’ comp.\n- Ask if technicians are NATE‑certified and factory‑trained for your brand (Carrier, Trane, Lennox, etc.).\n- Ask about emergency/Same‑day availability, diagnostic fee, estimated cost ranges (parts + labor), and warranty on parts and labor.\n- Request a load calculation (Manual J) for replacement quotes and SEER ratings for new units.\n- Get at least 2 written estimates and compare scope (repair vs. recommend replacement), energy‑efficiency, and permits.\n- Check recent Google/Yelp reviews and BBB for patterns (billing issues, no‑show, quick fixes that fail).\n\nRed flags\n- No ROC license or unwillingness to give it.\n- Very low ball verbal quotes with “can’t put it in writing.”\n- Demand for full upfront payment before work begins.\n- High number of unresolved complaints about workmanship or no follow‑up warranty service.\n\nIf you give your ZIP (or say whether you need emergency service), I’ll return 3–5 specific, vetted companies near you and explain why to call each.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

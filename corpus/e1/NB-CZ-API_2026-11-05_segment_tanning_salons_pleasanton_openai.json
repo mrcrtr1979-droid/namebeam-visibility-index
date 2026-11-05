@@ -1,0 +1,43 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_tanning_salons_pleasanton_openai",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: tanning salons, Pleasanton",
+ "niche": "tanning salons",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgxyM0JR11v3DYWe9zDdCDJeDLMkh",
+  "usage": {
+   "prompt_tokens": 17,
+   "completion_tokens": 751,
+   "total_tokens": 768,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 640,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UV tanning beds"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Do you mean UV tanning beds or spray (sunless) tans? And how close to Pleasanton do you want it (downtown Pleasanton, near Stoneridge, within 10 miles, etc.)?\n\nIf you want, I can:\n- Recommend the best local options based on your preference, or\n- Give a short checklist for picking the best salon (what to ask, red flags, pricing to expect), or\n- Draft a quick phone/message script you can use to check salons.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,43 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_dentists_houston_gemini",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: dentists, Houston",
+ "niche": "dentists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Houston. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Houston for a dental implant?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "0PXsauuqA9-dz7IPnbiq6QY",
+  "usage": {
+   "promptTokenCount": 19,
+   "candidatesTokenCount": 1088,
+   "totalTokenCount": 1107,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 19
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Finding the right dental practice for a dental implant in Houston is a critical decision, as dental implants require a high level of surgical precision and prosthetic skill. \n\nBecause Houston is massive and medical care is decentralized, the \"best\" practice depends on whether you need a **straightforward single implant**, **multiple implants**, or a **full-mouth restoration (like All-on-4)**, as well as your budget and insurance",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

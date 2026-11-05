@@ -1,0 +1,215 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-11-05_segment_dentists_columbus",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: dentists, Columbus",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best dentist in Columbus Ohio for a dental implant?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 4,
+ "pairs": [
+  {
+   "terser_names": [
+    "Stoner Periodontic",
+    "Implant Specialists",
+    "Upper Arlington",
+    "Oral Surgery of Columbus",
+    "Gahanna and Worthington",
+    "American Academy of Periodontology"
+   ],
+   "verbose_names": [
+    "Maxillofacial Surgeons",
+    "Central Ohio Oral",
+    "Maxillofacial Surgery",
+    "Highly",
+    "Columbus Oral Surgery",
+    "Implant Specialists",
+    "Periodontal Specialists of Columbus",
+    "Dr. Leo Bruzina",
+    "Capital Periodontics",
+    "Cosmetic Dental Practices",
+    "Artis Dental",
+    "Creative Smiles",
+    "Polaris Dental Care"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 6,
+   "verbose_entity_count": 13,
+   "containment_pct": 16.7,
+   "shared_count": 1,
+   "answer_chars_a": 1292,
+   "answer_chars_b": 2472,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "ABOMS",
+    "OSU Wexner Medical Center",
+    "Nobel Biocare",
+    "BioHorizons"
+   ],
+   "verbose_names": [
+    "Stoner Periodontic",
+    "Implant Specialists",
+    "Upper Arlington",
+    "Oral Surgery of Columbus",
+    "Gahanna and Worthington",
+    "American Academy of Periodontology"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 6,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1292,
+   "answer_chars_b": 2477,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Healthgrades.com"
+   ],
+   "verbose_names": [
+    "Stoner Periodontic",
+    "Implant Specialists",
+    "Upper Arlington",
+    "Oral Surgery of Columbus",
+    "Gahanna and Worthington",
+    "American Academy of Periodontology"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 6,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1292,
+   "answer_chars_b": 1016,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "ABOMS",
+    "OSU Wexner Medical Center",
+    "Nobel Biocare",
+    "BioHorizons"
+   ],
+   "verbose_names": [
+    "Maxillofacial Surgeons",
+    "Central Ohio Oral",
+    "Maxillofacial Surgery",
+    "Highly",
+    "Columbus Oral Surgery",
+    "Implant Specialists",
+    "Periodontal Specialists of Columbus",
+    "Dr. Leo Bruzina",
+    "Capital Periodontics",
+    "Cosmetic Dental Practices",
+    "Artis Dental",
+    "Creative Smiles",
+    "Polaris Dental Care"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "gemini",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 13,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2472,
+   "answer_chars_b": 2477,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Healthgrades.com"
+   ],
+   "verbose_names": [
+    "Maxillofacial Surgeons",
+    "Central Ohio Oral",
+    "Maxillofacial Surgery",
+    "Highly",
+    "Columbus Oral Surgery",
+    "Implant Specialists",
+    "Periodontal Specialists of Columbus",
+    "Dr. Leo Bruzina",
+    "Capital Periodontics",
+    "Cosmetic Dental Practices",
+    "Artis Dental",
+    "Creative Smiles",
+    "Polaris Dental Care"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 13,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2472,
+   "answer_chars_b": 1016,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Healthgrades.com"
+   ],
+   "verbose_names": [
+    "ABOMS",
+    "OSU Wexner Medical Center",
+    "Nobel Biocare",
+    "BioHorizons"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 4,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2477,
+   "answer_chars_b": 1016,
+   "zero_shared": true
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

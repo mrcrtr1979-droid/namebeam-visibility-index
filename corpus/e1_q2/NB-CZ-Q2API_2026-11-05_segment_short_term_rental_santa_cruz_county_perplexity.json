@@ -1,0 +1,117 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a vacation rental in Santa Cruz County. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b49396cf-88fd-4998-a35e-627867dd4b91",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00129,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00503
+   },
+   "input_tokens": 4962,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4407,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 517,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5479
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Beachnest Vacation Rentals — (831) 722-0888",
+  "O’Neal Vacation Rentals — (831) 291-9485",
+  "Blue Sky Property Management — (831) 334-7676",
+  "Beachnest Vacation Rentals",
+  "Capitola",
+  "Aptos",
+  "West Cliff",
+  "Seabright",
+  "Pleasure Point",
+  "Capitola Village",
+  "Rio Del Mar",
+  "Beachnest",
+  "Visit Santa Cruz County",
+  "Kendall",
+  "Potter Property Management",
+  "Vacation Rentals",
+  "Twin Lakes",
+  "Live Oak",
+  "La Selva Beach",
+  "Neal Vacation Rentals",
+  "Santa Cruz-area",
+  "Capitola Chamber",
+  "Blue Sky Property Management",
+  "Blue Sky",
+  "Beach",
+  "Seascape",
+  "Kendall & Potter Property Management",
+  "Kendall & Potter",
+  "Seascape Beach Resort",
+  "Capitola Beach"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.santacruz.org/destinations/aptos/",
+  "https://www.santacruz.org/destinations/capitola-and-soquel/",
+  "https://www.santacruz.org/places-to-stay/",
+  "https://www.santacruz.org/destinations/santa-cruz/",
+  "https://www.aptoschamber.com/trial",
+  "https://www.beachnest.com/property-management/",
+  "https://www.santacruz.org/plan-your-trip/",
+  "https://www.santacruzcountyca.gov/Departments/TaxCollector/TaxCollectionDivision/TOT/TourismMarketingDistrictFAQs.aspx",
+  "https://www.beachnest.com/furnished-management/",
+  "https://www.santacruzcountyca.gov/Portals/0/County/ttc/pdfs/2022_TMD_Management_District_Plan.pdf",
+  "https://master.capitolachamber.com/list/ql/real-estate-moving-storage-19",
+  "https://master.capitolachamber.com/list/ql/accommodations-14",
+  "https://montereycoast.com/santa-cruz-vacation-rental-property-management/",
+  "https://www.santacruz.org/listings/blue-sky-property-management/",
+  "https://www.cdi.santacruzcountyca.gov/UPC/DiscretionaryPermitsZoning/DiscretionaryPermits/HostedRentals.aspx"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "a050ee273864c8de0664cd086ed6a65ff6c94cbfc19fc0f5849a90c4e2dfe952",
+ "answer_chars": 1815,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

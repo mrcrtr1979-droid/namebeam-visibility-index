@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_title_companies_st_louis_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: title companies, St. Louis",
+ "niche": "title companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Louis MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_59e4852f-fab8-4f4f-9ee8-1e34e517e582",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00069,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00431
+   },
+   "input_tokens": 4472,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3923,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 275,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4747
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Investors Title Company",
+  "U.S. Title",
+  "Clear Title Group",
+  "St. Louis-area",
+  "Investors Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.investors-title.com/",
+  "https://www.cleartitlenow.com/residential",
+  "https://www.oldrepublictitle.com/missouri/",
+  "https://www.stlouisrealestatesearch.com/m-and-i-title-company/",
+  "https://www.us-title.com/",
+  "https://www.housesoldeasy.com/investors-title",
+  "http://www.linkedin.com/company/integrity-title-solutions-llc",
+  "https://www.mapquest.com/us/missouri/elite-title-company-778230871",
+  "https://www.mapquest.com/us/missouri/investors-title-27045827",
+  "https://www.mapquest.com/us/missouri/investors-title-company-354531622",
+  "https://www.mapquest.com/us/missouri/insight-title-llc-405995079",
+  "https://www.linkedin.com/company/investors-title-inc",
+  "https://www.mapquest.com/us/missouri/investors-title-company-345831334",
+  "https://www.mapquest.com/us/missouri/security-title-insurance-agency-llc-421605305",
+  "https://www.mapquest.com/us/missouri/integrity-title-277134243"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "3be651b54cd77afa3c47c81506cebd59c95e55c017b3d7b7337ac80d9fa71e77",
+ "answer_chars": 965,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

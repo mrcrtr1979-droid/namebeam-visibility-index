@@ -1,0 +1,68 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_namebeam_openai",
+ "date_utc": "2026-11-05",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgyOGzif9G1lvBTz8XGXKID7SvsfK",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1555,
+   "total_tokens": 1579,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Yext",
+  "BrightLocal",
+  "Moz Local",
+  "Bing Places",
+  "Apple Business Connect",
+  "AIs",
+  "Bing Chat",
+  "AI-cited",
+  "Rich Results Test",
+  "LocalBusiness",
+  "Claude. Note",
+  "Claim",
+  "Semrush",
+  "Local SEO",
+  "Whitespark",
+  "Perplexity.ai",
+  "Mention",
+  "Brand monitoring tools",
+  "Brand Monitoring",
+  "Use BrightLocal",
+  "Apple Business",
+  "LocalBusiness Schema",
+  "Schema Markup",
+  "Rich Results",
+  "SEO tools",
+  "Structured Data"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there’s no single “official” checker that tells you whether general-purpose LLMs like ChatGPT recommend your business. The practical approach is a mix of (A) giving the LLMs reliable, structured facts about your business (so they can recommend you) and (B) actively testing and monitoring LLMs and knowledge sources that feed them. Tools that combine both control and monitoring are the most helpful.\n\nBest services and tools to use\n- Yext — Best enterprise solution for controlling the facts about your business across search engines, maps, directories and many AI integrations. Yext markets itself as a way to make sure AI/search engines surface your correct information.\n- BrightLocal / Moz Local / Semrush / Whitespark — Local SEO and citation-management tools. Good for improving local visibility and tracking local rankings (what a local-aware AI might use).\n- Google Business Profile, Bing Places, Apple Business Connect — Claim and optimize these directly. They’re primary data sources for many search/AI features.\n- Perceptual/testing AIs: Perplexity.ai, Bing Chat (with citations), Google Bard, ChatGPT (live web/browsing mode or plugins if available) — use these to query whether AIs recommend your business; Perplexity and Bing Chat are especially useful because they show sources.\n- Brand monitoring tools: Mention, Brand24, Talkwalker — useful for tracking web/social mentions; they won’t capture “private” LLM responses but will show increased secondary mentions if an AI-cited article drives traffic.\n- Structured data tools: Google’s Rich Results Test / Schema markup validators — ensure your site uses schema.org (LocalBusiness, Offer, Review, etc.), which increases the chance AI/search will pick up accurate facts.\n\nHow to test whether an AI “recommends” your business\n1. Create a short list of realistic prompts (e.g., “I need a coffee shop near [neighborhood] open at 8am — recommend one.” “Best plumbers in [city] for emergency service.”)\n2. Run the prompts across several models: ChatGPT (with browsing/plugins if available), Bing Chat, Perplexity, Bard, Claude. Note whether your business appears and whether the model cites a source.\n3. Use search operators to verify the sources the LLM cites (news, directories, your site).\n4. Repeat monthly after you improve listings/SEO to measure change.\n\nWhy Yext + local SEO tools are often recommended\n- Yext is designed to push authoritative, structured business facts into many downstream services that search engines and some AI systems consume. Local SEO tools help make sure directories, citations, and reviews align — those are the signals AIs and search engines rely on for recommendations.\n\nQuick action plan (minimal effort)\n1. Claim and fully populate Google Business Profile, Bing Places, Apple Business Connect, Yelp.\n2. Add structured LocalBusiness schema and review markup to your website.\n3. Get consistent NAP (name, address, phone) across major directories (use BrightLocal or Moz to audit).\n4. Test AIs weekly using the prompt list above (include location/time constraints).\n5. If you want an easy managed solution, evaluate Yext (or a local-SEO agency) for distribution + monitoring.\n\nIf you want, tell me your business type and location and I’ll:\n- craft a short set of test prompts to use across LLMs,\n- point out the top three directories to claim,\n- and suggest the highest-impact schema fields to add.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

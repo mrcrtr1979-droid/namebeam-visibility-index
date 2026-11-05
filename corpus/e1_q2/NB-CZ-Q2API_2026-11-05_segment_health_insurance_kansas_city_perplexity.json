@@ -1,0 +1,103 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_health_insurance_kansas_city_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9310adb8-1f85-459c-985a-b7ce1b3af81a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0013,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00501
+   },
+   "input_tokens": 4834,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4278,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 520,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5354
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AIS Health Advisors — 913-333-8627",
+  "Apollo Health Insurance — 816-400-4477",
+  "BBS Insurance — 816-205-4664",
+  "Jeff David Insurance — 816-436-2622",
+  "HealthCare.gov",
+  "Medicare",
+  "AIS Health Advisors",
+  "Kansas and Missouri. It",
+  "ACA Marketplace",
+  "Apollo Health Insurance",
+  "BBS Insurance",
+  "Jeff David Insurance",
+  "Blue KC",
+  "Kansas and Missouri",
+  "Marketplace Plans",
+  "Family ACA"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aishealthadvisors.com/",
+  "https://www.bluekc.com/",
+  "https://www.bluekc.com/agents/",
+  "https://insurica.com/locations/leawood/",
+  "https://jeffdavidinsurance.com/",
+  "https://www.bluekc.com/page-category/agents/",
+  "https://apollo-insurance.com/health-insurance-broker-in-kansas-city/",
+  "https://www.bluekc.com/agents/contact/",
+  "https://sites.google.com/view/health-insurance-kansas-city/home",
+  "https://www.linkedin.com/in/susanljacobs",
+  "https://www.healthmarkets.com/plans/aca-health/missouri/kansas-city",
+  "https://apollo-insurance.com/health-insurance-kansas-city/",
+  "https://bbs-insurance.com/service-areas/kansas-city/",
+  "https://www.chcquotes.com/health-insurance-kansas-city-mo",
+  "https://apollo-insurance.com/health-insurance-broker-kansas-city/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "3386b2695378749a9ed4fd8b4488bed97541af38f06a96202705873e3d056b83",
+ "answer_chars": 2068,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

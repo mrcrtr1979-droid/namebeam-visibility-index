@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_dentists_chicago_anthropic",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Chicago. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_5cg6cvukzuvfipbowkx4odvr6u5fah6wh7zc2hmczleg4fpjkada",
+  "usage": {
+   "input_tokens": 27,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 279,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Verification steps",
+  "Good starting points",
+  "Illinois State Dental Board",
+  "American Academy of Implant Dentistry",
+  "University of Illinois",
+  "College of Dentistry"
+ ],
+ "engine_stated_criteria": [
+  "What to evaluate when you call"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can't recommend specific practices since I don't have current, verified information about Chicago dental offices or their implant expertise.\n\nHere's how to find a good fit:\n\n**Verification steps:**\n- Check credentials: Look for prosthodontists (dental specialists in implants) or general dentists with implant certification\n- Verify licenses through Illinois State Dental Board\n- Read recent Google/Yelp reviews (look for patterns, not single reviews)\n- Check if they're in-network with your insurance\n\n**What to evaluate when you call:**\n- Years of implant experience\n- Before/after photos of similar cases\n- Whether they do the full process or refer out\n- Cost breakdown and financing options\n- Consultation availability\n\n**Good starting points:**\n- Your general dentist for referrals\n- Your dental insurance provider's directory\n- Professional organizations (American Academy of Implant Dentistry has a \"find a dentist\" tool)\n- University of Illinois College of Dentistry (if you want academic center care)\n\n**Red flags:**\n- Pressure to decide immediately\n- Unusually cheap pricing\n- Unwillingness to discuss their experience\n\nWould you like guidance on what questions to ask during consultations, or help understanding implant costs/process?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

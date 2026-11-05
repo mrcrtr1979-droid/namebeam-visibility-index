@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_oil_change_pleasanton_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_905fb5e3-def1-49df-943c-1c87f145ef1c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00055,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00436
+   },
+   "input_tokens": 5217,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4668,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 220,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5437
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Big Brand Tire & Service",
+  "SpeeDee Oil Change",
+  "Big Brand Tire",
+  "SpeeDee"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.speedeeoil.com/locations/ca/pleasanton/44-mission-dr/",
+  "https://www.bigbrandtire.com/tire-shop/pleasanton-ca/oil-change",
+  "https://maps.apple.com/place?place-id=I232A35B8DE3B2CE4",
+  "https://www.carfax.com/Auto-Repair-Pleasanton-CA_c12173",
+  "https://www.speedeeoil.com/locations/ca/milpitas/635-trade-zone-blvd/",
+  "https://www.carfax.com/Reviews-Walmart-Auto-Care-Center-Pleasanton-CA_NMXGCLXADQ",
+  "https://smogcheckdeals.com/speedee-oil-change-tune-up-pleasanton",
+  "https://www.yelp.com/biz/big-o-tires-pleasanton",
+  "https://www.carfax.com/Auto-Repair-Dublin-CA_c27270_p3",
+  "https://www.yourmechanic.com/city/pleasanton-ca",
+  "https://www.walmart.com/store/2161-pleasanton-ca/auto-care-center",
+  "https://www.yelp.com/biz/ricks-performance-pleasanton",
+  "https://www.yelp.com/biz/speedee-oil-change-and-auto-service-pleasanton",
+  "https://www.autotechiq.com/fixes/oil-change-in-pleasanton-ca",
+  "https://www.yelp.com/biz/tire-choice-auto-service-centers-pleasanton-2"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "edbe2407f32338cc3a135b2e50785c3f0a500fc910fe23af621f1bfa530d3684",
+ "answer_chars": 572,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

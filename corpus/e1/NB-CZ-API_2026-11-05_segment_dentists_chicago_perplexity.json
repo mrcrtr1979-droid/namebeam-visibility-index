@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_dentists_chicago_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f40a6671-8304-45e3-a18b-67fce7bf691b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00452
+   },
+   "input_tokens": 4859,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4313,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 318,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5177
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UIC College of Dentistry",
+  "Dr. Praveen Gajendrareddy",
+  "Dental Salon",
+  "Lincoln Park",
+  "College of Dentistry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/periodontal-gum-disease-therapy/",
+  "https://www.cds.org/meet-your-2026-2027-north-suburban-branch-president/",
+  "https://hospital.uillinois.edu/find-a-doctor/rand-harlow",
+  "https://dentalsalon.com/team/dr-praveen-gajendrareddy",
+  "https://www.cds.org/event/north-side-branch-0127/",
+  "https://hospital.uillinois.edu/find-a-doctor/alex-sarpong",
+  "https://nkfamilydental.com/staff/meet-dr-amir-danesh/",
+  "https://nkfamilydental.com/dental-implant-specialist/",
+  "https://chicagoloopdentistry.com/restorative-dentistry/dental-implants/",
+  "https://www.dentistsoffountain.com/meet-our-team/team-member.jonathan-haller-staff-id-47688/",
+  "https://dentalsalon.com/dental-implants-chicago",
+  "https://dentalsalon.com/locations/schaumburg",
+  "https://dentistry.uic.edu/profiles/gheisarifar-maryam/",
+  "https://dentalsalon.com/locations/lincoln-park",
+  "https://dentistry.uic.edu/academics/academic-departments/department-of-restorative-dentistry/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "cc17c47904f2695ea1f7bc5364859123dda5a395588b33399eb74ff1b0d4f873",
+ "answer_chars": 1169,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

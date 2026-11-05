@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_tanning_salons_tyler_openai",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: tanning salons, Tyler",
+ "niche": "tanning salons",
+ "market": "Tyler TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to try a tanning salon in Tyler. Which specific salons should I call, and why?",
+ "q1_prompt_text": "What is the best tanning salon in Tyler TX?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EgywUTSuIfAaCBB1GMT8oSJN87obM",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1658,
+   "total_tokens": 1684,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Palm Beach Tan",
+  "Planet Fitness",
+  "Black Card",
+  "Ergoline",
+  "UV tanning beds",
+  "For UV Tanning"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Quick question before I give specific names: do you mean Tyler, Texas? And are you looking for UV tanning (beds/stands) or spray/airbrush (sunless)? Also tell me any preferences: budget, daytime vs evenings, want a membership, or concerned about skin safety. With that I can give an exact list of salons to call (with reasons) and — if you want — phone numbers/addresses.\n\nIf you want something now, here’s an immediately useful plan you can use while I get those details:\n\nWhich specific places to call (types to prioritize) and why\n- A national tanning chain (e.g., Palm Beach Tan when present in a city) — why: consistent equipment standards, membership deals, predictable pricing and hours.\n- A local/independent spray-tan studio — why: usually more experienced technicians, customized solutions (airbrush, organic sprays), better for special events or customized color.\n- A gym chain that offers tanning (e.g., Planet Fitness if you’re a Black Card member) — why: convenient if you already go there; cheaper if you use existing membership.\n- A med spa or dermatologist clinic that offers spray tans or medically supervised tanning alternatives — why: best if you’re concerned about sensitive skin, history of skin cancer, or want professional skin-safe options.\n- Any salon that advertises high-pressure or brand-name beds (Ergoline, Hapro, etc.) — why: these give faster results with fewer sessions (but are more intense).\n\nWhat to ask when you call (so you can compare)\n- Do you offer UV tanning beds, stand-up units, and/or spray tans? (ask for specifics)\n- What brands/models of beds do you have? Are they high-pressure or low-pressure? (brands like Ergoline are a positive sign)\n- Do you perform a skin type assessment for first-time clients? Do you recommend sessions based on Fitzpatrick type?\n- What protective gear do you provide (goggles, disposable underwear)?\n- What are first-time prices and package/membership options? Any hidden fees?\n- How often are beds cleaned and how often is equipment serviced?\n- For spray tans: what solution brands do you use, is it vegan/paraben-free, do they offer airbrush or automated booths, and do they require a patch test?\n- Are technicians certified? What COVID/cleaning protocols do you follow?\n- Age limits or parental consent required?\n- Do you have before/after photos or online reviews I can look at?\n\nRed flags to avoid\n- Staff unwilling to answer what equipment/solutions they use\n- Beds that smell strongly of stale disinfectant or look poorly maintained\n- No sanitation protocol or no goggles provided\n- Extremely low prices that seem too good to be true (often indicate poorly maintained machines or low-quality spray solutions)\n\nSample short script for your call\n“Hi — I’m a first-time client interested in [UV/spray]. Do you have a moment to tell me what types of tanning you offer, what brand of beds/solution you use, first-time pricing, and whether you do a skin assessment for new clients?”\n\nIf you confirm Tyler, TX (or give a ZIP), I’ll pull together 4–6 specific salons in the area to call, with a one-line reason to contact each and their phone/address info. Which Tyler are you referring to and which tanning type do you prefer?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_hvac_atlanta_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_55dd9aa1-b673-4115-9b4b-8b3efb0bf53a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00419
+   },
+   "input_tokens": 4345,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3797,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 239,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4584
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Reliable Heating & Air",
+  "Moncrief Heating & Air Conditioning",
+  "Aire Serv of North Atlanta",
+  "Reliable Heating",
+  "Moncrief Heating",
+  "Air Conditioning",
+  "Moncrief Heating & Air"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.consumeraffairs.com/homeowners/hvac-repair-atlanta.html",
+  "https://www.aireserv.com/locations/georgia/atlanta/",
+  "https://reliableair.com/cooling/central-ac-installation",
+  "https://industryoversight.com/heating-air-conditioning-hvac/atlanta-fulton-ga/",
+  "https://www.expertise.com/home-improvement/ac-repair/georgia/atlanta",
+  "https://www.thumbtack.com/ga/atlanta/hvac-repair-companies",
+  "https://www.forbes.com/home-improvement/hvac/local-hvac/hvac-atlanta-ga/",
+  "https://www.theaircompanyga.com/atlanta-hvac-service",
+  "https://www.estesair.com/",
+  "https://prosgrade.com/hvac/atlanta",
+  "https://cityvetted.com/best/best-hvac-atlanta",
+  "https://www.homedepot.com/services/l/GA/atlanta/heating-air-conditioning-repair/673dcc2c8",
+  "https://www.theaircompanyga.com/dunwoody-hvac-service",
+  "https://local.yahoo.com/hvac-contractors/ga/atlanta/;_ylt=A2RQjxomG91qvgIAU9tXNyoA;_ylu=Y29sbwN1cy13ZXN0LTIEcG9zAzMEdnRpZAMEc2VjA3Ny",
+  "https://www.aireserv.com/north-atlanta/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "e5931a1155ad8070a3a8413e2a0404996875078223ace9e498ffa5b91f730dc8",
+ "answer_chars": 806,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

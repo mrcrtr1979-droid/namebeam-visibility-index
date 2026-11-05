@@ -1,0 +1,111 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-05_segment_homecare_agencies_pleasanton_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: homecare agencies, Pleasanton",
+ "niche": "home care agencies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My elderly parent needs home care in Pleasanton. Which specific home care agencies should I call, and why?",
+ "q1_prompt_text": "What is the best home care agency in Pleasanton CA for an elderly parent?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ac292611-95d9-44f7-b002-7e51fac965cd",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00132,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00494
+   },
+   "input_tokens": 4456,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3900,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 529,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4985
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton, California",
+  "Senior Helpers of Pleasanton — (925) 392-7643",
+  "Right at Home Pleasanton — (925) 401-5261",
+  "Seniors Helping Seniors Tri-Valley — (925) 397-1771",
+  "ComForCare Tri-Valley — (510) 538-2273",
+  "In-Home Supportive Services (IHSS)",
+  "CityServe of the Tri-Valley, (925) 222-2273",
+  "Medicare-certified home health agency",
+  "Senior Helpers of Pleasanton",
+  "Home Pleasanton",
+  "Seniors Helping Seniors Tri-Valley",
+  "ComForCare Tri-Valley",
+  "Call Alameda County Senior Information",
+  "In-Home Supportive Services",
+  "CityServe",
+  "Right at Home",
+  "Senior Helpers",
+  "Right at Home Pleasanton",
+  "Tri-Valley",
+  "Right",
+  "ComForCare",
+  "Home Supportive Services"
+ ],
+ "engine_stated_criteria": [
+  "If cost or eligibility is a concern"
+ ],
+ "sources_cited": [
+  "https://locations.seniorshelpingseniors.com/ca/pleasanton/care-services-250.html",
+  "https://alamedacountyca.gov/adults/adults.htm",
+  "https://www.seniorhelpers.com/ca/pleasanton/locations/pleasanton/",
+  "https://www.comforcare.com/trivalley/about-us/areas-served/pleasanton/",
+  "https://socialservices.alamedacountyca.gov/our-services/Seniors-and-Disabled/Area-Agency-on-Aging/services-and-resources/tabs/Case-management",
+  "https://www.carescout.com/home-care/california/pleasanton?searchZip=94588",
+  "https://www.rightathome.net/pleasanton/about-us/areas-served/pleasanton",
+  "https://www.seniorhelpers.com/ca/pleasanton/resources/frequently-asked-questions/",
+  "https://www.seniorhelpers.com/ca/pleasanton/is-home-care-right-for-me/benefits/",
+  "https://www.cityofpleasantonca.gov/our-government/housing/housing-resources/",
+  "https://socialservices.alamedacountyca.gov/ex/our-services/Seniors-and-Disabled/Area-Agency-on-Aging/Senior-Information-and-Assistance/Senior-Information-and-Assistance",
+  "https://socialservices.alamedacountyca.gov/our-services/Seniors-and-Disabled/Area-Agency-on-Aging/Area-agency-on-aging",
+  "https://www.caring.com/senior-care/california/pleasanton/givencare-in-home-care-corporation",
+  "https://socialservices.alamedacountyca.gov/ex/our-services/Seniors-and-Disabled/Area-Agency-on-Aging/services-and-resources/tabs/Case-management",
+  "https://www.seniorhelpers.com/ca/pleasanton/services/personal-care/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "80ba71d347fcdfe75de95f7285b93642eba54cb189c58b90b7d0ea7f436e3759",
+ "answer_chars": 2009,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

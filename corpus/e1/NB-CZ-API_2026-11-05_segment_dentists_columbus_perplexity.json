@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_dentists_columbus_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: dentists, Columbus",
+ "niche": "dentists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Columbus Ohio for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0f4e29ab-9f47-4f69-a275-b5276459c321",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0009,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00461
+   },
+   "input_tokens": 4820,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4273,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 359,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5179
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Stoner Periodontic & Implant Specialists",
+  "Implant & Oral Surgery of Columbus",
+  "Stoner Periodontic",
+  "Implant Specialists",
+  "Upper Arlington",
+  "Oral Surgery of Columbus",
+  "Gahanna and Worthington",
+  "American Academy of Periodontology"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://columbusimplantclinic.com/",
+  "https://www.dentistsranked.com/dental-services/dental-implants-columbus-oh",
+  "https://www.affordabledentures.com/locations/oh/east-columbus",
+  "https://ioscolumbus.com/reviews/",
+  "https://www.toprateddentist.com/dentists/columbus-oh/dental-implants",
+  "https://www.perio.org/for-patients/find-a-periodontist/advanced-search/",
+  "https://ioscolumbus.com/",
+  "https://www.dentistsranked.com/dentists/columbus-oh",
+  "https://dental.me/oh/columbus/",
+  "https://health.usnews.com/dentists/prosthodontists/ohio/canal-winchester",
+  "https://dentalimplantdirectory.com/cities/columbus-oh",
+  "https://www.realself.com/find/Ohio/Columbus/Dental-Implants",
+  "https://www.bbb.org/us/oh/blacklick/category/dental-implants",
+  "https://www.perio.org/for-patients/find-a-periodontist/",
+  "https://dental.me/oh/columbus/endodontists/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "581d42827a80b5ccf27760ee0fd2f634630945eb29546b29ca219dce20296db4",
+ "answer_chars": 1292,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

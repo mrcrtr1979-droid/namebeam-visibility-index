@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-05_segment_title_companies_miami_perplexity",
+ "date_utc": "2026-11-05",
+ "business": "SEGMENT: title companies, Miami",
+ "niche": "title companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Miami FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e1c2077b-0328-45c9-9612-215d21e27a0d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00063,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00422
+   },
+   "input_tokens": 4328,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3781,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 251,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4579
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Key Title & Escrow",
+  "Farshchian Law, P.A",
+  "Key Title",
+  "Farshchian Law"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.libertytitle.us/",
+  "https://jfrealestatelaw.com/title-closing/miami-fl/",
+  "https://www.libertytitle.us/about",
+  "https://affiliate.miamirealtors.com/list/category/title-services-48",
+  "https://www.titleescrowmiami.com/about-us/",
+  "https://www.libertytitle.us/realtor",
+  "https://atlantictitlefirm.com/miami-title-company",
+  "https://www.titleescrowmiami.com/testimonials/",
+  "https://revenuebase.ai/companies/real-estate-closing-services/united-states/miami",
+  "https://nativerealty.com/native-title/",
+  "https://atlantictitlefirm.com/reviews",
+  "https://www.mapquest.com/us/florida/fifty-stars-title-and-escrow-788500740",
+  "https://www.yelp.com/biz/hemisphere-title-company-miami-lakes",
+  "https://www.titleescrowmiami.com/",
+  "https://www.bbb.org/us/fl/miami-beach/profile/title-companies/safe-title-0633-92054980"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "cd5818d5a701a72b460d339e3881776676a50e20a5968101765e6ebae02b6b8a",
+ "answer_chars": 893,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}
