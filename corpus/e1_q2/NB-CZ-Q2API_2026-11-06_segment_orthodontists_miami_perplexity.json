@@ -1,0 +1,101 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_orthodontists_miami_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: orthodontists, Miami",
+ "niche": "orthodontists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Miami. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Miami for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b37d916b-13a4-4025-8b63-408f97d51aa3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0012,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00482
+   },
+   "input_tokens": 4475,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3922,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 480,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4955
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Miami Orthodontic Specialists — Dr. Carmen Garcia-Paul",
+  "Orthodontics of South Miami",
+  "Creative Orthodontic Associates",
+  "Garcia Orthodontics",
+  "Miami Orthodontic Specialists",
+  "Dr. Carmen Garcia-Paul",
+  "Offers",
+  "Invisalign",
+  "Dr. Garcia-Paul",
+  "South Miami",
+  "Kendall. It",
+  "Dr. Carolina Guia-Lamberti",
+  "Coral Way",
+  "South Miami-Dade"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://orthodontistmiami.com/",
+  "https://orthodontistmiami.com/invisalign/",
+  "https://orthodontistmiami.com/invisalign/about-invisalign/",
+  "https://miamiorthodontistgroup.com/invisalign/",
+  "https://miamibraces.com/testimonials/",
+  "https://orthodontistmiami.com/location/miami-orthodontics/",
+  "https://orthodontistmiami.com/invisalign-in-miami-fl/",
+  "https://nationalorthodonticregistry.com/treatments/invisalign/florida/miami-fl",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/orthodontics-of-south-miami-miami-fl",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/creative-orthodontic-associates-miami-fl",
+  "https://www.linkedin.com/in/drcarmencrespi",
+  "https://www.miamiorthodontistgroup.com/reviews/",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/orthodontics-only-miami-fl",
+  "https://orthodontistmiami.com/invisalign-in-coral-gables-fl/",
+  "https://nationalorthodonticregistry.com/florida/miami-fl/orthodontists/miami-orthodontic-specialists-dr-carmen-garcia-paul-miami-fl"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2a77e3b0f4f8437f3398729c37fb3a5541e832f6fb392376d9e53a3a787b7b38",
+ "answer_chars": 1792,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

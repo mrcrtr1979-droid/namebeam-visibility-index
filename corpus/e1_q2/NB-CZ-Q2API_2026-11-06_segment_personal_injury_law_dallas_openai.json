@@ -1,0 +1,46 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_personal_injury_law_dallas_openai",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: personal injury law, Dallas",
+ "niche": "personal injury attorneys",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Dallas after a truck accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Dallas for a truck accident case?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhKOx1AIuea0DYyGxqiCM8oGslMd0",
+  "usage": {
+   "prompt_tokens": 30,
+   "completion_tokens": 952,
+   "total_tokens": 982,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dallas County"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — before I pull together a specific short list of Dallas firms and why to call each, a couple quick questions will help me pick the best matches:\n\n1. Which ZIP code or part of Dallas are you in (or is the crash elsewhere in Dallas County)?  \n2. How serious are your injuries (minor, moderate, catastrophic/permanent)?  \n3. Do you want a local boutique plaintiff firm or are you okay with a large national firm with a Dallas office?  \n4. Has anyone from an insurance company (or the truck company) contacted you yet?  \n\nIf you want immediate next steps while you decide on a lawyer:\n- Seek/continue medical treatment and keep records and bills.  \n- Preserve photos, dashcam/phone video, police report number, and witness contact info.  \n- Don’t sign releases or give recorded statements to an insurer without a lawyer.  \n- Note the truck company name, DOT number (on the truck), driver name, and license plate if you have them.  \n\nTell me the answers to those questions and I’ll return a prioritized list of specific Dallas law firms to call (with phone numbers and concise reasons to contact each).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

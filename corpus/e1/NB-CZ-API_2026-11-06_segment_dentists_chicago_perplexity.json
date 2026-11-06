@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_segment_dentists_chicago_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_46b8c100-fc25-4976-b6b3-414bfd56f0e3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0009,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 4165,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3619,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 333,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4498
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Stuart R. Schelkopf, DDS, MS, FACP",
+  "Dr. Bin Yang",
+  "Dr. Stephen D. Campbell",
+  "GoToAPro.org",
+  "Dr. Stuart R. Schelkopf",
+  "University Associates",
+  "Dentistry. His",
+  "UIC. Other Chicago-area",
+  "American College of Prosthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aedit.com/provider/stuart-schelkopf-16672",
+  "https://www.dentartchicago.com/about-us/dr-bin-yang/",
+  "https://www.prosthodontics.org/contact/",
+  "https://www.dentalprofessionals.com/meet-us/dr-bryan-jacobs/",
+  "https://www.gotoapro.org/find-a-prosthodontist/?m=50&l=rawal&sort=distance-ASC",
+  "https://www.myspecialtydentist.com/directory/profile/dr-stephen-campbell-1154534287",
+  "https://www.myspecialtydentist.com/directory/profile/dr-farhad-fayz-1134341464",
+  "https://www.prosthodontics.org/assets/1/7/ACP_Change_Your_Life_(Dentures)_Brochure_Sample.pdf",
+  "https://www.aaid.com/foundation-board",
+  "https://www.prosthodontics.org/",
+  "https://www.prosthodontics.org/find-a-dental-technician/",
+  "https://www.clearchoice.com/providers/ghadeer-thalji/1083968606/",
+  "https://1stfamilydental.com/team_categories/specialist/",
+  "https://www.linkedin.com/in/doctoranthonylavacca",
+  "https://www.gotoapro.org/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "53bace7e5b9e985b8590f42318fb3ca060be53f98a8612926c1df1903823aa52",
+ "answer_chars": 1186,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

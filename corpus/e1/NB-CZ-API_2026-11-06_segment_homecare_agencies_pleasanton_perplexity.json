@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_segment_homecare_agencies_pleasanton_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: homecare agencies, Pleasanton",
+ "niche": "home care agencies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best home care agency in Pleasanton CA for an elderly parent?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b1f073b1-3847-49a9-87c5-6b9c6b9593f2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0044
+   },
+   "input_tokens": 4542,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3992,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 304,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4846
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pacific Homecare Services",
+  "Right at Home",
+  "Senior Helpers",
+  "East Bay",
+  "Right at Home East Bay",
+  "Senior Helpers of Pleasanton",
+  "Home East Bay",
+  "Medicare-certified home health agency"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://locations.seniorshelpingseniors.com/ca/pleasanton/care-services-250.html",
+  "https://www.comforcare.com/trivalley/about-us/areas-served/pleasanton/",
+  "https://www.seniorhelpers.com/ca/pleasanton/locations/pleasanton/",
+  "https://www.seniorhelpers.com/ca/pleasanton/resources/frequently-asked-questions/",
+  "https://www.carescout.com/home-care/california/pleasanton?searchZip=94588",
+  "https://business.pleasanton.org/list/member/pacific-homecare-services-10738",
+  "https://www.rightathome.net/pleasanton/about-us/areas-served/pleasanton",
+  "https://www.amadaseniorcare.com/east-bay-senior-care//pleasanton-home-care/",
+  "https://www.caring.com/senior-care/california/pleasanton/all-seasons-homecare-94566",
+  "https://www.caring.com/senior-care/in-home-care/california/alameda-county",
+  "https://homehelpershomecare.com/danville/communities-we-serve/pleasanton-ca/",
+  "https://www.mylivingchoice.com/properties/best-care-at-home/pleasanton/california",
+  "https://www.caring.com/senior-care/california/pleasanton/caring-hearts-senior-services-pleasanton-ca",
+  "https://olera.care/home-care/california/pleasanton",
+  "https://www.comforcare.com/trivalley/about-us/areas-served/downtown-pleasanton/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "97a8ff5df24c9cfc3b668ef624767b6238891cc669029aa08e4f9fefc7100200",
+ "answer_chars": 1142,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

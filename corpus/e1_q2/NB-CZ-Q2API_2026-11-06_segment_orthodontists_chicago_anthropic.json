@@ -1,0 +1,46 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_orthodontists_chicago_anthropic",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: orthodontists, Chicago",
+ "niche": "orthodontists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Chicago. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Chicago for braces or Invisalign?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_rwkza3niwuuwy7lghz66hubbs52wyl3zuxesycuhsbeoimm3v55a",
+  "usage": {
+   "input_tokens": 31,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 261,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Finding qualified options",
+  "Invisalign",
+  "American Association of Orthodontists"
+ ],
+ "engine_stated_criteria": [
+  "What to evaluate when you call"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can't recommend specific orthodontists since I don't have current, verified information about individual practitioners in Chicago.\n\nHere's what I'd suggest instead:\n\n**Finding qualified options:**\n- Check your dental insurance provider's directory\n- Ask your dentist for referrals (they know local practitioners)\n- Search the American Association of Orthodontists (AAO) website for verified members\n- Read recent Google/Yelp reviews, focusing on treatment outcomes and office experience\n- Verify credentials and specialization\n\n**What to evaluate when you call:**\n- Do they offer both braces and Invisalign?\n- What's their experience with your specific needs?\n- Consultation fees and payment plans\n- Treatment timeline estimates\n- Before/after photos of similar cases\n\n**Questions to ask:**\n- Are they board-certified?\n- How many cases like yours have they treated?\n- What's their approach to your particular situation?\n\nMost practices offer free or low-cost consultations, so getting 2-3 opinions is reasonable and helps you compare.\n\nIs there a specific concern (cost, treatment speed, aesthetics) that's most important to you? That might help narrow your search criteria.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

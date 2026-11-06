@@ -1,0 +1,75 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_dentists_chicago_gemini",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Chicago. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "EzXuapTGCOfZ_PUPqeS5qQI",
+  "usage": {
+   "promptTokenCount": 19,
+   "candidatesTokenCount": 1015,
+   "totalTokenCount": 1034,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 19
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Downtown Dental Chicago (Dr. Withage & Team)",
+  "Mid-Pointe Dental Care",
+  "Waterman Laser & Cosmetic Dentistry",
+  "Complex Cases",
+  "Prosthodontists",
+  "Dr. Peter Koukos",
+  "Dr. Michael Stohle",
+  "Gold Coast",
+  "Near North Side",
+  "Dr. Koukos",
+  "Water Tower Dental Care",
+  "Dr. Ania Kawryza",
+  "Dr. Graham Farber",
+  "Magnificent Mile",
+  "Bone Grafting",
+  "Oral Surgeons",
+  "Downtown Dental Chicago",
+  "Dr. Withage",
+  "Illinois Center for Jaw",
+  "Facial Surgery",
+  "Local Oral Surgery Groups",
+  "Multi-Specialty Care",
+  "Multiple Chicagoland",
+  "Waterman Laser",
+  "Cosmetic Dentistry",
+  "River North",
+  "Dr. Waterman",
+  "Ask When You Call These Practices"
+ ],
+ "engine_stated_criteria": [
+  "\"What 3D imaging technology do you use for placement?\"",
+  "\"Is the initial consultation fee applied toward the cost of the treatment?\""
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Finding the right dental practice for a dental implant in Chicago depends heavily on whether you need a **straightforward single-tooth replacement**, **full-mouth restoration (All-on-4)**, or **complex bone grafting**. \n\nTo give you a targeted list, Chicago dentistry generally falls into two categories for implants: **high-end specialized prosthodontic/periodontic practices** (best for complex cases and aesthetics) and **multi-specialty surgical groups** (often efficient and cost-effective).\n\nHere are specific, highly regarded dental practices in Chicago known for implant dentistry, categorized by their strengths:\n\n---\n\n### 1. For High-End Esthetics & Complex Cases (Prosthodontists)\n*Prosthodontists are dental specialists who have 3 additional years of training specifically in the restoration and replacement of teeth. If you are doing implants in the front of your mouth where aesthetics are critical, start here.*\n\n* **Chicago Center for Cosmetic and Implant Dentistry (Dr. Peter Koukos / Dr. Michael Stohle)**\n  * **Location:** Gold Coast / Near North Side\n  * **Why call them:** They offer a true team approach with both a surgical specialist and a restorative specialist under one roof. Dr. Stohle is an oral surgeon with decades of experience, and Dr. Koukos specializes in the aesthetic restoration. It is a premier destination if you want seamless coordination between the placement and the crown.\n* **Water Tower Dental Care (Dr. Ania Kawryza & Dr. Graham Farber)**\n  * **Location:** Magnificent Mile\n  * **Why call them:** Known for leveraging top-tier technology (like 3D cone-beam CT imaging and digital scanning) for precise implant placement. They have an exceptional reputation for patient comfort and natural-looking restorations in the heart of the city.\n\n### 2. For Surgical Precision & Bone Grafting (Periodontists & Oral Surgeons)\n*If you have been told you \"don't have enough bone for an implant\" or need sinus lifts/grafted bone, you should consult a periodontist (gum and bone specialist) or oral surgeon.*\n\n* **Downtown Dental Chicago (Dr. Withage & Team)**\n  * **Location:** Loop\n  * **Why call them:** Highly rated for downtown professionals, they handle the entire process efficiently and work with top-tier local specialists when advanced bone grafting is required. They are known for transparent pricing and flexible scheduling.\n* **Illinois Center for Jaw & Facial Surgery / Local Oral Surgery Groups**\n  * **Why call them:** For patients requiring multiple implants, full-arch restoration, or general anesthesia/sedation during surgery, visiting a dedicated oral and maxillofacial surgeon is often safest. (Many general dentists will actually refer out to standalone oral surgeons for the placement phase).\n\n### 3. For Comprehensive, Multi-Specialty Care (Efficient & Streamlined)\n*If you want the surgeon, the restorative dentist, and the lab technicians communicating in the exact same building to save time.*\n\n* **Mid-Pointe Dental Care**\n  * **Location:** Chicago (Multiple Chicagoland locations)\n  * **Why call them:** They utilize advanced 3D guided implant surgery, which reduces recovery time and increases precision. They are a great mid-tier option if you want modern technology without paying boutique Gold Coast prices.\n* **Waterman Laser & Cosmetic Dentistry**\n  * **Location:** River North\n  * **Why call them:** Dr. Waterman uses advanced laser dentistry which can sometimes minimize bleeding and healing times for certain periodontal and implant-adjacent procedures. \n\n---\n\n### Key Questions to Ask When You Call These Practices:\n\nWhen you call for a consultation, do not just ask \"How much is an implant?\" (An implant is a three-part process: the titanium post, the abutment, and the crown). Instead, ask these specific questions:\n\n1. **\"Do you place the implant *and* restore the crown in-house, or will I be referred to a separate surgeon?\"** *(In-house coordination is usually smoother, but specialists often do a better job with complex bone work).*\n2. **\"What 3D imaging technology do you use for placement?\"** *(Look for practices that use CBCT scans and guided surgery templates for safety).*\n3. **\"Is the initial consultation fee applied toward the cost of the treatment?\"** *(Many Chicago offices charge $100–$250 for an implant consultation, though some offer it free).*\n4. **\"Can I see before-and-after photos of actual patients *you* have treated for this specific procedure?\"**\n\n**Recommendation:** Pick **two** of the practices above, schedule a consultation with each to compare their treatment plans, timelines, and bedside manner, and then decide which team you trust most with your smile.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

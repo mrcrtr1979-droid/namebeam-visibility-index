@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_segment_oil_change_pleasanton_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4ebcb0b8-5e1f-4e10-9a46-4fa22828b847",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00054,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00422
+   },
+   "input_tokens": 4705,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4156,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 217,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4922
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "SpeeDee Oil Change & Auto Service",
+  "Big Brand Tire & Service",
+  "SpeeDee Oil Change",
+  "Auto Service",
+  "Big Brand Tire",
+  "SpeeDee"
+ ],
+ "engine_stated_criteria": [
+  "15–30 minutes once your car is in the bay"
+ ],
+ "sources_cited": [
+  "https://www.yelp.com/biz/speedee-oil-change-and-auto-service-pleasanton",
+  "https://www.yelp.com/biz/ricks-performance-pleasanton",
+  "https://www.yelp.com/biz/roesbery-car-care-pleasanton-2",
+  "https://www.yelp.com/biz/big-o-tires-pleasanton",
+  "https://www.yelp.com/biz/tire-choice-auto-service-centers-pleasanton-2",
+  "https://www.yelp.com/biz/autotron-service-center-pleasanton-3",
+  "https://www.yelp.com/biz/eds-automotive-and-light-truck-repair-pleasanton",
+  "https://www.yelp.com/biz/east-bay-mini-service-center-pleasanton",
+  "https://www.speedeeoil.com/locations/ca/pleasanton/44-mission-dr/",
+  "https://www.yelp.com/biz/superior-autowerks-pleasanton",
+  "https://locations.thetirechoice.com/ca/pleasanton/4216-rosewood-rd",
+  "https://www.yelp.com/biz/mechanic-king-auto-repair-pleasanton-3",
+  "https://www.bigbrandtire.com/tire-shop/pleasanton-ca/oil-change",
+  "https://www.yelp.com/biz/m-and-n-auto-repair-pleasanton-2",
+  "https://www.yelp.com/biz/seever-and-sons-tire-pleasanton?start=240"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "b92ad0e06fae3a340f372df7c7bdf3715b75746955f40ee6565e53a97485ca9c",
+ "answer_chars": 574,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

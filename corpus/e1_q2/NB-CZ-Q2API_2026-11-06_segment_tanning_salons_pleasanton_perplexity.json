@@ -1,0 +1,99 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_tanning_salons_pleasanton_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: tanning salons, Pleasanton",
+ "niche": "tanning salons",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to try a tanning salon in Pleasanton. Which specific salons should I call, and why?",
+ "q1_prompt_text": "What is the best tanning salon in Pleasanton CA?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d6df0494-44f8-4c9c-97c0-c316ae5bc2ff",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0011,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00491
+   },
+   "input_tokens": 5251,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4696,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 439,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5690
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Secretly Sunless — (510) 331-3033",
+  "East Bay Tanning — (925) 264-9446",
+  "S.H.E.O. Salon / PleasanTans — (925) 846-8267",
+  "Secretly Sunless",
+  "East Bay Tanning",
+  "Offers",
+  "S.H.E.O. Salon",
+  "PleasanTans",
+  "BGBG Skin",
+  "Spray Soleil",
+  "UV tanning beds",
+  "East Bay"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://local.yahoo.com/info-168943493-the-golden-girl-pleasanton/",
+  "https://www.yelp.com/biz/east-bay-tanning-pleasanton",
+  "https://www.groupon.com/biz/pleasanton-ca/east-bay-taninng",
+  "https://www.groupon.com/biz/pleasanton-ca/s-h-e-o-salon",
+  "https://www.yelp.com/biz/bella-bronze-mobile-airbrush-tanning-pleasanton-2",
+  "https://www.bbb.org/us/ca/santa-clara/category/tanning-salons",
+  "https://www.bbb.org/us/ca/fairview/category/tanning-salons",
+  "https://freshchalk.com/b/pleasanton-ca/tanning",
+  "https://www.linkedin.com/company/nor-cal-tans",
+  "https://reviews.birdeye.com/d/estheticians/pleasanton-ca/",
+  "https://www.mapquest.com/us/california/secretly-sunless-453974070",
+  "https://reviews.birdeye.com/d/tanning/pleasanton-ca/",
+  "https://www.yellowpages.com/fremont-ca/tanning-salons",
+  "https://secretlysunlesstans.com/",
+  "https://www.vagaro.com/listings/tanning/pleasanton--ca"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "df5075928abdfb8b46d05335b561be48a1ddc0855e6d359c480838baf1519aeb",
+ "answer_chars": 1546,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

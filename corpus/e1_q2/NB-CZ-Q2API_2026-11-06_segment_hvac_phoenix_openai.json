@@ -1,0 +1,54 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_hvac_phoenix_openai",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhKo3KWoEyZ0MD4WeAm9FsOIGRlD0",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1781,
+   "total_tokens": 1806,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Phoenix ZIP",
+  "Rescue Rooter",
+  "One Hour Heating",
+  "Phoenix HVAC",
+  "Maricopa County",
+  "ZIP",
+  "In Phoenix",
+  "In Arizona",
+  "One Hour"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give much better, specific names if you tell me your Phoenix ZIP code (or neighborhood) and whether this is an emergency (no cooling right now). Without that, here’s a reliable, safe plan plus the kinds of specific companies you should call and why.\n\nIf you want immediate help (same-day / no-cool): call three places right away\n- The manufacturer-authorized dealer (if your system is still under warranty). Why: they can repair under warranty and will know that model best. Look on the sticker on the air handler or condenser for the installer or manufacturer contact.\n- A 24/7 emergency national/local chain (examples that operate in Phoenix: ARS/Rescue Rooter or One Hour Heating & Air). Why: they offer same-day or after-hours service, flat-rate diagnostics, and can get to you fast when it’s extremely hot.\n- A highly rated independent Phoenix HVAC company with good local reviews and ROC licensing. Why: independents often provide better follow-up service, competitive pricing, and local knowledge (Phoenix climate, common system issues, rebate and permit handling).\n\nWhy those three: combination of warranty coverage, emergency response, and a local specialist gives you the best chance of quick, reliable, and cost-effective repair.\n\nIf you want me to name 3–5 specific Phoenix companies I recommend calling, send your ZIP code. I’ll pick a mix of:\n- the manufacturer-authorized dealer near you,\n- one emergency/24-hour chain with a Phoenix branch,\n- 1–2 top-rated, NATE-certified local shops (with ROC license numbers and a short reason for each).\n\nWhat to check and ask when you call (do this by phone or text before scheduling)\n- Confirm they’re licensed in Arizona (ask for ROC number) and insured.\n- Ask whether techs are NATE-certified and will arrive with diagnostic equipment and common replacement parts.\n- Ask for a flat diagnostic fee and whether it’s waived if they do the repair.\n- Ask about parts and labor warranties (length and what’s covered).\n- Ask whether they pull permits when required and handle HOA paperwork if needed.\n- Ask for an estimated response window and whether same-day service is available.\n- Get a written estimate (itemized: parts, labor, fees) before work starts.\n\nImmediate steps you can take while you wait\n- Check circuit breaker and thermostat batteries.\n- Change or look at the return air filter; a clogged filter can reduce airflow.\n- Turn the system off for 5 minutes then back on (some systems will reset).\n- Check outdoor unit for debris and ensure it has 2–3 feet of clearance.\n- If the unit is running but warm, turn fan to ON to circulate air and open a few interior doors—helps reduce heat buildup.\n- If there’s ice on the refrigerant lines or coils, turn the system off and keep fans on; call a tech (do not chip ice).\n\nWhy local Phoenix experience matters\n- Phoenix summers create unique problems (extreme heat, low humidity, dust/particle buildup, frequent condenser failures).\n- Local techs know AC sizing for desert homes, evaporative cooling vs packaged systems, and how to access rebates from SRP, APS, or city programs.\n- They’ll be familiar with code/permit practices for Maricopa County cities.\n\nIf you want those specific company names and contact details, tell me:\n- ZIP code or neighborhood in Phoenix\n- Whether it’s an emergency (no cooling now)\n- Make/model/year of your outdoor unit if you have it (or the sticker photo)\n\nI’ll return a short, prioritized list of 3–5 companies to call with reasons and what to ask each one.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

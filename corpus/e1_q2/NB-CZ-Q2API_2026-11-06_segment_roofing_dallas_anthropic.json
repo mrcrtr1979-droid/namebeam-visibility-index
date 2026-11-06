@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_roofing_dallas_anthropic",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need my roof replaced in Dallas. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_c7mfgfkvxgka2dmop42yjs3v4e3rvnxg4hioc6bhvkqgxdscyqfq",
+  "usage": {
+   "input_tokens": 28,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 297,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dallas-specific considerations",
+  "Owens Corning",
+  "Verify Licensing and Insurance"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest starting with these approaches rather than specific company names:\n\n**How to find good options:**\n- Get 3-5 quotes from local roofers (compare pricing and warranties)\n- Check Google Reviews, BBB ratings, and Yelp for recent feedback\n- Ask neighbors or your realtor for recommendations\n- Verify licensing and insurance before hiring\n\n**What matters more than the company name:**\n- GAF or Owens Corning shingles (quality materials common in Dallas)\n- Proper ventilation (critical in Texas heat)\n- 10+ year workmanship warranty\n- Licensed, insured, and bonded in Texas\n- References from recent Dallas jobs\n\n**Dallas-specific considerations:**\n- Hail damage is common—check if they handle insurance claims\n- Heat/UV resistance matters for longevity\n- Proper attic ventilation prevents premature failure\n\n**Red flags to avoid:**\n- Door-to-door solicitors after storms\n- Pressure to decide immediately\n- Prices significantly lower than others\n\nRather than naming specific companies (which change, get bought out, or have inconsistent service), focusing on these criteria will help you find a reliable roofer. Local Facebook groups or Nextdoor often have current recommendations from Dallas residents.\n\nWhat's prompting the replacement—age, damage, or something else?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,105 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Phoenix. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_139fac65-510e-4ee2-b0c8-b3d5dff1b885",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00084,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00178,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00526
+   },
+   "input_tokens": 3917,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3364,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 710,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4627
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Andrew Serrano — Serrano Orthodontics",
+  "Dr. Kenneth E. Danyluk — Team Orthodontics",
+  "Dr. John C. Budd",
+  "Dr. Matthew D. Dunn",
+  "Dr. Raquel Capote",
+  "Dr. Alyssa Levin",
+  "My suggested first calls",
+  "American Board of Orthodontics",
+  "Invisalign. Board",
+  "Dr. Andrew Serrano",
+  "Serrano Orthodontics",
+  "ABO-listed",
+  "Invisalign",
+  "Dr. Kenneth E. Danyluk",
+  "Team Orthodontics",
+  "Central Phoenix",
+  "North Phoenix",
+  "Board Certification"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-jae-hyun-park/",
+  "https://aaoinfo.org/locator/dr-raquel-capote-2/",
+  "https://aaoinfo.org/locator/dr-kenneth-e-danyluk/",
+  "https://aaoinfo.org/locator/dr-john-c-budd-2/",
+  "https://aaoinfo.org/locator/dr-matthew-d-dunn/",
+  "https://aaoinfo.org/locator/dr-rustin-w-jones/",
+  "https://aaoinfo.org/locator/dr-michael-adam-feinberg/",
+  "https://aaoinfo.org/locator/dr-spencer-mecham-2/",
+  "https://aaoinfo.org/locator/dr-c-chris-murphy-2/",
+  "https://aaoinfo.org/locator/dr-alyssa-levin/",
+  "https://aaoinfo.org/locator/dr-dawn-pruzansky/",
+  "https://aaoinfo.org/locator/dr-andrew-serrano/",
+  "https://serranoorthodontics.com/phoenix-invisalign/",
+  "https://teamorthodontics.com/",
+  "https://aaoinfo.org/locator/dr-won-woo-park/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "225e233260156663854d29a4a02a2a4895ee25225f2acefe895b7ea4ecbf32dd",
+ "answer_chars": 2705,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

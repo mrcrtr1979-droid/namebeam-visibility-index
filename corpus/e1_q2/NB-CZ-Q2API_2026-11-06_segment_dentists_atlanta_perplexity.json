@@ -1,0 +1,105 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Atlanta. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7df3b98c-dc9a-41e5-95d6-09465a053ad5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0019,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00564
+   },
+   "input_tokens": 4961,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4408,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 760,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5721
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Goldstein Dental Center",
+  "Atlanta Oral & Facial Surgery",
+  "ClearChoice Dental Implant Center Atlanta",
+  "Georgia Prosthodontics Smile Specialists",
+  "Dental Implant and Aesthetic Specialists of Atlanta",
+  "Atlanta-area",
+  "Buckhead",
+  "Dr. Cary Goldstein",
+  "Roswell Rd NE",
+  "Implant",
+  "Atlanta Oral",
+  "Facial Surgery",
+  "Piedmont Rd NE",
+  "Peachtree Rd NE",
+  "Buford Hwy NE",
+  "Georgia Prosthodontics"
+ ],
+ "engine_stated_criteria": [
+  "When you call, ask"
+ ],
+ "sources_cited": [
+  "https://atlanta.com/dental-services/oral-surgeons/pumphrey-periodontics-dental-implant-therapy",
+  "https://www.atlantaoralsurgery.com/patient-services/dental-implants/dental-implant-procedure/",
+  "https://aedit.com/provider/herman-donatelli-2037",
+  "https://www.gradyhealth.org/doctors/ravi-chandran/",
+  "https://www.clearchoice.com/locations/ga/atlanta/3535-piedmont-rd-ne-bldg-14/",
+  "https://goldsteinonline.com/service/restorative-dentistry/dental-implants/",
+  "https://aedit.com/provider/carlos-castro-2044",
+  "https://www.castleconnolly.com/top-dentists/hal-n-arnold-prosthodontics-cc397245",
+  "https://www.drbrettlangston.com/full-mouth-reconstruction/",
+  "https://www.dentistsranked.com/dental-clinic/atlanta-ga/atlanta-implants-and-periodontics-dr-n-gail-mclaurin-dmd",
+  "https://newsmileatlanta.com/",
+  "https://www.drbrettlangston.com/dental-implants/",
+  "https://www.castleconnolly.com/top-dentists/carlos-castro-prosthodontics-cc332832",
+  "https://www.atlantaoralsurgery.com/contact-us/locations/dunwoody/",
+  "https://www.linkedin.com/in/drdavidzelby"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "c9d594df0f481ab307c8d4799a4feb742a7e85f5bd83c25a5ba4b7d6dd32f406",
+ "answer_chars": 2913,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

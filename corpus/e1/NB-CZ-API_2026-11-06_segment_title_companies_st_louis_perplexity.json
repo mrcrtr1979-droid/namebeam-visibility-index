@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_segment_title_companies_st_louis_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: title companies, St. Louis",
+ "niche": "title companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Louis MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ce1dbf43-6c57-48f0-aa8d-0d943981b6fc",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00068,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00439
+   },
+   "input_tokens": 4820,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4271,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 270,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5090
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Investors Title Company",
+  "Title Partners Agency",
+  "Old Republic Title",
+  "Clear Title Group",
+  "St. Louis-area",
+  "Investors Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.investors-title.com/",
+  "https://www.cleartitlenow.com/residential",
+  "https://www.oldrepublictitle.com/missouri/",
+  "https://stlsportspage.com/2026/10/29/title-partners-joins-stl-sports-page-food-drive-with-nine-drop-off-points/",
+  "https://www.us-title.com/",
+  "https://www.housesoldeasy.com/investors-title",
+  "http://www.linkedin.com/company/integrity-title-solutions-llc",
+  "https://www.linkedin.com/company/true-title-company-llc",
+  "https://www.linkedin.com/company/investors-title-inc",
+  "https://www.mapquest.com/us/missouri/elite-title-company-778230871",
+  "https://www.mapquest.com/us/missouri/investors-title-27045827",
+  "https://www.mapquest.com/us/missouri/title-partners-agency-272327924",
+  "https://www.zoominfo.com/c/true-title-company-llc/107381079",
+  "https://www.linkedin.com/company/escrow-realty-llc",
+  "http://www.linkedin.com/company/title-partners-agency-llc"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "96b920005e6e7e227c8a30847c6b039e687d1c402640ca7de7837967a9516de7",
+ "answer_chars": 903,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

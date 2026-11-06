@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_segment_real_estate_agents_st_charles_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: real estate agents, St. Charles",
+ "niche": "real estate agents",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Charles MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a5e5b804-d792-493d-9981-0945fd3cc9e3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00095,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00434
+   },
+   "input_tokens": 4362,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3811,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 299,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4661
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Chad Wilson of Keller Williams Realty West",
+  "Lucia Roberts of Coldwell Banker Gundaker",
+  "St. Charles-area",
+  "Lucia Roberts"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.homelight.com/st-charles-mo/top-real-estate-agents",
+  "https://www.homelight.com/st-charles-county-mo/top-real-estate-agents",
+  "https://www.zillow.com/profile/JeremySchneiderRE",
+  "https://www.zillow.com/profile/SoldByTrudy",
+  "https://www.homelight.com/saint-charles-mo/top-real-estate-agents",
+  "https://realestate.usnews.com/agents/missouri/st-charles",
+  "https://www.homelight.com/agents/merle-schneider-mo-1999029554",
+  "https://www.zillow.com/profile/Tombruening",
+  "https://www.zillow.com/profile/charitytherealtor4",
+  "https://www.zillow.com/profile/CEPSTLAH",
+  "https://www.homelight.com/agents/demetria-veal-williams-mo-2008002364",
+  "https://www.top10reagents.com/mo/saint-charles",
+  "https://www.zillow.com/profile/GrantHickman",
+  "https://www.redfin.com/real-estate-agents/jmg-midwest/reviews",
+  "https://www.zillow.com/profile/cjhorst"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2fbf840c59494fc1994329ecfaced206a9ac02daaee7fffca19ad8ff5d6e1e60",
+ "answer_chars": 1038,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

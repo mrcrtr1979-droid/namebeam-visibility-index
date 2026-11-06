@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_segment_orthodontists_chicago_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: orthodontists, Chicago",
+ "niche": "orthodontists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Chicago for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e4ed35b1-6044-4e33-a8a6-60407a342b98",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00091,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00426
+   },
+   "input_tokens": 4170,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3623,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 285,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4455
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Isaac Yue",
+  "Dr. Emilia Taneva",
+  "UIC College of Dentistry Orthodontics",
+  "Dr. Paul Wine / Chicago Orthodontics",
+  "Board-certified",
+  "Invisalign Premier Provider",
+  "Invisalign",
+  "Dr. Paul Wine",
+  "Chicago Orthodontics",
+  "Castle Connolly"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://midwestorthodontics.com/",
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/orthodontics/",
+  "https://atooth.com/orthodontics/",
+  "https://dremiliataneva.com/orthodontic-treatment/clear-aligners/",
+  "https://www.linkedin.com/in/emtaneva",
+  "https://atooth.com/locations/downtown-chicago/",
+  "https://www.zocdoc.com/dentist/isaac-yue-dmd-ms-551574",
+  "https://www.castleconnolly.com/top-dentists/paul-wine-orthodontics-cc302932",
+  "https://dentistry.uic.edu/orthodontics/",
+  "https://www.abcdentalchicago.com/",
+  "https://trustanalytica.org/us/il/chicago/best-orthodontists",
+  "https://atooth.com/locations/chicago-midway-archer/",
+  "https://www.zocdoc.com/orthodontists/chicago-210499pm",
+  "https://nationalorthodonticregistry.com/illinois/chicago/orthodontists",
+  "https://nationalorthodonticregistry.com/illinois/chicago-il/orthodontists/orthodontic-experts-chicago-2235-w-cermak"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "b247303e090d7145673fdc91b6826e297b863a2ad49c538ef8b6ac488209666b",
+ "answer_chars": 1053,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

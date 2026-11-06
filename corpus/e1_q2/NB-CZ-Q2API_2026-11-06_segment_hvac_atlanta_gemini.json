@@ -1,0 +1,70 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_hvac_atlanta_gemini",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a new air conditioner installed in Atlanta. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "szfuar-eNN2fqtsP5piKmAk",
+  "usage": {
+   "promptTokenCount": 21,
+   "candidatesTokenCount": 911,
+   "totalTokenCount": 932,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 21
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Conditioned Air Systems",
+  "Cool Air Design",
+  "True Blue Heating and Cooling",
+  "R.S. Andrews",
+  "Conditioned Air (various regional branches)",
+  "Atlanta-area HVAC",
+  "High-Reliability Choice",
+  "Homeowners",
+  "Good Balance of Scale and Service",
+  "North Metro Atlanta",
+  "True Blue",
+  "Conditioned Air",
+  "Atlanta. While",
+  "Crucial Questions",
+  "Ask When You Call Them",
+  "DeKalb",
+  "NATE-certified",
+  "NATE",
+  "Manual J Load Calculation",
+  "Carrier",
+  "Trane",
+  "Metro Atlanta",
+  "NATE certification"
+ ],
+ "engine_stated_criteria": [
+  "\"Will you perform a Manual J load calculation?\"",
+  "\"Are your technicians NATE-certified?\""
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Replacing an air conditioner in Atlanta requires a contractor who understands the brutal humidity, high summer heat, and the specific permitting and sizing requirements for the region. Because the Atlanta market has everything from small independent operators to massive private-equity-backed chains, choosing the right company comes down to balancing reliability, guarantees, and pricing.\n\nHere are the specific Atlanta-area HVAC companies you should call, categorized by their strengths, followed by the exact criteria you should use to vet them.\n\n---\n\n### 1. The Premium / High-Reliability Choice\n**Conditioned Air Systems**\n* **Why call them:** Based in Gainesville but serving the greater metro Atlanta area, they are known for exceptional technical expertise and customer service. They focus heavily on proper load calculations (Manual J) rather than just \"swapping out the old box,\" which is critical for Atlanta’s humidity control.\n* **Best for:** Homeowners who want the job done right the first time, value top-tier communication, and want strong workmanship warranties.\n\n### 2. The Reputable Large Independents (Good Balance of Scale and Service)\n**Cool Air Design** \n* **Why call them:** A well-respected local company serving North Metro Atlanta (Marietta, Alpharetta, Roswell). They have built a strong reputation for honest diagnostics and fair pricing, often undercutting the massive corporate giants while offering the same (or better) equipment options.\n* **Best for:** Homeowners looking for a fair price without high-pressure sales tactics from a national brand.\n\n**True Blue Heating and Cooling**\n* **Why call them:** Serving the broader Atlanta metro, True Blue has gained a strong local following for transparency and straightforward pricing. They are heavily certified (including NATE certification) and frequently win local consumer choice awards.\n* **Best for:** Modern, tech-forward scheduling and transparent, upfront pricing.\n\n### 3. The Established Corporate Heavyweights\n**R.S. Andrews** or **Conditioned Air (various regional branches)**\n* **Why call them:** These are massive operations in Atlanta. While you may pay a slight corporate premium, the advantages are availability (often 24/7 emergency service), massive parts inventories, structured financing options, and long-term business stability (they will be around to honor their warranties 10 years from now).\n* **Best for:** Homeowners who need immediate financing, fast turnaround times, and prefer a large company with a formal customer service department.\n\n---\n\n### Crucial Questions to Ask When You Call Them\n\nRegardless of who you call from the list above, do not just ask for \"a price on a 3-ton unit.\" Atlanta’s humidity requires precise installation. Ask these four specific questions during the consultation:\n\n1. **\"Will you perform a Manual J load calculation?\"** \n   * *Why it matters:* Many contractors just replace your old AC with the exact same size. If your home has been insulated, added windows, or if the original unit was oversized/undersized, a Manual J calculation ensures your new system actually removes humidity properly.\n2. **\"Are your technicians NATE-certified?\"**\n   * *Why it matters:* North American Technician Excellence (NATE) certification is the gold standard in the industry. An improperly installed high-efficiency unit will waste money and break down prematurely.\n3. **\"Who handles the county permit?\"**\n   * *Why it matters:* Most metro Atlanta counties (Fulton, Cobb, Gwinnett, DeKalb, etc.) legally require a permit for HVAC replacement. Shady contractors skip this to save money; reputable ones include it and schedule the required county inspection.\n4. **\"What does the labor warranty look like on top of the manufacturer parts warranty?\"**\n   * *Why it matters:* Manufacturers usually cover parts for 10 years, but labor is often only covered by the installer for 1 year unless you pay for (or negotiate) an extended labor warranty. \n\n### My Recommendation on How to Proceed:\nCall **two** companies from this list—one medium-sized local independent (like Cool Air Design or True Blue) and one larger operator (like R.S. Andrews)—to get competing quotes. Compare not just the bottom-line price, but the SEER ratings proposed, the specific brands (Trane, Carrier, Lennox, etc.), and the included warranties.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

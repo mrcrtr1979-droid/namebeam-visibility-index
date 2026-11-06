@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_short_term_rental_branson_anthropic",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_k2ztjquxa7oa7hwisy2zmzy7gdptt6key5oyai3yfucffltbavga",
+  "usage": {
+   "input_tokens": 31,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 290,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Major platforms to search",
+  "Location preference",
+  "Group size & budget",
+  "Season",
+  "Better questions to ask when calling",
+  "Booking.com",
+  "BransonVacationRentals.com",
+  "Table Rock",
+  "Lake",
+  "Near Silver Dollar City"
+ ],
+ "engine_stated_criteria": [
+  "Why this matters for your search"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest starting with these general approaches rather than specific companies, since the best option depends on your needs:\n\n**Major platforms to search:**\n- Airbnb, VRBO, and Booking.com (widest selection, user reviews)\n- Branson-specific sites like BransonVacationRentals.com or local chamber of commerce listings\n\n**Why this matters for your search:**\n- **Location preference** - Do you want near Silver Dollar City, Table Rock Lake, or downtown?\n- **Group size & budget** - This narrows options significantly\n- **Amenities** - Hot tub, kitchen quality, pet-friendly, etc.\n- **Season** - Peak times (summer, holidays) have different availability\n\n**Better questions to ask when calling:**\n- Cancellation policies\n- What's actually included vs. extra fees\n- Recent guest reviews\n- Direct communication with owners (often more flexible)\n\n**Pro tip:** Compare the same property across multiple platforms—prices and availability sometimes differ.\n\nRather than recommending specific companies, I'd suggest browsing 2-3 platforms with your dates/preferences, then calling properties that match what you want. This gives you better leverage and lets you ask detailed questions.\n\nWhat's your approximate group size and budget? That would help narrow down what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

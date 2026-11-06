@@ -1,0 +1,97 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_cd399503-8777-4f94-9021-c5d7cd0ebf8a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00091,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00117,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00472
+   },
+   "input_tokens": 4188,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3632,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 469,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4657
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "My default recommendation: choose a hotel",
+  "Lodge of the Ozarks",
+  "Hilton Promenade at Branson Landing",
+  "Another well-rated Strip option",
+  "Hotel Grand Victorian",
+  "Quick rule",
+  "Hilton Promenade",
+  "Indian Point",
+  "Branson West",
+  "Table Rock",
+  "Landing",
+  "The Landing",
+  "My default recommendation"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.airbnb.com/branson-mo/stays",
+  "https://www.airbnb.com/branson-mo/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays/lakehouses",
+  "https://www.airbnb.com/table-rock-lake/stays/cabins",
+  "https://www.airbnb.com/missouri-united-states/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays/resorts",
+  "https://www.airbnb.com/branson-mo/stays/lake-access",
+  "https://www.hotels.com/de1746716-ty2/family-friendly-hotels-near-highway-76-strip-branson-united-states-of-america/",
+  "https://www.airbnb.com/missouri-united-states/stays/lake-access",
+  "https://www.airbnb.com/lampe-mo/stays/cabins",
+  "https://www.airbnb.com/table-rock-lake/stays",
+  "https://www.hotels.com/de1644148-ty2/family-friendly-hotels-branson-and-vicinity-missouri/",
+  "https://www.airbnb.com/branson-west-mo/stays/cabins",
+  "https://www.airbnb.com/indian-point-mo/stays/cabins",
+  "https://www.airbnb.com/branson-west-mo/stays"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "f2a5c4c61c91cd6f6c691ad19f1b24f42b2471d20ed1e12d9c4a6f0b43a013ef",
+ "answer_chars": 1682,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

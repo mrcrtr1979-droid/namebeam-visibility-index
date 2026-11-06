@@ -1,0 +1,54 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_segment_str_host_tooling_openai",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhKAwdLETL8rudaCaqaNHp8NIXr9D",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1305,
+   "total_tokens": 1331,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "MarketMinder",
+  "PriceLabs",
+  "Wheelhouse",
+  "Beyond Pricing",
+  "Rentalizer",
+  "Use AirDNA",
+  "Smart Pricing",
+  "AirDNA MarketMinder",
+  "Hostaway",
+  "Use PriceLabs",
+  "Wheelhouse and Beyond Pricing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: use AirDNA (MarketMinder) to analyze markets before you buy, and use PriceLabs (or Wheelhouse/Beyond Pricing as alternatives) to set and automate nightly pricing once you list.\n\nWhy that combo?\n- AirDNA is the market-research standard for short‑term rental investors: it gives historical occupancy, ADR, RevPAR, seasonality, booking lead times, demand curves and comparable-listing breakdowns so you can model revenue, cap rates and cash flow for a prospective purchase.\n- PriceLabs is one of the most flexible dynamic‑pricing engines: deep rule customization, clear UI, many integrations (Airbnb, Vrbo, Hostaway, Guesty, Hostfully, etc.), and analytics to tweak pricing strategy. Wheelhouse and Beyond Pricing are good alternatives—Wheelhouse is very analytical and flexible; Beyond Pricing is simple and widely used.\n\nHow to use them in practice\n1. Market screening (before buying)\n   - Run AirDNA MarketMinder and Rentalizer for the neighborhood: examine ADR, occupancy, RevPAR, seasonality, peak dates/events, and top comps (unit type, bedrooms, amenities).\n   - Check booking lead times and cancellation patterns.\n   - Manually verify comps on Airbnb (amenities, photos, reviews, minimum stays).\n   - Build a conservative revenue model (use several occupancy/ADR scenarios) and include all costs (mortgage, utilities, cleaning, management fees, taxes, furnishing, vacancy buffer).\n\n2. Pricing and listing setup (pre- or post-purchase)\n   - Start with PriceLabs (or Wheelhouse/Beyond Pricing) to create a dynamic pricing plan: base price, minimum/maximum, length-of-stay discounts, last-minute/early-bird rules, event-based overrides.\n   - Link it to your calendar/PMS so prices update automatically across channels.\n   - Monitor for the first 4–8 weeks and refine rules based on actual bookings.\n\n3. Ongoing optimization\n   - Re-run AirDNA periodically to watch market shifts (new hotels/units, regulation changes).\n   - Use your pricing tool’s analytics to measure pickup, conversion, and seasonality; A/B test minimum stays, cleaning fees, and special-weekend pricing.\n   - Consider a channel manager/PMS if you scale beyond a few listings.\n\nNotes & alternatives\n- Airbnb Smart Pricing is free but less powerful and less transparent than PriceLabs/Wheelhouse.\n- If you want an all-in-one that does both research and pricing, some hosts use Wheelhouse (pricing + analytics) or Beyond Pricing, but for deep market due diligence AirDNA is more comprehensive.\n- Always validate tool outputs with manual comps and local knowledge—data models can miss new supply or local events/regulation.\n\nIf you tell me the city or neighborhood you’re considering, I can suggest which specific AirDNA metrics to focus on and a starter pricing-rule set for PriceLabs/Wheelhouse.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

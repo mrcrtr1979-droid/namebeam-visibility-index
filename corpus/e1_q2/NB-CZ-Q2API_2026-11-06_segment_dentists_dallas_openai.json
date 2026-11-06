@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_dentists_dallas_openai",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Dallas. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhKWLPlGqZy8aXaNS4keixeXF82pS",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1469,
+   "total_tokens": 1494,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AAOMS",
+  "American Academy of Periodontology",
+  "American College of Prosthodontists",
+  "Nobel Biocare",
+  "BioHorizons",
+  "Oak Lawn",
+  "North Dallas",
+  "Cone Beam CT"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need one quick detail: what part of Dallas do you want to use (ZIP code or neighborhood)? If you prefer a particular type of service (lowest cost, same‑day teeth/All‑on‑4, sedation, prosthodontist vs oral surgeon, use of a specific implant brand), tell me that too and I’ll produce a short list of specific offices to call and why each is a good fit.\n\nWhile you reply, here are the practical next steps and what I’ll use to pick specific practices for you:\n\nWhat I’ll look for when choosing practices to recommend\n- Provider type: board‑certified oral surgeons and periodontists do the surgical placement; board‑certified prosthodontists or experienced restorative dentists make the crowns/prostheses. Practices that coordinate all phases are convenient.\n- Credentials and experience: ABOMS/AAOMS for oral surgeons, American Academy of Periodontology for perio specialists, American College of Prosthodontists for prosthodontists, or Diplomate status in implant organizations.\n- Advanced diagnostics and tech: in‑office cone beam CT (CBCT), guided implant surgery, digital impressions, and CAD/CAM milling.\n- Case volume and specialization: practices that focus on implants (not general dentistry by volume) tend to have more predictable outcomes.\n- Patient feedback and before/after photos: consistent positive reviews, photos of similar cases, clear complication policy.\n- Sedation and surgical comfort options if you need them.\n- Financing/warranties and clear treatment timelines (how long from implant to crown).\n\nWhat to ask when you call (quick script)\n- “Do you place and restore implants here, or do you coordinate with another office?” (Want one coordinated team or a clear plan.)\n- “Do you take a CBCT scan in‑office?” (Essential for planning.)\n- “How many implants do you place per month and how long have you been placing implants?” (Experience.)\n- “What implant brand(s) do you use?” (Proven brands: Straumann, Nobel Biocare, Zimmer/BioHorizons, Dentsply, etc.)\n- “Will the surgeon and the restorative dentist both meet with me before treatment?” (Coordination.)\n- “Do you offer sedation? Financing? What are the estimated total costs and the timeline?” (Logistics.)\n- “Can I see before/after photos and patient references for cases like mine?” (Quality.)\n\nCommon red flags\n- No CBCT availability or unwillingness to refer for 3‑D imaging.\n- Vague answers about who will restore the crown or what brand of implant is used.\n- No clear written treatment plan, timeline, or cost estimate.\n- Extremely low price compared with market without clear explanation.\n\nIf you want, give me your ZIP code or a neighborhood (Downtown, Oak Lawn, Uptown, North Dallas, Plano, etc.) and any priorities (budget, sedation, same‑day teeth, prosthodontist) and I’ll return 4–8 named practices in the Dallas area with short reasons to call each.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

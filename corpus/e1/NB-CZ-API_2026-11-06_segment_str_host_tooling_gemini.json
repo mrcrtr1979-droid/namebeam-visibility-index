@@ -1,0 +1,66 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_segment_str_host_tooling_gemini",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "ei7uauGbNJPrz7IPhZK0mQI",
+  "usage": {
+   "promptTokenCount": 20,
+   "candidatesTokenCount": 794,
+   "totalTokenCount": 814,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 20
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "PriceLabs",
+  "Key Features for Buyers",
+  "Rentalizer",
+  "Market Minder",
+  "Pace",
+  "Key Features for Hosts",
+  "Base Price Recommendations",
+  "Minimum Stay Restrictions",
+  "Market Dashboards",
+  "Pricing Customizations",
+  "Market Before Buying",
+  "Day-to-Day Host",
+  "Property Management Software",
+  "Smart Pricing",
+  "Use",
+  "PriceLabs'",
+  "Wheelhouse",
+  "Use AirDNA",
+  "Hostaway",
+  "Use PriceLabs",
+  "Airdna's Market Minder"
+ ],
+ "engine_stated_criteria": [
+  "If you are currently shopping for a property",
+  "If you already own the property"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "When it comes to both **managing/setting nightly pricing** for an existing listing and **analyzing a market before buying**, **AirDNA** and **PriceLabs** are the undisputed industry leaders. \n\nHowever, because your request covers two distinct phases—**pre-purchase market analysis** and **day-to-day dynamic pricing**—the \"best\" tool depends on which stage you are in. \n\nHere is the breakdown of the best tools for each use case and the overall winner.\n\n---\n\n### 1. Best for Analyzing a Market Before Buying: **AirDNA**\nIf you are looking at a new city or neighborhood and trying to figure out if an investment property makes financial sense, **AirDNA** is the gold standard.\n\n*   **What it does:** It scrapes data from Airbnb and Vrbo globally to show historical performance, occupancy rates, average daily rates (ADR), and annual revenues for almost any property or market.\n*   **Key Features for Buyers:**\n    *   **Rentalizer:** You can plug in a specific address (or a hypothetical one with a certain number of bedrooms/bathrooms) and it will estimate the annual revenue.\n    *   **Market Minder:** Gives you a macro view of a city—showing seasonality, supply and growth trends, and the revenue distribution of top-performing properties.\n    *   **Pace:** Shows how far in advance people are booking in a specific market.\n*   **Best for:** Due diligence, feasibility studies, and finding the best sub-markets to invest in.\n\n---\n\n### 2. Best for Setting Nightly Pricing (Day-to-Day Host): **PriceLabs**\nOnce you own the property (or manage it), you need a dynamic pricing tool that syncs with your Property Management Software (PMS) or Airbnb calendar to update your prices daily based on supply, demand, seasonality, and local events.\n\n*   **What it does:** Uses hyper-local data and advanced algorithms to automatically update your rates every 24 hours to maximize revenue.\n*   **Key Features for Hosts:**\n    *   **Base Price Recommendations:** It helps you find the right baseline price for your property.\n    *   **Minimum Stay Restrictions:** Automatically adjusts minimum stays based on the season or gap nights.\n    *   **Market Dashboards:** Provides hyper-local comp-set data so you can see how your occupancy compares to similar listings down the street.\n    *   **Pricing Customizations:** Far more customizable than Airbnb’s built-in \"Smart Pricing.\" (Note: *Never* use Airbnb Smart Pricing, as it tends to bias toward low prices to ensure quick bookings).\n*   **Best for:** Maximizing nightly revenue and occupancy for active hosts. *(Runner-up: Wheelhouse, which is slightly more user-friendly for beginners, but PriceLabs is more powerful).*\n\n---\n\n### The Verdict: Which should you use?\n\n*   **If you are currently shopping for a property:** Use **AirDNA**. It will save you from making a bad investment and help you project accurate ROI. *(Tip: Use AirDNA's Market Minder to see who the top hosts are in your target area, then look at their actual listings to see what amenities drive their higher rates).*\n*   **If you already own the property:** Use **PriceLabs**. It integrates seamlessly with Airbnb, VRBO, and most PMS platforms (like Guesty, Hostaway, or Lodgify) and typically pays for itself within the first week by optimizing your rates. \n\n**Pro-Tip:** Many serious investors actually use **both**. They use AirDNA for the initial acquisition analysis, and once the property is acquired, they subscribe to PriceLabs (and sometimes use PriceLabs' built-in market data tools) to manage the daily operations.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

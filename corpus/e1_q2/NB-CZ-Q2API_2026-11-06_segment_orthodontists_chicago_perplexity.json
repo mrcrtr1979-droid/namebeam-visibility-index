@@ -1,0 +1,106 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_orthodontists_chicago_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: orthodontists, Chicago",
+ "niche": "orthodontists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Chicago. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Chicago for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_168ce692-cefa-43f0-99f8-5c083e540bbd",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0009,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00152,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00506
+   },
+   "input_tokens": 4139,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3586,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 608,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4747
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UIC Orthodontics",
+  "UIC College of Dentistry Orthodontics Clinic",
+  "Dr. Paul Wine, Chicago Orthodontics",
+  "Dr. Emilia Taneva",
+  "Midwest Orthodontics Center",
+  "Orthodontic Experts, West Loop",
+  "Offers",
+  "Invisalign. Its",
+  "Dr. Paul Wine",
+  "Chicago Orthodontics",
+  "Board-certified",
+  "American Association of Orthodontists",
+  "Invisalign",
+  "Invisalign. Multiple Chicago-area",
+  "Practice",
+  "Orthodontic Experts",
+  "West Loop"
+ ],
+ "engine_stated_criteria": [
+  "When you call, ask"
+ ],
+ "sources_cited": [
+  "https://dremiliataneva.com/",
+  "https://midwestorthodontics.com/",
+  "https://atooth.com/orthodontics/",
+  "https://www.linkedin.com/in/emtaneva",
+  "https://www.castleconnolly.com/top-dentists/paul-wine-orthodontics-cc302932",
+  "https://dremiliataneva.com/orthodontic-treatment/clear-aligners/",
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/orthodontics/",
+  "https://aaoinfo.org/locator/dr-paul-wine/",
+  "https://aaoinfo.org/locator/dr-ashley-barnes/",
+  "https://aaoinfo.org/locator/dr-angela-lu/",
+  "https://www.familydentalofroscoe.com/about/meet-our-doctors/",
+  "https://aaoinfo.org/locator/dr-flavio-jose-castelli-sanchez/",
+  "http://providerbio.invisalign.com/details/1380495",
+  "https://www.linkedin.com/in/dr-manal-ibrahim-lavacca-6269a53",
+  "https://www.orthodonticexprts.com/west-loop-orthodontist/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "c38bf2850929efb259df0c249000b9f030e7b820aae9704c06ac83115551768d",
+ "answer_chars": 2303,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

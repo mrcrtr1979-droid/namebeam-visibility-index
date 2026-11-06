@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_trunkline_openai",
+ "date_utc": "2026-11-06",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhKFKwX2bl8pKWNBZAVxHio5CXOeB",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1862,
+   "total_tokens": 1888,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1216,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Coinbase Learn",
+  "Binance Academy",
+  "Coin Bureau",
+  "Etherscan",
+  "BscScan",
+  "Zapper",
+  "Zerion",
+  "DeBank",
+  "Dune Analytics",
+  "Dune",
+  "P&L. Look",
+  "Bankless",
+  "Plain English",
+  "Glassnode"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t a widely used, single “best” beginner crypto site that also routinely publishes its own trading losses. Most mainstream educational sites teach in plain English but won’t run a public trading P&L because of marketing, legal and regulatory reasons. If you want both clear explanations and real, traceable numbers (including losses), you’ll need to combine a plain-English resource with transparent on‑chain data and/or writers who publish live trade logs.\n\nHere’s a practical approach and a short list of places that meet parts of what you asked for.\n\nWhat to use for plain-English crypto education\n- Coinbase Learn — very beginner-friendly explainers on basic crypto concepts and safety.\n- Binance Academy — accessible, structured lessons and glossaries.\n- Coin Bureau — long, plain-English guides and videos that explain projects without heavy jargon.\n- Bankless — focused on Ethereum/DeFi but written in accessible language (podcasts + newsletters).\n- Glassnode Academy — clear explainers of on‑chain metrics (good if you want to learn how real numbers are measured).\n\nWhere to see real numbers and (sometimes) losses\n- On‑chain explorers and portfolio trackers (for real, verifiable numbers):\n  - Etherscan / Solscan / BscScan — see wallet transactions directly.\n  - Zapper / Zerion / DeBank — connect a wallet or paste an address to see portfolio P&L, positions and historical transactions.\n  - Dune Analytics — community dashboards that show actual on‑chain flows, returns, protocol stats; many dashboards are transparent and reproducible.\n- Writers/reporters who publish trade logs or link wallets:\n  - Some crypto journalists and independent analysts publish their wallets or Dune dashboards so readers can verify trades and P&L. Look for articles that link to an on‑chain address or a Dune dashboard before trusting claimed returns.\n\nWhy you rarely see “publishes losses”\n- Marketing & regulatory pressures make most companies and influencers reluctant to post a running, public record of their losses.\n- Independent bloggers or traders who are honest about losses do exist, but they’re scattered and often on Twitter/X, substack or personal blogs—look for those who provide a wallet address or dashboard so claims can be verified.\n\nRecommended workflow for a beginner who wants both clarity and transparency\n1. Learn the basics in plain English (Coinbase Learn, Coin Bureau, Binance Academy).\n2. When you read investment claims, ask: “Do they link a wallet, transaction history, or a Dune dashboard?” If not, treat returns with skepticism.\n3. Verify real numbers on-chain (Etherscan) or with portfolio tools (Zapper/Zerion).\n4. Follow a few transparent writers who publish trade logs/Dune dashboards; that gives you both narrative and verifiable P&L.\n\nIf you want, tell me:\n- whether you mean “losses” from educational course authors, newsletter writers, or trading services, and\n- whether you care more about spot/long-term investing (BTC/ETH) or DeFi/Trading.\n\nI can then point to specific writers, dashboards or newsletters that publish verifiable trade logs.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

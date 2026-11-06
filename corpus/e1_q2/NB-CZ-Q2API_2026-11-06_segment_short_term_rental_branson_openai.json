@@ -1,0 +1,59 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_short_term_rental_branson_openai",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhKl8mbv03xSR5xndOp8XKH7NMtXh",
+  "usage": {
+   "prompt_tokens": 29,
+   "completion_tokens": 1684,
+   "total_tokens": 1713,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Vacation Rentals",
+  "TurnKey",
+  "Big Cedar Lodge",
+  "Local Branson",
+  "Booking.com",
+  "TripAdvisor Rentals",
+  "Vrbo and Vacasa",
+  "Vacasa",
+  "TripAdvisor",
+  "Downtown Branson",
+  "Table Rock",
+  "Big Cedar",
+  "Near Silver Dollar City",
+  "Near Table Rock Lake"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Good — I can point you to the best places to call plus why each is worth contacting. If you want, tell me your travel dates, group size, budget, and whether you need pet access or lake/near‑Silver Dollar City proximity and I’ll tailor suggestions.\n\nStart by calling these (and ask the follow‑up questions I list after the list):\n\n1) Vrbo (Vacation Rentals by Owner)\n- Why: Largest selection of whole houses and cabins in Branson — good for families and groups needing multiple bedrooms or big cabins. Many listings are owner‑managed, so you can negotiate or confirm details directly.\n\n2) Airbnb\n- Why: Lots of unique homes, smaller cabins and condos, flexible hosts, and often convenient check‑in/self‑check options. Good for smaller groups or travelers seeking a non‑hotel feel.\n\n3) Vacasa\n- Why: Professional, full‑service manager with standardized cleaning, 24/7 guest support, and clear booking/policies. Good if you want consistent service and easier customer support during your stay.\n\n4) TurnKey or Evolve (professional management/marketing companies)\n- Why: Both manage high‑quality properties with modern self‑checkin tech and guest support. They often list well‑maintained homes and provide reliable customer service without the variability of individual owners.\n\n5) Big Cedar Lodge (resort)\n- Why: If you want resort amenities (restaurants, golf, on‑site activities) with cabin/lodge options — ideal for a more upscale, full‑service experience near Table Rock Lake.\n\n6) Local Branson property managers (search and call)\n- Why: Local managers often have the deepest inventory for Branson (lakefront, cabins near Silver Dollar City, downtown condos) and local knowledge. When you search “Branson vacation rental management” you’ll find several highly reviewed local companies — call a few and compare.\n\n7) Aggregators/booking sites: Booking.com, TripAdvisor Rentals, Expedia\n- Why: Good for quickly comparing availability, reviews, and total price including fees/taxes across many properties.\n\nWhat to ask when you call (so you get the best match):\n- Total all‑in price (cleaning fee, service fee, taxes, refundable security deposit)\n- Cancellation and refund policy\n- Exact sleeping arrangement and bed types\n- Proximity to what you want (Silver Dollar City, downtown Branson, Table Rock Lake)\n- Parking, vehicle limits, and road access (some cabins up steep/remote roads)\n- Pet policy and any extra pet fees\n- Amenities: hot tub, fireplace, full kitchen, washer/dryer, A/C, Wi‑Fi, TV/streaming\n- Check‑in/out procedures and late arrival support\n- On‑call local contact for issues during your stay\n- House rules and minimum stay requirements\n\nHow to pick between them:\n- Large family or multi‑family group: start with Vrbo and Vacasa for large cabins.\n- Want guaranteed, consistent service and 24/7 support: Vacasa or a local professional manager.\n- Want unique, flexible stays or good last‑minute options: Airbnb.\n- Want resort amenities: Big Cedar Lodge.\n- Want best price and widest comparison: use aggregators (Booking.com/TripAdvisor) to shortlist then call the manager/owner directly.\n\nIf you give me travel dates, group size, and must‑haves (pets, hot tub, lake access, budget), I’ll pull a short list of specific properties and local managers to call.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

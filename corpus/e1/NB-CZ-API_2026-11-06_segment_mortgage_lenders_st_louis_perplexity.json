@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_segment_mortgage_lenders_st_louis_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: mortgage lenders, St. Louis",
+ "niche": "mortgage lenders",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Louis MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ed0141fd-5b5c-4e60-aed4-bb6864d6999f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00074,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 5029,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4478,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 295,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5324
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Better Rate Mortgage",
+  "Midwest BankCentre",
+  "First Community Credit Union",
+  "Loan Estimates",
+  "The Pinnacle Loans"
+ ],
+ "engine_stated_criteria": [
+  "A reasonable first call is The Pinnacle Loans"
+ ],
+ "sources_cited": [
+  "https://www.midwestbankcentre.com/mortgage/",
+  "https://toptenstlouis.com/best-home-lenders-st-louis/",
+  "https://www.experience.com/reviews/region/st-louis-1628570754",
+  "https://www.realtor.com/mortgage/rates/Saint-Louis_MO",
+  "https://www.monitorbankrates.com/mortgage-lenders/missouri/st-louis",
+  "https://www.monitorbankrates.com/calculators/mortgage/missouri",
+  "https://www.bankrate.com/mortgages/mortgage-rates/missouri/",
+  "https://www.lower.com/mortgages/mortgage-rates/missouri/st-louis",
+  "https://trustanalytica.org/us/mo/st.-louis/best-mortgage-brokers",
+  "https://firstintegrity.com/",
+  "https://www.firstcommunity.com/loans/personal-loans/home-loans.html",
+  "https://www.monitorbankrates.com/mortgage-loan-rates/missouri/st-louis",
+  "https://livingstlouismo.com/best-mortgage-lenders-st-louis-mo/",
+  "https://threebestrated.com/mortgage-companies-in-st-louis-mo",
+  "https://www.experience.com/reviews/company/midwest-bankcentre"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "8f124cda4bdd38dac4d2f99f86b66150ca35cf9cc3ab6a52739d6033e94a0ae3",
+ "answer_chars": 975,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

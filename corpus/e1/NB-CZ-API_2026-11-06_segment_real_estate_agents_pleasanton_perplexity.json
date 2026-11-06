@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_segment_real_estate_agents_pleasanton_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9b315f56-813d-4a8c-9bb5-d06fd413dbd1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00454
+   },
+   "input_tokens": 5102,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4552,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 303,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5405
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Doug Buenz of Compass",
+  "Kim Deol of Intero",
+  "Tim McGuire of Compass",
+  "Doug Buenz",
+  "Compass",
+  "Tim McGuire",
+  "Kim Deol",
+  "Recent Pleasanton sales"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/pleasanton-ca/",
+  "https://www.zillow.com/profile/MaureenAquino",
+  "https://www.zillow.com/profile/user8129073",
+  "https://www.zillow.com/profile/DougBuenz",
+  "https://realestate.usnews.com/agents/california/pleasanton",
+  "https://www.zillow.com/profile/BettyZhuang",
+  "https://www.homelight.com/pleasanton-ca/top-real-estate-agents",
+  "https://www.zillow.com/profile/Jing%20Xue",
+  "https://www.zillow.com/profile/bliss4homes",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/94566/",
+  "https://www.zillow.com/profile/robinyoungrealtor",
+  "https://www.zillow.com/profile/AnnaSongRealtor",
+  "https://www.fastexpert.com/agents/doug-buenz-40642/",
+  "https://www.homelight.com/agents/nancy-sutorius-ca-00628232-5557",
+  "https://www.homes.com/real-estate-agents/susan-gao/ly6swng/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "e5baf65b1b1572544eb128a5e8d3612dac64326e15c907788761b3b984a35896",
+ "answer_chars": 1041,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

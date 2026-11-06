@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhKQ7EXZZSuBrX4SUTNxNluZNKRrc",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1747,
+   "total_tokens": 1775,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Medicare",
+  "Independent",
+  "State Health Insurance Assistance Program",
+  "Policygenius",
+  "Missouri Department of Commerce",
+  "Kansas Insurance Department",
+  "ZIP",
+  "In Kansas",
+  "For Medicare",
+  "In Missouri",
+  "NAHU",
+  "Blue Cross Blue Shield of Kansas City",
+  "SHIP"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can help — but to give you specific broker names and direct phone numbers I need two quick details:\n1. Do you want individual/family coverage, small‑business (employer) coverage, Medicare, or Medicaid/CHIP?  \n2. Which side of Kansas City (Missouri or Kansas) and your ZIP code?\n\nIf you want, tell me that and I’ll pull up a short list of local, licensed brokers to call. In the meantime, here’s practical guidance so you can start calling today and pick the right brokers.\n\nWhich brokers to call (by type) and why\n- Independent local health‑insurance brokers/agents\n  - Why: they can shop multiple carriers and compare plans for your needs (networks, premiums, deductibles). Good for complex households or unusual health needs.\n- Carrier (captive) agents for the insurer you prefer (example: Blue Cross Blue Shield of Kansas City)\n  - Why: if you already want a specific carrier or provider network, a carrier agent can explain that company’s full lineup and any carrier‑specific discounts.\n- Medicare‑certified counselors / SHIP (State Health Insurance Assistance Program)\n  - Why: unbiased, free counseling for Medicare plans and enrollment assistance.\n- Online broker/marketplaces (e.g., eHealth, Policygenius)\n  - Why: fast side‑by‑side quotes from many carriers; good for straightforward shopping.\n- Local benefits consultants (for employers)\n  - Why: if you’re choosing group plans for employees they handle enrollment, compliance, and ongoing benefits administration.\n\nHow to find qualified brokers in Kansas City\n- Use the local state insurance department to verify licenses and complaints:\n  - If you’re in Missouri: check the Missouri Department of Commerce & Insurance\n  - If you’re in Kansas: check the Kansas Insurance Department\n- Search the National Association of Health Underwriters (NAHU) for local, credentialed brokers.\n- Use online marketplaces (eHealth, Policygenius) for quick comparisons, then contact a local agent to confirm.\n- Ask friends/family or your primary care practice for agent recommendations — they often know brokers who understand local provider networks.\n\nWhat to ask when you call a broker (quick script)\n- “Do you sell plans from multiple carriers, or only one?” (Independent vs captive)\n- “Are you licensed in Missouri/Kansas? What’s your NPN/license number so I can verify?”\n- “Do you work with individuals/families, small businesses, or Medicare?”\n- “How are you paid — commission or fee? Will that change my premium or options?”\n- “Can you show me 2–3 plan options that meet these priorities: [list priorities — low premium, low OOP max, specific doctors, prescription coverage]?”\n- “Will you help with enrollment and claims questions during the year?”\n- Ask for references and how long they’ve served the KC market.\n\nRed flags to avoid\n- Refusal to give a license/NPN number or a business address.\n- Pressure to sign up immediately without comparing options.\n- No willingness to help with claims or ongoing questions after enrollment.\n\nIf you want specific names and phone numbers\nTell me:\n- ZIP code\n- Type of coverage (individual/family, employer, Medicare)\n- Any other priorities (doctors you must keep, budget, prescriptions)\nI’ll produce a short list (3–6) of licensed local brokers/agents and why each one matches your needs, plus phone numbers and a recommended order to call.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

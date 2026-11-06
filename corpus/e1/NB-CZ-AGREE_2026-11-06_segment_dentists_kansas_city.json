@@ -1,0 +1,212 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-11-06_segment_dentists_kansas_city",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: dentists, Kansas City",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best dentist in Kansas City Missouri for a dental implant?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 4,
+ "pairs": [
+  {
+   "terser_names": [
+    "Periodontal Specialists",
+    "Missouri",
+    "Dr. Bruce Cummings",
+    "University Health Oral",
+    "Maxillofacial Surgery"
+   ],
+   "verbose_names": [
+    "Periodontists",
+    "Oral and Maxillofacial Surgeons",
+    "Highly Regarded Implant Providers",
+    "Thomas L. Anderson",
+    "Plaza Periodontics",
+    "Smile KC",
+    "Credentials and Training",
+    "International Congress of Oral Implantologists",
+    "American Academy of Implant Dentistry",
+    "Cone Beam Computed Tomography",
+    "Before-and-After Portfolio",
+    "Next Steps"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 5,
+   "verbose_entity_count": 12,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1177,
+   "answer_chars_b": 3539,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "American Board of Periodontology",
+    "CBCT-based"
+   ],
+   "verbose_names": [
+    "Periodontal Specialists",
+    "Missouri",
+    "Dr. Bruce Cummings",
+    "University Health Oral",
+    "Maxillofacial Surgery"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 5,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1177,
+   "answer_chars_b": 2962,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Google Reviews",
+    "American Academy of Implant Dentistry",
+    "Implant Dentist",
+    "Missouri Dental Board"
+   ],
+   "verbose_names": [
+    "Periodontal Specialists",
+    "Missouri",
+    "Dr. Bruce Cummings",
+    "University Health Oral",
+    "Maxillofacial Surgery"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 5,
+   "containment_pct": 25.0,
+   "shared_count": 1,
+   "answer_chars_a": 1177,
+   "answer_chars_b": 1039,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "American Board of Periodontology",
+    "CBCT-based"
+   ],
+   "verbose_names": [
+    "Periodontists",
+    "Oral and Maxillofacial Surgeons",
+    "Highly Regarded Implant Providers",
+    "Thomas L. Anderson",
+    "Plaza Periodontics",
+    "Smile KC",
+    "Credentials and Training",
+    "International Congress of Oral Implantologists",
+    "American Academy of Implant Dentistry",
+    "Cone Beam Computed Tomography",
+    "Before-and-After Portfolio",
+    "Next Steps"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "gemini",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 12,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 3539,
+   "answer_chars_b": 2962,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Google Reviews",
+    "American Academy of Implant Dentistry",
+    "Implant Dentist",
+    "Missouri Dental Board"
+   ],
+   "verbose_names": [
+    "Periodontists",
+    "Oral and Maxillofacial Surgeons",
+    "Highly Regarded Implant Providers",
+    "Thomas L. Anderson",
+    "Plaza Periodontics",
+    "Smile KC",
+    "Credentials and Training",
+    "International Congress of Oral Implantologists",
+    "American Academy of Implant Dentistry",
+    "Cone Beam Computed Tomography",
+    "Before-and-After Portfolio",
+    "Next Steps"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 12,
+   "containment_pct": 25.0,
+   "shared_count": 1,
+   "answer_chars_a": 3539,
+   "answer_chars_b": 1039,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "American Board of Periodontology",
+    "CBCT-based"
+   ],
+   "verbose_names": [
+    "Google Reviews",
+    "American Academy of Implant Dentistry",
+    "Implant Dentist",
+    "Missouri Dental Board"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 4,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2962,
+   "answer_chars_b": 1039,
+   "zero_shared": true
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

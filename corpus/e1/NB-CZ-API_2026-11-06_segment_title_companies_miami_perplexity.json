@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_segment_title_companies_miami_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: title companies, Miami",
+ "niche": "title companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Miami FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ecfb67b1-3ced-4ae8-96f7-141fc9220a07",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00063,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0043
+   },
+   "input_tokens": 4658,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4111,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 254,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4912
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Coastal Title",
+  "Key Title & Escrow",
+  "Redfin",
+  "Key Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.libertytitle.us/",
+  "https://jfrealestatelaw.com/title-closing/miami-fl/",
+  "https://www.gftitle.com/areas-we-serve/miami-dade-county",
+  "https://www.libertytitle.us/residential-purchases/miami-florida",
+  "https://www.libertytitle.us/about",
+  "https://www.blfmiami.com/real-estate-and-title-services",
+  "https://www.libertytitle.us/realtor",
+  "https://affiliate.miamirealtors.com/list/category/title-services-48",
+  "https://atlantictitlefirm.com/reviews",
+  "https://www.titleescrowmiami.com/testimonials/",
+  "https://www.yelp.com/biz/hemisphere-title-company-miami-lakes",
+  "https://revenuebase.ai/companies/land-title-companies/united-states/miami",
+  "https://www.titleescrowmiami.com/wynstone-title-and-escrow-services/",
+  "https://www.redfin.com/buy-a-home/openbook/florida",
+  "https://www.linkedin.com/company/worldwide-title"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2fb2fce78d1b0beaff6bb4c79365bcab34106d2b9c3632be5f71cfe15ff6b3bd",
+ "answer_chars": 827,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

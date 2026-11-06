@@ -1,0 +1,45 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_dentists_pleasanton_anthropic",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_nlnox4gfomudd4ue54fqxitzqzv4usviwconyyw3h3pgsoltjkpa",
+  "usage": {
+   "input_tokens": 30,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 203,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Your",
+  "Healthgrades for Pleasanton"
+ ],
+ "engine_stated_criteria": [
+  "Check your insurance"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I don't have access to current information about specific dental practices in Pleasanton, their hours, availability, or quality ratings.\n\nTo find a good dentist for a checkup and cleaning, I'd recommend:\n\n1. **Check your insurance** - Your dental plan's website lists in-network providers\n2. **Search online** - Google Maps, Yelp, or Healthgrades for Pleasanton dentists with recent reviews\n3. **Ask for referrals** - Your primary care doctor or friends/family in the area\n4. **Call ahead** - Verify they're accepting new patients and have availability\n\n**What to look for:**\n- Accepts your insurance\n- Convenient location/hours\n- Good recent reviews\n- Offers preventive care (cleanings, exams)\n- New patient appointments available soon\n\nWould you like suggestions on what questions to ask when you call, or tips for choosing between options?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

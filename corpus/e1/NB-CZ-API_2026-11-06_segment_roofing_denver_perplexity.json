@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_segment_roofing_denver_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b3fdb5b8-32f3-4274-8e23-a967e6952b33",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00068,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00433
+   },
+   "input_tokens": 4576,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4029,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 270,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4846
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Gates Enterprises",
+  "Murray Roofing",
+  "Metro City Roofing",
+  "Denver-area"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/murray-roofing-llc-1296-90104041",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/hail-pro-restoration-1296-90254921",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/bealls-roofing-llc-1296-90147319",
+  "https://www.bbb.org/us/co/denver/category/hail-repair",
+  "https://www.bbb.org/us/co/commerce-city/category/hail-repair",
+  "https://www.bbb.org/us/co/category/hail-repair",
+  "https://www.bbb.org/us/co/arvada/category/hail-repair",
+  "https://www.bbb.org/us/co/east-lake/category/hail-repair",
+  "https://www.bbb.org/us/co/denver/category/building-restoration/accredited",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/cig-construction-1296-90128356",
+  "https://www.bbb.org/us/co/englewood/profile/roofing-contractors/beyond-roofing-1296-23034941",
+  "https://www.gatesroof.com/areas/denver",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/metro-city-roofing-1296-90261616",
+  "https://www.bbb.org/us/co/denver/profile/roofing-contractors/premier-roofing-company-1296-27001387/complaints?page=1",
+  "https://www.bbb.org/us/co/aurora/category/hail-repair"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "5c243e050205ea810bc1b6cecb20d95a6cbe40bb131635563ae1adf33b6c32b0",
+ "answer_chars": 891,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

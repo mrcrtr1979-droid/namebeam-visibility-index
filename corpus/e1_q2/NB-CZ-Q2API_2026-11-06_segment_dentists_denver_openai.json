@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_dentists_denver_openai",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: dentists, Denver",
+ "niche": "dentists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Denver. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Denver for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhKdNt6ZT2ozZkyo2AR13wRlSzkU3",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1851,
+   "total_tokens": 1876,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1088,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "University of Colorado Anschutz",
+  "CU School of Dental Medicine",
+  "ABOMS",
+  "Cherry Creek",
+  "Capitol Hill",
+  "North Denver",
+  "American Academy of Implant Dentistry",
+  "AAID",
+  "American Academy of Periodontology",
+  "Oral and Maxillofacial Surgeons"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give strong, practical next steps — and I can make a short list of named local practices if you tell me your Denver neighborhood or zip code. First, the quick answer to “which practices should I call” and why:\n\nWhich types of practices to call (and why)\n- Board-certified oral & maxillofacial surgeons (OMS): best for complex extractions, bone grafting/sinus lifts, full-arch reconstructions, IV sedation, and surgical complications. They’re surgically focused and handle difficult cases.\n- Board-certified periodontists who place implants: experts in gum/bone health and grafting; often good for single-tooth implants and complex bone/soft-tissue work.\n- Prosthodontists or multidisciplinary implant centers: prosthodontists design and restore the implant crown/bridge/denture — important for esthetics and function. Multidisciplinary centers coordinate surgeon + restorative dentist for one streamlined plan.\n- University dental clinic (University of Colorado Anschutz / CU School of Dental Medicine): lower-cost option; faculty-supervised residents can manage many implant cases, useful if cost is a factor.\n\nHow to find trustworthy local practices\n- Use specialty directories: AAOMS (American Association of Oral and Maxillofacial Surgeons) for OMS; American Academy of Periodontology (AAP) for periodontists; American Academy of Implant Dentistry (AAID) for implant specialists. You can search by zip code.\n- Check board certification: for oral surgeons check ABOMS board certification; for prosthodontists check ABO certification.\n- Read recent patient reviews (Google, Healthgrades, Yelp) but weigh procedure-specific comments (implant outcomes) more than office décor.\n\nWhat to look for / ask when you call (quick checklist)\n- Do you place the implant and restore it, or do you coordinate with a restorative dentist? (Make sure both roles are clear.)\n- How many implants of this type have you placed? How often do you do bone grafts/sinus lifts?\n- Do you use CBCT 3D imaging and digital planning/guided surgery?\n- What implant system(s) do you use (Nobel, Straumann, Zimmer, etc.)? Do you guarantee the implant or restoration?\n- Sedation options and facility accreditation for sedation/IV?\n- Expected timeline from extraction to final crown; approximate cost range and what’s included (doctor fees, surgery, grafting, temporary crown, final crown, follow-ups).\n- Can you show before/after photos of similar cases and patient references?\n- Is financing available / do you accept my insurance?\n\nIf you want specific names in Denver\nTell me:\n- Your Denver neighborhood or zip code (e.g., Cherry Creek, Capitol Hill, North Denver, Downtown, Aurora),\n- Whether you have dental insurance and any provider network needs,\n- Whether you expect a simple single-tooth implant or anticipate grafts/full-arch work,\nand I’ll compile 4–6 specific local practices (oral surgeons, periodontists, and a dental school option) with short reasons to call each.\n\nSample phone script you can use\n“Hi, I’m calling because I need a dental implant for [single tooth/full-arch/extraction + implant]. Do you place implants? Do you do the surgical placement and/or the restoration? Do you use CBCT and digital planning? Can you give a ballpark cost and typical timeline for a case that requires [bone graft/no graft]? Do you accept [insurance name]? Thank you.”\n\nIf you want, give me your zip code and a short description of your situation (single tooth vs full-arch; insurance; urgency). I’ll return a concise list of specific Denver practices to call and why each is a good fit.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-06_segment_dentists_miami_perplexity",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: dentists, Miami",
+ "niche": "dentists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Miami for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e1e51077-5448-440a-a0d5-e6bd98f954ea",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00094,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00069,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00427
+   },
+   "input_tokens": 4305,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3759,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 275,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4580
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Kroum Dimitrov",
+  "Love Your Jaws",
+  "South Miami"
+ ],
+ "engine_stated_criteria": [
+  "Dr. Kroum Dimitrov at Love Your Jaws in South Miami"
+ ],
+ "sources_cited": [
+  "https://www.loveyourjaws.com/dental-implants/",
+  "https://www.loveyourjaws.com/dental-implants/full-mouth-dental-implants/",
+  "https://www.loveyourjaws.com/news/need-dental-implants-heres-what-you-should-know/",
+  "https://www.loveyourjaws.com/dental-implants/full-mouth-dental-implants/dental-implants-overdentures/",
+  "https://www.loveyourjaws.com/robotic-technology/robotic-dental-implant-surgery/",
+  "https://www.loveyourjaws.com/news/more-about-dental-implants-in-miami/",
+  "https://www.loveyourjaws.com/meet-us/meet-the-staff/",
+  "https://www.loveyourjaws.com/about-us/",
+  "https://www.loveyourjaws.com/dental-implants/same-day-dental-implants/",
+  "https://www.loveyourjaws.com/dental-implants/robotic-dental-implants/",
+  "https://www.loveyourjaws.com/referring-doctors/",
+  "https://www.loveyourjaws.com/dental-implants/zygomatic-implants/",
+  "https://www.loveyourjaws.com/news/restore-your-smile-with-dental-implants/",
+  "https://www.loveyourjaws.com/es/doctores-remitentes/",
+  "https://mosaoralsurgery.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9cd199cebdc32e594424f3c42be92b0853d82f096ee556bc7964d3447cdb05fd",
+ "answer_chars": 904,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

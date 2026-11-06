@@ -1,0 +1,60 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-06_segment_oil_change_pleasanton_gemini",
+ "date_utc": "2026-11-06",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "cDPuauunB7Pf0_gP4MjcoQM",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 677,
+   "totalTokenCount": 699,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton Courtesy Ford",
+  "Dublin Nissan / Hayward dealerships",
+  "Jiffy Lube Multicare",
+  "AutoNation Service Center",
+  "Main Street Mechanic",
+  "R&J Automotive",
+  "Jiffy Lube",
+  "Dublin Nissan",
+  "Pleasanton Automall Service Departments",
+  "Independent Specialists",
+  "Ask When You Call"
+ ],
+ "engine_stated_criteria": [
+  "Always look for a coupon online before you go",
+  "\"Do you have my oil filter in stock, or do I need to drop off the car?\"",
+  "\"What is the total out-the-door price including disposal fees and tax?\"",
+  "\"Do you offer digital vehicle inspections?\""
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Pleasanton has a great mix of dealership service centers, national chain shops, and highly rated local independent mechanics. Depending on whether you prioritize speed, price, or specialized care for your vehicle, here are the specific shops you should call, along with why:\n\n### 1. For Dealership-Quality Service (Best for newer cars / under warranty)\n*   **Pleasanton Courtesy Ford** *(6100 Johnson Dr)* or **Dublin Nissan / Hayward dealerships** (just down the freeway)\n    *   **Why call them:** If your car is newer, under warranty, or you drive a specific make that requires proprietary fluids and OEM filters, calling the local dealership is your best bet. They also frequently run oil change specials on their websites (often around $50–$70 for basic synthetic blends) and will check for factory recalls while your car is in the bay.\n\n### 2. For Speed and Convenience (Drive-thru service)\n*   **Jiffy Lube Multicare** *(3351 Santa Rita Rd, Pleasanton)*\n    *   **Why call them:** If you are on a tight schedule and don’t want to make an appointment, Jiffy Lube is ideal. You stay in your car, the service usually takes 15–20 minutes, and they check/top off all your other fluids and tire pressure automatically. \n    *   *Tip:* **Always look for a coupon online before you go.** They almost always have a $10–$20 off coupon on their website.\n\n### 3. Highly Rated Local Independents (Best for honesty, older cars, and full-service inspection)\n*   **Pleasanton Automall Service Departments / Independent Specialists**\n    *   *Alternative:* **AutoNation Service Center** or local trusted independents like **Main Street Mechanic** (nearby in Livermore) or **R&J Automotive**.\n    *   **Why call them:** Independent shops in the Tri-Valley area survive on reputation. If you want a mechanic to look over your car holistically—checking brakes, belts, and suspension without trying to aggressively upsell you on unneeded services—a local independent shop is usually the most trustworthy route. They will also let you choose exactly what brand of oil (Mobil 1, Castrol, Pennzoil) goes into your engine.\n\n---\n\n### Questions to Ask When You Call:\nBefore you book, make sure to ask these three quick questions:\n1. **\"Do you have my oil filter in stock, or do I need to drop off the car?\"** (Especially important if you drive an uncommon or European car).\n2. **\"What is the total out-the-door price including disposal fees and tax?\"** (Avoids surprise charges at the register).\n3. **\"Do you offer digital vehicle inspections?\"** (Many modern shops will text you a link with photos of your car's air filters, tire tread, and brake health while the oil is being changed). \n\n**Recommendation:** If you're in a rush, call **Jiffy Lube**. If you want a thorough check-up from a trusted local mechanic, call a local independent or your car's specific dealership service center.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
