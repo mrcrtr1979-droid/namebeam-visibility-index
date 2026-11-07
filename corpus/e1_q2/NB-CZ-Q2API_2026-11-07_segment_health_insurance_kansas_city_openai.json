@@ -1,0 +1,67 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhfOh0sOBFD4X65OI4PPO061TKOVo",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 2197,
+   "total_tokens": 2225,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1216,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Medicare",
+  "Medicaid",
+  "KanCare",
+  "Find",
+  "Senior Health Insurance Counseling Program",
+  "Medicare Advantage",
+  "Kansas SHIP",
+  "Missouri SHIP",
+  "Medicare.gov",
+  "Medicare Advantage and Part D",
+  "AssuredPartners",
+  "Kansas Insurance Department",
+  "NAHU",
+  "GoHealth",
+  "ACA Marketplace",
+  "For Medicare",
+  "Part D",
+  "Medicare help",
+  "SHIP",
+  "Family ACA",
+  "HealthSherpa",
+  "Missouri Department of Insurance"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give specific names, but to pick the best brokers for you I need one quick clarification: are you shopping for an individual/family ACA/private plan, Medicare, Medicaid/KanCare, or an employer (group) plan? Also what ZIP code or which side of Kansas City (MO or KS)?\n\nWhile you reply, here are immediate, concrete places/agents you can call and why each is a good first stop. I’m listing a mix of marketplace-certified broker platforms, Medicare resources, and ways to find verified independent local brokers so you can choose the right kind of help.\n\nIf you want an individual / ACA / private plan\n- HealthSherpa (call via their “Find an agent” or use their online chat)\n  - Why: marketplace-specialized; helps you check eligibility for premium tax credits and enroll on the federal/state exchange; agents are licensed and marketplace-certified; free to you.\n- eHealth (phone enrollment with licensed agents)\n  - Why: large national broker platform that compares many carriers quickly; licensed agents available to explain plan networks, deductibles, and out‑of‑pocket costs.\n\nIf you want Medicare (A/B/D/Advantage)\n- Your State SHIP (Senior Health Insurance Counseling Program)\n  - Why: free, unbiased one-on-one counseling by trained volunteers or counselors; they don’t sell insurance and will explain Medicare Advantage vs. Medigap vs. Part D options and help you compare plans in your ZIP.\n  - How to find: search “Kansas SHIP” or “Missouri SHIP” (depending on which state you live in) or go to Medicare.gov “Find a counselor.”\n- Local independent Medicare agents who are Medicare-certified (use Medicare.gov “Find Local Help”)\n  - Why: they’re licensed to enroll you and can compare Medicare Advantage and Part D plans available in your specific ZIP; they are familiar with local provider networks.\n\nIf this is for a small business / group benefits\n- Local benefits brokerages or national brokers with local presence (search for “employee benefits broker Kansas City”)\n  - Why: group benefits require local market knowledge (stop-loss, ACA compliance, broker support). Large firms such as AssuredPartners, Alliant, CBIZ, or local independent benefits brokers typically handle Kansas City employers. (I can identify specific local offices once I have your ZIP and company size.)\n\nHow to find and verify specific local brokers (good for any situation)\n- Healthcare.gov “Find Local Help” (for marketplace-certified brokers/navigators)\n  - Why: shows brokers who are certified to sell and assist with the ACA marketplace in your county.\n- Medicare.gov “Find a Counselor” (for Medicare help)\n  - Why: lists SHIP and certified Medicare agents/organizations by ZIP code.\n- State insurance department agent lookup (Kansas Insurance Department or Missouri Department of Insurance)\n  - Why: verify a broker’s license and see any consumer complaints.\n- Local NAHU (National Association of Health Underwriters) or independent agent directories\n  - Why: NAHU members are credentialed and often focused on consumer education and ethics.\n\nWhich brokers I’d call first (quick priority list while you decide)\n1. HealthSherpa or the Healthcare.gov “find local help” broker listed for your county — if you’re buying an ACA plan or checking subsidies.\n2. Your State SHIP (or Medicare.gov counselor) — if you’re 65+ or eligible for Medicare.\n3. A national platform like eHealth or GoHealth — if you want a fast side‑by‑side quote across many carriers and an agent to walk you through choices.\n4. A local independent agent (found via state licensing lookup or NAHU local chapter) — if you want ongoing, in-person help with network questions, claims help, or small-business benefits.\n\nWhat I recommend you ask each broker when you call\n- Are you a captive agent or an independent broker? (Independent = access to more carriers.)\n- Do you handle marketplace (ACA) enrollments? Medicare? Employer group plans?\n- Do you charge a fee to consumers? (Most ACA/Medicare brokers don’t charge you.)\n- Which carriers do you work with in my ZIP code? Can you show plan comparisons that include premium, deductible, provider network, and expected out‑of‑pocket for my typical use?\n- Can you assist with claims or appeals later if I need help?\n- Can you provide local references or online reviews?\n\nIf you want, tell me:\n- Which type of coverage (ACA, Medicare, Medicaid, employer),\n- Your ZIP code,\n- Ages and Medicare status of people to insure,\nand I’ll produce a short, tailored list of 3–5 named local brokers/agencies (with phone numbers and exactly why each is a good fit).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

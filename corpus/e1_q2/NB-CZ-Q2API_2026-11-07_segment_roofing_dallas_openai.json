@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_roofing_dallas_openai",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need my roof replaced in Dallas. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhfkxiBq3fkjgRldTZSyGxswDnT4H",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1313,
+   "total_tokens": 1338,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "CertainTeed",
+  "Owens Corning Master",
+  "Owens Corning",
+  "Manufacturer Certifications",
+  "CertainTeed SELECT",
+  "CertainTeed Select ShingleMaster"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you specific companies — I just need one quick detail: what ZIP code or neighborhood in Dallas are you in? And what’s most important: lowest price, fastest turnaround (storm damage), best workmanship/warranty, help with an insurance claim, or a particular roof type (tile, metal, flat)? \n\nWhile you answer, here’s how I’ll pick recommendations and what to expect when you call:\n\nHow I’ll choose companies for you\n- Local reputation and longevity in the Dallas market\n- Experience with Texas hail/wind storms and insurance claims (if relevant)\n- Manufacturer certifications (GAF, CertainTeed, Owens Corning Master/Preferred contractors)\n- Written warranties on labor and materials\n- Strong recent customer reviews and few or resolved BBB complaints\n- Proper insurance, ability to obtain permits, and local references\n\nWhat to ask when you call (quick checklist)\n- Are you licensed/registered to work in Dallas and can you obtain permits?\n- Proof of liability insurance and workers’ comp\n- Are you a certified installer for major shingle manufacturers? (GAF Master Elite, CertainTeed Select ShingleMaster, etc.)\n- Do you provide a written estimate that lists materials, tear-off vs. overlay, disposal, timeline, and payment schedule?\n- What labor and workmanship warranty do you offer? Any manufacturer warranties transferred?\n- Do you handle insurance claims and provide a written scope for claim adjusters?\n- Ask for 3 local references from jobs like yours and check photos of recent work\n\nIf you want, I’ll pull up 4–6 specific roofers that match your ZIP and priorities (with pros/cons for each). Tell me your ZIP and what matters most.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

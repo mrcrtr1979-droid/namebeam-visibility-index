@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_dentists_dallas_openai",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Dallas. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhfU4T7Y0vjeWj5HSJ8yMVEdfsYQs",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1499,
+   "total_tokens": 1524,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "ABOMS",
+  "Find",
+  "American Academy of Periodontology",
+  "Maxillofacial Surgery",
+  "Oral and Maxillofacial Surgery",
+  "American College of Prosthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need one quick detail so I give you useful, nearby options: what ZIP code or neighborhood in Dallas are you in (or how far are you willing to travel)? Also tell me if you have dental insurance and whether you prefer a specialist (periodontist/oral surgeon/prosthodontist), a large implant center, or a dental school/low-cost option.\n\nWhile you reply, here are immediate, practical steps and what to ask when you call any office (so you can start now if you prefer):\n\nWhich kinds of offices to call (and why)\n- Board-certified oral & maxillofacial surgeons: best for complex surgical cases (bone grafting, sinus lifts, multiple implants, extraction + immediate implant). Call these if you expect surgery complications or need IV sedation.\n- Periodontists: specialists in the gums and implant placement; excellent for single-to-multiple implant cases, bone grafting, and esthetic outcomes.\n- Prosthodontists: specialists in restoring teeth and designing implant crowns/bridges or full-arch prostheses — call them if you want optimal bite/function/appearance.\n- Multi-specialty implant centers: these coordinate surgeons + prosthodontists in-house — convenient for full treatment and complex cases.\n- Dental school or community clinic: lower cost, good if budget is a major concern (treatment may take longer).\n\nHow to find qualified practices (quick sources to use)\n- American Board of Oral and Maxillofacial Surgery (ABOMS) directory\n- American Academy of Periodontology (AAP) “Find a Periodontist”\n- American College of Prosthodontists “Find a Prosthodontist”\n- Google Business reviews, Healthgrades, Yelp (read for patterns, not single reviews)\n- Ask your general dentist for a local specialist referral\n\nKey questions to ask on the phone (script you can use)\n1. “Do you place dental implants here, and what specialist will perform the surgery?” (look for oral surgeon, periodontist, or a prosthodontist for the restoration)\n2. “How many implants does the doctor place per year?” (higher volume generally = more experienced)\n3. “Do you have CBCT 3D imaging on-site?” (important for planning)\n4. “Do you offer IV or oral sedation?” (if you want sedation)\n5. “What implant brands do you use, and is there a warranty/guarantee?” (brands matter for long-term parts)\n6. “What is included in the fee: consultation, CT scan, implant fixture, abutment, crown, any bone grafting?” (get a written estimate)\n7. “Do you do the restoration (crown/bridge/full-arch) in-office or refer to a prosthodontist?” (coordination matters)\n8. “How long is the treatment timeline from implant placement to final crown?” (expect months if grafting required)\n9. “If I have dental insurance, do you accept it and will you file claims?” (cost logistics)\n10. “Can I see before/after photos and patient references?” (ask to see similar cases)\n\nIf you want, I will:\n- look up and list 5–7 specific, highly rated implant providers near your ZIP code (with phone, a short reason to call each, and what to expect cost/timeline-wise), or\n- narrow to options that accept your insurance or match your budget/preferences.\n\nTell me your ZIP code/neighborhood and any preferences and I’ll pull a tailored list.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

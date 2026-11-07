@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_roofing_miami_openai",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a hurricane-rated roof replacement in Miami. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhfLeovzsoCjasm3p7bdALd9v7fQr",
+  "usage": {
+   "prompt_tokens": 27,
+   "completion_tokens": 2151,
+   "total_tokens": 2178,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1280,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "High-Velocity Hurricane Zone",
+  "CertainTeed",
+  "Owens Corning",
+  "Dade HVHZ",
+  "Dade NOA",
+  "Dade County NOA",
+  "ICC-ES",
+  "Dade NOA for HVHZ",
+  "High-Velocity Hurricane Zone (HVHZ)",
+  "Velocity Hurricane Zone",
+  "CertainTeed SELECT",
+  "HVHZ Experience",
+  "Verify Licensing and Insurance"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — and I want to give you names you can trust — but to do it right I need one quick detail: what is the property address (or at least the ZIP code) and what roof material do you want (asphalt shingle, concrete/terracotta tile, metal, TPO/flat)? Miami is in the High-Velocity Hurricane Zone (HVHZ), and contractors that are qualified for hurricane-rated roofs must meet specific local and manufacturer requirements that vary by location and roof type, so recommendations should be location‑specific.\n\nWhile you provide that (or if you prefer not to share an address), here’s a short, practical plan and a phone/email script you can use immediately, plus how I’ll pick contractor names after you give the ZIP/address:\n\nWhat I’ll do for you after you give the ZIP or address\n- Pull 3–5 contractors near your home who: are Florida‑licensed roofing contractors, carry insurance and workers’ comp, are manufacturer‑certified (GAF/CertainTeed/Owens Corning or similar), have experience installing Miami‑Dade HVHZ systems for your roof material, and have recent good reviews and verifiable references.\n- Verify each contractor’s Florida license and check Miami‑Dade NOA (for the roof system/materials they propose) and give you direct contact info plus an explanation of why I chose each.\n\nIf you prefer to start right away, here’s how to find and vet hurricane‑rated roofing companies yourself (fast checklist)\n1. Use manufacturer locators to find certified installers in Miami:\n   - GAF Master Elite locator\n   - CertainTeed SELECT ShingleMaster locator\n   - Owens Corning Preferred Contractor locator\n   These certified installers follow manufacturer installation requirements and offer stronger warranties.\n2. Verify licensing and insurance:\n   - Florida DBPR license lookup; contractor must be a State‑registered roofer (or general contractor with roofing endorsement).\n   - Ask for current liability insurance and workers’ comp certificates; call the insurer to verify.\n3. Confirm Miami‑Dade HVHZ experience:\n   - Ask: “Have you installed (shingle/tile/metal) roofs in Miami‑Dade HVHZ? Can you show recent projects and references?”\n   - Require that the materials and system proposed have Miami‑Dade County NOA or ICC-ES documentation for HVHZ use.\n4. Ask for a detailed written estimate and scope:\n   - Brand and model of materials (with NOA if applicable), number/type of underlayments, fastener specs, nailing pattern or mechanical attachment, secondary water barrier, flashing details, and removal vs. overlay.\n   - Timeline, permit pull (they should pull permits), cleanup and lien release policy, payment schedule, and manufacturer + workmanship warranties.\n5. Check reviews & references:\n   - Recent photos of completed HVHZ jobs, 3 references (phone numbers), Google and BBB ratings, and ask if they handle insurance claims (and whether they work for or with insurers).\n6. Red flags:\n   - No permit, cash‑only without documentation, pressure to sign immediately, no proof of insurance or license, vague scope, or an estimate much lower than others without explanation.\n\nPhone/email script to request a formal quote (copy and paste)\n“Hello — I’m getting bids for a full hurricane‑rated roof replacement at [address or ZIP]. Please confirm: (1) your Florida roofing license number; (2) whether you are a certified installer for [manufacturer you prefer] and whether the product/system you propose has a Miami‑Dade NOA for HVHZ; (3) sample project photos and three recent HVHZ references in Miami‑Dade; (4) proof of liability and workers’ comp insurance; (5) whether you will pull permits. I’d like a written estimate showing brand/model, underlayment/attachment details, total cost, timeline, and warranty details. Thanks — I’m collecting bids and will compare scopes.”\n\nIf you want immediate names\nGive me your ZIP code or address and your preferred roof type and I’ll list 3–5 specific, vetted contractors in the Miami area and explain why each is a good pick (certifications/experience/references to check).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

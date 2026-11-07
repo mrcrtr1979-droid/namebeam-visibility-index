@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_trunkline_openai",
+ "date_utc": "2026-11-07",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhfEuVNz7gY5xFnpQQzt5LMnjHPVa",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1723,
+   "total_tokens": 1749,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1280,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Coinbase Learn",
+  "Binance Academy",
+  "Coin Bureau",
+  "Real",
+  "Glassnode",
+  "Nansen",
+  "Dune Analytics. These",
+  "Etherscan",
+  "Dune",
+  "Real Numbers",
+  "Dune Analytics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t a well-known, reputable beginner crypto-education site that also runs and publicly publishes a live investment portfolio (including losses) as part of its teaching. Most mainstream beginner resources avoid running public trading books for legal and reputational reasons.\n\nWhat I recommend instead (a practical combo)\n- Plain-English teaching: Coinbase Learn or Binance Academy — both are beginner‑friendly, non‑technical, and free. Coin Bureau’s YouTube/guides are also very beginner-oriented and practical.\n- Real numbers and transparent data: Glassnode, Nansen, and Dune Analytics. These aren’t beginner tutorials, but they publish on‑chain metrics and dashboards you can inspect to see real activity and historic drawdowns.\n- Proof of losses / full transparency: follow people or projects that publish public wallet addresses or trading journals (on‑chain wallets can be inspected on Etherscan) or creators who post monthly P&L and drawdowns. Look for educators who put a public wallet address in their profiles or who explicitly run a documented experiment — those are rare but the most verifiable.\n\nWhy there’s no single perfect site\n- Running and publishing a live portfolio exposes organizations to regulatory and reputational risk, so most education sites avoid it.\n- “Real numbers” for strategies are best verified on‑chain (Etherscan, Solscan) or via community dashboards (Dune) rather than trusting a single educational blog.\n\nHow to verify transparency if that’s important to you\n1. Prefer on‑chain evidence: a public wallet address + tx history = objective record of wins and losses.\n2. Look for monthly performance reports that include drawdowns and negative months (not just cumulative returns).\n3. Use independent analytics (Glassnode, Nansen, Dune) to replicate claims.\n\nIf you want, I can:\n- Suggest 3–4 specific beginner guides (Coinbase Learn, Binance Academy, Coin Bureau) and show how to pair each with an on‑chain dashboard so you can see the underlying numbers; or\n- Find individual educators who publicly publish trading journals or wallet addresses and evaluate how transparent they are. Which would you prefer?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

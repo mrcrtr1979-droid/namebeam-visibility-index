@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_bbs_insurance_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "BBS Insurance",
+ "niche": "health insurance brokerage",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best health insurance broker in Kansas City MO for someone who is self-employed?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_328e5e61-7659-4e37-b97b-d88481788607",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00096,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00091,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 4383,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3831,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 365,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4748
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "B&B Insurance",
+  "Apollo Insurance",
+  "HealthCare.gov",
+  "Missouri. It",
+  "Missouri Department of Commerce and Insurance",
+  "Marketplace plans",
+  "Missouri Department of Commerce"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bluekc.com/",
+  "https://michalekhealthsolutions.com/missouri-health-insurance/",
+  "https://coleinsure.com/about/",
+  "https://www.bluekc.com/agents/",
+  "https://www.bluekc.com/ifp-info/",
+  "https://www.healthmarkets.com/local-health-insurance-agent/mo/kansas-city",
+  "https://insurance.mo.gov/companies/find-insurance-agentagency",
+  "https://www.kcmo.gov/city-hall/departments/finance/business-license-search",
+  "https://apollo-insurance.com/",
+  "https://apollo-insurance.com/health-insurance-kansas-city/",
+  "https://www.bluekc.com/employers/shop-plans/small-group-plans/aca-plans-2-50/",
+  "https://bbs-insurance.com/service-areas/kansas-city/",
+  "https://seniorbenefitshub.com/missouri/kansas-city-mo-insurance/",
+  "https://www.linkedin.com/in/morrillinsurancegroup",
+  "https://vivna.net/health-insurance-kansas-city-mo/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "3cda47e0df6ecf6b8a617c5ac35f81be4596e857ad0838ebc397ee315f612da3",
+ "answer_chars": 1347,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

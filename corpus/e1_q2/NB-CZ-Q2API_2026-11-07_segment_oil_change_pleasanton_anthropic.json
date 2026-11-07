@@ -1,0 +1,42 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_oil_change_pleasanton_anthropic",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_uxfblqsiglel6dpqpqe4ye4nnv5oe77e6jp3mxiswxznxm6pxm6a",
+  "usage": {
+   "input_tokens": 30,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 237,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Questions to ask when calling"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I don't have current information about specific oil change shops in Pleasanton or their current status, so I can't recommend particular ones with confidence.\n\nHere's how to find good options:\n\n**Search methods:**\n- Google Maps: Search \"oil change near Pleasanton\" to see current shops, hours, and reviews\n- Yelp: Filter by rating and read recent customer experiences\n- Your car's manual: Check if the dealership is preferred for warranty reasons\n\n**What to compare:**\n- Customer reviews (especially recent ones)\n- Price transparency\n- Wait times/appointment availability\n- Oil type they use (synthetic vs. conventional)\n- Additional services offered\n\n**Questions to ask when calling:**\n- Do they use the oil grade your car needs?\n- What's included (filter, fluid top-offs)?\n- Current pricing and any discounts?\n- How long does it take?\n\nSince Pleasanton likely has multiple options, checking current reviews will give you better insight than any recommendation I could make. Is there a particular type of shop you prefer (dealership, chain, independent)?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

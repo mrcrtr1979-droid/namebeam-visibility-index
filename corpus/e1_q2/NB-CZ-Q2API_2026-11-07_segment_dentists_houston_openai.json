@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_dentists_houston_openai",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: dentists, Houston",
+ "niche": "dentists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Houston. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Houston for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhfabsAg9rtRU4viIWqZFEvXSWoGs",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 2134,
+   "total_tokens": 2159,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1216,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "University of Texas Health",
+  "Memorial Hermann",
+  "Baylor St. Luke",
+  "American Academy of Periodontology",
+  "American College of Prosthodontists",
+  "ABOMS",
+  "Houston ZIP",
+  "UTHealth School of Dentistry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can help — but first a quick question: do you want practices near a particular Houston neighborhood or ZIP code, and do you have any preferences (see below) — insurance, budget, oral surgeon vs. periodontist vs. prosthodontist, need for sedation, same-day/All‑on‑4, or a teaching clinic for lower cost? If you give your ZIP or neighborhood I’ll pull up 4–6 specific offices with phone numbers and short reasons.\n\nWhile you reply, here are immediately useful recommendations and how to pick the best practice in Houston.\n\nWho to call (types of providers and specific places to contact)\n- UTHealth School of Dentistry (University of Texas Health — Houston) — good to call if you want a university clinic. They provide implant treatment by residents supervised by faculty (periodontics and prosthodontics), usually up-to-date techniques and lower cost than private specialty offices.\n- Hospital-affiliated oral & maxillofacial surgery groups (e.g., Memorial Hermann / Baylor St. Luke’s affiliated OMFS offices) — call if you want hospital-level care (complex cases, IV sedation, medical comorbidities). These groups handle extractions, bone grafts, sinus lifts and complicated implant cases.\n- Board-certified periodontists who focus on implants — search “find a periodontist” at the American Academy of Periodontology (aap.org). Periodontists specialize in placing implants and bone grafting.\n- Prosthodontists for complex restorative cases or full-arch rehabilitation — use the American College of Prosthodontists directory to find specialists who plan and restore implants.\n- High-volume private implant centers — many Houston-area implant centers focus on implants and full-arch cases (All‑on‑4). These can be efficient and experienced for routine and immediate-load cases; verify credentials and outcomes.\n\nHow to find reputable specific practices in Houston\n- Use professional directories: AAOMS (find an oral surgeon), AAP (find a periodontist), ACP (find a prosthodontist).\n- Search Google Maps + read recent reviews but focus on clinical credentials rather than just Yelp stars.\n- Look for providers with board certification (ABOMS for oral surgeons; board certified/board eligible periodontists or prosthodontists) and membership in professional societies.\n- Ask if they use CBCT (3D imaging) and digital implant planning — best practice for accurate placement.\n\nQuestions to ask when you call\n1. Do you place the implant yourself or refer to a specialist? Who will restore the crown? (Important for coordination.)\n2. Are you board certified (or what are your specialty credentials)? How many implants do you place per year?\n3. Do you use CBCT (3D imaging)? Is that included in the estimate?\n4. Do you handle bone grafting/sinus lifts in-house if needed?\n5. What brands of implants do you use and why? (Look for well-known brands with long track records.)\n6. What sedation options are available (local, oral, IV) and where will the procedure be done?\n7. Can you provide a written treatment plan with costs and timeline, and what is included (implant, abutment, crown, follow-ups)?\n8. Do you offer financing or payment plans? Is there a warranty or guarantee on the implant/crown?\n\nWhat to watch out for (red flags)\n- No radiographic evaluation before quoting a price.\n- Pressure to sign up for an expensive full-arch solution without a thorough exam and CBCT.\n- Lack of clear treatment plan or no written estimate.\n- Providers who won’t coordinate with your restorative dentist when appropriate.\n\nTypical cost ranges (rough, vary by case and practice)\n- Single implant + abutment + crown: roughly $2,000–$5,000+\n- Bone grafting: $200–$2,000+ depending on size/type\n- Sinus lift: $1,000–$3,000+\n- Full‑arch (All‑on‑4 style) ranges widely, often $15,000–$30,000+ per arch\n(Ask each office for a detailed estimate.)\n\nNext step\nTell me your Houston ZIP code or neighborhood and any preferences (insurance, budget, oral surgeon vs periodontist, need for sedation, timeline). I’ll give 4–6 specific practices near you with phone numbers, a quick reason to call each, and a suggested first question for your phone call.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

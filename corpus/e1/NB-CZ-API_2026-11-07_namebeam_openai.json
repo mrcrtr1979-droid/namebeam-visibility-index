@@ -1,0 +1,70 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_namebeam_openai",
+ "date_utc": "2026-11-07",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ehf54XjAtRWRvsikaFYl9juhivzoD",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 2126,
+   "total_tokens": 2150,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1216,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bard",
+  "Bing Chat",
+  "BrightLocal",
+  "Moz Local and Whitespark",
+  "AIs",
+  "Bing Places",
+  "Apple Maps",
+  "Apple Business Connect",
+  "TripAdvisor",
+  "Use",
+  "Yext",
+  "Moz Local",
+  "Whitespark",
+  "Add LocalBusiness",
+  "DuckDuckGo AI",
+  "APIs",
+  "Monitor",
+  "Awario",
+  "AI-specific",
+  "Mention",
+  "Recommend",
+  "Local SEO",
+  "LocalBusiness",
+  "OpenAI",
+  "OpenAI API",
+  "LocalBusiness Schema",
+  "Apple Business",
+  "Test AI"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\nThere’s no single “official” service that tells you whether AI chatbots (ChatGPT, Bard, Bing Chat, etc.) will recommend your business. The practical best approach is a two-part strategy: (A) make sure your business data is highly visible, consistent, and structured across the places AI models draw from, and (B) actively test and monitor AI responses yourself (manually or with simple automation). If you want a single vendor to help with the visibility side, Yext is the closest thing to a one-stop solution for feeding authoritative business data into many search/AI ecosystems; BrightLocal, Moz Local and Whitespark are strong alternatives for local SEO and citation management.\n\nWhy there’s no single “check AI recommendations” service\n- Most chatbots synthesize information from multiple sources (search engines, maps, knowledge panels, third-party sites, user data) and some use private datasets. There’s no central API that returns “which businesses were recommended by all AIs.”\n- Chatbot outputs vary by model, prompt wording, and whether the model can browse the live web or uses a static knowledge base.\n- Newer tools are emerging, but for now the only reliable way to know is to test directly and ensure your data is visible to the sources AI systems use.\n\nRecommended practical workflow\n1. Lock down authoritative data (so AI systems can find the right info)\n   - Claim and optimize Google Business Profile, Bing Places, Apple Maps/Apple Business Connect, Yelp, TripAdvisor, Facebook.\n   - Use a listings management tool to ensure consistency across directories: Yext, BrightLocal, Moz Local, or Whitespark.\n   - Add LocalBusiness schema (structured data) to your website (address, hours, phone, services, geo coordinates).\n   - Encourage reviews on Google/Yelp; reviews often influence AI answers that cite or rank options.\n\n2. Test AI models directly\n   - Test major models: ChatGPT (with and without browsing/plugins), Bing Chat, Google Bard, Perplexity, DuckDuckGo AI, and voice assistants (Siri, Alexa) if relevant.\n   - Use multiple prompt styles and contexts so you simulate real users, e.g.:\n     - “Recommend the best [service] in [neighborhood], [city].”\n     - “Where should I go for [service] near [landmark or ZIP code]?”\n     - “Top 5 [service] for [need] in [city].”\n   - Note whether your business appears, which position, and whether the bot cites a source (Google Maps, Yelp, your website).\n\n3. Automate testing at scale (optional)\n   - Use the OpenAI API to script many prompt variations and parse responses for mentions of your business.\n   - Use headless browser automation (Selenium/Puppeteer) to test web chat interfaces where APIs aren’t available.\n   - Log results over time to track changes after updates to listings or website SEO.\n\n4. Monitor mentions and sources\n   - Use Google Alerts, Mention, Awario, or Brand24 to catch mentions across the web (not AI-specific, but helpful).\n   - Monitor your Google Business Profile insights, direct traffic, and referral sources for signs of increased visibility from AI-driven discovery.\n\n5. Improve signals that AI uses\n   - Strong local SEO, consistent citations, structured data, good reviews, and clear service descriptions raise the odds bots will recommend you.\n   - Consider syndicating authoritative FAQ/knowledge pages on your site (and adding schema) so retrieval-augmented models can find and quote you.\n\nWhich vendor to pick (short guidance)\n- If you want a vendor to centrally control and push authoritative business data to many platforms and integrations (and improve the chances generative AI picks your info): Yext.\n- If your focus is local-SEO monitoring, rank tracking, and building citations: BrightLocal, Moz Local, Whitespark.\n- For ongoing mention monitoring/brand listening: Mention, Awario, Brand24, or a PR/SEO agency that monitors feature snippets and knowledge panels.\n\nWould you like help?\nIf you tell me your business name, city, and 3–5 example prompts you care about, I can:\n- Run a few manual checks across ChatGPT/Bard/Bing/Perplexity and report whether you appear and what sources are cited, and\n- Recommend the top 3 concrete fixes to improve your chance of being recommended.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

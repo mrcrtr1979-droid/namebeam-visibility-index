@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_dentists_phoenix_openai",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Phoenix. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhfVtZOGorjZA3eaMNviWUQAlaIir",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1495,
+   "total_tokens": 1520,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Maxillofacial Surgeons",
+  "ADA Find-a-Dentist",
+  "American Academy of Implant Dentistry",
+  "Implant Dentistry",
+  "American Academy of Implant Dentistry (AAID)"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can help — do you want me to recommend actual clinic names in Phoenix, or would you prefer guidance on which types of dental specialists to call and how to choose between them? If you want clinic names, tell me your ZIP code or nearest neighborhood and whether you have a budget/insurance preference; I’ll then suggest nearby practices to call.\n\nIf you want immediate, practical guidance, here’s what to call and why — plus exactly what to ask when you call.\n\nWhich practices to call (by type) and why\n- Oral & Maxillofacial Surgeons (OMS)\n  - Why: They place implants, perform extractions, handle complex bone grafting and sinus lifts, and manage surgical complications. Call them for difficult cases or when you need bone reconstruction.\n- Periodontists\n  - Why: Specialists in gums and supporting structures; they place implants and manage peri-implant soft tissue for esthetic results and long-term health.\n- Prosthodontists\n  - Why: Specialists in restoring teeth — they design and place implant crowns, bridges, or full-arch prostheses. Call them for complex restorations or full-mouth implant work.\n- Dental implant centers / multidisciplinary practices\n  - Why: These combine surgeon + prosthodontist + in-house lab and CBCT imaging in one office for coordinated care and predictable outcomes.\n- General dentists with advanced implant training\n  - Why: Many general dentists place implants and can be more convenient/lower cost for straightforward single-tooth implants. Verify their training and volume.\n\nHow to find specific practices quickly\n- Use these sources and filters: Google Maps (search “dental implants near me”), ADA Find-a-Dentist, American Academy of Implant Dentistry (AAID) directory, and online review sites (Google Reviews, Yelp).\n- Filter for: “periodontist,” “oral surgeon,” “prosthodontist,” “CBCT,” “All‑on‑4” (if you need full-arch), and “board certified” or “fellow of AAID/ICOI.”\n\nWhat to ask when you call (short script)\n1. Do you place dental implants, and which specialist will be doing the surgery and the restoration? (OMS, periodontist, prosthodontist)\n2. Do you perform CBCT 3D imaging in-office before implant placement?\n3. How many implants do you place per year? (higher volumes usually mean more experience)\n4. Will the surgical and restorative work be done here or are you referring out?\n5. Do you offer same-day implants or temporary teeth if I need them?\n6. What implant systems/brands do you use? (Straumann, Nobel, Zimmer, etc.)\n7. Estimated cost range and whether you provide a written treatment plan and payment/financing options\n8. Do you have before/after photos and patient references for similar cases?\n\nRed flags to avoid\n- No 3D imaging (CBCT) for implant planning in most cases\n- Vague answers about who does the surgery vs. crown work\n- No written treatment plan, timeline, or itemized estimate\n- Extreme prices that seem too low without explanation\n- Poor reviews specifically mentioning failed implants or lack of follow-up care\n\nIf you want, I can:\n- Recommend specific Phoenix practices if you give a ZIP code or neighborhood\n- Draft a short phone script or email template to send to offices\n- Explain differences between implant systems or treatment types (single implant vs. All‑on‑4)\n\nWhich would you like next?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

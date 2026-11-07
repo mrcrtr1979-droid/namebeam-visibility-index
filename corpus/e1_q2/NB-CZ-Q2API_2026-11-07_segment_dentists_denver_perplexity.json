@@ -1,0 +1,102 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_dentists_denver_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: dentists, Denver",
+ "niche": "dentists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Denver. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Denver for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5a87257e-190a-407d-9d37-8218e5e621a5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0016,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0053
+   },
+   "input_tokens": 4809,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4256,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 641,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5450
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Poulos, Somers and Marshall — Capitol Hill",
+  "Periodontics & Dental Implants of Central Park",
+  "Altura Periodontics — southeast Denver",
+  "Cherry Creek Restorative Dentistry — Cherry Creek",
+  "Peak OMS and Dental Implant Center",
+  "Somers and Marshall",
+  "Capitol Hill",
+  "Dr. Ann Somers",
+  "Dental Implants of Central Park",
+  "Denver. A",
+  "Altura Periodontics",
+  "Dr. Alan Pomeranz",
+  "Cherry Creek Restorative Dentistry",
+  "Cherry Creek",
+  "Implant Center"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.castleconnolly.com/top-dentists/alan-pomeranz-periodontics-cc389687",
+  "https://www.dentistsranked.com/dental-clinic/denver-co/periodontics-and-dental-implants-of-central-park",
+  "https://milehighdentalcenters.com/about-us/meet-our-team/",
+  "https://milehighdentalcenters.com/services/dental-implant-solutions/",
+  "https://www.periodontalhealth.com/areas/denver-co/",
+  "https://www.castleconnolly.com/top-dentists/aaron-bellis-prosthodontics-cc396057",
+  "https://www.dentistsranked.com/dental-services/dental-implants-denver-co",
+  "https://peakoms.com/about/dr-alex-podaru/",
+  "https://doctor.webmd.com/providers/specialty/prosthodontics/colorado/denver",
+  "https://peakoms.com/about/patient-testimonials/",
+  "https://directory.cherrycreekchamber.org/list/member/cherry-creek-restorative-dentistry-3480",
+  "https://www.linkedin.com/in/nicholas-poulos-40583527",
+  "https://diccolorado.com/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-ann-somers-1174692602",
+  "https://www.clearchoice.com/locations/region/denver/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "493b7b31a6e815dcf079a49b7c941bf867f34e8c986429d4b084be5496fd157a",
+ "answer_chars": 2526,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

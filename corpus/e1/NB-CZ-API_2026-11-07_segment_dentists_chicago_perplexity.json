@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_segment_dentists_chicago_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7e85223e-6f01-4cd0-ac2a-f1aa6dc5580e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 4989,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4443,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 300,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5289
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Prosthodontics clinic",
+  "Oral surgery / implant placement",
+  "Address",
+  "University Associates in Dentistry",
+  "UIC College of Dentistry",
+  "Innovations Center",
+  "University Associates",
+  "Dentistry",
+  "College of Dentistry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://hospital.uillinois.edu/find-a-doctor/rand-harlow",
+  "https://dentistry.uic.edu/patients/dental-services/",
+  "https://hospital.uillinois.edu/find-a-doctor/qiao-fang",
+  "https://hospital.uillinois.edu/find-a-doctor/sharif-mohammad",
+  "https://www.uadchicago.com/dental-implants/",
+  "https://dentistry.uic.edu/academics/academic-departments/department-of-restorative-dentistry/impant-and-innovations-center/",
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/oral-maxillofacial-surgery/",
+  "https://hospital.uillinois.edu/find-a-doctor/aniruddh-narvekar",
+  "https://www.uadchicago.com/",
+  "https://www.cds.org/meet-your-2026-2027-north-suburban-branch-president/",
+  "https://www.chicagoperiodontal.com/",
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/prosthodontics-implant-innovation/",
+  "https://hospital.uillinois.edu/find-a-doctor/louis-halkias",
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/periodontal-gum-disease-therapy/",
+  "https://dentistry.uic.edu/patients/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "6cd0aae899fcb165fe98cc28b20e873e689bb76b332a1555f18f4dd5e2d4d79d",
+ "answer_chars": 961,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

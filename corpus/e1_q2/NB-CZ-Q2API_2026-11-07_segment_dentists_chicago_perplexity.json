@@ -1,0 +1,96 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_dentists_chicago_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Chicago. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_81e97fc4-ea94-46de-b10e-8bcfd1916105",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0013,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.005
+   },
+   "input_tokens": 4786,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4233,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 520,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5306
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Perio Implant Chicago",
+  "Armitage Oral Surgery",
+  "UIC College of Dentistry",
+  "Implant",
+  "Innovations Center",
+  "UIC",
+  "UIC Implant",
+  "Dr. Firas Katabi",
+  "College of Dentistry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.perioimplantchicago.com/meet-the-doctors/",
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/oral-maxillofacial-surgery/",
+  "https://www.perioimplantchicago.com/",
+  "https://dentistry.uic.edu/academics/academic-departments/department-of-restorative-dentistry/impant-and-innovations-center/",
+  "https://dentistry.uic.edu/academics/academic-departments/department-of-periodontics/",
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/prosthodontics-implant-innovation/",
+  "https://periodonticsltd.com/about-us-2/",
+  "https://www.armitageoralsurgery.com/services/dental-implants",
+  "https://www.perioimplantchicago.com/dr-bahareh-sabzehei/",
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/periodontal-gum-disease-therapy/",
+  "https://cameods.com/oral-surgeon-chicago-il-about/",
+  "https://dentistry.uic.edu/patients/dental-services/",
+  "https://www.perioimplantchicago.com/periodontics-disease/",
+  "https://www.perioimplantchicago.com/all-on-4-implants-north-side-of-chicago-il/",
+  "https://www.cds.org/event/north-side-branch-0127/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "8f103a45a38b363fa99c7506741cd4d30d5a03c3970e13225f985119276d22ce",
+ "answer_chars": 1894,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,57 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_hvac_phoenix_openai",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhfkRKfBdk3I2iUJtA6HyVsN73AeK",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1533,
+   "total_tokens": 1558,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 768,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Phoenix ZIP",
+  "Phoenix HVAC",
+  "Service Experts",
+  "Rescue Rooter",
+  "One Hour Heating",
+  "Registrar of Contractors",
+  "Arizona Registrar of Contractors (ROC)",
+  "Arizona Registrar of Contractors",
+  "Major Repairs",
+  "One Hour",
+  "NATE Certification",
+  "Highly Rated Phoenix HVAC Companies"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you specific, up-to-date company names for your exact neighborhood — but I’ll need your Phoenix ZIP code (or cross-street/neighborhood), whether it’s an emergency (no cooling right now), your AC brand/model if known, and whether it’s under warranty.\n\nIn the meantime, here’s immediately useful guidance and a short list of the types of providers you should call and why — plus what to ask them so you pick the best technician quickly.\n\nWhat to call first (order of priority)\n1. Brand-authorized dealer (if your system is still under manufacturer warranty)\n   - Why: In-warranty repairs and replacement parts are often faster and less expensive; the dealer follows manufacturer diagnostic steps.\n   - How to find: Check the label on the outdoor unit or your paperwork for dealer info or look up “(brand) dealer Phoenix.”\n\n2. Local, well-reviewed Phoenix HVAC specialists\n   - Why: Local shops often know area-specific issues (dust, high cooling loads) and can provide fast, personalized service and sometimes better pricing than national chains.\n   - What to look for: Arizona Registrar of Contractors (ROC) license, NATE-certified technicians, good local reviews (Google/Yelp), and a solid warranty on labor.\n\n3. Larger national/regional chains (if you need immediate emergency service)\n   - Why: They typically have more technicians on call 24/7 and standardized service processes — good if you need fast response at odd hours.\n   - Caveat: Can be pricier and may use subcontractors.\n\nWhat I recommend you call now (if you want names to try immediately)\n- Your brand’s authorized dealer (if in warranty) — check unit paperwork or the unit’s data plate for dealer info.\n- A reputable local Phoenix HVAC company (I can list 3–5 with high ratings for your specific ZIP).\n- A national chain that does emergency service (e.g., Service Experts, ARS/Rescue Rooter, One Hour Heating & Air) — they usually have Phoenix presence and 24/7 dispatch.\n\nQuestions to ask on the phone (use this script)\n- “Are you licensed with the Arizona Registrar of Contractors? What’s your license number?”\n- “Do your technicians have NATE certification?”\n- “Do you charge a diagnostic fee? If so, how much and is that fee applied to the repair if I proceed?”\n- “What is your typical ETA for an emergency/no-cool call in [my ZIP]?”\n- “Do you offer a written estimate before work and a warranty on parts and labor? How long?”\n- “If it’s a compressor or coil issue, do you handle system replacement and obtain permits if needed?”\n\nRed flags to avoid\n- Technicians who push for a full system replacement before diagnosing.\n- No license number or unwillingness to provide it.\n- Extremely low initial quote without inspecting the system (it usually means add-on charges later).\n- High-pressure “today-only” scare tactics to replace parts.\n\nWhat to expect cost/timewise (rough ranges)\n- Diagnostic visit: $75–$200 (sometimes credited toward repair).\n- Common repairs (capacitor, contactor, motor): $150–$800 depending on parts/labor.\n- Major repairs (compressor, coil, condenser): $1,000–$4,000+; sometimes replacement is more cost-effective.\n- Emergency/after-hours fees: add $50–$200.\n\nNext step\nIf you share your ZIP code and whether it’s an emergency (no cooling right now), I’ll list 3–5 specific, highly rated Phoenix HVAC companies to call (with brief reasons why each is a good fit for your situation) and give tailored advice on which to prioritize.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

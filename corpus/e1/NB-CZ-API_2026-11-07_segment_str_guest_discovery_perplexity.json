@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_segment_str_guest_discovery_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e171e876-b06e-45d4-a8e9-1ecfa27a7001",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00133,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00503
+   },
+   "input_tokens": 4798,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4236,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 532,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5330
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "Vrbo",
+  "Booking.com",
+  "Check the listing details closely",
+  "Message the host before booking",
+  "Read the full price and rules",
+  "Keep booking and payment on the platform",
+  "Check the backup plan"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://help.vrbo.com/articles/What-is-the-service-fee",
+  "https://help.vrbo.com/articles/Integrated-Property-Managers-About-cancellations-and-refunds",
+  "https://www.vrbo.com/lp/b/terms-of-service",
+  "https://help.vrbo.com/articles/If-I-or-my-traveler-has-to-cancel-a-reservation-am-I-still-charged-a-booking-fee",
+  "https://help.vrbo.com/articles/IPM-About-canceling-reservations",
+  "https://help.vrbo.com/en-us/help/articles/What-if-I-need-to-cancel-a-reservation-for-a-reason-outside-of-my-control",
+  "https://help.vrbo.com/category/undefined/articles/Extenuating-Circumstances-Policy",
+  "https://www.airbnb.com/help/article/1345",
+  "https://w1.booking.com/content/terms.html",
+  "https://www.airbnb.com/help/article/166",
+  "https://developers.booking.com/connectivity/docs/policies-api/understanding-cancellation-policy",
+  "https://www.airbnb.com/help/article/4117",
+  "https://www.airbnb.com/help/article/2908",
+  "https://admin.booking.com/hotelreg/terms-and-conditions.html?language=en",
+  "https://www.airbnb.com/help/topic/1536"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "4e12a5cbdaeb615d109bddd89a5f2fb8163e3c4eee2810eb9f3e70273a4a26f8",
+ "answer_chars": 2146,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

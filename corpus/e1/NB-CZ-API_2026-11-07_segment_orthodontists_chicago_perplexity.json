@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_segment_orthodontists_chicago_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: orthodontists, Chicago",
+ "niche": "orthodontists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Chicago for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_32432c02-6a13-4d17-a022-177e3456dcc1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 5141,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4594,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 315,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5456
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Emilia Taneva at American Dental",
+  "Orthodontic Experts Chicago",
+  "AllCare Orthodontic Center",
+  "Invisalign",
+  "Dr. Emilia Taneva",
+  "American Dental",
+  "American Board of Orthodontics Diplomate",
+  "American Board of Orthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://atooth.com/meet-our-doctors/dr-emilia-taneva/",
+  "https://trustanalytica.org/us/il/chicago/best-orthodontists",
+  "https://www.toprateddentist.com/dentists/chicago-il/invisalign",
+  "https://www.linkedin.com/in/emtaneva",
+  "https://www.zocdoc.com/dentist/isaac-yue-dmd-ms-551574",
+  "https://www.zocdoc.com/orthodontists/chicago-210499pm",
+  "https://nationalorthodonticregistry.com/illinois/chicago-il/orthodontists/orthodontic-experts-chicago-2235-w-cermak",
+  "https://nationalorthodonticregistry.com/illinois/chicago/orthodontists",
+  "https://atooth.com/orthodontics/",
+  "https://nationalorthodonticregistry.com/illinois/chicago-il/orthodontists/allcare-orthodontic-center-chicago-il",
+  "https://trustanalytica.org/us/il/best-orthodontists",
+  "https://www.orthodonticexprts.com/lakeview-orthodontist/",
+  "https://nationalorthodonticregistry.com/illinois/chicago-il/orthodontists/mg-dentistry-chicago-il",
+  "https://www.bestinhood.com/chicago/dentists/best-orthodontic-clinics-in-chicago/",
+  "https://www.orthodonticexprts.com/west-loop-orthodontist/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "906c6497bfaff0a9b4afebd98b22704943cb85aa9c85cfb9bdc3d7e6216cff8d",
+ "answer_chars": 1220,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

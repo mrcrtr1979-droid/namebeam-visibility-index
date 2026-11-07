@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_segment_dentists_denver_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: dentists, Denver",
+ "niche": "dentists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Denver for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d519e898-6628-458d-94a0-5be24ba0141d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0044
+   },
+   "input_tokens": 4659,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4113,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 293,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4952
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Aaron Bellis at BridgeCreek Prosthetic Dentistry",
+  "Dr. Kaushal Dhawan",
+  "GoToAPro",
+  "Dr. Aaron Bellis",
+  "BridgeCreek Prosthetic Dentistry",
+  "American College of Prosthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.prosthodontics.org/contact/",
+  "https://doctor.webmd.com/providers/specialty/endodontics/colorado/denver",
+  "https://www.prosthodontics.org/find-a-dental-technician/",
+  "https://diccolorado.com/meet-the-team/",
+  "https://www.gotoapro.org/contact/",
+  "https://www.gotoapro.org/",
+  "https://disc.events/disc-2026-elite-members/",
+  "https://diccolorado.com/implants/affordable-dentures/",
+  "https://www.castleconnolly.com/top-dentists/aaron-bellis-prosthodontics-cc396057",
+  "https://diccolorado.com/meet-the-team/cherry-creek/",
+  "https://www.thedenverdentists.com/services/dental-implants",
+  "https://health.usnews.com/dentists/prosthodontists/colorado/denver",
+  "https://www.angi.com/companylist/us/co/denver/lakewood-prosthodontics-reviews-9585314.htm",
+  "https://www.dentistsranked.com/dental-services/dental-implants-denver-co",
+  "https://dental.me/co/denver/prosthodontists/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "0b2c61f130f0d4b2864594a3a8abb79119b5f1c2e1504dd644804c8b260e5d2a",
+ "answer_chars": 982,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

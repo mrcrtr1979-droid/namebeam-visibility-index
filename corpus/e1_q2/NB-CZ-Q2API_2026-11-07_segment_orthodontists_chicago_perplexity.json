@@ -1,0 +1,111 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_orthodontists_chicago_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: orthodontists, Chicago",
+ "niche": "orthodontists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Chicago. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Chicago for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f0e0c100-f195-49a2-a478-6a2466f92578",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00154,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00525
+   },
+   "input_tokens": 4816,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4263,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 616,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5432
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UIC Orthodontic Clinic",
+  "Dr. Emilia Taneva / American Dental",
+  "Lincoln Park: 773-868-9200; Midway/Archer: 773-284-1645",
+  "Chicago Orthodontics / Dr. Paul Wine",
+  "Midwest Orthodontics Center, Albany Park",
+  "Orthodontic Experts, Pilsen",
+  "S. Paulina St. The",
+  "Invisalign. A",
+  "Dr. Emilia Taneva",
+  "American Dental",
+  "Lincoln Park",
+  "Invisalign",
+  "Chicago Orthodontics",
+  "Dr. Paul Wine",
+  "W. North Ave. Dr. Wine",
+  "Invisalign Master",
+  "Midwest Orthodontics Center",
+  "Albany Park",
+  "N. Kedzie Ave. The",
+  "Dr. Angela Lu",
+  "Orthodontic Experts",
+  "Pilsen",
+  "W. Cermak Rd. The",
+  "Board Certification"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://midwestorthodontics.com/",
+  "https://dremiliataneva.com/",
+  "https://atooth.com/orthodontics/",
+  "https://dentistry.uic.edu/patients/dental-services/specialty-services/orthodontics/",
+  "https://midwestorthodontics.com/locations/chicago-il-60623/",
+  "https://www.orthodonticexprts.com/pilsen-orthodontist/",
+  "https://www.linkedin.com/in/emtaneva",
+  "https://www.orthodonticexprts.com/kedzie-orthodontists/",
+  "https://www.castleconnolly.com/top-dentists/paul-wine-orthodontics-cc302932",
+  "https://atooth.com/meet-our-doctors/dr-emilia-taneva/",
+  "https://midwestorthodontics.com/locations/chicago-il-60625/",
+  "https://www.dentistsranked.com/dental-services/invisalign-chicago-il",
+  "https://www.zocdoc.com/orthodontists/chicago-210499pm",
+  "https://www.bestinhood.com/chicago/dentists/best-orthodontic-clinics-in-chicago/",
+  "https://midwestorthodontics.com/locations/chicago/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "b6d6906f6743fa9c0780febb5b2fc2d48e39e2b0f9177741c54a4f80f5cee1a1",
+ "answer_chars": 2200,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

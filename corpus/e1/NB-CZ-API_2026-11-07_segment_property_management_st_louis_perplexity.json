@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_segment_property_management_st_louis_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: property management, St. Louis",
+ "niche": "property management companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Louis MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6bc17cda-b2dd-4882-be12-0804371ec4e2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00449
+   },
+   "input_tokens": 4814,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4263,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 313,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5127
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Intersection Real Estate Management",
+  "SOTO Property Solutions and Eaton Properties",
+  "SOTO Property Solutions",
+  "Eaton Properties",
+  "Intersection Real Estate"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.sotopropertysolutions.com/",
+  "https://www.eatonproperties.com/",
+  "https://www.bestinhood.com/st-louis/real-estate-and-property-services/best-property-management-in-st-louis/",
+  "https://www.renterswarehouse.com/offices/st-louis",
+  "https://database.thesisdriven.com/developers/turn-key-up-investments",
+  "https://database.thesisdriven.com/developers/frontier-property-management",
+  "https://www.sotopropertysolutions.com/brentwood-property-management",
+  "https://www.linkedin.com/company/axisrealtygroup",
+  "https://intersectionstl.com/",
+  "https://www.eatonproperties.com/st-louis-property-management",
+  "https://database.thesisdriven.com/developers/avenue-residential-leasing-management",
+  "https://www.stlouispropertymanagement.co/pricing",
+  "https://www.biggerpockets.com/mo/st-louis/property-managers",
+  "https://database.thesisdriven.com/developers/west-end-management-leasing-services",
+  "https://database.thesisdriven.com/developers/deca-property-management"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "5fc210d2c2ef1a92aa270e849720141385945b4aff270a5b283516453c476a1a",
+ "answer_chars": 1132,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

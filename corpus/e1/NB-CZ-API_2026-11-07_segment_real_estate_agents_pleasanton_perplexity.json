@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_segment_real_estate_agents_pleasanton_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7ef9e203-a26b-4fb0-9376-a6e5cf3096cb",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00442
+   },
+   "input_tokens": 4554,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4004,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 310,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4864
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Tim McGuire",
+  "Doug Buenz",
+  "Compass",
+  "Marketing Plan"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/pleasanton-ca/",
+  "https://www.zillow.com/profile/pleasanton%20expert",
+  "https://www.zillow.com/profile/robinyoungrealtor",
+  "https://www.zillow.com/profile/GinaPiperElationRE",
+  "https://www.zillow.com/profile/Jing%20Xue",
+  "https://www.zillow.com/profile/DougBuenz",
+  "https://www.zillow.com/profile/BouchraC",
+  "https://www.zillow.com/profile/kimdeol",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/94566/",
+  "https://www.zillow.com/profile/AnnaSongRealtor",
+  "https://www.zillow.com/profile/MaureenAquino",
+  "https://www.redfin.com/real-estate-agents/rahul-puri",
+  "https://www.zillow.com/profile/rm2sell",
+  "https://www.zillow.com/profile/user767165",
+  "https://www.zillow.com/profile/user8129073"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2f3dea12844380bced21c0d842c8b58d7b1d2b468fdaa3c241c080893fa09177",
+ "answer_chars": 1024,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

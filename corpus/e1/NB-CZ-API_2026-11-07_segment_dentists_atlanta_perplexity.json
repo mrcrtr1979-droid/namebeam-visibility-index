@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b2b49433-a14d-4ea5-94ef-842e2046ab63",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00074,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00453
+   },
+   "input_tokens": 5144,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4598,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 294,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5438
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atlanta Center for Advanced Periodontics",
+  "Dr. Carlos Castro at Georgia Prosthodontics",
+  "Midtown. Its",
+  "Dr. Carlos Castro",
+  "Georgia Prosthodontics",
+  "Dr. Brock Pumphrey"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://dentalimplantsvinings.com/",
+  "https://advancedperioatl.com/",
+  "https://atlanta.com/dental-services/oral-surgeons/pumphrey-periodontics-dental-implant-therapy",
+  "https://advancedperioatl.com/implants/",
+  "https://www.tebra.com/care/provider/steve-hahn-dmd-1417173048",
+  "https://www.tebra.com/care/prosthodontists//",
+  "https://www.myspecialtydentist.com/directory/profile/dr-gregg-codelli-1821141870",
+  "https://www.dentistsranked.com/dental-services/dental-implants-atlanta-ga",
+  "https://www.tebra.com/care/prosthodontists/atlanta-ga/",
+  "https://www.linkedin.com/in/david-davenport-dmd-ms-1b420199",
+  "https://www.castleconnolly.com/top-dentists/carlos-castro-prosthodontics-cc332832",
+  "https://www.atlperiogroup.com/specialty/dental-implants/",
+  "https://www.myspecialtydentist.com/best/prosthodontics/ga/atlanta",
+  "https://aedit.com/provider/carlos-castro-2044",
+  "https://health.usnews.com/dentists/periodontists/georgia/atlanta"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "eadacf6483d3b01f0ea7931e3f95dd6c649cae70e005a3db2348edb290a15efb",
+ "answer_chars": 997,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

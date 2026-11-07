@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_segment_tanning_salons_columbus_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: tanning salons, Columbus",
+ "niche": "tanning salons",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Columbus OH?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_fecdc8f3-878c-49c9-926b-a8fd7185a3f0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00053,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00429
+   },
+   "input_tokens": 5044,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4500,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 212,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5256
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sweetly Bronzed",
+  "Mahalo Spray Tanning",
+  "UV tanning beds",
+  "Palm Beach Tan’s Georgesville location",
+  "Palm Beach Tan",
+  "UV tanning"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://palmbeachtan.com/locations/oh/polaris-area-sancus-boulevard",
+  "https://www.bbb.org/us/oh/columbus/profile/tanning-salons/bronze-body-llc-dba-palm-beach-tan-0302-70107193/complaints",
+  "https://www.yelp.com/biz/mahalo-spray-tanning-columbus-2",
+  "https://palmbeachtan.com/locations/oh/georgesville",
+  "https://palmbeachtan.com/locations/oh/columbus-olentangy-river-road",
+  "https://www.bestprosintown.com/oh/columbus/tanning/",
+  "https://getblys.com/us/locations/spray-tan-columbus-oh/",
+  "https://easyweek.io/p/sun-studio-tan-columbus-7rlp/",
+  "https://www.bbb.org/us/oh/columbus/profile/spray-tanning-salon/sun-studio-tan-0302-70165282/customer-reviews",
+  "https://easyweek.io/tanning-and-spray-tan/columbus/",
+  "https://www.poyst.com/business/sweetly-bronzed",
+  "https://reviews.birdeye.com/dolphin-beach-tan-148341609465292",
+  "https://www.mapquest.com/us/ohio/sweetly-bronzed-429164308",
+  "https://www.entrepreneursofcolumbus.com/top-rated/spray-tanning/",
+  "https://trustanalytica.org/us/oh/columbus/best-tanning-salons"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "51871db5d4e439fb12ef2dc05d8d1a1403e39447ffd6f9172d9f9c0c7da70c46",
+ "answer_chars": 607,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

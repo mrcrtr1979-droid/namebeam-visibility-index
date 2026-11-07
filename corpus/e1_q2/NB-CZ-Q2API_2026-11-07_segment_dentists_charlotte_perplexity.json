@@ -1,0 +1,97 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_dentists_charlotte_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: dentists, Charlotte",
+ "niche": "dentists",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Charlotte. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Charlotte for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_2df708ae-a57d-47d4-8204-5bac67a39f22",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00137,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00505
+   },
+   "input_tokens": 4696,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4143,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 548,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5244
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sharma Oral Surgery",
+  "North State Periodontists & Dental Implants",
+  "ClearChoice Dental Implant Center",
+  "Crown Point Family Dentistry",
+  "Copper Way",
+  "North State Periodontists",
+  "Dental Implants",
+  "West Arbors Drive",
+  "Carolinas Center for Oral",
+  "Facial Surgery"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.crownpointfamilydentists.com/services/charlotte-dental-implants/",
+  "https://www.clearchoice.com/locations/nc/charlotte/8619-jw-clay-blvd/",
+  "https://www.sharmaoralsurgery.com/dental-implants/",
+  "https://imaginedentistryarboretum.com/services/",
+  "https://imaginedentistryarboretum.com/services/restorative/dental-implants/",
+  "https://www.affordabledentures.com/locations/nc/charlotte",
+  "https://imaginedentistryarboretum.com/services/restorative/",
+  "https://www.clearchoice.com/locations/region/charlotte/",
+  "https://www.northstateperio.com/dental-implants/",
+  "https://www.charlottemidtowndentistry.com/charlotte-nc/dental-implants/",
+  "https://www.charlottedentistry.com/dental-implants/",
+  "https://mycenters.com/locations/oral-surgery-charlotte-nc-university/",
+  "https://www.sharmaoralsurgery.com/dental-implants/full-mouth-dental-implants/",
+  "https://nccompletedentistry.com/services/dental-implants/",
+  "https://www.centralavenuedental.com/dental-implant-surgery/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "c1a8ca5b46b06ef13bd38bc8b5553ca1c5e4d096acbdcfe19cfe881e9d9d9473",
+ "answer_chars": 2107,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

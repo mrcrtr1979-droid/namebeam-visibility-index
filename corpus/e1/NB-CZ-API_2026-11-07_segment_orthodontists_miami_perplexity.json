@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_segment_orthodontists_miami_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: orthodontists, Miami",
+ "niche": "orthodontists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Miami for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3af83863-41e8-4e16-bb40-203a63c712d2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00082,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00429
+   },
+   "input_tokens": 3829,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3282,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 330,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4159
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Francesca Pietri",
+  "Dr. Richard C. Mariani Jr",
+  "Dr. Marco Irimia",
+  "Dr. Carmen A. Garcia-Paul",
+  "Dr. Cassandra Iglesias",
+  "Invisalign",
+  "American Association of Orthodontists",
+  "Sunset Drive",
+  "Miami and Aventura",
+  "South Miami"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-francesca-pietri/",
+  "https://aaoinfo.org/locator/dr-victoria-alexandra-gonzalez/",
+  "https://aaoinfo.org/locator/dr-richard-c-mariani-jr/",
+  "https://aaoinfo.org/locator/dr-stephen-m-grussmark-2/",
+  "https://aaoinfo.org/locator/dr-maria-e-yazji/",
+  "https://aaoinfo.org/locator/dr-marco-irimia/",
+  "https://aaoinfo.org/locator/dr-carmen-a-garcia-paul/",
+  "https://aaoinfo.org/locator/dr-jaime-a-zambrano-3/",
+  "https://aaoinfo.org/locator/dr-christian-e-de-jesus-2/",
+  "https://aaoinfo.org/locator/dr-cassandra-iglesias/",
+  "https://aaoinfo.org/locator/dr-claudia-acosta-lenis1/",
+  "https://aaoinfo.org/locator/dr-nickolaos-kallis/",
+  "https://aaoinfo.org/locator/dr-arturo-f-mosquera/",
+  "https://aaoinfo.org/locator/dr-nancy-lee-proano-wise/",
+  "https://aaoinfo.org/locator/dr-agustin-drubi-4/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "90a1c900f08652e8d741fcc6445258fe721cd844419ff525b7b698cc7866f84e",
+ "answer_chars": 1113,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

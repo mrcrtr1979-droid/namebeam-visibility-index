@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhfJLJb87bj3hnb9kfjzZ2N9umvh8",
+  "usage": {
+   "prompt_tokens": 20,
+   "completion_tokens": 1568,
+   "total_tokens": 1588,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "ZIP",
+  "NATE",
+  "Manual J Load Calculation",
+  "Carrier",
+  "Trane",
+  "Require a Manual J Load Calculation"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There’s no single “best” HVAC company for everyone — the right choice depends on your neighborhood, budget, the size/age of your home, the make and model you prefer, and whether you need ductwork or other repairs. I can give a tailored shortlist if you tell me your ZIP code and a few details. Meanwhile, here’s a concise, practical guide to help you find a great contractor in Atlanta.\n\nQuestions I need to give specific companies\n- ZIP code (or neighborhood)\n- House type and square footage\n- Existing system age/model and whether you need new ductwork\n- Preferred brands (Trane, Carrier, Lennox, Goodman, etc.)\n- Budget or timeline constraints\n- Want financing or maintenance plan?\n\nHow to choose the right company\n1. Get at least 3 written estimates. Compare system model numbers, SEER rating, included items (thermostat, new lines, permit, condensate pump), and labor warranty.\n2. Require a Manual J load calculation. That ensures correct sizing — critical for comfort and efficiency.\n3. Check credentials:\n   - Proof of insurance (liability + workers’ comp)\n   - Technician certifications (NATE is a plus)\n   - Local business license where required\n   - Positive reviews on Google, Yelp, BBB, Angi; ask for recent references\n4. Ask about warranties:\n   - Manufacturer parts warranty (length, activation requirements)\n   - Contractor labor/installation warranty (ask for written terms)\n5. Confirm permitting and code compliance — reputable companies pull permits and arrange inspections.\n6. Don’t choose solely on price — very low bids can mean shortcuts (undersized equipment, poor refrigerant charge, no duct sealing).\n7. Look for dealers/contractors who offer energy-efficiency rebates and will register warranties for you.\n\nKey questions to ask each contractor\n- Will you perform a Manual J load calculation and provide the report?\n- Which brand and model are you proposing, and what is the actual SEER/HSPF?\n- What is included in this price (permit, thermostat, new lines, electrical upgrade, haul-away)?\n- What are the total labor and parts warranties? Any requirement to enroll in a maintenance plan to keep warranties?\n- Do you handle permits and inspections?\n- Can you provide references from local installs in the past 6–12 months?\n- Who will do the installation (company employees vs subcontractors)?\n\nRed flags\n- Pressure to sign immediately or “today-only” discounts.\n- No written estimate or vague scope.\n- Refusal to perform a load calculation or to pull permits.\n- Poor/zero local references and lots of recent negative reviews.\n\nIf you want, I can:\n- Provide a short list of highly reviewed Atlanta-area installers for your ZIP code.\n- Draft an RFP/email you can send to contractors for consistent quotes.\nTell me your ZIP code and any preferences above and I’ll compile a tailored shortlist and a sample message to send contractors.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

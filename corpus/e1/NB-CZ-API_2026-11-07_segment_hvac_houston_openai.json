@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_segment_hvac_houston_openai",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhfJuXASthwLIZRa642p3srhEGrO6",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 1366,
+   "total_tokens": 1384,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "EPA Section",
+  "Rescue Rooter",
+  "One Hour Heating",
+  "John Moore Services",
+  "AC repair",
+  "John Moore",
+  "One Hour"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single universally “best” HVAC company for AC repair in Houston — the right choice depends on your ZIP code, whether it’s a residential or commercial job, how quickly you need service, what brand of equipment you have, and your budget. I can help you find the best option for your situation. A few quick options and next steps:\n\nIf you want me to pick local companies for you\n- Tell me your ZIP code and whether this is residential or commercial (and whether it’s an emergency). I’ll pull a short list of top-rated, nearby AC repair companies with recent review summaries and contact info.\n\nHow to pick the best HVAC company for AC repair\n- Check nearby reputation: recent Google/Yelp reviews, Angi/HomeAdvisor, and Better Business Bureau complaints.\n- Verify credentials: technicians should have EPA Section 608 refrigerant certification; confirm the company carries liability insurance and (if required in your area) any local licenses/registrations.\n- Ask about experience with your unit brand/model.\n- Get written estimates from 2–3 companies (diagnostic fee, parts & labor, taxes).\n- Confirm warranties: parts and labor and how long they last.\n- Ask about emergency/same-day availability if you need it now.\n- Ask whether they use flat-rate pricing or time-and-materials and whether permits will be pulled for repairs requiring them.\n- Get references or recent customer examples, especially for larger repairs.\n\nWell-known companies that serve Houston (examples to consider; verify for your area)\n- John Moore Services (large, Houston-based; offers 24/7 service)\n- ARS/Rescue Rooter (national brand with local presence)\n- Local HVAC franchises (One Hour Heating & Air, local independent shops)\n\nIf you share your ZIP code and whether you want same-day service, I’ll find 3–5 well-reviewed HVAC companies near you, summarize their ratings/hours/warranties, and recommend which to call first.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

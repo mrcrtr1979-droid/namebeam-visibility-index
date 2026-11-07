@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_segment_orthodontists_houston_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: orthodontists, Houston",
+ "niche": "orthodontists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Houston for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ce104a90-8b8c-483c-bafb-40c771fe2888",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00452
+   },
+   "input_tokens": 4758,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4211,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 333,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5091
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Houston Orthodontic Specialists",
+  "Cooper Orthodontics",
+  "Greater Houston Orthodontics",
+  "American Board of Orthodontics",
+  "Invisalign. It",
+  "Invisalign",
+  "Houston and Bellaire",
+  "Greater Houston"
+ ],
+ "engine_stated_criteria": [
+  "A good starting point is Greater Houston Orthodontics"
+ ],
+ "sources_cited": [
+  "https://www.houstonortho.com/",
+  "https://www.myidealdental.com/houston-orthodontist",
+  "https://www.cooperorthodontics.com/testimonials/",
+  "https://health.usnews.com/dentists/katie-julien-1761367",
+  "https://greaterhoustonorthodontist.com/meet-the-doctors/",
+  "https://www.houstonortho.com/reviews/",
+  "https://smiledoctors.com/locations/houston-clear-lake/",
+  "https://www.bestinhood.com/houston/healthcare/best-orthodontists-in-houston/",
+  "https://nationalorthodonticregistry.com/texas/houston-tx/orthodontists/houston-orthodontics-houston-tx",
+  "https://nationalorthodonticregistry.com/texas/houston/orthodontists",
+  "https://health.usnews.com/dentists/orthodontists/texas/houston",
+  "https://www.myidealdental.com/stone-park/our-dentists",
+  "https://www.zocdoc.com/practice/smiles-bites-house-of-orthodontics-185067?visitorId=&organizationId=",
+  "https://nationalorthodonticregistry.com/texas/houston-tx/orthodontists/greater-houston-orthodontics-houston-tx",
+  "https://nationalorthodonticregistry.com/texas/houston-tx/orthodontists/davoody-hablinski-orthodontics-houston-tx"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "0d99f99121baef7cc859888ef2f4841f325fa6360661ad4e84b6da9d0f1cff17",
+ "answer_chars": 1289,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

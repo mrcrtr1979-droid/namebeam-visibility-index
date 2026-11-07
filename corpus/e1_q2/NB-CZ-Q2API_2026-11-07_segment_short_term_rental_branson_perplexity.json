@@ -1,0 +1,103 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8c498fd6-ea9e-414b-912c-f84cc8f42c87",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00094,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00102,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0046
+   },
+   "input_tokens": 4301,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3744,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 407,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4708
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Rent Branson — 417-779-5880",
+  "Branson Premier — 417-248-1788",
+  "Sunset Nightly Rentals — 877-784-4614",
+  "Rent Branson",
+  "RentBranson.com",
+  "Table Rock Lake. The",
+  "Branson-area",
+  "Branson Premier",
+  "BransonPremier.com",
+  "Strip. It",
+  "Sunset Nightly Rentals",
+  "SunsetNightlyRentals.com",
+  "Indian Point",
+  "StoneBridge",
+  "Table Rock",
+  "Lake"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.rentbranson.com/about/",
+  "https://www.rentbranson.com/",
+  "https://www.bransonvacationcabins.com/",
+  "https://www.rentbranson.com/branson-property-management/",
+  "https://www.rentbranson.com/about-rent-branson-property-management/",
+  "https://www.tripadvisor.com/Hotel_Review-g44844-d1540990-Reviews-Rent_Branson-Ridgedale_Missouri.html",
+  "https://www.bbb.org/us/mo/branson/profile/vacation-rentals/branson-premier-0734-1000049742",
+  "https://bransonfamilyretreats.com/management/",
+  "https://x.com/BransonVR",
+  "https://www.airbnb.com/branson-mo/stays/apartments",
+  "https://bransonpremier.com/",
+  "https://www.sunsetnightlyrentals.com/",
+  "https://www.branson.com/cabin-rentals/",
+  "https://bransonpremier.com/listings/homes/",
+  "https://bransonpremier.com/list-with-us/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ef6d851f3aa48719e4e766a0f4b725e79f0bf5562420f8dc23ffae9a1cbccf16",
+ "answer_chars": 1412,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

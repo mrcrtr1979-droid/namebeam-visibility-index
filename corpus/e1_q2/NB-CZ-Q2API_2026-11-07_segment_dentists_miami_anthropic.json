@@ -1,0 +1,43 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_dentists_miami_anthropic",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: dentists, Miami",
+ "niche": "dentists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Miami. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Miami for a dental implant?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_cwdxeszax57y2hwf7r7cel7dauaso35ikcmnrldzjcpac7nlbuaq",
+  "usage": {
+   "input_tokens": 27,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 255,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Verification steps",
+  "Florida's Department of Health"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can't recommend specific practices since I don't have current, verified information about Miami dental offices or their quality.\n\nHere's how to find a good one:\n\n**Verification steps:**\n- Check if dentists are licensed through Florida's Department of Health\n- Look for implant-specific credentials (prosthodontics, implant certifications)\n- Read recent reviews on Google, Healthgrades, or Zocdoc\n- Verify they're in-network with your insurance\n\n**What to evaluate:**\n- Do they offer consultations to discuss your specific case?\n- Can they show before/after cases similar to yours?\n- What's their experience level with implants?\n- Do they explain costs and financing clearly?\n- How do they handle complications?\n\n**Red flags:**\n- Pressure to decide immediately\n- Unusually cheap pricing\n- No discussion of your medical history\n- Unwillingness to answer questions\n\nGetting 2-3 consultations is standard practice and helps you compare approaches and costs. Your general dentist can also provide referrals if you have one.\n\nIs there something specific about the implant process you'd like to understand better?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

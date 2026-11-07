@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_segment_str_guest_discovery_openai",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EhfCDCYTcpdrVo53vN49nL5gcgsBf",
+  "usage": {
+   "prompt_tokens": 34,
+   "completion_tokens": 1931,
+   "total_tokens": 1965,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 896,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Booking.com",
+  "Superhost",
+  "Street View",
+  "Watch for red flags",
+  "On Vrbo"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- There’s no single “best” platform. Choose by what matters most to you:\n  - Airbnb — best for unique/varied listings, many entire homes and private rooms, strong host community and reviews.\n  - Vrbo — best if you want whole vacation homes for families/groups (fewer shared spaces, owner-focused inventory).\n  - Booking.com — best for last-minute flexibility, many professionally managed apartments/hotels, often free-cancellation options and pay-at-property choices.\n\nHow to choose between them (quick decision guide)\n- You want quirky/unique stays or local hosts: Airbnb.\n- You need a whole house (pool, big kitchen) for family/group: Vrbo.\n- You want hotel-like reliability or flexible cancellation/pay-later options: Booking.com.\n- You’re price-shopping: search all three — the same place can appear on multiple sites at different prices/fees.\n\nPlatform pros & cons (high level)\n- Airbnb\n  - Pros: huge variety, strong host profiles, Superhost program, easy messaging, lots of filters.\n  - Cons: service/cleaning fees can add up; some hosts have strict cancellation policies.\n- Vrbo\n  - Pros: focuses on full homes, family-friendly filters (cribs, fenced yards), many owners manage long-term rentals.\n  - Cons: fewer small/shared options; policies and fees set by owners vary widely.\n- Booking.com\n  - Pros: many professionally managed properties, often flexible cancellation, pay-at-property options, wide inventory.\n  - Cons: less personal host interaction; some rentals are hotel-style management rather than individual hosts.\n\nHow to find a good host — step-by-step checklist\n1. Use filters first\n   - Set must-have amenities, cancellation-flexibility, number of bedrooms, instant book vs request.\n2. Read recent reviews, not just the average score\n   - Pay most attention to reviews from the last 12–18 months mentioning cleanliness, accuracy, communication, noise, and neighborhood safety.\n3. Look at host/owner signals\n   - Established hosts: many positive reviews and repeat bookings.\n   - Platform badges: Superhost (Airbnb), “Top-rated”/preferred partner (Booking.com), or equivalent on Vrbo.\n   - Response rate/time and few/no host cancellations in host profile.\n4. Scrutinize listing details and photos\n   - Photos should be numerous and clear; the description should match photos and list house rules, check-in/out, and fees.\n   - Check the map, neighborhood photos, and proximity to transport/attractions.\n5. Ask targeted questions before booking (sample message below)\n   - Ask about anything unclear: exact sleeping arrangements, parking, noise, how keys are handled, heating/AC, Wi‑Fi speed, access to pool/gym, neighborhood safety.\n6. Watch for red flags\n   - Requests to pay or communicate off-platform, unusually low price, host pressure to book quickly, stock photos only, no reviews.\n7. Verify independently if needed\n   - Google the address or use Street View to confirm the building/neighborhood. Consider reverse image search on listing photos if something feels off.\n8. Know cancellation & deposit terms\n   - Read the host’s cancellation policy and any security deposit process. Note who collects the deposit and the timeline for refunds.\n9. Check the platform’s protections\n   - See what guest guarantees, refund policies, and support channels exist on the platform you pick.\n10. If you’ll stay longer, try to negotiate politely\n   - For stays a week or more, ask about discounts or lower cleaning fees — but do that through the platform so there’s a record.\n\nSample message to a potential host\nHi — I’m [Name]. My party is [# adults, # kids], and we’d arrive on [date] and depart on [date]. I have two quick questions: (1) Is the listed bedroom setup private? (2) Is there secure off-street parking/will street parking be OK? We’re tidy, non-smokers, and will follow house rules. Thank you!\n\nSafety tips\n- Always book and pay through the platform.\n- Keep message and transaction history on the site.\n- Use a credit card when possible (extra protections).\n- If a problem arises, contact the platform’s customer support immediately and keep photos/records.\n\nPractical booking tips to save money/get reliability\n- Compare the same listing across platforms — prices and fees can differ.\n- Check total price (including cleaning, service, local taxes).\n- Book earlier for peak season; last-minute deals sometimes exist on Booking.com.\n- Read at least 5–10 recent reviews and scan negatives for patterns (cleanliness, noise, communication).\n- Consider travel insurance if cancellation would be costly.\n\nIf you want, I can:\n- Compare specific listings (send links or location + dates),\n- Draft a short message tailored to your trip,\n- Recommend neighborhoods or filter settings based on your travel style and party size.\n\nWhich platform sounds closest to what you need?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

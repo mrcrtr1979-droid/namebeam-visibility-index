@@ -1,0 +1,42 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_dentists_phoenix_anthropic",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Phoenix. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_ekt5px2ooy6flhfefqvkj4wrghkmm5tx4ghdsaloet4hjt5yykzq",
+  "usage": {
+   "input_tokens": 27,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 285,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Better starting point"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest a practical approach rather than me recommending specific practices:\n\n**How to find good options:**\n- Check your dental insurance provider's directory for in-network implant specialists\n- Search \"prosthodontist\" or \"implant specialist\" in Phoenix (more specialized than general dentists)\n- Read recent Google/Yelp reviews, focusing on implant-specific feedback\n- Verify credentials: look for board certification in prosthodontics or implant training\n\n**What to evaluate when calling:**\n- Do they have a consultation fee? (helps you compare 2-3 places)\n- How many implants have they placed?\n- What's included in their pricing? (implant, abutment, crown, bone grafting if needed)\n- Do they offer payment plans?\n- What's their timeline and aftercare process?\n\n**Red flags:**\n- Pressure to decide immediately\n- Unusually cheap pricing without explanation\n- Unwillingness to discuss their experience\n\n**Better starting point:**\nIf you have a regular dentist, ask for a referral—they often know local specialists well and can recommend someone appropriate for your specific situation.\n\nIs there a particular aspect of the implant process you're most concerned about? That might help narrow down what to prioritize when evaluating practices.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

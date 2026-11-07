@@ -1,0 +1,100 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_hvac_phoenix_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_949dced9-1c1d-4b45-8b43-e41ec8626d22",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.001,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00481
+   },
+   "input_tokens": 5232,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4679,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 400,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5632
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Arizona HVAC Department — (602) 880-8886",
+  "Hobaica Services — (602) 995-0387",
+  "Howard Air — (623) 208-6356",
+  "AZAC Service — (602) 367-6109",
+  "Phoenix-area",
+  "Arizona HVAC Department",
+  "Hobaica Services",
+  "Howard Air",
+  "BBB-accredited",
+  "AZAC Service",
+  "Phoenix AC-repair",
+  "AC repair",
+  "A+ BBB"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-contractor/arizona-hvac-department-llc-1126-1000171758",
+  "https://www.bbb.org/us/az/phoenix/category/air-conditioning-repair/accredited",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-contractor/goettl-air-conditioning-and-plumbing-phoenix-1126-527",
+  "https://www.bbb.org/us/az/phoenix/category/air-conditioning-parts/accredited",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-contractor/hobaica-services-llc-1126-467",
+  "https://www.bbb.org/us/az/phoenix/category/heating-and-air-conditioning/accredited",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-contractor/howard-air-1126-33001105",
+  "https://www.bbb.org/us/az/phoenix/category/air-conditioning-contractor",
+  "https://www.bbb.org/us/az/phoenix/category/residential-air-conditioning-contractors/accredited",
+  "https://www.bbb.org/us/az/paradise-valley/category/air-conditioning-repair",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-contractor/same-day-air-repair-1126-1000021121",
+  "https://www.bbb.org/us/az/phoenix/profile/air-conditioning-contractor/veterans-heating-ac-repair-1126-1000073556",
+  "https://www.bbb.org/us/az/phoenix/profile/plumber/service-experts-heating-air-conditioning-llc-1126-29003692",
+  "https://www.dayandnightair.com/",
+  "https://www.bbb.org/us/az/gilbert/profile/air-conditioning-contractor/precise-air-heating-1126-1000141996"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "e137519b060d46758e4910706f83bf4bae800d0c4d1a465436f61d672b9d0ceb",
+ "answer_chars": 1454,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

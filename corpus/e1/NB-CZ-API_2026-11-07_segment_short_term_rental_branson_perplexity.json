@@ -1,0 +1,107 @@
+{
+ "check_id": "NB-CZ-API_2026-11-07_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7f5c3e22-9194-426a-af74-d8f443ed6379",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00134,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00499
+   },
+   "input_tokens": 4599,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4043,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 538,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5137
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Short answer",
+  "Highway 76 / the Strip",
+  "Indian Point / Branson West",
+  "Silver Dollar City",
+  "Branson Landing / downtown",
+  "Table Rock Lake",
+  "Shady Acre Inn & Suites",
+  "A lakefront rental on Table Rock Lake",
+  "My default recommendation",
+  "Strip",
+  "Indian Point",
+  "Highway",
+  "Branson West",
+  "Strip. Many",
+  "Shady Acre Inn",
+  "Silver Dollar City-and-lake",
+  "Table Rock",
+  "Landing",
+  "The Strip",
+  "Near Silver Dollar City",
+  "Near the Strip"
+ ],
+ "engine_stated_criteria": [
+  "hotel for a short trip or if you’ll mostly be out seeing shows and attractions"
+ ],
+ "sources_cited": [
+  "https://www.airbnb.com/branson-mo/stays",
+  "https://www.airbnb.com/branson-mo/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays/lakehouses",
+  "https://www.airbnb.com/branson-mo/stays/waterfront",
+  "https://www.airbnb.com/missouri-united-states/stays/cabins",
+  "https://www.airbnb.com/missouri-united-states/stays/lake-access",
+  "https://www.airbnb.com/ozark-mo/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays/resorts",
+  "https://www.airbnb.com/branson-west-mo/stays/cabins",
+  "https://www.airbnb.com/branson-mo/stays/kayak",
+  "https://www.airbnb.com/branson-west-mo/stays",
+  "https://www.airbnb.com/moonshine-beach-mo/stays/cabins",
+  "https://www.airbnb.com/table-rock-lake/stays",
+  "https://www.airbnb.com/branson-mo/stays/cottages",
+  "https://business.visittablerocklake.com/list/category/lodging-1192"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "3428c091fbb4f348b1a363b406722e51cbc9502add49c2d4f08753cd1d7c0a9c",
+ "answer_chars": 2053,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

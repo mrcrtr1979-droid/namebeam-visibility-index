@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Phoenix. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_569e0749-c899-4ac5-b67a-9f801d8af399",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0012,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00499
+   },
+   "input_tokens": 5171,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4618,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 482,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5653
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AZPerio",
+  "Arizona Periodontal Group",
+  "Butura Oral and Dental Implant Surgery",
+  "Practice",
+  "Dr. Ariel Trujillo",
+  "Implant Surgery"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.periodontistphoenix.com/dental-implants/",
+  "https://www.periodontistphoenix.com/",
+  "https://www.azimplantdentist.com/",
+  "https://www.periodontistphoenix.com/our-practice/",
+  "https://www.clearchoice.com/locations/az/phoenix/20830-north-tatum-blvd/",
+  "https://www.azimplantsolutions.com/p/Sitemap-p.asp",
+  "https://www.dentistsranked.com/dental-services/dental-implants-phoenix-az",
+  "https://www.phoeniximplantclinic.com/",
+  "https://www.everydentist.com/profiles/2744/",
+  "https://www.dentistsranked.com/dental-clinic/phoenix-az/camelback-periodontics",
+  "https://dentillo.com/city/phoenix",
+  "https://www.thephoenixreview.com/best-oral-surgeons-phoenix/",
+  "https://phoenixoralsurgeons.com/dental-implants/",
+  "https://www.tebra.com/care/periodontists/phoenix-az/",
+  "https://www.dentistsranked.com/dental-clinic/phoenix-az/dental-implants-phoenix"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9858a2f8545c202ce19588c1a412f0a0b938005c6e5ba707cfbb78cadfeb210d",
+ "answer_chars": 1707,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,101 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-07_segment_real_estate_agents_pleasanton_perplexity",
+ "date_utc": "2026-11-07",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to sell my house in Pleasanton. Which specific real estate agents should I call, and why?",
+ "q1_prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_10fe0849-a5c4-4704-9816-e427dd305491",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00129,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00499
+   },
+   "input_tokens": 4785,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4229,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 515,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5300
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton, California",
+  "Doug Buenz / The 680 Group (Compass)",
+  "Tim McGuire (Compass)",
+  "Crystal Jackson",
+  "Stephanie Zhou",
+  "Doug Buenz",
+  "Compass",
+  "Tim McGuire",
+  "Ruby Hill",
+  "CrystalJackson",
+  "UhomeUlife",
+  "In Pleasanton"
+ ],
+ "engine_stated_criteria": [
+  "three recent seller-side sales near your home"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/pleasanton-ca/",
+  "https://www.zillow.com/profile/SeamlessRealtor",
+  "https://www.zillow.com/profile/robinyoungrealtor",
+  "https://www.zillow.com/profile/pleasanton%20expert",
+  "https://www.zillow.com/profile/Realorsusangao",
+  "https://www.zillow.com/profile/Sunmeet%20Anand",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/94566/",
+  "https://www.zillow.com/profile/Janna%20Chestnut",
+  "https://www.zillow.com/profile/sallymartin1",
+  "https://www.zillow.com/profile/JuliaMurtagh",
+  "https://www.zillow.com/profile/CrystalJackson",
+  "https://www.zillow.com/profile/WendyMaRealtor",
+  "https://www.zillow.com/profile/UhomeUlife",
+  "https://www.zillow.com/profile/Marisa%20Suarez",
+  "https://www.zillow.com/profile/bbenotto"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "5172686e83ac64999b464cc227c5a56cb50026139646c662a501321c9c605c09",
+ "answer_chars": 1921,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}
