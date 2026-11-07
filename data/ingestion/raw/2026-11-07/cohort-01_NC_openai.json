@@ -1,0 +1,17 @@
+{
+ "answer_text": "I don’t have live web access, so I can’t open Namebeam’s AI Visibility Record to count the pages myself. If you can paste the record or give me the URL I’ll fetch and count them for you.\n\nIf you want to do it yourself, here are two quick ways.\n\n1) Python (pandas) — works if you have a CSV or can save the page as CSV/JSON:\n- Save or export the record to CSV with a date column and columns (or a single column) listing Google’s top‑10 result URLs.\n- Example script (adjust column names to match the file):\n\n```python\nimport pandas as pd\n\ndf = pd.read_csv(\"ai_visibility_record.csv\", parse_dates=[\"date\"])   # change filename and date column name\nmask = (df[\"date\"] >= \"2026-09-01\") & (df[\"date\"] <= \"2026-09-27\")\ndf = df.loc[mask]\n\n# If top10 are in separate columns top1..top10:\nurl_cols = [c for c in df.columns if c.lower().startswith(\"top\") or \"google\" in c.lower()]\nurls = pd.unique(df[url_cols].values.ravel())\nurls = [u for u in urls if pd.notna(u)]\nprint(\"Unique pages in Google top-10:\", len(urls))\n\n# If top10 are in one column as comma-separated list:\n# urls = pd.Series(df[\"top10\"].str.split(\",\").sum()).dropna().unique()\n```\n\n2) Command line (CSV where top10 are separate columns):\n- Use csvkit + awk to extract and count unique URLs:\n```\ncsvcut -c top1,top2,top3,top4,top5,top6,top7,top8,top9,top10 ai_visibility_record.csv \\\n  | tail -n +2 \\\n  | tr ',' '\\n' \\\n  | sed '/^$/d' \\\n  | sort -u \\\n  | wc -l\n```\n\nWhere it’s published: the record should be on Namebeam’s website (namebeam.com) or on their public repo/page linked from the site (if they publish a dataset, often on a blog post or GitHub). If you give me the exact URL or paste the record, I’ll count the unique pages and tell you exactly where it’s published.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-11-07T17:50:37Z",
+ "ok": true,
+ "probe_id": "NC",
+ "prompt_sha256": "efbb2eccf1f282e2dfdb6e4a46f44888ad548f405a891de2b76dea5850430d16",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web pages did Google's top 10 results list for the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "negative_control",
+ "run_id": "42398274371",
+ "search_mode": "no search tool (E1 setting)"
+}
