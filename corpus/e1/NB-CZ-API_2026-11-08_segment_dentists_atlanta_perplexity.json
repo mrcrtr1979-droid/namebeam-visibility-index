@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_segment_dentists_atlanta_perplexity",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d45ee956-5b06-496b-bcbc-b68ea74e5ced",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00066,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00444
+   },
+   "input_tokens": 5108,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4562,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 262,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5370
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Rosemary Davis",
+  "Dr. Brandon Frodge",
+  "Dr. Brock Pumphrey",
+  "Atlanta Center for Advanced Periodontics",
+  "Midtown and Sandy Springs",
+  "Southern Roots Periodontics",
+  "Implant Dentistry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://southernrootsperiodontics.com/",
+  "https://advancedperioatl.com/",
+  "https://advancedperioatl.com/candidate-for-dental-implants-atlanta/",
+  "https://advancedperioatl.com/implants/",
+  "https://poncedentalstudio.com/dr-william-zinney/",
+  "https://dentalimplantsvinings.com/",
+  "https://advancedperioatl.com/our-locations/dental-office-sandy-springs/",
+  "https://aaid-implant.org/dentist/flax-hugh/",
+  "https://advancedperioatl.com/our-locations/dental-office-midtown-atlanta/",
+  "https://www.desmoinesregister.com/press-release/story/113258/atlanta-implant-dentist-dr-andrew-currie-earns-aboi-id-diplomate-status/",
+  "https://www.atlantamagazine.com/article/periodontics-and-implant-dentistry/",
+  "https://aaid-implant.org/dentist/van-galder-daniel/",
+  "http://www.1800sleeplab.com/clinic/Dr-Wayne-Suway",
+  "https://midtownsmilecenter.com/about/",
+  "https://www.myspecialtydentist.com/directory/profile/dr-gregg-codelli-1821141870"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "b08f4a3c9aeccaee2ff75ab1e58c8a18eac46a16119725c06921cd31184d34ed",
+ "answer_chars": 927,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

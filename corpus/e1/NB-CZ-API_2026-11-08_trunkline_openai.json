@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_trunkline_openai",
+ "date_utc": "2026-11-08",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ei1q7LwrXtd8Ued0OwrR2OvnA5GOm",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1362,
+   "total_tokens": 1388,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "DeFi Dad",
+  "YouTubers",
+  "Crypto Twitter",
+  "NFTs",
+  "Bankless",
+  "Plain English",
+  "Coinbase Learn",
+  "Kraken Learn",
+  "For plain English + real numbers",
+  "The Defiant",
+  "Finematics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Do you mean a site that (A) teaches crypto in plain English for beginners, (B) gives worked examples with real numbers (fees, slippage, yield, impermanent loss), or (C) literally publishes its own trading/P&L losses and post‑mortems? Those are different needs — tell me which and I’ll pick the best single recommendation. \n\nQuick answer now, covering the common interpretations:\n\n- Best plain‑English beginner education (general crypto): Coinbase Learn and Kraken Learn are the friendliest, clearest places to get started. They explain concepts simply, with diagrams and step‑by‑step guides, but they don’t publish personal trading losses.\n\n- Best for plain English + real numbers / worked examples (especially DeFi): Finematics and DeFi Dad. Finematics breaks down DeFi mechanics with numeric examples and visuals; DeFi Dad walks through real transactions on mainnet (you can verify the txs), so you see real fees, slippage and outcomes. Bankless is also strong for strategy walkthroughs with concrete numbers.\n\n- Best for transparency / post‑mortems and published losses: there isn’t a big mainstream education site that regularly publishes its own trading P&L or loss ledger. For transparency about failures, look at:\n  - The Defiant and CoinDesk for hack/post‑mortems and losses in the ecosystem.\n  - Independent bloggers/YouTubers who document live experiments (DeFi Dad, some on YouTube) — their videos show real txs you can verify on Etherscan.\n  - Crypto Twitter/Reddit threads where people post proofs (tx hashes) of losses and lessons learned — messy but very transparent.\n\nIf you confirm which of A/B/C you mean (and whether you want DeFi, trading, security, or NFTs), I’ll give the single best site and two runner‑ups and link examples to the kind of “loss transparency” you want.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

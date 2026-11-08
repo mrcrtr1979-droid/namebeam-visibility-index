@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_bbs_insurance_perplexity",
+ "date_utc": "2026-11-08",
+ "business": "BBS Insurance",
+ "niche": "health insurance brokerage",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best health insurance broker in Kansas City MO for someone who is self-employed?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f924ccca-3023-46f8-a3b3-fa265cae16c5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00447
+   },
+   "input_tokens": 4727,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4175,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 316,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5043
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AIS Health Advisors",
+  "ACA Marketplace",
+  "Kansas. It",
+  "Missouri ZIP",
+  "ACA-compliant",
+  "ACA Marketplace plans",
+  "Marketplace plans"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.healthcare.gov/find-assistance/",
+  "https://www.healthcare.gov/find-local-help/get-contacted/",
+  "https://localhelp.healthcare.gov/place",
+  "https://www.healthcare.gov/apply-and-enroll/get-help-applying/",
+  "https://data.healthcare.gov/dataset/3ddf85bc-f71b-4417-b271-410cbf9e0905/data",
+  "https://www.bluekc.com/",
+  "https://www.healthcare.gov/contact-us/",
+  "https://www.healthcare.gov/apply-and-enroll/get-help-applying.json",
+  "https://michalekhealthsolutions.com/missouri-health-insurance/",
+  "https://www.healthcare.gov/agents-and-brokers-register/",
+  "https://data.healthcare.gov/dataset/3ddf85bc-f71b-4417-b271-410cbf9e0905",
+  "https://localhelp.healthcare.gov/place/1111611",
+  "https://www.linkedin.com/in/morrillinsurancegroup",
+  "https://aishealthadvisors.com/",
+  "https://apollo-insurance.com/health-insurance-kansas-city/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ba6a2fc64b5797c14efc2e9176f55c5f0937da6c42b8e805e9cbb9111223c384",
+ "answer_chars": 1145,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

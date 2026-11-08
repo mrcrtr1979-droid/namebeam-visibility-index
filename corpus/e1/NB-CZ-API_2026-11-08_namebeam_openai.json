@@ -1,0 +1,63 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_namebeam_openai",
+ "date_utc": "2026-11-08",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ei1geVmlF6ak7cZTPBo671cTraaVq",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1789,
+   "total_tokens": 1813,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bing Chat",
+  "Perplexity.ai",
+  "Yext",
+  "Bing Places",
+  "Apple Maps",
+  "BrightLocal",
+  "Moz Local",
+  "Whitespark",
+  "Data Axle",
+  "LocalBusiness",
+  "AIs",
+  "SEMrush Local",
+  "Claude Realtime",
+  "URLs",
+  "Your Business Name",
+  "Bard. Compare",
+  "Local SEO",
+  "Business Name",
+  "SEMrush",
+  "Test AI",
+  "Add Structured Data"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer\n- To check whether AI assistants (ChatGPT, Bing Chat, Bard, Perplexity, Claude) will recommend your business, use a combination of:\n  1. a live-answer AI that shows sources (Perplexity.ai or Bing Chat / ChatGPT with browsing), and\n  2. a local-listings management service to make sure the AI has good, authoritative data (Yext is the most comprehensive paid option; free core: Google Business Profile + Bing Places + Yelp + Apple Maps).\n\nWhy two things\n- AI assistants either synthesize from the web/knowledge graphs or from their training. To “check” what they recommend you need to query live models that cite sources (Perplexity, Bing Chat, ChatGPT with browsing).  \n- To increase the chance they recommend you, you must make sure the major knowledge sources (Google Business Profile, Yelp, data aggregators) contain accurate, well-structured information. Services like Yext, BrightLocal, Moz Local or Whitespark help push and monitor those listings across directories and aggregators.\n\nRecommended workflow\n1. Claim and optimize local listings (free / essential)\n   - Google Business Profile (Google Maps / Search): verify, set categories, hours, photos, services, posts, Q&A.  \n   - Bing Places, Apple Maps, Yelp, Facebook.  \n2. Push your data to aggregators\n   - Use Yext (enterprise/paid) or alternatives (Data Axle / Foursquare / Infogroup via your local SEO tool) so directory networks and knowledge graphs have consistent data.  \n3. Add structured data to your website\n   - Implement schema.org/LocalBusiness markup (name, address, phone, hours, geo, services) and markup for reviews.  \n4. Collect reviews and respond\n   - More (good) reviews on Google/Yelp/etc. increase visibility and trust signals that AIs use.  \n5. Monitor/track\n   - Tools: BrightLocal, Whitespark, Moz Local, SEMrush Local for citations, rankings and review monitoring.  \n6. Test AI recommendations\n   - Query multiple live models (Perplexity, Bing Chat, Google Bard, ChatGPT with browsing, Claude Realtime) using local, intent-based prompts and compare answers and sources.\n\nBest single picks\n- If you want one service to improve the odds your business gets recommended: Yext (paid) — it pushes your authoritative business data to many knowledge graph consumers and is widely-used by platforms that feed AI assistants.  \n- If you want one service to test whether AI will recommend you and see sources: Perplexity.ai (free/paid tiers) — it returns succinct answers and shows the URLs it used.\n\nSample prompts to test AIs\n- “I’m in [city, ZIP]. Recommend a [service type] near me — top 3 options and why.”  \n- “What are the best [your-business-type] in [your neighborhood or ZIP]? Is [Your Business Name] one of them?”  \n- “Find a [service] open now near [address].”  \nRun these in Perplexity, ChatGPT with browsing/Bing Chat, and Bard. Compare results and note whether your business appears and which sources are cited.\n\nLimitations to keep in mind\n- ChatGPT without browsing uses its training data and may be out-of-date; use browsing-enabled versions or web-first models for current recommendations.  \n- AI outputs vary by model, region, and prompt; there’s no single “AI index” you can register with.  \n- Improving listings and schema increases the chance of being recommended but does not guarantee placement.\n\nIf you want, tell me:\n- your business type + city (and whether you want a free or paid route), and I’ll:\n  - give a prioritized checklist for listings and schema,\n  - suggest exact prompts to test each model,\n  - or run a quick set of test prompts and show what the major AIs return (you’d need to copy/paste their outputs).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

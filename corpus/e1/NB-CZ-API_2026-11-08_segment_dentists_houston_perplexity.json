@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_segment_dentists_houston_perplexity",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: dentists, Houston",
+ "niche": "dentists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Houston for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_aca838f0-da2e-47f2-8b29-547da9c60fbb",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00456
+   },
+   "input_tokens": 4919,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4373,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 330,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5249
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Mohamad Koutrach",
+  "Dr. Jonathan Rosenstein",
+  "UTHealth Houston",
+  "UTHealth",
+  "Omega Dental Specialists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://dentistry.uth.edu/directory/profile/mohamad-koutrach",
+  "https://www.dentalimplanthouston.com/doctors/",
+  "https://www.aaid.com/contacts/jasmine-sung",
+  "https://www.dentalimplanthouston.com/about/",
+  "https://dentistry.uth.edu/directory/profile/chun-yeh-chien",
+  "https://www.clearchoice.com/providers/andreina-sananez/1104054816/",
+  "https://mapdentalcenter.com/",
+  "https://omegadentists.com/our-doctors/",
+  "https://aaid-implant.org/dentist/oancea-tiberiu/",
+  "https://www.zocdoc.com/practice/houston-dental-implants-and-prosthodontics-131878",
+  "https://www.zocdoc.com/dentist/mark-stankewitz-dds-591414",
+  "https://www.mapquest.com/us/texas/houston-dental-implants-and-prosthodontics-777682875",
+  "https://www.zocdoc.com/dentist/pedro-trejo-dds-584388",
+  "https://besthou.net/prosthodontist/",
+  "https://hannadentalimplants.com/dental-implant-specialist/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "192a3e4b1ab9f1fdec20b8ff6834d9087602952fc040c55e7a1df9104f7d606c",
+ "answer_chars": 1204,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

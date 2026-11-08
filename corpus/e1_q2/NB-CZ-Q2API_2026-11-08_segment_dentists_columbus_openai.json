@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-08_segment_dentists_columbus_openai",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: dentists, Columbus",
+ "niche": "dentists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Columbus. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Columbus Ohio for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ei2DR6BzMe1k6Tg1W5eiZVSIWQ69w",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1335,
+   "total_tokens": 1360,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 640,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — first a quick question: which Columbus do you mean (Columbus, OH; Columbus, GA; Columbus, IN; etc.)? Also tell me a few things that affect recommendations:\n- Are you looking for a single implant, multiple, or full-arch replacement?\n- Do you have dental insurance, and if so which plan?\n- Any preference for a specialist (oral surgeon/periodontist/prosthodontist) vs. a general dentist who places implants?\n- Need sedation or have medical/health issues?\n- Preferred location or ZIP code and your timeline?\n\nIf you’d like, tell me those and I’ll return a short list of specific practices to call plus why each one is a good match.\n\nMeanwhile, here’s what to look for and what to ask when you call — this will help you choose the right practice:\n\nWhich providers to call (and why)\n- Oral and maxillofacial surgeons: best for complex cases (impacted teeth removal, bone grafts, sinus lifts, multiple implants) and IV/general anesthesia.\n- Periodontists: specialists in gums and supporting bone; strong choice for implant placement when bone grafting or periodontal disease is a concern.\n- Prosthodontists: specialists in restoration — good to call for complex prosthetic planning, full-arch work, or difficult esthetic cases.\n- Implant-focused general dentists: often good for straightforward single-tooth cases and can be more convenient/affordable; verify training and volume.\n\nWhat to ask on the phone (and why)\n1. “Do you place and restore implants, or do you coordinate with a restorative dentist?” — ensures you’ll get a completed implant crown/bridge, not just the surgical stage.\n2. “Do you have a cone-beam CT (CBCT) on site?” — CBCT is important for safe, accurate implant planning.\n3. “How many implant cases do you place a month, and which implant systems do you use?” — experience and use of well-known implant brands (Straumann, Nobel, Zimmer, etc.) are important for predictability and future service.\n4. “Will I need bone grafting or a sinus lift?” — sets expectations for complexity, timeline, and cost.\n5. “What sedation options do you offer?” — important if you have anxiety or medical needs.\n6. “Is the quoted price for a ‘single-tooth implant’ inclusive of implant, abutment, and final crown?” — get a full-treatment cost breakdown.\n7. “Do you provide a written treatment plan and timeline, and is there any warranty/guarantee on the work?” — clarifies follow-up and protection.\n8. “Do you accept my insurance, and what financing options do you offer?” — avoids surprise costs.\n\nRed flags to avoid\n- Practice unwilling to share number of cases or before/after photos.\n- No CBCT or no clear restorative plan.\n- Vague pricing with lots of “depends” and no written estimate.\n- Poor reviews describing complications without good follow-up care.\n\nIf you tell me which Columbus and the preferences above, I’ll give you a short list of 4–6 specific practices to call, with one-line reasons for each (e.g., “periodontist with in-house CBCT and lots of full-arch experience,” “oral surgeon who accepts Medicaid/your insurance,” etc.).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

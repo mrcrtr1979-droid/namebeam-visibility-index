@@ -1,0 +1,70 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_segment_str_host_tooling_gemini",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "N73waqPNBYSbo_UP69vfkQ8",
+  "usage": {
+   "promptTokenCount": 20,
+   "candidatesTokenCount": 846,
+   "totalTokenCount": 866,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 20
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "PriceLabs",
+  "The Winner: AirDNA",
+  "Key Features for Buyers",
+  "Rentalizer",
+  "Market Minder",
+  "Investment Explorer",
+  "The Winner: PriceLabs",
+  "Key Features for Hosts",
+  "Base Price Recommendations",
+  "Min-Stay Recommendations",
+  "Last-Minute Discounts & Far-Out Premiums",
+  "Market Dashboards",
+  "Wheelhouse",
+  "Pre-Purchase Market Analysis",
+  "Phase",
+  "Market Before Buying",
+  "Once",
+  "Last-Minute Discounts",
+  "Far-Out Premiums",
+  "Taylor Swift",
+  "Smart Pricing",
+  "PriceLabs. It",
+  "Cancel AirDNA",
+  "Winner: AirDNA",
+  "Winner: PriceLabs"
+ ],
+ "engine_stated_criteria": [
+  "If you are currently shopping for a property",
+  "Once you own and list the property"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For both setting nightly pricing for an existing listing and analyzing a market before buying an investment property, **AirDNA** and **PriceLabs** are the undisputed industry leaders. \n\nHowever, because your needs span two different phases (Pre-Purchase Market Analysis vs. Day-to-Day Dynamic Pricing), the \"best\" tool actually depends on what you are trying to do. \n\nHere is the breakdown of the best tools for each stage, and the ultimate winner.\n\n---\n\n### Phase 1: Analyzing a Market Before Buying (Acquisition)\nIf you are underwriting a potential short-term rental (STR) investment, you need historical data, occupancy rates, seasonal trends, and revenue estimates for an entire zip code or city.\n\n#### **The Winner: AirDNA**\nAirDNA is the gold standard for macro-market research and real estate acquisition. \n\n*   **Key Features for Buyers:**\n    *   **Rentalizer:** You plug in a specific address and it estimates the annual revenue, average daily rate (ADR), and occupancy based on comparable properties nearby.\n    *   **Market Minder:** Allows you to look at entire cities or neighborhoods to see supply growth, demand trends, and seasonality.\n    *   **Investment Explorer:** Helps you filter markets based on capitalization rates (cap rates), gross rental yields, and regulatory restrictions.\n*   **Pros:** Incredible macro-level data; lets you spy on the actual performance of specific competing listings.\n*   **Cons:** Expensive for individual users (subscriptions can range from $40 to $100+/month depending on the scope of markets). Data can sometimes lag slightly behind real-time market shifts.\n\n---\n\n### Phase 2: Setting Nightly Pricing (Operations)\nOnce you own the property, historical data isn't enough. You need algorithmic dynamic pricing that updates your rates daily based on real-time supply, demand, local events, day of the week, and booking windows.\n\n#### **The Winner: PriceLabs**\nWhile AirDNA also offers a pricing tool, **PriceLabs** is widely considered by professional hosts and property managers to be the superior pricing engine. \n\n*   **Key Features for Hosts:**\n    *   **Base Price Recommendations:** Uses hyper-local data to suggest a baseline.\n    *   **Min-Stay Recommendations:** Dynamically adjusts minimum stay requirements (e.g., 2-night minimum on weekends, 1-night on Tuesdays, or longer stays during peak seasons).\n    *   **Last-Minute Discounts & Far-Out Premiums:** Automatically drops prices if a date is approaching unbooked, or raises prices if someone is booking 6 months in advance.\n    *   **Market Dashboards:** Gives you great localized data on how your sub-market is pacing.\n*   **Pros:** Highly customizable with granular rules (e.g., \"increase price by 20% if there is a Taylor Swift concert in town\"); flat-rate pricing model (usually around $20/month per listing) rather than a percentage of revenue.\n*   **Cons:** Has a steeper learning curve than simpler tools like Airbnb’s built-in Smart Pricing.\n\n---\n\n### The Honorable Mention: Key Data Dashboard (The Hybrid)\nIf you want **both** institutional-grade market analysis *and* great pricing recommendations in one ecosystem, look at **Wheelhouse**. \n\nWheelhouse is cheaper than AirDNA for market data and offers a fantastic, user-friendly dynamic pricing tool that rivals PriceLabs. It’s great for beginner-to-intermediate hosts who want an all-in-one solution.\n\n---\n\n### Summary Recommendation: Which should you use?\n\n1.  **If you are currently shopping for a property:** Buy a 1-month subscription to **AirDNA** to run your feasibility studies and verify if a market makes financial sense.\n2.  **Once you own and list the property:** Cancel AirDNA (unless you plan to buy more properties soon) and sign up for **PriceLabs** to manage your daily calendar pricing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

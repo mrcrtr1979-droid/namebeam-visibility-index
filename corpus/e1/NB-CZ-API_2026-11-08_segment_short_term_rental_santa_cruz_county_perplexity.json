@@ -1,0 +1,107 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_af2b9d2c-d710-481c-96c7-ec86f4706eca",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00121,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00198,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00583
+   },
+   "input_tokens": 5398,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4846,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 791,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 6189
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Capitola Village",
+  "Aptos / Rio del Mar",
+  "Seascape / south Aptos",
+  "Santa Cruz / Westside",
+  "Pajaro Dunes",
+  "Pick the location before the property",
+  "Compare the full price",
+  "Read recent reviews",
+  "Check practical details",
+  "Aptos",
+  "Seascape",
+  "West Cliff",
+  "Visit Santa Cruz County",
+  "DiscretionaryPermitsZoning",
+  "DiscretionaryPermits",
+  "Short-TermRentals.aspx",
+  "Capitola",
+  "Boardwalk",
+  "Rio Del Mar",
+  "Westside",
+  "Ocean View"
+ ],
+ "engine_stated_criteria": [
+  "Verify the rental is authorized"
+ ],
+ "sources_cited": [
+  "https://cdi.santacruzcountyca.gov/UPC/DiscretionaryPermitsZoning/DiscretionaryPermits/Short-TermRentals.aspx",
+  "https://www.cdi.santacruzcountyca.gov/UPC/DiscretionaryPermitsZoning/DiscretionaryPermits/VacationRentals.aspx",
+  "https://documents.coastal.ca.gov/reports/2026/4/Th12a/Th12a-4-2026-exhibits.pdf",
+  "https://cdi.santacruzcountyca.gov/Portals/35/CDI/UnifiedPermitCenter/Discretionary%20Permits%20and%20Zoning/Forms%20and%20Publications/Vacation%20Rentals/Ordinance%205497%20Short-Term%20Rentals.pdf",
+  "https://www.kayak.com/Aptos-Vacation-Rentals.19253.rental.ksp",
+  "https://homes-and-villas.marriott.com/en/vacation-rentals/united-states/california/capitola",
+  "https://www.santacruzcountyca.gov/portals/0/county/CAO/press%20releases/2026/Prs%20Rls_County%20launches%20short-term%20rental%20hotline.pdf",
+  "https://www.santacruz.org/places-to-stay/",
+  "https://homes-and-villas.marriott.com/en/vacation-rentals/united-states/california/aptos",
+  "https://www.expedia.com/lp/b/tgp/lodging/theme/pet-friendly-vacation-rentals/6435/aptos",
+  "https://www.santacruz.org/plan-your-trip/frequently-asked-questions/",
+  "https://www.airbnb.com/help/article/2359",
+  "https://www.airbnb.com/capitola-ca/stays",
+  "https://www2.santacruzcountyca.gov/planning/plnmeetings/PLNSupMaterial/Zoning/Agendas/2026/20260306/005a.pdf",
+  "https://homes-and-villas.marriott.com/en/vacation-rentals/united-states/california/aptos/free-parking"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "c48d0f5bbbee49f827d1720c0f439b383fa3b58d4b9678fe436f49f00331a275",
+ "answer_chars": 3271,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

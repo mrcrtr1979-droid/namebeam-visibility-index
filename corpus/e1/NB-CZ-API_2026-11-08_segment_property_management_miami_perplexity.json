@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_segment_property_management_miami_perplexity",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: property management, Miami",
+ "niche": "property management companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Miami FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_be468cc5-d1b2-47a9-92dc-5836708c07c8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00122,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00077,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00463
+   },
+   "input_tokens": 5436,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4887,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 308,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5744
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Luxury Property Care",
+  "Pristine Property Management",
+  "JMK Property Management"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.jmkpropertymanagement.com/",
+  "https://www.pristinepm.com/pricing",
+  "https://ipropertymanagement.com/research/miami-property-management-fees",
+  "https://www.jmkpropertymanagement.com/pricing",
+  "https://www.jmkpropertymanagement.com/miami-property-management",
+  "https://luxurypropertycare.com/miami-property-management-services/",
+  "https://www.atlispm.com/miami-property-management",
+  "https://www.allpropertymanagement.com/property-management/companies/35790/real-property-management-miami-metro",
+  "https://www.thumbtack.com/fl/miami/property-management/turnkey-property-managers/service/263677924447052859",
+  "https://luxurypropertycare.com/best-property-management-companies-miami/",
+  "https://www.managemyproperty.com/companies/management-miami-llc-616",
+  "https://luxurypropertycare.com/downtown-miami-property-management-services/",
+  "https://www.turbotenant.com/property-management/services/florida/miami/",
+  "https://www.managemyproperty.com/find/florida-property-management-companies",
+  "https://www.bbb.org/us/fl/miami/profile/property-management/miami-management-inc-0633-33000905/customer-reviews"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "5e6fc3ec7433047d810f07a1bb415b777c4f884bec8675494618dd824dff4473",
+ "answer_chars": 1155,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

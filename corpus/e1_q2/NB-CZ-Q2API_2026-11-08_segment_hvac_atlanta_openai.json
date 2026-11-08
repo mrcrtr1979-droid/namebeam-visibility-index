@@ -1,0 +1,61 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-08_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a new air conditioner installed in Atlanta. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ei2JBCDx1BfDX6sijYys9XY5wpdib",
+  "usage": {
+   "prompt_tokens": 27,
+   "completion_tokens": 2003,
+   "total_tokens": 2030,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1152,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Mr. Plumber",
+  "Rescue Rooter",
+  "Air Conditioning",
+  "Benjamin Franklin",
+  "DeKalb",
+  "Cobb County",
+  "Coolray",
+  "NATE",
+  "NATE-certified",
+  "Manual J Load Calculation",
+  "One Hour",
+  "Service Experts",
+  "One Hour Heating",
+  "Aire Serv",
+  "Georgia Secretary of State",
+  "HVAC Contractor"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can recommend a short list of HVAC companies that commonly serve the Atlanta area and explain why each is worth calling — plus a concrete checklist and script to help you compare bids. If you want, give me your ZIP code and I’ll tailor the list to contractors that actually service your street.\n\nFive companies to call (good starting mix of large/national and franchise/local):\n\n- Coolray & Mr. Plumber\n  - Why call: Large footprint in Georgia, many technicians (good for scheduling fast installs), offers financing and maintenance plans, experienced with Atlanta homes and permits.\n- ARS/Rescue Rooter (also does HVAC)\n  - Why call: National franchise network with local branches; offers NATE-certified techs, service agreements, and experience with replacements and complex jobs.\n- Service Experts Heating & Air Conditioning\n  - Why call: Known for offering multi-year workmanship warranties, energy-efficiency guidance, and packaged replacement programs (good if you want a full-service install + extended warranty).\n- One Hour Heating & Air Conditioning / Benjamin Franklin (franchise group)\n  - Why call: Guarantees on-time appointments, transparent estimates, and widely available franchises—good for getting a quick, reliable quote.\n- Aire Serv / Local independent HVAC contractor (find a well-reviewed one)\n  - Why call: Aire Serv franchises offer standardized processes; pairing a franchise estimate with one local independent contractor gives you a broader range of approaches and pricing. Many local independents will be highly experienced with Atlanta-specific ductwork and permitting and may offer better personalization.\n\nWhy this mix: national/franchise outfits are convenient for scheduling, financing, standardized warranties and permits; at least one local independent can be more flexible on pricing and tailored installations. Calling 3–4 companies (two larger and one local) usually yields a good range of quotes.\n\nWhat to ask when you call (copy/paste this script):\n- Are you licensed and insured to install HVAC in Fulton/DeKalb/Cobb County? (Ask for license number and insurance carrier.)\n- Are your installers NATE-certified? Will a lead installer be on-site for the entire job?\n- Do you perform a Manual J load calculation and provide a written report?\n- What exact system models and SEER ratings are you proposing? (Get model numbers.)\n- What is included in the written estimate? (Equipment, labor, permits, disposal, ductwork, refrigerant, startup, thermostat.)\n- What warranties do you offer (manufacturer + labor/installation)? Is the labor warranty transferable?\n- Do you offer financing, rebates, or promotional pricing? Will you handle utility/Manufacturer rebate paperwork?\n- Who pulls the permits and schedules inspections?\n- Timeline: How long will the job take and when can you start?\n- Can you provide 3 local references or recent Google/Angi/BBB reviews for similar installs?\n\nHow to compare bids (quick checklist):\n- Same scope: confirm all bids are for the same equipment and the same work (permit, duct repairs, new thermostat, etc.).\n- Efficiency vs. price: higher SEER and better compressor brands cost more but save on energy.\n- Warranties: prefer longer labor warranties and good manufacturer coverage.\n- Load calculation: take bids that include a Manual J — it matters for comfort and longevity.\n- In-person inspection: avoid quotes that give firm pricing without inspecting the home.\n- Permits & code compliance: ensure the contractor will pull permits and is familiar with local codes.\n\nUseful places to verify reviews and licensing:\n- Google Maps / Google Business reviews\n- Better Business Bureau (BBB)\n- Angi (formerly Angie’s List) or HomeAdvisor\n- Georgia Secretary of State / local municipality for business license verification\n- NATE (North American Technician Excellence) directory for technician certification\n\nIf you tell me your ZIP code and whether this is a straight replacement, new system, or ductless mini-split request, I’ll:\n- Suggest 3–4 contractors that specifically list service in your ZIP\n- Recommend system types and SEER targets for Atlanta’s climate\n- Draft a comparison worksheet you can use when you get bids\n\nWhich ZIP and what type of install are you planning?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

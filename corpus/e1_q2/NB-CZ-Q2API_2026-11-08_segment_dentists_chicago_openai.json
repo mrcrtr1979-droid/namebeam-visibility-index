@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-08_segment_dentists_chicago_openai",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Chicago. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ei29Aez1WEP6K0GlVcHZSgU6mmfZb",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1442,
+   "total_tokens": 1467,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "University of Illinois",
+  "Chicago College of Dentistry",
+  "CareCredit",
+  "College of Dentistry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — but first I need one quick detail so I give targeted, accurate recommendations:\n\nWhat neighborhood or ZIP code in Chicago are you closest to (or are you willing to travel anywhere in the city/suburbs)? Also tell me:\n- Is this a single-tooth implant, multiple, or a full-arch replacement (All‑on‑4/6)?\n- Do you have dental insurance, and if so, which plan?\n- Any preference for type of provider (oral/maxillofacial surgeon, periodontist, prosthodontist, or general dentist who places implants)?\n- Any medical issues or anesthesia concerns (e.g., need IV sedation)?\n\nIf you want to proceed now without giving location details, here are practical suggestions you can use immediately — the kinds of practices you should call and why, plus key questions to ask when you call.\n\nWhich practices to call (by type) and why\n- University dental clinic (University of Illinois at Chicago College of Dentistry)\n  - Why: Lower cost options, multi‑specialty evaluation (oral surgery, periodontics, prosthodontics), good for patients with complex medical history or limited budget.\n- Board‑certified oral and maxillofacial surgeons in your area\n  - Why: Specialists for surgical aspects (implant placement, bone grafting, extractions, IV sedation). Good for complex anatomy, bone grafts, or medical/ anesthesia needs.\n- Board‑certified periodontists who place implants\n  - Why: Experts in the gums and bone; often preferred when significant bone grafting or soft‑tissue work is needed.\n- Prosthodontists (or implant prosthodontics specialists)\n  - Why: Specialists in restoring implants and making prostheses (crowns, bridges, full‑arch prostheses). Important for esthetic and functional outcomes, especially full‑arch work.\n- Dedicated implant centers (multi‑specialty implant practices)\n  - Why: Often offer coordinated care (surgery + prosthetic) in one place, digital planning/CBCT, same‑day implant/provisional options.\n\nQuestions to ask when you call (so you can compare practices fairly)\n- Do you place implants, or do you refer out for placement/ restoration?\n- Is the surgeon/periodontist/prosthodontist board certified? How many implant cases do they place per month?\n- Do you use CBCT (3D) imaging for planning, and is it included in the consult cost?\n- Do you provide bone grafting, sinus lifts, and IV sedation (if needed)?\n- Who will make the final crown/restoration — an in‑house prosthodontist or an outside general dentist?\n- What is the estimated total cost range for a single implant with crown (and what does that include)?\n- Do you accept my insurance? Are payment plans or CareCredit available?\n- What is the typical timeline from placement to final restoration?\n- Can you share before/after photos and patient references or reviews?\n\nRed flags to avoid\n- No 3D imaging available (CBCT) for implant planning for complex cases.\n- Surgeon won’t show examples of previous implant work or discuss failure rates.\n- No clear written treatment plan or cost estimate.\n- Pressuring for immediate treatment without a diagnostic CBCT and consultation.\n\nIf you tell me your ZIP or neighborhood and your answers to the short list above, I’ll compile 6–8 specific, reputable Chicago practices (with address, phone, specialties, why each fits your needs, and what patients report) and include tips about cost ranges and expected wait times.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

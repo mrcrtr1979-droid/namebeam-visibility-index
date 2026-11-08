@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_segment_real_estate_agents_fort_lauderdale_perplexity",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: real estate agents, Fort Lauderdale",
+ "niche": "real estate agents",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Fort Lauderdale FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_49708785-24f8-4fc2-8b2e-f56cd84d7c84",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00444
+   },
+   "input_tokens": 4880,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4330,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 287,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5167
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Ellen Taracido",
+  "Dany Flanders",
+  "Ron Lennen"
+ ],
+ "engine_stated_criteria": [
+  "recent sales of homes like yours in your immediate area"
+ ],
+ "sources_cited": [
+  "https://www.realtor.com/realestateagents/5a29833bcd775f00120e0b63",
+  "https://www.realtor.com/realestateagents/56d07b842cfde1010000a361",
+  "https://www.realtor.com/realestateagents/Dany-Flanders_Lauderhill_FL_2028169_066974127",
+  "https://www.realtor.com/realestateagents/Fort-Lauderdale_FL",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/fort-lauderdale-fl/",
+  "https://www.realtor.com/realestateagents/56b08a020fa41701007462fd",
+  "https://www.realtor.com/realestateagents/669d10b83a9833b82964ddf9",
+  "https://www.realtor.com/realestateagents/5673cccb7e54f701001e172d",
+  "https://www.realtor.com/realestateagents/56b4fe2dbb954c01006b14d6",
+  "https://www.realtor.com/realestateagents/Jeffrey-Walker-Broker-Owner_Fort-Lauderdale_FL_1572996",
+  "https://www.realtor.com/realestateagents/62c9235f3580dbe7a0a86dc5",
+  "https://www.realtor.com/realestateagents/5674630abb954c0100684a3a",
+  "https://www.realtor.com/realestateagents/___498546",
+  "https://www.realtor.com/realestateagents/5673e84589a689010069dc3f",
+  "https://www.realtor.com/realestateagents/5f99c517761c6d0011e74629"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "4553f86b6e6043ab1edd7676210ed26acf2698776dfb8606d9ecf13fb4961346",
+ "answer_chars": 1008,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

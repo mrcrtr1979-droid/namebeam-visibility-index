@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_segment_real_estate_agents_pleasanton_perplexity",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b216ecf9-e5bc-4996-a23d-4aadc78a8d5a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00448
+   },
+   "input_tokens": 4851,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4301,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 305,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5156
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Doug Buenz of Compass",
+  "Gina Piper of Elation Real Estate",
+  "Doug Buenz",
+  "Compass",
+  "Gina Piper",
+  "Elation Real Estate"
+ ],
+ "engine_stated_criteria": [
+  "Pleasanton listings they personally represented as the seller"
+ ],
+ "sources_cited": [
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/94566/",
+  "https://www.homelight.com/pleasanton-ca/top-real-estate-agents",
+  "https://www.zillow.com/profile/lolson917",
+  "https://www.zillow.com/professionals/real-estate-agent-reviews/pleasanton-ca/",
+  "https://www.zillow.com/profile/Jing%20Xue",
+  "https://www.zillow.com/profile/MaureenAquino",
+  "https://www.fastexpert.com/agents/gina-piper-116962/",
+  "https://www.realestateagents.com/ca/pleasanton",
+  "https://www.ratemyagent.com/real-estate-profile/sales/california/pleasanton-ca",
+  "https://www.zillow.com/profile/MichaelTessaro",
+  "https://www.homelight.com/agents/sonali-sethna-ca-01194792-3986",
+  "https://www.har.com/christopher-kammer/agent_ckammer",
+  "https://www.ratemyagent.com/real-estate-profile/sales/california/pleasanton-ca/agents",
+  "https://www.zillow.com/profile/MichaelSwiftTeam",
+  "https://www.zillow.com/profile/BouchraC"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "af9bc662b3541d160cce2cebc846c4f6b7f3cf3fdd549090124e0122c7df220c",
+ "answer_chars": 1114,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

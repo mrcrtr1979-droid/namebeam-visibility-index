@@ -1,0 +1,96 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9a83835e-4e55-4992-bed2-e44610420c5e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00078,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00095,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 3666,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3119,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 381,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4047
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Michael Harley Sebastian",
+  "Dr. Stephanie Moore",
+  "Dr. Arjun Patel",
+  "Dr. Meridith L. Long",
+  "Dr. Peyton Keith Harris",
+  "Dr. Christopher Brady",
+  "American Association of Orthodontists",
+  "Northside Parkway",
+  "Sandy Springs",
+  "Buckhead and Virginia-Highland",
+  "Invisalign",
+  "Board Certification"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://aaoinfo.org/locator/dr-adam-c-spencer/",
+  "https://aaoinfo.org/locator/dr-michael-harley-sebastian/",
+  "https://aaoinfo.org/locator/dr-stephanie-moore/",
+  "https://aaoinfo.org/locator/dr-india-l-collier/",
+  "https://aaoinfo.org/locator/dr-tarnjit-kaur-sangha/",
+  "https://aaoinfo.org/locator/dr-arjun-patel/",
+  "https://aaoinfo.org/locator/dr-christopher-brady/",
+  "https://aaoinfo.org/locator/dr-peyton-keith-harris/",
+  "https://aaoinfo.org/locator/dr-brandon-small-morgan/",
+  "https://aaoinfo.org/locator/dr-meridith-l-long/",
+  "https://aaoinfo.org/locator/dr-kenneth-e-starling-2/",
+  "https://aaoinfo.org/locator/dr-richard-lee-byrd-jr/",
+  "https://aaoinfo.org/locator/",
+  "https://aaoinfo.org/locator/dr-christopher-brady-2/",
+  "https://aaoinfo.org/locator/dr-michael-everson/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "e881d718f9d0b9bf071576bba200b0d98e3c1391a7985620ab8a006d3e0b80ab",
+ "answer_chars": 1433,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

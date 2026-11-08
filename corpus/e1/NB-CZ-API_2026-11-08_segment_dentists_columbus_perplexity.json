@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_segment_dentists_columbus_perplexity",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: dentists, Columbus",
+ "niche": "dentists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Columbus Ohio for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d48ae0cd-6820-4c38-9d85-36a345cbbe76",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00066,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00443
+   },
+   "input_tokens": 5081,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4534,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 264,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5345
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Stoner Periodontics & Implant Specialists",
+  "Implant & Oral Surgery of Columbus",
+  "Stoner Periodontics",
+  "Implant Specialists",
+  "New Albany",
+  "Upper Arlington. You",
+  "Oral Surgery of Columbus",
+  "Dr. Patel",
+  "Upper Arlington"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://ioscolumbus.com/reviews/",
+  "https://ioscolumbus.com/",
+  "https://www.stonerperiospecialists.com/",
+  "https://www.stonerperiospecialists.com/dental-implants/",
+  "https://www.stonerperiospecialists.com/dr-jason-c-stoner-dds-ms/",
+  "https://dentillo.com/city/columbus",
+  "https://www.dentistsranked.com/dental-services/dental-implants-columbus-oh",
+  "https://www.drfredalger.com/dental-implants/choosing-a-surgeon/",
+  "https://www.perio.org/for-patients/find-a-periodontist/advanced-search/",
+  "https://dentillo.com/provider/oral-facial-surgery-for-adults-children-llc/columbus",
+  "https://www.stonerperiospecialists.com/new-albany-ohio/",
+  "https://www.realself.com/find/Ohio/Columbus/Dental-Implants",
+  "https://www.perio.org/for-patients/find-a-periodontist/",
+  "https://www.dentistsranked.com/dentists/columbus-oh",
+  "https://www.linkedin.com/in/jennifer-elzinga-swedlow-dmd-ms"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "026b366da8d7dde61f7e7c09d232d81679785a7618db0d188ede6b115f6525a3",
+ "answer_chars": 886,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

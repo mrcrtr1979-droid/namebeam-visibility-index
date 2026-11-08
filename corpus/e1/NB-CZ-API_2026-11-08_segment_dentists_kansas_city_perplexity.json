@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_segment_dentists_kansas_city_perplexity",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: dentists, Kansas City",
+ "niche": "dentists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Kansas City Missouri for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e33985dc-a96f-4901-8190-6504d969366c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00439
+   },
+   "input_tokens": 4961,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4413,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 261,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5222
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Kansas City, Missouri",
+  "Periodontal Specialists",
+  "North Kansas City"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.periodontal-specialists.com/",
+  "https://www.periodontal-specialists.com/services/dental-implant-placement",
+  "https://www.tiffanyspringsdentalgroup.com/dental-services/dental-implants/",
+  "https://www.periodontal-specialists.com/locations-3/north-kansas-city",
+  "https://www.myspecialtydentist.com/directory/profile/dr-bruce-cummings-1174647333",
+  "https://blackerfamilydental.com/trusted-specialists/",
+  "https://doctor.webmd.com/doctor/matthew-foster-59a7afd3-1d0f-4829-b7d2-8bd1ab901faa-overview",
+  "https://birdeye.com/johnson-county-oral-surgery-dental-implant-center-178197548436179",
+  "https://health.usnews.com/dentists/prosthodontists/missouri",
+  "https://dentillo.com/city/kansas-city",
+  "https://www.carecredit.com/doctor-locator/kansas-city-mo/cosmetic-implant-dentistry-734kwn/",
+  "https://www.dentistsranked.com/dental-services/dental-implants-kansas-city-mo",
+  "https://www.periodontalcarepa.com/staff",
+  "https://www.carecredit.com/doctor-locator/kansas-city-mo/cosmetic-and-implant-dentistry-of-kansas-city-nnx724/",
+  "https://www.realself.com/find/Missouri/Kansas-City/Dental-Implants"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "fdd88750c5cf0e7f4caa7e5c030550f70081b8003c5ea30d31404884ae99cea8",
+ "answer_chars": 909,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

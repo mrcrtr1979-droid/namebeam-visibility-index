@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_segment_dentists_chicago_openai",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ei1aFu2qRKYCj9JN0I9f71c6pwG01",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 1129,
+   "total_tokens": 1147,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 640,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AAOMS",
+  "ABOMS",
+  "Find-a-dentist",
+  "University of Illinois",
+  "Chicago College of Dentistry",
+  "College of Dentistry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a single objectively “best” dentist for implants in Chicago — the right provider depends on your needs (complexity of the case, sedation needs, budget, location, whether you want the surgeon to also restore the crown) and on the clinician’s training and experience. I can help you find the best match. A quick plan:\n\n1) Quick questions\n- Where in Chicago are you located (ZIP or neighborhood)?\n- Is this a single-tooth implant, multiple, or full-arch?\n- Any medical issues or anxiety/sedation needs?\n- Do you have dental insurance or a budget range?\n\n2) How to choose a top implant provider\n- Specialty training: look for a board-certified oral & maxillofacial surgeon or a periodontist (both place implants regularly). Many general dentists also place implants — check their implant-specific training and case volume.\n- Experience and volume: ask how many implants they place per year and how long they’ve been doing implants.\n- Credentials: Diplomate status (AAOMS, ABOMS) or fellowships (AAID, ICOI) are good signs.\n- Technology: in-office CBCT (3D x-ray), digital treatment planning and guided surgery improve accuracy.\n- Restorative coordination: make sure the person placing the implant coordinates closely with the dentist who will make the crown or prosthesis (or offers both services).\n- Before/after photos and patient references.\n- Hospital privileges for complex cases (useful if complications arise).\n- Reviews and reputation: Google, Healthgrades, Zocdoc, and patient testimonials — look for consistent, detailed positive feedback.\n- Ask about implant brand, warranty/guarantee, complication rates, and follow-up care.\n\n3) Where to look\n- AAOMS (Find an oral surgeon), AAID (Find-a-dentist), ADA’s Find-a-Dentist\n- Local academic centers (University of Illinois at Chicago College of Dentistry, Northwestern-affiliated oral surgery clinics) often have experienced specialists and teaching clinics.\n- Your general dentist’s referral — many have trusted specialists they work with.\n\n4) Offer\nIf you want, tell me your ZIP code or neighborhood and whether this is a single implant or a more complex case, and I’ll find several well-regarded implant specialists/clinics near you and give a short comparison and questions to ask at the consult.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

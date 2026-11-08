@@ -1,0 +1,63 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_segment_str_guest_discovery_gemini",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "hb3wauzfJ4-PytMP9rOr8A0",
+  "usage": {
+   "promptTokenCount": 29,
+   "candidatesTokenCount": 1189,
+   "totalTokenCount": 1218,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 29
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "The Vibe",
+  "Airbnb = Superhost",
+  "Vrbo = Premier Host",
+  "Booking.com = \"Preferred Partner",
+  "Green Flags",
+  "Hidden costs",
+  "Strictness",
+  "Location accuracy",
+  "Airbnb",
+  "Vrbo",
+  "Booking.com",
+  "Use",
+  "Superhost",
+  "Preferred Partner",
+  "House Rules",
+  "Booking",
+  "Premier Host",
+  "Rule of Thumb",
+  "A good host",
+  "Response time"
+ ],
+ "engine_stated_criteria": [
+  "Cancellation policies are usually much better"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Choosing the right platform depends entirely on **who you are traveling with, the type of trip you want, and your cancellation needs**. Meanwhile, finding a \"good host\" is all about knowing what green flags and red flags to look for in the reviews and listings.\n\nHere is a complete breakdown of how to choose the platform and secure a great stay.\n\n---\n\n### Part 1: Which Platform Should You Use?\n\n#### 1. Airbnb (Best for: Solo travelers, couples, unique stays, and city apartments)\n* **The Vibe:** Trendy, design-focused, often individual apartments or rooms in a home. \n* **Pros:** The best search filters (you can search by specific amenities like \"dedicated workspace\" or \"fire pit\"), massive inventory worldwide, and often the easiest messaging system with hosts.\n* **Cons:** Service fees can be high; cleaning fees are often added on top of the nightly rate (though you can now toggle on \"display total price before taxes\").\n* **Best for:** City breaks, digital nomads, and people looking for aesthetically pleasing or unique accommodations (treehouses, yurts, etc.).\n\n#### 2. Vrbo (Best for: Families, large groups, and entire-home beach/mountain rentals)\n* **The Vibe:** Traditional vacation rentals (cabins, beach houses, large villas).\n* **Pros:** Vrbo **only** lists entire properties (no shared rooms or apartments where the owner is on-site). This makes it the gold standard for families who want privacy. They also have a \"Book with Confidence\" guarantee and good customer support for property damage disputes.\n* **Cons:** The interface can feel a bit clunky compared to Airbnb, and there are fewer urban apartments available.\n* **Best for:** Multi-family vacations, reunions, and traditional week-long beach or ski trips.\n\n#### 3. Booking.com (Best for: Flexibility, hotels, and traditional travelers)\n* **The Vibe:** A mix of hotels, guesthouses, and apartments. \n* **Pros:** **Cancellation policies are usually much better** than Airbnb/Vrbo (often free cancellation up to 24–48 hours before check-in). They have a phenomenal loyalty program (Genius discounts). Also, if something goes wrong, Booking.com has 24/7 customer service phone lines, whereas Airbnb/Vrbo often rely on in-app chat.\n* **Cons:** Customer service can still be a bureaucratic nightmare if you get caught between the platform and the property owner. Some apartment listings require cash payments upon arrival (read the fine print!).\n* **Best for:** Travelers who want hotel-level security/flexibility combined with apartment-style living, or anyone who hates strict cancellation policies.\n\n---\n\n### Part 2: How to Find a Good Host\n\nOnce you’ve picked your platform, finding a great host comes down to detective work. Use these steps:\n\n#### 1. Look for the \"Superhost\" or \"Premier Host\" Badge\n* **Airbnb = Superhost:** Must maintain a 4.8+ rating, low cancellation rates, and a high response rate.\n* **Vrbo = Premier Host:** Based on high review ratings, low cancellation rates, and quick response times.\n* **Booking.com = \"Preferred Partner\":** Signifies top-tier performance.\n* *Rule of thumb:* While new hosts can be great, sticking to hosts with these badges drastically lowers your risk of a bad experience.\n\n#### 2. Read the Reviews Like a Critic\nDon’t just look at the star rating; read the text of the last 5 to 10 reviews. \n* **Green Flags:** Look for specific compliments about communication (\"Host met us at the door,\" \"Replied within minutes\") and cleanliness (\"Spotless,\" \"Smelled fresh\").\n* **Red Flags:** Watch out for recurring complaints about noise, uncomfortable beds, weak Wi-Fi, or cleanliness issues—even if the overall score is a 4.5. Also, look at *how* the host responds to bad reviews. If a host replies defensively or rudely, run away.\n\n#### 3. Check Response Time and Style\nBefore booking, send the host a polite message (e.g., asking a simple question about parking or local transport). \n* A good host will respond quickly, warmly, and thoroughly.\n* If it takes them 24 hours to answer a pre-booking question, imagine how long they’ll take if your toilet overflows on a Saturday night.\n\n#### 4. Read the Fine Print (House Rules & Fees)\nA good host is transparent. Read the description carefully for:\n* **Hidden costs:** Are there extra fees for electricity, pet cleaning, or resort fees?\n* **Strictness:** Do they have a long list of aggressive rules (e.g., \"$50 fee for every minute past 10 AM checkout\")? Strict rules are often a sign of a high-stress or micromanaging host.\n* **Location accuracy:** Check the neighborhood description. Make sure it isn't listed as \"downtown\" when it's actually a 45-minute bus ride away.\n\n---\n\n### Summary Recommendation\n* **Booking a cozy city apartment for 2 people?** Use **Airbnb**.\n* **Booking a 4-bedroom beach house for a family reunion?** Use **Vrbo**.\n* **Worried about your plans changing, or want the safety net of a hotel-like booking?** Use **Booking.com**. \n\nWhichever you choose, **always check the cancellation policy** before entering your credit card details!",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

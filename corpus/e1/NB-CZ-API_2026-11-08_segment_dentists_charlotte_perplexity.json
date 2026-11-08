@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_segment_dentists_charlotte_perplexity",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: dentists, Charlotte",
+ "niche": "dentists",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Charlotte for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_485c253c-7c01-4554-bc75-e55d5f70aa33",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 4947,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4401,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 283,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5230
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "CharlottePerio",
+  "Dr. Kenneth T. Corsig",
+  "American Board of Periodontology"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.universitymoderndentistry.com/dental-services/dental-implants/",
+  "https://www.charlottedentalarts.com/meet-dr-edwin-porter/",
+  "https://www.charlotteperio.com/full-mouth-dental-implant",
+  "https://www.charlotteperio.com/dental-implants",
+  "https://aedit.com/provider/james-lemmons-19965",
+  "https://www.castleconnolly.com/top-dentists/kenneth-t-corsig-periodontics-cc393287",
+  "https://aedit.com/provider/todd-engel-19746",
+  "https://www.charlotteperio.com/articles/dental-implant-recovery",
+  "https://www.charlotteperio.com/about-charlotte-perio",
+  "https://aedit.com/provider/khalil-mjahed-19917",
+  "https://www.dentistsranked.com/dental-services/dental-implants-charlotte-nc",
+  "https://www.charlotteperio.com/articles/dental-implant-process-charlotte",
+  "https://www.myspecialtydentist.com/directory/profile/dr-matthew-ficca-1437350071",
+  "https://doctor.webmd.com/doctor/woo-jung-choe-429bdae8-3944-495e-93a4-0840b89ba39e-overview",
+  "https://www.northstateperio.com/"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "b0c6511649184fa3edc9ea88cdeba7cd19169a79102439302820bc446dfe526b",
+ "answer_chars": 935,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

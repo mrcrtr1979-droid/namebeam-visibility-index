@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_flatline_contracting_perplexity",
+ "date_utc": "2026-11-08",
+ "business": "Flatline Contracting",
+ "niche": "residential remodeling and repair",
+ "market": "Joplin MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is a reliable contractor in Joplin MO for a home remodel or repair project?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b952f207-0c57-4d7d-a9d9-8b3daae690d8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00442
+   },
+   "input_tokens": 4625,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4073,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 302,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4927
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Solid Remodels & Restorations",
+  "GRC General Construction",
+  "Solid Remodels",
+  "BBB Joplin"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.bbb.org/us/mo/joplin/category/home-repair",
+  "https://www.bbb.org/us/mo/joplin/category/general-contractor",
+  "https://www.bbb.org/us/mo/joplin/category/home-renovation",
+  "https://www.bbb.org/us/mo/joplin/profile/roofing-contractors/u-r-c-united-roofing-construction-llc-0734-1000052485",
+  "https://www.bbb.org/us/mo/joplin/category/home-improvement",
+  "https://www.bbb.org/us/mo/webb-city/category/home-repair",
+  "https://www.bbb.org/us/mo/joplin/category/construction",
+  "https://www.bbb.org/us/mo/joplin/category/home-maintenance",
+  "https://www.bbb.org/us/mo/joplin/profile/remodel-contractors/solid-remodels-restorations-0734-1000046305",
+  "https://www.bbb.org/us/mo/carl-junction/category/home-repair",
+  "https://www.bbb.org/us/mo/joplin/category/building-and-construction",
+  "https://www.bbb.org/us/mo/joplin/profile/general-contractor/business-needs-craftsmanship-0734-1000011969",
+  "https://www.bbb.org/us/mo/nevada/category/home-repair",
+  "https://www.bbb.org/us/mo/joplin/category/carpenter",
+  "https://www.bbb.org/us/mo/joplin/category/remodel-contractors"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "b198acd82e6d985f2a82675a6f57496a9dafd9c793d824643cd964dcdbe58bbf",
+ "answer_chars": 847,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

@@ -1,0 +1,57 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-08_segment_dentists_denver_openai",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: dentists, Denver",
+ "niche": "dentists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Denver. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Denver for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-Ei2AErZQQgwAsCO4h5WWhR5RDU3eq",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 2193,
+   "total_tokens": 2218,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Denver ZIP",
+  "AAOMS",
+  "Find",
+  "American Academy of Implant Dentistry",
+  "Nobel Biocare",
+  "BioHorizons",
+  "CareCredit",
+  "Cherry Creek",
+  "AAID",
+  "American Academy of Periodontology",
+  "Oral and Maxillofacial Surgeons",
+  "American College of Prosthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can help — but I don’t have live map access right now, so I can’t pull up today’s phone numbers or the newest office openings. I can, however, tell you exactly which specific kinds of Denver practices you should call, why each type matters for implants, how to find reputable local names quickly, and give a short phone script + checklist so you get the right information on the first call.\n\nIf you want, tell me your Denver ZIP code or neighborhood and I’ll produce a tailored list of 5–7 nearby offices (oral surgeons, periodontists, prosthodontists, and implant centers) using up-to-2024 knowledge and show how to verify current status.\n\nWhich practices to call (and why)\n- Board-certified oral & maxillofacial surgeons (OMS)\n  - Why: OMSs are surgical specialists who commonly place implants, handle extractions and bone grafting, and manage complicated anatomy and sedation. Call one for complex cases (bone loss, impacted teeth, bone grafts, medical comorbidities).\n- Periodontists who place implants\n  - Why: Periodontists specialize in the gums and supporting bone — great for patients with gum disease or who need soft-tissue management or bone regeneration.\n- Prosthodontists (restorative specialists)\n  - Why: Prosthodontists design and restore implant crowns, bridges, and full-arch prostheses. Call one when you expect complex restorative work (multiple teeth, full-arch replacement) or want a single provider for both surgical and restorative planning.\n- Full-service implant centers / multi-specialty clinics\n  - Why: These combine surgeon + restorative dentist + in‑house lab and often offer CBCT, guided surgery, same-day temporaries, financing, and predictable workflows.\n- Experienced general dentists who place implants (if case is straightforward)\n  - Why: Many general dentists place implants for single missing teeth and offer competitive pricing with excellent outcomes — good for low-complexity cases.\n\nHow to find reputable local practices quickly\n- Use these directories and filters:\n  - AAOMS (American Association of Oral and Maxillofacial Surgeons) “Find a Surgeon”\n  - American Academy of Periodontology locator\n  - American College of Prosthodontists “Find a Prosthodontist”\n  - AAID (American Academy of Implant Dentistry) directory\n  - ADA “Find-a-Dentist”\n- Supplement with Google Maps, Yelp, Healthgrades, and Facebook reviews — focus on detailed reviews that mention implants, grafts, and follow-up care.\n- Look for offices that advertise CBCT (3D imaging), guided implant surgery, in-house lab/prosthodontist, sedation options, and implant brand names (Nobel Biocare, Straumann, Zimmer, BioHorizons are commonly used reputable brands).\n\nWhat specific practices to call (how to narrow to local names)\n- Call at least these three types of offices near you:\n  1) A board-certified oral & maxillofacial surgeon in Denver\n  2) A periodontist with implant experience in Denver\n  3) A full-service implant center or prosthodontist who handles implant restorations\n- If you’d like, give me your ZIP code and I’ll list 5 exact offices (name, office type, why they might fit) you can call.\n\nPhone script and checklist (what to ask on the first call)\n- Quick script: “Hi, I need a consult for a dental implant. Do you place implants and perform bone grafting? Do you have 3D imaging (CBCT)? Do you coordinate restoration with a prosthodontist or restorative dentist? What is your typical timeline and estimated cost range for a single implant with crown? Do you accept my insurance? Are consults and 3D scans charged separately?”\n- Essential questions to ask:\n  - Is the provider board-certified (for OMS) or a specialty-trained periodontist/prosthodontist?\n  - How many implants does the provider place per year?\n  - Do you use CBCT 3D imaging and guided surgery?\n  - Who will place the implant and who will make the crown — in-house or referred?\n  - Do you do bone grafts/sinus lifts if needed?\n  - What sedation options are offered (local, nitrous, IV)?\n  - What implant brands do you use and do you offer warranties/guarantees?\n  - Estimated all-in cost or typical price range (implant + abutment + crown + graft if needed)\n  - Financing options, insurance help, and whether they accept CareCredit\n  - Do you have before/after photos and patient references or reviews?\n  - How long between implant placement and crown restoration?\n  - Is there a written treatment plan/estimate and timeline?\n\nHow to choose between several good options\n- For complex cases choose OMS or periodontist with prosthodontic collaboration.\n- For straightforward single-tooth implants, a high-volume general dentist or implant center can be excellent and lower-cost.\n- Prefer offices that use CBCT and present a coordinated surgical + restorative plan before surgery.\n- Check credentials, reviews, and ask to see before/after photos for similar cases.\n- Ask about follow-up care and who to contact if problems arise.\n\nIf you want a specific list now\n- Tell me your Denver ZIP code or neighborhood (example: Capitol Hill, Cherry Creek, Stapleton, 80202, 80209, etc.), plus any preferences (need IV sedation, want prosthodontist restoration, budget concerns, want same-day temporary tooth). I’ll return a short list of specific practices to call and brief reasons for each.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

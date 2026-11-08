@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-11-08_segment_dentists_miami_perplexity",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: dentists, Miami",
+ "niche": "dentists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Miami for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0921b1cf-7901-40e9-bb4a-8bc8686f789f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00058,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0043
+   },
+   "input_tokens": 4852,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4306,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 231,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5083
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Rodrigo Romano",
+  "Dr. Isaac Garazi"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [
+  "https://www.miamiperio.com/",
+  "https://aedit.com/provider/john-gallardo-5738",
+  "https://www.miamiperio.com/procedures/dental-implants",
+  "https://www.miamiperio.com/contact/miami-fl",
+  "https://www.myspecialtydentist.com/directory/profile/dr-george-gounakis-1891969077",
+  "https://www.myspecialtydentist.com/directory/profile/dr-rodrigo-romano-1164503801",
+  "https://www.miamiperio.com/procedures/periodontics",
+  "https://www.zocdoc.com/periodontists/miami-218306pm",
+  "https://www.myspecialtydentist.com/directory/profile/dr-isaac-garazi-1023197084",
+  "https://www.tebra.com/care/periodontists/miami-fl/",
+  "https://artisticsmilesmiamidentist.com/implant-dentistry-miami/dental-implants/",
+  "https://www.myspecialtydentist.com/best/prosthodontics/fl/miami",
+  "https://reviews.birdeye.com/beatriz-e-terry-dds-ms-pa-miami-implant-perio-165612709508056",
+  "https://www.navmds.com/doctor/dr-todd-b-barsky-dds",
+  "https://www.realself.com/find/Florida/Miami/All-on-4-Dental-Implants"
+ ],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "238f35a9a27545871359bffec64dc26b0af6b5e879ed77734cff19589f3d9e36",
+ "answer_chars": 751,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

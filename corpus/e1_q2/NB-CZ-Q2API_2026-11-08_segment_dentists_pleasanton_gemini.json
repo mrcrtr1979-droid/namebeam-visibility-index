@@ -1,0 +1,64 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-08_segment_dentists_pleasanton_gemini",
+ "date_utc": "2026-11-08",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "GcHwatmvE_DlwbUP6c2H-QE",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 614,
+   "totalTokenCount": 636,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Practice to call",
+  "Pleasanton Dental",
+  "Friendly smiles Dental Care",
+  "Comfort Dental Care",
+  "Valley Dental Group",
+  "Specific Concerns",
+  "Technologically Advanced",
+  "Comprehensive Experience",
+  "Practice",
+  "Dr. Mohinder Grewal",
+  "Patient-First Environment",
+  "Great for Anxious Patients",
+  "Dental Care",
+  "TVs",
+  "Your Next Steps Before Calling",
+  "Your Dental Insurance Card",
+  "Your Last Dental Visit"
+ ],
+ "engine_stated_criteria": [
+  "Your Dental Insurance Card",
+  "Your Last Dental Visit"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Because dental needs, insurance, and personal preferences vary, here are four well-regarded dental practices in Pleasanton known for routine checkups and cleanings, categorized by what makes them stand out:\n\n### 1. For a Technologically Advanced & Comprehensive Experience\n*   **Practice to call:** **Pleasanton Dental** (Dr. Mohinder Grewal & Associates)\n    *   **Why call them:** They are consistently praised by patients for using modern dental technology, which makes cleanings and diagnostics more efficient and comfortable. Reviewers frequently highlight the thoroughness of their hygienists and the gentle chairside manner of the dentists. They also handle a wide variety of insurance plans.\n    *   **Best for:** Patients who appreciate digital x-rays, intraoral cameras, and a modern office environment.\n\n### 2. For a Gentle, Patient-First Environment (Great for Anxious Patients)\n*   **Practice to call:** **Friendly smiles Dental Care** or **Comfort Dental Care**\n    *   **Why call them:** Dental anxiety is one of the main reasons people skip cleanings. Practices in Pleasanton that focus heavily on gentle dentistry (often featuring comfort amenities like blankets, TVs, or sedation options) excel at routine preventive care. The staff are noted for taking extra time to explain procedures and check in on comfort levels during cleanings.\n    *   **Best for:** Anyone who feels nervous about the dentist or hasn't had a checkup in a few years and worries about being judged.\n\n### 3. For Family Care & Flexibility\n*   **Practice to call:** **Valley Dental Group** \n    *   **Why call them:** If you are booking for multiple family members or need a practice with flexible scheduling (including some early morning or late afternoon slots to accommodate work and school), established group practices in Pleasanton usually offer robust availability and accept a wide range of PPO insurances.\n    *   **Best for:** Busy professionals and families looking for a reliable \"dental home\" for routine cleanings every six months.\n\n---\n\n### Your Next Steps Before Calling:\n\nTo make your calls as efficient as possible, have these three pieces of information ready:\n\n1.  **Your Dental Insurance Card:** Call the number on the back of your card (or ask the dental receptionist) to verify if the practice is *in-network* with your specific plan. Being in-network usually means your routine cleanings and checkups are 100% covered.\n2.  **Your Last Dental Visit:** Let them know when you last had x-rays. Most offices require new x-rays once a year, while bi-annual cleanings are done every 6 months.\n3.  **Specific Concerns:** Mention if you have any specific issues (e.g., \"My gums bleed when I floss\" or \"I have a sensitivity on my left side\") so they can block out enough time during your checkup to address them.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
