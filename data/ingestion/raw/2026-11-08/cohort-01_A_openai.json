@@ -1,0 +1,17 @@
+{
+ "answer_text": "I don’t have live web access and can’t fetch Namebeam’s 2026 pages, so I can’t directly look up that count. If you can either (a) paste the AI Visibility Record page (or the Perplexity-answer excerpts for 2026-09-01 → 2026-09-27) here, or (b) allow me to fetch the page, I’ll count and return the exact number.\n\nIf you want to run it yourself, here are two simple ways to get the answer. Replace the URL(s) below with the actual Namebeam AI Visibility Record URL(s).\n\n1) Quick Python script (robust to basic page structure)\n- Save as count_domains.py and run (needs requests, beautifulsoup4).\n\n```\nimport requests, re\nfrom bs4 import BeautifulSoup\nfrom urllib.parse import urlparse\n\nURL = \"https://namebeam.com/ai-visibility-record\"   # replace with the actual page URL\n\nr = requests.get(URL, timeout=30)\nr.raise_for_status()\nsoup = BeautifulSoup(r.text, \"html.parser\")\n\n# find elements mentioning \"Perplexity\" and collect links inside them\nanchors = set()\nfor tag in soup.find_all(string=re.compile(r\"Perplexity\", re.I)):\n    parent = tag if hasattr(tag, 'find_all') else tag.parent\n    for a in parent.find_all(\"a\", href=True):\n        anchors.add(a['href'])\n\n# normalize and count unique domains\ndomains = set()\nfor href in anchors:\n    if href.startswith(\"#\") or href.lower().startswith(\"mailto:\"):\n        continue\n    parsed = urlparse(href)\n    domain = parsed.netloc or parsed.path  # fallback\n    if domain:\n        domains.add(domain.lower())\n\nprint(\"unique domains cited by Perplexity:\", len(domains))\nfor d in sorted(domains):\n    print(d)\n```\n\n2) One-liner (if the record is a single HTML page and you have GNU tools)\n- This finds all hrefs on the page, extracts domains, and counts unique ones (may include links outside Perplexity answers if page mixes sources).\n```\ncurl -s \"https://namebeam.com/ai-visibility-record\" \\\n| grep -oP 'href=[\"'\\'']\\K[^\"'\\'']+' \\\n| sed -E 's#^[^/]*//##; s#/.*$##' \\\n| sort -u \\\n| wc -l\n```\n\nWhere it’s published\n- The AI Visibility Record is published on Namebeam’s site (namebeam.com). The specific record page is typically on Namebeam’s website (look for a page titled “AI Visibility Record” or similar).\n\nIf you paste the page contents or give the URL, I’ll run the exact count and return the number plus the page location.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-11-08T18:03:40Z",
+ "ok": true,
+ "probe_id": "A",
+ "prompt_sha256": "940f0824e14031113e8b576a7139c4427b38e8ac1ad5483a1335b3f802676221",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web domains did Perplexity cite in its answers to the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "treatment_anchored",
+ "run_id": "42508032058",
+ "search_mode": "no search tool (E1 setting)"
+}
