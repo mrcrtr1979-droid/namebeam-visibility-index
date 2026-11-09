@@ -72,7 +72,12 @@ def test_perplexity_row_is_held():
     assert pub["raw_policy"] == POLICY
     assert pub["business_mentioned"] is False
     assert pub["competitors_mentioned"] == ["Alpha Realty", "Beta Homes"]
-    assert pub["sources_cited"] == ["https://example.com/a"]
+    assert pub["sources_cited"] == []
+    assert pub["sources_count"] == 1
+    assert pub["sources_sha256"] == sha(json.dumps(["https://example.com/a"], ensure_ascii=False))
+    assert pub["sources_private"] is True
+    assert pub["sources_policy"] == "CAP 2026-11-08: cited sources held in the private collector"
+    assert full["sources_cited"] == ["https://example.com/a"]
     assert full["answer_verbatim"] == PPLX_TEXT
     assert "answer_private" not in full
 
