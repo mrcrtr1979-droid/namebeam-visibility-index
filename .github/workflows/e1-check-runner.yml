@@ -33,6 +33,15 @@ on:
   # of type hosted even after multiple attempts". No E1 record exists for 2026-10-05 and
   # it cannot be backfilled. A second daily slot runs only when today's record is missing.
   - cron: "40 21 * * *"
+  # TWO MORE BACKSTOPS (2026-11-09, [LAPTOP-FABLE-LB17], R61): on 2026-11-09 GitHub never
+  # started the 12:10Z slot at all (no run between 01:12Z and 22:14Z in the run list), and the
+  # 21:40Z backstop started at 22:14:48Z, four minutes after the Sentry monitor's 600-minute
+  # margin (22:10Z), so the record for 11-09 landed about ten hours late and Terry got a
+  # "Cron failure: e1-daily-record" mail. In the 20 days before that the 12:10Z slot started
+  # between 15:50Z and 21:39Z, so one dropped slot leaves a 9.5-hour hole. These slots run
+  # only when the day's record is still missing (guard below); otherwise they skip in seconds.
+  - cron: "10 16 * * *"
+  - cron: "10 19 * * *"
 
 concurrency:
   group: e1-check-runner

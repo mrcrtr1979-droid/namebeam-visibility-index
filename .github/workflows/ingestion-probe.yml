@@ -4,11 +4,17 @@ name: ingestion-probe
 # saves every answer word for word under data/ingestion/raw/, and appends one row per call. Its own
 # concurrency group, so the daily E1 run (e1-check-runner.yml) is never queued behind it or changed by it.
 # Slots: 12:37Z, and a backstop at 13:12Z that runs only when today's rows are missing.
+# TWO MORE BACKSTOPS (2026-11-09, [LAPTOP-FABLE-LB17], R61): on 2026-11-09 GitHub started
+# neither the 12:37Z nor the 13:12Z slot (no probe run that day in the run list), so the two
+# slots 35 minutes apart share one failure. The 17:12Z and 21:12Z slots run only when the day's
+# rows are still missing (guard below); otherwise they skip in seconds.
 on:
   workflow_dispatch: {}
   schedule:
   - cron: "37 12 * * *"
   - cron: "12 13 * * *"
+  - cron: "12 17 * * *"
+  - cron: "12 21 * * *"
 
 concurrency:
   group: ingestion-probe
