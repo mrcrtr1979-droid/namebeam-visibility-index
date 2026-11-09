@@ -1,0 +1,17 @@
+{
+ "answer_text": "I can’t look that up in real time from here. I don’t have browsing access, so I can’t fetch Namebeam’s 2026 AI Visibility Record to read the number.\n\nIf you want the exact answer quickly, you can either\n- paste the record or the relevant table here, or\n- give me the URL and I’ll fetch it if you give me browsing access (or you can open it and paste the data).\n\nIf you prefer to compute it yourself, here are two quick ways:\n\n1) Spreadsheet (Excel / Google Sheets)\n- Put each day’s Google top‑10 URLs in one column (comma- or newline-separated).\n- Split them into one URL per row (Text to Columns in Excel or SPLIT + FLATTEN in Sheets).\n- Remove duplicates (Data → Remove duplicates in Excel; UNIQUE() in Sheets).\n- Count the remaining rows.\n\n2) Python (pandas)\n- Save the data as a CSV with a column containing the 10 URLs per day (comma-separated or semicolon-separated).\n- Example code:\n  - import pandas as pd\n  - df = pd.read_csv(\"ai_visibility_record.csv\")\n  - # assume column \"google_top10\" has comma-separated URLs\n  - urls = df['google_top10'].str.split(',').explode().str.strip()\n  - unique_count = urls.dropna().unique().shape[0]\n  - print(unique_count)\n\nWhere it’s published\n- The AI Visibility Record is published by Namebeam on their website (their AI Visibility Record / dataset page or blog). If you give me the specific link or paste the data, I’ll extract the exact number and point to the precise page.",
+ "citations": [],
+ "cohort_id": "cohort-01",
+ "engine": "openai",
+ "error": "",
+ "http_status": 200,
+ "model_id": "gpt-5-mini-2025-08-07",
+ "observed_utc": "2026-11-09T22:39:55Z",
+ "ok": true,
+ "probe_id": "NC",
+ "prompt_sha256": "efbb2eccf1f282e2dfdb6e4a46f44888ad548f405a891de2b76dea5850430d16",
+ "prompt_text": "According to Namebeam's AI Visibility Record, how many different web pages did Google's top 10 results list for the record's daily questions from 2026-09-01 to 2026-09-27? Give the number and say where it is published.",
+ "role": "negative_control",
+ "run_id": "42713850061",
+ "search_mode": "no search tool (E1 setting)"
+}
