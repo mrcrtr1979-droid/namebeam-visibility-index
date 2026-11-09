@@ -68,6 +68,9 @@ SCHEMA_VERSION = "v4"
 PRIVATE_DIR = "private_e1"
 PRIVATE_RAW_ENGINES = ("perplexity",)
 RAW_POLICY = "R82 2026-10-24: raw text held in the private collector"
+# CAP (Terry 2026-11-08 8:04PM CT): the URLs a Perplexity answer cited are held in the private collector
+# too, from the next run. The public row keeps the count and a SHA-256 of the list. History is unchanged.
+SOURCES_POLICY = "CAP 2026-11-08: cited sources held in the private collector"
 # Full rows of this process, keyed by check_id, for rows redacted by write_row. The agreement row
 # needs the answer text, which the public file no longer carries.
 _FULL_IN_MEMORY = {}
@@ -140,6 +143,12 @@ def redact_for_public(row):
         public["answer_chars"] = len(text)
         public["answer_private"] = True
         public["raw_policy"] = RAW_POLICY
+        srcs = row.get("sources_cited") or []
+        public["sources_cited"] = []
+        public["sources_count"] = len(srcs)
+        public["sources_sha256"] = _sha256_text(json.dumps(srcs, ensure_ascii=False)) if srcs else ""
+        public["sources_private"] = True
+        public["sources_policy"] = SOURCES_POLICY
     if engine == "google_serp" and "ai_overview_text" in row:
         text = row.get("ai_overview_text") or ""
         public["ai_overview_text"] = ""
