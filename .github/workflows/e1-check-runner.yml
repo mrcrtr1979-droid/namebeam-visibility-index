@@ -26,6 +26,26 @@ on:
         required: false
         default: ""
         type: string
+      # LB-20 (2026-11-09). dry_run: rows land under dry_run_out/, nothing is committed or pushed, and the
+      # run prints served_model per cell plus an OpenAI model check. openai_model_override: ask OpenAI
+      # with this model id for this run only (the repo variable OPENAI_MODEL is untouched). backstop: a
+      # dispatched run that behaves like a scheduled one (skips when the day's record already exists);
+      # the hourly-clock Worker sets it when it fills a dropped 12:10Z slot.
+      dry_run:
+        description: "Dry run: write rows under dry_run_out/ only, print served_model, commit nothing."
+        required: false
+        default: false
+        type: boolean
+      openai_model_override:
+        description: "OpenAI model id for this run only (blank = repo variable OPENAI_MODEL)."
+        required: false
+        default: ""
+        type: string
+      backstop:
+        description: "Treat this dispatch as a backstop: skip if today's record already exists."
+        required: false
+        default: false
+        type: boolean
   schedule:
   - cron: "10 12 * * *"
   # BACKSTOP (2026-10-06, [FABLE-COS-1006A], R61): on 2026-10-05 the 12:10Z run was
@@ -64,6 +84,10 @@ env:
 jobs:
   run-e1-check:
     runs-on: ubuntu-latest
+    # LB-20 (2026-11-09): the longest successful run on record took 163 minutes (2026-10-21); the runner step
+    # is capped at 200 and the job at 235 so the private copy, the sources dataset, the commit and the
+    # Sentry check-in always run with whatever rows exist (GitHub's own default is 360 and loses the day).
+    timeout-minutes: 235
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
@@ -78,10 +102,12 @@ jobs:
           # the 02:55Z roster merge, and the real 12:10Z run (started 18:51Z) skipped; the six
           # dental/orthodontist segments lost 2026-10-07. A scheduled run that starts before
           # 12:00Z is a late backstop from the previous day; today's 12:10Z slot owns today.
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$H" -lt 12 ]; then
+          SCHED="${{ github.event_name }}"
+          if [ "${{ inputs.backstop }}" = "true" ]; then SCHED="schedule"; fi   # LB-20 (2026-11-09)
+          if [ "$SCHED" = "schedule" ] && [ "$H" -lt 12 ]; then
             echo "Scheduled run started at ${H}Z: a late backstop that crossed midnight; the 12:10Z slot owns $D. Skipping."
             echo "skip=true" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event_name }}" = "schedule" ] && ls corpus/e1/NB-CZ-API_${D}_namebeam_*.json >/dev/null 2>&1; then
+          elif [ "$SCHED" = "schedule" ] && ls corpus/e1/NB-CZ-API_${D}_namebeam_*.json >/dev/null 2>&1; then
             echo "E1 record for $D already exists; this scheduled run is the backstop and skips."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
@@ -133,11 +159,9 @@ jobs:
           for k in PERPLEXITY_API_KEY GEMINI_API_KEY GEMINI_API_KEY_FREE BRIGHTDATA_API_KEY OPENAI_API_KEY ANTHROPIC_API_KEY; do
             if [ -n "${!k}" ]; then echo "$k: present"; else echo "$k: MISSING"; fi
           done
-          echo "NOTE: OPENAI is intentionally DEACTIVATED as of 2026-08-06. The secret"
-          echo "still exists and reports present here, but it is NOT mapped into the"
-          echo "runner step, so no openai rows are written. Reason: API account balance"
-          echo "is zero. This corpus is THREE engines (perplexity, gemini, anthropic)"
-          echo "plus Bright Data SERP until credits are added."
+          echo "NOTE: OpenAI is LIVE (rows since 2026-10-30; served gpt-5-mini-2025-08-07 on 2026-11-08)."
+          echo "OpenAI removes gpt-5-mini on 2026-12-11; the replacement gpt-5.6-terra is set by the repo"
+          echo "variable OPENAI_MODEL (or openai_model_override on a dry run). LB-20 (2026-11-09)."
           if [ -z "$PERPLEXITY_API_KEY" ] && [ -z "$GEMINI_API_KEY" ] && [ -z "$BRIGHTDATA_API_KEY" ]; then
             echo "ERROR: no engine keys are set. Add them in Settings > Secrets and variables > Actions."
             exit 1
@@ -150,7 +174,12 @@ jobs:
       # though both secrets existed in the repo.
       - name: Run the E1 check runner
         if: steps.guard.outputs.skip != 'true'
+        timeout-minutes: 200   # LB-20 (2026-11-09)
         env:
+          # LB-20 (2026-11-09): dry run and wall-clock budgets (see scripts/e1_runner.py).
+          E1_DRY_RUN: ${{ inputs.dry_run }}
+          E1_CALL_BUDGET_S: ${{ vars.E1_CALL_BUDGET_S }}
+          E1_RUN_BUDGET_MIN: ${{ vars.E1_RUN_BUDGET_MIN }}
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_FREE: ${{ secrets.GEMINI_API_KEY_FREE }}
@@ -160,25 +189,15 @@ jobs:
           # engines.py falls back to its default and a wrong zone simply logs
           # a clean HTTP failure on the SERP rows. Engine rows are unaffected.
           BRIGHTDATA_ZONE: ${{ vars.BRIGHTDATA_ZONE }}
-          # OPENAI DEACTIVATED 2026-08-06 on Terry's decision (option D).
-          # The key is valid and correctly placed. The API ACCOUNT BALANCE IS ZERO:
-          # platform.openai.com reports Free trial, credit remaining $0.00, no payment
-          # method, and the key carter_enterprise_llc shows lifetime spend of $0.00.
-          # OpenAI's ChatGPT Business subscription does NOT fund the API; OpenAI state
-          # this themselves. Leaving the key mapped made the runner attempt openai and
-          # write 13 QUOTA_BLOCKED rows per day, which is a dead engine riding along in
-          # every denominator. The runner picks engines by which <ENGINE>_API_KEY is
-          # present in env, so UNMAPPING the key is the whole deactivation: no code
-          # change, no secret deleted, nothing destroyed.
-          # TO REACTIVATE: add credits at platform.openai.com, then uncomment the line
-          # below. openai validates on the next scheduled run with no other change.
+          # OpenAI is live (funded 2026-10-29; rows since 2026-10-30). The 2026-08-06 deactivation
+          # note that stood here was stale and was removed on LB-20 (2026-11-09).
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           # Model strings for the v8 engines are PENDING VERIFICATION on the
           # first live run. A wrong default logs a clean HTTP 404 row; fix it
           # WITHOUT a commit by adding repo VARIABLES OPENAI_MODEL and/or
           # ANTHROPIC_MODEL (Settings > Secrets and variables > Actions > Variables).
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          OPENAI_MODEL: ${{ inputs.openai_model_override || vars.OPENAI_MODEL }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
           # Bedrock path: non-empty BEDROCK_MODEL_ID routes the anthropic engine to Bedrock.
           BEDROCK_MODEL_ID: ${{ vars.BEDROCK_MODEL_ID }}
@@ -206,7 +225,7 @@ jobs:
       # The token is used only as a git credential on the clone URL and is never echoed.
       - name: Push the private raw copy to the private Brain
         id: private_push
-        if: ${{ always() && steps.guard.outputs.skip != 'true' && hashFiles('private_e1/**') != '' }}
+        if: ${{ always() && steps.guard.outputs.skip != 'true' && inputs.dry_run != true && hashFiles('private_e1/**') != '' }}
         env:
           PRIVATE_BRAIN_TOKEN: ${{ secrets.PRIVATE_BRAIN_TOKEN }}
         run: |
@@ -242,7 +261,8 @@ jobs:
       # corpus commit below: a guard (UNMAPPED field, EMPTY-DAY, selftest fail)
       # prints a warning annotation and the run continues.
       - name: Build the sources dataset
-        if: steps.guard.outputs.skip != 'true'
+        # LB-20 (2026-11-09): always() so a timed-out runner step still gets its rows built and committed.
+        if: ${{ always() && steps.guard.outputs.skip != 'true' && inputs.dry_run != true }}
         run: |
           python3 -I scripts/build_sources.py --selftest || echo "::warning::sources selftest failed"
           python3 -I scripts/build_sources.py --missing --strict || echo "::warning::sources build reported a guard (UNMAPPED or EMPTY-DAY), see the log above"
@@ -253,7 +273,7 @@ jobs:
           python3 -I scripts/own_name_rate.py || echo "::warning::own_name_rate build failed"
 
       - name: Commit and push any new corpus rows
-        if: steps.guard.outputs.skip != 'true'
+        if: ${{ always() && steps.guard.outputs.skip != 'true' && inputs.dry_run != true }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -274,6 +294,24 @@ jobs:
               git pull --rebase origin main
             done
           fi
+
+      # LB-20 (2026-11-09): dry-run only steps. Never run on a schedule.
+      - name: OpenAI model check (dry run)
+        if: ${{ always() && inputs.dry_run == true }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ inputs.openai_model_override || vars.OPENAI_MODEL }}
+        run: python3 -I scripts/check_openai_model.py
+      - name: Dry run summary
+        if: ${{ always() && inputs.dry_run == true }}
+        run: |
+          echo "dry run rows:"; ls dry_run_out/corpus_e1 2>/dev/null | wc -l
+          python3 -I - <<'EOF'
+          import glob, json
+          for p in sorted(glob.glob("dry_run_out/corpus_e1/*.json")):
+              d = json.load(open(p, encoding="utf-8"))
+              print(d.get("engine"), d.get("run_status"), "served_model=%s" % (d.get("engine_meta") or {}).get("served_model"), p)
+          EOF
 
       # Sentry Crons (2026-10-25, [OPUS55-COS-1025A]): one check-in per run, ok on success,
       # error otherwise; a run that never starts shows as missed after the grace period and

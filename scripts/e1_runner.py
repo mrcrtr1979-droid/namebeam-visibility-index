@@ -37,6 +37,18 @@ from extract_named_entities import (
     extract_stated_criteria,
 )
 from extract_entities_orthographic import extract_entities_orthographic
+import threading
+
+# LB-20 (2026-11-09): wall-clock guards. One hung engine call cannot hold the day: every call runs under
+# a per-call budget, and once the run budget is spent the remaining cells are written as FAILED
+# rows (error TIMEOUT_BUDGET) so the only_failed rerun can ask them later. Both are env-tunable
+# without a commit. Sizing: the 20 successful runs read on 2026-11-09 took 63 to 163 minutes end
+# to end; the workflow step timeout is 200 minutes; this run budget leaves time for the commit.
+CALL_BUDGET_S = float(os.environ.get("E1_CALL_BUDGET_S", "").strip() or 300)
+RUN_BUDGET_MIN = float(os.environ.get("E1_RUN_BUDGET_MIN", "").strip() or 170)
+_RUN_T0 = [time.monotonic()]
+DRY_RUN = str(os.environ.get("E1_DRY_RUN", "")).strip().lower() in ("1", "true", "yes", "on")
+GAZETTEER_DIR = "corpus/e1"   # the gazetteer always reads the real public record
 
 try:
     import posthog_llm_obs as _obs
@@ -66,6 +78,12 @@ SCHEMA_VERSION = "v4"
 # Counts, named-business flags, SHA-256 hashes, dates and the OpenAI and Anthropic answer text stay
 # public. Reversible: PRIVATE_RAW=0 writes the text publicly again from the next run.
 PRIVATE_DIR = "private_e1"
+if DRY_RUN:
+    # LB-20 (2026-11-09) dry run: rows land under dry_run_out/ (never committed by the workflow) and the
+    # run prints served_model per cell; nothing under corpus/ or private_e1/ is touched.
+    OUTPUT_DIR = "dry_run_out/corpus_e1"
+    Q2_OUTPUT_DIR = "dry_run_out/corpus_e1_q2"
+    PRIVATE_DIR = "dry_run_out/private_e1"
 PRIVATE_RAW_ENGINES = ("perplexity",)
 RAW_POLICY = "R82 2026-10-24: raw text held in the private collector"
 # CAP (Terry 2026-11-08 8:04PM CT): the URLs a Perplexity answer cited are held in the private collector
@@ -447,6 +465,31 @@ def _note_gemini_quota(engine, err):
         _GEMINI_EXHAUSTED[0] = True
 
 
+def run_budget_left_s():
+    """Seconds left in the run budget (negative once spent)."""
+    return RUN_BUDGET_MIN * 60.0 - (time.monotonic() - _RUN_T0[0])
+
+
+def _call_with_deadline(fn, prompt, seconds):
+    """Run fn(prompt) on a daemon thread and give up after `seconds`. Returns the adapter
+    4-tuple. An abandoned call keeps running in its thread but can no longer hold the day
+    (daemon threads do not block exit)."""
+    box = {}
+
+    def _work():
+        try:
+            box["r"] = fn(prompt)
+        except Exception as exc:  # adapters never raise; the guard must not either
+            box["r"] = (False, "", [], "engine raised %s" % type(exc).__name__)
+
+    worker = threading.Thread(target=_work, daemon=True)
+    worker.start()
+    worker.join(seconds)
+    if worker.is_alive():
+        return False, "", [], "TIMEOUT: engine call exceeded %d s (E1_CALL_BUDGET_S)" % int(seconds)
+    return box.get("r") or (False, "", [], "engine returned nothing")
+
+
 def run_engine(business_row, engine, fn, date_utc, supersedes=None, variant=1):
     slug = slugify(business_row["business"])
     check_id, run_index = next_run_index(date_utc, slug, engine, variant)
@@ -463,21 +506,35 @@ def run_engine(business_row, engine, fn, date_utc, supersedes=None, variant=1):
     _engines.CURRENT_QUESTION_ID[0] = slug if variant != 2 else slug + "_q2"
     prompt = business_row["prompt_2"] if variant == 2 else business_row["prompt_1"]
     skipped = False
+    skip_note = ""
     _t0 = time.monotonic()
     if variant == 2 and engine == "gemini" and _GEMINI_EXHAUSTED[0]:
         skipped = True
+        skip_note = "gemini rails refused for quota earlier in this run"
         ok, text, sources = False, "", []
         err = ("QUOTA: gemini q2 not asked, the Gemini rails were refused for quota earlier in "
                "this run; the prompt_1 calls come first and keep the free tier")
+    elif run_budget_left_s() <= 0:
+        # LB-20 (2026-11-09): the run budget is spent; this cell is not asked and is written FAILED so
+        # the only_failed rerun can ask it later. Never a fabricated answer.
+        skipped = True
+        skip_note = "run budget exhausted before this cell was asked"
+        ok, text, sources = False, "", []
+        err = ("TIMEOUT_BUDGET: run budget of %d min exhausted before this cell was asked "
+               "(E1_RUN_BUDGET_MIN); re-ask with only_engines plus only_failed" % int(RUN_BUDGET_MIN))
     else:
-        ok, text, sources, err = fn(prompt)
+        ok, text, sources, err = _call_with_deadline(fn, prompt, CALL_BUDGET_S)
     _latency = time.monotonic() - _t0
     # Forward-only audit fields: which model the provider says it served, the
     # response id and usage (Perplexity since 2026-09-28, also its search-result
     # count; OpenAI, Anthropic and Gemini from the 2026-10-13 change). Set on
     # both OK and failed rows; empty when the body never parsed.
-    row["engine_meta"] = ({"skipped": "gemini rails refused for quota earlier in this run"} if skipped
-                          else dict(LAST_CALL_META.get(engine) or {}))
+    if skipped:
+        row["engine_meta"] = {"skipped": skip_note}
+    elif str(err or "").startswith("TIMEOUT:"):
+        row["engine_meta"] = {"timeout_s": int(CALL_BUDGET_S)}   # LAST_CALL_META would be stale
+    else:
+        row["engine_meta"] = dict(LAST_CALL_META.get(engine) or {})
     if not ok:
         # A refusal for QUOTA is not the engine failing to answer. It is us
         # not being allowed to ask. Counting it as FAILED would publish a
@@ -510,7 +567,7 @@ def run_engine(business_row, engine, fn, date_utc, supersedes=None, variant=1):
         "competitors_mentioned": extract_competitors(
             business_row, text, sources, date_utc,
             build_gazetteer(business_row.get("market"), business_row.get("niche"),
-                            OUTPUT_DIR, date_utc)
+                            GAZETTEER_DIR, date_utc)
             if str(date_utc) >= UNION_FROM else None),
         "engine_stated_criteria": extract_stated_criteria(text),
         "sources_cited": sources,
@@ -985,6 +1042,8 @@ def _main():
 
     print("E1 v4 run %s | roster %d active | engines available: %s | serp: %s"
           % (date_utc, len(roster), ", ".join(available) or "NONE", serp_on))
+    print("budgets: %d s per call, %d min per run%s" % (
+        int(CALL_BUDGET_S), int(RUN_BUDGET_MIN), " | DRY RUN: rows under dry_run_out/" if DRY_RUN else ""))
     if not available and not serp_on:
         print("ERROR: no engine keys set. Add repo secrets under "
               "Settings > Secrets and variables > Actions. Nothing written.")
@@ -1026,6 +1085,10 @@ def _main():
                         continue
                     print("rerun cell: %s %s (supersedes %s)" % (slugify(br["business"]), name, supersedes))
             path, good = run_engine(br, name, fn, date_utc, supersedes)
+            if DRY_RUN:
+                print("DRY RUN %s %s %s served_model=%s" % (
+                    slugify(br["business"]), name, "OK" if good else "FAILED",
+                    (LAST_CALL_META.get(name) or {}).get("served_model")))
             if good:
                 # The public file for a redacted row has no answer text, so the agreement uses
                 # the full in-memory copy written by this run (see write_row).
