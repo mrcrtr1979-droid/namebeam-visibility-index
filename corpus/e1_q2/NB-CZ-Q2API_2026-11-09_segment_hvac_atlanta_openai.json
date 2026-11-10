@@ -1,0 +1,54 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-09_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a new air conditioner installed in Atlanta. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EiUD3cQC5ECPzNfMBJYiQxAOPCxh1",
+  "usage": {
+   "prompt_tokens": 27,
+   "completion_tokens": 1635,
+   "total_tokens": 1662,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 896,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sons Heating",
+  "Air Conditioning",
+  "Rescue Rooter",
+  "Coolray",
+  "Manual J Load Calculation",
+  "Metro Atlanta",
+  "Atlanta ZIP",
+  "One Hour",
+  "One Hour Heating"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give specific company names — but to give the best, targeted recommendations I need your Atlanta zip code (or neighborhood) and any preferences (budget brands vs. high‑efficiency, national vs. local, financing needed, timeline). If you want me to look up local independent shops, tell me the zip and I’ll find 3–5 highly rated contractors near you.\n\nMeanwhile, here are three reputable HVAC companies that serve the Atlanta area and are good first calls, plus why each is worth contacting. After that I’ll give the exact questions to ask and how to compare estimates.\n\nThree companies to call (Atlanta area)\n- Coolray & Sons Heating & Air Conditioning\n  - Why: Long history in Georgia, strong local presence, manufacturer-authorized installers, offers financing and planned maintenance agreements, typically quick emergency response in metro Atlanta.\n- ARS/Rescue Rooter (Heating & Air branch)\n  - Why: National chain with local franchises and 24/7 service, certified technicians, wide service coverage for installs and repairs, helpful for emergency replacement and for homeowners who want a national warranty network.\n- One Hour Heating & Air Conditioning (Atlanta franchise)\n  - Why: National franchise with local technicians, often offers transparent service windows, maintenance plans, and a networked warranty/parts; good option if you want predictable scheduling and financing.\n\nWhy I chose those\n- They combine local availability in Atlanta with established reputations and multiple service options (installation, maintenance, emergency service).\n- They tend to be authorized dealers for major brands, so you’ll get factory warranties and parts availability.\n- They offer financing options and maintenance agreements that are useful if you don’t want a large up-front outlay.\n\nHow to get the best install — what to ask each company\n1. Are you licensed and insured in Georgia? (Get license number and insurance proof.)\n2. Will you perform a Manual J load calculation and give the results in writing? (Proper sizing matters more than brand.)\n3. Which make/model are you proposing? Ask for SEER rating, HSPF (for heat pumps), and efficiency numbers.\n4. What is included in the price? (Equipment, installation labor, permitting, duct modifications, thermostat, startup, removal/disposal of old unit.)\n5. What warranty comes with the equipment and labor? Is the labor warranty transferable?\n6. Do you provide permitting and code inspections? Will you obtain the city/county permits?\n7. Do you have references or recent local reviews? Ask for 2–3 nearby installations you can contact.\n8. What about rebates or utility incentives? Will you help with paperwork?\n9. Is financing available and what are the terms?\n10. Do you offer a maintenance plan or an annual tune‑up package?\n\nHow to compare bids\n- Make sure each bid is apples-to-apples: same capacity (tonnage) and efficiency, same inclusions (duct work, line set, thermostat, permits).\n- Prefer companies that do a Manual J load calc and inspect/quote any required ductwork.\n- Evaluate warranty coverage (parts vs. labor) and length.\n- Check recent local reviews (Google, Angi/HomeAdvisor, BBB) and ask for references.\n- Get at least three written estimates.\n\nIf you want, give me:\n- Your zip code/neighborhood\n- Type of home (single-family, condo), age, and whether ducts are original\n- Rough budget or preferred brands\n\nI’ll find 3–5 highly rated installers in your immediate area, include links to reviews, and prepare a comparison checklist you can use when you call.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

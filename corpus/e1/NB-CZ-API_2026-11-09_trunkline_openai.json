@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-API_2026-11-09_trunkline_openai",
+ "date_utc": "2026-11-09",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EiTOQzsr0QudE5eNMXamgITATLLkn",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1567,
+   "total_tokens": 1593,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Messari. These",
+  "Coin Bureau",
+  "Andreas M. Antonopoulos",
+  "Bankless",
+  "Glassnode",
+  "Bitcoin",
+  "Messari"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: there isn’t a single “best” beginner site that perfectly matches all three criteria (plain‑English, uses real numbers, and publishes a verified record of its losses). Most high‑quality educational resources focus on clarity and risks, or on data transparency, but don’t publish an audited, public P&L showing both wins and losses.\n\nIf you want a practical path, here are options depending on what you most care about:\n\n- If you want plain‑English fundamentals and honest risk talk\n  - Andreas M. Antonopoulos (books and free YouTube/lectures). Excellent explanations of Bitcoin, wallets, and security. He doesn’t trade or publish a P&L, but he’s very candid about risks.\n\n- If you want beginner‑friendly step‑by‑step guides (wallets, buying, staking)\n  - Coin Bureau. Clear, neutral explainer videos and written guides. They disclose sponsorships and give concrete examples and numbers, but not a verified trade ledger.\n\n- If you want DeFi tutorials and example strategies with numbers\n  - Bankless (newsletter, podcasts, guides). They show example yields, fees, and risks in plain terms. Some strategy writeups include historical screenshots, but not an audited loss ledger.\n\n- If you want data and on‑chain numbers (real, verifiable metrics)\n  - Glassnode, Nansen, Messari. These are more technical, but they show real on‑chain numbers you can verify. Not “beginner‑first” prose, but excellent for checking claims.\n\n- If your requirement is explicitly a published, verifiable record of wins and losses\n  - Look for educators/strategists who publish public on‑chain wallet addresses or link to audited track records. That’s the only way to verify both gains and losses. Many good teachers won’t trade publicly, and many traders who trade publicly are not good educators—so you’ll likely need to follow two things: a plain‑English educator AND one or more traders with public wallets you can verify on‑chain.\n\nHow to evaluate any resource\n- Do they disclose sponsorships/affiliations?\n- Do they show full trade logs or link a public wallet you can verify onchain?\n- Do they explain both upside and downside, fees, taxes, and liquidation risk?\n- Do they cite data sources (on‑chain providers, exchange reports)?\n\nIf you tell me whether you want to learn investing, trading, DeFi, or security, I can recommend one or two specific creators or a combination (educator + a public wallet trader) and I can check whether those traders publish verifiable losses.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

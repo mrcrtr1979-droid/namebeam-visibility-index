@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-09_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EiTvVIqow80RlQQM0bcXU18vLsPBH",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1463,
+   "total_tokens": 1491,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Valvoline Instant Oil Change",
+  "Jiffy Lube",
+  "Firestone Complete Auto Care",
+  "Independent ASE"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Quick clarifying Qs before I give a specific list:\n- Do you mean Pleasanton, CA?\n- Do you prefer a fast “drive‑through” service, the dealer, or a local independent shop?\n- Is your car under warranty or does it require a manufacturer‑specified oil type (synthetic/diesel/etc.)?\n\nIf you want me to look up current nearby shops and phone numbers I can — I’ll need permission to use your location (or tell me your ZIP or cross‑streets).\n\nIf you just want names to call now, here are the specific kinds of places to call and why each is a good option. (I’m not pulling live phone numbers — if you want those I can look them up.)\n\n1) Dealer service department (your car’s brand dealership)\n- Why call: They’ll use manufacturer‑specified oil and fluid, follow the factory service procedure, and protect your warranty. Good if your car is new or under a lease/warranty.\n- When to choose: New car, still under warranty, or if you need manufacturer records logged.\n\n2) Valvoline Instant Oil Change (chain)\n- Why call: Fast service (typically 15–30 minutes), offers conventional and full‑synthetic options, often includes a few courtesy checks (battery test, fluid top‑offs). Transparent pricing and frequent coupons.\n- When to choose: You want a quick, reliable oil change on a schedule.\n\n3) Jiffy Lube (chain)\n- Why call: Widely available, quick, lots of locations and coupons, service menu includes different oil types. Good for convenience and fast turnaround.\n- When to choose: Convenience and speed are priorities.\n\n4) Firestone Complete Auto Care (chain)\n- Why call: More full‑service than some quick‑lubes — they do oil change plus a more thorough inspection and can handle brakes/tires if anything else is needed.\n- When to choose: You want a slightly more thorough check and possible follow-up repairs in one place.\n\n5) Independent ASE‑certified local shop\n- Why call: Often better personalized service, mechanics who know older cars, sometimes better pricing on parts and labor, can offer higher attention to detail. Ask for ASE certification and references.\n- When to choose: Older or high‑mileage cars, aftermarket parts, or when you want to build a relationship with a local mechanic.\n\n6) Mobile oil‑change services (e.g., mobile mechanics that do on‑site oil changes)\n- Why call: They come to your home or work, very convenient. Many use quality oils and handle disposal.\n- When to choose: You want it done without driving to a shop.\n\nWhat to ask when you call (phone script)\n- “Do you have my vehicle’s oil type? Can you do full‑synthetic (if required)?”  \n- “What is the total price and does it include filter, taxes, and disposal fees?”  \n- “Do you use OEM or a known brand oil filter and oil brand?”  \n- “How long will the service take and do you take appointments or walk‑ins?”  \n- “Do you include a written multi‑point inspection and do you reset the maintenance light?”  \n- “Do you offer any coupons or first‑time customer discounts?”  \n- “What warranty do you provide on the oil change/service?”\n\nIf you tell me your ZIP or confirm Pleasanton, CA and your car’s year/make/model and whether you want quick vs full service (or if your car is under warranty), I’ll look up 4–6 nearby shops with addresses, phone numbers, and current hours so you can call the best ones. Which would you like?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

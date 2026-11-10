@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-09_segment_dentists_kansas_city_openai",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: dentists, Kansas City",
+ "niche": "dentists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Kansas City. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Kansas City Missouri for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EiU6jiHiBBhrFTmHwrPQxHUdldZh1",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1314,
+   "total_tokens": 1340,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UMKC School of Dentistry",
+  "AAOMS",
+  "American Academy of Periodontology"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — to give you useful, specific practice names I need one quick detail: which part of the Kansas City area are you in or willing to travel to? (Kansas City, MO vs. Kansas City, KS, or a ZIP code, and how far you’ll travel — e.g., 10–30 miles.) Also tell me if you have dental insurance and whether you need a single implant, multiple implants, full-arch work, or grafting/sinus lift — those change which specialists you should see.\n\nWhile you reply, here’s a plan so you know what I’ll look for and why — plus who to call first and what to ask.\n\nWhich kinds of practices to call first (and why)\n- Oral surgeons (OMS): best for surgical placement of implants, complex cases, bone grafts/extractions/sinus lifts, IV sedation. Call an OMS if you expect surgery or have medical issues.\n- Periodontists: specialists in gums and implants with a strong focus on long-term implant health and implant placement/maintenance.\n- Prosthodontists: specialists in designing and restoring implant crowns, bridges, or full-arch prostheses; call them if you want the best aesthetic/function outcome for the visible teeth.\n- Implant-focused private practices or multi-specialty implant centers: some practices combine surgery and restoration under one roof — convenient for coordination and often faster timelines.\n- University dental clinics (UMKC School of Dentistry): good option if you want lower cost or are comfortable being treated by residents supervised by specialists.\n\nWhat I’ll look for when picking specific offices\n- Board-certified specialists (AAOMS for oral surgeons, American Academy of Periodontology for perio specialists)\n- Experience and volume (how many implants placed per year)\n- On-site CBCT (3D imaging) and digital planning\n- Restorative and surgical coordination (same location or close team)\n- Clear pricing/estimates, sedation options, and financing\n- Recent patient reviews and before/after cases\n\nWhat to call and what to ask (phone script)\n- “Hi — I need an evaluation for a dental implant. Do you place implants? Do you perform CBCT scans on-site? Do you work with an in-house prosthodontist/restorative dentist for the crown or do you refer out? What are typical costs and payment/financing options? Can you tell me how many implant cases you do per year and whether you handle bone grafting/sinus lifts? Do you accept my insurance [name insurer]? How long is the wait for a consultation?”\n- Red flags: no CBCT available, vague answers about experience, unwillingness to explain total process/timeline/costs.\n\nIf you give me your ZIP code or the side of KC you prefer, I’ll compile a short list (3–6) of specific oral surgeons, periodontists, prosthodontists, and a university clinic to call — with a recommended order and why I picked each practice.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

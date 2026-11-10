@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-11-09_segment_mortgage_lenders_st_charles_perplexity",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: mortgage lenders, St. Charles",
+ "niche": "mortgage lenders",
+ "market": "St. Charles MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Charles MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0d70aaab-195f-48ae-99de-19974cc5ade6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00085,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00462
+   },
+   "input_tokens": 5052,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4501,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 338,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5390
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UMB",
+  "Fairway’s St. Charles branch",
+  "Loan Estimate",
+  "Fairway",
+  "UMB St. Charles",
+  "Fairway St. Charles",
+  "First State Bank Mortgage",
+  "First State Bank of St. Charles"
+ ],
+ "engine_stated_criteria": [
+  "A good local starting point is First State Bank of St. Charles"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "a4bb08abec68ab39a1aeeb234e9a59e948d769142b11fe3eb47b87c69bd1b580",
+ "answer_chars": 1032,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "ff432e990e101aee41a49f0e6a83d7efb2456a24da49f36c3936b7ea715fee6b",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-11-09_segment_roofing_miami_perplexity",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_92de3c10-dc35-4e28-a94b-f004f5288e7a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00074,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00443
+   },
+   "input_tokens": 4767,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4219,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 294,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5061
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "T&S Roofing Systems",
+  "CCC1326032",
+  "Art’s Roofing & Construction",
+  "CCC1333598 / CGC1541858",
+  "AGK Construction & Roofing",
+  "CCC1335099",
+  "AGK Construction",
+  "Miami-Dade HVHZ",
+  "Miami-Dade Notice of Acceptance",
+  "Miami-Dade",
+  "Notice of Acceptance",
+  "Notice of Acceptance (NOA)",
+  "Dade Notice of Acceptance",
+  "Miami-Dade Notice of Acceptance (NOA)",
+  "Dade HVHZ"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "793771b7ea92798743f966d83471c374069d2896823c839b0ee9e7df3c38145f",
+ "answer_chars": 921,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "83c01ea5ef049d9037ee128bafb9400d4d66e93290cc8a7ed9c5536361970b1c",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

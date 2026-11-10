@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-09_segment_tanning_salons_charlotte_openai",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "niche": "tanning salons",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to try a tanning salon in Charlotte. Which specific salons should I call, and why?",
+ "q1_prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EiTscyMZeZPCTeiLovSjYpOq4T2cS",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1592,
+   "total_tokens": 1618,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "South End",
+  "Palm Beach Tan",
+  "Planet Tan",
+  "Sunless",
+  "UV and I",
+  "UV tanning beds"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Quick question before I give specific salons: do you want a spray (sunless) tan or UV tanning beds? And which part of Charlotte are you nearest to (ZIP code or neighborhood: Uptown, South End, Ballantyne, University area, etc.)? That will let me pull specific, well-located recommendations.\n\nIf you want a fast answer now, here’s a practical way to choose — and the exact types of salons you should call, with why each is worth calling:\n\n1) National chain with multiple Charlotte locations (e.g., Palm Beach Tan / Planet Tan / Sunless chains)\n- Why call: consistent training, multiple locations, membership options if you plan to tan regularly, a variety of bed types and often spray booths.\n- What to ask: bed types and wattage, membership fees, cleanliness policies, and if they offer a complimentary first-tan consultation.\n\n2) Boutique spray-tan studio (independent or branded “Glow / Bronze / Sunless” studios)\n- Why call: technicians usually certified, more customization of solution/level, better natural results and shading, helpful for special events.\n- What to ask: technician certification, brand/type of solution (organic/vegan, bronzer vs immediate color), patch-test policy, and how long to avoid showering after application.\n\n3) Medical spa or dermatology office offering spray tans\n- Why call: they use medical-grade or prescription-strength solutions, staff often trained for sensitive/rosacea-prone skin; good if you have skin concerns.\n- What to ask: experience with sensitive skin, recommended products, and if they require a prep appointment.\n\n4) Local independent tanning salon with high-pressure/low-pressure options\n- Why call: more variety of bed types (high pressure gives faster color), may offer specialty booths (red light therapy, stand-up booths).\n- What to ask: exact bed models/wattages, recommended schedule for your skin type, towel/linen hygiene, and sanitation protocols.\n\n5) Mobile spray-tan services (if you want at-home service)\n- Why call: convenient for events, often highly rated technicians who travel; can be pricier but worth it for weddings/photos.\n- What to ask: travel fees, set-up requirements, cancellation policy, technician credentials, and portfolio/photos.\n\nWhat to ask every salon (script you can use)\n- “Hi, I’m interested in a [spray tan / tanning bed]. Do you have a certified technician for spray tans / what bed types do you offer? Can you tell me the brand of spray solution / the bed model and wattage? Do you require a patch test? What’s the price for a single session and do you have packages or memberships? What are your sanitation procedures? Any precautions for fair/med skin or medications? Do you have online reviews or before/after photos I can see?”\n\nIf you want, give me your neighborhood/ZIP and whether you prefer spray or UV and I’ll list 4–6 specific Charlotte salons (names, addresses, phone numbers, and a short reason to call each).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

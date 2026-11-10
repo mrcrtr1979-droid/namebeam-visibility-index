@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-09_segment_health_insurance_kansas_city_perplexity",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e9da7c39-e6e8-4cd2-9bd1-33a66a363745",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00099,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00125,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00488
+   },
+   "input_tokens": 4518,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3962,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 499,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5017
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Apollo Health Insurance — 816-400-4477",
+  "AIS Health Advisors — 913-333-8627",
+  "Jeff David Insurance Agency — 816-436-2622",
+  "Blue KC",
+  "Before enrolling",
+  "HealthCare.gov",
+  "Kansassurance",
+  "Apollo Health Insurance",
+  "AIS Health Advisors",
+  "Kansas and Missouri",
+  "ACA Marketplace",
+  "Jeff David Insurance Agency",
+  "In Kansas",
+  "Jeff David Insurance",
+  "Kansas Side",
+  "KC Metro",
+  "Missouri Residents"
+ ],
+ "engine_stated_criteria": [
+  "your county"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "7dd72d5c54831ca2cff0aba5429a15e335c86d4fdf7763fc9f0885594117928b",
+ "answer_chars": 1936,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "2827a8c3676ae5fd337c7613548e1ac07e053ec2537342ab5ef32b845951e48d",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

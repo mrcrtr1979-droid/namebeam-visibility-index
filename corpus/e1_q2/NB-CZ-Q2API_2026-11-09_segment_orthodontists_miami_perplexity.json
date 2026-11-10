@@ -1,0 +1,99 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-09_segment_orthodontists_miami_perplexity",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: orthodontists, Miami",
+ "niche": "orthodontists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Miami. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Miami for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_33bad22a-62a8-45e2-9237-756541325fcb",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0008,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00154,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00498
+   },
+   "input_tokens": 3744,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3191,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 616,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4360
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "American Association of Orthodontists (AAO)",
+  "Downtown/Brickell",
+  "Dr. Elaine DeRoode",
+  "South Miami",
+  "Dr. Richard C. Mariani Jr",
+  "West Kendall/Sunset",
+  "Dr. Francesca Pietri",
+  "Southwest Miami",
+  "Dr. Cassandra Iglesias",
+  "Miami Beach",
+  "Dr. Victoria Alexandra Gonzalez",
+  "Coral Gables/Nicklaus Children’s area",
+  "Dr. Claudia Acosta Lenis",
+  "American Association of Orthodontists",
+  "American Board of Orthodontics",
+  "Miami. AAO-listed",
+  "Key Biscayne",
+  "Ave. AAO-listed",
+  "West Kendall",
+  "Sunset Dr. AAO-listed",
+  "Lucerne Ave. AAO-listed",
+  "Coral Gables",
+  "Nicklaus Children",
+  "Invisalign"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "bcd703c9b9f8ba6d259573aed553ed6f2a293a2ebe3abcb77111b310c22e9966",
+ "answer_chars": 2051,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "1f3d7ebd0ea6f401805c8eb4ba8f414f525c7460f600b911f1fa2a4b3cd99d2b",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

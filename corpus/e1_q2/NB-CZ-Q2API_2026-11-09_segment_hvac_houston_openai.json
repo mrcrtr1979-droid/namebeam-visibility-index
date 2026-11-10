@@ -1,0 +1,60 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-09_segment_hvac_houston_openai",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My AC needs repair in Houston. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EiUDctSUQI9L5NuwvmTExCRVT1rdz",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1790,
+   "total_tokens": 1814,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 960,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "ARS",
+  "Rescue Rooter",
+  "Air Conditioning",
+  "Benjamin Franklin Heating",
+  "HVAC Solutions",
+  "C Repairs Houston",
+  "NATE-certified and EPA",
+  "John Moore Services",
+  "John Moore",
+  "Texas Department of Licensing and Regulation (TDLR)",
+  "Houston HVAC",
+  "NATE",
+  "One Hour",
+  "Benjamin Franklin",
+  "One Hour Heating"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you a short list of reputable HVAC companies that serve Houston and explain why to call each — and then a quick checklist of what to ask and how to pick. If you tell me your ZIP code and a few details (central AC vs. heat pump vs. ductless, symptoms, unit age, any warranty) I can customize the list for your neighborhood.\n\nTop Houston HVAC companies to call (and why)\n\n1. John Moore Services\n- Why call: Houston-based, large local company with long experience in HVAC, plumbing and home services; offers 24/7 emergency service, preventative maintenance plans, and factory-authorized service for many brands. Well-known locally for same-day repairs and parts availability.\n\n2. ARS/Rescue Rooter (often listed as ARS)\n- Why call: National chain with a big Houston footprint, multiple service trucks (so faster arrival), techs trained and often NATE-certified, and availability for emergency repairs. Good for quick diagnostics and immediate repairs.\n\n3. Service Experts Heating & Air Conditioning\n- Why call: National/large regional presence with authorized dealer status for many major brands; they typically offer diagnostics, warranties on repairs, maintenance agreements, and trained technicians. Good if you want a brand-authorized service.\n\n4. One Hour Heating & Air Conditioning (and/or Benjamin Franklin Heating & Air — same parent company in many markets)\n- Why call: Franchise with a service-punctuality reputation (on-time promise), flat-rate pricing options, and standardized service procedures. Useful if you want predictable pricing and fast response.\n\n5. Local independent NATE-certified shops (examples: look for “HVAC Solutions,” “A/C Repairs Houston,” etc., in your ZIP)\n- Why call: Independent shops often have lower labor rates, techs with deep local experience, and more flexible scheduling. Many independents are NATE-certified and carry extended labor warranties. Use local review sites to find the best-rated independent in your neighborhood.\n\nWhy I’m recommending these types rather than only a single name\n- Manufacturer-authorized dealers and larger chains often have brand-specific training, parts, and warranties.\n- Independent local shops can be quicker and less expensive for routine repairs.\n- Calling multiple options (one large company, one authorized dealer if you have a brand warranty, and one well-reviewed local shop) gives you price and service comparisons.\n\nWhat to check before you agree to a repair\n- Confirm they are registered with the Texas Department of Licensing and Regulation (TDLR) and ask for their HVAC contractor registration number.\n- Ask if techs are NATE-certified and EPA 608 certified (required for refrigerant work).\n- Ask about a diagnostic fee, whether it’s waived with repair, cost of common parts (capacitor, contactor, motor), labor warranty, and parts warranty.\n- Get a written estimate before work begins and insist they document the cause of the failure.\n- If your unit is under manufacturer warranty, call the manufacturer first to verify authorized service providers to avoid voiding warranty.\n\nWhat to tell them on the phone (have this info ready)\n- Your ZIP code and address (or neighborhood)\n- Make/model and age of the outdoor A/C unit if you know it\n- Symptoms (not cooling, short-cycling, leaking water, odd noises, tripping breaker, smell)\n- When the problem started and whether you’ve had recent repairs or maintenance\n\nQuick pricing expectations (ballpark)\n- Diagnostic visit: often $75–$150 (may be waived if you proceed with repair)\n- Common part repairs (capacitor, contactor, sensor): typically a few hundred dollars\n- Compressor or major refrigerant/coil work: can be $1,000–$3,500+ depending on unit and refrigerant\n(Exact pricing varies; get written quotes from at least two companies.)\n\nNext step\n- Tell me your ZIP code and a brief description of the problem and the AC type, and I’ll prioritize the best local options (and can draft a short phone script you can use when you call).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

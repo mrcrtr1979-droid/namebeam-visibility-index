@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-09_segment_short_term_rental_branson_anthropic",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_gnwdffcqpjsjvowpywxfal5ez2ovlntb266ihbhp72txnenwtgca",
+  "usage": {
+   "input_tokens": 31,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 274,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Major platforms to search",
+  "Season",
+  "Better questions to ask yourself first",
+  "Booking.com",
+  "BransonVacationRentals.com",
+  "Table Rock",
+  "Lake"
+ ],
+ "engine_stated_criteria": [
+  "Why this matters for your search",
+  "Your priorities"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest starting with these general approaches rather than specific companies, since the best option depends on your needs:\n\n**Major platforms to search:**\n- Airbnb, VRBO, and Booking.com (widest selection, user reviews)\n- Branson-specific sites like BransonVacationRentals.com or local chamber listings\n\n**Why this matters for your search:**\n- **Location**: Branson has distinct areas (Table Rock Lake, downtown, Silver Dollar City proximity) - each has different rental availability\n- **Season**: Peak times (summer, holidays) have limited inventory\n- **Your priorities**: Budget, amenities, group size, proximity to attractions\n\n**Better questions to ask yourself first:**\n- What's your budget and group size?\n- Which attractions matter most? (lakes, shows, theme parks)\n- When are you traveling?\n- Do you need specific amenities?\n\n**My recommendation:**\nRather than calling specific companies, I'd search the major platforms first to see what's available for your dates, then read reviews carefully. Local property management companies often appear on multiple platforms anyway.\n\nIf you share those details above, I could give more targeted suggestions about what to look for in a rental or which areas might suit you best.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

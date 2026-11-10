@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-09_segment_dentists_dallas_openai",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Dallas. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EiTwRqd9P0gXca0sQT860JjOQnYv3",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1421,
+   "total_tokens": 1446,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Fort Worth",
+  "ABOMS",
+  "American Board of Periodontology",
+  "American Board of Prosthodontics"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — but to give accurate, useful names and phone numbers I need one quick detail: are you in Dallas proper (zip code or neighborhood) or somewhere in the Dallas–Fort Worth metro area? Also: do you have dental insurance, prefer a low-cost option, or need an implant type (single tooth, multiple, All‑on‑4, immediate load)? Any medical issues (diabetes, smoking) that matter?\n\nWhile you reply, here’s a short, practical plan so you know what I’ll look for and why each kind of practice matters:\n\n1) Which specific practices you should call (types, and why)\n- Board‑certified oral & maxillofacial surgeons — call for surgical placement, bone grafting/sinus lifts, extractions and complex cases. They handle the surgical side and complications. Good if you need IV sedation or significant bone work.\n- Board‑certified periodontists specializing in implants — call for implant placement focused on gum health and long‑term tissue stability. Excellent for aesthetic front‑tooth work or when periodontal disease is present.\n- Prosthodontists — call if your restoration is complex (multiple teeth, full‑arch, occlusion issues). They design and place the implant crown/bridge/denture and coordinate with surgeons.\n- Implant-focused general dentists (with advanced implant training) — call for straightforward single-tooth implants and coordinated same-office care. Often more convenient and cost‑effective for routine cases.\n- Dental school / university clinics (if cost is a concern) — call for lower-cost care from supervised residents; may be slower but high quality.\n\n2) What I will check for each practice (and what you should ask on the phone)\n- Board certifications (ABOMS, American Board of Periodontology, American Board of Prosthodontics) and years of implant experience\n- How many implants they place per year and examples of the implant systems they use (Nobel, Straumann, Zimmer, etc.)\n- Whether they do in‑office CT/CBCT scans for planning\n- Whether they give written estimates (surgery + abutment + crown) and financing options\n- Warranty/guarantee and who handles complications after placement\n- Referrals process (if multiple specialists necessary) and whether they coordinate in‑house\n- Ask about sedation options, healing time, and whether bone graft or sinus lift is likely\n\n3) How I can help next\n- If you give me your zip code/neighborhood and insurance (if any), I will find 4–6 specific, current practices in Dallas (OMFS, perio, prostho, and an affordable clinic/dental school), with phone numbers, addresses, and a 1–line reason why to call each.\n\nTell me your zip code/neighborhood and any insurance or treatment preferences and I’ll pull together the targeted list.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

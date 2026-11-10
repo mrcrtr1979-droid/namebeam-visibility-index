@@ -1,0 +1,42 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-09_segment_roofing_denver_anthropic",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My roof has hail damage in Denver. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_cjl2gcfjrhzts7na4xrwvoo2g4gkhck2dlkb6ugmtmey4sqfifwa",
+  "usage": {
+   "input_tokens": 29,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 276,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Colorado's Division of Professions"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd recommend getting quotes from several local companies rather than relying on a specific recommendation, since quality varies by individual contractor. Here's a better approach:\n\n**How to find good local roofers:**\n- Check Google Reviews and Yelp filtered for Denver, focusing on hail damage repairs\n- Ask your insurance company for their preferred contractor list\n- Get 3-4 quotes before deciding\n- Verify licensing through Colorado's Division of Professions\n\n**What to look for:**\n- Colorado roofing license and liability insurance\n- Experience with insurance claims (they'll handle paperwork)\n- Willingness to do a free inspection\n- References from recent hail damage jobs\n- Clear written estimates\n\n**Red flags:**\n- Pressure to decide immediately\n- Unwillingness to work with your insurance\n- Significantly lower prices than competitors\n- Door-to-door solicitation (common after hail events)\n\n**Practical tip:** After hail, Denver gets flooded with contractors. Take your time vetting them rather than hiring the first one who knocks on your door.\n\nYour insurance adjuster can also recommend reputable local companies they've worked with. That's often a reliable starting point.\n\nWhat size area are we talking about—isolated damage or widespread?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

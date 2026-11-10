@@ -1,0 +1,67 @@
+{
+ "check_id": "NB-CZ-API_2026-11-09_namebeam_openai",
+ "date_utc": "2026-11-09",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EiSzIXExc9dUwraD3sK7Et6zW2C9A",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1582,
+   "total_tokens": 1606,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 896,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AIs",
+  "Apple Maps",
+  "Apple Business Connect",
+  "TripAdvisor",
+  "OpenTable",
+  "LocalBusiness",
+  "Yext",
+  "BrightLocal",
+  "Moz Local",
+  "Reputation.com",
+  "Bing Chat",
+  "URLs",
+  "Your Business Name",
+  "Use",
+  "LocalFalcon",
+  "Bing Maps API",
+  "Semrush",
+  "Bing Places",
+  "Local SEO",
+  "Whitespark",
+  "Use BrightLocal",
+  "Test AI",
+  "Apple Business",
+  "Add Structured Data",
+  "Ensure NAP"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Short answer: There’s no single “AI checker” that tells you whether every AI engine recommends your business. The practical best approach is to (1) make sure your business data is authoritative on the sources most AIs draw from (Google Business Profile, Apple Maps, Bing/Yelp, major directories), (2) use a listings-management service to push and monitor that data, and (3) query major AI assistants directly (and ask them to cite sources).  \n\nConcrete, prioritized plan\n\n1) Fix the sources AIs rely on (highest impact)\n- Claim and fully optimize Google Business Profile (free). Google’s knowledge graph is the single biggest influence on recommendations.\n- Claim Bing Places, Apple Business Connect, Yelp, and top vertical directories (TripAdvisor, OpenTable, etc.) for your industry.\n- Add structured data (schema.org/LocalBusiness) to your website and ensure NAP (name, address, phone) is consistent.\n\n2) Use a listings-management / monitoring service (best for scale and control)\n- Yext: widely used to push authoritative listings to many platforms and to influence knowledge graphs and assistant integrations.\n- BrightLocal or Moz Local: good, lower-cost local SEO monitoring and citation audits.\n- Semrush / Whitespark / Reputation.com: alternatives with different strengths (SEO, citation building, reputation management).\nThese services will tell you where your listing exists, where data is inconsistent, and help you update many endpoints at once.\n\n3) Directly test AI assistants (to see if they recommend you)\n- Query ChatGPT (use web-enabled mode or the model that has browsing/“source” feature), Google Bard, Bing Chat, Siri, Alexa, and relevant platform-specific assistants. Ask location-aware queries and request citations.\n- Sample prompts:\n  - “I’m in [city/zip]. Recommend a [business type] for [specific need]. Show the top 3 and give the source URLs for each.”\n  - “Would you recommend [Your Business Name] for [service]? If yes, cite the page or listing you used.”\n- If the assistant refuses to cite, ask for sources again or use the assistant’s browsing plugin (or use the web search yourself).\n\n4) Monitor reviews and signals\n- Reviews and ratings on Google, Yelp, etc., strongly affect AI recommendations. Use review-monitoring tools (BrightLocal, Podium, Birdeye).\n- Keep hours, photos, menu/price info up to date.\n\n5) For deeper / automated checks\n- Local rank trackers (LocalFalcon) will show how you rank in local packs for given coordinates and keywords.\n- Use BrightLocal/Moz reports for periodic auditing.\n- If you have technical skills, run targeted searches programmatically (Google Places API, Bing Maps API) and log results.\n\nWhy this works\n- Most chat/assistant recommendations are ultimately driven by major knowledge graphs and public web content. Controlling those sources is the fastest way to get AIs recommending your business consistently.\n- Services like Yext are designed specifically to influence multiple knowledge networks at once.\n\nIf you want, I can:\n- Draft a checklist tailored to your business type and city.\n- Give exact sample prompts customized with your location and business name to test ChatGPT, Bard, and Bing Chat.\n- Recommend the best service based on your budget and number of locations.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

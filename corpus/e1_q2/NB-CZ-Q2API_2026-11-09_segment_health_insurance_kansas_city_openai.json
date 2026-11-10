@@ -1,0 +1,60 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-09_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EiTq6VTdtH3NCydywK2kCy5Ucliow",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1857,
+   "total_tokens": 1885,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Medicare",
+  "Medicaid",
+  "BlueKC",
+  "UnitedHealthcare",
+  "State Health Insurance Assistance Program",
+  "Kansas and Missouri",
+  "Find",
+  "In Kansas",
+  "Kansas Insurance Department",
+  "ACA Marketplace",
+  "Missouri Department of Commerce",
+  "For Medicare",
+  "NAHU",
+  "SHIP",
+  "Questions to ask any broker"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can give you specific individual brokers/agencies to call — but I need one quick clarification first so the recommendations fit you: are you in Kansas City, Missouri or Kansas City, Kansas (zip or neighborhood is fine)? And what type of coverage are you shopping for: individual/family marketplace (Obamacare), Medicare, Medicaid/Kancare, small‑group for an employer, or short‑term/other?\n\nWhile you answer, here are immediately useful, trustworthy ways to find and pick specific brokers in Kansas City — plus the exact questions to ask them so you can tell which one will work best for you.\n\nHow I’ll pick brokers for you (what I’ll look for once you give location & plan type)\n- Licensed in your state (KS and/or MO) and listed in the state insurance department database.  \n- Independent or multi‑carrier broker (so they can show plans from several carriers rather than only one).  \n- Experience with the product you need (ACA marketplace vs Medicare vs small‑group).  \n- Good online reviews / low complaint history.  \n- Availability to help through enrollment and year‑round (not just at sign‑up).  \n\nPlaces to call right away (they can refer brokers or provide free help)\n- Healthcare.gov “Find Local Help” or your state marketplace navigator program — they’ll connect you with certified in‑person assisters and enrollment navigators for free (good for ACA/subsidies).  \n- Kansas Insurance Department and Missouri Department of Commerce & Insurance consumer hotlines — can confirm licenses and complaints and sometimes provide referrals.  \n- Your carrier’s local broker referral line — e.g., Blue Cross and Blue Shield of Kansas City (BlueKC), UnitedHealthcare, Ambetter (Centene) — they can provide local agents who write their plans. (Note: carrier‑affiliated agents may push only that carrier’s plans.)  \n- NAHU (National Association of Health Underwriters) “Find an Agent” directory — good for locating independent brokers in KC.  \n- SHIP (State Health Insurance Assistance Program) — free, unbiased help for Medicare questions (Kansas and Missouri have programs).\n\nHow to find specific brokers in Kansas City (quick searches)\n- Google/Yelp search: “health insurance broker Kansas City MO” or “ACA navigator Kansas City KS.” Read recent reviews and note whether they are independent.  \n- NAHU directory for locally‑based agents.  \n- Call Healthcare.gov 1‑800‑318‑2596 and ask for in‑person help in your zip code.\n\nQuestions to ask any broker (use this script)\n1. Are you licensed for Kansas and/or Missouri? Please give me your license number so I can verify.  \n2. Are you an independent broker or do you represent specific carriers? Which carriers do you currently place business with?  \n3. Do you have experience with (ACA marketplace / Medicare / employer plans / Medicaid)? How many clients like me do you handle?  \n4. Do you charge a fee? If yes, how much and when?  \n5. Can you help me determine eligibility for premium tax credits and enroll through the marketplace? Will you assist with renewals and appeals?  \n6. Which local hospitals/doctors are in-network with the plans you recommend? Can you confirm prescriptions and prior‑authorization issues?  \n7. Do you provide year‑round support if claims or coverage issues come up?  \n8. Can you give references from current clients?  \n\nRed flags\n- Refuses to give a license number or affiliation.  \n- Pushes a single plan without explaining alternatives or how it fits your needs.  \n- Charges large upfront fees for standard marketplace enrollments (many brokers are paid by carriers or by the marketplace).  \n- Poor reviews about not helping with claims or renewals.\n\nIf you want, I will:\n- Find and list 4–6 specific, licensed Kansas City brokers/agencies to call (I’ll include whether they’re independent, what carriers they place, and why I’m recommending them) — just tell me your zip code and what type of coverage you need.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

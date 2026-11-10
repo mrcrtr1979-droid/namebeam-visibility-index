@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-11-09_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5d5e59a1-bd16-402a-936f-6547ff0cf963",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00135,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00506
+   },
+   "input_tokens": 4841,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4285,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 540,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5381
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Highway 76 Strip",
+  "Lodge of the Ozarks",
+  "Chateau on the Lake",
+  "Highway",
+  "Theater District",
+  "Lake",
+  "Timber Ridge",
+  "Table Rock",
+  "Landing",
+  "The Strip",
+  "Hilton Promenade at Branson Landing",
+  "Hilton Promenade",
+  "Book",
+  "The Landing",
+  "Near Table Rock Lake"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "92b93cb59014a784c610e7bdb084c1dbacf5e7790070be3a8c995b88ebfd073d",
+ "answer_chars": 2013,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "022e036417c5b35048f3630ed018cac5b8c7a515254a27f8616e7818cb926522",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

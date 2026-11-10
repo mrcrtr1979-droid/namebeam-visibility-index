@@ -1,0 +1,66 @@
+{
+ "check_id": "NB-CZ-API_2026-11-09_segment_str_guest_discovery_gemini",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "6VnyavXfBq7s5NoP0NjDoAk",
+  "usage": {
+   "promptTokenCount": 29,
+   "candidatesTokenCount": 1105,
+   "totalTokenCount": 1134,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 29
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "Booking.com",
+  "Vrbo",
+  "Airbnb Superhost / Vrbo Premier Host",
+  "Don't just look at the star rating",
+  "Look for mentions of communication",
+  "Zero reviews",
+  "Off-platform payment requests",
+  "Superhosts",
+  "Premier Hosts",
+  "Vacation Rentals",
+  "New York",
+  "Use",
+  "Vrbo Premier Host",
+  "House Rules",
+  "Superhost",
+  "Premier Host",
+  "Check response rate and time",
+  "Off-Platform Payment"
+ ],
+ "engine_stated_criteria": [
+  "who you are traveling with, where you are going, and what kind of stay you want",
+  "If you are going to a major city (Paris, Tokyo, New York)",
+  "If you want zero stress, easy cancellation, and standard amenities",
+  "Filter your search to only show these hosts if you want peace of mind",
+  "it is a scam"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Choosing the right platform depends heavily on **who you are traveling with, where you are going, and what kind of stay you want.** Meanwhile, finding a good host comes down to knowing how to read between the lines of reviews and listings. \n\nHere is a complete breakdown to help you decide and book with confidence.\n\n---\n\n### Part 1: Which platform should you use?\n\n#### 1. Airbnb\n* **Best for:** Unique properties (treehouses, boats, design-forward homes), solo travelers, couples, and urban apartments.\n* **Pros:** The largest inventory worldwide; great user interface; easy messaging with hosts; strong review culture for both guests and hosts.\n* **Cons:** Service fees can be high; cleaning fees are sometimes exorbitant; customer support can be notoriously difficult to reach if something goes wrong.\n\n#### 2. Vrbo (Vacation Rentals by Owner)\n* **Best for:** Families, large groups, and traditional whole-house vacation rentals (beach houses, cabins, ski chalets).\n* **Pros:** Focuses *only* on entire properties (no sharing a house with a host); generally better for longer stays and suburban/resort destinations; part of Expedia, so you can sometimes bundle with flights.\n* **Cons:** Smaller inventory in major cities; fewer unique/boutique options; cancellation policies can be stricter than Airbnb.\n\n#### 3. Booking.com\n* **Best for:** Traditional hotels, resorts, and apartments where you want hotel-like flexibility (e.g., 24-hour front desk, free cancellation).\n* **Pros:** Massive selection of traditional lodging; their \"Genius\" loyalty program offers quick discounts; usually very transparent pricing; generally easier customer service than Airbnb/Vrbo.\n* **Cons:** While they have private apartments, their platform is primarily built for hotels, meaning customer service for private rentals can sometimes be a middle-man nightmare if the host is unresponsive.\n\n---\n\n### Part 2: How to choose between them for *your* trip\n\n* **If you are going to a major city (Paris, Tokyo, New York):** Use **Airbnb** or **Booking.com**. (Note: Check local laws, as short-term rentals are heavily regulated in some cities).\n* **If you are renting a big cabin in the woods or a beach house for a family reunion:** Use **Vrbo**.\n* **If you want zero stress, easy cancellation, and standard amenities:** Use **Booking.com** to book a hotel or aparthotel.\n\n---\n\n### Part 3: How to find a \"Good Host\" (and avoid scams)\n\nNo matter which platform you use, the \"host\" can make or break your trip. Follow this checklist to vet them:\n\n#### 1. Look for the \"Superhost\" or \"Premier Host\" badge\n* **Airbnb Superhost / Vrbo Premier Host:** These badges mean the host has a proven track record of high ratings, low cancellation rates, and quick response times over a sustained period. **Filter your search to only show these hosts if you want peace of mind.**\n\n#### 2. Read the reviews obsessively\n* **Don't just look at the star rating.** A 4.8 sounds great, but read the actual text. \n* **Look for mentions of communication:** Did previous guests say the host was responsive and helpful?\n* **Look for consistency:** If one review mentions \"the shower didn't drain,\" it might be a fluke. If *three* reviews mention it, run.\n\n#### 3. Check response rate and time\n* Platforms usually show how fast a host replies (e.g., \"Responds within an hour\"). A responsive host is crucial if you get locked out at midnight or need directions.\n\n#### 4. Read the \"House Rules\" and cancellation policy\n* Good hosts are clear about expectations (quiet hours, no smoking, pet policies). If the rules are aggressive or confusing, or if the cancellation policy is excessively strict, look elsewhere.\n\n#### 5. Send a pre-booking message\n* Before you book, send a quick, polite message (e.g., *\"Hi [Name], we're excited about visiting [City]! Just wanted to confirm if [specific detail, like parking or early check-in] is possible?\"*). \n* **Why do this?** This tests their responsiveness and friendliness before you hand over your money. \n\n#### 6. Red Flags to Avoid:\n* **Zero reviews:** Unless you are feeling adventurous and the price reflects the risk, avoid brand-new listings with no reviews.\n* **Off-platform payment requests:** If a host asks you to pay via wire transfer, Venmo, or cash outside the platform, **it is a scam.** Report them immediately.\n* **Vague descriptions or weird photos:** If the photos look like 3D renderings or stock photos, or if the description is full of typos and lacks detail, be suspicious.\n\n### Summary Recommendation\nIf you want a cozy apartment in a city, use **Airbnb** and filter for **Superhosts**. If you want a big house for a family vacation, use **Vrbo** and filter for **Premier Hosts**. Always read the reviews, and message the host before booking!",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

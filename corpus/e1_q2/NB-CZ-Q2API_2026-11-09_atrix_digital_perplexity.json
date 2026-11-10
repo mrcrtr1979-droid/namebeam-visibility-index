@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-09_atrix_digital_perplexity",
+ "date_utc": "2026-11-09",
+ "business": "Atrix Digital",
+ "niche": "AI marketing agency",
+ "market": "Los Angeles CA",
+ "row_type": "business",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need an AI marketing agency in Los Angeles. Which specific agencies should I call, and why?",
+ "q1_prompt_text": "Who is the best AI marketing agency in Los Angeles?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_83123476-f8e9-4935-9446-bc5e424585e6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00091,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00168,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00523
+   },
+   "input_tokens": 4201,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3647,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 672,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4873
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "SPINX Digital",
+  "JZ Creates",
+  "Thrive Internet Marketing Agency",
+  "My short list",
+  "SPINX",
+  "Los Angeles-area",
+  "Single Grain",
+  "AI-marketing",
+  "LA-based",
+  "Santa Monica",
+  "AI-search",
+  "AI-assisted",
+  "AI marketing",
+  "AI marketing agency",
+  "Generative Engine Optimization (GEO)"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "cc11799ff9e27ca45408b2eba94fb30b9a423186d98f64675b3830b10d9919ee",
+ "answer_chars": 2666,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "ff73d54b620005145a59aba719844066e6bfed032a63131cd30cf1bcde3e4dff",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

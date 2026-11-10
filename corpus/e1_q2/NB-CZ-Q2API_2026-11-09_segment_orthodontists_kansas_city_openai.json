@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-09_segment_orthodontists_kansas_city_openai",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: orthodontists, Kansas City",
+ "niche": "orthodontists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Kansas City. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Kansas City Missouri for braces or Invisalign?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EiU9rQmcWYonRHF8qmixIXsU8nHCk",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 789,
+   "total_tokens": 815,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 640,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I just need a couple quick details so I can give you the best specific suggestions:\n\n1) Which part of Kansas City are you in (ZIP code or neighborhood)? KC is large and I’ll pick offices close to you.  \n2) Is this for an adult or a child/teen? (Some doctors focus more on pediatric vs adult treatment.)  \n3) Do you have dental/orthodontic insurance or a preference for lower-cost options?\n\nIf you want a quick answer now without giving location/insurance, I can also tell you how to find the best local orthodontists and give a shortlist of the exact questions to ask when you call. Which would you prefer?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

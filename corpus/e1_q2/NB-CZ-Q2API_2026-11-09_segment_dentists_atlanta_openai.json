@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-09_segment_dentists_atlanta_openai",
+ "date_utc": "2026-11-09",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Atlanta. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5-mini-2025-08-07",
+  "response_id": "chatcmpl-EiTxMFb8SFuaD8FKqKhaosaB5E99U",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1596,
+   "total_tokens": 1621,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 832,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atlanta-area",
+  "Buckhead"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can do that — I can either (A) give a short list of specific Atlanta-area practices to call (with pros/cons) or (B) help you narrow the right provider type and give a phone-script and checklist so you can vet any office you find. Which would you prefer?\n\nIf you want me to pick specific practices, tell me:\n- Which part of Atlanta or ZIP code (midtown, Buckhead, Decatur, south Atlanta, suburbs)?\n- Do you prefer a periodontist/oral surgeon (surgical specialist) or a prosthodontist/restorative dentist who places and restores implants?\n- Is cost a major constraint, or do you prioritize experience/technology?\n- Any special needs: sedation, same-day/Teeth-in-a-Day / All‑on‑4, bone grafting, or weekend appointments?\n\nIf you want to call practices right away, here’s a short checklist and exact questions to ask so you get useful comparisons:\n\nWhat to check (credentials and capabilities)\n- Specialty and training: Are implants placed by a board-certified oral & maxillofacial surgeon, board-certified periodontist, or a general dentist with extensive implant training? (Prefer specialists for complex cases.)\n- Experience volume: How many implants does the doctor place each year? How many years placing implants?\n- Prosthetic team: Is there an in‑house prosthodontist or restorative dentist who will make the crown/bridge/denture?\n- Technology: Do they use CBCT 3D CT imaging, guided/virtual implant planning, and digital impressions?\n- Implant systems: Which implant brands do they use (Nobel, Straumann, Zimmer, MIS, etc.) and do they warranty/guarantee their work?\n- Sedation & anesthesia: Options for nitrous, oral sedation, IV sedation or GA?\n- Bone grafting / sinus lift experience if you need augmentation.\n- Full‑arch solutions: Do they do All‑on‑4, immediate load, or hybrid dentures if you need an entire arch?\n- Aftercare & complications: What’s included (follow‑ups)? What’s their policy on complications or implant failures?\n- Cost & financing: Request a written estimate (separate line items for surgery, grafting, implant fixture, abutment, crown) and ask about insurance & payment plans.\n- Timeline: How long from consult to final crown? Who will manage each step?\n- Reviews & before/after cases: Ask to see recent implant case photos and patient references.\n\nExact script/questions to ask on the phone\n1. “Hi — I’m looking into getting a dental implant. Does Dr. X place implants, and is the surgery done here or by a referring specialist?”\n2. “What are the doctor’s credentials and specialty? How many implant cases do they place per year?”\n3. “Do you have an on‑site CBCT scanner and do you do guided implant placement?”\n4. “If I need bone grafting or a sinus lift, do you do that here?”\n5. “Who will make my final crown or denture? Is that done in‑house or by a specialist?”\n6. “Do you offer sedation? What options?”\n7. “Can you give me a full written estimate, and do you accept my insurance?”\n8. “Do you have before/after photos of similar cases and any patient testimonials?”\n9. “What is your implant failure policy or warranty?”\n\nIf you confirm you want specific practice names and your preferences/location, I’ll produce a tailored list of 4–6 Atlanta-area offices to call, with quick notes on why each is a good fit (specialists, advanced tech, financing, full‑arch experience, etc.).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
