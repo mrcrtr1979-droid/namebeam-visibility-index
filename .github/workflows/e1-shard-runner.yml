@@ -1,0 +1,138 @@
+name: E1 Shard Runner (shadow)
+
+# LB-23 part 2 (2026-11-09, LAPTOP-FABLE-LB23). The same runner, once per engine shard, in parallel, in SHADOW mode.
+# Every shard runs scripts/e1_runner.py with E1_ONLY_ENGINES=<one engine> and E1_DRY_RUN=1, so its rows land under
+# dry_run_out/ and NOTHING is committed to corpus/e1 or pushed anywhere. The report job downloads the shards and writes
+# shadow/<date>/REPORT.md to the branch `shadow-runs` (never main). Shadow rows are never mixed into the public series;
+# a switch of the production runner to shards is a COS ruling after 7 green shadow days, with a dated method note in
+# CORRECTIONS.md, and the series is never pooled across the runner change.
+on:
+  workflow_dispatch:
+    inputs:
+      engines:
+        description: "Comma list of shards to run (perplexity, gemini, openai, anthropic, serp). Blank = all five."
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: e1-shard-runner
+  cancel-in-progress: false
+
+env:
+  POSTHOG_PROJECT_KEY: ""
+  DISABLE_POSTHOG: "1"
+  DISABLE_SENTRY: "1"
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - id: m
+        run: |
+          IN="${{ inputs.engines }}"
+          if [ -z "$IN" ]; then IN="perplexity,gemini,openai,anthropic,serp"; fi
+          J=$(python3 -c 'import json,sys; print(json.dumps([e.strip() for e in sys.argv[1].split(",") if e.strip()]))' "$IN")
+          echo "matrix=$J" >> "$GITHUB_OUTPUT"
+          echo "shards: $J"
+
+  shard:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    strategy:
+      fail-fast: false
+      matrix:
+        engine: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests boto3
+      - name: Configure AWS credentials (OIDC, Bedrock shard only)
+        if: matrix.engine == 'anthropic' && vars.AWS_BEDROCK_ROLE_ARN != ''
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_BEDROCK_ROLE_ARN }}
+          aws-region: us-east-1
+          role-duration-seconds: 3600
+      - name: Record when the AWS credentials were minted
+        if: matrix.engine == 'anthropic' && vars.AWS_BEDROCK_ROLE_ARN != ''
+        run: echo "AWS_CREDS_MINTED_AT=$(date +%s)" >> "$GITHUB_ENV"
+      - name: Run the shard (dry run, one engine)
+        env:
+          E1_DRY_RUN: "1"
+          E1_ONLY_ENGINES: ${{ matrix.engine }}
+          E1_CALL_BUDGET_S: ${{ vars.E1_CALL_BUDGET_S }}
+          E1_RUN_BUDGET_MIN: ${{ vars.E1_RUN_BUDGET_MIN }}
+          E1_DISABLE_Q2: "1"
+          PRIVATE_RAW: "1"
+          PERPLEXITY_API_KEY: ${{ matrix.engine == 'perplexity' && secrets.PERPLEXITY_API_KEY || '' }}
+          GEMINI_API_KEY: ${{ matrix.engine == 'gemini' && secrets.GEMINI_API_KEY || '' }}
+          GEMINI_API_KEY_FREE: ${{ matrix.engine == 'gemini' && secrets.GEMINI_API_KEY_FREE || '' }}
+          OPENAI_API_KEY: ${{ matrix.engine == 'openai' && secrets.OPENAI_API_KEY || '' }}
+          ANTHROPIC_API_KEY: ${{ matrix.engine == 'anthropic' && secrets.ANTHROPIC_API_KEY || '' }}
+          BRIGHTDATA_API_KEY: ${{ matrix.engine == 'serp' && secrets.BRIGHTDATA_API_KEY || '' }}
+          BRIGHTDATA_ZONE: ${{ vars.BRIGHTDATA_ZONE }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          BEDROCK_MODEL_ID: ${{ matrix.engine == 'anthropic' && vars.BEDROCK_MODEL_ID || '' }}
+          AWS_REGION: us-east-1
+          AWS_ROLE_ARN: ${{ vars.AWS_BEDROCK_ROLE_ARN }}
+        run: |
+          # The serp shard needs one engine named for parse_rerun_options; "serp" is accepted there.
+          echo "shard ${{ matrix.engine }} start $(date -u +%FT%TZ)"
+          python scripts/e1_runner.py
+          echo "shard ${{ matrix.engine }} end $(date -u +%FT%TZ)"
+          ls dry_run_out/corpus_e1 2>/dev/null | wc -l
+      - name: Upload shard rows (dry run output only)
+        uses: actions/upload-artifact@v4
+        with:
+          name: shard-${{ matrix.engine }}
+          path: dry_run_out/
+          retention-days: 7
+          if-no-files-found: warn
+
+  report:
+    needs: [plan, shard]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: shards_raw
+      - name: Arrange shards and read job timings
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p shards
+          for d in shards_raw/shard-*; do e=$(basename "$d" | sed 's/^shard-//'); mkdir -p "shards/$e"; cp -r "$d" "shards/$e/dry_run_out"; done
+          gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs?per_page=50" \
+            --jq '[.jobs[] | select(.name | startswith("shard (")) | {engine: (.name | capture("shard \\((?<e>[a-z]+)\\)").e), started_at, completed_at}] | map({(.engine): {started_at, completed_at}}) | add' > timings.json
+          cat timings.json
+      - name: Build the shadow report
+        run: |
+          D=$(date -u +%F)
+          mkdir -p "shadow/$D"
+          python3 -I scripts/shadow_report.py --shards shards --roster roster/e1_roster.json --timings timings.json \
+            --prices scripts/shadow_prices.json --date "$D" --nvi . --out "shadow/$D/REPORT.md" --json "shadow/$D/report.json"
+          cat "shadow/$D/REPORT.md"
+      - name: Publish the report to the shadow-runs branch (never main, never corpus)
+        run: |
+          D=$(date -u +%F)
+          git config user.name "e1-shadow-bot"
+          git config user.email "e1-shadow-bot@users.noreply.github.com"
+          git fetch origin shadow-runs:shadow-runs 2>/dev/null || git branch shadow-runs
+          git checkout shadow-runs
+          mkdir -p "shadow/$D" && cp -r "shadow/$D"/. "shadow/$D"/ 2>/dev/null || true
+          git add shadow/
+          git commit -m "shadow run $D (run ${{ github.run_id }}): report only, no corpus rows" || echo "nothing to commit"
+          git push origin shadow-runs
