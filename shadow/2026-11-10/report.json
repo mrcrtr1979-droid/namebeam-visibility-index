@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-10",
+  "completeness": {
+    "perplexity": {
+      "ok": 0,
+      "failed": 0,
+      "quota_blocked": 0,
+      "expected": 93,
+      "completeness_pct": 0.0
+    },
+    "gemini": {
+      "ok": 72,
+      "failed": 1,
+      "quota_blocked": 0,
+      "expected": 73,
+      "completeness_pct": 98.6
+    },
+    "openai": {
+      "ok": 0,
+      "failed": 0,
+      "quota_blocked": 0,
+      "expected": 73,
+      "completeness_pct": 0.0
+    },
+    "anthropic": {
+      "ok": 73,
+      "failed": 0,
+      "quota_blocked": 0,
+      "expected": 73,
+      "completeness_pct": 100.0
+    },
+    "serp": {
+      "ok": 0,
+      "failed": 0,
+      "quota_blocked": 0,
+      "expected": 73,
+      "completeness_pct": 0.0
+    }
+  },
+  "served_models": {
+    "gemini": {
+      "gemini-3.5-flash-lite": 53,
+      "gemini-3.6-flash": 19
+    },
+    "anthropic": {
+      "anthropic.claude-haiku-4-5-20251001-v1:0": 73
+    }
+  },
+  "costs": {
+    "gemini": {
+      "per_answer": 0.0004,
+      "total": 0.0308,
+      "ok_count": 72
+    },
+    "anthropic": {
+      "per_answer": 0.0013,
+      "total": 0.0934,
+      "ok_count": 73
+    }
+  },
+  "wall_minutes": {
+    "anthropic": 3.0,
+    "gemini": 20.2
+  },
+  "wall_max": 20.2,
+  "wall_sum": 23.2,
+  "agreement": {
+    "buildable": 72,
+    "not_buildable": 1,
+    "no_text_count": 0
+  }
+}
