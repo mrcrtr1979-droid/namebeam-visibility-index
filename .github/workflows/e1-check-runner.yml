@@ -47,7 +47,11 @@ on:
         default: false
         type: boolean
   schedule:
-  - cron: "10 12 * * *"
+  # SHARDED PRIMARY (LB-29, 2026-11-10, COS ruling on PR #76): from 2026-11-11 the 12:10Z slot belongs to
+  # .github/workflows/e1-shard-runner.yml (five engine shards in parallel, one join commit). This serial
+  # runner is the BACKSTOP: the three later slots below run only when the day's record is still missing,
+  # and both workflows share the concurrency group e1-daily-record so they never collect the same day at
+  # the same time. The 12:10Z cron that stood here moved to the shard runner; nothing else changed.
   # BACKSTOP (2026-10-06, [FABLE-COS-1006A], R61): on 2026-10-05 the 12:10Z run was
   # delayed by GitHub to 20:31Z and then cancelled: "The job was not acquired by Runner
   # of type hosted even after multiple attempts". No E1 record exists for 2026-10-05 and
@@ -64,7 +68,8 @@ on:
   - cron: "10 19 * * *"
 
 concurrency:
-  group: e1-check-runner
+  # Shared with e1-shard-runner.yml (LB-29, 2026-11-10): one collector at a time, whichever starts first.
+  group: e1-daily-record
   cancel-in-progress: false
 
 permissions:

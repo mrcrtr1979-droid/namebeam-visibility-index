@@ -1,12 +1,37 @@
-name: E1 Shard Runner (shadow)
+name: E1 Shard Runner
 
-# LB-23 part 2 (2026-11-09, LAPTOP-FABLE-LB23). The same runner, once per engine shard, in parallel, in SHADOW mode.
-# Every shard runs scripts/e1_runner.py with E1_ONLY_ENGINES=<one engine> and E1_DRY_RUN=1, so its rows land under
-# dry_run_out/ and NOTHING is committed to corpus/e1 or pushed anywhere. The report job downloads the shards and writes
-# shadow/<date>/REPORT.md to the branch `shadow-runs` (never main). Shadow rows are never mixed into the public series;
-# a switch of the production runner to shards is a COS ruling after 7 green shadow days, with a dated method note in
-# CORRECTIONS.md, and the series is never pooled across the runner change.
+# PRODUCTION MODE (LB-29, 2026-11-10, LAPTOP-FABLE-LB29 on carter-brain status/staged/LB28_NOTE_3.md section 4;
+# COS ruling on PR #76, comment 6768518405, 2026-11-10 7:3xAM CT: "sharding gives the headroom"). The same
+# collector, scripts/e1_runner.py, runs once per engine shard IN PARALLEL (perplexity, gemini, openai, anthropic,
+# serp), the same calls the serial runner makes, split five ways: zero new spend. The daily 12:10Z slot is this
+# workflow's from 2026-11-11; .github/workflows/e1-check-runner.yml keeps the 16:10Z, 19:10Z and 21:40Z slots as
+# the serial BACKSTOP (its guard skips when the day's record exists). Both workflows share the concurrency group
+# e1-daily-record, so they can never collect the same day at the same time.
+#
+# How a production run lands as ONE commit:
+#   shard  : e1_runner.py with E1_ONLY_ENGINES=<engine> and E1_DRY_RUN=1, so the shard's rows land under its own
+#            dry_run_out/ and the shard commits nothing. It uploads ONLY the public rows (corpus_e1, corpus_e1_q2)
+#            as an artifact. The private raw text (R82: Perplexity answers, Google AI Overview text) is pushed by the
+#            shard itself to the private Brain repo (same step as the serial runner) and is NEVER an artifact here,
+#            because artifacts of a public repository can be downloaded by any signed-in GitHub user.
+#   join   : downloads the five artifacts, fetches the day's private raw copy back from the private Brain (for the
+#            agreement rows, which need the full text), runs scripts/shard_join.py (copies rows, never over an
+#            existing check_id; builds the DW-1 agreement rows like the serial runner), builds the sources dataset,
+#            customer_zero and own_name_rate exactly as e1-check-runner.yml does, commits everything in ONE commit
+#            with rebase-and-retry, writes the per-shard wall times to the job summary and checks in to Sentry Crons
+#            (monitor e1-daily-record, the same monitor the serial runner reports to).
+#
+# DRY RUN (nothing committed, nothing pushed): workflow_dispatch with dry_run=true, OR a push to a branch other than
+# main whose commit message carries the tag [e1-shard-dry-run] (this is how the laptop seat proves a branch without
+# the gh CLI). A dry run makes the same engine calls, uploads the public rows, runs the join in --dry-run and prints
+# the report; the private raw text of a dry run is discarded with the runner, as the serial dry run does.
+#
+# Shadow history: the shadow-mode version of this file (LB-23, 2026-11-09) wrote reports to the branch shadow-runs
+# and never to main; shadow/<date>/REPORT.md there holds the 2026-11-10 shadow run.
+
 on:
+  schedule:
+    - cron: "10 12 * * *"
   workflow_dispatch:
     inputs:
       engines:
@@ -14,36 +39,82 @@ on:
         required: false
         default: ""
         type: string
+      dry_run:
+        description: "Dry run: shards upload public rows, the join reports only, nothing is committed or pushed."
+        required: false
+        default: false
+        type: boolean
+      backstop:
+        description: "Treat this dispatch as a backstop: skip if today's record already exists."
+        required: false
+        default: false
+        type: boolean
+  push:
+    branches-ignore:
+      - main
+    paths:
+      - ".github/workflows/e1-shard-runner.yml"
+      - "scripts/shard_join.py"
 
 permissions:
   contents: write
   id-token: write
 
 concurrency:
-  group: e1-shard-runner
+  group: e1-daily-record
   cancel-in-progress: false
 
 env:
-  POSTHOG_PROJECT_KEY: ""
-  DISABLE_POSTHOG: "1"
-  DISABLE_SENTRY: "1"
+  # PostHog AI Observability, same as e1-check-runner.yml: one $ai_generation event per engine call, public write key,
+  # kill switch DISABLE_POSTHOG. Prompt and answer text are never sent.
+  POSTHOG_PROJECT_KEY: ${{ vars.POSTHOG_PROJECT_KEY || 'phc_kKsaZbRt2hgQG4a24VW7VFEPxkcESnKWWWHaYRwyYc2v' }}
+  DISABLE_POSTHOG: ${{ vars.DISABLE_POSTHOG }}
 
 jobs:
   plan:
     runs-on: ubuntu-latest
+    # A push without the tag does nothing (so editing this file does not spend a day of engine calls).
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[e1-shard-dry-run]')
     outputs:
       matrix: ${{ steps.m.outputs.matrix }}
+      dry_run: ${{ steps.m.outputs.dry_run }}
+      skip: ${{ steps.m.outputs.skip }}
+      date: ${{ steps.m.outputs.date }}
     steps:
+      - uses: actions/checkout@v4
       - id: m
+        env:
+          IN_ENGINES: ${{ inputs.engines }}
+          IN_DRY: ${{ inputs.dry_run }}
+          IN_BACKSTOP: ${{ inputs.backstop }}
+          EVENT: ${{ github.event_name }}
         run: |
-          IN="${{ inputs.engines }}"
+          set -euo pipefail
+          IN="${IN_ENGINES:-}"
           if [ -z "$IN" ]; then IN="perplexity,gemini,openai,anthropic,serp"; fi
           J=$(python3 -c 'import json,sys; print(json.dumps([e.strip() for e in sys.argv[1].split(",") if e.strip()]))' "$IN")
           echo "matrix=$J" >> "$GITHUB_OUTPUT"
-          echo "shards: $J"
+          DRY=false
+          if [ "$EVENT" = "push" ] || [ "${IN_DRY:-false}" = "true" ]; then DRY=true; fi
+          echo "dry_run=$DRY" >> "$GITHUB_OUTPUT"
+          D=$(date -u +%Y-%m-%d); H=$(date -u +%H)
+          echo "date=$D" >> "$GITHUB_OUTPUT"
+          # The serial runner's guards, kept in effect: a scheduled run that starts before 12:00Z is a late
+          # backstop from the previous day; a scheduled or backstop run skips when today's record exists.
+          SCHED="$EVENT"
+          if [ "${IN_BACKSTOP:-false}" = "true" ]; then SCHED="schedule"; fi
+          SKIP=false
+          if [ "$DRY" = "false" ] && [ "$SCHED" = "schedule" ] && [ "$H" -lt 12 ]; then
+            echo "Scheduled run started at ${H}Z: a late backstop that crossed midnight; skipping."; SKIP=true
+          elif [ "$DRY" = "false" ] && [ "$SCHED" = "schedule" ] && ls corpus/e1/NB-CZ-API_${D}_namebeam_*.json >/dev/null 2>&1; then
+            echo "E1 record for $D already exists; skipping."; SKIP=true
+          fi
+          echo "skip=$SKIP" >> "$GITHUB_OUTPUT"
+          echo "shards: $J | dry_run: $DRY | date: $D | skip: $SKIP"
 
   shard:
     needs: plan
+    if: needs.plan.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 200
     strategy:
@@ -66,13 +137,14 @@ jobs:
       - name: Record when the AWS credentials were minted
         if: matrix.engine == 'anthropic' && vars.AWS_BEDROCK_ROLE_ARN != ''
         run: echo "AWS_CREDS_MINTED_AT=$(date +%s)" >> "$GITHUB_ENV"
-      - name: Run the shard (dry run, one engine)
+      - name: Run the shard (one engine, rows under dry_run_out/, nothing committed by the shard)
+        timeout-minutes: 190
         env:
           E1_DRY_RUN: "1"
           E1_ONLY_ENGINES: ${{ matrix.engine }}
           E1_CALL_BUDGET_S: ${{ vars.E1_CALL_BUDGET_S }}
           E1_RUN_BUDGET_MIN: ${{ vars.E1_RUN_BUDGET_MIN }}
-          E1_DISABLE_Q2: "1"
+          E1_DISABLE_Q2: ${{ vars.E1_DISABLE_Q2 }}
           PRIVATE_RAW: "1"
           PERPLEXITY_API_KEY: ${{ matrix.engine == 'perplexity' && secrets.PERPLEXITY_API_KEY || '' }}
           GEMINI_API_KEY: ${{ matrix.engine == 'gemini' && secrets.GEMINI_API_KEY || '' }}
@@ -87,52 +159,172 @@ jobs:
           AWS_REGION: us-east-1
           AWS_ROLE_ARN: ${{ vars.AWS_BEDROCK_ROLE_ARN }}
         run: |
-          # The serp shard needs one engine named for parse_rerun_options; "serp" is accepted there.
           echo "shard ${{ matrix.engine }} start $(date -u +%FT%TZ)"
           python scripts/e1_runner.py
           echo "shard ${{ matrix.engine }} end $(date -u +%FT%TZ)"
-          ls dry_run_out/corpus_e1 2>/dev/null | wc -l
-      - name: Upload shard rows (dry run output only)
+          echo "public rows: $(ls dry_run_out/corpus_e1 2>/dev/null | wc -l); q2 rows: $(ls dry_run_out/corpus_e1_q2 2>/dev/null | wc -l); private rows (not uploaded): $(ls dry_run_out/private_e1 2>/dev/null | wc -l)"
+      - name: Upload the shard's PUBLIC rows only
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: shard-${{ matrix.engine }}
-          path: dry_run_out/
-          retention-days: 7
+          path: |
+            dry_run_out/corpus_e1
+            dry_run_out/corpus_e1_q2
+          retention-days: 3
           if-no-files-found: warn
+      # R82 option B: the private raw text goes to the PRIVATE Brain repo, never to an artifact of this repository.
+      # Same step as e1-check-runner.yml; the token is a git credential on the clone URL and is never echoed.
+      - name: Push the private raw copy to the private Brain (production only)
+        if: ${{ always() && needs.plan.outputs.dry_run != 'true' && hashFiles('dry_run_out/private_e1/**') != '' }}
+        env:
+          PRIVATE_BRAIN_TOKEN: ${{ secrets.PRIVATE_BRAIN_TOKEN }}
+          DAY: ${{ needs.plan.outputs.date }}
+        run: |
+          set -euo pipefail
+          test -n "$PRIVATE_BRAIN_TOKEN"
+          git clone -q --depth 1 "https://x-access-token:${PRIVATE_BRAIN_TOKEN}@github.com/mrcrtr1979-droid/carter-brain" /tmp/brain
+          mkdir -p "/tmp/brain/private_e1/${DAY}"
+          cp -r dry_run_out/private_e1/. "/tmp/brain/private_e1/${DAY}/"
+          cd /tmp/brain
+          git config user.name "e1-private-sink"
+          git config user.email "actions@namebeam.ai"
+          git add private_e1
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -q -m "private_e1 ${DAY}: R82 raw text from sharded run ${GITHUB_RUN_ID} (${{ matrix.engine }})"
+          for i in 1 2 3 4; do
+            git push -q origin HEAD:main && { echo "pushed private_e1/${DAY} (${{ matrix.engine }})"; exit 0; }
+            echo "push rejected, rebasing (attempt $i)"; git pull -q --rebase origin main
+          done
+          echo "::error::could not push the private raw copy after 4 attempts"; exit 1
 
-  report:
+  join:
     needs: [plan, shard]
-    if: always()
+    if: always() && needs.plan.outputs.skip != 'true'
     runs-on: ubuntu-latest
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - uses: actions/download-artifact@v4
         with:
           path: shards_raw
-      - name: Arrange shards and read job timings
+      - name: Arrange shards and read the per-shard wall times
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          set -euo pipefail
           mkdir -p shards
-          for d in shards_raw/shard-*; do e=$(basename "$d" | sed 's/^shard-//'); mkdir -p "shards/$e"; cp -r "$d" "shards/$e/dry_run_out"; done
+          for d in shards_raw/shard-*; do
+            [ -d "$d" ] || continue
+            e=$(basename "$d" | sed 's/^shard-//'); mkdir -p "shards/$e/dry_run_out"
+            cp -r "$d"/. "shards/$e/dry_run_out/"
+          done
+          ls shards
           gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs?per_page=50" \
-            --jq '[.jobs[] | select(.name | startswith("shard (")) | {engine: (.name | capture("shard \\((?<e>[a-z]+)\\)").e), started_at, completed_at}] | map({(.engine): {started_at, completed_at}}) | add' > timings.json
-          cat timings.json
-      - name: Build the shadow report
+            --jq '[.jobs[] | select(.name | startswith("shard (")) | {engine: (.name | capture("shard \\((?<e>[a-z]+)\\)").e), started_at, completed_at, conclusion}]' > timings.json
+          python3 - <<'EOF'
+          import json, datetime
+          rows = json.load(open("timings.json"))
+          f = lambda t: datetime.datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")
+          out = ["| shard | started (UTC) | wall minutes | conclusion |", "|---|---|---|---|"]
+          mins_all = []
+          for r in rows:
+              s, c = r.get("started_at"), r.get("completed_at")
+              mins = round((f(c) - f(s)).total_seconds() / 60.0, 1) if s and c else 0.0
+              mins_all.append(mins)
+              out.append("| %s | %s | %s | %s |" % (r["engine"], s, mins, r.get("conclusion")))
+          out.append("")
+          out.append("Longest shard: %.1f min (the collection's wall clock); serial estimate: %.1f min (sum of shards)."
+                     % (max(mins_all or [0.0]), sum(mins_all)))
+          open("timings.md", "w").write("\n".join(out) + "\n")
+          print("\n".join(out))
+          EOF
+      - name: Fetch the day's private raw copy for the agreement rows (production only, R82)
+        if: needs.plan.outputs.dry_run != 'true'
+        env:
+          PRIVATE_BRAIN_TOKEN: ${{ secrets.PRIVATE_BRAIN_TOKEN }}
+          DAY: ${{ needs.plan.outputs.date }}
         run: |
-          D=$(date -u +%F)
-          mkdir -p "shadow/$D"
-          python3 -I scripts/shadow_report.py --shards shards --roster roster/e1_roster.json --timings timings.json \
-            --prices scripts/shadow_prices.json --date "$D" --nvi . --out "shadow/$D/REPORT.md" --json "shadow/$D/report.json"
-          cat "shadow/$D/REPORT.md"
-      - name: Publish the report to the shadow-runs branch (never main, never corpus)
+          set -euo pipefail
+          test -n "$PRIVATE_BRAIN_TOKEN"
+          git clone -q --depth 1 --filter=blob:none --no-checkout "https://x-access-token:${PRIVATE_BRAIN_TOKEN}@github.com/mrcrtr1979-droid/carter-brain" /tmp/brain_ro
+          cd /tmp/brain_ro
+          git sparse-checkout set --no-cone "private_e1/${DAY}" 2>/dev/null || true
+          git checkout -q
+          mkdir -p "$GITHUB_WORKSPACE/private_e1"
+          if [ -d "private_e1/${DAY}" ]; then cp -r "private_e1/${DAY}/." "$GITHUB_WORKSPACE/private_e1/"; fi
+          echo "private rows available to the join: $(ls "$GITHUB_WORKSPACE/private_e1" 2>/dev/null | wc -l)"
+      - name: Join the shards into the corpus (one commit's worth of rows)
+        env:
+          DRY: ${{ needs.plan.outputs.dry_run }}
+          DAY: ${{ needs.plan.outputs.date }}
         run: |
-          D=$(date -u +%F)
-          git config user.name "e1-shadow-bot"
-          git config user.email "e1-shadow-bot@users.noreply.github.com"
-          git fetch origin shadow-runs:shadow-runs 2>/dev/null || git branch shadow-runs
-          git checkout shadow-runs
-          mkdir -p "shadow/$D" && cp -r "shadow/$D"/. "shadow/$D"/ 2>/dev/null || true
-          git add shadow/
-          git commit -m "shadow run $D (run ${{ github.run_id }}): report only, no corpus rows" || echo "nothing to commit"
-          git push origin shadow-runs
+          set -euo pipefail
+          python3 -I scripts/test_shard_join.py
+          FLAGS=""; [ "$DRY" = "true" ] && FLAGS="--dry-run"
+          PRIV=""; [ -d private_e1 ] && PRIV="--private private_e1"
+          python3 -I scripts/shard_join.py --shards shards --date "$DAY" --json join_report.json $PRIV $FLAGS | tee join_report.txt
+      - name: Build the sources dataset (production only; never blocks the commit)
+        if: needs.plan.outputs.dry_run != 'true'
+        run: |
+          python3 -I scripts/build_sources.py --selftest || echo "::warning::sources selftest failed"
+          python3 -I scripts/build_sources.py --missing --strict || echo "::warning::sources build reported a guard (UNMAPPED or EMPTY-DAY), see the log above"
+          python3 -I scripts/build_sources.py --date "${{ needs.plan.outputs.date }}" --strict || echo "::warning::sources for today reported a guard or no raw files, see the log above"
+          python3 -I scripts/customer_zero.py --selftest || echo "::warning::customer_zero selftest failed"
+          python3 -I scripts/customer_zero.py --check-baseline || echo "::warning::customer_zero reported STALE-SOURCES or a baseline mismatch, see the log above"
+          python3 -I scripts/own_name_rate.py --selftest || echo "::warning::own_name_rate selftest failed"
+          python3 -I scripts/own_name_rate.py || echo "::warning::own_name_rate build failed"
+      - name: Commit and push the day's rows in ONE commit (production only)
+        if: needs.plan.outputs.dry_run != 'true'
+        env:
+          DAY: ${{ needs.plan.outputs.date }}
+        run: |
+          set -euo pipefail
+          rm -rf private_e1 shards shards_raw
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add corpus/e1/ datasets/e1/sources/ datasets/e1/customer_zero/ datasets/e1/own_name/
+          git add corpus/e1_q2/ 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No new corpus rows to commit."
+          else
+            N=$(git diff --staged --name-only | grep -c '^corpus/e1/' || true)
+            SH=$(python3 -c 'import json; print(", ".join(sorted(json.load(open("join_report.json"))["shards"])))')
+            git commit -q -m "e1 slice run ${DAY} (sharded: ${SH}; ${N} corpus rows in one commit)"
+            for i in 1 2 3 4; do
+              git push && break
+              echo "push rejected, rebasing (attempt $i)"
+              git pull --rebase origin main
+            done
+          fi
+      - name: Job summary (per-shard wall times and the join report)
+        if: always()
+        env:
+          DRY: ${{ needs.plan.outputs.dry_run }}
+          DAY: ${{ needs.plan.outputs.date }}
+        run: |
+          TAG=""; [ "$DRY" = "true" ] && TAG=" (DRY RUN)"
+          { echo "## E1 sharded run ${DAY}${TAG}"; echo; cat timings.md 2>/dev/null; echo; echo '```'; cat join_report.txt 2>/dev/null; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Keep the join report as an artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: join-report
+          path: |
+            timings.json
+            timings.md
+            join_report.json
+            join_report.txt
+          retention-days: 14
+          if-no-files-found: ignore
+      # Sentry Crons: the same monitor as the serial runner (e1-daily-record); a dry run never checks in.
+      - name: Report the run to Sentry Crons (production only)
+        if: always() && needs.plan.outputs.dry_run != 'true'
+        continue-on-error: true
+        env:
+          SENTRY_DSN: ${{ vars.SENTRY_DSN || 'https://fac773179a0ef5c7296de8b92796d144@o4512319421349888.ingest.us.sentry.io/4512319519195136' }}
+          DISABLE_SENTRY: ${{ vars.DISABLE_SENTRY }}
+        run: python3 scripts/sentry_checkin.py e1-daily-record "${{ job.status }}" "10 12 * * *" 600
