@@ -871,7 +871,11 @@ def detect_ai_overview(html):
 # reports plainly. Override without a commit via repo VARIABLE OPENAI_MODEL
 # (doctrine-120 form guards against set-but-empty).
 # --------------------------------------------------------------------------
-OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "").strip() or "gpt-5.2-mini"
+# LB-20 (2026-11-09): OpenAI removes gpt-5-mini (served gpt-5-mini-2025-08-07) on 2026-12-11 and names
+# gpt-5.6-terra as its replacement (developers.openai.com/api/docs/deprecations, read 2026-11-09).
+# The repo variable OPENAI_MODEL still wins; this default only decides what runs if the variable is
+# unset. Rows carry engine_meta.served_model, so the OpenAI series splits at the switch date.
+OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "").strip() or "gpt-5.6-terra"
 OPENAI_URL = "https://api.openai.com/v1/chat/completions"
 
 
@@ -1029,11 +1033,33 @@ def _bedrock_refresh_credentials(boto3, region):
     return True, ""
 
 
+def _bedrock_config():
+    """LB-20 (2026-11-09): bounded time per Bedrock call. botocore's defaults (60 s connect, 60 s read,
+    legacy retries) let one hung call run for minutes; this caps a call near 2.5 minutes with
+    one standard retry. Returns None where botocore is absent (the fake-boto3 tests)."""
+    try:
+        from botocore.config import Config
+        return Config(connect_timeout=20, read_timeout=120,
+                      retries={"max_attempts": 2, "mode": "standard"})
+    except Exception:
+        return None
+
+
+def _client_with_config(boto3, service, region, **creds):
+    cfg = _bedrock_config()
+    if cfg is not None:
+        try:
+            return boto3.client(service, region_name=region, config=cfg, **creds)
+        except TypeError:  # a fake client in the tests that takes no config
+            pass
+    return boto3.client(service, region_name=region, **creds)
+
+
 def _bedrock_client(boto3, region):
     creds = _BEDROCK_STATE["creds"]
     if creds:
-        return boto3.client("bedrock-runtime", region_name=region, **creds)
-    return boto3.client("bedrock-runtime", region_name=region)
+        return _client_with_config(boto3, "bedrock-runtime", region, **creds)
+    return _client_with_config(boto3, "bedrock-runtime", region)
 
 
 def _call_anthropic_bedrock(prompt_text, model_id):

@@ -9,7 +9,13 @@ name: ingestion-probe
 # slots 35 minutes apart share one failure. The 17:12Z and 21:12Z slots run only when the day's
 # rows are still missing (guard below); otherwise they skip in seconds.
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      backstop:
+        description: "LB-20 (2026-11-09): treat this dispatch as a backstop; skip if today's rows exist."
+        required: false
+        default: false
+        type: boolean
   schedule:
   - cron: "37 12 * * *"
   - cron: "12 13 * * *"
@@ -35,10 +41,12 @@ jobs:
         run: |
           D=$(date -u +%Y-%m-%d)
           H=$(date -u +%H)
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$H" -lt 12 ]; then
+          SCHED="${{ github.event_name }}"
+          if [ "${{ inputs.backstop }}" = "true" ]; then SCHED="schedule"; fi
+          if [ "$SCHED" = "schedule" ] && [ "$H" -lt 12 ]; then
             echo "Scheduled run started at ${H}Z: a late run that crossed midnight; today's 12:37Z slot owns $D. Skipping."
             echo "skip=true" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event_name }}" = "schedule" ] && grep -q ",$D," data/ingestion/ingestion_probe.csv 2>/dev/null; then
+          elif [ "$SCHED" = "schedule" ] && grep -q ",$D," data/ingestion/ingestion_probe.csv 2>/dev/null; then
             echo "Probe rows for $D already exist; this scheduled run is the backstop and skips."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else

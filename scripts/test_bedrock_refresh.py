@@ -169,12 +169,25 @@ def assert_no_secret(*texts):
             assert s not in str(t), "secret leaked: %s..." % s[:12]
 
 
+
+def _nocfg(clients):
+    """LB-20 (2026-11-09): bedrock-runtime clients now carry a botocore Config (connect 20 s, read 120 s,
+    2 standard attempts). Strip it for the shape assertions below and check it once here."""
+    out = []
+    for kw in clients:
+        kw = dict(kw)
+        cfg = kw.pop("config", None)
+        if cfg is not None:
+            assert getattr(cfg, "read_timeout", None) == 120 and getattr(cfg, "connect_timeout", None) == 20, cfg
+        out.append(kw)
+    return out
+
 def test_success_path_unchanged_no_refresh():
     w = World()
     (ok, text, cites, err), out, log = run(w)
     assert (ok, text, cites, err) == (True, "Bedrock answer", [], "")
     assert w.invokes == 1 and w.oidc_calls == [] and w.sts_calls == []
-    assert w.bedrock_clients == [{"region_name": "us-east-1"}]  # default chain, no explicit creds
+    assert _nocfg(w.bedrock_clients) == [{"region_name": "us-east-1"}]  # default chain, no explicit creds
     assert engines.LAST_CALL_META["anthropic"]["response_id"] == "msg_bdrk_1"
 
 
@@ -185,9 +198,9 @@ def test_expired_token_one_refresh_one_retry():
     assert len(w.oidc_calls) == 1 and len(w.sts_calls) == 1
     assert w.invokes == 2
     # the retry ran on a NEW client built from the fresh credentials
-    assert len(w.bedrock_clients) == 2
-    assert w.bedrock_clients[0] == {"region_name": "us-east-1"}
-    assert w.bedrock_clients[1] == {"region_name": "us-east-1",
+    assert len(_nocfg(w.bedrock_clients)) == 2
+    assert _nocfg(w.bedrock_clients)[0] == {"region_name": "us-east-1"}
+    assert _nocfg(w.bedrock_clients)[1] == {"region_name": "us-east-1",
                                     "aws_access_key_id": NEW_CREDS["AccessKeyId"],
                                     "aws_secret_access_key": NEW_CREDS["SecretAccessKey"],
                                     "aws_session_token": NEW_CREDS["SessionToken"]}
@@ -281,7 +294,7 @@ def test_proactive_refresh_when_credentials_older_than_50_minutes():
         w, env={"AWS_CREDS_MINTED_AT": str(int(minted))}, now=minted + 51 * 60)
     assert (ok, text, err) == (True, "Bedrock answer", "")
     assert len(w.oidc_calls) == 1 and len(w.sts_calls) == 1 and w.invokes == 1
-    assert w.bedrock_clients[0]["aws_session_token"] == NEW_CREDS["SessionToken"]
+    assert _nocfg(w.bedrock_clients)[0]["aws_session_token"] == NEW_CREDS["SessionToken"]
     assert_no_secret(out, log)
 
 
@@ -289,7 +302,7 @@ def test_no_proactive_refresh_under_50_minutes():
     minted = 1000.0
     w = World()
     (ok, _, _, _), _, _ = run(w, env={"AWS_CREDS_MINTED_AT": str(int(minted))}, now=minted + 49 * 60)
-    assert ok and w.oidc_calls == [] and w.bedrock_clients == [{"region_name": "us-east-1"}]
+    assert ok and w.oidc_calls == [] and _nocfg(w.bedrock_clients) == [{"region_name": "us-east-1"}]
 
 
 def test_age_falls_back_to_first_use_without_minted_at():
@@ -307,7 +320,7 @@ def test_fresh_credentials_are_reused_by_later_calls_without_another_refresh():
               "minted_at": 1000.0}
     (ok, _, _, _), _, _ = run(w, now=1000.0 + 600, state=seeded)
     assert ok is True and w.oidc_calls == [] and w.sts_calls == []
-    assert w.bedrock_clients[0]["aws_session_token"] == NEW_CREDS["SessionToken"]
+    assert _nocfg(w.bedrock_clients)[0]["aws_session_token"] == NEW_CREDS["SessionToken"]
 
 
 def test_refresh_state_persists_inside_the_module():
@@ -330,7 +343,7 @@ def test_refresh_state_persists_inside_the_module():
         r2 = engines.call_anthropic("b")
         assert r1[0] is True and r2[0] is True
         assert len(w.sts_calls) == 1 and len(w.oidc_calls) == 1 and w.invokes == 3
-        assert w.bedrock_clients[2]["aws_session_token"] == NEW_CREDS["SessionToken"]
+        assert _nocfg(w.bedrock_clients)[2]["aws_session_token"] == NEW_CREDS["SessionToken"]
     finally:
         engines.requests.get, engines._bedrock_now = saved_get, saved_now
         engines._BEDROCK_STATE.clear()
