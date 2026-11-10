@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-10_segment_real_estate_agents_pleasanton_openai",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to sell my house in Pleasanton. Which specific real estate agents should I call, and why?",
+ "q1_prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EimgxyaY7U7wGuzknMjGCXD1Fq0Vy",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1087,
+   "total_tokens": 1115,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [
+  "specific agents you should call",
+  "The listing agents on the most compelling current/pending listings near you",
+  "five closest recent listings you personally represented as the seller’s agent"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I’d avoid choosing a Pleasanton listing agent based on generic “top agent” rankings alone. The right person should be a *recent listing-side seller specialist for homes like yours*—same neighborhood, price range, condition, and buyer pool.\n\nI can give you a defensible list of specific names if you share your neighborhood/ZIP, approximate value, home type, and whether it needs updating. Without live 2026 MLS data, I don’t want to invent or give you stale recommendations.\n\nFor now, these are the **specific agents you should call**—identified from the market rather than advertising:\n\n1. **The listing agents on the 3–5 most comparable homes that sold in your immediate neighborhood in the last 6–12 months.**  \n   Call the *listing* agent, not the buyer’s agent. They have demonstrated they can price, prepare, market, negotiate, and close a seller’s home competing for the same buyers.\n\n2. **The listing agents on the most compelling current/pending listings near you.**  \n   If an agent has a nearby listing that went pending quickly and was presented exceptionally well, that is evidence of current marketing execution—not merely historical volume.\n\n3. **One strong independent or boutique agent plus one major-brokerage agent.**  \n   Interviewing both lets you compare hands-on senior-agent service against larger-team marketing, buyer databases, relocation networks, and transaction support. In the Tri-Valley, both models can work; what matters is who will personally handle pricing, showings, offers, and negotiation.\n\nWhen you interview them, ask these questions:\n\n- “Show me the **five closest recent listings you personally represented as the seller’s agent**.”\n- “What price would you recommend, and what is the evidence—not just the highest possible number?”\n- “What would you do before launch, who pays for it, and what is optional versus necessary?”\n- “Who will be my day-to-day contact after I sign?”\n- “How many active listings do you have right now, and how will mine get attention?”\n- “What is your plan if we have limited showings or no credible offer after 10–14 days?”\n- “Can you give me three recent seller references from homes similar to mine?”\n\nRed flags: an agent who gives the highest price without supporting comps, pushes a long listing agreement, will not discuss commission or cancellation terms, delegates everything to junior team members, or cannot show recent nearby seller-side results.\n\nIf you send me:\n- neighborhood or ZIP (e.g., 94566/94588),\n- beds/baths and approximate square footage,\n- approximate condition/upgrades,\n- expected price range, and\n- desired selling timeline,\n\nI can help you build a short interview list and evaluate the agents’ pricing proposals.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

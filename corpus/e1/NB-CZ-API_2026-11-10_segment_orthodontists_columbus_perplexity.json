@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-11-10_segment_orthodontists_columbus_perplexity",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: orthodontists, Columbus",
+ "niche": "orthodontists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Columbus Ohio for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4348f076-c0d8-4427-8319-539f389830cd",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00085,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00109,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 3953,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3405,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 435,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4388
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Andrew B. Wade",
+  "Dr. Elizabeth Johnson",
+  "Dr. Dennis L. Johnson",
+  "Dr. Kara Marie Morris",
+  "American Board of Orthodontics",
+  "Riverside Drive",
+  "London Drive",
+  "Invisalign",
+  "Ohio State",
+  "Northwest Columbus"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "beeb4564a12bd9b64de42646eda78a1e6eb8c1596100cceddeb784343b3b45e0",
+ "answer_chars": 1557,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "0706367edd29e0939b2f85054847c65517e35bdcdcf0185ae7b01eff641b17bb",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

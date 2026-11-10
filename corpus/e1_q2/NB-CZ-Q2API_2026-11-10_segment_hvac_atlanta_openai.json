@@ -1,0 +1,65 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-10_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a new air conditioner installed in Atlanta. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EimUOA8lNhOE7rb578G4sseFVHtCx",
+  "usage": {
+   "prompt_tokens": 27,
+   "completion_tokens": 1090,
+   "total_tokens": 1117,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 194,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PV Heating, Cooling & Plumbing",
+  "Manual J load calculation",
+  "Moncrief Heating & Air Conditioning",
+  "Estes Services",
+  "R.S. Andrews",
+  "Coolray Heating, Cooling, Plumbing & Electrical",
+  "PV Heating",
+  "Moncrief",
+  "Estes",
+  "Coolray",
+  "SEER2/EER2",
+  "Cooling",
+  "Moncrief Heating",
+  "Air Conditioning",
+  "Long-established Atlanta",
+  "Large Atlanta-area",
+  "Coolray Heating",
+  "AC replacement",
+  "Moncrief Heating & Air"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For an Atlanta AC replacement, I’d call **at least 3 of these 5** so you can compare load calculations, equipment choices, warranty terms, and installation scope—not just headline price.\n\n| Company | Why call them | Best fit |\n|---|---|---|\n| **PV Heating, Cooling & Plumbing** | Often regarded as a more building-science/comfort-focused contractor. Ask them for a **Manual J load calculation**, duct evaluation, and humidity recommendations rather than a simple like-for-like swap. | Older homes, comfort/humidity problems, hot upstairs rooms, uneven temperatures, or higher-efficiency systems. |\n| **Moncrief Heating & Air Conditioning** | Long-established Atlanta company with broad experience in residential replacement systems and service support. | Homeowners wanting an established local provider and a conventional, full-service installation. |\n| **Estes Services** | Large Atlanta-area provider with a long operating history and the capacity to handle installation plus ongoing maintenance. | Straightforward replacement, homeowners who value a larger service organization and maintenance-plan availability. |\n| **R.S. Andrews** | Broad service coverage and generally easy scheduling; useful as a comparison quote from a sizable regional firm. | If speed, financing options, and bundled HVAC/electrical/plumbing service matter. |\n| **Coolray Heating, Cooling, Plumbing & Electrical** | Another large metro-Atlanta provider worth using as a benchmark quote, particularly if you want multiple equipment/financing options. | Fast replacement needs and homeowners who prefer a large company with extended service coverage. |\n\n### My practical short list\nIf this were my house, I’d start with:\n\n1. **PV Heating** — for the most technical/comfort-oriented assessment.  \n2. **Moncrief** or **Estes** — for a strong established-company comparison.  \n3. **R.S. Andrews** or **Coolray** — for a pricing, availability, and financing benchmark.  \n\nThat gives you a mix of a comfort-focused contractor and larger service organizations, which makes it easier to spot an oversimplified or overpriced proposal.\n\n## What to require from every bidder\nDo not accept a quote based only on the old unit’s tonnage. In Atlanta’s humid climate, proper sizing and airflow matter as much as brand.\n\nAsk each company to provide:\n\n- A **Manual J load calculation** or written sizing rationale.\n- A review of the **duct system**, return-air capacity, static pressure, and insulation—not just the outdoor condenser.\n- The exact **indoor and outdoor model numbers**. The system’s efficiency rating depends on the matched combination.\n- Whether the proposal includes a new **thermostat, pad, disconnect, line-set work, drain safety switch, filter cabinet, and permit**.\n- The expected **SEER2/EER2**, sound level, warranty, labor warranty, and registration requirements.\n- A plan for **humidity control**. In Atlanta, a correctly sized two-stage or variable-capacity system can be preferable to an oversized single-stage unit.\n- Confirmation that they will pull required permits and use properly credentialed technicians.\n\n## Equipment guidance for Atlanta\nFor many Atlanta homes, the sweet spot is usually:\n\n- **15–18 SEER2** equipment from a major manufacturer,\n- preferably **two-stage or variable-speed** if you have humidity or uneven-temperature issues,\n- paired with a **variable-speed air handler/furnace blower** when practical.\n\nA very high-SEER variable-capacity system can be excellent, but only if the ducts, controls, and installation quality support it. A well-installed mid-efficiency system is generally better than a poorly installed premium one.\n\n## Red flags\nBe cautious if a contractor:\n\n- Recommends the same tonnage as your old unit without measuring or calculating anything.\n- Says “bigger is better.”\n- Won’t provide model numbers or a detailed scope of work.\n- Pushes a same-day signature with a large “today only” discount.\n- Won’t discuss duct leakage, return-air sizing, condensate drainage, or permits.\n- Gives a dramatically lower quote that excludes electrical, duct, drain, line-set, permit, or startup work.\n\nBefore signing, verify each company’s current Georgia licensing/insurance status and read **recent**, not just lifetime, customer reviews—especially reviews mentioning installation quality, warranty handling, and post-install follow-up.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

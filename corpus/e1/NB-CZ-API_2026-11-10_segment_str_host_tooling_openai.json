@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-API_2026-11-10_segment_str_host_tooling_openai",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EimEEVFcYYzIi0T9cJwGcJDLsX5C8",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 527,
+   "total_tokens": 553,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 82,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "AirDNA",
+  "MarketMinder",
+  "Rentalizer",
+  "Beyond",
+  "Wheelhouse",
+  "Rabbu / Mashvisor",
+  "AllTheRooms",
+  "Mashvisor",
+  "After launch"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most Airbnb hosts, the best setup is:\n\n- **PriceLabs** for setting and automating nightly pricing\n- **AirDNA** for evaluating a market or property before buying\n\n### Why\n\n**PriceLabs** is generally the strongest choice for day-to-day dynamic pricing. It adjusts rates based on seasonality, local demand, lead time, occupancy, events, and your own booking pace. It also offers useful controls for minimum stays, orphan gaps, last-minute discounts, and far-future pricing.\n\n**AirDNA** is usually better for acquisition research. Its **MarketMinder** and **Rentalizer** tools help estimate:\n- Historical occupancy and ADR (average daily rate)\n- Revenue potential for a specific address\n- Seasonality\n- Comparable listings and amenities\n- Supply growth and market saturation\n- Neighborhood-level performance\n\n### If you want only one tool\n\nChoose **AirDNA** if you are still deciding *where or what to buy*, because underwriting the investment correctly matters more before purchase.\n\nChoose **PriceLabs** if you already own or are about to launch a listing and need to maximize booking revenue through pricing.\n\n### Other good options\n\n- **Beyond**: Strong revenue-management platform, particularly for professional operators and larger portfolios.\n- **Wheelhouse**: Good dynamic-pricing alternative with more hands-on pricing strategy tools.\n- **Rabbu / Mashvisor**: Helpful for initial deal screening, but I would validate their projections against AirDNA and actual comparable listings.\n- **AllTheRooms**: Useful supplemental short-term-rental market data in some markets.\n\n### Practical recommendation\n\nBefore buying, analyze the property with **AirDNA**, then build a conservative pro forma using roughly:\n- AirDNA comparable revenue estimates\n- Your expected occupancy and ADR at the lower end of the comparable range\n- Cleaning, utilities, management, platform fees, furnishing replacement, insurance, taxes, and permits\n- A downside scenario with lower occupancy and/or increased local supply\n\nAfter launch, connect the listing to **PriceLabs** and review its recommendations rather than blindly accepting them—especially during the first 60–90 days while you are building reviews and booking history.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

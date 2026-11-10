@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-11-10_segment_title_companies_west_palm_beach_perplexity",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: title companies, West Palm Beach",
+ "niche": "title companies",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in West Palm Beach FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3489c4e0-73d0-4d43-8799-32539372da0c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00448
+   },
+   "input_tokens": 4799,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4250,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 312,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5111
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Lighthouse Title Services",
+  "Kelley, Grant & Tanis, P.A",
+  "First American Title",
+  "Lighthouse Title Services and Kelley",
+  "Grant",
+  "Tanis",
+  "Ward Damon",
+  "South Florida",
+  "Kelley, Grant & Tanis"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "1149939f7f3702b7d145198ebf27312dbf5960d8ee01fbb12f33d2dac6bc2605",
+ "answer_chars": 1105,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "1dbe3dc1da1cd87b72860f2b9a875fa44d10d07170e705563feda2eb68908248",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

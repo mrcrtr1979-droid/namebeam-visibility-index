@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-10_segment_orthodontists_columbus_perplexity",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: orthodontists, Columbus",
+ "niche": "orthodontists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Columbus. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Columbus Ohio for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_809ce993-6fb6-4362-9cf4-15debdd9624b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00104,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00127,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00495
+   },
+   "input_tokens": 4695,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4142,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 506,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5201
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Columbus, Ohio",
+  "Columbus Orthodontic Center — Dr. Amin Mason",
+  "Carmen Orthodontics — Columbus office",
+  "Johnson Orthodontics — Columbus office",
+  "Comfort Dental Braces – North Columbus",
+  "Shirck Orthodontics",
+  "Columbus Orthodontic Center",
+  "Dr. Amin Mason",
+  "Dr. Mason",
+  "Invisalign. Convenient",
+  "Arena District",
+  "Carmen Orthodontics",
+  "Invisalign",
+  "Johnson Orthodontics",
+  "Northwest Columbus",
+  "Crown Park Ct",
+  "Comfort Dental Braces",
+  "North Columbus",
+  "New Albany"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "a12f88a4e399a3e18871ffda84c6a68430b29e74c25724d9b605f841ae443739",
+ "answer_chars": 1805,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "a136c72060968fdd2773c32ae89ea7f8e3c57b7b17a1a8e4b02e151214926ba0",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

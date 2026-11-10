@@ -1,0 +1,57 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-10_segment_dentists_pleasanton_openai",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Eimf5z67zqMGY3DnRSez3dZj2aa2l",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1558,
+   "total_tokens": 1586,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 939,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton, California",
+  "Pleasanton Ridge Dental Group & Orthodontics",
+  "Pleasanton Dental Care",
+  "Hacienda Dental",
+  "Main Street Dental",
+  "Foothill Dental Care",
+  "Pleasanton Ridge Dental Group",
+  "X-rays",
+  "Downtown Pleasanton"
+ ],
+ "engine_stated_criteria": [
+  "[your insurance]"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Assuming you mean **Pleasanton, California**, I’d call these general-dentistry offices first for a routine exam and cleaning:\n\n1. **Pleasanton Ridge Dental Group & Orthodontics**  \n   **Why call:** A larger multi-provider practice is often a good first call if you want the soonest appointment, online scheduling, or a practice that can handle follow-up treatment without referring you elsewhere. Confirm that you are booking with a *general dentist/hygienist*, not orthodontics.\n\n2. **Pleasanton Dental Care**  \n   **Why call:** A good fit if you prefer a conventional general-dentistry office focused on preventive care—exam, X-rays if needed, hygienist cleaning, and ongoing recall visits. Ask whether they can combine the new-patient exam and cleaning in one visit.\n\n3. **Hacienda Dental**  \n   **Why call:** Worth trying if you want a smaller-practice feel and continuity with the same dentist over time. This can be preferable if you are anxious about dental visits or expect to stay with one office for regular cleanings.\n\n4. **Main Street Dental**  \n   **Why call:** Convenient option if you live or work near downtown Pleasanton and want a location that is easy to reach for routine six-month visits. Convenience matters more than people think for keeping up with preventive care.\n\n5. **Foothill Dental Care**  \n   **Why call:** A reasonable family/general-dentistry option to compare for appointment availability, insurance participation, and new-patient pricing—especially if you want an office that can also see other household members.\n\n### Who I’d call first\n- **Need the earliest appointment:** Pleasanton Ridge Dental Group, then Pleasanton Dental Care.  \n- **Want a long-term, smaller-office relationship:** Hacienda Dental or Foothill Dental Care.  \n- **Downtown convenience:** Main Street Dental.  \n\n### What to ask on the phone\nUse this wording:\n\n> “I’m a new patient looking for a routine exam and cleaning. Are you accepting new patients, are you in-network with **[your insurance]**, and can the exam and cleaning be done at the same appointment? What would my estimated out-of-pocket cost be, including X-rays if needed?”\n\nAlso ask:\n\n- Whether they accept your **exact plan**, not just your insurer’s name.  \n- Whether a “cleaning” means a standard preventive cleaning (**prophylaxis**) or whether they may first require a periodontal evaluation. If there is gum disease, the recommended treatment and cost may differ.  \n- The first available **hygienist** appointment and whether they have a cancellation list.  \n- Whether they will provide a written estimate before doing non-routine treatment.\n\nI can narrow this to the best two or three offices if you tell me your insurance plan, your ZIP code/neighborhood, and whether you prioritize earliest availability, lowest out-of-pocket cost, or a highly reviewed long-term dentist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

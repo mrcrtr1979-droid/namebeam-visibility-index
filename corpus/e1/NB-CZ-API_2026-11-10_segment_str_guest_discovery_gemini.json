@@ -1,0 +1,71 @@
+{
+ "check_id": "NB-CZ-API_2026-11-10_segment_str_guest_discovery_gemini",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "k3fzaoumH4vW0_gP2uiD6AE",
+  "usage": {
+   "promptTokenCount": 29,
+   "candidatesTokenCount": 1102,
+   "totalTokenCount": 1131,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 29
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "Use if",
+  "Vrbo (Vacation Rentals by Owner)",
+  "No shared spaces",
+  "Booking.com",
+  "Airbnb Superhost",
+  "Vrbo Premier Host",
+  "Ignore the 5-star fluff",
+  "Search for keywords",
+  "Evaluate the response",
+  "Individual owners",
+  "Management companies",
+  "Couples/Solo/City trip",
+  "Family/Big Group/Beach house",
+  "Vrbo",
+  "Uncertain plans/Want hotels + apartments",
+  "For all of them",
+  "Use",
+  "Vacation Rentals",
+  "Look for Patterns",
+  "Professional Property Manager",
+  "Big Group",
+  "Superhost",
+  "Premier Host",
+  "Entire homes",
+  "Filter",
+  "House Rules",
+  "Read the house rules and cancellation policy"
+ ],
+ "engine_stated_criteria": [
+  "Check how they handle problems"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Choosing the right platform and finding a great host can make or break your trip. Here is a breakdown of how to choose between Airbnb, Vrbo, and Booking.com, followed by a step-by-step guide to finding the best host.\n\n---\n\n### Part 1: Which platform should you use?\n\n#### 1. **Airbnb**\n* **Best for:** Variety, unique stays (treehouses, yurts, design apartments), and city breaks.\n* **Pros:** Massive global inventory; usually the best user interface and review system; great for unique, aesthetically pleasing properties.\n* **Cons:** Service fees can be high; occasional issues with strict cancellation policies or “party house” crackdowns gone wrong.\n* **Use if:** You want a wide selection, are traveling solo or with a partner, or want something with local character.\n\n#### 2. **Vrbo (Vacation Rentals by Owner)**\n* **Best for:** Entire homes, families, large groups, and traditional vacation destinations (beach houses, cabins, ski chalets).\n* **Pros:** **No shared spaces** (Vrbo only lists entire properties, never private rooms in a shared house); often better for large groups and multi-family trips.\n* **Cons:** Fewer options in major cities; generally more expensive overall; customer service can be difficult to reach.\n* **Use if:** You are traveling with family/groups and need a whole house with multiple bedrooms, a big kitchen, and a backyard.\n\n#### 3. **Booking.com**\n* **Best for:** Flexibility, hotels, aparthotels, and travelers who want traditional cancellation policies.\n* **Pros:** Offers a massive mix of hotels *and* private apartments; their \"Genius\" loyalty program offers real discounts; many listings offer \"free cancellation\" up to a few days before the trip with no upfront payment.\n* **Cons:** Customer service for private apartments can be an intermediary nightmare compared to booking a standard hotel room; some properties charge hidden local taxes upon arrival.\n* **Use if:** You aren't sure of your plans and want free cancellation, or if you prefer the safety net of a traditional hotel-style booking system.\n\n---\n\n### Part 2: How to find a good host\n\nNo matter which platform you use, the property is only as good as the host managing it. Follow these steps to weed out the bad actors and find a reliable host:\n\n#### 1. Look for the \"Superhost\" or \"Premier Host\" Badge\n* **Airbnb Superhost** or **Vrbo Premier Host** means the host has a proven track record: high average ratings (usually 4.8+), low cancellation rates, and a quick response time. \n* *Note:* Don't automatically discount new hosts—everyone has to start somewhere—but if you want peace of mind, stick with badge-holders.\n\n#### 2. Read the Reviews Carefully (Look for Patterns)\n* **Ignore the 5-star fluff:** Anyone can get a few 5-star reviews from friends or lucky guests. Look at *how* they respond to reviews.\n* **Search for keywords:** Use the review search bar (if available) or skim for words like \"noisy,\" \"clean,\" \"wifi,\" \"parking,\" or \"host.\"\n* **Check how they handle problems:** Read the 3- or 4-star reviews. Did something go wrong (e.g., broken AC), and how did the host handle it? A great host fixes problems immediately; a bad host argues or ignores the guest.\n\n#### 3. Test Their Communication Before Booking\n* Send the host a polite question before booking (e.g., asking about parking, local grocery stores, or check-in flexibility).\n* **Evaluate the response:** Do they reply within a few hours? Are they polite, welcoming, and clear? If they take 24 hours to answer a pre-booking question, imagine how hard it will be to reach them if the toilet overflows at midnight.\n\n#### 4. Read the House Rules and Cancellation Policy\n* Good hosts are transparent about what their property is (and isn't) suited for. If the rules are excessively strict or weird, move on.\n* Ensure their cancellation policy matches your comfort level (look for \"Flexible\" or \"Moderate\" if your travel plans might change).\n\n#### 5. Check If They Are a Professional Property Manager\n* Some listings are run by individual homeowners; others are run by property management companies. \n* **Individual owners** often add personal touches (local wine, handmade guides) and are very communicative.\n* **Management companies** are usually more professional, have 24/7 maintenance lines, and standardized cleaning, but can feel a bit corporate and impersonal. Both can be great—just know what you're getting.\n\n### Summary Recommendation\n* **Couples/Solo/City trip:** Use **Airbnb**.\n* **Family/Big Group/Beach house:** Use **Vrbo**.\n* **Uncertain plans/Want hotels + apartments:** Use **Booking.com**.\n* **For all of them:** Filter for top-rated hosts, read reviews mentioning cleanliness and communication, and test the host with a quick message before handing over your money.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

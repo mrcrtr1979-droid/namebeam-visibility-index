@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-10_segment_dentists_charlotte_gemini",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: dentists, Charlotte",
+ "niche": "dentists",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Charlotte. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Charlotte for a dental implant?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "D4DzaqPGLeCziLMP0Zuo-Aw",
+  "usage": {
+   "promptTokenCount": 19,
+   "candidatesTokenCount": 759,
+   "totalTokenCount": 778,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 19
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Carolina Dental Choice",
+  "Dr. Richard C. Drago",
+  "Metrolina Periodontics",
+  "Ballantyne Center for Dentistry"
+ ],
+ "engine_stated_criteria": [
+  "What is your policy if the implant fails to integrate with the bone?",
+  "Do you utilize 3D cone-beam CT scanning for surgical planning?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Choosing a dental practice for a dental implant depends on your specific needs—whether you need a single tooth replaced, multiple teeth, full-mouth restoration, or if you have bone loss requiring bone grafting. In Charlotte, dental implant care is split between **general dentists with advanced implant training** (great for straightforward cases) and **periodontists/oral surgeons** (best for complex cases, full-mouth restorations, or when extractions and bone grafting are needed).\n\nHere are several highly regarded dental practices in Charlotte known for dental implants, along with why you should consider calling them:\n\n---\n\n### 1. Carolina Dental Choice\n* **Best for:** Comprehensive restorative care and patient comfort.\n* **Why call them:** Carolina Dental Choice is well-regarded in the Charlotte area for handling both the surgical placement and the final crown restoration under one roof when appropriate. They focus heavily on modern technology (like 3D CBCT imaging for precise placement) and patient-centered sedation options, making them a good choice if you experience dental anxiety.\n\n### 2. Charlotte Dentistry\n* **Best for:** Established reputation and a multidisciplinary team.\n* **Why call them:** As one of the longest-standing comprehensive dental practices in Charlotte, they offer a full spectrum of services from diagnostics to final restoration. Having multiple practitioners with varied specialties means they can coordinate your implant treatment plan internally without you needing to bounce between different offices across the city.\n\n### 3. Ballantyne Center for Dentistry\n* **Best for:** Advanced technology and \"Teeth in a Day\" / full-arch restorations.\n* **Why call them:** If you are missing most or all of your teeth and are looking into options like All-on-4 or full-mouth implants, this practice is heavily equipped for major restorative cases. They utilize in-house lab capabilities and advanced digital imaging to streamline the implant process, which can significantly reduce the total number of visits required.\n\n### 4. Metrolina Periodontics (Dr. Richard C. Drago / Associates)\n* **Best for:** Surgical precision, bone grafting, and complex periodontal health.\n* **Why call them:** If your dentist tells you that you lack sufficient jawbone for an implant and need a sinus lift or bone graft, you may want to consult a periodontist. Metrolina Periodontics specializes exclusively in gum health, bone regeneration, and surgical implant placement. Working with a specialist ensures the foundation for your implant is as strong as possible.\n\n---\n\nKris/User, before you make your calls, here is a quick checklist of questions to ask each practice to ensure they are the right fit for your specific situation:\n\n1. **Do you perform both the surgical placement and the final crown restoration in-house, or will I need to see a separate specialist?** *(Knowing this upfront helps you understand if you'll be coordinating care between two different offices.)*\n2. **What is your policy if the implant fails to integrate with the bone?** *(Reputable practices often have guarantees or clear revision policies.)*\n3. **Do you utilize 3D cone-beam CT scanning for surgical planning?** *(This technology is considered the gold standard for safely placing implants away from nerves and sinuses.)*\n4. **What are the total estimated out-of-pocket costs, including the implant fixture, abutment, and crown?** *(Make sure you get a breakdown so you aren't surprised by staged billing.)*\n\nTo help narrow this down further: Are you looking to replace a single tooth, multiple teeth, or looking at full-arch replacement? Do you currently have dental insurance that might cover part of the procedure?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-API_2026-11-10_segment_hvac_houston_openai",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EikevkYVQXKNqxpVaahOsVcQCQ8HW",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 454,
+   "total_tokens": 472,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 199,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Tech of Houston",
+  "John Moore Services",
+  "Abacus Plumbing, Air Conditioning & Electrical",
+  "Village Plumbing & Air",
+  "Texas Air Authorities",
+  "Texas HVAC contractor license number",
+  "Abacus Plumbing",
+  "Air Conditioning",
+  "Village Plumbing",
+  "Texas HVAC",
+  "AC repair",
+  "Abacus",
+  "John Moore",
+  "Central Houston",
+  "Inside the Loop"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company across all of Houston, but **Air Tech of Houston** is a strong starting choice for residential AC repair because it has a long local operating history and is commonly recommended for diagnostics, repairs, and maintenance.\n\nAlso worth comparing—especially depending on your neighborhood and urgency—are:\n\n- **John Moore Services** — large Houston-area operation; useful for fast scheduling and broader home-service needs.\n- **Abacus Plumbing, Air Conditioning & Electrical** — established provider with extensive service coverage.\n- **Village Plumbing & Air** — well-known option, particularly inside the Loop and central Houston.\n- **Texas Air Authorities** — another commonly considered local HVAC contractor.\n\nBefore booking, ask each company:\n\n1. Their **Texas HVAC contractor license number** and proof of insurance.  \n2. Whether the diagnostic fee is applied toward the repair.  \n3. A written, itemized estimate before work begins.  \n4. Warranty terms for parts and labor.  \n5. Whether they will diagnose the cause—not just recommend replacing the unit.\n\nFor an AC that is not cooling in Houston heat, I’d call two companies for diagnosis/quotes rather than automatically accepting a compressor or full-system replacement recommendation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

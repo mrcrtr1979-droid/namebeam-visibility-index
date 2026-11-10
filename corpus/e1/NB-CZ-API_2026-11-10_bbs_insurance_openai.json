@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-API_2026-11-10_bbs_insurance_openai",
+ "date_utc": "2026-11-10",
+ "business": "BBS Insurance",
+ "niche": "health insurance brokerage",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best health insurance broker in Kansas City MO for someone who is self-employed?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Eim1pt99NfvNijUP7bMiPx9h9MnBR",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 911,
+   "total_tokens": 935,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 327,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "HealthCare.gov Find Local Help",
+  "Marketplace/on-exchange plans and off-exchange plans",
+  "ACA subsidy",
+  "HealthCare.gov",
+  "ACA-certified",
+  "NABIP",
+  "Missouri Department of Commerce",
+  "ACA-compliant"
+ ],
+ "engine_stated_criteria": [
+  "you generally should not pay an extra fee to use a broker"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a self-employed person in Kansas City, MO, the “best” broker is usually **an independent, ACA-certified health-insurance broker who can enroll you through HealthCare.gov and also show off-exchange options**. That matters because a broker tied to only one carrier may not show you the best combination of premium, subsidy, doctor network, and prescription coverage.\n\n### Best place to start\nUse one of these directories to find a local broker, then interview 2–3:\n\n- **HealthCare.gov “Find Local Help”** — look for a licensed agent/broker in your ZIP code. This is especially important if you may qualify for premium tax credits.\n- **NABIP (National Association of Benefits and Insurance Professionals) agent directory** — useful for finding brokers who specialize in health insurance.\n- **Missouri Department of Commerce & Insurance license lookup** — verify that the broker is actively licensed in Missouri before enrolling.\n\nFor most individual ACA plans, **you generally should not pay an extra fee to use a broker**; the insurer typically pays commission. Ask upfront whether the broker charges a consulting or enrollment fee.\n\n### What to ask a Kansas City broker\nA good broker should be willing to:\n\n1. Compare **Marketplace/on-exchange plans and off-exchange plans**.\n2. Check whether your doctors, hospitals, and prescriptions are in-network.\n3. Estimate your **ACA subsidy** based on projected self-employment income.\n4. Explain deductibles, out-of-pocket maximums, copays, and referral rules—not just monthly premium.\n5. Compare HSA-qualified plans if that is relevant to you.\n6. Show plan options from more than one carrier, where available.\n7. Help after enrollment if there is a billing, subsidy, or network problem.\n\n### A practical recommendation\nIf you want the safest route, start with an **independent local broker listed through HealthCare.gov**, rather than a lead-generation website that immediately funnels you to short-term or fixed-indemnity coverage. For a self-employed person, ACA-compliant coverage is often the better baseline because it covers pre-existing conditions and can be subsidized based on income.\n\n### Watch for these red flags\nAvoid a broker who:\n\n- Pushes short-term medical, “limited benefit,” health-sharing, or indemnity plans without clearly explaining what they do **not** cover.\n- Won’t show you HealthCare.gov options.\n- Quotes only one carrier.\n- Focuses solely on the cheapest monthly premium.\n- Cannot explain whether your preferred doctors and prescriptions are covered.\n\nAlso, because Kansas City crosses two states, make sure the broker is licensed in the state where you **live**, not just where you work. Kansas City, Missouri residents generally use the federal Marketplace at **HealthCare.gov**; confirm the current enrollment rules and available carriers for your ZIP code before enrolling.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

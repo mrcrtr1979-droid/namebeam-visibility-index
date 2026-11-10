@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-10_segment_personal_injury_law_dallas_perplexity",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: personal injury law, Dallas",
+ "niche": "personal injury attorneys",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Dallas after a truck accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Dallas for a truck accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_594ce8fb-0163-45ee-93c6-dd4ac97bf299",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00151,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00522
+   },
+   "input_tokens": 4847,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4289,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 604,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5451
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Winocour Law — (214) 575-6060",
+  "Miller Weisbrod Olesky — (214) 987-0005",
+  "Arnold & Itkin — (469) 208-5535",
+  "Javier Perez Law — (214) 499-0667",
+  "Aaron Herbert",
+  "Truck",
+  "Winocour Law",
+  "Mike C. Miller",
+  "Miller Weisbrod Olesky",
+  "Javier Perez Law",
+  "North Texas",
+  "English and Spanish",
+  "Aaron A. Herbert",
+  "Arnold & Itkin",
+  "Texas Board of Legal Specialization",
+  "Aaron A. Herbert, P.C"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2ae0429cbca1ea57aed2d867e7538112251fdc571c8df1e021c2866ca9f594d1",
+ "answer_chars": 2223,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "35f5513ab611b30667faa530e3947ec88c3ae7cceae0a5f8145314d06b53e2f0",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

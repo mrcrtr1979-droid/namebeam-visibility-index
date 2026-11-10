@@ -1,0 +1,67 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-10_segment_short_term_rental_branson_openai",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EimzYZ5fshlv8oYJcKQAhUhYcpeD2",
+  "usage": {
+   "prompt_tokens": 29,
+   "completion_tokens": 1105,
+   "total_tokens": 1134,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 329,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sunset Nightly Rentals",
+  "Rent Branson",
+  "Thousand Hills Vacations",
+  "Branson Vacation Rentals",
+  "Branson Family Retreats",
+  "Indian Point",
+  "Table Rock Lake",
+  "Wanting a quiet cabin experience",
+  "Strip/76",
+  "Hollister",
+  "Branson West",
+  "VRBO. Local",
+  "Branson-area",
+  "Highway",
+  "Start",
+  "Wanting",
+  "Thousand Hills",
+  "Pointe Royale",
+  "Kimberling City",
+  "Table Rock",
+  "The Strip"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a Branson trip, I’d call these **local vacation-rental managers first** rather than relying only on Airbnb/VRBO. Local managers can often suggest the right neighborhood, explain resort amenities, and quote the true total price directly.\n\n| Company to call | Best for | Why call them |\n|---|---|---|\n| **Sunset Nightly Rentals** | Broadest selection of condos, cabins, and lake-area homes | A long-established Branson-area manager with properties around Branson, Indian Point, Table Rock Lake, and nearby resorts. Good first call if you are flexible on the exact property but want choices. |\n| **Rent Branson** | Families, groups, and people who want local guidance | Focuses on Branson-area vacation rentals and is worth calling for help matching a home to your plans—shows, Silver Dollar City, lake time, or a quieter setting. |\n| **Thousand Hills Vacations** | Golf, central location, condo/resort stays | A strong option if you want to stay close to the Highway 76 entertainment district while having resort-style amenities, golf access, pools, or a condo rather than a remote cabin. |\n| **Branson Vacation Rentals** | Table Rock Lake, Indian Point, and condo/cabin comparisons | Worth contacting if lake access, a view, or proximity to Silver Dollar City matters. Ask specifically which properties have boat slips, dock access, or seasonal pools. |\n| **Branson Family Retreats** | Larger family reunions and multi-bedroom homes | Put them on your list if you need several bedrooms, gathering space, game rooms, multiple families under one roof, or a house rather than a condo. |\n\n### Which one to call first\n- **Going to Silver Dollar City or wanting lake views:** Start with **Sunset Nightly Rentals**, **Rent Branson**, and **Branson Vacation Rentals**. Ask about **Indian Point** and **Table Rock Lake**.\n- **Wanting to be close to shows, dining, and the Strip:** Start with **Thousand Hills Vacations** and **Sunset Nightly Rentals**. Ask about **Thousand Hills, Pointe Royale, and Highway 76 access**.\n- **Large group or reunion:** Start with **Branson Family Retreats**, then **Rent Branson** and **Sunset Nightly Rentals**.\n- **Wanting a quiet cabin experience:** Ask all of them for properties around **Table Rock Lake, Branson West, Kimberling City, or Hollister**, rather than right on the Strip.\n\n### What to ask on the call\nGive each company the same information so quotes are comparable:\n\n1. Your dates and number of adults/children.\n2. Whether you need pet-friendly, step-free access, a pool, lake access, or a boat slip.\n3. Your preferred area: **Strip/76**, **Indian Point**, **Table Rock Lake**, **Hollister**, or **Branson West**.\n4. The **all-in total**, including cleaning fee, damage waiver, resort fee, pet fee, taxes, and any booking fee.\n5. Whether the listing’s photos are of the **exact unit** you would receive.\n6. Cancellation terms and whether the pool, dock, fireplace, or resort facilities will be open during your dates.\n\nA useful call script:\n\n> “We’re looking for a Branson rental for [dates] for [number] people. We’d prefer [area/features]. What are your best available properties, and what is the complete total after every fee and tax? Are the photos for the exact unit, and what is the cancellation policy?”\n\nAlso compare their direct quote with the same property on Airbnb or VRBO—but do not assume the platform price is lower after service fees.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

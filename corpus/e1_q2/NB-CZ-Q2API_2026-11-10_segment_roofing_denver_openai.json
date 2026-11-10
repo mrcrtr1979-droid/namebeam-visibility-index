@@ -1,0 +1,59 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-10_segment_roofing_denver_openai",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My roof has hail damage in Denver. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EimWTESF8h6Wmn7IcMimr5PKnj55n",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 967,
+   "total_tokens": 992,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 299,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Formula Roofing & Remodeling",
+  "Roper Roofing and Solar",
+  "Stone Creek Roofing & Exteriors",
+  "Roof Brokers, Inc",
+  "Advanced Exteriors of Colorado",
+  "Denver/my municipality",
+  "Good Denver-area",
+  "Formula Roofing",
+  "Stone Creek Roofing",
+  "Roof Brokers",
+  "In Colorado"
+ ],
+ "engine_stated_criteria": [
+  "Call your insurer promptly"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a Denver hail-loss roof, I’d call **three local, established contractors** for independent inspections and itemized scopes—not just one “storm chaser.” Good Denver-area companies to put on that list are:\n\n1. **Formula Roofing & Remodeling** — Denver metro  \n   **Why call:** Long-running local roofing/exterior contractor with experience on residential reroofs, commercial roofs, and insurance-restoration work. A good choice for a detailed inspection and a comparison estimate rather than a high-pressure sales visit.\n\n2. **Roper Roofing and Solar** — Denver/Littleton area  \n   **Why call:** Known locally for roofing and exterior restoration, including storm-damage claims. Useful if your hail damage may involve gutters, siding, paint, skylights, or solar-related roof penetrations in addition to shingles.\n\n3. **Stone Creek Roofing & Exteriors** — Denver metro  \n   **Why call:** Focuses heavily on hail and wind restoration as well as roofing/exteriors. They can be a practical second or third opinion if another contractor says the roof needs replacement.\n\n4. **Roof Brokers, Inc.** — Denver area  \n   **Why call:** An established local roofer worth including if you want an inspection from a company that is not primarily a national storm-restoration brand. Ask them for photos and a written repair-vs.-replacement recommendation.\n\n5. **Advanced Exteriors of Colorado** — Denver metro  \n   **Why call:** Roofing plus broader exterior work. This can be helpful if hail affected gutters, windows, screens, siding, or paint—not only the roof.\n\n### How I’d choose among them\nAsk each company the same questions:\n\n- “Will you provide **dated photos**, a hail map, and a written scope of damage?”\n- “Are you currently licensed to pull the required permit in **Denver/my municipality**?”\n- “Who will actually install the roof—your crews or subcontractors?”\n- “What shingle manufacturer, impact-resistance rating, ventilation work, flashing, and warranty are included?”\n- “Will you give me a **retail estimate** separate from any insurance discussion?”\n- “Will you agree in writing that I owe nothing beyond my deductible and approved upgrades unless I authorize it?”\n\nChoose the contractor that gives the clearest scope, has verifiable local references, pulls permits, and does not pressure you to sign immediately.\n\n### Important Denver hail-claim cautions\n- **Call your insurer promptly** and ask about the claim deadline; hail-damage deadlines can vary by policy.\n- Do not sign an “assignment of benefits,” broad repair authorization, or contingency contract before you understand the cancellation terms.\n- In Colorado, a contractor should not offer to “waive” or absorb your deductible. That is a major red flag.\n- Require a permit where applicable and make sure the final contract specifies materials, ventilation, flashing, decking charges, cleanup, and warranty.\n- If there is active leaking, document it with photos and take reasonable temporary mitigation steps, such as tarping, while keeping receipts.\n\nI can’t verify today’s licensing, insurance, or reviews in real time, so before scheduling, check each company’s current City/County contractor status, proof of liability/workers’ compensation coverage, and recent customer reviews.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

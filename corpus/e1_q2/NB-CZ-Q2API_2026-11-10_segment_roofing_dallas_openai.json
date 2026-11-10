@@ -1,0 +1,57 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-10_segment_roofing_dallas_openai",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need my roof replaced in Dallas. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EimVy6fe5yUDSUbfAwPxvd5e2EosV",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1155,
+   "total_tokens": 1180,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Lon Smith Roofing",
+  "Arrington Roofing",
+  "Baker Roofing Company",
+  "KPost Roofing & Waterproofing",
+  "Roofing Contractors Association of Texas (RCAT)",
+  "North Texas",
+  "KPost Roofing",
+  "Roofing Contractors Association of Texas",
+  "Baker Roofing"
+ ],
+ "engine_stated_criteria": [
+  "commercial, multifamily, or has a flat/low-slope roof"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a typical **single-family roof replacement in Dallas**, I’d get written bids from these three first:\n\n1. **Lon Smith Roofing**  \n   - Long-established Dallas-area roofer with a strong local presence.  \n   - Good first call for standard asphalt-shingle replacement, hail claims, gutters, ventilation, and common North Texas roof systems.  \n   - Worth including because a company with a long Dallas history is more likely to still be around if you need warranty service later.\n\n2. **Arrington Roofing**  \n   - Established DFW residential roofing contractor with experience in shingle, tile, metal, and storm-damage replacement.  \n   - A useful comparison bid if you want more detailed discussion of materials, ventilation, decking condition, and manufacturer warranty options—not just an insurance-driven estimate.\n\n3. **Baker Roofing Company**  \n   - Large, long-running roofing company with Dallas/DFW operations and broad technical capability.  \n   - Particularly worth calling if your roof has complications: steep slopes, tile or metal, skylights, chimneys, low-slope sections, difficult flashing, or you want a contractor with more formal project-management processes.\n\nIf your property is **commercial, multifamily, or has a flat/low-slope roof**, add:\n\n4. **KPost Roofing & Waterproofing**  \n   - Dallas-based and especially relevant for commercial, multifamily, waterproofing, and complex roofing-envelope work.  \n   - Better fit than a typical residential “storm chaser” when the project involves TPO, modified bitumen, coatings, drainage, parapets, or major flashing work.\n\n### How I’d choose among them\nCall at least **three** and ask each to inspect the roof in person. Don’t select solely on the lowest number. Compare:\n\n- Exact shingle/roofing manufacturer and product line  \n- Underlayment, ice-and-water protection, flashing, ridge vent/intake ventilation, and drip edge  \n- Whether rotten decking replacement is included and the per-sheet price if not  \n- Who pulls permits, if required for your scope  \n- Proof of **general liability** and **workers’ compensation** coverage  \n- Workmanship warranty length and what it actually covers  \n- Whether they will provide a written, line-item scope—not just “replace roof”  \n- Whether they are offering to waive your insurance deductible—avoid any contractor who does this, since it can create legal and claim problems in Texas.\n\n### Dallas-specific caution\nAfter hailstorms, Dallas gets a lot of out-of-town roofing solicitors. Texas does **not** have a statewide roofing-contractor license, so prioritize companies that can show current insurance, local references from jobs completed several years ago, and applicable manufacturer credentials. You can also check whether they participate in the **Roofing Contractors Association of Texas (RCAT)** and independently verify current reviews, complaints, and insurance before signing.\n\nIf you tell me your roof type (asphalt shingle, tile, metal, flat), neighborhood, approximate size, and whether this is an insurance claim, I can narrow this to the best three calls and give you a bid-comparison checklist.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

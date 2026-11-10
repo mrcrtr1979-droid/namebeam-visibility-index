@@ -1,0 +1,65 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-10_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EimgF6M2XnBu3zseoAFNm3S5YqYk0",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1755,
+   "total_tokens": 1783,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 970,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton, California",
+  "Jiffy Lube – Pleasanton",
+  "Midas – Pleasanton",
+  "Firestone Complete Auto Care – Pleasanton area",
+  "Jiffy Lube",
+  "Oil Changers/Valvoline",
+  "Midas",
+  "Firestone",
+  "Firestone Complete Auto Care",
+  "Mercedes",
+  "Audi",
+  "Dublin",
+  "Livermore",
+  "European",
+  "Oil Changers",
+  "Valvoline Instant Oil Change"
+ ],
+ "engine_stated_criteria": [
+  "Your brand’s nearby dealership service department",
+  "Car is under warranty, European, turbocharged, hybrid, or requires specialty oil"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Assuming you mean **Pleasanton, California**, I’d call these in this order:\n\n1. **Jiffy Lube – Pleasanton**\n   - **Best for:** a fast, same-day basic oil change.\n   - **Why call:** They typically handle walk-ins, carry common synthetic grades, and often have online/mail coupons. Good choice if you mainly want speed and a documented service record.\n   - **Ask:** “What is the *out-the-door* price for my year/make/model with the manufacturer-required full synthetic oil and filter? Are disposal fees, shop fees, and taxes included?”\n\n2. **Midas – Pleasanton**\n   - **Best for:** oil change plus a quick check of brakes, tires, battery, or fluids.\n   - **Why call:** Better fit than a pure quick-lube place if you suspect the car may need additional maintenance soon. They can usually schedule an appointment and identify service items without requiring dealership pricing.\n   - **Ask:** whether the inspection is complimentary and whether they use the exact oil specification your car requires.\n\n3. **Firestone Complete Auto Care – Pleasanton area**\n   - **Best for:** combining the oil change with tire rotation, alignment, brake inspection, or battery testing.\n   - **Why call:** Convenient if your tires or brakes also need attention; one visit can be more efficient than using a dedicated oil-change chain.\n   - **Ask:** whether tire rotation is included or discounted with the oil change, and whether they have your filter in stock.\n\n4. **Your brand’s nearby dealership service department** — for example, a **Toyota, Honda, Ford, GM, BMW, Mercedes, Audi, Lexus, or Subaru dealer** in the Pleasanton/Dublin/Livermore area.\n   - **Best for:** newer cars, cars under warranty, European vehicles, hybrids, turbo engines, or cars requiring a specific manufacturer oil approval.\n   - **Why call:** Dealers are the safest choice when your manual specifies something unusually precise—such as a particular VW/Audi, BMW, Mercedes, dexos, or hybrid-compatible oil spec. They also update the manufacturer service history.\n   - **Ask:** about service specials; dealers are often more competitive than expected when they have an oil-change coupon.\n\n5. **Oil Changers / Valvoline Instant Oil Change in the Dublin–Livermore area** if you are willing to drive a few minutes outside Pleasanton.\n   - **Best for:** drive-through convenience and minimal wait.\n   - **Why call:** These are usually the quickest alternative if the Pleasanton chains are booked. They are especially useful for a straightforward oil-and-filter service.\n   - **Ask:** whether they have the exact viscosity and approval required for your vehicle before driving over.\n\n### My practical recommendation\n- **Need it today and it’s a normal Japanese/US car:** call **Jiffy Lube** and **Oil Changers/Valvoline** first; take the best confirmed total price and wait time.\n- **Want a more thorough once-over:** call **Midas** or **Firestone**.\n- **Car is under warranty, European, turbocharged, hybrid, or requires specialty oil:** call the **dealer first**.\n\n### Don’t compare only the advertised price\nGive each shop your **year, make, model, engine, and mileage**, then compare:\n- total out-the-door cost;\n- conventional vs. full synthetic;\n- oil quantity included;\n- filter brand/type;\n- required manufacturer oil specification;\n- appointment/wait time;\n- whether they reset the maintenance reminder and check for leaks.\n\nFor most modern cars, expect a full-synthetic oil change to vary substantially depending on oil capacity and filter—so a low advertised “starting at” price is not very meaningful.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

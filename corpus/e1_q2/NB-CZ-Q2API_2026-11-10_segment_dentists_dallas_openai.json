@@ -1,0 +1,60 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-10_segment_dentists_dallas_openai",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Dallas. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EimhStPajO3qlfUsgwb6Z0sGavyck",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1636,
+   "total_tokens": 1661,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Texas A&M College of Dentistry — Dallas",
+  "Dallas Oral Surgery Associates",
+  "Highland Park Periodontics & Implant Dentistry",
+  "Simple single missing tooth, healthy gums",
+  "Texas A&M College of Dentistry",
+  "CBCT 3-D scan",
+  "Maxillofacial Surgery",
+  "Texas Center for Oral Surgery",
+  "Dental Implants",
+  "Highland Park Periodontics",
+  "Implant Dentistry",
+  "Dallas Prosthodontics",
+  "Start",
+  "Oral Surgery"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most people, I’d call **three kinds of offices**: an oral surgeon or periodontist for placement/bone grafting, a prosthodontist or restorative dentist for the crown, and an academic clinic for a value-oriented second opinion.\n\nHere’s a practical Dallas call list:\n\n1. **Texas A&M College of Dentistry — Dallas**\n   - **Why call:** It has specialty departments in oral/maxillofacial surgery, periodontics, and prosthodontics, so complex cases—bone loss, failed implants, multiple missing teeth, full-arch work—can be planned across specialties.\n   - **Best for:** A careful second opinion, complicated cases, and people willing to trade some scheduling speed for academic oversight and potentially more cost options.\n   - **Ask for:** An implant consultation through **Periodontics, Oral & Maxillofacial Surgery, or Prosthodontics**, depending on whether you need placement, grafting, or the final restoration.\n\n2. **Dallas Oral Surgery Associates**\n   - **Why call:** Oral-and-maxillofacial-surgery practices are usually a strong first stop if you may need extraction, IV sedation, sinus lift, or bone grafting before implant placement.\n   - **Best for:** Replacing a tooth after extraction, anxious patients who want sedation, and cases with limited bone.\n   - **Ask:** “Will you coordinate the implant position with the dentist who will make my crown, using a restorative-driven plan and CBCT scan?”\n\n3. **Texas Center for Oral Surgery & Dental Implants — Dallas area**\n   - **Why call:** This type of dedicated oral-surgery/implant practice is useful for surgical evaluation, including grafting and full-arch surgical cases.\n   - **Best for:** Surgical complexity, multiple implants, “All-on-X”/full-arch consultations, or a second surgical opinion.\n   - **Ask:** Whether the quoted price includes the implant fixture, abutment, temporary tooth if needed, grafting, sedation, and follow-up visits.\n\n4. **Highland Park Periodontics & Implant Dentistry**\n   - **Why call:** Periodontists specialize in gums, bone, and implant maintenance—not just placing the implant. That matters if you have gum disease, recession, bone loss, diabetes, smoking history, or a prior implant problem.\n   - **Best for:** Patients who have been told they need gum treatment or bone grafting, or who want a periodontal-focused implant evaluation.\n   - **Ask:** “How do you assess gum thickness and long-term implant hygiene risk, not just whether there is enough bone today?”\n\n5. **A Dallas prosthodontic practice, such as Dallas Prosthodontics**\n   - **Why call:** A prosthodontist focuses on the final tooth—appearance, bite, crown design, bridges, dentures, and full-mouth reconstruction. The final restoration should drive where the implant is placed.\n   - **Best for:** A front-tooth implant, multiple missing teeth, bite problems, worn teeth, bridges/dentures, or if aesthetics are especially important.\n   - **Ask:** “Do you plan the final crown or bridge before surgery, and do you coordinate directly with the surgeon?”\n\n## My suggested order\n\n- **Simple single missing tooth, healthy gums:** Call a restorative dentist/prosthodontist and one oral surgeon or periodontist.\n- **Need an extraction, graft, or sedation:** Start with **Dallas Oral Surgery Associates** or **Texas Center for Oral Surgery & Dental Implants**, then make sure a restorative dentist is included in planning.\n- **Gum disease, recession, or bone loss:** Start with **Highland Park Periodontics & Implant Dentistry** plus a prosthodontist/restorative dentist.\n- **Several missing teeth or full-arch treatment:** Get consultations from **Texas A&M College of Dentistry**, a prosthodontist, and an oral-surgery practice. Full-arch plans vary enormously in quality and price, so two or three opinions are worthwhile.\n\n## Questions to ask every office\n\n1. Is the doctor placing implants a **board-certified oral surgeon or periodontist**, or is implant placement done by a general dentist?\n2. Will you take a **CBCT 3-D scan** and use a prosthetically driven plan/surgical guide when appropriate?\n3. Who handles the final crown or bridge—and do the surgeon and restorative dentist coordinate directly?\n4. What is the **all-in cost**? Ask them to separate:\n   - exam and CBCT,\n   - extraction,\n   - bone graft/sinus lift,\n   - implant fixture,\n   - abutment,\n   - temporary tooth,\n   - final crown/bridge,\n   - sedation,\n   - follow-up and maintenance.\n5. What implant brand is used, and will replacement parts be readily available in the future?\n6. If the implant does not integrate, what is the office’s policy on retreatment and fees?\n7. How long will I be without a tooth, and what temporary option is included?\n\nA reasonable Dallas comparison is often **about $3,000–$6,000+ for one straightforward implant with the final crown**, with grafting, extraction, sedation, or premium front-tooth aesthetics adding cost. Full-arch treatment is a separate category and needs detailed written comparisons.\n\nBefore booking, verify each office’s current Dallas location, clinician credentials, and insurance/financing policies directly—practice staffing and offerings can change.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

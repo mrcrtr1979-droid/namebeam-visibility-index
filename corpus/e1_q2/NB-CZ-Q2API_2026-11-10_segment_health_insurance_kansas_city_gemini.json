@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-10_segment_health_insurance_kansas_city_gemini",
+ "date_utc": "2026-11-10",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "J3zzatj9HJ2FuMYP3NTR6QQ",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 884,
+   "totalTokenCount": 906,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "ACA Marketplace plan",
+  "Saint Luke's",
+  "AdventHealth",
+  "Medicare",
+  "KanCare",
+  "MO HealthNet",
+  "Lockton Affinity",
+  "Local Independent Medicare Specialists",
+  "Senior Security Benefits",
+  "Medicare Advantage and Medicare Supplement",
+  "BCBSKC",
+  "Aetna",
+  "UnitedHealthcare Medicare",
+  "US Insurance Solutions",
+  "Local KC Independent Agents",
+  "Ask Any KC Broker Before You",
+  "State Farm",
+  "Bankers Life",
+  "Kansas and Missouri",
+  "ACA Marketplace",
+  "Kansas City ZIP",
+  "In Kansas",
+  "Medicare Advantage",
+  "Independent Brokers",
+  "Kansas Side",
+  "KC Broker",
+  "Medicare Supplement",
+  "Kansas City Metro",
+  "Independent Agents",
+  "University of Kansas Health System"
+ ],
+ "engine_stated_criteria": [
+  "\"Are you captive or independent?\"",
+  "\"Do you charge a fee?\""
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Finding the right health insurance plan in Kansas City (on either the Missouri or Kansas side of the metro) can be overwhelming, but working with an independent health insurance broker is free—they are paid by the insurance companies, and their rates are identical to what you’d find going direct. \n\nHere are the top local brokerages and specific brokers in the Kansas City area known for strong customer service, deep knowledge of local networks (like Saint Luke's, AdventHealth, and The University of Kansas Health System), and expertise in both ACA (Obamacare) plans and private/Medicare options.\n\n---\n\n### 1. Cornerstone Brokerage Services\n* **Best for:** Individual, family, and small business health insurance.\n* **Why call them:** Based in Overland Park, Cornerstone is one of the most respected independent agencies in the Kansas City metro. They specialize in helping individuals navigate both the ACA marketplace (Healthcare.gov / KanCare / MO HealthNet) and off-exchange private policies. They take an educational approach rather than a high-pressure sales pitch.\n* **What to ask:** \"Can you help me compare subsidies on the Kansas/Missouri exchange versus private medically underwritten plans?\"\n\n### 2. Creative Planning Insurance (formerly Lockton Affinity / various local acquisitions)\n* **Best for:** High-net-worth individuals, complex self-employed situations, and comprehensive wealth-integrated financial planning.\n* **Why call them:** While Creative Planning is nationally known for wealth management, their local Kansas City insurance division handles high-end individual medical, Medicare, and property/casualty needs. If you want health insurance viewed through the lens of overall tax and financial strategy, they are a great call.\n\n### 3. Midlands Choice / Local Independent Medicare Specialists (e.g., Senior Security Benefits)\n* **Best for:** Medicare Advantage and Medicare Supplement (Medigap) plans.\n* **Why call them:** If you are turning 65 or helping a parent, standard health insurance brokers aren't always the best fit. You want a specialist who understands the nuances of Blue Cross and Blue Shield of Kansas City (BCBSKC), Aetna, and UnitedHealthcare Medicare networks specific to KC hospitals. \n* **Tip:** Look for independent local agencies that represent *multiple* carriers rather than captive agents who only sell one brand.\n\n### 4. US Insurance Solutions (Local KC Independent Agents)\n* **Best for:** Self-employed freelancers, gig workers, and families looking for alternatives to ACA plans.\n* **Why call them:** Many KC residents who don't qualify for ACA subsidies find marketplace premiums unaffordable. Independent brokers like those at US Insurance Solutions specialize in alternative options (such as short-term plans, indemnity plans, or health-sharing ministries, where applicable) and can walk you through the pros and cons of each compared to traditional insurance.\n\n---\n\n### Key Questions to Ask Any KC Broker Before You Choose:\n\n1. **\"Are you captive or independent?\"** \n   * *Make sure they are independent.* Captive agents (like a single State Farm or Bankers Life agent) can only sell you one company's products. Independent brokers can shop across BCBSKC, Aetna, Humana, Ambetter, and others.\n2. **\"Does my preferred doctor and hospital system take this network?\"** \n   * The KC market is heavily divided by provider networks (e.g., some plans exclude The University of Kansas Health System or specific local hospital groups). Ensure your broker checks the specific network directory, not just the brand name.\n3. **\"Do you charge a fee?\"** \n   * Legitimate ACA and major medical brokers in Kansas and Missouri **do not charge clients a fee**; they are compensated via commission from the insurers. Walk away if someone tries to charge you an upfront consulting fee for standard health insurance shopping.\n\n### Next Steps:\nIf you are buying an **ACA Marketplace plan**, you can also look up certified local brokers directly on the official federal platform via **[Healthcare.gov/find-local-help](https://www.healthcare.gov/find-local-help/)** by entering your Kansas City ZIP code. This ensures the broker is officially certified to help you secure federal premium tax credits.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
