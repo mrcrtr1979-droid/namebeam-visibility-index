@@ -1,0 +1,56 @@
+# Nightly gold score for name extraction. Public repo, free minutes. Writes one line to status/GOLD_SCORE.csv.
+# It does NOT run the extractor and makes no model calls. It scores committed predictions against the committed gold set.
+# It refuses to run unless both input files exist (see the preflight step). Nothing here uses a secret.
+name: gold_score_nightly
+
+on:
+  schedule:
+    - cron: "20 8 * * *"   # 08:20 UTC nightly
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gold_score_nightly
+  cancel-in-progress: false
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Offline tests
+        run: python3 -I tools/test_gold_scorer.py
+
+      - name: Preflight (inputs must be committed)
+        run: |
+          for f in data/gold/gold_1014d_a9.csv data/gold/predicted_1014d_a9.csv; do
+            if [ ! -f "$f" ]; then echo "missing input: $f. No score written."; exit 1; fi
+          done
+
+      - name: Score
+        run: |
+          python3 -I tools/gold_scorer.py \
+            --gold data/gold/gold_1014d_a9.csv \
+            --predicted data/gold/predicted_1014d_a9.csv \
+            --out status/GOLD_SCORE.csv \
+            --date "$(date -u +%F)" \
+            --run-id "$GITHUB_RUN_ID"
+
+      - name: Commit the score line
+        if: success()
+        run: |
+          git config user.name "gold-score-bot"
+          git config user.email "gold-score-bot@users.noreply.github.com"
+          git add status/GOLD_SCORE.csv
+          git commit -m "gold score ${GITHUB_RUN_ID} [skip ci]" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break || sleep 5; done
