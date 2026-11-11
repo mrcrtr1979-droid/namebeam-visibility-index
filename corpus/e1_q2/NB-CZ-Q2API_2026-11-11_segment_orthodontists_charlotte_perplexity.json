@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-11_segment_orthodontists_charlotte_perplexity",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: orthodontists, Charlotte",
+ "niche": "orthodontists",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Charlotte. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Charlotte for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_32bd99c4-568e-4b9f-a45d-448184ab0d3d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00146,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00519
+   },
+   "input_tokens": 4901,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4348,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 583,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5484
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Valeriano Orthodontics — Fairview",
+  "Lineberger Orthodontics — Caswell",
+  "Bond Orthodontics",
+  "Call the office to confirm current number",
+  "OrthoCare Orthodontics — Dr. Ford S. Cooper",
+  "Smart Orthodontics",
+  "My starting shortlist",
+  "Invisalign",
+  "Valeriano Orthodontics",
+  "Fairview",
+  "Offers",
+  "Dr. Sophie Moon",
+  "Lineberger Orthodontics",
+  "American Board of Orthodontics",
+  "OrthoCare Orthodontics",
+  "Dr. Ford S. Cooper",
+  "Valeriano and Lineberger",
+  "South Charlotte",
+  "Practice"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9ad5ad406f5e567f8e0537c6244279236ce69c5d771daca4552c281898185cfa",
+ "answer_chars": 2243,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "ce9133566fb4e1613ba7f24396be1671c266d01d05378d07f921b28cb813d6e5",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

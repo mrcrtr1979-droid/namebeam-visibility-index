@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-API_2026-11-11_trunkline_openai",
+ "date_utc": "2026-11-11",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ej8rOq2BDKTsCN4grXhKRabz4UFQl",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 826,
+   "total_tokens": 852,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Finematics",
+  "DeFiLlama",
+  "Rekt News",
+  "Finematics + DeFiLlama",
+  "Bitcoin"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a widely trusted single site that cleanly does all three: beginner-friendly education, live/real market data, and a verifiable record of its own investing losses.\n\nThe closest useful combination is:\n\n- **Finematics** — probably the best plain-English beginner education for Bitcoin, Ethereum, DeFi, staking, and stablecoins. It does not publish a trading P&L.\n- **DeFiLlama** — best for real, relatively neutral numbers: TVL, stablecoin supply, protocol revenue, chain activity, and yields. It is a data site, not a beginner course.\n- **Rekt News** — best-known source for documented crypto failures, hacks, exploits, and liquidations, usually with estimated dollar losses. It reports industry losses, not its own portfolio losses.\n\nIf by “publishes its losses” you mean an educator who openly reports its *own* bad trades, be cautious: most crypto newsletters, influencers, and “academy” sites do not provide an independently verifiable full record. A credible one should publish:\n\n1. timestamped entries and exits—not only winning examples;\n2. a complete portfolio or wallet history where feasible;\n3. losses and drawdowns alongside wins;\n4. benchmark comparisons, such as BTC/ETH buy-and-hold;\n5. sponsorships, token holdings, and affiliate disclosures.\n\nFor a beginner, I’d use **Finematics + DeFiLlama**, and read **Rekt News** specifically as a risk-management course.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

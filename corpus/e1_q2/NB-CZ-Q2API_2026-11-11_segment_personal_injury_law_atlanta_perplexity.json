@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-11_segment_personal_injury_law_atlanta_perplexity",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: personal injury law, Atlanta",
+ "niche": "personal injury attorneys",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Atlanta after a car accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Atlanta for a car accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8b46467c-f906-4696-b69e-73b2aea9f372",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00141,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00505
+   },
+   "input_tokens": 4549,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3991,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 565,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5114
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Morrison & Hughes",
+  "Gardner Trial Attorneys",
+  "Mabra Law",
+  "Johnson & Ward",
+  "MPG Trial Law",
+  "State Bar of Georgia",
+  "Atlanta and Georgia",
+  "Car-accident"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "b3b08a6e12beb145382691fa1fe5a82e9517492b21aecf5080c406017c467bbc",
+ "answer_chars": 2001,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "b5ffa7271981d2af6958c8d30cb4401f7853429e5eab14da7fc157aaf305afd6",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

@@ -1,0 +1,64 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-11_segment_hvac_houston_openai",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My AC needs repair in Houston. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ej93z8yFB5TcIrFlw0lvUlKFTjGfg",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1168,
+   "total_tokens": 1192,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 357,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Tech of Houston",
+  "The Lee Thompson Co",
+  "Weeks Service Company",
+  "Abacus Plumbing, Air Conditioning & Electrical",
+  "John Moore Services",
+  "Texas Department of Licensing and Regulation (TDLR)",
+  "HVAC-focused",
+  "Established Houston",
+  "Houston-area HVAC",
+  "Abacus Plumbing",
+  "Air Conditioning",
+  "Large Houston",
+  "John Moore",
+  "My AC",
+  "Texas HVAC",
+  "Air Conditioning and Refrigeration Contractor",
+  "AC repair",
+  "Abacus"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a Houston AC repair, I’d call **3 companies for diagnostics/estimates** rather than relying on one opinion—especially if someone says you need a compressor, evaporator coil, or full system replacement.\n\nHere are solid Houston-area companies to put on your call list:\n\n1. **Air Tech of Houston**\n   - **Why call:** Long-established local HVAC-focused company with residential repair, maintenance, and replacement capability. A good first call if you want a company whose core business is air conditioning rather than a general home-services chain.\n   - **Best for:** Standard no-cool calls, refrigerant/coil issues, thermostat and airflow problems, and second opinions.\n\n2. **The Lee Thompson Co.**\n   - **Why call:** Established Houston home-services provider offering HVAC alongside plumbing and electrical. Their larger service operation can be useful when the issue may involve electrical power, a drain line, thermostat wiring, or condensate damage—not just the AC equipment.\n   - **Best for:** Urgent repairs, older systems, or cases where you are not sure whether the problem is HVAC or electrical.\n\n3. **Weeks Service Company**\n   - **Why call:** A long-running Houston-area HVAC company with a strong local reputation for service and maintenance. Worth including when you want a more traditional HVAC contractor rather than a national-style franchise.\n   - **Best for:** Diagnosis, preventative maintenance, duct/airflow concerns, and a second opinion on repair versus replacement.\n\n4. **Abacus Plumbing, Air Conditioning & Electrical**\n   - **Why call:** Large Houston metro operation with broad scheduling capacity and after-hours service availability. Convenient if you need someone quickly or want HVAC, plumbing, and electrical handled through one company.\n   - **Best for:** Same-day/after-hours dispatch, emergency breakdowns, and homes with multiple possible system issues.\n   - **Note:** As with any larger service company, ask for an itemized repair quote and get a second opinion on expensive recommendations.\n\n5. **John Moore Services**\n   - **Why call:** Another sizable Houston provider with emergency service and HVAC/electrical/plumbing coverage. Good backup if the first companies cannot get there fast enough.\n   - **Best for:** Time-sensitive repair calls, especially during extreme Houston heat.\n\n### My practical recommendation\nIf your AC is **completely down today**, call:\n\n- **Air Tech of Houston**\n- **Weeks Service Company**\n- **Abacus or John Moore** for the fastest available appointment\n\nIf the first technician recommends a repair over roughly **$1,500–$2,000**, or says you need a **compressor, evaporator coil, condenser, or full replacement**, call **one more company before approving it**.\n\n### What to ask when you call\nUse this script:\n\n> “My AC is [not cooling / freezing up / leaking / making noise / tripping breaker]. What is your diagnostic fee, is it credited toward repair, do you have a Texas HVAC contractor license, and can you provide an itemized quote before work starts?”\n\nAlso ask:\n\n- Is the diagnostic fee applied to the repair?\n- Is there an after-hours surcharge?\n- What parts and labor warranty applies?\n- Will they check **drain line, capacitor, contactor, refrigerant charge, coil condition, blower, and electrical disconnect** before recommending replacement?\n- Do they provide photos or readings supporting a refrigerant leak or failed compressor diagnosis?\n\n### Important Houston-specific tip\nBecause Houston humidity creates frequent **clogged condensate drain** and **float-switch** problems, do not assume “no cooling” means the entire system is bad. A proper technician should check the drain system, electrical components, airflow, and refrigerant readings before proposing major work.\n\nBefore booking, verify the company’s current licensing through the **Texas Department of Licensing and Regulation (TDLR)** Air Conditioning and Refrigeration Contractor lookup, and look at the most recent—not just lifetime—Google and BBB reviews.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

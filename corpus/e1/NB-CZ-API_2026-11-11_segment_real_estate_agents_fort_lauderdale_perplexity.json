@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-11-11_segment_real_estate_agents_fort_lauderdale_perplexity",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: real estate agents, Fort Lauderdale",
+ "niche": "real estate agents",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Fort Lauderdale FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_752fe021-873c-47c6-b472-5c3d6c811cd1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 5133,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4583,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 314,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5447
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sandra Rathe of REAL Broker",
+  "Desare Kohn-Laski of Skye Louis Realty",
+  "Larry Mastropieri of The Mastropieri Group",
+  "Sandra Rathe",
+  "Larry Mastropieri",
+  "Desare Kohn-Laski",
+  "Sandra Rathe of REAL"
+ ],
+ "engine_stated_criteria": [
+  "closed listings in your neighborhood"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "6e0c9c2fc0d9bd0a82e90afda4150f18013e74afefa75b29c12f52d0e59f5395",
+ "answer_chars": 1136,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "b5a801977244dafab3baf71b13019b87e925154ce12747790b6eefb04d0d4f33",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

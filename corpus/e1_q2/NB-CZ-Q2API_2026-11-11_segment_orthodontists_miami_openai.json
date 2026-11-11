@@ -1,0 +1,64 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-11_segment_orthodontists_miami_openai",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: orthodontists, Miami",
+ "niche": "orthodontists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Miami. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Miami for braces or Invisalign?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ej9QJtYHxQxeO0ICsmroiGzyUfLC4",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 2355,
+   "total_tokens": 2380,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1536,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "American Board of Orthodontics (ABO) diplomate",
+  "Orthodontics",
+  "Invisalign/clear aligners",
+  "Braces",
+  "Coral Gables",
+  "Miami Beach",
+  "Invisalign",
+  "American Board of Orthodontics",
+  "ABO",
+  "Diamond",
+  "AAO-member",
+  "Use the Florida Department of Health",
+  "ABO-certified",
+  "Invisalign. Is"
+ ],
+ "engine_stated_criteria": [
+  "Cross-check their Florida license",
+  "named orthodontist who will actually plan your case",
+  "ZIP code, age, whether you have insurance, and how far you’ll travel"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I can help narrow this to specific offices, but I’d need your ZIP code (Miami proper, Brickell, Coral Gables, Kendall, Doral, Miami Beach, Aventura, etc. are very different drives), whether this is for an adult or child/teen, and your insurance/budget.\n\nI would **not** choose an orthodontist just from an old “top Invisalign provider” list: those rankings mainly reflect case volume and can be outdated. For Miami, I’d call **three nearby orthodontic specialists**—not general dentists who also offer Invisalign—using this screen:\n\n1. **American Board of Orthodontics (ABO) diplomate**  \n   Search: https://www.americanboardortho.com/patients-and-families/find-an-orthodontist/  \n   Why: ABO certification is a meaningful extra credential for an orthodontist. It is not a guarantee of results, but it is a better filter than social-media reviews or Invisalign “Diamond” badges.\n\n2. **AAO-member orthodontist who offers both braces and Invisalign**  \n   Search: https://aaoinfo.org/find-an-orthodontist/  \n   Why: A practice that regularly does both is less likely to steer every patient toward whichever product it markets most aggressively.\n\n3. **Cross-check their Florida license**  \n   Use the Florida Department of Health license lookup and confirm the dentist is listed with the specialty **Orthodontics**.  \n   Why: “Invisalign provider” alone does not mean the clinician completed orthodontic specialty training.\n\n### Who I would call first\nFor your exact neighborhood, pick the **two closest ABO-certified orthodontists** from the ABO directory plus **one AAO orthodontist with strong local access and a free consultation**. Do not limit yourself to one office—treatment plans, extraction recommendations, and fees can differ substantially.\n\nAsk each office for a consultation with the **named orthodontist who will actually plan your case**, not just a treatment coordinator.\n\n### What to ask on the calls\nUse this script:\n\n> “I’m considering braces versus Invisalign. Is the doctor an orthodontic specialist and ABO board-certified? Does the orthodontist personally review my scans and treatment plan? What is the all-in fee, including records, attachments, refinements, emergency visits, retainers, and post-treatment follow-up?”\n\nAlso ask:\n\n- “Would you recommend braces or aligners **for my bite**, and why?”\n- “How many Invisalign refinements are included?”\n- “Are retainers included, and how many?”\n- “If I move, what are the transfer/refund terms?”\n- “Do you offer a payment plan, and do you verify my orthodontic insurance benefit before I start?”\n- “Will I need IPR, attachments, elastics, extractions, or jaw-surgery evaluation?”\n\n### Braces vs. Invisalign: practical rule\n- **Invisalign/clear aligners** can be excellent for many adult and teen cases, especially if you will wear them **20–22 hours/day** and keep up with trays and elastics.\n- **Braces** are often more dependable when there are major bite issues, significant rotations, difficult tooth movements, impacted teeth, or concern that aligners will not be worn consistently.\n- A good orthodontist should be comfortable recommending either—and should explain why one is more predictable for *your* teeth.\n\n### One caution\nA “Diamond,” “Platinum,” or similar Invisalign designation means the office has done a certain volume of Invisalign cases. It can be useful as a sign they are familiar with the system, but it is **not** proof that they are an orthodontic specialist or that they are the best choice for a complex case.\n\nReply with your **ZIP code, age, whether you have insurance, and how far you’ll travel**, and I’ll give you a short, practical list of specific Miami-area orthodontists to contact first.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

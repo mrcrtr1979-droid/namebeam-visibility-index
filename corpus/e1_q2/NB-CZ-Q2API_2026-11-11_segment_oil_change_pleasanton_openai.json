@@ -1,0 +1,65 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-11_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ej9EkTKom5ejFRjXyWlYmbwXz8gVh",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1040,
+   "total_tokens": 1068,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 208,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jiffy Lube — Pleasanton",
+  "Watch for",
+  "Big O Tires — Pleasanton",
+  "Tradeoff",
+  "SpeeDee",
+  "Jiffy Lube",
+  "Big O Tires",
+  "SpeeDee Oil Change",
+  "Auto Service",
+  "Whether",
+  "Ace Auto Care",
+  "ASE-certified",
+  "OEM-quality",
+  "European",
+  "Need",
+  "SpeeDee Oil Change & Auto Service"
+ ],
+ "engine_stated_criteria": [
+  "Your brand dealer service department",
+  "Have a European luxury car, hybrid, or car under warranty"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a straightforward oil change in Pleasanton, I’d call these types of shops in this order:\n\n1. **SpeeDee Oil Change & Auto Service — Pleasanton**\n   - **Why call:** Usually a good middle ground between a fast-lube chain and a full repair shop. They can typically handle a basic synthetic oil change quickly, but also have the ability to inspect brakes, fluids, tires, and minor issues if you want that.\n   - **Best for:** Most mainstream cars—Toyota, Honda, Ford, Chevrolet, Hyundai, Subaru, etc.\n   - **Ask:** “What is your out-the-door price for a full-synthetic oil change for a [year/make/model], including filter, shop fees, and disposal?”\n\n2. **Jiffy Lube — Pleasanton**\n   - **Why call:** Convenient, generally quick, and often has online/mail coupons. Good if you need the oil changed today and do not need diagnosis or repair work.\n   - **Best for:** A routine oil-and-filter change when speed and convenience matter.\n   - **Watch for:** Confirm the final price before authorizing anything; decline extra services you do not want. Ask them to use the oil viscosity and specification listed in your owner’s manual.\n\n3. **Big O Tires — Pleasanton**\n   - **Why call:** Worth considering if you also need a tire rotation, tire-pressure check, brake inspection, or are due for tires soon. Combining services can be more convenient than making separate appointments.\n   - **Best for:** Oil change plus tire-related maintenance.\n   - **Ask:** Whether they can rotate your tires at the same visit and whether there is a package price.\n\n4. **A reputable independent full-service mechanic in Pleasanton, such as Ace Auto Care or another ASE-certified local shop**\n   - **Why call:** Independents are often the best choice if your car is older, has a warning light, leaks oil, burns oil, or you want someone who will notice developing problems rather than simply perform a quick-lube service.\n   - **Best for:** Older cars, higher-mileage vehicles, or anyone wanting an ongoing mechanic relationship.\n   - **Ask:** Whether they perform a multipoint inspection, use OEM-quality filters, and can document the exact oil specification used.\n\n5. **Your brand dealer service department**\n   - **Why call:** Best choice for a newer vehicle under warranty, a luxury/European vehicle, or a car with a manufacturer-specific oil requirement—especially BMW, Mercedes-Benz, Audi, VW, Volvo, Porsche, or some newer turbo/hybrid models.\n   - **Best for:** Warranty records, factory-required oil specs, service reminders, and software/recall checks.\n   - **Tradeoff:** Usually more expensive than an independent or quick-lube shop.\n\n### My practical recommendation\n- **Need it fast today:** Call **SpeeDee** and **Jiffy Lube** first; choose the one that gives a clear all-in price and can confirm the correct oil spec.\n- **Want better long-term care for the car:** Call a **well-reviewed ASE-certified independent mechanic** in Pleasanton.\n- **Have a European luxury car, hybrid, or car under warranty:** Call the **dealer** or a specialist before using a quick-lube chain.\n- **Need tires/brakes checked too:** Call **Big O Tires**.\n\n### What to say when you call\n> “I have a [year] [make] [model] with about [mileage] miles. I need an oil and filter change. What is the **out-the-door total** for the manufacturer-required oil type and filter? Does that include fees, disposal, and a reset of the maintenance reminder? How long will it take, and do I need an appointment?”\n\nAlso ask them not to add services without approval. For most cars, the important part is not the shop logo—it is that they use the **correct oil viscosity and manufacturer specification**, install a decent filter, set the oil level correctly, and document the service.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-11_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Phoenix. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c140b610-dcf2-48a2-82d1-22f963ee5ac5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00158,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00529
+   },
+   "input_tokens": 4843,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4290,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 633,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5476
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Serrano Orthodontics",
+  "Smile Straight Orthodontics",
+  "Butterfly Orthodontics",
+  "Team Orthodontics",
+  "Budd Orthodontics",
+  "Central Phoenix",
+  "Offers",
+  "Invisalign. Its",
+  "American Board of Orthodontics",
+  "North Phoenix",
+  "Invisalign",
+  "Dr. Chad Foster",
+  "Dr. Ken Danyluk",
+  "Central and North Phoenix",
+  "Invisalign. Confirm",
+  "Diamond"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9ab824b00934d4ab9fb7efb3c03696fddf6a53a57dbfedfe50466893a25a9980",
+ "answer_chars": 2307,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "dd9630ce0747499a1cdf046481746199f0c00f6a8f8ef500c21ceb119629f45e",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

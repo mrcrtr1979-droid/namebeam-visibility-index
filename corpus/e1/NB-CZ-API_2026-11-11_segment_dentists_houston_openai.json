@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-API_2026-11-11_segment_dentists_houston_openai",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: dentists, Houston",
+ "niche": "dentists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Houston for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ej7uUPZO7IF1thPhBIqj6RwrdF4yD",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 755,
+   "total_tokens": 773,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 285,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UTHealth Houston School of Dentistry",
+  "Houston-area board-certified periodontists",
+  "Board-certified oral surgeons",
+  "Board-certified prosthodontists",
+  "American Academy of Periodontology",
+  "Board-certified",
+  "ABOMS",
+  "D CBCT",
+  "UTHealth Houston"
+ ],
+ "engine_stated_criteria": [
+  "Are they board-certified in periodontics, oral surgery, or prosthodontics?",
+  "Do they use a 3-D CBCT scan and surgical guide when appropriate?",
+  "How many implants/full-arch cases do they perform each year?",
+  "What brand of implant do they use, and will parts be available long-term?",
+  "What is the all-in price"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” implant dentist in Houston—the right choice depends on whether you need simple single-tooth replacement, bone grafting, a sinus lift, or full-arch implants.\n\nFor most implant cases, look for a **board-certified periodontist or oral & maxillofacial surgeon** to place the implant, working with a **prosthodontist or experienced restorative dentist** for the crown. For complex or full-mouth cases, a team approach is usually better than a general dentist doing everything alone.\n\nGood Houston starting points include:\n\n- **UTHealth Houston School of Dentistry** — specialty clinics in periodontics, prosthodontics, and oral/maxillofacial surgery; useful for complex cases and second opinions.\n- **Houston-area board-certified periodontists** — search the American Academy of Periodontology directory: **perio.org**\n- **Board-certified oral surgeons** — use the ABOMS directory: **aboms.org**\n- **Board-certified prosthodontists** — search **abpros.org** for dentists focused on implant crowns, bridges, and full-mouth rehabilitation.\n\nWhen comparing offices, ask:\n\n1. **Who places the implant, and who makes the final crown?**\n2. **Are they board-certified in periodontics, oral surgery, or prosthodontics?**\n3. **Do they use a 3-D CBCT scan and surgical guide when appropriate?**\n4. **How many implants/full-arch cases do they perform each year?**\n5. **What brand of implant do they use, and will parts be available long-term?**\n6. **What is the all-in price**—including scan, extraction, grafting, implant, abutment, crown, and follow-ups?\n7. **What happens if the implant fails or needs repair?**\n\nRed flags: an unusually low “implant special” that excludes the crown or grafting, no CBCT evaluation for a complex case, pressure to do same-day treatment without discussing alternatives, or no clear explanation of the restorative plan.\n\nIf you tell me your Houston neighborhood, whether it’s one tooth or full-mouth treatment, and whether you may need bone grafting, I can help narrow the type of specialist and what a reasonable Houston price range looks like.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,42 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-11_segment_roofing_dallas_anthropic",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: roofing, Dallas",
+ "niche": "residential roofing",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need my roof replaced in Dallas. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofing company in Dallas for a roof replacement?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_wnv6ofgq6n4koggw45mo66xfz3z5z2iu42mljgvo4q4xcibla6bq",
+  "usage": {
+   "input_tokens": 28,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 270,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dallas-specific considerations"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest a different approach than me recommending specific companies:\n\n**How to find good local options:**\n- Check Google Reviews and BBB ratings for Dallas roofers (filter by recent reviews)\n- Ask neighbors or your HOA for recommendations\n- Get 3-4 quotes to compare pricing and warranties\n- Verify licensing through the Texas Department of Licensing and Regulation\n\n**What to evaluate when comparing:**\n- Insurance and bonding (essential)\n- How long they've been in business locally\n- Warranty terms (materials vs. workmanship)\n- Whether they handle your specific roof type\n- Timeline and payment schedule\n\n**Red flags to avoid:**\n- Pressure to decide immediately\n- Requests for full payment upfront\n- No written contract\n- Unlicensed contractors\n\n**Dallas-specific considerations:**\n- Hail damage is common—check if they work with insurance claims\n- Summer heat means timing matters for some materials\n\nRather than naming companies (which could be outdated or not fit your specific needs), these evaluation steps will help you find whoever's actually best for your situation right now.\n\nWhat's prompting the replacement—age, damage, or something else? That might affect what type of contractor to prioritize.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

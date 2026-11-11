@@ -1,0 +1,54 @@
+{
+ "check_id": "NB-CZ-API_2026-11-11_segment_hvac_houston_openai",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ej73SBJteaOSijbgbNijESarY1pFs",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 562,
+   "total_tokens": 580,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 271,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Tech of Houston",
+  "The AC Guy of Houston",
+  "Richmond’s Air",
+  "John Moore Services",
+  "Custom Comfort Air",
+  "Texas HVAC contractor license",
+  "Houston AC-repair",
+  "Texas HVAC",
+  "Houston ZIP",
+  "AC repair",
+  "John Moore"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” Houston AC-repair company—service quality, pricing, and response time vary by neighborhood and technician. But **Air Tech of Houston** is a solid starting point for an established local company with a long Houston presence and a focus on HVAC repair.\n\nAlso worth comparing with at least two other licensed local providers, such as:\n\n- **The AC Guy of Houston**\n- **Richmond’s Air**\n- **John Moore Services** — larger company; often convenient for fast scheduling, though pricing can be higher\n- **Custom Comfort Air** — another established Houston-area option\n\nBefore authorizing work, ask each company for:\n\n1. A diagnostic fee and whether it is credited toward the repair  \n2. A written, itemized estimate  \n3. The technician’s **Texas HVAC contractor license** information  \n4. Parts and labor warranty terms  \n5. Whether they will provide refrigerant readings, capacitor/motor test results, or photos supporting the diagnosis  \n\nFor a Houston AC repair, I’d generally avoid choosing solely by the lowest service-call fee—misdiagnosis or unnecessary upsells can cost far more than a slightly higher diagnostic charge.\n\nIf you share your Houston ZIP code, AC brand/model, and whether it is cooling at all, running but blowing warm air, freezing up, or making noise, I can help narrow down the best type of company and likely repair.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

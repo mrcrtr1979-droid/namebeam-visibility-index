@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-API_2026-11-11_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ej72VJ3cf4E8huQLbMrt0wOP9JGsB",
+  "usage": {
+   "prompt_tokens": 20,
+   "completion_tokens": 632,
+   "total_tokens": 652,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 297,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PV Heating, Cooling & Plumbing",
+  "Moncrief Heating & Air Conditioning",
+  "Reliable Heating & Air",
+  "Casteel Heating, Cooling, Plumbing & Electrical",
+  "Estes Services",
+  "Manual J load calculation",
+  "AHRI-certified",
+  "PV Heating",
+  "Cooling",
+  "Moncrief Heating",
+  "Air Conditioning",
+  "Reliable Heating",
+  "Casteel Heating",
+  "Moncrief Heating & Air",
+  "Labor Warranty"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For an air-conditioner replacement in Atlanta, **PV Heating, Cooling & Plumbing** would be my first call—especially if you want the system properly sized and installed rather than simply replacing the outdoor unit with a larger one. They have a strong reputation for building-science-focused HVAC work, including load calculations, duct evaluation, and commissioning.\n\nAlso worth getting comparison quotes from:\n\n- **Moncrief Heating & Air Conditioning** — long-established Atlanta company; good option for conventional replacement projects.\n- **Reliable Heating & Air** — broad metro coverage and often competitive for standard systems.\n- **Casteel Heating, Cooling, Plumbing & Electrical** — convenient larger-company option, though compare pricing carefully.\n- **Estes Services** — established local provider with HVAC and related home-service capabilities.\n\nBefore choosing, get **at least three written proposals** and require each company to include:\n\n1. A **Manual J load calculation** or clear sizing rationale—not “replace it with the same tonnage.”\n2. The exact **outdoor unit, indoor coil, furnace/air handler, and thermostat model numbers**.\n3. Confirmation that the proposed combination is **AHRI-certified** for its stated efficiency.\n4. Ductwork, electrical, condensate-drain, permit, and startup/commissioning details.\n5. Labor warranty terms in addition to the manufacturer parts warranty.\n6. Proof of Georgia conditioned-air licensing and insurance.\n\nFor most Atlanta homes, the “best” installer is usually the one that correctly sizes the equipment, addresses duct leakage/airflow, and documents the install—not necessarily the company offering the lowest equipment price.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

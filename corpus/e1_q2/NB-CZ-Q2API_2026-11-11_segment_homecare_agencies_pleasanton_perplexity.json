@@ -1,0 +1,98 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-11_segment_homecare_agencies_pleasanton_perplexity",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: homecare agencies, Pleasanton",
+ "niche": "home care agencies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My elderly parent needs home care in Pleasanton. Which specific home care agencies should I call, and why?",
+ "q1_prompt_text": "What is the best home care agency in Pleasanton CA for an elderly parent?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_bacea19f-a31e-4e1d-a193-ce80913e6563",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00149,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00522
+   },
+   "input_tokens": 4900,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4344,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 594,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5494
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton, California",
+  "Home Instead – Pleasanton",
+  "Senior Helpers – Pleasanton",
+  "Right at Home – East Bay",
+  "Seniors Helping Seniors – Tri-Valley",
+  "ComForCare – Tri-Valley",
+  "Alameda County’s Area Agency on Aging",
+  "Home Instead",
+  "Local Pleasanton",
+  "Senior Helpers",
+  "East Bay",
+  "Seniors Helping Seniors",
+  "Tri-Valley",
+  "ComForCare",
+  "Serves Pleasanton",
+  "Alameda County",
+  "Area Agency",
+  "In-Home Supportive Services. Eligibility",
+  "Right at Home",
+  "Right",
+  "Aging",
+  "Home Supportive Services",
+  "Pleasanton Office"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "6af4fc9ff1e8a2ae87d0dd2a11fbac56fdf958ac42b214edca55ba56850d9f4a",
+ "answer_chars": 2326,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "3871d4e1cb5e74d3b75ffcb55fffae828396d232ad5dd731ac41290c57317564",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

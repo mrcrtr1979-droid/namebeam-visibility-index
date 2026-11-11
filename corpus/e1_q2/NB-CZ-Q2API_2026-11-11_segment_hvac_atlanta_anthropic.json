@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-11_segment_hvac_atlanta_anthropic",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a new air conditioner installed in Atlanta. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_vutuuotkhufnl7tloby65mrikln2hagvl3onz4zrv6vf5ppcbguq",
+  "usage": {
+   "input_tokens": 31,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 268,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atlanta-specific note",
+  "NATE",
+  "NATE certification",
+  "Warranty terms",
+  "Response time"
+ ],
+ "engine_stated_criteria": [
+  "What to evaluate when you call"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest a different approach than me recommending specific companies:\n\n**How to find good local options:**\n- Google \"HVAC installation Atlanta\" + filter by recent reviews\n- Check BBB.org and Angie's List for ratings and complaint history\n- Ask neighbors/friends for referrals (often most reliable)\n- Call 3-5 companies for quotes and compare\n\n**What to evaluate when you call:**\n- NATE certification (technician credential)\n- Licensing and insurance\n- Warranty terms (equipment + labor)\n- Whether they do a proper load calculation (not just \"you need X tons\")\n- Upfront pricing vs. vague estimates\n- Response time for service calls\n\n**Red flags:**\n- Pressure to decide immediately\n- Significantly lower prices than others\n- No written warranty\n- Unwilling to explain their process\n\n**Atlanta-specific note:** Your climate means efficiency matters—ask about SEER ratings and whether they recommend variable-speed systems.\n\nGetting multiple quotes takes an hour but typically saves hundreds. The cheapest option often isn't the best value once you factor in reliability and warranty support.\n\nWhat size space are you cooling, or is this your first time getting quotes?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

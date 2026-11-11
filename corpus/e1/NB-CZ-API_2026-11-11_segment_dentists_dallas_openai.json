@@ -1,0 +1,61 @@
+{
+ "check_id": "NB-CZ-API_2026-11-11_segment_dentists_dallas_openai",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ej7UpukntbA8NJkhimaSSfBOafah7",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 621,
+   "total_tokens": 639,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 152,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Board-certified oral and maxillofacial surgeon",
+  "Board-certified periodontist",
+  "Prosthodontist",
+  "American Academy of Periodontology (AAP)",
+  "American College of Prosthodontists (ACP)",
+  "Board-certified",
+  "ABOMS",
+  "American Academy of Periodontology",
+  "American College of Prosthodontists",
+  "Texas A&M University College of Dentistry",
+  "D CBCT",
+  "Maxillofacial Surgery",
+  "Oral and Maxillofacial Surgery"
+ ],
+ "engine_stated_criteria": [
+  "How many implants do they place annually?",
+  "Will they use 3-D CBCT imaging and a surgical guide when appropriate?",
+  "What brand of implant system do they use?",
+  "What is the all-in cost?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” implant dentist in Dallas—success depends heavily on your bone/gum condition, whether you need an extraction or graft, and the quality of the surgeon *and* final crown restoration.\n\nFor a dental implant, I’d prioritize one of these specialists:\n\n- **Board-certified oral and maxillofacial surgeon** — especially if you need extraction, bone grafting, sedation, or complex treatment.\n- **Board-certified periodontist** — especially if gum disease or bone loss is involved.\n- **Prosthodontist** — often ideal for planning the final implant crown/bridge and cosmetic bite result; many also place implants.\n\nIn Dallas, a strong starting point is to seek a consultation through:\n- **American Board of Oral and Maxillofacial Surgery (ABOMS)** directory  \n- **American Academy of Periodontology (AAP)** “Find a Periodontist” directory  \n- **American College of Prosthodontists (ACP)** provider directory  \n- **Texas A&M University College of Dentistry in Dallas**, which can be a good option for complex cases or a second opinion.\n\nWhen comparing Dallas practices, ask each office:\n\n1. **Who actually places the implant, and what is their specialty/board certification?**\n2. **How many implants do they place annually?**\n3. **Will they use 3-D CBCT imaging and a surgical guide when appropriate?**\n4. **Who designs the final crown—the implant surgeon or a restorative dentist/prosthodontist?**\n5. **What brand of implant system do they use?** Choose a widely supported major system so parts remain available.\n6. **What is the all-in cost?** Confirm whether it includes CT scan, extraction, graft, implant, abutment, crown, sedation, and follow-ups.\n7. **What happens if the implant does not integrate?**\n\nBe cautious with offices advertising unusually low “implant specials”; those prices often cover only the implant fixture, not the abutment and crown.\n\nIf you tell me your Dallas neighborhood, whether this is a single tooth or full-arch case, and whether you have insurance/budget constraints, I can help you narrow down the *type* of specialist and what a fair treatment plan should look like.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,54 @@
+{
+ "check_id": "NB-CZ-API_2026-11-11_segment_pi_car_accident_intake_pleasanton_shotland_pilot_openai",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: PI car accident intake, Pleasanton (Shotland pilot)",
+ "niche": "personal injury law",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I was in a car accident in Pleasanton CA. Which lawyer should I hire for my injury case?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ej7EqAHnVn9MrNOSds5hlDFDndIaq",
+  "usage": {
+   "prompt_tokens": 27,
+   "completion_tokens": 563,
+   "total_tokens": 590,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 110,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Use the California State Bar directory",
+  "Alameda County Bar Association Lawyer Referral Service",
+  "Alameda County",
+  "Use the California State Bar",
+  "LicenseeSearch",
+  "QuickSearch",
+  "Alameda County Bar Association Lawyer Referral",
+  "In California",
+  "Lawyer Referral Service",
+  "Alameda County Bar",
+  "Do Not Give a Recorded Statement"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a car-injury case in Pleasanton, look for a **California plaintiff-side personal injury attorney who regularly handles auto-collision cases in Alameda County**, not a general-practice lawyer or an insurance-defense lawyer.\n\nA good way to narrow it down:\n\n1. **Use the California State Bar directory** to verify the lawyer is active and has no concerning discipline history: https://apps.calbar.ca.gov/attorney/LicenseeSearch/QuickSearch  \n2. Look for lawyers who offer a **free consultation** and work on a **contingency fee**—typically, they are paid only from a recovery.\n3. Ask whether they personally handle litigation and trial work, or primarily settle cases quickly.\n4. Ask about experience with facts like yours: rear-end collision, disputed fault, uninsured driver, serious injury, commercial vehicle, rideshare, etc.\n5. Check independent reviews, but do not choose solely on advertising volume or promises of a specific dollar amount.\n\nQuestions to ask in consultations:\n- “Have you handled injury cases in Alameda County recently?”\n- “Who will actually work on my case?”\n- “What is your contingency fee, and does it increase if suit is filed?”\n- “Will I owe case costs if we do not recover?”\n- “Do you expect to investigate, obtain medical records, and negotiate liens?”\n- “Are you prepared to file suit if the insurer’s offer is unfair?”\n\nYou can also contact the **Alameda County Bar Association Lawyer Referral Service** for a referral to a qualified local attorney.\n\nA few immediate steps:\n- Get medical care and follow treatment advice.\n- Save photos, witness details, the police report number, repair estimates, bills, and missed-work information.\n- Do not give a recorded statement to the other driver’s insurer or sign a release without legal advice.\n- Notify your own insurer promptly, but stick to the facts.\n\nIn California, the usual deadline to file a personal-injury lawsuit is **two years from the crash**, though shorter deadlines—often as little as **six months**—can apply if a government entity or vehicle may be involved. Don’t wait to consult someone, especially if you have significant injuries or fault is disputed.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

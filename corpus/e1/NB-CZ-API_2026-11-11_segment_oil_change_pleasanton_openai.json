@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-API_2026-11-11_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ej7RSdO2FTJmUbs9ZbOA2Vu61EpsG",
+  "usage": {
+   "prompt_tokens": 21,
+   "completion_tokens": 818,
+   "total_tokens": 839,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Fastest / no appointment",
+  "Valvoline Instant Oil Change",
+  "Jiffy Lube",
+  "ASE-certified"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a routine oil change in Pleasanton, I’d generally prioritize an **independent ASE-certified repair shop with strong recent Google/Yelp reviews** over a quick-lube chain—especially if you drive a European, hybrid, or newer vehicle.\n\nGood choices by need:\n\n- **Fastest / no appointment:** **Valvoline Instant Oil Change** or **Jiffy Lube** in the Pleasanton–Dublin area. Convenient, but confirm they use the correct oil specification and replace the filter.\n- **Best for long-term vehicle care:** Your car’s **dealer service department** (Toyota, Honda, BMW, Tesla doesn’t need oil changes, etc.) or a highly rated local independent mechanic. This is usually preferable for newer cars, vehicles under warranty, or cars requiring full-synthetic/specialty oil.\n- **Best value:** A reputable independent shop that lets you bring or choose the oil/filter brand, often less expensive than a dealer and more thorough than a drive-through location.\n\nBefore booking, ask:\n1. What oil brand, viscosity, and specification will they use?\n2. Is the oil filter included?\n3. Do they reset the maintenance reminder and check tire pressure/fluids?\n4. What is the out-the-door price for your exact vehicle?\n\nIf you tell me your vehicle year/make/model and whether you value speed, lowest price, or highest-quality service, I can narrow it to the best type of shop and a reasonable price range.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

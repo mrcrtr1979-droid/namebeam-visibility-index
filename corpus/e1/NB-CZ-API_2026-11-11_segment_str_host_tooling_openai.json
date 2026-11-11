@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-API_2026-11-11_segment_str_host_tooling_openai",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ej8dHypgEALi0aTHUBtSLNSBmV6CF",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 705,
+   "total_tokens": 731,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 82,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "AirDNA",
+  "Beyond",
+  "Wheelhouse",
+  "AirDNA + local comp research",
+  "Use AirDNA to screen the broader market",
+  "Analyze truly comparable listings",
+  "Underwrite conservatively",
+  "After launch, connect PriceLabs",
+  "Buying/investment analysis",
+  "Day-to-day pricing optimization",
+  "Analyze",
+  "Underwrite",
+  "Use AirDNA",
+  "Let PriceLabs"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most Airbnb hosts, the best combination is:\n\n- **PriceLabs** for setting and automating nightly prices\n- **AirDNA** for analyzing a market before buying a property\n\nIf you want to choose only **one** tool for both purposes, **AirDNA** is usually the strongest choice because its market data and rentalizer-style property analysis are especially useful during acquisition. However, many experienced hosts use AirDNA for the “should I buy here?” decision and PriceLabs once the listing is live.\n\n### Best by use case\n\n| Need | Best tool | Why |\n|---|---|---|\n| Analyze a city/neighborhood before buying | **AirDNA** | Occupancy, ADR, RevPAR, seasonality, supply growth, comparable listings, revenue estimates |\n| Set dynamic nightly rates after launch | **PriceLabs** | Strong pricing automation, minimum-stay rules, last-minute discounts, orphan-gap pricing, event adjustments |\n| All-in-one starting point | **AirDNA** | Best fit if acquisition analysis matters as much as pricing |\n| More automated “set it and forget it” pricing | **Beyond** or **Wheelhouse** | Good revenue-management automation, often more hands-off |\n| Underwrite individual properties | **AirDNA + local comp research** | Data is a starting point—not a substitute for checking exact comparable homes and regulations |\n\n### Recommended workflow before buying\n\n1. **Use AirDNA to screen the broader market**\n   - Look at occupancy, average daily rate (ADR), RevPAR, seasonality, and historical trends.\n   - Watch for rapidly increasing listing supply without matching demand growth.\n   - Compare multiple nearby neighborhoods—not just an entire city.\n\n2. **Analyze truly comparable listings**\n   - Match bedroom count, guest capacity, amenities, location, quality level, parking, pet policy, pool/hot tub, views, etc.\n   - Avoid relying on citywide averages; a 3-bedroom with a pool may perform very differently from the median listing.\n\n3. **Underwrite conservatively**\n   - Use lower-than-advertised revenue assumptions.\n   - Include cleaning, utilities, supplies, insurance, property management, maintenance, furnishing replacement, taxes, platform fees, and vacancy.\n   - Verify local short-term-rental rules, licensing, HOA restrictions, and zoning before treating projected revenue as real.\n\n4. **After launch, connect PriceLabs**\n   - Start with a reasonable base price from your real comps.\n   - Let PriceLabs adjust for seasonality, booking pace, weekends, holidays, gaps, and last-minute demand.\n   - Review results monthly rather than letting automation run completely unchecked.\n\n### Bottom line\n\n- **Buying/investment analysis:** **AirDNA**\n- **Day-to-day pricing optimization:** **PriceLabs**\n- **Best practical setup for a serious host:** use **both**.\n\nNo pricing tool can compensate for buying in an oversupplied market or overestimating a property’s competitiveness, so the market and comp analysis matter more before purchase than the pricing software does.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

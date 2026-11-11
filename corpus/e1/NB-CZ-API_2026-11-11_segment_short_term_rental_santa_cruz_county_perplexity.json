@@ -1,0 +1,96 @@
+{
+ "check_id": "NB-CZ-API_2026-11-11_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-11-11",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b0a7a20a-ceef-4b4b-8deb-d977b07b69c6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00163,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00541
+   },
+   "input_tokens": 5100,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4548,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 650,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5750
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Capitola",
+  "Aptos and Seacliff",
+  "Santa Cruz",
+  "La Selva Beach and Pajaro Dunes",
+  "Pick the right base",
+  "Compare the full price",
+  "Check the essentials",
+  "Read the cancellation and house rules",
+  "Visit Santa Cruz County",
+  "Seascape Beach Resort",
+  "Visit Santa Cruz County Places",
+  "DiscretionaryPermitsZoning",
+  "DiscretionaryPermits",
+  "Short-TermRentals.aspx",
+  "Aptos",
+  "Boardwalk",
+  "Seacliff",
+  "Seascape",
+  "Pajaro Dunes",
+  "La Selva Beach",
+  "Kendall & Potter",
+  "Places to Stay"
+ ],
+ "engine_stated_criteria": [
+  "Verify the rental is allowed"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "8c83e05f4d27a19a1b9fcfc9d764d2c01fbb3cd5885490f241b8dfa93346a8ed",
+ "answer_chars": 2632,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "70cb3404d305f22412a699bd2b232537f86371f9572960ef9b8ff6cf81b30bbf",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}
