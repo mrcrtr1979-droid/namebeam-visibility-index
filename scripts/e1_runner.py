@@ -668,7 +668,9 @@ def extract_local_pack(payload_text):
     list with at least one object; False when it is parsed JSON without a usable snack_pack
     (Google showed no pack for the query); None when the payload is not parsed JSON (the raw-HTML
     fallback, cannot tell: an unknown is never coerced to False). top is at most LOCAL_PACK_MAX
-    items, each {position, name, link, address, rating, reviews}; position is the 1-based place
+    items, each {position, name, link, maps_link, cid, address, rating, reviews}; link is the business
+    website (null for a pack item, which carries none), maps_link and cid are the listing's Google
+    Maps URL and place id; position is the 1-based place
     in snack_pack, a non-object item is skipped and keeps its place, a missing or wrongly typed
     key reads as null. Text is verbatim, never rewritten."""
     try:
@@ -690,6 +692,8 @@ def extract_local_pack(payload_text):
             "position": i + 1,
             "name": _lp_text(item.get("name")),
             "link": _lp_text(item.get("link")),
+            "maps_link": _lp_text(item.get("maps_link")),
+            "cid": _lp_text(item.get("cid")),
             "address": _lp_text(item.get("address")),
             "rating": _lp_rating(item.get("rating")),
             "reviews": _lp_count(item.get("reviews_cnt")),
