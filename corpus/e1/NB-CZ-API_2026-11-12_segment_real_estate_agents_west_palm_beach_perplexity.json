@@ -1,0 +1,78 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_real_estate_agents_west_palm_beach_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: real estate agents, West Palm Beach",
+ "niche": "real estate agents",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in West Palm Beach FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_2f50fa65-fcc5-495d-8079-b5b75619e6d3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00456
+   },
+   "input_tokens": 4931,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4380,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 326,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5257
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jeff Tricoli Team at Keller Williams",
+  "Jeff Tricoli Team",
+  "Keller Williams",
+  "Jeff Tricoli"
+ ],
+ "engine_stated_criteria": [
+  "seller-side sales near your home"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "757b6f2948552902ea3784c2918f3cabd00f50a2b3727d8594142bf999e2fff0",
+ "answer_chars": 1091,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "cbeba89a66e34d097e33144712c46c0a1ef74f85038b24bed8dc526d8840a38a",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

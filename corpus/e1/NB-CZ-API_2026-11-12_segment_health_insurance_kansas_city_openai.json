@@ -1,0 +1,61 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjTsWDn3PtcLVUsLc9kiYjTMlTsvX",
+  "usage": {
+   "prompt_tokens": 23,
+   "completion_tokens": 603,
+   "total_tokens": 626,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 200,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Missouri agent license lookup",
+  "Kansas agent license lookup",
+  "Marketplace-certified help",
+  "Medicare-specific unbiased help",
+  "Medicare",
+  "ACA coverage",
+  "Missouri Department of Commerce",
+  "Kansas Insurance Department",
+  "Missouri SHIP",
+  "Kansas SHICK",
+  "Medicare Advantage and Medigap",
+  "SHICK",
+  "Medicare Advantage",
+  "Missouri and Kansas",
+  "SHIP",
+  "ACA/Marketplace",
+  "Family ACA",
+  "Missouri Department of Commerce & Insurance"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” broker for all of Kansas City—the right choice depends heavily on whether you need an ACA/Marketplace plan, Medicare, family coverage, self-employed coverage, or small-business benefits.\n\nFor **individual or family ACA coverage**, start with a **licensed, independent broker certified through HealthCare.gov**. Both Missouri and Kansas use HealthCare.gov, and a certified agent can generally enroll you at no direct cost. They should compare plans from more than one carrier—not steer you to only one company.\n\nA strong broker should:\n\n- Be licensed in the state where you live (Missouri or Kansas).\n- Be HealthCare.gov-certified if you want Marketplace subsidies.\n- Compare multiple insurers and explain provider networks, deductibles, prescriptions, and out-of-pocket maximums.\n- Ask which doctors, hospitals, and medications matter to you before recommending a plan.\n- Clearly disclose commissions and whether they represent all available carriers.\n- Remain available after enrollment for billing, network, or renewal questions.\n\nUseful verification resources:\n\n- **Missouri agent license lookup:** Missouri Department of Commerce & Insurance — `insurance.mo.gov`\n- **Kansas agent license lookup:** Kansas Insurance Department — `insurance.kansas.gov`\n- **Marketplace-certified help:** `HealthCare.gov/find-local-help`\n- **Medicare-specific unbiased help:** Missouri SHIP or Kansas SHICK counseling programs, rather than relying only on a sales broker.\n\nIf you are looking for **Medicare**, I’d prioritize an independent broker who represents several Medicare Advantage and Medigap carriers *and* compare their recommendation with free SHIP/SHICK counseling. If you need **ACA coverage**, use HealthCare.gov’s local-help directory and interview two or three independent agents before choosing one.\n\nBefore booking an appointment, ask: “Which carriers do you represent in my ZIP code, and are you able to quote every Marketplace plan available to me?” A broker who won’t answer clearly is not the best fit.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,80 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_world_martial_arts_academy_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "World Martial Arts Academy",
+ "niche": "martial arts for kids",
+ "market": "St. Peters MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is a good martial arts school for kids in St. Peters MO?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0137b1cd-aac3-4af1-a59d-8e4ed654e1bf",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00093,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 4593,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4044,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 372,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4965
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "Terry Creamer’s All Star Karate",
+  "Gracie Barra Jiu-Jitsu St. Peters",
+  "Revive Brazilian Jiu-Jitsu",
+  "Terry Creamer",
+  "All Star Karate",
+  "Brazilian Jiu",
+  "Brazilian Jiu-Jitsu",
+  "Gracie Barra"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "5efc81ba013a7446d55aca1155269c0a861283fb65612ce69e9375962903a893",
+ "answer_chars": 1161,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "8761fcba416bda81eb310e5ab4fca4c2cb019e1ed04af14569176d6183036227",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

@@ -1,0 +1,60 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_short_term_rental_branson_anthropic",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_jnl5flgh6vwudxjxkt46iihazjh2etgyljq5d6dsz6mhuhdfxibq",
+  "usage": {
+   "input_tokens": 33,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 309,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Chateau on the Lake",
+  "Branson Landing",
+  "Table Rock Lake resorts",
+  "Airbnbs to look for",
+  "Location matters most",
+  "Book early",
+  "Branson Accommodation Guide",
+  "Stay",
+  "Avoid Highway",
+  "Table Rock",
+  "Downtown Branson",
+  "Airbnbs",
+  "Landing",
+  "Highway",
+  "Lake",
+  "Book",
+  "Location matters",
+  "Silver Dollar City area"
+ ],
+ "engine_stated_criteria": [
+  "Choose Airbnb if you",
+  "Choose a hotel if you",
+  "What's your main interest in Branson?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Branson Accommodation Guide\n\n## Airbnb vs. Hotel\n\n**Choose Airbnb if you:**\n- Want a kitchen (saves money on meals)\n- Need more space for families\n- Prefer a home-like atmosphere\n- Stay 3+ nights\n\n**Choose a hotel if you:**\n- Want daily housekeeping\n- Prefer front desk services\n- Plan shorter stays\n- Want predictable amenities\n\n## Specific Recommendations\n\n**Hotels:**\n- **Chateau on the Lake** - Upscale, lakefront, best views\n- **Branson Landing** area hotels - Walkable to restaurants/shops\n- **Table Rock Lake resorts** - Scenic, good for water activities\n\n**Airbnbs to look for:**\n- Table Rock Lake waterfront properties\n- Silver Dollar City area (near attractions)\n- Downtown Branson (walkable to shows/dining)\n\n## Pro Tips\n- **Location matters most** - Stay near your main activities (shows, Silver Dollar City, Table Rock Lake)\n- **Avoid Highway 76** corridor if you want quiet\n- **Book early** - Branson fills up, especially weekends and holidays\n- **Check reviews carefully** - Quality varies significantly\n\n**What's your main interest in Branson?** (Shows, outdoor activities, family attractions?) That would help narrow down the best location for you.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

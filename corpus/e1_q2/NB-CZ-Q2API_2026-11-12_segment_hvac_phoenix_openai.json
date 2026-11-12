@@ -1,0 +1,75 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-12_segment_hvac_phoenix_openai",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjVw83sIUUiWXSpOz6pO4mvFZcyER",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1141,
+   "total_tokens": 1166,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 326,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Hobaica Services",
+  "Howard Air",
+  "Parker & Sons",
+  "George Brazil Air Conditioning & Heating",
+  "Hobaica, Howard Air, and one larger company",
+  "Arizona Registrar of Contractors",
+  "Phoenix HVAC-focused",
+  "Parker",
+  "Sons",
+  "George Brazil Air Conditioning",
+  "Night Air Conditioning",
+  "George Brazil",
+  "Hobaica",
+  "Hobaica and Howard Air",
+  "Howard Air and Hobaica",
+  "My AC",
+  "EPA-certified",
+  "Registrar of Contractors",
+  "Air Conditioning",
+  "Phoenix HVAC",
+  "Day & Night",
+  "Day & Night Air",
+  "Valley",
+  "Night Air",
+  "Phoenix-area HVAC"
+ ],
+ "engine_stated_criteria": [
+  "You suspect airflow, ducts, uneven rooms, or high utility bills",
+  "You need a replacement quote",
+  "where is the leak, how was it confirmed, and what is the cost to repair it?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For Phoenix, I’d call **2–3 companies for diagnosis/quotes**, especially if the repair is likely over a few hundred dollars. These are established local/regional options worth putting on your call list:\n\n1. **Hobaica Services**  \n   - Good first call if you want a long-established Phoenix HVAC-focused company.  \n   - Known locally for residential AC replacement, repairs, maintenance plans, and ductwork—not just a national dispatch brand.  \n   - A solid choice for a second opinion on a major repair or system replacement.\n\n2. **Howard Air**  \n   - Phoenix-area HVAC specialist with a long local history.  \n   - Worth calling for difficult cooling, airflow, duct, heat-pump, or indoor-air-quality problems—not only simple capacitor or thermostat issues.  \n   - Good candidate if your system is older and you want repair-versus-replace guidance.\n\n3. **Parker & Sons**  \n   - Large Phoenix service company that typically has broad scheduling capacity and can be useful when you need help quickly.  \n   - Good option for an urgent no-cool situation, especially when smaller shops are booked out.  \n   - Because it is a larger operation, ask for an itemized estimate before authorizing anything beyond the diagnostic visit.\n\n4. **George Brazil Air Conditioning & Heating**  \n   - Another established Valley company with emergency/service availability and experience with Phoenix heat.  \n   - A practical call for same-day diagnostics or a second quote on compressors, coils, refrigerant leaks, or replacement recommendations.\n\n5. **Day & Night Air Conditioning, Heating & Plumbing**  \n   - A Phoenix-area option to include if you want another established company for comparison.  \n   - Particularly useful if your AC issue may overlap with electrical, thermostat, drain-line, or plumbing-related concerns.\n\n### Who I’d call first\n- **AC completely dead / no cooling during extreme heat:** Parker & Sons or George Brazil for speed, plus Hobaica or Howard Air for a second opinion if the first quote is expensive.  \n- **Older unit, possible compressor or refrigerant leak:** Hobaica and Howard Air first.  \n- **You suspect airflow, ducts, uneven rooms, or high utility bills:** Howard Air and Hobaica.  \n- **You need a replacement quote:** Get bids from at least **Hobaica, Howard Air, and one larger company** such as Parker & Sons or George Brazil.\n\n### What to ask each company\nWhen you call, say:\n\n> “My AC is [symptom], the unit is approximately [age], and I’d like the diagnostic fee, earliest appointment, and an itemized repair estimate before work begins.”\n\nAsk these specific questions:\n- What is the **diagnostic/service-call fee**, and is it applied to the repair?\n- Is the quoted repair **parts and labor included**?\n- What is the **warranty** on the repair and on the part?\n- If refrigerant is proposed: **where is the leak, how was it confirmed, and what is the cost to repair it?**\n- If replacement is recommended: can they provide a **repair option and a replacement option** side by side?\n- Will they provide the technician’s findings in writing, including photos if applicable?\n\n### Important Phoenix-specific advice\nDo not approve an expensive compressor, evaporator-coil, or refrigerant-leak repair from the first diagnosis unless it is clearly documented. On an older system—especially one using R-22 refrigerant—the repair/replacement decision can be complicated and a second opinion can save substantial money.\n\nBefore booking, verify the company’s active Arizona contractor licensing through the **Arizona Registrar of Contractors**, and look at recent—not just lifetime—reviews. Also make sure any refrigerant work is performed by an EPA-certified technician.\n\nIf someone in the home is elderly, medically vulnerable, or at risk from the heat, prioritize the earliest safe appointment and use temporary cooling, hydration, and an alternate cool location if needed.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

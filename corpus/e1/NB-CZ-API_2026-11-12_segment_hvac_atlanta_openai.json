@@ -1,0 +1,65 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjTVpXjnkLQP9apFOl6CIlpOStiM5",
+  "usage": {
+   "prompt_tokens": 20,
+   "completion_tokens": 640,
+   "total_tokens": 660,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 89,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Manual J load calculation",
+  "PV Heating, Cooling & Plumbing",
+  "Conditioned Air Systems",
+  "Moncrief Heating & Air Conditioning",
+  "Estes Services",
+  "TE Certified",
+  "PV Heating",
+  "Long-established Atlanta",
+  "Moncrief Heating",
+  "Air Conditioning",
+  "AC replacement",
+  "Metro Atlanta",
+  "Georgia Power",
+  "Cooling",
+  "Moncrief Heating & Air",
+  "Manual J Calculation"
+ ],
+ "engine_stated_criteria": [
+  "Will you perform a Manual J calculation?",
+  "What is included in the installed price?",
+  "What are the labor and equipment warranties?",
+  "What are the efficiency ratings and exact model numbers?",
+  "Are rebates and tax credits included?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company for every Atlanta home, but for a full AC replacement, I’d prioritize a contractor that performs a **Manual J load calculation**, provides a detailed written proposal, handles permits, and offers strong labor warranties—not simply the lowest equipment price.\n\nWell-known Atlanta-area companies worth requesting quotes from include:\n\n- **PV Heating, Cooling & Plumbing** — Often noted for a building-science approach, load calculations, ductwork evaluation, and higher-efficiency system design.\n- **Conditioned Air Systems** — Long-established Atlanta contractor with broad service coverage and replacement experience.\n- **Moncrief Heating & Air Conditioning** — Established local company, particularly common in intown and north Atlanta.\n- **Estes Services** — Large, long-running Atlanta provider with HVAC replacement and maintenance offerings.\n- **TE Certified** — Larger service company serving much of metro Atlanta; ask specifically about system-design and load-calculation process.\n\nFor most homeowners, I’d get **three apples-to-apples bids**, ideally including at least one from a more design-focused firm such as PV Heating and one or two established larger providers.\n\nBefore choosing, ask each company:\n\n1. **Will you perform a Manual J calculation?**  \n   They should size the system based on your house—not simply replace a 3-ton unit with another 3-ton unit.\n\n2. **Will you inspect ducts, airflow, return vents, insulation, and refrigerant lines?**  \n   A new AC installed on poor ducts or undersized returns may still be uncomfortable and inefficient.\n\n3. **What is included in the installed price?**  \n   Clarify thermostat, pad, electrical work, permits, crane/attic access, line-set replacement, duct modifications, haul-away, and startup/commissioning.\n\n4. **What are the labor and equipment warranties?**  \n   Equipment may have a 10-year parts warranty, but labor coverage can vary substantially. Ensure the equipment registration is included.\n\n5. **What are the efficiency ratings and exact model numbers?**  \n   Compare SEER2/EER2, variable-speed vs. single-stage operation, heat-pump options, and sound levels—not just brand names.\n\n6. **Are rebates and tax credits included?**  \n   Depending on the system, you may qualify for utility rebates and federal tax credits. Georgia Power and local utilities may have current programs.\n\nA practical recommendation: if comfort, humidity control, and long-term efficiency matter, choose the contractor that clearly measures and explains your home’s airflow/load needs—even if that quote is not the cheapest. In Atlanta’s humid climate, installation quality and correct sizing matter as much as the AC brand.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,99 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-12_segment_roofing_miami_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a hurricane-rated roof replacement in Miami. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_366e1d68-2dd3-4ca8-98f3-d309d9dba701",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00144,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00508
+   },
+   "input_tokens": 4554,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3999,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 576,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5130
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "High-Velocity Hurricane Zone (HVHZ)",
+  "Art’s Roofing & Construction",
+  "CCC1333598",
+  "T&S Roofing Systems",
+  "CCC1326032",
+  "Duke Contractors",
+  "CCC1325931",
+  "Crown Roofing & Waterproofing",
+  "Notice of Acceptance (NOA)",
+  "Miami-Dade",
+  "High-Velocity Hurricane Zone",
+  "Miami-Dade NOA",
+  "Miami-based",
+  "Crown Roofing",
+  "Miami-Dade-NOA-approved",
+  "Miami-area",
+  "Notice of Acceptance",
+  "Florida Product Approval. Verify",
+  "Dade NOA",
+  "Velocity Hurricane Zone",
+  "Florida Product Approval",
+  "NOA-approved"
+ ],
+ "engine_stated_criteria": [
+  "When you call, ask each company to"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "097e1125451f1c1a1888cc6d742b49aad48a41eb6f5dc99a568eb66867692c54",
+ "answer_chars": 2253,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "86e074d2b787b7dbebfd159d72b205fb7a8dfa3d44e6c38f9f5cfbde21b58fc2",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

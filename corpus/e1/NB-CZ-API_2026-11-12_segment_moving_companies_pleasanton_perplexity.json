@@ -1,0 +1,79 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_moving_companies_pleasanton_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: moving companies, Pleasanton",
+ "niche": "moving companies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best moving company in Pleasanton CA for a local move?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_72fd9fd7-062a-4a0a-b26f-6ff3712d11fb",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00051,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00421
+   },
+   "input_tokens": 4784,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4235,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 205,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4989
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "All Star Movers & Storage",
+  "BBB A+ rating",
+  "Fairprice Movers",
+  "All Reasons Moving & Storage",
+  "Storage",
+  "Pleasanton. A",
+  "BBB A"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "02f29283957cc16bd4122f88e8f07d990723892d1769ace362a739c51d7430ac",
+ "answer_chars": 546,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "2cf295cf2cb687b3c45f1795bf3d17a3da8762577933a4c226b059b431c63b8a",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

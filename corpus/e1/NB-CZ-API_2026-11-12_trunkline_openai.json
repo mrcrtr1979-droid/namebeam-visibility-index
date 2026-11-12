@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_trunkline_openai",
+ "date_utc": "2026-11-12",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjVh8xnpFFafxtureZL4ZgAEoPGLq",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 776,
+   "total_tokens": 802,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 511,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Kraken Learn",
+  "Coinbase Learn",
+  "Finematics",
+  "REKT News",
+  "Plain English",
+  "Bitcoin"
+ ],
+ "engine_stated_criteria": [
+  "Web3 Is Going Just Great"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "The closest match is **Web3 Is Going Just Great** — **web3isgoinggreat.com**.\n\nIt is not a “how to get rich in crypto” course site. Instead, it explains crypto/Web3 failures in relatively plain English and documents real incidents with estimated dollar losses: exchange collapses, hacks, rug pulls, failed NFT projects, lawsuits, and protocol exploits. It is useful for a beginner because it makes the risks concrete rather than hypothetical.\n\nFor balanced beginner education, pair it with:\n\n- **Kraken Learn** — clear explanations of Bitcoin, wallets, staking, DeFi, and security.\n- **Coinbase Learn** — very beginner-friendly basics, though naturally more industry-positive.\n- **Finematics** — excellent visual explanations of DeFi mechanics; more technical but unusually clear.\n- **REKT News** — detailed reporting on hacks and DeFi failures, often with on-chain and dollar-loss figures.\n\nIf by “publishes its losses” you mean a site that publicly tracks *its own trading portfolio*, be cautious: public P&L dashboards are easy to cherry-pick, fake, or omit failed wallets. Independent reporting on losses, such as Web3 Is Going Just Great and REKT, is generally more useful for education.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

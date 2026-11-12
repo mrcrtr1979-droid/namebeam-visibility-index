@@ -1,0 +1,79 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_backflow_boss_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "Backflow Boss",
+ "niche": "backflow testing and repair",
+ "market": "Liberty MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who does backflow testing and repair near Liberty MO?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_95a2a21a-5af9-4d0b-8032-89c765ca8c49",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 4545,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4000,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 322,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4867
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "Certified Backflow Testing",
+  "A-Backflow Testing Service",
+  "A.B. May",
+  "Lists Liberty",
+  "Kansas City-area",
+  "Liberty. The",
+  "Utilities Department"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "7293fb5b7bbb66c799abeeed6000208c1851c264f57fbff125e057ab437f0489",
+ "answer_chars": 1013,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "d822c9454c374ac45e679197f3a6f3cf871aa8a778927010a38b9c5d555e751d",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

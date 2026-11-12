@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_orthodontists_columbus_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: orthodontists, Columbus",
+ "niche": "orthodontists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Columbus Ohio for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0226acd0-9268-498a-973a-165636368675",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00461
+   },
+   "input_tokens": 5143,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4595,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 327,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5470
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Carmen Orthodontics",
+  "Hutta & Price Orthodontics",
+  "Johnson Orthodontics",
+  "Invisalign",
+  "Dr. Jesse Carmen",
+  "Invisalign Top",
+  "Diamond Provider. That",
+  "Price Orthodontics",
+  "Invisalign. These"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "1abed779a57d1b9c94740ea3ab6f3b2f99853220d3ade837eb7570c208a86978",
+ "answer_chars": 1233,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "762274fc23de6cc55e8805312afa94f5df698bc2d3257f9b52c31ec96538855d",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

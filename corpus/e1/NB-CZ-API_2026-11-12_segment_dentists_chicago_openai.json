@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_dentists_chicago_openai",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjUaDuMleQlckJLO1nqsPw3oPrldC",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 533,
+   "total_tokens": 551,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 109,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UIC College of Dentistry",
+  "Northwestern-affiliated oral surgery/prosthodontic practices",
+  "American Board of Prosthodontics",
+  "American Board of Oral and Maxillofacial Surgery",
+  "D CBCT",
+  "College of Dentistry"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” implant dentist in Chicago—the right choice depends on whether you need a straightforward single implant, bone grafting/sinus lift, full-arch (“All-on-4”) work, or a complex reconstruction.\n\nFor the strongest credentials, look for a Chicago-area provider who is:\n\n- A **board-certified prosthodontist** for implant planning, restoration, and cosmetic/function outcomes; and/or\n- A **board-certified oral and maxillofacial surgeon** for surgical placement, especially if bone grafting, extractions, or sedation are needed.\n- Ideally part of a **team practice** where the surgeon and restoring prosthodontist coordinate your case.\n\nGood places to start in Chicago include:\n- **UIC College of Dentistry** — academic specialists and implant treatment; often a good option for complex cases or more cost-conscious care.\n- **Northwestern-affiliated oral surgery/prosthodontic practices** — useful for medically complex or multidisciplinary treatment.\n- Private offices listed through the **American Board of Prosthodontics** and **American Board of Oral and Maxillofacial Surgery** directories.\n\nBefore committing, schedule 2–3 implant consultations and ask:\n\n1. Who places the implant, and who makes the crown/bridge?\n2. Are they board-certified in prosthodontics or oral/maxillofacial surgery?\n3. Do they use 3-D CBCT imaging and digitally planned implant placement?\n4. How many similar cases do they complete each year?\n5. What implant system do they use, and will replacement parts be readily available long term?\n6. What is the all-in price—including scan, extraction, grafting, implant, abutment, crown, follow-ups, and sedation?\n7. What happens if the implant fails or the crown breaks?\n\nAvoid choosing based only on a low advertised implant price; many ads exclude the crown, abutment, grafting, and imaging. For a single implant, a prosthodontist-led plan with a qualified surgeon is often the safest route.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

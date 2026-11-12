@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_roofing_miami_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0e73aed2-da31-484b-812a-530ef438ceb2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00448
+   },
+   "input_tokens": 4730,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4182,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 315,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5045
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Art’s Roofing & Construction",
+  "CCC1333598",
+  "T&S Roofing Systems",
+  "CCC1326032",
+  "Crown Roofing & Waterproofing",
+  "Miami-Dade",
+  "High-Velocity Hurricane Zone",
+  "Miami-Dade Notice of Acceptance",
+  "Crown Roofing",
+  "HVHZ-compliant",
+  "Florida Product Approval",
+  "Notice of Acceptance",
+  "Notice of Acceptance (NOA)",
+  "High-Velocity Hurricane Zone (HVHZ)",
+  "Velocity Hurricane Zone",
+  "Dade Notice of Acceptance",
+  "Miami-Dade Notice of Acceptance (NOA)",
+  "Product Approval"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "e07372343c390175bb66d8ab280de05a4c44234f0489b2fe76110422ffd0aa54",
+ "answer_chars": 1133,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "eb569b92bada93dd496f135f97c2872e3903bfdfe3c1f5de267db12f5d487e71",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

@@ -1,0 +1,60 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-12_segment_oil_change_pleasanton_gemini",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "2Sf2arCEBqap_uMPrIaK8Ao",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 725,
+   "totalTokenCount": 747,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "H&H Automotive",
+  "Auto Express",
+  "Valvoline Instant Oil Change",
+  "Jiffy Lube",
+  "Call Valvoline (Rosewood Dr)",
+  "Quick-Lube",
+  "Local Shops",
+  "Pleasanton Automall Service Departments",
+  "Original Equipment Manufacturer",
+  "Downtown Pleasanton",
+  "Stoneridge Mall",
+  "Call Valvoline",
+  "Call H&H Automotive"
+ ],
+ "engine_stated_criteria": [
+  "Speed and stay-in-your-car service",
+  "Call your car’s specific dealership"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "To give you the best recommendations for an oil change in Pleasanton, I’ve broken the options down by **category** (Dealership, Local/Independent, and Quick-Lube chains) so you can choose based on your car’s needs, your budget, and how much time you have.\n\nHere are specific shops in Pleasanton you should consider calling, along with *why* you should call them:\n\n---\n\n### 1. The Best Independent & Local Shops (Best for overall value, honesty, and car care)\n*These shops are local staples with stellar reputations for customer service and not upselling you on things you don't need.*\n\n*   **Pleasanton Automall Service Departments (Honda, Hyundai, etc.)**\n    *   *Where:* 4100-4500 Rosewood Dr (near the fairgrounds)\n    *   *Why call:* If you drive a specific brand, calling the dedicated dealership service center ensures they use OEM (Original Equipment Manufacturer) filters and the exact oil weight recommended by your engine's engineers. They also check for factory recalls while your car is there.\n*   **H&H Automotive**\n    *   *Where:* 701 Main St (Downtown Pleasanton)\n    *   *Why call:* Highly rated for old-school honesty and expertise. If you want a local mechanic who will look over your whole car and give you an honest assessment without pressuring you, this is a great traditional shop. \n*   **Auto Express**\n    *   *Where:* 3390 Stanley Blvd\n    *   *Why call:* Known for fast turnaround times for an independent mechanic. They handle standard maintenance cleanly and efficiently, and people often praise their straightforward pricing.\n\n---\n\n### 2. The Best \"Quick-Lube\" Chains (Best for speed and convenience)\n*If you don't want to make an appointment and just want to stay in your car while it gets done, these are your best local bets.*\n\n*   **Valvoline Instant Oil Change**\n    *   *Where:* 4280 Rosewood Dr (near the Stoneridge Mall area)\n    *   *Why call:* **Speed and stay-in-your-car service.** Valvoline is consistently rated well in Pleasanton for being fast (usually under 15 minutes) and allowing you to remain seated in your vehicle while they work. They will show you your old air filter and dipstick, but they are generally polite even if you decline upsells.\n*   **Jiffy Lube**\n    *   *Where:* 307 Main St (Downtown)\n    *   *Why call:* Location convenience. If you need to drop your car off and grab a coffee downtown while it's serviced, this location is very walkable to the main strip. \n\n---\n\n### Summary: Which one should you dial first?\n\n1.  **Call Valvoline (Rosewood Dr)** if you are in a rush, hate waiting for appointments, and want a quick, standard synthetic oil change.\n2.  **Call H&H Automotive or Auto Express** if your car is older, high-mileage, or if you want a trusted local mechanic to inspect your vehicle while they change the oil.\n3.  **Call your car’s specific dealership** if it is a newer vehicle, still under warranty, or you require specialized synthetic oil.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

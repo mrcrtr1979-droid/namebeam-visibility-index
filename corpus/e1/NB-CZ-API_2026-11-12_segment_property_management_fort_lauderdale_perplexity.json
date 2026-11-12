@@ -1,0 +1,75 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_property_management_fort_lauderdale_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: property management, Fort Lauderdale",
+ "niche": "property management companies",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Fort Lauderdale FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_bbede32f-de4e-4f90-ad5f-147d8c50289f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00448
+   },
+   "input_tokens": 5108,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4558,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 280,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5388
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Luxury Property Care",
+  "TORO Advisors",
+  "Cabessa Property Management"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "e209934cb4067a04edade5795312398eb8d7f996fda8d869c54299a2e3cee405",
+ "answer_chars": 982,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "647c7b15893ece0da019fceddb7568ac47953a4f13c31c0ed213588a9782c704",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_bbs_insurance_openai",
+ "date_utc": "2026-11-12",
+ "business": "BBS Insurance",
+ "niche": "health insurance brokerage",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best health insurance broker in Kansas City MO for someone who is self-employed?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjV8ni8SqlCSNqfelTiDHtxONouxe",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1095,
+   "total_tokens": 1119,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "HealthCare.gov — Find Local Help",
+  "Agents/Brokers",
+  "Missouri insurance license lookup",
+  "Missouri-licensed ACA",
+  "Kansas City ZIP",
+  "Missouri Department of Commerce and Insurance",
+  "Missouri ZIP",
+  "Marketplace ACA",
+  "ACA-compliant",
+  "Kansas City-area",
+  "ACA-certified",
+  "Missouri Department of Commerce",
+  "Medicare"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a self-employed person in Kansas City, MO, the “best” choice is usually **an independent, Missouri-licensed ACA/Marketplace broker**—not a captive agent who can sell only one carrier and not a broker focused mainly on Medicare, life insurance, or short-term plans.\n\nI can’t reliably name one local agency as *the* best without current licensing, carrier appointments, and your ZIP code/provider needs. But I would start with a broker found through the official Marketplace directory:\n\n- **HealthCare.gov — Find Local Help:** https://localhelp.healthcare.gov  \n  Filter for **Agents/Brokers** in your Kansas City ZIP code.\n- **Missouri insurance license lookup:** Verify that the individual is actively licensed as an insurance producer through the Missouri Department of Commerce and Insurance.\n\nFor a sole proprietor with no employees, ask specifically for help with an **individual ACA major-medical plan**, not a small-business group plan unless you have employees and a reason to use one.\n\n### What to ask before choosing a broker\nUse the same questions with two or three brokers:\n\n1. “Are you certified to enroll people through HealthCare.gov for the current plan year?”\n2. “Which individual-market carriers are you appointed with in my Missouri ZIP code?”\n3. “Will you compare both Marketplace and off-Marketplace ACA plans?”\n4. “Can you confirm whether my doctors, hospitals, prescriptions, and preferred pharmacies are in-network?”\n5. “Will you help estimate my premium-tax-credit eligibility based on self-employment income?”\n6. “Do you charge me a fee, or are you paid by the insurance carrier?”\n7. “Will you review my plan with me at renewal each year?”\n\nA good broker should answer these directly, provide plan summaries and provider-network links, and not push short-term medical, fixed-indemnity, health-sharing, or “discount” plans as substitutes for ACA-compliant coverage.\n\n### Kansas City–specific consideration\nIn the Kansas City metro, provider networks matter as much as premium. If you use providers on both sides of the state line—such as Kansas City-area hospital systems or specialists in Kansas—have the broker verify **cross-state network coverage** for the exact plan, not just the insurer’s general name.\n\n### My practical recommendation\nChoose the first **independent ACA-certified broker** you find through HealthCare.gov who:\n\n- works regularly with Missouri individual plans,\n- compares multiple carriers,\n- verifies your doctors and medications in writing or through insurer tools,\n- explains subsidies and self-employed income changes, and\n- does not charge a surprise consultation or enrollment fee.\n\nMarketplace broker help is generally free to you because insurers compensate brokers. Also, depending on your situation, self-employed health-insurance premiums may be deductible on your federal tax return; a tax professional can confirm how that applies to you.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

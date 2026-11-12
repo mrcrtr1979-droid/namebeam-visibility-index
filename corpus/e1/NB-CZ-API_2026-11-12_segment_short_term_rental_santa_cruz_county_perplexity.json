@@ -1,0 +1,93 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e51d561d-510c-416c-8a22-2f367ab61e25",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00165,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00545
+   },
+   "input_tokens": 5195,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4643,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 660,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5855
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Santa Cruz / Westside",
+  "Capitola",
+  "Aptos / Seacliff",
+  "Capitola cottages near the village",
+  "Santa Cruz homes near the beach",
+  "Compare the full price",
+  "Read recent reviews closely",
+  "Confirm the practical details in writing",
+  "Check local compliance",
+  "Capitola for a walkable seaside feel",
+  "Santa Cruz for attractions and dining",
+  "Aptos for a quieter beach-focused stay",
+  "Boardwalk",
+  "Aptos",
+  "Seacliff",
+  "Westside",
+  "Soquel",
+  "Seascape",
+  "Confirm the practical details"
+ ],
+ "engine_stated_criteria": [
+  "Start with your priorities"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "3bada05b74c455c95b0dbad230f82d0a0c1e815a575021edaeee2e31ce2177fb",
+ "answer_chars": 2669,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "1174986d99c9fa874d7e73dfc1c3e8eef74cdc4834a850643421718de5972be8",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

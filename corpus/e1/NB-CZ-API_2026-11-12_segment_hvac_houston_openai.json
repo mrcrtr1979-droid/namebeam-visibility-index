@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_hvac_houston_openai",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjTX168krZlrNqeoDLiyNGIBq5NOr",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 359,
+   "total_tokens": 377,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 112,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Texas-licensed HVAC contractor",
+  "Texas-licensed HVAC",
+  "Texas ACR",
+  "Texas Department of Licensing",
+  "AC repair"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company in Houston—service quality can vary by technician, neighborhood, and the specific AC issue. For AC repair, the best choice is usually a **Texas-licensed HVAC contractor** with recent local reviews, clear diagnostic/pricing policies, and fast emergency availability.\n\nBefore booking, verify that the company:\n\n- Holds an active Texas ACR contractor license through the Texas Department of Licensing & Regulation (TDLR)\n- Has strong, recent Google/BBB reviews—not just a high lifetime rating\n- Charges a stated diagnostic/service-call fee and provides a written repair estimate\n- Explains whether repair versus replacement makes financial sense\n- Offers parts-and-labor warranty details in writing\n- Does not pressure you into replacing a unit before diagnosing it\n\nFor Houston specifically, ask whether they handle your equipment brand and can address common local issues such as clogged condensate drains, humidity-related problems, refrigerant leaks, capacitor failures, and attic ductwork.\n\nIf you share your ZIP code, unit brand/age, and whether it’s an emergency, I can help you narrow down what type of HVAC company to call and what a reasonable repair process should look like.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

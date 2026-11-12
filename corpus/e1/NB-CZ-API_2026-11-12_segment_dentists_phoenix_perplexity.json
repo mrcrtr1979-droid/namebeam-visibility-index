@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_dentists_phoenix_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: dentists, Phoenix",
+ "niche": "dentists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Phoenix for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_24a4f3f1-5b69-42c9-9afc-332b2df021be",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00091,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00087,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00442
+   },
+   "input_tokens": 4172,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3626,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 348,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4520
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Jason Augustine",
+  "Phoenix Oral & Facial Surgery",
+  "Phoenix Oral",
+  "Facial Surgery",
+  "Arizona State Board of Dental Examiners"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "882f90d2543a0be18f1a131291a5997ee3ac145e3bb97f3c7a7a231376f330c0",
+ "answer_chars": 1178,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "33eb4307af230b8d431d2d2784db53b28db5480bf4a5e70c8832f86d4fb94582",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

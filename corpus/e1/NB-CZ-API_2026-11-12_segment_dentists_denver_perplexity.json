@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_dentists_denver_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: dentists, Denver",
+ "niche": "dentists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Denver for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4da29dea-d344-4a8f-8a5d-f725b5caffd5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00096,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00438
+   },
+   "input_tokens": 4377,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3831,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 310,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4687
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Anne Fabricius at Lakewood Prosthodontics",
+  "Denver Oral & Maxillofacial Surgery",
+  "Find a Prosthodontist",
+  "Dr. Anne Fabricius",
+  "Lakewood Prosthodontics",
+  "Denver Oral",
+  "Maxillofacial Surgery",
+  "Dr. Matthew Schacht. These",
+  "American College of Prosthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "4a91f266a1c4a4dfb25224196d629a87ffd5a4e9f1ceaeb4a72acf5c04f7a64f",
+ "answer_chars": 1079,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "bfb1aebb55c569658b090a585c5baac9c5e967d8ad455395c096c9271dcdaaa3",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

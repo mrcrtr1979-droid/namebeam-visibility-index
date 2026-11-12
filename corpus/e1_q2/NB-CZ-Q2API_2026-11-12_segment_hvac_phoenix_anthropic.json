@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-12_segment_hvac_phoenix_anthropic",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_c7tyjvqpacoktgavrxixvg46vucalkjwuhhlfjjwgwacmjeooj3a",
+  "usage": {
+   "input_tokens": 28,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 256,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Better ways to find reliable HVAC services",
+  "Google/Yelp reviews",
+  "BBB.org",
+  "Ask neighbors/local Facebook groups",
+  "In Arizona"
+ ],
+ "engine_stated_criteria": [
+  "Your utility company"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest a different approach than me naming specific companies:\n\n**Better ways to find reliable HVAC services:**\n\n- **Google/Yelp reviews** - Filter by recent reviews and look for patterns (not just star count)\n- **BBB.org** - Check complaint history and resolution rates\n- **Ask neighbors/local Facebook groups** - Phoenix residents will have current recommendations\n- **Your utility company** - Often maintains lists of certified contractors\n- **Multiple quotes** - Get 3 bids to compare pricing and assess professionalism\n\n**What to verify when calling:**\n- Licensed and insured in Arizona\n- Upfront pricing (not just estimates)\n- Warranty details\n- Response time for your urgency level\n\n**Red flags to avoid:**\n- Pressure to decide immediately\n- Significantly lower prices than others\n- No written agreement\n\nI can't reliably recommend specific companies because quality varies by location, changes over time, and depends on your specific AC issue. A local recommendation from someone in your neighborhood will likely be more trustworthy than my suggestion.\n\nWhat's the main problem you're experiencing? That might help you ask better questions when you call around.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

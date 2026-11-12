@@ -1,0 +1,221 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-11-12_scorch",
+ "date_utc": "2026-11-12",
+ "business": "SCORCH",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best branding agency in St. Louis?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 4,
+ "pairs": [
+  {
+   "terser_names": [
+    "Atomicdust",
+    "MarketPlace Branding"
+   ],
+   "verbose_names": [
+    "St. Louis",
+    "Boutique Focus",
+    "Atomicdust",
+    "TOKY",
+    "Large-Scale Campaigns",
+    "Rodgers Townsend",
+    "Omnicom Group",
+    "Enterprise Rent-A-Car",
+    "Osborn Barr Paramore",
+    "St. Louis. They",
+    "Matchbox Design Group",
+    "Matchbox",
+    "UPBrand Collaborative",
+    "UPBrand",
+    "Specialized Tech",
+    "Fishawack Health",
+    "Choose the Right One for You",
+    "Enterprise",
+    "Mid-Market Boutique",
+    "Digital Agencies"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 20,
+   "containment_pct": 50.0,
+   "shared_count": 1,
+   "answer_chars_a": 849,
+   "answer_chars_b": 4118,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Atomicdust",
+    "MarketPlace Branding"
+   ],
+   "verbose_names": [
+    "Atomicdust",
+    "St. Louis",
+    "Dovetail"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 3,
+   "containment_pct": 50.0,
+   "shared_count": 1,
+   "answer_chars_a": 849,
+   "answer_chars_b": 1320,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "St. Louis"
+   ],
+   "verbose_names": [
+    "Atomicdust",
+    "MarketPlace Branding"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 2,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 849,
+   "answer_chars_b": 824,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Atomicdust",
+    "St. Louis",
+    "Dovetail"
+   ],
+   "verbose_names": [
+    "St. Louis",
+    "Boutique Focus",
+    "Atomicdust",
+    "TOKY",
+    "Large-Scale Campaigns",
+    "Rodgers Townsend",
+    "Omnicom Group",
+    "Enterprise Rent-A-Car",
+    "Osborn Barr Paramore",
+    "St. Louis. They",
+    "Matchbox Design Group",
+    "Matchbox",
+    "UPBrand Collaborative",
+    "UPBrand",
+    "Specialized Tech",
+    "Fishawack Health",
+    "Choose the Right One for You",
+    "Enterprise",
+    "Mid-Market Boutique",
+    "Digital Agencies"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 20,
+   "containment_pct": 66.7,
+   "shared_count": 2,
+   "answer_chars_a": 4118,
+   "answer_chars_b": 1320,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "St. Louis"
+   ],
+   "verbose_names": [
+    "St. Louis",
+    "Boutique Focus",
+    "Atomicdust",
+    "TOKY",
+    "Large-Scale Campaigns",
+    "Rodgers Townsend",
+    "Omnicom Group",
+    "Enterprise Rent-A-Car",
+    "Osborn Barr Paramore",
+    "St. Louis. They",
+    "Matchbox Design Group",
+    "Matchbox",
+    "UPBrand Collaborative",
+    "UPBrand",
+    "Specialized Tech",
+    "Fishawack Health",
+    "Choose the Right One for You",
+    "Enterprise",
+    "Mid-Market Boutique",
+    "Digital Agencies"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 20,
+   "containment_pct": 100.0,
+   "shared_count": 1,
+   "answer_chars_a": 4118,
+   "answer_chars_b": 824,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "St. Louis"
+   ],
+   "verbose_names": [
+    "Atomicdust",
+    "St. Louis",
+    "Dovetail"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 3,
+   "containment_pct": 100.0,
+   "shared_count": 1,
+   "answer_chars_a": 1320,
+   "answer_chars_b": 824,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

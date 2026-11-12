@@ -1,0 +1,73 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-12_segment_hvac_houston_openai",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My AC needs repair in Houston. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjVvaKDmirixXW9EbzP19E8qt4ZRC",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1363,
+   "total_tokens": 1387,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Tech of Houston",
+  "John Moore Services",
+  "Watch for",
+  "Abacus Plumbing, Air Conditioning & Electrical",
+  "Texas Air Authorities",
+  "John Moore",
+  "Abacus",
+  "Texas Department of Licensing and Regulation (TDLR)",
+  "HVAC-focused",
+  "Good Houston-area",
+  "Established Houston HVAC",
+  "Large Houston",
+  "Watch",
+  "Abacus Plumbing",
+  "Air Conditioning",
+  "HVAC-only",
+  "One Hour Air Conditioning",
+  "Heating of Houston",
+  "AC repair",
+  "Houston HVAC",
+  "One Hour",
+  "In Texas",
+  "One Hour Air Conditioning & Heating",
+  "Houston-area HVAC"
+ ],
+ "engine_stated_criteria": [
+  "If the AC is completely out today",
+  "If it is cooling poorly, leaking, freezing up, or cycling"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a Houston AC repair, I’d call **three companies**: one established HVAC-focused local company, one large 24/7 provider, and one independent alternative. That gives you a realistic comparison on diagnosis, price, and urgency.\n\n### Good Houston-area companies to start with\n\n1. **Air Tech of Houston**  \n   **Why call:** Established Houston HVAC specialist with a long local presence. A good first call if you want a company focused primarily on heating and air conditioning rather than a general plumbing/electrical brand.  \n   **Best for:** Standard repair calls, maintenance issues, drain-line problems, refrigerant diagnostics, and second opinions on expensive repairs.\n\n2. **John Moore Services**  \n   **Why call:** Large Houston home-services company with broad coverage and generally strong dispatch capacity, including urgent/after-hours situations. They can also handle electrical issues that sometimes affect AC systems, such as disconnects, breakers, capacitors, and thermostat wiring.  \n   **Best for:** No-cooling emergencies, weekend/evening needs, or situations where you want one company able to address HVAC and related electrical/plumbing issues.  \n   **Watch for:** Large providers can be convenient but may not always be the lowest-priced option—get a written quote.\n\n3. **Abacus Plumbing, Air Conditioning & Electrical**  \n   **Why call:** Another major Houston-area provider with broad service coverage, financing options, and the ability to address HVAC plus related home-system problems.  \n   **Best for:** Fast scheduling, homeowners who value detailed options/financing, and situations where the AC issue may involve electrical or drainage problems.  \n   **Watch for:** As with any large service company, compare their repair recommendation with at least one HVAC-only contractor before approving a major repair or replacement.\n\n4. **Texas Air Authorities**  \n   **Why call:** A Houston-area HVAC-focused alternative worth using for a competitive estimate, particularly if another company recommends a compressor, coil, refrigerant leak repair, or full system replacement.  \n   **Best for:** A second opinion on high-dollar repairs or replacement recommendations.\n\n5. **One Hour Air Conditioning & Heating of Houston**  \n   **Why call:** Worth calling if scheduling speed and a structured service process matter most.  \n   **Best for:** Urgent repair needs and homeowners who prefer a larger branded operation with clear appointment windows.  \n   **Watch for:** Ask for the total repair price—including diagnostic fee, parts, labor, refrigerant, and permit if applicable—before authorizing work.\n\n## My practical recommendation\n\n- **If the AC is completely out today:** Call **John Moore**, **Abacus**, and **Air Tech of Houston** first. Take whichever can arrive fastest, but ask for the diagnosis and price in writing before approving anything beyond the service call.\n- **If it is cooling poorly, leaking, freezing up, or cycling:** Start with **Air Tech of Houston** and **Texas Air Authorities**, then use John Moore or Abacus as a third comparison if needed.\n- **If someone says you need a new system, compressor, evaporator coil, or “just more refrigerant”:** Get at least **one independent second opinion** before agreeing. In Houston, refrigerant loss usually means there is a leak that should be located and explained—not simply refilled repeatedly.\n\n## Questions to ask when you call\n\n1. “What is your diagnostic/service-call fee, and is any of it credited toward the repair?”\n2. “Can you give me a written diagnosis and total repair price before starting work?”\n3. “Are you licensed in Texas for air-conditioning and refrigeration work?”\n4. “What are the parts and labor warranties?”\n5. “If refrigerant is low, will you identify the leak rather than only recharge it?”\n6. “If replacement is recommended, will you provide a Manual J/load calculation or explain why the current size is wrong?”\n\nAlso verify the contractor through the **Texas Department of Licensing and Regulation (TDLR)** license lookup before authorizing a large repair or replacement. For any quote above roughly **$1,000–$1,500**, a second opinion is usually worthwhile.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

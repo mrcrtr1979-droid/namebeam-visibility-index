@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-12_segment_health_insurance_kansas_city_gemini",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "lSb2as_PFsOP39IPx5WXmAM",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 895,
+   "totalTokenCount": 917,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "UnitedHealthcare",
+  "Aetna",
+  "The University of Kansas Health System",
+  "AdventHealth",
+  "Saint Luke's",
+  "Missouri and Kansas",
+  "Medicare",
+  "Affordable Care Act",
+  "BCBSKC",
+  "Insurance Division",
+  "Local Independent P&C",
+  "Benefits Agencies",
+  "HSAs",
+  "Family Specialists",
+  "KC Benefits Group",
+  "KU Med",
+  "Jackson County",
+  "MO. Smaller",
+  "Crucial Questions",
+  "Ask Whomever You Call",
+  "Kansas City-specific",
+  "Olathe Health",
+  "Johnson County",
+  "In Kansas",
+  "KC Metro",
+  "Kansas City Metro",
+  "Medicare Supplements",
+  "Independent",
+  "University of Kansas Health System"
+ ],
+ "engine_stated_criteria": [
+  "\"Are you licensed and active on both the Missouri and Kansas exchanges?\"",
+  "\"Do you represent all major carriers in this market?\"",
+  "\"What is your fee structure?\""
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Choosing the right health insurance plan in the Kansas City area (covering both Missouri and Kansas sides) can be overwhelming because carriers, networks, and regulations differ by state. \n\nTo help you narrow down your search, here are **four well-regarded local brokerage firms** in the Kansas City metro area, along with the reasons why you might want to call them. \n\n*(Note: Independent insurance brokers are **free to use** because they are compensated directly by insurance companies through commissions. Their prices for plans are identical to what you would pay going direct.)*\n\n---\n\n### 1. Cornerstone Brokerage Services\n* **Best for:** Small businesses, Medicare, and individual/family guidance.\n* **Why call them:** Cornerstone is a massive fixture in the Kansas City insurance community (based in Overland Park, KS). They specialize in helping individuals navigate the Affordable Care Act (ACA/Obamacare) marketplaces on both sides of the state line, as well as Medicare supplements. Because they are a large regional player, they have deep relationships with local networks like **Blue Cross and Blue Shield of Kansas City (BCBSKC)**, **UnitedHealthcare**, and **Aetna**.\n\n### 2. Mariner Wealth Advisors (Insurance Division) or Local Independent P&C/Benefits Agencies\n* **Best for:** High-net-worth individuals, comprehensive financial planning integration, and complex self-employed needs.\n* **Why call them:** If you want your health insurance decision to tie directly into your broader financial, tax, or retirement planning, working with a wealth management firm that has an in-house insurance broker is ideal. They can help optimize how you pay for healthcare (e.g., maximizing HSAs) to reduce your overall tax burden.\n\n### 3. Benefit Management, LLC (BMI)\n* **Best for:** Employers, groups, and individuals looking for high-touch service.\n* **Why call them:** Based in the KC metro, BMI is well-known for handling both group benefits and individual markets. If you are a 1099 contractor, small business owner, or family needing someone to advocate for you when claims get complicated, their agents are known for strong customer service and deep knowledge of local hospital networks (like **The University of Kansas Health System**, **AdventHealth**, and **Saint Luke's**).\n\n### 4. Local Independent \"Senior\" & Family Specialists (e.g., KC Benefits Group)\n* **Best for:** Medicare-eligible individuals and retirees under 65 needing bridge plans.\n* **Why call them:** The KC market has unique cross-border healthcare dynamics—for example, a Kansas resident wanting to see a specialist at KU Med (which is technically in Kansas, but close to the state line) vs. someone living in Jackson County, MO. Smaller boutique agencies that focus strictly on the KC metro understand these specific provider network nuances better than national call centers.\n\n---\n\n### 💡 Crucial Questions to Ask Whomever You Call:\n\nWhen you pick up the phone, make sure to ask these four Kansas City-specific questions:\n\n1. **\"Does this plan include in-network access to [my preferred hospital system: KU Med, Saint Luke's, AdventHealth, or Olathe Health]?\"** \n   * *Why:* KC hospital systems are fiercely competitive. Some lower-cost plans exclude certain major networks entirely.\n2. **\"Are you licensed and active on both the Missouri and Kansas exchanges?\"** \n   * *Why:* Depending on whether you live in Johnson County, KS or Jackson County, MO, the available plans and subsidies are completely different. Make sure your broker handles *both* sides of the state line if you live near the border.\n3. **\"Do you represent all major carriers in this market?\"** \n   * *Why:* You want a broker who isn't captive to just one company (like only selling BCBSKC). They should be able to compare BCBS, Aetna, Humana, and Ambetter side-by-side.\n4. **\"What is your fee structure?\"** \n   * *Why:* Standard brokers make money via carrier commissions (free to you). If a broker tries to charge you an upfront \"consulting fee\" for individual health insurance, politely hang up and call someone else.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

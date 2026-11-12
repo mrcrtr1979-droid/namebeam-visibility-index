@@ -1,0 +1,78 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_69576637-0770-43ff-96a9-c9b12c9d5b94",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00122,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00466
+   },
+   "input_tokens": 5412,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4865,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 320,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5732
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dunn Orthodontics",
+  "Serrano Orthodontics",
+  "Butterfly Orthodontics",
+  "Woolaver Orthodontics",
+  "Invisalign",
+  "Greater Phoenix"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "0d40bc8d4330c25a76a5bddc18feae3a68916d6a499c0be5461cae12c12bf47f",
+ "answer_chars": 1131,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "3d675b95268a33bea8edcfdeb69ce0ff9706a90e87776c7e3390a0242bcd02b1",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

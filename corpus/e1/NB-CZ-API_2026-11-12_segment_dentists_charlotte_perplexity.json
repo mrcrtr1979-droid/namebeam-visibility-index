@@ -1,0 +1,79 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_dentists_charlotte_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: dentists, Charlotte",
+ "niche": "dentists",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Charlotte for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f2e109df-8b21-4638-997d-26c4c6981e36",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00088,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00457
+   },
+   "input_tokens": 4744,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4198,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 351,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5095
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "CharlottePerio",
+  "Dr. Matthew Ficca at Metrolina Periodontics",
+  "Dr. Sam Smith at Smile Charlotte",
+  "Dr. Matthew Ficca",
+  "Metrolina Periodontics",
+  "Dr. Sam Smith",
+  "Smile Charlotte"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "fc49de72d4e476400664046fb666f1b81cf64a99351dbc206e9955efe07a2a06",
+ "answer_chars": 1090,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "a1c0dfabdfab6a78a9e4c2173eef5dd243f02bc8af59ba33482cfd389f770fa0",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

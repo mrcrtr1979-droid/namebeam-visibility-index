@@ -1,0 +1,54 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_str_host_tooling_openai",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjVRatpcuahG9ZApd3mqGf71bO0Ec",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 643,
+   "total_tokens": 669,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 81,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "PriceLabs",
+  "Rentalizer",
+  "Beyond",
+  "Wheelhouse",
+  "Rabbu",
+  "AirDNA before buying; PriceLabs after buying",
+  "Your",
+  "Occupancy rates"
+ ],
+ "engine_stated_criteria": [
+  "Your own spreadsheet"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most Airbnb hosts:\n\n- **Best for analyzing a market before buying:** **AirDNA**\n- **Best for setting and automating nightly prices after launch:** **PriceLabs**\n\n### Why AirDNA for acquisition research\nAirDNA is generally the strongest starting point when deciding *where* and *what* to buy. It helps estimate:\n\n- Occupancy rates by neighborhood and property type  \n- Average daily rate (ADR) and revenue potential  \n- Seasonality and booking demand  \n- Supply growth and competition  \n- Comparable listings (“comps”)  \n- Performance by bedroom count, amenities, and property style  \n\nUse its **Rentalizer** and market dashboards to build conservative, base, and optimistic revenue projections. Do not rely on the headline revenue estimate alone—compare similar properties, account for taxes, cleaning, management, furnishing, insurance, utilities, and local restrictions.\n\n### Why PriceLabs for nightly pricing\nOnce the property is live, PriceLabs is often the best value for dynamic pricing. It connects to Airbnb directly or through a PMS/channel manager and adjusts rates based on:\n\n- Local demand and events  \n- Seasonality  \n- Lead time  \n- Day of week  \n- Occupancy pace  \n- Minimum-stay rules  \n- Your own base-price and minimum-price settings  \n\nIt gives hosts meaningful control, which is important: automated pricing should be reviewed regularly rather than blindly accepted.\n\n### If you want only one tool\nIf you must choose one:\n\n- Choose **AirDNA** if you are still evaluating a purchase.\n- Choose **PriceLabs** if you already own or are about to launch a listing.\n\nAirDNA’s pricing tools can work, but PriceLabs is usually preferred by hands-on hosts for ongoing rate management. PriceLabs has market data too, but it is typically not as useful as AirDNA for full investment-market underwriting.\n\n### Good alternatives\n- **Beyond** — strong revenue-management platform, often better suited to professional operators or portfolios; can be more expensive.\n- **Wheelhouse** — another capable dynamic-pricing option with good controls and market intelligence.\n- **Rabbu** — useful for investment analysis and revenue estimates in some markets, though AirDNA is more commonly used for broad market research.\n\n### Practical recommended stack\n1. **AirDNA:** select market, evaluate comps, forecast revenue.  \n2. **Local research:** confirm zoning, STR permits, HOA rules, occupancy taxes, and enforcement risk.  \n3. **PriceLabs:** set nightly pricing, minimum stays, gap-night rules, and seasonal strategy after launch.  \n4. **Your own spreadsheet:** underwrite the deal using conservative occupancy and revenue assumptions—not the platform’s highest projection.\n\nThe short answer: **AirDNA before buying; PriceLabs after buying.**",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

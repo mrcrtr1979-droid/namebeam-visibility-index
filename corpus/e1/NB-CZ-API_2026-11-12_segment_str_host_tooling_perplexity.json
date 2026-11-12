@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-API_2026-11-12_segment_str_host_tooling_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7c78703f-b23a-4259-8fd3-893ee4423a1a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00094,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00047,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00405
+   },
+   "input_tokens": 4328,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3774,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 189,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4517
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "Market Dashboards",
+  "Dynamic Pricing"
+ ],
+ "engine_stated_criteria": [
+  "PriceLabs is a strong all-in-one choice"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "eea9f5c4391e1428a65941e57e0f6487201bd1f816a119117ca6fc13155473a7",
+ "answer_chars": 577,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "f9ee85e3b1c7937c1cf779ef1efbd6e1c733ffecd6d92ceb627ff11acefa5d14",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

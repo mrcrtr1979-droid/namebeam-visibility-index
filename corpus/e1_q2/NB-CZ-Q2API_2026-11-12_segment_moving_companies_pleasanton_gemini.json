@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-12_segment_moving_companies_pleasanton_gemini",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: moving companies, Pleasanton",
+ "niche": "moving companies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I have a local move coming up in Pleasanton. Which specific moving companies should I call, and why?",
+ "q1_prompt_text": "Who is the best moving company in Pleasanton CA for a local move?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "cif2asbWGqSe1MkPwpOKmAE",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 712,
+   "totalTokenCount": 734,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "NOR-CAL Moving Services",
+  "San Ramon",
+  "Ruby Hill",
+  "Foothill Knolls",
+  "Allied Van Lines",
+  "East Bay",
+  "Pleasanton and Tri",
+  "Tri-Valley"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a local move in Pleasanton, you want a mix of established regional companies that know the Tri-Valley area (Pleasanton, Dublin, San Ramon) and highly rated local owner-operators. Pleasanton has specific traffic patterns, downtown parking challenges, and HOA rules in areas like Ruby Hill or Foothill Knolls that local movers navigate best.\n\nHere are the specific moving companies you should call, categorized by what they do best:\n\n### 1. The Tri-Valley Local Experts\n*   **NOR-CAL Moving Services**\n    *   **Why call them:** They are an agent of Allied Van Lines, based out of Hayward/East Bay, and have decades of experience specifically servicing the Pleasanton and Tri",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

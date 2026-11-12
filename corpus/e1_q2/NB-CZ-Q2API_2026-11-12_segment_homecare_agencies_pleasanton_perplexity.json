@@ -1,0 +1,97 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-12_segment_homecare_agencies_pleasanton_perplexity",
+ "date_utc": "2026-11-12",
+ "business": "SEGMENT: homecare agencies, Pleasanton",
+ "niche": "home care agencies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My elderly parent needs home care in Pleasanton. Which specific home care agencies should I call, and why?",
+ "q1_prompt_text": "What is the best home care agency in Pleasanton CA for an elderly parent?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7c45f778-e7b8-428c-b773-0a6f31bec181",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00096,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00148,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00508
+   },
+   "input_tokens": 4415,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3859,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 592,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5007
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Right at Home Pleasanton — (925) 401-5261",
+  "Home Instead Pleasanton — (925) 225-0220",
+  "Seniors Helping Seniors Tri-Valley — (925) 397-1771",
+  "Senior Helpers Pleasanton — (925) 392-7643",
+  "Always Best Care Pleasanton — (925) 249-5194",
+  "Pleasanton-area",
+  "Home Pleasanton",
+  "Home Instead Pleasanton",
+  "Seniors Helping Seniors Tri-Valley",
+  "Senior Helpers Pleasanton",
+  "Always Best Care Pleasanton",
+  "California Home Care Organization",
+  "Alameda County",
+  "Home Instead",
+  "Right at Home",
+  "Senior Helpers",
+  "Tri-Valley",
+  "Home Care Organization",
+  "Right at Home Pleasanton",
+  "Right",
+  "Always Best Care",
+  "Pleasanton Office"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2decca0a8e45544c825f5a5f5e2574ce7a9f1e9ae6f4064c1025920fea3295e5",
+ "answer_chars": 2394,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "415a30b3c08543502575ed1fb824d390b192902814cbabaf5a13a6592a57cf9f",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}
