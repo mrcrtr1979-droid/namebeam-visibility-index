@@ -46,4 +46,8 @@ The full record starts on 2026-08-02. No run exists for 2026-10-05.
 
 The build prints a warning if a raw file holds URLs in a field the builder does not know, or if a day with source-capable answers produces no rows.
 
+## Perplexity sources from 2026-11-09
+
+From 2026-11-09 the Perplexity URL list is held in the private collector, and the public row carries its count in sources_count and its hash in sources_sha256. sources_<date>.csv therefore holds no Perplexity rows from that date; counts_<date>.csv carries the per-answer Perplexity source counts for every day of the record. Rows dated 2026-11-08 and earlier are unchanged.
+
 Operated by Carter Enterprise LLC. Questions about the record: namebeam.ai.

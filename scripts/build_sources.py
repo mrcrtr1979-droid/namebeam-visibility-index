@@ -13,10 +13,16 @@ returned it. Columns (the first nine are the published contract):
     check_id, rank
 
 Where the URLs live (field map, verified against 16,267 raw rows):
-    perplexity   sources_cited           list of URL strings
+    perplexity   sources_cited           list of URL strings (public rows up to 2026-11-08;
+                                         [] from 2026-11-09 under the CAP, count in sources_count)
     google_serp  organic_top_results     list of URL strings
     google_serp  ai_overview_references  list of {href, title, source}
     anthropic, openai, gemini carry an empty sources_cited list: no rows.
+
+Beside each URL file a count file, datasets/e1/sources/counts_<YYYY-MM-DD>.csv, one row per
+source-capable answer (perplexity, google_serp): date, engine, run_channel, market, niche,
+check_id, run_status, sources_count, sources_private, url_rows. Under the CAP (R82, 2026-11-08)
+the Perplexity URL list is held in the private collector and this is the public count of it.
 
 Inline URLs inside answer_verbatim prose are NOT sources rows. They are
 counted by --census so the gap is visible.
@@ -24,7 +30,12 @@ counted by --census so the gap is visible.
 Guards (a check must detect omission, not only deletion):
     UNMAPPED  a structured field outside the map holds http strings. Printed,
               and the run exits 2 under --strict. Schema drift cannot hide.
-    EMPTY-DAY an answer day with source-bearing rows but zero URL rows exits 2.
+    EMPTY-DAY an answer day with source-bearing rows but zero URL rows and zero counted
+              sources exits 2.
+    DARK-LEG  one engine (perplexity or google_serp) with 10 or more OK answers in a day and
+              zero sources on every one of them (no URL list, no CAP count) exits 2, whatever
+              the other engine did that day. Added 2026-11-12 after T85: the Perplexity leg of
+              this dataset read 0 for 2026-11-09 to 11-11 behind the google_serp rows.
     MISSING   --missing builds every date present in the corpus that has no
               output file yet, so a skipped day heals on the next run.
 
@@ -58,6 +69,17 @@ FIXTURES = os.path.join(ROOT, 'tests', 'fixtures', 'sources')
 
 COLUMNS = ['date', 'engine', 'run_channel', 'market', 'niche', 'prompt_text',
            'url', 'domain', 'field', 'check_id', 'rank']
+
+# Per-run source counts, one row per source-capable answer, written beside the URL rows as
+# datasets/e1/sources/counts_<YYYY-MM-DD>.csv. R82 (2026-10-24) and CAP (Terry 2026-11-08 8:04PM CT):
+# the record keeps COUNTS of Perplexity sources; the URL list is held in the private collector from
+# 2026-11-09, so sources_cited is [] on every public Perplexity row and the count lives in
+# sources_count. Before this file existed the URL rows were the only count, and the day the CAP took
+# effect the Perplexity leg of this dataset read 0 for three days while every run was OK (T85).
+COUNT_COLUMNS = ['date', 'engine', 'run_channel', 'market', 'niche', 'check_id', 'run_status',
+                 'sources_count', 'sources_private', 'url_rows']
+SOURCE_ENGINES = ('perplexity', 'google_serp')
+DARK_MIN_RUNS = 10   # an engine with this many OK answers in a day and zero sources on all is DARK-LEG
 
 # field name -> keys tried, in order, when the list element is a dict
 FIELD_MAP = collections.OrderedDict([
@@ -198,10 +220,38 @@ def extract(name, d):
     return rows, unmapped
 
 
-def write_csv(path, rows):
+def sources_count_of(d, url_rows):
+    """How many sources one answer carried. The public URL list when it is present (every engine
+    before the CAP, google_serp still); under the CAP a Perplexity row says sources_private and
+    carries the collector's sources_count; a row with neither is 0, and that is what the DARK-LEG
+    guard counts. Never reads answer text."""
+    lst = d.get('sources_cited')
+    if isinstance(lst, list) and lst:
+        return max(len(lst), url_rows)
+    if d.get('sources_private') and isinstance(d.get('sources_count'), int) and not isinstance(d.get('sources_count'), bool):
+        return d['sources_count']
+    return url_rows
+
+
+def count_row(name, d, url_rows):
+    return {
+        'date': date_of(name, d),
+        'engine': d.get('engine') or '',
+        'run_channel': d.get('run_channel') or '',
+        'market': d.get('market') or '',
+        'niche': d.get('niche') or '',
+        'check_id': d.get('check_id') or os.path.splitext(name)[0],
+        'run_status': d.get('run_status') or '',
+        'sources_count': sources_count_of(d, url_rows),
+        'sources_private': 1 if d.get('sources_private') else 0,
+        'url_rows': url_rows,
+    }
+
+
+def write_csv(path, rows, columns=None):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with io.open(path, 'w', encoding='utf-8', newline='') as fh:
-        w = csv.DictWriter(fh, fieldnames=COLUMNS, lineterminator='\n')
+        w = csv.DictWriter(fh, fieldnames=columns or COLUMNS, lineterminator='\n')
         w.writeheader()
         w.writerows(rows)
 
@@ -210,6 +260,7 @@ def write_csv(path, rows):
 def build(corpus, archives, out, dates=None, only_missing=False, strict=False):
     """Build per-date CSVs. dates: set of dates to build (None = all)."""
     by_date = collections.defaultdict(list)
+    counts_by_date = collections.defaultdict(list)   # one count row per source-capable answer
     answers_by_date = collections.Counter()
     carrying_by_date = collections.Counter()   # records whose engine can carry sources
     unmapped = collections.Counter()
@@ -224,8 +275,9 @@ def build(corpus, archives, out, dates=None, only_missing=False, strict=False):
         dt = date_of(name, d)
         if d.get('engine'):
             answers_by_date[dt] += 1
-            if d.get('engine') in ('perplexity', 'google_serp'):
+            if d.get('engine') in SOURCE_ENGINES:
                 carrying_by_date[dt] += 1
+                counts_by_date[dt].append(count_row(name, d, len(rows)))
         by_date[dt].extend(rows)
         for k, n in um:
             unmapped[(d.get('engine') or d.get('row_type') or '?', k)] += n
@@ -237,13 +289,26 @@ def build(corpus, archives, out, dates=None, only_missing=False, strict=False):
         if dates is not None and dt not in dates:
             continue
         path = os.path.join(out, 'sources_%s.csv' % dt)
-        if only_missing and os.path.exists(path):
+        cpath = os.path.join(out, 'counts_%s.csv' % dt)
+        if only_missing and os.path.exists(path) and os.path.exists(cpath):
             continue
         rows = by_date.get(dt, [])
-        if carrying_by_date[dt] and not rows:
-            print('EMPTY-DAY %s: %d source-capable answers, 0 URL rows' % (dt, carrying_by_date[dt]))
+        crows = counts_by_date.get(dt, [])
+        total_sources = sum(c['sources_count'] for c in crows)
+        if carrying_by_date[dt] and not rows and not total_sources:
+            print('EMPTY-DAY %s: %d source-capable answers, 0 URL rows, 0 counted sources' % (dt, carrying_by_date[dt]))
             status = 2
+        # DARK-LEG: one engine whose answers normally carry sources read OK on DARK_MIN_RUNS or more
+        # answers and every one of them carried zero sources (no URL list, no CAP count). The
+        # google_serp rows of the same day do not excuse it (T85: three days silent behind them).
+        for eng in SOURCE_ENGINES:
+            ok_rows = [c for c in crows if c['engine'] == eng and c['run_status'] == 'OK']
+            if len(ok_rows) >= DARK_MIN_RUNS and not sum(c['sources_count'] for c in ok_rows):
+                print('DARK-LEG %s %s: %d OK answers, 0 sources on every one (sources_cited empty and no CAP sources_count)'
+                      % (dt, eng, len(ok_rows)))
+                status = 2
         write_csv(path, rows)
+        write_csv(cpath, crows, COUNT_COLUMNS)
         built.append((dt, len(rows)))
     for (eng, key), n in sorted(unmapped.items()):
         print('UNMAPPED field %r on %s rows holds %d http strings; add it to FIELD_MAP or PROSE_KEYS' % (key, eng, n))
@@ -378,6 +443,32 @@ def selftest():
     ed_dir = os.path.join(FIXTURES, 'corpus_emptyday')
     s4, _ = build(ed_dir, None, tmp)
     check('EMPTY-DAY guard: perplexity answers with zero URL rows exit 2', s4 == 2)
+
+    # CAP (2026-11-08, T85): a recorded public Perplexity row from 2026-11-09 (sources_cited [],
+    # sources_private true, sources_count 15) must be counted, not read as dark.
+    cap_dir = os.path.join(FIXTURES, 'corpus_cap')
+    s5, _ = build(cap_dir, None, tmp)
+    cpath = os.path.join(tmp, 'counts_2026-11-09.csv')
+    crows = list(csv.DictReader(io.open(cpath, encoding='utf-8'))) if os.path.exists(cpath) else []
+    pplx = [c for c in crows if c['engine'] == 'perplexity']
+    check('CAP: counts_2026-11-09.csv written with the count columns',
+          bool(crows) and list(crows[0].keys()) == COUNT_COLUMNS)
+    check('CAP: the recorded 2026-11-09 Perplexity row counts 15 sources with 0 URL rows',
+          len(pplx) == 1 and pplx[0]['sources_count'] == '15' and pplx[0]['url_rows'] == '0'
+          and pplx[0]['sources_private'] == '1')
+    check('CAP: a capped day is not EMPTY-DAY (exit 0)', s5 == 0)
+    check('CAP: the public URL file still holds no Perplexity row (R82 and the CAP stand)',
+          not any(r['engine'] == 'perplexity'
+                  for r in csv.DictReader(io.open(os.path.join(tmp, 'sources_2026-11-09.csv'), encoding='utf-8'))))
+
+    # DARK-LEG: ten OK Perplexity answers with sources_cited [] and no CAP count exit 2 even when the
+    # same day has google_serp URL rows (the shape of a parse or API failure under the CAP).
+    dk_dir = os.path.join(FIXTURES, 'corpus_darkleg')
+    s6, _ = build(dk_dir, None, tmp)
+    check('DARK-LEG guard: 10 OK perplexity answers with zero sources exit 2 despite serp rows', s6 == 2)
+    dk_rows = list(csv.DictReader(io.open(os.path.join(tmp, 'sources_2026-11-09.csv'), encoding='utf-8')))
+    check('DARK-LEG fixture does carry serp URL rows (so the old EMPTY-DAY guard alone would stay silent)',
+          any(r['engine'] == 'google_serp' for r in dk_rows))
 
     for f in glob.glob(os.path.join(tmp, '*')):
         os.remove(f)
