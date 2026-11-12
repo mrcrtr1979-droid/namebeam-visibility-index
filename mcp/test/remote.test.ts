@@ -98,8 +98,8 @@ test("tools/list matches the stdio server's tools/list, field by field", async (
   const got = json.result.tools;
   assert.deepEqual(got.map((t: { name: string }) => t.name), expected.map((t) => t.name));
   assert.deepEqual(got, JSON.parse(JSON.stringify(expected)), "remote tools differ from stdio tools");
-  assert.equal(got.length, 3);
-  assert.equal(TOOLS.length, 3);
+  assert.equal(got.length, 4);
+  assert.equal(TOOLS.length, 4);
   for (const t of got) assert.equal(t.annotations.readOnlyHint, true);
 });
 
@@ -229,7 +229,7 @@ test("official SDK client works against the remote handler end to end (initializ
   const transport = new StreamableHTTPClientTransport(new URL("https://api.receiptsindex.com/mcp"), { fetch: fetchImpl });
   const mc = new McpClient({ name: "sdk-http", version: "0.0.0" });
   await mc.connect(transport);
-  assert.deepEqual((await mc.listTools()).tools.map((t) => t.name).sort(), ["receipts_index", "receipts_pricing", "receipts_sample"]);
+  assert.deepEqual((await mc.listTools()).tools.map((t) => t.name).sort(), ["namebeam_free_check", "receipts_index", "receipts_pricing", "receipts_sample"]);
   const r = (await mc.callTool({ name: "receipts_sample", arguments: {} })) as { content: { text: string }[] };
   assert.equal(JSON.parse(r.content[0].text).row_id, 602);
   await mc.close();

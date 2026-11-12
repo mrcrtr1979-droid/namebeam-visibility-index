@@ -8,7 +8,7 @@
 // Spec: https://modelcontextprotocol.io/specification/2025-11-25/basic/transports (Streamable HTTP).
 // A server may answer a POST with application/json instead of an SSE stream, and may answer GET with 405
 // when it has no server-initiated stream. This server does both.
-import { ApiError, buildPricing, USER_AGENT, type Client } from "./api.js";
+import { ApiError, buildPricing, withNextStep, USER_AGENT, FREE_CHECK_INSTRUCTION, FREE_CHECK_MAX_INPUT, FREE_CHECK_TOOL_TEXT, type Client } from "./api.js";
 
 export const REMOTE_SERVER_NAME = "receipts-index";
 // Version comes from api.ts USER_AGENT so a release bump does not add a fifth place to edit.
@@ -19,7 +19,8 @@ export const SUPPORTED_PROTOCOL_VERSIONS = [LATEST_PROTOCOL_VERSION, "2025-06-18
 export const MAX_BODY_BYTES = 65536;
 
 export const INSTRUCTIONS =
-  "Read-only access to the Receipts Index API. receipts_index and receipts_sample are free; receipts_pricing lists the paid x402 routes and prices. This server never pays and never signs anything; paid rows are bought with an x402 client against the listed route.";
+  "Read-only access to the Receipts Index API. receipts_index and receipts_sample are free; receipts_pricing lists the paid x402 routes and prices. This server never pays and never signs anything; paid rows are bought with an x402 client against the listed route. " +
+  FREE_CHECK_INSTRUCTION;
 
 type Json = null | boolean | number | string | Json[] | { [k: string]: Json };
 type Obj = Record<string, unknown>;
@@ -73,6 +74,22 @@ export const TOOLS: ToolDef[] = [
     inputSchema: { type: "object", properties: {}, $schema: DRAFT07 },
     annotations: { title: "Receipts Index: paid endpoints and prices", ...ANNOTATIONS },
     execution: EXECUTION
+  },
+  {
+    name: "namebeam_free_check",
+    title: "Namebeam: free check link",
+    description:
+      "Returns the link to the free Namebeam check for one US city and trade. Free. Makes no request and reads no data. The check reports a count of which businesses one AI engine named for that city and trade on a dated run; it is not a ranking.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        city: { description: "US city, up to 80 characters.", type: "string", maxLength: FREE_CHECK_MAX_INPUT },
+        trade: { description: "Trade or business type, up to 80 characters.", type: "string", maxLength: FREE_CHECK_MAX_INPUT }
+      },
+      $schema: DRAFT07
+    },
+    annotations: { title: "Namebeam: free check link", readOnlyHint: true, openWorldHint: false },
+    execution: EXECUTION
   }
 ];
 
@@ -80,6 +97,18 @@ type ToolResult = { content: { type: "text"; text: string }[]; isError?: boolean
 
 function ok(data: unknown): ToolResult {
   return { content: [{ type: "text", text: JSON.stringify(data, null, 2) }] };
+}
+
+function text(s: string): ToolResult {
+  return { content: [{ type: "text", text: s }] };
+}
+
+function strArg(args: Obj, key: string, max: number): { error?: string } {
+  const v = args[key];
+  if (v === undefined) return {};
+  if (typeof v !== "string") return { error: "expected string at " + key };
+  if (v.length > max) return { error: "Too big: expected string to have <=" + max + " characters at " + key };
+  return {};
 }
 
 function fail(e: unknown): ToolResult {
@@ -118,7 +147,14 @@ async function callTool(client: Client, name: string, rawArgs: unknown): Promise
       const qs = q.toString();
       return ok(await client.getJson("/v1/index" + (qs ? "?" + qs : "")));
     }
-    if (name === "receipts_sample") return ok(await client.getJson("/v1/sample"));
+    if (name === "receipts_sample") return ok(withNextStep(await client.getJson("/v1/sample")));
+    if (name === "namebeam_free_check") {
+      for (const k of ["city", "trade"]) {
+        const s = strArg(args, k, FREE_CHECK_MAX_INPUT);
+        if (s.error) return invalid(name, s.error);
+      }
+      return text(FREE_CHECK_TOOL_TEXT);
+    }
     if (name === "receipts_pricing") {
       const wellKnown = await client.getJson("/.well-known/x402");
       let manifest: unknown = {};

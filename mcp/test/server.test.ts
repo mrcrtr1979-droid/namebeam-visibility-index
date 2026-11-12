@@ -8,7 +8,11 @@ import { fileURLToPath } from "node:url";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { createServer } from "../src/server.js";
-import type { FetchLike } from "../src/api.js";
+import type { Client as ApiClient, FetchLike } from "../src/api.js";
+import { handleMcpRequest, INSTRUCTIONS } from "../src/remote.js";
+
+// LB-48 tagged link (packet status/staged/LAPTOP_QUEUE/LB48.md). Written out here on purpose so the test is RED on 0.1.5.
+const FREE_CHECK_URL = "https://check.namebeam.ai/?utm_source=mcp&utm_campaign=lb48";
 
 // Compiled location: dist/test/server.test.js, so the package root is two levels up.
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
@@ -38,12 +42,60 @@ function textOf(res: unknown): string {
   return r.content[0].text;
 }
 
-test("lists exactly three tools", async () => {
+test("lists exactly four tools", async () => {
   const c = await connect(mockFetch({}));
   const { tools } = await c.listTools();
-  assert.deepEqual(tools.map((t) => t.name).sort(), ["receipts_index", "receipts_pricing", "receipts_sample"]);
+  assert.deepEqual(tools.map((t) => t.name).sort(), ["namebeam_free_check", "receipts_index", "receipts_pricing", "receipts_sample"]);
   for (const t of tools) assert.equal(t.annotations?.readOnlyHint, true);
   for (const t of tools) assert.equal(t.annotations?.title, t.title, "annotations.title matches title for " + t.name);
+});
+
+// LB-48 (2026-11-12): the server is a front door to the free check. Two tests, RED on 0.1.5, GREEN on this build.
+test("namebeam_free_check is listed read-only with a title and returns the tagged check link without any API call", async () => {
+  const log: string[] = [];
+  const c = await connect(mockFetch({}, log));
+  const { tools } = await c.listTools();
+  const t = tools.find((x) => x.name === "namebeam_free_check");
+  assert.ok(t, "namebeam_free_check is listed");
+  assert.equal(t.annotations?.readOnlyHint, true);
+  assert.equal(t.annotations?.openWorldHint, false, "the tool makes no network call");
+  assert.ok(t.title && t.title.length > 0, "title is set");
+  assert.equal(t.annotations?.title, t.title);
+  const props = (t.inputSchema as { properties: Record<string, { type: string; maxLength?: number }> }).properties;
+  assert.deepEqual(Object.keys(props).sort(), ["city", "trade"]);
+  for (const k of ["city", "trade"]) {
+    assert.equal(props[k].type, "string");
+    assert.equal(props[k].maxLength, 80);
+  }
+  const res = await c.callTool({ name: "namebeam_free_check", arguments: { city: "Austin", trade: "plumber" } });
+  const r = res as { isError?: boolean; content: { type: string; text: string }[] };
+  assert.notEqual(r.isError, true);
+  assert.equal(r.content.length, 1, "only one text block");
+  assert.equal(r.content[0].type, "text");
+  assert.ok(r.content[0].text.includes(FREE_CHECK_URL), "text carries the tagged check URL");
+  assert.ok(r.content[0].text.includes("A count of which businesses one AI engine named, dated, not a ranking."), "text carries the sentence");
+  assert.equal(log.length, 0, "no HTTP request was made");
+  const tooLong = (await c.callTool({ name: "namebeam_free_check", arguments: { city: "x".repeat(81) } })) as { isError?: boolean };
+  assert.equal(tooLong.isError, true, "city above 80 characters is rejected");
+  assert.equal(log.length, 0);
+});
+
+test("receipts_sample result carries next_step with the tagged check link, on stdio and on the remote handler", async () => {
+  const c = await connect(mockFetch({ "/v1/sample": { body: fx("sample.json") } }));
+  const data = JSON.parse(textOf(await c.callTool({ name: "receipts_sample", arguments: {} })));
+  assert.equal(data.row_id, 602, "the API row is still the body");
+  assert.equal(typeof data.next_step, "string");
+  assert.ok(data.next_step.includes(FREE_CHECK_URL), "stdio next_step carries the tagged check URL");
+  const remoteClient: ApiClient = { baseUrl: "https://stub.test", async getJson() { return JSON.parse(fx("sample.json")); } };
+  const req = new Request("https://api.receiptsindex.com/mcp", {
+    method: "POST",
+    headers: { "content-type": "application/json", accept: "application/json, text/event-stream" },
+    body: JSON.stringify({ jsonrpc: "2.0", id: 1, method: "tools/call", params: { name: "receipts_sample", arguments: {} } })
+  });
+  const out = (await (await handleMcpRequest(req, { client: remoteClient })).json()) as { result: { content: { text: string }[] } };
+  const remoteData = JSON.parse(out.result.content[0].text);
+  assert.equal(remoteData.next_step, data.next_step, "remote next_step equals stdio next_step");
+  assert.ok(INSTRUCTIONS.includes(FREE_CHECK_URL), "server instructions point to the free check");
 });
 
 test("receipts_index passes start and limit and returns the fixture", async () => {

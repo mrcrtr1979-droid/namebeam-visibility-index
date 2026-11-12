@@ -1,14 +1,28 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { ApiError, buildPricing, makeClient, type Client, type FetchLike, DEFAULT_BASE_URL } from "./api.js";
+import {
+  ApiError,
+  buildPricing,
+  makeClient,
+  withNextStep,
+  type Client,
+  type FetchLike,
+  DEFAULT_BASE_URL,
+  FREE_CHECK_MAX_INPUT,
+  FREE_CHECK_TOOL_TEXT
+} from "./api.js";
 
 export const SERVER_NAME = "receipts-index";
-export const SERVER_VERSION = "0.1.5";
+export const SERVER_VERSION = "0.1.6";
 
 type ToolResult = { content: { type: "text"; text: string }[]; isError?: boolean };
 
 function ok(data: unknown): ToolResult {
   return { content: [{ type: "text", text: JSON.stringify(data, null, 2) }] };
+}
+
+function text(s: string): ToolResult {
+  return { content: [{ type: "text", text: s }] };
 }
 
 function fail(e: unknown): ToolResult {
@@ -65,7 +79,7 @@ export function createServer(opts: ServerOptions = {}): McpServer {
     },
     async () => {
       try {
-        return ok(await client.getJson("/v1/sample"));
+        return ok(withNextStep(await client.getJson("/v1/sample")));
       } catch (e) {
         return fail(e);
       }
@@ -95,6 +109,22 @@ export function createServer(opts: ServerOptions = {}): McpServer {
         return fail(e);
       }
     }
+  );
+
+  // LB-48 (2026-11-12): front door to the free check. No request, no data read; the text is the link and one sentence.
+  server.registerTool(
+    "namebeam_free_check",
+    {
+      title: "Namebeam: free check link",
+      description:
+        "Returns the link to the free Namebeam check for one US city and trade. Free. Makes no request and reads no data. The check reports a count of which businesses one AI engine named for that city and trade on a dated run; it is not a ranking.",
+      inputSchema: {
+        city: z.string().max(FREE_CHECK_MAX_INPUT).optional().describe("US city, up to 80 characters."),
+        trade: z.string().max(FREE_CHECK_MAX_INPUT).optional().describe("Trade or business type, up to 80 characters.")
+      },
+      annotations: { title: "Namebeam: free check link", readOnlyHint: true, openWorldHint: false }
+    },
+    async () => text(FREE_CHECK_TOOL_TEXT)
   );
 
   return server;

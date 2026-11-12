@@ -15,6 +15,9 @@ This server reads the free routes and lists what the paid routes cost. It never 
 | `receipts_index` | `GET /v1/index` | free | Row ids and UTC dates (no row content), row count, first and last date, the dates that have rows. Optional `start` (integer, 1 or more) and `limit` (integer, 1 to 500) page through row ids. |
 | `receipts_sample` | `GET /v1/sample` | free | One real record row labeled as a sample, its row id, the paid route and price for that row, the row as fields and as CSV. No parameters. |
 | `receipts_pricing` | `GET /.well-known/x402`, `GET /v1/manifest` | free | The paid endpoints with prices in USDC, as the API lists them. |
+| `namebeam_free_check` | nothing (no request) | free | The link to the free Namebeam check for one US city and trade, with the sentence "A count of which businesses one AI engine named, dated, not a ranking." Optional `city` and `trade` (strings, up to 80 characters). |
+
+The `receipts_sample` result also carries a `next_step` line with the same free check link.
 
 ## Paid endpoints (as listed by the API)
 
@@ -41,7 +44,7 @@ Turn it off with `RECEIPTS_INDEX_TELEMETRY=0` or `DO_NOT_TRACK=1` in the server'
 
 URL: `https://api.receiptsindex.com/mcp`. Live since 2026-10-28 (initialize, tools/list and all three tools answered). No sign-in, no key.
 
-It exposes the same three tools as the stdio server, read-only, with no sign-in and no API key. `receipts_index` and `receipts_sample` return the free data. `receipts_pricing` returns the x402 payment terms for the paid routes (route, USDC price, network, pay-to address). The endpoint never pays and never signs anything; paying is done by an x402 client against the listed route.
+It exposes the same four tools as the stdio server, read-only, with no sign-in and no API key. `receipts_index` and `receipts_sample` return the free data. `receipts_pricing` returns the x402 payment terms for the paid routes (route, USDC price, network, pay-to address). The endpoint never pays and never signs anything; paying is done by an x402 client against the listed route.
 
 Add it to any client that takes a remote MCP URL (Claude and ChatGPT custom connectors, or any assistant that can add an MCP server by URL):
 

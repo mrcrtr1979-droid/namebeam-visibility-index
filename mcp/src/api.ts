@@ -1,5 +1,22 @@
 export const DEFAULT_BASE_URL = "https://api.receiptsindex.com";
-export const USER_AGENT = "receipts-index-mcp/0.1.5";
+export const USER_AGENT = "receipts-index-mcp/0.1.6";
+
+// Front door to the free check (LB-48, 2026-11-12). One place for the link so the stdio server, the remote handler
+// and the generated Worker module carry the same text. The tag is read in PostHog as utm_source=mcp.
+export const FREE_CHECK_URL = "https://check.namebeam.ai/?utm_source=mcp&utm_campaign=lb48";
+export const FREE_CHECK_SENTENCE = "A count of which businesses one AI engine named, dated, not a ranking.";
+export const FREE_CHECK_INSTRUCTION =
+  "To check which businesses an AI engine names for any US city and trade, the free check is at " + FREE_CHECK_URL;
+export const FREE_CHECK_TOOL_TEXT = FREE_CHECK_URL + "\n" + FREE_CHECK_SENTENCE;
+export const FREE_CHECK_MAX_INPUT = 80;
+
+// Adds next_step to a JSON object returned by the API (receipts_sample). Any other shape is returned unchanged.
+export function withNextStep(data: unknown): unknown {
+  if (data && typeof data === "object" && !Array.isArray(data)) {
+    return { ...(data as Record<string, unknown>), next_step: FREE_CHECK_INSTRUCTION };
+  }
+  return data;
+}
 
 export type FetchLike = (url: string, init?: { headers?: Record<string, string>; signal?: AbortSignal }) => Promise<{
   ok: boolean;

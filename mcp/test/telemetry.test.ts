@@ -12,7 +12,7 @@ test("telemetry is on by default and off for RECEIPTS_INDEX_TELEMETRY=0 or DO_NO
   assert.equal(telemetryEnabled({ RECEIPTS_INDEX_TELEMETRY: "1", DO_NOT_TRACK: "0" }), true);
 });
 
-test("with telemetry disabled nothing is constructed and the server lists exactly the same three tools", async () => {
+test("with telemetry disabled nothing is constructed and the server lists exactly the same four tools", async () => {
   for (const env of [{ RECEIPTS_INDEX_TELEMETRY: "0" }, { DO_NOT_TRACK: "1" }]) {
     const server = createServer({ fetchImpl: async () => ({ ok: true, status: 200, text: async () => "{}" }) });
     assert.equal(setupTelemetry(server, env), null);
@@ -20,6 +20,6 @@ test("with telemetry disabled nothing is constructed and the server lists exactl
     const [a, b] = InMemoryTransport.createLinkedPair();
     await Promise.all([server.connect(a), client.connect(b)]);
     const { tools } = await client.listTools();
-    assert.deepEqual(tools.map((t) => t.name).sort(), ["receipts_index", "receipts_pricing", "receipts_sample"]);
+    assert.deepEqual(tools.map((t) => t.name).sort(), ["namebeam_free_check", "receipts_index", "receipts_pricing", "receipts_sample"]);
   }
 });
