@@ -1,0 +1,96 @@
+# LB-106 (2026-11-12, LAPTOP-FABLE-LB106 for PRIMARY-TEAM-COS-1112D): the LB-103 citation baseline, run on the
+# rail that holds the collector's Perplexity prepay. Branch only, never merged. The laptop seat has no gh and no
+# API sign-in, so the job also fires once on a push to its own branch that touches this file; the GITHUB_TOKEN
+# commit-back below never re-triggers it (token pushes do not start workflows, and the paths filter excludes
+# lb106_out/ anyway). No schedule. 30 Agent API calls per run (6 questions x 5 answers), hard cap 60 in the script.
+# Output: lb106_out/baseline_<CT stamp>.csv, lb106_out/reads.csv, lb106_out/summary_<run id>.txt, committed to
+# this branch so any seat can fetch them with plain git. Answer text is never written (R82), only its SHA-256.
+name: LB106 citation baseline (branch only, one shot)
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_calls:
+        description: "Perplexity calls this run (30 is the baseline; the script caps at 60 whatever is typed)"
+        required: false
+        default: "30"
+  push:
+    branches:
+      - lb106/citation-baseline
+    paths:
+      - ".github/workflows/lb106-citation-baseline.yml"
+
+concurrency:
+  group: lb106-citation-baseline
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  baseline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out the branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Selftest (no network, 9 checks)
+        run: python3 -I scripts/lb106/lb103_citation_read.py --selftest
+
+      - name: Guard, the rail must be configured (name only, the value is never printed)
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+        run: |
+          if [ -z "$PERPLEXITY_API_KEY" ]; then
+            echo "::error::PERPLEXITY_API_KEY is not configured as an Actions secret of this repo; STOP, nothing was called"
+            exit 1
+          fi
+          echo "rail present: PERPLEXITY_API_KEY (length not printed)"
+
+      - name: Baseline read (6 questions x 5 answers, Agent API, sonar, web_search forced)
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          MAX_CALLS: ${{ inputs.max_calls || '30' }}
+        run: |
+          set -o pipefail
+          mkdir -p lb106_out
+          echo "run ${GITHUB_RUN_ID} attempt ${GITHUB_RUN_ATTEMPT} on $(date -u +%FT%TZ), max_calls ${MAX_CALLS}" > "lb106_out/summary_${GITHUB_RUN_ID}.txt"
+          python3 -I scripts/lb106/lb103_citation_read.py baseline --out lb106_out --max-calls "${MAX_CALLS}" | tee -a "lb106_out/summary_${GITHUB_RUN_ID}.txt"
+
+      - name: Commit the csv back to this branch (never to main)
+        if: ${{ always() && hashFiles('lb106_out/**') != '' }}
+        run: |
+          set -euo pipefail
+          case "${GITHUB_REF_NAME}" in
+            main) echo "::error::refusing to commit a baseline onto main"; exit 1 ;;
+          esac
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add lb106_out/
+          if git diff --staged --quiet; then
+            echo "nothing new to commit"
+            exit 0
+          fi
+          git commit -m "LB106 citation baseline run ${GITHUB_RUN_ID} (csv, no answer text)"
+          for i in 1 2 3; do
+            git push origin "HEAD:${GITHUB_REF_NAME}" && break
+            echo "push rejected, rebasing (attempt $i)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+          done
+
+      - name: Keep the csv as an artifact too (fallback if the push failed)
+        if: ${{ always() && hashFiles('lb106_out/**') != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: lb106-baseline-${{ github.run_id }}
+          path: lb106_out/
+          retention-days: 14
+          if-no-files-found: ignore
