@@ -1,0 +1,91 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-13_atrix_digital_perplexity",
+ "date_utc": "2026-11-13",
+ "business": "Atrix Digital",
+ "niche": "AI marketing agency",
+ "market": "Los Angeles CA",
+ "row_type": "business",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need an AI marketing agency in Los Angeles. Which specific agencies should I call, and why?",
+ "q1_prompt_text": "Who is the best AI marketing agency in Los Angeles?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7bef1fb3-f89a-43b2-922d-9bc59ef84301",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00152,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00526
+   },
+   "input_tokens": 4950,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4396,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 607,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5557
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Thrive Internet Marketing Agency",
+  "Ready Artwork",
+  "Sunlight Media",
+  "AI-search visibility and technical site improvements",
+  "Mad Mind Studios",
+  "LAv1",
+  "My shortlist",
+  "Thrive",
+  "AI-search",
+  "AI SEO",
+  "AI marketing",
+  "AI marketing agency",
+  "AI visibility",
+  "Greater LA"
+ ],
+ "engine_stated_criteria": [
+  "getting your business found in AI-generated answers"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "6821cde107b372e7092c62fc05ad973707c204a86a72ac53c44da90931787af6",
+ "answer_chars": 2327,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "1240e820628e3e0c5d23309b9d6699f93762d21b82e133549fc93bc772616b4a",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

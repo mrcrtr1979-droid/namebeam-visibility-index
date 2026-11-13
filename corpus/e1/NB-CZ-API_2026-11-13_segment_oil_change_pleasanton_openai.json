@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-API_2026-11-13_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjqVjnQ8IzRQx73rajrKMCESgVbs1",
+  "usage": {
+   "prompt_tokens": 21,
+   "completion_tokens": 781,
+   "total_tokens": 802,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Precision Auto Care",
+  "Fast, basic oil change",
+  "ASE-certified",
+  "Jiffy Lube",
+  "OEM-quality"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most drivers, the best choice is usually a well-reviewed ASE-certified independent shop rather than a quick-lube chain—better inspection quality, less upselling, and they can spot leaks, brakes, tires, or fluid issues while the car is up.\n\nIn Pleasanton, I’d start with **Precision Auto Care** or another local ASE-certified independent with strong recent Google/Yelp reviews and a clear quoted price. Call first and ask for the **out-the-door price** for your exact oil type and filter.\n\nChoose based on your situation:\n\n- **Newer car / warranty / European luxury vehicle:** use the brand dealer or a brand-specialist shop. The higher price can be worth it for correct oil spec, electronic service-record reset, and factory inspection.\n- **Fast, basic oil change:** Jiffy Lube/Valvoline-type locations are convenient, but confirm the total price before authorizing anything and decline add-ons you don’t need.\n- **Best value:** independent shop using the manufacturer-required synthetic oil and OEM-quality filter.\n\nWhen calling, ask:  \n“What's the total price—including oil, filter, disposal, tax, and any shop fees—for a full-synthetic oil change on a [year/make/model]?”  \n\nThat question makes price comparisons much more reliable.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

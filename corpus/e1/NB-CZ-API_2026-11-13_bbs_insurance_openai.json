@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-API_2026-11-13_bbs_insurance_openai",
+ "date_utc": "2026-11-13",
+ "business": "BBS Insurance",
+ "niche": "health insurance brokerage",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best health insurance broker in Kansas City MO for someone who is self-employed?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjrAChTiIzydQAef8zv7PxvKJxGwk",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 742,
+   "total_tokens": 766,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 342,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "HealthCare.gov → Find Local Help",
+  "Agent/Broker",
+  "Missouri Department of Commerce and Insurance",
+  "Marketplace Navigator/assister",
+  "HealthCare.gov-certified",
+  "ACA Marketplace",
+  "Marketplace Navigator",
+  "ACA Marketplace plans",
+  "Marketplace plans",
+  "Missouri Department of Commerce"
+ ],
+ "engine_stated_criteria": [
+  "Do you represent multiple carriers and both on- and off-Marketplace plans?",
+  "Can you compare provider networks and prescription coverage—not just premiums?",
+  "Do you charge me a fee?",
+  "Will you assist if my income changes during the year?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a self-employed person in Kansas City, Missouri, the best choice is usually **an independent, HealthCare.gov-certified broker**—not a broker tied to one insurer. They can compare ACA Marketplace plans, determine whether you qualify for premium tax credits, and also show off-Marketplace options if appropriate.\n\nRather than relying on a “best broker” ranking—which changes and can be influenced by commissions—use the official locator:\n\n- **HealthCare.gov → Find Local Help:** https://localhelp.healthcare.gov  \n  Filter for **“Agent/Broker”** in Kansas City, MO.\n- Verify the broker’s Missouri license through the **Missouri Department of Commerce and Insurance** license lookup.\n\nFor self-employment, ask a prospective broker these specific questions:\n\n1. **Are you registered to enroll people through HealthCare.gov for the current plan year?**\n2. **Do you represent multiple carriers and both on- and off-Marketplace plans?**\n3. **Will you help estimate my annual household income and premium-tax-credit eligibility?**\n4. **Can you compare provider networks and prescription coverage—not just premiums?**\n5. **Do you charge me a fee?**  \n   Usually, Marketplace brokers are paid by insurers and should not need to charge you separately.\n6. **Will you assist if my income changes during the year?**  \n   This matters a lot for self-employed people because subsidy amounts are based on projected annual income and may need updating.\n\nA good broker should be willing to compare total yearly cost—premium, deductible, out-of-pocket maximum, network access, and prescriptions—rather than automatically steering you to the cheapest monthly premium.\n\nIf you prefer completely neutral assistance rather than an insurance salesperson, use a **Marketplace Navigator/assister** through the same HealthCare.gov local-help tool. Navigators generally do not earn carrier commissions, though they may not provide as much plan-selection guidance as an experienced independent broker.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,182 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-11-13_segment_personal_injury_law_denver",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: personal injury law, Denver",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best personal injury lawyer in Denver for a car accident case?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 4,
+ "pairs": [
+  {
+   "terser_names": [
+    "Jeremy Rosenthal of Rosenthal Injury Law",
+    "Todd Tenge of Tenge Law Firm",
+    "Rebecca Albano",
+    "Colorado"
+   ],
+   "verbose_names": [
+    "Jim Wilhite",
+    "Colorado. They",
+    "Arthur Damiens",
+    "Colorado",
+    "Founder Keith Bowman",
+    "TBIs",
+    "Contingency Fee Structure"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 4,
+   "verbose_entity_count": 7,
+   "containment_pct": 25.0,
+   "shared_count": 1,
+   "answer_chars_a": 1238,
+   "answer_chars_b": 3970,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Colorado",
+    "Ramos Law",
+    "Dormer Harpring"
+   ],
+   "verbose_names": [
+    "Jeremy Rosenthal of Rosenthal Injury Law",
+    "Todd Tenge of Tenge Law Firm",
+    "Rebecca Albano",
+    "Colorado"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 4,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 1238,
+   "answer_chars_b": 1822,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Jeremy Rosenthal of Rosenthal Injury Law",
+    "Todd Tenge of Tenge Law Firm",
+    "Rebecca Albano",
+    "Colorado"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 4,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 1238,
+   "answer_chars_b": 1119,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Colorado",
+    "Ramos Law",
+    "Dormer Harpring"
+   ],
+   "verbose_names": [
+    "Jim Wilhite",
+    "Colorado. They",
+    "Arthur Damiens",
+    "Colorado",
+    "Founder Keith Bowman",
+    "TBIs",
+    "Contingency Fee Structure"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 7,
+   "containment_pct": 33.3,
+   "shared_count": 1,
+   "answer_chars_a": 3970,
+   "answer_chars_b": 1822,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Jim Wilhite",
+    "Colorado. They",
+    "Arthur Damiens",
+    "Colorado",
+    "Founder Keith Bowman",
+    "TBIs",
+    "Contingency Fee Structure"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 7,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 3970,
+   "answer_chars_b": 1119,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Colorado",
+    "Ramos Law",
+    "Dormer Harpring"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 3,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 1822,
+   "answer_chars_b": 1119,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-13_segment_hvac_atlanta_anthropic",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a new air conditioner installed in Atlanta. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_csjo52wi2dulirpk7o5jzyg3zqq7ysgqan5glyi4s57qufzyemda",
+  "usage": {
+   "input_tokens": 31,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 265,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "NATE",
+  "NATE certification",
+  "Warranty terms"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest a different approach than me recommending specific companies:\n\n**How to find good local options:**\n- Google \"HVAC installation Atlanta\" + filter by recent reviews\n- Check Angie's List, BBB, or Yelp for ratings and complaint history\n- Ask neighbors/friends for referrals (often most reliable)\n- Call 3-5 companies for quotes\n\n**What to verify when calling:**\n- NATE certification (technician standard)\n- Proper licensing for Georgia\n- Whether they're established locally (not just a franchise)\n- Warranty terms on equipment and labor\n- If they explain options clearly (not just pushing most expensive unit)\n\n**Red flags to avoid:**\n- Pressure to decide same-day\n- Unwillingness to provide references\n- Vague pricing before inspection\n- No written estimate\n\n**Questions to ask:**\n- Do they handle your specific unit type?\n- What's included in maintenance plans?\n- Emergency service availability?\n\nThe \"best\" company depends on your specific needs (budget, home size, existing system type), so getting multiple quotes is really the key step.\n\nIs there a particular aspect of the process you're uncertain about?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

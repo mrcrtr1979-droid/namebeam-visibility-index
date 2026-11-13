@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-13_segment_hvac_phoenix_openai",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjrkrMejMiOTz3Gx4i7DaW6tQGq0Z",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1366,
+   "total_tokens": 1391,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 440,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Parker & Sons — Phoenix metro",
+  "Day & Night",
+  "Parker & Sons",
+  "Hobaica",
+  "Scottsdale Air",
+  "Hobaica, Scottsdale Air, and Chas Roberts",
+  "Manual J load calculation",
+  "Arizona Registrar of Contractors (ROC)",
+  "Phoenix-area AC",
+  "Hobaica Services",
+  "East Valley",
+  "Scottsdale Air Heating",
+  "North Phoenix",
+  "Day",
+  "Night Air Conditioning",
+  "Parker",
+  "Sons",
+  "Chas Roberts Air Conditioning",
+  "Arizona HVAC",
+  "Chas Roberts",
+  "One Phoenix-specific",
+  "Registrar of Contractors",
+  "In Phoenix",
+  "Air Conditioning",
+  "AC repair",
+  "Arizona Registrar of Contractors",
+  "Day & Night Air",
+  "Valley",
+  "Night Air",
+  "Scottsdale Air Heating & Cooling",
+  "Chas Roberts Air Conditioning & Plumbing"
+ ],
+ "engine_stated_criteria": [
+  "AC is off and the house is getting dangerously hot",
+  "AC runs but is not cooling well / weak airflow / high bills",
+  "You were told you need a new system"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a Phoenix-area AC repair, I’d call **at least three companies**—one larger same-day dispatch company and two established local HVAC specialists—because diagnoses and replacement recommendations can vary widely.\n\n### Companies worth calling\n\n1. **Hobaica Services — Tempe / East Valley / Phoenix metro**\n   - Good first call for a conventional residential AC repair, maintenance issue, or second opinion.\n   - Long-established local HVAC company with strong familiarity with Phoenix heat, heat pumps, and common split-system failures.\n   - Especially useful if you want a repair-first assessment rather than immediately jumping to replacement.\n\n2. **Scottsdale Air Heating & Cooling — Scottsdale / North Phoenix / East Valley**\n   - A solid choice for a detailed diagnostic and a second opinion on a large repair or system replacement.\n   - Established local focus, which matters in Phoenix where correct sizing, duct performance, attic insulation, and refrigerant charge all affect summer performance.\n   - Ask them to evaluate the entire system—not just the failed part—if your house has hot rooms, weak airflow, or high utility bills.\n\n3. **Day & Night Air Conditioning, Heating & Plumbing — Phoenix metro**\n   - Good option when the unit is completely down and you need a faster appointment or after-hours availability.\n   - Larger service operation, so it can be a practical “get someone out today” call during a heat wave.\n   - Get the repair estimate in writing before authorizing major work.\n\n4. **Parker & Sons — Phoenix metro**\n   - Another reasonable choice when you need broad availability, including urgent service.\n   - They handle HVAC plus related electrical/plumbing issues, which can help if the apparent AC problem turns out to involve a breaker, thermostat wiring, condensate drain, or electrical disconnect.\n   - Because larger companies can have higher overhead, compare any major repair or replacement quote with at least one independent/local competitor.\n\n5. **Chas Roberts Air Conditioning & Plumbing — Phoenix metro**\n   - Worth including if your system is older, needs a major component such as a compressor or coil, or you may be considering replacement.\n   - Large, long-running Arizona HVAC provider with experience in high-volume Phoenix residential work.\n   - Again, use them as one quote—not the only quote—if replacement is proposed.\n\n### My practical call order\n\n- **AC is off and the house is getting dangerously hot:**  \n  Call **Day & Night** or **Parker & Sons** for fastest likely dispatch, then schedule **Hobaica** or **Scottsdale Air** for a second opinion if the repair is expensive.\n\n- **AC runs but is not cooling well / weak airflow / high bills:**  \n  Start with **Hobaica** and **Scottsdale Air**. These symptoms often involve airflow, a dirty coil, duct leakage, thermostat settings, capacitor issues, or refrigerant problems—not necessarily a full replacement.\n\n- **You were told you need a new system:**  \n  Get quotes from **Hobaica, Scottsdale Air, and Chas Roberts** before signing. In Phoenix, a system that is oversized, undersized, or poorly installed can be expensive for years.\n\n### What to ask every company\n\nBefore approving work, ask for:\n\n- A **written diagnosis**, not just “it’s old.”\n- The exact failed part and why it failed.\n- Separate prices for:\n  - diagnostic/service call,\n  - repair,\n  - optional maintenance,\n  - replacement, if proposed.\n- Whether the part is covered by a **manufacturer or labor warranty**.\n- If refrigerant is recommended: the **measured leak location**, refrigerant type, and whether a leak repair is possible.\n- If replacement is recommended: a **Manual J load calculation** or at least a documented sizing rationale—not simply replacing your existing tonnage.\n- Arizona contractor license information; verify it through the **Arizona Registrar of Contractors (ROC)** before authorizing a large job.\n\n### One Phoenix-specific caution\n\nBe skeptical if the first technician immediately recommends a full system replacement without checking basics such as the capacitor, contactor, blower motor, drain safety switch, thermostat, electrical disconnect, condenser coil, indoor coil, airflow/static pressure, and refrigerant readings. Phoenix heat is hard on equipment, but many “dead AC” calls are still repairable.\n\nIf anyone in the home is elderly, medically vulnerable, or the indoor temperature is approaching unsafe levels, prioritize the soonest safe service appointment and use a cooling center, hotel, or nearby air-conditioned location if needed.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,61 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-13_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ejru5oYymtqoACwM2boQlghWwrVeT",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1792,
+   "total_tokens": 1820,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jiffy Lube — Santa Rita Road, Pleasanton",
+  "Watch for",
+  "Oil Changers — Rosewood Drive area, Pleasanton",
+  "Toyota of Pleasanton — Johnson Drive, Pleasanton",
+  "Tradeoff",
+  "Jiffy Lube",
+  "Oil Changers",
+  "Rosewood Drive",
+  "Toyota",
+  "Toyota of Pleasanton",
+  "Johnson Drive",
+  "European"
+ ],
+ "engine_stated_criteria": [
+  "Your brand’s nearby dealer service department",
+  "Older car you plan to keep for years"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a typical gasoline car in Pleasanton, I’d call these in this order:\n\n1. **Jiffy Lube — Santa Rita Road, Pleasanton**  \n   **Best for:** fastest same-day conventional or full-synthetic oil change.  \n   **Why call:** Usually convenient for a basic maintenance visit, often has online coupons, and can handle most common cars without an appointment. Ask for the *out-the-door* price and whether the quote includes the oil filter, shop fees, and oil-disposal fee.  \n   **Watch for:** Upsell recommendations; it’s fine to decline air filters, wipers, flushes, etc. unless you already know they’re due.\n\n2. **Oil Changers — Rosewood Drive area, Pleasanton**  \n   **Best for:** a quick drive-through-style service and a second price quote.  \n   **Why call:** These shops generally focus on oil changes, so turnaround can be short. Good option if Jiffy Lube has a wait or if you want to compare synthetic-oil pricing.  \n   **Ask:** Whether they carry the exact oil specification your car requires—not just the viscosity. For example, many newer cars require a particular manufacturer approval such as Dexos, Toyota 0W-16, VW 508/509, BMW LL-01/LL-17, etc.\n\n3. **Toyota of Pleasanton — Johnson Drive, Pleasanton**  \n   **Best for:** Toyota/Lexus owners, hybrids, cars under warranty, or anyone who wants dealer service records.  \n   **Why call:** The dealer is more likely to use the correct factory-spec oil/filter and to check for recall or maintenance-program items. It can be especially worthwhile for a Prius/hybrid or a newer Toyota.  \n   **Tradeoff:** Usually slower and sometimes more expensive than a quick-lube shop; ask whether they have an express-service lane and any oil-change specials.\n\n4. **Your brand’s nearby dealer service department** — especially if you drive a **European, luxury, turbocharged, hybrid, diesel, or newer vehicle**  \n   **Best for:** Audi/VW, BMW, Mercedes, Porsche, Volvo, Tesla-adjacent service needs, or any vehicle with a nonstandard oil requirement.  \n   **Why call:** The wrong oil specification can matter more than saving $20–$40. Dealer or marque-specialist service is often the safer choice for these cars, particularly during warranty coverage.\n\n### My practical recommendation\n\n- **Need it done today, ordinary Honda/Toyota/Ford/Chevy/etc.:** Call **Jiffy Lube** and **Oil Changers** first; choose the one that confirms the correct oil spec, gives a complete price, and has the shorter wait.  \n- **Newer car, hybrid, luxury/European car, or warranty concern:** Call the **dealer first**.  \n- **Older car you plan to keep for years:** A well-reviewed independent mechanic can be better than quick-lube shops because they can spot leaks, worn brakes, suspension issues, and other maintenance needs—not just change oil.\n\n### What to say when you call\n\n> “I have a [year/make/model/engine]. I need an oil and filter change. Do you have the manufacturer-required oil specification, what is the complete out-the-door price, and how long is the wait today?”\n\nAlso ask whether they will:\n- reset the maintenance reminder,\n- use a quality filter,\n- note the oil specification on the invoice, and\n- check tire pressure and fluid levels without charging for unnecessary add-ons.\n\nI’d verify the current address, hours, and availability before heading over, since quick-lube locations and branding can change.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

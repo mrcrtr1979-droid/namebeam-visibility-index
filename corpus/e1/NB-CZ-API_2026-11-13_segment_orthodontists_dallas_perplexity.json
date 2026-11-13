@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-11-13_segment_orthodontists_dallas_perplexity",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_110a19ac-cf73-4404-b202-e273e25803da",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00077,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00091,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00432
+   },
+   "input_tokens": 3616,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3069,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 364,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3980
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Nyle Bradley Blanck",
+  "Dr. Doug Crosby",
+  "Dr. Chance Choate",
+  "Dr. Camille Laird",
+  "Dr. Shad Hanis",
+  "Invisalign. A",
+  "American Board of Orthodontics. That",
+  "Invisalign",
+  "American Board of Orthodontics",
+  "American Association of Orthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "d43df6593cd094a6fd5cc8253a88e18722860ddb651c99f054d1ae76f042c894",
+ "answer_chars": 1326,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "885887cf91b13122a3824811b701bc032a3207f11cde34e196425e8db9af281f",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

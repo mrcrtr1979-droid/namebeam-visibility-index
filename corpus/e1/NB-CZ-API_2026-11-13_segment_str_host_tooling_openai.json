@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-API_2026-11-13_segment_str_host_tooling_openai",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjrPKZ5R6lEnHWepsszlXCVbbCshC",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 627,
+   "total_tokens": 653,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 77,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Before buying a property",
+  "AirDNA",
+  "After launching the listing",
+  "PriceLabs",
+  "Use AirDNA before acquisition",
+  "Underwrite conservatively",
+  "Use PriceLabs once live",
+  "Beyond Pricing",
+  "Rabbu",
+  "AllTheRooms",
+  "Mashvisor",
+  "Use AirDNA",
+  "Use PriceLabs",
+  "Beyond",
+  "After launching"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most Airbnb hosts, the best setup is:\n\n- **Before buying a property:** **AirDNA** for market research and revenue projections  \n- **After launching the listing:** **PriceLabs** for dynamic nightly pricing\n\n### Why AirDNA is best for buying analysis\nAirDNA is generally the strongest tool for evaluating a potential short-term-rental market. It can help you assess:\n\n- Historical occupancy, ADR (average daily rate), and RevPAR\n- Seasonality and monthly revenue patterns\n- Comparable listings by bedroom count, amenities, property type, and location\n- Supply growth and competition\n- Estimated revenue for a specific property/address\n- Regulations and market-level demand signals\n\nIt is especially useful when underwriting a purchase because you can avoid relying on a market-wide “average” and instead analyze comparable 2-bedroom homes, condos, cabins, luxury properties, etc.\n\n### Why PriceLabs is best for nightly pricing\nPriceLabs is widely used by hosts and property managers for dynamic pricing. It adjusts recommendations based on:\n\n- Local demand and booking pace\n- Seasonality\n- Day of week\n- Holidays and events\n- Lead time\n- Your occupancy and minimum-stay rules\n- Comparable-market behavior\n\nIt also gives you substantial control: minimum and maximum prices, last-minute discounts, far-future premiums, orphan-night rules, gap-night pricing, and minimum-stay settings.\n\n### Best practical workflow\n1. **Use AirDNA before acquisition** to validate the market and build conservative/base/upside revenue scenarios.\n2. **Underwrite conservatively**—do not buy based only on AirDNA’s top-end projection.\n3. **Use PriceLabs once live** to optimize nightly rates and occupancy.\n4. Revisit competitors and market conditions quarterly in AirDNA or a comparable analytics platform.\n\n### Alternatives\n- **Beyond Pricing:** Strong dynamic-pricing alternative to PriceLabs; often preferred by larger operators or hosts wanting more automation.\n- **Rabbu:** Useful for simpler revenue estimates and market checks, though typically less deep than AirDNA for serious acquisition analysis.\n- **AllTheRooms:** Another market-data option, particularly useful for broader destination or institutional-style research.\n- **Mashvisor:** Can be convenient for investors comparing traditional vs. short-term-rental returns, but I would still verify its estimates against AirDNA and real comps.\n\n### Bottom line\nIf you want one concise recommendation:\n\n- **Best pre-purchase market-analysis tool:** **AirDNA**\n- **Best nightly-pricing tool:** **PriceLabs**\n- **Best single-platform compromise:** AirDNA can provide useful pricing insights, but it is not usually a replacement for a dedicated dynamic-pricing engine like PriceLabs.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

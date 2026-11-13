@@ -1,0 +1,104 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-13_segment_orthodontists_miami_perplexity",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: orthodontists, Miami",
+ "niche": "orthodontists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Miami. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Miami for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_459081ce-49e3-445c-b979-773727ed20f2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00082,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00144,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0049
+   },
+   "input_tokens": 3835,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3282,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 574,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4409
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "American Board of Orthodontics (ABO) certification",
+  "Dr. Francesca Pietri, DMD",
+  "Dr. Elaine DeRoode, DDS",
+  "Dr. Arturo F. Mosquera, DMD, MS",
+  "Dr. Marco Irimia, DMD, MS",
+  "Dr. Richard C. Mariani Jr., DDS, MS",
+  "Dr. Idalia Lastra, DMD",
+  "Dr. Stephen M. Grussmark, DDS, MSD",
+  "American Association of Orthodontists’ locator",
+  "A quick call script",
+  "American Board of Orthodontics",
+  "Dr. Francesca Pietri",
+  "ABO-certified",
+  "Eastman Dental Center",
+  "Dr. Elaine DeRoode",
+  "Key Biscayne",
+  "Dr. Arturo F. Mosquera",
+  "University of Tennessee",
+  "Dr. Marco Irimia",
+  "UT San Antonio",
+  "Dr. Richard C. Mariani Jr",
+  "South Miami",
+  "Dr. Idalia Lastra",
+  "University of Alabama",
+  "Dr. Stephen M. Grussmark",
+  "Coral Gables",
+  "Centre for Invisible Braces",
+  "Invisalign",
+  "American Association of Orthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "484cd12da38c9543cf9213ff3432a2dd72ab35dbcda1380b45da44e2c24f0dda",
+ "answer_chars": 2030,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "bddde0947285966f161df67f1681e490a43408c0322154b2490731139076af45",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

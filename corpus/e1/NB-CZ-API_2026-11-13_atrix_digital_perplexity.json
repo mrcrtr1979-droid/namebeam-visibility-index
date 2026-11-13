@@ -1,0 +1,80 @@
+{
+ "check_id": "NB-CZ-API_2026-11-13_atrix_digital_perplexity",
+ "date_utc": "2026-11-13",
+ "business": "Atrix Digital",
+ "niche": "AI marketing agency",
+ "market": "Los Angeles CA",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best AI marketing agency in Los Angeles?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_709a5a96-b215-4400-81a6-ee323b45f7f8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00099,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00058,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00421
+   },
+   "input_tokens": 4502,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3957,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 230,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4732
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Emarketed",
+  "Thrive",
+  "AI-search",
+  "LA-based",
+  "Single Grain",
+  "AI marketing",
+  "AI marketing agency",
+  "AI marketing agency in Los Angeles"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9dec70b438694b7345437611a49f1b7308acc1ae83ed9c1cd8f711de1cb13d4c",
+ "answer_chars": 786,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "97492e78da638109bb0a2bb00c1677ff0e9086cf7e0c4bebe22df913e34dcdbc",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

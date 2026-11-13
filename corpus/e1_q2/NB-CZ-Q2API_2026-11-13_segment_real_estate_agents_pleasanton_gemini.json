@@ -1,0 +1,45 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-13_segment_real_estate_agents_pleasanton_gemini",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to sell my house in Pleasanton. Which specific real estate agents should I call, and why?",
+ "q1_prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "Bm_3apuWG_yhz7IPhLftiAY",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 95,
+   "totalTokenCount": 117,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "In Pleasanton"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I do not have access to real-time information or current agent performance data, so I cannot recommend specific real estate agents currently operating in Pleasanton. \n\nTo find the best agent for your specific needs, I recommend researching top-performing local agents through platforms like Zillow, Realtor.com, or Yelp, looking at recent sales history in Pleasanton neighborhoods, and interviewing at least two or three agents to compare their marketing strategies, local market expertise, and commission rates.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

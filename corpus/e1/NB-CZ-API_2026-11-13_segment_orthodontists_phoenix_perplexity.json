@@ -1,0 +1,80 @@
+{
+ "check_id": "NB-CZ-API_2026-11-13_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_37eb981a-779b-4a29-a3f8-480c23194e6e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00118,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00096,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00478
+   },
+   "input_tokens": 5267,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4720,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 385,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5652
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Serrano Orthodontics",
+  "Woolaver Orthodontics",
+  "E&S Orthodontics",
+  "Dr. Frank Meng",
+  "Invisalign",
+  "American Board of Orthodontics",
+  "Practice",
+  "WebMD"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "66a66ac709de1de1c1c9a390bb0a7ae8681bb7df49155416442cc55bbe644719",
+ "answer_chars": 1247,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "8727a477088361f1cc468052ae7dbad4b45cfb9a5b1768e92cee0f704bb8c30a",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

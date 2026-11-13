@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-API_2026-11-13_flatline_contracting_perplexity",
+ "date_utc": "2026-11-13",
+ "business": "Flatline Contracting",
+ "niche": "residential remodeling and repair",
+ "market": "Joplin MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is a reliable contractor in Joplin MO for a home remodel or repair project?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ab56a6e2-e0d7-4716-8e19-0a32452eecd3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00061,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00434
+   },
+   "input_tokens": 4900,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4348,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 245,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5145
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "American Construction Inc",
+  "GRC General Construction",
+  "Roof Master’s Remodeling",
+  "Roof Master",
+  "American Construction"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "d283b15be26f0c007d537768048f38999dcdb02cec5770e7dcac4cfda8e60b50",
+ "answer_chars": 730,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "bb5b4e612bd28f87b2557d4478d8f42d44b1607c7b8a4626b6ce7e802dabfa1d",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

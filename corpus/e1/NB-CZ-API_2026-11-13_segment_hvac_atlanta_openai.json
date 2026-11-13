@@ -1,0 +1,61 @@
+{
+ "check_id": "NB-CZ-API_2026-11-13_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjrjHaU3xr4oOGD6BFybzzhBXYTZz",
+  "usage": {
+   "prompt_tokens": 20,
+   "completion_tokens": 632,
+   "total_tokens": 652,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 215,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PV Heating, Cooling & Plumbing",
+  "Conditioned Air Systems",
+  "Moncrief Heating & Air Conditioning",
+  "Estes Services",
+  "Coolray",
+  "Manual J load calculation",
+  "AHRI-matched system",
+  "PV Heating",
+  "Moncrief",
+  "Moncrief Heating",
+  "Air Conditioning",
+  "AHRI-matched",
+  "AC replacement",
+  "Carrier",
+  "Trane",
+  "Metro Atlanta",
+  "Cooling",
+  "Moncrief Heating & Air"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a **residential AC replacement in metro Atlanta**, I’d put **PV Heating, Cooling & Plumbing** at the top of the shortlist—especially if you want a company that will do a real system design rather than simply replace your old unit with the same size.\n\nOther well-established Atlanta-area options worth getting competing proposals from:\n\n- **Conditioned Air Systems** — long-standing local company; broad service area.\n- **Moncrief Heating & Air Conditioning** — established Atlanta name, often a good choice for in-town homes.\n- **Estes Services** — large, established company with wide metro coverage.\n- **Coolray** — convenient and widely available, though you should compare pricing carefully against smaller firms.\n\nThe “best” company is the one that does these things in writing:\n\n1. Performs a **Manual J load calculation** (not just “you had a 3-ton, so you need another 3-ton”).\n2. Evaluates ducts, return-air capacity, insulation, and humidity—not only the outdoor condenser.\n3. Quotes a complete **AHRI-matched system**: outdoor unit, indoor coil/air handler or furnace, thermostat, and refrigerant work.\n4. Includes permits, startup/commissioning, labor warranty, and disposal of the old equipment.\n5. Gives at least **two efficiency/options**—for Atlanta, often a high-efficiency heat pump is worth comparing with a conventional AC/furnace setup.\n6. Clearly explains available manufacturer, utility, and federal tax-credit/rebate options.\n\nMy practical recommendation: call **PV Heating**, **Moncrief**, and one additional company serving your ZIP code, then choose based on the quality of the load calculation and scope—not the lowest equipment price. A bad installation can make an expensive Trane, Carrier, Lennox, or Mitsubishi system perform poorly; a properly sized and commissioned mid-tier system usually beats it.\n\nAvoid any contractor who quotes a replacement over the phone without inspecting the home or who pressures you to sign the same day.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

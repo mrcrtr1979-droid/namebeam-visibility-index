@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-11-13_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8d6eb865-c0ad-4d11-8531-cd53adba81ea",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00119,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.005
+   },
+   "input_tokens": 5222,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4666,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 476,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5698
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Lodge of the Ozarks",
+  "Hotel Grand Victorian",
+  "Savannah House Hotel",
+  "Chateau on the Lake",
+  "Westgate Branson Woods Resort and Cabins",
+  "Quick rule",
+  "Highway",
+  "Indian Point",
+  "Table Rock",
+  "Westgate Branson Woods",
+  "Cabins"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "7ad259ce4988ffad8896d903c913135e08e480688ab49d0a65d1887468b04f43",
+ "answer_chars": 1881,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "6bea7ed936d5b1b38ad52803321ef05cfeeac6bc4691878d0bd657c43f32725f",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

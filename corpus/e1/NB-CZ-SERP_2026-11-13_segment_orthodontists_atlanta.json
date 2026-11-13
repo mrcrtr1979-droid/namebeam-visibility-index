@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-SERP_2026-11-13_segment_orthodontists_atlanta",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "google_serp",
+ "run_channel": "serp",
+ "schema_version": "v4",
+ "run_status": "OK",
+ "serp_diagnostics": {
+  "payload": "parsed_json",
+  "parsed_attempt": "ok, 2 links, try 1",
+  "html_bytes": 225148,
+  "href_total": 0,
+  "redirect_hrefs": 0,
+  "nongoogle_hrefs": 0,
+  "consent_phrase_present": false,
+  "looks_like_consent_wall": false,
+  "looks_like_captcha": false,
+  "extraction_ok": true,
+  "zero_reason": null,
+  "snack_pack_keys0": [
+   "address",
+   "cid",
+   "global_rank",
+   "maps_link",
+   "name",
+   "phone",
+   "rank",
+   "rating",
+   "reviews_cnt",
+   "type",
+   "work_status",
+   "work_status_details"
+  ]
+ },
+ "business_mentioned": false,
+ "organic_top_results": [
+  "https://www.decaturorthodontics.com/",
+  "https://harrisorthodonticsatl.com/blog/invisalign-vs-traditional-braces-in-atlanta-ga/"
+ ],
+ "ai_overview_detected": false,
+ "ai_overview_present": true,
+ "ai_overview_text": "",
+ "ai_overview_references": [],
+ "session_note": "Organic results extracted mechanically from the returned results page. Bright Data does not document an AI Overview field, so ai_overview_detected is BEST EFFORT and may be null. Do not publish it as a measurement.",
+ "local_pack_present": true,
+ "local_pack_top": [
+  {
+   "position": 1,
+   "name": "Wright Orthodontics",
+   "link": null,
+   "address": "3019 N Druid Hills Rd NE Ste b",
+   "rating": 5,
+   "reviews": 649
+  },
+  {
+   "position": 2,
+   "name": "Harris Orthodontics - Atlanta",
+   "link": null,
+   "address": "800 Marietta St NW Ste C",
+   "rating": 5,
+   "reviews": 428
+  },
+  {
+   "position": 3,
+   "name": "Quest Orthodontics: Dr. Arjun Patel",
+   "link": null,
+   "address": "6065 Roswell Rd Ste 140",
+   "rating": 5,
+   "reviews": 885
+  }
+ ],
+ "ai_overview_sha256": "ed8c8b6de9a1cefb19b6c0dc813aa67a4bf6ee366eca50c2927bafb1d1d9e61a",
+ "ai_overview_chars": 1672,
+ "ai_overview_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector"
+}

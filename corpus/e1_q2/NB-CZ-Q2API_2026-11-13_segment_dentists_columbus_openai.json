@@ -1,0 +1,62 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-13_segment_dentists_columbus_openai",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: dentists, Columbus",
+ "niche": "dentists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Columbus. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Columbus Ohio for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ejs61quZmDjd63l9nAgTo4sXgFsIt",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1369,
+   "total_tokens": 1394,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Columbus, Ohio",
+  "Columbus Oral & Maxillofacial Surgery",
+  "Central Ohio Periodontics",
+  "Ohio State College of Dentistry Faculty Practice",
+  "OSU OMS",
+  "OSU College of Dentistry Faculty Practice",
+  "Maxillofacial Surgery Clinic",
+  "Columbus Oral",
+  "Maxillofacial Surgery",
+  "College of Dentistry",
+  "Ohio State University",
+  "OSU College of Dentistry"
+ ],
+ "engine_stated_criteria": [
+  "Need sedation, extraction, significant bone work, or have medical complexity",
+  "Have gum disease, recession, or known bone loss",
+  "Already have a trusted general dentist"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Assuming you mean **Columbus, Ohio**, I’d start by calling these practices in this order:\n\n1. **The Ohio State University College of Dentistry / Oral & Maxillofacial Surgery Clinic**  \n   **Why call:** Best first call if your case may be complex, you have medical conditions, need bone grafting/sedation, or want an academic second opinion. OSU can coordinate surgical implant placement, imaging, and the final restoration through its dental clinics. It may also have faculty-practice versus resident/student-clinic options with different pricing and wait times.  \n   **Ask:** “Do you offer an implant consultation that includes the surgical plan and the final crown plan, and what clinic level is available?”\n\n2. **Columbus Oral & Maxillofacial Surgery**  \n   **Why call:** A dedicated oral-surgery group is a strong option for the surgical side of an implant—especially extraction plus implant, difficult tooth removal, IV sedation, or bone grafting. Ask whether they coordinate directly with your general dentist or prosthodontist for the crown.  \n   **Ask:** “Will you place the implant only, or can you coordinate the final crown? Is the surgeon board-certified in oral and maxillofacial surgery?”\n\n3. **Central Ohio Periodontics**  \n   **Why call:** A periodontist is often an excellent implant provider when gum disease, receding gums, bone loss, or grafting is part of the situation. Periodontists focus on the tissue and bone supporting the implant, which matters a great deal for long-term appearance and stability.  \n   **Ask:** “Does the consultation include periodontal evaluation, a CBCT/3-D scan if needed, and an estimate for any grafting?”\n\n4. **Ohio State College of Dentistry Faculty Practice**  \n   **Why call:** This is a useful option if you want one place to help plan the *restorative* portion—the crown, bridge, or denture that goes on the implant—not just the surgery. It is also a sensible second-opinion choice if another office proposes extensive treatment.  \n   **Ask:** “Who will be responsible for the crown or implant-supported tooth, and can you provide a written total estimate from extraction through final restoration?”\n\n## Why these are better starting points than choosing purely by ads\nFor implants, the important issue is not simply whether an office advertises implants. You want a team that can assess:\n\n- whether the implant is appropriate for your bone and gum condition;\n- whether you need extraction, grafting, or a sinus lift first;\n- whether the surgical provider and crown provider have a coordinated plan;\n- what happens if the implant does not integrate or a crown component fails; and\n- the **all-in** price—not just the implant-post price.\n\n## The most important question to ask every office\nSay:\n\n> “I need a single-tooth dental implant. Can you give me a written estimate for the complete treatment: consultation, 3-D scan, extraction if needed, bone grafting if needed, implant placement, abutment, final crown, sedation, and follow-up?”\n\nA quoted “implant cost” often excludes the **abutment and crown**, and sometimes excludes imaging, grafting, extraction, and sedation. In Columbus, a straightforward single-tooth implant commonly ends up being several thousand dollars total; grafting and sedation can increase it substantially.\n\n## How I would choose between them\n- **Need sedation, extraction, significant bone work, or have medical complexity:** start with **OSU OMS** and **Columbus Oral & Maxillofacial Surgery**.\n- **Have gum disease, recession, or known bone loss:** prioritize **Central Ohio Periodontics**.\n- **Want an academic/second-opinion setting or need help coordinating the crown:** call **OSU College of Dentistry Faculty Practice**.\n- **Already have a trusted general dentist:** ask which surgeon or periodontist they work with regularly, because the implant surgeon and restorative dentist need to agree on implant position before surgery.\n\nBefore booking, verify the current office location, insurance participation, and whether they are accepting new implant patients; practice staffing and locations can change.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

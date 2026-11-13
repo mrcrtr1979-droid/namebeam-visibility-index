@@ -1,0 +1,59 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-13_segment_dentists_pleasanton_openai",
+ "date_utc": "2026-11-13",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EjrsyyNKRiwDDo4Oq4i4kDB12LWhX",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1971,
+   "total_tokens": 1999,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1378,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Foothill Dental Care",
+  "Pleasanton Smile Dental",
+  "Amador Dental & Orthodontics",
+  "Bright Now! Dental & Orthodontics – Pleasanton",
+  "Bright Now!",
+  "Amador Dental",
+  "Orthodontics",
+  "Bright Now",
+  "Want",
+  "Also",
+  "X-rays"
+ ],
+ "engine_stated_criteria": [
+  "Need the soonest appointment or have a common PPO plan"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a routine adult checkup and cleaning in Pleasanton, I’d start by calling these offices—not because one is universally “best,” but because they are general-dentistry options rather than specialist-only practices:\n\n1. **Foothill Dental Care**  \n   **Why call:** A good first choice if you want an ongoing, local general dentist for cleanings, exams, fillings, and follow-up care—not just a one-time appointment. Ask whether they have a hygienist opening close to your preferred date.\n\n2. **Pleasanton Smile Dental**  \n   **Why call:** Worth trying if you want a practice that handles standard preventive care but can also manage common restorative needs if the exam finds a cavity, old filling issue, etc. Ask whether a new-patient exam and cleaning can be done in the same visit.\n\n3. **Amador Dental & Orthodontics**  \n   **Why call:** A practical option if you value a broader office that can coordinate routine general dental care and, if relevant, orthodontic or family dental needs. Confirm that you are booking with the general-dentistry side, not orthodontics only.\n\n4. **Bright Now! Dental & Orthodontics – Pleasanton**  \n   **Why call:** This is a sensible availability/insurance fallback. Larger offices sometimes have more appointment slots and participate with more plans. The tradeoff can be less continuity with the same hygienist or dentist, so ask who will be doing the exam and cleaning.\n\n### My suggested order\n- **Want a long-term neighborhood dentist:** Call **Foothill Dental Care** and **Pleasanton Smile Dental** first.  \n- **Need the soonest appointment or have a common PPO plan:** Also call **Bright Now!**  \n- **Want one office for family/general/orthodontic coordination:** Call **Amador Dental & Orthodontics**.\n\n### What to ask on the phone\nUse this exact script:\n\n> “I’m a new adult patient in Pleasanton and need a routine exam and cleaning. Do you take my insurance, **[plan name]**, in network? What is your earliest hygiene appointment? Can the exam and cleaning be done at the same visit, and what would my estimated out-of-pocket cost be?”\n\nAlso ask:\n- Whether new-patient X-rays are required and whether recent X-rays can be transferred.\n- Whether the quoted visit is a standard cleaning or only an exam/consultation.\n- If you do not have insurance, whether they offer an in-house membership plan or a self-pay new-patient special.\n\nOne small caution: if an office recommends “deep cleaning” rather than a standard cleaning, ask them to explain the gum-pocket measurements, bleeding, and X-ray findings first. It may be appropriate, but you should understand the clinical reason and the cost before proceeding.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
