@@ -246,8 +246,14 @@ jobs:
           git add private_e1
           if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
           git commit -q -m "private_e1 ${day}: R82 raw text from run ${GITHUB_RUN_ID}"
-          git push -q origin HEAD:main
-          echo "pushed private_e1/${day} to carter-brain"
+          # CPEO-1113 (2026-11-13): the plain push was rejected on run 43479448438 (dispatch 2026-11-13 18:07Z)
+          # and the raw text stayed only in the 7-day fallback artifact. Same rebase-and-retry as the
+          # sharded runner's private push; a rejected push no longer ends the step.
+          for i in 1 2 3 4; do
+            git push -q origin HEAD:main && { echo "pushed private_e1/${day} to carter-brain"; exit 0; }
+            echo "push rejected, rebasing (attempt $i)"; git pull -q --rebase origin main
+          done
+          echo "::error::could not push the private raw copy after 4 attempts"; exit 1
 
       # Fallback only: if the private push failed, keep the artifact so the day's text is not lost (public-repo
       # artifacts are downloadable by any signed-in GitHub user, so this is never the primary sink).
