@@ -1,0 +1,57 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-14_segment_dentists_pleasanton_openai",
+ "date_utc": "2026-11-14",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkCbIgutpK9G0d6FvaF1Qxrt5iRyX",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1470,
+   "total_tokens": 1498,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 858,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton, California",
+  "Kotula Family & Cosmetic Dentistry",
+  "Pleasanton Smile Dental",
+  "Foothill Dental Care",
+  "Amador Valley Dental",
+  "Kotula Family",
+  "Cosmetic Dentistry",
+  "X-rays"
+ ],
+ "engine_stated_criteria": [
+  "A dental office listed through your insurer’s in-network directory",
+  "in network for your exact plan"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Assuming you mean **Pleasanton, California**, I’d call **2–3 offices rather than just one**, since new-patient exam/cleaning availability and insurance participation change often. These are good places to start for a routine checkup and cleaning:\n\n1. **Kotula Family & Cosmetic Dentistry**  \n   **Why call:** An established general-dentistry office that is a sensible fit for an adult preventive visit—exam, X-rays if needed, cleaning, and a treatment plan if they find anything. This is a good first call if you prefer a smaller, relationship-oriented local practice rather than a large chain.\n\n2. **Pleasanton Smile Dental**  \n   **Why call:** A general dental practice that should be equipped for standard new-patient care as well as follow-up restorative work if the exam uncovers a cavity, crown issue, or gum concerns. Worth calling if you want one office that can likely handle both the cleaning and any subsequent treatment.\n\n3. **Foothill Dental Care**  \n   **Why call:** Another local general-dentistry option to compare for appointment speed, insurance acceptance, and fees. Having this as a second or third call gives you leverage if another office has a long wait for a hygiene appointment.\n\n4. **Amador Valley Dental**  \n   **Why call:** A practical option to include if location near central Pleasanton/Hopyard-area access matters to you. Ask specifically whether they have a hygienist appointment—not merely an exam appointment—on the same day.\n\n5. **A dental office listed through your insurer’s in-network directory**  \n   **Why call:** If you have a DHMO/HMO plan, this may be the most important option; you may need to use an assigned primary dentist. For PPO plans, confirm the office is **in network for your exact plan**, not just that they “accept” the insurance.\n\nWhen you call, use this script:\n\n> “I’m a new patient looking for a comprehensive exam and routine cleaning. Do you have a hygienist appointment available within the next few weeks? Are you in network with my exact plan, **[insurance company and plan name]**? What would my estimated out-of-pocket cost be for the exam, X-rays, and cleaning?”\n\nAlso ask these two important follow-ups:\n\n- **“Is the cleaning included if I have periodontal/gum disease, or would that become a separate deep-cleaning charge?”**  \n  A routine cleaning (“prophylaxis”) and a deep cleaning/scaling-and-root-planing are billed differently.\n- **“Can the exam and cleaning be done at the same visit?”**  \n  Some offices book the exam first and schedule hygiene later.\n\nIf you tell me your **insurance plan**, whether you prefer **near downtown, Hacienda, or east Pleasanton**, and whether you need an appointment soon or want the lowest out-of-pocket cost, I can narrow this to the best two calls.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

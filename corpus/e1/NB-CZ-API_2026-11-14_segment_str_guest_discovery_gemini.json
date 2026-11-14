@@ -1,0 +1,68 @@
+{
+ "check_id": "NB-CZ-API_2026-11-14_segment_str_guest_discovery_gemini",
+ "date_utc": "2026-11-14",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "vqH4apL_NsHe-sAPnKKbyQY",
+  "usage": {
+   "promptTokenCount": 29,
+   "candidatesTokenCount": 1061,
+   "totalTokenCount": 1090,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 29
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb vs. Vrbo vs. Booking.com",
+  "Use Airbnb",
+  "Use Vrbo",
+  "Use Booking.com",
+  "Airbnb Superhost",
+  "Vrbo Premier Host",
+  "Quantity matters",
+  "Look for recency",
+  "Search reviews for keywords",
+  "Good host",
+  "Bad host",
+  "Never",
+  "Unique Stays",
+  "Budget Travelers",
+  "Customer",
+  "Vacation Rentals",
+  "Expedia Group",
+  "Traditional Travelers",
+  "Pro-Tip for Booking",
+  "Always",
+  "Booking.com",
+  "Superhost",
+  "Premier Host",
+  "Read the house rules and cancellation policy",
+  "Large Groups"
+ ],
+ "engine_stated_criteria": [
+  "the moment you walk in"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Choosing the right booking platform and finding a great host can make or break your trip. Here is a breakdown of **Airbnb vs. Vrbo vs. Booking.com**, followed by a step-by-step guide to finding a reliable host.\n\n---\n\n### Part 1: Which platform should you use?\n\n#### 1. Airbnb (Best for: Variety, Unique Stays, and Solo/Budget Travelers)\n*   **Best for:** Apartments, private rooms in homes, unique stays (treehouses, yurts), and city breaks.\n*   **Pros:** Massive inventory worldwide; generally the best user interface and mobile app; great for unique, aesthetically pleasing properties.\n*   **Cons:** Customer service can be notoriously difficult to reach if things go wrong; cleaning fees can sometimes be unexpectedly high.\n\n#### 2. Vrbo / Vacation Rentals by Owner (Best for: Families and Large Groups)\n*   **Best for:** Entire houses, beach cabins, ski chalets, and large suburban/rural properties. Owned by the Expedia Group.\n*   **Pros:** Focuses *only* on entire properties (no shared rooms with hosts); generally caters to families and older adults looking for peace and quiet; robust booking guarantees.\n*   **Cons:** Fewer options for solo travelers, budget seekers, or city apartments; app/website can feel a bit clunky compared to Airbnb.\n\n#### 3. Booking.com (Best for: Flexibility, Hotels, and Traditional Travelers)\n*   **Best for:** Hotels, resorts, apartments, and travelers who value easy cancellation policies.\n*   **Pros:** Excellent loyalty program (Genius discounts); usually offers \"pay at the property\" and free cancellation up to a few days before check-in; aggregates both traditional hotels and private apartments.\n*   **Cons:** Customer service varies depending on whether you booked a hotel or an independent apartment; private listings can sometimes be double-listed and prone to communication lags.\n\n---\n\n### Summary Recommendation:\n*   Going to a city, traveling solo/as a couple, or looking for a cool apartment? **Use Airbnb.**\n*   Going on a family beach trip, renting a cabin, or traveling with 6+ people? **Use Vrbo.**\n*   Want a hotel, hostel, or a traditional apartment with flexible cancellation? **Use Booking.com.**\n\n---\n\n### Part 2: How to Find a Good Host\n\nRegardless of the platform you choose, finding a good host comes down to reading between the lines of the listing and reviews. Follow these rules:\n\n#### 1. Look for the \"Superhost\" or \"Premier Host\" Badge\n*   **Airbnb Superhost** and **Vrbo Premier Host** statuses mean the host has a proven track record: high ratings, very low cancellation rates, and quick response times. *Always filter for these if you can.*\n\n#### 2. Read the Reviews (Carefully)\n*   **Quantity matters:** A host with 100 glowing reviews is safer than a host with 2 reviews, even if both have a 5-star average.\n*   **Look for recency:** Read the reviews from the last 3–6 months. A host who was great in 2022 might have changed management companies by 2024.\n*   **Search reviews for keywords:** Use the review search bar to look for words like \"clean,\" \"noisy,\" \"wifi,\" \"bed,\" or \"host.\"\n\n#### 3. Test the Host’s Communication\n*   Before you book (especially if you have a specific question), send the host a message. \n*   **Good host:** Replies within a few hours, is polite, and answers your specific question thoroughly.\n*   **Bad host:** Takes days to reply, gives a vague copy-paste answer, or sounds rude. (If they are hard to reach *before* you give them money, imagine how hard they’ll be to reach when the toilet breaks during your stay).\n\n#### 4. Read the House Rules and Cancellation Policy\n*   Good hosts are upfront about expectations (quiet hours, no smoking, pet policies). If the house rules are excessively strict, unreasonable, or buried in passive-aggressive language, look elsewhere.\n*   Make sure you understand the cancellation policy. Good hosts usually offer moderate or flexible policies, though strict policies are common for luxury or peak-season rentals.\n\n#### 5. Check for Off-Platform Scams\n*   **Never** wire money, pay via cryptocurrency, or communicate outside the official app/website before booking. Scammers often try to lure you off Airbnb/Vrbo to avoid platform protections. If a host asks you to do this, report them immediately.\n\n### Pro-Tip for Booking:\nAlways take a video walk-through of the property **the moment you walk in**. If something is broken, unclean, or not as described, message the host and the platform within 24 hours. This protects you from being blamed for pre-existing damage and helps you secure a refund if you need to relocate.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

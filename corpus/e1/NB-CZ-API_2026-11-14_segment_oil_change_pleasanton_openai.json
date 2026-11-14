@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-API_2026-11-14_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-14",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkCPm766Cwz997f9Wv8hj5s926xB2",
+  "usage": {
+   "prompt_tokens": 21,
+   "completion_tokens": 744,
+   "total_tokens": 765,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 441,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jiffy Lube / Oil Changers nearby",
+  "A well-reviewed independent repair shop in Pleasanton",
+  "Valvoline Instant Oil Change",
+  "EV-related",
+  "Jiffy Lube",
+  "Oil Changers"
+ ],
+ "engine_stated_criteria": [
+  "Your vehicle’s dealership"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most drivers in Pleasanton, I’d start with **Valvoline Instant Oil Change on Santa Rita Road** if your priority is a fast, straightforward oil change without leaving the car. They’re typically a good fit for conventional or full-synthetic service, fluid checks, and quick turnaround.\n\nOther good choices depending on what you need:\n\n- **Your vehicle’s dealership** — Best for newer cars, lease vehicles, warranty requirements, hybrids/EV-related inspections, or if you want factory-spec oil and service records. Usually pricier.\n- **Jiffy Lube / Oil Changers nearby** — Good if you find a coupon and want same-day convenience; confirm the exact oil brand/viscosity and final out-the-door price first.\n- **A well-reviewed independent repair shop in Pleasanton** — Best if you also need brakes, tires, a warning-light diagnosis, or want a long-term mechanic rather than just a quick-lube visit.\n\nBefore going, ask:\n1. Is the quoted price **including synthetic oil, filter, shop fees, and disposal**?\n2. Do they use the **manufacturer-required oil specification** for your car?\n3. Is an appointment needed, and how long is the wait?\n4. Do they reset the maintenance reminder and document the service?\n\nIf you tell me your car’s year/make/model and whether you value lowest price, speed, or dealer-quality service, I can narrow it to the best option.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-API_2026-11-14_segment_hvac_houston_openai",
+ "date_utc": "2026-11-14",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkCMt9iXFswJSP8WoQwKtB7FSrQaz",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 459,
+   "total_tokens": 477,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 191,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Tech of Houston",
+  "John Moore Services",
+  "Richmond’s Air",
+  "Abacus Plumbing, Air Conditioning & Electrical",
+  "Texas Air Authorities",
+  "TDLR",
+  "Abacus Plumbing",
+  "Air Conditioning",
+  "AC-repair",
+  "Texas HVAC",
+  "AC repair",
+  "Abacus",
+  "John Moore"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company for every Houston neighborhood and AC issue, but **Air Tech of Houston** is a strong all-around company to start with for AC repair because of its long local presence, broad service area, and reputation for residential service.\n\nAlso worth comparing for a second estimate:\n\n- **John Moore Services** — large Houston provider; convenient scheduling and broad service offerings.\n- **Richmond’s Air** — often considered a solid option for straightforward repair and maintenance.\n- **Abacus Plumbing, Air Conditioning & Electrical** — larger company with extensive availability, though pricing can be higher than smaller independents.\n- **Texas Air Authorities** — another established local AC-repair option.\n\nBefore booking, confirm these four things:\n\n1. They hold an active Texas HVAC contractor license through **TDLR**.\n2. They give a **written diagnostic fee and repair estimate** before work starts.\n3. They offer a **parts-and-labor warranty** on the repair.\n4. You get a second opinion if the recommendation is a compressor, coil, or full-system replacement.\n\nFor an urgent no-cooling call, ask: “What is your service-call fee, is it applied to the repair, and what is the after-hours surcharge?” That avoids the biggest surprises.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,197 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-11-14_segment_pi_car_accident_intake_pleasanton_shotland_pilot",
+ "date_utc": "2026-11-14",
+ "business": "SEGMENT: PI car accident intake, Pleasanton (Shotland pilot)",
+ "row_type": "agreement",
+ "prompt_text": "I was in a car accident in Pleasanton CA. Which lawyer should I hire for my injury case?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 4,
+ "pairs": [
+  {
+   "terser_names": [
+    "Alameda County"
+   ],
+   "verbose_names": [
+    "California",
+    "San Francisco",
+    "San Jose",
+    "Alameda County",
+    "Walnut Creek",
+    "Alameda County Superior Court",
+    "Ask During Your Free Consultation",
+    "Next Steps"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "anthropic",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 8,
+   "containment_pct": 100.0,
+   "shared_count": 1,
+   "answer_chars_a": 1134,
+   "answer_chars_b": 3018,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Alameda County"
+   ],
+   "verbose_names": [
+    "Alameda County",
+    "East Bay",
+    "Alameda County Bar Association Lawyer Referral"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "anthropic",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 3,
+   "containment_pct": 100.0,
+   "shared_count": 1,
+   "answer_chars_a": 1134,
+   "answer_chars_b": 2688,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Alameda County"
+   ],
+   "verbose_names": [
+    "Suite",
+    "Duncan Law Firm",
+    "Stoneridge Mall Road",
+    "J. Michael Hosterman",
+    "Peters Avenue",
+    "GJEL Accident Attorneys"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "anthropic",
+   "engine_b": "perplexity",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 6,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 1134,
+   "answer_chars_b": 1746,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Alameda County",
+    "East Bay",
+    "Alameda County Bar Association Lawyer Referral"
+   ],
+   "verbose_names": [
+    "California",
+    "San Francisco",
+    "San Jose",
+    "Alameda County",
+    "Walnut Creek",
+    "Alameda County Superior Court",
+    "Ask During Your Free Consultation",
+    "Next Steps"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 8,
+   "containment_pct": 66.7,
+   "shared_count": 2,
+   "answer_chars_a": 3018,
+   "answer_chars_b": 2688,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Suite",
+    "Duncan Law Firm",
+    "Stoneridge Mall Road",
+    "J. Michael Hosterman",
+    "Peters Avenue",
+    "GJEL Accident Attorneys"
+   ],
+   "verbose_names": [
+    "California",
+    "San Francisco",
+    "San Jose",
+    "Alameda County",
+    "Walnut Creek",
+    "Alameda County Superior Court",
+    "Ask During Your Free Consultation",
+    "Next Steps"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "gemini",
+   "engine_b": "perplexity",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 6,
+   "verbose_entity_count": 8,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 3018,
+   "answer_chars_b": 1746,
+   "zero_shared": true
+  },
+  {
+   "terser_names": [
+    "Alameda County",
+    "East Bay",
+    "Alameda County Bar Association Lawyer Referral"
+   ],
+   "verbose_names": [
+    "Suite",
+    "Duncan Law Firm",
+    "Stoneridge Mall Road",
+    "J. Michael Hosterman",
+    "Peters Avenue",
+    "GJEL Accident Attorneys"
+   ],
+   "extraction_suspect": true,
+   "suspect_note": "Zero shared entities while BOTH engines named several. That is more often an extraction defect than real disagreement. Do not publish this pair until the name lists above have been read.",
+   "engine_a": "openai",
+   "engine_b": "perplexity",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 6,
+   "containment_pct": 0.0,
+   "shared_count": 0,
+   "answer_chars_a": 2688,
+   "answer_chars_b": 1746,
+   "zero_shared": true
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

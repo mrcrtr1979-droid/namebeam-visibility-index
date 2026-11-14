@@ -1,0 +1,80 @@
+{
+ "check_id": "NB-CZ-API_2026-11-14_segment_mortgage_lenders_st_louis_perplexity",
+ "date_utc": "2026-11-14",
+ "business": "SEGMENT: mortgage lenders, St. Louis",
+ "niche": "mortgage lenders",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Louis MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_524236c7-b0a8-4f15-b9d9-5f38e20d8a34",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00151,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00089,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00504
+   },
+   "input_tokens": 6602,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 6051,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 355,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 6957
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "A good starting shortlist",
+  "Flat Branch Mortgage",
+  "Better Rate Mortgage",
+  "The Pinnacle Loans",
+  "Midwest BankCentre",
+  "An MHDC-certified lender",
+  "My practical recommendation",
+  "Loan Estimates from at least three lenders"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "33e5e2bf1e722baca1bd9714c4309e068b9e450964e30382c2a25a482fa26026",
+ "answer_chars": 1274,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "5a66d03747ca1ae8e5cd7d6cbf403e72f7a759e192e8e17defdf49fd12a4a2c5",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

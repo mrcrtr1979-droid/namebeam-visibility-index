@@ -1,0 +1,64 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-14_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-14",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkCbtRw1fUowASnRVZhFVbsOu5Kcb",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1761,
+   "total_tokens": 1789,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1019,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton, California",
+  "Jiffy Lube — Pleasanton / nearby Dublin",
+  "Big O Tires — Pleasanton",
+  "Firestone Complete Auto Care — Pleasanton",
+  "Valvoline",
+  "Jiffy Lube",
+  "Big O",
+  "Firestone",
+  "Valvoline Instant Oil Change",
+  "Dublin",
+  "Big O Tires",
+  "Firestone Complete Auto Care",
+  "Dublin Toyota",
+  "Audi",
+  "Mercedes"
+ ],
+ "engine_stated_criteria": [
+  "Need it today and have a mainstream car",
+  "Want the best all-around inspection or also have tire/brake issues"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Assuming you mean **Pleasanton, California**, I’d call these in this order:\n\n1. **Valvoline Instant Oil Change — Dublin (very close to Pleasanton)**  \n   **Best for:** fastest same-day conventional or full-synthetic oil change.  \n   **Why call:** Usually a good choice if you want to stay in the car, don’t need an appointment, and want a clear “oil/filter/labor” package price. Ask whether they have the exact viscosity and manufacturer approval your car requires.\n\n2. **Jiffy Lube — Pleasanton / nearby Dublin**  \n   **Best for:** convenient quick-lube service and coupons.  \n   **Why call:** Often competitive after online coupons, and useful if you need a basic oil change plus fluid/top-off checks. Confirm the *out-the-door* total before going; quick-lube pricing can vary substantially by oil capacity and synthetic-oil type.\n\n3. **Big O Tires — Pleasanton**  \n   **Best for:** an oil change combined with tire, brake, alignment, or battery concerns.  \n   **Why call:** A full-service tire/maintenance shop is preferable to a quick-lube-only shop if you have uneven tire wear, a TPMS light, brake noise, or want a more complete vehicle inspection while it is there.\n\n4. **Firestone Complete Auto Care — Pleasanton**  \n   **Best for:** oil change plus a broader maintenance inspection.  \n   **Why call:** Worth comparing if your car is due for more than oil—such as filters, brakes, coolant, belts, or a battery check. Ask them to quote only the oil service first and to call you before doing any recommended add-ons.\n\n5. **Your brand’s dealership service department — e.g., Dublin Toyota, a BMW/Audi/Mercedes dealer, etc.**  \n   **Best for:** newer, hybrid, turbocharged, European, diesel, or still-under-warranty vehicles.  \n   **Why call:** Dealers are the safest bet for the precise factory oil specification, correct filter, software/service-light reset, and documented maintenance history. They can be price-competitive when they have service specials.\n\n### My practical recommendation\n- **Need it today and have a mainstream car:** call **Valvoline** and **Jiffy Lube** first.  \n- **Want the best all-around inspection or also have tire/brake issues:** call **Big O** or **Firestone**.  \n- **Have a BMW, Mercedes, Audi/VW, Subaru turbo, diesel, hybrid/EV with an engine, or a car under warranty:** call the **dealer** first, then compare with an independent shop that confirms the exact required oil approval.\n\nWhen you call, say:\n\n> “I have a [year/make/model/engine]. I need [synthetic or conventional, if known] oil that meets the factory specification. What is the total out-the-door price including oil, filter, labor, shop fees, and disposal? Do you have that oil in stock, and do I need an appointment?”\n\nAlso ask whether they will:\n- use the correct **oil viscosity and manufacturer approval**;\n- replace the **filter and drain-plug washer/gasket** if applicable;\n- reset the **oil-life/service reminder**;\n- provide an itemized receipt showing the oil brand, viscosity, and quantity.\n\nIf you tell me your **year, make, model, engine, and whether you want cheapest/fastest/best long-term care**, I can narrow this to the best two shops to call first.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

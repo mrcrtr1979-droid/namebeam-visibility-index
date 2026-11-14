@@ -1,0 +1,191 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-11-14_segment_personal_injury_law_atlanta",
+ "date_utc": "2026-11-14",
+ "business": "SEGMENT: personal injury law, Atlanta",
+ "row_type": "agreement",
+ "prompt_text": "Who is the best personal injury lawyer in Atlanta for a car accident case?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 4,
+ "pairs": [
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Georgia",
+    "Butler Wooten",
+    "Butler Prather",
+    "Jim Butler",
+    "TBIs",
+    "Atlanta. They",
+    "Contingency Fee Structure",
+    "Free Consultation",
+    "Client Reviews",
+    "Google Reviews"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "anthropic",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 10,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 998,
+   "answer_chars_b": 4218,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "State Bar of Georgia",
+    "Butler Kahn",
+    "Henningsen Injury Attorneys",
+    "Morgan",
+    "Super Lawyers",
+    "Georgia"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "anthropic",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 6,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 998,
+   "answer_chars_b": 2252,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "State Bar of Georgia"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "anthropic",
+   "engine_b": "perplexity",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 1,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 998,
+   "answer_chars_b": 872,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "State Bar of Georgia",
+    "Butler Kahn",
+    "Henningsen Injury Attorneys",
+    "Morgan",
+    "Super Lawyers",
+    "Georgia"
+   ],
+   "verbose_names": [
+    "Georgia",
+    "Butler Wooten",
+    "Butler Prather",
+    "Jim Butler",
+    "TBIs",
+    "Atlanta. They",
+    "Contingency Fee Structure",
+    "Free Consultation",
+    "Client Reviews",
+    "Google Reviews"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "openai",
+   "terser_entity_count": 6,
+   "verbose_entity_count": 10,
+   "containment_pct": 33.3,
+   "shared_count": 2,
+   "answer_chars_a": 4218,
+   "answer_chars_b": 2252,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "State Bar of Georgia"
+   ],
+   "verbose_names": [
+    "Georgia",
+    "Butler Wooten",
+    "Butler Prather",
+    "Jim Butler",
+    "TBIs",
+    "Atlanta. They",
+    "Contingency Fee Structure",
+    "Free Consultation",
+    "Client Reviews",
+    "Google Reviews"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "perplexity",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 10,
+   "containment_pct": 100.0,
+   "shared_count": 1,
+   "answer_chars_a": 4218,
+   "answer_chars_b": 872,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "State Bar of Georgia"
+   ],
+   "verbose_names": [
+    "State Bar of Georgia",
+    "Butler Kahn",
+    "Henningsen Injury Attorneys",
+    "Morgan",
+    "Super Lawyers",
+    "Georgia"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "perplexity",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 1,
+   "verbose_entity_count": 6,
+   "containment_pct": 100.0,
+   "shared_count": 1,
+   "answer_chars_a": 2252,
+   "answer_chars_b": 872,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

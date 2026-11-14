@@ -1,0 +1,71 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-14_segment_hvac_houston_openai",
+ "date_utc": "2026-11-14",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My AC needs repair in Houston. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkCWIbox2uHGXdMU3myWqvJ5mAVJw",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1060,
+   "total_tokens": 1084,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 213,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Tech of Houston",
+  "Texas Air Authorities",
+  "John Moore Services",
+  "Watch for",
+  "Village Plumbing & Air",
+  "Normal weekday repair",
+  "Manual J/load-calculation-based sizing",
+  "Good Houston-area",
+  "HVAC-focused",
+  "Houston-area HVAC",
+  "Large Houston",
+  "Watch",
+  "Village Plumbing",
+  "Air",
+  "One Hour Heating",
+  "Air Conditioning of Houston",
+  "John Moore",
+  "One Hour",
+  "Air Tech and Texas Air Authorities",
+  "My AC",
+  "AC repair",
+  "Air Conditioning",
+  "Texas Department of Licensing and Regulation (TDLR)"
+ ],
+ "engine_stated_criteria": [
+  "You were told you need a compressor, coil, or replacement"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a Houston AC repair, I’d call **3 companies for diagnosis/price comparison**, not just one—especially if the first recommendation is a compressor, coil, or full-system replacement.\n\n### Good Houston-area companies to put on your call list\n\n1. **Air Tech of Houston**\n   - **Why call:** Long-established local HVAC-focused company with a strong reputation for residential service and system replacement. A good first call if you want an HVAC specialist rather than a general plumbing/electrical company.\n   - **Best for:** Standard no-cooling calls, older systems, and getting a second opinion on a major repair.\n\n2. **Texas Air Authorities**\n   - **Why call:** Houston-area HVAC company known for repair, maintenance, and replacement work. Worth including when you want a local independent-company estimate.\n   - **Best for:** Comparing a repair recommendation against another contractor’s diagnosis, particularly for refrigerant leaks, evaporator coils, or compressor issues.\n\n3. **John Moore Services**\n   - **Why call:** Large Houston service company with broad coverage and typically strong availability, including urgent situations. Their size can make them useful when you need someone dispatched quickly.\n   - **Best for:** Same-day or emergency scheduling, plus homes that may also have electrical, drain, thermostat, or attic-ventilation issues contributing to AC problems.\n   - **Watch for:** As with many large service firms, get the estimate in writing and compare it before approving an expensive repair or replacement.\n\n4. **Village Plumbing & Air**\n   - **Why call:** Another established Houston-area home-service provider with HVAC capability and generally wide service coverage.\n   - **Best for:** Fast dispatch and situations where the issue might involve condensate drainage, plumbing near the air handler, or electrical/thermostat work in addition to AC repair.\n\n5. **One Hour Heating & Air Conditioning of Houston**\n   - **Why call:** Useful as an availability-oriented option, especially if timing matters more than finding the lowest quote.\n   - **Best for:** After-hours, weekend, or urgent no-cooling situations.\n   - **Watch for:** Ask about the diagnostic fee, after-hours fee, and whether it is credited toward repair before they come out.\n\n### If I were choosing whom to call first\n- **Normal weekday repair:** Air Tech of Houston + Texas Air Authorities + one larger provider such as John Moore or Village.\n- **AC completely out during dangerous heat / need service today:** John Moore, Village Plumbing & Air, and One Hour—ask who can give you the earliest arrival window.\n- **You were told you need a compressor, coil, or replacement:** Get at least **two additional opinions**, preferably including Air Tech and Texas Air Authorities.\n\n### What to ask when you call\nUse this short script:\n\n> “My AC is [not cooling / freezing up / leaking water / making noise]. What is your diagnostic fee, is it credited toward repair, and do you have an appointment today? Please give me repair options in writing before doing major work. If you find a refrigerant leak, I want the leak location and repair option—not just a refrigerant top-off.”\n\nAlso ask:\n- Is the technician paid partly by sales/commission?\n- Is the repair covered by parts and labor warranty, and for how long?\n- Will they provide the unit’s model/serial number, refrigerant type, and measured diagnosis?\n- If recommending replacement, can they provide **Manual J/load-calculation-based sizing**, not just “same size as before”?\n- Are they licensed with the Texas Department of Licensing and Regulation (TDLR), and what is their HVAC contractor license number?\n\n### Houston-specific caution\nHouston humidity makes poor drainage, dirty evaporator coils, clogged condensate lines, duct leakage, and oversized equipment especially common. Don’t automatically approve a new system because the home feels humid or because someone says it “needs Freon.” A competent company should identify **why** refrigerant was lost and explain the repair-versus-replace math.\n\nBefore booking, verify current reviews, licensing, and service area for your ZIP code, since availability and ownership can change.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

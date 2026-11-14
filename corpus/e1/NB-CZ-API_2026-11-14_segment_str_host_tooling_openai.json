@@ -1,0 +1,60 @@
+{
+ "check_id": "NB-CZ-API_2026-11-14_segment_str_host_tooling_openai",
+ "date_utc": "2026-11-14",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkCKFjuzkJG1jOsgROo4RVfmeixZC",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 696,
+   "total_tokens": 722,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 105,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Before buying / market analysis",
+  "AirDNA MarketMinder",
+  "After listing / nightly dynamic pricing",
+  "PriceLabs",
+  "Caution",
+  "Beyond",
+  "Wheelhouse",
+  "Rabbu",
+  "Airbtics",
+  "AirDNA",
+  "Buying / researching",
+  "Already hosting / optimizing revenue",
+  "Treat AirDNA",
+  "Strong",
+  "MarketMinder",
+  "After listing",
+  "Underwrite conservatively"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most Airbnb hosts, the best combination is:\n\n- **Before buying / market analysis:** **AirDNA MarketMinder**\n- **After listing / nightly dynamic pricing:** **PriceLabs**\n\n### 1. Best for analyzing a market before buying: AirDNA\n**AirDNA MarketMinder** is usually the strongest mainstream tool for evaluating a short-term-rental market. It lets you examine:\n\n- Historical occupancy, ADR (average daily rate), and RevPAR\n- Seasonal revenue patterns\n- Active listing supply and new supply growth\n- Comparable properties by bedroom count, property type, and amenities\n- Revenue estimates for a specific address or prospective property\n- Regulation and market-performance trends\n\nIt is particularly useful for answering: *“Could this 3-bedroom home realistically generate enough gross revenue to justify the purchase?”*\n\n**Caution:** Treat AirDNA projections as a starting point, not an appraisal. Underwrite conservatively—often using lower-than-advertised occupancy and rates—and account for cleaning, management, utilities, furnishing, maintenance, platform fees, taxes, insurance, and vacancy.\n\n### 2. Best for setting nightly prices: PriceLabs\n**PriceLabs** is generally the best value and most widely used dynamic-pricing tool for individual hosts and small-to-mid-size portfolios.\n\nIt automatically adjusts rates based on:\n\n- Local demand and booking pace\n- Seasonality and day of week\n- Holidays and events\n- Lead time\n- Gaps between reservations\n- Comparable-market behavior\n- Your minimum-stay, minimum-price, and last-minute rules\n\nIt integrates with Airbnb, Vrbo, and many PMS platforms. Its key advantage is that it gives hosts substantial control rather than acting like a completely hands-off pricing engine.\n\n### Strong alternatives\n- **Beyond:** Excellent dynamic pricing, especially for more hands-off operators and larger professional portfolios. Often more expensive than PriceLabs.\n- **Wheelhouse:** Strong automated pricing and strategy features; a good alternative if you prefer its interface and recommendations.\n- **Rabbu:** Useful for quick revenue estimates and investment analysis, particularly in the U.S., but I would still verify assumptions with AirDNA and direct comp research.\n- **Airbtics:** Often a lower-cost option for market research and property analysis.\n\n### My practical recommendation\nIf you are buying your first or next Airbnb:\n\n1. Use **AirDNA** to shortlist markets and pull comparable-property performance.\n2. Check actual Airbnb listings manually—especially the top 20–50 comparable homes—to validate quality, reviews, amenities, and pricing.\n3. Build a conservative pro forma using downside assumptions.\n4. Once operational, connect **PriceLabs** for nightly pricing and review its settings weekly at first.\n\nIf you only want to pay for one tool, choose based on your immediate need:\n\n- **Buying / researching:** AirDNA  \n- **Already hosting / optimizing revenue:** PriceLabs",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-14_segment_roofing_denver_perplexity",
+ "date_utc": "2026-11-14",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My roof has hail damage in Denver. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5e22d487-d866-4061-999d-14b5be193790",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00105,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00156,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00525
+   },
+   "input_tokens": 4762,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4209,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 622,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5384
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "North West Roofing",
+  "Lifetime Roof & Solar",
+  "Gates Enterprises",
+  "Woodberg Roofing and Restoration",
+  "Before signing",
+  "BBB-accredited",
+  "Lifetime Roof",
+  "A Colorado-based",
+  "GAF Master Elite. Treat",
+  "Division of Insurance",
+  "Colorado-based",
+  "Colorado DOI",
+  "Woodberg Roofing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "f41713e79e5b7697555552885cd9d3585e7bde621b591913cbb03963157b49f9",
+ "answer_chars": 2335,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "485403cdecbfa32df76373e197e306ae8a2cf78738bfe538b7128adbba11507b",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

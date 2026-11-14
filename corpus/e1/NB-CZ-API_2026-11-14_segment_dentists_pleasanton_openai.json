@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-API_2026-11-14_segment_dentists_pleasanton_openai",
+ "date_utc": "2026-11-14",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkCPSTps6EeItCSNP9xuHJiYddBks",
+  "usage": {
+   "prompt_tokens": 22,
+   "completion_tokens": 546,
+   "total_tokens": 568,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 198,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Look for recent—not just overall—reviews",
+  "Call and ask four questions",
+  "Use the California Dental Board",
+  "X-rays",
+  "California Dental Board"
+ ],
+ "engine_stated_criteria": [
+  "Check your dental plan’s in-network directory first"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for everyone—especially for a routine checkup and cleaning. The best fit is usually a **general dentist who is in-network with your insurance, has hygienist appointments available soon, and has consistently strong recent reviews about gentle cleanings and transparent treatment plans**.\n\nFor Pleasanton, I’d suggest narrowing it this way:\n\n1. **Check your dental plan’s in-network directory first**  \n   An excellent out-of-network office can cost much more for a cleaning and exam.\n\n2. **Look for recent—not just overall—reviews**  \n   Search Google/Healthgrades/Yelp for phrases such as:\n   - “routine cleaning”\n   - “gentle hygienist”\n   - “didn’t push unnecessary work”\n   - “explained treatment plan”\n   - “on time”\n\n3. **Verify the dentist’s California license and disciplinary history**  \n   Use the California Dental Board license lookup before booking.\n\n4. **Call and ask four questions**\n   - Are you accepting new patients for a cleaning and exam?\n   - Are you in-network with my plan?\n   - What is my estimated out-of-pocket cost, including X-rays?\n   - Will the cleaning be done at the first visit, or only after the exam?\n\nFor a standard checkup, prioritize an office that does **preventive care and conservative treatment planning**, rather than choosing based only on cosmetic dentistry marketing or the highest review count.\n\nIf you tell me your insurance (or whether you’re paying cash), your preferred area of Pleasanton, and whether you need evening/weekend appointments, I can help you make a more targeted shortlist and compare what to look for.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
