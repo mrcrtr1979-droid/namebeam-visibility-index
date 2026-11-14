@@ -82,6 +82,10 @@ jobs:
       date: ${{ steps.m.outputs.date }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # CPEO-1113: start from the tip of the branch the run is on, not the commit the run was created on, so a run
+          # that waited in the shared e1-daily-record group sees rows another run landed meanwhile (plan's skip guard).
+          ref: ${{ github.ref }}
       - id: m
         env:
           IN_ENGINES: ${{ inputs.engines }}
@@ -200,11 +204,18 @@ jobs:
 
   join:
     needs: [plan, shard]
-    if: always() && needs.plan.outputs.skip != 'true'
+    # CPEO-1113: needs.plan.result == 'success' keeps join from running in production mode when plan was skipped
+    # (a push to a branch without the dry-run tag): plan's outputs are empty then, so dry_run != 'true' held and
+    # step 9 committed to the branch and the Sentry check-in fired (observed 2026-11-13 10:00PM CT, run 43554387613).
+    if: always() && needs.plan.result == 'success' && needs.plan.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+        with:
+          # CPEO-1113: start from the tip of the branch the run is on, not the commit the run was created on, so a run
+          # that waited in the shared e1-daily-record group sees rows another run landed meanwhile (plan's skip guard).
+          ref: ${{ github.ref }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -286,20 +297,41 @@ jobs:
           rm -rf private_e1 shards shards_raw
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # CPEO-1113 (COS ruling 2026-11-12 5:24PM CT, TO_TEAM-CPEO item 2): a run day already on main is skipped,
+          # never conflicted. Another run (the e1 slice runs, the serial backstop) can land the day while this one waits.
+          day_on_main() { git ls-tree -r --name-only origin/main -- corpus/e1/ | grep -c "^corpus/e1/NB-CZ-API_${DAY}_namebeam_" || true; }
+          git fetch -q origin main
+          LANDED=$(day_on_main)
+          if [ "$LANDED" -gt 0 ]; then
+            echo "run day ${DAY} is already on main (${LANDED} namebeam rows verified); nothing to push, exit 0"
+            exit 0
+          fi
           git add corpus/e1/ datasets/e1/sources/ datasets/e1/customer_zero/ datasets/e1/own_name/
           git add corpus/e1_q2/ 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No new corpus rows to commit."
-          else
-            N=$(git diff --staged --name-only | grep -c '^corpus/e1/' || true)
-            SH=$(python3 -c 'import json; print(", ".join(sorted(json.load(open("join_report.json"))["shards"])))')
-            git commit -q -m "e1 slice run ${DAY} (sharded: ${SH}; ${N} corpus rows in one commit)"
-            for i in 1 2 3 4; do
-              git push && break
-              echo "push rejected, rebasing (attempt $i)"
-              git pull --rebase origin main
-            done
+            exit 0
           fi
+          N=$(git diff --staged --name-only | grep -c '^corpus/e1/' || true)
+          SH=$(python3 -c 'import json; print(", ".join(sorted(json.load(open("join_report.json"))["shards"])))')
+          git commit -q -m "e1 slice run ${DAY} (sharded: ${SH}; ${N} corpus rows in one commit)"
+          for i in 1 2 3 4; do
+            git push -q && { echo "pushed ${DAY}"; exit 0; }
+            echo "push rejected, rebasing (attempt $i)"
+            git pull -q --rebase origin main || {
+              git rebase --abort || true
+              git fetch -q origin main
+              LANDED=$(day_on_main)
+              if [ "$LANDED" -gt 0 ]; then
+                echo "rebase conflict, but ${DAY} landed on main (${LANDED} namebeam rows verified); exit 0"
+                exit 0
+              fi
+              echo "::error::rebase conflict and the day is not on main"
+              exit 1
+            }
+          done
+          echo "::error::could not push after 4 attempts"
+          exit 1
       - name: Job summary (per-shard wall times and the join report)
         if: always()
         env:
