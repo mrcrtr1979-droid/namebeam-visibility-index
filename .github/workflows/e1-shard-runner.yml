@@ -204,7 +204,10 @@ jobs:
 
   join:
     needs: [plan, shard]
-    if: always() && needs.plan.outputs.skip != 'true'
+    # CPEO-1113: needs.plan.result == 'success' keeps join from running in production mode when plan was skipped
+    # (a push to a branch without the dry-run tag): plan's outputs are empty then, so dry_run != 'true' held and
+    # step 9 committed to the branch and the Sentry check-in fired (observed 2026-11-13 10:00PM CT, run 43554387613).
+    if: always() && needs.plan.result == 'success' && needs.plan.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
