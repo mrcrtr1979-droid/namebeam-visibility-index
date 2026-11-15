@@ -1,0 +1,75 @@
+{
+ "check_id": "NB-CZ-API_2026-11-15_segment_roofing_denver_perplexity",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_af9bf821-fb85-44e9-ac8c-570f4854ae57",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00124,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00057,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 5495,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4948,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 229,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5724
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Metro City Roofing",
+  "Woodberg Roofing & Restoration",
+  "Woodberg Roofing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "1310d17454ca67799a6b2de2c9292f79b28cabe332ba37fee15013203f68341c",
+ "answer_chars": 805,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "4c9d578ce1d00b94485713149e83f2cbd7d85a2d610e2fdb73c047cf182555db",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

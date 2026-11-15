@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-15_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a vacation rental in Santa Cruz County. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_21b634ff-285a-4781-b0a8-26acb2c1f97c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00111,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00473
+   },
+   "input_tokens": 4475,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3920,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 443,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4918
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Beachnest Vacation Rentals",
+  "Cheshire Rio Realty and Property Management",
+  "O’Neal Vacation Rentals",
+  "Pajaro Dunes",
+  "Pajaro Dunes Company & Resort",
+  "Potter Property Management",
+  "Vacation Rentals",
+  "Capitola",
+  "Aptos",
+  "La Selva Beach",
+  "Neal Vacation Rentals",
+  "Visit Santa Cruz County",
+  "Pajaro Dunes Company",
+  "Beach",
+  "Kendall & Potter",
+  "Kendall & Potter Property Management",
+  "Cheshire Rio Realty"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "348289e548eea720a6953cd3093cbff26ed54eab972477734c9311fa14f4e2f5",
+ "answer_chars": 1396,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "21defd33bce3b7e7566f0e888f3379bedc40d0ede4e91bc53e1c68d2eabdd9e9",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

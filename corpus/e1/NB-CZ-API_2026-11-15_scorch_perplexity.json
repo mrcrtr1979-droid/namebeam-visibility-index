@@ -1,0 +1,75 @@
+{
+ "check_id": "NB-CZ-API_2026-11-15_scorch_perplexity",
+ "date_utc": "2026-11-15",
+ "business": "SCORCH",
+ "niche": "branding agency",
+ "market": "St. Louis MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best branding agency in St. Louis?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3432152b-ddc6-454e-aec0-84f2d9832fe7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00082,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00055,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00401
+   },
+   "input_tokens": 3837,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3292,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 220,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4057
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atomicdust",
+  "Taillight",
+  "MarketPlace Branding"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "c74132c1e6dafe8bdf5b7e3dcfc1157ceb08bf7ec276968f0418f631449b4c81",
+ "answer_chars": 745,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "016f724e133113d89fd4dc722a637188821b57b57261de42b9321615a0964769",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

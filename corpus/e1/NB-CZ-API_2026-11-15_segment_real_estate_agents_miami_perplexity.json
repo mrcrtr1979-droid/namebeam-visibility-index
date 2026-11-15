@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-API_2026-11-15_segment_real_estate_agents_miami_perplexity",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: real estate agents, Miami",
+ "niche": "real estate agents",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Miami FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_180c72de-910e-4c01-aed0-011beecf5086",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00071,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00446
+   },
+   "input_tokens": 4992,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4443,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 284,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5276
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sandra Rathe (REAL)",
+  "Wesley Ulloa (LUXE Properties)",
+  "Sandra Rathe",
+  "Wesley Ulloa",
+  "LUXE Properties"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "12d0b4f2986bfe3556cf047abcf8107aae1dd32febcb5506b5f5de7f99193508",
+ "answer_chars": 960,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "05043ed734454f2b6a6d42c12f70053bbd759c2dab61691872063c38a97d09c1",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

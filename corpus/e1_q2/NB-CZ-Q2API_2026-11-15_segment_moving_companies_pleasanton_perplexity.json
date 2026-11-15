@@ -1,0 +1,80 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-15_segment_moving_companies_pleasanton_perplexity",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: moving companies, Pleasanton",
+ "niche": "moving companies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I have a local move coming up in Pleasanton. Which specific moving companies should I call, and why?",
+ "q1_prompt_text": "Who is the best moving company in Pleasanton CA for a local move?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8efd0500-ef4f-4dd1-8f69-7f84e839de88",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00105,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00481
+   },
+   "input_tokens": 5043,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4487,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 421,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5464
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Fairprice Movers",
+  "Trek Movers",
+  "Bureau of Household Goods and Services",
+  "California BHGS",
+  "Best California Movers"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "c6288f0269103346341fd22d3e799ad9426e18be52c2514e916befcf191ff57a",
+ "answer_chars": 1488,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "be87bda2590d6e5b8ae03e757264d3b0ad31507bf57c3ceaa5420a56fe058912",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

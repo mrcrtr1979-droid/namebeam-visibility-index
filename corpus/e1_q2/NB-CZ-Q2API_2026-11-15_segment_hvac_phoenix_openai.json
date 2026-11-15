@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-15_segment_hvac_phoenix_openai",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkawkGY4MhO8SmAmuuOsr0Pmvdkuj",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1299,
+   "total_tokens": 1324,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 494,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Hobaica Services — Phoenix/Valleywide",
+  "Howard Air — Phoenix metro",
+  "Arizona Registrar of Contractors",
+  "R-39/C-39/CR-39",
+  "Hobaica Services",
+  "Valleywide",
+  "Howard Air",
+  "Day",
+  "Night Air Conditioning",
+  "East Valley",
+  "Chas Roberts Air Conditioning",
+  "American Home Water",
+  "Goettl Air Conditioning",
+  "Chas Roberts",
+  "Hobaica",
+  "Night",
+  "My AC",
+  "Parker & Sons",
+  "Registrar of Contractors",
+  "Air Conditioning",
+  "In Phoenix",
+  "Day & Night",
+  "Day & Night Air",
+  "American Home Water & Air",
+  "Valley",
+  "Night Air",
+  "Phoenix-area HVAC",
+  "Chas Roberts Air Conditioning & Plumbing"
+ ],
+ "engine_stated_criteria": [
+  "If the system is not cooling at all",
+  "If your unit is 10–15+ years old"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For Phoenix, I’d start by calling **three companies for diagnostic quotes**, rather than committing to the first available technician. These are solid Phoenix-metro starting points with established local service operations:\n\n1. **Hobaica Services — Phoenix/Valleywide**  \n   **Why call:** Long-established local HVAC company with repair, maintenance, and replacement capability. A good first call if you want a company that can diagnose a problem and, if necessary, handle a full system replacement without handing it off to another contractor.\n\n2. **Howard Air — Phoenix metro**  \n   **Why call:** A Phoenix-area HVAC specialist with a long local history. Particularly worth including if you suspect a major issue—compressor, refrigerant leak, ductwork, or an aging system—because they routinely handle both repair and system-design/replacement work.\n\n3. **Day & Night Air Conditioning, Heating & Plumbing — East Valley/greater Phoenix**  \n   **Why call:** Good option for Mesa, Chandler, Gilbert, Tempe, Scottsdale, and surrounding areas. They provide both emergency-style repair and replacement estimates, so they are useful as a comparison bid.\n\n4. **Chas Roberts Air Conditioning & Plumbing — Valleywide**  \n   **Why call:** A larger Arizona-based provider with broad service coverage and usually good appointment capacity. This is a sensible call when the AC is completely down in hot weather and you need availability, parts access, or after-hours service.\n\n5. **American Home Water & Air — Phoenix metro**  \n   **Why call:** Another established local company to include for a second or third opinion, especially if the first contractor immediately recommends replacing the entire unit.\n\n6. **Parker & Sons or Goettl Air Conditioning — Valleywide backup options**  \n   **Why call:** Larger operations that can be helpful for fast scheduling, weekend service, and financing options. Get a written, itemized estimate and compare it with at least one locally focused competitor before approving a large repair or replacement.\n\n### My practical recommendation\n- **If the system is not cooling at all:** Call **Chas Roberts or Hobaica first** for speed, then get a comparison diagnosis from **Howard Air or Day & Night** before authorizing an expensive repair.\n- **If you were told you need a compressor, coil, refrigerant leak repair, or full replacement:** Get **at least three written quotes**—for example, Hobaica, Howard Air, and Day & Night.\n- **If your unit is 10–15+ years old:** Ask each company for both:\n  1. the repair price and expected remaining life, and  \n  2. a replacement quote with the exact model numbers, SEER2 rating, labor warranty, and installation scope.\n\n### What to ask on the phone\nUse this wording:\n\n> “My AC is [not cooling / blowing warm / freezing up / leaking / making noise]. I need a diagnostic visit and an itemized written estimate before any repair. What is your diagnostic fee, whether it is credited toward repair, your earliest appointment, and whether the technician can test for refrigerant leaks rather than just add refrigerant?”\n\n### Before approving work\nVerify the company’s active Arizona contractor license through the **Arizona Registrar of Contractors**. For HVAC work, look for the appropriate air-conditioning/refrigeration classification, such as **R-39/C-39/CR-39**, depending on the company’s license type. Also ask for:\n- Diagnostic findings and photos\n- Exact parts and labor pricing\n- Refrigerant type and amount, if refrigerant is involved\n- Whether a leak test is included\n- Parts and labor warranty length\n- Permit responsibility for a replacement system\n\nIn Phoenix heat, if someone says the unit “just needs refrigerant,” be cautious: refrigerant does not get used up under normal operation; low refrigerant usually means there is a leak that should be located and discussed.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

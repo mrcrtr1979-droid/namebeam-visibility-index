@@ -1,0 +1,78 @@
+{
+ "check_id": "NB-CZ-API_2026-11-15_segment_dentists_dallas_perplexity",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c5ef66d0-b51f-463f-a209-60667472b05a",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00454
+   },
+   "input_tokens": 4957,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4411,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 320,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5277
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Sheena Allen",
+  "Dr. David McFadden",
+  "The Dental Implant Center",
+  "W. Lovers Lane",
+  "Dallas Dental Arts",
+  "Dental Implant Center"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "acf303de21210995aa4364849dcb9c49bb17b8f2c3cfc263066b966a2ecc76d9",
+ "answer_chars": 952,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "cc8c7a366b4cc02c6df0e3258610bc24fa316ca55f8b1661a825eb2a7cc82011",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

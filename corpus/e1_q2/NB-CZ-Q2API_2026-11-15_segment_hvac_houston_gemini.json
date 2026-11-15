@@ -1,0 +1,70 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-15_segment_hvac_houston_gemini",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My AC needs repair in Houston. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "GhP6aratIdfpz7IPzKLjqQc",
+  "usage": {
+   "promptTokenCount": 18,
+   "candidatesTokenCount": 967,
+   "totalTokenCount": 985,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 18
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Alpha Four Real Air (A4 Air)",
+  "Village Plumbing, Air & Electric",
+  "Custom Air Houston",
+  "Flat-Rate, Upfront Pricing",
+  "Diagnostic Competence",
+  "Manufacturer Certifications",
+  "Check the Warranty on the Last Repair",
+  "Ask the Dispatcher This Exact Question",
+  "The \"Attic\" Reality Check",
+  "Alpha Four Real Air",
+  "Greater Houston",
+  "Sugar Land",
+  "Logo Air",
+  "AirDepot",
+  "Cruz Air",
+  "Northwest Houston",
+  "Village Plumbing",
+  "Inside the Loop",
+  "West University",
+  "Diagnostic Specialists",
+  "Upfront Pricing",
+  "In Houston's",
+  "American Standard",
+  "Last Repair",
+  "Reality Check",
+  "AC repair"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Houston’s extreme heat and humidity put massive strain on HVAC systems, and the market unfortunately attracts its fair share of predatory \"service fee factories\" and pushy salespeople. \n\nTo help you navigate this, here are specific, reputable HVAC companies in the Houston area known for technical competence, fair pricing, and strong warranties, categorized by their strengths, followed by *why* you should trust them.\n\n---\n\n### 1. The Employee-Owned Standard: **Alpha Four Real Air (A4 Air)**\n* **Service Area:** Greater Houston, Katy, Cypress, Sugar Land.\n* **Why call them:** A4 Air is known for treating customers like partners rather than targets. They heavily emphasize ongoing technician training and honesty. If a part can be repaired instead of replaced, they will usually fix it. They also have a very strong track record for punctuality and clean work areas.\n\n### 2. The Customer Service Heavyweight: **Logo Air (formerly AirDepot) or Cruz Air & Heating**\n* **Service Area:** Houston proper, Northwest Houston, The Woodlands, Spring.\n* **Why call them (Cruz Air & Heating as an example):** Cruz Air is a family-owned operation that has built its reputation almost entirely on word-of-mouth and high retention rates. They don't run aggressive, deceptive coupon promotions; instead, they focus on transparent diagnostics. When you call them, you usually get a technician who has been with the company for years, not a high-turnover rookie on commission.\n\n### 3. The Deep-Rooted Houston Institution: **Village Plumbing, Air & Electric**\n* **Service Area:** Inside the Loop, Bellaire, West University, Heights, and surrounding areas.\n* **Why call them:** If you live in older Houston neighborhoods (where ductwork is tricky, homes are historic, and space is tight), Village is one of the best. They are slightly more expensive than a solo independent contractor, but they offer 24/7 emergency service, background-checked and drug-tested technicians, and rock-solid guarantees on their labor. \n\n### 4. The High-Tech / Diagnostic Specialists: **Custom Air Houston**\n* **Service Area:** Houston, Kingwood, Humble, Pearland.\n* **Why call them:** AC repair in Houston isn’t just about freon and capacitors; it’s about humidity control. Custom Air technicians are trained heavily in Manual J load calculations and static pressure testing. If your AC is freezing up, short-cycling, or your house feels clammy despite the AC running, they are exceptionally good at diagnosing the *root cause* rather than just throwing parts at the system.\n\n---\n\n### Why These Particular Companies? (The Houston Criteria)\n\nWhen selecting these companies, I filtered out the corporate-owned private equity roll-ups that dominate Houston radio ads. Those companies often pay their technicians high commissions to upsell unnecessary indoor air quality (IAQ) products, UV lights, and entire system replacements. \n\nThe companies listed above share these crucial traits:\n1. **Flat-Rate, Upfront Pricing:** They give you the price of the repair *before* they turn a wrench. No billing by the hour while a tech \"figures it out\" in your hot attic.\n2. **Diagnostic Competence:** In Houston's summer, systems run constantly. You need a tech who can accurately test capacitors, check subcooling/superheat for refrigerant levels, and inspect electrical wiring safely, rather than just guessing.\n3. **Manufacturer Certifications:** They are authorized dealers/repair centers for major brands common in Houston (Carrier, Trane, Lennox, American Standard, Rheem).\n\n---\n\n### Crucial Advice Before You Make the Call:\n\n1. **Check the Warranty on the Last Repair:** If your AC was serviced within the last 1 to 2 years, call the company that did the previous work. Parts (like compressors or fan motors) often carry multi-year manufacturer warranties, and labor might still be covered by the installing contractor.\n2. **Ask the Dispatcher This Exact Question:** *\"What is your dispatch/diagnostic fee, and does that fee get waived if I approve the repair?\"* (Reputable companies will often waive the fee if you use them for the fix).\n3. **The \"Attic\" Reality Check:** Be prepared for the technician to tell you the attic is 140°F (because it is). If they recommend replacing a 10-year-old system that has a dead compressor, get a second opinion *only* if the repair quote exceeds 50% of the cost of a new unit.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

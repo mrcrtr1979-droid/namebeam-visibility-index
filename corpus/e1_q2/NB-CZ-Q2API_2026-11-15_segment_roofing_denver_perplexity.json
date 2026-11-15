@@ -1,0 +1,80 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-15_segment_roofing_denver_perplexity",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My roof has hail damage in Denver. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_df550d74-0bff-4cde-8874-1630c8d9105c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00112,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00125,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00501
+   },
+   "input_tokens": 5047,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4494,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 498,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5545
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Peak to Peak Roofing & Exteriors",
+  "Interstate Roofing",
+  "Hart Roofing",
+  "Metro City Roofing",
+  "Peak Roofing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "03db6bc5f5db0d5530cec4be3134790077c54062b6a25d08350d281ccd52ab58",
+ "answer_chars": 1900,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "57fe19f311bbf1f30bf992d1006eccfa58f3bf18aac55160161e02a0ea6dfd0e",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

@@ -1,0 +1,101 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-15_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Atlanta. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_58438844-4bfa-4055-b777-0c4450df8c7c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00128,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00179,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00571
+   },
+   "input_tokens": 5673,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 5120,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 714,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 6387
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Wright Orthodontics",
+  "Harris Orthodontics",
+  "West Paces Ferry Orthodontics",
+  "Atlanta Orthodontic Specialists",
+  "Buckhead Orthodontics",
+  "Artemis Smiles Orthodontics",
+  "Atlanta-area",
+  "North Druid Hills",
+  "Offers",
+  "Invisalign",
+  "Diamond Invisalign-provider",
+  "B N. Druid Hills Rd. NE",
+  "West Midtown",
+  "Dr. Peyton Harris",
+  "American Board of Orthodontics",
+  "Marietta St. NW",
+  "Buckhead",
+  "Diamond Plus Invisalign-provider",
+  "W. Paces Ferry Rd. NW",
+  "Sandy Springs",
+  "Sandy Springs Circle",
+  "Diamond",
+  "Diamond Plus",
+  "Diamond Plus Invisalign",
+  "West Paces Ferry",
+  "Diamond Invisalign"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "70ed203d039e9e012f6979e4cd5c0136a249a70c42058b65841489f541d5e197",
+ "answer_chars": 2460,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "4867d5f142b8207dfb49db473aeb3f3a957780ebdf66593f83d27cc244aad1c6",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

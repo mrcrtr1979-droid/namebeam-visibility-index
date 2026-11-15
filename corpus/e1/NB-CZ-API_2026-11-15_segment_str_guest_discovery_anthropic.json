@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-API_2026-11-15_segment_str_guest_discovery_anthropic",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_zrw3s6b6yvjhza6tkqp6ddoq2mh6tajomddb5veymlfrx6627ajq",
+  "usage": {
+   "input_tokens": 41,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 288,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "VRBO",
+  "Booking.com",
+  "Pick based on",
+  "Green flags",
+  "Premier Partner",
+  "Superhost",
+  "Finding a good host",
+  "Good Host",
+  "A good host"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Choosing a Platform\n\nEach has different strengths:\n\n**Airbnb**\n- Largest selection, especially unique/smaller properties\n- Strong host verification and review system\n- Good for shorter stays\n\n**VRBO**\n- Better for full homes/longer rentals\n- Often better value for groups\n- Fewer but typically established hosts\n\n**Booking.com**\n- Widest range (hotels to apartments)\n- Good for last-minute deals\n- Simpler, more standardized experience\n\n**Pick based on:** your trip length, group size, and whether you want a full home or just a room.\n\n# Finding a Good Host\n\n**Red flags to avoid:**\n- Very few reviews or all recent ones\n- Vague listing photos or descriptions\n- Overly strict cancellation policies\n- Lots of negative reviews mentioning cleanliness or communication\n\n**Green flags:**\n- 4.8+ rating with 20+ reviews\n- Detailed house rules and clear photos\n- Responsive to questions before booking\n- Specific positive comments about cleanliness/communication\n- Superhost/Premier Partner badges\n\n**Before booking:** Message the host with questions—their response speed and helpfulness matter.\n\nWhat type of trip are you planning? That might help narrow down which platform makes most sense.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

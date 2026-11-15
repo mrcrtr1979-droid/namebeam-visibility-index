@@ -1,0 +1,182 @@
+{
+ "check_id": "NB-CZ-AGREE_2026-11-15_segment_str_guest_discovery",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: STR guest discovery",
+ "row_type": "agreement",
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engines_compared": [
+  "anthropic",
+  "gemini",
+  "openai",
+  "perplexity"
+ ],
+ "engines_usable": 4,
+ "pairs": [
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Compare",
+    "Airbnb",
+    "Booking.com"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "gemini",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "gemini",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 3,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 1947,
+   "answer_chars_b": 56,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Compare",
+    "Airbnb",
+    "Booking.com"
+   ],
+   "verbose_names": [
+    "Airbnb",
+    "Vrbo",
+    "Booking.com",
+    "Less",
+    "Hotels",
+    "Wi-Fi",
+    "Airbnb Superhost",
+    "Vrbo Premier Host",
+    "Cleaning"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "perplexity",
+   "terser_entity_count": 3,
+   "verbose_entity_count": 9,
+   "containment_pct": 66.7,
+   "shared_count": 2,
+   "answer_chars_a": 1947,
+   "answer_chars_b": 6744,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Booking.com",
+    "Premier Partner"
+   ],
+   "verbose_names": [
+    "Compare",
+    "Airbnb",
+    "Booking.com"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "perplexity",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 3,
+   "containment_pct": 50.0,
+   "shared_count": 1,
+   "answer_chars_a": 1947,
+   "answer_chars_b": 1188,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Airbnb",
+    "Vrbo",
+    "Booking.com",
+    "Less",
+    "Hotels",
+    "Wi-Fi",
+    "Airbnb Superhost",
+    "Vrbo Premier Host",
+    "Cleaning"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "openai",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "gemini",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 9,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 56,
+   "answer_chars_b": 6744,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [],
+   "verbose_names": [
+    "Booking.com",
+    "Premier Partner"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "gemini",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "gemini",
+   "terser_entity_count": 0,
+   "verbose_entity_count": 2,
+   "containment_pct": null,
+   "shared_count": 0,
+   "answer_chars_a": 56,
+   "answer_chars_b": 1188,
+   "zero_shared": false
+  },
+  {
+   "terser_names": [
+    "Booking.com",
+    "Premier Partner"
+   ],
+   "verbose_names": [
+    "Airbnb",
+    "Vrbo",
+    "Booking.com",
+    "Less",
+    "Hotels",
+    "Wi-Fi",
+    "Airbnb Superhost",
+    "Vrbo Premier Host",
+    "Cleaning"
+   ],
+   "extraction_suspect": false,
+   "suspect_note": "",
+   "engine_a": "openai",
+   "engine_b": "anthropic",
+   "named_by_a": false,
+   "named_by_b": false,
+   "naming_disagreement": false,
+   "terser_engine": "anthropic",
+   "terser_entity_count": 2,
+   "verbose_entity_count": 9,
+   "containment_pct": 50.0,
+   "shared_count": 1,
+   "answer_chars_a": 6744,
+   "answer_chars_b": 1188,
+   "zero_shared": false
+  }
+ ],
+ "method_note": "Directional containment, NOT set overlap. Set overlap has a ceiling set by verbosity: if one engine names 27 companies and the other names 8, perfect agreement still caps Jaccard near 30 percent. Entities are extracted ORTHOGRAPHICALLY (capitalisation), not from bolding, because engines bold to their own taste. Matching is mechanical and reproducible; errors run toward under-counting agreement, so the true figure is more likely higher than reported than lower."
+}

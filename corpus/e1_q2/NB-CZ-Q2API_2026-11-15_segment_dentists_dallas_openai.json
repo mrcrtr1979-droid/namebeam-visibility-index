@@ -1,0 +1,66 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-15_segment_dentists_dallas_openai",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Dallas. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkaddcR3HxsmvDnOkfNvVog65EKoe",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1580,
+   "total_tokens": 1605,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dallas Oral Surgery Associates",
+  "Texas A&M College of Dentistry – Dallas",
+  "A prosthodontist-led implant practice in Dallas",
+  "One missing tooth, uncomplicated",
+  "CBCT/3-D scan",
+  "Start",
+  "Texas A&M College of Dentistry",
+  "Deep Ellum",
+  "North Dallas Dental Surgery",
+  "North Dallas",
+  "Lake Highlands",
+  "Dallas Periodontics",
+  "Dental Implants",
+  "D CBCT",
+  "Use the American College of Prosthodontists",
+  "Call Texas A&M College of Dentistry",
+  "American College of Prosthodontists",
+  "Oral and Maxillofacial Surgeons"
+ ],
+ "engine_stated_criteria": [
+  "Cost is the main issue"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a dental implant in Dallas, I’d call a mix of **specialist surgical offices** and a **teaching clinic** for a price comparison. Start with these:\n\n1. **Dallas Oral Surgery Associates**  \n   **Why call:** Oral and maxillofacial surgeons focus on the surgical part of implant treatment—placing the implant, bone grafting, sinus lifts, extractions, IV sedation, and more complex cases. This is a strong first call if you have missing teeth, have been told you may need grafting, or want sedation.  \n   **Ask:** “Do you place implants and coordinate the final crown with my general dentist or prosthodontist? Do you provide a written quote for grafting, implant placement, abutment, and crown separately?”\n\n2. **Texas A&M College of Dentistry – Dallas**  \n   **Location:** Gaston Avenue, near downtown Dallas/Deep Ellum.  \n   **Why call:** A dental-school clinic can be a useful lower-cost option. Treatment is supervised by faculty specialists, and they may have general dentistry, periodontics, prosthodontics, and oral-surgery pathways in one institution. Tradeoff: appointments and treatment often take longer.  \n   **Ask:** “Do you currently accept new implant cases, and would my treatment be handled by residents/faculty in periodontics, prosthodontics, or oral surgery? What is the expected total cost and timeline?”\n\n3. **North Dallas Dental Surgery / an oral-surgery practice in North Dallas**  \n   **Why call:** If you are in North Dallas, Plano, Richardson, Addison, or Lake Highlands, an oral-surgery group can be convenient for surgical placement and anesthesia. These practices are especially appropriate if you need extractions, sedation, bone grafting, or an implant after a failed tooth.  \n   **Ask:** Whether they do “single-tooth implants” versus only full-arch/All-on-X cases; some heavily market full-mouth treatment and may not be the best fit for one missing tooth.\n\n4. **Dallas Periodontics & Dental Implants or another board-certified periodontist practice in Dallas**  \n   **Why call:** Periodontists specialize in gums, bone, and implant support. They are often an excellent choice if you have gum disease, bone loss, recession, or concern about long-term implant maintenance—not just placing the implant.  \n   **Ask:** “Is the doctor a board-certified periodontist? Do you use 3-D CBCT imaging for implant planning? Who will restore the implant with the crown?”\n\n5. **A prosthodontist-led implant practice in Dallas**  \n   **Why call:** A prosthodontist specializes in the final tooth/crown, bridges, dentures, and full-mouth reconstruction. For a visible front tooth, multiple missing teeth, a bridge, or implant dentures, starting with a prosthodontist can be smart because they plan the final bite and appearance before surgery.  \n   **How to find the right one:** Use the American College of Prosthodontists “Find a Prosthodontist” directory and search Dallas.  \n   **Ask:** “Do you perform both the implant placement and restoration, or do you work with a surgeon? Who is responsible if the implant and crown do not fit or fail?”\n\n## My practical call order\n\n- **One missing tooth, uncomplicated:** Call a periodontist and an oral surgeon, then compare their plans and total fees.  \n- **Bone loss, gum disease, or prior implant failure:** Start with a periodontist.  \n- **Need sedation, extractions, or complicated grafting:** Start with an oral surgeon.  \n- **Several missing teeth, a full arch, or implant dentures:** Start with a prosthodontist-led office, plus one oral-surgery consultation.  \n- **Cost is the main issue:** Call Texas A&M College of Dentistry early.\n\n## What “good” answers sound like\n\nChoose an office that will give you:\n\n- A **CBCT/3-D scan** or a clear reason one is not needed.\n- A written treatment plan showing all components:\n  - exam and imaging\n  - extraction, if needed\n  - bone graft/membrane, if needed\n  - implant fixture\n  - healing cap/abutment\n  - final crown, bridge, or denture\n  - sedation and follow-up\n- The implant brand/system they use and confirmation that parts will remain available.\n- A discussion of alternatives, including a bridge or partial denture.\n- A plan for maintenance and what happens if an implant does not integrate.\n\n## Cost reality check\n\nIn Dallas, a straightforward **single implant plus crown** is commonly quoted as a multi-part treatment and can total roughly **$3,500–$6,500+**, depending on imaging, grafting, sedation, implant system, and the final crown. “Implant specials” often advertise only the surgical implant fixture—not the abutment and crown—so insist on the all-in estimate.\n\nBefore booking, verify each practice’s current location, new-patient availability, insurance/financing policies, and whether the quoted price includes the final restoration.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

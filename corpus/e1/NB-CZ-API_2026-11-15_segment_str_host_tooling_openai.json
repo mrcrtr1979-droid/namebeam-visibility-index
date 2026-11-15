@@ -1,0 +1,60 @@
+{
+ "check_id": "NB-CZ-API_2026-11-15_segment_str_host_tooling_openai",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Eka9ShJVzJ4OHR6c9A6pyl8jIRx8y",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 634,
+   "total_tokens": 660,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 66,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "AirDNA",
+  "AirDNA MarketMinder",
+  "Beyond",
+  "Wheelhouse",
+  "AirDNA Rentalizer",
+  "Rabbu",
+  "Mashvisor",
+  "Use AirDNA first",
+  "Underwrite conservatively",
+  "After purchase, connect PriceLabs",
+  "AirDNA + PriceLabs",
+  "Strong STR",
+  "Set",
+  "Use AirDNA",
+  "Rentalizer",
+  "MarketMinder"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most Airbnb hosts and investors, the best setup is:\n\n- **PriceLabs** for ongoing nightly pricing\n- **AirDNA** for market research and evaluating a property before buying\n\nIf you want to choose only **one** tool, **AirDNA** is generally the better answer for a pre-purchase decision because its strength is market-level data: occupancy, ADR, revenue estimates, seasonality, supply growth, comparable listings, and investment-market reports. It also offers pricing tools, though many active hosts prefer PriceLabs for day-to-day dynamic pricing.\n\n### Best by use case\n\n| Need | Best tool | Why |\n|---|---|---|\n| Analyze a market before buying | **AirDNA MarketMinder** | Strong STR market data, comps, occupancy, ADR, revenue and seasonality estimates |\n| Set dynamic nightly rates after launch | **PriceLabs** | Highly customizable rules, minimum-stay controls, event adjustments, portfolio tools |\n| Simple automated pricing | **Beyond** or **Wheelhouse** | More hands-off revenue-management approach |\n| Underwriting a specific deal quickly | **AirDNA Rentalizer** | Fast revenue estimates for a specific address |\n| Investor-focused deal analysis | **Rabbu** or **Mashvisor** | Useful calculators and investment-oriented workflows, though data should be independently verified |\n\n### Recommended workflow\n\n1. **Use AirDNA first** to determine whether the market and property are viable.\n   - Review historical occupancy, ADR, RevPAR, annual revenue, seasonality, regulations, supply growth, and the performance of genuinely comparable homes.\n   - Do not rely only on a single projected revenue number.\n\n2. **Underwrite conservatively.**\n   - Use lower-than-average occupancy and ADR assumptions.\n   - Include cleaning, utilities, furnishing replacement, platform fees, insurance, taxes, management, maintenance, and slower low-season periods.\n   - Check whether local rules permit short-term rentals and whether a license, primary-residence rule, cap, or HOA restriction applies.\n\n3. **After purchase, connect PriceLabs** to Airbnb, Vrbo, and/or your PMS.\n   - Start with a sensible base price.\n   - Set minimum prices, maximum prices, minimum-stay rules, orphan-gap rules, and event/holiday overrides.\n   - Review performance monthly rather than allowing any pricing tool to run completely unattended.\n\n### Bottom line\n\n- **Best market-analysis tool before buying:** **AirDNA**\n- **Best dynamic-pricing tool for most hosts:** **PriceLabs**\n- **Best overall combination for a serious host/investor:** **AirDNA + PriceLabs**\n\nNo tool replaces checking local regulations and validating projections against 10–20 truly comparable listings, but that combination is the most common practical stack for Airbnb operators.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-API_2026-11-15_segment_title_companies_miami_perplexity",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: title companies, Miami",
+ "niche": "title companies",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Miami FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ba575a0f-f531-409a-9cbc-8af587cbd8f2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00432
+   },
+   "input_tokens": 4678,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4131,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 261,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4939
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Marina Title",
+  "Key Title & Escrow",
+  "Key Title",
+  "Department of Financial Services",
+  "Florida Department of Financial Services"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "17591a9a6dcc2016398fda629863ba8770c70dc0cb2a76383937e6a1fb36e8e8",
+ "answer_chars": 1005,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "0259a1725e7c54e8165d0d197d5266cf38ee94033542ae9b873eea3c2a0280b7",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

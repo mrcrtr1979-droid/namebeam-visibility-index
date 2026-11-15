@@ -1,0 +1,75 @@
+{
+ "check_id": "NB-CZ-API_2026-11-15_segment_short_term_rental_nashville_perplexity",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0698abe3-a450-4fb8-9f4e-6d4e598f3f9c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00093,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00455
+   },
+   "input_tokens": 4478,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3925,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 372,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4850
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "BR Treetop Bungalow",
+  "SoBro",
+  "Treetop Bungalow"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "1979a986610ab696927ad457a95f920e5b50f6ae0c2d99f05cb76f189e66b21d",
+ "answer_chars": 1298,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "66f37c00dae92521d903b5eae8ff88028d23189f07954c5204a6302055072e5c",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

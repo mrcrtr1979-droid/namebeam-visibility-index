@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-API_2026-11-15_segment_hvac_houston_openai",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkaStjb5qa7f5ps94Sp8egDuzGg5Q",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 468,
+   "total_tokens": 486,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 237,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "John Moore Services",
+  "Texas Department of Licensing and Regulation (TDLR)",
+  "Village Plumbing & Air",
+  "ARS/Rescue Rooter Houston",
+  "Texas HVAC",
+  "Village Plumbing",
+  "Rescue Rooter Houston",
+  "AC repair",
+  "John Moore",
+  "Rescue Rooter"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "If you want one established, broadly trusted Houston option for AC repair, **John Moore Services** is a strong starting point. They’re a large local provider with emergency availability, licensed technicians, and the capacity to handle most residential AC issues quickly.\n\nThat said, “best” can vary by your neighborhood, system type, and budget. Before booking, get at least two written diagnostics/quotes—especially for compressor, coil, or refrigerant repairs. Also verify the contractor’s Texas HVAC license through the **Texas Department of Licensing and Regulation (TDLR)** and ask whether the diagnostic fee is applied toward the repair.\n\nGood Houston-area companies to compare against include:\n\n- **John Moore Services** — large, established, often convenient for same-day/emergency service  \n- **Village Plumbing & Air** — established Houston home-services company  \n- **ARS/Rescue Rooter Houston** — large service network and broad availability  \n\nFor the best value, choose the company that clearly explains the failed part, provides an itemized quote, includes warranty terms, and does not push replacement before documenting why repair is not viable.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

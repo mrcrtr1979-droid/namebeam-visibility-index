@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-11-15_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-11-15",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_f1d22fbe-2553-4b13-a47b-496ad03b86d5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00075,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00087,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00426
+   },
+   "input_tokens": 3560,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3013,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 346,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 3906
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Richard Lee Byrd Jr",
+  "Dr. Stephanie Moore",
+  "Dr. Arjun Patel",
+  "Dr. Michael Everson",
+  "Dr. Peyton Keith Harris",
+  "American Board of Orthodontics",
+  "Invisalign",
+  "Meridian Mark Rd NE",
+  "Northside Pkwy NW",
+  "Quest Orthodontics",
+  "Sandy Springs Pl",
+  "Peachtree Rd NE",
+  "Marietta St NW",
+  "American Association of Orthodontists",
+  "Sandy Springs"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "4780108b52fc239c0be452088829a38505ba2ac5a380d270cee6d935ecd20e0b",
+ "answer_chars": 1145,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "c06a8af3029a1d1279f69d56b9b63d154ae44acbeee6ebe3ff760006f315c550",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}
