@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-16_segment_personal_injury_law_atlanta_perplexity",
+ "date_utc": "2026-11-16",
+ "business": "SEGMENT: personal injury law, Atlanta",
+ "niche": "personal injury attorneys",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Atlanta after a car accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Atlanta for a car accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_61aff396-95cf-4e2a-bfe0-597e9d15e4f1",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00085,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00142,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00491
+   },
+   "input_tokens": 3947,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3389,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 568,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4515
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "The Champion Firm",
+  "Fried Goldberg LLC",
+  "Johnson & Ward",
+  "The Weinstein Firm",
+  "John Foy & Associates",
+  "HELP-NOW",
+  "John Foy",
+  "State Bar of Georgia"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "1f4a9ab5b54b88cbe8d5d7c836b09a3e721b7f43884419fad9b38602598ceba8",
+ "answer_chars": 2150,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "9becbd13a2887941356b809dadcc9d2d8ecd332bf345fa7d79be7487dedfc654",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

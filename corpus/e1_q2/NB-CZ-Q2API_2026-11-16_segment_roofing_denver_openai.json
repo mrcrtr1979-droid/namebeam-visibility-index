@@ -1,0 +1,64 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-16_segment_roofing_denver_openai",
+ "date_utc": "2026-11-16",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My roof has hail damage in Denver. Which specific roofing companies should I call, and why?",
+ "q1_prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkxichVNudCewB4ErdQcFIZJaNlWE",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1141,
+   "total_tokens": 1166,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 468,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Formula Roofing & Remodeling",
+  "Roper Roofing & Solar",
+  "Roof Brokers",
+  "Blue Spruce Roofing & Exteriors",
+  "A Better Roofing Company",
+  "Formula, Roper, and Roof Brokers",
+  "Formula Roofing",
+  "Longstanding Denver-area",
+  "Roper Roofing",
+  "Established Front Range",
+  "Blue Spruce Roofing",
+  "Blue Spruce",
+  "In Colorado",
+  "Front Range"
+ ],
+ "engine_stated_criteria": [
+  "without asking you to sign over claim control",
+  "Call your insurer first or promptly open the claim",
+  "“cover” or waive your deductible"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a Denver hail claim, I’d call **three established local roofers for independent inspections and written scopes**, then compare them against your insurer’s estimate. My practical shortlist:\n\n1. **Formula Roofing & Remodeling**  \n   **Why call:** Longstanding Denver-area company with substantial experience in hail, insurance-restoration, residential, and commercial roofing. A good candidate for a detailed damage report and a line-item comparison to the carrier estimate.\n\n2. **Roper Roofing & Solar**  \n   **Why call:** Established Front Range contractor that handles roof replacement, hail claims, gutters, and—if applicable—solar-related roof coordination. Useful if you have panels or want a contractor accustomed to complex exterior scopes.\n\n3. **Roof Brokers**  \n   **Why call:** A long-running Denver roofing company with experience in both roof replacement and insurance work. Good “second opinion” choice, particularly if another contractor immediately pushes for a full replacement without clearly documenting damage.\n\n4. **Blue Spruce Roofing & Exteriors**  \n   **Why call:** Denver-metro firm focused on roofing and exterior restoration. Worth including if your hail damage may involve gutters, siding, paint, screens, or other exterior items in addition to shingles.\n\n5. **A Better Roofing Company**  \n   **Why call:** Another established Denver-area option for a competing inspection and estimate, especially for standard asphalt-shingle residential roofs.\n\nI would start with **Formula, Roper, and Roof Brokers**. If one finds substantially different damage or scope than the others, add Blue Spruce or A Better Roofing as a tie-breaker.\n\n### What to ask each company\nAsk for these items before choosing anyone:\n\n- A **written, photo-documented inspection report** showing hail hits, damaged shingles, flashing, vents, gutters, etc.\n- A **line-item scope** that can be compared with your insurance adjuster’s estimate—not just “insurance will pay for it.”\n- Proof of **current Denver/Colorado licensing requirements, general liability insurance, and workers’ compensation coverage**.\n- Whether they will work with your insurer **without asking you to sign over claim control**.\n- The exact shingle manufacturer, product line, warranty, ventilation work, flashing replacement, and whether permits are included.\n- Whether they will supplement the claim only for legitimate, documented items.\n- A realistic start date and whether they use employees or subcontractor crews.\n\n### Important Denver hail-claim cautions\n- **Call your insurer first or promptly open the claim** if you have not already. A roofer can inspect, but your policy and insurer control coverage.\n- Do not sign a contract with an **assignment of benefits**, broad “authorization to negotiate,” or an agreement that commits you before you have the insurer’s scope.\n- Be wary of anyone who says they can **“cover” or waive your deductible**. That can create legal and insurance problems in Colorado.\n- Avoid door-to-door storm chasers offering a “free roof” or demanding a large upfront payment.\n- If water is entering the home, authorize only reasonable **emergency tarping/mitigation**, save receipts, and photograph the damage.\n\nA good contractor should be comfortable with you getting competing inspections, should explain the damage clearly, and should not pressure you to sign the same day.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

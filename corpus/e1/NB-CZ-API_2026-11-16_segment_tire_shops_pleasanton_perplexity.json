@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-11-16_segment_tire_shops_pleasanton_perplexity",
+ "date_utc": "2026-11-16",
+ "business": "SEGMENT: tire shops, Pleasanton",
+ "niche": "tire shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I buy tires in Pleasanton CA and who does the best installation?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a817ae77-eb1a-491c-b92a-d2453f83b0bf",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00069,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 5247,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4697,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 276,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5523
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Also worth considering",
+  "Big O Tires, 3688 A Washington St",
+  "America’s Tire in Dublin, 6450 Dublin Blvd",
+  "Big Brand Tire",
+  "Big O Tires",
+  "Tire Rack",
+  "America’s Tire",
+  "America",
+  "Dublin",
+  "Big Brand Tire & Service",
+  "My pick",
+  "Big Brand",
+  "America’s Tire in Dublin",
+  "Big O",
+  "My pick: Big Brand Tire & Service"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "41b184d041fe23168c6c8d02e36847687da0ba07fa87d2e628db8650ab9841ba",
+ "answer_chars": 907,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "e5adc83a794d5d3fa2b5c82e492e7999233e62f61d40039cfe386cc9bcfdf266",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

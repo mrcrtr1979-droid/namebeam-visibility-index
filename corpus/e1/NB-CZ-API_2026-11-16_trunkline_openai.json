@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-API_2026-11-16_trunkline_openai",
+ "date_utc": "2026-11-16",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkxStT62XmGDziYZGRGO5QmEHtU07",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 683,
+   "total_tokens": 709,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 492,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Rekt.news",
+  "DeFiLlama’s Hacks database",
+  "DeFiLlama",
+  "Plain English"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a beginner-friendly site that uses real dollar figures and openly documents crypto losses, **Rekt.news** is probably the closest fit.\n\n- Explains major hacks, collapses, and bad DeFi designs in relatively plain English  \n- Includes concrete loss figures—often with transaction evidence and timelines  \n- Focuses on *what failed*, not just upside or token promotion  \n- Has a strong “learn from losses” orientation\n\nFor a more data-first companion, use **DeFiLlama’s Hacks database**. It lists exploit dates, amounts lost, chains, and recovery figures.\n\nOne caveat: Rekt is best for learning about **protocol/project losses**, not for following a writer’s personal trading record. If you mean a site that publishes its own investment portfolio—including losing trades—those are much rarer, and public “track records” should be treated skeptically unless they are independently verifiable.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

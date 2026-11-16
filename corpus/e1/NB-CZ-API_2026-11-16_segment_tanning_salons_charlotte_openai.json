@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-API_2026-11-16_segment_tanning_salons_charlotte_openai",
+ "date_utc": "2026-11-16",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "niche": "tanning salons",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkvrsM99wY5PJ3jHcw1zKB4cDwFeq",
+  "usage": {
+   "prompt_tokens": 16,
+   "completion_tokens": 502,
+   "total_tokens": 518,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 293,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "South Beach Tanning Company",
+  "Sun Tan City",
+  "Palm Beach Tan",
+  "VersaSpa",
+  "UV tanning beds"
+ ],
+ "engine_stated_criteria": [
+  "Best near you"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "A strong all-around pick in Charlotte is **South Beach Tanning Company**, especially if you want a polished salon experience with both UV beds and spray-tan options. It’s generally known for clean facilities, multiple tanning levels, and membership/package choices.\n\nThat said, the “best” depends on what you want:\n\n- **Best for spray tans / avoiding UV:** Look for a salon offering **VersaSpa or custom airbrush tans**; South Beach is a reasonable starting point.\n- **Best budget option:** **Sun Tan City** or **Palm Beach Tan** locations often run introductory specials, though service and cleanliness can vary by location.\n- **Best near you:** Check the most recent Google reviews for the specific Charlotte-area location—especially comments about cleanliness, bulb quality, wait times, and staff pressure around memberships.\n\nOne health note: if your goal is color rather than UV exposure, a professional spray tan is the safer choice; UV tanning beds increase skin-cancer and premature-aging risk.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-11-16_segment_homecare_agencies_pleasanton_perplexity",
+ "date_utc": "2026-11-16",
+ "business": "SEGMENT: homecare agencies, Pleasanton",
+ "niche": "home care agencies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best home care agency in Pleasanton CA for an elderly parent?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d84d4142-feec-4fc3-94ce-e635d09a55da",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00105,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00479
+   },
+   "input_tokens": 4941,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4391,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 419,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5360
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Visiting Angels in Livermore",
+  "Right",
+  "Home Pleasanton and Home Instead",
+  "Home Instead",
+  "Visiting Angels",
+  "Livermore",
+  "Home Pleasanton",
+  "Right at Home",
+  "Tri-Valley",
+  "Right at Home Pleasanton",
+  "Pleasanton Office"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "24de4c17f87d3777a4146787e64626b2702b609c26b30a38a23b1500dff81de5",
+ "answer_chars": 1488,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "05fa2a57ec97833bae524cf13324799c4339ed4031683e1af0c0dd3ac6572558",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

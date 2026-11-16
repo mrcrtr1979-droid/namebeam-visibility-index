@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-API_2026-11-16_segment_real_estate_agents_pleasanton_openai",
+ "date_utc": "2026-11-16",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ekw73gDSiDsQqQdGCsmwce2e8EXC4",
+  "usage": {
+   "prompt_tokens": 22,
+   "completion_tokens": 501,
+   "total_tokens": 523,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 90,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Recent local sales",
+  "Comparable properties",
+  "List-to-sale price ratio",
+  "Days on market",
+  "Marketing plan",
+  "Pricing analysis",
+  "Contract terms and fees",
+  "MLS-derived",
+  "In Pleasanton"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for every Pleasanton home—the best choice is usually the agent with a strong recent record selling homes like yours in your specific neighborhood, price range, and condition.\n\nFor a Pleasanton seller, interview 3 agents and compare:\n\n- **Recent local sales:** Closed listings in Pleasanton—especially your ZIP code (94566 or 94588)—in the past 6–12 months.\n- **Comparable properties:** Experience selling homes similar in size, age, school area, and price point to yours.\n- **List-to-sale price ratio:** Ask for their average, along with the market average. Be wary of agents who simply promise the highest list price.\n- **Days on market:** Compare this against comparable Pleasanton listings, not just their overall numbers.\n- **Marketing plan:** Professional photography, video, staging advice, floor plans, targeted online promotion, broker outreach, and open-house strategy.\n- **Pricing analysis:** They should provide a detailed CMA with active, pending, and recently sold comparables—not just automated estimates.\n- **References:** Ask for 2–3 recent seller references, ideally from your neighborhood.\n- **Contract terms and fees:** Review commission, cancellation terms, staging/marketing costs, and whether they will reduce the fee if they represent both sides.\n\nA good question to ask each candidate:\n\n> “Show me the last five Pleasanton homes you sold that were similar to mine. What was the original list price, final sale price, days on market, and what specifically did you do to market them?”\n\nTo find candidates, look at recent sold listings on Zillow, Redfin, Realtor.com, and MLS-derived sites, then note which listing agents repeatedly appear on successful sales near your home. Also ask neighbors who sold recently—local, firsthand experience is often more useful than online ratings.\n\nIf you share your neighborhood, approximate home value, property type, and condition, I can help you build an interview shortlist and compare agents’ proposals.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

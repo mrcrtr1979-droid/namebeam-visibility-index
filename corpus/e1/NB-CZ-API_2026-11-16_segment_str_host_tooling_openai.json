@@ -1,0 +1,57 @@
+{
+ "check_id": "NB-CZ-API_2026-11-16_segment_str_host_tooling_openai",
+ "date_utc": "2026-11-16",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkxDgPU8aKYxKWTXbMWOk5UhcBhJX",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 562,
+   "total_tokens": 588,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 114,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "AirDNA",
+  "AirDNA MarketMinder / Rentalizer",
+  "AirDNA Rentalizer",
+  "Beyond",
+  "Wheelhouse",
+  "Mashvisor",
+  "After listing goes live",
+  "AirDNA MarketMinder",
+  "Rentalizer",
+  "MarketMinder",
+  "After listing"
+ ],
+ "engine_stated_criteria": [
+  "Build your own underwriting model"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most Airbnb hosts, the strongest combination is:\n\n- **PriceLabs** for setting and automating nightly rates\n- **AirDNA** for analyzing a market before purchasing a property\n\nIf you want to choose only one tool for pre-purchase research, choose **AirDNA MarketMinder / Rentalizer**. It is generally the most useful for estimating revenue, occupancy, ADR, seasonality, supply growth, and comparable listings in a target market.\n\n### Best by use case\n\n| Need | Best tool | Why |\n|---|---|---|\n| Dynamic nightly pricing after launch | **PriceLabs** | Strong rule customization, seasonal/event pricing, minimum-stay controls, and broad PMS/channel-manager integrations |\n| Evaluate a market before buying | **AirDNA** | Market-level historical occupancy, ADR, revenue, demand trends, supply, regulations, and comp data |\n| Quickly estimate a specific property’s potential | **AirDNA Rentalizer** | Useful first-pass revenue estimate based on bedrooms, location, and similar rentals |\n| More automated/revenue-management-oriented pricing | **Beyond** or **Wheelhouse** | Good alternatives, especially for larger portfolios or hosts who want less manual control |\n| Beginner-friendly investment underwriting | **Mashvisor** | Easier real-estate-investor interface, though many serious STR operators still validate numbers with AirDNA and local comps |\n\n### My practical recommendation\n\n1. **Before buying:** Use **AirDNA** to narrow down markets and validate a specific neighborhood/property.\n2. **Build your own underwriting model:** Do not rely only on AirDNA’s projected revenue. Adjust for:\n   - Cleaning and turnover costs\n   - Utilities, internet, supplies, and repairs\n   - Property management fees\n   - Local lodging taxes and permits\n   - HOA rules and zoning risk\n   - Financing, insurance, and vacancy reserves\n3. **After listing goes live:** Connect **PriceLabs** to Airbnb or your PMS and set your base rate, minimum prices, and minimum-stay rules.\n\nThe short answer: **AirDNA is best for deciding where or what to buy; PriceLabs is best for pricing the listing once you own it.**",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

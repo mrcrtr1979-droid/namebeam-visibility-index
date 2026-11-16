@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-11-16_segment_orthodontists_houston_perplexity",
+ "date_utc": "2026-11-16",
+ "business": "SEGMENT: orthodontists, Houston",
+ "niche": "orthodontists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Houston for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d098e2c1-21d0-4a7e-8e9a-991a10721c6e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00079,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00124,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00467
+   },
+   "input_tokens": 3696,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3149,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 496,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4192
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Grace Huang",
+  "Dr. Gustavo Salas",
+  "Dr. Lan Doan",
+  "Dr. Angela Marie Tran",
+  "Dr. Aurora P. Sordelli",
+  "Dr. Amirparviz R. Davoody",
+  "Invisalign",
+  "American Association of Orthodontists",
+  "American Board of Orthodontics",
+  "Texas Medical Center",
+  "West Houston",
+  "Medical Center"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "f13c2bee44c492ac4f90c7b2f1f1590ec6d4228ef8132a7f0fd34838fd0f524e",
+ "answer_chars": 1698,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "2ba71ffa1969bf8c644f56e7d53702b6f9bba6dff158759652866b9cb0de5550",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

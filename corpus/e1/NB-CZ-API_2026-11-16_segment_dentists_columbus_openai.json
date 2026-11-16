@@ -1,0 +1,54 @@
+{
+ "check_id": "NB-CZ-API_2026-11-16_segment_dentists_columbus_openai",
+ "date_utc": "2026-11-16",
+ "business": "SEGMENT: dentists, Columbus",
+ "niche": "dentists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Columbus Ohio for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkweCwFarSN6Dm1CDIniT3NyP42If",
+  "usage": {
+   "prompt_tokens": 19,
+   "completion_tokens": 481,
+   "total_tokens": 500,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 72,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Maxillofacial Surgery",
+  "ABOMS",
+  "D CBCT",
+  "Columbus-area ZIP",
+  "College of Dentistry",
+  "Ohio State University",
+  "Oral and Maxillofacial Surgery"
+ ],
+ "engine_stated_criteria": [
+  "Who places the implant, and what is their specialty/certification?",
+  "Do you use 3-D CBCT imaging and guided planning when appropriate?",
+  "What is the plan if an implant does not integrate?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” implant dentist in Columbus—success depends heavily on your bone/gum condition, whether you need extractions or grafting, and who will plan and restore the final crown.\n\nFor complex or high-value implant cases, prioritize a **board-certified oral and maxillofacial surgeon, periodontist, or prosthodontist**—ideally a team that plans the surgery and final restoration together. In Columbus, a strong starting point for complex cases or second opinions is:\n\n- **The Ohio State University College of Dentistry / Oral & Maxillofacial Surgery** — especially useful for medically complex cases, bone grafting, full-mouth reconstruction, or second opinions.\n- Look for private Columbus practices with an **American Board of Oral and Maxillofacial Surgery (ABOMS)** surgeon, a **board-certified periodontist**, or a **prosthodontist** involved in the treatment plan.\n\nBefore choosing, ask each office:\n\n1. **Who places the implant, and what is their specialty/certification?**\n2. **Who designs and places the final crown?**\n3. **Do you use 3-D CBCT imaging and guided planning when appropriate?**\n4. **How many implants does the clinician place per year?**\n5. **Is bone grafting/sinus lift included if needed, and what is the total all-in cost?**\n6. **What implant system do you use, and will parts be readily available years from now?**\n7. **What is the plan if an implant does not integrate?**\n\nAvoid choosing solely on a low advertised price—many quotes exclude the surgical extraction, graft, abutment, crown, sedation, or follow-up visits.\n\nIf you tell me your Columbus-area ZIP code, whether it is a **single tooth vs. full-arch**, and whether you have been told you need a **bone graft**, I can help narrow the type of specialist and identify questions for specific local offices.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

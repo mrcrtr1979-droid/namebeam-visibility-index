@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-API_2026-11-16_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-16",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EkxeUk64EFbwpLN1aUJFlwOYJNXv4",
+  "usage": {
+   "prompt_tokens": 20,
+   "completion_tokens": 467,
+   "total_tokens": 487,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 128,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PV Heating & Air",
+  "Conditioned Air Systems",
+  "Estes Services",
+  "TE Certified",
+  "R.S. Andrews",
+  "Coolray",
+  "Manual J load calculation",
+  "PV Heating",
+  "Conditioned Air"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company for every Atlanta home, but for a quality air-conditioner replacement—not just the cheapest swap—**PV Heating & Air** is often a strong first call in the Atlanta area. They have a reputation for doing proper system design, airflow testing, and load calculations rather than simply replacing the existing unit with the same size.\n\nOther established Atlanta-area companies worth getting competing quotes from:\n\n- **Conditioned Air Systems** — well regarded for residential replacement and service.\n- **Estes Services** — long-established Atlanta company with broad coverage.\n- **TE Certified** — strong customer-service reputation, generally premium-priced.\n- **R.S. Andrews** — large, established provider; compare proposal details carefully.\n- **Coolray** — widely available and often competitive, though experience can vary by installer/team.\n\nFor the best outcome, get **three written proposals** and choose based on the quality of the design—not only the brand or price. Require each company to provide:\n\n1. A **Manual J load calculation** to size the equipment.  \n2. Details on whether ducts, returns, drainage, electrical, and refrigerant lines need changes.  \n3. The exact model numbers, efficiency ratings, warranty terms, and labor warranty.  \n4. Permit responsibility and startup/commissioning procedures.  \n5. Available utility rebates and federal tax credits.\n\nA company that says “you have a 3-ton now, so you need another 3-ton” without measuring the home is a warning sign. For Atlanta’s humid climate, correct sizing and humidity control can matter more than buying the highest-SEER unit.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

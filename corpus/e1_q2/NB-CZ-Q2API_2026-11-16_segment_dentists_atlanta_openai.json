@@ -1,0 +1,64 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-16_segment_dentists_atlanta_openai",
+ "date_utc": "2026-11-16",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Atlanta. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Ekxxf5ttCcGTBibK1Ii159KfhzlSa",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1961,
+   "total_tokens": 1986,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 981,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Goldstein, Garber & Salama (GGS), Atlanta",
+  "Atlanta Oral & Facial Surgery",
+  "Atlanta Center for Cosmetic Dentistry",
+  "One missing tooth, otherwise healthy",
+  "GGS",
+  "Emory Oral and Maxillofacial Surgery",
+  "Atlanta Oral",
+  "Facial Surgery",
+  "Emory Healthcare",
+  "One",
+  "Maxillofacial Surgery",
+  "Oral and Maxillofacial Surgeons"
+ ],
+ "engine_stated_criteria": [
+  "Tooth needs extraction, possible bone loss, or you want sedation",
+  "“Will I have a CBCT 3-D scan and a written treatment plan before proceeding?”",
+  "“Is bone grafting or a sinus lift likely, and is that included in the quote?”",
+  "“How do you handle complications or implant failure, and what warranty applies?”",
+  "“Can you show me cases similar to mine?”"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most people in Atlanta, I’d call **two different kinds of offices**:  \n1. a practice that can plan and place the implant surgically, and  \n2. a practice that will design the final crown/bridge and take responsibility for the whole result.\n\nHere’s a practical shortlist:\n\n| Practice | Why call them | Best fit |\n|---|---|---|\n| **Goldstein, Garber & Salama (GGS), Atlanta** | Multispecialty practice with periodontal/implant-surgery and prosthodontic/restorative expertise. That matters because the crown position, bite, gum contour, and implant placement should be planned together—not treated as separate jobs. | Complex cases, visible front-tooth implants, multiple implants, bone/gum issues, full-mouth rehabilitation, or a high-quality second opinion. |\n| **Atlanta Oral & Facial Surgery** | Oral and maxillofacial surgeons who handle implant placement, extractions, bone grafting, sinus lifts, and sedation. A good call if you have a failing tooth, need an extraction, or have been told you may need grafting. | Surgical needs, anxiety/sedation needs, wisdom-tooth/extraction-to-implant cases, or more involved bone work. Ask who will restore the final crown. |\n| **Emory Oral and Maxillofacial Surgery / Emory Healthcare** | An academic medical-center route. Particularly useful if you have significant medical conditions, take blood thinners, have had radiation treatment, have complicated jaw anatomy, or need reconstruction. | Medically complex or reconstructive cases; worthwhile for a specialist opinion even if you receive routine treatment elsewhere. |\n| **Atlanta Center for Cosmetic Dentistry** | A restorative/cosmetic-focused office can be useful when appearance and crown design are major concerns—especially an implant in the smile zone. Confirm whether the implant surgeon is in-house or a referral partner. | Straightforward single-tooth replacement where the final crown’s color, shape, and gum appearance are especially important. |\n\n## Who I would call first\n\n- **One missing tooth, otherwise healthy:**  \n  Call **GGS** and **Atlanta Center for Cosmetic Dentistry** for consultations. Compare their treatment plans and who performs the surgical phase.\n\n- **Tooth needs extraction, possible bone loss, or you want sedation:**  \n  Call **Atlanta Oral & Facial Surgery** and **GGS**.\n\n- **Several missing teeth, “All-on-4,” dentures that do not stay in place, or major cosmetic concerns:**  \n  Start with **GGS**. Get at least one independent second opinion before committing, because full-arch implant plans vary dramatically in cost and in how much natural bone/teeth are removed.\n\n- **Diabetes, blood thinners, immune suppression, prior jaw surgery/radiation, or other substantial health issues:**  \n  Add **Emory Oral and Maxillofacial Surgery** to your calls.\n\n## What to ask when you call\n\nUse these questions; the answers will tell you more than marketing or online ratings:\n\n1. **“Who places the implant, and who designs/places the final crown?”**  \n   Ideally, the surgeon and restorative dentist coordinate before surgery.\n\n2. **“Will I have a CBCT 3-D scan and a written treatment plan before proceeding?”**  \n   For most implants, 3-D imaging is standard planning.\n\n3. **“Is bone grafting or a sinus lift likely, and is that included in the quote?”**\n\n4. **“Please quote the total cost separately for extraction, grafting, implant fixture, abutment, crown, temporary tooth, scans, sedation, and follow-up.”**  \n   A low advertised implant price often excludes the crown, graft, or other essential pieces.\n\n5. **“What implant system do you use, and will I receive the implant brand, model, and records?”**  \n   You want a mainstream system with long-term availability of parts.\n\n6. **“How do you handle complications or implant failure, and what warranty applies?”**\n\n7. **“Can you show me cases similar to mine?”**  \n   Especially important for front teeth, full arches, or heavy bone loss.\n\n## One important caution\n\nAvoid choosing solely based on ads promising a very low-cost implant or “teeth in a day.” Those can be appropriate treatments in selected cases, but the key issue is whether the plan preserves healthy teeth and bone, places the implant in the correct restorative position, and includes long-term maintenance.\n\nIf you tell me which Atlanta neighborhood you’re in, whether it’s one tooth or several, and whether you have insurance/budget limits, I can narrow this to the best 2–3 calls and help you compare quotes.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
