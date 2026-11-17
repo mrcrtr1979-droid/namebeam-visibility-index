@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-17_segment_tanning_salons_columbus_perplexity",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: tanning salons, Columbus",
+ "niche": "tanning salons",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to try a tanning salon in Columbus. Which specific salons should I call, and why?",
+ "q1_prompt_text": "What is the best tanning salon in Columbus OH?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9cb25534-603f-46fb-8b8c-564ca4ad0862",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00095,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00461
+   },
+   "input_tokens": 4646,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4092,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 378,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5024
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Columbus, Ohio",
+  "Tan Wolf — (614) 813-5887",
+  "Mahalo Spray Tanning — (614) 827-3172",
+  "Palm Beach Tan, Polaris — (614) 846-8900",
+  "Tan Wolf",
+  "Tremont Rd. It",
+  "Mahalo Spray Tanning",
+  "Palm Beach Tan",
+  "Sancus Blvd. Its",
+  "Mahalo. UV",
+  "UV tanning",
+  "UV tanning beds",
+  "Spray Tans"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "5b7d1ef987a6d86fc305cc743811318fc5da4d2a39349d09ae561e770ef35cbb",
+ "answer_chars": 1184,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "b350f5d7949d8cc644f45953ae0c5343063e49d5186ac10e43d5f0580f3b07e9",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-ElIQepf9SNN7x0xcQIdxYZ6jaqhgJ",
+  "usage": {
+   "prompt_tokens": 21,
+   "completion_tokens": 483,
+   "total_tokens": 504,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 308,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Valvoline Instant Oil Change",
+  "Jiffy Lube",
+  "Oil Changers",
+  "European"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a routine oil change in Pleasanton, **Valvoline Instant Oil Change** is usually the best all-around choice for convenience: walk-in service, typically quick, and they generally include basic checks such as fluids and tire pressure.\n\nIf your priority is **lowest cost**, compare its coupon price with nearby **Jiffy Lube** or **Oil Changers** before going—promotions can make a big difference.\n\nIf you drive a **BMW, Mercedes, Audi, Tesla, or another specialty/luxury vehicle**, I’d favor a well-reviewed independent European/import shop or the dealer rather than a quick-lube location.\n\nBefore committing, check the shop’s most recent Google reviews and ask for the **out-the-door price** for your vehicle, oil type, and filter; that avoids surprise charges or unnecessary add-ons.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

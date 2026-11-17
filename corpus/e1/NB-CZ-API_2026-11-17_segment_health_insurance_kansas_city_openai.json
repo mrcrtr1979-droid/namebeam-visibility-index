@@ -1,0 +1,66 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-ElI3VaknAzrmE0kGEifibNUmKUZ4o",
+  "usage": {
+   "prompt_tokens": 23,
+   "completion_tokens": 628,
+   "total_tokens": 651,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 220,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Individual/family ACA coverage",
+  "Medicare / Medicare Advantage / Medigap",
+  "Small-business group coverage",
+  "HealthCare.gov Find Local Help",
+  "Navigator",
+  "Missouri Department of Commerce & Insurance",
+  "Kansas Insurance Department",
+  "Medicare",
+  "ACA Marketplace plans",
+  "Medicare Advantage",
+  "HealthCare.gov-certified",
+  "Missouri and Kansas",
+  "Marketplace. Use",
+  "Missouri Department of Commerce",
+  "Kansas SHIP",
+  "ACA Marketplace",
+  "Marketplace Plans",
+  "Missouri Side",
+  "SHIP",
+  "Family ACA",
+  "Kansas Residents"
+ ],
+ "engine_stated_criteria": [
+  "you/family, Medicare, or a business"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” Kansas City health-insurance broker—the right choice depends heavily on whether you need:\n\n- **Individual/family ACA coverage**\n- **Medicare / Medicare Advantage / Medigap**\n- **Small-business group coverage**\n- **Short-term or supplemental plans**\n\nFor **individual or family coverage**, I’d start with a **HealthCare.gov-certified local broker or Navigator**, since both Missouri and Kansas residents generally use the federal Marketplace. Use:\n\n- **HealthCare.gov “Find Local Help”**: https://localhelp.healthcare.gov  \n  Search your ZIP code and select an **agent/broker** or **Navigator**.\n- Verify the person’s license with the appropriate state:\n  - **Missouri Department of Commerce & Insurance** license lookup\n  - **Kansas Insurance Department** agent lookup\n\nFor **Medicare**, use a **Missouri or Kansas SHIP counselor** if you want unbiased, no-sales assistance, or a broker who represents multiple Medicare carriers. SHIP counseling is free.\n\nWhen calling brokers, ask these questions:\n\n1. Are you licensed in **Missouri, Kansas, or both**?\n2. Do you represent **multiple carriers**, or only one company?\n3. Can you compare **ACA Marketplace plans** as well as off-Marketplace plans?\n4. How are you paid—carrier commission, fee, or both?\n5. Will you help with enrollment, subsidies, network checks, and claims issues after I enroll?\n6. Can you verify that my doctors, prescriptions, and preferred hospitals are in-network?\n\nAvoid anyone who pushes short-term plans, fixed-indemnity plans, or “health sharing” plans as substitutes for ACA coverage without clearly explaining their exclusions.\n\nIf you tell me your ZIP code and whether this is for **you/family, Medicare, or a business**, plus whether you live on the Kansas or Missouri side, I can help you identify what kind of broker or assistance program is most appropriate.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_segment_dentists_denver_openai",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: dentists, Denver",
+ "niche": "dentists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Denver for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-ElIyOvdYrPLIBt94sRPYkZxi9CDon",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 606,
+   "total_tokens": 624,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 197,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "D CBCT"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” implant dentist in Denver—the right choice depends on whether you need a straightforward single implant, bone grafting/sinus lift, or a full-arch restoration.\n\nFor the strongest credentials, look for a Denver-area provider who is:\n\n- A **board-certified oral and maxillofacial surgeon** or **periodontist** for surgical placement, especially if you have bone loss or a complex case.\n- A **prosthodontist** for the crown/bridge/full-arch restoration and bite planning.\n- Using **3-D CBCT imaging** and providing a written treatment plan.\n- Willing to coordinate surgery and restoration rather than treating the implant as just a quick procedure.\n\nA good approach is to book consultations with two or three practices and ask:\n\n1. Who places the implant and who makes the final crown?\n2. Are they a board-certified oral surgeon, periodontist, or prosthodontist?\n3. Do I need a bone graft or sinus lift?\n4. What implant system do they use, and will replacement parts be readily available?\n5. What is the **all-in cost**—scan, extraction, graft, implant, abutment, crown, sedation, and follow-ups?\n6. What happens if the implant does not integrate?\n\nFor an academic/second-opinion option, the **University of Colorado School of Dental Medicine in Aurora** can be worth considering; specialty faculty supervise treatment, though scheduling may be slower than a private office.\n\nAvoid choosing solely on a low advertised implant price—many ads quote only the implant fixture and exclude the abutment, crown, imaging, grafting, or sedation. For a single tooth, the final total in Denver is often substantially higher than the advertised “implant special.”\n\nIf you tell me your Denver neighborhood, whether it’s one tooth or a full arch, and whether you need insurance/financing, I can help you narrow down the type of specialist and evaluate local options.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

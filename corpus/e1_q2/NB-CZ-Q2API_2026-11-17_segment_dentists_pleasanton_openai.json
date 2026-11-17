@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-17_segment_dentists_pleasanton_openai",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-ElKSkaTZXmXsPC0f8TqZCB4xIaq8j",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1068,
+   "total_tokens": 1096,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 495,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton, California",
+  "Pleasanton Dental Care",
+  "Foothill Dental Care",
+  "Golden Triangle Dental",
+  "Amador Valley Dentistry",
+  "Hopyard-area general dental offices",
+  "PPO network specifically",
+  "X-rays",
+  "Pleasanton. Worth"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Assuming you mean **Pleasanton, California**, I’d call these general-dentistry offices first for a routine exam/checkup and cleaning. These are not “best-to-worst” rankings—availability, insurance, and your comfort with the office matter more for a standard preventive visit.\n\n1. **Pleasanton Dental Care**  \n   **Why call:** A general-dentistry practice that should be equipped for the usual new-patient exam, X-rays, periodontal screening, and cleaning in one care setting. Good first call if you want a long-term primary dentist rather than a cleaning-only visit.\n\n2. **Foothill Dental Care**  \n   **Why call:** Established general/family-dentistry option in Pleasanton. Worth checking if you want a practice that can handle preventive care now and routine restorative work later, if needed.\n\n3. **Golden Triangle Dental**  \n   **Why call:** A convenient option to compare for routine preventive care, particularly if location near central Pleasanton/downtown is useful. Ask whether they can reserve enough time for both a new-patient exam and cleaning.\n\n4. **Amador Valley Dentistry**  \n   **Why call:** Another local general-dentistry practice to include in your comparison list. This is a sensible choice if you prefer a smaller-practice feel and want to establish ongoing family/general dental care.\n\n5. **Hopyard-area general dental offices**  \n   **Why call:** If you live near Hopyard Road, prioritize an office close to home or work. For routine cleanings, convenience strongly affects whether you keep up with six-month recalls—often more important than small differences between well-reviewed general practices.\n\nWhen you call, use this exact checklist:\n\n> “I’m a new patient looking for a routine exam and cleaning. Do you accept my insurance plan, and are you in network? Can you do the exam, X-rays if needed, and cleaning at the same appointment? What is the earliest appointment, and what would my estimated out-of-pocket cost be?”\n\nAlso ask:\n- Whether the hygienist can perform a **standard prophylaxis** that day or whether they may first need a periodontal evaluation.  \n- Their **self-pay/new-patient price** if you do not have dental insurance.  \n- Whether they accept your plan’s **PPO network specifically**—“we take your insurance” does not always mean “in network.”  \n- Their cancellation policy and whether they have early-morning or late-day appointments.\n\nFor a basic checkup/cleaning, I would call **Pleasanton Dental Care, Foothill Dental Care, and Golden Triangle Dental first**, then choose the one that is **in network, can see you soon, and can combine the exam and cleaning in the same visit**.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

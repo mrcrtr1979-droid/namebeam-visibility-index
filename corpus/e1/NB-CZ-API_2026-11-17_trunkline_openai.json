@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_trunkline_openai",
+ "date_utc": "2026-11-17",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-ElJufGEpf6SeR9HiDx84FYOdXgRXH",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1304,
+   "total_tokens": 1330,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1023,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Kraken Learn",
+  "Coinbase Learn",
+  "Plain English"
+ ],
+ "engine_stated_criteria": [
+  "[Web3 Is Going Just Great](https://www.web3isgoinggreat.com/)"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "If by “publishes its losses” you mean documented hacks, scams, bankruptcies, rug pulls, and money lost across crypto, the best fit is **[Web3 Is Going Just Great](https://www.web3isgoinggreat.com/)**.\n\nWhy it fits:\n\n- Written in relatively plain English.\n- Uses dated entries and links to sources.\n- Includes estimated dollar losses where available.\n- Covers failures—not just token-price success stories.\n- Useful for beginners because it teaches the risks that most crypto education sites minimize.\n\nImportant caveat: it is **not** a complete “how to buy crypto / use a wallet / understand blockchains” course, and it has a deliberately skeptical editorial angle.\n\nFor the basic mechanics, pair it with a more neutral beginner resource such as **Kraken Learn** or **Coinbase Learn**—but treat exchange education as product-adjacent content, not independent financial advice.\n\nAlso, be wary of any educator claiming to “publish all trades and losses” unless they provide:\n\n1. a dated trade log,\n2. wallet addresses or independently verifiable records where possible,\n3. fees, taxes, and stablecoin yield failures included,\n4. losing positions that remain visible rather than quietly deleted.\n\nIn crypto, “transparent performance” is often much less transparent than it sounds.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

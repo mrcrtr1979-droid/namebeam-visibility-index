@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_segment_orthodontists_denver_perplexity",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: orthodontists, Denver",
+ "niche": "orthodontists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Denver for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d78a6951-1e62-45e6-b3c0-7c9a934e57f2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00079,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00102,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 3698,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3151,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 407,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4105
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Isaac Chung",
+  "Dr. Nicole Eberle",
+  "Dr. Clifton Speaks",
+  "Dr. Spencer Lee Schneider",
+  "Dr. Trent Nestman",
+  "American Association of Orthodontists",
+  "Cherry Creek",
+  "Central Park",
+  "Invisalign",
+  "American Association of Orthodontists (AAO)"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "851dcca1c4ba7ab92f449d46e866cfb7448b1d4661cb27948091a69c250e1cdd",
+ "answer_chars": 1378,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "e5f5730989cc1a84185bb15446b1dda21e84f2bb2943239db0b6515bdd0b4155",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

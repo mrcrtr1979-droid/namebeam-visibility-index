@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_world_martial_arts_academy_perplexity",
+ "date_utc": "2026-11-17",
+ "business": "World Martial Arts Academy",
+ "niche": "martial arts for kids",
+ "market": "St. Peters MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is a good martial arts school for kids in St. Peters MO?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6b80ddd1-9cfd-4aa7-9e61-051b686b92c6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 4790,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4241,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 301,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5091
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "All Star Karate",
+  "Onyx Grappling",
+  "Brazilian Jiu",
+  "Brazilian Jiu-Jitsu",
+  "Isshinryu Karate"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "5f2d5cf53e4bd71053f4b678fa0aaa75a30148693f2eee873546cad7e9f0ef0b",
+ "answer_chars": 840,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "38463d2287bb31cb490848d136084951c062548fdefcddf7a1a260e20ba3962d",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

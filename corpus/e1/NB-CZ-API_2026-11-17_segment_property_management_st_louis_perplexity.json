@@ -1,0 +1,76 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_segment_property_management_st_louis_perplexity",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: property management, St. Louis",
+ "niche": "property management companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in St. Louis MO for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_acf9e391-68b8-4807-8d6d-ccb52e74ef31",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 5174,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4623,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 310,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5484
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "STL Smart Rentals",
+  "Avenue Residential Leasing and Management",
+  "BiggerPockets",
+  "Avenue Residential Leasing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "501fe9b2cfeb400cb3288dfe3950ff8421d55882df402d20e47bc368b72a39f5",
+ "answer_chars": 1117,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "f5d24e86f02c779c6a653c01cce7d48329a6341803607dcb68ad5e3e17fcee2e",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

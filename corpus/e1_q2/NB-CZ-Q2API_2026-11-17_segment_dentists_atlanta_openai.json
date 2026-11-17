@@ -1,0 +1,67 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-17_segment_dentists_atlanta_openai",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Atlanta. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-ElKWdqdnfSdfL7fBztf9rZzxxJqmX",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1834,
+   "total_tokens": 1859,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 896,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Atlanta Oral & Facial Surgery",
+  "Atlanta Center for Cosmetic Dentistry",
+  "Emory OMFS",
+  "Atlanta Oral",
+  "Facial Surgery",
+  "Oral Surgery Associates",
+  "Dental Implant Centers",
+  "OSADIC",
+  "Established Atlanta-area",
+  "Worth",
+  "Emory Oral and Maxillofacial Surgery",
+  "Emory Healthcare",
+  "Maxillofacial Surgery",
+  "Metro Atlanta"
+ ],
+ "engine_stated_criteria": [
+  "If you need one tooth replaced",
+  "If you need several teeth or an “All-on-4”/full-arch solution",
+  "Who will place the implant, and what is their specialty?",
+  "What is the all-in estimated cost?",
+  "What implant system do you use, and who handles complications or repairs?",
+  "Can you provide the plan in writing before I commit?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For an implant in Atlanta, I’d make **2–3 consultation calls rather than choosing from one ad**. The best implant outcome usually requires both:\n\n1. a surgeon/periodontist to place the implant and manage bone/gum issues, and  \n2. a restorative dentist or prosthodontist to design and place the crown, bridge, or full-arch teeth.\n\nHere is a practical Atlanta call list:\n\n| Practice | Why call them | Best fit |\n|---|---|---|\n| **Atlanta Oral & Facial Surgery** | A multi-location oral-and-maxillofacial-surgery group. A good first call for surgical implant placement, extractions, bone grafting, sedation, and more involved cases. Ask which surgeon handles implants at the office most convenient to you. | Missing tooth with extraction, limited bone, need for IV sedation, multiple implants, or a second surgical opinion. |\n| **Oral Surgery Associates & Dental Implant Centers (OSADIC)** | Established Atlanta-area oral-surgery/implant practice with a dental-implant focus. Worth comparing with another surgical office on treatment plan, grafting needs, timing, and fees. | Straightforward or complex surgical implant consultation; especially useful as a comparison quote/plan. |\n| **Emory Oral and Maxillofacial Surgery / Emory Healthcare** | A sensible option if your case is medically complex or unusually difficult—such as significant bone loss, prior radiation, diabetes that is not well controlled, anticoagulants, failed implants, jaw pathology, or a need for hospital-based care. | Higher-risk medical or reconstructive cases; people who want an academic/hospital-affiliated opinion. |\n| **Atlanta Center for Cosmetic Dentistry** | Worth calling for the *restorative-planning* side of an implant: the final visible crown, bite, esthetics, and coordination with a surgeon. Confirm whether they place implants in-house or refer surgery to an oral surgeon/periodontist. | A front-tooth implant, highly visible smile area, or anyone who wants the final crown planned before surgery. |\n\n## How I would use that list\n\n- **If you need one tooth replaced:** Call **Atlanta Oral & Facial Surgery or OSADIC** plus a restorative-focused dentist such as **Atlanta Center for Cosmetic Dentistry**.  \n- **If you need several teeth or an “All-on-4”/full-arch solution:** Call **two surgical/implant centers**, including one that routinely handles full-arch cases, and ask who designs the provisional and final teeth.  \n- **If you have medical conditions, major bone loss, a prior failed implant, or need complex reconstruction:** Put **Emory OMFS** on the list.\n\n## Questions to ask on the phone\n\nTell each office: “I’m looking for a dental implant consultation. I want a complete plan, not just an extraction quote.” Then ask:\n\n1. **Who will place the implant, and what is their specialty?**  \n   Oral surgeon, periodontist, or general dentist?\n\n2. **Who will design and deliver the final crown/bridge?**  \n   The implant may be placed by one office and restored by another; that is normal, but the coordination should be clear.\n\n3. **Do you use a CBCT/3-D scan for planning, and is it included in the consultation fee?**\n\n4. **Do I likely need a bone graft, sinus lift, or temporary tooth?**  \n   Ask for these as separate line items.\n\n5. **What is the all-in estimated cost?**  \n   Specifically ask whether the quote includes: scan, extraction, grafting, implant fixture, abutment, final crown, temporary tooth, anesthesia/sedation, and follow-up visits.\n\n6. **What implant system do you use, and who handles complications or repairs?**  \n   A well-known, widely supported implant system can make future maintenance easier.\n\n7. **Can you provide the plan in writing before I commit?**\n\n## One important caution\n\nDo not choose solely on the advertised implant price. Ads often quote only the implant fixture—not the crown, grafting, scan, temporary tooth, or sedation. For a single implant, the final cost can be materially higher than the initial promotion depending on your bone and gum condition.\n\nIf you tell me **which part of metro Atlanta you are in, whether this is one tooth or a full arch, and whether you need an extraction**, I can narrow this to the most practical 2–3 offices to contact first.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,90 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_571f1acb-e237-419c-b49c-120e8eef02bd",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00122,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00134,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0052
+   },
+   "input_tokens": 5428,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4872,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 536,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5964
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "My default recommendation: book a hotel",
+  "Lodge of the Ozarks",
+  "Hotel Grand Victorian",
+  "Hilton Promenade at Branson Landing",
+  "Westgate Branson Woods Resort and Cabins",
+  "First visit, shows, 1–3 nights",
+  "Family wanting hotel amenities",
+  "Downtown dining and shopping",
+  "Lake-focused getaway",
+  "Highway",
+  "Hilton Promenade",
+  "Table Rock",
+  "Landing",
+  "Near Table Rock Lake",
+  "The Landing",
+  "My default recommendation",
+  "Westgate Branson Woods",
+  "Near The Landing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "df86cf878d9a3da8d384bf0ddf3c1a2234c530590d61b5034aa78ad81ecc141f",
+ "answer_chars": 2074,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "6ba315d33a00c9bbcbde6c1d46e94745c1a5984998497b749f5597f1ce7cb07b",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

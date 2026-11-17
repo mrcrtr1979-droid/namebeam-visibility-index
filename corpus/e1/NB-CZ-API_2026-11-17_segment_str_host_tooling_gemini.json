@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_segment_str_host_tooling_gemini",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "LbP8asiHMcaqqtsPysaguQc",
+  "usage": {
+   "promptTokenCount": 20,
+   "candidatesTokenCount": 825,
+   "totalTokenCount": 845,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 20
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "Rentalizer",
+  "Market Grades",
+  "Historical Data",
+  "PriceLabs",
+  "Wheelhouse",
+  "Beyond",
+  "Dynamic Pricing Engines",
+  "Power Users",
+  "Market Dashboards",
+  "Market Analysis"
+ ],
+ "engine_stated_criteria": [
+  "Before you buy",
+  "Once you own/host"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For both setting nightly pricing as an active host and analyzing a market before buying a property, the undisputed industry gold standard is **AirDNA**. \n\nHowever, because setting pricing and buying a property require slightly different workflows, many professional hosts and investors actually use a combination of tools. \n\nHere is a breakdown of the best tools for both use cases, starting with the overall winner.\n\n---\n\n### 1. The Best Overall Tool: **AirDNA**\n* **Best for:** Market research, pre-purchase analysis, and high-level pricing strategy.\n* **How it works:** AirDNA scrapes data directly from Airbnb and Vrbo, giving you access to historical performance data for almost any market in the world.\n\n**Why it’s great for buying (Market Analysis):**\n* **Rentalizer:** You can plug in a specific address (or a hypothetical one) and AirDNA will estimate its annual revenue, average daily rate (ADR), and occupancy rate based on comparable properties nearby.\n* **Market Grades:** It grades neighborhoods on a scale of 1–100 for investment potential, rental demand, revenue growth, and seasonality.\n* **Historical Data:** You can see how a market performed over the last few years, helping you stress-test an investment against potential downturns.\n\n**Why it’s great for hosting (Pricing):**\n* It allows you to see what competitors are charging, how many listings are in your zip code, and what future booking paces look like in your area.\n\n* **Cost:** Paid subscription (tiered by city/country, roughly $20–$100+/month depending on the data depth you need).\n\n---\n\n### 2. The Best Tools for Day-to-Day Pricing (Dynamic Pricing Engines)\nWhile AirDNA tells you what the market *did*, dynamic pricing tools tell you what you should charge *tonight, tomorrow, and six months from now* by automatically adjusting your rates daily based on supply, demand, seasonality, and local events.\n\n#### A. **PriceLabs** (Best for Control & Power Users)\n* **How it works:** It uses hyper-local data and allows you to set custom rules (e.g., \"If unbooked 7 days out, drop price by 15%\").\n* **Why hosts love it:** It offers incredible customization without locking you into a black box. It also features \"Market Dashboards\" which provide great localized supply/demand data similar to AirDNA.\n* **Cost:** Flat monthly fee (usually around $20/month per listing), making it very cost-effective for multi-property owners.\n\n#### B. **Wheelhouse** (Best for Beginners)\n* **How it works:** Similar to PriceLabs, but with a more user-friendly interface. \n* **Why hosts love it:** You can choose your pricing strategy based on your risk tolerance (Conservative, Moderate, or Aggressive). They also offer a unique \"pay-as-you-go\" model (a 1% commission on bookings) or a flat monthly fee.\n* **Cost:** Free to try, then flat fee or 1% commission.\n\n#### C. **Beyond** (Best Hands-Off Approach)\n* **How it works:** One of the pioneers in dynamic pricing, widely used by larger property management companies.\n* **Cost:** Usually operates on a 1% commission of booked revenue.\n\n---\n\n### Summary Recommendation: The Ultimate Tech Stack\n\nIf you are serious about succeeding in short-term rentals, use this two-step approach:\n\n1. **Before you buy:** Use **AirDNA** to run the numbers on potential properties. Do not rely on a real estate agent’s estimates; verify the revenue potential yourself using historical market data.\n2. **Once you own/host:** Connect your Airbnb calendar to **PriceLabs** or **Wheelhouse** to automate your nightly pricing and maximize your revenue every single day.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

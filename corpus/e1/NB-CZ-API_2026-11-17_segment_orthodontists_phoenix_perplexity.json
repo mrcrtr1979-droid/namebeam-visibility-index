@@ -1,0 +1,80 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_segment_orthodontists_phoenix_perplexity",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: orthodontists, Phoenix",
+ "niche": "orthodontists",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Phoenix for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8a343490-49dd-466c-b461-c9412c61cd27",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00444
+   },
+   "input_tokens": 4847,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4300,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 286,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5133
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Serrano Orthodontics",
+  "Dr. Frank Meng",
+  "Team Orthodontics",
+  "Dr. Paul and Dr. Andrew Serrano",
+  "Invisalign. It",
+  "Phoenix and Chandler",
+  "Invisalign",
+  "Dr. Andrew Serrano"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "61e6c2431b59cd4e568f6b0792fe7369449322d27580d0641fbf11b37489888e",
+ "answer_chars": 1071,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "266d67f9a686f0414cdcab8adbaa54301de7b94e1d575208bcc59740a500b5ac",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

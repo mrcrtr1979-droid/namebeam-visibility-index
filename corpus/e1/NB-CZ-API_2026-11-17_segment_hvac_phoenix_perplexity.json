@@ -1,0 +1,76 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_segment_hvac_phoenix_perplexity",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c06917e5-e24d-4851-bd21-19923d036c4b",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00054,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00428
+   },
+   "input_tokens": 4931,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4383,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 215,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5146
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Speed Heating and Air Conditioning",
+  "Registrar of Contractors",
+  "Air Conditioning",
+  "Arizona Registrar of Contractors"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "a36429b32b39fe42724cd0bc6971f2e0814ec17708e2618127ef0d418bffcccb",
+ "answer_chars": 694,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "d992032ce60959268c525ea7c0af5b94d757b60cd7dfb60a8cc3004289313cc4",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

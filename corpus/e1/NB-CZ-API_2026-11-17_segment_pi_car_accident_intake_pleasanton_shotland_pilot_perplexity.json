@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_segment_pi_car_accident_intake_pleasanton_shotland_pilot_perplexity",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: PI car accident intake, Pleasanton (Shotland pilot)",
+ "niche": "personal injury law",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I was in a car accident in Pleasanton CA. Which lawyer should I hire for my injury case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_60f4315b-c251-490a-817e-ae5ac1007259",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00104,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00478
+   },
+   "input_tokens": 4970,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4415,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 418,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5388
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Duncan Law Firm / David Thomas Duncan",
+  "Venardi Zurada",
+  "Walia Law Firm",
+  "Duncan Law Firm",
+  "David Thomas Duncan",
+  "State Bar of California Attorney Search",
+  "Law Firm",
+  "Pleasanton office",
+  "Attorney Search"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "24c16b207c3a00feb4698581fcf5c075b4ac2f0219902863de07060d29d91cfe",
+ "answer_chars": 1585,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "e839cad5e5e4f8b7ba07263d22b35205de44bb52f88f959c8f0067acd96c96a8",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

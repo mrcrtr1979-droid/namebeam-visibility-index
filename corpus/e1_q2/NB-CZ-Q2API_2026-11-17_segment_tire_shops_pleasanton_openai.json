@@ -1,0 +1,74 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-17_segment_tire_shops_pleasanton_openai",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: tire shops, Pleasanton",
+ "niche": "tire shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need new tires installed in Pleasanton. Which specific tire shops should I call, and why?",
+ "q1_prompt_text": "Where should I buy tires in Pleasanton CA and who does the best installation?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-ElKTNvSghionSo4Tk8ahIaA1yEl5o",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1762,
+   "total_tokens": 1788,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "America’s Tire / Discount Tire (Dublin/Pleasanton area)",
+  "Big O Tires in Pleasanton",
+  "Les Schwab Tire Center in Livermore",
+  "Firestone Complete Auto Care in Pleasanton",
+  "Lowest-hassle / strongest overall bet",
+  "Costco member and not in a rush",
+  "Prioritize long-term local service",
+  "DOT manufacture date",
+  "America",
+  "Tire",
+  "Discount Tire",
+  "Dublin",
+  "Big O Tires",
+  "Big O",
+  "Costco Tire Center",
+  "Livermore",
+  "Costco",
+  "Les Schwab Tire Center",
+  "Firestone Complete Auto Care",
+  "Tire and Big O",
+  "Les Schwab",
+  "America’s Tire",
+  "Bridgestone",
+  "Firestone",
+  "Michelin",
+  "America’s Tire / Discount Tire"
+ ],
+ "engine_stated_criteria": [
+  "Best if you may also need an alignment, brake check, or suspension inspection"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For Pleasanton, I’d call these shops in this order and ask for an **out-the-door quote on the exact same tire model/size**:\n\n1. **America’s Tire / Discount Tire (Dublin/Pleasanton area)**\n   - **Best first call for most people.**\n   - Usually strong on competitive pricing, price matching, broad inventory, and convenient warranty service.\n   - Their ongoing benefits commonly include flat repair, rotations, and rebalancing for tires bought there.\n   - Good choice if you want a mainstream brand tire—Michelin, Continental, Bridgestone, Pirelli, etc.—without needing other car repairs.\n\n2. **Big O Tires in Pleasanton**\n   - **Best if you may also need an alignment, brake check, or suspension inspection.**\n   - A tire-only shop is often simplest for tires, but Big O can be more convenient if uneven wear suggests an alignment issue.\n   - Ask whether the alignment is actually needed and request before/after alignment readings; don’t automatically bundle it.\n\n3. **Costco Tire Center in Dublin or Livermore**\n   - **Best value if you are already a Costco member and can work with their appointment schedule.**\n   - Often attractive for major-brand tires and included road-hazard/installation packages.\n   - Downsides: selection is narrower than a dedicated tire retailer, wait times can be longer, and service appointments may be less flexible.\n\n4. **Les Schwab Tire Center in Livermore**\n   - **Best for post-sale service and a more service-oriented experience.**\n   - Worth calling if you value road-hazard coverage, inspections, rotations, and the ability to return for help after the sale.\n   - Compare the final installed price carefully; their initial quote is not always the lowest, but service can justify it.\n\n5. **Firestone Complete Auto Care in Pleasanton**\n   - **Best backup if you need a near-term appointment or want tire work combined with general maintenance.**\n   - They can be convenient for same-day or urgent needs depending on stock.\n   - I would use them after comparing a quote from America’s Tire and Big O, since package pricing can vary substantially.\n\n### My practical recommendation\n\n- **Lowest-hassle / strongest overall bet:** America’s Tire  \n- **Need alignment or vehicle inspection too:** Big O Tires  \n- **Costco member and not in a rush:** Costco Tire Center  \n- **Prioritize long-term local service:** Les Schwab  \n\n### What to say when you call\n\nGive each shop your vehicle year/make/model and the tire size from the driver-door placard or existing tire, then ask:\n\n> “Do you have four [exact tire model] tires in stock, and what is the **out-the-door installed price** including mounting, balancing, disposal, valve stems/TPMS service, taxes, tire fees, and road-hazard coverage? What is your earliest installation appointment?”\n\nAlso ask:\n\n- Is the tire’s **load index and speed rating** at least what the vehicle requires?\n- What is the **DOT manufacture date** on the tires? Ideally, you want recently manufactured stock rather than tires that have sat for years.\n- Are rotations, balancing, flat repair, and road-hazard coverage included?\n- If they recommend an alignment, can they show uneven-wear evidence and provide the measurements?\n\nAvoid comparing only a “per tire” price. In the Bay Area, installation fees, warranties, and taxes can make a seemingly cheaper quote more expensive by the time you leave.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

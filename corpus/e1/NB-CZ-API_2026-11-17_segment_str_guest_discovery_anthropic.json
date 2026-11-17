@@ -1,0 +1,45 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_segment_str_guest_discovery_anthropic",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_iog3ufv5qaastgoml5t3m66rfny6fpcn6tkwml7u7b7gw5eoisuq",
+  "usage": {
+   "input_tokens": 41,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 327,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "VRBO",
+  "Booking.com",
+  "Green flags",
+  "Finding a good host",
+  "Good Host",
+  "A good host"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Choosing a Platform\n\nEach has different strengths:\n\n**Airbnb**\n- Largest selection, especially unique/smaller places\n- Strong review system and host verification\n- Good for shorter stays\n\n**VRBO**\n- Better for larger groups or full homes\n- Often better for longer stays (sometimes cheaper)\n- More property owner-focused\n\n**Booking.com**\n- Widest range (hotels + rentals)\n- Flexible cancellation often available\n- Good for last-minute deals\n\n# Finding a Good Host\n\n**Check reviews carefully:**\n- Read recent ones (last 3-6 months)\n- Look for patterns, not just star ratings\n- Verify reviews match your priorities (cleanliness, communication, accuracy)\n\n**Red flags:**\n- Few reviews or mostly new\n- Vague/generic responses to questions\n- Complaints about cleanliness, missing amenities, or poor communication\n\n**Green flags:**\n- Detailed house manual/instructions\n- Quick response time to messages\n- Host addresses concerns in reviews\n- Specific, detailed photos\n\n**Before booking:**\n- Message the host with questions\n- Confirm exact amenities and policies\n- Check cancellation terms\n- Verify the location on a map\n\n**Pro tip:** For your first time with a host, consider flexible cancellation if available—it's worth the small premium for peace of mind.\n\nWhat type of trip are you planning? That might help narrow down which platform makes most sense.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

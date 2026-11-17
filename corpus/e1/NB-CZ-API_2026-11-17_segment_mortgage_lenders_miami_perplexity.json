@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_47965dd4-eb58-42d5-a046-bd7a20d18acd",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00129,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00112,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00505
+   },
+   "input_tokens": 5698,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 5149,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 447,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 6145
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "A larger lender",
+  "Florida Housing",
+  "Universal Mortgage",
+  "Coral Gables",
+  "Rocket Mortgage and CrossCountry Mortgage",
+  "Loan Estimate",
+  "City of Miami",
+  "FirstBank Puerto Rico",
+  "The City of Miami"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "0c17b9c33b9b888b19262f339238767f38a3079317d81bfc2a701c89e2bf0108",
+ "answer_chars": 1796,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "d4d670d9124b765bad7ae621d503fee1234cee3181705a885f1800ca14b432a1",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

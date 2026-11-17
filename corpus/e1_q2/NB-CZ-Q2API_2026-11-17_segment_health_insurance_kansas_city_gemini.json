@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-17_segment_health_insurance_kansas_city_gemini",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "fb38auPIF__ZqtsPheaBoQM",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 833,
+   "totalTokenCount": 855,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Individual/Family coverage",
+  "Group coverage",
+  "Small Business",
+  "Kansas and Missouri",
+  "BCBSKC",
+  "UnitedHealthcare. They",
+  "Medicare",
+  "Senior Market",
+  "Medicare Advantage",
+  "Part D",
+  "Humana",
+  "UnitedHealthcare",
+  "Johnson County",
+  "NABIP",
+  "Family Brokers",
+  "NABIP-KC",
+  "ACA Healthcare.gov",
+  "Saint Luke's",
+  "Ask Any KC Broker Before You",
+  "Legitimate ACA and Medicare",
+  "KU Med",
+  "NABIP Kansas City",
+  "In Kansas",
+  "For Medicare",
+  "KC Metro",
+  "Kansas City Metro",
+  "Individual/Family",
+  "KC Broker",
+  "University of Kansas Health System",
+  "Saint Luke",
+  "Family Coverage",
+  "Independent Local Agents"
+ ],
+ "engine_stated_criteria": [
+  "no cost to you",
+  "\"Are you truly independent?\"",
+  "\"Do you charge a fee?\"",
+  "\"Do you cover both the Kansas and Missouri sides of the metro?\""
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Choosing the right health insurance broker in Kansas City depends on whether you are looking for **Individual/Family coverage** (ACA/Obamacare, off-market, short-term) or **Group coverage** (Small Business/Employer-sponsored). \n\nHere are top-rated, reputable independent brokerages in the Kansas City metro area (covering both Kansas and Missouri sides), along with why you should consider calling them:\n\n### 1. Cornerstone Brokerage Services\n* **Best for:** Small businesses, group health plans, and employers.\n* **Why call them:** Cornerstone is one of the premier general agencies and brokerages in the KC area specifically focused on employer-sponsored benefits. If you are a business owner looking to set up group health, dental, vision, and ancillary benefits, they have deep relationships with carriers like Blue Cross and Blue Shield of Kansas City (BCBSKC), Aetna, and UnitedHealthcare. They act as an extension of an HR department.\n\n### 2. Mariner Wealth Advisors (or local independent financial/insurance planners)\n* **Best for:** High-net-worth individuals, early retirees, and comprehensive financial planning.\n* **Why call them:** Headquartered in the KC area, Mariner (and similar local wealth management firms) often have dedicated insurance specialists on staff. If health insurance is part of a larger puzzle—such as bridging the gap before Medicare eligibility (early retirement)—working with a wealth-integrated broker ensures your health coverage aligns with your tax and retirement strategies.\n\n### 3. Local Independent \"Senior Market\" Specialists (for Medicare)\nIf you or a parent are turning 65 in KC, standard health brokers aren't always the best fit. You want someone who specializes strictly in Medicare Advantage, Supplement (Medigap), and Part D plans. \n* **Why call them:** Independent local agents who focus on Medicare represent *all* major players in KC (Humana, UnitedHealthcare, BCBSKC, AARP) at **no cost to you** (they are paid by the insurance companies). Look for independent agencies with physical offices in Johnson County or the Northland, or highly-rated independent agents found via the **National Association of Benefits and Insurance Professionals (NABIP) Kansas City chapter directory**.\n\n### 4. Independent Individual/Family Brokers (Found via NABIP-KC)\nFor individuals buying their own insurance (on or off the ACA Healthcare.gov marketplace), the best approach in Kansas City is to find a boutique independent agent. \n* **Why call them:** Instead of calling a massive national 1-800 call center where you get a different rep every time, local independent brokers know the KC provider networks intimately (e.g., knowing whether the Saint Luke's network vs. The University of Kansas Health System is included in a specific tier). \n\n---\n\n### Key Questions to Ask Any KC Broker Before You Commit:\n\n1. **\"Are you truly independent?\"** (Ensure they aren't captive agents who can only sell you one company, like *only* Humana or *only* BCBSKC).\n2. **\"Do you charge a fee?\"** (Legitimate ACA and Medicare brokers are forbidden from charging consumers advisory fees; they make commissions directly from the insurance carriers. For small business group plans, some brokers charge a consulting fee instead of or in addition to commissions—make sure this is clear upfront).\n3. **\"Do you cover both the Kansas and Missouri sides of the metro?\"** (Kansas City is unique. If you live in Overland Park but your preferred doctors are at KU Med in Kansas City, KS, or vice versa, your broker *must* be licensed and well-versed in cross-state network implications).\n\n### Where to find more verified local names:\nCheck the **NABIP Kansas City (National Association of Benefits and Insurance Professionals)** directory. This organization vets local health insurance agents and brokers in the KC metro, ensuring they adhere to high ethical standards and stay up-to-date on changing state and federal healthcare laws.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

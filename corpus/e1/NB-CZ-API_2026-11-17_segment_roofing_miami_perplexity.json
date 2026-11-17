@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_segment_roofing_miami_perplexity",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_28e1c200-debc-4b31-84cd-9cd4b6beabe7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 4660,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4112,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 333,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4993
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Art’s Roofing & Construction",
+  "CCC1333598",
+  "Crown Roofing & Waterproofing",
+  "AGK Construction & Roofing",
+  "Miami-Dade NOA",
+  "HVHZ-approved",
+  "Crown Roofing",
+  "AGK Construction",
+  "HVHZ-compliant",
+  "Miami-Dade",
+  "Dade NOA"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "5094d9c8975748273098422c9f16ec666b9e489c1e5491f9930b358cded08471",
+ "answer_chars": 1268,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "3bb5d0c03fb6a3a61fc60935a009c6c0a145ade0726ca8df315acaad245c25f3",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

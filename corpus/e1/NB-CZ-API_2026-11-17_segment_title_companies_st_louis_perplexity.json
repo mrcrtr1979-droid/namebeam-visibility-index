@@ -1,0 +1,79 @@
+{
+ "check_id": "NB-CZ-API_2026-11-17_segment_title_companies_st_louis_perplexity",
+ "date_utc": "2026-11-17",
+ "business": "SEGMENT: title companies, St. Louis",
+ "niche": "title companies",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in St. Louis MO is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_fcb36d87-8c69-41f5-bff9-8477cebd04ff",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00444
+   },
+   "input_tokens": 4967,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4418,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 278,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5245
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Investors Title Company",
+  "Community Title Services",
+  "Old Republic Title",
+  "True Title",
+  "St. Louis-area",
+  "St. Louis-based",
+  "Investors Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "87ab7b129a487181101586402ba706aeb7cf098b1c037bc93f6527b6a0ef4e42",
+ "answer_chars": 995,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "46ed8db39c4d0ffaff192233f8735e011b36518fa08a27592becde498bd985f5",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}
