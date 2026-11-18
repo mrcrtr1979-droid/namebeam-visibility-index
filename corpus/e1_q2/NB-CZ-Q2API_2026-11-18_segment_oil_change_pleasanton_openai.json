@@ -1,0 +1,66 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-18_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-18",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-ElgnhiFVPCAjUTbEzgzFyvhMDAuZG",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1644,
+   "total_tokens": 1672,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 900,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Oil Changers (Pleasanton)",
+  "Jiffy Lube (Pleasanton)",
+  "Big O Tires (Pleasanton)",
+  "BMW of Pleasanton",
+  "Mercedes-Benz of Pleasanton",
+  "Audi Dublin",
+  "Dublin Toyota",
+  "Basic Honda, Toyota, Mazda, Subaru, Ford, etc",
+  "Oil Changers",
+  "Jiffy Lube",
+  "Car also needs tire/brake attention",
+  "Big O Tires",
+  "Multiple Bay Area",
+  "Whether",
+  "Toyota",
+  "Mercedes",
+  "Audi",
+  "Basic Honda",
+  "Dublin",
+  "European"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a normal gasoline car in Pleasanton, I’d call these in this order:\n\n1. **Oil Changers (Pleasanton)**\n   - **Why call:** Usually the best fit if you want a fast, drive-through oil change without leaving the car. They commonly handle conventional, full-synthetic, and high-mileage services and will usually check fluids/tire pressure.\n   - **Best for:** “I need it done today” convenience.\n   - **Ask:** “What is the out-the-door price for my exact year/make/model with the manufacturer-required oil specification and filter?”\n\n2. **Jiffy Lube (Pleasanton)**\n   - **Why call:** Multiple Bay Area locations, generally convenient hours, and online coupons are common. Good fallback if Oil Changers has a long wait.\n   - **Best for:** Fast service and coupon shopping.\n   - **Ask:** Whether their quoted price includes the correct oil quantity, filter, shop fees, disposal fee, and tax. Also ask whether they can reset the maintenance reminder.\n\n3. **Big O Tires (Pleasanton)**\n   - **Why call:** A good choice if you also want someone to look at tires, brakes, alignment, or a slow leak while the car is there. They are more of a general-service shop than a pure quick-lube stop.\n   - **Best for:** Combining the oil change with a basic vehicle/tire inspection.\n   - **Ask:** Whether an appointment is needed and whether they use the oil brand/specification required by your owner’s manual.\n\n4. **Your brand’s local dealer — especially for European, luxury, hybrid, diesel, or newer warranty-covered cars**\n   - Examples nearby include **BMW of Pleasanton**, **Mercedes-Benz of Pleasanton**, and **Audi Dublin**; for Toyota/Lexus-type service, **Dublin Toyota** is worth comparing.\n   - **Why call:** Dealers are the safer choice when the car requires a specific approved oil—not merely “full synthetic.” For example, many BMW, Mercedes, Audi/VW, diesel, and some turbo engines require a particular factory approval.\n   - **Best for:** Cars under warranty, cars with electronic service records, or vehicles requiring Euro-spec/dexos/ACEA oil.\n   - **Ask:** “Will you use oil meeting the exact manufacturer approval listed in my manual, and will you document it on the invoice?”\n\n### My practical recommendation\n- **Basic Honda, Toyota, Mazda, Subaru, Ford, etc.:** Call **Oil Changers** and **Jiffy Lube** first; choose the one with the better all-in quote and shorter wait.\n- **Car also needs tire/brake attention:** Call **Big O Tires**.\n- **BMW, Mercedes, Audi/VW, Porsche, diesel, hybrid with special requirements, or still under warranty:** Call the **dealer** first, then compare against a reputable independent shop only if it confirms the exact oil approval.\n\n### Use this exact call script\n> “I have a [year] [make] [model] with about [mileage]. It needs [oil viscosity/spec if known]. What is the **out-the-door price**, including the correct oil quantity, filter, tax, disposal/shop fees, and maintenance-light reset? How long is the wait, and do I need an appointment? Please don’t perform additional services without calling me first.”\n\nDo not choose solely on the advertised “starting at” price—Pleasanton pricing can change substantially once full synthetic oil, larger oil capacity, specialty filters, and fees are added.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

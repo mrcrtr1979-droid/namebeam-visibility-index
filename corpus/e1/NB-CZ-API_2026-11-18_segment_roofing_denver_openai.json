@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-API_2026-11-18_segment_roofing_denver_openai",
+ "date_utc": "2026-11-18",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-ElgdAWPeM3nnlXIjGi2ZU1wYl6F2q",
+  "usage": {
+   "prompt_tokens": 19,
+   "completion_tokens": 463,
+   "total_tokens": 482,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 105,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Owens Corning Platinum",
+  "Denver ZIP",
+  "Owens Corning",
+  "CertainTeed",
+  "CertainTeed SELECT",
+  "CertainTeed SELECT ShingleMaster",
+  "Denver-area"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” Denver roofer for hail claims, but the best choice is usually an established local contractor—not a storm chaser—with strong recent reviews, proper Colorado insurance, and experience working with your insurer.\n\nFor Denver hail-damage repair, prioritize a roofer that:\n\n- Is locally established for several years and has a physical Colorado address.\n- Carries general liability and workers’ compensation insurance.\n- Is licensed/registered where required by your municipality; Denver itself has contractor licensing requirements for many projects.\n- Will document damage with photos and provide a detailed written estimate.\n- Is willing to meet your adjuster, but does **not** promise to “cover your deductible” or pressure you into signing immediately.\n- Offers manufacturer-backed credentials/warranties, such as GAF Master Elite, CertainTeed SELECT ShingleMaster, Owens Corning Platinum, etc.\n- Has strong, recent Google/BBB reviews specifically mentioning insurance and hail claims.\n\nBefore signing, get 2–3 inspections and ask each company:\n\n1. “Will you provide a line-item scope matching my insurer’s estimate?”\n2. “Who pulls permits and handles code upgrades?”\n3. “What is my exact out-of-pocket cost, excluding any deductible?”\n4. “What warranty covers workmanship, and for how long?”\n5. “Can you provide three recent Denver-area hail-repair references?”\n\nAlso, file the insurance claim before committing to a contractor if you have not already done so, and avoid signing an “assignment of benefits” or contingency contract you do not fully understand.\n\nIf you tell me your Denver ZIP code, roof type, insurer, and whether a claim has already been approved, I can help you build a shortlist and compare estimates.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

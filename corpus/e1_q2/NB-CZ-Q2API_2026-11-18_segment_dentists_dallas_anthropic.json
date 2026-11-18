@@ -1,0 +1,45 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-18_segment_dentists_dallas_anthropic",
+ "date_utc": "2026-11-18",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Dallas. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_ewaes6tsntrndbnkkg5b6o3koadz2wh6uggn6ubtop5l7epkgmmq",
+  "usage": {
+   "input_tokens": 27,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 273,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Questions to ask when calling",
+  "American Academy of Implant Dentistry",
+  "Implant Dentistry",
+  "Prosthodontist"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I don't have current information about specific Dallas dental practices or their implant services, so I can't recommend particular ones.\n\nHere's how to find good options:\n\n**Research approaches:**\n- Search \"dental implants Dallas\" + check Google reviews and ratings\n- Ask your general dentist for referrals (they know local specialists)\n- Contact the American Academy of Implant Dentistry (aaid.org) for member directories\n- Check your insurance provider's network\n\n**What to evaluate:**\n- Prosthodontist or oral surgeon credentials (specialized training)\n- Years of implant experience\n- Before/after photos of their work\n- Whether they offer consultations (many are free)\n- Cost transparency and financing options\n- Patient reviews mentioning implant outcomes\n\n**Questions to ask when calling:**\n- Are they a specialist in implants?\n- What's their success rate?\n- Do they handle complications if they arise?\n- What's included in the cost?\n\nSince implants are a significant investment and procedure, it's worth calling 2-3 practices to compare. A consultation will give you a better sense of their approach than any recommendation I could make.\n\nIs there anything specific about the implant process itself I can help clarify?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,71 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-18_segment_health_insurance_kansas_city_gemini",
+ "date_utc": "2026-11-18",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "kwz-atu-Lp-QkPIP2vmrmQ0",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 893,
+   "totalTokenCount": 915,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Individual/Family coverage",
+  "Medicare",
+  "Cornerstone Insurance Group",
+  "Family Plans",
+  "Kansas and Missouri",
+  "KC Benefits Group",
+  "BCBSKC CareFirst",
+  "Medicare Advantage",
+  "Medigap",
+  "Dedicated Medicare Specialists",
+  "Senior Life Insurance Company",
+  "HealthMarkets",
+  "UnitedHealthcare",
+  "BCBSKC",
+  "Johnson County",
+  "In Kansas",
+  "ACA Marketplace",
+  "For Medicare",
+  "KC Metro",
+  "Kansas City Metro",
+  "Small Business",
+  "Individual/Family",
+  "Missouri Residents",
+  "Small Business Group",
+  "Family Coverage"
+ ],
+ "engine_stated_criteria": [
+  "no cost to you"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Choosing a health insurance broker in Kansas City depends on whether you need **Individual/Family coverage** (ACA/Obamacare, private plans, self-employed) or **Medicare**, as brokers often specialize in one or the other. \n\nHere are top-rated, independent health insurance agencies and brokers in the Kansas City metro area, along with why you might want to call them:\n\n---\n\n### 1. Best for Individual & Family Plans (Under 65 / ACA / Private)\n\nIf you are buying your own insurance because you are self-employed, unemployed, or your employer doesn't offer coverage, these brokers are top choices:\n\n*   **Cornerstone Insurance Group**\n    *   **Why call them:** Cornerstone is a well-established, independent agency in the KC area (with offices in both Kansas and Missouri). They represent almost all major carriers (Blue Cross and Blue Shield of Kansas City, Ambetter, Medica, etc.). Because they are independent, they aren't biased toward one company and can help you navigate whether you qualify for subsidies on the ACA marketplace or if an off-exchange private plan makes more sense.\n*   **The insurance advisors at local independent agencies (e.g., KC Benefits Group or similar boutique firms)**\n    *   **Why call them:** Smaller, local independent brokers take a consultative approach. They will sit down with you (virtually or in person) to review your prescription drugs, preferred doctors, and budget to match you with the right network (like the BCBSKC CareFirst vs. Metro-Select networks, which can be tricky in KC).\n\n### 2. Best for Medicare (Ages 65+ or Disabled)\n\nMedicare can be exceptionally confusing in Kansas City due to the crossover between Kansas and Missouri residents, and the vast number of Medicare Advantage vs. Supplement (Medigap) plans available.\n\n*   **Agencies with Dedicated Medicare Specialists (e.g., local chapter agents for brokerage networks like Senior Life Insurance Company or HealthMarkets agents based in KC)**\n    *   *Tip:* Look for a local independent broker who represents multiple Medicare carriers (UnitedHealthcare, Humana, Aetna, BCBSKC) rather than a captive agent who only sells for one company.\n    *   **Why call them:** A good Medicare broker in KC will help you compare Medigap plans against Medicare Advantage plans available specifically in your zip code (e.g., Johnson County vs. Jackson County plans can differ) at **no cost to you** (they are paid by the insurance companies).\n\n### 3. Best for Small Business Group Health Plans\n\nIf you are a business owner looking to provide insurance for your employees in the KC metro:\n\n*",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

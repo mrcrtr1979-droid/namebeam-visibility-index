@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-18_segment_short_term_rental_branson_perplexity",
+ "date_utc": "2026-11-18",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d28e34b6-3335-4dd3-ad15-3549129112b8",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00114,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00141,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00519
+   },
+   "input_tokens": 5132,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4576,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 562,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5694
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Lodge of the Ozarks",
+  "Marriott’s Willow Ridge Lodge",
+  "Still Waters Resort",
+  "Westgate Branson Woods Resort and Cabins",
+  "Hotel Grand Victorian",
+  "Chateau on the Lake",
+  "Family wanting space and amenities",
+  "Lake-and-resort getaway",
+  "Willow Ridge Lodge",
+  "Lake",
+  "Branson Woods",
+  "Willow Ridge",
+  "Westgate Branson Woods",
+  "Still Waters",
+  "The Strip",
+  "Cabins",
+  "Marriott"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "172c3f0ef8339b5d33327d694eed49d9362e5a33532fb49f0112cb353d88d71c",
+ "answer_chars": 2286,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "39387a32d1355aec05b0354b73149c254f7dbc4183febb49a1d105d4517c523c",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

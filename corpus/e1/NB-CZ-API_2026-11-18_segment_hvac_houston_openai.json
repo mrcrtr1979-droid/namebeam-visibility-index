@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-API_2026-11-18_segment_hvac_houston_openai",
+ "date_utc": "2026-11-18",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-ElgZEePTryDn6HO8z4olTDFkKpwe4",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 428,
+   "total_tokens": 446,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 173,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "John Moore Services",
+  "Air Tech of Houston",
+  "Texas Air Repair",
+  "Champion & Nash HVAC",
+  "Texas Department of Licensing and Regulation (TDLR)",
+  "Houston HVAC",
+  "Nash HVAC",
+  "AC repair",
+  "John Moore",
+  "TDLR License"
+ ],
+ "engine_stated_criteria": [
+  "your specific Houston neighborhood"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company in Houston—availability, your AC brand, pricing, and whether you need emergency service matter a lot.\n\nFor a strong starting shortlist, Houston homeowners commonly compare established companies such as:\n\n- **John Moore Services** — large local company; broad service area and emergency availability.\n- **Air Tech of Houston** — longstanding Houston HVAC company with repair and replacement service.\n- **Texas Air Repair** — often considered for residential AC diagnostics and repairs.\n- **Champion & Nash HVAC** — another established option for service and system work.\n\nBefore booking, get **at least two written estimates** and ask:\n\n1. Is the diagnostic fee applied to the repair?\n2. What is the exact repair, part number, and labor cost?\n3. Is there a warranty on parts and labor?\n4. Are they licensed through the **Texas Department of Licensing and Regulation (TDLR)**?\n5. Can they provide same-day or after-hours service if needed?\n\nFor a simple AC repair, the “best” company is usually the one with recent strong reviews in **your specific Houston neighborhood**, a valid TDLR license, transparent pricing, and a written repair warranty—not necessarily the biggest advertiser.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

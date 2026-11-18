@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-11-18_segment_orthodontists_kansas_city_perplexity",
+ "date_utc": "2026-11-18",
+ "business": "SEGMENT: orthodontists, Kansas City",
+ "niche": "orthodontists",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Kansas City Missouri for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1cef508a-5929-4319-8593-7707a31eac42",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00095,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00466
+   },
+   "input_tokens": 4840,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4291,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 379,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5219
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Kansas City, Missouri",
+  "Dr. Dustin Burleson / Smile Doctors",
+  "Dr. Henry Hoffman",
+  "Dr. Dustin Burleson",
+  "Smile Doctors",
+  "Invisalign",
+  "American Board of Orthodontics",
+  "Dr. Steven P. Billings",
+  "Braces By Billings"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "1c344a22928ec75a93bc3a3823fd2f36cf7fbc66be2decfb87610a47a0f336ef",
+ "answer_chars": 1287,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "335e54b05b7bca93f8d1a24a07b099b515598ad4f25cc6dac4030823b031de25",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

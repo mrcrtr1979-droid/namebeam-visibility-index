@@ -1,0 +1,80 @@
+{
+ "check_id": "NB-CZ-API_2026-11-18_atrix_digital_perplexity",
+ "date_utc": "2026-11-18",
+ "business": "Atrix Digital",
+ "niche": "AI marketing agency",
+ "market": "Los Angeles CA",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best AI marketing agency in Los Angeles?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ff2675d7-219b-44fb-a0f3-e1b8a72dedc7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00093,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00058,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00415
+   },
+   "input_tokens": 4283,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3738,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 232,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4515
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Single Grain",
+  "AI-search",
+  "AI marketing",
+  "AI marketing agency",
+  "AI marketing agency in Los Angeles",
+  "AI visibility"
+ ],
+ "engine_stated_criteria": [
+  "For a broader, full-service growth program, Single Grain is another candidate"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "209ea08e9fa97644882dd42f364b7ec1b7e2160671d59d8cfd0e21d6b62dc23e",
+ "answer_chars": 779,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "60d86404bc8fa38580a6e645ac68713f193df74638cdf49574447fba38ce47dd",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

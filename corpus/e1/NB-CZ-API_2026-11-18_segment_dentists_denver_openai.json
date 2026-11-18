@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-API_2026-11-18_segment_dentists_denver_openai",
+ "date_utc": "2026-11-18",
+ "business": "SEGMENT: dentists, Denver",
+ "niche": "dentists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Denver for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-ElfJ1ZdFME2y9lqixHm4nsnNKK6H1",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 490,
+   "total_tokens": 508,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 125,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "American Academy of Periodontology (AAP)",
+  "American College of Prosthodontists (ACP)",
+  "D CBCT",
+  "AAOMS",
+  "American Academy of Periodontology",
+  "American College of Prosthodontists",
+  "Oral and Maxillofacial Surgeons"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for implants in Denver—it depends on whether you need bone grafting, a single implant, full-arch work, sedation, and who will design the final crown.\n\nFor the strongest qualifications, look for a **board-certified oral and maxillofacial surgeon** or **periodontist** to place the implant, ideally coordinating with a **prosthodontist or restorative dentist** for the crown. For complex or full-mouth cases, a prosthodontist-led team is often a good choice.\n\nBefore choosing, verify that the office:\n\n- Uses **3-D CBCT imaging** and digital implant planning  \n- Gives you an itemized written treatment plan, including grafting, abutment, crown, sedation, and follow-ups  \n- Can show experience with cases like yours—not just before/after marketing photos  \n- Explains the implant brand and long-term maintenance plan  \n- Has a clear plan if an implant fails or needs repair  \n- Is listed through recognized specialist organizations:\n  - **American Association of Oral and Maxillofacial Surgeons (AAOMS)**\n  - **American Academy of Periodontology (AAP)**\n  - **American College of Prosthodontists (ACP)**\n\nFor an especially complex case, the **University of Colorado School of Dental Medicine / Anschutz area in Aurora** can also be worth considering for specialty consultations, though treatment can take longer than a private practice.\n\nI’d get consultations from at least **two implant specialists** and compare their scans, treatment plans, total cost, and who is responsible for the surgical and restorative phases. Avoid selecting solely on the lowest advertised “implant price,” since that often excludes the crown, abutment, imaging, grafting, or sedation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
