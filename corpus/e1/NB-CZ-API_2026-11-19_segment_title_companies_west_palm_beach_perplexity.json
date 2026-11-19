@@ -1,0 +1,79 @@
+{
+ "check_id": "NB-CZ-API_2026-11-19_segment_title_companies_west_palm_beach_perplexity",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: title companies, West Palm Beach",
+ "niche": "title companies",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in West Palm Beach FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e38de7e9-bcd4-4774-a406-9ac98c7be580",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00459
+   },
+   "input_tokens": 5141,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4592,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 318,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5459
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Automated Land Title",
+  "Ward Damon",
+  "Florida Department of Financial Services. Your",
+  "Florida DFS",
+  "Lighthouse Title Services",
+  "Department of Financial Services",
+  "Florida Department of Financial Services"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "887fd6af85789c31091a3433f91e0724ee3626e8b1604cd632a954094453e2d2",
+ "answer_chars": 1163,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "ffad8447b4feac8ae2ad57189c7366283e02dac2d9951213bdfc79e527906e22",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

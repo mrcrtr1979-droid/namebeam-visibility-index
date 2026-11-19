@@ -1,0 +1,103 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-19_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Atlanta. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d499d660-a4bd-4149-8018-b935b9cb302e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00152,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00175,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00591
+   },
+   "input_tokens": 6625,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 6072,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 701,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 7326
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Harris Orthodontics — West Midtown",
+  "Buckhead Orthodontics — Buckhead",
+  "Artemis Smiles Orthodontics — Sandy Springs",
+  "Address",
+  "Wright Orthodontics — North Druid Hills",
+  "Dr. Arjun Patel — Sandy Springs",
+  "Harris Orthodontics",
+  "West Midtown",
+  "Offers",
+  "Invisalign",
+  "Practice",
+  "Buckhead Orthodontics",
+  "Buckhead",
+  "Drs. Michael and Cristina Everson",
+  "Artemis Smiles Orthodontics",
+  "Sandy Springs",
+  "Dr. Bennie Yavari",
+  "Sandy Springs Circle",
+  "Wright Orthodontics",
+  "North Druid Hills",
+  "B North Druid Hills Road NE",
+  "Diamond Invisalign",
+  "Dr. Arjun Patel",
+  "Offers Invisalign",
+  "American Board of Orthodontics",
+  "Diamond",
+  "Dr. Michael Everson",
+  "Dr. Peyton Harris"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "65a6faf43125d1c1fb7f20392ba6195f91e0e557b4418a6bbe7869041b99361f",
+ "answer_chars": 2624,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "8b4e723230fb335dfdbb15a80807fedf4af33b8c534914b1befdfbaa8298a453",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

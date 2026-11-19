@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-API_2026-11-19_segment_str_host_tooling_anthropic",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_awyfttxgaytkqb7tj3w73n4nqrsekdzr4f2xmhd4lkidjrtiz4lq",
+  "usage": {
+   "input_tokens": 31,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 331,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb's built-in tools",
+  "Wheelhouse",
+  "PriceLabs",
+  "AirDNA",
+  "Also useful",
+  "Use AirDNA",
+  "Practical Approach",
+  "Airbnb's own search filters"
+ ],
+ "engine_stated_criteria": [
+  "AirDNA is probably your best bet"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Best Tools for Airbnb Hosts\n\n## For Pricing & Market Analysis\n\n**Top recommendations:**\n\n- **Airbnb's built-in tools** - Start here free. Check \"Pricing\" in your dashboard for dynamic pricing suggestions based on demand\n- **Wheelhouse** - Specialized for Airbnb/VRBO pricing optimization; shows competitor rates and demand patterns\n- **PriceLabs** - Automated dynamic pricing with market analysis; good free tier to start\n- **AirDNA** - Strongest for pre-purchase market research; shows occupancy rates, revenue potential, and competition by neighborhood\n\n## Before Buying Property\n\n**AirDNA is probably your best bet** because it:\n- Analyzes specific addresses/neighborhoods\n- Projects annual revenue potential\n- Shows occupancy rates and seasonal trends\n- Costs ~$20-40/month but worth it for due diligence\n\n**Also useful:**\n- Google Maps (check competitor listings, reviews, density)\n- Airbnb's own search filters (see what's available, prices, ratings in your target area)\n- Local real estate sites (comps, rental market data)\n\n## Practical approach:\n1. Pick neighborhoods you're considering\n2. Use AirDNA to model revenue\n3. Cross-check with manual Airbnb searches\n4. Once you own/list, layer in Wheelhouse or PriceLabs for ongoing optimization\n\nWhat type of property/market are you evaluating?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

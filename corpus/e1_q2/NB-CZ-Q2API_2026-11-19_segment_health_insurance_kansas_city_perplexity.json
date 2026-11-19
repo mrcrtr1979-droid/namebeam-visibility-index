@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-19_segment_health_insurance_kansas_city_perplexity",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d8cae32b-6cdb-4738-8338-f81a47cb197e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00124,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00494
+   },
+   "input_tokens": 4779,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4223,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 497,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5276
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "BBS Insurance",
+  "AIS Health Insurance Advisors",
+  "Apollo Health Insurance",
+  "HealthCare.gov",
+  "ACA Marketplace",
+  "Kansas and Missouri",
+  "Summit. It",
+  "ACA-compliant",
+  "Medicare",
+  "Family ACA"
+ ],
+ "engine_stated_criteria": [
+  "Before you call"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "187fec1d9e6e2e7f3daa9491262c1315c83938f7a55d9ba6f26e75653cb16f80",
+ "answer_chars": 1973,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "d484bb3add9ffbce64d2c0c8acfd1745d0824316d8300dc161e7ccadf48cfb6f",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

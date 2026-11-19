@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-API_2026-11-19_segment_str_host_tooling_openai",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Em2N2xPFAepRa5GANYBK5SFOIEgYK",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 767,
+   "total_tokens": 793,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 127,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "After listing",
+  "PriceLabs",
+  "Beyond",
+  "Wheelhouse",
+  "Rabbu",
+  "AllTheRooms",
+  "Spreadsheet underwriting",
+  "Verify regulations independently"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most Airbnb hosts, the best combination is:\n\n- **Before buying:** **AirDNA** for market research and investment underwriting  \n- **After listing:** **PriceLabs** for nightly pricing\n\nIf you want only one tool, choose **AirDNA** because it is stronger for evaluating whether a market or specific property is worth buying. But for day-to-day pricing once you operate the property, **PriceLabs** is usually the better value and gives hosts more control.\n\n### 1. Best for analyzing a market before buying: AirDNA\nAirDNA is the standard starting point for short-term-rental market research. Use it to evaluate:\n\n- Historical occupancy, ADR (average daily rate), and RevPAR\n- Seasonality and monthly revenue patterns\n- Supply growth: are lots of new listings entering the market?\n- Comparable properties by bedroom count, amenities, location, and property type\n- Estimated revenue for a prospective property\n- Regulation and market-risk signals, supplemented by local government research\n\nFor acquisition analysis, do not rely only on AirDNA’s headline revenue estimate. Build a conservative underwriting case using lower occupancy and ADR assumptions, then include cleaning, management, utilities, furnishing replacement, taxes, insurance, platform fees, maintenance, and vacancy reserves.\n\n### 2. Best for nightly dynamic pricing: PriceLabs\nPriceLabs is generally the best fit for independent hosts and small-to-mid-sized portfolios because it offers:\n\n- Dynamic nightly rates based on demand, seasonality, booking pace, events, and local competition\n- Strong customization: minimum rates, maximum rates, weekend premiums, far-future discounts, last-minute discounts, and minimum-stay rules\n- Integration with most major PMS and channel managers\n- Good value relative to more enterprise-oriented pricing platforms\n\nIt is especially good if you want automation but still want to understand and control your pricing strategy.\n\n### Alternatives worth considering\n- **Beyond**: Best if you want more hands-off, automated revenue management. Often favored by professional managers, though it may feel less transparent or less customizable for some owners.\n- **Wheelhouse**: Strong pricing automation and market intelligence; a good alternative if you prefer its interface and strategy approach.\n- **Rabbu**: Useful for investment analysis and estimating a property’s potential, especially for people shopping for STR properties. Still verify its estimates against AirDNA comps and your own model.\n- **AllTheRooms**: Another market-data option, particularly useful for broader market research, though AirDNA is usually the more common first choice for individual U.S. investors.\n\n### Practical recommendation\nUse this workflow:\n\n1. **AirDNA**: Identify markets and pull real comparable listings.\n2. **Spreadsheet underwriting**: Run conservative, base, and optimistic revenue cases.\n3. **Verify regulations independently**: Zoning, permits, HOA rules, occupancy limits, taxes, and any pending local restrictions.\n4. **PriceLabs**: Connect it after launch and set guardrails rather than blindly accepting automated prices.\n\nSo, the concise answer is: **AirDNA for deciding what and where to buy; PriceLabs for setting nightly rates after you buy.**",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

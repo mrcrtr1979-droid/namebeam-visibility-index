@@ -1,0 +1,70 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-19_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a new air conditioner installed in Atlanta. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Em3MLkYFEcQofpHxS8LAN5JElPTvj",
+  "usage": {
+   "prompt_tokens": 27,
+   "completion_tokens": 1500,
+   "total_tokens": 1527,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PV Heating, Cooling & Plumbing",
+  "Manual J load calculation",
+  "Moncrief Heating & Air Conditioning",
+  "Conditioned Air, Inc",
+  "Estes Services",
+  "R.S. Andrews",
+  "PV Heating",
+  "Moncrief",
+  "Conditioned Air",
+  "Estes",
+  "Manual J heating/cooling load calculation",
+  "AHRI matched-system certificate",
+  "SEER2/EER2",
+  "Georgia Conditioned Air Contractor license",
+  "Moncrief Heating",
+  "Air Conditioning",
+  "Sandy Springs",
+  "AC-plus-furnace",
+  "Georgia Conditioned Air Contractor",
+  "One Atlanta-specific",
+  "AC-only",
+  "Moncrief Heating & Air",
+  "Conditioned Air Contractor",
+  "Conditioned Air Contractor License"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a new central AC or heat-pump installation in Atlanta, I’d call **at least three of these companies** and compare written, like-for-like proposals:\n\n1. **PV Heating, Cooling & Plumbing** — best first call if you want a technically rigorous installation  \n   - Strong reputation for **home-performance/building-science** work: correct equipment sizing, duct evaluation, airflow, humidity, and insulation issues—not simply replacing the old unit with the same tonnage.  \n   - Particularly worth calling for an **inverter heat pump**, an older/poorly insulated home, comfort problems, hot/cold rooms, or high humidity.  \n   - Ask them for a **Manual J load calculation** and duct/airflow recommendations.\n\n2. **Moncrief Heating & Air Conditioning** — strong established option for intown and older Atlanta homes  \n   - Long-established Atlanta contractor with broad replacement, maintenance, and system-design capability.  \n   - Good company to include if you are in Atlanta proper, Decatur, Buckhead, Brookhaven, Sandy Springs, or an older home with unusual ductwork, crawlspace, or attic constraints.  \n   - Ask for separate pricing for a conventional AC-plus-furnace option and a heat-pump option.\n\n3. **Conditioned Air, Inc.** — good choice for North/Cobb/Fulton metro homeowners  \n   - Established full-service HVAC company, especially practical for Marietta, Smyrna, Roswell, Alpharetta, Kennesaw, and surrounding areas.  \n   - A useful “baseline” bid from a larger, experienced installer with ongoing maintenance capacity.  \n   - Confirm exactly which equipment line and efficiency tier they are quoting rather than comparing only brand names.\n\n4. **Estes Services** — good for broad metro coverage and straightforward replacement quotes  \n   - Large Atlanta-area operation with broad scheduling capacity, HVAC service, and related plumbing/electrical capabilities.  \n   - Worth including when you want a company that can handle related work such as thermostat wiring, condensate drains, electrical disconnects, or service-panel questions.  \n   - Because it is a larger provider, carefully compare the proposed scope and total installed price against a more building-science-oriented bidder such as PV Heating.\n\n5. **R.S. Andrews** — useful if the project has HVAC plus electrical/plumbing scope  \n   - Another large Atlanta-area company that can be convenient if your replacement may require electrical upgrades, drain work, or other trades.  \n   - Good option for a competitive quote and for homeowners who value a large service organization and maintenance-plan availability.  \n   - As with any high-volume contractor, insist on a detailed scope rather than accepting a quote based solely on the size of the existing unit.\n\n## My practical shortlist\n\nIf you only make three calls:\n\n- **PV Heating** — technical/design-focused bid  \n- **Moncrief** — established Atlanta/older-home bid  \n- **Conditioned Air** or **Estes** — larger metro-service comparison bid  \n\nThat mix gives you a better chance of seeing whether one contractor is oversizing equipment, omitting duct/electrical work, or charging a premium for the same system.\n\n## What to require from every bidder\n\nAtlanta’s hot, humid summers make installation quality and humidity control just as important as the brand on the outdoor unit. Ask each company to provide:\n\n- A **Manual J heating/cooling load calculation**, not just “you currently have a 3-ton unit.”  \n- The exact outdoor unit, indoor coil/air handler or furnace, and thermostat model numbers.  \n- The system’s **AHRI matched-system certificate** and stated **SEER2/EER2** rating.  \n- Whether the quote includes duct repairs, return-air improvements, new refrigerant line set or line-set flush, condensate safety switches, drain upgrades, pad/stand, surge protection, permits, and haul-away.  \n- Startup/commissioning details: refrigerant charge verification, static-pressure/airflow testing, and thermostat setup.  \n- Separate warranties for **equipment**, **labor**, and any extended warranty.  \n- Confirmation that the installer holds the appropriate active **Georgia Conditioned Air Contractor license** and will pull the required permit.\n\n## One Atlanta-specific recommendation\n\nDo not automatically replace a failed AC with another single-stage AC of the same size. Ask for a quote on a **variable-speed or two-stage heat pump** as well. In Atlanta, a properly sized heat pump can provide excellent cooling and humidity control, handle much of the winter heating load, and may be a better long-term choice than AC-only equipment—especially if your current furnace is aging.\n\nAvoid any contractor who quotes a replacement solely from square footage or the old unit’s nameplate, pressures you to sign immediately, or cannot explain why the proposed tonnage is correct.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

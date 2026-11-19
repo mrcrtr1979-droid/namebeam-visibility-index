@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-11-19_segment_mortgage_lenders_miami_perplexity",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: mortgage lenders, Miami",
+ "niche": "mortgage lenders",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in Miami FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_2a3c8029-ebab-4fe0-8077-968275a48864",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00149,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00097,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0051
+   },
+   "input_tokens": 6511,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 5962,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 388,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 6899
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "A reasonable Miami shortlist to compare",
+  "Fairway Home Mortgage",
+  "Bennett Capital Partners",
+  "CrossCountry Mortgage",
+  "My practical recommendation",
+  "Loan Estimates from at least three lenders",
+  "NMLS Consumer Access",
+  "A Miami"
+ ],
+ "engine_stated_criteria": [
+  "Your bank or credit union"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "96a3ee1dcb09687447728b7029c901783090f90f6a6fc7286fbefe571552a6af",
+ "answer_chars": 1466,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "262abd0bb290fcda6c0059c4e11876d0f6d7c8615b828c8634b355ab09eedd40",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-11-19_segment_dentists_columbus_perplexity",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: dentists, Columbus",
+ "niche": "dentists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Columbus Ohio for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_692e0a62-fe2d-40a5-81ff-0fd050fc2d89",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0009,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00087,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00441
+   },
+   "input_tokens": 4146,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3599,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 346,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4492
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Ohio State Dental Center",
+  "Dr. Jason C. Stoner",
+  "Dr. Chintan Patel",
+  "Dr. Fred Alger",
+  "Columbus-area",
+  "Oral and Maxillofacial Surgery",
+  "Worthington and Gahanna",
+  "Maxillofacial Surgery",
+  "Ohio State"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9df153d30bb91efee9309e7c4254e1c14d0ab35e2eaacc3eca198e89c7dd9c36",
+ "answer_chars": 1196,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "f75f1205ab0f143469c3921515a9dbe3d6a60440ab3010c23a15d4ef8090feb5",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

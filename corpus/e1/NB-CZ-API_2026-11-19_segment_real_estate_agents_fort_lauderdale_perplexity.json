@@ -1,0 +1,79 @@
+{
+ "check_id": "NB-CZ-API_2026-11-19_segment_real_estate_agents_fort_lauderdale_perplexity",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: real estate agents, Fort Lauderdale",
+ "niche": "real estate agents",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Fort Lauderdale FL to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_45df935a-030d-4cc7-897f-d28b81ab22aa",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00116,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00082,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00462
+   },
+   "input_tokens": 5174,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4624,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 328,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5502
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Elin O’Donnell",
+  "Melanie Hernandez",
+  "Jeff Tricoli Team",
+  "Elin O",
+  "Jeff Tricoli"
+ ],
+ "engine_stated_criteria": [
+  "closed sales near your home"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "b73f1ae3ce9adb6ab44f3a76d2c70ed5757bef2aef31135fd19b3f99e0d5ad06",
+ "answer_chars": 1162,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "62aeb83a1cb1bec1a9b6b5a892cf7b581ab777418feabf63a774f5cbe9faee35",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

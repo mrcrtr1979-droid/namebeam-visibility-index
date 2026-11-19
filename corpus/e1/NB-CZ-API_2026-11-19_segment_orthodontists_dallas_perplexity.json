@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-19_segment_orthodontists_dallas_perplexity",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4eaa3ed4-23b0-4280-b0cb-70cde416dacd",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00118,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00463
+   },
+   "input_tokens": 5278,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4731,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 323,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5601
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Walnut Central Orthodontics",
+  "Dallas Orthodontics (Dr. Benito Benitez)",
+  "Ellis Orthodontics (Dr. Christine Ellis)",
+  "Park Cities Orthodontics (Dr. Yasir Kachroo)",
+  "Invisalign",
+  "N Central Expy",
+  "Dallas Orthodontics",
+  "Dr. Benito Benitez",
+  "Ellis Orthodontics",
+  "Dr. Christine Ellis",
+  "E Mockingbird Ln",
+  "Park Cities Orthodontics",
+  "Dr. Yasir Kachroo",
+  "Park Cities"
+ ],
+ "engine_stated_criteria": [
+  "A good starting shortlist is"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9f47be437247740d4542a1ea8fe90aaa9cbaf985a384d57f69bd75a05fe64f4d",
+ "answer_chars": 1068,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "619f50a45782d5c2ffa7e77e663f0bc48d58177395b5a4b9d5a1186258af8d33",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

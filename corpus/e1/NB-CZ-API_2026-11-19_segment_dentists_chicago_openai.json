@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-API_2026-11-19_segment_dentists_chicago_openai",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: dentists, Chicago",
+ "niche": "dentists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Chicago for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Em1ei362xSsLgr8SIg7Pv3Qy2ySoL",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 815,
+   "total_tokens": 833,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 338,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AAID credential",
+  "University of Illinois Chicago",
+  "College of Dentistry",
+  "American Board of Periodontology",
+  "Diplomate",
+  "American Board of Prosthodontics",
+  "Associate Fellow",
+  "D CBCT",
+  "University of Illinois"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a reliable single “best” implant dentist in Chicago—results depend heavily on the complexity of your case, bone/gum condition, and whether the surgeon and restorative dentist plan the case together.\n\nFor a high-confidence starting point, consider an academic/specialty setting such as the **University of Illinois Chicago (UIC) College of Dentistry**, which has implant, periodontics, oral surgery, and prosthodontic specialists working in one system. It can be especially worthwhile for full-arch work, bone grafting, failed implants, or medically complicated cases.\n\nFor a private-practice provider, I’d prioritize a Chicago-area clinician who is one of the following:\n\n- A **board-certified periodontist** — best for implants with gum disease or bone grafting  \n  *Verify via the American Board of Periodontology “Find a Diplomate” directory.*\n- A **board-certified oral and maxillofacial surgeon** — often ideal for difficult extractions, sedation, major grafting, or full-arch surgery.\n- A **board-certified prosthodontist** — especially important when the visible tooth/crown, bite, multiple implants, or full-mouth rehabilitation is the main challenge.  \n  *Verify via the American Board of Prosthodontics directory.*\n- A dentist with an **AAID credential** (Associate Fellow, Fellow, or Diplomate), not merely someone who advertises implants.\n\nBefore choosing, book consultations with two providers and ask:\n\n1. Will you use a **3-D CBCT scan** and a surgical guide?\n2. Who places the implant, and who designs the final crown/bridge?\n3. Do you plan the final tooth first (“restoratively driven” planning)?\n4. How many implants like mine do you place each year?\n5. What is included in the quoted price—implant, abutment, crown, grafting, scan, sedation, follow-ups?\n6. What happens if the implant fails or needs revision?\n\nFor a single missing tooth, a skilled periodontist or oral surgeon working with an excellent restorative dentist is usually ideal. For several teeth or a full-arch “All-on-X” case, I would strongly favor a prosthodontist-led plan with a surgeon involved, rather than choosing solely based on advertising or a low package price.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

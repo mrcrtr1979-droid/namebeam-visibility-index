@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-19_segment_tire_shops_pleasanton_perplexity",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: tire shops, Pleasanton",
+ "niche": "tire shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need new tires installed in Pleasanton. Which specific tire shops should I call, and why?",
+ "q1_prompt_text": "Where should I buy tires in Pleasanton CA and who does the best installation?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1edfa72b-d81e-4280-9d1a-b54fe911dc69",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00101,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00129,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00494
+   },
+   "input_tokens": 4590,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4036,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 516,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5106
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton, California",
+  "Big O Tires",
+  "Tire Choice Auto Service Centers",
+  "Big Brand Tire & Service",
+  "Costco Tire Center",
+  "Details",
+  "Big Brand Tire",
+  "Costco",
+  "Tire Choice",
+  "Big Brand",
+  "Big O",
+  "Tire Choice Auto Service"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "e29dad17a040d67c71aac38364cb2fc1a37bc3db679e5ee8d0203ef6b966f5d6",
+ "answer_chars": 1682,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "81a2617422c2f9f6e14c209d3299945d283c20bc55de22542bdca17eb592511c",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

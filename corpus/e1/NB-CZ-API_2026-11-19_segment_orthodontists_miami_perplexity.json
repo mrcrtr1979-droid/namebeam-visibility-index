@@ -1,0 +1,94 @@
+{
+ "check_id": "NB-CZ-API_2026-11-19_segment_orthodontists_miami_perplexity",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: orthodontists, Miami",
+ "niche": "orthodontists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Miami for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7c9b164d-3c05-4012-8477-1a1d14627d28",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00459
+   },
+   "input_tokens": 5144,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4597,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 319,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5463
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Pavel Ivanov / Ivanov Orthodontics",
+  "Dr. Idalia Lastra / Miami Orthodontics",
+  "Dr. Stephen Grussmark / Invisalign Brickell",
+  "Dr. Patricia Hong",
+  "Vizcaya Dental Arts",
+  "American Board of Orthodontics",
+  "Invisalign. The",
+  "Brickell and Coconut Grove",
+  "Dr. Pavel Ivanov",
+  "Ivanov Orthodontics",
+  "North Miami and Miami Lakes",
+  "Invisalign",
+  "Dr. Idalia Lastra",
+  "Miami Orthodontics",
+  "Miami and Key Biscayne",
+  "Dr. Stephen Grussmark",
+  "Invisalign Brickell",
+  "North Miami",
+  "Coconut Grove",
+  "Key Biscayne"
+ ],
+ "engine_stated_criteria": [
+  "A good starting point is Dr. Patricia Hong at Vizcaya Dental Arts"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2f262068e4e17f5c0e71b80d037161ac1262e31ad12c160191c0d2cae37ddc92",
+ "answer_chars": 1124,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "86d0cf6c41a4b876198901d2d7d5d88a76b6bba07a07c9a5790284742907ef7e",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

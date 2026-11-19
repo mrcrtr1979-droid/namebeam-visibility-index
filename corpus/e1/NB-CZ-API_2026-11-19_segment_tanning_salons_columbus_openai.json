@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-API_2026-11-19_segment_tanning_salons_columbus_openai",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: tanning salons, Columbus",
+ "niche": "tanning salons",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Columbus OH?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Em17ePmieLKsh1MkNug1Q6fhxYtBG",
+  "usage": {
+   "prompt_tokens": 16,
+   "completion_tokens": 469,
+   "total_tokens": 485,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 300,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Palm Beach Tan",
+  "UV-risk",
+  "Short North",
+  "UV tanning"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For an all-around option in Columbus, **Palm Beach Tan** is usually the safest recommendation: multiple convenient locations, modern beds, spray-tan options, memberships, and generally consistent cleanliness/service. The quality can vary by individual branch, so check the newest Google reviews for the location nearest you.\n\nIf you want a more boutique, personalized experience—especially for a spray tan—look for a highly reviewed local **custom airbrush tanning** studio rather than a chain.\n\nA quick note: spray tanning is the lower-UV-risk option; indoor UV tanning increases skin-cancer and premature-aging risk.\n\nIf you tell me your neighborhood (Downtown, Short North, Dublin, Polaris, Easton, etc.) and whether you want beds or spray tanning, I can narrow it to the best nearby choice.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

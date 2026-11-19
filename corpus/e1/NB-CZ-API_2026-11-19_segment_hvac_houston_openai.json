@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-API_2026-11-19_segment_hvac_houston_openai",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Em2o1uXXfq54JLaS16wMBd9K7UHHj",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 533,
+   "total_tokens": 551,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 260,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Tech of Houston",
+  "John Moore Services",
+  "Abacus Plumbing, Air Conditioning & Electrical",
+  "ARS/Rescue Rooter Houston",
+  "Local independent TACLB-licensed contractors",
+  "TACLB",
+  "Abacus Plumbing",
+  "Air Conditioning",
+  "Rescue Rooter Houston",
+  "TACLB-licensed",
+  "Texas HVAC",
+  "AC repair",
+  "John Moore",
+  "Abacus",
+  "Rescue Rooter"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company across all of Houston, but for a reputable local starting point for AC repair, I’d consider **Air Tech of Houston**—then compare its written diagnosis and quote with one other licensed contractor before authorizing a major repair.\n\nOther established Houston-area options worth checking include:\n\n- **John Moore Services** — large company; broad availability, often useful for urgent calls  \n- **Abacus Plumbing, Air Conditioning & Electrical** — larger full-service provider  \n- **ARS/Rescue Rooter Houston** — availability-focused, especially for emergency service  \n- **Local independent TACLB-licensed contractors** in your neighborhood — often the best value if they have strong recent reviews\n\nBefore booking, verify:\n\n1. The company holds an active Texas HVAC contractor license (**TACLB**).\n2. They provide a diagnostic fee and repair price in writing.\n3. They explain *why* a part failed—not just that it needs replacement.\n4. They offer a labor warranty and disclose parts warranty terms.\n5. For a compressor, coil, or major refrigerant repair, get a second opinion.\n\nIf your AC is not cooling at all, ask whether they can check the capacitor, contactor, drain safety switch, refrigerant leak, and airflow before recommending a replacement system.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

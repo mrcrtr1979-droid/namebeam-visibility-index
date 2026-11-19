@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-19_segment_dentists_houston_perplexity",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: dentists, Houston",
+ "niche": "dentists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Houston. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Houston for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c81d9093-d5b4-4b80-9a5f-a70450002f56",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00183,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00547
+   },
+   "input_tokens": 4565,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4012,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 733,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5298
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Omega Dental Specialists",
+  "Houston Implant Center",
+  "University Periodontal Associates",
+  "Precision Periodontics",
+  "Texas Periodontal Associates",
+  "Dr. Friedberg & Associates",
+  "Dr. Sean Kim",
+  "MD. Ask",
+  "Dr. Sarosh Dastoor",
+  "Dr. Roberto Porras",
+  "Dr. Friedberg",
+  "Katy Freeway"
+ ],
+ "engine_stated_criteria": [
+  "When you call, ask"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "76d569823219e07d9ec2c5ec2273876d9b4a3192bbf78428c57710db2726f167",
+ "answer_chars": 2933,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "0f83da451d25b76d5e2545f154c9210569c8873e4c9cfbe7667b4b07dc112adc",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

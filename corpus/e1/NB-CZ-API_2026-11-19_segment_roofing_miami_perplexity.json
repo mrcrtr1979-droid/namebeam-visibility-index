@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-11-19_segment_roofing_miami_perplexity",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: roofing, Miami",
+ "niche": "residential roofing",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofing company in Miami for hurricane-rated roof replacement?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1efdd584-d446-4469-94c7-6c35fc6246da",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00079,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00452
+   },
+   "input_tokens": 4913,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4365,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 314,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5227
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "T&S Roofing Systems",
+  "CCC1326032",
+  "Art’s Roofing & Construction",
+  "CCC1333598",
+  "CGC1541858",
+  "Miami-Dade Notice of Acceptance (NOA)",
+  "Miami-Dade Notice of Acceptance",
+  "HVHZ Florida Product Approval",
+  "Miami-Dade",
+  "Notice of Acceptance",
+  "Notice of Acceptance (NOA)",
+  "Dade Notice of Acceptance",
+  "Florida Product Approval",
+  "Product Approval"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "f24b85c22c19bf89e82b6076098b86a3d6e135f58c9986e4bbbfc45036b28038",
+ "answer_chars": 1082,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "6685c15b33ecca5cc7c2d9b8a002af89e2388ef4b3b0a82745e0e4730ce44fad",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

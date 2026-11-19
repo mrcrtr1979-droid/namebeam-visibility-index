@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-11-19_segment_orthodontists_denver_perplexity",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: orthodontists, Denver",
+ "niche": "orthodontists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Denver for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_324993af-6e42-4322-94b7-4bfb0e48720d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00115,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00085,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00464
+   },
+   "input_tokens": 5152,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4605,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 338,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5490
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Gabe Luttrell, Union Orthodontics",
+  "Dr. Speaks, Speaks Orthodontics",
+  "Dr. Ginny Baker, 5280 Orthodontics",
+  "Dr. Isaac Chung, i-Orthodontics",
+  "Dr. Gabe Luttrell",
+  "Union Orthodontics",
+  "American Board of Orthodontics",
+  "Invisalign. The Denver",
+  "Dr. Speaks",
+  "Speaks Orthodontics",
+  "Dr. Ginny Baker",
+  "Orthodontics",
+  "Invisalign",
+  "Dr. Isaac Chung",
+  "Invisalign. The"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "a5cbe24900cd1b13ea36df76fd581c4b22a8d46ebf21e7f2e4708f7d25c4b511",
+ "answer_chars": 1190,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "29c153f48a8f8eaadb0d74c380d4597ef3c77e7e553017d8176df4f5fc7c6a17",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

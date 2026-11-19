@@ -1,0 +1,59 @@
+{
+ "check_id": "NB-CZ-API_2026-11-19_segment_str_guest_discovery_openai",
+ "date_utc": "2026-11-19",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Em2RStRzkA8A0vGgBZzRMlF7pATd2",
+  "usage": {
+   "prompt_tokens": 34,
+   "completion_tokens": 1572,
+   "total_tokens": 1606,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 40,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "Vrbo",
+  "Booking.com",
+  "Airbnb and Booking.com",
+  "Remote/vacation destination",
+  "Keep communication and payments on the platform",
+  "Start",
+  "Cleaning",
+  "Guest Favorite",
+  "Wi-Fi",
+  "Superhost",
+  "Premier Host",
+  "Entire homes",
+  "Filter",
+  "Unique Stays",
+  "Verify the listing details"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "It depends on the type of trip and accommodation you want. In general:\n\n| Platform | Usually best for | Strengths | Watch for |\n|---|---|---|---|\n| **Airbnb** | Unique stays, apartments, rooms, longer stays, cities | Largest selection of home-style rentals; strong filters; lots of reviews; useful for monthly stays | Cleaning/service fees can make short stays expensive; listings can vary greatly in quality |\n| **Vrbo** | Entire homes, families, groups, beach/mountain trips | Focuses more on whole-property rentals; often good for larger houses and vacation destinations | Fewer room/shared-space options; inventory may be thinner in major cities or internationally |\n| **Booking.com** | Hotels, aparthotels, last-minute trips, flexible travel | Excellent hotel inventory; often simple comparison; can have flexible cancellation and pay-later options; useful internationally | Vacation-rental listings can be less standardized; carefully verify who manages the property and final charges |\n\n## Quick recommendation\n\n- **Solo traveler or couple in a city:** Compare **Airbnb and Booking.com**. Booking.com may win if you value hotel-style reliability or flexible cancellation.\n- **Family or group needing a full house:** Start with **Vrbo**, then compare the same area on Airbnb.\n- **International trip or multi-city itinerary:** Start with **Booking.com**, especially if you want hotels and easy logistics.\n- **Long stay (weeks or a month):** Airbnb can be especially useful because many listings offer monthly discounts, but compare the all-in price with aparthotels on Booking.com.\n- **Short one- or two-night stay:** Hotels on Booking.com are often a better value after Airbnb/Vrbo cleaning and service fees.\n- **Remote/vacation destination:** Check all three. The exact same property may appear on multiple sites at different total prices and cancellation terms.\n\n## The most important rule: compare the *total* price\n\nDo not compare the nightly rate alone. Enter your exact dates and number of guests, then compare:\n\n- Nightly rate\n- Cleaning fee\n- Platform/service fee\n- Taxes\n- Resort/property fees\n- Pet, parking, extra guest, or utility fees\n- Security deposit/hold\n- Cancellation cost if plans change\n\nA slightly higher nightly rate with free cancellation can be worth much more than a cheaper nonrefundable booking.\n\n## How to find a good host or property manager\n\nA “good host” is less about friendly wording and more about a consistent record of accurate listings, responsive communication, and fair problem handling.\n\n### 1. Prioritize recent, detailed reviews\nLook beyond the average star rating.\n\nGood signs:\n- A high rating with a substantial number of reviews\n- Reviews from the last 6–12 months\n- Reviewers repeatedly mention accuracy, cleanliness, easy check-in, responsiveness, and good location\n- Host responses to criticism are calm, specific, and solution-oriented\n\nBe cautious when:\n- Most reviews are old\n- There are very few reviews for a newly listed property\n- Recent reviews mention cleanliness, bugs, noise, broken amenities, misleading photos, surprise fees, or host cancellations\n- Several reviews describe the same issue\n\nRead the **lowest-rated reviews first**, then see whether the host fixed the recurring problems.\n\n### 2. Verify the listing details, not just the photos\nPhotos can be flattering or outdated. Check for:\n\n- Exact bed types and number of beds—not just “sleeps 6”\n- Air conditioning/heating, especially where weather matters\n- Reliable Wi-Fi if you will work remotely; look for speed-test information or reviews confirming it\n- Elevator/stairs and accessibility\n- Parking details and cost\n- Washer/dryer, kitchen equipment, and workspace if important\n- Neighborhood location and distance to transit/attractions\n- Whether it is a private home, apartment, hotel unit, or professionally managed building\n\nIf the address is not shown before booking, use the map pin and listing description to assess the area. Do not expect the exact location to be public, but the approximate location should make sense.\n\n### 3. Check host reliability indicators—but do not rely on badges alone\nPlatform badges such as “Superhost,” “Guest Favorite,” “Premier Host,” or similar can be helpful signals. Still, recent reviews matter more.\n\nFor a new host with no reviews:\n- Only book if the price advantage is meaningful,\n- the cancellation policy is favorable,\n- the listing is detailed and credible,\n- and you are comfortable with some uncertainty.\n\nFor an important trip—wedding, international arrival, late-night check-in, family reunion—favor a proven host/property with many recent reviews or a reputable hotel.\n\n### 4. Send a short, practical message before booking\nA good host should answer clearly and without pressure. Ask only questions not already answered in the listing, such as:\n\n- “Can you confirm the Wi-Fi is reliable for video calls?”\n- “Is the second bedroom fully enclosed with a door?”\n- “What is the check-in process if our flight is delayed?”\n- “Is there any construction or road noise currently nearby?”\n- “Can you confirm the total parking cost?”\n\nThis also tests response quality. Vague, evasive, or unusually pushy replies are warning signs.\n\n### 5. Read the cancellation policy and house rules closely\nConfirm:\n\n- Deadline for a full refund\n- Whether cleaning/service fees are refunded\n- Check-in and checkout times\n- Quiet hours and guest limits\n- Rules on visitors, pets, smoking, parties, and children\n- Requirements for ID, deposits, or extra agreements\n- What happens if the host cancels\n\nAvoid a strict or nonrefundable booking unless you are confident in the property and your dates.\n\n## Safety and scam precautions\n\n- **Keep communication and payments on the platform.** Never wire money, pay by crypto, buy gift cards, or accept an “off-platform discount.”\n- Be skeptical if a host asks you to cancel and rebook privately.\n- Do not send sensitive identity documents through informal channels unless the platform explicitly requires it and you understand why.\n- Save screenshots of the listing, amenities, fees, messages, and cancellation policy before your stay.\n- If something is wrong on arrival, document it immediately with photos/video and contact the platform promptly—not only the host.\n- Be cautious with listings that are dramatically cheaper than similar nearby properties.\n\n## A simple booking workflow\n\n1. Pick the neighborhood and dates.\n2. Search all relevant platforms.\n3. Filter for your non-negotiables: entire place vs. room, beds, air conditioning, parking, Wi-Fi, cancellation policy, accessibility.\n4. Open 3–5 top options and compare **all-in totals**.\n5. Read recent 5-star and 1–3-star reviews.\n6. Check host/property management history and response quality.\n7. Confirm house rules, cancellation terms, and check-in details.\n8. Book through the platform using a credit card if possible.\n\n## Bottom line\n\n- Choose **Airbnb** for variety, local apartments, and longer stays.\n- Choose **Vrbo** for a full home for a family or group.\n- Choose **Booking.com** for hotel-like consistency, international travel, and flexible/last-minute options.\n\nThe best booking is usually not determined by the platform—it is the listing with the best combination of **recent reviews, transparent total price, favorable cancellation terms, accurate amenities, and a responsive host**.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
