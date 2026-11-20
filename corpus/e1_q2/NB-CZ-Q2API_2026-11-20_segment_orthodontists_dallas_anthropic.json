@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-20_segment_orthodontists_dallas_anthropic",
+ "date_utc": "2026-11-20",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Dallas. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_ceppobujrdpf2m3xn2olvi4pz4jm7cxathuyiwklw7ouvvkvtpcq",
+  "usage": {
+   "input_tokens": 31,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 241,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Better approaches",
+  "Insurance provider directory",
+  "Verified reviews",
+  "Consultation calls",
+  "American Board of Orthodontics",
+  "Invisalign",
+  "Board Certification"
+ ],
+ "engine_stated_criteria": [
+  "Your dentist's referral"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I don't have current, verified information about specific orthodontists in Dallas to recommend with confidence. Practices change, move, and vary in quality.\n\n**Better approaches:**\n\n- **Your dentist's referral** - they know local practitioners and can recommend based on your specific needs\n- **Insurance provider directory** - if you have dental coverage, they list in-network specialists\n- **Verified reviews** - check Google Maps, Healthgrades, or Zocdoc for current patient feedback and credentials\n- **Consultation calls** - most offer free consultations; you can compare approach, pricing, and comfort level\n- **Questions to ask:**\n  - Board certification (American Board of Orthodontics)\n  - Experience with your preferred option (braces vs. Invisalign)\n  - Treatment timeline and cost\n  - Payment plans available\n\n**Red flags:** Unusually cheap pricing, pressure to decide immediately, or unwillingness to discuss options.\n\nSince orthodontic care is a significant commitment, it's worth taking time to find someone you trust rather than relying on a stranger's recommendation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

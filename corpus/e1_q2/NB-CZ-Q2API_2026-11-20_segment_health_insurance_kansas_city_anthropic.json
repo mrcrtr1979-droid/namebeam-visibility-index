@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-20_segment_health_insurance_kansas_city_anthropic",
+ "date_utc": "2026-11-20",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_5tfcv2mify2w3f2uxvwaejvl2kcy76gggskv5wtswecqs5hgrpeq",
+  "usage": {
+   "input_tokens": 30,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 275,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Better ways to find brokers",
+  "Healthcare.gov",
+  "Kansas City area 211",
+  "State insurance commissioner's office",
+  "Questions to ask any broker",
+  "Your",
+  "In Missouri"
+ ],
+ "engine_stated_criteria": [
+  "Your employer"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest a different approach than asking for specific broker recommendations, since I can't verify current credentials or quality:\n\n**Better ways to find brokers:**\n- **Healthcare.gov** - Free, unbiased counselors (1-800-318-2596)\n- **Kansas City area 211** - Local resource database\n- **Your employer** - If offered, they often have preferred brokers\n- **State insurance commissioner's office** - Can verify licensing and complaints\n\n**What to look for in a broker:**\n- Licensed in Missouri/Kansas\n- No complaints with your state's insurance department\n- Transparent about how they're compensated\n- Willing to explain multiple plan options\n- Local presence (easier to follow up)\n\n**Questions to ask any broker:**\n- How are you compensated? (commission structures matter)\n- Can you show me plans from multiple insurers?\n- What's your process for handling claims issues?\n\n**Also consider:**\n- Comparing plans directly on Healthcare.gov first, so you know what questions to ask\n- Your specific needs (prescriptions, doctors, anticipated care)\n\nIs there a specific type of coverage you're looking for (individual, small business, etc.)? That might help narrow down what resources would be most useful.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-API_2026-11-20_segment_mortgage_lenders_west_palm_beach_perplexity",
+ "date_utc": "2026-11-20",
+ "business": "SEGMENT: mortgage lenders, West Palm Beach",
+ "niche": "mortgage lenders",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in West Palm Beach FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_9a35ea87-9113-44f1-be81-15a815d110a0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00159,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00072,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00495
+   },
+   "input_tokens": 6930,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 6379,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 288,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 7218
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Also compare FBC Mortgage",
+  "Loan Estimates on the same day",
+  "Palm Beach Mortgage Group",
+  "Palm Beach County",
+  "FBC Mortgage"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "4b89df6793abc2f7f6d60d8aa9510455c7857962ede69bac15f1efc06b45649d",
+ "answer_chars": 971,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "913eb9621e26fa9bf8cd779b338c4314c8bd67b1159572269d1cb10eafb46f67",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

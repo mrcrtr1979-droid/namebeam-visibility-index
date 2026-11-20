@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-20_segment_personal_injury_law_dallas_perplexity",
+ "date_utc": "2026-11-20",
+ "business": "SEGMENT: personal injury law, Dallas",
+ "niche": "personal injury attorneys",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Dallas after a truck accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Dallas for a truck accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ed9af363-1352-4d46-ae17-777055636c67",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00131,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00495
+   },
+   "input_tokens": 4562,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4004,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 522,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5084
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Aaron A. Herbert, P.C",
+  "Board Certified in Personal Injury Trial Law",
+  "Kelso Law, PLLC",
+  "The Wooley Law Firm",
+  "Roberts & Roberts",
+  "Thomas J. Henry Law",
+  "State Bar of Texas",
+  "Aaron A. Herbert",
+  "Kelso Law",
+  "Roberts",
+  "Texas Board of Legal Specialization"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "40a19983beea51800c95f73a05fe4522bba39b234add6e353d82ee9019e7e82e",
+ "answer_chars": 2005,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "c307ec285db9363a47f4d0afca64f7d56efef587e9d468568235e35a4dd50371",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

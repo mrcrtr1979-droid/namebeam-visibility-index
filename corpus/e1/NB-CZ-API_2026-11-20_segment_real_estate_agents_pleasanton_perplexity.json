@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-API_2026-11-20_segment_real_estate_agents_pleasanton_perplexity",
+ "date_utc": "2026-11-20",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_e89f73a1-c769-439d-a632-7c31a1650f25",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00111,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 4987,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4437,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 331,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5318
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Gina Piper",
+  "Doug Buenz",
+  "Gina Piper (Elation Real Estate)",
+  "Doug Buenz (Compass / The 680 Group)",
+  "Elation Real Estate",
+  "Recent Pleasanton",
+  "Extensive Tri-Valley",
+  "Compass",
+  "Recent Pleasanton sales"
+ ],
+ "engine_stated_criteria": [
+  "three comparable recent listings they personally represented as the seller"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "750936a5489934d52c69e3f165b2b289774b56034c76db9bb1138b2f0fe6a279",
+ "answer_chars": 1197,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "aff4cffe48ebf855ab990b8c16665ba4297bd1b5c41162a31bda617c6fa32282",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

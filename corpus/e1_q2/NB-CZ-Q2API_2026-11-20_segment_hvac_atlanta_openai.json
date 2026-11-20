@@ -1,0 +1,73 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-20_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-20",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a new air conditioner installed in Atlanta. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EmP2JeiJupoxLXiI1H2jtCSqiUngc",
+  "usage": {
+   "prompt_tokens": 27,
+   "completion_tokens": 1461,
+   "total_tokens": 1488,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PV Heating, Cooling & Plumbing",
+  "Moncrief Heating & Air Conditioning",
+  "Conditioned Air Systems",
+  "Estes Services",
+  "R.S. Andrews",
+  "Coolray",
+  "PV Heating",
+  "Moncrief",
+  "Estes",
+  "PV Heating, Moncrief, and Estes",
+  "Manual J load calculation",
+  "AHRI-matched system",
+  "Georgia conditioned-air contractor license",
+  "Moncrief Heating",
+  "Air Conditioning",
+  "Atlanta. They",
+  "HVAC-focused",
+  "AC-install",
+  "AHRI-matched",
+  "One Atlanta-specific",
+  "Cooling",
+  "Metro Atlanta",
+  "Moncrief Heating & Air",
+  "Conditioned Air",
+  "Metro Atlanta. They"
+ ],
+ "engine_stated_criteria": [
+  "If you only make three calls"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a new AC installation in Atlanta, I’d call **3–5 companies** rather than accepting the first quote. My short list would be:\n\n1. **PV Heating, Cooling & Plumbing**  \n   **Why call:** Particularly strong choice if you have uneven temperatures, humidity problems, hot upstairs rooms, duct issues, or an older/renovated home. They have a building-science/comfort-focused reputation and are more likely to discuss load calculations, duct leakage, airflow, and commissioning—not just swapping the outdoor unit.  \n   **Best for:** Higher-confidence design work and comfort problems, not simply the lowest initial price.\n\n2. **Moncrief Heating & Air Conditioning**  \n   **Why call:** A long-established Atlanta company with broad metro coverage and experience replacing systems in older intown homes as well as newer homes. Good benchmark quote from a sizable, established installer.  \n   **Best for:** Straightforward replacement plus a company likely to remain available for service and warranty work.\n\n3. **Conditioned Air Systems**  \n   **Why call:** A well-known local option, especially convenient for the north/northwest side of metro Atlanta. They are worth including for a competitive estimate from an established HVAC-focused company.  \n   **Best for:** Comparing equipment options, maintenance plans, and installation scope against the larger Atlanta firms.\n\n4. **Estes Services**  \n   **Why call:** A large, long-running Atlanta home-services company with wide service coverage, installation capacity, and financing/service-plan options. Their quote can be useful as a “major local provider” comparison.  \n   **Best for:** Availability, coordinated service, and homeowners who want one company for HVAC and related home services.\n\n5. **R.S. Andrews**  \n   **Why call:** Another substantial Atlanta-area company with broad coverage and the ability to quote/install quickly. Include them if speed, scheduling flexibility, or financing matters.  \n   **Best for:** A fast, full-service comparison quote—especially if your existing system has failed and you need replacement soon.\n\n6. **Coolray**  \n   **Why call:** Often a practical quote to obtain because of their scale, availability, and familiarity with metro-Atlanta homes. I would use them as a competitive bid, but scrutinize the installation details just as carefully as any other proposal.  \n   **Best for:** Fast scheduling and a useful price/financing comparison.\n\n## If I were narrowing it down\n\n- **For the best chance of solving comfort/duct/humidity issues:** call **PV Heating**, **Moncrief**, and **Conditioned Air Systems**.\n- **For a straightforward failed-system replacement and competitive comparison:** call **Moncrief**, **Estes**, **R.S. Andrews**, and/or **Coolray**.\n- **If you only make three calls:** **PV Heating, Moncrief, and Estes** gives you a good mix of design-oriented, established local, and large-service-company perspectives.\n\n## What separates a good AC-install quote from a bad one\n\nTell every company you want the proposal to include:\n\n- A **Manual J load calculation** or a clear explanation of how they sized the system. Do not accept “you had a 4-ton before, so you need a 4-ton again” as the only sizing logic.\n- The **exact indoor and outdoor model numbers**, efficiency rating, refrigerant type, and warranty terms.\n- Whether the quoted indoor coil, furnace/air handler, thermostat, and outdoor condenser are an **AHRI-matched system**.\n- A review of **ductwork and static pressure**. In Atlanta’s humid climate, airflow and duct leakage matter greatly.\n- Whether they will pull the required **permit** and arrange inspection.\n- The scope for electrical work, drain pan/condensate protection, pad, disconnect, line-set reuse or replacement, filter cabinet, and thermostat.\n- Startup/commissioning steps: refrigerant charge verification, airflow measurement, drain testing, and temperature split.\n- Their active **Georgia conditioned-air contractor license** information and proof of insurance.\n\n## One Atlanta-specific caution\n\nAtlanta’s humidity means an oversized AC can make the house feel clammy even if it cools quickly. A contractor who recommends a smaller or variable-capacity system *with a documented load calculation* may be giving you better advice than one automatically proposing the largest unit. Also ask whether your current ducts can support the airflow of the proposed equipment.\n\nBefore signing, compare the **installation scope**, not just the brand name or headline SEER2 rating. A properly sized, well-commissioned mid-tier system generally beats a premium system installed poorly.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

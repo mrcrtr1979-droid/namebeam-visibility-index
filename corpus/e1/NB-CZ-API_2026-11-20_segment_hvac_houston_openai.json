@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-API_2026-11-20_segment_hvac_houston_openai",
+ "date_utc": "2026-11-20",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EmNNh1LeMrZM2haqHtHNhDHpmk9lB",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 788,
+   "total_tokens": 806,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 419,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "John Moore Services",
+  "Abacus Plumbing, Air Conditioning & Electrical",
+  "Air Tech of Houston",
+  "Richmond’s Air",
+  "Texas Air Authorities",
+  "AC repair",
+  "Abacus Plumbing",
+  "Air Conditioning",
+  "Texas TDLR Air Conditioning",
+  "Refrigeration Contractor",
+  "John Moore",
+  "Abacus",
+  "Texas TDLR"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company in Houston—availability, your neighborhood, system brand, and whether it’s an emergency all matter. I also can’t verify today’s review scores or technician availability.\n\nFor a strong starting shortlist, Houston-area companies that are generally established and commonly considered for AC service include:\n\n- **John Moore Services**\n- **Abacus Plumbing, Air Conditioning & Electrical**\n- **Air Tech of Houston**\n- **Richmond’s Air**\n- **Texas Air Authorities**\n\nBefore booking, choose the one that will provide all of the following:\n\n1. A current **Texas TDLR Air Conditioning & Refrigeration Contractor license** number.  \n2. A diagnostic visit and **itemized written estimate** before repairs.  \n3. Clear parts and labor warranty terms.  \n4. No pressure to replace the whole system before diagnosing repair options.  \n5. Recent reviews specifically mentioning **AC repair**, not only installation.\n\nFor Houston, be cautious if a company immediately recommends replacement for a capacitor, contactor, clogged condensate drain, thermostat, or minor refrigerant-related issue without explaining test results.\n\nTypical rough repair ranges:\n- Diagnostic/service call: **$80–$180**\n- Capacitor: **$150–$400**\n- Drain-line clearing: **$100–$350**\n- Contactor: **$250–$600**\n- Blower motor: **$500–$1,500+**\n- Compressor or major refrigerant leak: often **$1,500–$4,000+**\n\nIf your AC is out now, prioritize a licensed company offering same-day service and get a second opinion before approving any repair above roughly **$1,500–$2,000**, unless it is clearly documented as an emergency failure.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,61 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-20_segment_dentists_pleasanton_openai",
+ "date_utc": "2026-11-20",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EmPCXW5Qsc4F82rOP4sKQMIpl7L3H",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1770,
+   "total_tokens": 1798,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton Dental Care",
+  "Amador Valley Dentistry",
+  "Kotlar Dental",
+  "Watch for",
+  "Bright Now! Dental in/near Pleasanton",
+  "Ask carefully",
+  "Pleasanton Smile Dental",
+  "Bright Now! Dental",
+  "X-rays",
+  "Whether",
+  "Bright Now"
+ ],
+ "engine_stated_criteria": [
+  "If you have dental insurance",
+  "If you are paying cash",
+  "If you need an appointment quickly"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a routine checkup and cleaning in Pleasanton, I’d call these offices first and compare the earliest *hygiene-cleaning* appointment—not just an exam slot:\n\n1. **Pleasanton Dental Care**  \n   **Why call:** A general-dentistry option for routine exams, X-rays, cleanings, fillings, and follow-up care in one office. This is a good “baseline” call if you want a conventional primary dentist rather than a cosmetic-only practice.  \n   **Ask:** “Are you accepting new adult patients for an exam and routine prophylaxis cleaning, and do you have a hygienist appointment available?”\n\n2. **Amador Valley Dentistry**  \n   **Why call:** A family/general-dentistry practice is often a good fit if you want ongoing preventive care, may need occasional restorative work, or want to schedule family members together later.  \n   **Ask:** Whether they are in-network with your plan and whether the initial visit includes both the doctor’s exam and cleaning on the same day.\n\n3. **Kotlar Dental**  \n   **Why call:** Worth considering if you value a more consultative, relationship-based office and may eventually want cosmetic or more comprehensive restorative work. It may be especially suitable if you do not mind paying more for a smaller-practice experience.  \n   **Watch for:** Whether they are in-network or primarily out-of-network, and their cash price if you are uninsured.\n\n4. **Bright Now! Dental in/near Pleasanton**  \n   **Why call:** A practical option if your priority is appointment availability, evening/weekend access, or broad insurance participation. Larger group practices can sometimes get a new patient in faster.  \n   **Ask carefully:** “Will I receive the cleaning at the first visit if clinically appropriate?” Some offices schedule an exam first and the hygiene visit later.\n\n5. **Pleasanton Smile Dental**  \n   **Why call:** Another local general-dentistry option to compare for new-patient availability, insurance acceptance, and preventive-care pricing. Having one independent/local-office quote alongside a group-practice quote is useful.\n\n### My practical recommendation\n\n- **If you have dental insurance:** Start with the provider directory on your insurer’s website, then call **Pleasanton Dental Care**, **Amador Valley Dentistry**, and one higher-availability option such as **Bright Now! Dental**. Being listed in a directory does not always mean a practice is taking new patients or has hygienist availability soon.\n- **If you are paying cash:** Call at least three offices and ask for the **all-in new-patient estimate**: exam, necessary X-rays, and routine cleaning. A low advertised “exam special” may not include X-rays or the cleaning.\n- **If you need an appointment quickly:** Prioritize the office that can book both the exam and cleaning soonest; chain/group practices may be more likely to have openings.\n\n### Use this exact phone script\n\n> “Hi, I’m a new patient in Pleasanton looking for a routine checkup and cleaning. Are you accepting new patients? Can the exam, needed X-rays, and routine cleaning be done at the same appointment? Do you take my plan, and what would my estimated out-of-pocket cost be? If I need periodontal or deep cleaning instead, will you tell me the price before treatment?”\n\nOne important detail: if the dentist finds gum disease, what you expected to be a standard cleaning may be classified as **scaling/root planing (“deep cleaning”)**, which costs more and is often scheduled separately. Ask for a written treatment estimate before agreeing to that work.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

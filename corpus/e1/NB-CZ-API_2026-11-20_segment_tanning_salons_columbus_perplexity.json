@@ -1,0 +1,79 @@
+{
+ "check_id": "NB-CZ-API_2026-11-20_segment_tanning_salons_columbus_perplexity",
+ "date_utc": "2026-11-20",
+ "business": "SEGMENT: tanning salons, Columbus",
+ "niche": "tanning salons",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Columbus OH?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_fe9c93ac-a29f-4c5d-8ed3-194d1ddf5bb7",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00121,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00445
+   },
+   "input_tokens": 5399,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4855,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 241,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5640
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "For a custom spray tan",
+  "Sweetly Bronzed",
+  "For UV beds and other services",
+  "Palm Beach Tan at Graceland Center",
+  "Palm Beach Tan",
+  "Graceland Center",
+  "Sweetly Bronzed. Ratings"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "99a6894a1019ca67d36adb0e2caa9d198755cb574ad705f3f3f8928b8e63bd23",
+ "answer_chars": 710,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "ce9b40babd86fcc9421cd7f16fe9d13d644c9ad54056fd370d71d7666e46d510",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

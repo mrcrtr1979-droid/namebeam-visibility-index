@@ -1,0 +1,79 @@
+{
+ "check_id": "NB-CZ-API_2026-11-20_needle_perplexity",
+ "date_utc": "2026-11-20",
+ "business": "Needle",
+ "niche": "AI marketing tool for DTC brands",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best AI marketing tool for DTC brands?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b6dd0b3d-b1a9-4245-8253-3c0296ae3863",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00181,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0006,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00505
+   },
+   "input_tokens": 7780,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 7234,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 242,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 8022
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Shopify Magic",
+  "Jasper",
+  "Triple Whale",
+  "Shopify",
+  "Klaviyo"
+ ],
+ "engine_stated_criteria": [
+  "For most DTC brands, Klaviyo is the best first AI marketing tool"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "786bd2a8adf6a6d241916837f98876efb29bfb0d067baf0b55a5fd0ea624a5c3",
+ "answer_chars": 769,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "b8d0b8f11d18651c0093a4de0e1dd6cef219930590955967a8d5a7f09af5a6e0",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

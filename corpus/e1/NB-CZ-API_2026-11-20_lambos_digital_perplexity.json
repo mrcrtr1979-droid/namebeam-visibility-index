@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-API_2026-11-20_lambos_digital_perplexity",
+ "date_utc": "2026-11-20",
+ "business": "Lambos Digital",
+ "niche": "connected TV and streaming advertising agency",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best connected TV advertising agency?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_74c511e1-9b98-420e-8126-64fec8fae0ab",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00097,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00066,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00427
+   },
+   "input_tokens": 4426,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3883,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 262,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4688
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Power Digital",
+  "Directive",
+  "Clutch CTV",
+  "Connected TV",
+  "CTV Agency"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "37b0b2a5b3f6ba0af82a5a39522298d97342a24a2471873c21dc9309596ba78b",
+ "answer_chars": 908,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "4a3227fae92bad02aa51cca276f8d44b347aa3a3b2dbec60d145e5992175dfc2",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

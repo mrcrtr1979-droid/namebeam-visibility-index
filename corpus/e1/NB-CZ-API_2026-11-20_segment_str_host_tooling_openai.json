@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-API_2026-11-20_segment_str_host_tooling_openai",
+ "date_utc": "2026-11-20",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EmOfbZgUkMG3tbB5NGerIkWybkLcR",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 649,
+   "total_tokens": 675,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 108,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "AirDNA",
+  "Beyond",
+  "Wheelhouse",
+  "Rabbu",
+  "AllTheRooms",
+  "AirDNA Rentalizer",
+  "Rentalizer",
+  "MarketMinder",
+  "Market Dashboards",
+  "Once operating",
+  "Underwrite conservatively"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most Airbnb hosts, the best setup is:\n\n- **PriceLabs** for ongoing nightly pricing\n- **AirDNA** for market analysis before buying\n\n### Best for dynamic nightly pricing: PriceLabs\nPriceLabs is generally the strongest choice for hosts who want automated, customizable pricing. It adjusts rates based on seasonality, local demand, events, booking pace, lead time, occupancy, and comparable listings.\n\nWhy hosts like it:\n- Works with most PMS/channel managers and Airbnb calendars\n- Strong minimum-stay, orphan-gap, last-minute, and far-out pricing rules\n- Usually more configurable than “set it and forget it” alternatives\n- Useful Market Dashboards for monitoring supply, occupancy, and rates\n\nBest for: Hosts with one or more listings who want control over automation.\n\n### Best for analyzing a market before buying: AirDNA\nAirDNA is the most commonly used short-term-rental data platform for underwriting a potential property. Its Rentalizer and MarketMinder tools can help estimate:\n- Expected annual revenue\n- Occupancy\n- Average daily rate (ADR)\n- Seasonality\n- Comparable properties\n- Supply growth and regulation risk\n- Performance by bedroom count and property type\n\nBest for: Evaluating whether a city, neighborhood, or specific property is likely to perform before purchase.\n\n### If you want only one tool\nChoose **AirDNA** if you are still deciding whether to buy. Bad acquisition assumptions matter far more than slightly imperfect nightly pricing.\n\nChoose **PriceLabs** if you already own or are under contract on the property and need to maximize revenue.\n\n### Other worthwhile alternatives\n- **Beyond**: Good dynamic pricing and portfolio-level revenue management; often preferred by larger operators.\n- **Wheelhouse**: Strong pricing automation, clean interface, and good for hosts who want less manual rule-setting.\n- **Rabbu**: Useful for investment analysis and revenue estimates, especially for U.S. acquisition research.\n- **AllTheRooms**: Useful for broader market data and supply analysis.\n\n### Practical recommendation\nBefore buying:\n1. Run the property through **AirDNA Rentalizer**.\n2. Check at least 10–20 truly comparable listings manually on Airbnb.\n3. Underwrite conservatively—use lower occupancy and ADR than the platform’s optimistic estimate.\n4. Confirm local STR regulations, permits, HOA rules, insurance, and taxes.\n5. Once operating, connect **PriceLabs** and set your own minimum rate, maximum rate, and minimum-stay rules.\n\nIf I had to pick the most reliable combination for a serious host: **AirDNA for acquisition decisions + PriceLabs for daily pricing.**",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

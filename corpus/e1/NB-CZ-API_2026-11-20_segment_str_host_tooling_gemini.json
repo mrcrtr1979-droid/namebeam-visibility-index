@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-API_2026-11-20_segment_str_host_tooling_gemini",
+ "date_utc": "2026-11-20",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "0KAAa8S9DYuLqtsP48zj6AM",
+  "usage": {
+   "promptTokenCount": 20,
+   "candidatesTokenCount": 657,
+   "totalTokenCount": 677,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 20
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "Rentalizer",
+  "MarketMinder",
+  "Investability Score",
+  "Mashvisor",
+  "Rabbu",
+  "PriceLabs",
+  "Beyond",
+  "PriceLabs (The Pro Choice)",
+  "Beyond (The Beginner-Friendly Choice)",
+  "After Buying",
+  "Market Before Buying",
+  "Once You Own It",
+  "Smart Pricing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "The undisputed industry standard for both tasks is **AirDNA**. \n\nHowever, because setting nightly pricing (dynamic pricing) and analyzing a market before buying (market research) require two slightly different workflows, the \"best\" tool depends on which phase you are in, though AirDNA covers both well.\n\nHere is the breakdown of the best tools for each use case and why.\n\n---\n\n### 1. Best for Analyzing a Market Before Buying: **AirDNA**\nIf you are looking to purchase a property and want to know its revenue potential, occupancy rate, and seasonal trends, **AirDNA** is the gold standard.\n\n*   **Key Features:**\n    *   **Rentalizer:** You can plug in a specific address (or a hypothetical one) and AirDNA estimates its annual revenue, average daily rate (ADR), and occupancy based on comparable properties nearby.\n    *   **MarketMinder:** Allows you to zoom out and look at entire zip codes or cities. You can see total active listings, annual revenue growth, and how seasonality affects the market.\n    *   **Investability Score:** Ranks neighborhoods based on cap rates, rental demand, and home prices.\n*   **Best Alternative:** **Mashvisor** or **Rabbu**. These are slightly more focused on traditional long-term rentals + short-term rentals combined, making them great for real estate investors looking at the big financial picture.\n\n### 2. Best for Setting Nightly Pricing (Once You Own It): **PriceLabs** or **Beyond**\nOnce you own the property and want to maximize your revenue day-to-day, you need a **dynamic pricing tool**. These tools automatically adjust your rates every night based on supply, demand, seasonality, day of the week, and local events.\n\n*   **PriceLabs (The Pro Choice):** Widely considered the best dynamic pricing tool on the market for experienced hosts. It offers incredible customization, neighborhood data, and portfolio analytics. It charges a flat monthly fee per listing (usually around $20/month), which is great if you have high-earning properties because you keep 100% of the upside.\n*   **Beyond (The Beginner-Friendly Choice):** Very similar to PriceLabs, but instead of a flat fee, they charge a commission-based percentage (around 1% of your booking revenue). It has a slightly easier learning curve for beginners.\n*   *Note:* Airbnb also has a built-in \"Smart Pricing\" tool, but **most experienced hosts advise against using it**. Airbnb's tool tends to price properties too low to ensure quick bookings, prioritizing Airbnb's commission over your revenue.\n\n---\n\n### The Ultimate Strategy\n\nIf you are serious about succeeding in short-term rentals, use a combination of these tools:\n\n1.  **Before Buying:** Use **AirDNA** to run numbers on 10–20 properties in your target market to find the one with the best projected ROI.\n2.  **After Buying:** Connect your property management system (PMS) or Airbnb account to **PriceLabs** to automate your nightly rates and squeeze every dollar possible out of your calendar.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
