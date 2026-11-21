@@ -1,0 +1,62 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-21_segment_dentists_pleasanton_gemini",
+ "date_utc": "2026-11-21",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "IPkBa6KIDei5vMcPxf2y8Q0",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 479,
+   "totalTokenCount": 501,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Priorities/Vibe",
+  "Pleasanton Aesthetic Dentistry (Dr. Christina Wilke)",
+  "Artistic Smiles Dental (Dr. Mohinder Garg)",
+  "Friendly Smiles Dental",
+  "Pleasanton Dental (Dr. Shadi Heidari)",
+  "Your Insurance",
+  "Delta Dental",
+  "MetLife",
+  "Main Street",
+  "Stoneridge Mall",
+  "Pleasanton Aesthetic Dentistry",
+  "Dr. Christina Wilke",
+  "Artistic Smiles Dental",
+  "Dr. Mohinder Garg",
+  "Pleasanton Dental",
+  "Dr. Shadi Heidari"
+ ],
+ "engine_stated_criteria": [
+  "Your Insurance"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "To help you find the right dental practice in Pleasanton for a checkup and cleaning, I need to know a little more about your preferences. \n\nPleasanton has dozens of reputable dentists, but practices can vary significantly based on what you are looking for. Could you tell me:\n\n1. **Your Insurance:** Do you have dental insurance (e.g., Delta Dental, MetLife, Cigna), and do you need a practice that is **in-network**, or are you paying out-of-pocket/using a PPO?\n2. **Priorities/Vibe:** Are you looking for a **family-friendly** office, a **modern/tech-forward** practice, or a **holistic/biological** dentist?\n3. **Location:** Do you prefer something downtown near Main Street, near the Stoneridge Mall area, or closer to your neighborhood?\n\n---\n\nIn the meantime, here are a few well-regarded dental practices in Pleasanton known for routine checkups and cleanings, along with *why* patients choose them:\n\n*   **Pleasanton Aesthetic Dentistry (Dr. Christina Wilke)**\n    *   *Why call:* Highly rated for a welcoming, patient-first approach. Patients frequently praise the gentle hygienists and modern, clean office environment, making it great for routine cleanings, especially if you have mild dental anxiety.\n*   **Artistic Smiles Dental (Dr. Mohinder Garg)**\n    *   *Why call:* Known for efficiency, thorough preventative care, and accommodating scheduling. They use up-to-date technology and are often praised for explaining procedures clearly without pushing unnecessary treatments.\n*   **Friendly Smiles Dental**\n    *   *Why call:* As the name suggests, they focus heavily on a warm, family-friendly atmosphere. They accept a wide variety of insurance plans and are a solid choice if you need a reliable, straightforward dental home for routine care.\n*   **Pleasanton Dental (Dr. Shadi Heidari)**\n    *   *Why call:* Frequently commended for comprehensive preventative care, thorough cleanings, and a very communicative staff that takes time to answer questions during checkups.\n\n**Next Step:** Let me know your insurance or specific preferences from the list above, and I can narrow down the best specific options for you!",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

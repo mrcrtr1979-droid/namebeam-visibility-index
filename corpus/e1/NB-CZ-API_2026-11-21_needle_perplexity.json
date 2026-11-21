@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-21_needle_perplexity",
+ "date_utc": "2026-11-21",
+ "business": "Needle",
+ "niche": "AI marketing tool for DTC brands",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best AI marketing tool for DTC brands?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8cccd4ca-02b9-46c1-812c-f2b32c20dbad",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00065,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00437
+   },
+   "input_tokens": 4864,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4318,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 261,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5125
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Email and SMS retention",
+  "Product copy and basic store content",
+  "Paid-media optimization",
+  "Klaviyo",
+  "Shopify",
+  "Email and SMS",
+  "Shopify Magic",
+  "Meta Ads",
+  "Meta",
+  "AI Features",
+  "Ad creative",
+  "Motion",
+  "Ad creative production",
+  "SMS Retention",
+  "Arcads"
+ ],
+ "engine_stated_criteria": [
+  "For most DTC brands, Klaviyo is the best all-around starting point"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "79598ab5791115a88bd6af124948e6a6b4af8b9f14e90a45ebc3cc2242e03764",
+ "answer_chars": 858,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "4086b973bb1f95c0ea5e1a066f332da9bd0713bdea4f7e118866701111e92c85",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

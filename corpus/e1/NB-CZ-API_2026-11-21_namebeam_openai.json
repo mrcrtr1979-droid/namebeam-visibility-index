@@ -1,0 +1,54 @@
+{
+ "check_id": "NB-CZ-API_2026-11-21_namebeam_openai",
+ "date_utc": "2026-11-21",
+ "business": "Namebeam",
+ "niche": "ai visibility checks",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best service to check if AI engines like ChatGPT recommend my small business?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EmkmpqmMGOmHuhJtiWH0H2F0SDsB2",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 575,
+   "total_tokens": 599,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 156,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "OtterlyAI",
+  "Peec AI",
+  "Profound",
+  "Semrush AI Visibility / similar SEO-suite tools",
+  "Google AI Overviews",
+  "Semrush AI Visibility",
+  "SEO-suite",
+  "Semrush",
+  "AI Overviews",
+  "Already use Semrush",
+  "Semrush AI"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a small business, I’d start with **OtterlyAI** or **Peec AI**.\n\n- **OtterlyAI** — best practical choice for many small businesses. It monitors how brands appear across ChatGPT, Google AI Overviews, Perplexity, Gemini, and similar tools, and is relatively approachable for non-enterprise teams.\n- **Peec AI** — strong if you want more detailed “AI search visibility” reporting: which prompts mention you, competitors appearing instead, cited sources, and changes over time.\n- **Profound** — excellent, but generally better suited to larger companies with bigger budgets and teams.\n- **Semrush AI Visibility / similar SEO-suite tools** — worth considering if you already use Semrush and want AI visibility alongside traditional SEO, rather than a dedicated platform.\n\n### My recommendation\nIf you want one answer: **try OtterlyAI first** for an SMB.  \nIf competitive analysis and deeper reporting matter more than simplicity: **try Peec AI**.\n\n### Important limitation\nNo service can reliably tell you whether *every individual* ChatGPT user is recommended your business. AI responses can vary by location, account, conversation history, model version, and wording. These platforms typically test a controlled set of prompts repeatedly, such as:\n\n- “Best accountant for small businesses in [city]”\n- “Who installs heat pumps near [postcode]?”\n- “Best wedding photographer in [region]”\n- “Alternatives to [competitor]”\n\nThe useful signals are:\n\n1. Whether your business is mentioned.\n2. How often it is mentioned versus competitors.\n3. Whether the AI links to your site or cites third-party sources.\n4. Which sites the AI relies on when recommending competitors.\n5. Whether your visibility improves over time.\n\nFor a local business, make sure any tool supports **location-specific prompts** and tracks not only ChatGPT but also **Google AI Overviews** and **Perplexity**—those may drive more discovery traffic than ChatGPT alone.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

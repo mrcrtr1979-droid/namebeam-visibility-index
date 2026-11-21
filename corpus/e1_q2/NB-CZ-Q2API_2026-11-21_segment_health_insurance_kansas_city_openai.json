@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-21_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-11-21",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EmlXWpz1xknFi77DoR6QyeSFbB5zt",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1480,
+   "total_tokens": 1508,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 430,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bukaty Companies",
+  "Lockton",
+  "CBIZ Benefits & Insurance Services",
+  "Employer coverage and more hands-on regional service",
+  "IMA Financial Group",
+  "Individual/family ACA marketplace plan",
+  "CoverKC",
+  "Missouri CLAIM",
+  "Kansas SHICK",
+  "Start with CoverKC",
+  "HealthCare.gov",
+  "Bukaty",
+  "CBIZ",
+  "IMA",
+  "Medicare",
+  "Employer",
+  "One",
+  "CBIZ Benefits",
+  "Medicaid",
+  "Medicare Advantage",
+  "Part D",
+  "National Producer Number",
+  "ACA Marketplace",
+  "In Missouri",
+  "Marketplace Plans",
+  "SHICK",
+  "CLAIM",
+  "Kansas Side",
+  "Family ACA",
+  "Missouri Residents",
+  "Kansas Residents"
+ ],
+ "engine_stated_criteria": [
+  "your own/family coverage, Medicare coverage, or employer coverage",
+  "Are you licensed in Missouri, Kansas, or both?",
+  "Which insurance companies do you represent for my specific ZIP code?",
+  "Are you independent, and can you show plans from carriers you do not represent?",
+  "How are you paid—carrier commission, fees, or both?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "The right broker depends heavily on whether you’re buying **your own/family coverage, Medicare coverage, or employer coverage**—and on whether your home address is on the Missouri or Kansas side. Kansas City plans and networks can differ a lot by ZIP code.\n\nHere’s a practical call list I’d use, without assuming one firm is automatically “best.”\n\n| If you need… | Call | Why |\n|---|---|---|\n| **Small- or mid-sized employer health benefits** | **Bukaty Companies** (Leawood/Kansas City area) | Long-established local employee-benefits brokerage; useful for comparing group medical, dental, vision, HSA, and level-funded/self-funded options. |\n| **Employer plan; especially 50+ employees or complex benefits** | **Lockton** (Kansas City headquarters) | One of the largest benefits brokers in the country and based in KC; strongest fit for larger employers, compliance, analytics, pharmacy-benefit review, and multi-state employees. |\n| **Employer coverage, nonprofit/public-sector, or a second competitive quote** | **CBIZ Benefits & Insurance Services** (Kansas City) | Broad employee-benefits practice and useful as an independent comparison to Bukaty or Lockton. |\n| **Employer coverage and more hands-on regional service** | **IMA Financial Group** (Kansas City office) | A substantial independent brokerage with employee-benefits expertise; worth including if you want alternatives to the very largest national firms. |\n| **Individual/family ACA marketplace plan** | **CoverKC** | Not a broker—it provides enrollment help—but it is a good first call because its assistance is designed to be impartial. They can help determine ACA subsidy eligibility, Medicaid/CHIP eligibility, and whether an off-marketplace plan makes sense. |\n| **Medicare Advantage, Part D, or Medigap** | **Missouri CLAIM** (Missouri residents) or **Kansas SHICK** (Kansas residents) | Also not brokers, but these are free, unbiased Medicare counseling programs. Use them before talking to agents, especially if an agent is pushing one carrier or one Medicare Advantage plan. |\n\n## My recommended sequence\n\n### If you are buying coverage for yourself or your family\n1. **Start with CoverKC** to check ACA subsidies and available Marketplace plans.\n2. Then call **two independent licensed brokers/agencies**, not just one carrier’s agent.\n3. Compare their recommendations against the plans shown on **HealthCare.gov**.\n\nA broker can be helpful, but remember: many brokers are paid by the insurers they represent and may not contract with every carrier. Ask directly which carriers they can sell in your ZIP code.\n\n### If you are choosing Medicare coverage\n1. Talk with **Missouri CLAIM** or **Kansas SHICK** first.\n2. Then interview at least **two Medicare agents/brokers** and require each to give you a written carrier list and explain whether they represent all major carriers available in your county.\n3. Do not choose based only on premium, dental/vision allowances, or a grocery-card-style benefit. Check doctors, hospitals, prescriptions, prior authorization rules, and annual out-of-pocket maximum.\n\n### If you are an employer\n- For **2–50 employees**, call **Bukaty**, **CBIZ**, and **IMA**.\n- For **50+ employees**, add **Lockton**.\n- Ask each firm to quote the same census and plan design so you can compare their market access and service—not just different benefit packages.\n\n## Questions to ask every broker\n\nUse these on the first call:\n\n1. **Are you licensed in Missouri, Kansas, or both?**\n2. **Which insurance companies do you represent for my specific ZIP code?**\n3. **Are you independent, and can you show plans from carriers you do not represent?**\n4. **How are you paid—carrier commission, fees, or both?**\n5. **Will you compare Marketplace plans and off-Marketplace plans, if I’m buying individual coverage?**\n6. **Can you check whether my doctors, hospitals, prescriptions, and preferred pharmacies are in-network and covered?**\n7. **Who handles service after enrollment—claims issues, billing problems, special enrollment events, and renewals?**\n8. **Can you give me your National Producer Number (NPN) and a written summary of your recommendation?**\n\n## One important Kansas City caution\n\nDo not assume a broker familiar with “Kansas City” can sell or properly advise on both sides of the state line. A Kansas City, Missouri resident and a Kansas City, Kansas resident may have different carriers, Medicaid rules, provider networks, and subsidy considerations. Confirm the broker is licensed for your **actual residential state**.\n\nIf you tell me:\n- your ZIP code or Missouri/Kansas side,\n- whether this is individual/family, Medicare, or employer coverage,\n- your age range,\n- whether you need specific doctors/hospitals covered, and\n- whether you qualify for employer coverage,\n\nI can narrow this to the best 2–3 calls and give you a broker-interview checklist tailored to your situation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

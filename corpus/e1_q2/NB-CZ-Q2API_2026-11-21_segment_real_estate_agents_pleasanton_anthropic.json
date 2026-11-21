@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-21_segment_real_estate_agents_pleasanton_anthropic",
+ "date_utc": "2026-11-21",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to sell my house in Pleasanton. Which specific real estate agents should I call, and why?",
+ "q1_prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_yg23y3c5g5cztk6uvia7t7lpzy75y2qgrcbsjvan5szmbvpg22ta",
+  "usage": {
+   "input_tokens": 30,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 262,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Good practice",
+  "In Pleasanton",
+  "Check Zillow"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I don't have current data on specific agents in Pleasanton, so I can't recommend particular people by name. But here's how to find good ones:\n\n**Research approaches:**\n- Check Zillow, Redfin, or Realtor.com for top agents in Pleasanton (sorted by sales volume, reviews)\n- Look at recent sales in your neighborhood to see who's active there\n- Ask neighbors who've sold recently\n- Check local Pleasanton Facebook groups for recommendations\n\n**What to evaluate:**\n- Local market expertise (how well they know Pleasanton specifically)\n- Recent sales history in your price range/area\n- Client reviews and ratings\n- Commission structure and services offered\n- Whether they're full-time agents with established practices\n\n**Good practice:**\n- Interview 2-3 agents before deciding\n- Ask about their marketing strategy for your home\n- Check their track record on days-on-market and sale prices\n\nSince Pleasanton's market changes, current agent performance matters more than any recommendation I could give. The agents with the best recent reviews and local sales activity in your neighborhood are usually your best bet.\n\nWould you like suggestions on what specific questions to ask agents during interviews?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

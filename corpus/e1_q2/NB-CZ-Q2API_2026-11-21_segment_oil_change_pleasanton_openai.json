@@ -1,0 +1,66 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-21_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-21",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EmlcDgad2iNsDFckO3kVEZ4Fe9ptp",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1222,
+   "total_tokens": 1250,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 356,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jiffy Lube — Pleasanton",
+  "Valvoline Instant Oil Change — Dublin",
+  "SpeeDee",
+  "Jiffy Lube",
+  "Valvoline",
+  "Oil change plus tire/brake concern",
+  "Firestone",
+  "Big O",
+  "SpeeDee Oil Change",
+  "Auto Service",
+  "Dublin",
+  "EV-with-engine",
+  "Valvoline Instant Oil Change",
+  "Firestone Complete Auto Care",
+  "Big O Tires",
+  "European",
+  "SpeeDee Oil Change & Auto Service"
+ ],
+ "engine_stated_criteria": [
+  "Your vehicle’s local dealership service department — Pleasanton/Dublin area",
+  "Normal daily driver and you want balanced service"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Assuming you mean Pleasanton, California, I’d call these in this order—depending on whether you prioritize speed, price, or a more thorough inspection:\n\n1. **SpeeDee Oil Change & Auto Service — Pleasanton**\n   - **Why call:** Usually a good middle ground between a drive-through quick-lube shop and a full repair garage. They can typically handle synthetic oil changes, filters, fluid checks, and basic maintenance inspections.\n   - **Best for:** You want an oil change but also want someone to flag worn brakes, leaks, tires, or overdue maintenance without necessarily going to a dealer.\n   - **Ask:** “Can you quote the out-the-door price for a full-synthetic oil change for my year/make/model, including filter, shop fees, and tax? Do I need an appointment?”\n\n2. **Jiffy Lube — Pleasanton**\n   - **Why call:** Convenient if you need a quick, routine oil change and want a location that commonly handles walk-ins.\n   - **Best for:** A straightforward oil-and-filter service when your car has no known issues.\n   - **Ask:** “Do you have the manufacturer-required oil specification for my car—for example, 0W-20 full synthetic, dexos, Euro-spec, etc.—and what is the total price?”  \n   - **Tip:** Decline extra services unless they can show they are due according to your owner’s manual or can document a problem.\n\n3. **Your vehicle’s local dealership service department — Pleasanton/Dublin area**\n   - **Why call:** This is often the safest choice for newer, leased, luxury, hybrid, EV-with-engine, or warranty-covered vehicles. Dealers reliably use the exact oil specification and reset maintenance reminders correctly.\n   - **Best for:** Toyota/Lexus, Honda/Acura, BMW/Mercedes/Audi, Subaru, Tesla-range-extender/plug-in hybrids, or any vehicle still under a maintenance plan or warranty.\n   - **Ask:** “What is your current oil-change price for my VIN/model, and are there any factory service specials? Please quote oil, filter, labor, fees, and tax.”\n\n4. **Valvoline Instant Oil Change — Dublin**\n   - **Why call:** A nearby quick-service alternative if Pleasanton appointments are full. Many Valvoline locations let you stay in the car and are geared toward fast service.\n   - **Best for:** Speed and convenience, especially for a normal oil change with no repair concerns.\n   - **Ask:** “Do you stock the exact manufacturer oil approval for my vehicle, not just the viscosity?”\n\n5. **Firestone Complete Auto Care or Big O Tires — Pleasanton/Dublin area**\n   - **Why call:** Worth considering if you also need tires, brakes, alignment, battery testing, or a more comprehensive vehicle inspection.\n   - **Best for:** Combining the oil change with other maintenance rather than making multiple appointments.\n   - **Ask:** “Can you perform the oil change to factory spec and inspect brakes/tires without doing additional work unless you call me first?”\n\n### My practical recommendation\n- **Newest car, European/luxury car, hybrid, lease, or warranty concern:** call the **dealer first**.\n- **Normal daily driver and you want balanced service:** call **SpeeDee** first.\n- **Need it done today with minimum hassle:** call **Jiffy Lube** or **Valvoline**.\n- **Oil change plus tire/brake concern:** call **Firestone** or **Big O**.\n\n### Before authorizing service\nHave your **year, make, model, engine size/trim, mileage, and VIN** available. Confirm:\n- exact oil viscosity and manufacturer approval;\n- conventional vs. synthetic vs. high-mileage synthetic;\n- filter brand/type;\n- total **out-the-door** price;\n- whether they reset the maintenance reminder;\n- whether they will return or show you the old filter if requested.\n\nFor most modern cars in the Bay Area, expect a full-synthetic oil change to commonly land somewhere around **$80–$160+**, with European, diesel, high-capacity, or specialty-oil vehicles often costing more.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

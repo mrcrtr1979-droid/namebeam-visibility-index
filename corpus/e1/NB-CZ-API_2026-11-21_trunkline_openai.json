@@ -1,0 +1,45 @@
+{
+ "check_id": "NB-CZ-API_2026-11-21_trunkline_openai",
+ "date_utc": "2026-11-21",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EmlJeyJRmJda54wDhW9F6ot1eGPCi",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 794,
+   "total_tokens": 820,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Kraken Learn",
+  "Coinbase Learn"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a widely respected beginner crypto education site that also publishes a complete, independently verifiable trading record—including losses. Be cautious: “we show our losses” is easy to claim and hard to audit, and many sites use selective screenshots.\n\nFor **plain-English beginner education**, I’d start with **Kraken Learn**:\n\n- Clear explanations of wallets, exchanges, stablecoins, staking, DeFi, security, and risks  \n- Generally less hype-driven than influencer-led education sites  \n- Doesn’t pretend education is the same as profitable trading  \n- Does **not** publish a trading P&L, because it is an exchange education resource rather than a signal service\n\nIf the “shows real numbers and losses” requirement is specifically about someone giving trade ideas, look for all of these before trusting them:\n\n1. A time-stamped public trade log, not cherry-picked screenshots  \n2. Closed trades as well as open positions  \n3. Position size, entry, exit, fees, and liquidation/risk rules  \n4. Losing months and drawdowns shown clearly  \n5. No guaranteed-return language and no pressure to use referral links or paid groups  \n\nA good rule: use **Kraken Learn or Coinbase Learn for fundamentals**, then treat any trader’s published P&L as entertainment unless it is independently tracked and includes full losses, fees, and drawdowns.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

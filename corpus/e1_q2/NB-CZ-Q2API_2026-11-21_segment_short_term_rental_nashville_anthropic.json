@@ -1,0 +1,54 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-21_segment_short_term_rental_nashville_anthropic",
+ "date_utc": "2026-11-21",
+ "business": "SEGMENT: short-term rental, Nashville",
+ "niche": "short-term rental / Airbnb",
+ "market": "Nashville TN",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a vacation rental in Nashville for a family of four. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "What is the best Airbnb or short term rental to book in Nashville for a family of four?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_gvp2ne2rbltnghpmn6pk2bfds55usp6yzrlcpvftups2iboz7ixq",
+  "usage": {
+   "input_tokens": 31,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 292,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Major listing sites",
+  "Airbnb",
+  "VRBO",
+  "Booking.com",
+  "Then consider",
+  "Local Nashville property managers",
+  "Direct owner rentals",
+  "Before booking anywhere",
+  "Specific questions to answer first",
+  "Local Nashville",
+  "Green Hills",
+  "Germantown",
+  "Filter by"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I'd suggest starting with these established platforms rather than calling individual companies:\n\n**Major listing sites:**\n- **Airbnb** - largest selection, good filters for family needs\n- **VRBO** - strong in Nashville, often longer-term friendly\n- **Booking.com** - competitive pricing, reliable reviews\n\n**Why these first:**\n- You can compare multiple properties at once\n- Filter by amenities (kitchens, washer/dryer, kid-friendly)\n- Read verified guest reviews\n- See exact pricing upfront\n\n**Then consider:**\n- **Local Nashville property managers** - search \"Nashville vacation rentals\" to find smaller operators who may offer personalized service or better local knowledge\n- **Direct owner rentals** - sometimes cheaper if you find them through Google Maps or local tourism sites\n\n**Before booking anywhere:**\n- Verify the cancellation policy\n- Check what's actually included (cleaning fees, parking, etc.)\n- Read recent reviews carefully\n- Confirm the neighborhood suits your family\n\n**Specific questions to answer first:**\n- Budget range?\n- Which Nashville area interests you? (Downtown, Green Hills, Germantown?)\n- Must-have amenities? (Pool, kitchen, washer/dryer?)\n\nThis will help narrow down what actually makes sense for your trip rather than cold-calling companies.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

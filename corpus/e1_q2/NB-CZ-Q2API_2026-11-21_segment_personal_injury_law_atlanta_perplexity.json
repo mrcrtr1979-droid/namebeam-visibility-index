@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-21_segment_personal_injury_law_atlanta_perplexity",
+ "date_utc": "2026-11-21",
+ "business": "SEGMENT: personal injury law, Atlanta",
+ "niche": "personal injury attorneys",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Atlanta after a car accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Atlanta for a car accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7ce5f5df-207e-431c-90e9-b124ed1634ea",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00077,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00157,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00498
+   },
+   "input_tokens": 3619,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3061,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 627,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4246
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Hall & Lampros, LLP — 404-876-8100",
+  "Johnson & Ward — 404-253-7862",
+  "John Foy & Associates — 404-400-4000",
+  "Butler Kahn — 678-940-1444",
+  "Gary Martin Hays & Associates — 470-294-1674",
+  "John Foy",
+  "Associates",
+  "Butler Kahn",
+  "Its Atlanta",
+  "Gary Martin Hays",
+  "John Foy & Associates",
+  "Gary Martin Hays & Associates",
+  "Johnson & Ward"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "01fea5c3f66f8f4533a4da8169e8140ba47332106a7f1cec131cc79bc52af022",
+ "answer_chars": 2262,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "3982e82399d463acbc0054084112ff0ab912872896cd50ec678f14746282feb4",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

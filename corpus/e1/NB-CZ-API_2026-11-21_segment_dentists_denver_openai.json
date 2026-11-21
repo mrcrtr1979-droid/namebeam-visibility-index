@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-API_2026-11-21_segment_dentists_denver_openai",
+ "date_utc": "2026-11-21",
+ "business": "SEGMENT: dentists, Denver",
+ "niche": "dentists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Denver for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EmkWB9ULju6YzE3UDnrPzofEDtWKk",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 445,
+   "total_tokens": 463,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 86,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Prosthodontist",
+  "Oral & maxillofacial surgeon",
+  "ABOMS",
+  "ABP",
+  "American Board of Prosthodontics",
+  "D CBCT",
+  "American Academy of Periodontology",
+  "American College of Prosthodontists",
+  "Oral and Maxillofacial Surgeons"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” implant dentist in Denver—the right choice depends on whether you need extraction, bone grafting, sinus lift, or a straightforward implant crown.\n\nFor the highest level of specialty training, look for a Denver-area:\n\n- **Prosthodontist** — specializes in planning and restoring implants/crowns; often ideal for complex cosmetic or bite-related cases.\n- **Oral & maxillofacial surgeon** or **periodontist** — specializes in surgical placement, extractions, grafting, and complex anatomy.\n- Ideally, choose a practice where the surgical specialist and restoring dentist plan the case together.\n\nBefore choosing, verify that the clinician:\n1. Uses **3-D CBCT imaging** for planning.\n2. Places implants regularly—not just occasionally.\n3. Can show comparable before/after cases.\n4. Gives a written, itemized estimate including implant, abutment, crown, grafting, scans, and follow-ups.\n5. Explains the implant system/brand and long-term maintenance.\n6. Has specialty-board credentials, such as **ABOMS** (oral surgeon), **ABP** (periodontist), or **American Board of Prosthodontics**.\n\nUseful directories for Denver:\n- American College of Prosthodontists: **gotoapro.org**\n- American Academy of Periodontology “Find a Periodontist”: **perio.org**\n- American Association of Oral and Maxillofacial Surgeons finder: **myoms.org**\n\nIf you tell me your Denver neighborhood, whether you need a single tooth or full-arch work, and whether you have insurance/budget constraints, I can help narrow down what type of provider to seek and questions to ask at consultations.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

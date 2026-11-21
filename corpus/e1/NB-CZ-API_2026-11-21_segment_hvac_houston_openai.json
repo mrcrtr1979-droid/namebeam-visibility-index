@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-API_2026-11-21_segment_hvac_houston_openai",
+ "date_utc": "2026-11-21",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EmjqkhtE30KzudvFeZVlDgLFolLyZ",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 414,
+   "total_tokens": 432,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 113,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "John Moore Services",
+  "Air Tech of Houston",
+  "Richmond’s Air",
+  "Mission Air Services",
+  "The Cool Guys",
+  "TACLB",
+  "Houston HVAC",
+  "Texas HVAC",
+  "AC repair",
+  "John Moore",
+  "Greater Houston",
+  "AC repair specifically"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” Houston AC repair company—it depends on your area, urgency, system type, and budget. But for a dependable starting shortlist, Houston homeowners commonly consider established companies such as:\n\n- **John Moore Services** — large local provider, broad availability, including plumbing/electrical; often a good fit for urgent or full-system needs.\n- **Air Tech of Houston** — long-running Houston HVAC company with a strong local reputation for residential service.\n- **Richmond’s Air** — well-regarded for HVAC repair and replacement in the greater Houston area.\n- **Mission Air Services** — another established option for repair, maintenance, and installation.\n- **The Cool Guys** — often mentioned for residential AC service and straightforward repair work.\n\nFor an AC repair specifically, I’d choose the company that can clearly provide:\n\n1. A valid Texas HVAC contractor license (**TACLB**).\n2. Written diagnostic/repair pricing before work begins.\n3. A parts-and-labor warranty.\n4. Recent reviews from customers in your specific Houston-area neighborhood.\n5. No-pressure explanation of whether repair or replacement is actually warranted.\n\nGet at least two estimates if the repair is more than a few hundred dollars—especially for refrigerant leaks, compressor issues, evaporator coils, or a recommendation to replace the system. For a no-cooling emergency, prioritize a licensed company with same-day service and transparent diagnostic fees over the lowest advertised coupon.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

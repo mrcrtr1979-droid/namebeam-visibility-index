@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-21_segment_personal_injury_law_columbus_perplexity",
+ "date_utc": "2026-11-21",
+ "business": "SEGMENT: personal injury law, Columbus",
+ "niche": "personal injury attorneys",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Columbus after a car accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Columbus Ohio for a car accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_11be9dd0-cfb0-49c0-b9ab-2847fd6d81a9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00137,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00501
+   },
+   "input_tokens": 4567,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4009,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 546,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5113
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Rourke & Blumenthal",
+  "The Donahey Law Firm",
+  "Bressman Law",
+  "The Jones Firm",
+  "Brian G. Miller Law",
+  "Car-accident",
+  "Handles"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "11ada1792aec640d208d3a7f57cb9482644cb58cd2481eafad29fbc2123d1af2",
+ "answer_chars": 1938,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "ce3f870c4fff077695d3e37423fff93d29b8754c1b99f6b9d5208a93b8e5ef17",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}
