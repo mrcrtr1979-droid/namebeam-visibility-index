@@ -1,0 +1,76 @@
+{
+ "check_id": "NB-CZ-API_2026-11-22_segment_property_management_fort_lauderdale_perplexity",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: property management, Fort Lauderdale",
+ "niche": "property management companies",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best property management company in Fort Lauderdale FL for a rental home?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_c653cf1e-c252-4660-9dee-0d82f06a279e",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00113,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00458
+   },
+   "input_tokens": 5065,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4515,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 325,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5390
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "TORO Advisors",
+  "Best Florida Property Management",
+  "Compare Fort Lauderdale",
+  "Fort Lauderdale Property Management"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "d6d8113ed684d366a03a65757a436fe3a512ecbdf78cfde6c6658a4d5dbbb588",
+ "answer_chars": 1146,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "50b9a2fc6192956e15d37d82d2dec42cfe0a3e1a8714b59e1ab8c9c0d77f7dff",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

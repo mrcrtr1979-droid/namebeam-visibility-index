@@ -1,0 +1,62 @@
+{
+ "check_id": "NB-CZ-API_2026-11-22_segment_hvac_phoenix_openai",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-En6Hauo9rCnH9XXF3zT85iArxPEgE",
+  "usage": {
+   "prompt_tokens": 20,
+   "completion_tokens": 438,
+   "total_tokens": 458,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 140,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Hobaica Services",
+  "Parker & Sons",
+  "George Brazil Air Conditioning & Heating",
+  "Penguin Air, Plumbing & Electrical",
+  "Arizona Registrar of Contractors (ROC)",
+  "Phoenix-area HVAC",
+  "George Brazil Air Conditioning",
+  "Valley",
+  "Night Air Conditioning",
+  "Penguin Air",
+  "Arizona ROC",
+  "Registrar of Contractors",
+  "Air Conditioning",
+  "AC repair",
+  "Arizona Registrar of Contractors",
+  "Day & Night",
+  "Day & Night Air",
+  "Night Air",
+  "George Brazil"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company for all of Phoenix, but for AC repair I’d start by getting same-day estimates from a few long-established, licensed local companies such as:\n\n- **Hobaica Services** — long-running Phoenix-area HVAC company; often recommended for service and maintenance.\n- **Parker & Sons** — large local provider with broad availability, including urgent repairs.\n- **George Brazil Air Conditioning & Heating** — established Valley company; commonly used for repairs and maintenance plans.\n- **Day & Night Air Conditioning, Heating & Plumbing** — another established Phoenix-metro option.\n- **Penguin Air, Plumbing & Electrical** — larger Valley provider with HVAC repair availability.\n\nBefore booking, verify the specific branch/technician through the **Arizona Registrar of Contractors (ROC)** and compare **recent** Google reviews—not just the overall star average.\n\nFor the best outcome, ask each company:\n\n1. What is the diagnostic/service-call fee, and is it applied to the repair?\n2. Is the technician paid commission on replacements?\n3. Can they give a written repair-vs-replace comparison?\n4. Are parts and labor warranties included?\n5. What is the exact Arizona ROC license number?\n\nIf the repair quote is over roughly **$1,000–$1,500**, or anyone immediately recommends replacing the full system, get a second opinion—especially during Phoenix summer when replacement pressure can be high.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

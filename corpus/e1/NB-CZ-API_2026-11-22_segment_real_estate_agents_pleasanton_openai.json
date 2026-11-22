@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-API_2026-11-22_segment_real_estate_agents_pleasanton_openai",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: real estate agents, Pleasanton",
+ "niche": "real estate agents",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in Pleasanton CA to sell my house?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-En6h58KUp75qscqhjksObD7wfS9Q3",
+  "usage": {
+   "prompt_tokens": 22,
+   "completion_tokens": 540,
+   "total_tokens": 562,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 130,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Strong list-to-sale-price ratio",
+  "Low days on market",
+  "Ruby Hill",
+  "Kottinger Ranch",
+  "Vintage Hills",
+  "Recent Pleasanton"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” agent for every Pleasanton home—the right choice depends heavily on your neighborhood, price point, condition, and whether you prioritize maximum price, speed, or low hassle.\n\nFor a Pleasanton seller, I’d shortlist agents who can prove all of the following with **recent Pleasanton-only sales**—not just Tri-Valley marketing:\n\n1. **At least 8–15 Pleasanton listings closed in the last 12 months**\n2. **Strong list-to-sale-price ratio** compared with similar homes—not inflated by overpricing\n3. **Low days on market** for comparable properties\n4. Experience selling in your specific area—e.g., Ruby Hill, Kottinger Ranch, Birdland, Vintage Hills, Stoneridge, Downtown, etc.\n5. A clear plan for prep, photography/video, staging, broker outreach, offer strategy, and inspections\n6. References from sellers of homes similar to yours\n\nAsk each candidate for this exact information:\n\n> “Please show me your last 10 Pleasanton listings similar to mine: original list price, final sale price, days on market, price reductions, and what you personally did to market each one.”\n\nBe cautious of an agent who:\n- Promises the highest price without comparable-sales evidence  \n- Pushes a low commission but has weak marketing or limited local listing experience  \n- Uses generic Zillow/portal exposure as their whole marketing plan  \n- Cannot explain their pricing and offer-review strategy  \n\nA practical approach is to interview **three agents**: one high-volume Pleasanton listing specialist, one strong neighborhood specialist, and one agent referred by a recent seller whose house was similar to yours. Compare their proposed list price, net sheet, marketing calendar, communication plan, and recent results—not just their commission rate.\n\nIf you share your approximate neighborhood, home type, bedroom/bath count, estimated value range, and timeline, I can help you build a targeted interview shortlist and evaluate the agents you’re considering.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

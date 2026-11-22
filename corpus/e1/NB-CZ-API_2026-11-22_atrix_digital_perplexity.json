@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-11-22_atrix_digital_perplexity",
+ "date_utc": "2026-11-22",
+ "business": "Atrix Digital",
+ "niche": "AI marketing agency",
+ "market": "Los Angeles CA",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best AI marketing agency in Los Angeles?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_cba88e6c-e6bb-44ba-8032-d247e3cefab6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00051,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00421
+   },
+   "input_tokens": 4773,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4228,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 203,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4976
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Tack Media",
+  "Slicedbread",
+  "LAv1",
+  "AI-focused",
+  "AI-supported",
+  "AI marketing",
+  "AI marketing agency",
+  "AI marketing agency in Los Angeles",
+  "AI Search"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "1e916ae5293c78ad8fc9c4abebde11e2757d38489b2e3617274e6fe46ed846ef",
+ "answer_chars": 662,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "aa9ee71c07b6c1f2f6b887c86d892a2d8e41242e1ef81027478d560614a63ebb",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

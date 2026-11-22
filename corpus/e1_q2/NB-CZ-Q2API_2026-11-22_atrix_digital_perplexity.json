@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-22_atrix_digital_perplexity",
+ "date_utc": "2026-11-22",
+ "business": "Atrix Digital",
+ "niche": "AI marketing agency",
+ "market": "Los Angeles CA",
+ "row_type": "business",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need an AI marketing agency in Los Angeles. Which specific agencies should I call, and why?",
+ "q1_prompt_text": "Who is the best AI marketing agency in Los Angeles?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0c324cdc-e1ca-4b3d-93af-2f005500ec99",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00135,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00508
+   },
+   "input_tokens": 4912,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4358,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 539,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5451
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "ByteZero — Van Nuys",
+  "Contact",
+  "Los Angeles SEO Inc. — Los Angeles",
+  "Also worth a call",
+  "Digilign",
+  "ByteZero",
+  "Van Nuys",
+  "Los Angeles SEO Inc",
+  "Digital Marketing",
+  "AI-assisted",
+  "Santa Monica",
+  "AI marketing",
+  "AI Search",
+  "AI Search Optimization"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "d04c542c0c31672ea0c153c9312c9d63e0179149e7410df2d37b43ca80b25ab2",
+ "answer_chars": 2007,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "2cb1f8f70ba2bc67235e73bb7ca385b6ea6b2fd78c2b671d687561c82df2ae28",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

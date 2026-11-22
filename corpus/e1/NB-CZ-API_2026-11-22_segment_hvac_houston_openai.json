@@ -1,0 +1,60 @@
+{
+ "check_id": "NB-CZ-API_2026-11-22_segment_hvac_houston_openai",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-En6GRQOM5yplaDye9D6wCajksdHKa",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 412,
+   "total_tokens": 430,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 89,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "John Moore Services",
+  "Abacus Plumbing, Air Conditioning & Electrical",
+  "Air Tech of Houston",
+  "Mission Air Services",
+  "ARS/Rescue Rooter Houston",
+  "Texas Department of Licensing and Regulation (TDLR)",
+  "Large Houston-area",
+  "Abacus Plumbing",
+  "Air Conditioning",
+  "Established Houston",
+  "Local HVAC-focused",
+  "Houston-area HVAC",
+  "Rescue Rooter Houston",
+  "AC repair",
+  "Abacus",
+  "John Moore",
+  "Rescue Rooter"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company in Houston, but for AC repair, these are commonly well-known local options to compare:\n\n- **John Moore Services** — Large Houston-area company, broad availability, plumbing/electrical too; often a good choice for fast scheduling and service plans.\n- **Abacus Plumbing, Air Conditioning & Electrical** — Established Houston provider with 24/7/emergency-style service options and financing.\n- **Air Tech of Houston** — Local HVAC-focused company often considered for residential AC repair and replacement.\n- **Mission Air Services** — Houston-area HVAC company with a strong local-service focus.\n- **ARS/Rescue Rooter Houston** — Large operator that can be useful when you need prompt dispatch or after-hours service.\n\nFor the *best choice for your specific repair*, get 2–3 written estimates and choose a company that:\n\n1. Is licensed through the **Texas Department of Licensing and Regulation (TDLR)**.\n2. Gives a diagnostic fee and repair price in writing before work begins.\n3. Explains whether the issue is a repair, refrigerant leak, capacitor/contactors, drain line, blower motor, or compressor—rather than immediately pushing replacement.\n4. Includes labor and part warranty details.\n5. Has recent, local reviews—not just a high lifetime rating.\n\nIf your AC is blowing warm air, leaking water, freezing up, or will not start, prioritize a licensed company that can come out today; in Houston heat, speed and accurate diagnosis matter more than a generic “best” ranking.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

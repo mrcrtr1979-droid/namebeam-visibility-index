@@ -1,0 +1,78 @@
+{
+ "check_id": "NB-CZ-API_2026-11-22_segment_dentists_columbus_perplexity",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: dentists, Columbus",
+ "niche": "dentists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Columbus Ohio for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b5a0e6a6-a696-4fae-b8b3-8b013893539c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00055,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00417
+   },
+   "input_tokens": 4485,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3938,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 220,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4705
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Stoner Periodontics & Dental Implant Specialists",
+  "Implant & Oral Surgery of Columbus",
+  "Stoner Periodontics",
+  "Dental Implant Specialists",
+  "Oral Surgery of Columbus",
+  "Implant Specialists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "56fcccd07bd65df02366daa8b6c81dbad5c674cb577324c6b57c03483234e05e",
+ "answer_chars": 694,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "3ba074ef77e9fd09523d57ac8863cdd76be509e43fa6ce7c5462d6faa8f33877",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

@@ -1,0 +1,83 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-22_segment_orthodontists_dallas_openai",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: orthodontists, Dallas",
+ "niche": "orthodontists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Dallas. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Dallas for braces or Invisalign?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-En7ws1Z29lWVbTAyInHejBRIEy859",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1753,
+   "total_tokens": 1778,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 884,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Bigman Orthodontics — Dr. Farhad Bigman",
+  "Morrow, Lai & Kitterman Orthodontics",
+  "Dallas / Park Cities / Lakewood-area",
+  "Patel Orthodontics — Dr. Nimesh Patel",
+  "Adult wanting the least-visible option",
+  "American Association of Orthodontists (AAO) directory",
+  "American Board of Orthodontics",
+  "Bigman Orthodontics",
+  "Dr. Farhad Bigman",
+  "Preston Hollow",
+  "University Park",
+  "North Dallas",
+  "Morrow",
+  "Lai",
+  "Kitterman Orthodontics",
+  "Park Cities",
+  "Smiles",
+  "Dr. Dan",
+  "Dr. Dan German",
+  "Patel Orthodontics",
+  "Dr. Nimesh Patel",
+  "Far North Dallas",
+  "Telecom Corridor",
+  "Invisalign",
+  "Kitterman",
+  "Bigman",
+  "American Association of Orthodontists",
+  "Diamond",
+  "American Board of Orthodontics (ABO)",
+  "Platinum",
+  "American Association of Orthodontists (AAO)",
+  "Central Dallas"
+ ],
+ "engine_stated_criteria": [
+  "You live north of 635",
+  "You live central Dallas / Park Cities / Lakewood",
+  "Is the doctor an orthodontist",
+  "Is the orthodontist board-certified by the American Board of Orthodontics (ABO)?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For Dallas, I’d book **3–4 complimentary orthodontic consultations** rather than choosing from one website. A practical call list is:\n\n1. **Bigman Orthodontics — Dr. Farhad Bigman**\n   - Good first call if you’re in **Dallas, Preston Hollow, University Park, or North Dallas**.\n   - Why: orthodontics-focused practice rather than a general dentist offering aligners; typically a good fit for adults who want to compare discreet braces, ceramic braces, and Invisalign-style treatment.\n   - Ask specifically whether your case is suitable for aligners versus braces and who will do your routine adjustments.\n\n2. **Morrow, Lai & Kitterman Orthodontics**\n   - Strong option for **Dallas / Park Cities / Lakewood-area** patients.\n   - Why: established multi-orthodontist practice, which can be useful if you want a second opinion on a more complicated bite, crowding, impacted teeth, jaw discrepancy, or a teen’s treatment plan.\n   - Ask whether the doctor you consult with will remain your primary treating orthodontist.\n\n3. **Smiles by Dr. Dan — Dr. Dan German**\n   - Worth calling if you want an **adult-friendly, cosmetic-conscious** consultation in Dallas.\n   - Why: a useful comparison appointment for someone deciding between clear aligners, clear/ceramic braces, and traditional braces.\n   - Ask to see examples of cases similar to yours—not just simple before-and-after photos.\n\n4. **Patel Orthodontics — Dr. Nimesh Patel**  \n   - Particularly convenient if you’re closer to **Richardson, Plano, Far North Dallas, or the Telecom Corridor**.\n   - Why: another orthodontist-only comparison point, helpful if scheduling, financing, or proximity to work/school matters.\n   - Ask about total treatment time, attachment use with Invisalign, and what happens if refinements are needed.\n\n## If I were narrowing it down\n- **Adult wanting the least-visible option:** Bigman Orthodontics, Smiles by Dr. Dan, and Patel Orthodontics.\n- **Teen or potentially complex bite/jaw issue:** Morrow, Lai & Kitterman plus Bigman, then one additional opinion.\n- **You live north of 635:** Patel may be the most convenient starting point.\n- **You live central Dallas / Park Cities / Lakewood:** Bigman, Morrow/Lai/Kitterman, and Smiles by Dr. Dan are logical first calls.\n\n## What to ask each office\nUse the same questions so you can compare apples to apples:\n\n1. **Is the doctor an orthodontist**—a dentist who completed a formal orthodontic residency—not just a dentist who provides Invisalign?\n2. **Is the orthodontist board-certified by the American Board of Orthodontics (ABO)?** It is voluntary, but a good differentiator.\n3. “For my bite, would you personally recommend Invisalign, ceramic braces, or metal braces—and why?”\n4. “What is the **all-in fee**?” Confirm whether it includes:\n   - records/X-rays/scans\n   - attachments and aligners\n   - refinement trays\n   - broken bracket repairs\n   - retainers\n   - post-treatment follow-up\n5. “How often will I see the orthodontist personally?”\n6. “What is the expected treatment time, and what could make it longer?”\n7. “If Invisalign doesn’t track well, is switching to braces included or extra?”\n8. “Can you provide an insurance estimate and monthly-payment options?”\n\n## One important caution\nDon’t choose solely because an office calls itself an Invisalign “Diamond” or “Platinum” provider. Those labels largely reflect Invisalign case volume, not necessarily better diagnosis or better results. The more important question is whether the orthodontist can clearly explain **why** aligners or braces are best for your bite.\n\nBefore booking, verify the orthodontist’s current credentials through the **American Association of Orthodontists (AAO) directory** and, if important to you, the **American Board of Orthodontics** directory. Offices and staffing can change, so confirm that the named orthodontist is currently seeing new patients.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

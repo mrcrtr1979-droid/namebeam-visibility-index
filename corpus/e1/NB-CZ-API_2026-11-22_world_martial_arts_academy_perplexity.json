@@ -1,0 +1,76 @@
+{
+ "check_id": "NB-CZ-API_2026-11-22_world_martial_arts_academy_perplexity",
+ "date_utc": "2026-11-22",
+ "business": "World Martial Arts Academy",
+ "niche": "martial arts for kids",
+ "market": "St. Peters MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is a good martial arts school for kids in St. Peters MO?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_17847d25-47ab-4098-b2c8-a2d939fa89e6",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 4858,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4309,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 311,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5169
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "Gracie Barra Jiu-Jitsu St. Peters",
+  "ATA Martial Arts St. Peters",
+  "ATA Martial Arts",
+  "Gracie Barra"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "91ebc97224739101062c5f5cf01e92a0ffa10a4b994642b8df56802620a7d8f0",
+ "answer_chars": 883,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "dbd4792d52ef4f583eda4493942c09384f8dfe660975d6373fc240177fccf59f",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

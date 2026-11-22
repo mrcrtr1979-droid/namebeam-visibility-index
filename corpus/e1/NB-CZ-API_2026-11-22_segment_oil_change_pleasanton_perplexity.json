@@ -1,0 +1,78 @@
+{
+ "check_id": "NB-CZ-API_2026-11-22_segment_oil_change_pleasanton_perplexity",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1619f78a-1619-460e-87ff-03a2853e94cd",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00058,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00439
+   },
+   "input_tokens": 5232,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4683,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 231,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5463
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "SpeeDee Oil Change & Auto Service",
+  "Big O Tires",
+  "SpeeDee Oil Change",
+  "Auto Service",
+  "Recent CARFAX",
+  "SpeeDee"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "57b6cc4e8df4bfb176f7e4b97b1c43a3df01a0de03e1af07b32eab209c85e32c",
+ "answer_chars": 678,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "deab42f16302d14fb2127c730641a77a078d27b913f152dc22c5e7bacd83c083",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

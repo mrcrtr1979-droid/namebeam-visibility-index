@@ -1,0 +1,76 @@
+{
+ "check_id": "NB-CZ-API_2026-11-22_backflow_boss_perplexity",
+ "date_utc": "2026-11-22",
+ "business": "Backflow Boss",
+ "niche": "backflow testing and repair",
+ "market": "Liberty MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who does backflow testing and repair near Liberty MO?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_55b4256f-36c9-4a33-8d3a-92f978acab0d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00064,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00436
+   },
+   "input_tokens": 4882,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4337,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 256,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5138
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "CertPro Plumbing",
+  "Mr. Plumber",
+  "Utilities Department",
+  "Serves Liberty"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ae7c32d27476eacb54b3355e96b7cff637a03a6a4b08b172a16235f8a9627219",
+ "answer_chars": 753,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "14138df54ddf0c192db292b4dcc405375f02a21a0492c993442d40cb0179c262",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

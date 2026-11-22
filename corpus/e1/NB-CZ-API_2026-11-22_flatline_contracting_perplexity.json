@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-11-22_flatline_contracting_perplexity",
+ "date_utc": "2026-11-22",
+ "business": "Flatline Contracting",
+ "niche": "residential remodeling and repair",
+ "market": "Joplin MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is a reliable contractor in Joplin MO for a home remodel or repair project?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_057a6118-6006-44c3-bb46-a4fec6a0e763",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00091,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00073,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00428
+   },
+   "input_tokens": 4185,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3633,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 293,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4478
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "American Construction Inc",
+  "GRC General Construction",
+  "Shere’s Construction & Handyman",
+  "Roof Master’s Remodeling Inc",
+  "Roof Master",
+  "Remodeling Inc",
+  "Joplin Area",
+  "American Construction",
+  "Roof Master’s Remodeling"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "50325e4214ea1bfdee4635801de6b0819072d606b1d089a211b319c8d4dff4a6",
+ "answer_chars": 893,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "648c2ff600a057059898e5b17baf8e4837cc4e5448840d35f4c51415ac79fbca",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

@@ -1,0 +1,65 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-22_segment_short_term_rental_branson_openai",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-En89bDwdexsEXFip6QfnhkLF1AzUf",
+  "usage": {
+   "prompt_tokens": 29,
+   "completion_tokens": 1089,
+   "total_tokens": 1118,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 297,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Branson Vacation Rentals",
+  "Sunset Nightly Rentals",
+  "Thousand Hills Vacations",
+  "Branson Family Retreats",
+  "Rent Branson",
+  "Amazing Branson Rentals",
+  "VRBO. They",
+  "Golf",
+  "Highway",
+  "Large",
+  "StoneBridge",
+  "First-time Branson",
+  "Start",
+  "Table Rock",
+  "The Strip",
+  "Thousand Hills",
+  "Near Table Rock Lake",
+  "Central Branson",
+  "Vacation Rentals"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For Branson, I’d call a few **local property managers** rather than relying only on Airbnb/VRBO. They can often suggest units not obvious in search results, explain location differences, and sometimes offer better direct-booking pricing.\n\n### Best companies to call\n\n| Company | Best for | Why call them |\n|---|---|---|\n| **Branson Vacation Rentals** | Broad selection of condos, cabins, and larger homes | Good first call if you are still deciding between the Strip, Table Rock Lake, or a gated resort community. They manage properties in several parts of the area. |\n| **Sunset Nightly Rentals** | Families, lake trips, pet-friendly options, resort condos | Strong option for travelers who want amenities—pools, lake access, kitchens, patios, and multi-bedroom layouts. Ask specifically about pet policies and seasonal pool availability. |\n| **Thousand Hills Vacations** | Golf, central Branson location, easy access to shows and attractions | A particularly good fit if you want to be close to the Highway 76 entertainment district rather than out at the lake. Their condo/resort inventory can work well for couples and families. |\n| **Branson Family Retreats** | Large groups, reunions, church groups, multiple families | Call them if you need a large lodge, several bedrooms, bunk rooms, game rooms, or space for a group to stay together. They tend to be more relevant for group-oriented trips than a standard hotel-style stay. |\n| **Rent Branson** | Cabins, condos, and homes across Branson-area resorts | Worth comparing for a vacation-home feel, especially if you want a full kitchen, private outdoor space, or a property in communities such as StoneBridge or near Table Rock Lake. |\n| **Amazing Branson Rentals** | Resort-style condos and family vacations | A useful call for travelers looking for pool complexes, golf/resort settings, and condo-style layouts with more space than a hotel. |\n\n### Which ones to prioritize\n\n- **First-time Branson trip focused on shows, restaurants, and attractions:**  \n  Call **Thousand Hills Vacations**, **Branson Vacation Rentals**, and **Sunset Nightly Rentals**.\n\n- **Table Rock Lake, boating, fishing, or a quieter setting:**  \n  Call **Sunset Nightly Rentals**, **Branson Vacation Rentals**, and **Rent Branson**.  \n  Confirm whether “lakefront” means actual walkable lake access, a lake view, or simply proximity to the lake.\n\n- **Large family reunion or multi-family trip:**  \n  Start with **Branson Family Retreats**, then **Branson Vacation Rentals** and **Rent Branson** for comparison.\n\n- **Golf or gated-resort amenities:**  \n  Start with **Thousand Hills Vacations** and **Amazing Branson Rentals**.\n\n### What to ask when you call\n\nBefore booking, ask each company for the **all-in total**, not just the nightly rate. Specifically ask:\n\n1. Is the quoted price inclusive of cleaning, resort, booking, pet, and parking fees?\n2. Is the unit’s pool open during my travel dates?\n3. How far is it—in actual drive time—from Highway 76, Silver Dollar City, Table Rock Lake, or the activity I care about?\n4. Is the property steep, does it have stairs, and is parking easy for my vehicle?\n5. Does it have a washer/dryer, reliable Wi‑Fi, and a full kitchen?\n6. What is the cancellation policy, and does the company offer travel insurance?\n7. Is the listed unit the exact unit I will receive, or a representative unit?\n\nA practical approach is to call **three companies**, give each the same dates, group size, budget, and must-haves, then compare the all-in totals and exact property locations.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

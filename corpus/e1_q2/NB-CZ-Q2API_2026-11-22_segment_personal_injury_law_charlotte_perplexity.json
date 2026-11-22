@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-22_segment_personal_injury_law_charlotte_perplexity",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: personal injury law, Charlotte",
+ "niche": "personal injury attorneys",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a personal injury lawyer in Charlotte after a car accident. Which specific law firms should I call, and why?",
+ "q1_prompt_text": "Who is the best personal injury lawyer in Charlotte for a car accident case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3de79b1e-b031-4566-a9c8-0d55b4521e9f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00147,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00519
+   },
+   "input_tokens": 4885,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4327,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 587,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5472
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "The Layton Law Firm",
+  "The Devin Law Firm",
+  "Price, Petho & Associates",
+  "A&S Personal Injury Lawyers (Arnold & Smith)",
+  "Auger & Auger",
+  "Christopher Layton",
+  "A&S Personal Injury Lawyers",
+  "Auger",
+  "Associates",
+  "Injury Lawyers",
+  "In North Carolina"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ba2cdca59f09809e9ae199f64944cfedb45461c1223f9c6512a19ce727ea8dcc",
+ "answer_chars": 2260,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "0656c3acd34329686f6e750fc6bb074127d9aba6e69b8468b106c923b6b886c1",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

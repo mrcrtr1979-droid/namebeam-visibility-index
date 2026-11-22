@@ -1,0 +1,69 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-22_segment_dentists_atlanta_openai",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: dentists, Atlanta",
+ "niche": "dentists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a dental implant in Atlanta. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Atlanta for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-En7xMHzE2VhcUK7UyaJx0EglTZbVm",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 1437,
+   "total_tokens": 1462,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Georgia Oral and Facial Surgery",
+  "Atlanta Center for Cosmetic Dentistry (Buckhead)",
+  "Emory OMS",
+  "Emory Oral and Maxillofacial Surgery",
+  "Emory Healthcare",
+  "CBCT-based",
+  "Atlanta Center for Cosmetic Dentistry",
+  "American Academy of Periodontology",
+  "Search the AAP",
+  "American College of Prosthodontists",
+  "Search for Atlanta",
+  "CareCredit",
+  "Buckhead",
+  "Maxillofacial Surgery",
+  "Facial Surgery",
+  "Oral and Maxillofacial Surgeons",
+  "Georgia Oral",
+  "Atlanta Oral"
+ ],
+ "engine_stated_criteria": [
+  "Will you take a CBCT/3-D scan before finalizing the plan?",
+  "What is the all-in price?",
+  "How do you handle complications or implant failure?",
+  "Do you bill dental insurance, medical insurance, CareCredit, or offer financing?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For an implant, I’d call **both a surgical implant provider** (oral surgeon or periodontist) and a **restorative dentist/prosthodontist** who will make the crown. The best outcome usually comes from a team that plans the whole case—not just placing the implant.\n\nHere are good Atlanta-area starting points to call:\n\n1. **Emory Oral and Maxillofacial Surgery (Emory Healthcare, Atlanta)**\n   - **Why call:** A strong option if your case is medically complicated, you need sedation, bone grafting, an extraction at the same time, or you have conditions such as diabetes, osteoporosis medication use, anticoagulants, or prior radiation treatment.\n   - **Ask:** “Do you place implants for my situation, and do you coordinate with a restorative dentist/prosthodontist for the final crown?”\n\n2. **Georgia Oral and Facial Surgery**\n   - **Why call:** This is a large metro-Atlanta oral-surgery group with multiple locations. Oral and maxillofacial surgeons are particularly appropriate if you need an extraction, implant, sinus lift, bone graft, or IV sedation.\n   - **Ask:** “Which surgeon at your nearest office focuses most on implant reconstruction, and can you provide a CBCT-based treatment plan and a written estimate?”\n\n3. **Atlanta Center for Cosmetic Dentistry (Buckhead)**\n   - **Why call:** A restorative/cosmetic-dentistry office can be a good choice when the appearance of the final tooth—especially a front tooth—is a major concern. They may coordinate implant surgery with an oral surgeon or periodontist while controlling the design of the final crown.\n   - **Ask:** “Do you restore implants placed by outside surgeons, and who will plan the implant position before surgery?”\n\n4. **A board-certified periodontist in Atlanta, found through the American Academy of Periodontology directory**\n   - **Why call:** Periodontists specialize in gums, bone, implants, and grafting. They are often an excellent fit when gum recession, bone loss, periodontal disease, or an esthetic front-tooth implant is involved.\n   - **How to narrow it:** Search the AAP “Find a Periodontist” directory for Atlanta and look for offices that specifically mention **CBCT/3-D imaging, guided implant surgery, bone grafting, and implant maintenance**.\n\n5. **A prosthodontist through the American College of Prosthodontists directory**\n   - **Why call:** If you are missing several teeth, need full-mouth rehabilitation, have a failed bridge/denture, or are considering implant-supported dentures/All-on-X, a prosthodontist is often the best person to lead treatment planning.\n   - **How to narrow it:** Search for Atlanta prosthodontists and ask whether they personally handle the implant crown/bridge/denture and whether they work with a preferred oral surgeon or periodontist.\n\n### My practical recommendation\nCall **Emory OMS**, **Georgia Oral and Facial Surgery**, and **one implant-focused prosthodontist or periodontist** for consultations. That gives you a useful comparison between:\n- a hospital/academic surgical option,\n- a high-volume private oral-surgery option, and\n- a provider focused on the final appearance and function of the teeth.\n\n### Questions to ask every office\n1. **Who places the implant, and who makes the crown?**\n2. **Will you take a CBCT/3-D scan before finalizing the plan?**\n3. **Do I need extraction, bone grafting, a sinus lift, or gum grafting?**\n4. **What is the all-in price?** Ask them to separate:\n   - consultation and imaging,\n   - extraction,\n   - grafting,\n   - implant fixture,\n   - abutment,\n   - crown,\n   - sedation,\n   - temporary tooth.\n5. **What implant brand do you use, and will I receive the implant record/serial information?**\n6. **How do you handle complications or implant failure?**\n7. **Do you bill dental insurance, medical insurance, CareCredit, or offer financing?**\n\nA single-tooth implant in Atlanta can vary widely, but an uncomplicated case is often several thousand dollars once surgery, abutment, and crown are all included; grafting and sedation can materially increase the total. Avoid choosing solely on an advertised “implant price,” since that may cover only the surgical implant body and not the crown or necessary grafting.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

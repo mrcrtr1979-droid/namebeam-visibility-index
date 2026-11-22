@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-API_2026-11-22_segment_str_host_tooling_openai",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-En7T5Bh8zZO8w528VjCsRZmOrki5V",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 548,
+   "total_tokens": 574,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 116,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "Market research before purchase",
+  "Property underwriting",
+  "Competitive analysis",
+  "Pricing support",
+  "PriceLabs",
+  "AirDNA before buying",
+  "Rabbu",
+  "Mashvisor",
+  "Beyond",
+  "AllTheRooms",
+  "Market Research"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "The best single tool for both **analyzing an Airbnb market before buying** and **setting nightly rates afterward** is generally **AirDNA**.\n\n### Why AirDNA is the best all-in-one choice\n- **Market research before purchase:** Estimate revenue, occupancy, ADR (average daily rate), seasonality, supply growth, and comparable listings for a specific area.\n- **Property underwriting:** Its rental-revenue estimator can help model a prospective property’s income potential.\n- **Competitive analysis:** See what similar-sized homes, bedroom counts, amenities, and locations are earning.\n- **Pricing support:** AirDNA offers rate recommendations and performance benchmarking, though it is often strongest as a market-analysis platform.\n\n### Best setup for a serious host\nMany experienced hosts use:\n\n1. **AirDNA** — for acquisition research, market selection, and ongoing competitor/market analysis.\n2. **PriceLabs** — for day-to-day dynamic pricing once the listing is live.\n\n**PriceLabs** is often preferred for automated nightly pricing because it gives more granular control over minimum stays, far-future pricing, last-minute discounts, orphan gaps, seasonal adjustments, and event pricing.\n\n### Simple recommendation\n- If you want **one tool only**: choose **AirDNA**.\n- If you are **buying a property and plan to operate professionally**: use **AirDNA before buying**, then pair it with **PriceLabs** for nightly pricing.\n\n### Other worthwhile alternatives\n- **Rabbu:** Easy-to-understand revenue estimates; useful as a second opinion during underwriting.\n- **Mashvisor:** Better for broader real-estate-investment analysis, including traditional rental comparisons.\n- **Beyond:** Strong dynamic-pricing alternative, particularly for larger portfolios or revenue-management teams.\n- **AllTheRooms:** Useful market data option, though generally less commonly recommended for individual host workflows than AirDNA.\n\nOne caution: treat any STR revenue projection as a range, not a promise. Check multiple comparable listings, account for cleaning, utilities, furnishing, management, permits, taxes, and the risk of local short-term-rental regulation changes.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

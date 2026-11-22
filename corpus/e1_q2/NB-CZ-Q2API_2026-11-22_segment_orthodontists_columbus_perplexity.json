@@ -1,0 +1,96 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-22_segment_orthodontists_columbus_perplexity",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: orthodontists, Columbus",
+ "niche": "orthodontists",
+ "market": "Columbus OH",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Columbus. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Columbus Ohio for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_00564288-02f0-4a44-b07c-872a645c8b38",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00129,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00496
+   },
+   "input_tokens": 4688,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4135,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 515,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5203
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Columbus, Ohio",
+  "Polaris Orthodontic Center — Dr. Amin Mason",
+  "Wade Orthodontics — Dr. Andrew B. Wade",
+  "Hutta & Price Orthodontics",
+  "Invisalign",
+  "Polaris Orthodontic Center",
+  "Dr. Amin Mason",
+  "North Columbus",
+  "Dr. Mason",
+  "Polaris Pkwy",
+  "Wade Orthodontics",
+  "Dr. Andrew B. Wade",
+  "Near Upper Arlington",
+  "Johnson Orthodontics",
+  "Drs. Denny and Liz Johnson",
+  "Northwest Columbus",
+  "Crown Park Ct",
+  "Price Orthodontics",
+  "Silver Lane",
+  "Invisalign Provider",
+  "Upper Arlington"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "f4ccd1aa9fbc265f835534fd90196e47ec839d134cbdc3bda26efa76321fba43",
+ "answer_chars": 1802,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "81fa5c0e9e273e8c79392fe43aa6bea73ae2e83b082751d70ac7c16e17ebb540",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

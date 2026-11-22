@@ -1,0 +1,66 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-22_segment_hvac_phoenix_openai",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My air conditioning needs fixing in Phoenix. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-En7nhKnyOpz5m02nLmyPzh4FYLPZu",
+  "usage": {
+   "prompt_tokens": 25,
+   "completion_tokens": 892,
+   "total_tokens": 917,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 93,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Hobaica Services",
+  "Parker & Sons",
+  "George Brazil Air Conditioning & Heating",
+  "Howard Air",
+  "Goettl Air Conditioning & Plumbing",
+  "George Brazil",
+  "Manual J load calculation",
+  "Arizona Registrar of Contractors (ROC)",
+  "George Brazil Air Conditioning",
+  "Night Air Conditioning",
+  "Goettl Air Conditioning",
+  "My AC",
+  "Registrar of Contractors",
+  "Air Conditioning",
+  "AC repair",
+  "Arizona Registrar of Contractors",
+  "Day & Night",
+  "Day & Night Air",
+  "Night Air",
+  "Phoenix-area HVAC"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For Phoenix AC repair, I’d call 2–3 of these for diagnostics and written estimates rather than committing to the first technician:\n\n1. **Hobaica Services**\n   - Long-established Phoenix-area HVAC company.\n   - Good choice if you want a larger, established service department and maintenance/repair options.\n   - Ask for a diagnostic fee, repair estimate, and whether they can give a “repair vs. replace” comparison if your system is older.\n\n2. **Parker & Sons**\n   - Large local home-services company with broad availability, including HVAC.\n   - Useful if you need relatively quick scheduling or may also have electrical/plumbing issues.\n   - Because they are a larger operation, get the full itemized quote before approving major work.\n\n3. **George Brazil Air Conditioning & Heating**\n   - Phoenix-based company with a long local history.\n   - Worth calling for a second opinion on major repairs such as compressor, coil, refrigerant leak, or blower-motor replacement.\n   - Ask whether the quoted repair includes labor warranty and whether the refrigerant leak location is confirmed, not just “topped off.”\n\n4. **Howard Air**\n   - A solid option for both repair and replacement discussions, especially if your unit is aging or you have uneven cooling.\n   - Ask whether they perform a load calculation before recommending a replacement system; Phoenix homes are often sold oversized equipment.\n\n5. **Day & Night Air Conditioning, Heating & Plumbing**\n   - Another established Phoenix-metro option with repair and replacement capability.\n   - Particularly worth contacting if you need service outside ordinary business hours or want a company that can handle related home-service work.\n\n6. **Goettl Air Conditioning & Plumbing**\n   - Has a substantial Arizona presence and can be useful for urgent service availability.\n   - I would use them as one of multiple bids for expensive repairs or replacement, and compare scope—not just price.\n\n### My practical shortlist\nIf you want only three calls, start with:\n\n- **Hobaica Services**\n- **George Brazil**\n- **Howard Air**\n\nThat gives you three established local options and a better chance of getting a fair comparison.\n\n### What to ask when you call\nUse this wording:\n\n> “My AC is not cooling properly. I need a diagnostic visit and an itemized written estimate before any repairs. Please tell me your diagnostic fee, earliest appointment, whether the fee applies to repairs, and the warranty on parts and labor.”\n\nIf they recommend replacement, ask:\n\n- What specifically failed, and can they show you?\n- Is repair still reasonable, and how long might it buy you?\n- What is the system’s age, refrigerant type, and SEER2 rating?\n- Did they perform or plan to perform a **Manual J load calculation** before sizing a new system?\n- Is the quote inclusive of permits, haul-away, duct modifications, thermostat, electrical work, and warranty registration?\n- What is the total installed price—not just a monthly payment?\n\n### Phoenix-specific advice\n- In extreme heat, prioritize a company that can provide a same-day diagnostic, but don’t approve a multi-thousand-dollar replacement under pressure without at least one more estimate if you safely can.\n- For a refrigerant issue, insist on leak diagnosis. Repeatedly adding refrigerant without locating the leak is usually not a real fix.\n- Before hiring, verify the company’s active Arizona contractor license through the **Arizona Registrar of Contractors (ROC)** and check recent—not just lifetime—reviews. Look especially for comments about warranty follow-through and surprise charges.\n- If your system is over roughly 12–15 years old, has a failed compressor, or uses older R-22 refrigerant, get both a repair quote and replacement quote.\n\nIf the AC is completely out and someone in the home is elderly, medically vulnerable, or at risk from the heat, use emergency service and arrange a temporary cooling location while waiting.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

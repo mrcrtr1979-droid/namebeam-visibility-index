@@ -1,0 +1,88 @@
+{
+ "check_id": "NB-CZ-API_2026-11-22_segment_orthodontists_houston_perplexity",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: orthodontists, Houston",
+ "niche": "orthodontists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Houston for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a00bdef1-1b37-4d7a-a1f1-23b22434e058",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00097,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00087,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00448
+   },
+   "input_tokens": 4442,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3895,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 347,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4789
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Houston Orthodontic Specialists",
+  "Davoody & Hablinski Orthodontics",
+  "Greater Houston Orthodontics",
+  "Invisalign",
+  "West University and Memorial",
+  "Practice",
+  "Houston and Bellaire",
+  "Hablinski Orthodontics",
+  "Dr. Amir Davoody",
+  "Kirby Drive",
+  "Texas State Board of Dental Examiners",
+  "Greater Houston",
+  "Bellaire",
+  "West University"
+ ],
+ "engine_stated_criteria": [
+  "A good starting point is Greater Houston Orthodontics"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "b299ed1bc931d9a2f9f6f55d16328968495ee2883b1d361b9f8b0de947e44035",
+ "answer_chars": 1225,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "10479eb1eec2f112eda5f8d86f5db78737290ca3366d65ba67b4d3f9dc70afd7",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

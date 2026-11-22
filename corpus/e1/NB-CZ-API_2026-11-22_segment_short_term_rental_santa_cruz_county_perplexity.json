@@ -1,0 +1,92 @@
+{
+ "check_id": "NB-CZ-API_2026-11-22_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_25b2809e-238e-4336-a568-1bf6277fa8aa",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0013,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00161,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00555
+   },
+   "input_tokens": 5733,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 5181,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 644,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 6377
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Santa Cruz",
+  "Live Oak",
+  "Compare the total price",
+  "Check the listing details closely",
+  "Read recent reviews",
+  "Check cancellation terms and house rules",
+  "Capitola",
+  "Santa Cruz and Capitola",
+  "Scotts Valley",
+  "DiscretionaryPermitsZoning",
+  "DiscretionaryPermits",
+  "Short-TermRentals.aspx",
+  "Visit Santa Cruz County",
+  "Aptos",
+  "Seacliff",
+  "Davenport",
+  "Aptos/Seacliff",
+  "Expect"
+ ],
+ "engine_stated_criteria": [
+  "Start with your priorities"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "0a6b698b91bccca65b4b17f1d41a85a429f08bbfae6f1d3d0de4cc6330a4eed5",
+ "answer_chars": 2571,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "3480c5d8ac637942e6fa8dfd60909ed26377ea850f1f84a3cfe41722148002cc",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

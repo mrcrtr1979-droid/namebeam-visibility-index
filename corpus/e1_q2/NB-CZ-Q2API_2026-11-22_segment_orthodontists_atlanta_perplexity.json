@@ -1,0 +1,97 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-22_segment_orthodontists_atlanta_perplexity",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: orthodontists, Atlanta",
+ "niche": "orthodontists",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need braces or Invisalign in Atlanta. Which specific orthodontists should I call, and why?",
+ "q1_prompt_text": "Who is the best orthodontist in Atlanta for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_da58f71f-ff02-4980-a4d8-100e4ffc0a2d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00102,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00144,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0051
+   },
+   "input_tokens": 4633,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4080,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 577,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5210
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Harris Orthodontics",
+  "King, McCune & Moore Orthodontics",
+  "Buckhead Orthodontics",
+  "Wright Orthodontics",
+  "West Paces Ferry Orthodontics",
+  "Invisalign",
+  "Marietta St NW",
+  "Dr. Peyton Harris",
+  "West Midtown",
+  "McCune",
+  "Moore Orthodontics",
+  "Northside Pkwy NW",
+  "Invisalign. Worth",
+  "Buckhead",
+  "Dr. Everson",
+  "B North Druid Hills Rd NE",
+  "Offers",
+  "Diamond Invisalign",
+  "West Paces Ferry Rd NW",
+  "West Paces Ferry",
+  "Diamond",
+  "North Druid Hills"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ab2acc84c72ba25b730be420c75412f0591c06ac7acd643b2f2335e8cc3edfc8",
+ "answer_chars": 2026,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "33f01334e0c0f88080f1958de8742de7cd8849a213257ce3221cf243e5ef766d",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

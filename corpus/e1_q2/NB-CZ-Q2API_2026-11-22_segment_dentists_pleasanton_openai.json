@@ -1,0 +1,59 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-22_segment_dentists_pleasanton_openai",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-En7ucRRrZCXOAWV96PYG0ZvAfV5U2",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1663,
+   "total_tokens": 1691,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton Smile Dental",
+  "Amador Valley Dentistry",
+  "Hacienda Dental",
+  "Pleasanton Valley Dental",
+  "Parcham Dental",
+  "Insurance/network status",
+  "Total out-of-pocket estimate",
+  "Continuity",
+  "Urgency and availability",
+  "PPO dental insurance",
+  "X-rays"
+ ],
+ "engine_stated_criteria": [
+  "Whether the cleaning happens at the first visit"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a routine new-patient exam and cleaning in Pleasanton, I’d start by calling these general-dentistry offices—not because one is universally “best,” but because they are the type of established local practices that should be equipped for preventive care and ongoing treatment if anything turns up:\n\n| Practice to call | Why it’s a sensible first call |\n|---|---|\n| **Pleasanton Smile Dental** | A general/family-dentistry option for standard exams, hygiene cleanings, X-rays, and follow-up restorative work if needed. Good first choice if you want one office for routine care and future needs. |\n| **Amador Valley Dentistry** | A comprehensive general-dentistry practice; worth calling if you want a long-term dentist rather than a cleaning-only visit. Ask about their new-patient exam process and hygiene availability. |\n| **Hacienda Dental** | Convenient option to include if you are near downtown/Hacienda/nearby business areas. Ask whether the cleaning is performed by a hygienist at the first visit or scheduled separately after the exam. |\n| **Pleasanton Valley Dental** | Another local general-practice option to compare for insurance participation, appointment timing, and approach to preventive care. |\n| **Parcham Dental** | Worth considering if you prefer a smaller private-practice feel and want a dentist who can also handle restorative or cosmetic follow-up rather than referring routine work elsewhere. |\n\n### How I’d choose among them\nCall **three offices**, not just one, and use this short script:\n\n> “I’m a new patient in Pleasanton and need a routine exam and cleaning. Do you accept my insurance, or what is the self-pay price? Can the exam and cleaning be done in the same appointment? What is your first available morning or late-afternoon slot?”\n\nChoose the office that gives you the clearest answers on:\n\n1. **Insurance/network status** — verify directly with both the office and your insurer; directory listings are often outdated.  \n2. **Whether the cleaning happens at the first visit** — some offices do an exam/X-rays first and schedule hygiene later, especially if gum treatment may be needed.  \n3. **Total out-of-pocket estimate** — ask separately about exam, X-rays, cleaning, and any periodontal evaluation.  \n4. **Continuity** — ask whether you’ll routinely see the same dentist and hygienist.  \n5. **Urgency and availability** — if it has been more than a year or you have bleeding gums, pain, swelling, or a broken tooth, prioritize the earliest comprehensive exam.\n\nIf you have **PPO dental insurance**, call the office first and provide your member ID before booking. If you have **no insurance**, ask for the “new-patient exam, X-rays, and prophylaxis-cleaning cash price” and whether they offer an in-house membership plan.\n\nI’d begin with **Pleasanton Smile Dental, Amador Valley Dentistry, and Hacienda Dental**; they give you a practical mix of general preventive care, established ongoing-care options, and location convenience.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

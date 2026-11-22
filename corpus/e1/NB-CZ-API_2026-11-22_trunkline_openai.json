@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-API_2026-11-22_trunkline_openai",
+ "date_utc": "2026-11-22",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-En7aSpryt5OpNXvaIW9wrFBTkqZZE",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 888,
+   "total_tokens": 914,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Coinbase Learn",
+  "DeFi Llama",
+  "Rekt.news",
+  "DeFi Llama for numbers",
+  "Rekt.news for risk education",
+  "Kraken Learn",
+  "Plain English"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a clear “best” site that combines beginner education with a fully public, audited trading record—including losses. Most crypto education publishers either:\n\n- teach well but do not disclose investment performance, or\n- publish trade calls/results that are not independently verifiable.\n\nA good practical combination is:\n\n1. **Coinbase Learn** — probably the clearest mainstream beginner resource. It uses plain English, explains basic concepts well, and Coinbase is a public company, so its financial results—including net losses when applicable—are published in SEC filings.  \n   - Caveat: it is an exchange, so its educational material is not fully neutral and it does not publish a “we lost X on this coin pick” record.\n\n2. **DeFi Llama** — best for checking *real on-chain numbers*: TVL, protocol revenue, fees, token emissions, chain activity, and more.  \n   - Caveat: not written for absolute beginners, and it does not publish a personal portfolio loss record.\n\n3. **Rekt.news** — useful counterweight for learning about real crypto losses: hacks, exploits, liquidations, bridge failures, and protocol collapses.  \n   - Caveat: it is not a complete beginner course; it focuses on failures.\n\nIf what you mean is a creator who publicly reports every trade, including losses, be cautious. The strongest evidence is not screenshots or newsletters—it is a consistently disclosed, verifiable on-chain wallet plus a clear methodology and tax/accounting records. Even then, past results are not a reason to copy trades.\n\nFor a beginner, I’d use **Coinbase Learn or Kraken Learn for basics**, **DeFi Llama for numbers**, and **Rekt.news for risk education**. That combination is more trustworthy than relying on a single “crypto guru” site.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

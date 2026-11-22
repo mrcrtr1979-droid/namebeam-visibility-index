@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-22_segment_tanning_salons_pleasanton_openai",
+ "date_utc": "2026-11-22",
+ "business": "SEGMENT: tanning salons, Pleasanton",
+ "niche": "tanning salons",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want to try a tanning salon in Pleasanton. Which specific salons should I call, and why?",
+ "q1_prompt_text": "What is the best tanning salon in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-En7s9qEzCmhgGO268YfbfpdtKmiwa",
+  "usage": {
+   "prompt_tokens": 27,
+   "completion_tokens": 1567,
+   "total_tokens": 1594,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 970,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sun Lounge Tanning & Spa — Dublin",
+  "Palm Beach Tan — Dublin",
+  "Sun Lounge Tanning",
+  "Dublin",
+  "Palm Beach Tan",
+  "California Sun Wellness Spa",
+  "San Ramon",
+  "Apple Maps",
+  "UV Tanning"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "If you’re in Pleasanton, I’d start with these nearby options and call in this order:\n\n1. **Sun Lounge Tanning & Spa — Dublin**\n   - **Why call:** Usually the best first call if you want a more salon-style experience rather than a big-chain membership pitch. Ask whether they offer **custom airbrush spray tans** in addition to UV beds; custom spray is generally the better option if you want color without UV exposure.\n   - **Ask:** “Do you have airbrush spray tanning, how long does it last, and can I book a single session without a package?”\n\n2. **Palm Beach Tan — Dublin**\n   - **Why call:** A larger chain is useful if you want predictable equipment options, longer hours, and potentially multiple tanning levels. It’s also a good comparison point for pricing.\n   - **Ask:** “What is the walk-in price for one session, what is included in the introductory offer, and is there any cancellation or membership commitment?”  \n   - Be especially careful to distinguish a low-price intro offer from a recurring monthly contract.\n\n3. **California Sun Wellness Spa — San Ramon / Tri-Valley area**\n   - **Why call:** Worth checking if you want a broader menu—often spray tanning, UV tanning, and sometimes wellness services—rather than only a basic tanning-bed salon.\n   - **Ask:** “Do you offer a clear or rapid-developing spray tan, and do you have same-day appointments?” A clear or rapid spray tan can be useful if you’re trying to avoid the immediate bronzer transfer onto clothes.\n\nBefore going, confirm the current location, hours, and services on Google/Apple Maps—salon listings and offerings can change.\n\n### My practical recommendation\nFor a first visit, I’d choose **a custom spray tan or automated spray tan**, not a UV bed. UV tanning raises skin-cancer and premature-aging risk; in California, people under 18 cannot use UV tanning devices. If you do choose UV tanning anyway, pick the salon that can clearly answer these questions:\n\n- Do they provide **protective eyewear**?\n- How often are beds cleaned and bulbs serviced?\n- Can you buy a **single session** without signing up for a membership?\n- Will they recommend a conservative exposure time based on your skin type?\n- What are the actual cancellation terms and fees?\n\nA concise call script:\n\n> “Hi, I’m in Pleasanton and trying a salon for the first time. Do you offer spray tanning and UV tanning? What is the price for one visit, do I need a membership, and do you have any current first-time-client terms I should know about?”\n\nIf you tell me whether you want **spray tan, UV bed, airbrush, or the cheapest one-time option**, I can narrow this to the best salon type and what price/package traps to avoid.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
