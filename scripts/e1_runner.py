@@ -449,20 +449,27 @@ def _observe(row, latency_s, err):
         pass
 
 
-# GEMINI FREE-RAIL GUARD FOR THE SECOND QUESTION (2026-10-28). The free tier is thin: 20 requests a
-# day on gemini-3.6-flash (the 20-question continuity panel uses all of them) and 500 a day on
-# gemini-3.5-flash-lite (see scripts/engines.py, FREE-TIER SPLIT). The q2 pass runs after the whole
-# prompt_1 pass, and its question ids (<slug>_q2) are never on the panel, so q2 can only spend
-# flash-lite. If any Gemini call in this run was refused for quota or billing, q2 does not ask
-# Gemini at all: it logs a QUOTA_BLOCKED row (the protocol's status for "we were not allowed to
-# ask", never counted as an engine failure) and the prompt_1 record is untouched.
-_GEMINI_EXHAUSTED = [False]
+# GEMINI FREE-RAIL GUARD FOR THE SECOND QUESTION (2026-10-28, narrowed 2026-11-22 GEMINI-Q2-1122).
+# The free tier is thin: 20 requests a day on gemini-3.6-flash (the 20-question continuity panel
+# uses all of them) and 500 a day on gemini-3.5-flash-lite (see scripts/engines.py, FREE-TIER
+# SPLIT). The q2 pass runs after the whole prompt_1 pass, and its question ids (<slug>_q2) are
+# never on the panel, so q2 can only spend flash-lite. A quota refusal of a prompt_1 call is about
+# gemini-3.6-flash and says nothing about flash-lite, so it no longer blocks q2 (it used to: q2
+# Gemini was 0 OK of 51 a day on 11-19 and 11-22 after one q1 refusal). q2 asks Gemini normally and
+# stops after the FIRST quota or billing refusal seen DURING the q2 pass: every later q2 Gemini
+# row that run is a QUOTA_BLOCKED row (the protocol's status for "we were not allowed to ask",
+# never counted as an engine failure). q2 Gemini calls per run are capped at the q2 roster size.
+# The prompt_1 record is untouched either way.
+_GEMINI_Q2_BLOCKED = [False]
+_GEMINI_Q2_CALLS = [0]
+_GEMINI_Q2_CAP = [None]    # None until run_q2_pass sets it to the q2 roster size
 _GEMINI_QUOTA_ERR = re.compile(r"^QUOTA: |HTTP (?:402|403|429)\b")
 
 
-def _note_gemini_quota(engine, err):
-    if engine == "gemini" and _GEMINI_QUOTA_ERR.search(str(err or "")):
-        _GEMINI_EXHAUSTED[0] = True
+def _note_gemini_quota(engine, err, variant=1):
+    """Only a refusal seen inside the q2 pass (variant 2) blocks the rest of q2."""
+    if variant == 2 and engine == "gemini" and _GEMINI_QUOTA_ERR.search(str(err or "")):
+        _GEMINI_Q2_BLOCKED[0] = True
 
 
 def run_budget_left_s():
@@ -508,12 +515,18 @@ def run_engine(business_row, engine, fn, date_utc, supersedes=None, variant=1):
     skipped = False
     skip_note = ""
     _t0 = time.monotonic()
-    if variant == 2 and engine == "gemini" and _GEMINI_EXHAUSTED[0]:
+    if variant == 2 and engine == "gemini" and _GEMINI_Q2_BLOCKED[0]:
         skipped = True
-        skip_note = "gemini rails refused for quota earlier in this run"
+        skip_note = "gemini rails refused for quota earlier in the q2 pass of this run"
         ok, text, sources = False, "", []
         err = ("QUOTA: gemini q2 not asked, the Gemini rails were refused for quota earlier in "
-               "this run; the prompt_1 calls come first and keep the free tier")
+               "the q2 pass of this run")
+    elif (variant == 2 and engine == "gemini" and _GEMINI_Q2_CAP[0] is not None
+          and _GEMINI_Q2_CALLS[0] >= _GEMINI_Q2_CAP[0]):
+        skipped = True
+        skip_note = "gemini q2 call cap for this run reached"
+        ok, text, sources = False, "", []
+        err = "QUOTA: gemini q2 not asked, the per-run q2 Gemini call cap (the q2 roster size) was reached"
     elif run_budget_left_s() <= 0:
         # LB-20 (2026-11-09): the run budget is spent; this cell is not asked and is written FAILED so
         # the only_failed rerun can ask it later. Never a fabricated answer.
@@ -523,6 +536,8 @@ def run_engine(business_row, engine, fn, date_utc, supersedes=None, variant=1):
         err = ("TIMEOUT_BUDGET: run budget of %d min exhausted before this cell was asked "
                "(E1_RUN_BUDGET_MIN); re-ask with only_engines plus only_failed" % int(RUN_BUDGET_MIN))
     else:
+        if variant == 2 and engine == "gemini":
+            _GEMINI_Q2_CALLS[0] += 1
         ok, text, sources, err = _call_with_deadline(fn, prompt, CALL_BUDGET_S)
     _latency = time.monotonic() - _t0
     # Forward-only audit fields: which model the provider says it served, the
@@ -541,7 +556,7 @@ def run_engine(business_row, engine, fn, date_utc, supersedes=None, variant=1):
         # false statement about the engine, so it gets its own status and
         # must be excluded from any failure rate or denominator.
         quota = str(err or "").startswith("QUOTA: ")
-        _note_gemini_quota(engine, err)
+        _note_gemini_quota(engine, err, variant)
         row.update({
             "run_status": "QUOTA_BLOCKED" if quota else "FAILED",
             "business_mentioned": None,
@@ -980,6 +995,9 @@ def run_q2_pass(q2_rows, engines, date_utc, rerun=None):
     prompt_1 pass. No SERP row and no agreement row: q2 is the answer engines' naming only.
     Returns (wrote, ok, failed). Rows land in Q2_OUTPUT_DIR as NB-CZ-Q2API_ files."""
     wrote = ok_n = fail_n = 0
+    _GEMINI_Q2_BLOCKED[0] = False
+    _GEMINI_Q2_CALLS[0] = 0
+    _GEMINI_Q2_CAP[0] = len(q2_rows)
     for br in q2_rows:
         only = br.get("engines")
         for name, fn in engines.items():
@@ -1060,7 +1078,9 @@ def _main():
         roster = roster[offset:] + roster[:offset]
         print("roster rotated by %d for %s" % (offset, date_utc))
 
-    _GEMINI_EXHAUSTED[0] = False
+    _GEMINI_Q2_BLOCKED[0] = False
+    _GEMINI_Q2_CALLS[0] = 0
+    _GEMINI_Q2_CAP[0] = None
     wrote = ok_n = fail_n = 0
     if rerun:
         print("RERUN MODE | date %s | engines %s | only failed cells: %s"
