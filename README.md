@@ -10,7 +10,7 @@ Tools:
 
 - `receipts_index`: free. Calls `GET https://api.receiptsindex.com/v1/index` and returns row ids and UTC dates.
 - `receipts_sample`: free. Calls `GET https://api.receiptsindex.com/v1/sample` and returns one real row labeled as a sample.
-- `receipts_pricing`: free. Reads `/.well-known/x402` and `/v1/manifest` and lists the paid x402 routes and their prices (0.27 USDC per row, 1.81 USDC per day file).
+- `receipts_pricing`: free. Reads `/.well-known/x402` and `/v1/manifest`. The paid x402 routes are paused and no price is on offer (status read 2026-11-23 at api.receiptsindex.com).
 
 The server never pays and never signs anything. Install:
 
