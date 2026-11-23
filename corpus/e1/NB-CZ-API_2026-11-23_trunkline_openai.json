@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_trunkline_openai",
+ "date_utc": "2026-11-23",
+ "business": "Trunkline",
+ "niche": "honest crypto education",
+ "market": "US nationwide",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best plain-English crypto education site for beginners that shows real numbers and publishes its losses?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EnV6sxWbD0IgZqXC2q8zLwqGqqc0p",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 849,
+   "total_tokens": 875,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "CryptoCred",
+  "Kraken Learn",
+  "Bitcoin.org / Andreas Antonopoulos material",
+  "Finematics",
+  "Bitcoin.org",
+  "Andreas Antonopoulos",
+  "Bitcoin"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t a widely respected beginner crypto-education site that also publishes a complete, independently verifiable record of its real-money gains *and* losses. Most “education” sites earn through exchange referrals, token sponsorships, or paid communities, so treat performance claims cautiously.\n\nThe closest practical fit is **CryptoCred** (site/X): it focuses on explaining trading concepts plainly, shares market theses and post-mortems, and is notably more candid than most crypto influencers about uncertainty and bad calls. But it is **not** a verified public ledger of every personal trade or loss.\n\nFor true beginner education, I’d pair that with:\n\n- **Kraken Learn** — clear, relatively neutral explanations; no personal-performance claims.\n- **Bitcoin.org / Andreas Antonopoulos material** — strong on fundamentals and self-custody; not trading advice.\n- **Finematics** — excellent visual explanations of DeFi mechanics; still verify risks independently.\n\nA useful rule: if a site claims it “shows real numbers,” look for all of the following before trusting it:\n\n1. Time-stamped entries *before* trades, not only winning screenshots afterward.  \n2. Closed losses shown alongside wins.  \n3. Position size, fees, leverage, and stablecoin/cash holdings included.  \n4. No ability to delete or quietly edit old calls.  \n5. Clear disclosure of affiliate links, token holdings, and sponsors.  \n6. No promise of returns.\n\nIf you want one answer: **use Kraken Learn for learning, and treat any personality’s disclosed trades—including CryptoCred’s—as examples rather than a model portfolio.**",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

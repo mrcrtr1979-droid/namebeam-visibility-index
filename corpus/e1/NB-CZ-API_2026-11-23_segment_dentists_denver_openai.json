@@ -1,0 +1,50 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_segment_dentists_denver_openai",
+ "date_utc": "2026-11-23",
+ "business": "SEGMENT: dentists, Denver",
+ "niche": "dentists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Denver for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EnU7PsruNOYTcArlp5F44kcb1pX6K",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 557,
+   "total_tokens": 575,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 156,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "ABOMS",
+  "American Academy of Periodontology",
+  "D CBCT",
+  "Denver-area ZIP",
+  "Denver Implant",
+  "Oral and Maxillofacial Surgery",
+  "Maxillofacial Surgery"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” implant dentist in Denver—success depends heavily on whether you need a straightforward single-tooth implant, bone grafting, an extraction-and-implant, or a full-arch restoration.\n\nFor the strongest credential match, look for:\n\n- **Complex surgery / bone grafts / sedation / full-arch cases:** a **board-certified oral and maxillofacial surgeon** (verify through the American Board of Oral and Maxillofacial Surgery, ABOMS).\n- **Gum disease or challenging bone/soft-tissue issues:** a **board-certified periodontist** (American Academy of Periodontology).\n- **Aesthetic front-tooth cases or implant crowns/full-mouth planning:** a **prosthodontist**, often working with an oral surgeon or periodontist.\n\nA good Denver implant provider should offer a **3-D CBCT scan**, explain alternatives, provide a written all-in estimate, and show examples of similar cases—not just before/after marketing photos.\n\nAsk at consultations:\n\n1. Are you board certified, and in which specialty?\n2. How many implants like mine do you place each year?\n3. Who places the implant and who makes the final crown?\n4. Is bone grafting likely, and is it included in the quote?\n5. What implant system do you use, and will I receive the implant records?\n6. What is the total cost including scan, extraction, graft, implant, abutment, crown, and follow-ups?\n7. What happens if the implant does not integrate?\n\nBe cautious with “implant specials” that quote only the surgical fixture; the final crown, abutment, grafting, and imaging can materially change the total.\n\nIf you tell me your Denver-area ZIP code, whether this is **one tooth or full arch**, and whether you need insurance/financing or sedation, I can help you narrow the right type of specialist and compare local consultation options.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

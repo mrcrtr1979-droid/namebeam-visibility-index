@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_segment_real_estate_agents_st_louis_perplexity",
+ "date_utc": "2026-11-23",
+ "business": "SEGMENT: real estate agents, St. Louis",
+ "niche": "real estate agents",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Louis MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5df04980-5d60-46be-9e3e-ad58338f8af4",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00126,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00086,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00476
+   },
+   "input_tokens": 5582,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 5031,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 344,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5926
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Jenifer Garcia of Garcia Properties",
+  "Mark Gellman of The Gellman Team",
+  "Krista Hartmann of RE/MAX Results",
+  "Krista Hartmann of RE",
+  "MAX Results",
+  "Garcia Properties",
+  "Mark Gellman",
+  "Gellman Team",
+  "Jenifer Garcia",
+  "Krista Hartmann"
+ ],
+ "engine_stated_criteria": [
+  "seller-side sales near your home"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "35f8c961b25dfc052d6cf9c32eb55888574128604184452589baebda0fb2cf6b",
+ "answer_chars": 1194,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "b274d1ef072122bdc017800e567d5f36df47519ac81f461187b9c02b9fc546a1",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

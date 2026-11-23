@@ -1,0 +1,73 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-11-23",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EnT2bvQg82hdU61P14nMi8tb5DrDB",
+  "usage": {
+   "prompt_tokens": 23,
+   "completion_tokens": 639,
+   "total_tokens": 662,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 189,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Individual/family ACA coverage",
+  "Medicare / Medicare Advantage / Medigap",
+  "Small-business group health insurance",
+  "Missouri",
+  "Kansas",
+  "HealthCare.gov → Find Local Help",
+  "Medicare",
+  "Missouri Department of Commerce and Insurance",
+  "Kansas Insurance Department",
+  "Medicare Advantage",
+  "Missouri and Kansas",
+  "Kansas City. Both Missouri and Kansas",
+  "HealthCare.gov for Marketplace",
+  "MO and KS",
+  "CLAIM",
+  "SHICK",
+  "In Kansas",
+  "Missouri Department of Commerce",
+  "Marketplace Plans",
+  "Missouri Side",
+  "SHIP",
+  "Family ACA",
+  "Use HealthCare.gov"
+ ],
+ "engine_stated_criteria": [
+  "Are you licensed in both MO and KS?",
+  "Which carriers do you represent?",
+  "Do you help with Marketplace subsidies and eligibility?",
+  "Will you compare Marketplace plans, not just off-exchange plans?",
+  "How are you paid, and do I pay you anything directly?",
+  "Will you help after enrollment"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” Kansas City health-insurance broker—the right person depends heavily on whether you need:\n\n- **Individual/family ACA coverage** (Marketplace or off-Marketplace)\n- **Medicare / Medicare Advantage / Medigap**\n- **Small-business group health insurance**\n- Coverage on the **Missouri** or **Kansas** side of the metro\n\nFor an individual or family plan, I’d start with a **local independent broker licensed in both Missouri and Kansas** who represents multiple carriers—not an agent tied to a single insurer. Use the official directory at **HealthCare.gov → Find Local Help** and filter for agents/brokers in Kansas City. Both Missouri and Kansas use HealthCare.gov for Marketplace enrollment.\n\nBefore choosing one, ask:\n\n1. **Are you licensed in both MO and KS?**\n2. **Which carriers do you represent?** Ask for a complete list.\n3. **Do you help with Marketplace subsidies and eligibility?**\n4. **Will you compare Marketplace plans, not just off-exchange plans?**\n5. **How are you paid, and do I pay you anything directly?**\n6. **Will you help after enrollment** if there is a billing, network, or claims problem?\n7. **Can you verify that my doctors, prescriptions, and preferred hospitals are in-network?**\n\nA good broker should ask about your doctors, medications, anticipated care, preferred hospitals, household income, and whether you cross the state line for care. They should not simply recommend the lowest premium.\n\nFor **Medicare**, consider a free unbiased counseling program before speaking with brokers:\n\n- **Missouri:** CLAIM (Missouri’s SHIP program)\n- **Kansas:** SHICK (Kansas’s SHIP program)\n\nThose programs don’t sell insurance and can help you compare Medicare options objectively.\n\nAlso, verify any broker’s license through the **Missouri Department of Commerce and Insurance** or the **Kansas Insurance Department** before enrolling. If you tell me whether this is for individual coverage, Medicare, or a small business—and whether you live/work on the Kansas or Missouri side—I can narrow down the best way to find the right kind of broker.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

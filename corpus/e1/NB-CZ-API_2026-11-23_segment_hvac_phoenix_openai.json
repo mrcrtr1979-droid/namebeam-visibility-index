@@ -1,0 +1,67 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_segment_hvac_phoenix_openai",
+ "date_utc": "2026-11-23",
+ "business": "SEGMENT: HVAC, Phoenix",
+ "niche": "hvac repair and replacement",
+ "market": "Phoenix AZ",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Phoenix to fix my air conditioning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EnSl5tkxywhKUk7cdlZ8sWVF4SDpd",
+  "usage": {
+   "prompt_tokens": 20,
+   "completion_tokens": 449,
+   "total_tokens": 469,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 102,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Hobaica Services",
+  "Howard Air",
+  "Parker & Sons",
+  "George Brazil Air Conditioning & Heating",
+  "Arizona Registrar of Contractors (ROC)",
+  "Phoenix-area HVAC",
+  "Night Air Conditioning",
+  "George Brazil Air Conditioning",
+  "Phoenix-area ZIP",
+  "Registrar of Contractors",
+  "In Phoenix",
+  "Air Conditioning",
+  "AC repair",
+  "Arizona Registrar of Contractors",
+  "Day & Night",
+  "Day & Night Air",
+  "Valley",
+  "Night Air",
+  "George Brazil"
+ ],
+ "engine_stated_criteria": [
+  "What is the diagnostic/service-call fee, and is it applied to the repair?",
+  "Will you provide an itemized quote before work begins?",
+  "Is the technician recommending repair versus replacement, and why?",
+  "Can they provide the exact failed component and model/part number?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company in Phoenix, but for AC repair, I’d start by getting quotes from 2–3 well-established, Arizona-licensed companies such as:\n\n- **Hobaica Services** — long-running Phoenix-area HVAC company; often a good option for repair and maintenance.\n- **Howard Air** — established local provider with broad Valley coverage.\n- **Day & Night Air Conditioning, Heating & Plumbing** — commonly considered for residential AC repairs and replacements.\n- **Parker & Sons** — large company with extensive availability; compare pricing carefully because larger firms can vary by job.\n- **George Brazil Air Conditioning & Heating** — another established metro-Phoenix option.\n\nBefore booking, verify the company’s active license with the **Arizona Registrar of Contractors (ROC)**, check recent—not just lifetime—Google reviews, and ask these questions:\n\n1. **What is the diagnostic/service-call fee, and is it applied to the repair?**\n2. **Will you provide an itemized quote before work begins?**\n3. **Is the technician recommending repair versus replacement, and why?**\n4. **What warranty applies to parts and labor?**\n5. **Can they provide the exact failed component and model/part number?**\n\nFor a typical AC breakdown in Phoenix, avoid approving a full system replacement based on only one diagnosis unless the unit is very old, has a failed compressor, or uses obsolete refrigerant. A second opinion can save thousands.\n\nIf you share your Phoenix-area ZIP code, whether it’s an emergency, and your AC brand/age, I can narrow this to the type of company most likely to be a good fit.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

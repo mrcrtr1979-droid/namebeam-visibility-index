@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_segment_hvac_houston_perplexity",
+ "date_utc": "2026-11-23",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_131e9182-22ff-4f17-a04c-010eb390e919",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00057,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00428
+   },
+   "input_tokens": 4814,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4268,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 229,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5043
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Mission Air Conditioning & Plumbing",
+  "House Pro Air Conditioning",
+  "Mission Air Conditioning",
+  "AC repair",
+  "Air Conditioning"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "5e77fe03e5302fc9ee4b38f6a4a55467120b5bf5fc4e4e2562b6a4af8542ecb4",
+ "answer_chars": 694,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "d415a59bd96a5866c4339eabe73238dc96013ca0f0339237ca7091777fb0723d",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

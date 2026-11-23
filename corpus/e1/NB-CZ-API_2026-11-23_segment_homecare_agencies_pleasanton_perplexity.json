@@ -1,0 +1,86 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_segment_homecare_agencies_pleasanton_perplexity",
+ "date_utc": "2026-11-23",
+ "business": "SEGMENT: homecare agencies, Pleasanton",
+ "niche": "home care agencies",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best home care agency in Pleasanton CA for an elderly parent?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_67129d87-0ea9-44bd-aa15-63ebe50b3657",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00182,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00077,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00523
+   },
+   "input_tokens": 7827,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 7277,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 309,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 8136
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Home Care Services",
+  "Right",
+  "California Home Care Organization",
+  "California Department of Social Services",
+  "Right at Home",
+  "Senior Helpers",
+  "East Bay",
+  "Home Care Organization",
+  "Department of Social Services",
+  "Home Care",
+  "Right at Home East Bay",
+  "Senior Helpers of Pleasanton",
+  "Serving Pleasanton",
+  "Home East Bay"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9020d18833e71c629054dd5bab189e792c8583b0daffcc4548a2a1e469f5fda7",
+ "answer_chars": 1213,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "b048d359ce8027027082a0ef8a74fa08e2815ae174429da1cf4525ac6914b47d",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

@@ -1,0 +1,76 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_native_digital_perplexity",
+ "date_utc": "2026-11-23",
+ "business": "Native Digital",
+ "niche": "marketing agency",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best marketing agency in Kansas City?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_47a0b87d-679b-4029-bc04-23af9d46b549",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00098,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00059,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00421
+   },
+   "input_tokens": 4477,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3933,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 234,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4711
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "EAG Advertising & Marketing",
+  "Thrive",
+  "WiseGuys Digital Marketing",
+  "EAG Advertising"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ce194d596babeb394e3957aaed7fec55dc1a8c7fe452f488a81ed3f2961d8425",
+ "answer_chars": 793,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "61df871607e71fe2a6db1d72cbcd670238656d9734358f1056af7c4c2db95fac",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

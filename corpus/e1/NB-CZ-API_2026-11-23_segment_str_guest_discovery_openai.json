@@ -1,0 +1,78 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_segment_str_guest_discovery_openai",
+ "date_utc": "2026-11-23",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EnUzy9Z3pF80YW5uPwEixqnLu0oQ0",
+  "usage": {
+   "prompt_tokens": 34,
+   "completion_tokens": 1759,
+   "total_tokens": 1793,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 27,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "Vrbo",
+  "Booking.com",
+  "Book Airbnb when",
+  "Book Vrbo when",
+  "Book Booking.com when",
+  "Exact sleeping setup",
+  "Bathroom count",
+  "Air conditioning/heating",
+  "Stairs/elevator/accessibility",
+  "Kitchen",
+  "Laundry",
+  "Wi-Fi",
+  "Check-in window",
+  "Security deposit/hold",
+  "Local taxes",
+  "Total price",
+  "Recent reviews",
+  "The host responds clearly",
+  "The cancellation policy",
+  "All communication and payment stay on-platform",
+  "Booking.com and Airbnb",
+  "Vrbo and Airbnb",
+  "Choose Vrbo",
+  "Choose Booking.com",
+  "Guest Favorite",
+  "Book Vrbo",
+  "Book Booking.com",
+  "Host",
+  "WhatsApp",
+  "Watch",
+  "Vacation Rentals",
+  "Filter"
+ ],
+ "engine_stated_criteria": [
+  "You have a backup plan"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "The best choice depends on your trip style, group size, and how much certainty you want.\n\n## Quick recommendation\n\n- **Choose Airbnb** if you want the largest selection of distinctive homes, rooms, and long-stay options—especially if you value neighborhood feel and host communication.\n- **Choose Vrbo** if you want an entire home for a family or group, particularly vacation houses, cabins, beach properties, and larger rentals.\n- **Choose Booking.com** if you prioritize easy comparison with hotels, flexible cancellation options, and a more standardized booking experience. It can also be good for apartments, but its biggest strength is breadth and convenience.\n\nFor an important trip, I’d compare the *same dates and property type* across at least two platforms, then book based on the **total price, cancellation terms, recent reviews, and host quality**, not just the nightly rate.\n\n---\n\n## Airbnb vs. Vrbo vs. Booking.com\n\n| Platform | Best for | Advantages | Watch out for |\n|---|---|---|---|\n| **Airbnb** | Couples, solo travelers, unique stays, longer trips, rooms or homes | Huge inventory, strong review ecosystem, useful filters, lots of local character | Cleaning/service fees can make short stays expensive; quality varies widely |\n| **Vrbo** | Families and groups wanting whole homes | Focused on entire-place rentals; often strong selection of vacation homes with kitchens, yards, pools, etc. | Fewer shared-space/budget options; fee and cancellation structures vary by listing |\n| **Booking.com** | Travelers who want flexibility, hotels plus apartments, shorter stays | Easy side-by-side comparison, often good cancellation flexibility, strong hotel inventory, familiar checkout flow | Vacation-rental listings can be less consistent in detail; read house rules and property reviews carefully |\n\n### In practice\n\n**Book Airbnb when:**\n- You want a room in someone’s home or a more personal/local experience.\n- You need a longer stay, kitchen, laundry, or workspace.\n- You found a highly reviewed “Guest Favorite” or equivalent listing with a responsive host.\n\n**Book Vrbo when:**\n- You have a family/group and want a full house rather than separate hotel rooms.\n- You care about features like multiple bedrooms, a private pool, outdoor space, parking, or proximity to a beach/ski area.\n- You are staying long enough that a house rental is meaningfully better value than a hotel.\n\n**Book Booking.com when:**\n- Your plans may change and cancellation flexibility matters.\n- You want to compare hotels and apartments in one search.\n- You prefer a more predictable, less host-dependent experience.\n- You are booking only a night or two, where hotel pricing may beat rentals after cleaning fees.\n\n---\n\n## How to find a good host and a good property\n\nA good host is helpful, but the property itself should not depend on the host being available to solve basic problems. Look for a listing that is clear, well maintained, and accurately described.\n\n### 1. Prioritize recent reviews over the average score\n\nRead reviews from the last 6–12 months, not just the headline rating.\n\nLook for repeated comments about:\n- Cleanliness\n- Accuracy of photos and description\n- Check-in process\n- Noise, safety, and neighborhood\n- Wi-Fi speed/reliability, if you need to work\n- Bed comfort, water pressure, air conditioning/heating\n- Host responsiveness when something went wrong\n\nA few imperfect reviews are normal. More concerning are repeated complaints such as:\n- “Not like the photos”\n- “Host stopped responding”\n- “Unexpected fees”\n- “Dirty”\n- “Construction/noise not disclosed”\n- “Couldn’t access the property”\n- “Refund was difficult”\n\nA property with a **4.8 rating from 150 recent reviews** is generally safer than one with a **5.0 rating from 6 reviews**.\n\n### 2. Read the low reviews first\n\nFilter or scan for 1–3 star reviews. Ask:\n- Was the issue a one-off or recurring?\n- Did the host respond professionally?\n- Does the complaint matter to your trip?\n\nFor example, a complaint about steep stairs may not matter to some travelers, but it matters a lot if you have young children, mobility limitations, or heavy luggage.\n\n### 3. Evaluate the host’s communication before booking\n\nSend a short, specific question that is not already obvious from the listing, such as:\n\n> “Hi, we’re arriving around 9 p.m. Is self check-in available, and is the Wi-Fi reliable enough for video calls?”\n\nA good sign:\n- Clear answer\n- Reasonable response time\n- Direct, professional tone\n- No pressure to communicate or pay outside the platform\n\nA warning sign:\n- Vague answers\n- Avoiding questions about access, fees, amenities, or location\n- Asking you to cancel and book/pay directly\n- Pushing you to use WhatsApp/email before you book for payment-related reasons\n\nUse platform messaging and payment. It creates a record if there is a dispute.\n\n### 4. Check the listing details, not just photos\n\nVerify:\n- **Exact sleeping setup:** real beds versus sofa beds, bedroom count versus bed count\n- **Bathroom count:** private or shared, full bath versus half bath\n- **Air conditioning/heating:** especially in regions where it is not universal\n- **Parking:** included, paid, street-only, or difficult\n- **Stairs/elevator/accessibility**\n- **Kitchen:** full kitchen versus kitchenette\n- **Laundry**\n- **Wi-Fi**\n- **Check-in window**\n- **Extra guest, pet, resort, cleaning, or utility fees**\n- **Security deposit/hold**\n- **Local taxes**\n\nBefore paying, go all the way to the final booking screen and compare the **total cost**, including fees and taxes.\n\n### 5. Study the cancellation policy as carefully as the price\n\nVacation rentals often have stricter terms than hotels. For a trip with uncertain dates, paying a little more for a flexible cancellation option can be worth it.\n\nAlso check:\n- What happens if the host cancels?\n- Is there a partial refund schedule?\n- Are cleaning fees refunded?\n- Is travel insurance worthwhile for your circumstances?\n\n### 6. Verify the location independently\n\nPlatforms may show approximate map pins before booking. Use the neighborhood, landmarks, transit stops, and review comments to assess the area.\n\nConsider:\n- Airport/train access\n- Walkability\n- Safety and late-night arrival\n- Parking\n- Noise from nightlife, traffic, rail lines, or construction\n- Distance to the things you actually plan to do\n\nDo not rely solely on phrases like “minutes from downtown,” which may mean driving rather than walking.\n\n### 7. Watch for scam signals\n\nAvoid listings or hosts that:\n- Ask for payment outside Airbnb, Vrbo, or Booking.com\n- Offer a “discount” for direct payment\n- Demand unusual identification or deposits before booking outside official platform processes\n- Have copied-looking photos or generic descriptions\n- Are dramatically cheaper than comparable nearby options\n- Have no reviews but unusually polished claims and pressure to act quickly\n\nIf a deal seems far below the local market, assume there is a catch until proven otherwise.\n\n---\n\n## A simple booking checklist\n\nBefore you book, confirm:\n\n1. **Total price** beats or justifies alternatives.\n2. **Recent reviews** are consistently positive.\n3. **The host responds clearly** to one practical question.\n4. **The cancellation policy** fits your risk tolerance.\n5. **The location and amenities** meet your actual needs.\n6. **All communication and payment stay on-platform.**\n7. **You have a backup plan** if arriving late or if a problem occurs.\n\n---\n\n## My default strategy\n\nFor a couple or solo trip: start with **Booking.com and Airbnb**.  \nFor a family/group home: start with **Vrbo and Airbnb**.  \nFor a short trip or uncertain itinerary: lean toward **Booking.com**, often a hotel or aparthotel with flexible cancellation.  \nFor a week-plus stay: rentals can be excellent, but compare the final all-in price against hotels/aparthotels after cleaning and service fees.\n\nThe platform matters less than the individual listing. A well-reviewed, recently active, clearly described property with a responsive host and flexible terms is usually the best booking—regardless of whether it is on Airbnb, Vrbo, or Booking.com.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

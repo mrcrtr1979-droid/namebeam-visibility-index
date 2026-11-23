@@ -1,0 +1,51 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_segment_str_host_tooling_openai",
+ "date_utc": "2026-11-23",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EnUv6J1ROtDbZrIA9CgVKET79gKYO",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 433,
+   "total_tokens": 459,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 94,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "AirDNA",
+  "Rentalizer",
+  "Smart Rates",
+  "AirDNA MarketMinder + Rentalizer",
+  "After listing",
+  "AirDNA MarketMinder",
+  "MarketMinder"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most Airbnb hosts, the best setup is:\n\n- **PriceLabs** for ongoing nightly pricing\n- **AirDNA** for market research before buying\n\nIf you want just one tool that does both reasonably well, choose **AirDNA**.\n\n### Why\n\n**AirDNA**\n- Best for evaluating a market before purchase\n- Shows occupancy, ADR (average daily rate), revenue, seasonality, supply growth, regulations, and comparable listings\n- Its **Rentalizer** tool is useful for estimating a specific property’s potential revenue\n- Offers dynamic pricing through **Smart Rates**, though many experienced hosts prefer PriceLabs for pricing control\n\n**PriceLabs**\n- Generally one of the strongest dynamic-pricing tools for active listings\n- Automatically adjusts rates based on local demand, events, booking pace, lead time, occupancy, and your rules\n- Lets you set minimum prices, far-future pricing, last-minute discounts, minimum-stay rules, and aggressive/conservative pricing strategies\n- Has market dashboards, but it is less robust than AirDNA for deciding whether to buy in a market\n\n### Practical recommendation\n\n1. **Before buying:** Use **AirDNA MarketMinder + Rentalizer** to study the ZIP code, neighborhood, and realistic comparable homes.\n2. **After listing:** Connect the property to **PriceLabs** for dynamic nightly pricing.\n3. Validate both tools’ estimates by manually reviewing 10–20 truly comparable Airbnb listings—not just the market average.\n\nAvoid basing an acquisition solely on projected “gross revenue.” Model conservative occupancy, cleaning/management costs, taxes, utilities, repairs, furnishing replacement, and local regulatory risk.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

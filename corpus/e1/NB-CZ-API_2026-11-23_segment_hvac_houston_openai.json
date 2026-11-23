@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_segment_hvac_houston_openai",
+ "date_utc": "2026-11-23",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EnVHZg3Z3SP8EzzTO9geE7bq2eIqO",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 374,
+   "total_tokens": 392,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 130,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Tech of Houston",
+  "John Moore Services",
+  "Abacus Plumbing, Air Conditioning & Electrical",
+  "Texas Air Authorities",
+  "Village Plumbing & Air",
+  "Texas Department of Licensing and Regulation (TDLR)",
+  "Houston AC-repair",
+  "Abacus Plumbing",
+  "Air Conditioning",
+  "Village Plumbing",
+  "Abacus",
+  "John Moore"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” Houston AC-repair company—availability, your system type, pricing, and warranty matter—but a strong starting pick is **Air Tech of Houston** for established local service and residential HVAC focus.\n\nOther well-known Houston-area options worth comparing include:\n\n- **John Moore Services** — large operation, broad availability, HVAC plus plumbing/electrical.\n- **Abacus Plumbing, Air Conditioning & Electrical** — extensive service coverage and maintenance-plan options.\n- **Texas Air Authorities** — often considered for straightforward residential AC diagnostics and replacement.\n- **Village Plumbing & Air** — another established option for HVAC and home-service work.\n\nBefore booking, get at least **two written diagnoses/estimates** if the repair is expensive. Confirm the contractor is licensed through the **Texas Department of Licensing and Regulation (TDLR)**, ask for the service-call/diagnostic fee upfront, and make sure the quote separates labor, parts, refrigerant, and warranty.\n\nFor an urgent no-cool situation, the “best” company is often the licensed one that can arrive today and gives a clear flat diagnostic fee—not the one with the lowest advertised coupon.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

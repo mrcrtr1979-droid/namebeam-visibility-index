@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_segment_pi_car_accident_intake_pleasanton_shotland_pilot_perplexity",
+ "date_utc": "2026-11-23",
+ "business": "SEGMENT: PI car accident intake, Pleasanton (Shotland pilot)",
+ "niche": "personal injury law",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I was in a car accident in Pleasanton CA. Which lawyer should I hire for my injury case?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_6c511d3b-5c60-4843-ac1f-1f80d3367550",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00109,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00476
+   },
+   "input_tokens": 4658,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4103,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 436,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5094
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Stephen M. Fuerch",
+  "Jimenez LLP",
+  "Mirador Law",
+  "Venardi Zurada",
+  "Pleasanton office"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "4e5dbeaaf49534875f33978d245f17aa1d82f9a35a438c857b8fd390df228f33",
+ "answer_chars": 1532,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "3c5d29b7f01707f69444f2babe4f19b7b4434820b1be0931e0cd6d604252e02d",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

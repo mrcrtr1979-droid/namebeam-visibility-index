@@ -1,0 +1,80 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_segment_health_insurance_kansas_city_perplexity",
+ "date_utc": "2026-11-23",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8b5bce01-8733-447b-86a7-c79a8a41a3e3",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00108,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00074,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00446
+   },
+   "input_tokens": 4882,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4331,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 297,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5179
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "BBS Insurance",
+  "AIS Health Advisors",
+  "Kansas and Missouri",
+  "ACA Marketplace",
+  "Medicare",
+  "In Kansas",
+  "Marketplace Plans",
+  "ACA Marketplace plans"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "c2d7482401bfad269f6aed51a57712f04fd021d538ead5982494eed2e58d240c",
+ "answer_chars": 1063,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "1305588a4abccdfea20c146b1f36e5748ab14a629fe8dfaedc4ae57164a108ce",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

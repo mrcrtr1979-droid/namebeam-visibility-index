@@ -1,0 +1,49 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-23",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EnTUdv1Suvv8GcSuwyEUshA5z9wVS",
+  "usage": {
+   "prompt_tokens": 21,
+   "completion_tokens": 747,
+   "total_tokens": 768,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 511,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "B&W Service Center in Pleasanton",
+  "B&W Service Center",
+  "Fastest walk-in oil change",
+  "Valvoline Instant Oil Change",
+  "Jiffy Lube",
+  "European"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For the best overall experience—not just the fastest—try **B&W Service Center in Pleasanton**. It’s a well-regarded independent shop and is generally a better choice than a quick-lube chain if you want the oil change done carefully, with a basic inspection and less aggressive upselling.\n\nBest choice by priority:\n\n- **Best overall / careful service:** **B&W Service Center**\n- **Fastest walk-in oil change:** a **Valvoline Instant Oil Change** or **Jiffy Lube** nearby\n- **Best for a newer luxury, hybrid, or vehicle under warranty:** your brand’s dealer or a marque-specialist shop\n- **Best value:** an independent shop running an oil-change special—ask for the *out-the-door price* for the correct full-synthetic oil and filter before authorizing work.\n\nFor most modern cars, expect roughly **$80–$140** for a full-synthetic oil change in Pleasanton, depending on oil capacity and filter. Call first to confirm they carry the required oil specification—especially for European cars, turbo engines, hybrids, and diesels.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

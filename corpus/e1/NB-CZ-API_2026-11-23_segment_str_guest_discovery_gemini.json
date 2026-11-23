@@ -1,0 +1,26 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_segment_str_guest_discovery_gemini",
+ "date_utc": "2026-11-23",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "FAILED",
+ "business_mentioned": null,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "FAILED RUN, logged per no-fabricated-rows law. error detail: gemini request failed: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60). run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

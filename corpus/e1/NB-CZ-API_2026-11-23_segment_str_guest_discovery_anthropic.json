@@ -1,0 +1,47 @@
+{
+ "check_id": "NB-CZ-API_2026-11-23_segment_str_guest_discovery_anthropic",
+ "date_utc": "2026-11-23",
+ "business": "SEGMENT: STR guest discovery",
+ "niche": "short-term rental",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "I am planning a trip. Should I book on Airbnb, Vrbo, or Booking.com, and how do I find a good host?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_d2qj7bqoi5l35w3ssbvmivz6sr63j7wmvhruimk3iyfapc3slg3a",
+  "usage": {
+   "input_tokens": 41,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 326,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Airbnb",
+  "VRBO",
+  "Booking.com",
+  "Green flags",
+  "Premier Partner",
+  "Superhost",
+  "Finding a good host",
+  "Good Host",
+  "A good host"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "# Choosing a Platform\n\nEach has different strengths:\n\n**Airbnb**\n- Largest selection, especially unique/smaller properties\n- Strong review system and host verification\n- Good for shorter stays\n\n**VRBO**\n- Better for full homes/longer stays\n- Often better value on weekly rates\n- Fewer but typically established hosts\n\n**Booking.com**\n- Widest range (hotels + rentals)\n- Competitive pricing\n- Good for last-minute deals\n\n# Finding a Good Host\n\n**Check reviews carefully:**\n- Read recent ones (last 3-6 months)\n- Look for patterns, not just star ratings\n- Verify reviews match your priorities (cleanliness, communication, etc.)\n\n**Red flags:**\n- Very few reviews or all very new\n- Vague/defensive responses to criticism\n- Hosts who don't respond to questions before booking\n\n**Green flags:**\n- Superhost/Premier Partner status\n- Detailed house rules and clear communication\n- Host responds quickly to messages\n- Photos match descriptions\n\n**Before booking:**\n- Message the host with specific questions\n- Ask about their cancellation policy\n- Verify exact location on a map\n- Check what's actually included\n\n**Pro tip:** Sometimes a property with 4.8 stars and 50 reviews is safer than 5.0 stars with 3 reviews.\n\nWhat type of trip are you planning? That might help narrow down which platform makes most sense.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
