@@ -56,13 +56,22 @@ V2_CUT_SLUGS = ["atlanta-dentists", "dallas-dentists", "phoenix-dentists", "plea
 ANSWER = "Top picks: **Alpha Realty** and **Beta Homes** serve this area."
 
 CALLS = []          # (engine, prompt, question_id) in call order
-GEMINI_MODE = ["ok"]  # ok | quota
+GEMINI_MODE = ["ok"]  # ok | quota (every call) | q1quota (prompt_1 calls only) | q2quota (q2 calls only)
+#                       | q2quota_2nd (the second q2 Gemini call only)
+Q2_GEMINI_SEEN = [0]
 
 
 def fake(engine):
     def fn(prompt):
         CALLS.append((engine, prompt, engines_mod.CURRENT_QUESTION_ID[0]))
-        if engine == "gemini" and GEMINI_MODE[0] == "quota":
+        is_q2 = prompt.startswith("I need help")
+        if engine == "gemini" and is_q2:
+            Q2_GEMINI_SEEN[0] += 1
+        refuse = (GEMINI_MODE[0] == "quota"
+                  or (GEMINI_MODE[0] == "q1quota" and not is_q2)
+                  or (GEMINI_MODE[0] == "q2quota" and is_q2)
+                  or (GEMINI_MODE[0] == "q2quota_2nd" and is_q2 and Q2_GEMINI_SEEN[0] == 2))
+        if engine == "gemini" and refuse:
             return False, "", [], "QUOTA: gemini HTTP 429 [GenerateRequestsPerDayPerProjectPerModel-FreeTier] tries=1: x"
         return True, ANSWER, [], ""
     return fn
@@ -92,6 +101,7 @@ def slugify(n):
 def run(entries, q2=True, env=None, seed_files=None, gemini="ok", q2_doc=None):
     """Runs e1_runner.main() in a temp dir. Returns (calls, q1_files, q2_files, tmp, stdout)."""
     del CALLS[:]
+    Q2_GEMINI_SEEN[0] = 0
     GEMINI_MODE[0] = gemini
     e1_runner.ENGINES = {k: fake(k) for k in ENGINE_NAMES}
     e1_runner.run_serp = lambda br, d: ("", True)
@@ -312,8 +322,8 @@ calls, q1f, q2f, tmp, out = run(E2, gemini="quota")
 q1dir, q2dir = os.path.join(tmp, "corpus", "e1"), os.path.join(tmp, "corpus", "e1_q2")
 g2 = [f for f in q2f if f.endswith("_gemini.json")]
 check("F1 prompt_1 Gemini calls were made (and refused): 2", sum(1 for c in calls if c[0] == "gemini" and c[1].startswith("Who is")) == 2)
-check("F2 no prompt_2 call was sent to Gemini once the rails were refused",
-      not [c for c in calls if c[0] == "gemini" and c[1].startswith("I need help")])
+check("F2 (GEMINI-Q2-1122) q2 asks Gemini once, is refused, and sends no further prompt_2 call to Gemini",
+      len([c for c in calls if c[0] == "gemini" and c[1].startswith("I need help")]) == 1)
 check("F3 the two skipped gemini q2 cells are still logged, as QUOTA_BLOCKED, with an empty answer",
       len(g2) == 2 and all(load(q2dir, f)["run_status"] == "QUOTA_BLOCKED" and load(q2dir, f)["answer_verbatim"] == ""
                            and load(q2dir, f)["business_mentioned"] is None for f in g2))
@@ -324,6 +334,41 @@ check("F5 the prompt_1 gemini rows are QUOTA_BLOCKED as before and nothing in co
       and not any("q2" in open(os.path.join(q1dir, f)).read().lower() for f in q1f))
 check("F6 the exhausted flag resets for the next run (a clean run asks gemini q2 again)",
       len([c for c in run(E2, gemini="ok")[0] if c[0] == "gemini" and c[1].startswith("I need help")]) == 2)
+
+# --- H. GEMINI-Q2-1122: a prompt_1 quota error no longer blocks q2; a q2 quota error blocks the rest ---
+E3 = E2 + [entry("Gamma Co", "Who is the best test in Gamma?")]
+calls, q1f, q2f, tmp, out = run(E3, gemini="q1quota")
+q1dir, q2dir = os.path.join(tmp, "corpus", "e1"), os.path.join(tmp, "corpus", "e1_q2")
+g2c = [c for c in calls if c[0] == "gemini" and c[1].startswith("I need help")]
+g2 = [f for f in q2f if f.endswith("_gemini.json")]
+check("H1a prompt_1 Gemini was refused for all 3 rows, yet q2 still asked Gemini for all 3",
+      sum(1 for c in calls if c[0] == "gemini" and c[1].startswith("Who is")) == 3 and len(g2c) == 3)
+check("H1b the 3 q2 Gemini rows are OK with an answer, none QUOTA_BLOCKED",
+      len(g2) == 3 and all(load(q2dir, f)["run_status"] == "OK" and load(q2dir, f)["answer_verbatim"] == ANSWER for f in g2))
+check("H1c q2 Gemini calls this run are at most the q2 roster size (3)", len(g2c) <= 3)
+q1_after = {f: load(q1dir, f) for f in q1f if f.endswith("_gemini.json")}
+calls_b, q1f_b, _, tmp_b, _ = run(E3, q2=False, gemini="q1quota")
+q1_noq2 = {f: load(os.path.join(tmp_b, "corpus", "e1"), f) for f in q1f_b if f.endswith("_gemini.json")}
+KEYS = ("run_status", "answer_verbatim", "session_note", "engine_meta", "business_mentioned", "prompt_variant")
+check("H3 prompt_1 Gemini rows are the same files with the same fields with or without the q2 pass, all QUOTA_BLOCKED",
+      sorted(q1_after) == sorted(q1_noq2) and len(q1_after) == 3
+      and all(q1_after[f].get(k) == q1_noq2[f].get(k) for f in q1_after for k in KEYS)
+      and all(r["run_status"] == "QUOTA_BLOCKED" for r in q1_after.values())
+      and not any("q2" in json.dumps(r).lower() for r in q1_after.values()))
+calls, q1f, q2f, tmp, out = run(E3, gemini="q2quota_2nd")
+q2dir = os.path.join(tmp, "corpus", "e1_q2")
+g2c = [c for c in calls if c[0] == "gemini" and c[1].startswith("I need help")]
+rows = {f: load(q2dir, f) for f in q2f if f.endswith("_gemini.json")}
+st = sorted(r["run_status"] for r in rows.values())
+check("H2a q2 Gemini: row 1 OK, row 2 refused, row 3 not asked: 2 calls only", len(g2c) == 2 and Q2_GEMINI_SEEN[0] == 2)
+check("H2b statuses are 1 OK and 2 QUOTA_BLOCKED, the skipped one marked skipped in engine_meta",
+      st == ["OK", "QUOTA_BLOCKED", "QUOTA_BLOCKED"]
+      and sum(1 for r in rows.values() if (r.get("engine_meta") or {}).get("skipped")) == 1)
+check("H2c the other engines still answered every q2 row",
+      all(load(q2dir, f)["run_status"] == "OK" for f in q2f if not f.endswith("_gemini.json")))
+calls, q1f, q2f, tmp, out = run(E3, gemini="ok")
+check("H4 a clean run asks Gemini q2 for every row (3 calls) and the guard state resets between runs",
+      len([c for c in calls if c[0] == "gemini" and c[1].startswith("I need help")]) == 3)
 
 # --- G. kill switch, missing and broken q2 file never touch prompt_1 -------------------------------
 calls, q1f, q2f, tmp, out = run(E2, env={"E1_DISABLE_Q2": "1"})
