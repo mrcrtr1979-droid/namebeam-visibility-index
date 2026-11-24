@@ -379,11 +379,16 @@ def call_gemini(prompt_text, _post=None, _sleep=None, _now=None, question_id=Non
     sleep = _sleep or time.sleep
     now = _now or time.monotonic
     err = ""
-    for name, url, headers in rails:
+    for index, (name, url, headers) in enumerate(rails):
         ok, text, sources, err, status = _gemini_attempts(url, headers, prompt_text, model, post, sleep, now)
         LAST_CALL_META["gemini"]["rail"] = name
         if ok:
             return True, text, sources, ""
+        # A persistent Studio Free 503 can recover on the configured Vertex rail.
+        # An outage does not open a new path to the paid Studio rail.
+        next_rail = rails[index + 1][0] if index + 1 < len(rails) else None
+        if status == 503 and name == "studio_free" and next_rail == "vertex":
+            continue
         if status not in GEMINI_FALLTHROUGH:
             break
     return False, "", [], err
