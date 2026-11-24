@@ -1,0 +1,63 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-24_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-24",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My car needs an oil change in Pleasanton. Which specific oil change shops should I call, and why?",
+ "q1_prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EnrkqrY7AcKTGx8GSKCnEYXhz8gAM",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1175,
+   "total_tokens": 1203,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton, California",
+  "Valvoline Instant Oil Change — Pleasanton area",
+  "Jiffy Lube — Pleasanton",
+  "Firestone Complete Auto Care — Pleasanton",
+  "Big O Tires — Pleasanton",
+  "Just need it done quickly",
+  "Valvoline Instant Oil Change",
+  "Jiffy Lube",
+  "Firestone Complete Auto Care",
+  "Firestone",
+  "Big O Tires",
+  "EVs",
+  "European",
+  "OEM-spec",
+  "VIN. Ask"
+ ],
+ "engine_stated_criteria": [
+  "Your vehicle’s local dealership service department"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Assuming you mean **Pleasanton, California**, I’d call these in this order, based on what you need:\n\n1. **Valvoline Instant Oil Change — Pleasanton area**  \n   **Best for:** Fast, straightforward oil changes.  \n   **Why call:** They typically specialize in quick service, let you remain in the car, and usually stock conventional, synthetic-blend, and full-synthetic oils. Good choice if your car is due but has no other problems.\n\n2. **Jiffy Lube — Pleasanton**  \n   **Best for:** Convenience and easy scheduling/walk-ins.  \n   **Why call:** Usually offers oil changes plus a basic fluid/tire/light check. Ask for the *out-the-door* price, since coupons and oil type can change the total significantly.\n\n3. **Firestone Complete Auto Care — Pleasanton**  \n   **Best for:** An oil change plus a more useful inspection.  \n   **Why call:** If you also have tire wear, brake noise, battery concerns, alignment issues, or maintenance lights, Firestone can handle the oil service and identify other needs in one visit. It may take longer than a quick-lube shop.\n\n4. **Big O Tires — Pleasanton**  \n   **Best for:** Combining an oil change with tire service.  \n   **Why call:** A good option if you need a rotation, tire-pressure issue checked, or are nearing replacement tires. Ask whether tire rotation is included or discounted with the oil service.\n\n5. **Your vehicle’s local dealership service department** — especially for **BMW, Mercedes, Audi/VW, Lexus/Toyota, Honda/Acura, Tesla-adjacent hybrids/EVs, or cars under warranty**  \n   **Best for:** Cars needing a particular manufacturer-approved oil specification or factory maintenance record.  \n   **Why call:** European and turbocharged cars often require an exact oil approval—not merely “full synthetic.” A dealer is usually the safest choice for correct OEM-spec oil, factory filters, software/service-indicator resets, and warranty documentation. It may cost more.\n\n### What to ask when you call\nGive them your **year, make, model, engine**, and ideally your license plate or VIN. Ask:\n\n- “What is the **total out-the-door price**, including oil, filter, shop fees, and disposal?”\n- “What **oil brand, viscosity, and manufacturer specification** will you use?”\n- “Is the filter included, and what brand is it?”\n- “Will you reset the maintenance/oil-life reminder?”\n- “How long is the wait, and do I need an appointment?”\n- “Please call me before performing any work beyond the oil change.”\n\n### Quick recommendation\n- **Just need it done quickly:** Valvoline or Jiffy Lube.  \n- **Want oil change plus tires/brakes checked:** Firestone or Big O Tires.  \n- **European, turbo, hybrid, under warranty, or picky oil spec:** dealership or a well-reviewed independent shop that confirms the exact factory oil approval.\n\nBefore heading over, confirm the shop is currently operating at its Pleasanton location, has your required oil in stock, and gives the full price on the phone.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-API_2026-11-24_segment_dentists_pleasanton_openai",
+ "date_utc": "2026-11-24",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EnpiAkswwBosH6bw3w74ByXFso2cI",
+  "usage": {
+   "prompt_tokens": 22,
+   "completion_tokens": 522,
+   "total_tokens": 544,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 223,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Google Reviews, Yelp, and Healthgrades",
+  "Dental Board of California",
+  "X-rays"
+ ],
+ "engine_stated_criteria": [
+  "Check your insurance directory first"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist in Pleasanton—availability, insurance, anxiety accommodations, and whether you prefer a conservative treatment style matter a lot. For a routine checkup and cleaning, I’d prioritize a **well-reviewed general/family dentist with current availability and clear pricing**, rather than a cosmetic or specialty-focused office.\n\nA good way to choose in Pleasanton:\n\n1. **Check your insurance directory first** if you have dental insurance.\n2. Compare nearby general dentists on **Google Reviews, Yelp, and Healthgrades**—look for consistently positive recent comments about cleanings, gentle hygienists, honest treatment plans, and billing.\n3. Verify the dentist’s active license through the **Dental Board of California**.\n4. Call and ask:\n   - New-patient exam + cleaning cost with/without insurance\n   - Whether the first visit includes X-rays\n   - Whether they can do the cleaning at the same appointment\n   - Earliest appointment and cancellation policy\n\nFor a checkup/cleaning, the best fit is usually an office that does **not pressure patients into cosmetic work or extensive treatment without explaining alternatives**, provides written estimates, and has several recent reviews specifically mentioning routine preventive care.\n\nIf you tell me your insurance plan (or self-pay), preferred part of Pleasanton, and whether you want a gentle/anxiety-friendly dentist, I can help you narrow down what to look for and compare specific local offices.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

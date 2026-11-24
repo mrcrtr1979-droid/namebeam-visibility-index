@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-11-24_segment_mortgage_lenders_st_louis_perplexity",
+ "date_utc": "2026-11-24",
+ "business": "SEGMENT: mortgage lenders, St. Louis",
+ "niche": "mortgage lenders",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in St. Louis MO for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_77714a5e-075b-4f26-9035-e6e040a603fe",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00229,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0009,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00583
+   },
+   "input_tokens": 9710,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 9159,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 360,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 10070
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "A good starting shortlist in St. Louis",
+  "Gershman Mortgage",
+  "Flat Branch Home Loans",
+  "Stifel Bank & Trust",
+  "Together Credit Union",
+  "Veterans United",
+  "My practical recommendation",
+  "Stifel Bank",
+  "Loan Estimates from at least three lenders"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "e7f4cc65fd6f4a11dcf41ae0ee2f9f91ecebbbd8dc25202943d0444c97407639",
+ "answer_chars": 1267,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "e081b9a126a1a9ab06e7da5be06af97aa118c575422622c34351734c5f9e9b18",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

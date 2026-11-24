@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-API_2026-11-24_segment_tanning_salons_tyler_perplexity",
+ "date_utc": "2026-11-24",
+ "business": "SEGMENT: tanning salons, Tyler",
+ "niche": "tanning salons",
+ "market": "Tyler TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Tyler TX?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3aae4889-710a-4c0e-ab66-4e5414877d61",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0005,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0042
+   },
+   "input_tokens": 4793,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4249,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 199,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4992
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "The Tanning Zone",
+  "Palm Beach Tan",
+  "Birdeye. It",
+  "Tyler. If",
+  "S Broadway"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "a0b15a231a3543057cbb2ad96145d1c57ff4772f04a1987b026ace77caa63f80",
+ "answer_chars": 566,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "830beaa03b54e929674fbec48b279950f9eabdaefe0d57ba826bdaacdc7fb0b4",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

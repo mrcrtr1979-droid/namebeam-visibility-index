@@ -1,0 +1,76 @@
+{
+ "check_id": "NB-CZ-API_2026-11-24_segment_mortgage_lenders_west_palm_beach_perplexity",
+ "date_utc": "2026-11-24",
+ "business": "SEGMENT: mortgage lenders, West Palm Beach",
+ "niche": "mortgage lenders",
+ "market": "West Palm Beach FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best mortgage lender in West Palm Beach FL for a home purchase loan?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_76bcbdc9-66e1-4f83-80eb-2622dd0ae5f2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00203,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00081,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00548
+   },
+   "input_tokens": 8672,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 8121,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 323,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 8995
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Palm Beach County Housing Finance Authority",
+  "New American Funding",
+  "Palm Beach Mortgage Group",
+  "Homebuyer Match Pilot Program"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "276d58173aac9ed1a6a96555408de86f5024336ee304374d69a081e25422f0db",
+ "answer_chars": 1150,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "ec985ea052e2bcdb4d58f34eba70d1dc5205fab6946645542ff0b4c71c979c5c",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

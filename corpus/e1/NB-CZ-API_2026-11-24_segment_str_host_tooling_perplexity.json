@@ -1,0 +1,78 @@
+{
+ "check_id": "NB-CZ-API_2026-11-24_segment_str_host_tooling_perplexity",
+ "date_utc": "2026-11-24",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_b5045f4c-e330-49f8-be3e-c4c414982baa",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00133,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00053,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.0045
+   },
+   "input_tokens": 5856,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 5302,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 210,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 6066
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "AirDNA",
+  "Rentalizer",
+  "Start with AirDNA"
+ ],
+ "engine_stated_criteria": [
+  "If you want one tool for both jobs, start with AirDNA"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "2acd0dc651da7cfb311bdab819c872ea5f1b556c43b32689dca0d6b128b154a8",
+ "answer_chars": 565,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "32e406812f74e8ba0e87f1c5c0582fda6ac0537172e59da33d97619a6bd85db6",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

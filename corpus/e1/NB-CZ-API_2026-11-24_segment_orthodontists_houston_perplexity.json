@@ -1,0 +1,89 @@
+{
+ "check_id": "NB-CZ-API_2026-11-24_segment_orthodontists_houston_perplexity",
+ "date_utc": "2026-11-24",
+ "business": "SEGMENT: orthodontists, Houston",
+ "niche": "orthodontists",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Houston for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_900e0963-3d8d-4cb8-9954-fbd426552600",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00087,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00468
+   },
+   "input_tokens": 5244,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4697,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 349,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5593
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Greater Houston Orthodontics",
+  "Elara Orthodontics (Houston Heights)",
+  "Davoody & Hablinski Orthodontics (Kirby area)",
+  "Invisalign. A",
+  "Invisalign",
+  "American Board of Orthodontics. It",
+  "Memorial and Bellaire",
+  "Elara Orthodontics",
+  "Houston Heights",
+  "House of Orthodontics",
+  "Hablinski Orthodontics",
+  "American Association of Orthodontists",
+  "American Board of Orthodontics",
+  "Greater Houston",
+  "Bellaire",
+  "Davoody & Hablinski Orthodontics",
+  "Dr. Amir Davoody"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "1f178d0db18d08f4055f3a7d280b1046ee325cb5da53bcfafba353652a1a5637",
+ "answer_chars": 1256,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "3e8c4447b79cfb9aa14f57dd6cc90c16ac0ee90fd9b6140dc5fbb837f1c1c307",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

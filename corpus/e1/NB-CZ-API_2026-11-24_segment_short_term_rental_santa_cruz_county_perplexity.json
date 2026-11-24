@@ -1,0 +1,98 @@
+{
+ "check_id": "NB-CZ-API_2026-11-24_segment_short_term_rental_santa_cruz_county_perplexity",
+ "date_utc": "2026-11-24",
+ "business": "SEGMENT: short-term rental, Santa Cruz County",
+ "niche": "short-term rental / Airbnb",
+ "market": "Santa Cruz County CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What are the best vacation rentals in Santa Cruz County California and how do I pick one?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_8f4512a5-2ea9-4d36-82a5-c74d136f7b9d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00103,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00186,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00553
+   },
+   "input_tokens": 4680,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4128,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 745,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5425
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Capitola Nook Along the Creek (Capitola)",
+  "Seascape Beach Resort condos (Aptos)",
+  "Capitola cottages and beach-area homes",
+  "Pick the area first",
+  "Compare the full price",
+  "Read recent reviews, not just the score",
+  "Verify the location and beach access",
+  "Check local compliance",
+  "Santa Cruz. Based",
+  "Capitola Nook Along the Creek",
+  "Capitola",
+  "Beach House Overlooking Seacliff State Park",
+  "Rio Del Mar Beach",
+  "Aptos",
+  "Seascape Beach Resort",
+  "Opal Cliffs",
+  "Mar",
+  "Seacliff",
+  "Rio Del Mar",
+  "Seascape",
+  "Book through a reputable platform",
+  "Ocean View",
+  "Expect",
+  "Mar Beach"
+ ],
+ "engine_stated_criteria": [
+  "Match the home to your group"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "e1ee760717ebc61b7663396105c86edd19b6b1aee6d6ff268ad977755692e8d5",
+ "answer_chars": 2994,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "5c7beb2b57e6b35552ede35c04c3a0c045dd0227de4548d01f008d1e2673399e",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

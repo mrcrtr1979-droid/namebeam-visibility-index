@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-24_segment_dentists_pleasanton_openai",
+ "date_utc": "2026-11-24",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need a checkup and cleaning in Pleasanton. Which specific dental practices should I call, and why?",
+ "q1_prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EnrigmcUuMBcn3fn4oZgtRnWMY39N",
+  "usage": {
+   "prompt_tokens": 28,
+   "completion_tokens": 1668,
+   "total_tokens": 1696,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1024,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Downtown Pleasanton Dental",
+  "Pleasanton Dental Care",
+  "Amador Dental & Orthodontics",
+  "Pleasanton Ridge Dental",
+  "Pleasanton Family Dentistry",
+  "Fastest appointment",
+  "Insurance savings",
+  "Long-term care",
+  "Amador Dental",
+  "X-rays",
+  "Downtown Pleasanton",
+  "Pleasanton Family"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a routine exam and cleaning in Pleasanton, I’d start by calling these **general-dentistry practices**—not because one is definitively “best,” but because they are the kinds of offices set up for preventive visits and follow-up care if the exam finds anything:\n\n1. **Downtown Pleasanton Dental**  \n   - Good first call if you want a centrally located general dentist and prefer a smaller-practice feel.  \n   - Ask whether they can book the exam and hygiene cleaning in the same visit; some offices separate a new-patient exam from the cleaning.\n\n2. **Pleasanton Dental Care**  \n   - A practical option for a standard checkup, X-rays if needed, and cleaning.  \n   - Worth calling if convenience and routine preventive care are your main priorities.\n\n3. **Amador Dental & Orthodontics**  \n   - Good option if you want a larger office with broader services available after the checkup—e.g., fillings, crowns, orthodontic consultation, or treatment planning.  \n   - Larger practices can sometimes have more appointment availability, though that varies.\n\n4. **Pleasanton Ridge Dental**  \n   - Another general-dentistry office to include in your call list, especially if its location is convenient for your commute or home.  \n   - A reasonable choice if you want one dentist to handle regular cleanings and any subsequent restorative work.\n\n5. **Pleasanton Family Dentistry**  \n   - Consider this type of practice if you want a long-term “family dentist” arrangement or may eventually be scheduling other family members as well.  \n   - Ask whether they routinely see adults for new-patient cleanings and how far out hygiene appointments are booking.\n\n### What I’d ask on the phone\nUse the same questions for each office so you can compare them:\n\n> “Hi, I’m a new patient in Pleasanton looking for a routine dental exam and cleaning. Are you accepting new patients? What is your first available appointment for both the exam and cleaning? Are you in network with my exact dental plan, and what would my estimated out-of-pocket cost be?”\n\nAlso ask:\n\n- Will the cleaning be done **the same day** as the exam?\n- Is a standard cleaning included, and what happens if they recommend **deep cleaning/scaling and root planing** instead?\n- Are X-rays required, and what do they cost under your insurance?\n- Do they submit insurance claims directly?\n- Can you see the **same dentist and hygienist** for future visits?\n\n### How I’d choose\n- **Fastest appointment:** favor the office that can do exam + cleaning together soonest.\n- **Insurance savings:** choose an office confirmed in-network with your exact plan—not just the insurer generally.\n- **Long-term care:** choose the office where you felt the dentist explained recommendations clearly and did not pressure you into treatment.\n- **Convenience:** a dentist near home/work usually makes it much easier to keep up with twice-yearly cleanings.\n\nPractice ownership, providers, insurance participation, and appointment availability change often, so confirm those details directly before booking.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

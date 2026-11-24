@@ -1,0 +1,85 @@
+{
+ "check_id": "NB-CZ-API_2026-11-24_segment_orthodontists_denver_perplexity",
+ "date_utc": "2026-11-24",
+ "business": "SEGMENT: orthodontists, Denver",
+ "niche": "orthodontists",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Denver for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_7b30e35c-10c1-47e2-ab36-91a2b8f3314d",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00461
+   },
+   "input_tokens": 5215,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4668,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 318,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5533
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Clif Speaks at Speaks Orthodontics",
+  "Dr. Nicole Eberle, Eberle Orthodontics",
+  "Dr. Isaac Chung, i-Orthodontics",
+  "Dietmeier Orthodontics",
+  "Dr. Clif Speaks",
+  "Speaks Orthodontics",
+  "American Board of Orthodontics",
+  "Dr. Nicole Eberle",
+  "Eberle Orthodontics",
+  "Invisalign",
+  "Dr. Isaac Chung",
+  "Orthodontics",
+  "Dr. Gregory Dietmeier"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "eb35f4a6889c03200f0f41f4b994b8f17082c70808ed40b608c1bf47136df7c5",
+ "answer_chars": 1155,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "bacb4e95610562f7250bfd0ac7d418a75cfe64583bf4a8999ad39c5faa9b4c65",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

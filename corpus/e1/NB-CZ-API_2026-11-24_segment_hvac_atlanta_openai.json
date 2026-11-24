@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-API_2026-11-24_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-24",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EnrPfMHDIKbmHVoeJGKOP0rM7pvez",
+  "usage": {
+   "prompt_tokens": 20,
+   "completion_tokens": 506,
+   "total_tokens": 526,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 133,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PV Heating, Cooling & Plumbing",
+  "Conditioned Air Systems",
+  "Moncrief Heating & Air Conditioning",
+  "Estes Services",
+  "R.S. Andrews",
+  "Coolray",
+  "Manual J load calculation",
+  "PV Heating",
+  "Moncrief Heating",
+  "Air Conditioning",
+  "ACs",
+  "Cooling",
+  "Moncrief Heating & Air",
+  "Moncrief",
+  "Conditioned Air"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a full air-conditioner replacement in Atlanta, **PV Heating, Cooling & Plumbing** is often one of the strongest choices if you prioritize a properly designed system rather than the lowest upfront bid. They are known locally for detailed load calculations, duct/airflow evaluation, and system commissioning—important in Atlanta’s humid climate.\n\nOther established Atlanta-area companies worth getting comparison quotes from:\n\n- **Conditioned Air Systems** — long-standing company; good option for traditional HVAC replacement and service plans.\n- **Moncrief Heating & Air Conditioning** — established Atlanta provider with broad service coverage.\n- **Estes Services** — large, long-running local company; convenient scheduling and wide product/service options.\n- **R.S. Andrews** — another sizable provider that can handle HVAC plus electrical/plumbing needs.\n- **Coolray** — widely available and often competitive, though quote quality can vary by salesperson/crew.\n\nThe “best” company is the one that does these things before asking you to sign:\n\n1. Performs a **Manual J load calculation**—not simply replacing your old system with the same tonnage.\n2. Inspects ducts, returns, insulation, drainage, electrical capacity, and airflow.\n3. Gives you a written proposal showing **model numbers, SEER2 rating, AHRI match, warranty, permit, and scope of duct/electrical work**.\n4. Explains humidity control and recommends the correct equipment size. In Atlanta, oversized ACs can cool quickly but leave the house clammy.\n5. Provides an itemized price and pulls the required permit.\n\nI’d start with **PV Heating** plus two of the companies above, then compare proposals—not just the brand or tonnage. Avoid any contractor who quotes a replacement from a quick walk-through without measuring or discussing sizing and ducts.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

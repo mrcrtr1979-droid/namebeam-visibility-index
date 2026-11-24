@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-API_2026-11-24_segment_roofing_denver_openai",
+ "date_utc": "2026-11-24",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EnpFg8Tv1PUS3gVVml0SR1MZXb7tW",
+  "usage": {
+   "prompt_tokens": 19,
+   "completion_tokens": 527,
+   "total_tokens": 546,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 206,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Active Denver contractor license",
+  "General liability and workers’-comp insurance",
+  "Active Denver",
+  "Owens Corning",
+  "CertainTeed",
+  "CertainTeed SELECT",
+  "CertainTeed SELECT ShingleMaster",
+  "Denver contractor license"
+ ],
+ "engine_stated_criteria": [
+  "repair is feasible"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” Denver roofer for hail claims—quality can vary by neighborhood, roof type, and whether you need a repair versus a full insurance-funded replacement.\n\nFor hail damage, I’d choose a **Denver-based company with an active local contractor license, strong recent independent reviews, long local history, and documented insurance-claim experience**—not a storm-chasing company that appears right after a hailstorm.\n\nBefore hiring, require:\n\n- **Active Denver contractor license** and Colorado business registration  \n- **General liability and workers’-comp insurance**—ask for certificates  \n- A **written scope of work** matching the insurance estimate, including decking, flashing, ventilation, gutters, permits, and cleanup  \n- Proof of local projects from **at least 3–5 years ago**, not just recent reviews  \n- Manufacturer certification (e.g., **GAF Master Elite, CertainTeed Select ShingleMaster, Owens Corning Preferred**)—helpful, though not a guarantee  \n- No large upfront payment; avoid anyone offering to “cover your deductible” or pressuring you to sign immediately  \n\nA good process is to get **three inspections/estimates** from established local roofing companies, then compare the actual line items—not just the total price. Your insurer decides covered damage, but a reputable roofer can document damage and meet the adjuster without promising to manipulate the claim.\n\nAlso, if the roof is merely bruised or has a few damaged shingles, ask specifically whether **repair is feasible** before accepting a replacement recommendation.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

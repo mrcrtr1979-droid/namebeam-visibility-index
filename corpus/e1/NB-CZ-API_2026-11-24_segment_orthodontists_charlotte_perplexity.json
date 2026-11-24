@@ -1,0 +1,84 @@
+{
+ "check_id": "NB-CZ-API_2026-11-24_segment_orthodontists_charlotte_perplexity",
+ "date_utc": "2026-11-24",
+ "business": "SEGMENT: orthodontists, Charlotte",
+ "niche": "orthodontists",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Charlotte for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_ef80933a-7bc4-4408-9dce-2afe410477da",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00117,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00104,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00485
+   },
+   "input_tokens": 5212,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4665,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 418,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5630
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Webb & Goldsmith Orthodontics",
+  "Lineberger Orthodontics",
+  "Bond Orthodontics",
+  "Harris Orthodontics",
+  "American Board of Orthodontics",
+  "Invisalign",
+  "Goldsmith Orthodontics",
+  "Dr. Victor Bond",
+  "American Association of Orthodontists",
+  "Dr. Christopher Harris"
+ ],
+ "engine_stated_criteria": [
+  "A strong place to start is Harris Orthodontics"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "04080d9a6a73506c572ed2ad36fe74d53d7e21080a8d0cb0001821ff0d849610",
+ "answer_chars": 1311,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "a7af0dadb9ce3959f0570441c56c5b85d02b8cfa9fc1a80f9e67c3894047ddbc",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

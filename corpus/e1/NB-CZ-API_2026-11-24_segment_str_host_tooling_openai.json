@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-API_2026-11-24_segment_str_host_tooling_openai",
+ "date_utc": "2026-11-24",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Enr07U51kExnSAh3HULWUlHYbIYxv",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 740,
+   "total_tokens": 766,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 127,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PriceLabs",
+  "AirDNA MarketMinder",
+  "Beyond",
+  "Wheelhouse",
+  "AirDNA Smart Rates",
+  "AirDNA",
+  "MarketMinder",
+  "Use AirDNA",
+  "Underwrite conservatively",
+  "Smart Rates"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most Airbnb hosts, the best setup is:\n\n- **PriceLabs** for setting and automating nightly rates\n- **AirDNA MarketMinder** for evaluating a market or property before buying\n\n### 1. Best for nightly pricing: PriceLabs\n**PriceLabs** is usually the strongest value for individual hosts and small-to-medium property managers. It connects to Airbnb, Vrbo, and most PMS platforms and adjusts prices based on seasonality, local demand, events, booking pace, lead time, occupancy, and comparable listings.\n\nWhy hosts like it:\n- Highly customizable minimums, maximums, weekend premiums, orphan-gap rules, and last-minute discounts\n- Generally less expensive and more hands-on than enterprise-focused competitors\n- Has portfolio and neighborhood-level data tools\n- Works well whether you manage one listing or many\n\nStrong alternatives:\n- **Beyond**: Excellent automated revenue management, especially for larger professional operators; usually more expensive and less granular for DIY users.\n- **Wheelhouse**: Good automation and market insights; worth comparing if you want a more guided pricing approach.\n- **AirDNA Smart Rates**: Convenient if you already use AirDNA, but many hosts prefer PriceLabs’ pricing controls.\n\n### 2. Best for analyzing a market before buying: AirDNA MarketMinder\nFor acquisition research, **AirDNA MarketMinder** is generally the most established tool. It helps estimate a market’s:\n- Average daily rate (ADR)\n- Occupancy\n- Revenue potential\n- Seasonality\n- Supply growth and competition\n- Listing performance by bedroom count and property type\n- Regulations, where available\n- Comparable listings and historical trends\n\nIt is particularly useful for answering questions such as:\n- “Does a 3-bedroom cabin outperform a 2-bedroom condo in this area?”\n- “How much does this market fall off in the shoulder season?”\n- “Is supply growing faster than demand?”\n- “What revenue range is realistic for this exact property type?”\n\n### Recommended workflow before buying\n1. Use **AirDNA MarketMinder** to screen cities, neighborhoods, and property types.\n2. Identify 10–20 close comparable listings—not just the market average.\n3. Underwrite conservatively using lower-than-average occupancy and revenue assumptions.\n4. Check local STR regulations, HOA restrictions, permitting caps, taxes, and insurance separately; data tools cannot replace this step.\n5. After purchase, connect **PriceLabs** to manage daily pricing.\n\n### If you only want one tool\n- Choose **PriceLabs** if you already own or are about to launch a property and need better nightly pricing.\n- Choose **AirDNA** if you are still deciding where or what to buy.\n- If you want one platform that can do both reasonably well, **AirDNA** is the more acquisition-oriented choice, but I would still add PriceLabs once the property is live.\n\nA practical answer for most hosts: **AirDNA before the purchase; PriceLabs after the purchase.**",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
