@@ -128,5 +128,14 @@ check("no key value in result or meta", not any(s in blob for s in (FREE, PAID, 
 res, calls, _ = run({"GEMINI_API_KEY": PAID}, {"free": [], "vertex": [], "paid": [Resp(200, body=OK_BODY)]})
 check("paid-only: one rail, ok", res[0] is True and len(calls) == 1 and PAID in calls[0]["url"])
 
+# 12. A persistent 503 can switch from Studio Free to Vertex after bounded retries.
+outage = [Resp(503, "unavailable")] * engines.GEMINI_MAX_TRIES
+res, calls, _ = run(FULL, {"free": list(outage), "vertex": [Resp(200, body=OK_BODY)], "paid": []})
+check("503 falls through to Vertex after retries",
+      res[0] is True and len(calls) > 1 and engines.LAST_CALL_META["gemini"]["rail"] == "vertex")
+res, calls, _ = run({**FULL, "GCP_PROJECT": ""}, {"free": list(outage), "vertex": [], "paid": []})
+check("503 never opens the paid rail",
+      res[0] is False and engines.LAST_CALL_META["gemini"]["rail"] == "studio_free")
+
 print("ALL PASS" if not fails else "FAILED: %s" % fails)
 sys.exit(1 if fails else 0)
