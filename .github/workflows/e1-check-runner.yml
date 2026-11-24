@@ -92,7 +92,7 @@ jobs:
     # LB-20 (2026-11-09): the longest successful run on record took 163 minutes (2026-10-21); the runner step
     # is capped at 200 and the job at 235 so the private copy, the sources dataset, the commit and the
     # Sentry check-in always run with whatever rows exist (GitHub's own default is 360 and loses the day).
-    timeout-minutes: 235
+    timeout-minutes: 305
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
@@ -179,7 +179,7 @@ jobs:
       # though both secrets existed in the repo.
       - name: Run the E1 check runner
         if: steps.guard.outputs.skip != 'true'
-        timeout-minutes: 200   # LB-20 (2026-11-09)
+        timeout-minutes: 270   # Leave 30 minutes beyond the default runner budget.
         env:
           # LB-20 (2026-11-09): dry run and wall-clock budgets (see scripts/e1_runner.py).
           E1_DRY_RUN: ${{ inputs.dry_run }}
