@@ -45,7 +45,10 @@ import threading
 # without a commit. Sizing: the 20 successful runs read on 2026-11-09 took 63 to 163 minutes end
 # to end; the workflow step timeout is 200 minutes; this run budget leaves time for the commit.
 CALL_BUDGET_S = float(os.environ.get("E1_CALL_BUDGET_S", "").strip() or 300)
-RUN_BUDGET_MIN = float(os.environ.get("E1_RUN_BUDGET_MIN", "").strip() or 170)
+RUN_BUDGET_MIN = float(os.environ.get("E1_RUN_BUDGET_MIN", "").strip() or 190)
+Q2_RESERVE_MIN = 45
+GEMINI_CELL_CAP_S = 85
+_Q2_RESERVED_S = [0.0]
 _RUN_T0 = [time.monotonic()]
 DRY_RUN = str(os.environ.get("E1_DRY_RUN", "")).strip().lower() in ("1", "true", "yes", "on")
 GAZETTEER_DIR = "corpus/e1"   # the gazetteer always reads the real public record
@@ -472,9 +475,9 @@ def _note_gemini_quota(engine, err, variant=1):
         _GEMINI_Q2_BLOCKED[0] = True
 
 
-def run_budget_left_s():
+def run_budget_left_s(variant=1):
     """Seconds left in the run budget (negative once spent)."""
-    return RUN_BUDGET_MIN * 60.0 - (time.monotonic() - _RUN_T0[0])
+    return RUN_BUDGET_MIN * 60.0 - (time.monotonic() - _RUN_T0[0]) - (0 if variant == 2 else _Q2_RESERVED_S[0])
 
 
 def _call_with_deadline(fn, prompt, seconds):
@@ -515,6 +518,8 @@ def run_engine(business_row, engine, fn, date_utc, supersedes=None, variant=1):
     skipped = False
     skip_note = ""
     _t0 = time.monotonic()
+    remaining = run_budget_left_s(variant)
+    timeout = min(CALL_BUDGET_S, remaining, GEMINI_CELL_CAP_S if engine == "gemini" else CALL_BUDGET_S)
     if variant == 2 and engine == "gemini" and _GEMINI_Q2_BLOCKED[0]:
         skipped = True
         skip_note = "gemini rails refused for quota earlier in the q2 pass of this run"
@@ -527,7 +532,7 @@ def run_engine(business_row, engine, fn, date_utc, supersedes=None, variant=1):
         skip_note = "gemini q2 call cap for this run reached"
         ok, text, sources = False, "", []
         err = "QUOTA: gemini q2 not asked, the per-run q2 Gemini call cap (the q2 roster size) was reached"
-    elif run_budget_left_s() <= 0:
+    elif remaining <= 0:
         # LB-20 (2026-11-09): the run budget is spent; this cell is not asked and is written FAILED so
         # the only_failed rerun can ask it later. Never a fabricated answer.
         skipped = True
@@ -538,7 +543,7 @@ def run_engine(business_row, engine, fn, date_utc, supersedes=None, variant=1):
     else:
         if variant == 2 and engine == "gemini":
             _GEMINI_Q2_CALLS[0] += 1
-        ok, text, sources, err = _call_with_deadline(fn, prompt, CALL_BUDGET_S)
+        ok, text, sources, err = _call_with_deadline(fn, prompt, timeout)
     _latency = time.monotonic() - _t0
     # Forward-only audit fields: which model the provider says it served, the
     # response id and usage (Perplexity since 2026-09-28, also its search-result
@@ -547,9 +552,10 @@ def run_engine(business_row, engine, fn, date_utc, supersedes=None, variant=1):
     if skipped:
         row["engine_meta"] = {"skipped": skip_note}
     elif str(err or "").startswith("TIMEOUT:"):
-        row["engine_meta"] = {"timeout_s": int(CALL_BUDGET_S)}   # LAST_CALL_META would be stale
+        row["engine_meta"] = {"timeout_s": round(timeout, 1)}   # LAST_CALL_META would be stale
     else:
         row["engine_meta"] = dict(LAST_CALL_META.get(engine) or {})
+    row["engine_meta"]["elapsed_s"] = 0.0 if skipped else round(_latency, 3)
     if not ok:
         # A refusal for QUOTA is not the engine failing to answer. It is us
         # not being allowed to ask. Counting it as FAILED would publish a
@@ -737,7 +743,14 @@ def run_serp(business_row, date_utc):
         n += 1
     row = base_row(business_row, date_utc, check_id, "google_serp")
     row["run_channel"] = "serp"
-    ok, html, organic, err = fetch_serp(business_row["prompt_1"])
+    remaining = run_budget_left_s()
+    started = time.monotonic()
+    if remaining > 0:
+        ok, html, organic, err = _call_with_deadline(fetch_serp, business_row["prompt_1"], min(remaining, CALL_BUDGET_S))
+        row["engine_meta"] = {"elapsed_s": round(time.monotonic() - started, 3)}
+    else:
+        ok, html, organic, err = False, "", [], "TIMEOUT_BUDGET: q1 budget exhausted before SERP call"
+        row["engine_meta"] = {"elapsed_s": 0.0, "skipped": "q1 budget exhausted"}
     if not ok:
         row.update({
             "run_status": "FAILED",
@@ -1078,6 +1091,9 @@ def _main():
         roster = roster[offset:] + roster[:offset]
         print("roster rotated by %d for %s" % (offset, date_utc))
 
+    q2_enabled = not _truthy(os.environ.get("E1_DISABLE_Q2"))
+    q2_rows, q2_problems = load_q2_rows(roster_all) if q2_enabled else ([], [])
+    _Q2_RESERVED_S[0] = min(Q2_RESERVE_MIN * 60, RUN_BUDGET_MIN * 15) if q2_rows else 0
     _GEMINI_Q2_BLOCKED[0] = False
     _GEMINI_Q2_CALLS[0] = 0
     _GEMINI_Q2_CAP[0] = None
@@ -1144,11 +1160,10 @@ def _main():
     # SECOND DAILY QUESTION, after everything above so it can never delay or starve a prompt_1 call.
     # Kill switch without a commit: set the repo variable E1_DISABLE_Q2 to 1. Any problem here is
     # logged and the run still exits 0; nothing in this block can change a prompt_1 row.
-    if _truthy(os.environ.get("E1_DISABLE_Q2")):
+    if not q2_enabled:
         print("q2: E1_DISABLE_Q2 is set; the second question is not asked")
         return 0
     try:
-        q2_rows, q2_problems = load_q2_rows(roster_all)
         for p in q2_problems:
             print("q2 problem: %s" % p)
         if q2_rows:
