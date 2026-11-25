@@ -1,0 +1,11 @@
+name: projects/PROJECT/locations/REGION/jobs/namebeam-collector-daily
+schedule: '0 13 * * *'
+timeZone: Etc/UTC
+retryConfig:
+  retryCount: 0
+httpTarget:
+  httpMethod: POST
+  uri: https://run.googleapis.com/v2/projects/PROJECT/locations/REGION/jobs/namebeam-collector:run
+  oauthToken:
+    serviceAccountEmail: SCHEDULER_SERVICE_ACCOUNT
+    scope: https://www.googleapis.com/auth/cloud-platform

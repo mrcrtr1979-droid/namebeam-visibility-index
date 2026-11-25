@@ -1,0 +1,28 @@
+apiVersion: run.googleapis.com/v1
+kind: Job
+metadata:
+  name: namebeam-collector
+spec:
+  template:
+    spec:
+      taskCount: 1
+      template:
+        spec:
+          maxRetries: 0
+          timeoutSeconds: '12600'
+          serviceAccountName: COLLECTOR_SERVICE_ACCOUNT
+          containers:
+            - image: COLLECTOR_IMAGE
+              env:
+                - name: COLLECTOR_ARCHIVE_BUCKET
+                  value: gs://PRIVATE_ARCHIVE_BUCKET
+                - name: OPENAI_API_KEY
+                  valueFrom: {secretKeyRef: {name: OPENAI_API_KEY, key: latest}}
+                - name: ANTHROPIC_API_KEY
+                  valueFrom: {secretKeyRef: {name: ANTHROPIC_API_KEY, key: latest}}
+                - name: PERPLEXITY_API_KEY
+                  valueFrom: {secretKeyRef: {name: PERPLEXITY_API_KEY, key: latest}}
+                - name: GEMINI_API_KEY_FREE
+                  valueFrom: {secretKeyRef: {name: GEMINI_API_KEY_FREE, key: latest}}
+              resources:
+                limits: {cpu: '1', memory: 1Gi}
