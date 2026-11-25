@@ -41,7 +41,7 @@ Turn it off with `RECEIPTS_INDEX_TELEMETRY=0` or `DO_NOT_TRACK=1` in the server'
 
 URL: `https://api.receiptsindex.com/mcp`. Live since 2026-10-28 (initialize, tools/list and all three tools answered). No sign-in, no key.
 
-It exposes the same three tools as the stdio server, read-only, with no sign-in and no API key. `receipts_index` and `receipts_sample` return the free data. `receipts_pricing` returns the x402 payment terms for the paid routes (route, USDC price, network, pay-to address). The endpoint never pays and never signs anything; paying is done by an x402 client against the listed route.
+The hosted release has the three Receipts Index tools, read-only, with no sign-in and no API key. `receipts_index` and `receipts_sample` return the free data. `receipts_pricing` returns the x402 payment terms for the paid routes (route, USDC price, network, pay-to address). The endpoint never pays and never signs anything; paying is done by an x402 client against the listed route.
 
 Add it to any client that takes a remote MCP URL (Claude and ChatGPT custom connectors, or any assistant that can add an MCP server by URL):
 
@@ -95,5 +95,17 @@ The tests run against recorded fixtures in `fixtures/` (see `fixtures/PROVENANCE
 - Row content, day files and the corpus are paid. The free tools return ids, dates, one sample row and prices only.
 - The data is a record of what the named AI engines answered on the dates shown. It makes no claim about why an engine answered as it did.
 - Source and contact: Carter Enterprise LLC, https://api.receiptsindex.com/?utm_source=npm. License: MIT.
+
+
+
+### `market_answer_counts`
+
+Read-only lookup of a city and trade in the public Namebeam explorer. Pass
+`city` as a city and state such as `Houston TX` and `trade` as a niche such as
+`hvac`. The tool returns the dataset date, the matched cell's date range,
+and the recorded-answer denominator for each engine. Output contains no
+business names or answer text. An unmatched query returns `not_found`;
+ambiguous queries return matching market and trade labels to refine the input.
+Source: https://namebeam.ai/data/explorer_data.json
 
 Namebeam, a Carter Enterprise property. This is the first leg.

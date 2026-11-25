@@ -1,5 +1,6 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
+import { lookupMarket } from "./market.js";
 import { ApiError, buildPricing, makeClient, type Client, type FetchLike, DEFAULT_BASE_URL } from "./api.js";
 
 export const SERVER_NAME = "receipts-index";
@@ -93,6 +94,23 @@ export function createServer(opts: ServerOptions = {}): McpServer {
         return ok(buildPricing(wellKnown, manifest));
       } catch (e) {
         return fail(e);
+      }
+    }
+  );
+
+  server.registerTool(
+    "market_answer_counts",
+    {
+      title: "Market answer counts",
+      description: "Looks up city and trade coverage in the public Namebeam explorer. Returns dates and answer denominators by engine.",
+      inputSchema: { city: z.string().trim().min(1).max(80), trade: z.string().trim().min(1).max(80) },
+      annotations: { title: "Market answer counts", readOnlyHint: true, openWorldHint: true }
+    },
+    async ({ city, trade }) => {
+      try {
+        return ok(await lookupMarket(city, trade, opts.fetchImpl));
+      } catch {
+        return fail(new Error("The public explorer could not be read or validated."));
       }
     }
   );

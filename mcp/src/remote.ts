@@ -1,6 +1,7 @@
+import { lookupMarket } from "./market.js";
 // Remote MCP endpoint (Streamable HTTP, stateless, JSON responses) for the Receipts Index API.
 //
-// Same three tools as the stdio server in server.ts, read-only, no auth, no session, no key handling.
+// Same four tools as the stdio server in server.ts, read-only, no auth, no session, no key handling.
 // This file uses only the Fetch API types (Request, Response) and ./api.js, so the compiled output can be
 // inlined into a Cloudflare Worker (scripts/build-worker-module.mjs) and also runs in Node 20+.
 // It does not import the MCP SDK on purpose: a Worker is deployed as one pasted file.
@@ -73,6 +74,22 @@ export const TOOLS: ToolDef[] = [
     inputSchema: { type: "object", properties: {}, $schema: DRAFT07 },
     annotations: { title: "Receipts Index: paid endpoints and prices", ...ANNOTATIONS },
     execution: EXECUTION
+  },
+  {
+    name: "market_answer_counts",
+    title: "Market answer counts",
+    description: "Looks up city and trade coverage in the public Namebeam explorer. Returns dates and answer denominators by engine.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        city: { type: "string", minLength: 1, maxLength: 80 },
+        trade: { type: "string", minLength: 1, maxLength: 80 }
+      },
+      required: ["city", "trade"],
+      $schema: DRAFT07
+    },
+    annotations: { title: "Market answer counts", ...ANNOTATIONS },
+    execution: EXECUTION
   }
 ];
 
@@ -107,6 +124,18 @@ async function callTool(client: Client, name: string, rawArgs: unknown): Promise
   const args: Obj = rawArgs && typeof rawArgs === "object" && !Array.isArray(rawArgs) ? (rawArgs as Obj) : {};
   if (rawArgs !== undefined && rawArgs !== null && args !== rawArgs) return invalid(name, "expected object");
   try {
+    if (name === "market_answer_counts") {
+      const { city, trade } = args;
+      if (typeof city !== "string" || typeof trade !== "string" ||
+          !city.trim() || !trade.trim() || city.trim().length > 80 || trade.trim().length > 80) {
+        return invalid(name, "city and trade must each contain 1 to 80 characters");
+      }
+      try {
+        return ok(await lookupMarket(city, trade));
+      } catch {
+        return fail(new Error("The public explorer could not be read or validated."));
+      }
+    }
     if (name === "receipts_index") {
       const s = intArg(args, "start", 1, Number.MAX_SAFE_INTEGER);
       if (s.error) return invalid(name, s.error);
