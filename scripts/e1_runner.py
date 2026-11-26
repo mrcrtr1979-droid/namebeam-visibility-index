@@ -43,9 +43,9 @@ import threading
 # a per-call budget, and once the run budget is spent the remaining cells are written as FAILED
 # rows (error TIMEOUT_BUDGET) so the only_failed rerun can ask them later. Both are env-tunable
 # without a commit. Sizing: the 20 successful runs read on 2026-11-09 took 63 to 163 minutes end
-# to end; the workflow step timeout is 200 minutes; this run budget leaves time for the commit.
+# to end; the workflow step timeout is 270 minutes; the 240-minute default leaves time for commit.
 CALL_BUDGET_S = float(os.environ.get("E1_CALL_BUDGET_S", "").strip() or 300)
-RUN_BUDGET_MIN = float(os.environ.get("E1_RUN_BUDGET_MIN", "").strip() or 170)
+RUN_BUDGET_MIN = float(os.environ.get("E1_RUN_BUDGET_MIN", "").strip() or 240)
 _RUN_T0 = [time.monotonic()]
 DRY_RUN = str(os.environ.get("E1_DRY_RUN", "")).strip().lower() in ("1", "true", "yes", "on")
 GAZETTEER_DIR = "corpus/e1"   # the gazetteer always reads the real public record
@@ -538,7 +538,7 @@ def run_engine(business_row, engine, fn, date_utc, supersedes=None, variant=1):
     else:
         if variant == 2 and engine == "gemini":
             _GEMINI_Q2_CALLS[0] += 1
-        ok, text, sources, err = _call_with_deadline(fn, prompt, CALL_BUDGET_S)
+        ok, text, sources, err = _call_with_deadline(fn, prompt, max(0, min(CALL_BUDGET_S, run_budget_left_s())))
     _latency = time.monotonic() - _t0
     # Forward-only audit fields: which model the provider says it served, the
     # response id and usage (Perplexity since 2026-09-28, also its search-result
