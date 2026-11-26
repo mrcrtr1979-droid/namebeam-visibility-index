@@ -42,4 +42,4 @@ The expected pooled percentages in column order are 97.4%, 93.1%, 98.3%, 91.9%, 
 
 ## Recount in a browser
 
-https://namebeam.ai/recount/ loads this CSV in the browser (JavaScript required), compares its counts with the six pooled figures and the two OpenAI review splits above, and marks each MATCH or MISMATCH. It filters by engine, date range and the 2026-11-10 OpenAI model switch, and it also opens a downloaded copy of the CSV. (Read 2026-11-26 12:14PM CT in Chrome: 8 of 8 MATCH. The release's verify_roofing.py on the same CSV, 12:41PM CT: 8 of 8 MATCH.)
+https://namebeam.ai/recount/ loads this CSV in the browser (JavaScript required), compares its counts with the six pooled figures and the two OpenAI review splits above, and marks each MATCH or MISMATCH. It filters by engine, date range and the 2026-11-10 OpenAI model switch, and it also opens a downloaded copy of the CSV. (Read 2026-11-26 12:14PM CT in Chrome: 8 of 8 MATCH. The release's verify_roofing.py on the same CSV, 12:35PM CT: 8 of 8 MATCH.)
