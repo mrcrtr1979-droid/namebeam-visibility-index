@@ -38,10 +38,10 @@ function textOf(res: unknown): string {
   return r.content[0].text;
 }
 
-test("lists exactly three tools", async () => {
+test("lists exactly four tools", async () => {
   const c = await connect(mockFetch({}));
   const { tools } = await c.listTools();
-  assert.deepEqual(tools.map((t) => t.name).sort(), ["receipts_index", "receipts_pricing", "receipts_sample"]);
+  assert.deepEqual(tools.map((t) => t.name).sort(), ["market_answer_counts", "receipts_index", "receipts_pricing", "receipts_sample"]);
   for (const t of tools) assert.equal(t.annotations?.readOnlyHint, true);
   for (const t of tools) assert.equal(t.annotations?.title, t.title, "annotations.title matches title for " + t.name);
 });
@@ -185,4 +185,23 @@ test("copy rules: ASCII only, no em or en dashes, no banned words in shipped tex
     assert.ok(!/[^\x00-\x7F]/.test(text), "non-ASCII in " + f);
     for (const w of banned) assert.ok(!text.toLowerCase().includes(w), "banned word " + w + " in " + f);
   }
+});
+
+test("market lookup returns dated aggregate denominators only", async () => {
+  const log: string[] = [];
+  const c = await connect(mockFetch({ "/data/explorer_data.json": { body: fx("explorer-2026-11-24.json") } }, log));
+  const result = async (city: string, trade: string) =>
+    JSON.parse(textOf(await c.callTool({ name: "market_answer_counts", arguments: { city, trade } })));
+  const hit = await result("Houston, TX", "HVAC");
+  assert.deepEqual(hit, {
+    source: "https://namebeam.ai/data/explorer_data.json", data_date: "2026-11-23",
+    status: "ok", market: "Houston TX", trade: "hvac repair and replacement",
+    window_start: "2026-08-09", window_end: "2026-11-23",
+    denominator: "Recorded answers per engine (asked_by_engine in the explorer)",
+    answer_counts_by_engine: { openai: 102, perplexity: 103, gemini: 46, anthropic: 107 },
+  });
+  const miss = await result("Columbus OH", "roofing");
+  assert.equal(miss.status, "not_found");
+  assert.deepEqual(miss.candidates, []);
+  assert.equal(log.length, 2);
 });
