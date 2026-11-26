@@ -266,11 +266,12 @@ def test_pack_present_cut_to_three_with_nulls():
     assert present is True
     assert top == [
         {"position": 1, "name": "Backflow Boss", "link": "https://backflowboss.example/",
+         "maps_link": "https://www.google.com/maps/place/?q=1", "cid": "111",
          "address": "100 Main St, Liberty, MO 64068", "rating": 4.8, "reviews": 312},
-        {"position": 2, "name": "Liberty Plumbing", "link": None, "address": None,
-         "rating": 4.5, "reviews": None},
+        {"position": 2, "name": "Liberty Plumbing", "link": None, "maps_link": None, "cid": None,
+         "address": None, "rating": 4.5, "reviews": None},
         {"position": 3, "name": "KC Backflow Pros", "link": "https://kcbackflow.example/",
-         "address": "9 Oak Ave", "rating": None, "reviews": 1204},
+         "maps_link": None, "cid": None, "address": "9 Oak Ave", "rating": None, "reviews": 1204},
     ]
     assert len(top) == e1_runner.LOCAL_PACK_MAX == 3
 
@@ -317,17 +318,40 @@ def test_wrong_types_read_as_null_and_never_raise():
                        {"rating": float("nan"), "reviews_cnt": -3}]
     present, top = e1_runner.extract_local_pack(json.dumps(j))
     assert present is True
-    assert top[0] == {"position": 1, "name": None, "link": None, "address": None,
+    nulls = {"link": None, "maps_link": None, "cid": None}
+    assert top[0] == {"position": 1, "name": None, **nulls, "address": None,
                       "rating": None, "reviews": None}
-    assert top[1] == {"position": 2, "name": None, "link": None, "address": "1 A St",
+    assert top[1] == {"position": 2, "name": None, **nulls, "address": "1 A St",
                       "rating": 4.7, "reviews": 12}
-    assert top[2] == {"position": 3, "name": None, "link": None, "address": None,
+    assert top[2] == {"position": 3, "name": None, **nulls, "address": None,
                       "rating": None, "reviews": None}
     assert len(top) == 3
     j["snack_pack"] = [{"rating": float("nan"), "reviews_cnt": -3}]
     _, top = e1_runner.extract_local_pack(json.dumps(j))
     assert top[0]["rating"] is None and top[0]["reviews"] is None
     json.dumps(top, allow_nan=False)   # the row must stay valid JSON
+
+
+# [PACKKEY-MAP-1101, 2026-11-01] pack items carry "maps_link" and "cid" and no "link" (no website).
+# link stays the business website (null here); maps_link and cid carry the payload values.
+def test_pack_item_keeps_maps_link_and_cid_and_link_stays_null():
+    j = inner_payload(False)
+    j["snack_pack"] = [{"name": "Maps Only Plumbing", "cid": "222", "rating": 4.2, "global_rank": 1,
+                        "maps_link": "https://www.google.com/maps/place/?q=2"}]
+    present, top = e1_runner.extract_local_pack(json.dumps(j))
+    assert present is True
+    assert top[0]["link"] is None
+    assert top[0]["maps_link"] == "https://www.google.com/maps/place/?q=2"
+    assert top[0]["cid"] == "222"
+
+
+def test_link_maps_link_and_cid_are_all_null_when_absent():
+    j = inner_payload(False)
+    j["snack_pack"] = [{"name": "Image Variant Plumbing", "address": "3 Elm St", "rating": 4.0,
+                        "global_rank": 1}]
+    present, top = e1_runner.extract_local_pack(json.dumps(j))
+    assert present is True
+    assert top[0]["link"] is None and top[0]["maps_link"] is None and top[0]["cid"] is None
 
 
 # ------------------------------------------------------------------ the row
@@ -371,6 +395,7 @@ def test_row_with_snack_pack():
     assert [t["name"] for t in pub["local_pack_top"]] == ["Backflow Boss", "Liberty Plumbing",
                                                           "KC Backflow Pros"]
     assert pub["local_pack_top"][1] == {"position": 2, "name": "Liberty Plumbing", "link": None,
+                                        "maps_link": None, "cid": None,
                                         "address": None, "rating": 4.5, "reviews": None}
     assert pub["serp_diagnostics"]["snack_pack_keys0"] == sorted(snack_pack_items()[0].keys())
 
