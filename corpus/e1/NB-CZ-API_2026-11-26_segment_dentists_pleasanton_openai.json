@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-API_2026-11-26_segment_dentists_pleasanton_openai",
+ "date_utc": "2026-11-26",
+ "business": "SEGMENT: dentists, Pleasanton",
+ "niche": "dentists",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Pleasanton CA for a checkup and cleaning?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EoYYBjDyswmd1mupBG4PZk3cU8714",
+  "usage": {
+   "prompt_tokens": 22,
+   "completion_tokens": 671,
+   "total_tokens": 693,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 369,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "California Dental Board license lookup",
+  "California Dental Board",
+  "X-rays"
+ ],
+ "engine_stated_criteria": [
+  "in-network with your dental plan"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” dentist for a routine checkup and cleaning—insurance network, appointment availability, and whether you prefer a conservative/no-upsell practice matter more than cosmetic-dentistry marketing.\n\nFor Pleasanton, I’d choose a **general/family dentist** that meets these checks:\n\n- Is **in-network with your dental plan**\n- Has many **recent** reviews mentioning cleanings, hygienists, punctuality, and no pressure for unnecessary treatment\n- Offers a clear new-patient exam/cleaning price if you are uninsured\n- Can schedule a hygiene appointment within a few weeks\n- Uses periodontal charting before recommending a “deep cleaning” rather than automatically upselling it\n\nGood places to verify a provider before booking:\n- **California Dental Board license lookup** — confirms active license and disciplinary history  \n- Your insurer’s provider directory — prevents surprise out-of-network bills  \n- Google/Yelp reviews filtered to the most recent 6–12 months\n\nWhen calling, ask:  \n> “I need a routine exam, X-rays if needed, and a standard cleaning. Are you in-network with [insurance], what is my estimated out-of-pocket cost, and is the cleaning done the same day?”\n\nIf you tell me your dental insurance carrier (or whether you’re paying cash), your preferred part of Pleasanton, and whether you need an evening/weekend appointment, I can help narrow down the best type of office to book.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

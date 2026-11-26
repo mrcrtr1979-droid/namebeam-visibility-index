@@ -1,0 +1,87 @@
+{
+ "check_id": "NB-CZ-API_2026-11-26_segment_orthodontists_chicago_perplexity",
+ "date_utc": "2026-11-26",
+ "business": "SEGMENT: orthodontists, Chicago",
+ "niche": "orthodontists",
+ "market": "Chicago IL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best orthodontist in Chicago for braces or Invisalign?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_5f2cbc56-d6d9-4788-a376-ec3ed3c4282f",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00109,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00451
+   },
+   "input_tokens": 4895,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4348,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 310,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5205
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Karen Seder — Seder Orthodontics",
+  "Dr. Noor Obaisi — Obaisi Orthodontics",
+  "Dr. Manal Ibrahim — Sensational Orthodontics",
+  "Orthodontic Experts Chicago",
+  "Invisalign. A",
+  "Dr. Karen Seder",
+  "Seder Orthodontics",
+  "Invisalign",
+  "Dr. Noor Obaisi",
+  "Obaisi Orthodontics",
+  "Board-certified",
+  "Dr. Manal Ibrahim",
+  "Sensational Orthodontics",
+  "Multiple Chicago",
+  "Orthodontic Experts"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "01232431eed72dbc799bbae377fbdf9b9824ef74e7a0cebc854f65c025cc3400",
+ "answer_chars": 1185,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "9b95442bdcc2ecd1743b5f3a2853401069362c374bc898894cb7178c713a6205",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

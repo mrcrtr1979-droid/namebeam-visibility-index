@@ -1,0 +1,82 @@
+{
+ "check_id": "NB-CZ-API_2026-11-26_segment_tanning_salons_charlotte_perplexity",
+ "date_utc": "2026-11-26",
+ "business": "SEGMENT: tanning salons, Charlotte",
+ "niche": "tanning salons",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tanning salon in Charlotte NC?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_1adcb612-9f33-48d1-addd-d291c34355e5",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0011,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00059,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00433
+   },
+   "input_tokens": 4951,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4407,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 237,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5188
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Gorgeous GLO Beauty Bar",
+  "Organic Bronze Bar in SouthPark",
+  "UV tanning beds",
+  "Palm Beach Tan",
+  "SouthPark and Midtown",
+  "Organic Bronze Bar",
+  "SouthPark",
+  "Gorgeous Glo",
+  "Bronze Bar",
+  "Midtown"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "32ef6ddc3e23ecba6221b682bf2571f82d099a9a94883f7d388f76c08e00893f",
+ "answer_chars": 714,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "2474d62216c82306cb4b1ca25a26e37df74e3ce3f400b49f789e0d47b022e27b",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

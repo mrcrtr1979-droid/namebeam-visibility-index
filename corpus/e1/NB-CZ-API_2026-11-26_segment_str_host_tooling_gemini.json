@@ -1,0 +1,70 @@
+{
+ "check_id": "NB-CZ-API_2026-11-26_segment_str_host_tooling_gemini",
+ "date_utc": "2026-11-26",
+ "business": "SEGMENT: STR host tooling",
+ "niche": "short-term rental software",
+ "market": "US nationwide",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best tool for an Airbnb host to set nightly pricing and analyze a market before buying?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "4Y0Ia9KiI8CQytMP7qjluQM",
+  "usage": {
+   "promptTokenCount": 20,
+   "candidatesTokenCount": 961,
+   "totalTokenCount": 981,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 20
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "AirDNA",
+  "PriceLabs",
+  "The Rentalizer",
+  "MarketMinder",
+  "Mashvisor",
+  "Hyper-Local Data",
+  "Customization",
+  "BaseLodging & Neighborhood Data",
+  "Runner-Up: Beyond Pricing",
+  "Pre-Purchase Analysis",
+  "Phase",
+  "Market Before Buying",
+  "Day-to-Day Operations",
+  "Beyond Pricing",
+  "Once",
+  "BaseLodging",
+  "Neighborhood Data",
+  "Property Management Systems",
+  "Channel Managers",
+  "Health Score",
+  "Use",
+  "Rentalizer",
+  "Beyond",
+  "Market Dashboards",
+  "Winner: AirDNA",
+  "Winner: PriceLabs"
+ ],
+ "engine_stated_criteria": [
+  "If you are currently shopping for a property",
+  "Once you own and list the property"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "When it comes to both **managing/setting nightly pricing** for an existing Airbnb and **analyzing a market before buying**, **AirDNA** and **PriceLabs** are the undisputed gold standards in the short-term rental industry. \n\nHowever, because your needs span two different phases (Pre-Purchase Analysis vs. Day-to-Day Pricing), the \"best\" tool depends on which stage you are in. Here is the breakdown of the top tools and how to use them.\n\n---\n\n### Phase 1: Analyzing a Market Before Buying (Acquisition)\n*Winner: AirDNA*\n\nIf you are looking to buy a property, you need macro-data: annual revenue, occupancy rates, seasonality, historical trends, and supply growth in a specific zip code or city. \n\n#### **Top Pick: AirDNA (Rentalizer & MarketMinder)**\nAirDNA is the most comprehensive platform for real estate market research.\n*   **The Rentalizer:** You can drop the exact address (or a comparable property address) of a potential purchase into the tool, and it will estimate the annual revenue, average daily rate (ADR), and occupancy rate based on historical data of nearby listings.\n*   **MarketMinder:** Allows you to zoom out and look at entire cities or neighborhoods. You can see how many listings there are, how many are entire homes vs. private rooms, and what the revenue percentiles are (e.g., what does a top 10% property make versus a median property?).\n*   **Pros:** Incredible for macro-level feasibility studies, property scouting, and spotting up-and-coming markets.\n*   **Cons:** AirDNA’s dynamic pricing for active hosts isn't as robust as dedicated pricing tools, and its revenue estimates can sometimes skew high or low depending on how accurately it categorizes a property.\n\n*Alternative for pre-purchase:* **Mashvisor** is another great tool that combines traditional long-term rental data with Airbnb data, making it useful if you want to compare whether a property is better off as a short-term or long-term rental.\n\n---\n\n### Phase 2: Setting Nightly Pricing (Day-to-Day Operations)\n*Winner: PriceLabs (with Beyond Pricing as a close runner-up)*\n\nOnce you own the property and want to maximize your nightly rates using dynamic pricing (adjusting for seasonality, holidays, local events, and day-of-week demand), you need a dynamic pricing engine.\n\n#### **Top Pick: PriceLabs**\nPriceLabs was built by former revenue management experts and is widely considered by professional property managers to be the most powerful and customizable pricing tool on the market.\n*   **Hyper-Local Data:** It looks at forward-looking booking trends in your specific neighborhood, not just historical data.\n*   **Customization:** It gives you incredible control. You can set minimum stay rules (e.g., 2-night minimums on weekends, 1-night on weekdays), last-minute discounts, far-out-window premiums, and \"orphan day\" pricing (filling single empty nights between two bookings).\n*   **BaseLodging & Neighborhood Data:** It also includes \"Market Dashboards\" which give you a mini-AirDNA view of your local market so you can see what competitors are charging.\n*   **Pros:** Flat-fee pricing (doesn't take a percentage of your revenue like some competitors), highly customizable, and integrates with almost all Property Management Systems (PMS) and Channel Managers.\n*   **Cons:** There is a bit of a learning curve due to the sheer number of customization options.\n\n#### **Runner-Up: Beyond Pricing**\nBeyond is the main competitor to PriceLabs. \n*   **Pros:** Extremely user-friendly and \"set-it-and-forget-it.\" It uses a Health Score to tell you if your listing is priced right to get booked.\n*   **Cons:** It charges a percentage fee (around 1%) of your booked revenue, whereas PriceLabs charges a flat monthly fee per listing, which is cheaper as you scale or if you have high-revenue properties.\n\n---\n\n### Summary Recommendation\n\n1.  **If you are currently shopping for a property:** Use **AirDNA**. Buy a subscription for one month, run numbers on 20–30 properties you are considering, and figure out which market makes the most financial sense.\n2.  **Once you own and list the property:** Connect your Airbnb account to **PriceLabs**. Use its base pricing recommendations and customize your minimum stays and rules to maximize your revenue.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

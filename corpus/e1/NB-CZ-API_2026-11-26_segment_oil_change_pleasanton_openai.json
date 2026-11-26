@@ -1,0 +1,52 @@
+{
+ "check_id": "NB-CZ-API_2026-11-26_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-26",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EoYdZDT9NCY52LIebjn7GKwMu4tsp",
+  "usage": {
+   "prompt_tokens": 21,
+   "completion_tokens": 658,
+   "total_tokens": 679,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 314,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Oil Changers",
+  "Quick, straightforward oil change",
+  "Pleasanton Toyota",
+  "Mercedes-Benz of Pleasanton",
+  "European/luxury vehicle",
+  "EV-adjacent",
+  "European"
+ ],
+ "engine_stated_criteria": [
+  "If you also need tires, brakes, or an inspection"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For most drivers in Pleasanton, **Oil Changers** is a strong best-overall choice for a routine oil change: it’s typically fast, no appointment is usually needed, and they focus on oil-service work rather than trying to turn it into a major repair visit. Ask for the **out-the-door price** before authorizing service, especially for full synthetic oil.\n\nBest option depends on your car:\n\n- **Quick, straightforward oil change:** **Oil Changers** in Pleasanton.\n- **Newer car, hybrid/EV-adjacent service, or warranty/service-record concerns:** your brand’s dealer—such as **Pleasanton Toyota**, **Mercedes-Benz of Pleasanton**, etc. Dealers cost more but use the correct spec oil and update factory service records.\n- **European/luxury vehicle:** use a reputable independent European specialist or the dealer; don’t choose solely on the cheapest coupon. Correct oil specifications matter for BMW, Mercedes, Audi, VW, Porsche, and similar cars.\n- **If you also need tires, brakes, or an inspection:** a full-service independent repair shop may be a better value than a quick-lube place.\n\nBefore you go, confirm:\n1. The exact oil weight/spec required by your owner’s manual.\n2. Whether the quote includes the filter, shop fees, and disposal fee.\n3. That they will reset the maintenance reminder.\n4. That they’ll give you a printed invoice showing oil type, quantity, and filter part number.\n\nIf you tell me your vehicle year/make/model and whether you prioritize cheapest, fastest, or highest-quality service, I can narrow it to the best specific option.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,55 @@
+{
+ "check_id": "NB-CZ-API_2026-11-26_segment_hvac_houston_openai",
+ "date_utc": "2026-11-26",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EoaKIFRLeo4HxqGzQ5rPdn7CIeC2h",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 490,
+   "total_tokens": 508,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 184,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Tech of Houston",
+  "The Lee Thompson Co",
+  "John Moore Services",
+  "Abacus Plumbing, Air Conditioning & Electrical",
+  "Mission Air Services",
+  "AC repair",
+  "Abacus Plumbing",
+  "Air Conditioning",
+  "Texas HVAC",
+  "Houston ZIP",
+  "John Moore",
+  "Abacus"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company in Houston, but for a strong all-around starting point for AC repair, **Air Tech of Houston** is often a good choice: it’s a long-established local company with a broad service area and experience with emergency repairs, maintenance, and replacements.\n\nOther Houston-area companies worth comparing include:\n\n- **The Lee Thompson Co.** — established local provider; good option for repair plus maintenance plans.\n- **John Moore Services** — large, well-known company with wide availability; often convenient for same-day service.\n- **Abacus Plumbing, Air Conditioning & Electrical** — broad service coverage and financing options; compare quotes carefully.\n- **Mission Air Services** — frequently considered for residential HVAC service, particularly in north/northwest Houston.\n\nFor Houston AC repair, the “best” choice is usually the company that can provide:\n\n1. A valid Texas HVAC contractor license (verify through TDLR).\n2. A written diagnostic finding and itemized repair quote before work begins.\n3. Clear warranty terms on parts and labor.\n4. No pressure to replace the entire system if a repair is practical.\n5. Recent reviews specifically mentioning **AC repair**, not only installation.\n\nI’d call **two or three companies**, ask for the diagnostic/service-call fee, and compare the diagnosis—not just the final price. If you share your Houston ZIP code and whether this is an emergency, I can narrow the list to companies that serve your area.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

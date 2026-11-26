@@ -1,0 +1,61 @@
+{
+ "check_id": "NB-CZ-API_2026-11-26_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-26",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EoaG17qm6XM3IxsgKHzICWwfHeDXy",
+  "usage": {
+   "prompt_tokens": 20,
+   "completion_tokens": 607,
+   "total_tokens": 627,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 132,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PV Heating, Cooling & Plumbing",
+  "Conditioned Air Systems",
+  "Estes Services",
+  "R.S. Andrews",
+  "Casteel Heating, Cooling, Plumbing & Electrical",
+  "PV Heating",
+  "Manual J load calculation",
+  "Exact equipment model numbers",
+  "Sizing basis",
+  "Labor warranty",
+  "Atlanta-area",
+  "Cooling",
+  "Large",
+  "Casteel Heating",
+  "AC replacement",
+  "Metro Atlanta",
+  "Conditioned Air",
+  "Manual J Calculation"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company for every Atlanta home, but for a full AC replacement I’d start by getting bids from these established Atlanta-area companies:\n\n- **PV Heating, Cooling & Plumbing** — Often a strong choice for technically detailed system design, ductwork evaluation, and homeowners who want a thorough load calculation rather than a quick equipment swap.\n- **Conditioned Air Systems** — Well-known local option with a long operating history; worth including for a conventional replacement quote.\n- **Estes Services** — Large, established Atlanta provider with broad coverage and financing/service-plan options.\n- **R.S. Andrews** — Another major Atlanta-area company; convenient if you value availability and ongoing maintenance support.\n- **Casteel Heating, Cooling, Plumbing & Electrical** — Large operation serving much of metro Atlanta; useful as a comparison quote, particularly if electrical or plumbing work is involved.\n\nIf I were selecting one for my own house, I’d lean toward **PV Heating** *if* their proposal includes a room-by-room **Manual J load calculation**, evaluates ducts and airflow, and clearly explains equipment sizing. Correct sizing and installation quality matter more than the logo on the condenser.\n\nBefore signing, get at least three written proposals and require each company to state:\n\n1. **Exact equipment model numbers**, SEER2/EER2/HSPF2 ratings, and refrigerant.\n2. **Sizing basis** — preferably a Manual J calculation, not “same tonnage as the old unit.”\n3. Whether the quote includes a **new thermostat, pad, line-set work, electrical disconnect, drain protection, permits, haul-away, and startup/commissioning**.\n4. Any needed **duct repairs, returns, filtration, attic insulation, or dehumidification** work.\n5. **Labor warranty** length separate from the manufacturer parts warranty.\n6. Whether they will register the equipment warranty and pull required permits.\n\nBe cautious with any contractor who sizes the new AC solely from your old unit, pressures you into a same-day decision, or quotes dramatically below everyone else without explaining what is excluded.\n\nFor Atlanta’s humid climate, I’d generally prioritize a properly sized **variable-speed or two-stage heat pump/AC system**, good return-air capacity, and humidity control over simply buying the highest advertised SEER rating.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

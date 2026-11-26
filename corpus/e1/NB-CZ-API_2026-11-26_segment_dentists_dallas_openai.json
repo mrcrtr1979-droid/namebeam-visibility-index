@@ -1,0 +1,58 @@
+{
+ "check_id": "NB-CZ-API_2026-11-26_segment_dentists_dallas_openai",
+ "date_utc": "2026-11-26",
+ "business": "SEGMENT: dentists, Dallas",
+ "niche": "dentists",
+ "market": "Dallas TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Dallas for a dental implant?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EoYgeYDK8Uzc3qlDKoMMEcBkSx2xj",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 680,
+   "total_tokens": 698,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 242,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Teaching-hospital second opinion",
+  "UT Southwestern Oral and Maxillofacial Surgery",
+  "Texas A&M College of Dentistry in Dallas",
+  "ABOMS",
+  "American Board of Periodontology",
+  "Texas A&M College of Dentistry",
+  "D CBCT",
+  "Dallas-area ZIP",
+  "Maxillofacial Surgery",
+  "Oral and Maxillofacial Surgery"
+ ],
+ "engine_stated_criteria": [
+  "Who places the implant, and what is their specialty/board certification?",
+  "Do you use a 3-D CBCT scan and guided planning when appropriate?",
+  "What is the all-in cost?",
+  "Can you show cases similar to mine—not just generic before-and-after photos?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” implant dentist in Dallas—your best choice depends on whether you need a straightforward single implant or more complex work such as bone grafting, a sinus lift, or full-arch teeth.\n\nFor the strongest starting point in Dallas:\n\n- **Complex implant cases / bone loss / full-mouth implants:** seek a **board-certified oral and maxillofacial surgeon (ABOMS)** or a **board-certified periodontist (American Board of Periodontology)** who places implants routinely.\n- **Front-tooth aesthetics or complicated replacement teeth:** involve a **prosthodontist**, ideally working with the surgeon who places the implant.\n- **Teaching-hospital second opinion:** **UT Southwestern Oral and Maxillofacial Surgery** and **Texas A&M College of Dentistry in Dallas** can be good places for specialist evaluation, especially for medically complex or difficult cases.\n\nBefore choosing a specific dentist, ask each office:\n\n1. **Who places the implant, and what is their specialty/board certification?**\n2. **Do you use a 3-D CBCT scan and guided planning when appropriate?**\n3. **How many implants does the doctor place each year?**\n4. **Who designs the final crown/bridge, and will that provider plan the case before surgery?**\n5. **What is the all-in cost?** Ask whether it includes CT scan, extraction, grafting, implant, abutment, crown, sedation, and follow-up.\n6. **What happens if the implant does not integrate or develops a complication?**\n7. **Can you show cases similar to mine—not just generic before-and-after photos?**\n\nA major red flag is a clinic that quotes a low “implant special” price without clearly explaining the cost of the abutment, crown, grafting, imaging, and sedation. The final tooth is often as important as the implant surgery.\n\nIf you share your Dallas-area ZIP code, whether it is one tooth or multiple teeth, and whether you have been told you need bone grafting, I can help you narrow the type of specialist and how to compare nearby offices.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

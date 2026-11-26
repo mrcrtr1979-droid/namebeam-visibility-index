@@ -1,0 +1,48 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-26_segment_tire_shops_pleasanton_anthropic",
+ "date_utc": "2026-11-26",
+ "business": "SEGMENT: tire shops, Pleasanton",
+ "niche": "tire shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need new tires installed in Pleasanton. Which specific tire shops should I call, and why?",
+ "q1_prompt_text": "Where should I buy tires in Pleasanton CA and who does the best installation?",
+ "engine": "anthropic",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "anthropic.claude-haiku-4-5-20251001-v1:0",
+  "response_id": "msg_bdrk_t4od6xwbzlegfz2xetb2vvgzvrtxuoqbewlqhqddbfsh6wpqmy4a",
+  "usage": {
+   "input_tokens": 29,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 216,
+   "service_tier": "standard"
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Better ways to find shops",
+  "Discount Tire",
+  "Costco",
+  "Compare prices",
+  "I'd recommend"
+ ],
+ "engine_stated_criteria": [
+  "What to evaluate when you call"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "I don't have current, reliable information about specific tire shops in Pleasanton or their current quality/pricing. What I'd recommend instead:\n\n**Better ways to find shops:**\n- Google Maps search for \"tire shops near me\" + read recent reviews\n- Check Yelp for ratings and customer feedback\n- Ask for recommendations in local Pleasanton community groups (Facebook, Nextdoor)\n- Call your car dealership for referrals\n- Compare prices on Costco, Walmart, or Discount Tire websites if you have those nearby\n\n**What to evaluate when you call:**\n- Do they have your tire size/type in stock?\n- Installation cost (not just tire price)\n- Warranty options\n- Wait time\n- Whether they rotate/balance as part of service\n\nSince tire shop quality and pricing changes frequently, current reviews from locals will give you much better guidance than I can provide.\n\nIs there anything else about the tire-buying process I can help clarify?",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

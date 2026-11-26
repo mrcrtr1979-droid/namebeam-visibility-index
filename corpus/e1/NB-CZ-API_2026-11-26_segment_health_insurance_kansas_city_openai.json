@@ -1,0 +1,66 @@
+{
+ "check_id": "NB-CZ-API_2026-11-26_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-11-26",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EoYK9J4wG8v1HShpPwM5n1tqRpAFf",
+  "usage": {
+   "prompt_tokens": 23,
+   "completion_tokens": 554,
+   "total_tokens": 577,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 100,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "HealthCare.gov Find Local Help",
+  "Missouri Department of Commerce & Insurance",
+  "Kansas Insurance Department",
+  "Missouri and Kansas",
+  "Medicare",
+  "ACA Marketplace",
+  "Missouri Department of Commerce",
+  "Medicare.gov",
+  "SHICK",
+  "Medicare-eligible. SHICK",
+  "Senior Health Insurance Counseling",
+  "In Kansas",
+  "Marketplace Plans",
+  "In Missouri",
+  "ACA/Marketplace",
+  "ACA Marketplace plans"
+ ],
+ "engine_stated_criteria": [
+  "Are you licensed in both Missouri and Kansas?",
+  "Which insurance companies do you represent?",
+  "Do you help with Marketplace subsidies and enrollment?",
+  "Can you check whether my doctors, hospital system, and medications are covered?",
+  "Do you charge me a fee?",
+  "Will you assist if I have a billing, enrollment, or claims issue later?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” broker for everyone in Kansas City—especially because Kansas City spans both Missouri and Kansas, and the right broker depends on whether you need ACA/Marketplace coverage, Medicare, family insurance, or small-business coverage.\n\nFor most people buying their own plan, the best choice is usually an **independent broker licensed in both Missouri and Kansas** who represents multiple carriers and can compare Marketplace and off-Marketplace options. Their compensation is generally paid by the insurer, so you typically should not pay a separate broker fee.\n\nGood places to find a vetted local option:\n\n- **HealthCare.gov “Find Local Help”** — for ACA Marketplace plans and certified agents/navigators: HealthCare.gov/find-local-help  \n- **Missouri Department of Commerce & Insurance** — verify a Missouri agent’s license and complaint history.  \n- **Kansas Insurance Department** — verify Kansas licensing.  \n- **Medicare.gov “Find health & drug plans” / SHICK counseling** — if you are Medicare-eligible. SHICK provides free, unbiased Medicare counseling in Missouri; Kansas has similar Senior Health Insurance Counseling resources.\n\nBefore choosing a broker, ask:\n\n1. **Are you licensed in both Missouri and Kansas?**\n2. **Which insurance companies do you represent?**  \n   Avoid someone who only sells one carrier unless you already know that carrier is right for you.\n3. **Do you help with Marketplace subsidies and enrollment?**\n4. **Will you compare total annual cost—not just monthly premium—including deductible, copays, prescriptions, and network?**\n5. **Can you check whether my doctors, hospital system, and medications are covered?**\n6. **Do you charge me a fee?**  \n   For individual ACA plans, a separate fee is often unnecessary; get any fee in writing.\n7. **Will you assist if I have a billing, enrollment, or claims issue later?**\n\nIf you tell me whether you’re in **Missouri or Kansas**, your age, whether this is **individual/family, Medicare, or employer/small-business coverage**, and any preferred doctors or medications, I can help you narrow down what type of broker or enrollment help makes the most sense.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

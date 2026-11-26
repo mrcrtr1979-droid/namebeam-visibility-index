@@ -1,0 +1,79 @@
+{
+ "check_id": "NB-CZ-API_2026-11-26_world_martial_arts_academy_perplexity",
+ "date_utc": "2026-11-26",
+ "business": "World Martial Arts Academy",
+ "niche": "martial arts for kids",
+ "market": "St. Peters MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is a good martial arts school for kids in St. Peters MO?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4d97e3b6-a47c-4e4e-b96d-1fc2666be5c2",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.001,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0007,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00434
+   },
+   "input_tokens": 4561,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4012,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 280,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4841
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "Terry Creamer’s All Star Karate",
+  "Gracie Barra St. Peters",
+  "Terry Creamer",
+  "All Star Karate",
+  "Brazilian Jiu",
+  "Brazilian Jiu-Jitsu",
+  "Gracie Barra"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "4cf4eca5e3dd6e2b26b066102af130496f0f477dc44e5ab9eafed475c071238b",
+ "answer_chars": 844,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "9a3d3892e992d5dc8e0dd60f86e8f7f19fc00c941fff4db077f1e2b483f7b211",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

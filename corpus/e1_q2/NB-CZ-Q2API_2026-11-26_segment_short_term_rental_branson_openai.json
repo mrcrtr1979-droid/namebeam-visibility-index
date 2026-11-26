@@ -1,0 +1,68 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-26_segment_short_term_rental_branson_openai",
+ "date_utc": "2026-11-26",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EoanJskbQ99YIpYxbY0kIduuRcjVh",
+  "usage": {
+   "prompt_tokens": 29,
+   "completion_tokens": 1800,
+   "total_tokens": 1829,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 822,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sunset Nightly Rentals",
+  "Rent Branson",
+  "Thousand Hills Vacations",
+  "Amazing Branson Rentals",
+  "Still Waters Resort",
+  "Silver Dollar City",
+  "Big Cedar Lodge",
+  "Table Rock Lake",
+  "Lake Taneycomo",
+  "VRBO. Local",
+  "Indian Point",
+  "Families",
+  "Thousand Hills",
+  "Branson Strip",
+  "Big Cedar",
+  "Table Rock",
+  "The Strip",
+  "Highway",
+  "Near the Strip",
+  "Still Waters"
+ ],
+ "engine_stated_criteria": [
+  "Silver Dollar City is a priority"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a Branson trip, I’d call **three or four local managers directly** rather than relying only on Airbnb/VRBO. Local companies can tell you the exact building, view, pool status, parking situation, and total fees—and may have units not shown on the large booking sites.\n\n### Best companies to call first\n\n1. **Sunset Nightly Rentals**\n   - **Best for:** The widest selection—condos, cabins, larger homes, lake properties, and group trips.\n   - **Why call:** They manage properties across major Branson areas, including Table Rock Lake, Indian Point, and near the attractions. A good first call if you do not yet know whether you want to be near the Strip, Silver Dollar City, or the lake.\n\n2. **Rent Branson**\n   - **Best for:** Families and groups wanting a condo, cabin, or full home with local management.\n   - **Why call:** They tend to have a broad mix of Branson-area vacation homes and can help narrow choices by location—such as lake access, golf communities, pet-friendly units, or proximity to Silver Dollar City.\n\n3. **Thousand Hills Vacations**\n   - **Best for:** Staying central to Branson shows, restaurants, shopping, and golf.\n   - **Why call:** Thousand Hills is a strong option if you want a resort-style condo or house close to Highway 76/the Branson Strip rather than a more remote lake cabin. Ask specifically about indoor pools, golf access, and the distance to the attractions you plan to visit.\n\n4. **Amazing Branson Rentals**\n   - **Best for:** Resort-condo stays and family trips, especially if you want amenities such as pools, kitchens, and nearby lake or Silver Dollar City access.\n   - **Why call:** They are worth comparing against the larger local managers because they may have different units in the same resort communities—and pricing can vary substantially for similar-sized condos.\n\n### Call these if your trip has a specific style\n\n5. **Still Waters Resort**\n   - **Best for:** Families visiting **Silver Dollar City** or wanting Table Rock Lake amenities.\n   - **Why call:** It is especially convenient for Indian Point/Silver Dollar City and offers a resort experience rather than a standalone house. Ask about the exact unit type, lake view, boat-slip options, and which pools are open during your dates.\n\n6. **Big Cedar Lodge**\n   - **Best for:** A higher-end lake getaway, couples’ trip, or special occasion.\n   - **Why call:** If your budget supports it, Big Cedar offers a more upscale Ozarks experience with cabins, cottages, lake access, dining, and activities. It is less central to the Branson Strip but much stronger for a luxury nature-and-lake vacation.\n\n### How I’d choose among them\n\n- **First Branson trip; want shows, dining, and easy driving:**  \n  Call **Thousand Hills Vacations**, **Sunset Nightly Rentals**, and **Rent Branson**.\n\n- **Silver Dollar City is a priority:**  \n  Call **Sunset Nightly Rentals**, **Amazing Branson Rentals**, and **Still Waters Resort**. Focus on Indian Point properties.\n\n- **Lake time, boating, fishing, or a quieter stay:**  \n  Call **Rent Branson**, **Sunset Nightly Rentals**, and **Big Cedar Lodge**. Specify whether you mean **Table Rock Lake** or **Lake Taneycomo**, since they offer very different experiences.\n\n- **Large family reunion or multi-family trip:**  \n  Start with **Sunset Nightly Rentals** and **Rent Branson**. Ask for homes with enough real beds, multiple living areas, trailer parking if needed, and whether the property permits gatherings.\n\n### Questions to ask every company\n\nBefore booking, ask for:\n\n- The **exact property address or resort/building name**\n- The **all-in price**, including cleaning, resort, booking, pet, and damage-waiver fees\n- Whether the pool, hot tub, marina, or other advertised amenities are open for your dates\n- The actual number of **beds**, not just “sleeps 10”\n- Stairs, elevator access, parking limits, and EV charging if relevant\n- Cancellation terms and weather-related policies\n- For lake trips: boat-slip availability, trailer parking, and distance to the dock\n\nOne important Branson tip: two listings that look nearly identical online may be in very different locations. A “Branson” rental can be near the Strip, at Indian Point by Silver Dollar City, on Table Rock Lake, or farther south near Big Cedar—often 20–40 minutes apart in traffic. Ask the manager which area best fits your itinerary before choosing.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

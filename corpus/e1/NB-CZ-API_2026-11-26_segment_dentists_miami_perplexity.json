@@ -1,0 +1,80 @@
+{
+ "check_id": "NB-CZ-API_2026-11-26_segment_dentists_miami_perplexity",
+ "date_utc": "2026-11-26",
+ "business": "SEGMENT: dentists, Miami",
+ "niche": "dentists",
+ "market": "Miami FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Miami for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_0a4486c0-a4f8-4e5d-8479-0af53e90c285",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00149,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00493
+   },
+   "input_tokens": 6491,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 5945,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 319,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 6810
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Dr. Todd Barsky in South Miami",
+  "Dr. Bruno Sharp in Coconut Grove",
+  "Dr. Todd Barsky",
+  "South Miami",
+  "Practice",
+  "Dr. Bruno Sharp",
+  "Coconut Grove",
+  "American College of Prosthodontists"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ca85f0cfa400e368904160bfac00c41ae71c37958ca8d3d3e6fa8d89cabd995b",
+ "answer_chars": 1063,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "f5c322ee47181a72f501109f58d95a9941ff96c3d436d39f458edb69276936ec",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

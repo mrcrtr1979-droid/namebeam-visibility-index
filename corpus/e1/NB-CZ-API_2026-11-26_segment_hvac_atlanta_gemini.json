@@ -1,0 +1,26 @@
+{
+ "check_id": "NB-CZ-API_2026-11-26_segment_hvac_atlanta_gemini",
+ "date_utc": "2026-11-26",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "requested_model": "gemini-3.6-flash",
+  "rail": "studio_paid"
+ },
+ "run_status": "QUOTA_BLOCKED",
+ "business_mentioned": null,
+ "competitors_mentioned": [],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "QUOTA BLOCKED, not an engine failure, logged per no-fabricated-rows law. error detail: QUOTA: gemini HTTP 429 [quotaId-not-in-body] tries=1: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Your billing account has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/billing to manage your billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#tier-spend-caps. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n . run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

@@ -1,0 +1,44 @@
+{
+ "check_id": "NB-CZ-API_2026-11-26_segment_roofing_denver_openai",
+ "date_utc": "2026-11-26",
+ "business": "SEGMENT: roofing, Denver",
+ "niche": "residential roofing",
+ "market": "Denver CO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best roofer in Denver for hail damage repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EoaPbYnS4XYeRyv12fO5mj6M0Kj8R",
+  "usage": {
+   "prompt_tokens": 19,
+   "completion_tokens": 573,
+   "total_tokens": 592,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 223,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Denver ZIP"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” Denver roofer for hail claims—the best choice is a locally established, properly licensed/insured contractor with recent hail-repair references in your neighborhood and a clear, itemized insurance-scope process.\n\nFor Denver, prioritize a roofer that:\n\n- Is listed in Denver’s contractor-license lookup and carries current general liability and workers’ comp insurance.\n- Has a Colorado address and several years of local hail-work history—not a storm-chasing crew.\n- Provides a written estimate matching your insurer’s scope of loss, including decking, flashing, ventilation, gutters, and code upgrades where applicable.\n- Will meet your adjuster if needed but does **not** promise to “cover” or waive your deductible. That is a major red flag and can be illegal.\n- Has strong recent reviews specifically mentioning insurance claims, hail repair, cleanup, and warranty follow-through.\n- Uses a manufacturer-certified installation program if you are installing a premium shingle system.\n\nGet at least three written inspections before signing anything. Do not sign an “assignment of benefits,” contingency agreement, or contract with blank pricing unless you fully understand it.\n\nUseful places to vet candidates:\n\n1. Denver Community Planning & Development contractor-license lookup  \n2. Colorado Secretary of State business search  \n3. Better Business Bureau complaint history  \n4. Google reviews from the last 12–18 months  \n5. Your insurer’s preferred-contractor list—useful as a starting point, though not necessarily required\n\nIf you share your Denver ZIP code, roof type (asphalt, tile, metal, flat), and whether you already have an insurance claim number, I can give you a tighter shortlist and a comparison checklist for bids.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
