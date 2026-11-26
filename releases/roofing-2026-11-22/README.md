@@ -39,3 +39,7 @@ python -c "import csv; r=[x for x in csv.DictReader(open('roofing_sample.csv', n
 ```
 
 The expected pooled percentages in column order are 97.4%, 93.1%, 98.3%, 91.9%, 91.2% and 75.0%. The companion verifier checks the same counts and percentages. (Checked 2026-11-26.)
+
+## Recount in a browser
+
+https://namebeam.ai/recount/ loads this CSV in the browser (JavaScript required), compares its counts with the six pooled figures and the two OpenAI review splits above, and marks each MATCH or MISMATCH. It filters by engine, date range and the 2026-11-10 OpenAI model switch, and it also opens a downloaded copy of the CSV. (Read 2026-11-26 12:14PM CT in Chrome: 8 of 8 MATCH. The release's verify_roofing.py on the same CSV, 12:41PM CT: 8 of 8 MATCH.)
