@@ -316,20 +316,22 @@ def _gemini_rails(model, env=None, vertex_bearer=_vertex_bearer):
     return rails
 
 
-def _gemini_attempts(url, headers, prompt_text, model, post, sleep, now):
+def _gemini_attempts(url, headers, prompt_text, model, post, sleep, now, max_tries, timeout):
     """One rail: the original retry, pacing and quota logic, unchanged. Returns
     (ok, text, sources, error, last_status)."""
     last = ""
     status = None
-    for attempt in range(1, GEMINI_MAX_TRIES + 1):
+    for attempt in range(1, max_tries + 1):
         _gemini_pace(model, sleep, now)
         try:
             r = post(
                 url,
                 headers=headers,
                 json={"contents": [{"parts": [{"text": prompt_text}]}]},
-                timeout=TIMEOUT,
+                timeout=timeout,
             )
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as exc:
+            return False, "", [], redact("gemini transport: %s" % type(exc).__name__), "transient"
         except requests.exceptions.RequestException as exc:
             return False, "", [], redact("gemini request failed: %s" % exc), None
         status = r.status_code
@@ -361,7 +363,7 @@ def _gemini_attempts(url, headers, prompt_text, model, post, sleep, now):
         else:
             return False, "", [], redact(
                 "gemini HTTP %s: %s" % (r.status_code, r.text[:300])), r.status_code
-        if (attempt == GEMINI_MAX_TRIES or wait is None or wait > GEMINI_MAX_WAIT_S
+        if (attempt == max_tries or wait is None or wait > GEMINI_MAX_WAIT_S
                 or _gemini_slept[0] + wait > GEMINI_SLEEP_BUDGET_S):
             break
         _gemini_slept[0] += wait
@@ -379,11 +381,19 @@ def call_gemini(prompt_text, _post=None, _sleep=None, _now=None, question_id=Non
     sleep = _sleep or time.sleep
     now = _now or time.monotonic
     err = ""
-    for name, url, headers in rails:
-        ok, text, sources, err, status = _gemini_attempts(url, headers, prompt_text, model, post, sleep, now)
+    for index, (name, url, headers) in enumerate(rails):
+        max_tries = 2 if name == "studio_free" else GEMINI_MAX_TRIES
+        timeout = min(TIMEOUT, 20) if name == "studio_free" else TIMEOUT
+        ok, text, sources, err, status = _gemini_attempts(
+            url, headers, prompt_text, model, post, sleep, now, max_tries, timeout
+        )
         LAST_CALL_META["gemini"]["rail"] = name
         if ok:
             return True, text, sources, ""
+        if status in (503, "transient"):
+            if name == "studio_free" and index + 1 < len(rails) and rails[index + 1][0] == "vertex":
+                continue
+            break
         if status not in GEMINI_FALLTHROUGH:
             break
     return False, "", [], err

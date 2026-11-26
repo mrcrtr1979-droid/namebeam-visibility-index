@@ -115,9 +115,13 @@ res, calls, _ = run(FULL, {"free": [QUOTA_DAY], "vertex": [Resp(403, "no")], "pa
 check("all refused: failure", res[0] is False and len(calls) == 3)
 check("all refused: last rail recorded", engines.LAST_CALL_META["gemini"].get("rail") == "studio_paid")
 
-# 9. network exception on the first rail does not fall through
-res, calls, _ = run(FULL, {"free": [engines.requests.exceptions.ConnectionError("down")], "vertex": [], "paid": []})
-check("network error does not fall through", res[0] is False and len(calls) == 1)
+# 9. transient free-rail failures can use Vertex
+res, calls, _ = run(FULL, {"free": [engines.requests.exceptions.ConnectionError("down")], "vertex": [Resp(200, body=OK_BODY)], "paid": []})
+check("connection error falls through to Vertex", res[0] is True and len(calls) == 2)
+res, calls, _ = run(FULL, {"free": [Resp(503), Resp(503)], "vertex": [Resp(200, body=OK_BODY)], "paid": []})
+check("503 falls through after at most two free tries", res[0] is True and len(calls) == 3)
+res, calls, _ = run({**FULL, "GCP_PROJECT": ""}, {"free": [engines.requests.exceptions.Timeout()], "vertex": [], "paid": []})
+check("timeout does not open paid Studio", res[0] is False and len(calls) == 1)
 
 # 10. no secret value or key-bearing URL appears in any returned error or the recorded rail
 res, calls, _ = run(FULL, {"free": [QUOTA_DAY], "vertex": [Resp(403, "no")], "paid": [Resp(400, "boom")]})
