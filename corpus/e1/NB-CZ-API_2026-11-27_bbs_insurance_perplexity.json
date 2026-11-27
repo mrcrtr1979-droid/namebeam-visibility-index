@@ -1,0 +1,78 @@
+{
+ "check_id": "NB-CZ-API_2026-11-27_bbs_insurance_perplexity",
+ "date_utc": "2026-11-27",
+ "business": "BBS Insurance",
+ "niche": "health insurance brokerage",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "What is the best health insurance broker in Kansas City MO for someone who is self-employed?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_d5cbbffb-030c-4788-a031-5651ddbe5b58",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00094,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.0008,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00438
+   },
+   "input_tokens": 4297,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 3745,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 318,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 4615
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "AIS Health Insurance Advisors",
+  "HealthCare.gov",
+  "MO. It",
+  "Kansas City-area",
+  "ACA Marketplace",
+  "ACA marketplace options"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "3cd50def36d435966769a8b416bf058db76a07a3e4a3fe88610bef7e7ea6bed9",
+ "answer_chars": 1080,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "9987e5feea4207ef3c95e0ae21558411bfea5846d007afbbaba24bf0ebaa5c6f",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

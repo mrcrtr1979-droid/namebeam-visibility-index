@@ -1,0 +1,71 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-27_segment_hvac_houston_openai",
+ "date_utc": "2026-11-27",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "My AC needs repair in Houston. Which specific HVAC companies should I call, and why?",
+ "q1_prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EowskV6dUUQQXA50FCMXUHhiHIEJK",
+  "usage": {
+   "prompt_tokens": 24,
+   "completion_tokens": 1127,
+   "total_tokens": 1151,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 363,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Tech of Houston",
+  "Doctor Cool & Professor Heat",
+  "John Moore Services",
+  "Abacus Plumbing, Air Conditioning & Electrical",
+  "No cooling today / urgent dispatch needed",
+  "John Moore",
+  "Abacus",
+  "Texas HVAC contractor license number",
+  "Texas Department of Licensing and Regulation (TDLR)",
+  "Good Houston-area",
+  "Houston HVAC-focused",
+  "Doctor Cool",
+  "Professor Heat",
+  "Katy-area HVAC",
+  "HVAC-only",
+  "Abacus Plumbing",
+  "Air Conditioning",
+  "Air Tech",
+  "Texas HVAC",
+  "Air Conditioning and Refrigeration Contractor",
+  "One Houston-specific",
+  "AC repair",
+  "Houston HVAC"
+ ],
+ "engine_stated_criteria": [
+  "Someone says you need a whole new unit"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For Houston, I’d call **three companies for competing diagnoses/quotes**, rather than accepting the first recommendation—especially if anyone quickly says your system “must be replaced.”\n\n### Good Houston-area calls to make\n\n1. **Air Tech of Houston**\n   - A long-established Houston HVAC-focused company.\n   - Good first call for a conventional AC repair, maintenance issue, refrigerant concern, compressor/capacitor problem, or second opinion on replacement.\n   - HVAC is their core business rather than an add-on to plumbing or electrical work.\n\n2. **Doctor Cool & Professor Heat**\n   - Houston/Katy-area HVAC company with a strong focus on residential AC repair and replacement.\n   - Worth calling if you want a local HVAC specialist and a diagnosis before discussing a new system.\n   - Particularly useful as a second quote if another company recommends major work.\n\n3. **John Moore Services**\n   - Large Houston-area service company with broad dispatch coverage.\n   - A practical choice if you need **same-day service**, have an emergency, or also suspect an electrical/drain/plumbing issue affecting the AC.\n   - Because larger companies can have more overhead, compare their quote with a smaller HVAC-only contractor.\n\n4. **Abacus Plumbing, Air Conditioning & Electrical**\n   - Another established Houston metro provider with HVAC, plumbing, and electrical capabilities.\n   - Good option when the problem may involve a clogged condensate drain, electrical disconnect/breaker, thermostat wiring, or an urgent after-hours failure.\n   - Again, get a competing HVAC-only estimate for expensive repairs or replacement recommendations.\n\n### Which ones I’d call first\n\n- **Normal repair / want a careful HVAC diagnosis:**  \n  **Air Tech of Houston** + **Doctor Cool & Professor Heat**\n\n- **No cooling today / urgent dispatch needed:**  \n  **John Moore** or **Abacus**, plus one of the local HVAC specialists if the proposed repair is expensive.\n\n- **Someone says you need a whole new unit:**  \n  Get at least **two independent quotes**, ideally one from Air Tech or Doctor Cool and one from a larger company.\n\n### What to ask when you call\n\nTell them the symptoms and ask for:\n\n- A **diagnostic/service-call fee** and whether it is credited toward repair.\n- The **Texas HVAC contractor license number** and proof of insurance.\n- A written estimate that separates:\n  - diagnostic findings,\n  - parts,\n  - labor,\n  - refrigerant,\n  - permit costs if applicable,\n  - warranty terms.\n- Whether they tested the **capacitor, contactor, blower motor, condensate drain, refrigerant charge, evaporator coil, and compressor** before recommending replacement.\n- For a refrigerant diagnosis: whether they will identify the **leak location**, not just “top off” refrigerant.\n\nYou can verify a company’s license through the **Texas Department of Licensing and Regulation (TDLR)** Air Conditioning and Refrigeration Contractor lookup. Make sure the license matches the legal company name shown on the estimate.\n\n### One Houston-specific caution\n\nHouston humidity makes **clogged condensate drains, float-switch shutoffs, dirty coils, and oversized/poorly dehumidifying systems** especially common. If the unit runs but the house feels humid, freezes up, leaks water, or shuts off intermittently, don’t let a technician jump straight to “needs refrigerant” or “needs replacement” without documenting the actual diagnosis.\n\nIf the repair quote is over roughly **$1,500–$2,000**, or the system is around **10–12+ years old**, ask for both:\n1. the repair option, and  \n2. a replacement comparison with efficiency, warranty, permit, and load-calculation details.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

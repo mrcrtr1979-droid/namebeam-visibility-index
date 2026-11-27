@@ -1,0 +1,76 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-27_segment_tire_shops_pleasanton_openai",
+ "date_utc": "2026-11-27",
+ "business": "SEGMENT: tire shops, Pleasanton",
+ "niche": "tire shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need new tires installed in Pleasanton. Which specific tire shops should I call, and why?",
+ "q1_prompt_text": "Where should I buy tires in Pleasanton CA and who does the best installation?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Eowa6iIYIQcWiPbLJo4jlF2kq8Rz6",
+  "usage": {
+   "prompt_tokens": 26,
+   "completion_tokens": 1057,
+   "total_tokens": 1083,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 314,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Pleasanton, California",
+  "America’s Tire / Discount Tire — Dublin",
+  "Big O Tires — Pleasanton",
+  "Watch for",
+  "Firestone Complete Auto Care — Pleasanton",
+  "America’s Tire in Dublin",
+  "Big O Tires in Pleasanton",
+  "Costco Tire Center",
+  "Firestone",
+  "Pleasanton, Texas",
+  "America",
+  "Tire",
+  "Discount Tire",
+  "Dublin",
+  "Big O Tires",
+  "East Bay",
+  "Bridgestone",
+  "Firestone Complete Auto Care",
+  "Les Schwab Tires",
+  "Tire and Big O",
+  "Costco",
+  "America’s Tire",
+  "Les Schwab",
+  "Big O",
+  "Livermore",
+  "Michelin",
+  "America’s Tire / Discount Tire"
+ ],
+ "engine_stated_criteria": [
+  "Best if your tires wore unevenly / may need alignment",
+  "Best value if you already have a membership and can wait"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Assuming you mean **Pleasanton, California**, I’d call these in this order:\n\n1. **America’s Tire / Discount Tire — Dublin**\n   - **Why call:** Usually the best first call for tire-specific service: broad inventory, competitive price matching, road-hazard certificates, and generally efficient mounting/balancing.\n   - **Best for:** Comparing several tire brands quickly or getting a same/next-day installation.\n   - **Ask about:** Their out-the-door price including installation, disposal, TPMS service, balancing, and road-hazard coverage.\n\n2. **Big O Tires — Pleasanton**\n   - **Why call:** Convenient local option that can handle tires plus alignment, brakes, and suspension work if your old tires wore unevenly.\n   - **Best for:** If you suspect you need an alignment or want a shop that can inspect the cause of tire wear during the appointment.\n   - **Ask about:** Alignment pricing/package and whether they will inspect worn suspension components before aligning.\n\n3. **Costco Tire Center — Livermore or nearby East Bay location**\n   - **Why call:** Often strong value on Michelin, Bridgestone, and certain other major brands, with included rotation/balance/road-hazard benefits.\n   - **Best for:** Costco members who are not in a rush and want a known-brand tire at a good installed price.\n   - **Watch for:** Appointments can be less flexible, selection is narrower, and they typically will not install tires bought elsewhere.\n\n4. **Firestone Complete Auto Care — Pleasanton**\n   - **Why call:** Good fallback if you need a national warranty network, an alignment, or an appointment outside the availability of tire-only shops.\n   - **Best for:** Fleet-type needs, Firestone/Bridgestone tires, or if you want a nationwide service/warranty option.\n   - **Ask about:** Whether the quoted price includes a road-hazard plan and whether an alignment is recommended based on tread wear.\n\n5. **Les Schwab Tires — Dublin/Pleasanton-area location, if convenient**\n   - **Why call:** Often well regarded for service, rotations, repairs, and post-sale support; worth pricing against America’s Tire and Big O.\n   - **Best for:** Prioritizing ongoing local service and straightforward warranty support.\n   - **Ask about:** Tire availability and the complete installed price—not just the per-tire price.\n\n### My practical recommendation\n- **Best overall first call:** **America’s Tire in Dublin**\n- **Best if your tires wore unevenly / may need alignment:** **Big O Tires in Pleasanton**\n- **Best value if you already have a membership and can wait:** **Costco Tire Center**\n- **Best national-service backup:** **Firestone**\n\nWhen you call, give each shop your **vehicle year/make/model/trim** and current tire size (for example, `225/55R18`). Ask this exact question:\n\n> “What is your total out-the-door price for four [brand/model/size] tires, including mounting, balancing, TPMS service, disposal, taxes, and road-hazard coverage? What is your earliest installation appointment, and do you recommend an alignment based on my current tread wear?”\n\nAlso ask for the **tire production date/DOT date** if the tires are not special-ordered; ideally you want relatively fresh inventory rather than tires that have been sitting for years.\n\nIf you meant **Pleasanton, Texas** rather than California, tell me your vehicle and tire size and I’ll give you a local shortlist for that Pleasanton instead.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

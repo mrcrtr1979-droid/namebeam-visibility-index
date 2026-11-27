@@ -1,0 +1,72 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-27_segment_short_term_rental_branson_openai",
+ "date_utc": "2026-11-27",
+ "business": "SEGMENT: short-term rental, Branson",
+ "niche": "short-term rental / Airbnb",
+ "market": "Branson MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I want a vacation rental for a trip to Branson. Which specific rental companies should I call, and why?",
+ "q1_prompt_text": "Where should I stay in Branson Missouri, an Airbnb or a hotel, and which specific places are best?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EowqmctGC68X0aNcYSfHCFnk6MTHr",
+  "usage": {
+   "prompt_tokens": 29,
+   "completion_tokens": 1183,
+   "total_tokens": 1212,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 331,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Sunset Nightly Rentals",
+  "Thousand Hills Vacations",
+  "Branson Vacation Rentals",
+  "Branson Regal",
+  "Branson Lakeside Vacation Rentals",
+  "D’Monaco Resort Condos",
+  "Sunset Nightly",
+  "Hollister. Good",
+  "First-time Branson",
+  "Monaco Resort Condos",
+  "Table Rock",
+  "The Strip",
+  "Hollister",
+  "Thousand Hills",
+  "Vacation Rentals"
+ ],
+ "engine_stated_criteria": [
+  "You want shows, Silver Dollar City, restaurants, and easy driving",
+  "You want Table Rock Lake, boating, fishing, or a quieter setting",
+  "You have a large family or group and need a full house/cabin",
+  "You want a nicer anniversary/birthday-style property",
+  "What is the all-in total?",
+  "Is the unit’s calendar and pricing current?",
+  "How far is it really from the places we plan to visit?",
+  "Does it have the features that matter to us?",
+  "What is the cancellation policy and weather policy?",
+  "Is the actual unit shown in the photos the one we would receive?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For Branson, I’d call a mix of local managers—rather than relying only on Airbnb/Vrbo—because they can often match you to a specific unit, explain neighborhood tradeoffs, and sometimes offer better direct-booking terms.\n\n| Rental company | Best reason to call | Best for |\n|---|---|---|\n| **Sunset Nightly Rentals** | One of the more established Branson-area vacation-rental managers, with condos, cabins, and lake properties around Branson, Table Rock Lake, and Hollister. Good variety of pet-friendly and family-oriented options. | Families, couples, lake stays, travelers who want several price/location choices. |\n| **Thousand Hills Vacations** | Strong choice if you want to be close to the Strip, shows, golf, and major attractions. They specialize heavily in condo-style accommodations, often in resort communities. | First-time Branson visitors, golfers, families prioritizing convenience to attractions. |\n| **Branson Vacation Rentals** | Worth calling for larger homes, cabins, and properties suited to groups. A local manager can be especially useful when you need a particular setup—multiple bedrooms, game room, lake access, or a secluded cabin. | Multi-family trips, reunions, church groups, travelers wanting cabins or full homes. |\n| **Branson Regal** | Often a good lead for upscale cabins, lake-area homes, and larger vacation properties. Ask specifically about Table Rock Lake access, views, boat slips, and group capacity. | Larger groups, lake vacations, travelers wanting a more private property. |\n| **Branson Lakeside Vacation Rentals** | Put this on your list if the lake is the main point of the trip. They are a useful option to compare for waterfront, lake-view, and marina/boat-slip proximity. | Boaters, fishing trips, guests who want Table Rock Lake rather than the Strip. |\n| **D’Monaco Resort Condos** | A more upscale, resort-style option on Table Rock Lake, typically with large luxury condos and strong water views. It may cost more, but it is a good call for a special occasion. | Couples’ trips, upscale family travel, lake-view/luxury stays. |\n\n### Which ones to call first\n\n- **You want shows, Silver Dollar City, restaurants, and easy driving:**  \n  Call **Thousand Hills Vacations**, then **Sunset Nightly Rentals**.\n\n- **You want Table Rock Lake, boating, fishing, or a quieter setting:**  \n  Call **Sunset Nightly Rentals**, **Branson Lakeside Vacation Rentals**, and **Branson Regal**.\n\n- **You have a large family or group and need a full house/cabin:**  \n  Call **Branson Vacation Rentals** and **Branson Regal** first.\n\n- **You want a nicer anniversary/birthday-style property:**  \n  Call **D’Monaco Resort Condos**, then compare with upscale options from **Sunset Nightly** or **Branson Regal**.\n\n### What to ask each company\n\nWhen you call, give them your dates, guest count, and budget, then ask:\n\n1. **What is the all-in total?** Include cleaning, resort, pet, booking, and damage-waiver fees.\n2. **Is the unit’s calendar and pricing current?**\n3. **How far is it really from the places we plan to visit?** Branson, Table Rock Lake, Hollister, and Silver Dollar City can be farther apart than listings make them seem.\n4. **Does it have the features that matter to us?** Elevator/ground-floor access, boat slip, pool, hot tub, washer/dryer, grill, fireplace, pet policy, Wi‑Fi quality, and parking.\n5. **What is the cancellation policy and weather policy?**\n6. **Is the actual unit shown in the photos the one we would receive?** This matters especially with condo managers that have many similar units.\n\nBefore booking, compare the direct quote against the same property on Airbnb/Vrbo, but prioritize the manager that gives you a clear total, responsive answers, and recent independent reviews.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

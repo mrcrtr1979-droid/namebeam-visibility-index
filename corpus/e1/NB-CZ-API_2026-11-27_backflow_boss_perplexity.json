@@ -1,0 +1,81 @@
+{
+ "check_id": "NB-CZ-API_2026-11-27_backflow_boss_perplexity",
+ "date_utc": "2026-11-27",
+ "business": "Backflow Boss",
+ "niche": "backflow testing and repair",
+ "market": "Liberty MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who does backflow testing and repair near Liberty MO?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_4f0c0452-d71d-48f1-9eb9-737ccdf6276c",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00107,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00078,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00449
+   },
+   "input_tokens": 4807,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4262,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 313,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5120
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": true,
+ "competitors_mentioned": [
+  "CertPro Plumbing",
+  "A.B. May",
+  "Mr. Plumber",
+  "Missouri DNR-certified tester",
+  "June 1",
+  "Liberty-based",
+  "Lists Liberty",
+  "Missouri DNR-certified",
+  "Missouri DNR"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "9e2ea438a29385b2deaa8ace4769eede8fe89ad8271152bc4e4045352faf0e07",
+ "answer_chars": 958,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "461aa3e7f3eb96dfe508a6f8934a580434855ae4eace62f5c30de9e4d325e62c",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

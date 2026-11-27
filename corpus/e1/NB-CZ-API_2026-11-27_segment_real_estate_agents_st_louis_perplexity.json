@@ -1,0 +1,76 @@
+{
+ "check_id": "NB-CZ-API_2026-11-27_segment_real_estate_agents_st_louis_perplexity",
+ "date_utc": "2026-11-27",
+ "business": "SEGMENT: real estate agents, St. Louis",
+ "niche": "real estate agents",
+ "market": "St. Louis MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best real estate agent in St. Louis MO to sell my house?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_a6c08ab5-7fe1-4e27-a2da-14912369f505",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.0013,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00075,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00469
+   },
+   "input_tokens": 5735,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 5184,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 300,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 6035
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Mark Gellman of eXp Realty’s Gellman Team",
+  "Mark Gellman",
+  "Gellman Team",
+  "St. Louis-area"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "17660e9a5162dce0012ca0107dc0c49b199478e9d77ab9e765ad57a2c9c6becc",
+ "answer_chars": 1035,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "44dd2132acf29380689ccb966243829345451a262042266271dce091321ec642",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

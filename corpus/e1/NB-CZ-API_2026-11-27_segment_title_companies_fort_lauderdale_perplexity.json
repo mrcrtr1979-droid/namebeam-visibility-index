@@ -1,0 +1,77 @@
+{
+ "check_id": "NB-CZ-API_2026-11-27_segment_title_companies_fort_lauderdale_perplexity",
+ "date_utc": "2026-11-27",
+ "business": "SEGMENT: title companies, Fort Lauderdale",
+ "niche": "title companies",
+ "market": "Fort Lauderdale FL",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Which title company in Fort Lauderdale FL is best for a home closing?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_368addf2-55c2-4cbf-a2fa-46b160ccd1e9",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00106,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00083,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00453
+   },
+   "input_tokens": 4780,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 4232,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 331,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 5111
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Independence Title",
+  "Independent Title of Fort Lauderdale",
+  "Palm Title Partners",
+  "Palm Title",
+  "Independent Title"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "8b9ef1fc57d61566e42d6bf48cdf6f06b3b36ed8c2bcf296216e2a59d5b65702",
+ "answer_chars": 1041,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "180ef3e13dffa450a23a2829f92d6c90271df94853980c8f11de2f2d140b6e15",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

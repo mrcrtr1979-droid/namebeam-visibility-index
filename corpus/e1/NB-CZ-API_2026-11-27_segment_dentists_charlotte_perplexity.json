@@ -1,0 +1,75 @@
+{
+ "check_id": "NB-CZ-API_2026-11-27_segment_dentists_charlotte_perplexity",
+ "date_utc": "2026-11-27",
+ "business": "SEGMENT: dentists, Charlotte",
+ "niche": "dentists",
+ "market": "Charlotte NC",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best dentist in Charlotte for a dental implant?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_fdbfbbdd-97ce-455c-9f71-2fd4bfb83758",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00162,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00076,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00502
+   },
+   "input_tokens": 7028,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 6482,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 305,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 7333
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Metrolina Periodontics",
+  "Envision Dental Implant Center",
+  "Dr. Matthew Ficca"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "ded5e13fa44fa43af558a0c6a81b3b96462935aac1c85f7a83fa81340f5a53ed",
+ "answer_chars": 1069,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "02c1e1767e70304a713a65d6c305b7972ec157e8480c6429ef5b2bedc4f477e0",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

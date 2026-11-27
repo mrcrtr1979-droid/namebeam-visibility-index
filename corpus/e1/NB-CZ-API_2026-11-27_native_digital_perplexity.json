@@ -1,0 +1,76 @@
+{
+ "check_id": "NB-CZ-API_2026-11-27_native_digital_perplexity",
+ "date_utc": "2026-11-27",
+ "business": "Native Digital",
+ "niche": "marketing agency",
+ "market": "Kansas City MO",
+ "row_type": "business",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best marketing agency in Kansas City?",
+ "engine": "perplexity",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "perplexity/sonar",
+  "response_id": "resp_3e56e608-c65f-4afc-9ec1-02b298fac5d0",
+  "status": "completed",
+  "usage": {
+   "cost": {
+    "cache_creation_cost": 0.00134,
+    "currency": "USD",
+    "input_cost": 0.00014,
+    "output_cost": 0.00055,
+    "tool_calls_cost": 0.0025,
+    "tool_calls_cost_details": {
+     "search_web": 0.0025
+    },
+    "total_cost": 0.00453
+   },
+   "input_tokens": 5900,
+   "input_tokens_details": {
+    "cache_creation_input_tokens": 5356,
+    "cache_read_input_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 219,
+   "output_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "tool_calls_details": {
+    "search_web": {
+     "cost_usd": 0.0025,
+     "invocation": 1
+    }
+   },
+   "total_tokens": 6119
+  },
+  "preset": null,
+  "search_results_count": 15,
+  "output_item_types": [
+   "search_results",
+   "message"
+  ]
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "BarkleyOKRP",
+  "Signal Theory",
+  "VOLTAGE",
+  "WiseGuys Digital Marketing"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization.",
+ "answer_sha256": "fd2a34729c2e7514b86544908d5c3aa2e231924ff28c0164ed7ac2a077b5ea8f",
+ "answer_chars": 707,
+ "answer_private": true,
+ "raw_policy": "R82 2026-10-24: raw text held in the private collector",
+ "sources_count": 15,
+ "sources_sha256": "0196b8a7ef76112841783bda5dbc5d07ec44d57d8ab523fb6ca9bd1b58981150",
+ "sources_private": true,
+ "sources_policy": "CAP 2026-11-08: cited sources held in the private collector"
+}

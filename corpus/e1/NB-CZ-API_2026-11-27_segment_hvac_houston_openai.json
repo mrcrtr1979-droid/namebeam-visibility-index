@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-API_2026-11-27_segment_hvac_houston_openai",
+ "date_utc": "2026-11-27",
+ "business": "SEGMENT: HVAC, Houston",
+ "niche": "hvac repair and replacement",
+ "market": "Houston TX",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Houston for AC repair?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EowOpjMiMOKItWCFCCCTx2Zjq8bdR",
+  "usage": {
+   "prompt_tokens": 18,
+   "completion_tokens": 409,
+   "total_tokens": 427,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 142,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Air Innovations Heating & Cooling",
+  "Doctor Cool & Professor Heat",
+  "Mission Air Services",
+  "John Moore Services",
+  "Air Tech of Houston",
+  "Texas TDLR HVAC contractor license",
+  "AC repair",
+  "Air Innovations Heating",
+  "Doctor Cool",
+  "Professor Heat",
+  "Texas TDLR HVAC",
+  "John Moore",
+  "Texas TDLR"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company for every Houston AC repair, since pricing, availability, warranty, and the specific issue matter. A strong starting point is to get same-day quotes from well-reviewed local providers such as:\n\n- **Air Innovations Heating & Cooling** — often noted for residential service and diagnostics.\n- **Doctor Cool & Professor Heat** — established Houston-area company with emergency-service focus.\n- **Mission Air Services** — commonly considered for residential AC repair and replacement.\n- **John Moore Services** — larger company with broad availability, though pricing can be higher.\n- **Air Tech of Houston** — another local option to compare for repair estimates.\n\nBefore choosing, confirm the company:\n\n1. Holds an active **Texas TDLR HVAC contractor license**.\n2. Gives a **written diagnostic fee and repair estimate** before work starts.\n3. Explains whether the repair includes a **parts and labor warranty**.\n4. Does not immediately push full system replacement without documenting the failure.\n5. Has recent reviews specifically mentioning **AC repair**, not just installations.\n\nFor a typical Houston AC breakdown, I’d call two or three companies, ask for the diagnostic charge, expected arrival window, and warranty terms, then compare the actual repair recommendation—not just the star rating.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

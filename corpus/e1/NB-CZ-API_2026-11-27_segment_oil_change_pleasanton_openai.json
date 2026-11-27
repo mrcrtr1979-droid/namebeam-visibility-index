@@ -1,0 +1,53 @@
+{
+ "check_id": "NB-CZ-API_2026-11-27_segment_oil_change_pleasanton_openai",
+ "date_utc": "2026-11-27",
+ "business": "SEGMENT: oil change, Pleasanton",
+ "niche": "oil change shops",
+ "market": "Pleasanton CA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Where is the best place to get an oil change in Pleasanton CA?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Eouwk68NN2axUANwFu9ljfehe6HDU",
+  "usage": {
+   "prompt_tokens": 21,
+   "completion_tokens": 845,
+   "total_tokens": 866,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "Oil Changers",
+  "Dealership service department",
+  "A reputable independent mechanic in Pleasanton/Dublin",
+  "Jiffy Lube / Valvoline-style quick lube nearby",
+  "EV-adjacent",
+  "European",
+  "Jiffy Lube",
+  "Toyota",
+  "GM-type",
+  "Dublin"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "For a routine oil change in Pleasanton, I’d start with **Oil Changers**—it’s usually the best balance of speed, convenience, and price for mainstream cars. They typically handle the oil/filter change, fluid checks, tire-pressure check, and service-light reset without requiring an appointment.\n\nOther good choices depending on your priorities:\n\n- **Dealership service department** — Best for newer cars, hybrids, EV-adjacent maintenance, European/luxury vehicles, or if you want factory service records. More expensive, but they’ll use the exact required oil specification.\n- **A reputable independent mechanic in Pleasanton/Dublin** — Best if you also need an inspection, brakes, tires, or have a car with higher mileage. Often more thorough than quick-lube places.\n- **Jiffy Lube / Valvoline-style quick lube nearby** — Fine for convenience, but compare the final price since coupons and upsells vary.\n\nBefore you go, ask:\n1. What is the **out-the-door price** for your vehicle and required oil grade?\n2. Is the **filter included**?\n3. Will they use oil that meets your manufacturer’s spec, such as Dexos, Toyota 0W-16, VW 508/509, etc.?\n4. Will they reset the maintenance reminder and document the service?\n\nFor most Toyota/Honda/Subaru/Ford/GM-type vehicles, a good quick-lube shop is perfectly appropriate. For BMW, Mercedes, Audi, Volvo, or a newer hybrid, I’d lean toward the dealer or a European/Asian specialist instead.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

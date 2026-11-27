@@ -1,0 +1,56 @@
+{
+ "check_id": "NB-CZ-API_2026-11-27_segment_hvac_atlanta_openai",
+ "date_utc": "2026-11-27",
+ "business": "SEGMENT: HVAC, Atlanta",
+ "niche": "hvac repair and replacement",
+ "market": "Atlanta GA",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best HVAC company in Atlanta to replace my air conditioner?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-EowM1sme83PMDs20CQoeQjsuqWljZ",
+  "usage": {
+   "prompt_tokens": 20,
+   "completion_tokens": 480,
+   "total_tokens": 500,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 137,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "PV Heating, Cooling & Plumbing",
+  "Moncrief Heating & Air Conditioning",
+  "R.S. Andrews",
+  "Casteel Heating, Cooling, Plumbing & Electrical",
+  "Coolray",
+  "Manual J load calculation",
+  "PV Heating",
+  "Cooling",
+  "Moncrief Heating",
+  "Air Conditioning",
+  "Casteel Heating",
+  "Moncrief Heating & Air",
+  "Moncrief"
+ ],
+ "engine_stated_criteria": [],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” HVAC company for every Atlanta home, but for an air-conditioner replacement, I’d start with **PV Heating, Cooling & Plumbing** if you prioritize a careful, engineering-focused installation. They’re well regarded in the Atlanta area for proper load calculations, ductwork evaluation, and system design—not simply swapping in the same size unit.\n\nAlso worth getting competing estimates from:\n\n- **Moncrief Heating & Air Conditioning** — long-established Atlanta company; strong option for higher-end replacement and service.\n- **R.S. Andrews** — large, established provider with broad coverage and financing/service-plan options.\n- **Casteel Heating, Cooling, Plumbing & Electrical** — major metro-Atlanta company with extensive availability.\n- **Coolray** — another large local option, often convenient for scheduling and maintenance plans.\n\nFor a replacement, choose the company that will do all of the following—not necessarily the cheapest quote:\n\n1. Perform a **Manual J load calculation** instead of matching the old unit’s tonnage.\n2. Inspect **ductwork, airflow, insulation, and return-air sizing**.\n3. Provide a written quote listing the **exact equipment model numbers**, efficiency ratings, warranty, labor warranty, permit, and disposal/installation details.\n4. Explain whether a **variable-speed or two-stage system** makes sense for your home.\n5. Pull the required **local permit** and arrange inspection.\n6. Have strong recent reviews specifically mentioning **install quality**, not just repair calls.\n\nGet at least three written estimates. In Atlanta’s humid climate, correct sizing and humidity control are often more important than buying the highest-SEER unit.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

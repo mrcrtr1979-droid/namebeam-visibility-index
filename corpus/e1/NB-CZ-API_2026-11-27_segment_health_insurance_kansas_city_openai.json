@@ -1,0 +1,66 @@
+{
+ "check_id": "NB-CZ-API_2026-11-27_segment_health_insurance_kansas_city_openai",
+ "date_utc": "2026-11-27",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 1,
+ "run": 1,
+ "prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "openai",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gpt-5.6-terra",
+  "response_id": "chatcmpl-Eouj2wbJIMYJtu9XSI9Q9eeiJFUSu",
+  "usage": {
+   "prompt_tokens": 23,
+   "completion_tokens": 1041,
+   "total_tokens": 1064,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 512,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  }
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "HealthCare.gov Find Local Help",
+  "Kansas Insurance Department",
+  "Missouri Department of Commerce & Insurance",
+  "Lockton",
+  "Bukaty Companies",
+  "Holmes Murphy",
+  "CBIZ",
+  "Kansas and Missouri",
+  "Medicare",
+  "ACA Marketplace",
+  "Missouri Department of Commerce",
+  "Kansas City-area",
+  "In Kansas",
+  "Marketplace Plans",
+  "In Missouri",
+  "Missouri Side",
+  "Kansas City Metro",
+  "Family ACA",
+  "ACA Marketplace plans"
+ ],
+ "engine_stated_criteria": [
+  "Which carriers do you represent, and which major carriers do you not represent?",
+  "Will you compare Marketplace and off-Marketplace plans?",
+  "Do you charge me a fee, and how are you compensated by insurers?"
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "There isn’t one objectively “best” broker for everyone—especially because Kansas City spans both Kansas and Missouri, and the right broker depends on whether you need an **individual/family ACA plan, Medicare, or employer coverage**.\n\nFor an **individual or family plan**, I’d start with an **independent, state-licensed broker who works with ACA Marketplace plans**, rather than a large corporate benefits firm. A reliable way to find one is:\n\n- **HealthCare.gov “Find Local Help”** — search your ZIP code for certified agents/brokers and navigators in the Kansas City metro: https://www.healthcare.gov/find-local-help/\n- Verify the person’s license with the:\n  - **Kansas Insurance Department** (if you live in Kansas)\n  - **Missouri Department of Commerce & Insurance** (if you live in Missouri)\n\nA Marketplace **navigator** is also worth considering: navigators are free and impartial, while brokers are typically paid commissions by insurers. Talking to one of each can be useful.\n\nFor **small-business or employer-sponsored coverage**, established Kansas City–area benefits brokerages to compare include:\n\n- **Lockton** — Kansas City–headquartered; generally strongest for employer benefits and larger/complex groups.\n- **Bukaty Companies** — Leawood-based benefits brokerage; commonly works with employers and employee-benefit programs.\n- **Holmes Murphy** — has Kansas City-area operations and handles employee benefits/risk management.\n- **CBIZ** — offers employee-benefits consulting in the Kansas City market.\n\nBefore selecting any broker, ask these five questions:\n\n1. **Are you licensed in my state—Kansas or Missouri—and do you handle individual ACA plans?**\n2. **Which carriers do you represent, and which major carriers do you not represent?**\n3. **Will you compare Marketplace and off-Marketplace plans?**\n4. **Can you check my doctors, hospital system, prescriptions, and expected total yearly cost—not just the monthly premium?**\n5. **Do you charge me a fee, and how are you compensated by insurers?**\n\nFor most individuals, the “best” broker is one who will clearly compare **premium, deductible, out-of-pocket maximum, prescription coverage, and network access**—and who does not steer you toward only one insurer.\n\nIf you tell me whether you need coverage for **yourself/family, Medicare, or a small business**, plus whether you live on the Kansas or Missouri side, I can narrow this to the most suitable type of local help and what plans/networks to investigate.",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}

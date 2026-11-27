@@ -1,0 +1,75 @@
+{
+ "check_id": "NB-CZ-Q2API_2026-11-27_segment_health_insurance_kansas_city_gemini",
+ "date_utc": "2026-11-27",
+ "business": "SEGMENT: health insurance, Kansas City",
+ "niche": "health insurance brokers",
+ "market": "Kansas City MO",
+ "row_type": "research_segment",
+ "prompt_variant": 2,
+ "series": "e1_q2",
+ "prereg": "prereg/e1-q2-01.json",
+ "run": 1,
+ "prompt_text": "I need help choosing a health insurance plan in Kansas City. Which specific brokers should I call, and why?",
+ "q1_prompt_text": "Who is the best health insurance broker in Kansas City to help me pick a plan?",
+ "engine": "gemini",
+ "run_channel": "api",
+ "schema_version": "v4",
+ "engine_meta": {
+  "served_model": "gemini-3.5-flash-lite",
+  "response_id": "8eIJa9_OAd3I-8YPpsfn6A0",
+  "usage": {
+   "promptTokenCount": 22,
+   "candidatesTokenCount": 834,
+   "totalTokenCount": 856,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 22
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "requested_model": "gemini-3.5-flash-lite",
+  "rail": "studio_free"
+ },
+ "run_status": "OK",
+ "business_mentioned": false,
+ "competitors_mentioned": [
+  "ACA Marketplace (Healthcare.gov)",
+  "Medicare",
+  "Where to find them",
+  "NABIP Kansas City",
+  "Find Local Help",
+  "UnitedHealthcare",
+  "Aetna",
+  "Saint Luke",
+  "Olathe Health",
+  "Insurance Solutions Division",
+  "Mariner",
+  "Benefit Management",
+  "Kansas and Missouri",
+  "Individual Specialists",
+  "NABIP",
+  "ACA Marketplace",
+  "Ask the Broker When You Call",
+  "KU Med",
+  "Saint Luke's",
+  "AdventHealth",
+  "BCBSKC",
+  "In Kansas",
+  "NAHU",
+  "KC Metro",
+  "Kansas Side",
+  "University of Kansas Health System",
+  "KC ZIP"
+ ],
+ "engine_stated_criteria": [
+  "\"Which local hospital networks are included?\"",
+  "\"Are you appointed with all the major carriers in Kansas and/or Missouri?\"",
+  "\"Do you charge any direct fees?\""
+ ],
+ "sources_cited": [],
+ "factor_scores": null,
+ "answer_verbatim": "Finding the right health insurance plan in Kansas City (on either the Missouri or Kansas side of the metro) can be tricky because plan networks (like Blue Cross and Blue Shield of Kansas City vs. UnitedHealthcare vs. Aetna) dictate which local hospital systems—such as The University of Kansas Health System, Saint Luke’s, or Olathe Health—you can visit.\n\nBecause health insurance brokers are **free to use** (they are paid commissions by the insurance companies, so the plan costs the exact same whether you buy it directly or through them), working with an independent local expert is the best route.\n\nHere are specific, highly-rated brokerage firms and individual brokers in the Kansas City area to call, along with why you should contact them:\n\n---\n\n### 1. Cornerstone Brokerage Services\n* **Best for:** Small businesses, families, and individuals wanting a high level of personalized education.\n* **Why call them:** Cornerstone is a well-established, independent agency right in the KC metro. They specialize in both individual/family health plans and Medicare, as well as group benefits. Because they are independent, they aren't tied to just one insurance carrier; they will shop the entire market (including ACA/Obamacare plans and off-exchange options) to see where you qualify for subsidies or the best network coverage.\n\n### 2. Mariner Wealth Advisors (Insurance Solutions Division)\n* **Best for:** High-net-worth individuals, complex financial situations, and comprehensive planning.\n* **Why call them:** Headquartered in the KC area (Overland Park), Mariner is a massive financial planning firm that also has dedicated insurance professionals. If your health insurance decision ties into retirement planning, business ownership, or tax strategies, working through a firm like Mariner ensures your health coverage aligns with your broader financial picture.\n\n### 3. Benefit Management, LLC\n* **Best for:** Small-to-midsize business owners and self-employed individuals.\n* **Why call them:** Located in Overland Park, Benefit Management focuses heavily on group health insurance, employee benefits, and individual coverage. If you are a freelancer, contractor, or business owner trying to figure out group health vs. individual plans, their team is deeply knowledgeable about the specific nuances of the Kansas and Missouri insurance markets.\n\n### 4. Local Independent \"Senior\" & Individual Specialists (via NAHU/NABIP)\nIf you specifically need help navigating the **ACA Marketplace (Healthcare.gov)** or **Medicare**, you want someone certified specifically in Kansas and Missouri exchange plans. \n\n* **Where to find them:** Visit the **NABIP Kansas City** (National Association of Benefits and Insurance Professionals) directory, or use the official **Find Local Help** tool on [Healthcare.gov](https://www.healthcare.gov/find-local-help/), entering your KC zip code. This ensures you are speaking with a licensed agent who is legally certified to help you capture federal tax subsidies if you qualify.\n\n---\n\n### Questions to Ask the Broker When You Call:\n\nTo make sure you get the right plan for your specific situation in Kansas City, ask your broker these questions during your initial call:\n\n1. **\"Which local hospital networks are included?\"** (Make sure they explicitly check if your preferred doctors and hospitals—e.g., KU Med, Saint Luke's, or AdventHealth—are in-network, as narrow networks are common in KC).\n2. **\"Are you appointed with all the major carriers in Kansas and/or Missouri?\"** (You want someone who can compare BCBSKC, UnitedHealthcare, Ambetter, and Aetna side-by-side).\n3. **\"Do you charge any direct fees?\"** (Reputable brokers should *never* charge you a consulting fee for individual/family health plan enrollment; their compensation comes from carrier commissions).\n4. **\"Does this qualify for a subsidy?\"** (If you are buying an individual plan off the exchange, ensure they check if your income qualifies you for a discount through Healthcare.gov).",
+ "session_note": "run_channel caveat: API results can differ from logged-in consumer apps, no memory, no personalization."
+}
