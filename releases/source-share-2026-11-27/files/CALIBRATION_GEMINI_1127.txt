@@ -1,0 +1,102 @@
+CALIBRATION | engine gemini | 1000 placebo records (days shuffled within collector mode only (loose)) | record 2026-10-17 to 2026-11-19 | 549 sites
+PLACEBO KEEPS: the mode timeline, the number of answers each day, the question-set mix of each day, the dependence inside a day. PLACEBO REMOVES: every real change over time.
+THREE READINGS OF THE DETECTOR: "as built" = the tripwire as filed (tests from the first day a 60-answer baseline exists, however short); "full baseline" = only days whose baseline holds 24 or more of its 28 days; "clean" = full baseline and only the collector mode the detector reads today. Shuffle: days of the same mode only (loose).
+
+====================================================================================================
+AS BUILT: 24 testable days on the real record
+1. FIRST-FIRE EVENTS (site and direction, first day |z| >= 3): real 3 | placebo mean 0.3, 2.5% to 97.5% range 0 to 2, largest 3 | real exceeds 99.7% of placebo records
+   fires per testable day: real 0.38, placebo 0.02
+   DISTINCT CHANGES (sites that fire together on the same counts are one change): real 3 | placebo mean 0.3, 2.5% to 97.5% range 0 to 2
+   of the 3 real events, 1 fired on a baseline of fewer than 24 data days; 2 on a fuller baseline
+2. FALSE-DISCOVERY RATE OF THE LIST AT EACH CUT on the peak |z| (FDR = placebo mean count / real count)
+   cut  N_real  N_null  FDR    placebo N_null 95%% range   FDR by how often the site is cited: rare (<40) / middle / common (150+)  (N_real each)
+   3.0       3     0.3   11%      0 to 2                11% (2) / 6% (1) / n/a (0)
+   3.5       3     0.1    2%      0 to 1                3% (2) / 1% (1) / n/a (0)
+   4.0       2     0.0    1%      0 to 0                2% (1) / 0% (1) / n/a (0)
+   4.5       0     0.0   n/a      0 to 0                n/a (0) / n/a (0) / n/a (0)
+   5.0       0     0.0   n/a      0 to 0                n/a (0) / n/a (0) / n/a (0)
+   6.0       0     0.0   n/a      0 to 0                n/a (0) / n/a (0) / n/a (0)
+   7.0       0     0.0   n/a      0 to 0                n/a (0) / n/a (0) / n/a (0)
+3. EVERY FIRST FIRE (as built), with its calibrated odds of being noise
+   day         site                         way   z first  z peak  cites  base-days  P(noise) this site  any site (max-T)  q: FDR if listed at its peak
+   2026-11-10  americanroofingdirectory.com up      +3.7    +3.7     22     18      0.0010              0.0410             1%
+   2026-11-16  angi.com                     up      +3.8    +4.2     29     24      0.0080              0.0090             1%
+   2026-11-18  attorneyatlawmagazine.com    down    -3.5    -4.0     57     26      0.0010              0.0130             1%
+   events with q <= 0.05: 3 of 3
+   events with q <= 0.10: 3 of 3
+   events with q <= 0.25: 3 of 3
+   events with max-T p <= 0.05 (would not appear in 95% of placebo records at all): 3 of 3
+4. THE NEWEST-DAY LIST (as of 2026-11-19): 2 fires on the real record; on the same day placebo records fire on 0.03 sites on average (95th percentile 0), so about 1% of a list this size is expected to be noise
+   attorneyatlawmagazine.com    z  -4.0  cites on file    57  P(noise) this site 0.0010   any of the 549 sites 0.0040
+   angi.com                     z  +3.7  cites on file    29  P(noise) this site 0.0040   any of the 549 sites 0.0050
+5. DESIGN EFFECT (variance of z on placebo records, 1.0 = the normal approximation is exact), 1 sites cited 150+ times: median 1.11 | 10th to 90th percentile 1.11 to 1.11 | above 1.2: 0% of sites | below 0.8: 0%
+6. PERSISTENCE over the next 14 days: rho = sum(follow - baseline) / sum(window - baseline), down moves sign-flipped. Reading: a long baseline and pure noise give about 0.2 to 0.3 (checked on independent answers); a shift that stays gives 1 or more, because the window holds only part of it on the first day it fires
+7. DETECTION PROBABILITY on the last testable day, window 132 answers, baseline 504: a site whose true share steps up by d points, placebo noise (sampling and clustering only), z >= 3. Sites grouped by their pooled share on the real record.
+   pooled share     +2 pts +3 pts +5 pts +8 pts +10 pts +15 pts +20 pts    step for 80%% detection: real noise | if answers were independent | false fire rate at +0
+      1% to   3% (104 sites)    0%     1%    33%    98%   100%   100%   100%    7 pts | 6.0 pts | 0.00% (independent answers: 0.13%)
+      3% to   6% ( 52 sites)    0%     1%     9%    86%    99%   100%   100%    8 pts | 8.5 pts | 0.05% (independent answers: 0.13%)
+      6% to  12% ( 10 sites)    0%     0%     4%    33%    70%    99%   100%    11 pts | 11.0 pts | 0.04% (independent answers: 0.13%)
+     12% to  25% (  5 sites)    0%     0%     1%     8%    27%    89%   100%    14 pts | 14.5 pts | 0.00% (independent answers: 0.13%)
+     25% to 100% (  1 sites)    0%     1%     2%     8%    17%    50%    87%    19 pts | 18.0 pts | 0.00% (independent answers: 0.13%)
+
+====================================================================================================
+FULL BASELINE (24+ of 28 days): 4 testable days on the real record
+1. FIRST-FIRE EVENTS (site and direction, first day |z| >= 3): real 2 | placebo mean 0.1, 2.5% to 97.5% range 0 to 1, largest 2 | real exceeds 99.8% of placebo records
+   fires per testable day: real 1.50, placebo 0.04
+   DISTINCT CHANGES (sites that fire together on the same counts are one change): real 2 | placebo mean 0.1, 2.5% to 97.5% range 0 to 1
+2. FALSE-DISCOVERY RATE OF THE LIST AT EACH CUT on the peak |z| (FDR = placebo mean count / real count)
+   cut  N_real  N_null  FDR    placebo N_null 95%% range   FDR by how often the site is cited: rare (<40) / middle / common (150+)  (N_real each)
+   3.0       2     0.1    5%      0 to 1                7% (1) / 1% (1) / n/a (0)
+   3.5       2     0.0    1%      0 to 0                2% (1) / 0% (1) / n/a (0)
+   4.0       2     0.0    0%      0 to 0                1% (1) / 0% (1) / n/a (0)
+   4.5       0     0.0   n/a      0 to 0                n/a (0) / n/a (0) / n/a (0)
+   5.0       0     0.0   n/a      0 to 0                n/a (0) / n/a (0) / n/a (0)
+   6.0       0     0.0   n/a      0 to 0                n/a (0) / n/a (0) / n/a (0)
+   7.0       0     0.0   n/a      0 to 0                n/a (0) / n/a (0) / n/a (0)
+   events with q <= 0.05: 2 of 2
+   events with q <= 0.10: 2 of 2
+   events with q <= 0.25: 2 of 2
+   events with max-T p <= 0.05 (would not appear in 95% of placebo records at all): 2 of 2
+4. THE NEWEST-DAY LIST (as of 2026-11-19): 2 fires on the real record; on the same day placebo records fire on 0.03 sites on average (95th percentile 0), so about 1% of a list this size is expected to be noise
+   attorneyatlawmagazine.com    z  -4.0  cites on file    57  P(noise) this site 0.0010   any of the 549 sites 0.0040
+   angi.com                     z  +3.7  cites on file    29  P(noise) this site 0.0040   any of the 549 sites 0.0050
+5. DESIGN EFFECT (variance of z on placebo records, 1.0 = the normal approximation is exact), 1 sites cited 150+ times: median 1.11 | 10th to 90th percentile 1.11 to 1.11 | above 1.2: 0% of sites | below 0.8: 0%
+6. PERSISTENCE over the next 14 days: rho = sum(follow - baseline) / sum(window - baseline), down moves sign-flipped. Reading: a long baseline and pure noise give about 0.2 to 0.3 (checked on independent answers); a shift that stays gives 1 or more, because the window holds only part of it on the first day it fires
+7. DETECTION PROBABILITY on the last testable day, window 132 answers, baseline 504: a site whose true share steps up by d points, placebo noise (sampling and clustering only), z >= 3. Sites grouped by their pooled share on the real record.
+   pooled share     +2 pts +3 pts +5 pts +8 pts +10 pts +15 pts +20 pts    step for 80%% detection: real noise | if answers were independent | false fire rate at +0
+      1% to   3% (104 sites)    0%     1%    33%    98%   100%   100%   100%    7 pts | 6.0 pts | 0.00% (independent answers: 0.13%)
+      3% to   6% ( 52 sites)    0%     1%     9%    86%    99%   100%   100%    8 pts | 8.5 pts | 0.05% (independent answers: 0.13%)
+      6% to  12% ( 10 sites)    0%     0%     4%    33%    70%    99%   100%    11 pts | 11.0 pts | 0.04% (independent answers: 0.13%)
+     12% to  25% (  5 sites)    0%     0%     1%     8%    27%    89%   100%    14 pts | 14.5 pts | 0.00% (independent answers: 0.13%)
+     25% to 100% (  1 sites)    0%     1%     2%     8%    17%    50%    87%    19 pts | 18.0 pts | 0.00% (independent answers: 0.13%)
+
+====================================================================================================
+CLEAN: LAST COLLECTOR MODE ONLY, FULL BASELINE: 4 testable days on the real record
+1. FIRST-FIRE EVENTS (site and direction, first day |z| >= 3): real 2 | placebo mean 0.1, 2.5% to 97.5% range 0 to 1, largest 2 | real exceeds 99.8% of placebo records
+   fires per testable day: real 1.50, placebo 0.04
+   DISTINCT CHANGES (sites that fire together on the same counts are one change): real 2 | placebo mean 0.1, 2.5% to 97.5% range 0 to 1
+2. FALSE-DISCOVERY RATE OF THE LIST AT EACH CUT on the peak |z| (FDR = placebo mean count / real count)
+   cut  N_real  N_null  FDR    placebo N_null 95%% range   FDR by how often the site is cited: rare (<40) / middle / common (150+)  (N_real each)
+   3.0       2     0.1    5%      0 to 1                7% (1) / 1% (1) / n/a (0)
+   3.5       2     0.0    1%      0 to 0                2% (1) / 0% (1) / n/a (0)
+   4.0       2     0.0    0%      0 to 0                1% (1) / 0% (1) / n/a (0)
+   4.5       0     0.0   n/a      0 to 0                n/a (0) / n/a (0) / n/a (0)
+   5.0       0     0.0   n/a      0 to 0                n/a (0) / n/a (0) / n/a (0)
+   6.0       0     0.0   n/a      0 to 0                n/a (0) / n/a (0) / n/a (0)
+   7.0       0     0.0   n/a      0 to 0                n/a (0) / n/a (0) / n/a (0)
+   events with q <= 0.05: 2 of 2
+   events with q <= 0.10: 2 of 2
+   events with q <= 0.25: 2 of 2
+   events with max-T p <= 0.05 (would not appear in 95% of placebo records at all): 2 of 2
+4. THE NEWEST-DAY LIST (as of 2026-11-19): 2 fires on the real record; on the same day placebo records fire on 0.03 sites on average (95th percentile 0), so about 1% of a list this size is expected to be noise
+   attorneyatlawmagazine.com    z  -4.0  cites on file    57  P(noise) this site 0.0010   any of the 549 sites 0.0040
+   angi.com                     z  +3.7  cites on file    29  P(noise) this site 0.0040   any of the 549 sites 0.0050
+5. DESIGN EFFECT (variance of z on placebo records, 1.0 = the normal approximation is exact), 1 sites cited 150+ times: median 1.11 | 10th to 90th percentile 1.11 to 1.11 | above 1.2: 0% of sites | below 0.8: 0%
+6. PERSISTENCE over the next 14 days: rho = sum(follow - baseline) / sum(window - baseline), down moves sign-flipped. Reading: a long baseline and pure noise give about 0.2 to 0.3 (checked on independent answers); a shift that stays gives 1 or more, because the window holds only part of it on the first day it fires
+7. DETECTION PROBABILITY on the last testable day, window 132 answers, baseline 504: a site whose true share steps up by d points, placebo noise (sampling and clustering only), z >= 3. Sites grouped by their pooled share on the real record.
+   pooled share     +2 pts +3 pts +5 pts +8 pts +10 pts +15 pts +20 pts    step for 80%% detection: real noise | if answers were independent | false fire rate at +0
+      1% to   3% (104 sites)    0%     1%    33%    98%   100%   100%   100%    7 pts | 6.0 pts | 0.00% (independent answers: 0.13%)
+      3% to   6% ( 52 sites)    0%     1%     9%    86%    99%   100%   100%    8 pts | 8.5 pts | 0.05% (independent answers: 0.13%)
+      6% to  12% ( 10 sites)    0%     0%     4%    33%    70%    99%   100%    11 pts | 11.0 pts | 0.04% (independent answers: 0.13%)
+     12% to  25% (  5 sites)    0%     0%     1%     8%    27%    89%   100%    14 pts | 14.5 pts | 0.00% (independent answers: 0.13%)
+     25% to 100% (  1 sites)    0%     1%     2%     8%    17%    50%    87%    19 pts | 18.0 pts | 0.00% (independent answers: 0.13%)

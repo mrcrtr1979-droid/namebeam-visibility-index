@@ -1,0 +1,201 @@
+CALIBRATION | engine perplexity | 2004 placebo records (days shuffled within collector mode only, LOOSE) | record 2026-08-13 to 2026-11-26 | 1162 sites
+PLACEBO KEEPS: the mode timeline, the number of answers each day, the question-set mix of each day, the dependence inside a day. PLACEBO REMOVES: every real change over time.
+THREE READINGS OF THE DETECTOR: "as built" = the tripwire as filed (tests from the first day a 60-answer baseline exists, however short); "full baseline" = only days whose baseline holds 24 or more of its 28 days; "clean" = full baseline and only the collector mode the detector reads today. Shuffle: days of the same mode only (loose).
+
+====================================================================================================
+AS BUILT: 82 testable days on the real record
+1. FIRST-FIRE EVENTS (site and direction, first day |z| >= 3): real 75 | placebo mean 12.0, 2.5% to 97.5% range 6 to 19, largest 29 | real exceeds 100.0% of placebo records
+   fires per testable day: real 5.76, placebo 0.43
+   DISTINCT CHANGES (sites that fire together on the same counts are one change): real 66 | placebo mean 11.9, 2.5% to 97.5% range 6 to 19
+   of the 75 real events, 45 fired on a baseline of fewer than 24 data days; 30 on a fuller baseline
+2. FALSE-DISCOVERY RATE OF THE LIST AT EACH CUT on the peak |z| (FDR = placebo mean count / real count)
+   cut  N_real  N_null  FDR    placebo N_null 95%% range   FDR by how often the site is cited: rare (<40) / middle / common (150+)  (N_real each)
+   3.0      75    12.0   16%      6 to 19               9% (24) / 8% (30) / 36% (21)
+   3.5      48     6.2   13%      2 to 12               8% (13) / 4% (17) / 25% (18)
+   4.0      35     3.3   10%      0 to 8                7% (9) / 2% (11) / 17% (15)
+   4.5      29     1.8    6%      0 to 5                4% (8) / 1% (7) / 10% (14)
+   5.0      19     0.9    5%      0 to 3                2% (7) / 1% (4) / 9% (8)
+   6.0      12     0.2    2%      0 to 1                1% (5) / 0% (1) / 3% (6)
+   7.0       7     0.0    1%      0 to 1                0% (3) / n/a (0) / 1% (4)
+3. EVERY FIRST FIRE (as built), with its calibrated odds of being noise
+   day         site                         way   z first  z peak  cites  base-days  P(noise) this site  any site (max-T)  q: FDR if listed at its peak
+   2026-08-22  reddit.com                   down    -3.3    -6.0    466      3      0.0304              0.1960             2%
+   2026-08-25  forbes.com                   down    -3.5    -4.9    295      4      0.0020              0.6369             5%
+   2026-09-06  expertise.com                up      +3.2    +8.1    716     16      0.0020              0.0060             0%
+   2026-09-06  findmyaccidentlawyer.com     up      +3.5    +4.8     49     16      0.0010              0.7072             5%
+   2026-09-06  roofpitch.net                up      +3.9    +4.4     61     16      0.0005              0.8713             7%
+   2026-09-08  avvo.com                     up      +3.2    +3.3    352     17      0.0055              1.0000            15%
+   2026-09-08  bencrump.com                 down    -3.2    -3.8     32     17      0.0025              0.9865            10%
+   2026-09-08  findlaw.com                  up      +6.8    +7.2    157     17      0.0005              0.0239             0%
+   2026-09-10  delair.com                   down    -3.1    -3.2     72     17      0.0005              1.0000            15%
+   2026-09-11  baker-roofing.com            down    -3.1    -3.1     20     17      0.0005              1.0000            15%
+   2026-09-11  idealairaz.com               down    -3.1    -3.1     29     17      0.0005              1.0000            15%
+   2026-09-13  linkedin.com                 up      +3.5    +3.7     45     19      0.0005              0.9895            10%
+   2026-09-13  yelp.com                     up      +4.1    +7.3     27     19      0.0020              0.0190             0%
+   2026-09-15  bbb.org                      down    -3.4    -3.4     97     21      0.0005              1.0000            14%
+   2026-09-15  bestpickreports.com          down    -3.5    -4.8    115     21      0.0005              0.7012             5%
+   2026-09-15  cityvetted.com               up      +7.0    +7.0     53     21      0.0005              0.0344             0%
+   2026-09-15  onpattison.com               down    -3.1    -3.1     35     21      0.0005              1.0000            15%
+   2026-09-15  rroofl.com                   down    -3.1    -3.1     32     21      0.0005              1.0000            15%
+   2026-09-16  todayshomeowner.com          down    -3.2    -3.9     62     22      0.0005              0.9761            10%
+   2026-09-17  serviceagent.ai              down    -3.4    -4.5    187     22      0.0115              0.8314             6%
+   2026-09-18  bessardroofing.com           down    -3.1    -3.1     33     22      0.0005              1.0000            15%
+   2026-09-18  charlotteroofinghub.com      down    -3.1    -3.1     47     22      0.0005              1.0000            15%
+   2026-09-18  clcroofing.com               down    -3.1    -3.1     31     22      0.0005              1.0000            15%
+   2026-09-18  csroofingandgutters.com      down    -3.1    -3.1     45     22      0.0005              1.0000            15%
+   2026-09-18  downtobid.com                down    -3.6    -3.7     51     22      0.0010              0.9895            10%
+   2026-09-18  hvaccompaniesphoenix.com     down    -3.1    -3.1     40     22      0.0005              1.0000            15%
+   2026-09-18  hvacofhouston.com            down    -3.1    -3.1     30     22      0.0005              1.0000            15%
+   2026-09-18  mployeradvisor.com           down    -3.3    -3.4     56     22      0.0010              1.0000            14%
+   2026-09-18  ncstormrepair.com            down    -3.1    -3.1     31     22      0.0005              1.0000            15%
+   2026-09-18  perdueandkidd.com            down    -3.0    -3.0     30     22      0.0005              1.0000            16%
+   2026-09-18  roofmedic.com                down    -3.1    -3.1     36     22      0.0005              1.0000            15%
+   2026-09-18  thegoodtrade.com             up      +4.3    +4.3     26     22      0.0005              0.8798             7%
+   2026-09-20  nbcnews.com                  up      +3.3    +4.2     83     23      0.0015              0.9262             8%
+   2026-09-20  nypost.com                   up      +3.3    +3.9     29     23      0.0005              0.9796            10%
+   2026-09-22  amazon.com                   up      +3.0    +3.2     44     24      0.0165              1.0000            15%
+   2026-09-22  forbes.com                   up      +4.0    +7.2    295     24      0.0005              0.0239             0%
+   2026-09-23  einpresswire.com             up      +7.1    +8.1     39     24      0.0005              0.0065             0%
+   2026-09-23  justdial.com                 up      +7.1    +8.3     28     24      0.0005              0.0040             0%
+   2026-09-25  vouchedpros.com              down    -3.0    -3.4     81     24      0.0005              1.0000            14%
+   2026-09-26  cincinnati.com               up      +6.1    +6.1     20     24      0.0005              0.1746             2%
+   2026-09-26  forthepeople.com             up      +6.4    +6.4     16     24      0.0015              0.1092             1%
+   2026-09-26  homedepot.com                up      +5.2    +5.2    103     24      0.0010              0.5232             4%
+   2026-09-26  ontoplist.com                down    -3.8    -3.8    230     24      0.0030              0.9805            10%
+   2026-10-06  justia.com                   down    -3.7    -3.7    445      3      0.0399              0.9900            10%
+   2026-10-07  bestprosintown.com           up      +3.0    +3.0    110      4      0.0354              1.0000            16%
+   2026-10-08  serviceagent.ai              up      +3.1    +4.8    187      5      0.1107              0.7017             5%
+   2026-10-11  expertise.com                down    -3.2    -7.2    716      8      0.0005              0.0214             0%
+   2026-10-12  bestlawfirms.com             up      +4.0    +4.0    105      9      0.0005              0.9571             9%
+   2026-10-17  aireserv.com                 up      +3.2    +3.3    119     14      0.0005              1.0000            15%
+   2026-10-17  carrier.com                  up      +3.3    +3.8     37     14      0.0030              0.9865            10%
+   2026-10-17  findlaw.com                  down    -3.2    -4.6    157     14      0.0209              0.8075             6%
+   2026-10-18  attorneyatlawmagazine.com    down    -3.2    -3.5    169     15      0.0010              0.9980            12%
+   2026-10-20  oyez.org                     up      +5.0    +5.0     27     17      0.0005              0.6279             5%
+   2026-10-26  homematchup.com              up      +3.5    +4.5    107     23      0.0030              0.8264             6%
+   2026-10-27  theroofingbrief.com          up      +3.5    +5.5    134     24      0.0005              0.3706             3%
+   2026-10-27  top10.com                    down    -3.1    -3.1     53     24      0.0005              1.0000            15%
+   2026-10-28  justia.com                   up      +3.2    +5.7    445     25      0.0005              0.2818             2%
+   2026-10-29  yahoo.com                    down    -3.0    -3.5    221     26      0.0204              0.9990            13%
+   2026-11-01  premier-roofing.com          down    -3.0    -3.0     79     28      0.0005              1.0000            16%
+   2026-11-03  roofs.wiki                   up      +3.7    +4.0     65     28      0.0060              0.9691            10%
+   2026-11-04  angi.com                     up      +3.2    +6.6    159     28      0.0005              0.0728             1%
+   2026-11-06  bestinhood.com               up      +3.5    +4.9    152     28      0.0005              0.6688             5%
+   2026-11-09  yahoo.com                    up      +3.4    +4.5    221     28      0.0020              0.8489             6%
+   2026-11-10  healthcare.gov               up      +5.2    +5.2     20     28      0.0005              0.4953             4%
+   2026-11-12  5starhomeservicepros.com     up      +5.2    +5.6     51     28      0.0100              0.3282             3%
+   2026-11-13  7be.io                       up      +5.6    +5.6     18     28      0.0005              0.3446             3%
+   2026-11-14  ccr-mag.com                  up      +3.9    +3.9     23     28      0.0005              0.9756            10%
+   2026-11-15  chron.com                    down    -3.1    -3.1    159     28      0.0005              1.0000            15%
+   2026-11-17  homematchup.com              down    -3.1    -4.3    107     28      0.0005              0.8838             7%
+   2026-11-17  trane.com                    down    -3.2    -3.7     85     28      0.0005              0.9895            10%
+   2026-11-19  consumeraffairs.com          down    -3.4    -4.6    376     28      0.0005              0.7975             6%
+   2026-11-19  homedepot.com                down    -3.2    -3.9    103     28      0.0005              0.9766            10%
+   2026-11-21  ontoplist.com                up      +3.6    +6.3    230     28      0.0005              0.1257             1%
+   2026-11-22  experts.reviews              up      +3.0    +3.0     17     28      0.0005              1.0000            16%
+   2026-11-26  google.com                   up      +3.4    +3.4     77     28      0.0005              1.0000            14%
+   events with q <= 0.05: 25 of 75
+   events with q <= 0.10: 41 of 75
+   events with q <= 0.25: 75 of 75
+   events with max-T p <= 0.05 (would not appear in 95% of placebo records at all): 8 of 75
+4. THE NEWEST-DAY LIST (as of 2026-11-26): 8 fires on the real record; on the same day placebo records fire on 0.37 sites on average (95th percentile 2), so about 5% of a list this size is expected to be noise
+   expertise.com                z  +8.1  cites on file   716  P(noise) this site 0.0005   any of the 1162 sites 0.0005
+   ontoplist.com                z  +6.3  cites on file   230  P(noise) this site 0.0005   any of the 1162 sites 0.0025
+   yahoo.com                    z  +4.5  cites on file   221  P(noise) this site 0.0005   any of the 1162 sites 0.0319
+   5starhomeservicepros.com     z  +4.2  cites on file    51  P(noise) this site 0.0070   any of the 1162 sites 0.0504
+   consumeraffairs.com          z  -3.8  cites on file   376  P(noise) this site 0.0005   any of the 1162 sites 0.0878
+   homematchup.com              z  -3.4  cites on file   107  P(noise) this site 0.0040   any of the 1162 sites 0.1651
+   google.com                   z  +3.4  cites on file    77  P(noise) this site 0.0005   any of the 1162 sites 0.1661
+   forbes.com                   z  +3.3  cites on file   295  P(noise) this site 0.0224   any of the 1162 sites 0.1835
+5. DESIGN EFFECT (variance of z on placebo records, 1.0 = the normal approximation is exact), 17 sites cited 150+ times: median 1.29 | 10th to 90th percentile 0.55 to 2.29 | above 1.2: 53% of sites | below 0.8: 35%
+6. PERSISTENCE over the next 14 days: rho = sum(follow - baseline) / sum(window - baseline), down moves sign-flipped. Reading: a long baseline and pure noise give about 0.2 to 0.3 (checked on independent answers); a shift that stays gives 1 or more, because the window holds only part of it on the first day it fires
+   z first fire 3 to 4       49 events | rho real 0.99 (95% interval 0.85 to 1.14) | placebo 0.36 (95% range 0.02 to 0.75) | real minus placebo +0.63 | next-14-day shift in points: real +8.9, placebo +4.0 (95% range +0.2 to +9.6) | same side of the baseline: 98%
+   z first fire 4 to 5        3 events | rho real 0.30 (95% interval 0.14 to 0.51) | placebo 0.36 (95% range -0.24 to 1.06) | real minus placebo -0.06 | next-14-day shift in points: real +2.2, placebo +7.2 (95% range -5.1 to +28.1) | same side of the baseline: 100%
+   z first fire 5 or more     4 events | rho real 0.98 (95% interval 0.11 to 1.71) | placebo 0.38 (95% range -0.11 to 1.06) | real minus placebo +0.60 | next-14-day shift in points: real +9.5, placebo +11.7 (95% range -1.4 to +45.4) | same side of the baseline: 100%
+   all first fires           56 events | rho real 0.96 (95% interval 0.81 to 1.10) | placebo 0.37 (95% range 0.04 to 0.76) | real minus placebo +0.59 | next-14-day shift in points: real +8.6, placebo +4.5 (95% range +0.4 to +10.8) | same side of the baseline: 98%
+7. DETECTION PROBABILITY on the last testable day, window 105 answers, baseline 588: a site whose true share steps up by d points, placebo noise (sampling and clustering only), z >= 3. Sites grouped by their pooled share on the real record.
+   pooled share     +2 pts +3 pts +5 pts +8 pts +10 pts +15 pts +20 pts    step for 80%% detection: real noise | if answers were independent | false fire rate at +0
+      1% to   3% (134 sites)    0%     1%    18%    69%    88%   100%   100%    10 pts | 6.5 pts | 0.02% (independent answers: 0.13%)
+      3% to   6% ( 58 sites)    1%     2%    15%    86%    97%   100%   100%    8 pts | 9.5 pts | 0.11% (independent answers: 0.13%)
+      6% to  12% ( 11 sites)    2%     3%     8%    35%    64%    97%   100%    12 pts | 12.5 pts | 0.44% (independent answers: 0.13%)
+     12% to  25% (  8 sites)    2%     3%     6%    18%    34%    76%    95%    16 pts | 15.0 pts | 1.24% (independent answers: 0.13%)
+
+====================================================================================================
+FULL BASELINE (24+ of 28 days): 35 testable days on the real record
+1. FIRST-FIRE EVENTS (site and direction, first day |z| >= 3): real 47 | placebo mean 6.7, 2.5% to 97.5% range 2 to 13, largest 20 | real exceeds 100.0% of placebo records
+   fires per testable day: real 7.40, placebo 0.45
+   DISTINCT CHANGES (sites that fire together on the same counts are one change): real 45 | placebo mean 6.7, 2.5% to 97.5% range 2 to 13
+2. FALSE-DISCOVERY RATE OF THE LIST AT EACH CUT on the peak |z| (FDR = placebo mean count / real count)
+   cut  N_real  N_null  FDR    placebo N_null 95%% range   FDR by how often the site is cited: rare (<40) / middle / common (150+)  (N_real each)
+   3.0      47     6.7   14%      2 to 13               10% (10) / 7% (19) / 24% (18)
+   3.5      38     3.3    9%      0 to 8                5% (9) / 4% (13) / 15% (16)
+   4.0      28     1.7    6%      0 to 5                4% (6) / 2% (8) / 9% (14)
+   4.5      22     0.8    4%      0 to 4                2% (6) / 2% (4) / 5% (12)
+   5.0      16     0.4    3%      0 to 2                1% (6) / 1% (3) / 5% (7)
+   6.0       8     0.1    1%      0 to 1                0% (4) / n/a (0) / 2% (4)
+   7.0       4     0.0    0%      0 to 0                0% (2) / n/a (0) / 1% (2)
+   events with q <= 0.05: 28 of 47
+   events with q <= 0.10: 41 of 47
+   events with q <= 0.25: 47 of 47
+   events with max-T p <= 0.05 (would not appear in 95% of placebo records at all): 6 of 47
+4. THE NEWEST-DAY LIST (as of 2026-11-26): 8 fires on the real record; on the same day placebo records fire on 0.37 sites on average (95th percentile 2), so about 5% of a list this size is expected to be noise
+   expertise.com                z  +8.1  cites on file   716  P(noise) this site 0.0005   any of the 1162 sites 0.0005
+   ontoplist.com                z  +6.3  cites on file   230  P(noise) this site 0.0005   any of the 1162 sites 0.0025
+   yahoo.com                    z  +4.5  cites on file   221  P(noise) this site 0.0005   any of the 1162 sites 0.0319
+   5starhomeservicepros.com     z  +4.2  cites on file    51  P(noise) this site 0.0070   any of the 1162 sites 0.0504
+   consumeraffairs.com          z  -3.8  cites on file   376  P(noise) this site 0.0005   any of the 1162 sites 0.0878
+   homematchup.com              z  -3.4  cites on file   107  P(noise) this site 0.0040   any of the 1162 sites 0.1651
+   google.com                   z  +3.4  cites on file    77  P(noise) this site 0.0005   any of the 1162 sites 0.1661
+   forbes.com                   z  +3.3  cites on file   295  P(noise) this site 0.0224   any of the 1162 sites 0.1835
+5. DESIGN EFFECT (variance of z on placebo records, 1.0 = the normal approximation is exact), 17 sites cited 150+ times: median 1.29 | 10th to 90th percentile 0.55 to 2.29 | above 1.2: 53% of sites | below 0.8: 35%
+6. PERSISTENCE over the next 14 days: rho = sum(follow - baseline) / sum(window - baseline), down moves sign-flipped. Reading: a long baseline and pure noise give about 0.2 to 0.3 (checked on independent answers); a shift that stays gives 1 or more, because the window holds only part of it on the first day it fires
+   z first fire 3 to 4       18 events | rho real 0.98 (95% interval 0.74 to 1.21) | placebo 0.21 (95% range -0.28 to 0.76) | real minus placebo +0.77 | next-14-day shift in points: real +7.2, placebo +1.8 (95% range -2.7 to +7.2) | same side of the baseline: 94%
+   z first fire 4 to 5        5 events | rho real 0.32 (95% interval -0.35 to 1.07) | placebo 0.24 (95% range -0.34 to 0.96) | real minus placebo +0.08 | next-14-day shift in points: real +3.9, placebo +3.0 (95% range -5.5 to +14.5) | same side of the baseline: 60%
+   z first fire 5 or more     4 events | rho real 1.25 (95% interval 0.63 to 1.61) | placebo 0.19 (95% range -0.26 to 0.85) | real minus placebo +1.05 | next-14-day shift in points: real +18.4, placebo +2.8 (95% range -6.4 to +16.6) | same side of the baseline: 100%
+   all first fires           27 events | rho real 0.88 (95% interval 0.58 to 1.15) | placebo 0.22 (95% range -0.27 to 0.75) | real minus placebo +0.67 | next-14-day shift in points: real +8.3, placebo +2.0 (95% range -2.6 to +7.5) | same side of the baseline: 89%
+7. DETECTION PROBABILITY on the last testable day, window 105 answers, baseline 588: a site whose true share steps up by d points, placebo noise (sampling and clustering only), z >= 3. Sites grouped by their pooled share on the real record.
+   pooled share     +2 pts +3 pts +5 pts +8 pts +10 pts +15 pts +20 pts    step for 80%% detection: real noise | if answers were independent | false fire rate at +0
+      1% to   3% (134 sites)    0%     1%    18%    69%    88%   100%   100%    10 pts | 6.5 pts | 0.02% (independent answers: 0.13%)
+      3% to   6% ( 58 sites)    1%     2%    15%    86%    97%   100%   100%    8 pts | 9.5 pts | 0.11% (independent answers: 0.13%)
+      6% to  12% ( 11 sites)    2%     3%     8%    35%    64%    97%   100%    12 pts | 12.5 pts | 0.44% (independent answers: 0.13%)
+     12% to  25% (  8 sites)    2%     3%     6%    18%    34%    76%    95%    16 pts | 15.0 pts | 1.24% (independent answers: 0.13%)
+
+====================================================================================================
+CLEAN: LAST COLLECTOR MODE ONLY, FULL BASELINE: 29 testable days on the real record
+1. FIRST-FIRE EVENTS (site and direction, first day |z| >= 3): real 30 | placebo mean 4.9, 2.5% to 97.5% range 1 to 10, largest 18 | real exceeds 100.0% of placebo records
+   fires per testable day: real 6.79, placebo 0.41
+   DISTINCT CHANGES (sites that fire together on the same counts are one change): real 30 | placebo mean 4.9, 2.5% to 97.5% range 1 to 10
+2. FALSE-DISCOVERY RATE OF THE LIST AT EACH CUT on the peak |z| (FDR = placebo mean count / real count)
+   cut  N_real  N_null  FDR    placebo N_null 95%% range   FDR by how often the site is cited: rare (<40) / middle / common (150+)  (N_real each)
+   3.0      30     4.9   16%      1 to 10               6% (4) / 9% (11) / 24% (15)
+   3.5      24     2.3   10%      0 to 6                2% (3) / 5% (8) / 14% (13)
+   4.0      18     1.1    6%      0 to 4                1% (2) / 3% (5) / 9% (11)
+   4.5      15     0.5    3%      0 to 2                0% (2) / 2% (3) / 5% (10)
+   5.0       9     0.3    3%      0 to 2                0% (2) / 1% (2) / 5% (5)
+   6.0       3     0.0    2%      0 to 1                n/a (0) / n/a (0) / 2% (3)
+   7.0       1     0.0    1%      0 to 0                n/a (0) / n/a (0) / 1% (1)
+   events with q <= 0.05: 18 of 30
+   events with q <= 0.10: 25 of 30
+   events with q <= 0.25: 30 of 30
+   events with max-T p <= 0.05 (would not appear in 95% of placebo records at all): 3 of 30
+4. THE NEWEST-DAY LIST (as of 2026-11-26): 8 fires on the real record; on the same day placebo records fire on 0.37 sites on average (95th percentile 2), so about 5% of a list this size is expected to be noise
+   expertise.com                z  +8.1  cites on file   716  P(noise) this site 0.0005   any of the 1162 sites 0.0005
+   ontoplist.com                z  +6.3  cites on file   230  P(noise) this site 0.0005   any of the 1162 sites 0.0025
+   yahoo.com                    z  +4.5  cites on file   221  P(noise) this site 0.0005   any of the 1162 sites 0.0319
+   5starhomeservicepros.com     z  +4.2  cites on file    51  P(noise) this site 0.0070   any of the 1162 sites 0.0504
+   consumeraffairs.com          z  -3.8  cites on file   376  P(noise) this site 0.0005   any of the 1162 sites 0.0878
+   homematchup.com              z  -3.4  cites on file   107  P(noise) this site 0.0040   any of the 1162 sites 0.1651
+   google.com                   z  +3.4  cites on file    77  P(noise) this site 0.0005   any of the 1162 sites 0.1661
+   forbes.com                   z  +3.3  cites on file   295  P(noise) this site 0.0224   any of the 1162 sites 0.1835
+5. DESIGN EFFECT (variance of z on placebo records, 1.0 = the normal approximation is exact), 17 sites cited 150+ times: median 1.29 | 10th to 90th percentile 0.55 to 2.29 | above 1.2: 53% of sites | below 0.8: 35%
+6. PERSISTENCE over the next 14 days: rho = sum(follow - baseline) / sum(window - baseline), down moves sign-flipped. Reading: a long baseline and pure noise give about 0.2 to 0.3 (checked on independent answers); a shift that stays gives 1 or more, because the window holds only part of it on the first day it fires
+   z first fire 3 to 4       13 events | rho real 1.02 (95% interval 0.70 to 1.31) | placebo 0.21 (95% range -0.27 to 0.74) | real minus placebo +0.81 | next-14-day shift in points: real +7.8, placebo +1.7 (95% range -2.4 to +6.6) | same side of the baseline: 92%
+   z first fire 4 to 5        3 events | rho real 0.30 (95% interval -0.36 to 1.22) | placebo 0.24 (95% range -0.29 to 0.85) | real minus placebo +0.06 | next-14-day shift in points: real +3.6, placebo +3.0 (95% range -4.4 to +12.7) | same side of the baseline: 67%
+   z first fire 5 or more     3 events | rho real 1.07 (95% interval 0.17 to 2.00) | placebo 0.18 (95% range -0.21 to 0.64) | real minus placebo +0.89 | next-14-day shift in points: real +12.4, placebo +2.3 (95% range -4.3 to +11.6) | same side of the baseline: 100%
+   all first fires           19 events | rho real 0.88 (95% interval 0.57 to 1.17) | placebo 0.21 (95% range -0.24 to 0.73) | real minus placebo +0.66 | next-14-day shift in points: real +7.8, placebo +1.9 (95% range -2.2 to +7.0) | same side of the baseline: 89%
+7. DETECTION PROBABILITY on the last testable day, window 105 answers, baseline 588: a site whose true share steps up by d points, placebo noise (sampling and clustering only), z >= 3. Sites grouped by their pooled share on the real record.
+   pooled share     +2 pts +3 pts +5 pts +8 pts +10 pts +15 pts +20 pts    step for 80%% detection: real noise | if answers were independent | false fire rate at +0
+      1% to   3% (134 sites)    0%     1%    18%    69%    88%   100%   100%    10 pts | 6.5 pts | 0.02% (independent answers: 0.13%)
+      3% to   6% ( 58 sites)    1%     2%    15%    86%    97%   100%   100%    8 pts | 9.5 pts | 0.11% (independent answers: 0.13%)
+      6% to  12% ( 11 sites)    2%     3%     8%    35%    64%    97%   100%    12 pts | 12.5 pts | 0.44% (independent answers: 0.13%)
+     12% to  25% (  8 sites)    2%     3%     6%    18%    34%    76%    95%    16 pts | 15.0 pts | 1.24% (independent answers: 0.13%)

@@ -1,0 +1,20 @@
+SOURCE SHARE FIRES | newest day of each engine, run 2026-11-27 3:38AM CT | tools/source_share_watch.py (zero model calls) | window 7 days against the 28 before, |z| >= 3.0
+
+SOURCE SHARE WATCH | engine perplexity | as of 2026-11-26 | OK (window 105 answers, baseline 588, mode pplx:agent-fast)
+FAILED ROWS perplexity: 60 rows 2026-09-01 to 2026-09-04, flag "FAILED: HTTP Error 401: Unauthorized"
+FAILED ROWS perplexity: 10 rows 2026-09-11 to 2026-09-19, flag "FAILED: HTTP Error 429: Too Many Requests"
+  FIRE consumeraffairs.com          z -3.8  window 2 of 105 (2%)  baseline 92 of 588 (16%)
+  FIRE homematchup.com              z -3.4  window 0 of 105 (0%)  baseline 58 of 588 (10%)
+  FIRE forbes.com                   z +3.3  window 26 of 105 (25%)  baseline 74 of 588 (13%)
+  FIRE google.com                   z +3.4  window 11 of 105 (10%)  baseline 19 of 588 (3%)
+  FIRE 5starhomeservicepros.com     z +4.2  window 18 of 105 (17%)  baseline 33 of 588 (6%)
+  FIRE yahoo.com                    z +4.5  window 26 of 105 (25%)  baseline 56 of 588 (10%)
+  FIRE ontoplist.com                z +6.3  window 18 of 105 (17%)  baseline 16 of 588 (3%)
+  FIRE expertise.com                z +8.1  window 41 of 105 (39%)  baseline 55 of 588 (9%)
+
+SOURCE SHARE WATCH | engine gemini | as of 2026-11-19 | OK (window 132 answers, baseline 504, mode default)
+FAILED ROWS gemini: 1 rows 2026-09-15 to 2026-09-15, flag "FAILED: HTTP Error 503: Service Unavailable"
+FAILED ROWS gemini: 105 rows 2026-11-20 to 2026-11-26, flag "FAILED: HTTP Error 402: Payment Required"
+COVERAGE gemini: 636 of 1403 answers with links resolve every link (2026-10-17 to 2026-11-19); 767 left out for dead links (2026-09-08 to 2026-10-16)
+  FIRE attorneyatlawmagazine.com    z -4.0  window 0 of 132 (0%)  baseline 57 of 504 (11%)
+  FIRE angi.com                     z +3.7  window 14 of 132 (11%)  baseline 15 of 504 (3%)

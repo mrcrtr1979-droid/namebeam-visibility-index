@@ -1,0 +1,11 @@
+KNOWN-TRUTH TEST | engine perplexity | 400 records, each a day-shuffled placebo with 16 planted sustained changes (70% up, 30% down; sizes 6, 10, 15, 25 points) | detector: CLEAN reading | null counts from 800 plain placebo records
+1. RECALL: a planted change counts as found if the detector reaches |z| >= 3 in the right direction within 14 days of its start
+   +/- 6 points: found  823 of 1180 (70%) | median days to first fire 5
+   +/-10 points: found 1114 of 1162 (96%) | median days to first fire 4
+   +/-15 points: found 1139 of 1140 (100%) | median days to first fire 2
+   +/-25 points: found 1117 of 1117 (100%) | median days to first fire 1
+2. THE FALSE-DISCOVERY ESTIMATE AGAINST THE TRUTH (sums over all 400 records; a false event is any event that is not a planted change at or after its start)
+   cut  events  false  false-discovery rate that happened | rate the placebo estimate predicts (N_null / events)
+   3.0    6125   1900   31.0%                              |  31.8%
+   4.0    4032    484   12.0%                              |  11.1%
+   5.0    2962    125    4.2%                              |   3.5%

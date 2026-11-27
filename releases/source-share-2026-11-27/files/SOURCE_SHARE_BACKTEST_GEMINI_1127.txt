@@ -1,0 +1,7 @@
+BACKTEST gemini, 2026-10-17 to 2026-11-19: first day each site fires (window 7 days against the 28 before, |z| >= 3.0)
+FAILED ROWS gemini: 1 rows 2026-09-15 to 2026-09-15, flag "FAILED: HTTP Error 503: Service Unavailable"
+FAILED ROWS gemini: 105 rows 2026-11-20 to 2026-11-26, flag "FAILED: HTTP Error 402: Payment Required"
+COVERAGE gemini: 636 of 1403 answers with links resolve every link (2026-10-17 to 2026-11-19); 767 left out for dead links (2026-09-08 to 2026-10-16)
+  2026-11-10  americanroofingdirectory.com up   z +3.7  window 11 of 130 (8%)  baseline 5 of 330 (2%)
+  2026-11-16  angi.com                     up   z +3.8  window 14 of 127 (11%)  baseline 13 of 449 (3%)
+  2026-11-18  attorneyatlawmagazine.com    down z -3.5  window 2 of 132 (2%)  baseline 55 of 485 (11%)
